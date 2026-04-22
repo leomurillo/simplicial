@@ -1,0 +1,24 @@
+# Build artifacts from build.ps1 / build.sh (regeneratable from .md source)
+/build/
+
+# Final PDF (regeneratable from .md source). Drop this line if you prefer to
+# commit the PDF alongside the markdown.
+/simplicial_vector_calculus.pdf
+
+# Python cache / venv (empirical validation scripts)
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# LaTeX stragglers in case latexmk is run outside the build/ dir
+*.aux
+*.bbl
+*.blg
+*.fls
+*.fdb_latexmk
+*.log
+*.out
+*.synctex.gz
+*.toc
+*.xdv

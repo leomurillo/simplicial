@@ -1,0 +1,45 @@
+---
+description: Global workflow for arXiv-style math manuscripts—LaTeX rigor, tone, structure, multi-agent roles, and empirical validation gates.
+alwaysApply: true
+---
+
+# Global Instructions: ArXiv Math Paper Refinement Workflow
+
+## 1. Primary Objective
+Elevate the target mathematical manuscript to the highest standards of publication-readiness for arXiv. Ensure absolute mathematical rigor, flawless mathematical typography, and compelling academic narrative. The workspace currently holds a full draft (`simplicial_vector_calculus.md`); default posture is **editing-first**, not green-field authoring.
+
+## 2. Source Format
+- **Drafting format:** Markdown with inline (`$...$`) and display (`$$...$$`) LaTeX math. The single source of truth through all review cycles is `simplicial_vector_calculus.md`.
+- **Preview:** Cursor's built-in Markdown preview (Ctrl+K V for side-by-side) renders KaTeX math live.
+- **Submission format:** LaTeX. Convert to `.tex` in a single pre-submission pass (typically via `pandoc`), then run one additional formalism + narrative review cycle on the `.tex` output to catch conversion artefacts (theorem environments, bibliography, over-escaped macros, cross-references).
+
+## 3. Tone and Style
+- **Tone:** Academic, rigorously formal, precise, objective, and professional.
+- **Language:** Clear, concise, standard academic English. Avoid hyperbole (e.g., "groundbreaking", "revolutionary").
+- **Notation:** Strict adherence to standard mathematical notation.
+
+## 4. Structural Formatting
+- Use strict LaTeX syntax inside all math delimiters.
+- Maintain standard academic structure: Abstract, Introduction, Preliminaries, Main Results (Theorems/Lemmas/Propositions), Proofs, Discussion, and References.
+- Ensure all equations, figures, and theorems are cross-referenced properly. During the Markdown phase, cross-references may be plain-text labels (e.g., "Theorem 3.1"); the pre-submission pass replaces them with `\ref{}`/`\label{}`.
+
+## 5. Subagent Orchestration
+This workspace relies on a multi-agent workflow. Never collapse roles.
+- **Author (Opus 4.7):** Writes and edits the actual paper.
+- **Reviewer X & Y:** Provide read-only adversarial critiques (formalism, narrative).
+- **Empirical Skeptical & Reviewer:** Write and verify code to test mathematical bounds/claims. Empirical Skeptical must NOT edit the manuscript.
+
+## 6. Execution Rules
+- The Author must NOT unilaterally reject Red Team Critical or High findings without a documented mathematical justification recorded in the relevant cycle file.
+- All code generated for empirical validation must receive `STATUS: GREEN` from the Empirical Reviewer before its conclusions are fed back to the Author.
+- No mathematical leaps of faith. If a proof step is trivial, state why. If it is complex, expand it.
+
+## 7. Loop Termination Protocol (applies to both skills)
+Severity on every reviewer finding: **Critical / High / Medium / Low**. Only Critical and High are loop-blocking.
+
+- **CRITICAL LIMIT:** No more than **3 revision loops** per section scope or per empirical claim.
+- **STATUS GREEN:** Both relevant reviewers return no Critical or High findings in the same cycle → halt, present for human sign-off, and surface `reviews/open-issues.md`.
+- **STATUS AMBER:** Critical or High findings still open after the 3rd cycle → halt, present current artifacts with explicit unresolved findings cited by label, append to `reviews/open-issues.md`.
+- **STATUS RED (empirical only):** A certified counter-example to a paper claim → halt writing on that claim, revise or downgrade the mathematical statement, log resolution in `reviews/open-issues.md`. RED overrides GREEN.
+
+See `.cursor/skills/authorship-orchestration/SKILL.md` and `.cursor/skills/empirical-validation/SKILL.md` for the per-skill mechanics.

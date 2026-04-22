@@ -1,0 +1,25 @@
+# Reviewer X — Formalism & Logic Audit — Cycle 1
+**Scope:** §4 Gauge-Compatibility and Descent to the Zero-Sum Quotient
+**Reviewer:** Reviewer X (formalism & logic)
+**Date:** 2026-04-20
+
+## Critical
+- None.
+
+## High
+- **[F-H-1] Inner-product descent is not proved in the two-sided form required by the quotient claim** — Theorem 4.1(i) states only first-slot invariance, $\langle a + k\mathbf{1}, b\rangle = \langle a,b\rangle$ (line 279), and the proof sketch at line 285 computes only that one-sided identity. But the descent statement at line 283 requires well-definedness on equivalence classes in *both* slots: $\langle a + k\mathbf{1}, b + m\mathbf{1}\rangle = \langle a,b\rangle$. This is true, but only after using symmetry of the Gram matrix together with $G\mathbf{1}=0$ from §2.4. As written, §4 does not explicitly supply the second-slot argument, so the theorem does not fully justify its own quotient-level conclusion. Proposed resolution: strengthen clause (i) to invariance in both arguments, and add the one-line justification $\mathbf{1}^\top G = (G\mathbf{1})^\top = 0$ since $G^\top = G$.
+- **[F-H-2] Descent of the cross product and rotation is under-justified in the axis variable** — Line 283 says the "binary cross product" and "rotation" descend to $\mathbb{R}^N/\langle\mathbf{1}\rangle$, but clauses (ii)–(iii) and the proof sketch (lines 280–285) only show that, for a fixed representative $u$, the maps $P \mapsto K(u)P$ and $P \mapsto R(u,\theta)P$ are compatible with gauge shifts in the input/output vector. To obtain a quotient-level binary operation depending on the axis class $[u]$, one must also show representative independence in the axis: $K(u + k\mathbf{1}) = K(u)$, hence $R(u + k\mathbf{1},\theta) = R(u,\theta)$. The ingredients are present in §3.2 Remark 3.2 (linearity in $u$ and $K(\mathbf{1}) = 0$), but §4 never performs that deduction, so line 283 overstates what has been demonstrated. Proposed resolution: add the explicit calculation $K(u + k\mathbf{1}) = K(u) + kK(\mathbf{1}) = K(u)$ then define the descended operations on classes, or else explicitly restrict the theorem to gauge-fixed axes $u \in H$.
+
+## Medium
+- **[F-M-1] Power-series proof of $R(H) \subseteq H$ elides the needed limit argument** — The proof sketch says $R(u,\theta)$ "inherits hyperplane closure from (ii) term-by-term in its power series" (line 285). That shows each partial sum preserves $H$, but to conclude the infinite sum does too, one should say that $H$ is a closed finite-dimensional subspace of $\mathbb{R}^4$, so limits of sequences in $H$ remain in $H$. Proposed resolution: add one sentence making the partial-sum plus closed-subspace argument explicit.
+- **[F-M-2] §4 foregrounds ambient Euclidean orthogonality rather than the intrinsic simplicial isometry** — The proof sketch points forward to $R^\top R = I$ and $\det R = +1$ (line 285). Those are true ambient statements, but the quotient-geometric statement relevant to line 283 is preservation of the simplicial inner product: $R^\top G R = G$, equivalently $\langle RP, RQ\rangle = \langle P,Q\rangle$. The manuscript already contains the key commutation fact $GK(u) = K(u)G$ in Remark 3.2(1), and Proposition 6.1 later records metric preservation. This is not a falsity, but it is a formal mis-emphasis in the very section where "descent" and "intrinsic" are being claimed. Proposed resolution: in §4, state simplicial orthogonality as the primary intrinsic property, and mention $R^\top R = I$ only as the ambient lift.
+- **[F-M-3] "Bilinear in its axis argument" is mathematically incorrect wording** — Clause (ii) says "$K$ is bilinear in its axis argument" (line 280). As a map $u \mapsto K(u)$, this is linear, not bilinear. The bilinear object is $(u,P) \mapsto K(u)P$, which §3.2 already states correctly. Proposed resolution: replace "bilinear in its axis argument" with "linear in the axis argument" or "bilinear in $(u,P)$."
+
+## Low
+- **[F-L-1] Quotient identification is used without recalling the chosen canonical section** — Line 283 writes $\mathbb{R}^N/\langle\mathbf{1}\rangle \cong \mathbb{R}^{N-1}$ but does not remind the reader that the paper canonically realizes the quotient via the zero-sum hyperplane $H$ from §2.3. Proposed resolution: append "identified with $H$ via the zero-sum representative of §2.3."
+- **[F-L-2] "All three operators" is slightly imprecise terminology** — Line 283 groups the inner product with $K$ and $R$ as "operators." Formally, the inner product is a bilinear form, not an endomorphism. Proposed resolution: replace "operators" by "operations" or distinguish "bilinear form, cross-product operator, and rotation."
+
+## Summary
+§4's scope disclaimer is consistent with the narrowed claims in §1, and Remark 4.2's reference to §1.2 item 3 is still accurate. The blocking issues are concentrated in the descent logic: the inner product needs explicit two-sided gauge invariance, and the quotient-level well-definedness of the axis-dependent cross product and rotation needs to be stated, not merely left implicit in earlier remarks.
+
+STATUS: AMBER
