@@ -119,7 +119,7 @@ The paper's answer is **yes**. Specifically:
 - Applied to a point, the rotation costs **9 multiplications** — exactly matching the standard quaternion-to-matrix pathway that computer graphics has relied on since the 1980s, but with a different, permutation-symmetric flavour.
 - As a bonus, the paper pins down *why* this particularly clean behaviour only happens at 4 rays (3D). It's the simplicial coordinate reflection of a well-known exceptional fact about 3D rotations.
 
-Is this going to change computer graphics tomorrow? No. Is it a small, well-defined gap in the literature, now closed, with a clean proof and empirical verification? Yes. That's exactly the scale at which an amateur should contribute, and as an amateur, I am licensed to publish it. Professional mathematicians often get steered away from topics like this for career reasons. Hobbyists don't have that problem.
+Is this going to change computer graphics tomorrow? No. Is it a small, well-defined gap in the literature, now closed, with a clean proof and empirical verification? Yes. That's the expected scale at which an amateur can contribute, and as an amateur, I am licensed to publish it. Professional mathematicians often get steered away from topics like this for career reasons. Hobbyists don't have that problem.
 
 ---
 
@@ -143,7 +143,7 @@ In 2015, I took the admission test for Universidad de Costa Rica because I wante
 
 I cannot imagine doing that today. The skills that got me through self-study — reading books, Googling well, synthesizing — transfer almost directly to working with AI agents, and the ceiling is dramatically higher. Agents are not chatbots anymore; they are tireless study partners, specialized tutors, ruthless proof-checkers, and co-authors, depending on how you frame them.
 
-If that is true for me — a hobbyist working on amateur geometry on weekends — it is *emphatically* true for the student who cannot afford a UCR seat in the first place. Access to polymath-grade thought partners is now within reach of anyone with a laptop and discipline.
+If that is true for me — a hobbyist working on amateur geometry — it is *emphatically* true for the student who cannot afford a university seat in the first place. Access to polymath-grade thought partners is now within reach of anyone with a laptop and discipline, and a few dollars for frontier models.
 
 That's why I'm in the optimistic camp about this shift, but *conditionally* so. The industrial-revolution analogy gets thrown around a lot, usually with the phrase "on steroids." I think it's apt. It means, as Habermas would remind us, that the **Public Sphere** has a lot of deliberative work to do: about labour and compensation, about authorship and accountability, about access and equity, about the epistemic hygiene of a civilization whose reasoning has been partially outsourced. Many clauses of our social contract are due for a serious revisit.
 

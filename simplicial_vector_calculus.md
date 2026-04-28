@@ -1,4 +1,4 @@
-# Intrinsic Vector Calculus on Simplicial (Quadray) Coordinates: Cross Product, Rotation, and the Zero-Sum Hyperplane
+# Intrinsic Vector Algebra on Simplicial (Quadray) Coordinates: Cross Product, Rotation, and the Zero-Sum Hyperplane
 
 **Leonardo Murillo Montero**
 
@@ -6,19 +6,23 @@
 
 *April 21, 2026*
 
+**Version note.** This draft is version 2. Version 1 is archived at DOI [10.5281/zenodo.19689050](https://doi.org/10.5281/zenodo.19689050). The Zenodo concept DOI [10.5281/zenodo.19689049](https://doi.org/10.5281/zenodo.19689049) represents all versions and resolves to the latest version.
+
 ---
 
 ## Abstract
 
 Simplicial (Quadray) coordinate systems use $N$ frame vectors pointing from the origin to the vertices of a regular $(N-1)$-simplex, providing an overcomplete, permutation-symmetric coordinate description of $(N-1)$-dimensional Euclidean space whose $N$ frame vectors form an *equiangular tight frame* (ETF) for $\mathbb{R}^{N-1}$ (Proposition 2.0). Such coordinates carry a one-dimensional gauge redundancy along the diagonal direction $\mathbf{1} = (1, 1, \ldots, 1)$, and the physically meaningful geometry lives on the zero-sum hyperplane $\{v : \sum v_i = 0\}$, which is isometric to $\mathbb{R}^{N-1}$ under the metric inherited from the ambient Gram matrix.
 
-We develop an intrinsic algebraic vector calculus on this hyperplane, comprising three operators — an inner product, a binary cross product, and a rotation; differential operators ($\nabla$, $\mathrm{div}$, $\mathrm{curl}$) are not treated here. These three operators are jointly compatible with the gauge action in a precise sense: the inner product is gauge-invariant as a scalar, while the binary cross product and rotation preserve the zero-sum hyperplane and respectively annihilate and fix the gauge direction $\mathbf{1}$. Once the simplicial Gram data is fixed, their formulas require no ongoing reference to a Cartesian frame:
+We give an explicit simplicial-frame presentation of the standard oriented three-dimensional Euclidean vector algebra on this hyperplane. The datum required is the simplicial Gram matrix together with an orientation class of the tetrahedral labeling; a metric alone does not determine a cross product. Differential operators ($\nabla$, $\mathrm{div}$, $\mathrm{curl}$) are not treated here. The three algebraic operators considered here are jointly compatible with the gauge action in a precise sense: the inner product is gauge-invariant as a scalar, while the binary cross product and rotation preserve the zero-sum hyperplane and respectively annihilate and fix the gauge direction $\mathbf{1}$.
 
-1. The **inner product** induced by the simplicial Gram matrix $G = \tfrac{N}{N-1} I - \tfrac{1}{N-1} J$ of §2.4, whose associated quadratic form collapses on zero-sum vectors to $\langle c, c\rangle = \tfrac{N}{N-1}\sum_i c_i^2$.
-2. A **skew-symmetric bilinear operator** $K(u)$ that, for $N = 4$, functions as an intrinsic cross product — gauge-annihilating, hyperplane-closing, and satisfying the Lie-algebraic identity $K^3 = -K$ when $u$ is a zero-sum unit axis.
-3. The **exponential map** of $K(u)$ into $\mathrm{SO}(3)$ for $N = 4$, yielding the closed-form Rodrigues formula $R = I + \sin\theta\, K + (1 - \cos\theta)\, K^2$.
+For $N = 4$, the main object is an explicit cyclic-difference matrix $K(u)$ representing the operator $v \mapsto *(u \wedge v)$ on the oriented inner-product space $H$. Under the tetrahedral synthesis isometry $S|_H : H \to \mathbb{R}^3$, this matrix is exactly the standard cross-product matrix:
+$$S\,K(u)\,S_H^{-1} = [Su]_\times,$$
+with $S_H^{-1} = \tfrac{3}{4}S^\top$. Consequently $u \mapsto K(u)|_H$ is the usual Lie-algebra isomorphism from $(H,\times_s)$ to $\mathfrak{so}(H,\langle\cdot,\cdot\rangle_s) \cong \mathfrak{so}(3)$, written in overcomplete simplicial coordinates.
 
-For $N = 4$ we prove $K^3 = -K$ and derive the scaling constant $1/\sqrt{3}$ from first principles; the resulting rotation matrix fixes the gauge direction ($R\mathbf{1} = \mathbf{1}$), preserves zero-sum, and supplies a 9-multiplication kernel for applying rotations to zero-sum inputs. We identify $N = 4$ as the unique case *within the simplicial wedge–Hodge framework developed here* in which the construction yields a binary cross product and closed-form exponential (higher $N$ proceeds via Hodge duals of wedge products of arity $N - 3$, sketched in §8): the simplicial-coordinate reflection of the exceptional Lie-algebra isomorphism $\mathfrak{so}(3) \cong (\mathbb{R}^3, \times)$.
+For a zero-sum unit axis, $K(u)^3=-K(u)$; more generally, for $u \in H$, $K(u)^3=-\|u\|_s^2K(u)$. The unit-axis identity gives the Rodrigues form
+$$R(u,\theta)=I+\sin\theta\,K(u)+(1-\cos\theta)K(u)^2.$$
+The resulting $4\times4$ lift fixes the gauge direction, preserves $H$, and restricts to the ordinary rotation in $\mathrm{SO}(3)$. After gauge elimination on both input and output, applying the rotation to a zero-sum vector has a 9-multiplication kernel, matching the per-apply cost of a standard $3\times3$ matrix-vector product; this is a structural parity result, not a floating-point performance claim. Finally, $N=4$ is singled out within the simplicial wedge-Hodge construction because only in dimension three does a single vector axis parameterize all of $\mathfrak{so}(3)$.
 
 **Keywords:** simplicial coordinates, Quadray coordinates, barycentric coordinates, overcomplete coordinates, equiangular tight frame, ETF, SIC-POVM, erasure-robust frame, gauge direction, zero-sum hyperplane, cross product, Hodge dual, wedge product, Rodrigues formula, Lie algebra, rotation.
 
@@ -30,13 +34,13 @@ For $N = 4$ we prove $K^3 = -K$ and derive the scaling constant $1/\sqrt{3}$ fro
 
 ### 1.1 Motivation
 
-The Cartesian coordinate system is the default arena of classical vector calculus, but it is not the unique one. A $(N-1)$-dimensional Euclidean space can equally well be described using $N$ frame vectors directed toward the vertices of a regular $(N-1)$-simplex: four frame rays in tetrahedral arrangement for 3-space ($N = 4$), three frame rays in triangular arrangement for the plane ($N = 3$). Such coordinates are overcomplete — one more coordinate than dimension — and carry a one-dimensional redundancy. The trade is explicit: in exchange for the redundancy, one gains full permutation symmetry of the frame and a natural framework for problems whose geometry is intrinsically simplicial.
+The Cartesian coordinate system is the default arena of classical vector algebra, but it is not the unique one. A $(N-1)$-dimensional Euclidean space can equally well be described using $N$ frame vectors directed toward the vertices of a regular $(N-1)$-simplex: four frame rays in tetrahedral arrangement for 3-space ($N = 4$), three frame rays in triangular arrangement for the plane ($N = 3$). Such coordinates are overcomplete — one more coordinate than dimension — and carry a one-dimensional redundancy. The trade is explicit: in exchange for the redundancy, one gains full permutation symmetry of the frame and a natural framework for problems whose geometry is intrinsically simplicial.
 
 This family of coordinate systems has appeared under several names. *Quadray coordinates* — introduced by Jarmusch in 1981 and subsequently elaborated by Urner [Urner], Ace [Ace], and others [QuadrayWiki] — are the $N = 4$ case, tied historically to Fuller's synergetics [Fuller]. Barycentric coordinates on the $(N-1)$-simplex, used ubiquitously in finite element analysis [Ciarlet, Brenner-Scott] and computational geometry, are the same structure with a different normalization. The probability simplex in information geometry [Amari, Chentsov] is the affine translate of the relevant hyperplane by one unit along the redundancy direction. All are facets of the same underlying object.
 
-The natural algebraic question is whether this coordinate description supports an intrinsic vector calculus: inner product, cross product, rotation, and their closure properties, defined without reference to an ambient Cartesian frame. Partial answers exist. The inner product is standard from Gram matrix considerations. A general rotation operator about an arbitrary simplicial axis has been attempted in the Spread-Quadray Rotors framework [Thomson, §19] but left as an open question, with the existing implementation falling back on quaternion composition for axes that are not frame vectors.
+The natural algebraic question is whether this coordinate description supports an intrinsic vector algebra: inner product, cross product, rotation, and their closure properties, defined without reference to an ambient Cartesian frame. Partial answers exist. The inner product is standard from Gram matrix considerations. A general rotation operator about an arbitrary simplicial axis has been attempted in the Spread-Quadray Rotors framework [Thomson, §19] but left as an open question, with the existing implementation falling back on quaternion composition for axes that are not frame vectors.
 
-This paper supplies the missing ingredient for $N = 4$. We construct a skew-symmetric bilinear operator $K(u)$ acting on zero-sum vectors and parameterized by an axis $u$ of unit simplicial norm, prove the Lie-algebraic identity $K^3 = -K$, and exponentiate it in closed form to obtain a rotation about $u$. Around this construction we establish a single gauge-compatibility theorem that packages the distinct invariance properties of the three operators: the (scalar) inner product is gauge-invariant, while the (vector-valued) cross-product operator and rotation preserve the zero-sum hyperplane and fix or annihilate the gauge direction. Together these results yield, for $N = 4$, an intrinsic algebra of rotations and their Lie-algebraic generators on the simplicial zero-sum hyperplane: once the simplicial Gram data is fixed, the operators require no ongoing reference to any Cartesian frame. Differential operators ($\nabla$, $\mathrm{div}$, $\mathrm{curl}$) are not developed here and remain outside the present scope.
+This paper supplies the missing ingredient for $N = 4$. We construct a skew-symmetric bilinear operator $K(u)$ acting on zero-sum vectors and parameterized by an axis $u$ of unit simplicial norm, prove the Lie-algebraic identity $K^3 = -K$, and exponentiate it in closed form to obtain a rotation about $u$. Around this construction we establish a single gauge-compatibility theorem that packages the distinct invariance properties of the three operators: the (scalar) inner product is gauge-invariant, while the (vector-valued) cross-product operator and rotation preserve the zero-sum hyperplane and fix or annihilate the gauge direction. Together these results yield, for $N = 4$, a presentation determined by the simplicial frame data (Gram matrix plus orientation class). Differential operators ($\nabla$, $\mathrm{div}$, $\mathrm{curl}$) are not developed here and remain outside the present scope.
 
 ### 1.2 Contributions
 
@@ -44,27 +48,27 @@ This paper supplies the missing ingredient for $N = 4$. We construct a skew-symm
 
 2. **Intrinsic cross product (Section 3).** We define a skew-symmetric bilinear operator $K(u)$, acting on zero-sum vectors and parameterized by an axis $u$ that is zero-sum and of unit simplicial norm (i.e.\ $u^\top G u = 1$, where $G = \tfrac{N}{N-1}I - \tfrac{1}{N-1}J$ is the simplicial Gram matrix of Section 2.4). We prove $K$ annihilates the gauge direction, preserves the zero-sum hyperplane, and satisfies the Lie-algebraic identity $K^3 = -K$ for $N = 4$. The scaling constant $1/\sqrt{3}$ is derived from first principles via a spectral/trace computation on the underlying rank-2 skew generator.
 
-3. **Joint gauge-compatibility theorem (Section 4).** We consolidate the invariance properties of the three operators — inner product, cross product, and rotation — into one structural statement, distinguishing the scalar and vector cases: the inner product is gauge-invariant as a scalar in both arguments ($\langle a + k\mathbf{1}, b + m\mathbf{1}\rangle = \langle a, b\rangle$), while $K(u)$ and $R(u,\theta)$ preserve the zero-sum hyperplane and annihilate (respectively, fix) the gauge direction. Consequently all three operators descend to well-defined operations on the quotient $\mathbb{R}^N / \langle \mathbf{1}\rangle \cong \mathbb{R}^{N-1}$. This makes precise the sense in which the construction is *intrinsic*: once the simplicial Gram data of Section 2 is fixed, the operators require no ongoing reference to a Cartesian embedding.
+3. **Joint gauge-compatibility theorem (Section 4).** We consolidate the invariance properties of the three operators — inner product, cross product, and rotation — into one structural statement, distinguishing the scalar and vector cases: the inner product is gauge-invariant as a scalar in both arguments ($\langle a + k\mathbf{1}, b + m\mathbf{1}\rangle = \langle a, b\rangle$), while $K(u)$ and $R(u,\theta)$ preserve the zero-sum hyperplane and annihilate (respectively, fix) the gauge direction. Consequently all three operators descend to well-defined operations on the quotient $\mathbb{R}^N / \langle \mathbf{1}\rangle \cong \mathbb{R}^{N-1}$. This makes precise the sense in which the construction is *intrinsic*: once the Gram matrix $G$ and the orientation class of Section 2 are fixed, the operators require no ongoing reference to a Cartesian embedding.
 
 4. **Closed-form rotation by exponentiation (Sections 5–6).** From $K^3 = -K$ we derive the Rodrigues-type closed form
 $$R(u, \theta) = I + \sin\theta\, K(u) + (1 - \cos\theta)\, K(u)^2,$$
 viewed as a $4\times 4$ orthogonal matrix on the overcomplete coordinate space $\mathbb{R}^4$. As a gauge-compatible extension, $R$ fixes the gauge vector $\mathbf{1} = (1,1,1,1)^\top$ — equivalently, its rows and columns each sum to unity — and preserves the zero-sum hyperplane. *Restricted* to that hyperplane, $R$ is the genuine rotation about the axis $u$ by angle $\theta$ in $\mathrm{SO}(3)$; the full $4\times 4$ matrix is its canonical lift to the stabilizer subgroup $\mathrm{SO}(4) \cap \mathrm{Stab}(\mathbf{1})$. We establish $R^\top R = I$ and $\det R = +1$.
 
-5. **9-multiplication kernel (Section 7).** For $N = 4$, we show that applying $R$ to a zero-sum input admits two independent reductions — one using zero-sum output, one using zero-sum input — that together reduce the per-point apply cost from 16 multiplications to 9. This matches the performance of the quaternion-to-matrix pathway without invoking the $S^3$ double cover.
+5. **9-multiplication kernel (Section 7).** For $N = 4$, we show that applying $R$ to a zero-sum input admits two independent reductions — one using zero-sum output, one using zero-sum input — that together reduce the per-point apply cost from 16 multiplications to 9 after gauge elimination. This matches the per-apply multiplication count of a standard $3\times3$ matrix-vector product; it is a structural parity result, not a performance benchmark.
 
-6. **Uniqueness of $N = 4$ within the simplicial framework (Section 8).** *Within the simplicial wedge–Hodge framework developed here*, we identify $N = 4$ as the unique case that yields a *binary* cross product and admits closed-form exponentiation via $K^3 = -K$; the claim is not a uniqueness theorem across all conceivable simplicial binary operations. This is the simplicial-coordinate reflection of two classical facts: the exceptional Lie-algebra isomorphism $\mathfrak{so}(3) \cong (\mathbb{R}^3, \times)$, and Eckmann's theorem, which classifies the real inner-product space dimensions $n$ admitting a bilinear cross product satisfying $\|a \times b\|^2 = \|a\|^2 \|b\|^2 - \langle a, b\rangle^2$ as exactly $n \in \{0, 1, 3, 7\}$ [Eckmann, Massey]; our $N = 4$ case is the simplicial realization of the $n = 3$ branch. The $n = 7$ realization — the octonion cross product on $\mathbb{R}^7$ — is binary but arises from the non-associative octonion algebra rather than from the simplicial wedge–Hodge construction of §3.4, and therefore lies outside the framework developed here. For $N \geq 5$, the analogous construction proceeds via Hodge duals of wedge products of arity $N - 3$, yielding operators of higher arity rather than binary cross products; we sketch this direction and leave the detailed construction to future work.
+6. **Uniqueness of $N = 4$ within the simplicial framework (Section 8).** *Within the simplicial wedge-Hodge framework developed here*, we identify $N = 4$ as the unique case that yields a single-axis binary cross product whose axes parameterize all of $\mathfrak{so}(3)$. This is the simplicial-coordinate reflection of two classical facts: the exceptional Lie-algebra isomorphism $\mathfrak{so}(3) \cong (\mathbb{R}^3, \times)$, and Eckmann's theorem, which classifies the real inner-product space dimensions $n$ admitting a bilinear cross product satisfying $\|a \times b\|^2 = \|a\|^2 \|b\|^2 - \langle a, b\rangle^2$ as exactly $n \in \{0, 1, 3, 7\}$ [Eckmann, Massey]. The $n = 7$ octonionic binary cross product arises from a different algebraic structure and lies outside the framework developed here. For $N \geq 5$, the analogous simplicial Hodge construction uses $N-3$ fixed vectors to specify a simple rotation blade; we sketch this direction and leave the detailed construction to future work.
 
 ### 1.3 Terminological notes and low-$N$ cases
 
 **Relation to exterior calculus.** The phrase *simplicial vector calculus* also appears in the discrete exterior calculus (DEC) tradition of Desbrun, Hirani, Leok, and Marsden [Desbrun-Hirani-Leok-Marsden] and the finite element exterior calculus (FEEC) of Arnold, Falk, and Winther [Arnold-Falk-Winther], where $\wedge$, $\star$, and $d$ are defined directly on simplicial complexes for the discretization of partial differential equations (PDEs). The present work is distinct in scope: we develop only the algebraic layer (inner product, binary cross product, rotation) on the $N$-axis frame of a single simplex and its associated zero-sum hyperplane, not on a complex, which is why differential operators are deferred here (as in §1.1; see also the scope remark in §4). The structural relationship between the present construction and DEC — in particular, whether $\tilde{K}(u)$ admits a description as a discrete exterior derivative applied to $u$ viewed as a 0-cochain on the tetrahedron's 1-skeleton (possibly combined with an edge-to-vertex contraction) — is left to future work. FEEC on unstructured tetrahedral meshes [Arnold-Falk-Winther] provides a natural application context; the intrinsic operators developed here could in principle supply pointwise algebraic operations on tetrahedral elements without reference to a global Cartesian frame.
 
-Throughout this paper we use *simplicial coordinates* for the general $N$-frame family, *Quadray coordinates* for the specific $N = 4$ case, and *zero-sum hyperplane* for the canonical gauge. The descriptor *intrinsic* is used in the precise sense recorded in §1.2 item 3: once the simplicial Gram data is fixed, the operators require no ongoing reference to an ambient Cartesian frame. Section 4 and the Conclusion additionally describe the resulting calculus as an *autonomous presentation* of the algebraic layer of 3D Euclidean vector calculus: *autonomous* in the sense that, once the simplicial Gram data of §2 is fixed, the construction proceeds without recourse to a Cartesian reference frame; *presentation* rather than "theory" because it is isometric to the classical Cartesian theory via the hyperplane isometry $V$ of §2.5. We use "frame" in two senses that should not be conflated: the *simplicial frame* $\{\mathbf{v}_i\}$ of §2.1 (a unit-norm tight frame in the sense of Christensen [Christensen]) and the *Cartesian reference frame* of classical mechanics; context and modifiers disambiguate.
+Throughout this paper we use *simplicial coordinates* for the general $N$-frame family, *Quadray coordinates* for the specific $N = 4$ case, and *zero-sum hyperplane* for the canonical gauge. The descriptor *intrinsic* means intrinsic to the simplicial frame data (Gram matrix plus orientation class): once these data are fixed, the operators require no ongoing reference to an ambient Cartesian frame. The construction remains a presentation, not a new vector algebra: it is isometric to the classical Cartesian theory via the hyperplane isometry of Section 2.5 and the conjugacy theorem of Section 3. We use "frame" in two senses that should not be conflated: the *simplicial frame* $\{\mathbf{v}_i\}$ of §2.1 (a unit-norm tight frame in the sense of Christensen [Christensen]) and the *Cartesian reference frame* of classical mechanics; context and modifiers disambiguate.
 
 **Rodrigues formula.** We use the unmarked phrase *Rodrigues formula* for the closed-form simplicial exponential
 $$R(u, \theta) = I + \sin\theta\, K(u) + (1 - \cos\theta)\, K(u)^2$$
 derived in Section 5, written in simplicial coordinates. Under the hyperplane isometry it corresponds to the classical $3 \times 3$ Rodrigues rotation formula in Cartesian coordinates, but we distinguish the two by coordinate system: the present formula is an identity among $4 \times 4$ gauge-compatible matrices.
 
-**Low-$N$ cases.** The simplicial coordinate system is perfectly well-defined for every $N \geq 1$; what varies with $N$ is the dimension of the zero-sum hyperplane and hence the algebraic structures it can carry. Since the paper foregrounds the exceptional status of $N = 4$, we record what happens at smaller $N$. For $N = 1$ the zero-sum hyperplane is $\{0\}$; for $N = 2$ it is one-dimensional, so no nontrivial antisymmetric bilinear form exists on it; for $N = 3$ it is two-dimensional, where rotations exist (parameterized by a single angle) but no *binary* cross product does — a bilinear antisymmetric map from a two-dimensional space to itself vanishes identically, by dimension count on $\Lambda^2 \mathbb{R}^2$. The first value of $N$ at which a binary cross product appears — and, as Section 8 shows, the only value at which the present simplicial construction delivers one — is $N = 4$.
+**Low-$N$ cases.** The simplicial coordinate system is perfectly well-defined for every $N \geq 1$; what varies with $N$ is the dimension of the zero-sum hyperplane and hence the algebraic structures it can carry. Since the paper foregrounds the exceptional status of $N = 4$, we record what happens at smaller $N$. For $N = 1$ the zero-sum hyperplane is $\{0\}$; for $N = 2$ it is one-dimensional, so no nontrivial antisymmetric bilinear form exists on it. For $N = 3$ it is two-dimensional, where rotations exist (parameterized by a single angle) but no binary cross product satisfying the standard three-dimensional properties does. Nonzero bilinear antisymmetric maps $V \times V \to V$ do exist on a two-dimensional $V$: they form a two-dimensional space, since $\Lambda^2 V$ is one-dimensional and the codomain is two-dimensional. What fails is the simultaneous package of output perpendicular to both inputs, magnitude equal to parallelogram area, and codomain equal to $V$. The first value of $N$ at which the usual binary cross product appears is $N = 4$.
 
 ---
 
@@ -110,11 +114,7 @@ We call this direction the *gauge direction* because it represents a one-dimensi
 
 #### 2.2.1 Structural parallels across disciplines
 
-The configuration just defined — an overcomplete coordinate description with a one-dimensional redundancy and a distinguished codimension-one subspace on which the physically meaningful dynamics lives — recurs in several apparently distinct settings, and the parallels are worth recording before we specialize. Consistent with the position taken in §1.2 item 1, we present these connections as structural analogies offered for interpretive motivation, not as a formal equivalence of categories: no functorial identification is constructed here between simplicial gauge classes in $\mathbb{R}^N / \langle \mathbf{1} \rangle$, stoichiometric compatibility classes in chemical reaction network theory (CRNT), and the affine simplex in information geometry.
-
-In CRNT [Müller-Regensburger], conservation laws confine dynamical trajectories to *stoichiometric compatibility classes* — affine subspaces on which the totals of conserved species are fixed. Under the simplicial coordinate description of species concentrations, these compatibility classes are structurally analogous to the gauge equivalence classes of §2.2, with the reaction dynamics taking place *on* the classes. The analogy with CRNT is offered as interpretation, not as a formal identification of the two theories.
-
-In information geometry [Amari, Chentsov], the probability simplex $\{\mathbf{p} : p_i \geq 0,\ \sum p_i = 1\}$ is the affine translate of the zero-sum hyperplane $H$ of §2.3 by $\tfrac{1}{N}\mathbf{1}$; the constraint $\sum p_i = 1$ plays the role of a gauge-fixing condition. Again, the parallel is structural rather than formal. We return to both threads in §8.
+The configuration just defined — an overcomplete coordinate description with a one-dimensional redundancy and a distinguished codimension-one subspace on which the physically meaningful dynamics lives — recurs in several apparently distinct settings. We record these as structural analogies for interpretive motivation, not as formal categorical equivalences: no functor is constructed here between simplicial gauge classes in $\mathbb{R}^N / \langle \mathbf{1} \rangle$, stoichiometric compatibility classes in chemical reaction network theory (CRNT), and the affine simplex in information geometry. In CRNT [Müller-Regensburger], conservation laws confine dynamical trajectories to affine compatibility classes on which the totals of conserved species are fixed; these classes are structurally analogous to the gauge equivalence classes of §2.2. In information geometry [Amari, Chentsov], the probability simplex $\{\mathbf{p} : p_i \geq 0,\ \sum p_i = 1\}$ is the affine translate of the zero-sum hyperplane $H$ of §2.3 by $\tfrac{1}{N}\mathbf{1}$, with the normalization constraint playing the role of a gauge-fixing condition. We return to both threads briefly in §8.3.
 
 ### 2.3 The zero-sum hyperplane (canonical gauge)
 
@@ -160,34 +160,62 @@ $$\langle c, c \rangle = \frac{N}{N-1} \sum_{i=1}^N c_i^2.$$
 
 The proof, a short algebraic computation using the zero-sum identity $\sum_{i < j} c_i c_j = -\tfrac{1}{2}\sum_i c_i^2$, appears in Appendix A. In the $N = 4$ case (Quadray), the scaling factor is $\tfrac{4}{3}$; in $N = 3$, it is $\tfrac{3}{2}$.
 
-### 2.5 Conventions for $N = 4$
+### 2.5 Conventions for $N = 4$ and orientation
 
-For $N = 4$ we adopt a standard Quadray frame convention, with vertices at
+For $N = 4$ we label the simplicial frame by four unit vectors $\mathbf{v}_1,\mathbf{v}_2,\mathbf{v}_3,\mathbf{v}_4$ in $\mathbb{R}^3$ pointing from the origin to the vertices of a regular tetrahedron. A concrete realization used for computations is
 
 $$\mathbf{v}_1 = \tfrac{1}{\sqrt{3}}(-1, -1, +1), \quad \mathbf{v}_2 = \tfrac{1}{\sqrt{3}}(+1, +1, +1),$$
-$$\mathbf{v}_3 = \tfrac{1}{\sqrt{3}}(+1, -1, -1), \quad \mathbf{v}_4 = \tfrac{1}{\sqrt{3}}(-1, +1, -1),$$
+$$\mathbf{v}_3 = \tfrac{1}{\sqrt{3}}(+1, -1, -1), \quad \mathbf{v}_4 = \tfrac{1}{\sqrt{3}}(-1, +1, -1).$$
 
-retaining the generic indexed notation $(c_1, c_2, c_3, c_4)$ of §2.1 for the simplicial coordinates. The ambient $\mathbb{R}^3$ is taken with its standard right-handed orientation, so that the ordered triple $(\mathbf{e}_1, \mathbf{e}_2, \mathbf{e}_3)$ is positively oriented; the chirality conventions used in §3 (for the cross product) and §5 (for rotation) are defined with respect to this fixed orientation, and the labelling $(\mathbf{v}_1, \mathbf{v}_2, \mathbf{v}_3, \mathbf{v}_4)$ above is chosen so that the simplicial rotation agrees with standard right-handed Cartesian rotation under the *hyperplane isometry* $V\colon H \to \mathbb{R}^3$ defined by $V(c) := \sum_{i=1}^4 c_i \mathbf{v}_i$ (so that $V$ sends the simplicial coordinate tuple $c \in H$ to the corresponding Cartesian point in the ambient $\mathbb{R}^3$); the structural characterization of $V$ as an orientation- and metric-preserving realization of $(H, \langle\cdot,\cdot\rangle)$ as Euclidean $\mathbb{R}^3$ via the Hodge construction is taken up in §3.4. Concretely, $V K(u) V^{-1} = [Vu]_\times$ for every $u \in H$, where $[\cdot]_\times$ is the standard Cartesian cross-product matrix. Pairwise dot products satisfy $\mathbf{v}_i \cdot \mathbf{v}_j = -\tfrac{1}{3}$ for $i \neq j$, corresponding to the tetrahedral central angle $\arccos(-\tfrac{1}{3}) \approx 109.47^\circ$. The zero-sum hyperplane in this case is three-dimensional, isometric to ordinary $\mathbb{R}^3$ up to the scaling factor $\tfrac{4}{3}$.
+Pairwise dot products satisfy $\mathbf{v}_i \cdot \mathbf{v}_j = -\tfrac{1}{3}$ for $i \neq j$, corresponding to the tetrahedral central angle $\arccos(-\tfrac{1}{3}) \approx 109.47^\circ$. The zero-sum hyperplane $H$ in this case is three-dimensional and isometric to ordinary $\mathbb{R}^3$ through the synthesis map
+
+$$S_H : H \to \mathbb{R}^3,\qquad S_H(c) := \sum_{i=1}^4 c_i\mathbf{v}_i,$$
+
+where the simplicial metric on $H$ satisfies $\langle c,c\rangle_s=\tfrac{4}{3}\sum_i c_i^2=\|S_Hc\|^2$. Since $S S^\top=\tfrac{4}{3}I_3$ for the $3\times4$ synthesis matrix $S=(\mathbf{v}_1\,\mathbf{v}_2\,\mathbf{v}_3\,\mathbf{v}_4)$, the inverse of $S_H$ is
+
+$$S_H^{-1}=\tfrac{3}{4}S^\top.$$
+
+Orientation is specified combinatorially, by a choice of labeling class in $S_4/A_4$, where $A_4$ denotes the alternating group on four letters. We declare the ordered labeling $(1,2,3,4)$ to be positive; every even permutation of the labels is in the same orientation class, and every odd permutation gives the opposite class. This orientation class is the extra datum, beyond the Gram matrix, needed to define a cross product on $H$.
+
+**Proposition 2.2 (Orientation under the symmetric group).** *For the matrix $K$ defined below in Definition 3.1 and every permutation $\sigma\in S_4$, let $P_\sigma\in\mathbb{R}^{4\times4}$ be the permutation matrix defined by $(P_\sigma)_{ij}:=\delta_{\sigma(j),i}$. Then for every $u\in\mathbb{R}^4$,*
+
+$$P_\sigma^{-1}K(P_\sigma u)P_\sigma=\operatorname{sgn}(\sigma)\,K(u).$$
+
+*Consequently even relabelings preserve the orientation of the cross-product operator and odd relabelings reverse it. For the Rodrigues operator of §5,*
+
+$$P_\sigma^{-1}R(P_\sigma u,\theta)P_\sigma=R(u,\operatorname{sgn}(\sigma)\theta).$$
+
+*Proof.* The off-diagonal entries of the unscaled matrix $\tilde K(u)$ can be written in the Levi-Civita form
+
+$$\tilde K(u)_{ij}=\sum_{k,l=1}^4\varepsilon_{ijkl}u_k,$$
+
+with $\varepsilon_{1234}=+1$ and with the two nonzero terms in the sum selecting the two indices complementary to $i$ and $j$. Conjugation by $P_\sigma$ relabels all four indices. The Levi-Civita symbol changes by the factor $\operatorname{sgn}(\sigma)$ under this relabeling, while the scalar factor $1/\sqrt3$ in $K=(1/\sqrt3)\tilde K$ is invariant. This proves the identity for $K$. The identity for $R$ follows term by term from $R=I+\sin\theta\,K+(1-\cos\theta)K^2$: the linear term changes sign under odd permutations, while the quadratic term does not. $\square$
 
 ---
 
 ## 3. The Intrinsic Cross Product
 
-We now construct the central operator of this paper: a skew-symmetric bilinear form on the zero-sum hyperplane of the $N = 4$ simplicial system that serves as an intrinsic cross product. We present the construction in two stages: first an ansatz motivated by the properties the operator must satisfy, then a Lie-algebraic justification that establishes the closure identity $K^3 = -K$ and fixes the scaling constant.
+We now construct the central operator of this paper: a skew-symmetric bilinear form on the zero-sum hyperplane of the $N = 4$ simplicial system that serves as the usual oriented three-dimensional cross product, written in overcomplete simplicial coordinates. The operation itself is classical: on any oriented three-dimensional inner-product space it is the Hodge-dual operation $(u,v)\mapsto *(u\wedge v)$. The contribution here is the explicit simplicial-coordinate representative, its gauge behavior, and its normalization.
 
-The operation itself — a binary skew-symmetric product on a three-dimensional oriented inner-product space — is classical, and in the standard Cartesian setting it is equivalently realized as $\star(u \wedge \cdot)$, as $\mathrm{ad}_u$ on $\mathfrak{so}(3) \cong (\mathbb{R}^3, \times)$, or as the bivector-to-vector map in the Clifford / Geometric Algebra of $\mathbb{R}^3$ [Hestenes]. Our contribution in this section is therefore not the geometric operation but its *simplicial realization*: an explicit $4 \times 4$ entrywise matrix $K(u)$ acting on the overcomplete coordinate $\mathbb{R}^4$, whose zero-sum and gauge-annihilating structure is built into the row and column sums, and whose normalization constant $1/\sqrt{3}$ is forced by the simplicial metric $G = \tfrac{4}{3} I - \tfrac{1}{3} J$ of §2.4. Throughout this section we specialize to $N = 4$; the analogous construction for general $N$ is discussed in §8.
+Throughout this section $H=\{c\in\mathbb{R}^4:\sum_i c_i=0\}$ carries the simplicial inner product of §2.4 and the orientation class of §2.5.
 
-### 3.1 Geometric motivation
+### 3.1 Hodge construction and matrix representative
 
-Let $u \in H$ be a zero-sum unit axis, meaning $\sum u_i = 0$ and $\langle u, u \rangle = 1$ under the simplicial inner product, i.e.\ $\tfrac{4}{3}\sum u_i^2 = 1$. Let $P \in H$ be an arbitrary zero-sum point.
+Fix the positive labeling class in $S_4/A_4$. It determines a unit volume form $\omega\in\Lambda^3H$ for the simplicial inner product. The Hodge star $\star:\Lambda^kH\to\Lambda^{3-k}H$ is characterized by
 
-In ordinary 3D Cartesian geometry, the cross product $\hat{n} \times \vec{R}$ of a unit axis $\hat{n}$ with a vector $\vec{R}$ produces a vector perpendicular to both, of magnitude $|\vec{R}| \sin\theta$ where $\theta$ is the angle between them. Applying the cross product twice yields the classical identity
+$$\alpha\wedge\star\beta=\langle\alpha,\beta\rangle_s\,\omega,\qquad \alpha,\beta\in\Lambda^kH,$$
 
-$$\hat{n} \times (\hat{n} \times \vec{R}) = -\vec{R}_\perp,$$
+following the standard construction of Hodge duality on an oriented inner-product space [Flanders, Spivak]. For $u\in H$, define
 
-where $\vec{R}_\perp$ is the component of $\vec{R}$ perpendicular to $\hat{n}$. We seek an operator $K = K(u)$ acting on $H$ whose image lies in $u^\perp \cap H$ and which satisfies the double-application identity $K(u)^2 P = -P_\perp$, where $P_\perp$ denotes the simplicial-orthogonal projection of $P \in H$ onto $u^\perp \cap H$.
+$$\Phi(u):H\to H,\qquad \Phi(u)(v):=\star(u\wedge v).$$
 
-Rather than derive $K(u)$ from first principles, we write down the simplest matrix compatible with the structural requirements — linearity in $u$, skew-symmetry with respect to the simplicial inner product, annihilation of the gauge direction $\mathbf{1}$, closure on the zero-sum hyperplane $H$, and (eventually) a cubic closure of the form $K^3 \propto K$ — and then verify each property in turn. Labelling rows and columns by the indices $1, 2, 3, 4$, consider
+Under any orientation-preserving isometry $H\cong\mathbb{R}^3$, $\Phi(u)$ is the ordinary cross-product operator $v\mapsto u\times v$. Thus the geometric object is fixed by the simplicial metric and the orientation class; what remains is to write its matrix in the overcomplete coordinate tuple $(c_1,c_2,c_3,c_4)$.
+
+Let $\varepsilon_{ijkl}$ be the Levi-Civita symbol with $\varepsilon_{1234}=+1$. The unscaled coordinate representative has off-diagonal entries
+
+$$\tilde K(u)_{ij}=\sum_{k,l=1}^4\varepsilon_{ijkl}u_k,$$
+
+where, for $i\neq j$, the two nonzero terms select the two indices complementary to $i$ and $j$. Expanding this formula gives the cyclic-difference matrix
 
 $$\tilde{K}(u) = \begin{pmatrix}
 0 & u_3 - u_4 & u_4 - u_2 & u_2 - u_3 \\
@@ -196,21 +224,11 @@ u_2 - u_4 & u_4 - u_1 & 0 & u_1 - u_2 \\
 u_3 - u_2 & u_1 - u_3 & u_2 - u_1 & 0
 \end{pmatrix}.$$
 
-The entries are the six cyclic differences $u_i - u_j$, placed so that three of the five desired properties are immediate:
+The entries are linear in $u$, elementwise skew-symmetric, and have vanishing row and column sums. Hence $\tilde K(u)$ annihilates the gauge direction $\mathbf{1}$ and preserves the zero-sum hyperplane. The scale is fixed by the simplicial metric: Appendix B shows that for a zero-sum unit axis $u$, the spectrum of $\tilde K(u)$ is $\{0,0,+i\sqrt3,-i\sqrt3\}$, so the normalized operator representing $\Phi(u)$ is
 
-- $\tilde{K}(u)$ is linear in $u$ and elementwise skew-symmetric: $\tilde{K}(u)^\top = -\tilde{K}(u)$.
-- Each row sums to zero, so $\tilde{K}(u) \mathbf{1} = \mathbf{0}$: the operator annihilates the gauge direction.
-- Each column sums to zero (by the elementwise skew-symmetry), so $\sum_i (\tilde{K}(u) P)_i = \sum_j \bigl(\sum_i \tilde{K}(u)_{ij}\bigr) P_j = 0$ for every $P$, meaning $\tilde{K}(u)$ preserves the zero-sum hyperplane $H$.
+$$K(u):=\frac{1}{\sqrt3}\tilde K(u).$$
 
-Thus $\tilde{K}(u)$ is gauge-annihilating and hyperplane-closing; what remains is to verify the cubic closure and fix the *scale*. A spectral/trace computation (Appendix B) shows that, for a zero-sum unit axis $u$, the rank of $\tilde{K}(u)$ is two and its spectrum is $\{0, 0, +i\sqrt{3}, -i\sqrt{3}\}$, which yields
-
-$$\tilde{K}(u)^3 = -c^2\, \tilde{K}(u), \qquad c^2 = 3.$$
-
-To recover the clean classical identity $K^3 = -K$ — the identity satisfied by cross products with unit axes in 3D — we rescale by $1/\sqrt{c^2}$:
-
-$$K(u) := \frac{1}{\sqrt{c^2}}\, \tilde{K}(u) = \frac{1}{\sqrt{3}}\, \tilde{K}(u).$$
-
-The prefactor $1/\sqrt{3}$ is therefore not chosen aesthetically; it is forced by the simplicial metric. Geometrically, the cyclic-difference entries of $\tilde{K}$ measure differences in the raw (ambient $\mathbb{R}^4$) coordinates, whereas the squared length of a zero-sum vector on $H$ is inflated by the factor $4/3$ of §2.5 (so a vector of raw-coordinate norm $\sqrt{3}/2$ has simplicial norm $1$). The $1/\sqrt{3}$ is precisely what re-expresses $\tilde{K}$ in units compatible with the simplicial inner product, thereby aligning the algebraic identity $K^3 = -K$ with the geometric identity "double cross product equals minus the perpendicular component."
+This is the factor that converts the raw overcomplete coordinate differences into the unit convention of the simplicial inner product. With it, the unit-axis cubic identity is $K(u)^3=-K(u)$, matching the ordinary cross product with a unit axis.
 
 ### 3.2 Definition
 
@@ -234,47 +252,71 @@ As an immediate consequence, $K(\mathbf{1}) = 0$: when $u = (1,1,1,1)$, every of
 Two distinct properties of $K(u)$ are worth distinguishing, because they have different scopes:
 
 1. *Simplicial skew-symmetry holds for every $u \in \mathbb{R}^4$.* The matrix $K(u)$ has identically vanishing row and column sums (the row sums by inspection of the cyclic-difference pattern, the column sums by elementwise skew-symmetry). Writing the simplicial Gram matrix of §2.4 as $G = \tfrac{4}{3}I - \tfrac{1}{3}J$ where $J$ is the all-ones matrix, both $JK(u) = 0$ (row sums zero) and $K(u)J = 0$ (column sums zero), so $JK(u) = K(u)J$, hence $GK(u) = \tfrac{4}{3}K(u) = K(u)G$. Combined with $K(u)^\top = -K(u)$, this gives $(GK(u))^\top = -GK(u)$: the operator is simplicially skew-adjoint for every $u \in \mathbb{R}^4$, not only for zero-sum unit axes.
-2. *The cubic identity and unit-axis geometry require the restriction.* The identity $K(u)^3 = -K(u)$ (Theorem 3.3) and the double-application statement $K(u)^2 P = -P_\perp$ (Corollary 3.4) rely on the unit-axis normalization $\tfrac{4}{3}\sum u_i^2 = 1$ and on $\sum u_i = 0$.
+2. *The unit-axis geometry requires the restriction.* The identity $K(u)^3=-\|u\|_s^2K(u)$ holds on $H$ (Theorem 3.5), while the simplified identity $K(u)^3 = -K(u)$ and the double-application statement $K(u)^2 P = -P_\perp$ (Corollary 3.6) require the unit-axis normalization $\tfrac{4}{3}\sum u_i^2 = 1$ and $\sum u_i = 0$.
 
 Thus the cross-product object proper is the bilinear form $(u, P) \mapsto K(u) P$ on $H \times H \to H$; the formal linear extension to all $u \in \mathbb{R}^4$ is a notational convenience that allows axis arguments such as $u = \mathbf{1}$ to be written down before restricting.
 
+**Proposition 3.3 (Equivalence with the Cartesian cross-product matrix).** *Let $S=(\mathbf{v}_1\,\mathbf{v}_2\,\mathbf{v}_3\,\mathbf{v}_4)$ be the synthesis matrix of §2.5, restricted to $H$ as $S_H:H\to\mathbb{R}^3$. Then $S_H^{-1}=\tfrac{3}{4}S^\top$, and for every $u\in H$,*
+
+$$S\,K(u)\,S_H^{-1}=[Su]_\times,$$
+
+*where $[Su]_\times y=(Su)\times y$ is the standard Cartesian cross-product matrix.*
+
+*Proof.* The inverse formula follows from the tight-frame identity $SS^\top=\tfrac{4}{3}I_3$: for $x\in\mathbb{R}^3$, $S(\tfrac34S^\top x)=x$, and for $c\in H$, $\tfrac34S^\top Sc=\tfrac34Gc=c$. The Hodge construction in §3.1 gives $K(u)v=\star(u\wedge v)$ on $H$. Transporting this identity by the orientation-preserving isometry $S_H$ gives $S K(u)v=(Su)\times(Sv)$ for every $v\in H$, which is exactly the displayed matrix identity. $\square$
+
+**Corollary 3.4 (Lie-algebra isomorphism).** *Define $u\times_s v:=K(u)v$ on $H$. Then*
+
+$$\kappa:H\to\mathfrak{so}(H,\langle\cdot,\cdot\rangle_s),\qquad \kappa(u)=K(u)|_H,$$
+
+*is a Lie-algebra isomorphism from $(H,\times_s)$ to $\mathfrak{so}(H,\langle\cdot,\cdot\rangle_s)$. Equivalently,*
+
+$$[K(u),K(v)]=K(K(u)v),\qquad u,v\in H.$$
+
+*Proof.* Under Proposition 3.3, $\kappa$ is conjugate to the standard hat map $a\mapsto[a]_\times$ from $(\mathbb{R}^3,\times)$ to $\mathfrak{so}(3)$. The standard identity $[[a]_\times,[b]_\times]=[a\times b]_\times$ gives the bracket formula. Injectivity follows because $K(u)=0$ forces all coordinates of $u$ to be equal, and $u\in H$ then gives $u=0$; since both spaces are three-dimensional, $\kappa$ is an isomorphism. $\square$
+
 ### 3.3 Core identity
 
-**Theorem 3.3 (Closure identity for $N = 4$).** *For any zero-sum unit axis $u$, the operator $K(u)$ satisfies*
+**Theorem 3.5 (Closure identity for $N = 4$).** *For any $u\in H$, the operator $K(u)$ satisfies*
+
+$$K(u)^3=-\|u\|_s^2K(u).$$
+
+*In particular, for a zero-sum unit axis $u$,*
 
 $$K(u)^3 = -K(u).$$
 
-The proof is a spectral/trace computation, given in Appendix B. The key facts: $K(u)$ is a $4 \times 4$ skew-symmetric matrix of rank 2, with spectrum $\{0, 0, +i, -i\}$ when $u$ is a zero-sum unit axis. The minimal polynomial of a rank-2 skew matrix with eigenvalues $\pm ci$ is $x(x^2 + c^2)$, so $K^3 = -c^2 K$; the normalization of $K$ is precisely what sets $c = 1$.
+The proof is a spectral/trace computation, given in Appendix B for the unit case; the general case follows by homogeneity. If $u=0$ there is nothing to prove. Otherwise write $u=r\hat u$ with $r=\|u\|_s$ and $\|\hat u\|_s=1$. Since $K$ is linear in $u$, $K(u)^3=r^3K(\hat u)^3=-r^3K(\hat u)=-r^2K(u)$.
 
-**Corollary 3.4 (Geometric double-application identity).** *For any $P \in H$,*
+**Corollary 3.6 (Geometric double-application identity).** *For any zero-sum unit axis $u$ and any $P \in H$,*
 
 $$K(u)^2\, P = -P_\perp,$$
 
 *where $P_\perp$ is the orthogonal projection (under the simplicial inner product) of $P$ onto the subspace of $H$ perpendicular to $u$.*
 
-*Proof.* Write $H_u := u^\perp \cap H$ for the simplicial-orthogonal complement of $u$ inside $H$. We first show $\operatorname{im} K(u)|_H = H_u$. By Remark 3.2(1), $G K(u)$ is antisymmetric, so $\langle K(u) v, u \rangle = v^\top K(u)^\top G u = -v^\top G K(u) u = 0$ for every $v$ (using $K(u)u = 0$, proved in Appendix B Step 1). Also $K(u) v \in H$ by Corollary 3.5. Hence $\operatorname{im} K(u)|_H \subseteq H_u$. Both spaces are two-dimensional (the former because $K(u)$ has rank 2 on $H$, since $\ker K(u) \cap H = \mathbb{R} u$; the latter because $\dim H = 3$ and $u \neq 0$), so they coincide. Now for any $P \in H$, write $P = \alpha u + P_\perp$ with $P_\perp \in H_u$. Since $K(u) u = 0$, $K(u) P = K(u) P_\perp$, and because $P_\perp \in \operatorname{im} K(u)|_H$ there exists $w \in H$ with $K(u) w = P_\perp$. Theorem 3.3 applied to $w$ gives $K(u)^3 w = -K(u) w$, i.e.\ $K(u)^2 P_\perp = -P_\perp$. Combined with $K(u)^2 (\alpha u) = 0$, this yields $K(u)^2 P = -P_\perp$. $\square$
+*Proof.* Write $H_u := u^\perp \cap H$ for the simplicial-orthogonal complement of $u$ inside $H$. We first show $\operatorname{im} K(u)|_H = H_u$. By Remark 3.2(1), $G K(u)$ is antisymmetric, so $\langle K(u) v, u \rangle = v^\top K(u)^\top G u = -v^\top G K(u) u = 0$ for every $v$ (using $K(u)u = 0$, proved in Appendix B Step 1). Also $K(u) v \in H$ because each column of $K(u)$ sums to zero. Hence $\operatorname{im} K(u)|_H \subseteq H_u$. Both spaces are two-dimensional. For $\operatorname{im}K(u)|_H$, rank-nullity gives $\dim(\operatorname{im}K(u)|_H)=\dim H-\dim(\ker K(u)\cap H)=3-1=2$, since $\ker K(u)$ in $\mathbb{R}^4$ is $\operatorname{span}\{\mathbf{1},u\}$ and only $\mathbb{R}u$ lies in $H$. For $H_u$, $u\neq0$ and $\dim H=3$ give $\dim H_u=2$. Thus the two spaces coincide. Now for any $P \in H$, write $P = \alpha u + P_\perp$ with $P_\perp \in H_u$. Since $K(u) u = 0$, $K(u) P = K(u) P_\perp$, and because $P_\perp \in \operatorname{im} K(u)|_H$ there exists $w \in H$ with $K(u) w = P_\perp$. Theorem 3.5 applied to $w$ gives $K(u)^3 w = -K(u) w$, i.e.\ $K(u)^2 P_\perp = -P_\perp$. Combined with $K(u)^2 (\alpha u) = 0$, this yields $K(u)^2 P = -P_\perp$. $\square$
 
-**Corollary 3.5 (Zero-sum preservation).** *$K(u)$ maps $H$ to itself. That is, if $P \in H$ then $K(u) P \in H$.*
+**Corollary 3.7 (Zero-sum preservation).** *$K(u)$ maps $H$ to itself. That is, if $P \in H$ then $K(u) P \in H$.*
 
-*Proof of 3.5.* Each column of $K(u)$ sums to zero (by elementwise skew-symmetry of the $\tilde{K}$ construction together with the fact that each row sums to zero). Therefore, for any $P \in \mathbb{R}^4$, $\sum_i (K(u)P)_i = \sum_j \bigl(\sum_i K(u)_{ij}\bigr) P_j = 0$. $\square$
+*Proof.* Each column of $K(u)$ sums to zero (by elementwise skew-symmetry of the $\tilde{K}$ construction together with the fact that each row sums to zero). Therefore, for any $P \in \mathbb{R}^4$, $\sum_i (K(u)P)_i = \sum_j \bigl(\sum_i K(u)_{ij}\bigr) P_j = 0$. $\square$
 
-### 3.4 Relation to wedge and Hodge dual
+### 3.4 Pseudoscalar and higher-dimensional perspective
 
-The operator $K(u)$ can be understood as the Hodge dual of the wedge product with $u$. On an oriented inner-product space $V$ of dimension $d$, the Hodge star $\star: \Lambda^k V \to \Lambda^{d-k} V$ is characterized by
+The construction can also be written using the unit pseudoscalar $I\in\Lambda^3H$ determined by the orientation class of §2.5. With the convention of §3.1, the unambiguous exterior-algebra statement is
 
-$$\alpha \wedge \star \beta = \langle \alpha, \beta \rangle\, \omega$$
+$$K(u)v=*(u\wedge v),\qquad u,v\in H.$$
 
-for $\alpha, \beta \in \Lambda^k V$, where $\omega$ is the unit volume form associated with the inner product and the chosen orientation; see Flanders [Flanders, Ch.~2] or Spivak [Spivak, Ch.~7] for the standard development.
+In Clifford-algebra language this may be written as contraction against the pseudoscalar, but the sign depends on the left/right contraction convention; the exterior-algebra form above fixes the convention used in this paper. The same viewpoint explains the symmetric-group behavior in Proposition 2.2: even permutations preserve the pseudoscalar, while odd permutations negate it.
 
-To apply this to our setting, note that the zero-sum hyperplane $H \subset \mathbb{R}^4$ carries the restriction of the simplicial inner product of §2.4, under which Proposition 2.1 gives $\langle c, c \rangle = \tfrac{4}{3}\sum c_i^2$. Equipped with this inner product and with the orientation on $H$ pulled back from the standard right-handed orientation of the ambient $\mathbb{R}^3$ via the hyperplane isometry $V$ of §2.5, $(H, \langle\cdot,\cdot\rangle)$ is a three-dimensional oriented inner-product space, and therefore non-canonically *isometric* (not merely isomorphic as a vector space) to ordinary $\mathbb{R}^3$. Under any such isometry, the Hodge-dual operator $\star(u \wedge \cdot): H \to H$ is skew-symmetric with respect to $\langle\cdot,\cdot\rangle$ and acts as cross product with $u$. Our $K(u)$ is the matrix representation of this operator in the overcomplete coordinates $(c_1, c_2, c_3, c_4) \in \mathbb{R}^4$ of §2.1. The $4/3$ scaling of the simplicial inner product is absorbed into the volume form $\omega$ and into the factor $1/\sqrt{3}$ of Definition 3.1, which is why the same identity $K^3 = -K$ that holds for the Cartesian cross product holds here without further adjustment.
+The Hodge-dual viewpoint also clarifies why $N=4$ is special. In dimension $d=3$, the Hodge star sends the 2-form $u\wedge v$ to a vector, so one fixed vector $u$ and one input vector $v$ define a binary cross product. For a simplicial zero-sum hyperplane of dimension $d=N-1\geq4$, the analogous simple-blade operator is determined by $d-2=N-3$ fixed vectors:
 
-The Hodge-dual viewpoint also clarifies why $N = 4$ is special. For $V$ of dimension $d = 3$, the Hodge dual converts a 2-form $u \wedge v$ into a 1-vector, so the cross product is binary. For $V$ of dimension $d \geq 4$ (equivalently, $N \geq 5$ in the simplicial count), the analogous construction converts a $(d-1)$-form into a 1-vector, so the operation takes $d - 1 = N - 3$ vector inputs rather than one; this is the standard obstruction to extending the binary cross product to higher dimensions [Massey]. The closed-form Rodrigues exponentiation depends on $K^3 = -K$, which is a feature of the binary case only. We return to this point in §8.
+$$A_{u_1,\ldots,u_{d-2}}(v)=*\bigl(u_1\wedge\cdots\wedge u_{d-2}\wedge v\bigr).$$
+
+If the fixed vectors are linearly dependent, the wedge is zero. If they span a nonzero decomposable $(d-2)$-blade and are normalized appropriately, the associated skew operator is a rank-2 rotation-plane generator and admits its own Rodrigues exponential. What fails for $d\geq4$ is not the existence of a closed form for an individual simple blade, but the single-vector parameterization of the full Lie algebra $\mathfrak{so}(d)$. We return to this point in §8.
 
 ---
 
 ## 4. Gauge-Compatibility and Descent to the Zero-Sum Quotient
 
-The three operations constructed or cited so far — the inner product $\langle \cdot, \cdot \rangle$, the cross product $K(u)\cdot$, and the exponential map (constructed in §5) — together form a gauge-compatible algebraic system on the zero-sum hyperplane. We consolidate their invariance properties into a single structural statement, distinguishing the scalar (inner product) and vector-valued (cross product, rotation) cases, and record the descent of each to the quotient $\mathbb{R}^N / \langle \mathbf{1}\rangle \cong \mathbb{R}^{N-1}$. We emphasize the scope of the claim: we address the algebraic layer of vector calculus (inner product, binary cross product, rotation); differential operators ($\nabla$, $\mathrm{div}$, $\mathrm{curl}$) are not developed here and remain outside the present scope.
+The three operations constructed or cited so far — the inner product $\langle \cdot, \cdot \rangle$, the cross product $K(u)\cdot$, and the exponential map (constructed in §5) — together form a gauge-compatible algebraic system on the zero-sum hyperplane. We consolidate their invariance properties into a single structural statement, distinguishing the scalar (inner product) and vector-valued (cross product, rotation) cases, and record the descent of each to the quotient $\mathbb{R}^N / \langle \mathbf{1}\rangle \cong \mathbb{R}^{N-1}$. We emphasize the scope of the claim: we address the algebraic layer of vector algebra (inner product, binary cross product, rotation); differential operators ($\nabla$, $\mathrm{div}$, $\mathrm{curl}$) are not developed here and remain outside the present scope.
 
 **Theorem 4.1 (Joint gauge-compatibility and descent).** *For $N = 4$, the simplicial inner product, the intrinsic cross product $K$, and the matrix exponential $\exp(\theta K)$ are jointly compatible with the gauge action $c \mapsto c + k\mathbf{1}$ in the following precise sense:*
 
@@ -286,29 +328,29 @@ The three operations constructed or cited so far — the inner product $\langle 
 
 *Proof sketch.* (1) By §2.4, $G\mathbf{1} = \mathbf{0}$; since $G$ is symmetric, $\mathbf{1}^\top G = (G\mathbf{1})^\top = \mathbf{0}^\top$ as well, so
 $$\langle a + k\mathbf{1},\, b + m\mathbf{1}\rangle = a^\top G b + k\,\mathbf{1}^\top G b + m\, a^\top G\mathbf{1} + km\,\mathbf{1}^\top G\mathbf{1} = a^\top G b = \langle a, b\rangle.$$
-For (2): $K(u)\mathbf{1} = \mathbf{0}$ because each row of the matrix in Definition 3.1 sums to zero, and $K(u)H \subseteq H$ by Corollary 3.5 (each column sums to zero); linearity in the axis is immediate from the entrywise formula of Remark 3.2, and $K(\mathbf{1}) = 0$ (also Remark 3.2) then yields $K(u + k\mathbf{1}) = K(u) + k\,K(\mathbf{1}) = K(u)$, the axis-class independence invoked in (3). For (3): $R(u,\theta) = \exp(\theta K(u))$ inherits hyperplane closure from (2) term-by-term, since each partial sum $\sum_{j=0}^n \tfrac{(\theta K(u))^j}{j!}\, P$ lies in $H$ for $P \in H$, and $H$ is a closed finite-dimensional subspace of $\mathbb{R}^4$, so the limit remains in $H$. Likewise $R(u,\theta)\mathbf{1} = \mathbf{1}$ because $K(u)\mathbf{1} = \mathbf{0}$ forces all higher series terms to vanish on $\mathbf{1}$. The descent-relevant isometry is the simplicial orthogonality $R^\top G R = G$ (equivalently $\langle RP, RQ\rangle = \langle P, Q\rangle$), which follows from the commutation $GK(u) = K(u)G$ (Remark 3.2(1)): since $G$ commutes with $K$ it commutes with every power of $K$ and hence, by continuity of matrix multiplication, with $\exp(\theta K) = R$; combined with $R^\top = \exp(\theta K)^\top = \exp(-\theta K)$ (using $K^\top = -K$, Definition 3.1), this gives $R^\top G R = \exp(-\theta K)\, G\, \exp(\theta K) = G\, \exp(-\theta K)\, \exp(\theta K) = G$; the ambient Euclidean lift $R^\top R = I$ and the orientation $\det R = +1$ are established in §§5–6. Descent to the quotient now follows from (1)–(3) together with the axis-class independence recorded in (2)–(3). $\square$
+For (2): $K(u)\mathbf{1} = \mathbf{0}$ because each row of the matrix in Definition 3.1 sums to zero, and $K(u)H \subseteq H$ by Corollary 3.7 (each column sums to zero); linearity in the axis is immediate from the entrywise formula of Remark 3.2, and $K(\mathbf{1}) = 0$ (also Remark 3.2) then yields $K(u + k\mathbf{1}) = K(u) + k\,K(\mathbf{1}) = K(u)$, the axis-class independence invoked in (3). For (3): $R(u,\theta) = \exp(\theta K(u))$ inherits hyperplane closure from (2) term-by-term, since each partial sum $\sum_{j=0}^n \tfrac{(\theta K(u))^j}{j!}\, P$ lies in $H$ for $P \in H$, and $H$ is a closed finite-dimensional subspace of $\mathbb{R}^4$, so the limit remains in $H$. Likewise $R(u,\theta)\mathbf{1} = \mathbf{1}$ because $K(u)\mathbf{1} = \mathbf{0}$ forces all higher series terms to vanish on $\mathbf{1}$. The descent-relevant isometry is the simplicial orthogonality $R^\top G R = G$ (equivalently $\langle RP, RQ\rangle = \langle P, Q\rangle$), which follows from the commutation $GK(u) = K(u)G$ (Remark 3.2(1)): since $G$ commutes with $K$ it commutes with every power of $K$ and hence, by continuity of matrix multiplication, with $\exp(\theta K) = R$; combined with $R^\top = \exp(\theta K)^\top = \exp(-\theta K)$ (using $K^\top = -K$, Definition 3.1), this gives $R^\top G R = \exp(-\theta K)\, G\, \exp(\theta K) = G\, \exp(-\theta K)\, \exp(\theta K) = G$; the ambient Euclidean lift $R^\top R = I$ and the orientation $\det R = +1$ are established in §§5–6. Descent to the quotient now follows from (1)–(3) together with the axis-class independence recorded in (2)–(3). $\square$
 
-**Remark 4.2 (Structural interpretation).** The three operations — metric, cross product, rotation — are the core algebraic ingredients of classical rigid-body mechanics on $\mathbb{R}^3$ [Arnold, Marsden-Ratiu]: the metric supplies kinetic energy, the cross product supplies angular momentum, and rotation supplies the group of frame changes. Theorem 4.1 shows that, for $N = 4$, these ingredients descend intact to the simplicial zero-sum quotient. This is the algebraic content of §1.2 item 3: once the simplicial Gram data of §2 is fixed, the formulas for these operations require no ongoing reference to a Cartesian embedding. The simplicial (Quadray) description of 3D Euclidean space thereby supports an autonomous *presentation* of this algebraic layer of vector calculus, in the sense made precise in §9: isometric to the classical Cartesian theory via the hyperplane isometry $V$ of §2.5, but formulated and computed without passing through a Cartesian frame.
+**Remark 4.2 (Structural interpretation).** The three operations — metric, cross product, rotation — are the core algebraic ingredients of classical rigid-body mechanics on $\mathbb{R}^3$ [Arnold, Marsden-Ratiu]: the metric supplies kinetic energy, the cross product supplies angular momentum, and rotation supplies the group of frame changes. Theorem 4.1 shows that, for $N = 4$, these ingredients descend intact to the simplicial zero-sum quotient. This is the algebraic content of §1.2 item 3: once the Gram matrix and orientation class are fixed, the formulas for these operations require no ongoing reference to a Cartesian embedding. The simplicial (Quadray) description of 3D Euclidean space thereby supports a presentation determined by the simplicial frame data, isometric to the classical Cartesian theory by Proposition 3.3 but formulated and computed without passing through a Cartesian frame.
 
 ---
 
 ## 5. Closed-Form Rotation via the Exponential Map
 
-Section 5 derives the simplicial Rodrigues rotation formula by two equivalent routes. The geometric derivation (§5.1) exploits the parallel/perpendicular splitting of the target vector relative to the axis $u$, reducing the rotation to a planar computation in $u^\perp \cap H$. The Lie-algebraic derivation (§5.2) recognizes $K(u)$ as an element of the Lie algebra $\mathfrak{so}(H, \langle\cdot,\cdot\rangle_s) \cong \mathfrak{so}(3)$ and evaluates its matrix exponential in closed form using the cubic identity $K^3 = -K$ of Theorem 3.3. The two derivations yield the same operator, as observed in §5.3. §5.4 gives a concrete worked example, and §8 takes up the higher-dimensional question.
+Section 5 derives the simplicial Rodrigues rotation formula by two equivalent routes. The geometric derivation (§5.1) exploits the parallel/perpendicular splitting of the target vector relative to the axis $u$, reducing the rotation to a planar computation in $u^\perp \cap H$. The Lie-algebraic derivation (§5.2) recognizes $K(u)$ as an element of the Lie algebra $\mathfrak{so}(H, \langle\cdot,\cdot\rangle_s) \cong \mathfrak{so}(3)$ and evaluates its matrix exponential in closed form using the unit-axis cubic identity $K^3 = -K$ of Theorem 3.5. The two derivations yield the same operator, as observed in §5.3. §5.4 gives a concrete worked example, and §8 takes up the higher-dimensional question.
 
 ### 5.1 Geometric derivation
 
 To rotate a point $P \in H$ around a zero-sum unit axis $u$ by angle $\theta$, we decompose $P$ into components parallel and perpendicular to $u$ (under the simplicial inner product $\langle\cdot,\cdot\rangle_s := \langle\cdot,\cdot\rangle$ of §2.4) and rotate the perpendicular component through angle $\theta$ in the oriented plane $u^\perp \cap H$. We take $u \in H$ throughout; this is without loss of generality, since by Theorem 4.1(2) $K(u + k\mathbf{1}) = K(u)$ for every $k \in \mathbb{R}$, so all constructions below depend only on the gauge class of $u$. For brevity we write $K$ for $K(u)$ throughout §5.1.
 
-From Corollary 3.4, $P_\perp = -K^2 P$, and the parallel component follows as $P_\parallel = P - P_\perp = (I + K^2)\, P$. The cross product $K P$ lies in $u^\perp \cap H$: by Corollary 3.5, $KP \in H$; by simplicial skew-adjointness (Remark 3.2(1), equivalently $GK + K^\top G = 0$) together with $Ku = 0$ (Appendix B, Step 1),
+From Corollary 3.6, $P_\perp = -K^2 P$, and the parallel component follows as $P_\parallel = P - P_\perp = (I + K^2)\, P$. The cross product $K P$ lies in $u^\perp \cap H$: by Corollary 3.7, $KP \in H$; by simplicial skew-adjointness (Remark 3.2(1), equivalently $GK + K^\top G = 0$) together with $Ku = 0$ (Appendix B, Step 1),
 $$\langle KP, u\rangle_s = -\langle P, Ku\rangle_s = 0.$$
 We claim that, provided $P \notin \mathrm{span}(u)$, the pair $\{P_\perp, KP\}$ is a simplicially orthogonal basis of $u^\perp \cap H$ with $\|P_\perp\|_s = \|KP\|_s$.
 
-*Orthogonality.* Applying simplicial skew-adjointness twice together with $K^3 = -K$ (Theorem 3.3),
+*Orthogonality.* Applying simplicial skew-adjointness twice together with $K^3 = -K$ (Theorem 3.5 in the unit-axis case),
 $$\langle KP, K^2 P\rangle_s = -\langle P, K^3 P\rangle_s = \langle P, KP\rangle_s = -\langle KP, P\rangle_s,$$
 so $\langle KP, K^2 P\rangle_s = 0$, whence $\langle KP, P_\perp\rangle_s = \langle KP, -K^2 P\rangle_s = 0$.
 
-*Equal norms.* Since $P_\parallel = \alpha u$ for some $\alpha \in \mathbb{R}$ and $Ku = 0$, we have $KP = KP_\perp$. Corollary 3.4 gives $K^2|_{u^\perp \cap H} = -I$, so $K$ restricted to $u^\perp \cap H$ is a simplicial isometry of that subspace. Computationally,
+*Equal norms.* Since $P_\parallel = \alpha u$ for some $\alpha \in \mathbb{R}$ and $Ku = 0$, we have $KP = KP_\perp$. Corollary 3.6 gives $K^2|_{u^\perp \cap H} = -I$, so $K$ restricted to $u^\perp \cap H$ is a simplicial isometry of that subspace. Computationally,
 $$\|KP\|_s^2 = \langle KP, KP\rangle_s = -\langle P, K^2 P\rangle_s = \langle P, P_\perp\rangle_s = \langle P_\perp, P_\perp\rangle_s = \|P_\perp\|_s^2,$$
 where the last step uses $\langle P_\parallel, P_\perp\rangle_s = \alpha\,\langle u, P_\perp\rangle_s = 0$.
 
@@ -316,7 +358,7 @@ where the last step uses $\langle P_\parallel, P_\perp\rangle_s = \alpha\,\langl
 
 The rotation of $P_\perp$ by angle $\theta$ in this plane is
 $$P_\perp' = \cos\theta\, P_\perp + \sin\theta\, KP = -\cos\theta\, K^2 P + \sin\theta\, KP,$$
-with the sign convention that positive $\theta$ corresponds to positive rotation in the oriented plane $u^\perp \cap H$ — the orientation inherited from the right-handed ambient $\mathbb{R}^3$ of §2.5 through the Hodge-dual realization of §3.4.
+with the sign convention that positive $\theta$ corresponds to positive rotation in the oriented plane $u^\perp \cap H$ determined by the orientation class of §2.5.
 
 Reassembling,
 $$P' = P_\parallel + P_\perp' = (I + K^2)\, P + \sin\theta\, KP - \cos\theta\, K^2 P = \bigl[\,I + \sin\theta\, K + (1-\cos\theta)\, K^2\,\bigr]\, P.$$
@@ -337,7 +379,7 @@ therefore maps $\mathfrak{so}(H, \langle\cdot,\cdot\rangle_s)$ into the identity
 $$\det \exp(\theta X) = e^{\theta\,\mathrm{tr}(X)} = 1,$$
 placing the image in $\mathrm{SO}(3)$ rather than merely $\mathrm{O}(3)$ [Hall, §3.5].
 
-Using the identity $K^3 = -K$ from Theorem 3.3, we have $K^{2n+1} = (-1)^n K$ and $K^{2n+2} = (-1)^n K^2$ for $n \geq 0$, and the Taylor series decomposes as
+Using the unit-axis identity $K^3 = -K$ from Theorem 3.5, we have $K^{2n+1} = (-1)^n K$ and $K^{2n+2} = (-1)^n K^2$ for $n \geq 0$, and the Taylor series decomposes as
 
 $$\exp(\theta K) = I + \theta K + \frac{\theta^2}{2!}K^2 + \frac{\theta^3}{3!}K^3 + \cdots$$
 
@@ -354,7 +396,7 @@ recovering the geometric result of §5.1. This is the Rodrigues rotation formula
 The geometric derivation (§5.1) and the Lie-algebraic derivation (§5.2) yield the same closed-form operator. The geometric derivation is more elementary and clarifies the structural role of the three matrices $I$, $K$, $K^2$ (as identity, in-plane quarter-turn, and negative perpendicular projection respectively; hence $I + K^2$ is the simplicial parallel projector onto $\mathrm{span}(u)$ and $-K^2$ is the projector onto $u^\perp \cap H$). The Lie-algebraic derivation makes the connection with $\mathfrak{so}(3)$ explicit and places the exponential step on a standard footing. On $H$, therefore,
 $$R(u,\theta) \;=\; \exp(\theta K(u)) \;=\; I + \sin\theta\, K(u) + (1-\cos\theta)\, K(u)^2.$$
 
-The wedge–Hodge construction underlying $K(u)$ itself has a higher-dimensional analog (see §8), which yields skew operators of higher arity when $N \geq 5$. The analog of the cubic identity $K^3 = -K$ and any comparable closed-form exponentiation, however, are *not* established in this paper; the higher-$N$ question is formulated but left open in §8.
+The wedge-Hodge construction underlying $K(u)$ itself has a higher-dimensional analog (see §8), which yields skew operators of higher arity when $N \geq 5$. For each normalized nonzero simple blade the associated rank-2 generator has the same cubic identity and Rodrigues exponential; what is not supplied by a single vector in higher dimension is a parameterization of the whole Lie algebra $\mathfrak{so}(N-1)$.
 
 ### 5.4 Worked example
 
@@ -384,6 +426,8 @@ which verifies $\sum P'_i = 0$ and $\langle P', P' \rangle_s = \langle P, P \ran
 
 We record the principal structural properties of $R(u, \theta)$. Each is provable directly from the defining formula, the identity $K^3 = -K$, and the gauge-annihilation $K\mathbf{1} = \mathbf{0}$. Item-by-item proofs appear in Appendix C.
 
+### 6.1 General properties
+
 **Proposition 6.1.** *For any zero-sum unit axis $u$ and angle $\theta$:*
 
 1. *(Orthogonality)* $R^\top R = I$.
@@ -394,15 +438,34 @@ We record the principal structural properties of $R(u, \theta)$. Each is provabl
 6. *(Hyperplane preservation)* If $P \in H$ then $RP \in H$.
 7. *(Gauge-equivariance)* $R(P + k\mathbf{1}) = RP + k\mathbf{1}$ for all $k \in \mathbb{R}$.
 8. *(Metric preservation)* $\langle RP, RQ \rangle_s = \langle P, Q \rangle_s$ for all $P, Q \in \mathbb{R}^4$ (equivalently $R^\top G R = G$).
-9. *(Spectrum)* $R$ has eigenvalues $\{1, 1, e^{i\theta}, e^{-i\theta}\}$. The eigenvalue $1$ has two-dimensional eigenspace spanned by $\mathbf{1}$ and $u$.
+9. *(Spectrum)* $R$ has eigenvalues $\{1, 1, e^{i\theta}, e^{-i\theta}\}$. For $\theta\not\equiv0\pmod{2\pi}$, the eigenvalue $1$ has two-dimensional eigenspace spanned by $\mathbf{1}$ and $u$. At $\theta\equiv0\pmod{2\pi}$, $R=I$ and every vector is a $+1$ eigenvector.
 
 Property 7 is especially important: it says that the rotation operator is compatible with the gauge equivalence, so that rotating a coordinate representative produces a valid coordinate representative of the rotated point. Combined with property 2, this makes $R$ a well-defined operator on the quotient space $\mathbb{R}^N / \mathbb{R}\mathbf{1}$, and hence on the geometric points of $\mathbb{R}^{N-1}$.
+
+### 6.2 Tetrahedral subgroup sanity check
+
+The continuous family $R(u,\theta)$ contains, as a finite subfamily, the rotational symmetries of the labeled tetrahedral frame. For $\sigma\in S_4$, the permutation matrix $P_\sigma$ fixes $\mathbf{1}$ and preserves $H$. Restricted to $H$, it is an element of $O(H,\langle\cdot,\cdot\rangle_s)$ with determinant $\operatorname{sgn}(\sigma)$; hence the even permutations $A_4$ give the rotational tetrahedral group.
+
+**Proposition 6.2.** *The assignment $\sigma\mapsto P_\sigma|_H$ embeds $S_4$ as the full tetrahedral symmetry group in $O(H)$, and restricts to an isomorphism $A_4\cong T\subset SO(H)$ onto the rotational tetrahedral group.*
+
+*Proof.* The map is a homomorphism because permutation matrices multiply as permutations. If $P_\sigma|_H=I_H$, then $P_\sigma$ fixes both $H$ and $\mathbf{1}$ and therefore fixes all of $\mathbb{R}^4=H\oplus\mathbb{R}\mathbf{1}$, so $\sigma$ is the identity. The image is an order-24 subgroup of $O(H)$ permuting the four frame rays; this is the full tetrahedral symmetry group. Its determinant-$+1$ subgroup is the order-12 rotational tetrahedral group. $\square$
+
+The non-identity elements of $A_4$ are recovered by the Rodrigues formula at the following axes and angles:
+
+| $A_4$ element type | Axis in $H$ | Angle |
+|---|---|---:|
+| Double transposition $(ij)(kl)$ | $u_{ij|kl}=\tfrac{\sqrt3}{4}(e_i+e_j-e_k-e_l)$ | $\pi$ |
+| 3-cycle fixing $i$ | $u_i=e_i-\tfrac14\mathbf{1}$ | $\pm 2\pi/3$ |
+
+For example, $R(u_{12|34},\pi)$ is the permutation matrix of $(12)(34)$, and $R(u_1,2\pi/3)$ is the permutation matrix of the 3-cycle $(2\,4\,3)$ under the orientation convention of §2.5. These identities provide a finite set of closed-form checks on the signs and normalization in Definition 3.1.
 
 ---
 
 ## 7. Computational Kernel: The 9-Multiplication Apply
 
-A direct evaluation of $RP$ for a general $4 \times 4$ matrix $R$ and vector $P \in \mathbb{R}^4$ requires 16 scalar multiplications. The structural properties of $R$ and the zero-sum constraint on $P$ admit two independent reductions, which together bring this cost down to 9 multiplications — matching the per-apply cost of the quaternion-to-matrix rotation pipeline in graphics applications.
+A direct evaluation of $RP$ for a general $4 \times 4$ matrix $R$ and vector $P \in \mathbb{R}^4$ requires 16 scalar multiplications. The structural properties of $R$ and the zero-sum constraint on $P$ admit two independent reductions, which together bring this cost down to 9 multiplications.
+
+The scope of this claim is narrow. The count is a per-point apply cost after gauge elimination on both input and output. It does not include additions, the construction of $K(u)$ or $K(u)^2$, the evaluation of $\sin\theta$ and $\cos\theta$, the assembly of $R$, the construction of the reduced matrix $\tilde R$, or implementation-level concerns such as memory layout, SIMD vectorization, and cache behavior. Once the gauge redundancy is eliminated on both sides, the operation is a 3D linear map in coordinates; parity with the standard $3\times3$ matrix-vector pathway is therefore structurally expected. The result below is a structural parity statement, not a speed claim.
 
 ### 7.1 Output redundancy (16 → 12)
 
@@ -430,23 +493,59 @@ where $\tilde{R}_{ij} := R_{ij} - R_{i4}$ (for $i, j \in \{1, 2, 3\}$) is the $i
 
 ### 7.3 Interpretation as a change of basis
 
-The $3 \times 3$ reduced matrix $\tilde{R}$ admits a clean structural interpretation: it is the restriction $R|_H$ expressed in the (non-orthonormal) basis $\{e_1 - e_4,\; e_2 - e_4,\; e_3 - e_4\}$ of $H$ — where $e_i$ denotes the $i$-th standard coordinate vector of $\mathbb{R}^4$ — obtained by dropping the $e_4$ coordinate and re-expressing $e_4 = -(e_1 + e_2 + e_3)$ via the zero-sum constraint. The 9-multiplication count is therefore the statement that, once the gauge redundancy is eliminated on both sides (input and output), rotation in the simplicial system has the same per-apply cost as $\mathrm{SO}(3)$ acting on $\mathbb{R}^3$, to which it is conjugate via the hyperplane isometry $V$ of §2.5.
+The $3 \times 3$ reduced matrix $\tilde{R}$ admits a clean structural interpretation: it is the restriction $R|_H$ expressed in the (non-orthonormal) basis $\{e_1 - e_4,\; e_2 - e_4,\; e_3 - e_4\}$ of $H$ — where $e_i$ denotes the $i$-th standard coordinate vector of $\mathbb{R}^4$ — obtained by dropping the $e_4$ coordinate and re-expressing $e_4 = -(e_1 + e_2 + e_3)$ via the zero-sum constraint. The 9-multiplication count is therefore the statement that, once the gauge redundancy is eliminated on both sides (input and output), rotation in the simplicial system has the same per-apply cost as $\mathrm{SO}(3)$ acting on $\mathbb{R}^3$, to which it is conjugate via the synthesis isometry $S_H$ of §2.5 and Proposition 3.3.
 
 ### 7.4 Comparison with quaternion pathways
 
-Standard quaternion rotation pipelines offer two pathways to apply a rotation to a point (the multiplication counts below follow [Shoemake] and are standard in the computer graphics literature):
+Standard quaternion rotation pipelines offer two pathways to apply a rotation to a point (the multiplication counts below follow [Shoemake] and are standard in the computer graphics literature). The comparison reports per-apply cost, composition cost, interpolation support, renormalization procedure, and storage, so the per-apply count is not mistaken for a full performance comparison.
 
-| Method | Storage (rotation) | Storage (point) | Multiplications / apply |
-|---|---|---|---|
-| Quaternion sandwich $q v q^{-1}$ | 4 (quaternion) | 3 | ~15 |
-| Quaternion → $3 \times 3$ matrix, then apply | 4 + 9 derived | 3 | 9 |
-| Intrinsic simplicial (this work) | 9 (reduced matrix $\tilde{R}$) | 3 | 9 |
+| Method | Storage | Apply mults | Compose mults |
+|---|---:|---:|---:|
+| Quaternion sandwich $qvq^{-1}$ | 4 | ~15 | 16 |
+| Quaternion to $3\times3$ matrix, then apply | 4 + 9 derived | 9 | 16 |
+| Intrinsic simplicial (this work) | 9 reduced entries | 9 | 27 |
 
-The "multiplications / apply" column reports per-apply cost only; periodic re-orthogonalization under repeated composition (discussed below) adds an amortized cost comparable to quaternion renormalization and is orthogonal to the per-apply figure.
+| Method | Interpolation | Renormalization |
+|---|---|---|
+| Quaternion sandwich $qvq^{-1}$ | Native SLERP on $S^3$ | Normalize to unit norm |
+| Quaternion to $3\times3$ matrix, then apply | Via underlying quaternion | Renormalize underlying quaternion |
+| Intrinsic simplicial (this work) | Axis/angle separately; no native SLERP | Re-orthogonalize the lifted $H$ action |
 
-The intrinsic simplicial kernel ties the quaternion-to-matrix pipeline in per-apply cost and loses slightly in rotation storage (9 scalars vs.\ 4). The structural differences are qualitative: the simplicial kernel does not involve the $S^3$ double cover (so there are no sign ambiguities associated with $q$ vs.\ $-q$), is constructed algebraically from a zero-sum unit axis rather than as a point on a unit hypersphere, and operates without the non-commutative hypercomplex algebra of Hamilton products.
+The intrinsic simplicial kernel ties the quaternion-to-matrix pipeline in per-apply multiplication count and loses in rotation storage. On composition, matrix multiplication is more expensive than quaternion product. On interpolation, the quaternion pipeline supports native SLERP on the unit 3-sphere; the simplicial presentation has no direct analog in this paper. Interpolating $R(u_1,\theta_1)$ and $R(u_2,\theta_2)$ would require separately interpolating axis and angle, which is not generally a constant-angular-velocity path.
+
+The structural differences are qualitative: the simplicial kernel does not invoke the $S^3$ double cover (so there are no sign ambiguities associated with $q$ vs.\ $-q$), is constructed algebraically from a zero-sum unit axis rather than as a point on a unit hypersphere, and operates without the non-commutative hypercomplex algebra of Hamilton products. These are algebraic features, not floating-point performance wins.
 
 As with any matrix representation of rotations in floating-point arithmetic, iterated composition accumulates error and requires periodic re-enforcement of the manifold constraint. Because $\tilde{R}$ is the rotation expressed in a non-orthonormal basis of $H$ (§7.3), $\tilde{R}^\top \tilde{R} \neq I_3$ in general, so standard QR/Gram–Schmidt on $\tilde{R}$ alone is formally inappropriate; the correction is representation-specific. A natural recipe is to lift $\tilde{R}$ back to the $4 \times 4$ gauge-compatible $R$ and re-impose $R^\top R = I$ together with $R\mathbf{1} = \mathbf{1}$, via a Gram–Schmidt pass on the hyperplane block of $R$ (equivalently, standard Euclidean Gram–Schmidt applied to the columns of $R$ restricted to $H$, since the simplicial inner product reduces to a constant rescaling of the ambient Euclidean inner product on $H$). The cost is comparable to, but somewhat more expensive than, renormalizing a unit quaternion.
+
+### 7.5 Exact-arithmetic normalization
+
+The theoretical sections use the simplicial ETF metric
+$$G=\frac{4}{3}I-\frac{1}{3}J,$$
+because it makes the frame vectors unit and aligns the notation with the general $N$-simplex construction. Quadray implementations often use instead
+$$M=4I-J=3G.$$
+This is not a change of geometry on the zero-sum hyperplane; it is a uniform rescaling of the same metric. On $H$,
+$$\langle x,y\rangle_M=x^\top My=3x^\top Gy=3\langle x,y\rangle_s.$$
+
+The practical advantage is that the normalizing factor in Definition 3.1 moves from the cross-product matrix into the length convention. Let $\widehat S=\sqrt3\,S$ be the integer height-function synthesis matrix associated with the tetrahedral frame of §2.5. Then
+$$\widehat S\widehat S^\top=4I_3,\qquad \widehat S_H^{-1}=\frac14\widehat S^\top,$$
+and $\widehat S:H\to\mathbb{R}^3$ is an isometry from $(H,M)$ to ordinary Cartesian height space. Consequently the cross product can be computed by the height-space formula
+$$p\times_M q=\frac14\widehat S^\top\bigl((\widehat Sp)\times(\widehat Sq)\bigr),\qquad p,q\in H.$$
+This is exactly Proposition 3.3 written in the $M$ normalization.
+
+In matrix form, if $u$ is $M$-unit, i.e. $u^\top Mu=1$, then $u_G=\sqrt3\,u$ is $G$-unit. Therefore
+$$K_G(u_G)=\frac1{\sqrt3}\tilde K(\sqrt3\,u)=\tilde K(u).$$
+Thus the raw cyclic-difference matrix itself satisfies
+$$\tilde K(u)^3=-\tilde K(u)$$
+for every zero-sum $M$-unit axis $u$, and the Rodrigues formula becomes
+$$R_M(u,\theta)=I+\sin\theta\,\tilde K(u)+(1-\cos\theta)\tilde K(u)^2.$$
+
+This convention is useful for exact arithmetic. If $p,q,u\in H\cap\mathbb{Q}^4$, then $p\times_M q$, $\tilde K(u)$, and $\tilde K(u)^2$ have rational entries. The only non-rational quantities in $R_M(u,\theta)$ are those introduced by $\sin\theta$ and $\cos\theta$; after the Weierstrass substitution $t=\tan(\theta/2)$,
+$$R_M(u,t)=I+\left(\frac{2t}{1+t^2}\right)\tilde K(u)+\left(\frac{2t^2}{1+t^2}\right)\tilde K(u)^2,$$
+which has rational entries for rational $t$ and rational $M$-unit $u$. The quarter-coordinate axes, for example the permutations of
+$$\left(\frac14,\frac14,-\frac14,-\frac14\right),$$
+are zero-sum, $M$-unit, and fully rational. They correspond to the oriented directions between opposite edge midpoints of the reference tetrahedron and provide exact test cases for the cross-product and rotation formulas.
+
+The $M$ convention should therefore be understood as an implementation normalization, not a replacement for the ETF metric $G$ used in the structural development. It removes the square-root normalization from exact Quadray arithmetic, while the quaternion and rotor considerations of §7.4 remain relevant for composition, interpolation, and storage.
 
 ---
 
@@ -456,17 +555,23 @@ Having established the $N = 4$ framework end-to-end — intrinsic operators (§�
 
 ### 8.1 The uniqueness of $N = 4$
 
-The closed-form Rodrigues exponentiation of §5 relies on the Lie-algebraic identity $K^3 = -K$, which allowed the Taylor series of $\exp(\theta K)$ to refold into a finite trigonometric expression involving only $I$, $K$, and $K^2$. For $N = 4$, this identity holds because $K(u)$ is a rank-2 skew-symmetric $4 \times 4$ matrix, and rank-2 skew matrices have minimal polynomial $x(x^2 + c^2)$ for some constant $c$ (which we normalize to $1$).
+The closed-form Rodrigues exponentiation of §5 relies on the unit-axis identity $K^3=-K$, which allowed the Taylor series of $\exp(\theta K)$ to refold into a finite trigonometric expression involving only $I$, $K$, and $K^2$. For a non-unit axis $u\in H$, Theorem 3.5 gives the scaled identity $K(u)^3=-\|u\|_s^2K(u)$, and the corresponding exponential is
 
-For $N \geq 5$, the single-axis Rodrigues refolding does not extend. A wedge of $N - 3$ simplicial vectors is decomposable, and its Hodge dual is again a simple 2-form, so the associated skew operator is still rank 2 and satisfies the same minimal-polynomial identity as in the $N = 4$ case; the Rodrigues formula therefore applies to each such *blade* generator individually. The obstruction to a closed-form single-axis exponentiation is instead Lie-theoretic: the rotation group acting on the $(N-1)$-dimensional hyperplane is $\mathrm{SO}(N-1)$, and for $N - 1 \geq 4$ its dimension $\binom{N-1}{2} = \tfrac{(N-1)(N-2)}{2}$ strictly exceeds $N - 1$. A generic element of $\mathfrak{so}(N-1)$ is therefore not of the form $\theta\, K(u)$ for a single zero-sum axis $u$ — it is a linear combination of non-commuting blade generators, and matrix exponentials of non-commuting generators do not admit a single trigonometric closed form. Correspondingly, the intrinsic "cross-product-like" operator on the simplicial zero-sum hyperplane for general $N$ takes $N - 3$ inputs rather than a single axis — it is the Hodge dual of the wedge product of $N - 3$ vectors.
+$$\exp(\theta K(u))=I+\frac{\sin(\theta r)}{r}K(u)+\frac{1-\cos(\theta r)}{r^2}K(u)^2,\qquad r=\|u\|_s,$$
 
-The uniqueness of $N = 4$ for a binary cross product with closed-form exponentiation *within the simplicial wedge–Hodge framework developed here* is the simplicial-coordinate reflection of the exceptional Lie-algebra isomorphism $\mathfrak{so}(3) \cong (\mathbb{R}^3, \times)$: in dimension 3, skew-symmetric matrices form a 3-dimensional Lie algebra, which coincides in dimension with the underlying vector space, and this coincidence is what permits the identification of an axis with a rotation generator — hence the binary cross product. The $n = 7$ octonionic binary cross product admitted by Eckmann's classification arises from a different algebraic structure (non-associative division algebras) and lies outside the framework of this paper (§1.2 item 6). In frame-theoretic language, this is the statement that the rotation calculus developed here lives natively on the $N = 4$ regular simplex ETF — the four-vector ETF in $\mathbb{R}^3$ — whose distinguished status in frame theory we revisit in §8.3.
+with the evident limiting interpretation at $r=0$.
+
+For $N \geq 5$, the single-vector axis picture does not extend to the whole rotation group. A wedge of $N - 3$ simplicial vectors is decomposable; when nonzero and normalized, its Hodge dual is a simple 2-form, so the associated skew operator is rank 2 and satisfies the same normalized cubic identity as in the $N=4$ case. The Rodrigues formula therefore applies to each such simple blade generator individually.
+
+The obstruction is Lie-theoretic and global. The rotation group acting on the $(N-1)$-dimensional hyperplane is $\mathrm{SO}(N-1)$, and for $N - 1 \geq 4$ its dimension $\binom{N-1}{2} = \tfrac{(N-1)(N-2)}{2}$ strictly exceeds $N - 1$. A generic element of $\mathfrak{so}(N-1)$ is a sum of several simple rotation-plane generators, not the image of one vector axis. Moreover, products of noncommuting simple-blade rotations generally leave the single-blade family; the Baker-Campbell-Hausdorff formula for $\log(\exp X\exp Y)$ records the commutator terms responsible for this failure. Correspondingly, the intrinsic cross-product-like operator on the simplicial zero-sum hyperplane for general $N$ takes $N-3$ fixed vector inputs rather than a single axis.
+
+The uniqueness of $N = 4$ for the single-axis binary construction *within the simplicial wedge-Hodge framework developed here* is the simplicial-coordinate reflection of the exceptional Lie-algebra isomorphism $\mathfrak{so}(3) \cong (\mathbb{R}^3, \times)$: in dimension 3, skew-symmetric matrices form a 3-dimensional Lie algebra, which coincides in dimension with the underlying vector space, and this coincidence is what permits the identification of a vector axis with an arbitrary rotation generator. The $n = 7$ octonionic binary cross product admitted by Eckmann's classification arises from a different algebraic structure and lies outside the framework of this paper (§1.2 item 6).
 
 ### 8.2 The higher-$N$ construction (sketch)
 
-For general $N$, the intrinsic wedge–Hodge construction proceeds as follows. The zero-sum hyperplane $H \cong \mathbb{R}^{N-1}$ carries an inner product from the Gram matrix and a volume form from the ambient orientation. For $k$ vectors $u_1, \ldots, u_k \in H$, their wedge product $u_1 \wedge \cdots \wedge u_k$ is a $k$-form, and the Hodge dual $\star(u_1 \wedge \cdots \wedge u_k)$ is an $(N-1-k)$-form, which can be represented as an $(N-1-k)$-vector under the canonical identification $H^* \cong H$. Taking $k = N - 3$ yields a 2-form, which when contracted against another vector and raised via the simplicial metric produces a vector, i.e.\ a linear operator on $H$.
+For general $N$, the intrinsic wedge-Hodge construction proceeds as follows. The zero-sum hyperplane $H \cong \mathbb{R}^{N-1}$ carries an inner product from the Gram matrix and a volume form from an orientation class. For $k=N-3$ fixed vectors $u_1,\ldots,u_k\in H$, the decomposable blade $u_1\wedge\cdots\wedge u_k$ has Hodge dual a 2-form. Contracting that 2-form against an input vector and raising an index with the simplicial metric produces a skew operator on $H$.
 
-The operator thus defined for $k = N - 3$ is the natural generalization of $K(u)$; for $N = 4$, $k = 1$ recovers our binary cross product. The explicit matrix representation in the overcomplete simplicial frame, the generalization of the $1/\sqrt{N-1}$ scaling constant, the analog of $K^3 = -K$ (or its failure), and the closed form (or its impossibility) for the exponential map are all computations that we defer to future work.
+The operator thus defined for $k=N-3$ is the natural simple-blade generalization of $K(u)$; for $N=4$, $k=1$ recovers the binary cross product. The explicit matrix representation in the overcomplete simplicial frame, the normalization constants for general simple blades, and the behavior of products of such blade rotations are computations that we defer to future work.
 
 ### 8.3 Other directions
 
@@ -476,11 +581,11 @@ The operator thus defined for $k = N - 3$ is the natural generalization of $K(u)
 
 $$R(u, t) = I + \left(\frac{2t}{1 + t^2}\right) K(u) + \left(\frac{2t^2}{1 + t^2}\right) K(u)^2,$$
 
-which is rational in $t$ and in the entries of $u$. For axes $u \in H$ with $\sqrt{3}\,u \in \mathbb{Q}^4$ (equivalently, entries of $u$ in $\sqrt{3}\,\mathbb{Q}$), the entries of $K(u)$ are rational — the entries of $\tilde K(u)$ are differences of components of $u$, which lie in $\sqrt{3}\,\mathbb{Q}$, and the $1/\sqrt{3}$ in Definition 3.1 then clears — so $R(u, t)$ has rational entries for all rational $t$. For generic axes this rationality does not hold. Characterizing precisely which axes admit the rational parameterization is a concrete open question, and a natural complement to Wildberger's program of rational trigonometry.
+which is rational in $t$ and in the entries of $u$. For axes $u \in H$ with $\sqrt{3}\,u \in \mathbb{Q}^4$ (equivalently, entries of $u$ in $\sqrt{3}\,\mathbb{Q}$), the entries of $K(u)$ are rational — the entries of $\tilde K(u)$ are differences of components of $u$, which lie in $\sqrt{3}\,\mathbb{Q}$, and the $1/\sqrt{3}$ in Definition 3.1 then clears — so $R(u, t)$ has rational entries for all rational $t$. In the exact-arithmetic normalization of §7.5, this same statement is expressed by using $M=3G$ and rational $M$-unit axes directly. For generic axes this rationality does not hold. Characterizing precisely which axes admit the rational parameterization is a concrete open question, and a natural complement to Wildberger's program of rational trigonometry.
 
 **Information geometry and compositional data.** The zero-sum hyperplane, translated by $\tfrac{1}{N}\mathbf{1}$, becomes the probability simplex. Under the transformation $x_i = \sqrt{p_i}$, which maps the probability simplex to the positive orthant of the unit sphere, the simplicial inner product agrees with the Fisher information metric up to a positive scalar *at the uniform distribution $x \propto \mathbf{1}$* — a canonical match, since the Fisher metric is itself defined only up to positive rescaling. Aitchison geometry for compositional data analysis [Pawlowsky-Glahn-Egozcue] is built on the same zero-sum hyperplane $H$: the isometric log-ratio (ilr) transformation maps the probability simplex to $H$ after a component-wise log, and the associated inner-product structure agrees up to a positive scalar with the simplicial inner product of §2.4. The relationship between the intrinsic rotation operator constructed here and the geodesic flow on the probability simplex under Fisher–Rao — or rotation-compatible coordinate systems on Aitchison simplices — is a natural direction for future investigation.
 
-**Erasure-robust frame coordinates.** The tight-frame structure of Proposition 2.0 is precisely what provides *erasure robustness* in frame-theoretic signal processing: equal-norm tight frames are optimal one-erasure codes for the spaces they represent [Goyal-Kovacevic-Kelner, Holmes-Paulsen], and the regular simplex ETF is the canonical such frame in $\mathbb{R}^{N-1}$. The 9-multiplication apply kernel of §7 already exploits this structure computationally — the fourth output coordinate is recovered from the first three by the zero-sum parity check $c_4 = -(c_1 + c_2 + c_3)$, which is exactly one-erasure decoding of the simplex-ETF code. Moreover, Proposition 6.1(7) makes rotation *gauge-equivariant*, $R(P + k\mathbf{1}) = RP + k\mathbf{1}$, so $R(u,\theta)$ descends to a well-defined action on erasure-coded data without first decoding to a minimal Cartesian basis. A systematic treatment of simplicial vector calculus as a suite of intrinsic operations on tight-frame-encoded signals — and the extension to higher-redundancy simplex codes via the $N > 4$ frames — is a natural direction for future work.
+**Erasure-robust frame coordinates.** The tight-frame structure of Proposition 2.0 is precisely what provides *erasure robustness* in frame-theoretic signal processing: equal-norm tight frames are optimal one-erasure codes for the spaces they represent [Goyal-Kovacevic-Kelner, Holmes-Paulsen], and the regular simplex ETF is the canonical such frame in $\mathbb{R}^{N-1}$. The 9-multiplication apply kernel of §7 already exploits this structure computationally — the fourth output coordinate is recovered from the first three by the zero-sum parity check $c_4 = -(c_1 + c_2 + c_3)$, which is exactly one-erasure decoding of the simplex-ETF code. Moreover, Proposition 6.1(7) makes rotation *gauge-equivariant*, $R(P + k\mathbf{1}) = RP + k\mathbf{1}$, so $R(u,\theta)$ descends to a well-defined action on erasure-coded data without first decoding to a minimal Cartesian basis. A systematic treatment of simplicial vector algebra as a suite of intrinsic operations on tight-frame-encoded signals — and the extension to higher-redundancy simplex codes via the $N > 4$ frames — is a natural direction for future work.
 
 **Equiangular tight frames and single-qubit SIC-POVMs.** The $N = 4$ simplicial frame realizes the real ETF of four unit vectors in $\mathbb{R}^3$ with pairwise inner product $-\tfrac{1}{3}$. Under the Bloch-sphere representation of qubit density matrices, this is *exactly* the configuration of the four Bloch vectors of a single-qubit Symmetric Informationally Complete POVM [Renes-Blume-Kohout-Scott-Caves, Fuchs-Hoang-Stacey]: the SIC overlap condition $|\langle\psi_i|\psi_j\rangle|^2 = \tfrac{1}{3}$ translates via $\vec{n}_i \cdot \vec{n}_j = 2|\langle\psi_i|\psi_j\rangle|^2 - 1$ to $\vec{n}_i \cdot \vec{n}_j = -\tfrac{1}{3}$, and POVM completeness $\sum_i E_i = I$ translates to $\sum_i \vec{n}_i = \vec{0}$, both of which the Quadray frame satisfies identically (§2.1). The rotation operators $R(u, \theta)$ of §5 therefore provide a simplicial-coordinate realization of the $SO(3) \cong SU(2)/\{\pm I\}$ action of projective qubit unitaries on such POVMs, directly on the zero-sum hyperplane — and by §7.4, without passage through the $SU(2)$ double cover that quaternion pipelines require. Whether this intrinsic parameterization yields advantages for quantum-tomography algorithms, symmetric state estimation, or frame-robustness analyses in quantum information is a natural open question.
 
@@ -490,11 +595,11 @@ which is rational in $t$ and in the entries of $u$. For axes $u \in H$ with $\sq
 
 ## 9. Conclusion
 
-The simplicial (Quadray) coordinate system supports an autonomous *presentation* of the algebraic layer of 3D Euclidean vector calculus: inner product, binary cross product, and rotation can be stated and computed intrinsically on the zero-sum hyperplane $H$, with the diagonal redundancy handled as a gauge direction and no passage through a Cartesian frame at any step. Theorem 4.1 makes this precise in three clauses — the inner product is scalar-valued and gauge-invariant in both arguments, while the cross product $K(u)$ and the rotation $R(u,\theta) := \exp(\theta K(u))$ are vector-valued, preserve $H$, and respectively annihilate and fix the gauge direction $\mathbf{1}$. For $N = 4$, $K(u)$ satisfies the Lie-algebraic identity $K(u)^3 = -K(u)$, from which
+The simplicial (Quadray) coordinate system supports a presentation of the algebraic layer of 3D Euclidean vector algebra determined by the simplicial frame data: the Gram matrix plus an orientation class. The inner product, binary cross product, and rotation can be stated and computed on the zero-sum hyperplane $H$, with the diagonal redundancy handled as a gauge direction and no ongoing use of a Cartesian frame after the frame data are fixed. Theorem 4.1 makes this precise in three clauses — the inner product is scalar-valued and gauge-invariant in both arguments, while the cross product $K(u)$ and the rotation $R(u,\theta) := \exp(\theta K(u))$ are vector-valued, preserve $H$, and respectively annihilate and fix the gauge direction $\mathbf{1}$. For a zero-sum unit axis in the $N=4$ case, $K(u)$ satisfies $K(u)^3 = -K(u)$, from which
 $$R(u, \theta) = I + \sin\theta\, K(u) + (1 - \cos\theta)\, K(u)^2$$
-follows by exponentiation; $R(u,\theta)$ is Euclidean orthogonal with $\det = +1$ and admits a 9-multiplication apply kernel for zero-sum inputs, matching quaternion-to-matrix performance without invoking the $S^3$ double cover. Under the hyperplane isometry $V: H \to \mathbb{R}^3$ of §2.5 (cf. §3.4), these operators are carried (after restriction to $H$) to their classical $\mathbb{R}^3$ counterparts; the principal technical novelties are the joint gauge-compatibility theorem of §4, the explicit cyclic-difference form of $K(u)$ (§3.1), the gauge-compatible $4 \times 4$ lift into $\mathrm{SO}(4) \cap \mathrm{Stab}(\mathbf{1})$, and the 9-multiplication apply kernel of §7.
+follows by exponentiation; $R(u,\theta)$ is Euclidean orthogonal with $\det = +1$ and admits a 9-multiplication apply kernel for zero-sum inputs after gauge elimination. By Proposition 3.3, these operators are carried under the synthesis isometry $S_H:H\to\mathbb{R}^3$ to their classical $\mathbb{R}^3$ counterparts. The exact-arithmetic normalization of §7.5 records the same construction under the rescaled metric $M=3G$, where the raw cyclic-difference matrix becomes the normalized generator for rational $M$-unit axes. The principal technical contributions are the explicit cyclic-difference form of $K(u)$, the orientation and relabeling behavior under $S_4/A_4$, the joint gauge-compatibility theorem of §4, the gauge-compatible $4 \times 4$ lift into $\mathrm{SO}(4) \cap \mathrm{Stab}(\mathbf{1})$, and the reduced 9-multiplication apply kernel of §7.
 
-The $N = 4$ case is distinguished, *within the simplicial wedge–Hodge framework developed here*, by the coincidence $\dim \mathfrak{so}(3) = 3$, which permits a binary cross product and closed-form exponential (higher-$N$ generalizations, via Hodge duals of wedge products of arity $N - 3$, are discussed in §8). This answers the motivating question of §1.1 affirmatively for $N = 4$: the algebraic layer of 3D Euclidean vector calculus is self-contained on the zero-sum hyperplane of the simplicial coordinate frame, with no recourse to a Cartesian basis required at any stage.
+The $N = 4$ case is distinguished, *within the simplicial wedge-Hodge framework developed here*, by the coincidence $\dim \mathfrak{so}(3)=3$, which permits a single vector axis to parameterize every infinitesimal rotation. Higher-$N$ simple-blade generalizations are available, but they require $N-3$ fixed vectors and do not provide a single-axis parameterization of the full rotation algebra. This answers the motivating question of §1.1 affirmatively for $N=4$ in the precise sense above: the standard oriented algebra of 3D Euclidean rotations has a self-contained simplicial-coordinate presentation on the zero-sum hyperplane.
 
 ---
 
@@ -590,9 +695,9 @@ For $N = 4$, the factor is $4/3$; for $N = 3$, it is $3/2$.
 
 ---
 
-## Appendix B: Proof of $K^3 = -K$ for $N = 4$
+## Appendix B: Proof of the unit-axis identity $K^3 = -K$ for $N = 4$
 
-We prove Theorem 3.3: for any zero-sum unit axis $u$ (i.e.\ $\sum u_i = 0$ and $\tfrac{4}{3}\sum u_i^2 = 1$), the operator $K(u)$ defined in Definition 3.1 satisfies $K(u)^3 = -K(u)$.
+We prove the unit-axis case of Theorem 3.5: for any zero-sum unit axis $u$ (i.e.\ $\sum u_i = 0$ and $\tfrac{4}{3}\sum u_i^2 = 1$), the operator $K(u)$ defined in Definition 3.1 satisfies $K(u)^3 = -K(u)$.
 
 **Step 1: Rank of $K(u)$.** The operator $K(u)$ is skew-symmetric, so its rank is even. We claim its rank is exactly 2.
 
@@ -677,7 +782,7 @@ So $R^\top R = I$. $\square$
 
 **Hyperplane preservation, gauge-equivariance, metric preservation**: these follow from properties 1, 2, and 3 combined. Details omitted.
 
-**Spectrum**: $R$ has eigenvalue $+1$ on the two-dimensional subspace spanned by $\mathbf{1}$ and $u$ (both annihilated by $K$); on the orthogonal complement of this subspace (a 2D plane), $R$ acts as a planar rotation by $\theta$, with eigenvalues $e^{\pm i\theta}$. $\square$
+**Spectrum**: $R$ has eigenvalue $+1$ on $\operatorname{span}\{\mathbf{1},u\}$ because both vectors are annihilated by $K$. On the orthogonal complement of this subspace, $R$ acts as a planar rotation by $\theta$, with eigenvalues $e^{\pm i\theta}$. If $\theta\not\equiv0\pmod{2\pi}$, this gives a two-dimensional $+1$ eigenspace. If $\theta\equiv0\pmod{2\pi}$, then $R=I$ and the whole space is the $+1$ eigenspace. $\square$
 
 ---
 
@@ -726,6 +831,22 @@ $$R = I + \frac{\sqrt{3}}{2} K + \frac{3}{2} K^2 = \frac{1}{4}\begin{pmatrix}
 Row sums: $(1 + 3 - \sqrt{3} + \sqrt{3})/4 = 1$. $\checkmark$. Trace of the $4 \times 4$ matrix: $4 \cdot \tfrac{1}{4} = 1 = 2 + 2\cos(2\pi/3) = 2 - 1$. $\checkmark$
 
 For completeness, applying $R$ to the zero-sum point $P = (1/2, -3/2, -1/2, 3/2)$ gives $P' = \left(\tfrac{\sqrt{3} - 2}{2},\ -\tfrac{\sqrt{3}}{2},\ \tfrac{\sqrt{3} + 2}{2},\ -\tfrac{\sqrt{3}}{2}\right)$ as stated in §5.4, and one checks directly that $\sum P'_i = 0$ and $\tfrac{4}{3}\sum (P'_i)^2 = \tfrac{4}{3} \cdot 5 = 20/3 = \langle P, P \rangle_s$.
+
+---
+
+## Changelog (v2)
+
+This version revises the v1 preprint archived at DOI [10.5281/zenodo.19689050](https://doi.org/10.5281/zenodo.19689050). The main changes are:
+
+1. Retitled the paper from "vector calculus" to "vector algebra" to reflect that only the algebraic operators are developed here.
+2. Made the orientation datum explicit: the construction depends on the simplicial Gram matrix together with an orientation class of the tetrahedral labeling.
+3. Added the precise conjugacy statement $S K(u) S_H^{-1}=[Su]_\times$ and the corresponding Lie-algebra isomorphism.
+4. Corrected the low-$N$ discussion: nonzero antisymmetric bilinear maps $V\times V\to V$ do exist in two dimensions; what fails is the full three-dimensional cross-product package.
+5. Added the non-unit-axis identity $K(u)^3=-\|u\|_s^2K(u)$ and clarified where the unit-axis normalization is used.
+6. Qualified the spectrum statement for $R(u,\theta)$ at $\theta\equiv0\pmod{2\pi}$.
+7. Reframed the 9-multiplication kernel as a reduced per-apply structural parity result rather than a performance advantage.
+8. Added the exact-arithmetic normalization $M=4I-J=3G$, connecting the raw cyclic-difference matrix with height-space Quadray computation.
+9. Corrected the higher-dimensional wedge-Hodge arity discussion and distinguished single simple-blade Rodrigues exponentials from generic rotations in higher dimension.
 
 ---
 

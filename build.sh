@@ -8,13 +8,14 @@
 # -----------------------------------------------------------------------------
 set -euo pipefail
 
-SOURCE="${1:-simplicial_vector_calculus.md}"
+SOURCE="simplicial_vector_calculus.md"
 CLEAN=0
 SKIP_PDF=0
 for arg in "$@"; do
     case "$arg" in
         --clean) CLEAN=1 ;;
         --skip-pdf) SKIP_PDF=1 ;;
+        *) SOURCE="$arg" ;;
     esac
 done
 
