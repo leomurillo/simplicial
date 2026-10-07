@@ -1,0 +1,554 @@
+{
+  "preset": "weekdays",
+  "model_tag": "llama31_8b",
+  "source": "C:\\Projects\\simplicial\\weekdays\\baseline\\per_class_output_dists.safetensors",
+  "scenario": "adjacent",
+  "config": {
+    "max_cubic_fraction": 0.1,
+    "max_fisher_norm": null,
+    "min_probability": 1e-09,
+    "safety": 0.98
+  },
+  "cyclic_packets": true,
+  "diagnostics": [
+    {
+      "name": "Monday -> Tuesday",
+      "base_label": "Monday",
+      "target_label": "Tuesday",
+      "n_labels": 7,
+      "original_fisher_norm": 3.119475726569,
+      "original_kch_norm": 35.475831078697,
+      "original_directional_rho": 3.645602866458,
+      "original_cubic_fraction": 5.686184825313,
+      "accepted_scale": 0.017234754587,
+      "controlled_fisher_norm": 0.053763398587,
+      "controlled_kch_norm": 0.010537626123,
+      "controlled_cubic_fraction": 0.098,
+      "positivity_scale": 1.094725940128,
+      "fisher_scale": "inf",
+      "cubic_scale": 0.017586484272,
+      "min_probability_after_step": 0.006394320731,
+      "sum_after_step": 1.0,
+      "recommendation": "damp: cubic correction exceeds trust fraction",
+      "active_limits": [
+        "cubic_fraction"
+      ],
+      "step": [
+        -0.520122470334,
+        0.692951617762,
+        0.064487537369,
+        0.006250225939,
+        0.002238943242,
+        0.001645036042,
+        -0.24745089002
+      ],
+      "controlled_step": [
+        -0.008964183131,
+        0.011942851073,
+        0.00111142688,
+        0.00010772111,
+        3.8587637e-05,
+        2.8351792e-05,
+        -0.004264755362
+      ],
+      "kch_step_step": [
+        -5.759313004626,
+        8.065493091728,
+        0.378878033322,
+        -0.082115452622,
+        -0.061059741651,
+        -0.131847716392,
+        -2.41003520976
+      ],
+      "curve_correction": [
+        0.000855363854,
+        -0.001197873991,
+        -5.6270353e-05,
+        1.2195654e-05,
+        9.068494e-06,
+        1.958181e-05,
+        0.000357934532
+      ],
+      "curve_corrected_step": [
+        -0.008108819278,
+        0.010744977082,
+        0.001055156528,
+        0.000119916764,
+        4.7656131e-05,
+        4.7933602e-05,
+        -0.00390682083
+      ],
+      "curve_corrected_min_probability": 0.006403389225,
+      "packet_energy_step": {
+        "conductor_7": 1.0,
+        "trivial": 0.0
+      },
+      "packet_energy_kch": {
+        "conductor_7": 1.0,
+        "trivial": 0.0
+      }
+    },
+    {
+      "name": "Tuesday -> Wednesday",
+      "base_label": "Tuesday",
+      "target_label": "Wednesday",
+      "n_labels": 7,
+      "original_fisher_norm": 2.611259972182,
+      "original_kch_norm": 21.135937447934,
+      "original_directional_rho": 3.099711624002,
+      "original_cubic_fraction": 4.047076444532,
+      "accepted_scale": 0.024215010846,
+      "controlled_fisher_norm": 0.063231688549,
+      "controlled_kch_norm": 0.012393410956,
+      "controlled_cubic_fraction": 0.098,
+      "positivity_scale": 1.172250486122,
+      "fisher_scale": "inf",
+      "cubic_scale": 0.024709194741,
+      "min_probability_after_step": 0.009024871136,
+      "sum_after_step": 1.0,
+      "recommendation": "damp: cubic correction exceeds trust fraction",
+      "active_limits": [
+        "cubic_fraction"
+      ],
+      "step": [
+        -0.097676174715,
+        -0.638714084402,
+        0.663974454626,
+        0.047295337543,
+        0.017765549943,
+        0.004698026925,
+        0.002656890079
+      ],
+      "controlled_step": [
+        -0.00236522963,
+        -0.015466468481,
+        0.01607814862,
+        0.001145257112,
+        0.000430192985,
+        0.000113762773,
+        6.4336622e-05
+      ],
+      "kch_step_step": [
+        -0.704663659286,
+        -4.56050757684,
+        5.504369249025,
+        0.04450571663,
+        -0.021882232735,
+        -0.102292781285,
+        -0.159528715509
+      ],
+      "curve_correction": [
+        0.00020659567,
+        0.001337065004,
+        -0.001613789554,
+        -1.3048336e-05,
+        6.415507e-06,
+        2.9990543e-05,
+        4.6771167e-05
+      ],
+      "curve_corrected_step": [
+        -0.00215863396,
+        -0.014129403478,
+        0.014464359066,
+        0.001132208775,
+        0.000436608491,
+        0.000143753316,
+        0.000111107789
+      ],
+      "curve_corrected_min_probability": 0.009031286643,
+      "packet_energy_step": {
+        "conductor_7": 1.0,
+        "trivial": 0.0
+      },
+      "packet_energy_kch": {
+        "conductor_7": 1.0,
+        "trivial": 0.0
+      }
+    },
+    {
+      "name": "Wednesday -> Thursday",
+      "base_label": "Wednesday",
+      "target_label": "Thursday",
+      "n_labels": 7,
+      "original_fisher_norm": 2.995887425542,
+      "original_kch_norm": 31.145451969288,
+      "original_directional_rho": 3.470113319418,
+      "original_cubic_fraction": 5.198034429424,
+      "accepted_scale": 0.018853280279,
+      "controlled_fisher_norm": 0.056482305319,
+      "controlled_kch_norm": 0.011070531843,
+      "controlled_cubic_fraction": 0.098,
+      "positivity_scale": 1.102449120232,
+      "fisher_scale": "inf",
+      "cubic_scale": 0.019238041101,
+      "min_probability_after_step": 0.017741193304,
+      "sum_after_step": 1.0,
+      "recommendation": "damp: cubic correction exceeds trust fraction",
+      "active_limits": [
+        "cubic_fraction"
+      ],
+      "step": [
+        -0.002335813429,
+        -0.097901240523,
+        -0.668865927096,
+        0.710784367685,
+        0.070099695985,
+        -0.005288251277,
+        -0.006492831345
+      ],
+      "controlled_step": [
+        -4.4037745e-05,
+        -0.001845759527,
+        -0.012610316793,
+        0.013400616902,
+        0.001321609216,
+        -9.9700884e-05,
+        -0.000122411169
+      ],
+      "kch_step_step": [
+        -0.159321748968,
+        -0.900337611902,
+        -6.011623801309,
+        7.531390900707,
+        -0.050176220605,
+        -0.177318279096,
+        -0.232613238827
+      ],
+      "curve_correction": [
+        2.8315153e-05,
+        0.000160010781,
+        0.00106840435,
+        -0.001338502053,
+        8.917473e-06,
+        3.1513552e-05,
+        4.1340743e-05
+      ],
+      "curve_corrected_step": [
+        -1.5722592e-05,
+        -0.001685748746,
+        -0.011541912443,
+        0.01206211485,
+        0.001330526689,
+        -6.8187331e-05,
+        -8.1070426e-05
+      ],
+      "curve_corrected_min_probability": 0.017769508457,
+      "packet_energy_step": {
+        "conductor_7": 1.0,
+        "trivial": 0.0
+      },
+      "packet_energy_kch": {
+        "conductor_7": 1.0,
+        "trivial": 0.0
+      }
+    },
+    {
+      "name": "Thursday -> Friday",
+      "base_label": "Thursday",
+      "target_label": "Friday",
+      "n_labels": 7,
+      "original_fisher_norm": 2.531799719425,
+      "original_kch_norm": 16.959111009082,
+      "original_directional_rho": 2.645723093601,
+      "original_cubic_fraction": 3.349220493028,
+      "accepted_scale": 0.029260539939,
+      "controlled_fisher_norm": 0.074081826807,
+      "controlled_kch_norm": 0.014520038054,
+      "controlled_cubic_fraction": 0.098,
+      "positivity_scale": 1.079429526779,
+      "fisher_scale": "inf",
+      "cubic_scale": 0.029857693815,
+      "min_probability_after_step": 0.012034817131,
+      "sum_after_step": 1.0,
+      "recommendation": "damp: cubic correction exceeds trust fraction",
+      "active_limits": [
+        "cubic_fraction"
+      ],
+      "step": [
+        -0.00757974506,
+        -0.002826723536,
+        -0.063482368631,
+        -0.70282357399,
+        0.73638469513,
+        0.0352663302,
+        0.005061385887
+      ],
+      "controlled_step": [
+        -0.000221787433,
+        -8.2711457e-05,
+        -0.001857528383,
+        -0.020564997257,
+        0.021547013782,
+        0.001031911863,
+        0.000148098884
+      ],
+      "kch_step_step": [
+        -0.095312212296,
+        -0.077014071657,
+        -0.380433247715,
+        -4.317510793124,
+        5.003324579928,
+        -0.008698658601,
+        -0.124355596535
+      ],
+      "curve_correction": [
+        4.0802167e-05,
+        3.2968923e-05,
+        0.000162859516,
+        0.001848281463,
+        -0.002141871212,
+        3.723805e-06,
+        5.3235337e-05
+      ],
+      "curve_corrected_step": [
+        -0.000180985266,
+        -4.9742534e-05,
+        -0.001694668866,
+        -0.018716715794,
+        0.01940514257,
+        0.001035635669,
+        0.000201334221
+      ],
+      "curve_corrected_min_probability": 0.012067786054,
+      "packet_energy_step": {
+        "conductor_7": 1.0,
+        "trivial": 0.0
+      },
+      "packet_energy_kch": {
+        "conductor_7": 1.0,
+        "trivial": 0.0
+      }
+    },
+    {
+      "name": "Friday -> Saturday",
+      "base_label": "Friday",
+      "target_label": "Saturday",
+      "n_labels": 7,
+      "original_fisher_norm": 3.245690650471,
+      "original_kch_norm": 42.425795376171,
+      "original_directional_rho": 4.027316338595,
+      "original_cubic_fraction": 6.535711493333,
+      "accepted_scale": 0.014994541926,
+      "controlled_fisher_norm": 0.048667644536,
+      "controlled_kch_norm": 0.009538858329,
+      "controlled_cubic_fraction": 0.098,
+      "positivity_scale": 1.065956911478,
+      "fisher_scale": "inf",
+      "cubic_scale": 0.015300552985,
+      "min_probability_after_step": 0.005043468,
+      "sum_after_step": 1.0,
+      "recommendation": "damp: cubic correction exceeds trust fraction",
+      "active_limits": [
+        "cubic_fraction"
+      ],
+      "step": [
+        0.002441179606,
+        -0.004096367729,
+        7.313317e-05,
+        -0.066040519958,
+        -0.688837770705,
+        0.697839673276,
+        0.05862067234
+      ],
+      "controlled_step": [
+        3.660437e-05,
+        -6.1423158e-05,
+        1.096598e-06,
+        -0.000990247345,
+        -0.010328806833,
+        0.010463786238,
+        0.000878990129
+      ],
+      "kch_step_step": [
+        -0.082145895898,
+        -0.096067898529,
+        -0.053117840145,
+        -0.679636684127,
+        -8.203877109769,
+        9.235364295177,
+        -0.120518866708
+      ],
+      "curve_correction": [
+        9.234689e-06,
+        1.0799775e-05,
+        5.971409e-06,
+        7.6403494e-05,
+        0.000922264636,
+        -0.001038222511,
+        1.3548507e-05
+      ],
+      "curve_corrected_step": [
+        4.5839059e-05,
+        -5.0623383e-05,
+        7.068007e-06,
+        -0.000913843851,
+        -0.009406542196,
+        0.009425563727,
+        0.000892538636
+      ],
+      "curve_corrected_min_probability": 0.005049439409,
+      "packet_energy_step": {
+        "conductor_7": 1.0,
+        "trivial": 0.0
+      },
+      "packet_energy_kch": {
+        "conductor_7": 1.0,
+        "trivial": 0.0
+      }
+    },
+    {
+      "name": "Saturday -> Sunday",
+      "base_label": "Saturday",
+      "target_label": "Sunday",
+      "n_labels": 7,
+      "original_fisher_norm": 2.960985450045,
+      "original_kch_norm": 26.111093286291,
+      "original_directional_rho": 2.978190745247,
+      "original_cubic_fraction": 4.409189732069,
+      "accepted_scale": 0.022226305955,
+      "controlled_fisher_norm": 0.065811768542,
+      "controlled_kch_norm": 0.012899106634,
+      "controlled_cubic_fraction": 0.098,
+      "positivity_scale": 1.030475150401,
+      "fisher_scale": "inf",
+      "cubic_scale": 0.022679904036,
+      "min_probability_after_step": 0.004433876146,
+      "sum_after_step": 1.0,
+      "recommendation": "damp: cubic correction exceeds trust fraction",
+      "active_limits": [
+        "cubic_fraction"
+      ],
+      "step": [
+        0.017952166265,
+        0.003609748324,
+        -0.001681794412,
+        0.003511408577,
+        -0.139748031506,
+        -0.697087640176,
+        0.813444142928
+      ],
+      "controlled_step": [
+        0.00039901034,
+        8.0231371e-05,
+        -3.7380077e-05,
+        7.8045641e-05,
+        -0.003106082505,
+        -0.015493683168,
+        0.018079858398
+      ],
+      "kch_step_step": [
+        -0.059143381291,
+        -0.043033377286,
+        -0.044296973713,
+        -0.035358773698,
+        -1.126955751737,
+        -5.905802295976,
+        7.214590553701
+      ],
+      "curve_correction": [
+        1.4608672e-05,
+        1.0629431e-05,
+        1.0941545e-05,
+        8.73377e-06,
+        0.00027836296,
+        0.001458758788,
+        -0.001782035165
+      ],
+      "curve_corrected_step": [
+        0.000413619012,
+        9.0860802e-05,
+        -2.6438532e-05,
+        8.6779412e-05,
+        -0.002827719545,
+        -0.01403492438,
+        0.016297823233
+      ],
+      "curve_corrected_min_probability": 0.004442609917,
+      "packet_energy_step": {
+        "conductor_7": 1.0,
+        "trivial": 0.0
+      },
+      "packet_energy_kch": {
+        "conductor_7": 1.0,
+        "trivial": 0.0
+      }
+    },
+    {
+      "name": "Sunday -> Monday",
+      "base_label": "Sunday",
+      "target_label": "Monday",
+      "n_labels": 7,
+      "original_fisher_norm": 3.711436227841,
+      "original_kch_norm": 76.442633968492,
+      "original_directional_rho": 5.549471658374,
+      "original_cubic_fraction": 10.298255079134,
+      "accepted_scale": 0.00951617524,
+      "controlled_fisher_norm": 0.035318677536,
+      "controlled_kch_norm": 0.006922460797,
+      "controlled_cubic_fraction": 0.098,
+      "positivity_scale": 1.36602148083,
+      "fisher_scale": "inf",
+      "cubic_scale": 0.009710382898,
+      "min_probability_after_step": 0.003485999672,
+      "sum_after_step": 1.0,
+      "recommendation": "damp: cubic correction exceeds trust fraction",
+      "active_limits": [
+        "cubic_fraction"
+      ],
+      "step": [
+        0.607320859629,
+        0.046977057654,
+        0.005494954597,
+        0.001022781778,
+        0.00209690218,
+        -0.037073158127,
+        -0.62583939771
+      ],
+      "controlled_step": [
+        0.005779371727,
+        0.000447041913,
+        5.2290951e-05,
+        9.732971e-06,
+        1.9954489e-05,
+        -0.000352794669,
+        -0.005955597381
+      ],
+      "kch_step_step": [
+        12.660904228364,
+        0.129383221738,
+        -0.038504948984,
+        -0.108236279465,
+        -0.057632122345,
+        -0.67045190047,
+        -11.915462198838
+      ],
+      "curve_correction": [
+        -0.000573270495,
+        -5.858316e-06,
+        1.743458e-06,
+        4.900808e-06,
+        2.609513e-06,
+        3.0357255e-05,
+        0.000539517777
+      ],
+      "curve_corrected_step": [
+        0.005206101233,
+        0.000441183596,
+        5.4034409e-05,
+        1.4633779e-05,
+        2.2564002e-05,
+        -0.000322437415,
+        -0.005416079603
+      ],
+      "curve_corrected_min_probability": 0.003487743129,
+      "packet_energy_step": {
+        "conductor_7": 1.0,
+        "trivial": 0.0
+      },
+      "packet_energy_kch": {
+        "conductor_7": 1.0,
+        "trivial": 0.0
+      }
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+[
+  {
+    "file": "C:\\Users\\leomu\\Downloads\\central-valley-san-jose-costa-rica.jpg",
+    "crop_size": 512,
+    "width": 512,
+    "height": 512,
+    "raw_rgb_bytes": 786432,
+    "source_jpeg_bytes": 467355,
+    "webp_lossless_bytes": 307430,
+    "webp_lossless_encode_s": 6.558303600002546,
+    "sigi_best_mode": "g-bg-ravg-ctx-huff",
+    "sigi_bytes": 322164,
+    "sigi_estimate_s": 25.847342499997467,
+    "sigi_modes": {
+      "g-bg-ravg-ctx-huff": {
+        "bytes": 322164,
+        "estimate_s": 25.847342499997467
+      }
+    }
+  },
+  {
+    "file": "C:\\Users\\leomu\\Downloads\\que-ver-en-costa-rica-correos-portada.jpg",
+    "crop_size": 512,
+    "width": 512,
+    "height": 512,
+    "raw_rgb_bytes": 786432,
+    "source_jpeg_bytes": 1634994,
+    "webp_lossless_bytes": 231732,
+    "webp_lossless_encode_s": 10.263590499991551,
+    "sigi_best_mode": "g-bg-ravg-ctx-huff",
+    "sigi_bytes": 266380,
+    "sigi_estimate_s": 22.818397700000787,
+    "sigi_modes": {
+      "g-bg-ravg-ctx-huff": {
+        "bytes": 266380,
+        "estimate_s": 22.818397700000787
+      }
+    }
+  }
+]

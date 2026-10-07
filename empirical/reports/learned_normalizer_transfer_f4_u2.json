@@ -1,0 +1,4558 @@
+{
+  "purpose": "Direct learned B4 normalizer-transfer experiment on F4[u]/(u^2): train constrained logit tables on held-out normalizer-transformed targets and compare measured transfer gain with the symmetry premium.",
+  "config": {
+    "source_tasks": 8,
+    "transfers_per_source": 4,
+    "contexts": 32,
+    "steps": 800,
+    "batch_size": 96,
+    "signal_scale": 2.0,
+    "lr": 0.08,
+    "beta1": 0.9,
+    "beta2": 0.999,
+    "adam_eps": 1e-08,
+    "gradient_projection": 0.0,
+    "update_projection": 1.0,
+    "resource_weight": 0.25,
+    "max_source_size": 2,
+    "nontrivial_transfers_only": true,
+    "seed": 20260514
+  },
+  "row": "F_4[u]/(u^2)",
+  "label_count": 16,
+  "nonzero_modes": 15,
+  "policy_summaries": {
+    "oracle_target_b2": {
+      "count": 32,
+      "wins_by_measured_J": 32,
+      "mean_support_size": 2.25,
+      "mean_resource_cost": 0.15,
+      "mean_target_support_coverage": 1.0,
+      "mean_target_logit_projection_leakage": 0.0,
+      "mean_final_true_kl": 0.005998571112,
+      "mean_policy_probability_leakage": 0.0,
+      "mean_update_leakage": 0.0,
+      "mean_kch_carry_leakage": 0.0,
+      "mean_measured_J": 0.043498571112
+    },
+    "random_minimal_budget": {
+      "count": 32,
+      "wins_by_measured_J": 0,
+      "mean_support_size": 2.25,
+      "mean_resource_cost": 0.15,
+      "mean_target_support_coverage": 0.15625,
+      "mean_target_logit_projection_leakage": 0.853234171058,
+      "mean_final_true_kl": 0.101492228996,
+      "mean_policy_probability_leakage": 0.005393630677,
+      "mean_update_leakage": 0.0,
+      "mean_kch_carry_leakage": 0.536442674478,
+      "mean_measured_J": 0.138992228996
+    },
+    "source_raw": {
+      "count": 32,
+      "wins_by_measured_J": 0,
+      "mean_support_size": 1.625,
+      "mean_resource_cost": 0.108333333333,
+      "mean_target_support_coverage": 0.03125,
+      "mean_target_logit_projection_leakage": 0.966252691272,
+      "mean_final_true_kl": 0.114285394651,
+      "mean_policy_probability_leakage": 0.001834463766,
+      "mean_update_leakage": 0.0,
+      "mean_kch_carry_leakage": 0.597320026904,
+      "mean_measured_J": 0.141368727985
+    },
+    "source_minimal_b2": {
+      "count": 32,
+      "wins_by_measured_J": 0,
+      "mean_support_size": 2.25,
+      "mean_resource_cost": 0.15,
+      "mean_target_support_coverage": 0.046875,
+      "mean_target_logit_projection_leakage": 0.952785586917,
+      "mean_final_true_kl": 0.114004360717,
+      "mean_policy_probability_leakage": 0.0,
+      "mean_update_leakage": 0.0,
+      "mean_kch_carry_leakage": 0.0,
+      "mean_measured_J": 0.151504360717
+    },
+    "source_conductor_packet": {
+      "count": 32,
+      "wins_by_measured_J": 0,
+      "mean_support_size": 12.75,
+      "mean_resource_cost": 0.85,
+      "mean_target_support_coverage": 1.0,
+      "mean_target_logit_projection_leakage": 0.0,
+      "mean_final_true_kl": 0.036211905368,
+      "mean_policy_probability_leakage": 0.010948507383,
+      "mean_update_leakage": 0.0,
+      "mean_kch_carry_leakage": 0.201242330979,
+      "mean_measured_J": 0.248711905368
+    },
+    "full": {
+      "count": 32,
+      "wins_by_measured_J": 0,
+      "mean_support_size": 15.0,
+      "mean_resource_cost": 1.0,
+      "mean_target_support_coverage": 1.0,
+      "mean_target_logit_projection_leakage": 0.0,
+      "mean_final_true_kl": 0.041920517166,
+      "mean_policy_probability_leakage": 0.0,
+      "mean_update_leakage": 0.0,
+      "mean_kch_carry_leakage": 0.0,
+      "mean_measured_J": 0.291920517166
+    },
+    "random_normalizer_budget": {
+      "count": 32,
+      "wins_by_measured_J": 0,
+      "mean_support_size": 15.0,
+      "mean_resource_cost": 1.0,
+      "mean_target_support_coverage": 1.0,
+      "mean_target_logit_projection_leakage": 0.0,
+      "mean_final_true_kl": 0.041920517166,
+      "mean_policy_probability_leakage": 0.0,
+      "mean_update_leakage": 0.0,
+      "mean_kch_carry_leakage": 0.0,
+      "mean_measured_J": 0.291920517166
+    },
+    "source_normalizer_b3": {
+      "count": 32,
+      "wins_by_measured_J": 0,
+      "mean_support_size": 15.0,
+      "mean_resource_cost": 1.0,
+      "mean_target_support_coverage": 1.0,
+      "mean_target_logit_projection_leakage": 0.0,
+      "mean_final_true_kl": 0.041920517166,
+      "mean_policy_probability_leakage": 0.0,
+      "mean_update_leakage": 0.0,
+      "mean_kch_carry_leakage": 0.0,
+      "mean_measured_J": 0.291920517166
+    }
+  },
+  "b4_summary": {
+    "count": 32.0,
+    "mean_resource_delta": 0.85,
+    "mean_premium": 0.2125,
+    "mean_measured_transfer_gain": 0.072083843552,
+    "mean_measured_net_gain": -0.140416156448,
+    "break_even_resource_weight": 0.084804521825,
+    "b3_beats_b2_by_measured_J_rate": 0.0,
+    "mean_target_coverage_gain": 0.953125
+  },
+  "examples": [
+    {
+      "source_index": 0,
+      "transfer_index": 0,
+      "action_index": 8,
+      "source_support": [
+        "w+1+u"
+      ],
+      "target_support": [
+        "1+wu"
+      ],
+      "source_minimal_size": 1,
+      "source_normalizer_size": 15,
+      "winner_by_measured_J": "oracle_target_b2",
+      "premium": 0.233333333333,
+      "measured_transfer_gain": 0.028461497607,
+      "measured_net_gain": -0.204871835727,
+      "policies": {
+        "full": {
+          "policy": "full",
+          "support_size": 15,
+          "resource_cost": 1.0,
+          "target_support_coverage": 1.0,
+          "target_logit_projection_leakage": 0.0,
+          "final_true_kl": 0.038297077261,
+          "final_policy_probability_leakage": 0.0,
+          "cumulative_update_leakage": 0.0,
+          "cumulative_kch_carry_leakage": 0.0,
+          "measured_J": 0.288297077261
+        },
+        "oracle_target_b2": {
+          "policy": "oracle_target_b2",
+          "support_size": 1,
+          "resource_cost": 0.066666666667,
+          "target_support_coverage": 1.0,
+          "target_logit_projection_leakage": 0.0,
+          "final_true_kl": 0.001902746191,
+          "final_policy_probability_leakage": 0.0,
+          "cumulative_update_leakage": 0.0,
+          "cumulative_kch_carry_leakage": 0.0,
+          "measured_J": 0.018569412857
+        },
+        "random_minimal_budget": {
+          "policy": "random_minimal_budget",
+          "support_size": 1,
+          "resource_cost": 0.066666666667,
+          "target_support_coverage": 0.0,
+          "target_logit_projection_leakage": 1.0,
+          "final_true_kl": 0.066475013407,
+          "final_policy_probability_leakage": 0.0,
+          "cumulative_update_leakage": 0.0,
+          "cumulative_kch_carry_leakage": 0.0,
+          "measured_J": 0.083141680074
+        },
+        "random_normalizer_budget": {
+          "policy": "random_normalizer_budget",
+          "support_size": 15,
+          "resource_cost": 1.0,
+          "target_support_coverage": 1.0,
+          "target_logit_projection_leakage": 0.0,
+          "final_true_kl": 0.038297077261,
+          "final_policy_probability_leakage": 0.0,
+          "cumulative_update_leakage": 0.0,
+          "cumulative_kch_carry_leakage": 0.0,
+          "measured_J": 0.288297077261
+        },
+        "source_conductor_packet": {
+          "policy": "source_conductor_packet",
+          "support_size": 12,
+          "resource_cost": 0.8,
+          "target_support_coverage": 1.0,
+          "target_logit_projection_leakage": 0.0,
+          "final_true_kl": 0.031409993506,
+          "final_policy_probability_leakage": 0.015675437368,
+          "cumulative_update_leakage": 0.0,
+          "cumulative_kch_carry_leakage": 0.26742922879,
+          "measured_J": 0.231409993506
+        },
+        "source_minimal_b2": {
+          "policy": "source_minimal_b2",
+          "support_size": 1,
+          "resource_cost": 0.066666666667,
+          "target_support_coverage": 0.0,
+          "target_logit_projection_leakage": 1.0,
+          "final_true_kl": 0.066758574868,
+          "final_policy_probability_leakage": 0.0,
+          "cumulative_update_leakage": 0.0,
+          "cumulative_kch_carry_leakage": 0.0,
+          "measured_J": 0.083425241535
+        },
+        "source_normalizer_b3": {
+          "policy": "source_normalizer_b3",
+          "support_size": 15,
+          "resource_cost": 1.0,
+          "target_support_coverage": 1.0,
+          "target_logit_projection_leakage": 0.0,
+          "final_true_kl": 0.038297077261,
+          "final_policy_probability_leakage": 0.0,
+          "cumulative_update_leakage": 0.0,
+          "cumulative_kch_carry_leakage": 0.0,
+          "measured_J": 0.288297077261
+        },
+        "source_raw": {
+          "policy": "source_raw",
+          "support_size": 1,
+          "resource_cost": 0.066666666667,
+          "target_support_coverage": 0.0,
+          "target_logit_projection_leakage": 1.0,
+          "final_true_kl": 0.066758574868,
+          "final_policy_probability_leakage": 0.0,
+          "cumulative_update_leakage": 0.0,
+          "cumulative_kch_carry_leakage": 0.0,
+          "measured_J": 0.083425241535
+        }
+      }
+    },
+    {
+      "source_index": 0,
+      "transfer_index": 1,
+      "action_index": 19,
+      "source_support": [
+        "w+1+u"
+      ],
+      "target_support": [
+        "w+1"
+      ],
+      "source_minimal_size": 1,
+      "source_normalizer_size": 15,
+      "winner_by_measured_J": "oracle_target_b2",
+      "premium": 0.233333333333,
+      "measured_transfer_gain": 0.024279905744,
+      "measured_net_gain": -0.209053427589,
+      "policies": {
+        "full": {
+          "policy": "full",
+          "support_size": 15,
+          "resource_cost": 1.0,
+          "target_support_coverage": 1.0,
+          "target_logit_projection_leakage": 0.0,
+          "final_true_kl": 0.043292667626,
+          "final_policy_probability_leakage": 0.0,
+          "cumulative_update_leakage": 0.0,
+          "cumulative_kch_carry_leakage": 0.0,
+          "measured_J": 0.293292667626
+        },
+        "oracle_target_b2": {
+          "policy": "oracle_target_b2",
+          "support_size": 1,
+          "resource_cost": 0.066666666667,
+          "target_support_coverage": 1.0,
+          "target_logit_projection_leakage": 0.0,
+          "final_true_kl": 0.002161065835,
+          "final_policy_probability_leakage": 0.0,
+          "cumulative_update_leakage": 0.0,
+          "cumulative_kch_carry_leakage": 0.0,
+          "measured_J": 0.018827732502
+        },
+        "random_minimal_budget": {
+          "policy": "random_minimal_budget",
+          "support_size": 1,
+          "resource_cost": 0.066666666667,
+          "target_support_coverage": 0.0,
+          "target_logit_projection_leakage": 1.0,
+          "final_true_kl": 0.066827850741,
+          "final_policy_probability_leakage": 0.0,
+          "cumulative_update_leakage": 0.0,
+          "cumulative_kch_carry_leakage": 0.0,
+          "measured_J": 0.083494517408
+        },
+        "random_normalizer_budget": {
+          "policy": "random_normalizer_budget",
+          "support_size": 15,
+          "resource_cost": 1.0,
+          "target_support_coverage": 1.0,
+          "target_logit_projection_leakage": 0.0,
+          "final_true_kl": 0.043292667626,
+          "final_policy_probability_leakage": 0.0,
+          "cumulative_update_leakage": 0.0,
+          "cumulative_kch_carry_leakage": 0.0,
+          "measured_J": 0.293292667626
+        },
+        "source_conductor_packet": {
+          "policy": "source_conductor_packet",
+          "support_size": 12,
+          "resource_cost": 0.8,
+          "target_support_coverage": 1.0,
+          "target_logit_projection_leakage": 0.0,
+          "final_true_kl": 0.033594854751,
+          "final_policy_probability_leakage": 0.015566464139,
+          "cumulative_update_leakage": 0.0,
+          "cumulative_kch_carry_leakage": 0.2718937571,
+          "measured_J": 0.233594854751
+        },
+        "source_minimal_b2": {
+          "policy": "source_minimal_b2",
+          "support_size": 1,
+          "resource_cost": 0.066666666667,
+          "target_support_coverage": 0.0,
+          "target_logit_projection_leakage": 1.0,
+          "final_true_kl": 0.06757257337,
+          "final_policy_probability_leakage": 0.0,
+          "cumulative_update_leakage": 0.0,
+          "cumulative_kch_carry_leakage": 0.0,
+          "measured_J": 0.084239240036
+        },
+        "source_normalizer_b3": {
+          "policy": "source_normalizer_b3",
+          "support_size": 15,
+          "resource_cost": 1.0,
+          "target_support_coverage": 1.0,
+          "target_logit_projection_leakage": 0.0,
+          "final_true_kl": 0.043292667626,
+          "final_policy_probability_leakage": 0.0,
+          "cumulative_update_leakage": 0.0,
+          "cumulative_kch_carry_leakage": 0.0,
+          "measured_J": 0.293292667626
+        },
+        "source_raw": {
+          "policy": "source_raw",
+          "support_size": 1,
+          "resource_cost": 0.066666666667,
+          "target_support_coverage": 0.0,
+          "target_logit_projection_leakage": 1.0,
+          "final_true_kl": 0.06757257337,
+          "final_policy_probability_leakage": 0.0,
+          "cumulative_update_leakage": 0.0,
+          "cumulative_kch_carry_leakage": 0.0,
+          "measured_J": 0.084239240036
+        }
+      }
+    },
+    {
+      "source_index": 0,
+      "transfer_index": 2,
+      "action_index": 3,
+      "source_support": [
+        "w+1+u"
+      ],
+      "target_support": [
+        "w+(w+1)u"
+      ],
+      "source_minimal_size": 1,
+      "source_normalizer_size": 15,
+      "winner_by_measured_J": "oracle_target_b2",
+      "premium": 0.233333333333,
+      "measured_transfer_gain": 0.023984848939,
+      "measured_net_gain": -0.209348484394,
+      "policies": {
+        "full": {
+          "policy": "full",
+          "support_size": 15,
+          "resource_cost": 1.0,
+          "target_support_coverage": 1.0,
+          "target_logit_projection_leakage": 0.0,
+          "final_true_kl": 0.042206849222,
+          "final_policy_probability_leakage": 0.0,
+          "cumulative_update_leakage": 0.0,
+          "cumulative_kch_carry_leakage": 0.0,
+          "measured_J": 0.292206849222
+        },
+        "oracle_target_b2": {
+          "policy": "oracle_target_b2",
+          "support_size": 1,
+          "resource_cost": 0.066666666667,
+          "target_support_coverage": 1.0,
+          "target_logit_projection_leakage": 0.0,
+          "final_true_kl": 0.003504113144,
+          "final_policy_probability_leakage": 0.0,
+          "cumulative_update_leakage": 0.0,
+          "cumulative_kch_carry_leakage": 0.0,
+          "measured_J": 0.020170779811
+        },
+        "random_minimal_budget": {
+          "policy": "random_minimal_budget",
+          "support_size": 1,
+          "resource_cost": 0.066666666667,
+          "target_support_coverage": 0.0,
+          "target_logit_projection_leakage": 1.0,
+          "final_true_kl": 0.067014675216,
+          "final_policy_probability_leakage": 0.0,
+          "cumulative_update_leakage": 0.0,
+          "cumulative_kch_carry_leakage": 0.0,
+          "measured_J": 0.083681341883
+        },
+        "random_normalizer_budget": {
+          "policy": "random_normalizer_budget",
+          "support_size": 15,
+          "resource_cost": 1.0,
+          "target_support_coverage": 1.0,
+          "target_logit_projection_leakage": 0.0,
+          "final_true_kl": 0.042206849222,
+          "final_policy_probability_leakage": 0.0,
+          "cumulative_update_leakage": 0.0,
+          "cumulative_kch_carry_leakage": 0.0,
+          "measured_J": 0.292206849222
+        },
+        "source_conductor_packet": {
+          "policy": "source_conductor_packet",
+          "support_size": 12,
+          "resource_cost": 0.8,
+          "target_support_coverage": 1.0,
+          "target_logit_projection_leakage": 0.0,
+          "final_true_kl": 0.034264618378,
+          "final_policy_probability_leakage": 0.015719414594,
+          "cumulative_update_leakage": 0.0,
+          "cumulative_kch_carry_leakage": 0.264416187321,
+          "measured_J": 0.234264618378
+        },
+        "source_minimal_b2": {
+          "policy": "source_minimal_b2",
+          "support_size": 1,
+          "resource_cost": 0.066666666667,
+          "target_support_coverage": 0.0,
+          "target_logit_projection_leakage": 1.0,
+          "final_true_kl": 0.066191698161,
+          "final_policy_probability_leakage": 0.0,
+          "cumulative_update_leakage": 0.0,
+          "cumulative_kch_carry_leakage": 0.0,
+          "measured_J": 0.082858364828
+        },
+        "source_normalizer_b3": {
+          "policy": "source_normalizer_b3",
+          "support_size": 15,
+          "resource_cost": 1.0,
+          "target_support_coverage": 1.0,
+          "target_logit_projection_leakage": 0.0,
+          "final_true_kl": 0.042206849222,
+          "final_policy_probability_leakage": 0.0,
+          "cumulative_update_leakage": 0.0,
+          "cumulative_kch_carry_leakage": 0.0,
+          "measured_J": 0.292206849222
+        },
+        "source_raw": {
+          "policy": "source_raw",
+          "support_size": 1,
+          "resource_cost": 0.066666666667,
+          "target_support_coverage": 0.0,
+          "target_logit_projection_leakage": 1.0,
+          "final_true_kl": 0.066191698161,
+          "final_policy_probability_leakage": 0.0,
+          "cumulative_update_leakage": 0.0,
+          "cumulative_kch_carry_leakage": 0.0,
+          "measured_J": 0.082858364828
+        }
+      }
+    },
+    {
+      "source_index": 0,
+      "transfer_index": 3,
+      "action_index": 8,
+      "source_support": [
+        "w+1+u"
+      ],
+      "target_support": [
+        "1+wu"
+      ],
+      "source_minimal_size": 1,
+      "source_normalizer_size": 15,
+      "winner_by_measured_J": "oracle_target_b2",
+      "premium": 0.233333333333,
+      "measured_transfer_gain": 0.021319867696,
+      "measured_net_gain": -0.212013465637,
+      "policies": {
+        "full": {
+          "policy": "full",
+          "support_size": 15,
+          "resource_cost": 1.0,
+          "target_support_coverage": 1.0,
+          "target_logit_projection_leakage": 0.0,
+          "final_true_kl": 0.045881849553,
+          "final_policy_probability_leakage": 0.0,
+          "cumulative_update_leakage": 0.0,
+          "cumulative_kch_carry_leakage": 0.0,
+          "measured_J": 0.295881849553
+        },
+        "oracle_target_b2": {
+          "policy": "oracle_target_b2",
+          "support_size": 1,
+          "resource_cost": 0.066666666667,
+          "target_support_coverage": 1.0,
+          "target_logit_projection_leakage": 0.0,
+          "final_true_kl": 0.002843290271,
+          "final_policy_probability_leakage": 0.0,
+          "cumulative_update_leakage": 0.0,
+          "cumulative_kch_carry_leakage": 0.0,
+          "measured_J": 0.019509956938
+        },
+        "random_minimal_budget": {
+          "policy": "random_minimal_budget",
+          "support_size": 1,
+          "resource_cost": 0.066666666667,
+          "target_support_coverage": 0.0,
+          "target_logit_projection_leakage": 1.0,
+          "final_true_kl": 0.067038389857,
+          "final_policy_probability_leakage": 0.0,
+          "cumulative_update_leakage": 0.0,
+          "cumulative_kch_carry_leakage": 0.0,
+          "measured_J": 0.083705056524
+        },
+        "random_normalizer_budget": {
+          "policy": "random_normalizer_budget",
+          "support_size": 15,
+          "resource_cost": 1.0,
+          "target_support_coverage": 1.0,
+          "target_logit_projection_leakage": 0.0,
+          "final_true_kl": 0.045881849553,
+          "final_policy_probability_leakage": 0.0,
+          "cumulative_update_leakage": 0.0,
+          "cumulative_kch_carry_leakage": 0.0,
+          "measured_J": 0.295881849553
+        },
+        "source_conductor_packet": {
+          "policy": "source_conductor_packet",
+          "support_size": 12,
+          "resource_cost": 0.8,
+          "target_support_coverage": 1.0,
+          "target_logit_projection_leakage": 0.0,
+          "final_true_kl": 0.037993480191,
+          "final_policy_probability_leakage": 0.017495212835,
+          "cumulative_update_leakage": 0.0,
+          "cumulative_kch_carry_leakage": 0.264397456858,
+          "measured_J": 0.237993480191
+        },
+        "source_minimal_b2": {
+          "policy": "source_minimal_b2",
+          "support_size": 1,
+          "resource_cost": 0.066666666667,
+          "target_support_coverage": 0.0,
+          "target_logit_projection_leakage": 1.0,
+          "final_true_kl": 0.067201717249,
+          "final_policy_probability_leakage": 0.0,
+          "cumulative_update_leakage": 0.0,
+          "cumulative_kch_carry_leakage": 0.0,
+          "measured_J": 0.083868383916
+        },
+        "source_normalizer_b3": {
+          "policy": "source_normalizer_b3",
+          "support_size": 15,
+          "resource_cost": 1.0,
+          "target_support_coverage": 1.0,
+          "target_logit_projection_leakage": 0.0,
+          "final_true_kl": 0.045881849553,
+          "final_policy_probability_leakage": 0.0,
+          "cumulative_update_leakage": 0.0,
+          "cumulative_kch_carry_leakage": 0.0,
+          "measured_J": 0.295881849553
+        },
+        "source_raw": {
+          "policy": "source_raw",
+          "support_size": 1,
+          "resource_cost": 0.066666666667,
+          "target_support_coverage": 0.0,
+          "target_logit_projection_leakage": 1.0,
+          "final_true_kl": 0.067201717249,
+          "final_policy_probability_leakage": 0.0,
+          "cumulative_update_leakage": 0.0,
+          "cumulative_kch_carry_leakage": 0.0,
+          "measured_J": 0.083868383916
+        }
+      }
+    },
+    {
+      "source_index": 1,
+      "transfer_index": 0,
+      "action_index": 8,
+      "source_support": [
+        "w+wu",
+        "wu"
+      ],
+      "target_support": [
+        "(w+1)u",
+        "w+1+(w+1)u"
+      ],
+      "source_minimal_size": 3,
+      "source_normalizer_size": 15,
+      "winner_by_measured_J": "oracle_target_b2",
+      "premium": 0.2,
+      "measured_transfer_gain": 0.104959084459,
+      "measured_net_gain": -0.095040915541,
+      "policies": {
+        "full": {
+          "policy": "full",
+          "support_size": 15,
+          "resource_cost": 1.0,
+          "target_support_coverage": 1.0,
+          "target_logit_projection_leakage": 0.0,
+          "final_true_kl": 0.043397201481,
+          "final_policy_probability_leakage": 0.0,
+          "cumulative_update_leakage": 0.0,
+          "cumulative_kch_carry_leakage": 0.0,
+          "measured_J": 0.293397201481
+        },
+        "oracle_target_b2": {
+          "policy": "oracle_target_b2",
+          "support_size": 3,
+          "resource_cost": 0.2,
+          "target_support_coverage": 1.0,
+          "target_logit_projection_leakage": 0.0,
+          "final_true_kl": 0.008840479551,
+          "final_policy_probability_leakage": 0.0,
+          "cumulative_update_leakage": 0.0,
+          "cumulative_kch_carry_leakage": 0.0,
+          "measured_J": 0.058840479551
+        },
+        "random_minimal_budget": {
+          "policy": "random_minimal_budget",
+          "support_size": 3,
+          "resource_cost": 0.2,
+          "target_support_coverage": 0.0,
+          "target_logit_projection_leakage": 1.0,
+          "final_true_kl": 0.148939936198,
+          "final_policy_probability_leakage": 0.005785399423,
+          "cumulative_update_leakage": 0.0,
+          "cumulative_kch_carry_leakage": 0.987417011694,
+          "measured_J": 0.198939936198
+        },
+        "random_normalizer_budget": {
+          "policy": "random_normalizer_budget",
+          "support_size": 15,
+          "resource_cost": 1.0,
+          "target_support_coverage": 1.0,
+          "target_logit_projection_leakage": 0.0,
+          "final_true_kl": 0.043397201481,
+          "final_policy_probability_leakage": 0.0,
+          "cumulative_update_leakage": 0.0,
+          "cumulative_kch_carry_leakage": 0.0,
+          "measured_J": 0.293397201481
+        },
+        "source_conductor_packet": {
+          "policy": "source_conductor_packet",
+          "support_size": 15,
+          "resource_cost": 1.0,
+          "target_support_coverage": 1.0,
+          "target_logit_projection_leakage": 0.0,
+          "final_true_kl": 0.043397201481,
+          "final_policy_probability_leakage": 0.0,
+          "cumulative_update_leakage": 0.0,
+          "cumulative_kch_carry_leakage": 0.0,
+          "measured_J": 0.293397201481
+        },
+        "source_minimal_b2": {
+          "policy": "source_minimal_b2",
+          "support_size": 3,
+          "resource_cost": 0.2,
+          "target_support_coverage": 0.0,
+          "target_logit_projection_leakage": 1.0,
+          "final_true_kl": 0.148356285941,
+          "final_policy_probability_leakage": 0.0,
+          "cumulative_update_leakage": 0.0,
+          "cumulative_kch_carry_leakage": 0.0,
+          "measured_J": 0.198356285941
+        },
+        "source_normalizer_b3": {
+          "policy": "source_normalizer_b3",
+          "support_size": 15,
+          "resource_cost": 1.0,
+          "target_support_coverage": 1.0,
+          "target_logit_projection_leakage": 0.0,
+          "final_true_kl": 0.043397201481,
+          "final_policy_probability_leakage": 0.0,
+          "cumulative_update_leakage": 0.0,
+          "cumulative_kch_carry_leakage": 0.0,
+          "measured_J": 0.293397201481
+        },
+        "source_raw": {
+          "policy": "source_raw",
+          "support_size": 2,
+          "resource_cost": 0.133333333333,
+          "target_support_coverage": 0.0,
+          "target_logit_projection_leakage": 1.0,
+          "final_true_kl": 0.145150722045,
+          "final_policy_probability_leakage": 0.003097436282,
+          "cumulative_update_leakage": 0.0,
+          "cumulative_kch_carry_leakage": 0.972117526476,
+          "measured_J": 0.178484055378
+        }
+      }
+    },
+    {
+      "source_index": 1,
+      "transfer_index": 1,
+      "action_index": 6,
+      "source_support": [
+        "w+wu",
+        "wu"
+      ],
+      "target_support": [
+        "w+(w+1)u",
+        "wu"
+      ],
+      "source_minimal_size": 3,
+      "source_normalizer_size": 15,
+      "winner_by_measured_J": "oracle_target_b2",
+      "premium": 0.2,
+      "measured_transfer_gain": 0.041268708286,
+      "measured_net_gain": -0.158731291714,
+      "policies": {
+        "full": {
+          "policy": "full",
+          "support_size": 15,
+          "resource_cost": 1.0,
+          "target_support_coverage": 1.0,
+          "target_logit_projection_leakage": 0.0,
+          "final_true_kl": 0.037958529204,
+          "final_policy_probability_leakage": 0.0,
+          "cumulative_update_leakage": 0.0,
+          "cumulative_kch_carry_leakage": 0.0,
+          "measured_J": 0.287958529204
+        },
+        "oracle_target_b2": {
+          "policy": "oracle_target_b2",
+          "support_size": 3,
+          "resource_cost": 0.2,
+          "target_support_coverage": 1.0,
+          "target_logit_projection_leakage": 0.0,
+          "final_true_kl": 0.009144467044,
+          "final_policy_probability_leakage": 0.0,
+          "cumulative_update_leakage": 0.0,
+          "cumulative_kch_carry_leakage": 0.0,
+          "measured_J": 0.059144467044
+        },
+        "random_minimal_budget": {
+          "policy": "random_minimal_budget",
+          "support_size": 3,
+          "resource_cost": 0.2,
+          "target_support_coverage": 0.5,
+          "target_logit_projection_leakage": 0.510861218645,
+          "final_true_kl": 0.079042304146,
+          "final_policy_probability_leakage": 0.014048407109,
+          "cumulative_update_leakage": 0.0,
+          "cumulative_kch_carry_leakage": 0.914379334738,
+          "measured_J": 0.129042304146
+        },
+        "random_normalizer_budget": {
+          "policy": "random_normalizer_budget",
+          "support_size": 15,
+          "resource_cost": 1.0,
+          "target_support_coverage": 1.0,
+          "target_logit_projection_leakage": 0.0,
+          "final_true_kl": 0.037958529204,
+          "final_policy_probability_leakage": 0.0,
+          "cumulative_update_leakage": 0.0,
+          "cumulative_kch_carry_leakage": 0.0,
+          "measured_J": 0.287958529204
+        },
+        "source_conductor_packet": {
+          "policy": "source_conductor_packet",
+          "support_size": 15,
+          "resource_cost": 1.0,
+          "target_support_coverage": 1.0,
+          "target_logit_projection_leakage": 0.0,
+          "final_true_kl": 0.037958529204,
+          "final_policy_probability_leakage": 0.0,
+          "cumulative_update_leakage": 0.0,
+          "cumulative_kch_carry_leakage": 0.0,
+          "measured_J": 0.287958529204
+        },
+        "source_minimal_b2": {
+          "policy": "source_minimal_b2",
+          "support_size": 3,
+          "resource_cost": 0.2,
+          "target_support_coverage": 0.5,
+          "target_logit_projection_leakage": 0.489138781355,
+          "final_true_kl": 0.07922723749,
+          "final_policy_probability_leakage": 0.0,
+          "cumulative_update_leakage": 0.0,
+          "cumulative_kch_carry_leakage": 0.0,
+          "measured_J": 0.12922723749
+        },
+        "source_normalizer_b3": {
+          "policy": "source_normalizer_b3",
+          "support_size": 15,
+          "resource_cost": 1.0,
+          "target_support_coverage": 1.0,
+          "target_logit_projection_leakage": 0.0,
+          "final_true_kl": 0.037958529204,
+          "final_policy_probability_leakage": 0.0,
+          "cumulative_update_leakage": 0.0,
+          "cumulative_kch_carry_leakage": 0.0,
+          "measured_J": 0.287958529204
+        },
+        "source_raw": {
+          "policy": "source_raw",
+          "support_size": 2,
+          "resource_cost": 0.133333333333,
+          "target_support_coverage": 0.5,
+          "target_logit_projection_leakage": 0.489138781355,
+          "final_true_kl": 0.076279347487,
+          "final_policy_probability_leakage": 0.006445131551,
+          "cumulative_update_leakage": 0.0,
+          "cumulative_kch_carry_leakage": 0.815938166408,
+          "measured_J": 0.10961268082
+        }
+      }
+    }
+  ],
+  "records": [
+    {
+      "source_index": 0,
+      "transfer_index": 0,
+      "action_index": 8,
+      "source_support": [
+        "w+1+u"
+      ],
+      "target_support": [
+        "1+wu"
+      ],
+      "source_minimal_size": 1,
+      "source_normalizer_size": 15,
+      "winner_by_measured_J": "oracle_target_b2",
+      "premium": 0.233333333333,
+      "measured_transfer_gain": 0.028461497607,
+      "measured_net_gain": -0.204871835727,
+      "policies": {
+        "full": {
+          "policy": "full",
+          "support_size": 15,
+          "resource_cost": 1.0,
+          "target_support_coverage": 1.0,
+          "target_logit_projection_leakage": 0.0,
+          "final_true_kl": 0.038297077261,
+          "final_policy_probability_leakage": 0.0,
+          "cumulative_update_leakage": 0.0,
+          "cumulative_kch_carry_leakage": 0.0,
+          "measured_J": 0.288297077261
+        },
+        "oracle_target_b2": {
+          "policy": "oracle_target_b2",
+          "support_size": 1,
+          "resource_cost": 0.066666666667,
+          "target_support_coverage": 1.0,
+          "target_logit_projection_leakage": 0.0,
+          "final_true_kl": 0.001902746191,
+          "final_policy_probability_leakage": 0.0,
+          "cumulative_update_leakage": 0.0,
+          "cumulative_kch_carry_leakage": 0.0,
+          "measured_J": 0.018569412857
+        },
+        "random_minimal_budget": {
+          "policy": "random_minimal_budget",
+          "support_size": 1,
+          "resource_cost": 0.066666666667,
+          "target_support_coverage": 0.0,
+          "target_logit_projection_leakage": 1.0,
+          "final_true_kl": 0.066475013407,
+          "final_policy_probability_leakage": 0.0,
+          "cumulative_update_leakage": 0.0,
+          "cumulative_kch_carry_leakage": 0.0,
+          "measured_J": 0.083141680074
+        },
+        "random_normalizer_budget": {
+          "policy": "random_normalizer_budget",
+          "support_size": 15,
+          "resource_cost": 1.0,
+          "target_support_coverage": 1.0,
+          "target_logit_projection_leakage": 0.0,
+          "final_true_kl": 0.038297077261,
+          "final_policy_probability_leakage": 0.0,
+          "cumulative_update_leakage": 0.0,
+          "cumulative_kch_carry_leakage": 0.0,
+          "measured_J": 0.288297077261
+        },
+        "source_conductor_packet": {
+          "policy": "source_conductor_packet",
+          "support_size": 12,
+          "resource_cost": 0.8,
+          "target_support_coverage": 1.0,
+          "target_logit_projection_leakage": 0.0,
+          "final_true_kl": 0.031409993506,
+          "final_policy_probability_leakage": 0.015675437368,
+          "cumulative_update_leakage": 0.0,
+          "cumulative_kch_carry_leakage": 0.26742922879,
+          "measured_J": 0.231409993506
+        },
+        "source_minimal_b2": {
+          "policy": "source_minimal_b2",
+          "support_size": 1,
+          "resource_cost": 0.066666666667,
+          "target_support_coverage": 0.0,
+          "target_logit_projection_leakage": 1.0,
+          "final_true_kl": 0.066758574868,
+          "final_policy_probability_leakage": 0.0,
+          "cumulative_update_leakage": 0.0,
+          "cumulative_kch_carry_leakage": 0.0,
+          "measured_J": 0.083425241535
+        },
+        "source_normalizer_b3": {
+          "policy": "source_normalizer_b3",
+          "support_size": 15,
+          "resource_cost": 1.0,
+          "target_support_coverage": 1.0,
+          "target_logit_projection_leakage": 0.0,
+          "final_true_kl": 0.038297077261,
+          "final_policy_probability_leakage": 0.0,
+          "cumulative_update_leakage": 0.0,
+          "cumulative_kch_carry_leakage": 0.0,
+          "measured_J": 0.288297077261
+        },
+        "source_raw": {
+          "policy": "source_raw",
+          "support_size": 1,
+          "resource_cost": 0.066666666667,
+          "target_support_coverage": 0.0,
+          "target_logit_projection_leakage": 1.0,
+          "final_true_kl": 0.066758574868,
+          "final_policy_probability_leakage": 0.0,
+          "cumulative_update_leakage": 0.0,
+          "cumulative_kch_carry_leakage": 0.0,
+          "measured_J": 0.083425241535
+        }
+      }
+    },
+    {
+      "source_index": 0,
+      "transfer_index": 1,
+      "action_index": 19,
+      "source_support": [
+        "w+1+u"
+      ],
+      "target_support": [
+        "w+1"
+      ],
+      "source_minimal_size": 1,
+      "source_normalizer_size": 15,
+      "winner_by_measured_J": "oracle_target_b2",
+      "premium": 0.233333333333,
+      "measured_transfer_gain": 0.024279905744,
+      "measured_net_gain": -0.209053427589,
+      "policies": {
+        "full": {
+          "policy": "full",
+          "support_size": 15,
+          "resource_cost": 1.0,
+          "target_support_coverage": 1.0,
+          "target_logit_projection_leakage": 0.0,
+          "final_true_kl": 0.043292667626,
+          "final_policy_probability_leakage": 0.0,
+          "cumulative_update_leakage": 0.0,
+          "cumulative_kch_carry_leakage": 0.0,
+          "measured_J": 0.293292667626
+        },
+        "oracle_target_b2": {
+          "policy": "oracle_target_b2",
+          "support_size": 1,
+          "resource_cost": 0.066666666667,
+          "target_support_coverage": 1.0,
+          "target_logit_projection_leakage": 0.0,
+          "final_true_kl": 0.002161065835,
+          "final_policy_probability_leakage": 0.0,
+          "cumulative_update_leakage": 0.0,
+          "cumulative_kch_carry_leakage": 0.0,
+          "measured_J": 0.018827732502
+        },
+        "random_minimal_budget": {
+          "policy": "random_minimal_budget",
+          "support_size": 1,
+          "resource_cost": 0.066666666667,
+          "target_support_coverage": 0.0,
+          "target_logit_projection_leakage": 1.0,
+          "final_true_kl": 0.066827850741,
+          "final_policy_probability_leakage": 0.0,
+          "cumulative_update_leakage": 0.0,
+          "cumulative_kch_carry_leakage": 0.0,
+          "measured_J": 0.083494517408
+        },
+        "random_normalizer_budget": {
+          "policy": "random_normalizer_budget",
+          "support_size": 15,
+          "resource_cost": 1.0,
+          "target_support_coverage": 1.0,
+          "target_logit_projection_leakage": 0.0,
+          "final_true_kl": 0.043292667626,
+          "final_policy_probability_leakage": 0.0,
+          "cumulative_update_leakage": 0.0,
+          "cumulative_kch_carry_leakage": 0.0,
+          "measured_J": 0.293292667626
+        },
+        "source_conductor_packet": {
+          "policy": "source_conductor_packet",
+          "support_size": 12,
+          "resource_cost": 0.8,
+          "target_support_coverage": 1.0,
+          "target_logit_projection_leakage": 0.0,
+          "final_true_kl": 0.033594854751,
+          "final_policy_probability_leakage": 0.015566464139,
+          "cumulative_update_leakage": 0.0,
+          "cumulative_kch_carry_leakage": 0.2718937571,
+          "measured_J": 0.233594854751
+        },
+        "source_minimal_b2": {
+          "policy": "source_minimal_b2",
+          "support_size": 1,
+          "resource_cost": 0.066666666667,
+          "target_support_coverage": 0.0,
+          "target_logit_projection_leakage": 1.0,
+          "final_true_kl": 0.06757257337,
+          "final_policy_probability_leakage": 0.0,
+          "cumulative_update_leakage": 0.0,
+          "cumulative_kch_carry_leakage": 0.0,
+          "measured_J": 0.084239240036
+        },
+        "source_normalizer_b3": {
+          "policy": "source_normalizer_b3",
+          "support_size": 15,
+          "resource_cost": 1.0,
+          "target_support_coverage": 1.0,
+          "target_logit_projection_leakage": 0.0,
+          "final_true_kl": 0.043292667626,
+          "final_policy_probability_leakage": 0.0,
+          "cumulative_update_leakage": 0.0,
+          "cumulative_kch_carry_leakage": 0.0,
+          "measured_J": 0.293292667626
+        },
+        "source_raw": {
+          "policy": "source_raw",
+          "support_size": 1,
+          "resource_cost": 0.066666666667,
+          "target_support_coverage": 0.0,
+          "target_logit_projection_leakage": 1.0,
+          "final_true_kl": 0.06757257337,
+          "final_policy_probability_leakage": 0.0,
+          "cumulative_update_leakage": 0.0,
+          "cumulative_kch_carry_leakage": 0.0,
+          "measured_J": 0.084239240036
+        }
+      }
+    },
+    {
+      "source_index": 0,
+      "transfer_index": 2,
+      "action_index": 3,
+      "source_support": [
+        "w+1+u"
+      ],
+      "target_support": [
+        "w+(w+1)u"
+      ],
+      "source_minimal_size": 1,
+      "source_normalizer_size": 15,
+      "winner_by_measured_J": "oracle_target_b2",
+      "premium": 0.233333333333,
+      "measured_transfer_gain": 0.023984848939,
+      "measured_net_gain": -0.209348484394,
+      "policies": {
+        "full": {
+          "policy": "full",
+          "support_size": 15,
+          "resource_cost": 1.0,
+          "target_support_coverage": 1.0,
+          "target_logit_projection_leakage": 0.0,
+          "final_true_kl": 0.042206849222,
+          "final_policy_probability_leakage": 0.0,
+          "cumulative_update_leakage": 0.0,
+          "cumulative_kch_carry_leakage": 0.0,
+          "measured_J": 0.292206849222
+        },
+        "oracle_target_b2": {
+          "policy": "oracle_target_b2",
+          "support_size": 1,
+          "resource_cost": 0.066666666667,
+          "target_support_coverage": 1.0,
+          "target_logit_projection_leakage": 0.0,
+          "final_true_kl": 0.003504113144,
+          "final_policy_probability_leakage": 0.0,
+          "cumulative_update_leakage": 0.0,
+          "cumulative_kch_carry_leakage": 0.0,
+          "measured_J": 0.020170779811
+        },
+        "random_minimal_budget": {
+          "policy": "random_minimal_budget",
+          "support_size": 1,
+          "resource_cost": 0.066666666667,
+          "target_support_coverage": 0.0,
+          "target_logit_projection_leakage": 1.0,
+          "final_true_kl": 0.067014675216,
+          "final_policy_probability_leakage": 0.0,
+          "cumulative_update_leakage": 0.0,
+          "cumulative_kch_carry_leakage": 0.0,
+          "measured_J": 0.083681341883
+        },
+        "random_normalizer_budget": {
+          "policy": "random_normalizer_budget",
+          "support_size": 15,
+          "resource_cost": 1.0,
+          "target_support_coverage": 1.0,
+          "target_logit_projection_leakage": 0.0,
+          "final_true_kl": 0.042206849222,
+          "final_policy_probability_leakage": 0.0,
+          "cumulative_update_leakage": 0.0,
+          "cumulative_kch_carry_leakage": 0.0,
+          "measured_J": 0.292206849222
+        },
+        "source_conductor_packet": {
+          "policy": "source_conductor_packet",
+          "support_size": 12,
+          "resource_cost": 0.8,
+          "target_support_coverage": 1.0,
+          "target_logit_projection_leakage": 0.0,
+          "final_true_kl": 0.034264618378,
+          "final_policy_probability_leakage": 0.015719414594,
+          "cumulative_update_leakage": 0.0,
+          "cumulative_kch_carry_leakage": 0.264416187321,
+          "measured_J": 0.234264618378
+        },
+        "source_minimal_b2": {
+          "policy": "source_minimal_b2",
+          "support_size": 1,
+          "resource_cost": 0.066666666667,
+          "target_support_coverage": 0.0,
+          "target_logit_projection_leakage": 1.0,
+          "final_true_kl": 0.066191698161,
+          "final_policy_probability_leakage": 0.0,
+          "cumulative_update_leakage": 0.0,
+          "cumulative_kch_carry_leakage": 0.0,
+          "measured_J": 0.082858364828
+        },
+        "source_normalizer_b3": {
+          "policy": "source_normalizer_b3",
+          "support_size": 15,
+          "resource_cost": 1.0,
+          "target_support_coverage": 1.0,
+          "target_logit_projection_leakage": 0.0,
+          "final_true_kl": 0.042206849222,
+          "final_policy_probability_leakage": 0.0,
+          "cumulative_update_leakage": 0.0,
+          "cumulative_kch_carry_leakage": 0.0,
+          "measured_J": 0.292206849222
+        },
+        "source_raw": {
+          "policy": "source_raw",
+          "support_size": 1,
+          "resource_cost": 0.066666666667,
+          "target_support_coverage": 0.0,
+          "target_logit_projection_leakage": 1.0,
+          "final_true_kl": 0.066191698161,
+          "final_policy_probability_leakage": 0.0,
+          "cumulative_update_leakage": 0.0,
+          "cumulative_kch_carry_leakage": 0.0,
+          "measured_J": 0.082858364828
+        }
+      }
+    },
+    {
+      "source_index": 0,
+      "transfer_index": 3,
+      "action_index": 8,
+      "source_support": [
+        "w+1+u"
+      ],
+      "target_support": [
+        "1+wu"
+      ],
+      "source_minimal_size": 1,
+      "source_normalizer_size": 15,
+      "winner_by_measured_J": "oracle_target_b2",
+      "premium": 0.233333333333,
+      "measured_transfer_gain": 0.021319867696,
+      "measured_net_gain": -0.212013465637,
+      "policies": {
+        "full": {
+          "policy": "full",
+          "support_size": 15,
+          "resource_cost": 1.0,
+          "target_support_coverage": 1.0,
+          "target_logit_projection_leakage": 0.0,
+          "final_true_kl": 0.045881849553,
+          "final_policy_probability_leakage": 0.0,
+          "cumulative_update_leakage": 0.0,
+          "cumulative_kch_carry_leakage": 0.0,
+          "measured_J": 0.295881849553
+        },
+        "oracle_target_b2": {
+          "policy": "oracle_target_b2",
+          "support_size": 1,
+          "resource_cost": 0.066666666667,
+          "target_support_coverage": 1.0,
+          "target_logit_projection_leakage": 0.0,
+          "final_true_kl": 0.002843290271,
+          "final_policy_probability_leakage": 0.0,
+          "cumulative_update_leakage": 0.0,
+          "cumulative_kch_carry_leakage": 0.0,
+          "measured_J": 0.019509956938
+        },
+        "random_minimal_budget": {
+          "policy": "random_minimal_budget",
+          "support_size": 1,
+          "resource_cost": 0.066666666667,
+          "target_support_coverage": 0.0,
+          "target_logit_projection_leakage": 1.0,
+          "final_true_kl": 0.067038389857,
+          "final_policy_probability_leakage": 0.0,
+          "cumulative_update_leakage": 0.0,
+          "cumulative_kch_carry_leakage": 0.0,
+          "measured_J": 0.083705056524
+        },
+        "random_normalizer_budget": {
+          "policy": "random_normalizer_budget",
+          "support_size": 15,
+          "resource_cost": 1.0,
+          "target_support_coverage": 1.0,
+          "target_logit_projection_leakage": 0.0,
+          "final_true_kl": 0.045881849553,
+          "final_policy_probability_leakage": 0.0,
+          "cumulative_update_leakage": 0.0,
+          "cumulative_kch_carry_leakage": 0.0,
+          "measured_J": 0.295881849553
+        },
+        "source_conductor_packet": {
+          "policy": "source_conductor_packet",
+          "support_size": 12,
+          "resource_cost": 0.8,
+          "target_support_coverage": 1.0,
+          "target_logit_projection_leakage": 0.0,
+          "final_true_kl": 0.037993480191,
+          "final_policy_probability_leakage": 0.017495212835,
+          "cumulative_update_leakage": 0.0,
+          "cumulative_kch_carry_leakage": 0.264397456858,
+          "measured_J": 0.237993480191
+        },
+        "source_minimal_b2": {
+          "policy": "source_minimal_b2",
+          "support_size": 1,
+          "resource_cost": 0.066666666667,
+          "target_support_coverage": 0.0,
+          "target_logit_projection_leakage": 1.0,
+          "final_true_kl": 0.067201717249,
+          "final_policy_probability_leakage": 0.0,
+          "cumulative_update_leakage": 0.0,
+          "cumulative_kch_carry_leakage": 0.0,
+          "measured_J": 0.083868383916
+        },
+        "source_normalizer_b3": {
+          "policy": "source_normalizer_b3",
+          "support_size": 15,
+          "resource_cost": 1.0,
+          "target_support_coverage": 1.0,
+          "target_logit_projection_leakage": 0.0,
+          "final_true_kl": 0.045881849553,
+          "final_policy_probability_leakage": 0.0,
+          "cumulative_update_leakage": 0.0,
+          "cumulative_kch_carry_leakage": 0.0,
+          "measured_J": 0.295881849553
+        },
+        "source_raw": {
+          "policy": "source_raw",
+          "support_size": 1,
+          "resource_cost": 0.066666666667,
+          "target_support_coverage": 0.0,
+          "target_logit_projection_leakage": 1.0,
+          "final_true_kl": 0.067201717249,
+          "final_policy_probability_leakage": 0.0,
+          "cumulative_update_leakage": 0.0,
+          "cumulative_kch_carry_leakage": 0.0,
+          "measured_J": 0.083868383916
+        }
+      }
+    },
+    {
+      "source_index": 1,
+      "transfer_index": 0,
+      "action_index": 8,
+      "source_support": [
+        "w+wu",
+        "wu"
+      ],
+      "target_support": [
+        "(w+1)u",
+        "w+1+(w+1)u"
+      ],
+      "source_minimal_size": 3,
+      "source_normalizer_size": 15,
+      "winner_by_measured_J": "oracle_target_b2",
+      "premium": 0.2,
+      "measured_transfer_gain": 0.104959084459,
+      "measured_net_gain": -0.095040915541,
+      "policies": {
+        "full": {
+          "policy": "full",
+          "support_size": 15,
+          "resource_cost": 1.0,
+          "target_support_coverage": 1.0,
+          "target_logit_projection_leakage": 0.0,
+          "final_true_kl": 0.043397201481,
+          "final_policy_probability_leakage": 0.0,
+          "cumulative_update_leakage": 0.0,
+          "cumulative_kch_carry_leakage": 0.0,
+          "measured_J": 0.293397201481
+        },
+        "oracle_target_b2": {
+          "policy": "oracle_target_b2",
+          "support_size": 3,
+          "resource_cost": 0.2,
+          "target_support_coverage": 1.0,
+          "target_logit_projection_leakage": 0.0,
+          "final_true_kl": 0.008840479551,
+          "final_policy_probability_leakage": 0.0,
+          "cumulative_update_leakage": 0.0,
+          "cumulative_kch_carry_leakage": 0.0,
+          "measured_J": 0.058840479551
+        },
+        "random_minimal_budget": {
+          "policy": "random_minimal_budget",
+          "support_size": 3,
+          "resource_cost": 0.2,
+          "target_support_coverage": 0.0,
+          "target_logit_projection_leakage": 1.0,
+          "final_true_kl": 0.148939936198,
+          "final_policy_probability_leakage": 0.005785399423,
+          "cumulative_update_leakage": 0.0,
+          "cumulative_kch_carry_leakage": 0.987417011694,
+          "measured_J": 0.198939936198
+        },
+        "random_normalizer_budget": {
+          "policy": "random_normalizer_budget",
+          "support_size": 15,
+          "resource_cost": 1.0,
+          "target_support_coverage": 1.0,
+          "target_logit_projection_leakage": 0.0,
+          "final_true_kl": 0.043397201481,
+          "final_policy_probability_leakage": 0.0,
+          "cumulative_update_leakage": 0.0,
+          "cumulative_kch_carry_leakage": 0.0,
+          "measured_J": 0.293397201481
+        },
+        "source_conductor_packet": {
+          "policy": "source_conductor_packet",
+          "support_size": 15,
+          "resource_cost": 1.0,
+          "target_support_coverage": 1.0,
+          "target_logit_projection_leakage": 0.0,
+          "final_true_kl": 0.043397201481,
+          "final_policy_probability_leakage": 0.0,
+          "cumulative_update_leakage": 0.0,
+          "cumulative_kch_carry_leakage": 0.0,
+          "measured_J": 0.293397201481
+        },
+        "source_minimal_b2": {
+          "policy": "source_minimal_b2",
+          "support_size": 3,
+          "resource_cost": 0.2,
+          "target_support_coverage": 0.0,
+          "target_logit_projection_leakage": 1.0,
+          "final_true_kl": 0.148356285941,
+          "final_policy_probability_leakage": 0.0,
+          "cumulative_update_leakage": 0.0,
+          "cumulative_kch_carry_leakage": 0.0,
+          "measured_J": 0.198356285941
+        },
+        "source_normalizer_b3": {
+          "policy": "source_normalizer_b3",
+          "support_size": 15,
+          "resource_cost": 1.0,
+          "target_support_coverage": 1.0,
+          "target_logit_projection_leakage": 0.0,
+          "final_true_kl": 0.043397201481,
+          "final_policy_probability_leakage": 0.0,
+          "cumulative_update_leakage": 0.0,
+          "cumulative_kch_carry_leakage": 0.0,
+          "measured_J": 0.293397201481
+        },
+        "source_raw": {
+          "policy": "source_raw",
+          "support_size": 2,
+          "resource_cost": 0.133333333333,
+          "target_support_coverage": 0.0,
+          "target_logit_projection_leakage": 1.0,
+          "final_true_kl": 0.145150722045,
+          "final_policy_probability_leakage": 0.003097436282,
+          "cumulative_update_leakage": 0.0,
+          "cumulative_kch_carry_leakage": 0.972117526476,
+          "measured_J": 0.178484055378
+        }
+      }
+    },
+    {
+      "source_index": 1,
+      "transfer_index": 1,
+      "action_index": 6,
+      "source_support": [
+        "w+wu",
+        "wu"
+      ],
+      "target_support": [
+        "w+(w+1)u",
+        "wu"
+      ],
+      "source_minimal_size": 3,
+      "source_normalizer_size": 15,
+      "winner_by_measured_J": "oracle_target_b2",
+      "premium": 0.2,
+      "measured_transfer_gain": 0.041268708286,
+      "measured_net_gain": -0.158731291714,
+      "policies": {
+        "full": {
+          "policy": "full",
+          "support_size": 15,
+          "resource_cost": 1.0,
+          "target_support_coverage": 1.0,
+          "target_logit_projection_leakage": 0.0,
+          "final_true_kl": 0.037958529204,
+          "final_policy_probability_leakage": 0.0,
+          "cumulative_update_leakage": 0.0,
+          "cumulative_kch_carry_leakage": 0.0,
+          "measured_J": 0.287958529204
+        },
+        "oracle_target_b2": {
+          "policy": "oracle_target_b2",
+          "support_size": 3,
+          "resource_cost": 0.2,
+          "target_support_coverage": 1.0,
+          "target_logit_projection_leakage": 0.0,
+          "final_true_kl": 0.009144467044,
+          "final_policy_probability_leakage": 0.0,
+          "cumulative_update_leakage": 0.0,
+          "cumulative_kch_carry_leakage": 0.0,
+          "measured_J": 0.059144467044
+        },
+        "random_minimal_budget": {
+          "policy": "random_minimal_budget",
+          "support_size": 3,
+          "resource_cost": 0.2,
+          "target_support_coverage": 0.5,
+          "target_logit_projection_leakage": 0.510861218645,
+          "final_true_kl": 0.079042304146,
+          "final_policy_probability_leakage": 0.014048407109,
+          "cumulative_update_leakage": 0.0,
+          "cumulative_kch_carry_leakage": 0.914379334738,
+          "measured_J": 0.129042304146
+        },
+        "random_normalizer_budget": {
+          "policy": "random_normalizer_budget",
+          "support_size": 15,
+          "resource_cost": 1.0,
+          "target_support_coverage": 1.0,
+          "target_logit_projection_leakage": 0.0,
+          "final_true_kl": 0.037958529204,
+          "final_policy_probability_leakage": 0.0,
+          "cumulative_update_leakage": 0.0,
+          "cumulative_kch_carry_leakage": 0.0,
+          "measured_J": 0.287958529204
+        },
+        "source_conductor_packet": {
+          "policy": "source_conductor_packet",
+          "support_size": 15,
+          "resource_cost": 1.0,
+          "target_support_coverage": 1.0,
+          "target_logit_projection_leakage": 0.0,
+          "final_true_kl": 0.037958529204,
+          "final_policy_probability_leakage": 0.0,
+          "cumulative_update_leakage": 0.0,
+          "cumulative_kch_carry_leakage": 0.0,
+          "measured_J": 0.287958529204
+        },
+        "source_minimal_b2": {
+          "policy": "source_minimal_b2",
+          "support_size": 3,
+          "resource_cost": 0.2,
+          "target_support_coverage": 0.5,
+          "target_logit_projection_leakage": 0.489138781355,
+          "final_true_kl": 0.07922723749,
+          "final_policy_probability_leakage": 0.0,
+          "cumulative_update_leakage": 0.0,
+          "cumulative_kch_carry_leakage": 0.0,
+          "measured_J": 0.12922723749
+        },
+        "source_normalizer_b3": {
+          "policy": "source_normalizer_b3",
+          "support_size": 15,
+          "resource_cost": 1.0,
+          "target_support_coverage": 1.0,
+          "target_logit_projection_leakage": 0.0,
+          "final_true_kl": 0.037958529204,
+          "final_policy_probability_leakage": 0.0,
+          "cumulative_update_leakage": 0.0,
+          "cumulative_kch_carry_leakage": 0.0,
+          "measured_J": 0.287958529204
+        },
+        "source_raw": {
+          "policy": "source_raw",
+          "support_size": 2,
+          "resource_cost": 0.133333333333,
+          "target_support_coverage": 0.5,
+          "target_logit_projection_leakage": 0.489138781355,
+          "final_true_kl": 0.076279347487,
+          "final_policy_probability_leakage": 0.006445131551,
+          "cumulative_update_leakage": 0.0,
+          "cumulative_kch_carry_leakage": 0.815938166408,
+          "measured_J": 0.10961268082
+        }
+      }
+    },
+    {
+      "source_index": 1,
+      "transfer_index": 2,
+      "action_index": 18,
+      "source_support": [
+        "w+wu",
+        "wu"
+      ],
+      "target_support": [
+        "1+(w+1)u",
+        "u"
+      ],
+      "source_minimal_size": 3,
+      "source_normalizer_size": 15,
+      "winner_by_measured_J": "oracle_target_b2",
+      "premium": 0.2,
+      "measured_transfer_gain": 0.10332078131,
+      "measured_net_gain": -0.09667921869,
+      "policies": {
+        "full": {
+          "policy": "full",
+          "support_size": 15,
+          "resource_cost": 1.0,
+          "target_support_coverage": 1.0,
+          "target_logit_projection_leakage": 0.0,
+          "final_true_kl": 0.045453431053,
+          "final_policy_probability_leakage": 0.0,
+          "cumulative_update_leakage": 0.0,
+          "cumulative_kch_carry_leakage": 0.0,
+          "measured_J": 0.295453431053
+        },
+        "oracle_target_b2": {
+          "policy": "oracle_target_b2",
+          "support_size": 3,
+          "resource_cost": 0.2,
+          "target_support_coverage": 1.0,
+          "target_logit_projection_leakage": 0.0,
+          "final_true_kl": 0.008380903941,
+          "final_policy_probability_leakage": 0.0,
+          "cumulative_update_leakage": 0.0,
+          "cumulative_kch_carry_leakage": 0.0,
+          "measured_J": 0.058380903941
+        },
+        "random_minimal_budget": {
+          "policy": "random_minimal_budget",
+          "support_size": 3,
+          "resource_cost": 0.2,
+          "target_support_coverage": 0.0,
+          "target_logit_projection_leakage": 1.0,
+          "final_true_kl": 0.148564697134,
+          "final_policy_probability_leakage": 0.003844074526,
+          "cumulative_update_leakage": 0.0,
+          "cumulative_kch_carry_leakage": 0.986838723062,
+          "measured_J": 0.198564697134
+        },
+        "random_normalizer_budget": {
+          "policy": "random_normalizer_budget",
+          "support_size": 15,
+          "resource_cost": 1.0,
+          "target_support_coverage": 1.0,
+          "target_logit_projection_leakage": 0.0,
+          "final_true_kl": 0.045453431053,
+          "final_policy_probability_leakage": 0.0,
+          "cumulative_update_leakage": 0.0,
+          "cumulative_kch_carry_leakage": 0.0,
+          "measured_J": 0.295453431053
+        },
+        "source_conductor_packet": {
+          "policy": "source_conductor_packet",
+          "support_size": 15,
+          "resource_cost": 1.0,
+          "target_support_coverage": 1.0,
+          "target_logit_projection_leakage": 0.0,
+          "final_true_kl": 0.045453431053,
+          "final_policy_probability_leakage": 0.0,
+          "cumulative_update_leakage": 0.0,
+          "cumulative_kch_carry_leakage": 0.0,
+          "measured_J": 0.295453431053
+        },
+        "source_minimal_b2": {
+          "policy": "source_minimal_b2",
+          "support_size": 3,
+          "resource_cost": 0.2,
+          "target_support_coverage": 0.0,
+          "target_logit_projection_leakage": 1.0,
+          "final_true_kl": 0.148774212363,
+          "final_policy_probability_leakage": 0.0,
+          "cumulative_update_leakage": 0.0,
+          "cumulative_kch_carry_leakage": 0.0,
+          "measured_J": 0.198774212363
+        },
+        "source_normalizer_b3": {
+          "policy": "source_normalizer_b3",
+          "support_size": 15,
+          "resource_cost": 1.0,
+          "target_support_coverage": 1.0,
+          "target_logit_projection_leakage": 0.0,
+          "final_true_kl": 0.045453431053,
+          "final_policy_probability_leakage": 0.0,
+          "cumulative_update_leakage": 0.0,
+          "cumulative_kch_carry_leakage": 0.0,
+          "measured_J": 0.295453431053
+        },
+        "source_raw": {
+          "policy": "source_raw",
+          "support_size": 2,
+          "resource_cost": 0.133333333333,
+          "target_support_coverage": 0.0,
+          "target_logit_projection_leakage": 1.0,
+          "final_true_kl": 0.145107739518,
+          "final_policy_probability_leakage": 0.001984857313,
+          "cumulative_update_leakage": 0.0,
+          "cumulative_kch_carry_leakage": 0.976667508962,
+          "measured_J": 0.178441072851
+        }
+      }
+    },
+    {
+      "source_index": 1,
+      "transfer_index": 3,
+      "action_index": 16,
+      "source_support": [
+        "w+wu",
+        "wu"
+      ],
+      "target_support": [
+        "1+u",
+        "u"
+      ],
+      "source_minimal_size": 3,
+      "source_normalizer_size": 15,
+      "winner_by_measured_J": "oracle_target_b2",
+      "premium": 0.2,
+      "measured_transfer_gain": 0.104017026827,
+      "measured_net_gain": -0.095982973173,
+      "policies": {
+        "full": {
+          "policy": "full",
+          "support_size": 15,
+          "resource_cost": 1.0,
+          "target_support_coverage": 1.0,
+          "target_logit_projection_leakage": 0.0,
+          "final_true_kl": 0.043105053806,
+          "final_policy_probability_leakage": 0.0,
+          "cumulative_update_leakage": 0.0,
+          "cumulative_kch_carry_leakage": 0.0,
+          "measured_J": 0.293105053806
+        },
+        "oracle_target_b2": {
+          "policy": "oracle_target_b2",
+          "support_size": 3,
+          "resource_cost": 0.2,
+          "target_support_coverage": 1.0,
+          "target_logit_projection_leakage": 0.0,
+          "final_true_kl": 0.00844788967,
+          "final_policy_probability_leakage": 0.0,
+          "cumulative_update_leakage": 0.0,
+          "cumulative_kch_carry_leakage": 0.0,
+          "measured_J": 0.05844788967
+        },
+        "random_minimal_budget": {
+          "policy": "random_minimal_budget",
+          "support_size": 3,
+          "resource_cost": 0.2,
+          "target_support_coverage": 0.5,
+          "target_logit_projection_leakage": 0.510861218645,
+          "final_true_kl": 0.078587785967,
+          "final_policy_probability_leakage": 0.010915889685,
+          "cumulative_update_leakage": 0.0,
+          "cumulative_kch_carry_leakage": 0.917691833216,
+          "measured_J": 0.128587785967
+        },
+        "random_normalizer_budget": {
+          "policy": "random_normalizer_budget",
+          "support_size": 15,
+          "resource_cost": 1.0,
+          "target_support_coverage": 1.0,
+          "target_logit_projection_leakage": 0.0,
+          "final_true_kl": 0.043105053806,
+          "final_policy_probability_leakage": 0.0,
+          "cumulative_update_leakage": 0.0,
+          "cumulative_kch_carry_leakage": 0.0,
+          "measured_J": 0.293105053806
+        },
+        "source_conductor_packet": {
+          "policy": "source_conductor_packet",
+          "support_size": 15,
+          "resource_cost": 1.0,
+          "target_support_coverage": 1.0,
+          "target_logit_projection_leakage": 0.0,
+          "final_true_kl": 0.043105053806,
+          "final_policy_probability_leakage": 0.0,
+          "cumulative_update_leakage": 0.0,
+          "cumulative_kch_carry_leakage": 0.0,
+          "measured_J": 0.293105053806
+        },
+        "source_minimal_b2": {
+          "policy": "source_minimal_b2",
+          "support_size": 3,
+          "resource_cost": 0.2,
+          "target_support_coverage": 0.0,
+          "target_logit_projection_leakage": 1.0,
+          "final_true_kl": 0.147122080633,
+          "final_policy_probability_leakage": 0.0,
+          "cumulative_update_leakage": 0.0,
+          "cumulative_kch_carry_leakage": 0.0,
+          "measured_J": 0.197122080633
+        },
+        "source_normalizer_b3": {
+          "policy": "source_normalizer_b3",
+          "support_size": 15,
+          "resource_cost": 1.0,
+          "target_support_coverage": 1.0,
+          "target_logit_projection_leakage": 0.0,
+          "final_true_kl": 0.043105053806,
+          "final_policy_probability_leakage": 0.0,
+          "cumulative_update_leakage": 0.0,
+          "cumulative_kch_carry_leakage": 0.0,
+          "measured_J": 0.293105053806
+        },
+        "source_raw": {
+          "policy": "source_raw",
+          "support_size": 2,
+          "resource_cost": 0.133333333333,
+          "target_support_coverage": 0.0,
+          "target_logit_projection_leakage": 1.0,
+          "final_true_kl": 0.144855185595,
+          "final_policy_probability_leakage": 0.002144607292,
+          "cumulative_update_leakage": 0.0,
+          "cumulative_kch_carry_leakage": 0.969596027629,
+          "measured_J": 0.178188518929
+        }
+      }
+    },
+    {
+      "source_index": 2,
+      "transfer_index": 0,
+      "action_index": 18,
+      "source_support": [
+        "1+wu",
+        "w+wu"
+      ],
+      "target_support": [
+        "1+(w+1)u",
+        "w+1"
+      ],
+      "source_minimal_size": 3,
+      "source_normalizer_size": 15,
+      "winner_by_measured_J": "oracle_target_b2",
+      "premium": 0.2,
+      "measured_transfer_gain": 0.046386039342,
+      "measured_net_gain": -0.153613960658,
+      "policies": {
+        "full": {
+          "policy": "full",
+          "support_size": 15,
+          "resource_cost": 1.0,
+          "target_support_coverage": 1.0,
+          "target_logit_projection_leakage": 0.0,
+          "final_true_kl": 0.039521280095,
+          "final_policy_probability_leakage": 0.0,
+          "cumulative_update_leakage": 0.0,
+          "cumulative_kch_carry_leakage": 0.0,
+          "measured_J": 0.289521280095
+        },
+        "oracle_target_b2": {
+          "policy": "oracle_target_b2",
+          "support_size": 3,
+          "resource_cost": 0.2,
+          "target_support_coverage": 1.0,
+          "target_logit_projection_leakage": 0.0,
+          "final_true_kl": 0.005211869364,
+          "final_policy_probability_leakage": 0.0,
+          "cumulative_update_leakage": 0.0,
+          "cumulative_kch_carry_leakage": 0.0,
+          "measured_J": 0.055211869364
+        },
+        "random_minimal_budget": {
+          "policy": "random_minimal_budget",
+          "support_size": 3,
+          "resource_cost": 0.2,
+          "target_support_coverage": 0.5,
+          "target_logit_projection_leakage": 0.56905266065,
+          "final_true_kl": 0.080044271902,
+          "final_policy_probability_leakage": 0.014427739737,
+          "cumulative_update_leakage": 0.0,
+          "cumulative_kch_carry_leakage": 0.915588658593,
+          "measured_J": 0.130044271902
+        },
+        "random_normalizer_budget": {
+          "policy": "random_normalizer_budget",
+          "support_size": 15,
+          "resource_cost": 1.0,
+          "target_support_coverage": 1.0,
+          "target_logit_projection_leakage": 0.0,
+          "final_true_kl": 0.039521280095,
+          "final_policy_probability_leakage": 0.0,
+          "cumulative_update_leakage": 0.0,
+          "cumulative_kch_carry_leakage": 0.0,
+          "measured_J": 0.289521280095
+        },
+        "source_conductor_packet": {
+          "policy": "source_conductor_packet",
+          "support_size": 12,
+          "resource_cost": 0.8,
+          "target_support_coverage": 1.0,
+          "target_logit_projection_leakage": 0.0,
+          "final_true_kl": 0.031620386716,
+          "final_policy_probability_leakage": 0.014076147281,
+          "cumulative_update_leakage": 0.0,
+          "cumulative_kch_carry_leakage": 0.268343217902,
+          "measured_J": 0.231620386716
+        },
+        "source_minimal_b2": {
+          "policy": "source_minimal_b2",
+          "support_size": 3,
+          "resource_cost": 0.2,
+          "target_support_coverage": 0.5,
+          "target_logit_projection_leakage": 0.56905266065,
+          "final_true_kl": 0.085907319437,
+          "final_policy_probability_leakage": 0.0,
+          "cumulative_update_leakage": 0.0,
+          "cumulative_kch_carry_leakage": 0.0,
+          "measured_J": 0.135907319437
+        },
+        "source_normalizer_b3": {
+          "policy": "source_normalizer_b3",
+          "support_size": 15,
+          "resource_cost": 1.0,
+          "target_support_coverage": 1.0,
+          "target_logit_projection_leakage": 0.0,
+          "final_true_kl": 0.039521280095,
+          "final_policy_probability_leakage": 0.0,
+          "cumulative_update_leakage": 0.0,
+          "cumulative_kch_carry_leakage": 0.0,
+          "measured_J": 0.289521280095
+        },
+        "source_raw": {
+          "policy": "source_raw",
+          "support_size": 2,
+          "resource_cost": 0.133333333333,
+          "target_support_coverage": 0.0,
+          "target_logit_projection_leakage": 1.0,
+          "final_true_kl": 0.144495847124,
+          "final_policy_probability_leakage": 0.001485121321,
+          "cumulative_update_leakage": 0.0,
+          "cumulative_kch_carry_leakage": 0.97614403593,
+          "measured_J": 0.177829180457
+        }
+      }
+    },
+    {
+      "source_index": 2,
+      "transfer_index": 1,
+      "action_index": 17,
+      "source_support": [
+        "1+wu",
+        "w+wu"
+      ],
+      "target_support": [
+        "1+u",
+        "w+u"
+      ],
+      "source_minimal_size": 3,
+      "source_normalizer_size": 15,
+      "winner_by_measured_J": "oracle_target_b2",
+      "premium": 0.2,
+      "measured_transfer_gain": 0.10311756767,
+      "measured_net_gain": -0.09688243233,
+      "policies": {
+        "full": {
+          "policy": "full",
+          "support_size": 15,
+          "resource_cost": 1.0,
+          "target_support_coverage": 1.0,
+          "target_logit_projection_leakage": 0.0,
+          "final_true_kl": 0.042058400149,
+          "final_policy_probability_leakage": 0.0,
+          "cumulative_update_leakage": 0.0,
+          "cumulative_kch_carry_leakage": 0.0,
+          "measured_J": 0.292058400149
+        },
+        "oracle_target_b2": {
+          "policy": "oracle_target_b2",
+          "support_size": 3,
+          "resource_cost": 0.2,
+          "target_support_coverage": 1.0,
+          "target_logit_projection_leakage": 0.0,
+          "final_true_kl": 0.007758353802,
+          "final_policy_probability_leakage": 0.0,
+          "cumulative_update_leakage": 0.0,
+          "cumulative_kch_carry_leakage": 0.0,
+          "measured_J": 0.057758353802
+        },
+        "random_minimal_budget": {
+          "policy": "random_minimal_budget",
+          "support_size": 3,
+          "resource_cost": 0.2,
+          "target_support_coverage": 0.0,
+          "target_logit_projection_leakage": 1.0,
+          "final_true_kl": 0.148260001943,
+          "final_policy_probability_leakage": 0.004694861538,
+          "cumulative_update_leakage": 0.0,
+          "cumulative_kch_carry_leakage": 0.985605292058,
+          "measured_J": 0.198260001943
+        },
+        "random_normalizer_budget": {
+          "policy": "random_normalizer_budget",
+          "support_size": 15,
+          "resource_cost": 1.0,
+          "target_support_coverage": 1.0,
+          "target_logit_projection_leakage": 0.0,
+          "final_true_kl": 0.042058400149,
+          "final_policy_probability_leakage": 0.0,
+          "cumulative_update_leakage": 0.0,
+          "cumulative_kch_carry_leakage": 0.0,
+          "measured_J": 0.292058400149
+        },
+        "source_conductor_packet": {
+          "policy": "source_conductor_packet",
+          "support_size": 12,
+          "resource_cost": 0.8,
+          "target_support_coverage": 1.0,
+          "target_logit_projection_leakage": 0.0,
+          "final_true_kl": 0.034001500614,
+          "final_policy_probability_leakage": 0.015144812169,
+          "cumulative_update_leakage": 0.0,
+          "cumulative_kch_carry_leakage": 0.267180542687,
+          "measured_J": 0.234001500614
+        },
+        "source_minimal_b2": {
+          "policy": "source_minimal_b2",
+          "support_size": 3,
+          "resource_cost": 0.2,
+          "target_support_coverage": 0.0,
+          "target_logit_projection_leakage": 1.0,
+          "final_true_kl": 0.14517596782,
+          "final_policy_probability_leakage": 0.0,
+          "cumulative_update_leakage": 0.0,
+          "cumulative_kch_carry_leakage": 0.0,
+          "measured_J": 0.19517596782
+        },
+        "source_normalizer_b3": {
+          "policy": "source_normalizer_b3",
+          "support_size": 15,
+          "resource_cost": 1.0,
+          "target_support_coverage": 1.0,
+          "target_logit_projection_leakage": 0.0,
+          "final_true_kl": 0.042058400149,
+          "final_policy_probability_leakage": 0.0,
+          "cumulative_update_leakage": 0.0,
+          "cumulative_kch_carry_leakage": 0.0,
+          "measured_J": 0.292058400149
+        },
+        "source_raw": {
+          "policy": "source_raw",
+          "support_size": 2,
+          "resource_cost": 0.133333333333,
+          "target_support_coverage": 0.0,
+          "target_logit_projection_leakage": 1.0,
+          "final_true_kl": 0.143402484414,
+          "final_policy_probability_leakage": 0.002260655197,
+          "cumulative_update_leakage": 0.0,
+          "cumulative_kch_carry_leakage": 0.974700350739,
+          "measured_J": 0.176735817748
+        }
+      }
+    },
+    {
+      "source_index": 2,
+      "transfer_index": 2,
+      "action_index": 20,
+      "source_support": [
+        "1+wu",
+        "w+wu"
+      ],
+      "target_support": [
+        "1+wu",
+        "w+1+(w+1)u"
+      ],
+      "source_minimal_size": 3,
+      "source_normalizer_size": 15,
+      "winner_by_measured_J": "oracle_target_b2",
+      "premium": 0.2,
+      "measured_transfer_gain": 0.023783578036,
+      "measured_net_gain": -0.176216421964,
+      "policies": {
+        "full": {
+          "policy": "full",
+          "support_size": 15,
+          "resource_cost": 1.0,
+          "target_support_coverage": 1.0,
+          "target_logit_projection_leakage": 0.0,
+          "final_true_kl": 0.045483964932,
+          "final_policy_probability_leakage": 0.0,
+          "cumulative_update_leakage": 0.0,
+          "cumulative_kch_carry_leakage": 0.0,
+          "measured_J": 0.295483964932
+        },
+        "oracle_target_b2": {
+          "policy": "oracle_target_b2",
+          "support_size": 3,
+          "resource_cost": 0.2,
+          "target_support_coverage": 1.0,
+          "target_logit_projection_leakage": 0.0,
+          "final_true_kl": 0.009905151726,
+          "final_policy_probability_leakage": 0.0,
+          "cumulative_update_leakage": 0.0,
+          "cumulative_kch_carry_leakage": 0.0,
+          "measured_J": 0.059905151726
+        },
+        "random_minimal_budget": {
+          "policy": "random_minimal_budget",
+          "support_size": 3,
+          "resource_cost": 0.2,
+          "target_support_coverage": 0.0,
+          "target_logit_projection_leakage": 1.0,
+          "final_true_kl": 0.150573327143,
+          "final_policy_probability_leakage": 0.005909131452,
+          "cumulative_update_leakage": 0.0,
+          "cumulative_kch_carry_leakage": 0.98685417962,
+          "measured_J": 0.200573327143
+        },
+        "random_normalizer_budget": {
+          "policy": "random_normalizer_budget",
+          "support_size": 15,
+          "resource_cost": 1.0,
+          "target_support_coverage": 1.0,
+          "target_logit_projection_leakage": 0.0,
+          "final_true_kl": 0.045483964932,
+          "final_policy_probability_leakage": 0.0,
+          "cumulative_update_leakage": 0.0,
+          "cumulative_kch_carry_leakage": 0.0,
+          "measured_J": 0.295483964932
+        },
+        "source_conductor_packet": {
+          "policy": "source_conductor_packet",
+          "support_size": 12,
+          "resource_cost": 0.8,
+          "target_support_coverage": 1.0,
+          "target_logit_projection_leakage": 0.0,
+          "final_true_kl": 0.038149353667,
+          "final_policy_probability_leakage": 0.015786384513,
+          "cumulative_update_leakage": 0.0,
+          "cumulative_kch_carry_leakage": 0.269330511196,
+          "measured_J": 0.238149353667
+        },
+        "source_minimal_b2": {
+          "policy": "source_minimal_b2",
+          "support_size": 3,
+          "resource_cost": 0.2,
+          "target_support_coverage": 0.5,
+          "target_logit_projection_leakage": 0.43094733935,
+          "final_true_kl": 0.069267542967,
+          "final_policy_probability_leakage": 0.0,
+          "cumulative_update_leakage": 0.0,
+          "cumulative_kch_carry_leakage": 0.0,
+          "measured_J": 0.119267542967
+        },
+        "source_normalizer_b3": {
+          "policy": "source_normalizer_b3",
+          "support_size": 15,
+          "resource_cost": 1.0,
+          "target_support_coverage": 1.0,
+          "target_logit_projection_leakage": 0.0,
+          "final_true_kl": 0.045483964932,
+          "final_policy_probability_leakage": 0.0,
+          "cumulative_update_leakage": 0.0,
+          "cumulative_kch_carry_leakage": 0.0,
+          "measured_J": 0.295483964932
+        },
+        "source_raw": {
+          "policy": "source_raw",
+          "support_size": 2,
+          "resource_cost": 0.133333333333,
+          "target_support_coverage": 0.5,
+          "target_logit_projection_leakage": 0.43094733935,
+          "final_true_kl": 0.067182183895,
+          "final_policy_probability_leakage": 0.008070280441,
+          "cumulative_update_leakage": 0.0,
+          "cumulative_kch_carry_leakage": 0.782909128788,
+          "measured_J": 0.100515517229
+        }
+      }
+    },
+    {
+      "source_index": 2,
+      "transfer_index": 3,
+      "action_index": 22,
+      "source_support": [
+        "1+wu",
+        "w+wu"
+      ],
+      "target_support": [
+        "1",
+        "w+1+wu"
+      ],
+      "source_minimal_size": 3,
+      "source_normalizer_size": 15,
+      "winner_by_measured_J": "oracle_target_b2",
+      "premium": 0.2,
+      "measured_transfer_gain": 0.10299480765,
+      "measured_net_gain": -0.09700519235,
+      "policies": {
+        "full": {
+          "policy": "full",
+          "support_size": 15,
+          "resource_cost": 1.0,
+          "target_support_coverage": 1.0,
+          "target_logit_projection_leakage": 0.0,
+          "final_true_kl": 0.042315480654,
+          "final_policy_probability_leakage": 0.0,
+          "cumulative_update_leakage": 0.0,
+          "cumulative_kch_carry_leakage": 0.0,
+          "measured_J": 0.292315480654
+        },
+        "oracle_target_b2": {
+          "policy": "oracle_target_b2",
+          "support_size": 3,
+          "resource_cost": 0.2,
+          "target_support_coverage": 1.0,
+          "target_logit_projection_leakage": 0.0,
+          "final_true_kl": 0.008633094096,
+          "final_policy_probability_leakage": 0.0,
+          "cumulative_update_leakage": 0.0,
+          "cumulative_kch_carry_leakage": 0.0,
+          "measured_J": 0.058633094096
+        },
+        "random_minimal_budget": {
+          "policy": "random_minimal_budget",
+          "support_size": 3,
+          "resource_cost": 0.2,
+          "target_support_coverage": 0.0,
+          "target_logit_projection_leakage": 1.0,
+          "final_true_kl": 0.147396473248,
+          "final_policy_probability_leakage": 0.0,
+          "cumulative_update_leakage": 0.0,
+          "cumulative_kch_carry_leakage": 0.0,
+          "measured_J": 0.197396473248
+        },
+        "random_normalizer_budget": {
+          "policy": "random_normalizer_budget",
+          "support_size": 15,
+          "resource_cost": 1.0,
+          "target_support_coverage": 1.0,
+          "target_logit_projection_leakage": 0.0,
+          "final_true_kl": 0.042315480654,
+          "final_policy_probability_leakage": 0.0,
+          "cumulative_update_leakage": 0.0,
+          "cumulative_kch_carry_leakage": 0.0,
+          "measured_J": 0.292315480654
+        },
+        "source_conductor_packet": {
+          "policy": "source_conductor_packet",
+          "support_size": 12,
+          "resource_cost": 0.8,
+          "target_support_coverage": 1.0,
+          "target_logit_projection_leakage": 0.0,
+          "final_true_kl": 0.033234977757,
+          "final_policy_probability_leakage": 0.013443639938,
+          "cumulative_update_leakage": 0.0,
+          "cumulative_kch_carry_leakage": 0.269441033553,
+          "measured_J": 0.233234977757
+        },
+        "source_minimal_b2": {
+          "policy": "source_minimal_b2",
+          "support_size": 3,
+          "resource_cost": 0.2,
+          "target_support_coverage": 0.0,
+          "target_logit_projection_leakage": 1.0,
+          "final_true_kl": 0.145310288304,
+          "final_policy_probability_leakage": 0.0,
+          "cumulative_update_leakage": 0.0,
+          "cumulative_kch_carry_leakage": 0.0,
+          "measured_J": 0.195310288304
+        },
+        "source_normalizer_b3": {
+          "policy": "source_normalizer_b3",
+          "support_size": 15,
+          "resource_cost": 1.0,
+          "target_support_coverage": 1.0,
+          "target_logit_projection_leakage": 0.0,
+          "final_true_kl": 0.042315480654,
+          "final_policy_probability_leakage": 0.0,
+          "cumulative_update_leakage": 0.0,
+          "cumulative_kch_carry_leakage": 0.0,
+          "measured_J": 0.292315480654
+        },
+        "source_raw": {
+          "policy": "source_raw",
+          "support_size": 2,
+          "resource_cost": 0.133333333333,
+          "target_support_coverage": 0.0,
+          "target_logit_projection_leakage": 1.0,
+          "final_true_kl": 0.141682102745,
+          "final_policy_probability_leakage": 0.002513187467,
+          "cumulative_update_leakage": 0.0,
+          "cumulative_kch_carry_leakage": 0.972593772213,
+          "measured_J": 0.175015436078
+        }
+      }
+    },
+    {
+      "source_index": 3,
+      "transfer_index": 0,
+      "action_index": 1,
+      "source_support": [
+        "(w+1)u",
+        "w+1"
+      ],
+      "target_support": [
+        "w",
+        "wu"
+      ],
+      "source_minimal_size": 3,
+      "source_normalizer_size": 15,
+      "winner_by_measured_J": "oracle_target_b2",
+      "premium": 0.2,
+      "measured_transfer_gain": 0.099042384606,
+      "measured_net_gain": -0.100957615394,
+      "policies": {
+        "full": {
+          "policy": "full",
+          "support_size": 15,
+          "resource_cost": 1.0,
+          "target_support_coverage": 1.0,
+          "target_logit_projection_leakage": 0.0,
+          "final_true_kl": 0.048008643787,
+          "final_policy_probability_leakage": 0.0,
+          "cumulative_update_leakage": 0.0,
+          "cumulative_kch_carry_leakage": 0.0,
+          "measured_J": 0.298008643787
+        },
+        "oracle_target_b2": {
+          "policy": "oracle_target_b2",
+          "support_size": 3,
+          "resource_cost": 0.2,
+          "target_support_coverage": 1.0,
+          "target_logit_projection_leakage": 0.0,
+          "final_true_kl": 0.008573531832,
+          "final_policy_probability_leakage": 0.0,
+          "cumulative_update_leakage": 0.0,
+          "cumulative_kch_carry_leakage": 0.0,
+          "measured_J": 0.058573531832
+        },
+        "random_minimal_budget": {
+          "policy": "random_minimal_budget",
+          "support_size": 3,
+          "resource_cost": 0.2,
+          "target_support_coverage": 0.0,
+          "target_logit_projection_leakage": 1.0,
+          "final_true_kl": 0.148861678884,
+          "final_policy_probability_leakage": 0.005690531378,
+          "cumulative_update_leakage": 0.0,
+          "cumulative_kch_carry_leakage": 0.985551024382,
+          "measured_J": 0.198861678884
+        },
+        "random_normalizer_budget": {
+          "policy": "random_normalizer_budget",
+          "support_size": 15,
+          "resource_cost": 1.0,
+          "target_support_coverage": 1.0,
+          "target_logit_projection_leakage": 0.0,
+          "final_true_kl": 0.048008643787,
+          "final_policy_probability_leakage": 0.0,
+          "cumulative_update_leakage": 0.0,
+          "cumulative_kch_carry_leakage": 0.0,
+          "measured_J": 0.298008643787
+        },
+        "source_conductor_packet": {
+          "policy": "source_conductor_packet",
+          "support_size": 15,
+          "resource_cost": 1.0,
+          "target_support_coverage": 1.0,
+          "target_logit_projection_leakage": 0.0,
+          "final_true_kl": 0.048008643787,
+          "final_policy_probability_leakage": 0.0,
+          "cumulative_update_leakage": 0.0,
+          "cumulative_kch_carry_leakage": 0.0,
+          "measured_J": 0.298008643787
+        },
+        "source_minimal_b2": {
+          "policy": "source_minimal_b2",
+          "support_size": 3,
+          "resource_cost": 0.2,
+          "target_support_coverage": 0.0,
+          "target_logit_projection_leakage": 1.0,
+          "final_true_kl": 0.147051028393,
+          "final_policy_probability_leakage": 0.0,
+          "cumulative_update_leakage": 0.0,
+          "cumulative_kch_carry_leakage": 0.0,
+          "measured_J": 0.197051028393
+        },
+        "source_normalizer_b3": {
+          "policy": "source_normalizer_b3",
+          "support_size": 15,
+          "resource_cost": 1.0,
+          "target_support_coverage": 1.0,
+          "target_logit_projection_leakage": 0.0,
+          "final_true_kl": 0.048008643787,
+          "final_policy_probability_leakage": 0.0,
+          "cumulative_update_leakage": 0.0,
+          "cumulative_kch_carry_leakage": 0.0,
+          "measured_J": 0.298008643787
+        },
+        "source_raw": {
+          "policy": "source_raw",
+          "support_size": 2,
+          "resource_cost": 0.133333333333,
+          "target_support_coverage": 0.0,
+          "target_logit_projection_leakage": 1.0,
+          "final_true_kl": 0.143418335243,
+          "final_policy_probability_leakage": 0.002321594347,
+          "cumulative_update_leakage": 0.0,
+          "cumulative_kch_carry_leakage": 0.973177603539,
+          "measured_J": 0.176751668576
+        }
+      }
+    },
+    {
+      "source_index": 3,
+      "transfer_index": 1,
+      "action_index": 20,
+      "source_support": [
+        "(w+1)u",
+        "w+1"
+      ],
+      "target_support": [
+        "w+u",
+        "wu"
+      ],
+      "source_minimal_size": 3,
+      "source_normalizer_size": 15,
+      "winner_by_measured_J": "oracle_target_b2",
+      "premium": 0.2,
+      "measured_transfer_gain": 0.099109416383,
+      "measured_net_gain": -0.100890583617,
+      "policies": {
+        "full": {
+          "policy": "full",
+          "support_size": 15,
+          "resource_cost": 1.0,
+          "target_support_coverage": 1.0,
+          "target_logit_projection_leakage": 0.0,
+          "final_true_kl": 0.046236149125,
+          "final_policy_probability_leakage": 0.0,
+          "cumulative_update_leakage": 0.0,
+          "cumulative_kch_carry_leakage": 0.0,
+          "measured_J": 0.296236149125
+        },
+        "oracle_target_b2": {
+          "policy": "oracle_target_b2",
+          "support_size": 3,
+          "resource_cost": 0.2,
+          "target_support_coverage": 1.0,
+          "target_logit_projection_leakage": 0.0,
+          "final_true_kl": 0.007901108186,
+          "final_policy_probability_leakage": 0.0,
+          "cumulative_update_leakage": 0.0,
+          "cumulative_kch_carry_leakage": 0.0,
+          "measured_J": 0.057901108186
+        },
+        "random_minimal_budget": {
+          "policy": "random_minimal_budget",
+          "support_size": 3,
+          "resource_cost": 0.2,
+          "target_support_coverage": 0.0,
+          "target_logit_projection_leakage": 1.0,
+          "final_true_kl": 0.14752342995,
+          "final_policy_probability_leakage": 0.008507464664,
+          "cumulative_update_leakage": 0.0,
+          "cumulative_kch_carry_leakage": 0.985874535213,
+          "measured_J": 0.19752342995
+        },
+        "random_normalizer_budget": {
+          "policy": "random_normalizer_budget",
+          "support_size": 15,
+          "resource_cost": 1.0,
+          "target_support_coverage": 1.0,
+          "target_logit_projection_leakage": 0.0,
+          "final_true_kl": 0.046236149125,
+          "final_policy_probability_leakage": 0.0,
+          "cumulative_update_leakage": 0.0,
+          "cumulative_kch_carry_leakage": 0.0,
+          "measured_J": 0.296236149125
+        },
+        "source_conductor_packet": {
+          "policy": "source_conductor_packet",
+          "support_size": 15,
+          "resource_cost": 1.0,
+          "target_support_coverage": 1.0,
+          "target_logit_projection_leakage": 0.0,
+          "final_true_kl": 0.046236149125,
+          "final_policy_probability_leakage": 0.0,
+          "cumulative_update_leakage": 0.0,
+          "cumulative_kch_carry_leakage": 0.0,
+          "measured_J": 0.296236149125
+        },
+        "source_minimal_b2": {
+          "policy": "source_minimal_b2",
+          "support_size": 3,
+          "resource_cost": 0.2,
+          "target_support_coverage": 0.0,
+          "target_logit_projection_leakage": 1.0,
+          "final_true_kl": 0.145345565507,
+          "final_policy_probability_leakage": 0.0,
+          "cumulative_update_leakage": 0.0,
+          "cumulative_kch_carry_leakage": 0.0,
+          "measured_J": 0.195345565507
+        },
+        "source_normalizer_b3": {
+          "policy": "source_normalizer_b3",
+          "support_size": 15,
+          "resource_cost": 1.0,
+          "target_support_coverage": 1.0,
+          "target_logit_projection_leakage": 0.0,
+          "final_true_kl": 0.046236149125,
+          "final_policy_probability_leakage": 0.0,
+          "cumulative_update_leakage": 0.0,
+          "cumulative_kch_carry_leakage": 0.0,
+          "measured_J": 0.296236149125
+        },
+        "source_raw": {
+          "policy": "source_raw",
+          "support_size": 2,
+          "resource_cost": 0.133333333333,
+          "target_support_coverage": 0.0,
+          "target_logit_projection_leakage": 1.0,
+          "final_true_kl": 0.142583103392,
+          "final_policy_probability_leakage": 0.002524506818,
+          "cumulative_update_leakage": 0.0,
+          "cumulative_kch_carry_leakage": 0.972030936402,
+          "measured_J": 0.175916436726
+        }
+      }
+    },
+    {
+      "source_index": 3,
+      "transfer_index": 2,
+      "action_index": 16,
+      "source_support": [
+        "(w+1)u",
+        "w+1"
+      ],
+      "target_support": [
+        "w",
+        "wu"
+      ],
+      "source_minimal_size": 3,
+      "source_normalizer_size": 15,
+      "winner_by_measured_J": "oracle_target_b2",
+      "premium": 0.2,
+      "measured_transfer_gain": 0.102277172674,
+      "measured_net_gain": -0.097722827326,
+      "policies": {
+        "full": {
+          "policy": "full",
+          "support_size": 15,
+          "resource_cost": 1.0,
+          "target_support_coverage": 1.0,
+          "target_logit_projection_leakage": 0.0,
+          "final_true_kl": 0.044487016714,
+          "final_policy_probability_leakage": 0.0,
+          "cumulative_update_leakage": 0.0,
+          "cumulative_kch_carry_leakage": 0.0,
+          "measured_J": 0.294487016714
+        },
+        "oracle_target_b2": {
+          "policy": "oracle_target_b2",
+          "support_size": 3,
+          "resource_cost": 0.2,
+          "target_support_coverage": 1.0,
+          "target_logit_projection_leakage": 0.0,
+          "final_true_kl": 0.00848122682,
+          "final_policy_probability_leakage": 0.0,
+          "cumulative_update_leakage": 0.0,
+          "cumulative_kch_carry_leakage": 0.0,
+          "measured_J": 0.05848122682
+        },
+        "random_minimal_budget": {
+          "policy": "random_minimal_budget",
+          "support_size": 3,
+          "resource_cost": 0.2,
+          "target_support_coverage": 0.0,
+          "target_logit_projection_leakage": 1.0,
+          "final_true_kl": 0.146265729144,
+          "final_policy_probability_leakage": 0.008566366572,
+          "cumulative_update_leakage": 0.0,
+          "cumulative_kch_carry_leakage": 0.9869948668,
+          "measured_J": 0.196265729144
+        },
+        "random_normalizer_budget": {
+          "policy": "random_normalizer_budget",
+          "support_size": 15,
+          "resource_cost": 1.0,
+          "target_support_coverage": 1.0,
+          "target_logit_projection_leakage": 0.0,
+          "final_true_kl": 0.044487016714,
+          "final_policy_probability_leakage": 0.0,
+          "cumulative_update_leakage": 0.0,
+          "cumulative_kch_carry_leakage": 0.0,
+          "measured_J": 0.294487016714
+        },
+        "source_conductor_packet": {
+          "policy": "source_conductor_packet",
+          "support_size": 15,
+          "resource_cost": 1.0,
+          "target_support_coverage": 1.0,
+          "target_logit_projection_leakage": 0.0,
+          "final_true_kl": 0.044487016714,
+          "final_policy_probability_leakage": 0.0,
+          "cumulative_update_leakage": 0.0,
+          "cumulative_kch_carry_leakage": 0.0,
+          "measured_J": 0.294487016714
+        },
+        "source_minimal_b2": {
+          "policy": "source_minimal_b2",
+          "support_size": 3,
+          "resource_cost": 0.2,
+          "target_support_coverage": 0.0,
+          "target_logit_projection_leakage": 1.0,
+          "final_true_kl": 0.146764189388,
+          "final_policy_probability_leakage": 0.0,
+          "cumulative_update_leakage": 0.0,
+          "cumulative_kch_carry_leakage": 0.0,
+          "measured_J": 0.196764189388
+        },
+        "source_normalizer_b3": {
+          "policy": "source_normalizer_b3",
+          "support_size": 15,
+          "resource_cost": 1.0,
+          "target_support_coverage": 1.0,
+          "target_logit_projection_leakage": 0.0,
+          "final_true_kl": 0.044487016714,
+          "final_policy_probability_leakage": 0.0,
+          "cumulative_update_leakage": 0.0,
+          "cumulative_kch_carry_leakage": 0.0,
+          "measured_J": 0.294487016714
+        },
+        "source_raw": {
+          "policy": "source_raw",
+          "support_size": 2,
+          "resource_cost": 0.133333333333,
+          "target_support_coverage": 0.0,
+          "target_logit_projection_leakage": 1.0,
+          "final_true_kl": 0.143413157116,
+          "final_policy_probability_leakage": 0.004215239232,
+          "cumulative_update_leakage": 0.0,
+          "cumulative_kch_carry_leakage": 0.971796992466,
+          "measured_J": 0.176746490449
+        }
+      }
+    },
+    {
+      "source_index": 3,
+      "transfer_index": 3,
+      "action_index": 11,
+      "source_support": [
+        "(w+1)u",
+        "w+1"
+      ],
+      "target_support": [
+        "1+wu",
+        "u"
+      ],
+      "source_minimal_size": 3,
+      "source_normalizer_size": 15,
+      "winner_by_measured_J": "oracle_target_b2",
+      "premium": 0.2,
+      "measured_transfer_gain": 0.104048226723,
+      "measured_net_gain": -0.095951773277,
+      "policies": {
+        "full": {
+          "policy": "full",
+          "support_size": 15,
+          "resource_cost": 1.0,
+          "target_support_coverage": 1.0,
+          "target_logit_projection_leakage": 0.0,
+          "final_true_kl": 0.041727287216,
+          "final_policy_probability_leakage": 0.0,
+          "cumulative_update_leakage": 0.0,
+          "cumulative_kch_carry_leakage": 0.0,
+          "measured_J": 0.291727287216
+        },
+        "oracle_target_b2": {
+          "policy": "oracle_target_b2",
+          "support_size": 3,
+          "resource_cost": 0.2,
+          "target_support_coverage": 1.0,
+          "target_logit_projection_leakage": 0.0,
+          "final_true_kl": 0.008887056692,
+          "final_policy_probability_leakage": 0.0,
+          "cumulative_update_leakage": 0.0,
+          "cumulative_kch_carry_leakage": 0.0,
+          "measured_J": 0.058887056692
+        },
+        "random_minimal_budget": {
+          "policy": "random_minimal_budget",
+          "support_size": 3,
+          "resource_cost": 0.2,
+          "target_support_coverage": 0.0,
+          "target_logit_projection_leakage": 1.0,
+          "final_true_kl": 0.142534045783,
+          "final_policy_probability_leakage": 0.0,
+          "cumulative_update_leakage": 0.0,
+          "cumulative_kch_carry_leakage": 0.0,
+          "measured_J": 0.192534045783
+        },
+        "random_normalizer_budget": {
+          "policy": "random_normalizer_budget",
+          "support_size": 15,
+          "resource_cost": 1.0,
+          "target_support_coverage": 1.0,
+          "target_logit_projection_leakage": 0.0,
+          "final_true_kl": 0.041727287216,
+          "final_policy_probability_leakage": 0.0,
+          "cumulative_update_leakage": 0.0,
+          "cumulative_kch_carry_leakage": 0.0,
+          "measured_J": 0.291727287216
+        },
+        "source_conductor_packet": {
+          "policy": "source_conductor_packet",
+          "support_size": 15,
+          "resource_cost": 1.0,
+          "target_support_coverage": 1.0,
+          "target_logit_projection_leakage": 0.0,
+          "final_true_kl": 0.041727287216,
+          "final_policy_probability_leakage": 0.0,
+          "cumulative_update_leakage": 0.0,
+          "cumulative_kch_carry_leakage": 0.0,
+          "measured_J": 0.291727287216
+        },
+        "source_minimal_b2": {
+          "policy": "source_minimal_b2",
+          "support_size": 3,
+          "resource_cost": 0.2,
+          "target_support_coverage": 0.0,
+          "target_logit_projection_leakage": 1.0,
+          "final_true_kl": 0.145775513938,
+          "final_policy_probability_leakage": 0.0,
+          "cumulative_update_leakage": 0.0,
+          "cumulative_kch_carry_leakage": 0.0,
+          "measured_J": 0.195775513938
+        },
+        "source_normalizer_b3": {
+          "policy": "source_normalizer_b3",
+          "support_size": 15,
+          "resource_cost": 1.0,
+          "target_support_coverage": 1.0,
+          "target_logit_projection_leakage": 0.0,
+          "final_true_kl": 0.041727287216,
+          "final_policy_probability_leakage": 0.0,
+          "cumulative_update_leakage": 0.0,
+          "cumulative_kch_carry_leakage": 0.0,
+          "measured_J": 0.291727287216
+        },
+        "source_raw": {
+          "policy": "source_raw",
+          "support_size": 2,
+          "resource_cost": 0.133333333333,
+          "target_support_coverage": 0.0,
+          "target_logit_projection_leakage": 1.0,
+          "final_true_kl": 0.143452103881,
+          "final_policy_probability_leakage": 0.002316736908,
+          "cumulative_update_leakage": 0.0,
+          "cumulative_kch_carry_leakage": 0.972952423864,
+          "measured_J": 0.176785437214
+        }
+      }
+    },
+    {
+      "source_index": 4,
+      "transfer_index": 0,
+      "action_index": 12,
+      "source_support": [
+        "1+u"
+      ],
+      "target_support": [
+        "w"
+      ],
+      "source_minimal_size": 1,
+      "source_normalizer_size": 15,
+      "winner_by_measured_J": "oracle_target_b2",
+      "premium": 0.233333333333,
+      "measured_transfer_gain": 0.039556759571,
+      "measured_net_gain": -0.193776573762,
+      "policies": {
+        "full": {
+          "policy": "full",
+          "support_size": 15,
+          "resource_cost": 1.0,
+          "target_support_coverage": 1.0,
+          "target_logit_projection_leakage": 0.0,
+          "final_true_kl": 0.042797844493,
+          "final_policy_probability_leakage": 0.0,
+          "cumulative_update_leakage": 0.0,
+          "cumulative_kch_carry_leakage": 0.0,
+          "measured_J": 0.292797844493
+        },
+        "oracle_target_b2": {
+          "policy": "oracle_target_b2",
+          "support_size": 1,
+          "resource_cost": 0.066666666667,
+          "target_support_coverage": 1.0,
+          "target_logit_projection_leakage": 0.0,
+          "final_true_kl": 0.002186079982,
+          "final_policy_probability_leakage": 0.0,
+          "cumulative_update_leakage": 0.0,
+          "cumulative_kch_carry_leakage": 0.0,
+          "measured_J": 0.018852746649
+        },
+        "random_minimal_budget": {
+          "policy": "random_minimal_budget",
+          "support_size": 1,
+          "resource_cost": 0.066666666667,
+          "target_support_coverage": 0.0,
+          "target_logit_projection_leakage": 1.0,
+          "final_true_kl": 0.081772909389,
+          "final_policy_probability_leakage": 0.0,
+          "cumulative_update_leakage": 0.0,
+          "cumulative_kch_carry_leakage": 0.0,
+          "measured_J": 0.098439576055
+        },
+        "random_normalizer_budget": {
+          "policy": "random_normalizer_budget",
+          "support_size": 15,
+          "resource_cost": 1.0,
+          "target_support_coverage": 1.0,
+          "target_logit_projection_leakage": 0.0,
+          "final_true_kl": 0.042797844493,
+          "final_policy_probability_leakage": 0.0,
+          "cumulative_update_leakage": 0.0,
+          "cumulative_kch_carry_leakage": 0.0,
+          "measured_J": 0.292797844493
+        },
+        "source_conductor_packet": {
+          "policy": "source_conductor_packet",
+          "support_size": 12,
+          "resource_cost": 0.8,
+          "target_support_coverage": 1.0,
+          "target_logit_projection_leakage": 0.0,
+          "final_true_kl": 0.034803504056,
+          "final_policy_probability_leakage": 0.012780214409,
+          "cumulative_update_leakage": 0.0,
+          "cumulative_kch_carry_leakage": 0.275045865112,
+          "measured_J": 0.234803504056
+        },
+        "source_minimal_b2": {
+          "policy": "source_minimal_b2",
+          "support_size": 1,
+          "resource_cost": 0.066666666667,
+          "target_support_coverage": 0.0,
+          "target_logit_projection_leakage": 1.0,
+          "final_true_kl": 0.082354604064,
+          "final_policy_probability_leakage": 0.0,
+          "cumulative_update_leakage": 0.0,
+          "cumulative_kch_carry_leakage": 0.0,
+          "measured_J": 0.09902127073
+        },
+        "source_normalizer_b3": {
+          "policy": "source_normalizer_b3",
+          "support_size": 15,
+          "resource_cost": 1.0,
+          "target_support_coverage": 1.0,
+          "target_logit_projection_leakage": 0.0,
+          "final_true_kl": 0.042797844493,
+          "final_policy_probability_leakage": 0.0,
+          "cumulative_update_leakage": 0.0,
+          "cumulative_kch_carry_leakage": 0.0,
+          "measured_J": 0.292797844493
+        },
+        "source_raw": {
+          "policy": "source_raw",
+          "support_size": 1,
+          "resource_cost": 0.066666666667,
+          "target_support_coverage": 0.0,
+          "target_logit_projection_leakage": 1.0,
+          "final_true_kl": 0.082354604064,
+          "final_policy_probability_leakage": 0.0,
+          "cumulative_update_leakage": 0.0,
+          "cumulative_kch_carry_leakage": 0.0,
+          "measured_J": 0.09902127073
+        }
+      }
+    },
+    {
+      "source_index": 4,
+      "transfer_index": 1,
+      "action_index": 18,
+      "source_support": [
+        "1+u"
+      ],
+      "target_support": [
+        "w+1+wu"
+      ],
+      "source_minimal_size": 1,
+      "source_normalizer_size": 15,
+      "winner_by_measured_J": "oracle_target_b2",
+      "premium": 0.233333333333,
+      "measured_transfer_gain": 0.043946804297,
+      "measured_net_gain": -0.189386529037,
+      "policies": {
+        "full": {
+          "policy": "full",
+          "support_size": 15,
+          "resource_cost": 1.0,
+          "target_support_coverage": 1.0,
+          "target_logit_projection_leakage": 0.0,
+          "final_true_kl": 0.038050173579,
+          "final_policy_probability_leakage": 0.0,
+          "cumulative_update_leakage": 0.0,
+          "cumulative_kch_carry_leakage": 0.0,
+          "measured_J": 0.288050173579
+        },
+        "oracle_target_b2": {
+          "policy": "oracle_target_b2",
+          "support_size": 1,
+          "resource_cost": 0.066666666667,
+          "target_support_coverage": 1.0,
+          "target_logit_projection_leakage": 0.0,
+          "final_true_kl": 0.002190122701,
+          "final_policy_probability_leakage": 0.0,
+          "cumulative_update_leakage": 0.0,
+          "cumulative_kch_carry_leakage": 0.0,
+          "measured_J": 0.018856789368
+        },
+        "random_minimal_budget": {
+          "policy": "random_minimal_budget",
+          "support_size": 1,
+          "resource_cost": 0.066666666667,
+          "target_support_coverage": 0.0,
+          "target_logit_projection_leakage": 1.0,
+          "final_true_kl": 0.08186391389,
+          "final_policy_probability_leakage": 0.0,
+          "cumulative_update_leakage": 0.0,
+          "cumulative_kch_carry_leakage": 0.0,
+          "measured_J": 0.098530580557
+        },
+        "random_normalizer_budget": {
+          "policy": "random_normalizer_budget",
+          "support_size": 15,
+          "resource_cost": 1.0,
+          "target_support_coverage": 1.0,
+          "target_logit_projection_leakage": 0.0,
+          "final_true_kl": 0.038050173579,
+          "final_policy_probability_leakage": 0.0,
+          "cumulative_update_leakage": 0.0,
+          "cumulative_kch_carry_leakage": 0.0,
+          "measured_J": 0.288050173579
+        },
+        "source_conductor_packet": {
+          "policy": "source_conductor_packet",
+          "support_size": 12,
+          "resource_cost": 0.8,
+          "target_support_coverage": 1.0,
+          "target_logit_projection_leakage": 0.0,
+          "final_true_kl": 0.030575387227,
+          "final_policy_probability_leakage": 0.009725451018,
+          "cumulative_update_leakage": 0.0,
+          "cumulative_kch_carry_leakage": 0.268178659979,
+          "measured_J": 0.230575387227
+        },
+        "source_minimal_b2": {
+          "policy": "source_minimal_b2",
+          "support_size": 1,
+          "resource_cost": 0.066666666667,
+          "target_support_coverage": 0.0,
+          "target_logit_projection_leakage": 1.0,
+          "final_true_kl": 0.081996977876,
+          "final_policy_probability_leakage": 0.0,
+          "cumulative_update_leakage": 0.0,
+          "cumulative_kch_carry_leakage": 0.0,
+          "measured_J": 0.098663644542
+        },
+        "source_normalizer_b3": {
+          "policy": "source_normalizer_b3",
+          "support_size": 15,
+          "resource_cost": 1.0,
+          "target_support_coverage": 1.0,
+          "target_logit_projection_leakage": 0.0,
+          "final_true_kl": 0.038050173579,
+          "final_policy_probability_leakage": 0.0,
+          "cumulative_update_leakage": 0.0,
+          "cumulative_kch_carry_leakage": 0.0,
+          "measured_J": 0.288050173579
+        },
+        "source_raw": {
+          "policy": "source_raw",
+          "support_size": 1,
+          "resource_cost": 0.066666666667,
+          "target_support_coverage": 0.0,
+          "target_logit_projection_leakage": 1.0,
+          "final_true_kl": 0.081996977876,
+          "final_policy_probability_leakage": 0.0,
+          "cumulative_update_leakage": 0.0,
+          "cumulative_kch_carry_leakage": 0.0,
+          "measured_J": 0.098663644542
+        }
+      }
+    },
+    {
+      "source_index": 4,
+      "transfer_index": 2,
+      "action_index": 20,
+      "source_support": [
+        "1+u"
+      ],
+      "target_support": [
+        "w+1+u"
+      ],
+      "source_minimal_size": 1,
+      "source_normalizer_size": 15,
+      "winner_by_measured_J": "oracle_target_b2",
+      "premium": 0.233333333333,
+      "measured_transfer_gain": 0.041665793332,
+      "measured_net_gain": -0.191667540001,
+      "policies": {
+        "full": {
+          "policy": "full",
+          "support_size": 15,
+          "resource_cost": 1.0,
+          "target_support_coverage": 1.0,
+          "target_logit_projection_leakage": 0.0,
+          "final_true_kl": 0.039843495173,
+          "final_policy_probability_leakage": 0.0,
+          "cumulative_update_leakage": 0.0,
+          "cumulative_kch_carry_leakage": 0.0,
+          "measured_J": 0.289843495173
+        },
+        "oracle_target_b2": {
+          "policy": "oracle_target_b2",
+          "support_size": 1,
+          "resource_cost": 0.066666666667,
+          "target_support_coverage": 1.0,
+          "target_logit_projection_leakage": 0.0,
+          "final_true_kl": 0.002034525461,
+          "final_policy_probability_leakage": 0.0,
+          "cumulative_update_leakage": 0.0,
+          "cumulative_kch_carry_leakage": 0.0,
+          "measured_J": 0.018701192128
+        },
+        "random_minimal_budget": {
+          "policy": "random_minimal_budget",
+          "support_size": 1,
+          "resource_cost": 0.066666666667,
+          "target_support_coverage": 0.0,
+          "target_logit_projection_leakage": 1.0,
+          "final_true_kl": 0.082665086623,
+          "final_policy_probability_leakage": 0.0,
+          "cumulative_update_leakage": 0.0,
+          "cumulative_kch_carry_leakage": 0.0,
+          "measured_J": 0.099331753289
+        },
+        "random_normalizer_budget": {
+          "policy": "random_normalizer_budget",
+          "support_size": 15,
+          "resource_cost": 1.0,
+          "target_support_coverage": 1.0,
+          "target_logit_projection_leakage": 0.0,
+          "final_true_kl": 0.039843495173,
+          "final_policy_probability_leakage": 0.0,
+          "cumulative_update_leakage": 0.0,
+          "cumulative_kch_carry_leakage": 0.0,
+          "measured_J": 0.289843495173
+        },
+        "source_conductor_packet": {
+          "policy": "source_conductor_packet",
+          "support_size": 12,
+          "resource_cost": 0.8,
+          "target_support_coverage": 1.0,
+          "target_logit_projection_leakage": 0.0,
+          "final_true_kl": 0.032184694969,
+          "final_policy_probability_leakage": 0.015101445784,
+          "cumulative_update_leakage": 0.0,
+          "cumulative_kch_carry_leakage": 0.267149684946,
+          "measured_J": 0.232184694969
+        },
+        "source_minimal_b2": {
+          "policy": "source_minimal_b2",
+          "support_size": 1,
+          "resource_cost": 0.066666666667,
+          "target_support_coverage": 0.0,
+          "target_logit_projection_leakage": 1.0,
+          "final_true_kl": 0.081509288506,
+          "final_policy_probability_leakage": 0.0,
+          "cumulative_update_leakage": 0.0,
+          "cumulative_kch_carry_leakage": 0.0,
+          "measured_J": 0.098175955172
+        },
+        "source_normalizer_b3": {
+          "policy": "source_normalizer_b3",
+          "support_size": 15,
+          "resource_cost": 1.0,
+          "target_support_coverage": 1.0,
+          "target_logit_projection_leakage": 0.0,
+          "final_true_kl": 0.039843495173,
+          "final_policy_probability_leakage": 0.0,
+          "cumulative_update_leakage": 0.0,
+          "cumulative_kch_carry_leakage": 0.0,
+          "measured_J": 0.289843495173
+        },
+        "source_raw": {
+          "policy": "source_raw",
+          "support_size": 1,
+          "resource_cost": 0.066666666667,
+          "target_support_coverage": 0.0,
+          "target_logit_projection_leakage": 1.0,
+          "final_true_kl": 0.081509288506,
+          "final_policy_probability_leakage": 0.0,
+          "cumulative_update_leakage": 0.0,
+          "cumulative_kch_carry_leakage": 0.0,
+          "measured_J": 0.098175955172
+        }
+      }
+    },
+    {
+      "source_index": 4,
+      "transfer_index": 3,
+      "action_index": 8,
+      "source_support": [
+        "1+u"
+      ],
+      "target_support": [
+        "w+wu"
+      ],
+      "source_minimal_size": 1,
+      "source_normalizer_size": 15,
+      "winner_by_measured_J": "oracle_target_b2",
+      "premium": 0.233333333333,
+      "measured_transfer_gain": 0.044693528234,
+      "measured_net_gain": -0.188639805099,
+      "policies": {
+        "full": {
+          "policy": "full",
+          "support_size": 15,
+          "resource_cost": 1.0,
+          "target_support_coverage": 1.0,
+          "target_logit_projection_leakage": 0.0,
+          "final_true_kl": 0.038901372078,
+          "final_policy_probability_leakage": 0.0,
+          "cumulative_update_leakage": 0.0,
+          "cumulative_kch_carry_leakage": 0.0,
+          "measured_J": 0.288901372078
+        },
+        "oracle_target_b2": {
+          "policy": "oracle_target_b2",
+          "support_size": 1,
+          "resource_cost": 0.066666666667,
+          "target_support_coverage": 1.0,
+          "target_logit_projection_leakage": 0.0,
+          "final_true_kl": 0.002412226585,
+          "final_policy_probability_leakage": 0.0,
+          "cumulative_update_leakage": 0.0,
+          "cumulative_kch_carry_leakage": 0.0,
+          "measured_J": 0.019078893252
+        },
+        "random_minimal_budget": {
+          "policy": "random_minimal_budget",
+          "support_size": 1,
+          "resource_cost": 0.066666666667,
+          "target_support_coverage": 0.0,
+          "target_logit_projection_leakage": 1.0,
+          "final_true_kl": 0.082137882759,
+          "final_policy_probability_leakage": 0.0,
+          "cumulative_update_leakage": 0.0,
+          "cumulative_kch_carry_leakage": 0.0,
+          "measured_J": 0.098804549426
+        },
+        "random_normalizer_budget": {
+          "policy": "random_normalizer_budget",
+          "support_size": 15,
+          "resource_cost": 1.0,
+          "target_support_coverage": 1.0,
+          "target_logit_projection_leakage": 0.0,
+          "final_true_kl": 0.038901372078,
+          "final_policy_probability_leakage": 0.0,
+          "cumulative_update_leakage": 0.0,
+          "cumulative_kch_carry_leakage": 0.0,
+          "measured_J": 0.288901372078
+        },
+        "source_conductor_packet": {
+          "policy": "source_conductor_packet",
+          "support_size": 12,
+          "resource_cost": 0.8,
+          "target_support_coverage": 1.0,
+          "target_logit_projection_leakage": 0.0,
+          "final_true_kl": 0.032185360041,
+          "final_policy_probability_leakage": 0.011662389706,
+          "cumulative_update_leakage": 0.0,
+          "cumulative_kch_carry_leakage": 0.26969581129,
+          "measured_J": 0.232185360041
+        },
+        "source_minimal_b2": {
+          "policy": "source_minimal_b2",
+          "support_size": 1,
+          "resource_cost": 0.066666666667,
+          "target_support_coverage": 0.0,
+          "target_logit_projection_leakage": 1.0,
+          "final_true_kl": 0.083594900312,
+          "final_policy_probability_leakage": 0.0,
+          "cumulative_update_leakage": 0.0,
+          "cumulative_kch_carry_leakage": 0.0,
+          "measured_J": 0.100261566979
+        },
+        "source_normalizer_b3": {
+          "policy": "source_normalizer_b3",
+          "support_size": 15,
+          "resource_cost": 1.0,
+          "target_support_coverage": 1.0,
+          "target_logit_projection_leakage": 0.0,
+          "final_true_kl": 0.038901372078,
+          "final_policy_probability_leakage": 0.0,
+          "cumulative_update_leakage": 0.0,
+          "cumulative_kch_carry_leakage": 0.0,
+          "measured_J": 0.288901372078
+        },
+        "source_raw": {
+          "policy": "source_raw",
+          "support_size": 1,
+          "resource_cost": 0.066666666667,
+          "target_support_coverage": 0.0,
+          "target_logit_projection_leakage": 1.0,
+          "final_true_kl": 0.083594900312,
+          "final_policy_probability_leakage": 0.0,
+          "cumulative_update_leakage": 0.0,
+          "cumulative_kch_carry_leakage": 0.0,
+          "measured_J": 0.100261566979
+        }
+      }
+    },
+    {
+      "source_index": 5,
+      "transfer_index": 0,
+      "action_index": 2,
+      "source_support": [
+        "w+1+wu",
+        "w+u"
+      ],
+      "target_support": [
+        "w+(w+1)u",
+        "w+1+u"
+      ],
+      "source_minimal_size": 3,
+      "source_normalizer_size": 15,
+      "winner_by_measured_J": "oracle_target_b2",
+      "premium": 0.2,
+      "measured_transfer_gain": 0.112837191059,
+      "measured_net_gain": -0.087162808941,
+      "policies": {
+        "full": {
+          "policy": "full",
+          "support_size": 15,
+          "resource_cost": 1.0,
+          "target_support_coverage": 1.0,
+          "target_logit_projection_leakage": 0.0,
+          "final_true_kl": 0.038068573925,
+          "final_policy_probability_leakage": 0.0,
+          "cumulative_update_leakage": 0.0,
+          "cumulative_kch_carry_leakage": 0.0,
+          "measured_J": 0.288068573925
+        },
+        "oracle_target_b2": {
+          "policy": "oracle_target_b2",
+          "support_size": 3,
+          "resource_cost": 0.2,
+          "target_support_coverage": 1.0,
+          "target_logit_projection_leakage": 0.0,
+          "final_true_kl": 0.008399714068,
+          "final_policy_probability_leakage": 0.0,
+          "cumulative_update_leakage": 0.0,
+          "cumulative_kch_carry_leakage": 0.0,
+          "measured_J": 0.058399714068
+        },
+        "random_minimal_budget": {
+          "policy": "random_minimal_budget",
+          "support_size": 3,
+          "resource_cost": 0.2,
+          "target_support_coverage": 0.5,
+          "target_logit_projection_leakage": 0.597418675394,
+          "final_true_kl": 0.084173193236,
+          "final_policy_probability_leakage": 0.029017010535,
+          "cumulative_update_leakage": 0.0,
+          "cumulative_kch_carry_leakage": 0.922956240044,
+          "measured_J": 0.134173193236
+        },
+        "random_normalizer_budget": {
+          "policy": "random_normalizer_budget",
+          "support_size": 15,
+          "resource_cost": 1.0,
+          "target_support_coverage": 1.0,
+          "target_logit_projection_leakage": 0.0,
+          "final_true_kl": 0.038068573925,
+          "final_policy_probability_leakage": 0.0,
+          "cumulative_update_leakage": 0.0,
+          "cumulative_kch_carry_leakage": 0.0,
+          "measured_J": 0.288068573925
+        },
+        "source_conductor_packet": {
+          "policy": "source_conductor_packet",
+          "support_size": 12,
+          "resource_cost": 0.8,
+          "target_support_coverage": 1.0,
+          "target_logit_projection_leakage": 0.0,
+          "final_true_kl": 0.032452332603,
+          "final_policy_probability_leakage": 0.014976793557,
+          "cumulative_update_leakage": 0.0,
+          "cumulative_kch_carry_leakage": 0.27333713035,
+          "measured_J": 0.232452332603
+        },
+        "source_minimal_b2": {
+          "policy": "source_minimal_b2",
+          "support_size": 3,
+          "resource_cost": 0.2,
+          "target_support_coverage": 0.0,
+          "target_logit_projection_leakage": 1.0,
+          "final_true_kl": 0.150905764985,
+          "final_policy_probability_leakage": 0.0,
+          "cumulative_update_leakage": 0.0,
+          "cumulative_kch_carry_leakage": 0.0,
+          "measured_J": 0.200905764985
+        },
+        "source_normalizer_b3": {
+          "policy": "source_normalizer_b3",
+          "support_size": 15,
+          "resource_cost": 1.0,
+          "target_support_coverage": 1.0,
+          "target_logit_projection_leakage": 0.0,
+          "final_true_kl": 0.038068573925,
+          "final_policy_probability_leakage": 0.0,
+          "cumulative_update_leakage": 0.0,
+          "cumulative_kch_carry_leakage": 0.0,
+          "measured_J": 0.288068573925
+        },
+        "source_raw": {
+          "policy": "source_raw",
+          "support_size": 2,
+          "resource_cost": 0.133333333333,
+          "target_support_coverage": 0.0,
+          "target_logit_projection_leakage": 1.0,
+          "final_true_kl": 0.148553673824,
+          "final_policy_probability_leakage": 0.003339240233,
+          "cumulative_update_leakage": 0.0,
+          "cumulative_kch_carry_leakage": 0.972744454261,
+          "measured_J": 0.181887007157
+        }
+      }
+    },
+    {
+      "source_index": 5,
+      "transfer_index": 1,
+      "action_index": 5,
+      "source_support": [
+        "w+1+wu",
+        "w+u"
+      ],
+      "target_support": [
+        "w+1+(w+1)u",
+        "w+wu"
+      ],
+      "source_minimal_size": 3,
+      "source_normalizer_size": 15,
+      "winner_by_measured_J": "oracle_target_b2",
+      "premium": 0.2,
+      "measured_transfer_gain": 0.10727006068,
+      "measured_net_gain": -0.09272993932,
+      "policies": {
+        "full": {
+          "policy": "full",
+          "support_size": 15,
+          "resource_cost": 1.0,
+          "target_support_coverage": 1.0,
+          "target_logit_projection_leakage": 0.0,
+          "final_true_kl": 0.043118136042,
+          "final_policy_probability_leakage": 0.0,
+          "cumulative_update_leakage": 0.0,
+          "cumulative_kch_carry_leakage": 0.0,
+          "measured_J": 0.293118136042
+        },
+        "oracle_target_b2": {
+          "policy": "oracle_target_b2",
+          "support_size": 3,
+          "resource_cost": 0.2,
+          "target_support_coverage": 1.0,
+          "target_logit_projection_leakage": 0.0,
+          "final_true_kl": 0.007259026802,
+          "final_policy_probability_leakage": 0.0,
+          "cumulative_update_leakage": 0.0,
+          "cumulative_kch_carry_leakage": 0.0,
+          "measured_J": 0.057259026802
+        },
+        "random_minimal_budget": {
+          "policy": "random_minimal_budget",
+          "support_size": 3,
+          "resource_cost": 0.2,
+          "target_support_coverage": 0.0,
+          "target_logit_projection_leakage": 1.0,
+          "final_true_kl": 0.150258878824,
+          "final_policy_probability_leakage": 0.004597764527,
+          "cumulative_update_leakage": 0.0,
+          "cumulative_kch_carry_leakage": 0.985852809413,
+          "measured_J": 0.200258878824
+        },
+        "random_normalizer_budget": {
+          "policy": "random_normalizer_budget",
+          "support_size": 15,
+          "resource_cost": 1.0,
+          "target_support_coverage": 1.0,
+          "target_logit_projection_leakage": 0.0,
+          "final_true_kl": 0.043118136042,
+          "final_policy_probability_leakage": 0.0,
+          "cumulative_update_leakage": 0.0,
+          "cumulative_kch_carry_leakage": 0.0,
+          "measured_J": 0.293118136042
+        },
+        "source_conductor_packet": {
+          "policy": "source_conductor_packet",
+          "support_size": 12,
+          "resource_cost": 0.8,
+          "target_support_coverage": 1.0,
+          "target_logit_projection_leakage": 0.0,
+          "final_true_kl": 0.03480834758,
+          "final_policy_probability_leakage": 0.013873886174,
+          "cumulative_update_leakage": 0.0,
+          "cumulative_kch_carry_leakage": 0.267819303684,
+          "measured_J": 0.23480834758
+        },
+        "source_minimal_b2": {
+          "policy": "source_minimal_b2",
+          "support_size": 3,
+          "resource_cost": 0.2,
+          "target_support_coverage": 0.0,
+          "target_logit_projection_leakage": 1.0,
+          "final_true_kl": 0.150388196722,
+          "final_policy_probability_leakage": 0.0,
+          "cumulative_update_leakage": 0.0,
+          "cumulative_kch_carry_leakage": 0.0,
+          "measured_J": 0.200388196722
+        },
+        "source_normalizer_b3": {
+          "policy": "source_normalizer_b3",
+          "support_size": 15,
+          "resource_cost": 1.0,
+          "target_support_coverage": 1.0,
+          "target_logit_projection_leakage": 0.0,
+          "final_true_kl": 0.043118136042,
+          "final_policy_probability_leakage": 0.0,
+          "cumulative_update_leakage": 0.0,
+          "cumulative_kch_carry_leakage": 0.0,
+          "measured_J": 0.293118136042
+        },
+        "source_raw": {
+          "policy": "source_raw",
+          "support_size": 2,
+          "resource_cost": 0.133333333333,
+          "target_support_coverage": 0.0,
+          "target_logit_projection_leakage": 1.0,
+          "final_true_kl": 0.147554212087,
+          "final_policy_probability_leakage": 0.002247281356,
+          "cumulative_update_leakage": 0.0,
+          "cumulative_kch_carry_leakage": 0.972546104493,
+          "measured_J": 0.180887545421
+        }
+      }
+    },
+    {
+      "source_index": 5,
+      "transfer_index": 2,
+      "action_index": 21,
+      "source_support": [
+        "w+1+wu",
+        "w+u"
+      ],
+      "target_support": [
+        "1",
+        "w+1"
+      ],
+      "source_minimal_size": 3,
+      "source_normalizer_size": 15,
+      "winner_by_measured_J": "oracle_target_b2",
+      "premium": 0.2,
+      "measured_transfer_gain": 0.112575260312,
+      "measured_net_gain": -0.087424739688,
+      "policies": {
+        "full": {
+          "policy": "full",
+          "support_size": 15,
+          "resource_cost": 1.0,
+          "target_support_coverage": 1.0,
+          "target_logit_projection_leakage": 0.0,
+          "final_true_kl": 0.037423041293,
+          "final_policy_probability_leakage": 0.0,
+          "cumulative_update_leakage": 0.0,
+          "cumulative_kch_carry_leakage": 0.0,
+          "measured_J": 0.287423041293
+        },
+        "oracle_target_b2": {
+          "policy": "oracle_target_b2",
+          "support_size": 3,
+          "resource_cost": 0.2,
+          "target_support_coverage": 1.0,
+          "target_logit_projection_leakage": 0.0,
+          "final_true_kl": 0.007525022138,
+          "final_policy_probability_leakage": 0.0,
+          "cumulative_update_leakage": 0.0,
+          "cumulative_kch_carry_leakage": 0.0,
+          "measured_J": 0.057525022138
+        },
+        "random_minimal_budget": {
+          "policy": "random_minimal_budget",
+          "support_size": 3,
+          "resource_cost": 0.2,
+          "target_support_coverage": 0.0,
+          "target_logit_projection_leakage": 1.0,
+          "final_true_kl": 0.149155125373,
+          "final_policy_probability_leakage": 0.006455393099,
+          "cumulative_update_leakage": 0.0,
+          "cumulative_kch_carry_leakage": 0.985984037859,
+          "measured_J": 0.199155125373
+        },
+        "random_normalizer_budget": {
+          "policy": "random_normalizer_budget",
+          "support_size": 15,
+          "resource_cost": 1.0,
+          "target_support_coverage": 1.0,
+          "target_logit_projection_leakage": 0.0,
+          "final_true_kl": 0.037423041293,
+          "final_policy_probability_leakage": 0.0,
+          "cumulative_update_leakage": 0.0,
+          "cumulative_kch_carry_leakage": 0.0,
+          "measured_J": 0.287423041293
+        },
+        "source_conductor_packet": {
+          "policy": "source_conductor_packet",
+          "support_size": 12,
+          "resource_cost": 0.8,
+          "target_support_coverage": 1.0,
+          "target_logit_projection_leakage": 0.0,
+          "final_true_kl": 0.031208514182,
+          "final_policy_probability_leakage": 0.012504613467,
+          "cumulative_update_leakage": 0.0,
+          "cumulative_kch_carry_leakage": 0.263603817832,
+          "measured_J": 0.231208514182
+        },
+        "source_minimal_b2": {
+          "policy": "source_minimal_b2",
+          "support_size": 3,
+          "resource_cost": 0.2,
+          "target_support_coverage": 0.0,
+          "target_logit_projection_leakage": 1.0,
+          "final_true_kl": 0.149998301605,
+          "final_policy_probability_leakage": 0.0,
+          "cumulative_update_leakage": 0.0,
+          "cumulative_kch_carry_leakage": 0.0,
+          "measured_J": 0.199998301605
+        },
+        "source_normalizer_b3": {
+          "policy": "source_normalizer_b3",
+          "support_size": 15,
+          "resource_cost": 1.0,
+          "target_support_coverage": 1.0,
+          "target_logit_projection_leakage": 0.0,
+          "final_true_kl": 0.037423041293,
+          "final_policy_probability_leakage": 0.0,
+          "cumulative_update_leakage": 0.0,
+          "cumulative_kch_carry_leakage": 0.0,
+          "measured_J": 0.287423041293
+        },
+        "source_raw": {
+          "policy": "source_raw",
+          "support_size": 2,
+          "resource_cost": 0.133333333333,
+          "target_support_coverage": 0.0,
+          "target_logit_projection_leakage": 1.0,
+          "final_true_kl": 0.147943830861,
+          "final_policy_probability_leakage": 0.002077009491,
+          "cumulative_update_leakage": 0.0,
+          "cumulative_kch_carry_leakage": 0.968455299407,
+          "measured_J": 0.181277164194
+        }
+      }
+    },
+    {
+      "source_index": 5,
+      "transfer_index": 3,
+      "action_index": 14,
+      "source_support": [
+        "w+1+wu",
+        "w+u"
+      ],
+      "target_support": [
+        "1+u",
+        "w+1+(w+1)u"
+      ],
+      "source_minimal_size": 3,
+      "source_normalizer_size": 15,
+      "winner_by_measured_J": "oracle_target_b2",
+      "premium": 0.2,
+      "measured_transfer_gain": 0.106747235598,
+      "measured_net_gain": -0.093252764402,
+      "policies": {
+        "full": {
+          "policy": "full",
+          "support_size": 15,
+          "resource_cost": 1.0,
+          "target_support_coverage": 1.0,
+          "target_logit_projection_leakage": 0.0,
+          "final_true_kl": 0.042853107061,
+          "final_policy_probability_leakage": 0.0,
+          "cumulative_update_leakage": 0.0,
+          "cumulative_kch_carry_leakage": 0.0,
+          "measured_J": 0.292853107061
+        },
+        "oracle_target_b2": {
+          "policy": "oracle_target_b2",
+          "support_size": 3,
+          "resource_cost": 0.2,
+          "target_support_coverage": 1.0,
+          "target_logit_projection_leakage": 0.0,
+          "final_true_kl": 0.009637446718,
+          "final_policy_probability_leakage": 0.0,
+          "cumulative_update_leakage": 0.0,
+          "cumulative_kch_carry_leakage": 0.0,
+          "measured_J": 0.059637446718
+        },
+        "random_minimal_budget": {
+          "policy": "random_minimal_budget",
+          "support_size": 3,
+          "resource_cost": 0.2,
+          "target_support_coverage": 0.5,
+          "target_logit_projection_leakage": 0.597418675394,
+          "final_true_kl": 0.091301816689,
+          "final_policy_probability_leakage": 0.0094355404,
+          "cumulative_update_leakage": 0.0,
+          "cumulative_kch_carry_leakage": 0.915759400258,
+          "measured_J": 0.141301816689
+        },
+        "random_normalizer_budget": {
+          "policy": "random_normalizer_budget",
+          "support_size": 15,
+          "resource_cost": 1.0,
+          "target_support_coverage": 1.0,
+          "target_logit_projection_leakage": 0.0,
+          "final_true_kl": 0.042853107061,
+          "final_policy_probability_leakage": 0.0,
+          "cumulative_update_leakage": 0.0,
+          "cumulative_kch_carry_leakage": 0.0,
+          "measured_J": 0.292853107061
+        },
+        "source_conductor_packet": {
+          "policy": "source_conductor_packet",
+          "support_size": 12,
+          "resource_cost": 0.8,
+          "target_support_coverage": 1.0,
+          "target_logit_projection_leakage": 0.0,
+          "final_true_kl": 0.037491726317,
+          "final_policy_probability_leakage": 0.018967254061,
+          "cumulative_update_leakage": 0.0,
+          "cumulative_kch_carry_leakage": 0.265789058528,
+          "measured_J": 0.237491726317
+        },
+        "source_minimal_b2": {
+          "policy": "source_minimal_b2",
+          "support_size": 3,
+          "resource_cost": 0.2,
+          "target_support_coverage": 0.0,
+          "target_logit_projection_leakage": 1.0,
+          "final_true_kl": 0.149600342659,
+          "final_policy_probability_leakage": 0.0,
+          "cumulative_update_leakage": 0.0,
+          "cumulative_kch_carry_leakage": 0.0,
+          "measured_J": 0.199600342659
+        },
+        "source_normalizer_b3": {
+          "policy": "source_normalizer_b3",
+          "support_size": 15,
+          "resource_cost": 1.0,
+          "target_support_coverage": 1.0,
+          "target_logit_projection_leakage": 0.0,
+          "final_true_kl": 0.042853107061,
+          "final_policy_probability_leakage": 0.0,
+          "cumulative_update_leakage": 0.0,
+          "cumulative_kch_carry_leakage": 0.0,
+          "measured_J": 0.292853107061
+        },
+        "source_raw": {
+          "policy": "source_raw",
+          "support_size": 2,
+          "resource_cost": 0.133333333333,
+          "target_support_coverage": 0.0,
+          "target_logit_projection_leakage": 1.0,
+          "final_true_kl": 0.147603048735,
+          "final_policy_probability_leakage": 0.00297399542,
+          "cumulative_update_leakage": 0.0,
+          "cumulative_kch_carry_leakage": 0.974470038938,
+          "measured_J": 0.180936382069
+        }
+      }
+    },
+    {
+      "source_index": 6,
+      "transfer_index": 0,
+      "action_index": 18,
+      "source_support": [
+        "w+u"
+      ],
+      "target_support": [
+        "1+u"
+      ],
+      "source_minimal_size": 1,
+      "source_normalizer_size": 15,
+      "winner_by_measured_J": "oracle_target_b2",
+      "premium": 0.233333333333,
+      "measured_transfer_gain": 0.030884800877,
+      "measured_net_gain": -0.202448532457,
+      "policies": {
+        "full": {
+          "policy": "full",
+          "support_size": 15,
+          "resource_cost": 1.0,
+          "target_support_coverage": 1.0,
+          "target_logit_projection_leakage": 0.0,
+          "final_true_kl": 0.03986581564,
+          "final_policy_probability_leakage": 0.0,
+          "cumulative_update_leakage": 0.0,
+          "cumulative_kch_carry_leakage": 0.0,
+          "measured_J": 0.28986581564
+        },
+        "oracle_target_b2": {
+          "policy": "oracle_target_b2",
+          "support_size": 1,
+          "resource_cost": 0.066666666667,
+          "target_support_coverage": 1.0,
+          "target_logit_projection_leakage": 0.0,
+          "final_true_kl": 0.0023485673,
+          "final_policy_probability_leakage": 0.0,
+          "cumulative_update_leakage": 0.0,
+          "cumulative_kch_carry_leakage": 0.0,
+          "measured_J": 0.019015233966
+        },
+        "random_minimal_budget": {
+          "policy": "random_minimal_budget",
+          "support_size": 1,
+          "resource_cost": 0.066666666667,
+          "target_support_coverage": 0.0,
+          "target_logit_projection_leakage": 1.0,
+          "final_true_kl": 0.069941129606,
+          "final_policy_probability_leakage": 0.0,
+          "cumulative_update_leakage": 0.0,
+          "cumulative_kch_carry_leakage": 0.0,
+          "measured_J": 0.086607796273
+        },
+        "random_normalizer_budget": {
+          "policy": "random_normalizer_budget",
+          "support_size": 15,
+          "resource_cost": 1.0,
+          "target_support_coverage": 1.0,
+          "target_logit_projection_leakage": 0.0,
+          "final_true_kl": 0.03986581564,
+          "final_policy_probability_leakage": 0.0,
+          "cumulative_update_leakage": 0.0,
+          "cumulative_kch_carry_leakage": 0.0,
+          "measured_J": 0.28986581564
+        },
+        "source_conductor_packet": {
+          "policy": "source_conductor_packet",
+          "support_size": 12,
+          "resource_cost": 0.8,
+          "target_support_coverage": 1.0,
+          "target_logit_projection_leakage": 0.0,
+          "final_true_kl": 0.031638363667,
+          "final_policy_probability_leakage": 0.011511325679,
+          "cumulative_update_leakage": 0.0,
+          "cumulative_kch_carry_leakage": 0.274907629426,
+          "measured_J": 0.231638363667
+        },
+        "source_minimal_b2": {
+          "policy": "source_minimal_b2",
+          "support_size": 1,
+          "resource_cost": 0.066666666667,
+          "target_support_coverage": 0.0,
+          "target_logit_projection_leakage": 1.0,
+          "final_true_kl": 0.070750616517,
+          "final_policy_probability_leakage": 0.0,
+          "cumulative_update_leakage": 0.0,
+          "cumulative_kch_carry_leakage": 0.0,
+          "measured_J": 0.087417283184
+        },
+        "source_normalizer_b3": {
+          "policy": "source_normalizer_b3",
+          "support_size": 15,
+          "resource_cost": 1.0,
+          "target_support_coverage": 1.0,
+          "target_logit_projection_leakage": 0.0,
+          "final_true_kl": 0.03986581564,
+          "final_policy_probability_leakage": 0.0,
+          "cumulative_update_leakage": 0.0,
+          "cumulative_kch_carry_leakage": 0.0,
+          "measured_J": 0.28986581564
+        },
+        "source_raw": {
+          "policy": "source_raw",
+          "support_size": 1,
+          "resource_cost": 0.066666666667,
+          "target_support_coverage": 0.0,
+          "target_logit_projection_leakage": 1.0,
+          "final_true_kl": 0.070750616517,
+          "final_policy_probability_leakage": 0.0,
+          "cumulative_update_leakage": 0.0,
+          "cumulative_kch_carry_leakage": 0.0,
+          "measured_J": 0.087417283184
+        }
+      }
+    },
+    {
+      "source_index": 6,
+      "transfer_index": 1,
+      "action_index": 4,
+      "source_support": [
+        "w+u"
+      ],
+      "target_support": [
+        "w+wu"
+      ],
+      "source_minimal_size": 1,
+      "source_normalizer_size": 15,
+      "winner_by_measured_J": "oracle_target_b2",
+      "premium": 0.233333333333,
+      "measured_transfer_gain": 0.02726350015,
+      "measured_net_gain": -0.206069833184,
+      "policies": {
+        "full": {
+          "policy": "full",
+          "support_size": 15,
+          "resource_cost": 1.0,
+          "target_support_coverage": 1.0,
+          "target_logit_projection_leakage": 0.0,
+          "final_true_kl": 0.043073976237,
+          "final_policy_probability_leakage": 0.0,
+          "cumulative_update_leakage": 0.0,
+          "cumulative_kch_carry_leakage": 0.0,
+          "measured_J": 0.293073976237
+        },
+        "oracle_target_b2": {
+          "policy": "oracle_target_b2",
+          "support_size": 1,
+          "resource_cost": 0.066666666667,
+          "target_support_coverage": 1.0,
+          "target_logit_projection_leakage": 0.0,
+          "final_true_kl": 0.001778423143,
+          "final_policy_probability_leakage": 0.0,
+          "cumulative_update_leakage": 0.0,
+          "cumulative_kch_carry_leakage": 0.0,
+          "measured_J": 0.01844508981
+        },
+        "random_minimal_budget": {
+          "policy": "random_minimal_budget",
+          "support_size": 1,
+          "resource_cost": 0.066666666667,
+          "target_support_coverage": 0.0,
+          "target_logit_projection_leakage": 1.0,
+          "final_true_kl": 0.071743201732,
+          "final_policy_probability_leakage": 0.0,
+          "cumulative_update_leakage": 0.0,
+          "cumulative_kch_carry_leakage": 0.0,
+          "measured_J": 0.088409868399
+        },
+        "random_normalizer_budget": {
+          "policy": "random_normalizer_budget",
+          "support_size": 15,
+          "resource_cost": 1.0,
+          "target_support_coverage": 1.0,
+          "target_logit_projection_leakage": 0.0,
+          "final_true_kl": 0.043073976237,
+          "final_policy_probability_leakage": 0.0,
+          "cumulative_update_leakage": 0.0,
+          "cumulative_kch_carry_leakage": 0.0,
+          "measured_J": 0.293073976237
+        },
+        "source_conductor_packet": {
+          "policy": "source_conductor_packet",
+          "support_size": 12,
+          "resource_cost": 0.8,
+          "target_support_coverage": 1.0,
+          "target_logit_projection_leakage": 0.0,
+          "final_true_kl": 0.033815427891,
+          "final_policy_probability_leakage": 0.011767469408,
+          "cumulative_update_leakage": 0.0,
+          "cumulative_kch_carry_leakage": 0.267909964418,
+          "measured_J": 0.233815427891
+        },
+        "source_minimal_b2": {
+          "policy": "source_minimal_b2",
+          "support_size": 1,
+          "resource_cost": 0.066666666667,
+          "target_support_coverage": 0.0,
+          "target_logit_projection_leakage": 1.0,
+          "final_true_kl": 0.070337476387,
+          "final_policy_probability_leakage": 0.0,
+          "cumulative_update_leakage": 0.0,
+          "cumulative_kch_carry_leakage": 0.0,
+          "measured_J": 0.087004143054
+        },
+        "source_normalizer_b3": {
+          "policy": "source_normalizer_b3",
+          "support_size": 15,
+          "resource_cost": 1.0,
+          "target_support_coverage": 1.0,
+          "target_logit_projection_leakage": 0.0,
+          "final_true_kl": 0.043073976237,
+          "final_policy_probability_leakage": 0.0,
+          "cumulative_update_leakage": 0.0,
+          "cumulative_kch_carry_leakage": 0.0,
+          "measured_J": 0.293073976237
+        },
+        "source_raw": {
+          "policy": "source_raw",
+          "support_size": 1,
+          "resource_cost": 0.066666666667,
+          "target_support_coverage": 0.0,
+          "target_logit_projection_leakage": 1.0,
+          "final_true_kl": 0.070337476387,
+          "final_policy_probability_leakage": 0.0,
+          "cumulative_update_leakage": 0.0,
+          "cumulative_kch_carry_leakage": 0.0,
+          "measured_J": 0.087004143054
+        }
+      }
+    },
+    {
+      "source_index": 6,
+      "transfer_index": 2,
+      "action_index": 2,
+      "source_support": [
+        "w+u"
+      ],
+      "target_support": [
+        "w+(w+1)u"
+      ],
+      "source_minimal_size": 1,
+      "source_normalizer_size": 15,
+      "winner_by_measured_J": "oracle_target_b2",
+      "premium": 0.233333333333,
+      "measured_transfer_gain": 0.028121271553,
+      "measured_net_gain": -0.20521206178,
+      "policies": {
+        "full": {
+          "policy": "full",
+          "support_size": 15,
+          "resource_cost": 1.0,
+          "target_support_coverage": 1.0,
+          "target_logit_projection_leakage": 0.0,
+          "final_true_kl": 0.043891487868,
+          "final_policy_probability_leakage": 0.0,
+          "cumulative_update_leakage": 0.0,
+          "cumulative_kch_carry_leakage": 0.0,
+          "measured_J": 0.293891487868
+        },
+        "oracle_target_b2": {
+          "policy": "oracle_target_b2",
+          "support_size": 1,
+          "resource_cost": 0.066666666667,
+          "target_support_coverage": 1.0,
+          "target_logit_projection_leakage": 0.0,
+          "final_true_kl": 0.00195591806,
+          "final_policy_probability_leakage": 0.0,
+          "cumulative_update_leakage": 0.0,
+          "cumulative_kch_carry_leakage": 0.0,
+          "measured_J": 0.018622584726
+        },
+        "random_minimal_budget": {
+          "policy": "random_minimal_budget",
+          "support_size": 1,
+          "resource_cost": 0.066666666667,
+          "target_support_coverage": 0.0,
+          "target_logit_projection_leakage": 1.0,
+          "final_true_kl": 0.071439629946,
+          "final_policy_probability_leakage": 0.0,
+          "cumulative_update_leakage": 0.0,
+          "cumulative_kch_carry_leakage": 0.0,
+          "measured_J": 0.088106296612
+        },
+        "random_normalizer_budget": {
+          "policy": "random_normalizer_budget",
+          "support_size": 15,
+          "resource_cost": 1.0,
+          "target_support_coverage": 1.0,
+          "target_logit_projection_leakage": 0.0,
+          "final_true_kl": 0.043891487868,
+          "final_policy_probability_leakage": 0.0,
+          "cumulative_update_leakage": 0.0,
+          "cumulative_kch_carry_leakage": 0.0,
+          "measured_J": 0.293891487868
+        },
+        "source_conductor_packet": {
+          "policy": "source_conductor_packet",
+          "support_size": 12,
+          "resource_cost": 0.8,
+          "target_support_coverage": 1.0,
+          "target_logit_projection_leakage": 0.0,
+          "final_true_kl": 0.037384496434,
+          "final_policy_probability_leakage": 0.015484392714,
+          "cumulative_update_leakage": 0.0,
+          "cumulative_kch_carry_leakage": 0.262012371223,
+          "measured_J": 0.237384496434
+        },
+        "source_minimal_b2": {
+          "policy": "source_minimal_b2",
+          "support_size": 1,
+          "resource_cost": 0.066666666667,
+          "target_support_coverage": 0.0,
+          "target_logit_projection_leakage": 1.0,
+          "final_true_kl": 0.072012759421,
+          "final_policy_probability_leakage": 0.0,
+          "cumulative_update_leakage": 0.0,
+          "cumulative_kch_carry_leakage": 0.0,
+          "measured_J": 0.088679426088
+        },
+        "source_normalizer_b3": {
+          "policy": "source_normalizer_b3",
+          "support_size": 15,
+          "resource_cost": 1.0,
+          "target_support_coverage": 1.0,
+          "target_logit_projection_leakage": 0.0,
+          "final_true_kl": 0.043891487868,
+          "final_policy_probability_leakage": 0.0,
+          "cumulative_update_leakage": 0.0,
+          "cumulative_kch_carry_leakage": 0.0,
+          "measured_J": 0.293891487868
+        },
+        "source_raw": {
+          "policy": "source_raw",
+          "support_size": 1,
+          "resource_cost": 0.066666666667,
+          "target_support_coverage": 0.0,
+          "target_logit_projection_leakage": 1.0,
+          "final_true_kl": 0.072012759421,
+          "final_policy_probability_leakage": 0.0,
+          "cumulative_update_leakage": 0.0,
+          "cumulative_kch_carry_leakage": 0.0,
+          "measured_J": 0.088679426088
+        }
+      }
+    },
+    {
+      "source_index": 6,
+      "transfer_index": 3,
+      "action_index": 7,
+      "source_support": [
+        "w+u"
+      ],
+      "target_support": [
+        "w+1"
+      ],
+      "source_minimal_size": 1,
+      "source_normalizer_size": 15,
+      "winner_by_measured_J": "oracle_target_b2",
+      "premium": 0.233333333333,
+      "measured_transfer_gain": 0.031146636315,
+      "measured_net_gain": -0.202186697018,
+      "policies": {
+        "full": {
+          "policy": "full",
+          "support_size": 15,
+          "resource_cost": 1.0,
+          "target_support_coverage": 1.0,
+          "target_logit_projection_leakage": 0.0,
+          "final_true_kl": 0.042057341767,
+          "final_policy_probability_leakage": 0.0,
+          "cumulative_update_leakage": 0.0,
+          "cumulative_kch_carry_leakage": 0.0,
+          "measured_J": 0.292057341767
+        },
+        "oracle_target_b2": {
+          "policy": "oracle_target_b2",
+          "support_size": 1,
+          "resource_cost": 0.066666666667,
+          "target_support_coverage": 1.0,
+          "target_logit_projection_leakage": 0.0,
+          "final_true_kl": 0.003815379857,
+          "final_policy_probability_leakage": 0.0,
+          "cumulative_update_leakage": 0.0,
+          "cumulative_kch_carry_leakage": 0.0,
+          "measured_J": 0.020482046524
+        },
+        "random_minimal_budget": {
+          "policy": "random_minimal_budget",
+          "support_size": 1,
+          "resource_cost": 0.066666666667,
+          "target_support_coverage": 1.0,
+          "target_logit_projection_leakage": 0.0,
+          "final_true_kl": 0.003815379857,
+          "final_policy_probability_leakage": 0.0,
+          "cumulative_update_leakage": 0.0,
+          "cumulative_kch_carry_leakage": 0.0,
+          "measured_J": 0.020482046524
+        },
+        "random_normalizer_budget": {
+          "policy": "random_normalizer_budget",
+          "support_size": 15,
+          "resource_cost": 1.0,
+          "target_support_coverage": 1.0,
+          "target_logit_projection_leakage": 0.0,
+          "final_true_kl": 0.042057341767,
+          "final_policy_probability_leakage": 0.0,
+          "cumulative_update_leakage": 0.0,
+          "cumulative_kch_carry_leakage": 0.0,
+          "measured_J": 0.292057341767
+        },
+        "source_conductor_packet": {
+          "policy": "source_conductor_packet",
+          "support_size": 12,
+          "resource_cost": 0.8,
+          "target_support_coverage": 1.0,
+          "target_logit_projection_leakage": 0.0,
+          "final_true_kl": 0.034546977286,
+          "final_policy_probability_leakage": 0.016432835627,
+          "cumulative_update_leakage": 0.0,
+          "cumulative_kch_carry_leakage": 0.271021114153,
+          "measured_J": 0.234546977286
+        },
+        "source_minimal_b2": {
+          "policy": "source_minimal_b2",
+          "support_size": 1,
+          "resource_cost": 0.066666666667,
+          "target_support_coverage": 0.0,
+          "target_logit_projection_leakage": 1.0,
+          "final_true_kl": 0.073203978082,
+          "final_policy_probability_leakage": 0.0,
+          "cumulative_update_leakage": 0.0,
+          "cumulative_kch_carry_leakage": 0.0,
+          "measured_J": 0.089870644749
+        },
+        "source_normalizer_b3": {
+          "policy": "source_normalizer_b3",
+          "support_size": 15,
+          "resource_cost": 1.0,
+          "target_support_coverage": 1.0,
+          "target_logit_projection_leakage": 0.0,
+          "final_true_kl": 0.042057341767,
+          "final_policy_probability_leakage": 0.0,
+          "cumulative_update_leakage": 0.0,
+          "cumulative_kch_carry_leakage": 0.0,
+          "measured_J": 0.292057341767
+        },
+        "source_raw": {
+          "policy": "source_raw",
+          "support_size": 1,
+          "resource_cost": 0.066666666667,
+          "target_support_coverage": 0.0,
+          "target_logit_projection_leakage": 1.0,
+          "final_true_kl": 0.073203978082,
+          "final_policy_probability_leakage": 0.0,
+          "cumulative_update_leakage": 0.0,
+          "cumulative_kch_carry_leakage": 0.0,
+          "measured_J": 0.089870644749
+        }
+      }
+    },
+    {
+      "source_index": 7,
+      "transfer_index": 0,
+      "action_index": 5,
+      "source_support": [
+        "1+(w+1)u",
+        "w+1+(w+1)u"
+      ],
+      "target_support": [
+        "1+u",
+        "w+(w+1)u"
+      ],
+      "source_minimal_size": 3,
+      "source_normalizer_size": 15,
+      "winner_by_measured_J": "oracle_target_b2",
+      "premium": 0.2,
+      "measured_transfer_gain": 0.110210567581,
+      "measured_net_gain": -0.089789432419,
+      "policies": {
+        "full": {
+          "policy": "full",
+          "support_size": 15,
+          "resource_cost": 1.0,
+          "target_support_coverage": 1.0,
+          "target_logit_projection_leakage": 0.0,
+          "final_true_kl": 0.041568511188,
+          "final_policy_probability_leakage": 0.0,
+          "cumulative_update_leakage": 0.0,
+          "cumulative_kch_carry_leakage": 0.0,
+          "measured_J": 0.291568511188
+        },
+        "oracle_target_b2": {
+          "policy": "oracle_target_b2",
+          "support_size": 3,
+          "resource_cost": 0.2,
+          "target_support_coverage": 1.0,
+          "target_logit_projection_leakage": 0.0,
+          "final_true_kl": 0.007944841349,
+          "final_policy_probability_leakage": 0.0,
+          "cumulative_update_leakage": 0.0,
+          "cumulative_kch_carry_leakage": 0.0,
+          "measured_J": 0.057944841349
+        },
+        "random_minimal_budget": {
+          "policy": "random_minimal_budget",
+          "support_size": 3,
+          "resource_cost": 0.2,
+          "target_support_coverage": 0.5,
+          "target_logit_projection_leakage": 0.482118974867,
+          "final_true_kl": 0.076161259846,
+          "final_policy_probability_leakage": 0.01143002366,
+          "cumulative_update_leakage": 0.0,
+          "cumulative_kch_carry_leakage": 0.906297257966,
+          "measured_J": 0.126161259846
+        },
+        "random_normalizer_budget": {
+          "policy": "random_normalizer_budget",
+          "support_size": 15,
+          "resource_cost": 1.0,
+          "target_support_coverage": 1.0,
+          "target_logit_projection_leakage": 0.0,
+          "final_true_kl": 0.041568511188,
+          "final_policy_probability_leakage": 0.0,
+          "cumulative_update_leakage": 0.0,
+          "cumulative_kch_carry_leakage": 0.0,
+          "measured_J": 0.291568511188
+        },
+        "source_conductor_packet": {
+          "policy": "source_conductor_packet",
+          "support_size": 12,
+          "resource_cost": 0.8,
+          "target_support_coverage": 1.0,
+          "target_logit_projection_leakage": 0.0,
+          "final_true_kl": 0.03481767229,
+          "final_policy_probability_leakage": 0.014339149641,
+          "cumulative_update_leakage": 0.0,
+          "cumulative_kch_carry_leakage": 0.267848854176,
+          "measured_J": 0.23481767229
+        },
+        "source_minimal_b2": {
+          "policy": "source_minimal_b2",
+          "support_size": 3,
+          "resource_cost": 0.2,
+          "target_support_coverage": 0.0,
+          "target_logit_projection_leakage": 1.0,
+          "final_true_kl": 0.151779078769,
+          "final_policy_probability_leakage": 0.0,
+          "cumulative_update_leakage": 0.0,
+          "cumulative_kch_carry_leakage": 0.0,
+          "measured_J": 0.201779078769
+        },
+        "source_normalizer_b3": {
+          "policy": "source_normalizer_b3",
+          "support_size": 15,
+          "resource_cost": 1.0,
+          "target_support_coverage": 1.0,
+          "target_logit_projection_leakage": 0.0,
+          "final_true_kl": 0.041568511188,
+          "final_policy_probability_leakage": 0.0,
+          "cumulative_update_leakage": 0.0,
+          "cumulative_kch_carry_leakage": 0.0,
+          "measured_J": 0.291568511188
+        },
+        "source_raw": {
+          "policy": "source_raw",
+          "support_size": 2,
+          "resource_cost": 0.133333333333,
+          "target_support_coverage": 0.0,
+          "target_logit_projection_leakage": 1.0,
+          "final_true_kl": 0.150261997961,
+          "final_policy_probability_leakage": 0.003917591227,
+          "cumulative_update_leakage": 0.0,
+          "cumulative_kch_carry_leakage": 0.974167690976,
+          "measured_J": 0.183595331294
+        }
+      }
+    },
+    {
+      "source_index": 7,
+      "transfer_index": 1,
+      "action_index": 8,
+      "source_support": [
+        "1+(w+1)u",
+        "w+1+(w+1)u"
+      ],
+      "target_support": [
+        "1+u",
+        "w+u"
+      ],
+      "source_minimal_size": 3,
+      "source_normalizer_size": 15,
+      "winner_by_measured_J": "oracle_target_b2",
+      "premium": 0.2,
+      "measured_transfer_gain": 0.11288937668,
+      "measured_net_gain": -0.08711062332,
+      "policies": {
+        "full": {
+          "policy": "full",
+          "support_size": 15,
+          "resource_cost": 1.0,
+          "target_support_coverage": 1.0,
+          "target_logit_projection_leakage": 0.0,
+          "final_true_kl": 0.039451018349,
+          "final_policy_probability_leakage": 0.0,
+          "cumulative_update_leakage": 0.0,
+          "cumulative_kch_carry_leakage": 0.0,
+          "measured_J": 0.289451018349
+        },
+        "oracle_target_b2": {
+          "policy": "oracle_target_b2",
+          "support_size": 3,
+          "resource_cost": 0.2,
+          "target_support_coverage": 1.0,
+          "target_logit_projection_leakage": 0.0,
+          "final_true_kl": 0.006203472842,
+          "final_policy_probability_leakage": 0.0,
+          "cumulative_update_leakage": 0.0,
+          "cumulative_kch_carry_leakage": 0.0,
+          "measured_J": 0.056203472842
+        },
+        "random_minimal_budget": {
+          "policy": "random_minimal_budget",
+          "support_size": 3,
+          "resource_cost": 0.2,
+          "target_support_coverage": 0.5,
+          "target_logit_projection_leakage": 0.517881025133,
+          "final_true_kl": 0.085414279061,
+          "final_policy_probability_leakage": 0.00908462579,
+          "cumulative_update_leakage": 0.0,
+          "cumulative_kch_carry_leakage": 0.910906189088,
+          "measured_J": 0.135414279061
+        },
+        "random_normalizer_budget": {
+          "policy": "random_normalizer_budget",
+          "support_size": 15,
+          "resource_cost": 1.0,
+          "target_support_coverage": 1.0,
+          "target_logit_projection_leakage": 0.0,
+          "final_true_kl": 0.039451018349,
+          "final_policy_probability_leakage": 0.0,
+          "cumulative_update_leakage": 0.0,
+          "cumulative_kch_carry_leakage": 0.0,
+          "measured_J": 0.289451018349
+        },
+        "source_conductor_packet": {
+          "policy": "source_conductor_packet",
+          "support_size": 12,
+          "resource_cost": 0.8,
+          "target_support_coverage": 1.0,
+          "target_logit_projection_leakage": 0.0,
+          "final_true_kl": 0.030791082502,
+          "final_policy_probability_leakage": 0.016539594061,
+          "cumulative_update_leakage": 0.0,
+          "cumulative_kch_carry_leakage": 0.259509869082,
+          "measured_J": 0.230791082502
+        },
+        "source_minimal_b2": {
+          "policy": "source_minimal_b2",
+          "support_size": 3,
+          "resource_cost": 0.2,
+          "target_support_coverage": 0.0,
+          "target_logit_projection_leakage": 1.0,
+          "final_true_kl": 0.152340395029,
+          "final_policy_probability_leakage": 0.0,
+          "cumulative_update_leakage": 0.0,
+          "cumulative_kch_carry_leakage": 0.0,
+          "measured_J": 0.202340395029
+        },
+        "source_normalizer_b3": {
+          "policy": "source_normalizer_b3",
+          "support_size": 15,
+          "resource_cost": 1.0,
+          "target_support_coverage": 1.0,
+          "target_logit_projection_leakage": 0.0,
+          "final_true_kl": 0.039451018349,
+          "final_policy_probability_leakage": 0.0,
+          "cumulative_update_leakage": 0.0,
+          "cumulative_kch_carry_leakage": 0.0,
+          "measured_J": 0.289451018349
+        },
+        "source_raw": {
+          "policy": "source_raw",
+          "support_size": 2,
+          "resource_cost": 0.133333333333,
+          "target_support_coverage": 0.0,
+          "target_logit_projection_leakage": 1.0,
+          "final_true_kl": 0.150583072463,
+          "final_policy_probability_leakage": 0.002058978588,
+          "cumulative_update_leakage": 0.0,
+          "cumulative_kch_carry_leakage": 0.975606396505,
+          "measured_J": 0.183916405797
+        }
+      }
+    },
+    {
+      "source_index": 7,
+      "transfer_index": 2,
+      "action_index": 16,
+      "source_support": [
+        "1+(w+1)u",
+        "w+1+(w+1)u"
+      ],
+      "target_support": [
+        "w+1+wu",
+        "w+wu"
+      ],
+      "source_minimal_size": 3,
+      "source_normalizer_size": 15,
+      "winner_by_measured_J": "oracle_target_b2",
+      "premium": 0.2,
+      "measured_transfer_gain": 0.109599408422,
+      "measured_net_gain": -0.090400591578,
+      "policies": {
+        "full": {
+          "policy": "full",
+          "support_size": 15,
+          "resource_cost": 1.0,
+          "target_support_coverage": 1.0,
+          "target_logit_projection_leakage": 0.0,
+          "final_true_kl": 0.04348624716,
+          "final_policy_probability_leakage": 0.0,
+          "cumulative_update_leakage": 0.0,
+          "cumulative_kch_carry_leakage": 0.0,
+          "measured_J": 0.29348624716
+        },
+        "oracle_target_b2": {
+          "policy": "oracle_target_b2",
+          "support_size": 3,
+          "resource_cost": 0.2,
+          "target_support_coverage": 1.0,
+          "target_logit_projection_leakage": 0.0,
+          "final_true_kl": 0.00833693653,
+          "final_policy_probability_leakage": 0.0,
+          "cumulative_update_leakage": 0.0,
+          "cumulative_kch_carry_leakage": 0.0,
+          "measured_J": 0.05833693653
+        },
+        "random_minimal_budget": {
+          "policy": "random_minimal_budget",
+          "support_size": 3,
+          "resource_cost": 0.2,
+          "target_support_coverage": 0.0,
+          "target_logit_projection_leakage": 1.0,
+          "final_true_kl": 0.152623991082,
+          "final_policy_probability_leakage": 0.005671896806,
+          "cumulative_update_leakage": 0.0,
+          "cumulative_kch_carry_leakage": 0.987891469254,
+          "measured_J": 0.202623991082
+        },
+        "random_normalizer_budget": {
+          "policy": "random_normalizer_budget",
+          "support_size": 15,
+          "resource_cost": 1.0,
+          "target_support_coverage": 1.0,
+          "target_logit_projection_leakage": 0.0,
+          "final_true_kl": 0.04348624716,
+          "final_policy_probability_leakage": 0.0,
+          "cumulative_update_leakage": 0.0,
+          "cumulative_kch_carry_leakage": 0.0,
+          "measured_J": 0.29348624716
+        },
+        "source_conductor_packet": {
+          "policy": "source_conductor_packet",
+          "support_size": 12,
+          "resource_cost": 0.8,
+          "target_support_coverage": 1.0,
+          "target_logit_projection_leakage": 0.0,
+          "final_true_kl": 0.034566066661,
+          "final_policy_probability_leakage": 0.020084403563,
+          "cumulative_update_leakage": 0.0,
+          "cumulative_kch_carry_leakage": 0.274318404232,
+          "measured_J": 0.234566066661
+        },
+        "source_minimal_b2": {
+          "policy": "source_minimal_b2",
+          "support_size": 3,
+          "resource_cost": 0.2,
+          "target_support_coverage": 0.0,
+          "target_logit_projection_leakage": 1.0,
+          "final_true_kl": 0.153085655581,
+          "final_policy_probability_leakage": 0.0,
+          "cumulative_update_leakage": 0.0,
+          "cumulative_kch_carry_leakage": 0.0,
+          "measured_J": 0.203085655581
+        },
+        "source_normalizer_b3": {
+          "policy": "source_normalizer_b3",
+          "support_size": 15,
+          "resource_cost": 1.0,
+          "target_support_coverage": 1.0,
+          "target_logit_projection_leakage": 0.0,
+          "final_true_kl": 0.04348624716,
+          "final_policy_probability_leakage": 0.0,
+          "cumulative_update_leakage": 0.0,
+          "cumulative_kch_carry_leakage": 0.0,
+          "measured_J": 0.29348624716
+        },
+        "source_raw": {
+          "policy": "source_raw",
+          "support_size": 2,
+          "resource_cost": 0.133333333333,
+          "target_support_coverage": 0.0,
+          "target_logit_projection_leakage": 1.0,
+          "final_true_kl": 0.150452004691,
+          "final_policy_probability_leakage": 0.001447306875,
+          "cumulative_update_leakage": 0.0,
+          "cumulative_kch_carry_leakage": 0.971818008808,
+          "measured_J": 0.183785338025
+        }
+      }
+    },
+    {
+      "source_index": 7,
+      "transfer_index": 3,
+      "action_index": 2,
+      "source_support": [
+        "1+(w+1)u",
+        "w+1+(w+1)u"
+      ],
+      "target_support": [
+        "1+wu",
+        "w+1"
+      ],
+      "source_minimal_size": 3,
+      "source_normalizer_size": 15,
+      "winner_by_measured_J": "oracle_target_b2",
+      "premium": 0.2,
+      "measured_transfer_gain": 0.114903885036,
+      "measured_net_gain": -0.085096114964,
+      "policies": {
+        "full": {
+          "policy": "full",
+          "support_size": 15,
+          "resource_cost": 1.0,
+          "target_support_coverage": 1.0,
+          "target_logit_projection_leakage": 0.0,
+          "final_true_kl": 0.037575525572,
+          "final_policy_probability_leakage": 0.0,
+          "cumulative_update_leakage": 0.0,
+          "cumulative_kch_carry_leakage": 0.0,
+          "measured_J": 0.287575525572
+        },
+        "oracle_target_b2": {
+          "policy": "oracle_target_b2",
+          "support_size": 3,
+          "resource_cost": 0.2,
+          "target_support_coverage": 1.0,
+          "target_logit_projection_leakage": 0.0,
+          "final_true_kl": 0.007350223888,
+          "final_policy_probability_leakage": 0.0,
+          "cumulative_update_leakage": 0.0,
+          "cumulative_kch_carry_leakage": 0.0,
+          "measured_J": 0.057350223888
+        },
+        "random_minimal_budget": {
+          "policy": "random_minimal_budget",
+          "support_size": 3,
+          "resource_cost": 0.2,
+          "target_support_coverage": 0.5,
+          "target_logit_projection_leakage": 0.517881025133,
+          "final_true_kl": 0.079334039286,
+          "final_policy_probability_leakage": 0.014514060753,
+          "cumulative_update_leakage": 0.0,
+          "cumulative_kch_carry_leakage": 0.897722720039,
+          "measured_J": 0.129334039286
+        },
+        "random_normalizer_budget": {
+          "policy": "random_normalizer_budget",
+          "support_size": 15,
+          "resource_cost": 1.0,
+          "target_support_coverage": 1.0,
+          "target_logit_projection_leakage": 0.0,
+          "final_true_kl": 0.037575525572,
+          "final_policy_probability_leakage": 0.0,
+          "cumulative_update_leakage": 0.0,
+          "cumulative_kch_carry_leakage": 0.0,
+          "measured_J": 0.287575525572
+        },
+        "source_conductor_packet": {
+          "policy": "source_conductor_packet",
+          "support_size": 12,
+          "resource_cost": 0.8,
+          "target_support_coverage": 1.0,
+          "target_logit_projection_leakage": 0.0,
+          "final_true_kl": 0.030868540093,
+          "final_policy_probability_leakage": 0.011693504558,
+          "cumulative_update_leakage": 0.0,
+          "cumulative_kch_carry_leakage": 0.269175117489,
+          "measured_J": 0.230868540093
+        },
+        "source_minimal_b2": {
+          "policy": "source_minimal_b2",
+          "support_size": 3,
+          "resource_cost": 0.2,
+          "target_support_coverage": 0.0,
+          "target_logit_projection_leakage": 1.0,
+          "final_true_kl": 0.152479410608,
+          "final_policy_probability_leakage": 0.0,
+          "cumulative_update_leakage": 0.0,
+          "cumulative_kch_carry_leakage": 0.0,
+          "measured_J": 0.202479410608
+        },
+        "source_normalizer_b3": {
+          "policy": "source_normalizer_b3",
+          "support_size": 15,
+          "resource_cost": 1.0,
+          "target_support_coverage": 1.0,
+          "target_logit_projection_leakage": 0.0,
+          "final_true_kl": 0.037575525572,
+          "final_policy_probability_leakage": 0.0,
+          "cumulative_update_leakage": 0.0,
+          "cumulative_kch_carry_leakage": 0.0,
+          "measured_J": 0.287575525572
+        },
+        "source_raw": {
+          "policy": "source_raw",
+          "support_size": 2,
+          "resource_cost": 0.133333333333,
+          "target_support_coverage": 0.0,
+          "target_logit_projection_leakage": 1.0,
+          "final_true_kl": 0.149673310954,
+          "final_policy_probability_leakage": 0.001262083153,
+          "cumulative_update_leakage": 0.0,
+          "cumulative_kch_carry_leakage": 0.973808394141,
+          "measured_J": 0.183006644287
+        }
+      }
+    }
+  ]
+}

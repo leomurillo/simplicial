@@ -1,0 +1,2806 @@
+{
+  "certificate_pass": true,
+  "count_checks": [
+    {
+      "expected": [
+        24,
+        24,
+        24
+      ],
+      "name": "gamma size agrees across seed/local/ext",
+      "note": "",
+      "observed": [
+        24,
+        24,
+        24
+      ],
+      "pass": true
+    },
+    {
+      "expected": 637,
+      "name": "seed coordinate count",
+      "note": "packet energies + H3 + H4 + K_CH commutator orbits + carry-pair orbits",
+      "observed": 637,
+      "pass": true
+    },
+    {
+      "expected": 210,
+      "name": "H3 orbit-size sum",
+      "note": "",
+      "observed": 210,
+      "pass": true
+    },
+    {
+      "expected": 3165,
+      "name": "H4 orbit-size sum",
+      "note": "",
+      "observed": 3165,
+      "pass": true
+    },
+    {
+      "expected": 14112,
+      "name": "K_CH commutator orbit-size sum",
+      "note": "",
+      "observed": 14112,
+      "pass": true
+    },
+    {
+      "expected": 369,
+      "name": "carry-pair orbit-size sum",
+      "note": "",
+      "observed": 369,
+      "pass": true
+    },
+    {
+      "expected": 1569,
+      "name": "raw atom orbit-size sum",
+      "note": "",
+      "observed": 1569,
+      "pass": true
+    },
+    {
+      "expected": [
+        1569,
+        0
+      ],
+      "name": "support/full residual kept separate",
+      "note": "support residual 0 is not full filtered closure",
+      "observed": [
+        1569,
+        0
+      ],
+      "pass": true
+    },
+    {
+      "expected": 1569,
+      "name": "residual visibility partition",
+      "note": "H4-visible + H3-contraction-visible from H4-invisible + remaining invisible",
+      "observed": 1569,
+      "pass": true
+    },
+    {
+      "expected": true,
+      "name": "K_CH is not an Ext_CH detector",
+      "note": "visible H4 incidence is only a Fisher-shadow channel",
+      "observed": true,
+      "pass": true
+    },
+    {
+      "expected": true,
+      "name": "H3 contraction still leaves hidden residue",
+      "note": "remaining invisible atoms require richer coefficient or higher-arity channels",
+      "observed": true,
+      "pass": true
+    }
+  ],
+  "determinant_character_status": {
+    "orbit_bucket_coordinates": "For a single orbit-bucket coordinate, the stabilizer fixes the aggregate coordinate, so the determinant character is trivial.",
+    "tuple_determinants": "Not yet enumerated.  The next layer must choose finite Hamiltonian tuple supports/coefficient patterns and compute det(A_gamma) on each tuple stabilizer."
+  },
+  "next_tuple_layer": {
+    "needed": true,
+    "reason": "The orbit skeleton is finite and count-checked, but the actual FC1 tuple census must still choose tuple support/coefficient patterns in this skeleton and compute tuple stabilizers and determinant characters.",
+    "recommended_first_tuple_skeleton": {
+      "max_coordinate_blocks": [
+        "packet_energy",
+        "carry_pair",
+        "h4_visible_incidence_bucket",
+        "remaining_invisible_bucket"
+      ],
+      "purpose": "small enough to test determinant-character and closure-defect bookkeeping before touching all K_CH orbit coordinates",
+      "row": "f4-u2"
+    }
+  },
+  "orbit_skeleton": {
+    "carry_pair_orbits": [
+      {
+        "coefficient": {
+          "-1": 3
+        },
+        "determinant_character_on_1d_bucket": "trivial",
+        "group_order": 24,
+        "id": null,
+        "matrix_transition": null,
+        "operand_conductors": null,
+        "orbit_size": 3,
+        "orbit_stabilizer_integral": true,
+        "path": "u->u->u",
+        "representative": {
+          "left_eta": "(w+1)u",
+          "middle": "u",
+          "right_eta": "(w+1)u",
+          "source": "u",
+          "target": "u"
+        },
+        "stabilizer_order": 8,
+        "symmetry_group": "Gamma_R"
+      },
+      {
+        "coefficient": {
+          "-1": 6
+        },
+        "determinant_character_on_1d_bucket": "trivial",
+        "group_order": 24,
+        "id": null,
+        "matrix_transition": null,
+        "operand_conductors": null,
+        "orbit_size": 6,
+        "orbit_stabilizer_integral": true,
+        "path": "u->u->u",
+        "representative": {
+          "left_eta": "(w+1)u",
+          "middle": "u",
+          "right_eta": "u",
+          "source": "u",
+          "target": "u"
+        },
+        "stabilizer_order": 4,
+        "symmetry_group": "Gamma_R"
+      },
+      {
+        "coefficient": {
+          "-1": 24
+        },
+        "determinant_character_on_1d_bucket": "trivial",
+        "group_order": 24,
+        "id": null,
+        "matrix_transition": null,
+        "operand_conductors": null,
+        "orbit_size": 24,
+        "orbit_stabilizer_integral": true,
+        "path": "u->u->u^2",
+        "representative": {
+          "left_eta": "1",
+          "middle": "u",
+          "right_eta": "(w+1)u",
+          "source": "u",
+          "target": "u^2"
+        },
+        "stabilizer_order": 1,
+        "symmetry_group": "Gamma_R"
+      },
+      {
+        "coefficient": {
+          "-1": 12
+        },
+        "determinant_character_on_1d_bucket": "trivial",
+        "group_order": 24,
+        "id": null,
+        "matrix_transition": null,
+        "operand_conductors": null,
+        "orbit_size": 12,
+        "orbit_stabilizer_integral": true,
+        "path": "u->u->u^2",
+        "representative": {
+          "left_eta": "1",
+          "middle": "u",
+          "right_eta": "u",
+          "source": "u",
+          "target": "u^2"
+        },
+        "stabilizer_order": 2,
+        "symmetry_group": "Gamma_R"
+      },
+      {
+        "coefficient": {
+          "-1": 24
+        },
+        "determinant_character_on_1d_bucket": "trivial",
+        "group_order": 24,
+        "id": null,
+        "matrix_transition": null,
+        "operand_conductors": null,
+        "orbit_size": 24,
+        "orbit_stabilizer_integral": true,
+        "path": "u^2->u->u",
+        "representative": {
+          "left_eta": "(w+1)u",
+          "middle": "u",
+          "right_eta": "1",
+          "source": "u^2",
+          "target": "u"
+        },
+        "stabilizer_order": 1,
+        "symmetry_group": "Gamma_R"
+      },
+      {
+        "coefficient": {
+          "-1": 12
+        },
+        "determinant_character_on_1d_bucket": "trivial",
+        "group_order": 24,
+        "id": null,
+        "matrix_transition": null,
+        "operand_conductors": null,
+        "orbit_size": 12,
+        "orbit_stabilizer_integral": true,
+        "path": "u^2->u->u",
+        "representative": {
+          "left_eta": "(w+1)u",
+          "middle": "u",
+          "right_eta": "w+1",
+          "source": "u^2",
+          "target": "u"
+        },
+        "stabilizer_order": 2,
+        "symmetry_group": "Gamma_R"
+      },
+      {
+        "coefficient": {
+          "-1": 108
+        },
+        "determinant_character_on_1d_bucket": "trivial",
+        "group_order": 24,
+        "id": null,
+        "matrix_transition": null,
+        "operand_conductors": null,
+        "orbit_size": 12,
+        "orbit_stabilizer_integral": true,
+        "path": "u^2->u->u^2",
+        "representative": {
+          "left_eta": "1",
+          "middle": "u",
+          "right_eta": "1",
+          "source": "u^2",
+          "target": "u^2"
+        },
+        "stabilizer_order": 2,
+        "symmetry_group": "Gamma_R"
+      },
+      {
+        "coefficient": {
+          "-1": 216
+        },
+        "determinant_character_on_1d_bucket": "trivial",
+        "group_order": 24,
+        "id": null,
+        "matrix_transition": null,
+        "operand_conductors": null,
+        "orbit_size": 24,
+        "orbit_stabilizer_integral": true,
+        "path": "u^2->u->u^2",
+        "representative": {
+          "left_eta": "1",
+          "middle": "u",
+          "right_eta": "1+(w+1)u",
+          "source": "u^2",
+          "target": "u^2"
+        },
+        "stabilizer_order": 1,
+        "symmetry_group": "Gamma_R"
+      },
+      {
+        "coefficient": {
+          "-1": 108
+        },
+        "determinant_character_on_1d_bucket": "trivial",
+        "group_order": 24,
+        "id": null,
+        "matrix_transition": null,
+        "operand_conductors": null,
+        "orbit_size": 12,
+        "orbit_stabilizer_integral": true,
+        "path": "u^2->u->u^2",
+        "representative": {
+          "left_eta": "1",
+          "middle": "u",
+          "right_eta": "1+u",
+          "source": "u^2",
+          "target": "u^2"
+        },
+        "stabilizer_order": 2,
+        "symmetry_group": "Gamma_R"
+      },
+      {
+        "coefficient": {
+          "-1": 120
+        },
+        "determinant_character_on_1d_bucket": "trivial",
+        "group_order": 24,
+        "id": null,
+        "matrix_transition": null,
+        "operand_conductors": null,
+        "orbit_size": 24,
+        "orbit_stabilizer_integral": true,
+        "path": "u^2->u->u^2",
+        "representative": {
+          "left_eta": "1",
+          "middle": "u",
+          "right_eta": "w",
+          "source": "u^2",
+          "target": "u^2"
+        },
+        "stabilizer_order": 1,
+        "symmetry_group": "Gamma_R"
+      },
+      {
+        "coefficient": {
+          "-1": 120
+        },
+        "determinant_character_on_1d_bucket": "trivial",
+        "group_order": 24,
+        "id": null,
+        "matrix_transition": null,
+        "operand_conductors": null,
+        "orbit_size": 24,
+        "orbit_stabilizer_integral": true,
+        "path": "u^2->u->u^2",
+        "representative": {
+          "left_eta": "1",
+          "middle": "u",
+          "right_eta": "w+(w+1)u",
+          "source": "u^2",
+          "target": "u^2"
+        },
+        "stabilizer_order": 1,
+        "symmetry_group": "Gamma_R"
+      },
+      {
+        "coefficient": {
+          "-1": 120
+        },
+        "determinant_character_on_1d_bucket": "trivial",
+        "group_order": 24,
+        "id": null,
+        "matrix_transition": null,
+        "operand_conductors": null,
+        "orbit_size": 24,
+        "orbit_stabilizer_integral": true,
+        "path": "u^2->u->u^2",
+        "representative": {
+          "left_eta": "1",
+          "middle": "u",
+          "right_eta": "w+1+(w+1)u",
+          "source": "u^2",
+          "target": "u^2"
+        },
+        "stabilizer_order": 1,
+        "symmetry_group": "Gamma_R"
+      },
+      {
+        "coefficient": {
+          "-1": 120
+        },
+        "determinant_character_on_1d_bucket": "trivial",
+        "group_order": 24,
+        "id": null,
+        "matrix_transition": null,
+        "operand_conductors": null,
+        "orbit_size": 24,
+        "orbit_stabilizer_integral": true,
+        "path": "u^2->u->u^2",
+        "representative": {
+          "left_eta": "1",
+          "middle": "u",
+          "right_eta": "w+1+u",
+          "source": "u^2",
+          "target": "u^2"
+        },
+        "stabilizer_order": 1,
+        "symmetry_group": "Gamma_R"
+      },
+      {
+        "coefficient": {
+          "-1": 48
+        },
+        "determinant_character_on_1d_bucket": "trivial",
+        "group_order": 24,
+        "id": null,
+        "matrix_transition": null,
+        "operand_conductors": null,
+        "orbit_size": 12,
+        "orbit_stabilizer_integral": true,
+        "path": "u^2->u^2->u^2",
+        "representative": {
+          "left_eta": "1",
+          "middle": "u^2",
+          "right_eta": "1",
+          "source": "u^2",
+          "target": "u^2"
+        },
+        "stabilizer_order": 2,
+        "symmetry_group": "Gamma_R"
+      },
+      {
+        "coefficient": {
+          "-1": 96
+        },
+        "determinant_character_on_1d_bucket": "trivial",
+        "group_order": 24,
+        "id": null,
+        "matrix_transition": null,
+        "operand_conductors": null,
+        "orbit_size": 24,
+        "orbit_stabilizer_integral": true,
+        "path": "u^2->u^2->u^2",
+        "representative": {
+          "left_eta": "1",
+          "middle": "u^2",
+          "right_eta": "1+(w+1)u",
+          "source": "u^2",
+          "target": "u^2"
+        },
+        "stabilizer_order": 1,
+        "symmetry_group": "Gamma_R"
+      },
+      {
+        "coefficient": {
+          "-1": 48
+        },
+        "determinant_character_on_1d_bucket": "trivial",
+        "group_order": 24,
+        "id": null,
+        "matrix_transition": null,
+        "operand_conductors": null,
+        "orbit_size": 12,
+        "orbit_stabilizer_integral": true,
+        "path": "u^2->u^2->u^2",
+        "representative": {
+          "left_eta": "1",
+          "middle": "u^2",
+          "right_eta": "1+u",
+          "source": "u^2",
+          "target": "u^2"
+        },
+        "stabilizer_order": 2,
+        "symmetry_group": "Gamma_R"
+      },
+      {
+        "coefficient": {
+          "-1": 96
+        },
+        "determinant_character_on_1d_bucket": "trivial",
+        "group_order": 24,
+        "id": null,
+        "matrix_transition": null,
+        "operand_conductors": null,
+        "orbit_size": 24,
+        "orbit_stabilizer_integral": true,
+        "path": "u^2->u^2->u^2",
+        "representative": {
+          "left_eta": "1",
+          "middle": "u^2",
+          "right_eta": "w",
+          "source": "u^2",
+          "target": "u^2"
+        },
+        "stabilizer_order": 1,
+        "symmetry_group": "Gamma_R"
+      },
+      {
+        "coefficient": {
+          "-1": 96
+        },
+        "determinant_character_on_1d_bucket": "trivial",
+        "group_order": 24,
+        "id": null,
+        "matrix_transition": null,
+        "operand_conductors": null,
+        "orbit_size": 24,
+        "orbit_stabilizer_integral": true,
+        "path": "u^2->u^2->u^2",
+        "representative": {
+          "left_eta": "1",
+          "middle": "u^2",
+          "right_eta": "w+(w+1)u",
+          "source": "u^2",
+          "target": "u^2"
+        },
+        "stabilizer_order": 1,
+        "symmetry_group": "Gamma_R"
+      },
+      {
+        "coefficient": {
+          "-1": 96
+        },
+        "determinant_character_on_1d_bucket": "trivial",
+        "group_order": 24,
+        "id": null,
+        "matrix_transition": null,
+        "operand_conductors": null,
+        "orbit_size": 24,
+        "orbit_stabilizer_integral": true,
+        "path": "u^2->u^2->u^2",
+        "representative": {
+          "left_eta": "1",
+          "middle": "u^2",
+          "right_eta": "w+1+(w+1)u",
+          "source": "u^2",
+          "target": "u^2"
+        },
+        "stabilizer_order": 1,
+        "symmetry_group": "Gamma_R"
+      },
+      {
+        "coefficient": {
+          "-1": 96
+        },
+        "determinant_character_on_1d_bucket": "trivial",
+        "group_order": 24,
+        "id": null,
+        "matrix_transition": null,
+        "operand_conductors": null,
+        "orbit_size": 24,
+        "orbit_stabilizer_integral": true,
+        "path": "u^2->u^2->u^2",
+        "representative": {
+          "left_eta": "1",
+          "middle": "u^2",
+          "right_eta": "w+1+u",
+          "source": "u^2",
+          "target": "u^2"
+        },
+        "stabilizer_order": 1,
+        "symmetry_group": "Gamma_R"
+      }
+    ],
+    "full_defect_summary": {
+      "group_order": 24,
+      "matrix_transition_distribution": [
+        {
+          "count": 190,
+          "value": "u->u"
+        },
+        {
+          "count": 694,
+          "value": "u->u^2"
+        },
+        {
+          "count": 694,
+          "value": "u^2->u"
+        },
+        {
+          "count": 2860,
+          "value": "u^2->u^2"
+        }
+      ],
+      "orbit_count": 4438,
+      "orbit_size_distribution": [
+        {
+          "count": 14,
+          "value": 12
+        },
+        {
+          "count": 4424,
+          "value": 24
+        }
+      ],
+      "stabilizer_order_distribution": [
+        {
+          "count": 4424,
+          "value": 1
+        },
+        {
+          "count": 14,
+          "value": 2
+        }
+      ],
+      "symmetry_group": "Gamma_R"
+    },
+    "h3_orbits": [
+      {
+        "arity": 3,
+        "determinant_character_on_1d_bucket": "trivial",
+        "family": "TWW",
+        "group_order": 144,
+        "id": 0,
+        "orbit_size": 72,
+        "orbit_stabilizer_integral": true,
+        "representative": "((w+1)u, 1, 1+(w+1)u)",
+        "source_preimages": [
+          {
+            "count": 576,
+            "source_family": "TTWW",
+            "source_orbit": 1
+          },
+          {
+            "count": 576,
+            "source_family": "TTWW",
+            "source_orbit": 4
+          },
+          {
+            "count": 864,
+            "source_family": "TTWW",
+            "source_orbit": 5
+          },
+          {
+            "count": 576,
+            "source_family": "TWWW",
+            "source_orbit": 6
+          },
+          {
+            "count": 1152,
+            "source_family": "TWWW",
+            "source_orbit": 7
+          },
+          {
+            "count": 576,
+            "source_family": "TWWW",
+            "source_orbit": 8
+          },
+          {
+            "count": 288,
+            "source_family": "WWWW",
+            "source_orbit": 10
+          },
+          {
+            "count": 288,
+            "source_family": "WWWW",
+            "source_orbit": 15
+          },
+          {
+            "count": 576,
+            "source_family": "WWWW",
+            "source_orbit": 16
+          },
+          {
+            "count": 576,
+            "source_family": "WWWW",
+            "source_orbit": 17
+          }
+        ],
+        "stabilizer_order": 2,
+        "symmetry_group": "Gamma_R x S_3",
+        "target_images": [],
+        "valid_contractions": null
+      },
+      {
+        "arity": 3,
+        "determinant_character_on_1d_bucket": "trivial",
+        "family": "TTT",
+        "group_order": 144,
+        "id": 1,
+        "orbit_size": 6,
+        "orbit_stabilizer_integral": true,
+        "representative": "((w+1)u, u, wu)",
+        "source_preimages": [
+          {
+            "count": 72,
+            "source_family": "TTTT",
+            "source_orbit": 2
+          },
+          {
+            "count": 144,
+            "source_family": "TTWW",
+            "source_orbit": 4
+          },
+          {
+            "count": 288,
+            "source_family": "TTWW",
+            "source_orbit": 5
+          }
+        ],
+        "stabilizer_order": 24,
+        "symmetry_group": "Gamma_R x S_3",
+        "target_images": [],
+        "valid_contractions": null
+      },
+      {
+        "arity": 3,
+        "determinant_character_on_1d_bucket": "trivial",
+        "family": "TWW",
+        "group_order": 144,
+        "id": 2,
+        "orbit_size": 36,
+        "orbit_stabilizer_integral": true,
+        "representative": "((w+1)u, w+1, w+1+(w+1)u)",
+        "source_preimages": [
+          {
+            "count": 288,
+            "source_family": "TTWW",
+            "source_orbit": 3
+          },
+          {
+            "count": 144,
+            "source_family": "TTWW",
+            "source_orbit": 4
+          },
+          {
+            "count": 576,
+            "source_family": "TTWW",
+            "source_orbit": 5
+          },
+          {
+            "count": 288,
+            "source_family": "TWWW",
+            "source_orbit": 6
+          },
+          {
+            "count": 576,
+            "source_family": "TWWW",
+            "source_orbit": 7
+          },
+          {
+            "count": 288,
+            "source_family": "TWWW",
+            "source_orbit": 8
+          },
+          {
+            "count": 144,
+            "source_family": "WWWW",
+            "source_orbit": 11
+          },
+          {
+            "count": 144,
+            "source_family": "WWWW",
+            "source_orbit": 15
+          },
+          {
+            "count": 576,
+            "source_family": "WWWW",
+            "source_orbit": 17
+          }
+        ],
+        "stabilizer_order": 4,
+        "symmetry_group": "Gamma_R x S_3",
+        "target_images": [],
+        "valid_contractions": null
+      },
+      {
+        "arity": 3,
+        "determinant_character_on_1d_bucket": "trivial",
+        "family": "WWW",
+        "group_order": 144,
+        "id": 3,
+        "orbit_size": 24,
+        "orbit_stabilizer_integral": true,
+        "representative": "(1, w, w+1)",
+        "source_preimages": [
+          {
+            "count": 288,
+            "source_family": "TWWW",
+            "source_orbit": 6
+          },
+          {
+            "count": 576,
+            "source_family": "TWWW",
+            "source_orbit": 7
+          },
+          {
+            "count": 288,
+            "source_family": "WWWW",
+            "source_orbit": 12
+          },
+          {
+            "count": 288,
+            "source_family": "WWWW",
+            "source_orbit": 16
+          },
+          {
+            "count": 576,
+            "source_family": "WWWW",
+            "source_orbit": 17
+          }
+        ],
+        "stabilizer_order": 6,
+        "symmetry_group": "Gamma_R x S_3",
+        "target_images": [],
+        "valid_contractions": null
+      },
+      {
+        "arity": 3,
+        "determinant_character_on_1d_bucket": "trivial",
+        "family": "WWW",
+        "group_order": 144,
+        "id": 4,
+        "orbit_size": 72,
+        "orbit_stabilizer_integral": true,
+        "representative": "(1, w+(w+1)u, w+1+(w+1)u)",
+        "source_preimages": [
+          {
+            "count": 576,
+            "source_family": "TWWW",
+            "source_orbit": 6
+          },
+          {
+            "count": 1152,
+            "source_family": "TWWW",
+            "source_orbit": 7
+          },
+          {
+            "count": 864,
+            "source_family": "TWWW",
+            "source_orbit": 8
+          },
+          {
+            "count": 576,
+            "source_family": "WWWW",
+            "source_orbit": 13
+          },
+          {
+            "count": 288,
+            "source_family": "WWWW",
+            "source_orbit": 14
+          },
+          {
+            "count": 864,
+            "source_family": "WWWW",
+            "source_orbit": 16
+          },
+          {
+            "count": 1728,
+            "source_family": "WWWW",
+            "source_orbit": 17
+          }
+        ],
+        "stabilizer_order": 2,
+        "symmetry_group": "Gamma_R x S_3",
+        "target_images": [],
+        "valid_contractions": null
+      }
+    ],
+    "h4_orbits": [
+      {
+        "arity": 4,
+        "determinant_character_on_1d_bucket": "trivial",
+        "family": "TTTT",
+        "group_order": 576,
+        "id": 0,
+        "orbit_size": 3,
+        "orbit_stabilizer_integral": true,
+        "representative": "((w+1)u, (w+1)u, (w+1)u, (w+1)u)",
+        "source_preimages": [],
+        "stabilizer_order": 192,
+        "symmetry_group": "Gamma_R x S_4",
+        "target_images": [],
+        "valid_contractions": 0
+      },
+      {
+        "arity": 4,
+        "determinant_character_on_1d_bucket": "trivial",
+        "family": "TTWW",
+        "group_order": 576,
+        "id": 1,
+        "orbit_size": 144,
+        "orbit_stabilizer_integral": true,
+        "representative": "((w+1)u, (w+1)u, 1, 1)",
+        "source_preimages": [],
+        "stabilizer_order": 4,
+        "symmetry_group": "Gamma_R x S_4",
+        "target_images": [
+          {
+            "count": 576,
+            "target_family": "TWW",
+            "target_orbit": 0
+          }
+        ],
+        "valid_contractions": 576
+      },
+      {
+        "arity": 4,
+        "determinant_character_on_1d_bucket": "trivial",
+        "family": "TTTT",
+        "group_order": 576,
+        "id": 2,
+        "orbit_size": 18,
+        "orbit_stabilizer_integral": true,
+        "representative": "((w+1)u, (w+1)u, u, u)",
+        "source_preimages": [],
+        "stabilizer_order": 32,
+        "symmetry_group": "Gamma_R x S_4",
+        "target_images": [
+          {
+            "count": 72,
+            "target_family": "TTT",
+            "target_orbit": 1
+          }
+        ],
+        "valid_contractions": 72
+      },
+      {
+        "arity": 4,
+        "determinant_character_on_1d_bucket": "trivial",
+        "family": "TTWW",
+        "group_order": 576,
+        "id": 3,
+        "orbit_size": 72,
+        "orbit_stabilizer_integral": true,
+        "representative": "((w+1)u, (w+1)u, w+1, w+1)",
+        "source_preimages": [],
+        "stabilizer_order": 8,
+        "symmetry_group": "Gamma_R x S_4",
+        "target_images": [
+          {
+            "count": 288,
+            "target_family": "TWW",
+            "target_orbit": 2
+          }
+        ],
+        "valid_contractions": 288
+      },
+      {
+        "arity": 4,
+        "determinant_character_on_1d_bucket": "trivial",
+        "family": "TTWW",
+        "group_order": 576,
+        "id": 4,
+        "orbit_size": 144,
+        "orbit_stabilizer_integral": true,
+        "representative": "((w+1)u, 1, 1+u, wu)",
+        "source_preimages": [],
+        "stabilizer_order": 4,
+        "symmetry_group": "Gamma_R x S_4",
+        "target_images": [
+          {
+            "count": 576,
+            "target_family": "TWW",
+            "target_orbit": 0
+          },
+          {
+            "count": 144,
+            "target_family": "TTT",
+            "target_orbit": 1
+          },
+          {
+            "count": 144,
+            "target_family": "TWW",
+            "target_orbit": 2
+          }
+        ],
+        "valid_contractions": 864
+      },
+      {
+        "arity": 4,
+        "determinant_character_on_1d_bucket": "trivial",
+        "family": "TTWW",
+        "group_order": 576,
+        "id": 5,
+        "orbit_size": 288,
+        "orbit_stabilizer_integral": true,
+        "representative": "((w+1)u, 1, 1+wu, u)",
+        "source_preimages": [],
+        "stabilizer_order": 2,
+        "symmetry_group": "Gamma_R x S_4",
+        "target_images": [
+          {
+            "count": 864,
+            "target_family": "TWW",
+            "target_orbit": 0
+          },
+          {
+            "count": 288,
+            "target_family": "TTT",
+            "target_orbit": 1
+          },
+          {
+            "count": 576,
+            "target_family": "TWW",
+            "target_orbit": 2
+          }
+        ],
+        "valid_contractions": 1728
+      },
+      {
+        "arity": 4,
+        "determinant_character_on_1d_bucket": "trivial",
+        "family": "TWWW",
+        "group_order": 576,
+        "id": 6,
+        "orbit_size": 288,
+        "orbit_stabilizer_integral": true,
+        "representative": "((w+1)u, 1, w, w+1+(w+1)u)",
+        "source_preimages": [],
+        "stabilizer_order": 2,
+        "symmetry_group": "Gamma_R x S_4",
+        "target_images": [
+          {
+            "count": 576,
+            "target_family": "TWW",
+            "target_orbit": 0
+          },
+          {
+            "count": 288,
+            "target_family": "TWW",
+            "target_orbit": 2
+          },
+          {
+            "count": 288,
+            "target_family": "WWW",
+            "target_orbit": 3
+          },
+          {
+            "count": 576,
+            "target_family": "WWW",
+            "target_orbit": 4
+          }
+        ],
+        "valid_contractions": 1728
+      },
+      {
+        "arity": 4,
+        "determinant_character_on_1d_bucket": "trivial",
+        "family": "TWWW",
+        "group_order": 576,
+        "id": 7,
+        "orbit_size": 576,
+        "orbit_stabilizer_integral": true,
+        "representative": "((w+1)u, 1, w+(w+1)u, w+1)",
+        "source_preimages": [],
+        "stabilizer_order": 1,
+        "symmetry_group": "Gamma_R x S_4",
+        "target_images": [
+          {
+            "count": 1152,
+            "target_family": "TWW",
+            "target_orbit": 0
+          },
+          {
+            "count": 576,
+            "target_family": "TWW",
+            "target_orbit": 2
+          },
+          {
+            "count": 576,
+            "target_family": "WWW",
+            "target_orbit": 3
+          },
+          {
+            "count": 1152,
+            "target_family": "WWW",
+            "target_orbit": 4
+          }
+        ],
+        "valid_contractions": 3456
+      },
+      {
+        "arity": 4,
+        "determinant_character_on_1d_bucket": "trivial",
+        "family": "TWWW",
+        "group_order": 576,
+        "id": 8,
+        "orbit_size": 288,
+        "orbit_stabilizer_integral": true,
+        "representative": "((w+1)u, 1, w+1+u, w+wu)",
+        "source_preimages": [],
+        "stabilizer_order": 2,
+        "symmetry_group": "Gamma_R x S_4",
+        "target_images": [
+          {
+            "count": 576,
+            "target_family": "TWW",
+            "target_orbit": 0
+          },
+          {
+            "count": 288,
+            "target_family": "TWW",
+            "target_orbit": 2
+          },
+          {
+            "count": 864,
+            "target_family": "WWW",
+            "target_orbit": 4
+          }
+        ],
+        "valid_contractions": 1728
+      },
+      {
+        "arity": 4,
+        "determinant_character_on_1d_bucket": "trivial",
+        "family": "WWWW",
+        "group_order": 576,
+        "id": 9,
+        "orbit_size": 12,
+        "orbit_stabilizer_integral": true,
+        "representative": "(1, 1, 1, 1)",
+        "source_preimages": [],
+        "stabilizer_order": 48,
+        "symmetry_group": "Gamma_R x S_4",
+        "target_images": [],
+        "valid_contractions": 0
+      },
+      {
+        "arity": 4,
+        "determinant_character_on_1d_bucket": "trivial",
+        "family": "WWWW",
+        "group_order": 576,
+        "id": 10,
+        "orbit_size": 72,
+        "orbit_stabilizer_integral": true,
+        "representative": "(1, 1, 1+(w+1)u, 1+(w+1)u)",
+        "source_preimages": [],
+        "stabilizer_order": 8,
+        "symmetry_group": "Gamma_R x S_4",
+        "target_images": [
+          {
+            "count": 288,
+            "target_family": "TWW",
+            "target_orbit": 0
+          }
+        ],
+        "valid_contractions": 288
+      },
+      {
+        "arity": 4,
+        "determinant_character_on_1d_bucket": "trivial",
+        "family": "WWWW",
+        "group_order": 576,
+        "id": 11,
+        "orbit_size": 36,
+        "orbit_stabilizer_integral": true,
+        "representative": "(1, 1, 1+u, 1+u)",
+        "source_preimages": [],
+        "stabilizer_order": 16,
+        "symmetry_group": "Gamma_R x S_4",
+        "target_images": [
+          {
+            "count": 144,
+            "target_family": "TWW",
+            "target_orbit": 2
+          }
+        ],
+        "valid_contractions": 144
+      },
+      {
+        "arity": 4,
+        "determinant_character_on_1d_bucket": "trivial",
+        "family": "WWWW",
+        "group_order": 576,
+        "id": 12,
+        "orbit_size": 72,
+        "orbit_stabilizer_integral": true,
+        "representative": "(1, 1, w, w)",
+        "source_preimages": [],
+        "stabilizer_order": 8,
+        "symmetry_group": "Gamma_R x S_4",
+        "target_images": [
+          {
+            "count": 288,
+            "target_family": "WWW",
+            "target_orbit": 3
+          }
+        ],
+        "valid_contractions": 288
+      },
+      {
+        "arity": 4,
+        "determinant_character_on_1d_bucket": "trivial",
+        "family": "WWWW",
+        "group_order": 576,
+        "id": 13,
+        "orbit_size": 144,
+        "orbit_stabilizer_integral": true,
+        "representative": "(1, 1, w+(w+1)u, w+(w+1)u)",
+        "source_preimages": [],
+        "stabilizer_order": 4,
+        "symmetry_group": "Gamma_R x S_4",
+        "target_images": [
+          {
+            "count": 576,
+            "target_family": "WWW",
+            "target_orbit": 4
+          }
+        ],
+        "valid_contractions": 576
+      },
+      {
+        "arity": 4,
+        "determinant_character_on_1d_bucket": "trivial",
+        "family": "WWWW",
+        "group_order": 576,
+        "id": 14,
+        "orbit_size": 72,
+        "orbit_stabilizer_integral": true,
+        "representative": "(1, 1, w+1+(w+1)u, w+1+(w+1)u)",
+        "source_preimages": [],
+        "stabilizer_order": 8,
+        "symmetry_group": "Gamma_R x S_4",
+        "target_images": [
+          {
+            "count": 288,
+            "target_family": "WWW",
+            "target_orbit": 4
+          }
+        ],
+        "valid_contractions": 288
+      },
+      {
+        "arity": 4,
+        "determinant_character_on_1d_bucket": "trivial",
+        "family": "WWWW",
+        "group_order": 576,
+        "id": 15,
+        "orbit_size": 72,
+        "orbit_stabilizer_integral": true,
+        "representative": "(1, 1+(w+1)u, 1+u, 1+wu)",
+        "source_preimages": [],
+        "stabilizer_order": 8,
+        "symmetry_group": "Gamma_R x S_4",
+        "target_images": [
+          {
+            "count": 288,
+            "target_family": "TWW",
+            "target_orbit": 0
+          },
+          {
+            "count": 144,
+            "target_family": "TWW",
+            "target_orbit": 2
+          }
+        ],
+        "valid_contractions": 432
+      },
+      {
+        "arity": 4,
+        "determinant_character_on_1d_bucket": "trivial",
+        "family": "WWWW",
+        "group_order": 576,
+        "id": 16,
+        "orbit_size": 288,
+        "orbit_stabilizer_integral": true,
+        "representative": "(1, 1+(w+1)u, w, w+(w+1)u)",
+        "source_preimages": [],
+        "stabilizer_order": 2,
+        "symmetry_group": "Gamma_R x S_4",
+        "target_images": [
+          {
+            "count": 576,
+            "target_family": "TWW",
+            "target_orbit": 0
+          },
+          {
+            "count": 288,
+            "target_family": "WWW",
+            "target_orbit": 3
+          },
+          {
+            "count": 864,
+            "target_family": "WWW",
+            "target_orbit": 4
+          }
+        ],
+        "valid_contractions": 1728
+      },
+      {
+        "arity": 4,
+        "determinant_character_on_1d_bucket": "trivial",
+        "family": "WWWW",
+        "group_order": 576,
+        "id": 17,
+        "orbit_size": 576,
+        "orbit_stabilizer_integral": true,
+        "representative": "(1, 1+(w+1)u, w+1, w+1+(w+1)u)",
+        "source_preimages": [],
+        "stabilizer_order": 1,
+        "symmetry_group": "Gamma_R x S_4",
+        "target_images": [
+          {
+            "count": 576,
+            "target_family": "TWW",
+            "target_orbit": 0
+          },
+          {
+            "count": 576,
+            "target_family": "TWW",
+            "target_orbit": 2
+          },
+          {
+            "count": 576,
+            "target_family": "WWW",
+            "target_orbit": 3
+          },
+          {
+            "count": 1728,
+            "target_family": "WWW",
+            "target_orbit": 4
+          }
+        ],
+        "valid_contractions": 3456
+      }
+    ],
+    "k_ch_commutator_summary": {
+      "group_order": 24,
+      "matrix_transition_distribution": [
+        {
+          "count": 28,
+          "value": "u->u"
+        },
+        {
+          "count": 100,
+          "value": "u->u^2"
+        },
+        {
+          "count": 90,
+          "value": "u^2->u"
+        },
+        {
+          "count": 374,
+          "value": "u^2->u^2"
+        }
+      ],
+      "orbit_count": 592,
+      "orbit_size_distribution": [
+        {
+          "count": 8,
+          "value": 12
+        },
+        {
+          "count": 584,
+          "value": 24
+        }
+      ],
+      "sample_orbits": [
+        {
+          "coefficient": {
+            "constant": true,
+            "distribution": [
+              {
+                "count": 24,
+                "value": {
+                  "denominator": 1,
+                  "numerator": 1,
+                  "text": "1"
+                }
+              }
+            ],
+            "value": {
+              "denominator": 1,
+              "numerator": 1,
+              "text": "1"
+            }
+          },
+          "determinant_character_on_1d_bucket": "trivial",
+          "group_order": 24,
+          "id": 0,
+          "matrix_transition": "u^2->u",
+          "operand_conductors": [
+            "u",
+            "u"
+          ],
+          "orbit_size": 24,
+          "orbit_stabilizer_integral": true,
+          "path": null,
+          "representative": {
+            "alpha": {
+              "coefficients": [
+                0,
+                1
+              ],
+              "conductor": "u",
+              "text": "u"
+            },
+            "beta": {
+              "coefficients": [
+                0,
+                2
+              ],
+              "conductor": "u",
+              "text": "wu"
+            },
+            "input": {
+              "coefficients": [
+                1,
+                0
+              ],
+              "conductor": "u^2",
+              "text": "1"
+            },
+            "omega": {
+              "coefficients": [
+                1,
+                0
+              ],
+              "conductor": "u^2",
+              "text": "1"
+            },
+            "output": {
+              "coefficients": [
+                0,
+                2
+              ],
+              "conductor": "u",
+              "text": "wu"
+            },
+            "tau": {
+              "coefficients": [
+                0,
+                1
+              ],
+              "conductor": "u",
+              "text": "u"
+            }
+          },
+          "stabilizer_order": 1,
+          "symmetry_group": "Gamma_R"
+        },
+        {
+          "coefficient": {
+            "constant": true,
+            "distribution": [
+              {
+                "count": 24,
+                "value": {
+                  "denominator": 1,
+                  "numerator": -1,
+                  "text": "-1"
+                }
+              }
+            ],
+            "value": {
+              "denominator": 1,
+              "numerator": -1,
+              "text": "-1"
+            }
+          },
+          "determinant_character_on_1d_bucket": "trivial",
+          "group_order": 24,
+          "id": 1,
+          "matrix_transition": "u^2->u",
+          "operand_conductors": [
+            "u",
+            "u"
+          ],
+          "orbit_size": 24,
+          "orbit_stabilizer_integral": true,
+          "path": null,
+          "representative": {
+            "alpha": {
+              "coefficients": [
+                0,
+                1
+              ],
+              "conductor": "u",
+              "text": "u"
+            },
+            "beta": {
+              "coefficients": [
+                0,
+                2
+              ],
+              "conductor": "u",
+              "text": "wu"
+            },
+            "input": {
+              "coefficients": [
+                1,
+                3
+              ],
+              "conductor": "u^2",
+              "text": "1+(w+1)u"
+            },
+            "omega": {
+              "coefficients": [
+                1,
+                0
+              ],
+              "conductor": "u^2",
+              "text": "1"
+            },
+            "output": {
+              "coefficients": [
+                0,
+                1
+              ],
+              "conductor": "u",
+              "text": "u"
+            },
+            "tau": {
+              "coefficients": [
+                0,
+                1
+              ],
+              "conductor": "u",
+              "text": "u"
+            }
+          },
+          "stabilizer_order": 1,
+          "symmetry_group": "Gamma_R"
+        },
+        {
+          "coefficient": {
+            "constant": true,
+            "distribution": [
+              {
+                "count": 12,
+                "value": {
+                  "denominator": 1,
+                  "numerator": -1,
+                  "text": "-1"
+                }
+              }
+            ],
+            "value": {
+              "denominator": 1,
+              "numerator": -1,
+              "text": "-1"
+            }
+          },
+          "determinant_character_on_1d_bucket": "trivial",
+          "group_order": 24,
+          "id": 2,
+          "matrix_transition": "u->u",
+          "operand_conductors": [
+            "u",
+            "u^2"
+          ],
+          "orbit_size": 12,
+          "orbit_stabilizer_integral": true,
+          "path": null,
+          "representative": {
+            "alpha": {
+              "coefficients": [
+                0,
+                1
+              ],
+              "conductor": "u",
+              "text": "u"
+            },
+            "beta": {
+              "coefficients": [
+                1,
+                0
+              ],
+              "conductor": "u^2",
+              "text": "1"
+            },
+            "input": {
+              "coefficients": [
+                0,
+                1
+              ],
+              "conductor": "u",
+              "text": "u"
+            },
+            "omega": {
+              "coefficients": [
+                1,
+                0
+              ],
+              "conductor": "u^2",
+              "text": "1"
+            },
+            "output": {
+              "coefficients": [
+                0,
+                1
+              ],
+              "conductor": "u",
+              "text": "u"
+            },
+            "tau": {
+              "coefficients": [
+                0,
+                1
+              ],
+              "conductor": "u",
+              "text": "u"
+            }
+          },
+          "stabilizer_order": 2,
+          "symmetry_group": "Gamma_R"
+        },
+        {
+          "coefficient": {
+            "constant": true,
+            "distribution": [
+              {
+                "count": 12,
+                "value": {
+                  "denominator": 1,
+                  "numerator": 1,
+                  "text": "1"
+                }
+              }
+            ],
+            "value": {
+              "denominator": 1,
+              "numerator": 1,
+              "text": "1"
+            }
+          },
+          "determinant_character_on_1d_bucket": "trivial",
+          "group_order": 24,
+          "id": 3,
+          "matrix_transition": "u^2->u^2",
+          "operand_conductors": [
+            "u",
+            "u^2"
+          ],
+          "orbit_size": 12,
+          "orbit_stabilizer_integral": true,
+          "path": null,
+          "representative": {
+            "alpha": {
+              "coefficients": [
+                0,
+                1
+              ],
+              "conductor": "u",
+              "text": "u"
+            },
+            "beta": {
+              "coefficients": [
+                1,
+                0
+              ],
+              "conductor": "u^2",
+              "text": "1"
+            },
+            "input": {
+              "coefficients": [
+                1,
+                0
+              ],
+              "conductor": "u^2",
+              "text": "1"
+            },
+            "omega": {
+              "coefficients": [
+                1,
+                0
+              ],
+              "conductor": "u^2",
+              "text": "1"
+            },
+            "output": {
+              "coefficients": [
+                1,
+                0
+              ],
+              "conductor": "u^2",
+              "text": "1"
+            },
+            "tau": {
+              "coefficients": [
+                0,
+                1
+              ],
+              "conductor": "u",
+              "text": "u"
+            }
+          },
+          "stabilizer_order": 2,
+          "symmetry_group": "Gamma_R"
+        },
+        {
+          "coefficient": {
+            "constant": true,
+            "distribution": [
+              {
+                "count": 12,
+                "value": {
+                  "denominator": 1,
+                  "numerator": 1,
+                  "text": "1"
+                }
+              }
+            ],
+            "value": {
+              "denominator": 1,
+              "numerator": 1,
+              "text": "1"
+            }
+          },
+          "determinant_character_on_1d_bucket": "trivial",
+          "group_order": 24,
+          "id": 4,
+          "matrix_transition": "u^2->u^2",
+          "operand_conductors": [
+            "u",
+            "u^2"
+          ],
+          "orbit_size": 12,
+          "orbit_stabilizer_integral": true,
+          "path": null,
+          "representative": {
+            "alpha": {
+              "coefficients": [
+                0,
+                1
+              ],
+              "conductor": "u",
+              "text": "u"
+            },
+            "beta": {
+              "coefficients": [
+                1,
+                1
+              ],
+              "conductor": "u^2",
+              "text": "1+u"
+            },
+            "input": {
+              "coefficients": [
+                1,
+                0
+              ],
+              "conductor": "u^2",
+              "text": "1"
+            },
+            "omega": {
+              "coefficients": [
+                1,
+                0
+              ],
+              "conductor": "u^2",
+              "text": "1"
+            },
+            "output": {
+              "coefficients": [
+                1,
+                1
+              ],
+              "conductor": "u^2",
+              "text": "1+u"
+            },
+            "tau": {
+              "coefficients": [
+                0,
+                1
+              ],
+              "conductor": "u",
+              "text": "u"
+            }
+          },
+          "stabilizer_order": 2,
+          "symmetry_group": "Gamma_R"
+        },
+        {
+          "coefficient": {
+            "constant": true,
+            "distribution": [
+              {
+                "count": 24,
+                "value": {
+                  "denominator": 1,
+                  "numerator": -1,
+                  "text": "-1"
+                }
+              }
+            ],
+            "value": {
+              "denominator": 1,
+              "numerator": -1,
+              "text": "-1"
+            }
+          },
+          "determinant_character_on_1d_bucket": "trivial",
+          "group_order": 24,
+          "id": 5,
+          "matrix_transition": "u->u",
+          "operand_conductors": [
+            "u",
+            "u^2"
+          ],
+          "orbit_size": 24,
+          "orbit_stabilizer_integral": true,
+          "path": null,
+          "representative": {
+            "alpha": {
+              "coefficients": [
+                0,
+                1
+              ],
+              "conductor": "u",
+              "text": "u"
+            },
+            "beta": {
+              "coefficients": [
+                1,
+                2
+              ],
+              "conductor": "u^2",
+              "text": "1+wu"
+            },
+            "input": {
+              "coefficients": [
+                0,
+                3
+              ],
+              "conductor": "u",
+              "text": "(w+1)u"
+            },
+            "omega": {
+              "coefficients": [
+                1,
+                0
+              ],
+              "conductor": "u^2",
+              "text": "1"
+            },
+            "output": {
+              "coefficients": [
+                0,
+                1
+              ],
+              "conductor": "u",
+              "text": "u"
+            },
+            "tau": {
+              "coefficients": [
+                0,
+                1
+              ],
+              "conductor": "u",
+              "text": "u"
+            }
+          },
+          "stabilizer_order": 1,
+          "symmetry_group": "Gamma_R"
+        },
+        {
+          "coefficient": {
+            "constant": true,
+            "distribution": [
+              {
+                "count": 24,
+                "value": {
+                  "denominator": 1,
+                  "numerator": 1,
+                  "text": "1"
+                }
+              }
+            ],
+            "value": {
+              "denominator": 1,
+              "numerator": 1,
+              "text": "1"
+            }
+          },
+          "determinant_character_on_1d_bucket": "trivial",
+          "group_order": 24,
+          "id": 6,
+          "matrix_transition": "u^2->u^2",
+          "operand_conductors": [
+            "u",
+            "u^2"
+          ],
+          "orbit_size": 24,
+          "orbit_stabilizer_integral": true,
+          "path": null,
+          "representative": {
+            "alpha": {
+              "coefficients": [
+                0,
+                1
+              ],
+              "conductor": "u",
+              "text": "u"
+            },
+            "beta": {
+              "coefficients": [
+                1,
+                2
+              ],
+              "conductor": "u^2",
+              "text": "1+wu"
+            },
+            "input": {
+              "coefficients": [
+                1,
+                0
+              ],
+              "conductor": "u^2",
+              "text": "1"
+            },
+            "omega": {
+              "coefficients": [
+                1,
+                0
+              ],
+              "conductor": "u^2",
+              "text": "1"
+            },
+            "output": {
+              "coefficients": [
+                1,
+                2
+              ],
+              "conductor": "u^2",
+              "text": "1+wu"
+            },
+            "tau": {
+              "coefficients": [
+                0,
+                1
+              ],
+              "conductor": "u",
+              "text": "u"
+            }
+          },
+          "stabilizer_order": 1,
+          "symmetry_group": "Gamma_R"
+        },
+        {
+          "coefficient": {
+            "constant": true,
+            "distribution": [
+              {
+                "count": 24,
+                "value": {
+                  "denominator": 1,
+                  "numerator": 1,
+                  "text": "1"
+                }
+              }
+            ],
+            "value": {
+              "denominator": 1,
+              "numerator": 1,
+              "text": "1"
+            }
+          },
+          "determinant_character_on_1d_bucket": "trivial",
+          "group_order": 24,
+          "id": 7,
+          "matrix_transition": "u^2->u^2",
+          "operand_conductors": [
+            "u",
+            "u^2"
+          ],
+          "orbit_size": 24,
+          "orbit_stabilizer_integral": true,
+          "path": null,
+          "representative": {
+            "alpha": {
+              "coefficients": [
+                0,
+                1
+              ],
+              "conductor": "u",
+              "text": "u"
+            },
+            "beta": {
+              "coefficients": [
+                2,
+                0
+              ],
+              "conductor": "u^2",
+              "text": "w"
+            },
+            "input": {
+              "coefficients": [
+                1,
+                0
+              ],
+              "conductor": "u^2",
+              "text": "1"
+            },
+            "omega": {
+              "coefficients": [
+                1,
+                0
+              ],
+              "conductor": "u^2",
+              "text": "1"
+            },
+            "output": {
+              "coefficients": [
+                2,
+                0
+              ],
+              "conductor": "u^2",
+              "text": "w"
+            },
+            "tau": {
+              "coefficients": [
+                0,
+                1
+              ],
+              "conductor": "u",
+              "text": "u"
+            }
+          },
+          "stabilizer_order": 1,
+          "symmetry_group": "Gamma_R"
+        },
+        {
+          "coefficient": {
+            "constant": true,
+            "distribution": [
+              {
+                "count": 24,
+                "value": {
+                  "denominator": 1,
+                  "numerator": -1,
+                  "text": "-1"
+                }
+              }
+            ],
+            "value": {
+              "denominator": 1,
+              "numerator": -1,
+              "text": "-1"
+            }
+          },
+          "determinant_character_on_1d_bucket": "trivial",
+          "group_order": 24,
+          "id": 8,
+          "matrix_transition": "u^2->u",
+          "operand_conductors": [
+            "u",
+            "u^2"
+          ],
+          "orbit_size": 24,
+          "orbit_stabilizer_integral": true,
+          "path": null,
+          "representative": {
+            "alpha": {
+              "coefficients": [
+                0,
+                1
+              ],
+              "conductor": "u",
+              "text": "u"
+            },
+            "beta": {
+              "coefficients": [
+                2,
+                0
+              ],
+              "conductor": "u^2",
+              "text": "w"
+            },
+            "input": {
+              "coefficients": [
+                3,
+                1
+              ],
+              "conductor": "u^2",
+              "text": "w+1+u"
+            },
+            "omega": {
+              "coefficients": [
+                1,
+                0
+              ],
+              "conductor": "u^2",
+              "text": "1"
+            },
+            "output": {
+              "coefficients": [
+                0,
+                1
+              ],
+              "conductor": "u",
+              "text": "u"
+            },
+            "tau": {
+              "coefficients": [
+                0,
+                1
+              ],
+              "conductor": "u",
+              "text": "u"
+            }
+          },
+          "stabilizer_order": 1,
+          "symmetry_group": "Gamma_R"
+        },
+        {
+          "coefficient": {
+            "constant": true,
+            "distribution": [
+              {
+                "count": 24,
+                "value": {
+                  "denominator": 1,
+                  "numerator": 1,
+                  "text": "1"
+                }
+              }
+            ],
+            "value": {
+              "denominator": 1,
+              "numerator": 1,
+              "text": "1"
+            }
+          },
+          "determinant_character_on_1d_bucket": "trivial",
+          "group_order": 24,
+          "id": 9,
+          "matrix_transition": "u^2->u^2",
+          "operand_conductors": [
+            "u",
+            "u^2"
+          ],
+          "orbit_size": 24,
+          "orbit_stabilizer_integral": true,
+          "path": null,
+          "representative": {
+            "alpha": {
+              "coefficients": [
+                0,
+                1
+              ],
+              "conductor": "u",
+              "text": "u"
+            },
+            "beta": {
+              "coefficients": [
+                2,
+                1
+              ],
+              "conductor": "u^2",
+              "text": "w+u"
+            },
+            "input": {
+              "coefficients": [
+                1,
+                0
+              ],
+              "conductor": "u^2",
+              "text": "1"
+            },
+            "omega": {
+              "coefficients": [
+                1,
+                0
+              ],
+              "conductor": "u^2",
+              "text": "1"
+            },
+            "output": {
+              "coefficients": [
+                2,
+                1
+              ],
+              "conductor": "u^2",
+              "text": "w+u"
+            },
+            "tau": {
+              "coefficients": [
+                0,
+                1
+              ],
+              "conductor": "u",
+              "text": "u"
+            }
+          },
+          "stabilizer_order": 1,
+          "symmetry_group": "Gamma_R"
+        },
+        {
+          "coefficient": {
+            "constant": true,
+            "distribution": [
+              {
+                "count": 24,
+                "value": {
+                  "denominator": 1,
+                  "numerator": -1,
+                  "text": "-1"
+                }
+              }
+            ],
+            "value": {
+              "denominator": 1,
+              "numerator": -1,
+              "text": "-1"
+            }
+          },
+          "determinant_character_on_1d_bucket": "trivial",
+          "group_order": 24,
+          "id": 10,
+          "matrix_transition": "u^2->u",
+          "operand_conductors": [
+            "u",
+            "u^2"
+          ],
+          "orbit_size": 24,
+          "orbit_stabilizer_integral": true,
+          "path": null,
+          "representative": {
+            "alpha": {
+              "coefficients": [
+                0,
+                1
+              ],
+              "conductor": "u",
+              "text": "u"
+            },
+            "beta": {
+              "coefficients": [
+                2,
+                1
+              ],
+              "conductor": "u^2",
+              "text": "w+u"
+            },
+            "input": {
+              "coefficients": [
+                3,
+                0
+              ],
+              "conductor": "u^2",
+              "text": "w+1"
+            },
+            "omega": {
+              "coefficients": [
+                1,
+                0
+              ],
+              "conductor": "u^2",
+              "text": "1"
+            },
+            "output": {
+              "coefficients": [
+                0,
+                1
+              ],
+              "conductor": "u",
+              "text": "u"
+            },
+            "tau": {
+              "coefficients": [
+                0,
+                1
+              ],
+              "conductor": "u",
+              "text": "u"
+            }
+          },
+          "stabilizer_order": 1,
+          "symmetry_group": "Gamma_R"
+        },
+        {
+          "coefficient": {
+            "constant": true,
+            "distribution": [
+              {
+                "count": 24,
+                "value": {
+                  "denominator": 1,
+                  "numerator": 1,
+                  "text": "1"
+                }
+              }
+            ],
+            "value": {
+              "denominator": 1,
+              "numerator": 1,
+              "text": "1"
+            }
+          },
+          "determinant_character_on_1d_bucket": "trivial",
+          "group_order": 24,
+          "id": 11,
+          "matrix_transition": "u^2->u^2",
+          "operand_conductors": [
+            "u",
+            "u^2"
+          ],
+          "orbit_size": 24,
+          "orbit_stabilizer_integral": true,
+          "path": null,
+          "representative": {
+            "alpha": {
+              "coefficients": [
+                0,
+                1
+              ],
+              "conductor": "u",
+              "text": "u"
+            },
+            "beta": {
+              "coefficients": [
+                2,
+                2
+              ],
+              "conductor": "u^2",
+              "text": "w+wu"
+            },
+            "input": {
+              "coefficients": [
+                1,
+                0
+              ],
+              "conductor": "u^2",
+              "text": "1"
+            },
+            "omega": {
+              "coefficients": [
+                1,
+                0
+              ],
+              "conductor": "u^2",
+              "text": "1"
+            },
+            "output": {
+              "coefficients": [
+                2,
+                2
+              ],
+              "conductor": "u^2",
+              "text": "w+wu"
+            },
+            "tau": {
+              "coefficients": [
+                0,
+                1
+              ],
+              "conductor": "u",
+              "text": "u"
+            }
+          },
+          "stabilizer_order": 1,
+          "symmetry_group": "Gamma_R"
+        }
+      ],
+      "stabilizer_order_distribution": [
+        {
+          "count": 584,
+          "value": 1
+        },
+        {
+          "count": 8,
+          "value": 2
+        }
+      ],
+      "symmetry_group": "Gamma_R"
+    },
+    "packet_energy_orbits": [
+      {
+        "coordinate": "E_u",
+        "determinant_character_on_1d_bucket": "trivial",
+        "group_order": 24,
+        "id": 0,
+        "orbit_size": 1,
+        "orbit_stabilizer_integral": true,
+        "packet": "u",
+        "packet_size": 3,
+        "stabilizer_order": 24,
+        "symmetry_group": "Gamma_R"
+      },
+      {
+        "coordinate": "E_u^2",
+        "determinant_character_on_1d_bucket": "trivial",
+        "group_order": 24,
+        "id": 1,
+        "orbit_size": 1,
+        "orbit_stabilizer_integral": true,
+        "packet": "u^2",
+        "packet_size": 12,
+        "stabilizer_order": 24,
+        "symmetry_group": "Gamma_R"
+      }
+    ],
+    "raw_atom_orbit_summary": {
+      "group_order": 24,
+      "orbit_count": 71,
+      "orbit_size_distribution": [
+        {
+          "count": 1,
+          "value": 3
+        },
+        {
+          "count": 1,
+          "value": 6
+        },
+        {
+          "count": 8,
+          "value": 12
+        },
+        {
+          "count": 61,
+          "value": 24
+        }
+      ],
+      "sample_orbits": [
+        {
+          "coefficient": {
+            "-1": 3
+          },
+          "determinant_character_on_1d_bucket": "trivial",
+          "group_order": 24,
+          "id": null,
+          "matrix_transition": null,
+          "operand_conductors": null,
+          "orbit_size": 3,
+          "orbit_stabilizer_integral": true,
+          "path": "u->u->u",
+          "representative": {
+            "coefficient": -1,
+            "input": "(w+1)u",
+            "left_eta": "(w+1)u",
+            "middle": "u",
+            "output": "(w+1)u",
+            "right_eta": "(w+1)u",
+            "source": "u",
+            "target": "u"
+          },
+          "stabilizer_order": 8,
+          "symmetry_group": "Gamma_R"
+        },
+        {
+          "coefficient": {
+            "-1": 6
+          },
+          "determinant_character_on_1d_bucket": "trivial",
+          "group_order": 24,
+          "id": null,
+          "matrix_transition": null,
+          "operand_conductors": null,
+          "orbit_size": 6,
+          "orbit_stabilizer_integral": true,
+          "path": "u->u->u",
+          "representative": {
+            "coefficient": -1,
+            "input": "u",
+            "left_eta": "(w+1)u",
+            "middle": "u",
+            "output": "(w+1)u",
+            "right_eta": "u",
+            "source": "u",
+            "target": "u"
+          },
+          "stabilizer_order": 4,
+          "symmetry_group": "Gamma_R"
+        },
+        {
+          "coefficient": {
+            "-1": 24
+          },
+          "determinant_character_on_1d_bucket": "trivial",
+          "group_order": 24,
+          "id": null,
+          "matrix_transition": null,
+          "operand_conductors": null,
+          "orbit_size": 24,
+          "orbit_stabilizer_integral": true,
+          "path": "u->u->u^2",
+          "representative": {
+            "coefficient": -1,
+            "input": "(w+1)u",
+            "left_eta": "1",
+            "middle": "u",
+            "output": "1",
+            "right_eta": "(w+1)u",
+            "source": "u",
+            "target": "u^2"
+          },
+          "stabilizer_order": 1,
+          "symmetry_group": "Gamma_R"
+        },
+        {
+          "coefficient": {
+            "-1": 12
+          },
+          "determinant_character_on_1d_bucket": "trivial",
+          "group_order": 24,
+          "id": null,
+          "matrix_transition": null,
+          "operand_conductors": null,
+          "orbit_size": 12,
+          "orbit_stabilizer_integral": true,
+          "path": "u->u->u^2",
+          "representative": {
+            "coefficient": -1,
+            "input": "u",
+            "left_eta": "1",
+            "middle": "u",
+            "output": "1",
+            "right_eta": "u",
+            "source": "u",
+            "target": "u^2"
+          },
+          "stabilizer_order": 2,
+          "symmetry_group": "Gamma_R"
+        },
+        {
+          "coefficient": {
+            "-1": 24
+          },
+          "determinant_character_on_1d_bucket": "trivial",
+          "group_order": 24,
+          "id": null,
+          "matrix_transition": null,
+          "operand_conductors": null,
+          "orbit_size": 24,
+          "orbit_stabilizer_integral": true,
+          "path": "u^2->u->u",
+          "representative": {
+            "coefficient": -1,
+            "input": "1",
+            "left_eta": "(w+1)u",
+            "middle": "u",
+            "output": "(w+1)u",
+            "right_eta": "1",
+            "source": "u^2",
+            "target": "u"
+          },
+          "stabilizer_order": 1,
+          "symmetry_group": "Gamma_R"
+        },
+        {
+          "coefficient": {
+            "-1": 12
+          },
+          "determinant_character_on_1d_bucket": "trivial",
+          "group_order": 24,
+          "id": null,
+          "matrix_transition": null,
+          "operand_conductors": null,
+          "orbit_size": 12,
+          "orbit_stabilizer_integral": true,
+          "path": "u^2->u->u",
+          "representative": {
+            "coefficient": -1,
+            "input": "w+1",
+            "left_eta": "(w+1)u",
+            "middle": "u",
+            "output": "(w+1)u",
+            "right_eta": "w+1",
+            "source": "u^2",
+            "target": "u"
+          },
+          "stabilizer_order": 2,
+          "symmetry_group": "Gamma_R"
+        },
+        {
+          "coefficient": {
+            "-1": 12
+          },
+          "determinant_character_on_1d_bucket": "trivial",
+          "group_order": 24,
+          "id": null,
+          "matrix_transition": null,
+          "operand_conductors": null,
+          "orbit_size": 12,
+          "orbit_stabilizer_integral": true,
+          "path": "u^2->u->u^2",
+          "representative": {
+            "coefficient": -1,
+            "input": "1",
+            "left_eta": "1",
+            "middle": "u",
+            "output": "1",
+            "right_eta": "1",
+            "source": "u^2",
+            "target": "u^2"
+          },
+          "stabilizer_order": 2,
+          "symmetry_group": "Gamma_R"
+        },
+        {
+          "coefficient": {
+            "-1": 24
+          },
+          "determinant_character_on_1d_bucket": "trivial",
+          "group_order": 24,
+          "id": null,
+          "matrix_transition": null,
+          "operand_conductors": null,
+          "orbit_size": 24,
+          "orbit_stabilizer_integral": true,
+          "path": "u^2->u->u^2",
+          "representative": {
+            "coefficient": -1,
+            "input": "w",
+            "left_eta": "1",
+            "middle": "u",
+            "output": "w",
+            "right_eta": "1",
+            "source": "u^2",
+            "target": "u^2"
+          },
+          "stabilizer_order": 1,
+          "symmetry_group": "Gamma_R"
+        },
+        {
+          "coefficient": {
+            "-1": 24
+          },
+          "determinant_character_on_1d_bucket": "trivial",
+          "group_order": 24,
+          "id": null,
+          "matrix_transition": null,
+          "operand_conductors": null,
+          "orbit_size": 24,
+          "orbit_stabilizer_integral": true,
+          "path": "u^2->u->u^2",
+          "representative": {
+            "coefficient": -1,
+            "input": "w+(w+1)u",
+            "left_eta": "1",
+            "middle": "u",
+            "output": "w+(w+1)u",
+            "right_eta": "1",
+            "source": "u^2",
+            "target": "u^2"
+          },
+          "stabilizer_order": 1,
+          "symmetry_group": "Gamma_R"
+        },
+        {
+          "coefficient": {
+            "-1": 24
+          },
+          "determinant_character_on_1d_bucket": "trivial",
+          "group_order": 24,
+          "id": null,
+          "matrix_transition": null,
+          "operand_conductors": null,
+          "orbit_size": 24,
+          "orbit_stabilizer_integral": true,
+          "path": "u^2->u->u^2",
+          "representative": {
+            "coefficient": -1,
+            "input": "w+1+(w+1)u",
+            "left_eta": "1",
+            "middle": "u",
+            "output": "w+1+(w+1)u",
+            "right_eta": "1",
+            "source": "u^2",
+            "target": "u^2"
+          },
+          "stabilizer_order": 1,
+          "symmetry_group": "Gamma_R"
+        },
+        {
+          "coefficient": {
+            "-1": 24
+          },
+          "determinant_character_on_1d_bucket": "trivial",
+          "group_order": 24,
+          "id": null,
+          "matrix_transition": null,
+          "operand_conductors": null,
+          "orbit_size": 24,
+          "orbit_stabilizer_integral": true,
+          "path": "u^2->u->u^2",
+          "representative": {
+            "coefficient": -1,
+            "input": "w+1+u",
+            "left_eta": "1",
+            "middle": "u",
+            "output": "w+1+u",
+            "right_eta": "1",
+            "source": "u^2",
+            "target": "u^2"
+          },
+          "stabilizer_order": 1,
+          "symmetry_group": "Gamma_R"
+        },
+        {
+          "coefficient": {
+            "-1": 24
+          },
+          "determinant_character_on_1d_bucket": "trivial",
+          "group_order": 24,
+          "id": null,
+          "matrix_transition": null,
+          "operand_conductors": null,
+          "orbit_size": 24,
+          "orbit_stabilizer_integral": true,
+          "path": "u^2->u->u^2",
+          "representative": {
+            "coefficient": -1,
+            "input": "1+(w+1)u",
+            "left_eta": "1",
+            "middle": "u",
+            "output": "1",
+            "right_eta": "1+(w+1)u",
+            "source": "u^2",
+            "target": "u^2"
+          },
+          "stabilizer_order": 1,
+          "symmetry_group": "Gamma_R"
+        }
+      ],
+      "stabilizer_order_distribution": [
+        {
+          "count": 61,
+          "value": 1
+        },
+        {
+          "count": 8,
+          "value": 2
+        },
+        {
+          "count": 1,
+          "value": 4
+        },
+        {
+          "count": 1,
+          "value": 8
+        }
+      ],
+      "symmetry_group": "Gamma_R"
+    }
+  },
+  "residual_visibility_ledger": {
+    "full_filtered_residual_atoms": 1569,
+    "h3_contraction_visible_from_h4_invisible": 1470,
+    "h4_invisible_atoms": 1497,
+    "h4_invisible_family_visibility": [
+      {
+        "h3_contraction_visible_atoms": 6,
+        "h3_contraction_visible_fraction": "6/9",
+        "h4_invisible_atoms": 9,
+        "key": "TTTT",
+        "remaining_invisible_atoms": 3
+      },
+      {
+        "h3_contraction_visible_atoms": 1464,
+        "h3_contraction_visible_fraction": "1464/1488",
+        "h4_invisible_atoms": 1488,
+        "key": "WWWW",
+        "remaining_invisible_atoms": 24
+      }
+    ],
+    "h4_invisible_path_visibility": [
+      {
+        "h3_contraction_visible_atoms": 6,
+        "h3_contraction_visible_fraction": "6/9",
+        "h4_invisible_atoms": 9,
+        "key": "u->u->u",
+        "remaining_invisible_atoms": 3
+      },
+      {
+        "h3_contraction_visible_atoms": 900,
+        "h3_contraction_visible_fraction": "900/912",
+        "h4_invisible_atoms": 912,
+        "key": "u^2->u->u^2",
+        "remaining_invisible_atoms": 12
+      },
+      {
+        "h3_contraction_visible_atoms": 564,
+        "h3_contraction_visible_fraction": "564/576",
+        "h4_invisible_atoms": 576,
+        "key": "u^2->u^2->u^2",
+        "remaining_invisible_atoms": 12
+      }
+    ],
+    "h4_visible_atoms": 72,
+    "remaining_invisible_atoms": 27,
+    "support_projection_residual": 0
+  },
+  "ring": "F_4[u]/(u^2)",
+  "row_key": "f4-u2",
+  "row_summary": {
+    "carry_pair_orbits": 20,
+    "full_filtered_residual": 1569,
+    "gamma_size": 24,
+    "h3_contraction_visible_from_h4_invisible": 1470,
+    "h3_orbits": 5,
+    "h4_orbits": 18,
+    "h4_visible_atoms": 72,
+    "k_ch_commutator_orbits": 592,
+    "packet_energy_coordinates": 2,
+    "remaining_invisible_atoms": 27,
+    "seed_coordinate_count": 637,
+    "support_projection_residual": 0
+  },
+  "schema": "fc1_noether_atlas_census.v1",
+  "scope": {
+    "declared_skeleton": "packet energies + H3/H4 orbit buckets + K_CH commutator orbits + carry-pair orbits",
+    "finite_adjacency_fisher_jet_order": "seed/report order",
+    "not_claimed": [
+      "all smooth invariant functions",
+      "all Fisher-volume-preserving currents",
+      "all 14-Hamiltonian tuple supports inside 637 seed coordinates",
+      "K_CH as a standalone Ext_CH detector",
+      "support residual 0 as full filtered closure"
+    ],
+    "polynomial_jet_order": "orbit-skeleton layer"
+  },
+  "sources": {
+    "atom_shadow": "empirical/reports/fc2_atom_shadow_map.json",
+    "ext_cocycle": "empirical/reports/ext_ch_cocycle_f4_u2.json",
+    "ext_orbits": "empirical/reports/f4_u2_ext_orbits.json",
+    "h4_contraction_shadow": "empirical/reports/fc2_h4_contraction_shadow.json",
+    "local_adjacency": "empirical/reports/local_adjacency_constructor_f4_u2.json",
+    "seed": "empirical/reports/fc1_noether_atlas_seed.json"
+  },
+  "status": "first orbit-skeleton census certificate; full tuple enumeration deferred"
+}

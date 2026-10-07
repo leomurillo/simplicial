@@ -1,0 +1,389 @@
+{
+  "ring": "F_2[u]/(u^3)",
+  "row_key": "f2-u3",
+  "labels": 8,
+  "nontrivial_labels": 7,
+  "packets": {
+    "u": 1,
+    "u^2": 2,
+    "u^3": 4
+  },
+  "gamma_size": 8,
+  "quotient_shift_count": 27,
+  "quotient_shift_support_distribution": {
+    "1": 13,
+    "2": 10,
+    "4": 4
+  },
+  "carry_record_count": 52,
+  "carry_path_distribution": {
+    "u^2->u->u^2": 4,
+    "u^2->u->u^3": 8,
+    "u^3->u->u^2": 8,
+    "u^3->u->u^3": 16,
+    "u^3->u^2->u^3": 16
+  },
+  "fisher_probe": {
+    "alpha": "u^2",
+    "left_mode": "u^2",
+    "right_mode": "u",
+    "order0_support": 6,
+    "left_order1_support": 7,
+    "right_order1_support": 6,
+    "mixed_order2_support": 6
+  },
+  "h3": {
+    "cells": 42,
+    "orbits": 3,
+    "family_orbit_counts": {
+      "122": 1,
+      "133": 1,
+      "233": 1
+    },
+    "orbit_size_distribution": {
+      "6": 1,
+      "12": 1,
+      "24": 1
+    },
+    "orbit_rows": [
+      {
+        "id": 0,
+        "size": 24,
+        "family": "233",
+        "representative": "(1, 1+u, u)"
+      },
+      {
+        "id": 1,
+        "size": 12,
+        "family": "133",
+        "representative": "(1, 1+u^2, u^2)"
+      },
+      {
+        "id": 2,
+        "size": 6,
+        "family": "122",
+        "representative": "(u, u+u^2, u^2)"
+      }
+    ],
+    "elapsed_seconds": 0.001
+  },
+  "h4": {
+    "cells": 301,
+    "orbits": 12,
+    "family_orbit_counts": {
+      "1111": 1,
+      "1122": 1,
+      "1133": 1,
+      "1233": 1,
+      "2222": 2,
+      "2233": 2,
+      "3333": 4
+    },
+    "orbit_size_distribution": {
+      "1": 1,
+      "2": 1,
+      "4": 1,
+      "6": 1,
+      "12": 2,
+      "24": 3,
+      "48": 2,
+      "96": 1
+    },
+    "orbit_rows": [
+      {
+        "id": 0,
+        "size": 4,
+        "family": "3333",
+        "representative": "(1, 1, 1, 1)"
+      },
+      {
+        "id": 1,
+        "size": 24,
+        "family": "3333",
+        "representative": "(1, 1, 1+u, 1+u)"
+      },
+      {
+        "id": 2,
+        "size": 12,
+        "family": "3333",
+        "representative": "(1, 1, 1+u^2, 1+u^2)"
+      },
+      {
+        "id": 3,
+        "size": 48,
+        "family": "2233",
+        "representative": "(1, 1, u, u)"
+      },
+      {
+        "id": 4,
+        "size": 24,
+        "family": "1133",
+        "representative": "(1, 1, u^2, u^2)"
+      },
+      {
+        "id": 5,
+        "size": 24,
+        "family": "3333",
+        "representative": "(1, 1+u, 1+u+u^2, 1+u^2)"
+      },
+      {
+        "id": 6,
+        "size": 96,
+        "family": "1233",
+        "representative": "(1, 1+u, u+u^2, u^2)"
+      },
+      {
+        "id": 7,
+        "size": 48,
+        "family": "2233",
+        "representative": "(1, 1+u^2, u, u+u^2)"
+      },
+      {
+        "id": 8,
+        "size": 2,
+        "family": "2222",
+        "representative": "(u, u, u, u)"
+      },
+      {
+        "id": 9,
+        "size": 6,
+        "family": "2222",
+        "representative": "(u, u, u+u^2, u+u^2)"
+      },
+      {
+        "id": 10,
+        "size": 12,
+        "family": "1122",
+        "representative": "(u, u, u^2, u^2)"
+      },
+      {
+        "id": 11,
+        "size": 1,
+        "family": "1111",
+        "representative": "(u^2, u^2, u^2, u^2)"
+      }
+    ],
+    "elapsed_seconds": 0.018
+  },
+  "ext_ch": {
+    "full_block_dimensions": {
+      "c1_generators": 177,
+      "c2_dimension": 1709,
+      "composable_pairs": 257
+    },
+    "raw_atom_count": 100,
+    "raw_pair_count": 52,
+    "raw_coefficient_distribution": {
+      "-1": 100
+    },
+    "raw_path_distribution": {
+      "u^2->u->u^2": 4,
+      "u^2->u->u^3": 8,
+      "u^3->u->u^2": 8,
+      "u^3->u->u^3": 48,
+      "u^3->u^2->u^3": 32
+    },
+    "canonical_pair_orbit_count": 10,
+    "pair_orbit_size_distribution": {
+      "2": 2,
+      "4": 4,
+      "8": 4
+    },
+    "pair_orbit_missing_total": 0,
+    "canonical_pair_orbits": [
+      {
+        "id": 1,
+        "representative": {
+          "left_eta": "u",
+          "right_eta": "u",
+          "source": "u^2",
+          "middle": "u",
+          "target": "u^2"
+        },
+        "size": 2,
+        "atom_count": 2,
+        "coefficients": {
+          "-1": 2
+        },
+        "path": "u^2->u->u^2"
+      },
+      {
+        "id": 2,
+        "representative": {
+          "left_eta": "u",
+          "right_eta": "u+u^2",
+          "source": "u^2",
+          "middle": "u",
+          "target": "u^2"
+        },
+        "size": 2,
+        "atom_count": 2,
+        "coefficients": {
+          "-1": 2
+        },
+        "path": "u^2->u->u^2"
+      },
+      {
+        "id": 3,
+        "representative": {
+          "left_eta": "1",
+          "right_eta": "u",
+          "source": "u^2",
+          "middle": "u",
+          "target": "u^3"
+        },
+        "size": 8,
+        "atom_count": 8,
+        "coefficients": {
+          "-1": 8
+        },
+        "path": "u^2->u->u^3"
+      },
+      {
+        "id": 4,
+        "representative": {
+          "left_eta": "u",
+          "right_eta": "1",
+          "source": "u^3",
+          "middle": "u",
+          "target": "u^2"
+        },
+        "size": 8,
+        "atom_count": 8,
+        "coefficients": {
+          "-1": 8
+        },
+        "path": "u^3->u->u^2"
+      },
+      {
+        "id": 5,
+        "representative": {
+          "left_eta": "1",
+          "right_eta": "1",
+          "source": "u^3",
+          "middle": "u",
+          "target": "u^3"
+        },
+        "size": 4,
+        "atom_count": 12,
+        "coefficients": {
+          "-1": 12
+        },
+        "path": "u^3->u->u^3"
+      },
+      {
+        "id": 6,
+        "representative": {
+          "left_eta": "1",
+          "right_eta": "1+u",
+          "source": "u^3",
+          "middle": "u",
+          "target": "u^3"
+        },
+        "size": 8,
+        "atom_count": 24,
+        "coefficients": {
+          "-1": 24
+        },
+        "path": "u^3->u->u^3"
+      },
+      {
+        "id": 7,
+        "representative": {
+          "left_eta": "1",
+          "right_eta": "1+u^2",
+          "source": "u^3",
+          "middle": "u",
+          "target": "u^3"
+        },
+        "size": 4,
+        "atom_count": 12,
+        "coefficients": {
+          "-1": 12
+        },
+        "path": "u^3->u->u^3"
+      },
+      {
+        "id": 8,
+        "representative": {
+          "left_eta": "1",
+          "right_eta": "1",
+          "source": "u^3",
+          "middle": "u^2",
+          "target": "u^3"
+        },
+        "size": 4,
+        "atom_count": 8,
+        "coefficients": {
+          "-1": 8
+        },
+        "path": "u^3->u^2->u^3"
+      },
+      {
+        "id": 9,
+        "representative": {
+          "left_eta": "1",
+          "right_eta": "1+u",
+          "source": "u^3",
+          "middle": "u^2",
+          "target": "u^3"
+        },
+        "size": 8,
+        "atom_count": 16,
+        "coefficients": {
+          "-1": 16
+        },
+        "path": "u^3->u^2->u^3"
+      },
+      {
+        "id": 10,
+        "representative": {
+          "left_eta": "1",
+          "right_eta": "1+u^2",
+          "source": "u^3",
+          "middle": "u^2",
+          "target": "u^3"
+        },
+        "size": 4,
+        "atom_count": 8,
+        "coefficients": {
+          "-1": 8
+        },
+        "path": "u^3->u^2->u^3"
+      }
+    ],
+    "elapsed_seconds_before_coboundary": 0.004,
+    "support_projection_coboundary": {
+      "mode": "support",
+      "c2_scope": "raw_support",
+      "coefficient_field": "Q",
+      "c1_generators": 49,
+      "c2_dimension": 100,
+      "coboundary_rank": 36,
+      "residual_dimension": 64,
+      "raw_support": 100,
+      "residual_support": 0,
+      "residual_equal_raw": false,
+      "raw_is_coboundary": true,
+      "rational_rank_certified": true,
+      "raw_non_coboundary_over_q_certified": false,
+      "elapsed_seconds": 0.013
+    },
+    "full_block_coboundary": {
+      "mode": "full_block",
+      "c2_scope": "full_block",
+      "coefficient_field": "Q",
+      "c1_generators": 177,
+      "c2_dimension": 1709,
+      "coboundary_rank": 176,
+      "residual_dimension": 1533,
+      "raw_support": 100,
+      "residual_support": 100,
+      "residual_equal_raw": true,
+      "raw_is_coboundary": false,
+      "rational_rank_certified": true,
+      "raw_non_coboundary_over_q_certified": true,
+      "elapsed_seconds": 0.054
+    }
+  }
+}

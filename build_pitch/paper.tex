@@ -1,0 +1,343 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+\PassOptionsToPackage{dvipsnames,svgnames,x11names}{xcolor}
+\documentclass[
+  letterpaper,
+  11pt]{article}
+\usepackage{xcolor}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math} % this also loads fontspec
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+\usepackage{lmodern}
+\ifPDFTeX\else
+  % xetex/luatex font selection
+  \setmainfont[]{Latin Modern Roman}
+  \setmonofont[]{Latin Modern Mono}
+  \setmathfont[]{Latin Modern Math}
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{longtable,booktabs,array}
+\newcounter{none} % for unnumbered tables
+\usepackage{calc} % for calculating minipage widths
+% Correct order of tables after \paragraph or \subparagraph
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd\longtable{\par}{\if@noskipsec\mbox{}\fi\par}{}{}
+\makeatother
+% Allow footnotes in longtable head/foot
+\IfFileExists{footnotehyper.sty}{\usepackage{footnotehyper}}{\usepackage{footnote}}
+\makesavenoteenv{longtable}
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+% =============================================================================
+% Custom preamble for simplicial_vector_calculus (pandoc -> XeLaTeX)
+% Pulled in via `--include-in-header` by build.ps1 / build.sh.
+%
+% This file is injected into pandoc's default LaTeX template at the
+% `header-includes` slot, which runs BEFORE pandoc's own \usepackage{hyperref}
+% and \usepackage{unicode-math}. We therefore:
+%   * load `mathtools` here (so it precedes unicode-math, per its manual),
+%   * defer any \hypersetup{...} with \AtBeginDocument{...}.
+% We only ADD or tune; we do not reload packages pandoc already loads
+% (amsmath, amssymb, amsfonts, hyperref, xcolor, fontspec, unicode-math).
+% =============================================================================
+
+% ---- Math / symbols (mathtools must precede unicode-math) ------------------
+\usepackage{mathtools}
+\usepackage{amsthm}
+
+% ---- Typography -------------------------------------------------------------
+\usepackage{microtype}
+\usepackage{booktabs}
+
+% ---- TikZ for the few embedded figures (loaded for both papers; harmless if
+% no tikzpicture environment appears in the source) -------------------------
+\usepackage{tikz}
+\usetikzlibrary{positioning,arrows.meta}
+% Let LaTeX stretch lines a bit further when it can't find a clean break;
+% keeps overfull hboxes out of display math and URL-heavy lines.
+\setlength{\emergencystretch}{3em}
+% Make long URLs breakable at hyphens (applied before hyperref loads).
+\PassOptionsToPackage{hyphens}{url}
+
+% ---- Section heading polish -------------------------------------------------
+\usepackage{titlesec}
+\titleformat{\section}
+  {\normalfont\Large\bfseries}{\thesection}{0.75em}{}
+\titleformat{\subsection}
+  {\normalfont\large\bfseries}{\thesubsection}{0.6em}{}
+\titleformat{\subsubsection}
+  {\normalfont\normalsize\bfseries}{\thesubsubsection}{0.5em}{}
+
+% ---- Hyperref polish ----------------------------------------------------
+% PDF metadata (pdftitle/pdfauthor/...) is driven by pandoc's -V flags
+% (title/author from the front matter), so the preamble stays paper-neutral.
+
+% ---- Theorem-like environments (available if source ever migrates) ---------
+% The markdown source uses `**Theorem 4.1 (title).**` bold-header paragraphs
+% rather than native environments, so these are currently unused by the body
+% but are kept here so a future migration does not require a preamble change.
+\theoremstyle{plain}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\theoremstyle{remark}
+\newtheorem{remark}[theorem]{Remark}
+\newtheorem{example}[theorem]{Example}
+\usepackage{bookmark}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\urlstyle{same}
+\hypersetup{
+  pdftitle={Elevator Pitch --- Why the Spatial Web Foundation Should Sponsor This Program},
+  pdfauthor={Leonardo Murillo Montero (ITCR, UNA, UCR) --- leonardo.murillo@gmail.com},
+  colorlinks=true,
+  linkcolor={Maroon},
+  filecolor={Maroon},
+  citecolor={Blue},
+  urlcolor={Blue},
+  pdfcreator={LaTeX via pandoc}}
+
+\title{Elevator Pitch --- Why the Spatial Web Foundation Should Sponsor This Program}
+\author{Leonardo Murillo Montero (ITCR, UNA, UCR) --- \href{mailto:leonardo.murillo@gmail.com}{\nolinkurl{leonardo.murillo@gmail.com}}}
+\date{2026-05-20}
+
+\begin{document}
+\maketitle
+
+\section{0. The pitch in one paragraph}\label{the-pitch-in-one-paragraph}
+
+The Spatial Web Foundation (SWF) and IEEE 2874 have specified what a trustworthy network of AI \textbf{AGENTS, ACTIVITIES, CONTRACTS, CREDENTIALS, DOMAINS} and \textbf{HYPERSPACE} must look like at the \emph{socio-technical} layer --- shared meaning between humans and AIs, explainability via explicit modeling of decision-making, interoperability across borders, and authentication with transparency-by-design (IEEE 2874 §4.2). What the standard cannot yet deliver --- because no one in the surrounding literature has supplied it --- is a \textbf{decidable mathematical substrate} under which those four needs become \emph{certificates a regulator can check, an integrator can implement, and an adversary cannot fake}. Our forty-nine-paper program supplies exactly that substrate: an exact, finite, character-orthogonal decomposition of any ring-structured AI behavior into auditable \textbf{conductor packets}, with proved obstruction theorems for what a quotient-respecting readout can and cannot see (\href{C:/Projects/simplicial/26.conductor_probe_obstruction_theorem.md}{Paper 26}), a proved second-order failure mode for every Adam/K-FAC-trained model on ring-structured tasks (\href{C:/Projects/simplicial/34_the_conductor_blind_spot.md}{Paper 34}), a retraining-free safety primitive that detects correct outputs produced through wrong mechanism (\href{C:/Projects/simplicial/40_base_n_shortcut_audit_as_a_safety_primitive.md}{Paper 40}), and a six-slot \textbf{projection-closure certificate} (\href{C:/Projects/simplicial/31.projection_closure_theory.md}{Paper 31}) that is, structurally, exactly the kind of verifiable claim the SWF \textbf{CREDENTIAL} primitive was designed to carry. We are asking SWF to sponsor the program because the IEEE P2874 stack is the natural deployment surface for these results --- and because making them load-bearing inside the AIS Rating Framework gives SWF the formal verification spine its 2023 \emph{Future of Global AI Governance} report calls for but no constituent paper yet supplies.
+
+\section{1. SWF's stated socio-technical needs, mapped one-to-one to deliverables we can hand over}\label{swfs-stated-socio-technical-needs-mapped-one-to-one-to-deliverables-we-can-hand-over}
+
+IEEE P2874/D3.2.1 §4.2 lists five core needs the Spatial Web governance framework must balance. We address each.
+
+\subsection{(a) ``A shared understanding of meaning and context between humans and AIs.''}\label{a-a-shared-understanding-of-meaning-and-context-between-humans-and-ais.}
+
+The technical content of this clause is: \emph{given an AI system whose output lives in some finite outcome space, can we expose a basis in which its internal computation, its output, and a human-auditable label set can be jointly described and compared?}
+
+We hand over \textbf{conductor packets} as that basis. For any finite outcome algebra \(C_N\) (months, weekdays, digits, hours, octaves, time-of-day, calendar arithmetic, modular schedulers, color hue, music pitch-class --- the entire space of cyclic real-world labels the Spatial Web touches via DOMAIN ontologies), the additive characters \(\chi_a(x) = e^{2\pi i a x / N}\) decompose into conductor packets \(H_d\) with \(d \mid N\), of \(\mathbb{C}\)-dimension \(\varphi(d)\). This decomposition is \emph{forced by Pontryagin duality}, not chosen, not fitted, not engineered. It is canonical in the sense of \href{C:/Projects/simplicial/11.quotient_character_adjacency_algebras.md}{Paper 11}: once the outcome algebra is named, the packet basis is determined.
+
+Why this matters for SWF: HSML asserts a semantic ontology over \textbf{ENTITY}, \textbf{ACTIVITY}, \textbf{AGENT}, \textbf{CONTRACT}, \textbf{DOMAIN}. For any DOMAIN whose state space is finite and ring-structured (which is most of the application scenarios in 2874 §5.3 --- warehouse robot pick orders, calendar slots in urban autonomous mobility, GHG monitoring period buckets, smart-city zone codes, entertainment XR scene tags), the conductor packets give an \emph{interoperable} semantic decomposition that two implementations of the standard are guaranteed to compute the same way. Shared meaning is then not aspirational; it is enforced by character orthogonality.
+
+\subsection{(b) ``Explainability of AI systems, enabled by the explicit modeling of their decision-making processes.''}\label{b-explainability-of-ai-systems-enabled-by-the-explicit-modeling-of-their-decision-making-processes.}
+
+The technical content of this clause is: \emph{can we say, ahead of time and without retraining, which decision-making structure an AI system has actually committed to internally?}
+
+We hand over the \textbf{Conductor Probe-Obstruction Theorem} (\href{C:/Projects/simplicial/26.conductor_probe_obstruction_theorem.md}{Paper 26}) and the \textbf{Layerwise Packet Spectroscopy} measurement protocol (\href{C:/Projects/simplicial/36_layerwise_packet_spectroscopy.md}{Paper 36}).
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Theorem T1 (proved, {[}P{]}).} For a finite output label algebra \(C_N\) and any rank-\(k\) readout that respects the quotient \(C_N \to C_k\), exactly the conductor packets \(H_d\) with \(d \mid k\) survive and exactly the packets with \(d \nmid k\) are annihilated. No tolerance, no fitting, no baseline to dispute. The reader who wants the empirical anchor sees it on Llama-3.1-8B: max step-table error \(2.220 \times 10^{-16}\) on the aligned quotient projector vs.~\(0.945\), \(0.947\) on shuffled-label and same-rank random-subspace controls (\texttt{empirical/reports/conductor\_probe\_obstruction\_c12\_llama31\_8b.md}).
+\item
+  \textbf{Spectroscopy.} For every layer \(\ell\) of a transformer and every conductor \(d\), \href{C:/Projects/simplicial/36_layerwise_packet_spectroscopy.md}{Paper 36} gives a packet-resolved spectrum \(f_{d,\ell}\) --- the fraction of cyclic energy carried by packet \(H_d\) at layer \(\ell\). The deliverable is \textbf{one figure per model--task} that names which layer lifts which packet. Tuned-lens literature has not been able to phrase this structural question.
+\item
+  \textbf{Conductor-Certified SAE} (\href{C:/Projects/simplicial/45_conductor_certified_sparse_autoencoders.md}{Paper 45}). The sparse-autoencoder dictionary-learning field (Anthropic, OpenAI, DeepMind Gemma Scope) evaluates feature monosemanticity \emph{post-hoc}. CCSAE is the first construction whose features must, by Packet-Purity Theorem 4.1, partition by conductor packet. The dictionary's divisor table is \textbf{predictable before training}; the SAE field's first structural divisor-table prediction.
+\end{itemize}
+
+Why this matters for SWF: an AIS Rating Framework whose explainability axis depends on post-hoc human judgment of feature names is not auditable across borders, cultures, or adversarial actors. An axis whose explainability test is \emph{``compute \(f_{d,\ell}\) at the qualifying layer; compare to the pre-registered divisor table; report the survival ratio''} is auditable by any regulator with a single GPU.
+
+\subsection{(c) ``Interoperability of models and data that enable universal interaction and collaboration across organizations, networks, and borders.''}\label{c-interoperability-of-models-and-data-that-enable-universal-interaction-and-collaboration-across-organizations-networks-and-borders.}
+
+Interoperability across implementations of a standard requires that two compliant implementations \emph{compute the same canonical decomposition of the same input}. For numerical metrics this is hard; for character-theoretic decompositions this is automatic.
+
+We hand over \href{C:/Projects/simplicial/11.quotient_character_adjacency_algebras.md}{Paper 11} --- the \textbf{quotient-character adjacency algebra} as a finite algebraic backbone --- and \href{C:/Projects/simplicial/42_sinusoidal_pe_as_non_rational_conductor_algebra.md}{Paper 42} --- \textbf{Rational-Base Positional Encoding} with a proved Length-Stable Extrapolation theorem. Two consequences for a Spatial-Web implementation:
+
+\begin{itemize}
+\tightlist
+\item
+  \emph{DOMAIN representations on finite cyclic outcome algebras decompose canonically.} No vendor lock-in on a particular Fisher-matrix estimator or a particular SAE width.
+\item
+  \emph{Position encodings} --- which every transformer-based AGENT in the standard's application scenarios uses --- can be chosen rationally rather than at irrational (Vaswani et al.~2017 §3.5 chose \(B = 10000\) as a ``convenient round number'' with no structural justification). The character algebra is then finite and the model's behavior on a sequence of length \(L_{\text{test}} \equiv L_{\text{train}} \pmod{\mathrm{LCM}\{P_i\}}\) is \emph{exactly} the model's behavior at \(L_{\text{train}}\). Spatial Web nodes that need to extrapolate over long horizons (long-running CONTRACTS, multi-day urban mobility scheduling, century-scale GHG monitoring) get this for free.
+\end{itemize}
+
+\subsection{(d) ``Compliance with diverse local, regional, national and international regulatory demands, cultural norms and ethics.''}\label{d-compliance-with-diverse-local-regional-national-and-international-regulatory-demands-cultural-norms-and-ethics.}
+
+Compliance requires a \emph{typed budget} for residuals --- exactly the object \href{C:/Projects/simplicial/29.participation_metric_identity_as_participation.md}{Papers 29--31} introduce. The six-slot \textbf{projection-closure certificate} \(\mathcal{C}_W(\Pi; T, H, K) = (\mathsf{P}, \mathsf{R}, \mathsf{B}, \mathsf{S}, \mathsf{E}, \mathsf{F})\) of \href{C:/Projects/simplicial/31.projection_closure_theory.md}{Paper 31} makes a falsifiable contract:
+
+{\def\LTcaptype{none} % do not increment counter
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3333}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3333}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3333}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Slot
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Meaning
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+What a regulator checks
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+\(\mathsf{P}\) & Task-relevant participation \textbf{survives} the projection & Whitelist of preserved DOMAIN packets \\
+\(\mathsf{R}\) & Residuals are \textbf{typed} & Named overflow channel, not a fudge factor \\
+\(\mathsf{B}\) & Residuals are \textbf{bounded} & Quantitative ceiling per packet \\
+\(\mathsf{S}\) & Residuals are \textbf{stable} & Behavior under small perturbations of the input \\
+\(\mathsf{E}\) & Residuals are \textbf{explainable} & Map to a human-interpretable label \\
+\(\mathsf{F}\) & Residuals are \textbf{falsifiable} on the declared horizon & Pre-registered test that would fire if the certificate is wrong \\
+\end{longtable}
+}
+
+A CREDENTIAL whose payload is a projection-closure certificate is precisely the kind of structured claim the \textbf{CREDENTIAL} primitive of 2874 §3.1 was designed to carry. (CREDENTIAL is defined as ``A set of one or more claims made by a DOMAIN'' --- six structured claims with a falsifier is six legitimately auditable claims.)
+
+\subsection{(e) ``Authentication and credentialing, to help ensure compliance and potential control over critical activities, with privacy, security, identity and transparency embedded by design.''}\label{e-authentication-and-credentialing-to-help-ensure-compliance-and-potential-control-over-critical-activities-with-privacy-security-identity-and-transparency-embedded-by-design.}
+
+Cryptographic authentication is solved at the W3C-DID / Verifiable-Credentials layer that 2874 already cites. The piece \emph{not} solved by cryptography is \textbf{mechanism-authentication} --- proving that the AI you authenticated by signature is the same AI you authenticated by behavior. RLHF, constitutional AI, MT-Bench, AlpacaEval, and HELM all measure outputs; none of them measure mechanism type. A model that solves cyclic arithmetic by base-10 carry and re-projects at the unembedding is \textbf{behaviorally indistinguishable} from a model that solves the task cyclically --- until distribution shift breaks the shortcut.
+
+We hand over the \textbf{Base-N Shortcut Audit (BNSA)} of \href{C:/Projects/simplicial/40_base_n_shortcut_audit_as_a_safety_primitive.md}{Paper 40}. Named alignment-evaluation protocol, retraining-free, runs in hours on existing models, catches a failure mode no current evaluation in the standard alignment stack catches. The anchor case on Llama-3.1-8B months (\(1.000 \to 0.458\) accuracy under decimal-sum/carry residualization) is reproducible from a saved month-centroid file. \textbf{A model with a BNSA certificate is a model whose mechanism, not just its signature, has been authenticated.} This is the substrate-level safety primitive that goal-misgeneralization (Langosco et al.~2022) and sleeper-agent (Hubinger et al.~2024) literature has been asking for; we hand it to SWF in a form that drops directly into the AIS Rating Framework as one row.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\section{2. The deliverable inventory, ranked by readiness}\label{the-deliverable-inventory-ranked-by-readiness}
+
+Using the tier discipline of \href{C:/Projects/simplicial/35_grounded_paranoid_delusional_methodology.md}{Paper 35}: \textbf{{[}P{]}} = proven, \textbf{{[}A{]}} = structural, audit named, \textbf{{[}C{]}} = conjectural, reduced to a runnable falsifier.
+
+\subsection{Ready today --- {[}P{]}, implementable inside an AIS Rating Framework row}\label{ready-today-p-implementable-inside-an-ais-rating-framework-row}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  \textbf{Conductor Probe-Obstruction Theorem} (\href{C:/Projects/simplicial/26.conductor_probe_obstruction_theorem.md}{Paper 26}). Exact divisor law for what a quotient-respecting readout retains. Anchored on Llama-3.1-8B; three independent empirical replications (raw projector, trained quotient-probe, native logit-lens binning) all at numerical floor.
+\item
+  \textbf{Base-N Shortcut Audit} (\href{C:/Projects/simplicial/40_base_n_shortcut_audit_as_a_safety_primitive.md}{Paper 40}). Named, pre-registered, retraining-free, with safety-decision rule mapping survival ratios to deployment recommendations.
+\item
+  \textbf{Conductor Blind Spot} (\href{C:/Projects/simplicial/34_the_conductor_blind_spot.md}{Paper 34}). Exact representational limit of \emph{every} quadratic preconditioner (natural gradient, Gauss--Newton, K-FAC, Adam's empirical Fisher, NTK Gram). The finite linear-algebra witness has no baseline to dispute. Promotes the long-standing intuition ``second-order optimizers miss structure on ring-structured tasks'' to a theorem with an exact failure witness.
+\item
+  \textbf{Projection-Closure Certificate} (\href{C:/Projects/simplicial/31.projection_closure_theory.md}{Paper 31}). Six-slot \(\mathcal{C}_W\) structure with the \texttt{Z/6Z} time-translation certificate as a worked template. Directly castable as a CREDENTIAL payload.
+\item
+  \textbf{Arithmetic Decoupling Theorem} (\href{C:/Projects/simplicial/47_arithmetic_decoupling_theorem.md}{Paper 47}). \(V \perp M\) Hilbert-subspace decomposition on every squarefree primorial row, forced by character orthogonality. Row-stable across \texttt{Z/\{6,\ 30,\ 210,\ 2310,\ 30030\}} at machine floor where compute permits. (For SWF, this is the structural form of \emph{jurisdictional decoupling}: kinematic content can be governed independently of overflow content because they live on HS-orthogonal sub-bundles.)
+\end{enumerate}
+
+\subsection{Pre-registered, runnable in 1--6 GPU-weeks --- {[}P{]}-promotion candidates}\label{pre-registered-runnable-in-16-gpu-weeks-p-promotion-candidates}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{5}
+\tightlist
+\item
+  \textbf{Layerwise Packet Spectroscopy} (\href{C:/Projects/simplicial/36_layerwise_packet_spectroscopy.md}{Paper 36}). One GPU; existing open-weights checkpoints; no training. Deliverable: one figure per model--task naming which layer lifts which packet.
+\item
+  \textbf{Conductor-Certified Sparse Autoencoder} (\href{C:/Projects/simplicial/45_conductor_certified_sparse_autoencoders.md}{Paper 45}). \textasciitilde600 GPU-hours; uses existing Gemma Scope checkpoint as the vanilla baseline.
+\item
+  \textbf{Label-Smoothing Substitution Proposition} (\href{C:/Projects/simplicial/37_label_smoothing_in_the_conductor_blind_spot.md}{Paper 37}). Three model widths × six smoothing values × five projection strengths × three seeds; the \((\alpha, \varepsilon)\) iso-loss-ridge experiment. \textbf{Audit \(\lambda\) has already settled K-branch on three widths with signal-to-noise \textgreater{} 47.}
+\item
+  \textbf{Multi-Head Attention Frame-Cost Falsifier} (\href{C:/Projects/simplicial/38_multi_head_attention_as_frame_cost_minimization.md}{Paper 38}). Architecturally matched parameter count: Vaswani \((8, 64)\) vs.~packet-aligned head allocation on a mixed natural-language + cyclic benchmark.
+\item
+  \textbf{Cubic Noether Budgeted Decoding (CNBD)} (\href{C:/Projects/simplicial/41_cubic_noether_budgeted_decoding.md}{Paper 41}). The largest engineering item; payoff is directly measurable as a deployment-relevant inference-time gain. Builds on Paper 36's layer-identification.
+\item
+  \textbf{Rational-Base PE Length-Extrapolation Experiment} (\href{C:/Projects/simplicial/42_sinusoidal_pe_as_non_rational_conductor_algebra.md}{Paper 42}). Three 50M-parameter transformers; \(L_{\text{train}} = 1024\), \(L_{\text{test}} \in \{1024, \ldots, 16384\}\).
+\end{enumerate}
+
+\subsection{Theoretical infrastructure already proven, available for governance language}\label{theoretical-infrastructure-already-proven-available-for-governance-language}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{11}
+\tightlist
+\item
+  \textbf{Information-Geometric Mechanics on the Categorical Simplex} + \textbf{Bures Completion} (\href{C:/Projects/simplicial/13.simplectic_mechanics_on_the_categorical_simplex.md}{Papers 13--15}, \href{C:/Projects/simplicial/17.the_cubic_noether_theorem.md}{17}, \href{C:/Projects/simplicial/18.bures_completion_of_cubic_information_geometric_mechanics.md}{18}, \href{C:/Projects/simplicial/44_quantization_forced_cubic_to_bures_bridge.md}{44}). The full classical-to-quantum lift on \(R = \mathbb{Z}/6\mathbb{Z}\) with explicit \(\mathfrak{su}(2) \oplus \mathfrak{su}(3)\) generators and the Leakage-Equals-Jerk Theorem. Provides the formal language in which the AIS Rating Framework's ``levels of intelligence and autonomy'' can be defined as \emph{closure orders}, not as adjectives.
+\item
+  \textbf{Cubic Noether Theorem} (\href{C:/Projects/simplicial/17.the_cubic_noether_theorem.md}{Paper 17}) and \textbf{Universal Overflow Law} (\href{C:/Projects/simplicial/49_arithmetic_decoupling_of_projection_closure_overflows.md}{Paper 49}). The structural reason hallucinations, training-time mode collapse, and label-smoothing's empirical efficacy live on a single arithmetic axis --- and how they connect to the Free-Energy-Principle picture that VERSES (SWF's principal industrial collaborator) is already building toward.
+\item
+  \textbf{Verification-Gated Research Methodology} (\href{C:/Projects/simplicial/35_grounded_paranoid_delusional_methodology.md}{Paper 35}). The three-tier evidentiary ledger ({[}P{]}/{[}A{]}/{[}C{]}) and the matched-pair pre-claim discipline are themselves a \emph{governance contribution}: they specify how an investigator running a high-conviction program under capable AI assistance keeps the claim ledger from drifting. The AIS Rating Framework needs exactly this kind of \emph{meta-process} discipline at the research-and-development stage.
+\end{enumerate}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\section{3. What we are asking SWF for}\label{what-we-are-asking-swf-for}
+
+We are \textbf{not} asking SWF for direct research funding. The program operates under single-investigator economics (\href{C:/Projects/simplicial/35_grounded_paranoid_delusional_methodology.md}{Paper 35} §1.1) --- its bottleneck is institutional reach, not compute. Three concrete requested actions:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  \textbf{Inform Annex A.5 (AIS Rating Framework)} with the Base-N Shortcut Audit (\href{C:/Projects/simplicial/40_base_n_shortcut_audit_as_a_safety_primitive.md}{Paper 40}) as one row of the rating system's \emph{mechanism} axis (distinct from the \emph{capability} and \emph{autonomy} axes the report already names).
+\item
+  \textbf{Reference the Conductor Probe-Obstruction Theorem} (\href{C:/Projects/simplicial/26.conductor_probe_obstruction_theorem.md}{Paper 26}) and the \textbf{Conductor-Certified SAE} (\href{C:/Projects/simplicial/45_conductor_certified_sparse_autoencoders.md}{Paper 45}) under §4.2(b) explainability as the formal substrate for \emph{explicit modeling of decision-making processes} in finite-outcome AGENT actions.
+\item
+  \textbf{Pilot the Projection-Closure Certificate} (\href{C:/Projects/simplicial/31.projection_closure_theory.md}{Paper 31}) as a structured CREDENTIAL payload in one application scenario (Annex A or §5.3 --- warehouse robot is the cleanest case: finite outcome algebra, ring-structured task, regulator-checkable residuals).
+\end{enumerate}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\section{4. Why this trade is favorable to SWF}\label{why-this-trade-is-favorable-to-swf}
+
+SWF's strategic position depends on three things its current materials say but do not yet \emph{prove}:
+
+\begin{itemize}
+\tightlist
+\item
+  That socio-technical standards can be \emph{auditable}, not just well-intentioned. The 2023 \emph{Future of Global AI Governance} report calls for ``compliant, explainable and auditable behavior of smart devices and systems.'' Auditability requires a decidable test; the test surface for finite-outcome AGENT actions on ring-structured DOMAINs is exactly the conductor packet decomposition. We supply the decidable test.
+\item
+  That an AI Rating System can have a \emph{substrate-level} row, not only behavioral rows. The current report-level descriptions of the rating system rank ``levels of intelligence and autonomy''; BNSA gives the rating system a row for \emph{whether the mechanism is what the task claims}. That row is the one RLHF cannot fake.
+\item
+  That governance language can survive contact with frontier AI research. A standard whose technical clauses only describe what an AGENT \emph{is} but not what an AGENT's internal computation \emph{cannot represent} will be outpaced by every adversarial-evaluation paper. The Conductor Blind Spot (\href{C:/Projects/simplicial/34_the_conductor_blind_spot.md}{Paper 34}) and the BNSA (\href{C:/Projects/simplicial/40_base_n_shortcut_audit_as_a_safety_primitive.md}{Paper 40}) put representational and mechanistic \emph{upper bounds} into the standard, where adversarial papers will not move them.
+\end{itemize}
+
+Three things SWF gains specifically:
+
+\begin{itemize}
+\tightlist
+\item
+  A \textbf{proved} explainability axis where currently the standard has a descriptive one.
+\item
+  A \textbf{named, mechanistic} safety primitive (BNSA) that catches goal-misgeneralization and the deceptive-alignment substrate at the audit layer, not at the post-deployment incident layer.
+\item
+  A \textbf{mathematical pedigree} for the AIS Rating Framework that survives ballot review by academic and government voters --- the AIS Rating Framework's hardest constituency.
+\end{itemize}
+
+Three things our program gains specifically:
+
+\begin{itemize}
+\tightlist
+\item
+  A deployment surface where the {[}P{]}-tier results matter as standards, not only as preprints.
+\item
+  Working-group review by participants whose constituencies are the same governments and integrators the program's safety claims are addressed to.
+\item
+  Citation by an IEEE-published normative document, which gives the rating-framework integration a half-life that arXiv does not.
+\end{itemize}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\section{5. The closing line}\label{the-closing-line}
+
+The Spatial Web Foundation has named what AI governance must \emph{do}. Our forty-nine-paper program has proved, on a substrate that does not depend on a particular vendor or a particular benchmark, what AI governance can \emph{check}. The match is exact: IEEE 2874's AGENT is the program's autonomous Nambu--Fisher flow on a categorical simplex; 2874's CREDENTIAL is the program's projection-closure certificate; 2874's AIS Rating Framework is the program's \(\mathsf{P}/\mathsf{R}/\mathsf{B}/\mathsf{S}/\mathsf{E}/\mathsf{F}\) tier system specialized to autonomous-system rating. Sponsorship turns the match from a parallel into a single artifact a regulator can pick up.
+
+\end{document}

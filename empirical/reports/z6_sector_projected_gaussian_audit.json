@@ -1,0 +1,134 @@
+{
+  "claim_tested": "sector-projected Gaussian protocol sector purity, interior spillover, boundary shutoff",
+  "parameters": {
+    "lam": 0.1,
+    "sides": [
+      1.0,
+      1.25,
+      1.55
+    ],
+    "boundary_side": 12.0,
+    "velocity": [
+      0.4,
+      -0.2,
+      0.15
+    ],
+    "fd_step": 1e-06,
+    "tangent_mixed_tol": 1e-08,
+    "spillover_floor": 1e-12,
+    "boundary_mixed_tol": 1e-06,
+    "report": "empirical\\reports\\z6_sector_projected_gaussian_audit.md",
+    "json": "empirical\\reports\\z6_sector_projected_gaussian_audit.json"
+  },
+  "interior": {
+    "sigma": [
+      -0.1655,
+      0.03977475644174329,
+      0.09154967913652133
+    ],
+    "eta": [
+      0.14851863162964177,
+      0.14039507545813928,
+      0.1290836205780468,
+      0.20679137108974524,
+      0.19548045810598808,
+      0.17973084313843898
+    ],
+    "tangent_sector": [
+      {
+        "base_norm": 0.9731022469067208,
+        "mixed_norm": 0.05566140800821813,
+        "base_ratio": 0.9983680858072148,
+        "mixed_ratio": 0.057106612941390085,
+        "total_norm": 0.9746928620218607
+      },
+      {
+        "base_norm": 0.598324866506917,
+        "mixed_norm": 0.09812847593226305,
+        "base_ratio": 0.9868164903096891,
+        "mixed_ratio": 0.16184317857996824,
+        "total_norm": 0.6063182692854543
+      },
+      {
+        "base_norm": 0.5546274736775336,
+        "mixed_norm": 0.09096187000464166,
+        "base_ratio": 0.9868164902975266,
+        "mixed_ratio": 0.16184317865412728,
+        "total_norm": 0.5620370951749222
+      }
+    ],
+    "k_ch_sector": {
+      "base_norm": 0.0153808600529164,
+      "mixed_norm": 0.10690082518232362,
+      "base_ratio": 0.14241318974389358,
+      "mixed_ratio": 0.9898072960869556,
+      "total_norm": 0.10800165406432029
+    }
+  },
+  "boundary": {
+    "sigma": [
+      -4.885416666666667,
+      0.039774756441743886,
+      11.652937140927893
+    ],
+    "eta": [
+      2.9347347887247007e-05,
+      2.7742129562577927e-05,
+      1.807830749468596e-11,
+      0.5140292831542038,
+      0.4859133107022535,
+      3.166480145953125e-07
+    ],
+    "tangent_sector": [
+      {
+        "base_norm": 0.00022834495808155526,
+        "mixed_norm": 0.00016165543281952344,
+        "base_ratio": 0.8161743525236715,
+        "mixed_ratio": 0.5778056994202838,
+        "total_norm": 0.0002797747287396323
+      },
+      {
+        "base_norm": 0.8653404513149094,
+        "mixed_norm": 0.8652416476152456,
+        "base_ratio": 0.7071471507082144,
+        "mixed_ratio": 0.7070664093600081,
+        "total_norm": 1.2237063395479468
+      },
+      {
+        "base_norm": 8.227940908247671e-07,
+        "mixed_norm": 8.227001373428883e-07,
+        "base_ratio": 0.7071471535967986,
+        "mixed_ratio": 0.7070664056453706,
+        "total_norm": 1.1635401297166334e-06
+      }
+    ],
+    "k_ch_sector": {
+      "base_norm": 0.07336147276218195,
+      "mixed_norm": 0.04235528068941093,
+      "base_ratio": 0.8660253289392005,
+      "mixed_ratio": 0.5000001296357329,
+      "total_norm": 0.08471053941579613
+    }
+  },
+  "summary": {
+    "status": "KILL",
+    "interior_sigma": [
+      -0.1655,
+      0.03977475644174329,
+      0.09154967913652133
+    ],
+    "boundary_sigma": [
+      -4.885416666666667,
+      0.039774756441743886,
+      11.652937140927893
+    ],
+    "max_tangent_mixed_ratio": 0.16184317865412728,
+    "interior_k_ch_mixed_ratio": 0.9898072960869556,
+    "boundary_k_ch_mixed_ratio": 0.5000001296357329,
+    "boundary_edge_probability_mass": 3.166660929028072e-07,
+    "kills": [
+      "D eta has mixed-sector leakage; base map is not V2+V3 sector-pure",
+      "boundary K_CH mixed spillover does not vanish"
+    ]
+  }
+}

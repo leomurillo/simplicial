@@ -1,0 +1,791 @@
+{
+  "timestamp": "2026-06-04T00:00:25.000779+00:00",
+  "config": {
+    "seed": 20260603,
+    "trials_per_domain": 650,
+    "sweep_trials_per_domain": 420,
+    "main_admitted_share": 0.6,
+    "main_bait_share": 0.3,
+    "other_floor": 0.1,
+    "admitted_grid": [
+      0.0,
+      0.25,
+      0.45,
+      0.6,
+      0.8,
+      1.0
+    ],
+    "intensity_noise": 0.045,
+    "admission_noise": 0.04,
+    "alpha": 0.05,
+    "ridge": 0.002,
+    "admission_threshold": 0.5
+  },
+  "finding": "CONTINUOUS_ABSORBER_FITS_INTENSITY_BUT_GATES_CONTROL_ADMISSION",
+  "main": {
+    "gates": {
+      "current": 0.40554410575136934,
+      "structure": 0.3783930861434867,
+      "ambiguity": 0.3835746399785128,
+      "externalize": 0.40927425621932545,
+      "refusal": 0.4132591180814509
+    },
+    "overall": {
+      "scalar": {
+        "intensity": {
+          "rmse_observed": 0.16159339161420208,
+          "r2_observed": -0.00010095251618413847
+        },
+        "admission_regression": {
+          "rmse_observed": 0.47293743401550814,
+          "r2_observed": -0.000988441871135226
+        },
+        "admission_classification": {
+          "accuracy": 0.6113846153846154,
+          "admission_detection": 1.0,
+          "nonadmitted_false_admission": 1.0,
+          "bait_false_admission": 1.0,
+          "other_false_admission": 1.0,
+          "by_domain": {
+            "current": {
+              "detection": 1.0,
+              "false_admission": 1.0,
+              "bait_false_admission": 1.0
+            },
+            "structure": {
+              "detection": 1.0,
+              "false_admission": 1.0,
+              "bait_false_admission": 1.0
+            },
+            "ambiguity": {
+              "detection": 1.0,
+              "false_admission": 1.0,
+              "bait_false_admission": 1.0
+            },
+            "externalize": {
+              "detection": 1.0,
+              "false_admission": 1.0,
+              "bait_false_admission": 1.0
+            },
+            "refusal": {
+              "detection": 1.0,
+              "false_admission": 1.0,
+              "bait_false_admission": 1.0
+            }
+          }
+        }
+      },
+      "continuous_absorber": {
+        "intensity": {
+          "rmse_observed": 0.04944925186779333,
+          "r2_observed": 0.9063482064219041
+        },
+        "admission_regression": {
+          "rmse_observed": 0.4460209185329387,
+          "r2_observed": 0.10970868471034878
+        },
+        "admission_classification": {
+          "accuracy": 0.6827692307692308,
+          "admission_detection": 0.9310518369401107,
+          "nonadmitted_false_admission": 0.7078384798099763,
+          "bait_false_admission": 0.9253886010362694,
+          "other_false_admission": 0.003355704697986577,
+          "by_domain": {
+            "current": {
+              "detection": 0.8686131386861314,
+              "false_admission": 0.6192468619246861,
+              "bait_false_admission": 0.8268156424581006
+            },
+            "structure": {
+              "detection": 0.9398496240601504,
+              "false_admission": 0.7330677290836654,
+              "bait_false_admission": 0.9246231155778895
+            },
+            "ambiguity": {
+              "detection": 0.9536082474226805,
+              "false_admission": 0.7748091603053435,
+              "bait_false_admission": 0.9712918660287081
+            },
+            "externalize": {
+              "detection": 0.9321148825065274,
+              "false_admission": 0.7078651685393258,
+              "bait_false_admission": 0.9170731707317074
+            },
+            "refusal": {
+              "detection": 0.9630541871921182,
+              "false_admission": 0.6967213114754098,
+              "bait_false_admission": 0.9826589595375722
+            }
+          }
+        }
+      },
+      "gate_bank": {
+        "intensity": {
+          "rmse_observed": 0.1402958290604966,
+          "r2_observed": 0.24614786696251767
+        },
+        "admission_regression": {
+          "rmse_observed": 0.13221221017976736,
+          "r2_observed": 0.9217715343688802
+        },
+        "admission_classification": {
+          "accuracy": 0.9815384615384616,
+          "admission_detection": 1.0,
+          "nonadmitted_false_admission": 0.047505938242280284,
+          "bait_false_admission": 0.06217616580310881,
+          "other_false_admission": 0.0,
+          "by_domain": {
+            "current": {
+              "detection": 1.0,
+              "false_admission": 0.05439330543933055,
+              "bait_false_admission": 0.07262569832402235
+            },
+            "structure": {
+              "detection": 1.0,
+              "false_admission": 0.03187250996015936,
+              "bait_false_admission": 0.04020100502512563
+            },
+            "ambiguity": {
+              "detection": 1.0,
+              "false_admission": 0.06870229007633588,
+              "bait_false_admission": 0.0861244019138756
+            },
+            "externalize": {
+              "detection": 1.0,
+              "false_admission": 0.04868913857677903,
+              "bait_false_admission": 0.06341463414634146
+            },
+            "refusal": {
+              "detection": 1.0,
+              "false_admission": 0.03278688524590164,
+              "bait_false_admission": 0.046242774566473986
+            }
+          }
+        }
+      },
+      "governed_absorber": {
+        "intensity": {
+          "rmse_observed": 0.04691996429167721,
+          "r2_observed": 0.9156836118931775
+        },
+        "admission_regression": {
+          "rmse_observed": 0.13555925583432407,
+          "r2_observed": 0.9177605809902419
+        },
+        "admission_classification": {
+          "accuracy": 0.9815384615384616,
+          "admission_detection": 1.0,
+          "nonadmitted_false_admission": 0.047505938242280284,
+          "bait_false_admission": 0.06217616580310881,
+          "other_false_admission": 0.0,
+          "by_domain": {
+            "current": {
+              "detection": 1.0,
+              "false_admission": 0.05439330543933055,
+              "bait_false_admission": 0.07262569832402235
+            },
+            "structure": {
+              "detection": 1.0,
+              "false_admission": 0.03187250996015936,
+              "bait_false_admission": 0.04020100502512563
+            },
+            "ambiguity": {
+              "detection": 1.0,
+              "false_admission": 0.06870229007633588,
+              "bait_false_admission": 0.0861244019138756
+            },
+            "externalize": {
+              "detection": 1.0,
+              "false_admission": 0.04868913857677903,
+              "bait_false_admission": 0.06341463414634146
+            },
+            "refusal": {
+              "detection": 1.0,
+              "false_admission": 0.03278688524590164,
+              "bait_false_admission": 0.046242774566473986
+            }
+          }
+        }
+      },
+      "hybrid_full": {
+        "intensity": {
+          "rmse_observed": 0.046700018849588916,
+          "r2_observed": 0.9164722543859012
+        },
+        "admission_regression": {
+          "rmse_observed": 0.042716280713315326,
+          "r2_observed": 0.9918340156156987
+        },
+        "admission_classification": {
+          "accuracy": 1.0,
+          "admission_detection": 1.0,
+          "nonadmitted_false_admission": 0.0,
+          "bait_false_admission": 0.0,
+          "other_false_admission": 0.0,
+          "by_domain": {
+            "current": {
+              "detection": 1.0,
+              "false_admission": 0.0,
+              "bait_false_admission": 0.0
+            },
+            "structure": {
+              "detection": 1.0,
+              "false_admission": 0.0,
+              "bait_false_admission": 0.0
+            },
+            "ambiguity": {
+              "detection": 1.0,
+              "false_admission": 0.0,
+              "bait_false_admission": 0.0
+            },
+            "externalize": {
+              "detection": 1.0,
+              "false_admission": 0.0,
+              "bait_false_admission": 0.0
+            },
+            "refusal": {
+              "detection": 1.0,
+              "false_admission": 0.0,
+              "bait_false_admission": 0.0
+            }
+          }
+        }
+      }
+    },
+    "models": {
+      "scalar": {
+        "intensity": {
+          "feature_kind": "scalar",
+          "feature_count": 1,
+          "expanded_count": 3
+        },
+        "admission": {
+          "feature_kind": "scalar",
+          "feature_count": 1,
+          "expanded_count": 3
+        }
+      },
+      "continuous_absorber": {
+        "intensity": {
+          "feature_kind": "continuous",
+          "feature_count": 20,
+          "expanded_count": 231
+        },
+        "admission": {
+          "feature_kind": "continuous",
+          "feature_count": 20,
+          "expanded_count": 231
+        }
+      },
+      "gate_bank": {
+        "intensity": {
+          "feature_kind": "gate",
+          "feature_count": 11,
+          "expanded_count": 78
+        },
+        "admission": {
+          "feature_kind": "gate",
+          "feature_count": 11,
+          "expanded_count": 78
+        }
+      },
+      "governed_absorber": {
+        "intensity": {
+          "feature_kind": "governed",
+          "feature_count": 26,
+          "expanded_count": 378
+        },
+        "admission": {
+          "feature_kind": "governed",
+          "feature_count": 26,
+          "expanded_count": 378
+        }
+      },
+      "hybrid_full": {
+        "intensity": {
+          "feature_kind": "hybrid",
+          "feature_count": 27,
+          "expanded_count": 406
+        },
+        "admission": {
+          "feature_kind": "hybrid",
+          "feature_count": 27,
+          "expanded_count": 406
+        }
+      }
+    },
+    "test_source_means": {
+      "ambiguity:ambiguity_world": {
+        "n": 388.0,
+        "intensity": 0.9118917866708189,
+        "admission": 1.0,
+        "admission_score": 0.8639651017186614,
+        "local_drive": 0.7798384258870417,
+        "flow": 0.11072645264083995,
+        "uncertainty": 0.7311872315582085,
+        "eig": 0.8828410810388656,
+        "resource": 0.10887975744305943,
+        "risk": 0.11133510169154151,
+        "train_rule": 0.11140210259615763,
+        "train_tool": 0.10945025145409387,
+        "train_candidate": 0.8940365385955837
+      },
+      "ambiguity:eig_bait_world": {
+        "n": 209.0,
+        "intensity": 0.8719995420467802,
+        "admission": 0.0,
+        "admission_score": 0.28776273680454934,
+        "local_drive": 0.7764095241738864,
+        "flow": 0.11069288995744087,
+        "uncertainty": 0.7290124863003298,
+        "eig": 0.8820558249609043,
+        "resource": 0.11204411781571644,
+        "risk": 0.1148000163741985,
+        "train_rule": 0.1082687132688118,
+        "train_tool": 0.11097956633498532,
+        "train_candidate": 0.8998592700685554
+      },
+      "ambiguity:no_sample_world": {
+        "n": 53.0,
+        "intensity": 0.1227954060307477,
+        "admission": 0.0,
+        "admission_score": 0.15805913657026815,
+        "local_drive": 0.11662577215244221,
+        "flow": 0.10619789201124925,
+        "uncertainty": 0.18278375166145516,
+        "eig": 0.12312971826452339,
+        "resource": 0.11617358438186422,
+        "risk": 0.10418430114436264,
+        "train_rule": 0.11548919753399418,
+        "train_tool": 0.10843985540690916,
+        "train_candidate": 0.1415268118698994
+      },
+      "current:current_bait_world": {
+        "n": 179.0,
+        "intensity": 0.8544624895243526,
+        "admission": 0.0,
+        "admission_score": 0.2978814848465168,
+        "local_drive": 0.8937491571508044,
+        "flow": 0.8749693640455866,
+        "uncertainty": 0.10865593636177123,
+        "eig": 0.10480862635636912,
+        "resource": 0.11054754290796225,
+        "risk": 0.10574365103804191,
+        "train_rule": 0.11005186767542718,
+        "train_tool": 0.11494742065345595,
+        "train_candidate": 0.11021237445972228
+      },
+      "current:current_world": {
+        "n": 411.0,
+        "intensity": 0.897771233638398,
+        "admission": 1.0,
+        "admission_score": 0.8722962344993613,
+        "local_drive": 0.8881396053107594,
+        "flow": 0.8878520174520294,
+        "uncertainty": 0.10869260476937573,
+        "eig": 0.11415490144883808,
+        "resource": 0.11287658912395854,
+        "risk": 0.11495751812074707,
+        "train_rule": 0.11342424286956965,
+        "train_tool": 0.11207943073950763,
+        "train_candidate": 0.11221669291261602
+      },
+      "current:idle_world": {
+        "n": 60.0,
+        "intensity": 0.1441720938850069,
+        "admission": 0.0,
+        "admission_score": 0.1277478337717238,
+        "local_drive": 0.10433881382229739,
+        "flow": 0.11817585083791521,
+        "uncertainty": 0.10914143824025527,
+        "eig": 0.1151340316743795,
+        "resource": 0.1075258951717204,
+        "risk": 0.10420444082507327,
+        "train_rule": 0.11258528622558804,
+        "train_tool": 0.11772255228463124,
+        "train_candidate": 0.0971055596560901
+      },
+      "externalize:compress_world": {
+        "n": 62.0,
+        "intensity": 0.5197306538608026,
+        "admission": 0.0,
+        "admission_score": 0.21892103248889935,
+        "local_drive": 0.6094293402035429,
+        "flow": 0.10506033699194903,
+        "uncertainty": 0.09899408385030675,
+        "eig": 0.1101292185036615,
+        "resource": 0.6797288469844481,
+        "risk": 0.12178249024325506,
+        "train_rule": 0.10955693427971412,
+        "train_tool": 0.2302144869166533,
+        "train_candidate": 0.1077560888614902
+      },
+      "externalize:tool_bait_world": {
+        "n": 205.0,
+        "intensity": 0.8587619935723537,
+        "admission": 0.0,
+        "admission_score": 0.29812714390179357,
+        "local_drive": 0.813478908907434,
+        "flow": 0.11001594767813852,
+        "uncertainty": 0.11411117734900886,
+        "eig": 0.11394164792206887,
+        "resource": 0.889004383250341,
+        "risk": 0.09876918261106392,
+        "train_rule": 0.11890413713297597,
+        "train_tool": 0.9026912969405273,
+        "train_candidate": 0.10905079314344736
+      },
+      "externalize:tool_world": {
+        "n": 383.0,
+        "intensity": 0.895429299017078,
+        "admission": 1.0,
+        "admission_score": 0.8590579281253702,
+        "local_drive": 0.8175730545133554,
+        "flow": 0.10843633280194132,
+        "uncertainty": 0.10527412741449393,
+        "eig": 0.10858697257015165,
+        "resource": 0.8965824201024951,
+        "risk": 0.11206471011698382,
+        "train_rule": 0.1107087561916817,
+        "train_tool": 0.8848178280384243,
+        "train_candidate": 0.1081789601942098
+      },
+      "refusal:forbidden_world": {
+        "n": 406.0,
+        "intensity": 0.8736956387798028,
+        "admission": 1.0,
+        "admission_score": 0.8710877862111236,
+        "local_drive": 0.823073623786127,
+        "flow": 0.11106859146346815,
+        "uncertainty": 0.11475268794622216,
+        "eig": 0.11492331918217208,
+        "resource": 0.11108644915070494,
+        "risk": 0.38610596826087273,
+        "train_rule": 0.8985646295177749,
+        "train_tool": 0.10944692648436462,
+        "train_candidate": 0.11417622210342641
+      },
+      "refusal:risk_world": {
+        "n": 71.0,
+        "intensity": 0.7758267540040558,
+        "admission": 0.0,
+        "admission_score": 0.24589264652487194,
+        "local_drive": 0.7727001600427346,
+        "flow": 0.09465694568669819,
+        "uncertainty": 0.10889304355764967,
+        "eig": 0.10763216297170582,
+        "resource": 0.10410662431655235,
+        "risk": 0.8882812168735137,
+        "train_rule": 0.14112631746949203,
+        "train_tool": 0.09778589536345113,
+        "train_candidate": 0.11230976719668216
+      },
+      "refusal:rule_bait_world": {
+        "n": 173.0,
+        "intensity": 0.834411411680658,
+        "admission": 0.0,
+        "admission_score": 0.2996874061228961,
+        "local_drive": 0.8135951692633321,
+        "flow": 0.12061991937533031,
+        "uncertainty": 0.11432529013549829,
+        "eig": 0.10834280650460865,
+        "resource": 0.11635522355150758,
+        "risk": 0.38123691133559945,
+        "train_rule": 0.9015987918491046,
+        "train_tool": 0.11724396312242333,
+        "train_candidate": 0.1153331869997112
+      },
+      "structure:noise_world": {
+        "n": 52.0,
+        "intensity": 0.7335606329695025,
+        "admission": 0.0,
+        "admission_score": 0.18997883787156591,
+        "local_drive": 0.582735528136694,
+        "flow": 0.11034704104567061,
+        "uncertainty": 0.8394393854124025,
+        "eig": 0.11250739813753743,
+        "resource": 0.11758733382547375,
+        "risk": 0.10190885298886268,
+        "train_rule": 0.10994197564539974,
+        "train_tool": 0.09336776262903265,
+        "train_candidate": 0.10621481448247078
+      },
+      "structure:structure_world": {
+        "n": 399.0,
+        "intensity": 0.9543402311022249,
+        "admission": 1.0,
+        "admission_score": 0.8603062966395586,
+        "local_drive": 0.8257987764877726,
+        "flow": 0.1086107526870667,
+        "uncertainty": 0.8871105192333727,
+        "eig": 0.11005600644541644,
+        "resource": 0.10878388720743785,
+        "risk": 0.10940171447434816,
+        "train_rule": 0.10778898551975312,
+        "train_tool": 0.11247628870330942,
+        "train_candidate": 0.1141134172302789
+      },
+      "structure:uncertainty_bait_world": {
+        "n": 199.0,
+        "intensity": 0.9157130328321591,
+        "admission": 0.0,
+        "admission_score": 0.2787494392884556,
+        "local_drive": 0.8164941499843544,
+        "flow": 0.11279090608551103,
+        "uncertainty": 0.8834814405048977,
+        "eig": 0.10887755201888057,
+        "resource": 0.11166594464925228,
+        "risk": 0.10678338662179455,
+        "train_rule": 0.10422267833068134,
+        "train_tool": 0.10762578159820066,
+        "train_candidate": 0.10858711338937399
+      }
+    }
+  },
+  "decision_quantities": {
+    "continuous_intensity_rmse": 0.04944925186779333,
+    "gate_intensity_rmse": 0.1402958290604966,
+    "governed_intensity_rmse": 0.04691996429167721,
+    "hybrid_intensity_rmse": 0.046700018849588916,
+    "continuous_admission_rmse": 0.4460209185329387,
+    "gate_admission_rmse": 0.13221221017976736,
+    "governed_admission_rmse": 0.13555925583432407,
+    "hybrid_admission_rmse": 0.042716280713315326,
+    "continuous_false_admission": 0.7078384798099763,
+    "gate_false_admission": 0.047505938242280284,
+    "governed_false_admission": 0.047505938242280284,
+    "hybrid_false_admission": 0.0,
+    "continuous_detection": 0.9310518369401107,
+    "gate_detection": 1.0,
+    "governed_detection": 1.0,
+    "hybrid_detection": 1.0,
+    "continuous_bait_false": 0.9253886010362694,
+    "gate_bait_false": 0.06217616580310881,
+    "governed_bait_false": 0.06217616580310881,
+    "hybrid_bait_false": 0.0
+  },
+  "phase_sweep": [
+    {
+      "admitted_share": 0.0,
+      "bait_share": 0.3,
+      "intensity_winner": "continuous_absorber",
+      "admission_winner": "gate_bank",
+      "intensity_rmse": {
+        "scalar": 0.3071478588124894,
+        "continuous_absorber": 0.04707650279487394,
+        "gate_bank": 0.22048648535673615,
+        "governed_absorber": 0.05249215383870479,
+        "hybrid_full": 0.052709564722796955
+      },
+      "admission_rmse": {
+        "scalar": 0.023486118026226226,
+        "continuous_absorber": 0.024167436317455118,
+        "gate_bank": 0.02346731702418795,
+        "governed_absorber": 0.032199471961943595,
+        "hybrid_full": 0.025752330772860727
+      },
+      "false_admission": {
+        "scalar": 0.0,
+        "continuous_absorber": 0.0,
+        "gate_bank": 0.0,
+        "governed_absorber": 0.0004761904761904762,
+        "hybrid_full": 0.0
+      },
+      "admission_detection": {
+        "scalar": NaN,
+        "continuous_absorber": NaN,
+        "gate_bank": NaN,
+        "governed_absorber": NaN,
+        "hybrid_full": NaN
+      },
+      "continuous_bait_false": 0.0,
+      "gate_bait_false": 0.0,
+      "governed_bait_false": 0.001610305958132045
+    },
+    {
+      "admitted_share": 0.25,
+      "bait_share": 0.3,
+      "intensity_winner": "hybrid_full",
+      "admission_winner": "hybrid_full",
+      "intensity_rmse": {
+        "scalar": 0.2864319224363518,
+        "continuous_absorber": 0.049247082467956345,
+        "gate_bank": 0.2133210150293562,
+        "governed_absorber": 0.048940417981616115,
+        "hybrid_full": 0.04848805368872536
+      },
+      "admission_rmse": {
+        "scalar": 0.4128384155533973,
+        "continuous_absorber": 0.3752637086044125,
+        "gate_bank": 0.18745947507777824,
+        "governed_absorber": 0.1970721795304891,
+        "hybrid_full": 0.0402017900073988
+      },
+      "false_admission": {
+        "scalar": 0.0,
+        "continuous_absorber": 0.14934660858742999,
+        "gate_bank": 0.05787181082762912,
+        "governed_absorber": 0.056004978220286245,
+        "hybrid_full": 0.0
+      },
+      "admission_detection": {
+        "scalar": 0.0,
+        "continuous_absorber": 0.34279918864097364,
+        "gate_bank": 1.0,
+        "governed_absorber": 0.9898580121703854,
+        "hybrid_full": 1.0
+      },
+      "continuous_bait_false": 0.3697996918335901,
+      "gate_bait_false": 0.13405238828967642,
+      "governed_bait_false": 0.1325115562403698
+    },
+    {
+      "admitted_share": 0.45,
+      "bait_share": 0.3,
+      "intensity_winner": "hybrid_full",
+      "admission_winner": "hybrid_full",
+      "intensity_rmse": {
+        "scalar": 0.23502200458754277,
+        "continuous_absorber": 0.04921882343642207,
+        "gate_bank": 0.18277812332506144,
+        "governed_absorber": 0.046668941564908924,
+        "hybrid_full": 0.04663164718297343
+      },
+      "admission_rmse": {
+        "scalar": 0.48297862195366437,
+        "continuous_absorber": 0.4268560507600941,
+        "gate_bank": 0.16292330022857826,
+        "governed_absorber": 0.16904824839799232,
+        "hybrid_full": 0.04474854564426664
+      },
+      "false_admission": {
+        "scalar": 0.0,
+        "continuous_absorber": 0.43424536628420124,
+        "gate_bank": 0.05472197705207414,
+        "governed_absorber": 0.05472197705207414,
+        "hybrid_full": 0.0
+      },
+      "admission_detection": {
+        "scalar": 0.0,
+        "continuous_absorber": 0.8221302998965874,
+        "gate_bank": 1.0,
+        "governed_absorber": 1.0,
+        "hybrid_full": 1.0
+      },
+      "continuous_bait_false": 0.7961165048543689,
+      "gate_bait_false": 0.09870550161812297,
+      "governed_bait_false": 0.09870550161812297
+    },
+    {
+      "admitted_share": 0.6,
+      "bait_share": 0.3,
+      "intensity_winner": "governed_absorber",
+      "admission_winner": "hybrid_full",
+      "intensity_rmse": {
+        "scalar": 0.1594192302035949,
+        "continuous_absorber": 0.04955380511279327,
+        "gate_bank": 0.14234807388534737,
+        "governed_absorber": 0.047679019276058436,
+        "hybrid_full": 0.04776249997692229
+      },
+      "admission_rmse": {
+        "scalar": 0.4753064684001444,
+        "continuous_absorber": 0.45854455301076985,
+        "gate_bank": 0.15046859880932956,
+        "governed_absorber": 0.15723981982190077,
+        "hybrid_full": 0.043947039768681834
+      },
+      "false_admission": {
+        "scalar": 1.0,
+        "continuous_absorber": 0.6964285714285714,
+        "gate_bank": 0.06190476190476191,
+        "governed_absorber": 0.06190476190476191,
+        "hybrid_full": 0.0
+      },
+      "admission_detection": {
+        "scalar": 1.0,
+        "continuous_absorber": 0.8992063492063492,
+        "gate_bank": 1.0,
+        "governed_absorber": 1.0,
+        "hybrid_full": 1.0
+      },
+      "continuous_bait_false": 0.9010819165378671,
+      "gate_bait_false": 0.07882534775888717,
+      "governed_bait_false": 0.07882534775888717
+    },
+    {
+      "admitted_share": 0.8,
+      "bait_share": 0.09999999999999995,
+      "intensity_winner": "governed_absorber",
+      "admission_winner": "hybrid_full",
+      "intensity_rmse": {
+        "scalar": 0.1778769828719613,
+        "continuous_absorber": 0.04776124915710945,
+        "gate_bank": 0.12250607675084202,
+        "governed_absorber": 0.04704829246397377,
+        "hybrid_full": 0.04717926830381312
+      },
+      "admission_rmse": {
+        "scalar": 0.38360063084316603,
+        "continuous_absorber": 0.2917126258590384,
+        "gate_bank": 0.09242004402458825,
+        "governed_absorber": 0.09441749114745732,
+        "hybrid_full": 0.042231593831583696
+      },
+      "false_admission": {
+        "scalar": 1.0,
+        "continuous_absorber": 0.47058823529411764,
+        "gate_bank": 0.04411764705882353,
+        "governed_absorber": 0.041666666666666664,
+        "hybrid_full": 0.0
+      },
+      "admission_detection": {
+        "scalar": 1.0,
+        "continuous_absorber": 0.9994089834515366,
+        "gate_bank": 1.0,
+        "governed_absorber": 1.0,
+        "hybrid_full": 1.0
+      },
+      "continuous_bait_false": 1.0,
+      "gate_bait_false": 0.08947368421052632,
+      "governed_bait_false": 0.08947368421052632
+    },
+    {
+      "admitted_share": 1.0,
+      "bait_share": 0.0,
+      "intensity_winner": "continuous_absorber",
+      "admission_winner": "scalar",
+      "intensity_rmse": {
+        "scalar": 0.062285100216917015,
+        "continuous_absorber": 0.04448086016747313,
+        "gate_bank": 0.056517157138397514,
+        "governed_absorber": 0.04448086016747413,
+        "hybrid_full": 0.0445609653116964
+      },
+      "admission_rmse": {
+        "scalar": 0.02410599818939713,
+        "continuous_absorber": 0.025115920313279604,
+        "gate_bank": 0.02414887079069787,
+        "governed_absorber": 0.025115920313278545,
+        "hybrid_full": 0.02520045547049958
+      },
+      "false_admission": {
+        "scalar": NaN,
+        "continuous_absorber": NaN,
+        "gate_bank": NaN,
+        "governed_absorber": NaN,
+        "hybrid_full": NaN
+      },
+      "admission_detection": {
+        "scalar": 1.0,
+        "continuous_absorber": 1.0,
+        "gate_bank": 1.0,
+        "governed_absorber": 1.0,
+        "hybrid_full": 1.0
+      },
+      "continuous_bait_false": NaN,
+      "gate_bait_false": NaN,
+      "governed_bait_false": NaN
+    }
+  ]
+}

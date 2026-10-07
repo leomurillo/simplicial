@@ -1,0 +1,495 @@
+{
+  "timestamp": "2026-06-04T05:56:19.519315+00:00",
+  "dataset": {
+    "name": "UCI KDD Pioneer-1 Mobile Robot Data",
+    "page": "https://kdd.ics.uci.edu/databases/pioneer/pioneer.html",
+    "description_page": "https://kdd.ics.uci.edu/databases/pioneer/pioneer.data.html",
+    "base_url": "https://kdd.ics.uci.edu/databases/pioneer/",
+    "files": {
+      "move.data.gz": "C:\\Projects\\simplicial\\empirical\\data\\pioneer_robot\\move.data.gz",
+      "turn.data.gz": "C:\\Projects\\simplicial\\empirical\\data\\pioneer_robot\\turn.data.gz"
+    },
+    "file_sizes": {
+      "move.data.gz": 163658,
+      "turn.data.gz": 51650
+    },
+    "row_counts": {
+      "move.data.gz": 6129,
+      "turn.data.gz": 2324
+    },
+    "trial_count": 144,
+    "outcome_trials": {
+      "clear_visible": 36,
+      "vanish": 16,
+      "discover": 22,
+      "obstructed": 30,
+      "push": 40
+    },
+    "outcome_rows": {
+      "clear_visible": 2040,
+      "vanish": 886,
+      "discover": 1383,
+      "obstructed": 1645,
+      "push": 2499
+    },
+    "action_families": {
+      "move": 76,
+      "retr": 26,
+      "turn": 42
+    },
+    "rows_per_trial": {
+      "min": 39,
+      "max": 80,
+      "mean": 58.701388888888886
+    }
+  },
+  "config": {
+    "seed": 20260603,
+    "min_prefix": 8,
+    "prefix_stride": 3,
+    "stability_history": 5,
+    "split_strategy": "stratified",
+    "train_fraction": 0.6,
+    "calibration_fraction": 0.2,
+    "alpha": 0.05,
+    "hidden": [
+      80,
+      40
+    ],
+    "epochs": 70,
+    "patience": 10,
+    "batch_size": 384,
+    "lr": 0.0025,
+    "unsafe_penalty": 0.35
+  },
+  "audit": {
+    "split_trials": {
+      "train": {
+        "trials": 86,
+        "outcomes": {
+          "clear_visible": 21,
+          "vanish": 10,
+          "discover": 13,
+          "obstructed": 18,
+          "push": 24
+        },
+        "action_families": {
+          "retr": 15,
+          "move": 46,
+          "turn": 25
+        }
+      },
+      "calibration": {
+        "trials": 30,
+        "outcomes": {
+          "clear_visible": 8,
+          "vanish": 3,
+          "discover": 5,
+          "obstructed": 6,
+          "push": 8
+        },
+        "action_families": {
+          "move": 16,
+          "retr": 5,
+          "turn": 9
+        }
+      },
+      "test": {
+        "trials": 28,
+        "outcomes": {
+          "clear_visible": 7,
+          "vanish": 3,
+          "discover": 4,
+          "obstructed": 6,
+          "push": 8
+        },
+        "action_families": {
+          "retr": 6,
+          "move": 14,
+          "turn": 8
+        }
+      }
+    },
+    "prefix_counts": {
+      "train": 1490,
+      "calibration": 517,
+      "test": 467
+    },
+    "probe_accuracy": {
+      "train": 1.0,
+      "calibration": 0.5764023210831721,
+      "test": 0.6638115631691649
+    },
+    "majority_accuracy": {
+      "train": 0.3046979865771812,
+      "calibration": 0.2804642166344294,
+      "test": 0.29978586723768735
+    },
+    "probe_model": {
+      "raw_feature_count": 259,
+      "expanded_feature_count": 519
+    }
+  },
+  "gate_threshold": 0.0021775662982495753,
+  "train_summary": {
+    "episodes": 1490,
+    "packets": 7450,
+    "optimal_actions": {
+      "clear_visible": 348,
+      "obstructed": 288,
+      "discover": 242,
+      "vanish": 158,
+      "push": 454
+    },
+    "mean_gate_score": 0.003128041556772165,
+    "mean_utility": 0.0599295302013423,
+    "mean_unsafe_proxy": 0.4002013422818791
+  },
+  "calibration_summary": {
+    "episodes": 517,
+    "packets": 2585,
+    "optimal_actions": {
+      "clear_visible": 136,
+      "obstructed": 99,
+      "discover": 88,
+      "vanish": 49,
+      "push": 145
+    },
+    "mean_gate_score": 0.0019361704655205029,
+    "mean_utility": 0.059316247582205044,
+    "mean_unsafe_proxy": 0.4019535783365569
+  },
+  "test_summary": {
+    "episodes": 467,
+    "packets": 2335,
+    "optimal_actions": {
+      "clear_visible": 108,
+      "obstructed": 91,
+      "discover": 78,
+      "vanish": 50,
+      "push": 140
+    },
+    "mean_gate_score": 0.0023692573569464065,
+    "mean_utility": 0.060127408993576034,
+    "mean_unsafe_proxy": 0.3996359743040685
+  },
+  "overall": {
+    "scalar_mlp": {
+      "value": {
+        "rmse_observed": 0.4205845733932427,
+        "r2_observed": 0.2186175011148057
+      },
+      "select_regression": {
+        "rmse_observed": 0.3518724394315382,
+        "r2_observed": 0.20365348273864403
+      },
+      "row_selection": {
+        "row_accuracy": 0.8616702355460385,
+        "optimal_detection": 0.6531049250535332,
+        "nonoptimal_false_admission": 0.08618843683083512
+      },
+      "policy": {
+        "action_accuracy": 0.6680942184154176,
+        "mean_regret": 0.39197537473233407,
+        "p90_regret": 1.28,
+        "unsafe_wrong_proxy": 0.10278372591006424,
+        "severe_miss_proxy": 0.04068522483940043,
+        "chosen_actions": {
+          "clear_visible": 114,
+          "obstructed": 94,
+          "discover": 56,
+          "vanish": 71,
+          "push": 132
+        },
+        "optimal_actions": {
+          "clear_visible": 108,
+          "obstructed": 91,
+          "discover": 78,
+          "vanish": 50,
+          "push": 140
+        }
+      },
+      "model": {
+        "feature_kind": "scalar",
+        "basis_kind": "trained_mlp",
+        "feature_count": 7,
+        "hidden": [
+          80,
+          40
+        ],
+        "value_history": [
+          {
+            "epoch": 1.0,
+            "train_mse_scaled": 0.08447543404614478,
+            "val_mse_scaled": 1.236870188754285
+          },
+          {
+            "epoch": 10.0,
+            "train_mse_scaled": 0.020673796279915137,
+            "val_mse_scaled": 1.1464845588833017
+          },
+          {
+            "epoch": 20.0,
+            "train_mse_scaled": 0.01926515555203652,
+            "val_mse_scaled": 1.0772422958756747
+          },
+          {
+            "epoch": 30.0,
+            "train_mse_scaled": 0.01774922058014826,
+            "val_mse_scaled": 1.0555680915979813
+          }
+        ],
+        "select_history": [
+          {
+            "epoch": 1.0,
+            "train_mse_scaled": 0.06802490574549112,
+            "val_mse_scaled": 1.025327467366303
+          },
+          {
+            "epoch": 10.0,
+            "train_mse_scaled": 0.0034933034460305707,
+            "val_mse_scaled": 1.0225908369028136
+          },
+          {
+            "epoch": 20.0,
+            "train_mse_scaled": 0.0018407994743622137,
+            "val_mse_scaled": 1.0045964592979142
+          }
+        ]
+      }
+    },
+    "continuous_mlp": {
+      "value": {
+        "rmse_observed": 0.4202941354965646,
+        "r2_observed": 0.21969630782900895
+      },
+      "select_regression": {
+        "rmse_observed": 0.3786863312634033,
+        "r2_observed": 0.07766043153735569
+      },
+      "row_selection": {
+        "row_accuracy": 0.7987152034261242,
+        "optimal_detection": 0.3747323340471092,
+        "nonoptimal_false_admission": 0.09528907922912205
+      },
+      "policy": {
+        "action_accuracy": 0.6723768736616702,
+        "mean_regret": 0.3875802997858672,
+        "p90_regret": 1.28,
+        "unsafe_wrong_proxy": 0.10278372591006424,
+        "severe_miss_proxy": 0.04925053533190578,
+        "chosen_actions": {
+          "clear_visible": 114,
+          "obstructed": 92,
+          "discover": 56,
+          "vanish": 74,
+          "push": 131
+        },
+        "optimal_actions": {
+          "clear_visible": 108,
+          "obstructed": 91,
+          "discover": 78,
+          "vanish": 50,
+          "push": 140
+        }
+      },
+      "model": {
+        "feature_kind": "continuous",
+        "basis_kind": "trained_mlp",
+        "feature_count": 276,
+        "hidden": [
+          80,
+          40
+        ],
+        "value_history": [
+          {
+            "epoch": 1.0,
+            "train_mse_scaled": 0.21926420605842278,
+            "val_mse_scaled": 1.2039852739979597
+          },
+          {
+            "epoch": 10.0,
+            "train_mse_scaled": 0.01297772084359907,
+            "val_mse_scaled": 1.2236143425191883
+          },
+          {
+            "epoch": 20.0,
+            "train_mse_scaled": 0.007049135550281608,
+            "val_mse_scaled": 1.1542041434631076
+          },
+          {
+            "epoch": 30.0,
+            "train_mse_scaled": 0.005255563750777315,
+            "val_mse_scaled": 1.1286772346686154
+          },
+          {
+            "epoch": 40.0,
+            "train_mse_scaled": 0.005739877278384851,
+            "val_mse_scaled": 1.115660231972932
+          },
+          {
+            "epoch": 50.0,
+            "train_mse_scaled": 0.0029779610628028865,
+            "val_mse_scaled": 1.0876650939073271
+          }
+        ],
+        "select_history": [
+          {
+            "epoch": 1.0,
+            "train_mse_scaled": 0.4088281639849048,
+            "val_mse_scaled": 1.033751939815566
+          },
+          {
+            "epoch": 10.0,
+            "train_mse_scaled": 0.011959237890049698,
+            "val_mse_scaled": 1.089009531119449
+          }
+        ]
+      }
+    },
+    "hybrid_mlp": {
+      "value": {
+        "rmse_observed": 0.4240052540824188,
+        "r2_observed": 0.2058555997484377
+      },
+      "select_regression": {
+        "rmse_observed": 0.3421456448150312,
+        "r2_observed": 0.2470717126724522
+      },
+      "row_selection": {
+        "row_accuracy": 0.8710920770877945,
+        "optimal_detection": 0.6552462526766595,
+        "nonoptimal_false_admission": 0.07494646680942184
+      },
+      "policy": {
+        "action_accuracy": 0.6616702355460385,
+        "mean_regret": 0.3988865096359744,
+        "p90_regret": 1.21,
+        "unsafe_wrong_proxy": 0.09850107066381156,
+        "severe_miss_proxy": 0.04068522483940043,
+        "chosen_actions": {
+          "clear_visible": 117,
+          "obstructed": 87,
+          "discover": 51,
+          "vanish": 77,
+          "push": 135
+        },
+        "optimal_actions": {
+          "clear_visible": 108,
+          "obstructed": 91,
+          "discover": 78,
+          "vanish": 50,
+          "push": 140
+        }
+      },
+      "model": {
+        "feature_kind": "hybrid",
+        "basis_kind": "trained_mlp",
+        "feature_count": 281,
+        "hidden": [
+          80,
+          40
+        ],
+        "value_history": [
+          {
+            "epoch": 1.0,
+            "train_mse_scaled": 0.12963795820871135,
+            "val_mse_scaled": 1.640737932252516
+          },
+          {
+            "epoch": 10.0,
+            "train_mse_scaled": 0.0075274493873702915,
+            "val_mse_scaled": 1.1863473396728714
+          },
+          {
+            "epoch": 20.0,
+            "train_mse_scaled": 0.0041902214743190875,
+            "val_mse_scaled": 1.118820321321409
+          },
+          {
+            "epoch": 30.0,
+            "train_mse_scaled": 0.0023980765987583943,
+            "val_mse_scaled": 1.0768878549443475
+          },
+          {
+            "epoch": 40.0,
+            "train_mse_scaled": 0.003061902413650988,
+            "val_mse_scaled": 1.0547754026221345
+          },
+          {
+            "epoch": 50.0,
+            "train_mse_scaled": 0.0017467998433951257,
+            "val_mse_scaled": 1.0310132605906932
+          },
+          {
+            "epoch": 60.0,
+            "train_mse_scaled": 0.002579130585606704,
+            "val_mse_scaled": 1.0153899901145818
+          },
+          {
+            "epoch": 70.0,
+            "train_mse_scaled": 0.0012695937521120385,
+            "val_mse_scaled": 1.0006319494874558
+          }
+        ],
+        "select_history": [
+          {
+            "epoch": 1.0,
+            "train_mse_scaled": 0.16863373711547922,
+            "val_mse_scaled": 1.548229884455493
+          },
+          {
+            "epoch": 10.0,
+            "train_mse_scaled": 0.00616439285444168,
+            "val_mse_scaled": 1.101833507727951
+          },
+          {
+            "epoch": 20.0,
+            "train_mse_scaled": 0.0036257963925450712,
+            "val_mse_scaled": 1.0454621400021222
+          },
+          {
+            "epoch": 30.0,
+            "train_mse_scaled": 0.002445425705791861,
+            "val_mse_scaled": 1.0180481401668706
+          },
+          {
+            "epoch": 40.0,
+            "train_mse_scaled": 0.001831219793624476,
+            "val_mse_scaled": 1.0075140766921515
+          },
+          {
+            "epoch": 50.0,
+            "train_mse_scaled": 0.001735062470113429,
+            "val_mse_scaled": 0.9906525892052344
+          },
+          {
+            "epoch": 60.0,
+            "train_mse_scaled": 0.0013422459994612993,
+            "val_mse_scaled": 0.9874101464415881
+          },
+          {
+            "epoch": 70.0,
+            "train_mse_scaled": 0.001894390786679768,
+            "val_mse_scaled": 0.968271449692267
+          }
+        ]
+      }
+    }
+  },
+  "decision_quantities": {
+    "scalar_accuracy": 0.6680942184154176,
+    "continuous_accuracy": 0.6723768736616702,
+    "hybrid_accuracy": 0.6616702355460385,
+    "scalar_regret": 0.39197537473233407,
+    "continuous_regret": 0.3875802997858672,
+    "hybrid_regret": 0.3988865096359744,
+    "continuous_unsafe_wrong": 0.10278372591006424,
+    "hybrid_unsafe_wrong": 0.09850107066381156,
+    "continuous_severe_miss": 0.04925053533190578,
+    "hybrid_severe_miss": 0.04068522483940043,
+    "continuous_select_rmse": 0.3786863312634033,
+    "hybrid_select_rmse": 0.3421456448150312
+  },
+  "finding": "PIONEER_MLP_ABSORBS_GATE"
+}

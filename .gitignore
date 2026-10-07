@@ -1,5 +1,8 @@
-# Build artifacts from build.ps1 / build.sh (regeneratable from .md source)
-/build/
+# Build artifacts from build.ps1 / build.sh (regeneratable from .md source).
+# Keep build/utils/ — shared maintenance scripts (add_internal_links.py), not
+# regeneratable and shared verbatim with the ConductorBlindSpot paper.
+/build/*
+!/build/utils/
 
 # Final PDF (regeneratable from .md source). Drop this line if you prefer to
 # commit the PDF alongside the markdown.
@@ -22,3 +25,41 @@ venv/
 *.synctex.gz
 *.toc
 *.xdv
+
+# ---- Large / regenerable / third-party (excluded from public sync) ----
+# Tooling, environments, caches, agent worktrees
+.claude/
+.venv/
+.uv-cache/
+.uv-python/
+node_modules/
+# Lean build output and fetched mathlib (re-fetch with `lake`)
+lean/**/.lake/
+# Model weights, activation dumps, arrays, archives
+*.safetensors
+*.npy
+*.npz
+*.pt
+*.pth
+*.ckpt
+*.zip
+# Regenerable GCP / activation-manifold experiment outputs
+/months/
+/weekdays/
+/empirical/data/
+/empirical/vec2vec_arrays_dl/
+# Machine-generated metric logs (Zenodo polling deltas)
+/zenodo-metrics/
+# Scratch
+2605.01148v1.txt
+ztrack_out.txt
+
+# Third-party / copyrighted material (not ours to republish)
+*libgen*
+/_ay_jost_IG.pdf
+/pitch_spatial_web_foundation.pdf
+/references/synergetics_cookbook_v0.14_fulltext.txt
+/references/fuller_synergetics_427_ultra_micro_computer.md
+*TEMPhk.txt
+# Large regenerable reports
+f4_u2_ext_orbits.json

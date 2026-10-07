@@ -1,0 +1,981 @@
+{
+  "purpose": "Odd-prime real-basis verification of packet-local invariance for non-top packets in F_p[u]/(u^k).",
+  "config": {
+    "cases": [
+      [
+        3,
+        3,
+        2
+      ],
+      [
+        3,
+        4,
+        2
+      ],
+      [
+        3,
+        4,
+        3
+      ],
+      [
+        5,
+        3,
+        2
+      ]
+    ],
+    "alphas": [
+      0.35,
+      0.75
+    ]
+  },
+  "results": [
+    {
+      "p": 3,
+      "k": 3,
+      "packet_s": 2,
+      "alpha": 0.35,
+      "embedded_row": "F_3[u]/(u^3)",
+      "reference_row": "F_3[u]/(u^2)",
+      "target_packet": "u^2",
+      "embedded_dim": 26,
+      "reference_dim": 8,
+      "prefix_dim": 8,
+      "embedded_packet_sizes": [
+        2,
+        6,
+        18
+      ],
+      "reference_packet_sizes": [
+        2,
+        6
+      ],
+      "prefix_columns_match_reference": true,
+      "within_prefix_block_diff": 6.661338147750939e-16,
+      "cross_prefix_block_max_abs": 2.225529285059814e-17,
+      "reference_mu": {
+        "max_mu": 0.0928873665375968,
+        "best": {
+          "pair": [
+            0,
+            6
+          ],
+          "packet_pair": [
+            1,
+            2
+          ],
+          "class": "in",
+          "derivative": 0.1857747330751936,
+          "mu": 0.0928873665375968
+        },
+        "class_max_descent": {
+          "in": 0.1857747330751936,
+          "out": 0.0,
+          "beyond": 0.0
+        },
+        "class_best": {
+          "in": {
+            "pair": [
+              0,
+              6
+            ],
+            "packet_pair": [
+              1,
+              2
+            ],
+            "derivative": 0.1857747330751936,
+            "mu": 0.0928873665375968
+          },
+          "out": null,
+          "beyond": null
+        }
+      },
+      "embedded_mu": {
+        "max_mu": 0.09288736653759666,
+        "best": {
+          "pair": [
+            0,
+            4
+          ],
+          "packet_pair": [
+            1,
+            2
+          ],
+          "class": "in",
+          "derivative": 0.18577473307519332,
+          "mu": 0.09288736653759666
+        },
+        "class_max_descent": {
+          "in": 0.18577473307519332,
+          "out": 3.406215202878119e-17,
+          "beyond": 0.0
+        },
+        "class_best": {
+          "in": {
+            "pair": [
+              0,
+              4
+            ],
+            "packet_pair": [
+              1,
+              2
+            ],
+            "derivative": 0.18577473307519332,
+            "mu": 0.09288736653759666
+          },
+          "out": {
+            "pair": [
+              0,
+              25
+            ],
+            "packet_pair": [
+              1,
+              3
+            ],
+            "derivative": -3.406215202878119e-17,
+            "mu": 1.7031076014390596e-17
+          },
+          "beyond": null
+        }
+      },
+      "mu_diff_vs_reference": 1.3877787807814457e-16,
+      "theorem_3_13_complex_envelope_for_reference": 0.0464436832687983,
+      "theorem_3_13_real_envelope_for_reference": 0.0928873665375966,
+      "reference_mu_diff_vs_formula": 1.942890293094024e-16,
+      "real_to_complex_factor_observed": 2.000000000000004,
+      "pass": true
+    },
+    {
+      "p": 3,
+      "k": 3,
+      "packet_s": 2,
+      "alpha": 0.75,
+      "embedded_row": "F_3[u]/(u^3)",
+      "reference_row": "F_3[u]/(u^2)",
+      "target_packet": "u^2",
+      "embedded_dim": 26,
+      "reference_dim": 8,
+      "prefix_dim": 8,
+      "embedded_packet_sizes": [
+        2,
+        6,
+        18
+      ],
+      "reference_packet_sizes": [
+        2,
+        6
+      ],
+      "prefix_columns_match_reference": true,
+      "within_prefix_block_diff": 6.661338147750939e-16,
+      "cross_prefix_block_max_abs": 8.979499389397785e-17,
+      "reference_mu": {
+        "max_mu": 0.7310862121513784,
+        "best": {
+          "pair": [
+            0,
+            6
+          ],
+          "packet_pair": [
+            1,
+            2
+          ],
+          "class": "in",
+          "derivative": 1.4621724243027567,
+          "mu": 0.7310862121513784
+        },
+        "class_max_descent": {
+          "in": 1.4621724243027567,
+          "out": 0.0,
+          "beyond": 0.0
+        },
+        "class_best": {
+          "in": {
+            "pair": [
+              0,
+              6
+            ],
+            "packet_pair": [
+              1,
+              2
+            ],
+            "derivative": 1.4621724243027567,
+            "mu": 0.7310862121513784
+          },
+          "out": null,
+          "beyond": null
+        }
+      },
+      "embedded_mu": {
+        "max_mu": 0.7310862121513781,
+        "best": {
+          "pair": [
+            0,
+            2
+          ],
+          "packet_pair": [
+            1,
+            2
+          ],
+          "class": "in",
+          "derivative": 1.4621724243027563,
+          "mu": 0.7310862121513781
+        },
+        "class_max_descent": {
+          "in": 1.4621724243027563,
+          "out": 6.331142269973534e-16,
+          "beyond": 0.0
+        },
+        "class_best": {
+          "in": {
+            "pair": [
+              0,
+              2
+            ],
+            "packet_pair": [
+              1,
+              2
+            ],
+            "derivative": 1.4621724243027563,
+            "mu": 0.7310862121513781
+          },
+          "out": {
+            "pair": [
+              0,
+              10
+            ],
+            "packet_pair": [
+              1,
+              3
+            ],
+            "derivative": 6.331142269973534e-16,
+            "mu": 3.165571134986767e-16
+          },
+          "beyond": null
+        }
+      },
+      "mu_diff_vs_reference": 2.220446049250313e-16,
+      "theorem_3_13_complex_envelope_for_reference": 0.3655431060756893,
+      "theorem_3_13_real_envelope_for_reference": 0.7310862121513786,
+      "reference_mu_diff_vs_formula": 2.220446049250313e-16,
+      "real_to_complex_factor_observed": 1.9999999999999993,
+      "pass": true
+    },
+    {
+      "p": 3,
+      "k": 4,
+      "packet_s": 2,
+      "alpha": 0.35,
+      "embedded_row": "F_3[u]/(u^4)",
+      "reference_row": "F_3[u]/(u^2)",
+      "target_packet": "u^2",
+      "embedded_dim": 80,
+      "reference_dim": 8,
+      "prefix_dim": 8,
+      "embedded_packet_sizes": [
+        2,
+        6,
+        18,
+        54
+      ],
+      "reference_packet_sizes": [
+        2,
+        6
+      ],
+      "prefix_columns_match_reference": true,
+      "within_prefix_block_diff": 6.661338147750939e-16,
+      "cross_prefix_block_max_abs": 3.652377278152747e-17,
+      "reference_mu": {
+        "max_mu": 0.0928873665375968,
+        "best": {
+          "pair": [
+            0,
+            6
+          ],
+          "packet_pair": [
+            1,
+            2
+          ],
+          "class": "in",
+          "derivative": 0.1857747330751936,
+          "mu": 0.0928873665375968
+        },
+        "class_max_descent": {
+          "in": 0.1857747330751936,
+          "out": 0.0,
+          "beyond": 0.0
+        },
+        "class_best": {
+          "in": {
+            "pair": [
+              0,
+              6
+            ],
+            "packet_pair": [
+              1,
+              2
+            ],
+            "derivative": 0.1857747330751936,
+            "mu": 0.0928873665375968
+          },
+          "out": null,
+          "beyond": null
+        }
+      },
+      "embedded_mu": {
+        "max_mu": 0.09288736653759684,
+        "best": {
+          "pair": [
+            0,
+            2
+          ],
+          "packet_pair": [
+            1,
+            2
+          ],
+          "class": "in",
+          "derivative": 0.18577473307519368,
+          "mu": 0.09288736653759684
+        },
+        "class_max_descent": {
+          "in": 0.18577473307519368,
+          "out": 6.811782653602003e-17,
+          "beyond": 1.9830636272301667e-17
+        },
+        "class_best": {
+          "in": {
+            "pair": [
+              0,
+              2
+            ],
+            "packet_pair": [
+              1,
+              2
+            ],
+            "derivative": 0.18577473307519368,
+            "mu": 0.09288736653759684
+          },
+          "out": {
+            "pair": [
+              0,
+              14
+            ],
+            "packet_pair": [
+              1,
+              3
+            ],
+            "derivative": 6.811782653602003e-17,
+            "mu": 3.4058913268010015e-17
+          },
+          "beyond": {
+            "pair": [
+              13,
+              26
+            ],
+            "packet_pair": [
+              3,
+              4
+            ],
+            "derivative": -1.9830636272301667e-17,
+            "mu": 9.915318136150834e-18
+          }
+        }
+      },
+      "mu_diff_vs_reference": 4.163336342344337e-17,
+      "theorem_3_13_complex_envelope_for_reference": 0.0464436832687983,
+      "theorem_3_13_real_envelope_for_reference": 0.0928873665375966,
+      "reference_mu_diff_vs_formula": 1.942890293094024e-16,
+      "real_to_complex_factor_observed": 2.000000000000004,
+      "pass": true
+    },
+    {
+      "p": 3,
+      "k": 4,
+      "packet_s": 2,
+      "alpha": 0.75,
+      "embedded_row": "F_3[u]/(u^4)",
+      "reference_row": "F_3[u]/(u^2)",
+      "target_packet": "u^2",
+      "embedded_dim": 80,
+      "reference_dim": 8,
+      "prefix_dim": 8,
+      "embedded_packet_sizes": [
+        2,
+        6,
+        18,
+        54
+      ],
+      "reference_packet_sizes": [
+        2,
+        6
+      ],
+      "prefix_columns_match_reference": true,
+      "within_prefix_block_diff": 8.881784197001252e-16,
+      "cross_prefix_block_max_abs": 8.586701832042333e-17,
+      "reference_mu": {
+        "max_mu": 0.7310862121513784,
+        "best": {
+          "pair": [
+            0,
+            6
+          ],
+          "packet_pair": [
+            1,
+            2
+          ],
+          "class": "in",
+          "derivative": 1.4621724243027567,
+          "mu": 0.7310862121513784
+        },
+        "class_max_descent": {
+          "in": 1.4621724243027567,
+          "out": 0.0,
+          "beyond": 0.0
+        },
+        "class_best": {
+          "in": {
+            "pair": [
+              0,
+              6
+            ],
+            "packet_pair": [
+              1,
+              2
+            ],
+            "derivative": 1.4621724243027567,
+            "mu": 0.7310862121513784
+          },
+          "out": null,
+          "beyond": null
+        }
+      },
+      "embedded_mu": {
+        "max_mu": 0.7310862121513786,
+        "best": {
+          "pair": [
+            0,
+            2
+          ],
+          "packet_pair": [
+            1,
+            2
+          ],
+          "class": "in",
+          "derivative": 1.4621724243027572,
+          "mu": 0.7310862121513786
+        },
+        "class_max_descent": {
+          "in": 1.4621724243027572,
+          "out": 5.180921079487415e-16,
+          "beyond": 1.3060822142984465e-16
+        },
+        "class_best": {
+          "in": {
+            "pair": [
+              0,
+              2
+            ],
+            "packet_pair": [
+              1,
+              2
+            ],
+            "derivative": 1.4621724243027572,
+            "mu": 0.7310862121513786
+          },
+          "out": {
+            "pair": [
+              0,
+              14
+            ],
+            "packet_pair": [
+              1,
+              3
+            ],
+            "derivative": 5.180921079487415e-16,
+            "mu": 2.5904605397437074e-16
+          },
+          "beyond": {
+            "pair": [
+              10,
+              26
+            ],
+            "packet_pair": [
+              3,
+              4
+            ],
+            "derivative": 1.3060822142984465e-16,
+            "mu": 6.530411071492232e-17
+          }
+        }
+      },
+      "mu_diff_vs_reference": 2.220446049250313e-16,
+      "theorem_3_13_complex_envelope_for_reference": 0.3655431060756893,
+      "theorem_3_13_real_envelope_for_reference": 0.7310862121513786,
+      "reference_mu_diff_vs_formula": 2.220446049250313e-16,
+      "real_to_complex_factor_observed": 1.9999999999999993,
+      "pass": true
+    },
+    {
+      "p": 3,
+      "k": 4,
+      "packet_s": 3,
+      "alpha": 0.35,
+      "embedded_row": "F_3[u]/(u^4)",
+      "reference_row": "F_3[u]/(u^3)",
+      "target_packet": "u^3",
+      "embedded_dim": 80,
+      "reference_dim": 26,
+      "prefix_dim": 26,
+      "embedded_packet_sizes": [
+        2,
+        6,
+        18,
+        54
+      ],
+      "reference_packet_sizes": [
+        2,
+        6,
+        18
+      ],
+      "prefix_columns_match_reference": true,
+      "within_prefix_block_diff": 2.548404234162045e-16,
+      "cross_prefix_block_max_abs": 1.5560764176195917e-17,
+      "reference_mu": {
+        "max_mu": 0.03096245551253218,
+        "best": {
+          "pair": [
+            6,
+            10
+          ],
+          "packet_pair": [
+            2,
+            3
+          ],
+          "class": "in",
+          "derivative": 0.06192491102506436,
+          "mu": 0.03096245551253218
+        },
+        "class_max_descent": {
+          "in": 0.06192491102506436,
+          "out": 0.0,
+          "beyond": 0.0
+        },
+        "class_best": {
+          "in": {
+            "pair": [
+              6,
+              10
+            ],
+            "packet_pair": [
+              2,
+              3
+            ],
+            "derivative": 0.06192491102506436,
+            "mu": 0.03096245551253218
+          },
+          "out": null,
+          "beyond": null
+        }
+      },
+      "embedded_mu": {
+        "max_mu": 0.030962455512532277,
+        "best": {
+          "pair": [
+            4,
+            8
+          ],
+          "packet_pair": [
+            2,
+            3
+          ],
+          "class": "in",
+          "derivative": 0.061924911025064554,
+          "mu": 0.030962455512532277
+        },
+        "class_max_descent": {
+          "in": 0.061924911025064554,
+          "out": 1.9717508730485013e-17,
+          "beyond": 0.0
+        },
+        "class_best": {
+          "in": {
+            "pair": [
+              4,
+              8
+            ],
+            "packet_pair": [
+              2,
+              3
+            ],
+            "derivative": 0.061924911025064554,
+            "mu": 0.030962455512532277
+          },
+          "out": {
+            "pair": [
+              9,
+              26
+            ],
+            "packet_pair": [
+              3,
+              4
+            ],
+            "derivative": 1.9717508730485013e-17,
+            "mu": 9.858754365242506e-18
+          },
+          "beyond": null
+        }
+      },
+      "mu_diff_vs_reference": 9.71445146547012e-17,
+      "theorem_3_13_complex_envelope_for_reference": 0.015481227756266099,
+      "theorem_3_13_real_envelope_for_reference": 0.030962455512532197,
+      "reference_mu_diff_vs_formula": 1.734723475976807e-17,
+      "real_to_complex_factor_observed": 1.999999999999999,
+      "pass": true
+    },
+    {
+      "p": 3,
+      "k": 4,
+      "packet_s": 3,
+      "alpha": 0.75,
+      "embedded_row": "F_3[u]/(u^4)",
+      "reference_row": "F_3[u]/(u^3)",
+      "target_packet": "u^3",
+      "embedded_dim": 80,
+      "reference_dim": 26,
+      "prefix_dim": 26,
+      "embedded_packet_sizes": [
+        2,
+        6,
+        18,
+        54
+      ],
+      "reference_packet_sizes": [
+        2,
+        6,
+        18
+      ],
+      "prefix_columns_match_reference": true,
+      "within_prefix_block_diff": 2.548404234162045e-16,
+      "cross_prefix_block_max_abs": 3.6523772781527477e-17,
+      "reference_mu": {
+        "max_mu": 0.4189240041057897,
+        "best": {
+          "pair": [
+            0,
+            6
+          ],
+          "packet_pair": [
+            1,
+            2
+          ],
+          "class": "in",
+          "derivative": 0.8378480082115795,
+          "mu": 0.4189240041057897
+        },
+        "class_max_descent": {
+          "in": 0.8378480082115795,
+          "out": 0.0,
+          "beyond": 0.0
+        },
+        "class_best": {
+          "in": {
+            "pair": [
+              0,
+              6
+            ],
+            "packet_pair": [
+              1,
+              2
+            ],
+            "derivative": 0.8378480082115795,
+            "mu": 0.4189240041057897
+          },
+          "out": null,
+          "beyond": null
+        }
+      },
+      "embedded_mu": {
+        "max_mu": 0.41892400410578945,
+        "best": {
+          "pair": [
+            0,
+            2
+          ],
+          "packet_pair": [
+            1,
+            2
+          ],
+          "class": "in",
+          "derivative": 0.8378480082115789,
+          "mu": 0.41892400410578945
+        },
+        "class_max_descent": {
+          "in": 0.8378480082115789,
+          "out": 2.0975293114073842e-16,
+          "beyond": 0.0
+        },
+        "class_best": {
+          "in": {
+            "pair": [
+              0,
+              2
+            ],
+            "packet_pair": [
+              1,
+              2
+            ],
+            "derivative": 0.8378480082115789,
+            "mu": 0.41892400410578945
+          },
+          "out": {
+            "pair": [
+              2,
+              48
+            ],
+            "packet_pair": [
+              2,
+              4
+            ],
+            "derivative": 2.0975293114073842e-16,
+            "mu": 1.0487646557036921e-16
+          },
+          "beyond": null
+        }
+      },
+      "mu_diff_vs_reference": 2.7755575615628914e-16,
+      "theorem_3_13_complex_envelope_for_reference": 0.20946200205289486,
+      "theorem_3_13_real_envelope_for_reference": 0.4189240041057897,
+      "reference_mu_diff_vs_formula": 0.0,
+      "real_to_complex_factor_observed": 2.0,
+      "pass": true
+    },
+    {
+      "p": 5,
+      "k": 3,
+      "packet_s": 2,
+      "alpha": 0.35,
+      "embedded_row": "F_5[u]/(u^3)",
+      "reference_row": "F_5[u]/(u^2)",
+      "target_packet": "u^2",
+      "embedded_dim": 124,
+      "reference_dim": 24,
+      "prefix_dim": 24,
+      "embedded_packet_sizes": [
+        4,
+        20,
+        100
+      ],
+      "reference_packet_sizes": [
+        4,
+        20
+      ],
+      "prefix_columns_match_reference": true,
+      "within_prefix_block_diff": 2.4424906541753444e-15,
+      "cross_prefix_block_max_abs": 1.9157376775520255e-17,
+      "reference_mu": {
+        "max_mu": 0.09996717383590303,
+        "best": {
+          "pair": [
+            0,
+            4
+          ],
+          "packet_pair": [
+            1,
+            2
+          ],
+          "class": "in",
+          "derivative": 0.19993434767180607,
+          "mu": 0.09996717383590303
+        },
+        "class_max_descent": {
+          "in": 0.19993434767180607,
+          "out": 0.0,
+          "beyond": 0.0
+        },
+        "class_best": {
+          "in": {
+            "pair": [
+              0,
+              4
+            ],
+            "packet_pair": [
+              1,
+              2
+            ],
+            "derivative": 0.19993434767180607,
+            "mu": 0.09996717383590303
+          },
+          "out": null,
+          "beyond": null
+        }
+      },
+      "embedded_mu": {
+        "max_mu": 0.0999671738359035,
+        "best": {
+          "pair": [
+            2,
+            8
+          ],
+          "packet_pair": [
+            1,
+            2
+          ],
+          "class": "in",
+          "derivative": 0.199934347671807,
+          "mu": 0.0999671738359035
+        },
+        "class_max_descent": {
+          "in": 0.199934347671807,
+          "out": 2.339930832788907e-17,
+          "beyond": 0.0
+        },
+        "class_best": {
+          "in": {
+            "pair": [
+              2,
+              8
+            ],
+            "packet_pair": [
+              1,
+              2
+            ],
+            "derivative": 0.199934347671807,
+            "mu": 0.0999671738359035
+          },
+          "out": {
+            "pair": [
+              18,
+              42
+            ],
+            "packet_pair": [
+              2,
+              3
+            ],
+            "derivative": -2.339930832788907e-17,
+            "mu": 1.1699654163944536e-17
+          },
+          "beyond": null
+        }
+      },
+      "mu_diff_vs_reference": 4.718447854656915e-16,
+      "theorem_3_13_complex_envelope_for_reference": 0.04998358691795148,
+      "theorem_3_13_real_envelope_for_reference": 0.09996717383590296,
+      "reference_mu_diff_vs_formula": 6.938893903907228e-17,
+      "real_to_complex_factor_observed": 2.0000000000000013,
+      "pass": true
+    },
+    {
+      "p": 5,
+      "k": 3,
+      "packet_s": 2,
+      "alpha": 0.75,
+      "embedded_row": "F_5[u]/(u^3)",
+      "reference_row": "F_5[u]/(u^2)",
+      "target_packet": "u^2",
+      "embedded_dim": 124,
+      "reference_dim": 24,
+      "prefix_dim": 24,
+      "embedded_packet_sizes": [
+        4,
+        20,
+        100
+      ],
+      "reference_packet_sizes": [
+        4,
+        20
+      ],
+      "prefix_columns_match_reference": true,
+      "within_prefix_block_diff": 1.3322676295501878e-15,
+      "cross_prefix_block_max_abs": 4.390089973536017e-17,
+      "reference_mu": {
+        "max_mu": 0.8055061134578974,
+        "best": {
+          "pair": [
+            0,
+            10
+          ],
+          "packet_pair": [
+            1,
+            2
+          ],
+          "class": "in",
+          "derivative": 1.6110122269157947,
+          "mu": 0.8055061134578974
+        },
+        "class_max_descent": {
+          "in": 1.6110122269157947,
+          "out": 0.0,
+          "beyond": 0.0
+        },
+        "class_best": {
+          "in": {
+            "pair": [
+              0,
+              10
+            ],
+            "packet_pair": [
+              1,
+              2
+            ],
+            "derivative": 1.6110122269157947,
+            "mu": 0.8055061134578974
+          },
+          "out": null,
+          "beyond": null
+        }
+      },
+      "embedded_mu": {
+        "max_mu": 0.8055061134578979,
+        "best": {
+          "pair": [
+            0,
+            12
+          ],
+          "packet_pair": [
+            1,
+            2
+          ],
+          "class": "in",
+          "derivative": 1.6110122269157958,
+          "mu": 0.8055061134578979
+        },
+        "class_max_descent": {
+          "in": 1.6110122269157958,
+          "out": 3.895279391463405e-16,
+          "beyond": 0.0
+        },
+        "class_best": {
+          "in": {
+            "pair": [
+              0,
+              12
+            ],
+            "packet_pair": [
+              1,
+              2
+            ],
+            "derivative": 1.6110122269157958,
+            "mu": 0.8055061134578979
+          },
+          "out": {
+            "pair": [
+              0,
+              75
+            ],
+            "packet_pair": [
+              1,
+              3
+            ],
+            "derivative": -3.895279391463405e-16,
+            "mu": 1.9476396957317025e-16
+          },
+          "beyond": null
+        }
+      },
+      "mu_diff_vs_reference": 5.551115123125783e-16,
+      "theorem_3_13_complex_envelope_for_reference": 0.4027530567289483,
+      "theorem_3_13_real_envelope_for_reference": 0.8055061134578966,
+      "reference_mu_diff_vs_formula": 7.771561172376096e-16,
+      "real_to_complex_factor_observed": 2.0000000000000018,
+      "pass": true
+    }
+  ]
+}

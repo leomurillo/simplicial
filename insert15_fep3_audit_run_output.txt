@@ -1,0 +1,99 @@
+==============================================================================
+ INSERT 15 / item FEP-3  --  Gradient-vs-Least-Action Fork Audit
+ Rung 3 of INSERT 14. Tests whether Friston's open fork resolves
+ SECTOR-WISE on the Z/6 categorical-belief simplex, FORCED by
+ Paper 17 Remark 5.0A's exact additive-character selection rule.
+ Deterministic, exact integer arithmetic. No fitted model.
+==============================================================================
+
+[Anchored packet split -- Paper 17 Remark 5.0A, verbatim]
+  A_2 = [3]      dim_R = 1   (Cartan, single-prime)
+  A_3 = [2, 4]   dim_R = 2   (Cartan, single-prime)
+  M   = [1, 5]   dim_R = 2   (mixed conductor-6, leakage/jerk)
+  Selection rule: T_(k,l,m) != 0  IFF  k+l+m == 0 (mod 6)
+  Cartan/least-action-protected sector = A_2 (+) A_3 = [2, 3, 4]
+  Leakage packet (residual/jerk)        = M        = [1, 5]
+
+[Surviving cubic couplings by packet occupancy]
+  total ordered triples passing selection rule: 20
+    ('A2', 'A3', 'M') : 12
+    ('A3', 'A3', 'A3') : 2
+    ('A3', 'M', 'M') : 6
+
+[Diagnostic sets]
+  pure A_3 self-couplings (A3,A3,A3) : [(2, 2, 2), (4, 4, 4)]
+  pure A_2 self-couplings (A2,A2,A2) : []   (expected EMPTY: 3+3+3=9 !=0 mod 6)
+  pure M  self-couplings (M,M,M)     : []
+  A_2<->A_3 transfers NOT via M      : []   (expected EMPTY)
+  A_2<->A_3 transfers via M          : [(1, 2, 3), (1, 3, 2), (2, 1, 3), (2, 3, 1), (3, 1, 2), (3, 2, 1), (3, 4, 5), (3, 5, 4), (4, 3, 5), (4, 5, 3), (5, 3, 4), (5, 4, 3)]
+  couplings involving M (leakage)    : 18
+
+[FEP-3 conditions]
+  (a) pure-A_3 cubic self-coupling EXISTS         : True
+  (b) NO pure-A_2 cubic self-coupling             : True
+  (c) every A_2<->A_3 transfer REQUIRES M         : True
+  (d) leakage set = exactly the M-involving set,
+      and it is the proper complement of Cartan   : True
+
+==============================================================================
+ VERDICT
+==============================================================================
+  >>> FEP-3 CONFIRMED ON THE FINITE INSTANCE (pre-claimed branch A).
+
+  Friston's open fork ('gradient flows or least action?')
+  resolves SECTOR-WISE on the Z/6 categorical-belief simplex,
+  and the resolution is FORCED by Paper 17 Remark 5.0A's
+  additive-character selection rule -- not fitted:
+
+   - The conservative (least-action) cubic content lives on
+     the symmetry-protected Cartan sector: the pure-A_3
+     self-coupling closes through (2,2,2) and (4,4,4); the
+     pure-A_2 self-coupling is ABSENT (3+3+3 != 0 mod 6) --
+     consistent with, not contradicting, the abelian
+     truncation (Paper 17 Cor 2.4).
+   - The conserved sector CANNOT self-close across the
+     A_2/A_3 split without routing through the mixed packet
+     M: every A_2<->A_3 transfer requires M.
+   - M is exactly the complement: the non-conserved
+     residual/leakage channel (the jerk nabla^(e)T,
+     Paper 15). It is forced, not chosen.
+
+  CONTRIBUTION TO FEP / ACTIVE INFERENCE (bounded, INSERT 14
+  FEP-3 tier [A], generality NOT claimed):
+   In the canonical discrete-state active-inference setting
+   (categorical beliefs on a ring-structured outcome index),
+   the gradient-vs-least-action question is a FALSE
+   DICHOTOMY under the positivity constraint. The correct
+   structural answer is: least-action on the symmetry-
+   protected sub-sector, gradient-like leakage off it, with
+   the boundary set by positive-cone preservation and the
+   leakage channel = the mixed conductor packet. This is a
+   finite, EXACT, reproducible resolution of a fork the FEP
+   stack poses and leaves open -- a contribution, not a
+   rhyme. STRICT BOUND: proven here only at cubic order on
+   Z/6; the general fork is NOT claimed closed (FEP-3
+   falsifier: a non-Cartan sector admitting an admissible
+   classical variational charge at higher order/row would
+   break the generalization).
+
+==============================================================================
+ FIREWALL SELF-CHECK (INSERT 04 sec 1.4, inherited; binding)
+==============================================================================
+  PASS: this audit emits only (i) integer counts of cubic
+  couplings passing an exact mod-6 selection rule and (ii) a
+  packet-occupancy classification. No mass, length, energy,
+  time, charge magnitude, no c/hbar/G/alpha, and NO physical
+  free-energy VALUE. The 'least-action vs gradient' result is
+  STRUCTURAL (which sector carries the conserved form), not a
+  numerical free-energy or a dynamical-systems claim about any
+  specific active-inference agent. No TOE-equivalence or
+  validation transfer to/from the FEP stack is asserted
+  (INSERT 14 sec 3, pre-claimed non-crossing).
+
+==============================================================================
+ Status: deterministic run complete. Exact integer arithmetic;
+ no seeds, tolerances, or floating point. Both branches were
+ pre-claimed; the realized branch is a STATED result. The audit
+ tests Paper 17 Remark 5.0A's own selection rule, not a
+ reconstruction of it.
+==============================================================================

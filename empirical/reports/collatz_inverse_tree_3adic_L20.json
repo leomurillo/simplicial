@@ -1,0 +1,1722 @@
+{
+  "settings": {
+    "max_length": 20
+  },
+  "branch_audits": [
+    {
+      "label": "inverse D/U from seed 1",
+      "system": "inverse",
+      "seed": 1,
+      "max_length": 20,
+      "selected_rows": [
+        {
+          "length": 1,
+          "total_words": 2,
+          "integer_word_count": 2,
+          "integer_word_density": 1.0,
+          "noninteger_word_count": 0,
+          "distinct_integer_endpoints": 2,
+          "top_denominator_exponents": [
+            {
+              "denominator_exponent": 0,
+              "count": 2
+            }
+          ]
+        },
+        {
+          "length": 2,
+          "total_words": 4,
+          "integer_word_count": 2,
+          "integer_word_density": 0.5,
+          "noninteger_word_count": 2,
+          "distinct_integer_endpoints": 2,
+          "top_denominator_exponents": [
+            {
+              "denominator_exponent": 0,
+              "count": 2
+            },
+            {
+              "denominator_exponent": 1,
+              "count": 2
+            }
+          ]
+        },
+        {
+          "length": 3,
+          "total_words": 8,
+          "integer_word_count": 3,
+          "integer_word_density": 0.375,
+          "noninteger_word_count": 5,
+          "distinct_integer_endpoints": 3,
+          "top_denominator_exponents": [
+            {
+              "denominator_exponent": 0,
+              "count": 3
+            },
+            {
+              "denominator_exponent": 1,
+              "count": 3
+            },
+            {
+              "denominator_exponent": 2,
+              "count": 2
+            }
+          ]
+        },
+        {
+          "length": 4,
+          "total_words": 16,
+          "integer_word_count": 4,
+          "integer_word_density": 0.25,
+          "noninteger_word_count": 12,
+          "distinct_integer_endpoints": 3,
+          "top_denominator_exponents": [
+            {
+              "denominator_exponent": 1,
+              "count": 5
+            },
+            {
+              "denominator_exponent": 2,
+              "count": 5
+            },
+            {
+              "denominator_exponent": 0,
+              "count": 4
+            },
+            {
+              "denominator_exponent": 3,
+              "count": 2
+            }
+          ]
+        },
+        {
+          "length": 5,
+          "total_words": 32,
+          "integer_word_count": 5,
+          "integer_word_density": 0.15625,
+          "noninteger_word_count": 27,
+          "distinct_integer_endpoints": 4,
+          "top_denominator_exponents": [
+            {
+              "denominator_exponent": 2,
+              "count": 10
+            },
+            {
+              "denominator_exponent": 1,
+              "count": 8
+            },
+            {
+              "denominator_exponent": 3,
+              "count": 7
+            },
+            {
+              "denominator_exponent": 0,
+              "count": 5
+            },
+            {
+              "denominator_exponent": 4,
+              "count": 2
+            }
+          ]
+        },
+        {
+          "length": 8,
+          "total_words": 256,
+          "integer_word_count": 10,
+          "integer_word_density": 0.0390625,
+          "noninteger_word_count": 246,
+          "distinct_integer_endpoints": 8,
+          "top_denominator_exponents": [
+            {
+              "denominator_exponent": 3,
+              "count": 65
+            },
+            {
+              "denominator_exponent": 4,
+              "count": 61
+            },
+            {
+              "denominator_exponent": 2,
+              "count": 45
+            },
+            {
+              "denominator_exponent": 5,
+              "count": 37
+            },
+            {
+              "denominator_exponent": 1,
+              "count": 23
+            },
+            {
+              "denominator_exponent": 6,
+              "count": 13
+            },
+            {
+              "denominator_exponent": 0,
+              "count": 10
+            },
+            {
+              "denominator_exponent": 7,
+              "count": 2
+            }
+          ]
+        },
+        {
+          "length": 10,
+          "total_words": 1024,
+          "integer_word_count": 18,
+          "integer_word_density": 0.017578125,
+          "noninteger_word_count": 1006,
+          "distinct_integer_endpoints": 15,
+          "top_denominator_exponents": [
+            {
+              "denominator_exponent": 4,
+              "count": 236
+            },
+            {
+              "denominator_exponent": 5,
+              "count": 224
+            },
+            {
+              "denominator_exponent": 3,
+              "count": 178
+            },
+            {
+              "denominator_exponent": 6,
+              "count": 148
+            },
+            {
+              "denominator_exponent": 2,
+              "count": 98
+            },
+            {
+              "denominator_exponent": 7,
+              "count": 65
+            },
+            {
+              "denominator_exponent": 1,
+              "count": 38
+            },
+            {
+              "denominator_exponent": 0,
+              "count": 18
+            }
+          ]
+        },
+        {
+          "length": 12,
+          "total_words": 4096,
+          "integer_word_count": 29,
+          "integer_word_density": 0.007080078125,
+          "noninteger_word_count": 4067,
+          "distinct_integer_endpoints": 25,
+          "top_denominator_exponents": [
+            {
+              "denominator_exponent": 5,
+              "count": 874
+            },
+            {
+              "denominator_exponent": 6,
+              "count": 832
+            },
+            {
+              "denominator_exponent": 4,
+              "count": 690
+            },
+            {
+              "denominator_exponent": 7,
+              "count": 585
+            },
+            {
+              "denominator_exponent": 3,
+              "count": 412
+            },
+            {
+              "denominator_exponent": 8,
+              "count": 295
+            },
+            {
+              "denominator_exponent": 2,
+              "count": 187
+            },
+            {
+              "denominator_exponent": 9,
+              "count": 101
+            }
+          ]
+        },
+        {
+          "length": 14,
+          "total_words": 16384,
+          "integer_word_count": 51,
+          "integer_word_density": 0.003112792969,
+          "noninteger_word_count": 16333,
+          "distinct_integer_endpoints": 44,
+          "top_denominator_exponents": [
+            {
+              "denominator_exponent": 6,
+              "count": 3270
+            },
+            {
+              "denominator_exponent": 7,
+              "count": 3123
+            },
+            {
+              "denominator_exponent": 5,
+              "count": 2666
+            },
+            {
+              "denominator_exponent": 8,
+              "count": 2297
+            },
+            {
+              "denominator_exponent": 4,
+              "count": 1701
+            },
+            {
+              "denominator_exponent": 9,
+              "count": 1276
+            },
+            {
+              "denominator_exponent": 3,
+              "count": 854
+            },
+            {
+              "denominator_exponent": 10,
+              "count": 518
+            }
+          ]
+        },
+        {
+          "length": 16,
+          "total_words": 65536,
+          "integer_word_count": 88,
+          "integer_word_density": 0.001342773438,
+          "noninteger_word_count": 65448,
+          "distinct_integer_endpoints": 76,
+          "top_denominator_exponents": [
+            {
+              "denominator_exponent": 7,
+              "count": 12329
+            },
+            {
+              "denominator_exponent": 8,
+              "count": 11813
+            },
+            {
+              "denominator_exponent": 6,
+              "count": 10303
+            },
+            {
+              "denominator_exponent": 9,
+              "count": 8993
+            },
+            {
+              "denominator_exponent": 5,
+              "count": 6922
+            },
+            {
+              "denominator_exponent": 10,
+              "count": 5367
+            },
+            {
+              "denominator_exponent": 4,
+              "count": 3750
+            },
+            {
+              "denominator_exponent": 11,
+              "count": 2457
+            }
+          ]
+        },
+        {
+          "length": 18,
+          "total_words": 262144,
+          "integer_word_count": 154,
+          "integer_word_density": 0.000587463379,
+          "noninteger_word_count": 261990,
+          "distinct_integer_endpoints": 127,
+          "top_denominator_exponents": [
+            {
+              "denominator_exponent": 8,
+              "count": 46774
+            },
+            {
+              "denominator_exponent": 9,
+              "count": 44948
+            },
+            {
+              "denominator_exponent": 7,
+              "count": 39857
+            },
+            {
+              "denominator_exponent": 10,
+              "count": 35166
+            },
+            {
+              "denominator_exponent": 6,
+              "count": 27897
+            },
+            {
+              "denominator_exponent": 11,
+              "count": 22184
+            },
+            {
+              "denominator_exponent": 5,
+              "count": 16073
+            },
+            {
+              "denominator_exponent": 12,
+              "count": 11114
+            }
+          ]
+        },
+        {
+          "length": 20,
+          "total_words": 1048576,
+          "integer_word_count": 268,
+          "integer_word_density": 0.000255584717,
+          "noninteger_word_count": 1048308,
+          "distinct_integer_endpoints": 215,
+          "top_denominator_exponents": [
+            {
+              "denominator_exponent": 9,
+              "count": 178353
+            },
+            {
+              "denominator_exponent": 10,
+              "count": 171836
+            },
+            {
+              "denominator_exponent": 8,
+              "count": 154385
+            },
+            {
+              "denominator_exponent": 11,
+              "count": 137464
+            },
+            {
+              "denominator_exponent": 7,
+              "count": 111724
+            },
+            {
+              "denominator_exponent": 12,
+              "count": 90648
+            },
+            {
+              "denominator_exponent": 6,
+              "count": 67701
+            },
+            {
+              "denominator_exponent": 13,
+              "count": 48732
+            }
+          ]
+        }
+      ],
+      "final": {
+        "length": 20,
+        "total_words": 1048576,
+        "integer_word_count": 268,
+        "integer_word_density": 0.000255584717,
+        "noninteger_word_count": 1048308,
+        "distinct_integer_endpoints": 215,
+        "top_denominator_exponents": [
+          {
+            "denominator_exponent": 9,
+            "count": 178353
+          },
+          {
+            "denominator_exponent": 10,
+            "count": 171836
+          },
+          {
+            "denominator_exponent": 8,
+            "count": 154385
+          },
+          {
+            "denominator_exponent": 11,
+            "count": 137464
+          },
+          {
+            "denominator_exponent": 7,
+            "count": 111724
+          },
+          {
+            "denominator_exponent": 12,
+            "count": 90648
+          },
+          {
+            "denominator_exponent": 6,
+            "count": 67701
+          },
+          {
+            "denominator_exponent": 13,
+            "count": 48732
+          }
+        ]
+      },
+      "final_integer_sample": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        32,
+        40,
+        42,
+        48,
+        52,
+        53,
+        56,
+        64,
+        68,
+        69,
+        70,
+        72,
+        74,
+        75,
+        80,
+        84,
+        85,
+        88,
+        90
+      ],
+      "final_integer_tail_sample": [
+        4854,
+        16384,
+        20480,
+        21504,
+        21760,
+        21824,
+        21840,
+        21844,
+        21845,
+        24576,
+        26624,
+        27136,
+        27264,
+        27296,
+        27304,
+        27306,
+        28672,
+        28928,
+        28992,
+        29008,
+        29012,
+        29013,
+        29056,
+        29088,
+        29096,
+        29098,
+        29120,
+        29124,
+        29125,
+        29126,
+        131072,
+        163840,
+        172032,
+        174080,
+        174592,
+        174720,
+        174752,
+        174760,
+        174762,
+        1048576
+      ]
+    },
+    {
+      "label": "inverse D/U from seed 2",
+      "system": "inverse",
+      "seed": 2,
+      "max_length": 20,
+      "selected_rows": [
+        {
+          "length": 1,
+          "total_words": 2,
+          "integer_word_count": 1,
+          "integer_word_density": 0.5,
+          "noninteger_word_count": 1,
+          "distinct_integer_endpoints": 1,
+          "top_denominator_exponents": [
+            {
+              "denominator_exponent": 0,
+              "count": 1
+            },
+            {
+              "denominator_exponent": 1,
+              "count": 1
+            }
+          ]
+        },
+        {
+          "length": 2,
+          "total_words": 4,
+          "integer_word_count": 2,
+          "integer_word_density": 0.5,
+          "noninteger_word_count": 2,
+          "distinct_integer_endpoints": 2,
+          "top_denominator_exponents": [
+            {
+              "denominator_exponent": 0,
+              "count": 2
+            },
+            {
+              "denominator_exponent": 1,
+              "count": 1
+            },
+            {
+              "denominator_exponent": 2,
+              "count": 1
+            }
+          ]
+        },
+        {
+          "length": 3,
+          "total_words": 8,
+          "integer_word_count": 3,
+          "integer_word_density": 0.375,
+          "noninteger_word_count": 5,
+          "distinct_integer_endpoints": 3,
+          "top_denominator_exponents": [
+            {
+              "denominator_exponent": 0,
+              "count": 3
+            },
+            {
+              "denominator_exponent": 1,
+              "count": 2
+            },
+            {
+              "denominator_exponent": 2,
+              "count": 2
+            },
+            {
+              "denominator_exponent": 3,
+              "count": 1
+            }
+          ]
+        },
+        {
+          "length": 4,
+          "total_words": 16,
+          "integer_word_count": 4,
+          "integer_word_density": 0.25,
+          "noninteger_word_count": 12,
+          "distinct_integer_endpoints": 4,
+          "top_denominator_exponents": [
+            {
+              "denominator_exponent": 0,
+              "count": 4
+            },
+            {
+              "denominator_exponent": 1,
+              "count": 4
+            },
+            {
+              "denominator_exponent": 2,
+              "count": 4
+            },
+            {
+              "denominator_exponent": 3,
+              "count": 3
+            },
+            {
+              "denominator_exponent": 4,
+              "count": 1
+            }
+          ]
+        },
+        {
+          "length": 5,
+          "total_words": 32,
+          "integer_word_count": 5,
+          "integer_word_density": 0.15625,
+          "noninteger_word_count": 27,
+          "distinct_integer_endpoints": 5,
+          "top_denominator_exponents": [
+            {
+              "denominator_exponent": 2,
+              "count": 8
+            },
+            {
+              "denominator_exponent": 1,
+              "count": 7
+            },
+            {
+              "denominator_exponent": 3,
+              "count": 7
+            },
+            {
+              "denominator_exponent": 0,
+              "count": 5
+            },
+            {
+              "denominator_exponent": 4,
+              "count": 4
+            },
+            {
+              "denominator_exponent": 5,
+              "count": 1
+            }
+          ]
+        },
+        {
+          "length": 8,
+          "total_words": 256,
+          "integer_word_count": 12,
+          "integer_word_density": 0.046875,
+          "noninteger_word_count": 244,
+          "distinct_integer_endpoints": 11,
+          "top_denominator_exponents": [
+            {
+              "denominator_exponent": 4,
+              "count": 56
+            },
+            {
+              "denominator_exponent": 3,
+              "count": 54
+            },
+            {
+              "denominator_exponent": 5,
+              "count": 42
+            },
+            {
+              "denominator_exponent": 2,
+              "count": 40
+            },
+            {
+              "denominator_exponent": 1,
+              "count": 22
+            },
+            {
+              "denominator_exponent": 6,
+              "count": 22
+            },
+            {
+              "denominator_exponent": 0,
+              "count": 12
+            },
+            {
+              "denominator_exponent": 7,
+              "count": 7
+            }
+          ]
+        },
+        {
+          "length": 10,
+          "total_words": 1024,
+          "integer_word_count": 22,
+          "integer_word_density": 0.021484375,
+          "noninteger_word_count": 1002,
+          "distinct_integer_endpoints": 20,
+          "top_denominator_exponents": [
+            {
+              "denominator_exponent": 5,
+              "count": 208
+            },
+            {
+              "denominator_exponent": 4,
+              "count": 204
+            },
+            {
+              "denominator_exponent": 6,
+              "count": 162
+            },
+            {
+              "denominator_exponent": 3,
+              "count": 156
+            },
+            {
+              "denominator_exponent": 7,
+              "count": 93
+            },
+            {
+              "denominator_exponent": 2,
+              "count": 91
+            },
+            {
+              "denominator_exponent": 1,
+              "count": 41
+            },
+            {
+              "denominator_exponent": 8,
+              "count": 37
+            }
+          ]
+        },
+        {
+          "length": 12,
+          "total_words": 4096,
+          "integer_word_count": 39,
+          "integer_word_density": 0.009521484375,
+          "noninteger_word_count": 4057,
+          "distinct_integer_endpoints": 34,
+          "top_denominator_exponents": [
+            {
+              "denominator_exponent": 6,
+              "count": 782
+            },
+            {
+              "denominator_exponent": 5,
+              "count": 772
+            },
+            {
+              "denominator_exponent": 7,
+              "count": 625
+            },
+            {
+              "denominator_exponent": 4,
+              "count": 607
+            },
+            {
+              "denominator_exponent": 8,
+              "count": 385
+            },
+            {
+              "denominator_exponent": 3,
+              "count": 379
+            },
+            {
+              "denominator_exponent": 2,
+              "count": 189
+            },
+            {
+              "denominator_exponent": 9,
+              "count": 176
+            }
+          ]
+        },
+        {
+          "length": 14,
+          "total_words": 16384,
+          "integer_word_count": 66,
+          "integer_word_density": 0.004028320312,
+          "noninteger_word_count": 16318,
+          "distinct_integer_endpoints": 58,
+          "top_denominator_exponents": [
+            {
+              "denominator_exponent": 7,
+              "count": 2961
+            },
+            {
+              "denominator_exponent": 6,
+              "count": 2933
+            },
+            {
+              "denominator_exponent": 8,
+              "count": 2417
+            },
+            {
+              "denominator_exponent": 5,
+              "count": 2365
+            },
+            {
+              "denominator_exponent": 9,
+              "count": 1571
+            },
+            {
+              "denominator_exponent": 4,
+              "count": 1554
+            },
+            {
+              "denominator_exponent": 3,
+              "count": 831
+            },
+            {
+              "denominator_exponent": 10,
+              "count": 793
+            }
+          ]
+        },
+        {
+          "length": 16,
+          "total_words": 65536,
+          "integer_word_count": 115,
+          "integer_word_density": 0.001754760742,
+          "noninteger_word_count": 65421,
+          "distinct_integer_endpoints": 98,
+          "top_denominator_exponents": [
+            {
+              "denominator_exponent": 8,
+              "count": 11272
+            },
+            {
+              "denominator_exponent": 7,
+              "count": 11192
+            },
+            {
+              "denominator_exponent": 9,
+              "count": 9366
+            },
+            {
+              "denominator_exponent": 6,
+              "count": 9217
+            },
+            {
+              "denominator_exponent": 10,
+              "count": 6352
+            },
+            {
+              "denominator_exponent": 5,
+              "count": 6304
+            },
+            {
+              "denominator_exponent": 4,
+              "count": 3581
+            },
+            {
+              "denominator_exponent": 11,
+              "count": 3456
+            }
+          ]
+        },
+        {
+          "length": 18,
+          "total_words": 262144,
+          "integer_word_count": 200,
+          "integer_word_density": 0.000762939453,
+          "noninteger_word_count": 261944,
+          "distinct_integer_endpoints": 166,
+          "top_denominator_exponents": [
+            {
+              "denominator_exponent": 9,
+              "count": 43102
+            },
+            {
+              "denominator_exponent": 8,
+              "count": 42873
+            },
+            {
+              "denominator_exponent": 10,
+              "count": 36356
+            },
+            {
+              "denominator_exponent": 7,
+              "count": 35930
+            },
+            {
+              "denominator_exponent": 11,
+              "count": 25526
+            },
+            {
+              "denominator_exponent": 6,
+              "count": 25406
+            },
+            {
+              "denominator_exponent": 5,
+              "count": 15163
+            },
+            {
+              "denominator_exponent": 12,
+              "count": 14734
+            }
+          ]
+        },
+        {
+          "length": 20,
+          "total_words": 1048576,
+          "integer_word_count": 355,
+          "integer_word_density": 0.000338554382,
+          "noninteger_word_count": 1048221,
+          "distinct_integer_endpoints": 278,
+          "top_denominator_exponents": [
+            {
+              "denominator_exponent": 10,
+              "count": 165433
+            },
+            {
+              "denominator_exponent": 9,
+              "count": 164778
+            },
+            {
+              "denominator_exponent": 11,
+              "count": 141340
+            },
+            {
+              "denominator_exponent": 8,
+              "count": 140139
+            },
+            {
+              "denominator_exponent": 12,
+              "count": 102142
+            },
+            {
+              "denominator_exponent": 7,
+              "count": 101905
+            },
+            {
+              "denominator_exponent": 6,
+              "count": 63389
+            },
+            {
+              "denominator_exponent": 13,
+              "count": 61860
+            }
+          ]
+        }
+      ],
+      "final": {
+        "length": 20,
+        "total_words": 1048576,
+        "integer_word_count": 355,
+        "integer_word_density": 0.000338554382,
+        "noninteger_word_count": 1048221,
+        "distinct_integer_endpoints": 278,
+        "top_denominator_exponents": [
+          {
+            "denominator_exponent": 10,
+            "count": 165433
+          },
+          {
+            "denominator_exponent": 9,
+            "count": 164778
+          },
+          {
+            "denominator_exponent": 11,
+            "count": 141340
+          },
+          {
+            "denominator_exponent": 8,
+            "count": 140139
+          },
+          {
+            "denominator_exponent": 12,
+            "count": 102142
+          },
+          {
+            "denominator_exponent": 7,
+            "count": 101905
+          },
+          {
+            "denominator_exponent": 6,
+            "count": 63389
+          },
+          {
+            "denominator_exponent": 13,
+            "count": 61860
+          }
+        ]
+      },
+      "final_integer_sample": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        8,
+        10,
+        12,
+        13,
+        16,
+        17,
+        18,
+        20,
+        21,
+        22,
+        23,
+        24,
+        26,
+        28,
+        29,
+        30,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        40,
+        41,
+        42,
+        43,
+        44,
+        64,
+        80,
+        84,
+        85,
+        96
+      ],
+      "final_integer_tail_sample": [
+        43520,
+        43648,
+        43680,
+        43688,
+        43690,
+        49152,
+        53248,
+        54272,
+        54528,
+        54592,
+        54608,
+        54612,
+        54613,
+        57344,
+        57856,
+        57984,
+        58016,
+        58024,
+        58026,
+        58112,
+        58176,
+        58192,
+        58196,
+        58197,
+        58240,
+        58248,
+        58250,
+        58252,
+        58253,
+        262144,
+        327680,
+        344064,
+        348160,
+        349184,
+        349440,
+        349504,
+        349520,
+        349524,
+        349525,
+        2097152
+      ]
+    },
+    {
+      "label": "shifted A/B from seed 2",
+      "system": "shifted",
+      "seed": 2,
+      "max_length": 20,
+      "selected_rows": [
+        {
+          "length": 1,
+          "total_words": 2,
+          "integer_word_count": 1,
+          "integer_word_density": 0.5,
+          "noninteger_word_count": 1,
+          "distinct_integer_endpoints": 1,
+          "top_denominator_exponents": [
+            {
+              "denominator_exponent": 0,
+              "count": 1
+            },
+            {
+              "denominator_exponent": 1,
+              "count": 1
+            }
+          ]
+        },
+        {
+          "length": 2,
+          "total_words": 4,
+          "integer_word_count": 2,
+          "integer_word_density": 0.5,
+          "noninteger_word_count": 2,
+          "distinct_integer_endpoints": 2,
+          "top_denominator_exponents": [
+            {
+              "denominator_exponent": 0,
+              "count": 2
+            },
+            {
+              "denominator_exponent": 1,
+              "count": 1
+            },
+            {
+              "denominator_exponent": 2,
+              "count": 1
+            }
+          ]
+        },
+        {
+          "length": 3,
+          "total_words": 8,
+          "integer_word_count": 2,
+          "integer_word_density": 0.25,
+          "noninteger_word_count": 6,
+          "distinct_integer_endpoints": 2,
+          "top_denominator_exponents": [
+            {
+              "denominator_exponent": 1,
+              "count": 3
+            },
+            {
+              "denominator_exponent": 0,
+              "count": 2
+            },
+            {
+              "denominator_exponent": 2,
+              "count": 2
+            },
+            {
+              "denominator_exponent": 3,
+              "count": 1
+            }
+          ]
+        },
+        {
+          "length": 4,
+          "total_words": 16,
+          "integer_word_count": 4,
+          "integer_word_density": 0.25,
+          "noninteger_word_count": 12,
+          "distinct_integer_endpoints": 4,
+          "top_denominator_exponents": [
+            {
+              "denominator_exponent": 2,
+              "count": 5
+            },
+            {
+              "denominator_exponent": 0,
+              "count": 4
+            },
+            {
+              "denominator_exponent": 1,
+              "count": 3
+            },
+            {
+              "denominator_exponent": 3,
+              "count": 3
+            },
+            {
+              "denominator_exponent": 4,
+              "count": 1
+            }
+          ]
+        },
+        {
+          "length": 5,
+          "total_words": 32,
+          "integer_word_count": 5,
+          "integer_word_density": 0.15625,
+          "noninteger_word_count": 27,
+          "distinct_integer_endpoints": 5,
+          "top_denominator_exponents": [
+            {
+              "denominator_exponent": 2,
+              "count": 8
+            },
+            {
+              "denominator_exponent": 3,
+              "count": 8
+            },
+            {
+              "denominator_exponent": 1,
+              "count": 6
+            },
+            {
+              "denominator_exponent": 0,
+              "count": 5
+            },
+            {
+              "denominator_exponent": 4,
+              "count": 4
+            },
+            {
+              "denominator_exponent": 5,
+              "count": 1
+            }
+          ]
+        },
+        {
+          "length": 8,
+          "total_words": 256,
+          "integer_word_count": 14,
+          "integer_word_density": 0.0546875,
+          "noninteger_word_count": 242,
+          "distinct_integer_endpoints": 14,
+          "top_denominator_exponents": [
+            {
+              "denominator_exponent": 4,
+              "count": 58
+            },
+            {
+              "denominator_exponent": 3,
+              "count": 52
+            },
+            {
+              "denominator_exponent": 5,
+              "count": 45
+            },
+            {
+              "denominator_exponent": 2,
+              "count": 36
+            },
+            {
+              "denominator_exponent": 6,
+              "count": 23
+            },
+            {
+              "denominator_exponent": 1,
+              "count": 20
+            },
+            {
+              "denominator_exponent": 0,
+              "count": 14
+            },
+            {
+              "denominator_exponent": 7,
+              "count": 7
+            }
+          ]
+        },
+        {
+          "length": 10,
+          "total_words": 1024,
+          "integer_word_count": 26,
+          "integer_word_density": 0.025390625,
+          "noninteger_word_count": 998,
+          "distinct_integer_endpoints": 26,
+          "top_denominator_exponents": [
+            {
+              "denominator_exponent": 5,
+              "count": 213
+            },
+            {
+              "denominator_exponent": 4,
+              "count": 198
+            },
+            {
+              "denominator_exponent": 6,
+              "count": 171
+            },
+            {
+              "denominator_exponent": 3,
+              "count": 144
+            },
+            {
+              "denominator_exponent": 7,
+              "count": 98
+            },
+            {
+              "denominator_exponent": 2,
+              "count": 86
+            },
+            {
+              "denominator_exponent": 1,
+              "count": 40
+            },
+            {
+              "denominator_exponent": 8,
+              "count": 38
+            }
+          ]
+        },
+        {
+          "length": 12,
+          "total_words": 4096,
+          "integer_word_count": 50,
+          "integer_word_density": 0.01220703125,
+          "noninteger_word_count": 4046,
+          "distinct_integer_endpoints": 50,
+          "top_denominator_exponents": [
+            {
+              "denominator_exponent": 6,
+              "count": 795
+            },
+            {
+              "denominator_exponent": 5,
+              "count": 753
+            },
+            {
+              "denominator_exponent": 7,
+              "count": 653
+            },
+            {
+              "denominator_exponent": 4,
+              "count": 572
+            },
+            {
+              "denominator_exponent": 8,
+              "count": 405
+            },
+            {
+              "denominator_exponent": 3,
+              "count": 356
+            },
+            {
+              "denominator_exponent": 9,
+              "count": 183
+            },
+            {
+              "denominator_exponent": 2,
+              "count": 182
+            }
+          ]
+        },
+        {
+          "length": 14,
+          "total_words": 16384,
+          "integer_word_count": 89,
+          "integer_word_density": 0.005432128906,
+          "noninteger_word_count": 16295,
+          "distinct_integer_endpoints": 89,
+          "top_denominator_exponents": [
+            {
+              "denominator_exponent": 7,
+              "count": 2996
+            },
+            {
+              "denominator_exponent": 6,
+              "count": 2873
+            },
+            {
+              "denominator_exponent": 8,
+              "count": 2506
+            },
+            {
+              "denominator_exponent": 5,
+              "count": 2253
+            },
+            {
+              "denominator_exponent": 9,
+              "count": 1646
+            },
+            {
+              "denominator_exponent": 4,
+              "count": 1466
+            },
+            {
+              "denominator_exponent": 10,
+              "count": 828
+            },
+            {
+              "denominator_exponent": 3,
+              "count": 798
+            }
+          ]
+        },
+        {
+          "length": 16,
+          "total_words": 65536,
+          "integer_word_count": 157,
+          "integer_word_density": 0.002395629883,
+          "noninteger_word_count": 65379,
+          "distinct_integer_endpoints": 157,
+          "top_denominator_exponents": [
+            {
+              "denominator_exponent": 8,
+              "count": 11371
+            },
+            {
+              "denominator_exponent": 7,
+              "count": 10995
+            },
+            {
+              "denominator_exponent": 9,
+              "count": 9654
+            },
+            {
+              "denominator_exponent": 6,
+              "count": 8845
+            },
+            {
+              "denominator_exponent": 10,
+              "count": 6626
+            },
+            {
+              "denominator_exponent": 5,
+              "count": 5983
+            },
+            {
+              "denominator_exponent": 11,
+              "count": 3610
+            },
+            {
+              "denominator_exponent": 4,
+              "count": 3433
+            }
+          ]
+        },
+        {
+          "length": 18,
+          "total_words": 262144,
+          "integer_word_count": 277,
+          "integer_word_density": 0.001056671143,
+          "noninteger_word_count": 261867,
+          "distinct_integer_endpoints": 277,
+          "top_denominator_exponents": [
+            {
+              "denominator_exponent": 9,
+              "count": 43391
+            },
+            {
+              "denominator_exponent": 8,
+              "count": 42206
+            },
+            {
+              "denominator_exponent": 10,
+              "count": 37305
+            },
+            {
+              "denominator_exponent": 7,
+              "count": 34668
+            },
+            {
+              "denominator_exponent": 11,
+              "count": 26516
+            },
+            {
+              "denominator_exponent": 6,
+              "count": 24244
+            },
+            {
+              "denominator_exponent": 12,
+              "count": 15370
+            },
+            {
+              "denominator_exponent": 5,
+              "count": 14545
+            }
+          ]
+        },
+        {
+          "length": 20,
+          "total_words": 1048576,
+          "integer_word_count": 488,
+          "integer_word_density": 0.000465393066,
+          "noninteger_word_count": 1048088,
+          "distinct_integer_endpoints": 488,
+          "top_denominator_exponents": [
+            {
+              "denominator_exponent": 10,
+              "count": 166293
+            },
+            {
+              "denominator_exponent": 9,
+              "count": 162471
+            },
+            {
+              "denominator_exponent": 11,
+              "count": 144517
+            },
+            {
+              "denominator_exponent": 8,
+              "count": 135786
+            },
+            {
+              "denominator_exponent": 12,
+              "count": 105707
+            },
+            {
+              "denominator_exponent": 7,
+              "count": 97701
+            },
+            {
+              "denominator_exponent": 13,
+              "count": 64395
+            },
+            {
+              "denominator_exponent": 6,
+              "count": 60903
+            }
+          ]
+        }
+      ],
+      "final": {
+        "length": 20,
+        "total_words": 1048576,
+        "integer_word_count": 488,
+        "integer_word_density": 0.000465393066,
+        "noninteger_word_count": 1048088,
+        "distinct_integer_endpoints": 488,
+        "top_denominator_exponents": [
+          {
+            "denominator_exponent": 10,
+            "count": 166293
+          },
+          {
+            "denominator_exponent": 9,
+            "count": 162471
+          },
+          {
+            "denominator_exponent": 11,
+            "count": 144517
+          },
+          {
+            "denominator_exponent": 8,
+            "count": 135786
+          },
+          {
+            "denominator_exponent": 12,
+            "count": 105707
+          },
+          {
+            "denominator_exponent": 7,
+            "count": 97701
+          },
+          {
+            "denominator_exponent": 13,
+            "count": 64395
+          },
+          {
+            "denominator_exponent": 6,
+            "count": 60903
+          }
+        ]
+      },
+      "final_integer_sample": [
+        2,
+        5,
+        6,
+        7,
+        12,
+        15,
+        16,
+        17,
+        19,
+        20,
+        21,
+        22,
+        25,
+        26,
+        27,
+        34,
+        35,
+        36,
+        44,
+        45,
+        46,
+        47,
+        57,
+        59,
+        61,
+        62,
+        65,
+        73,
+        75,
+        77,
+        78,
+        81,
+        82,
+        85,
+        86,
+        97,
+        99,
+        100,
+        101,
+        102
+      ],
+      "final_integer_tail_sample": [
+        87297,
+        87361,
+        87377,
+        87381,
+        87382,
+        98305,
+        106497,
+        108545,
+        109057,
+        109185,
+        109217,
+        109225,
+        109227,
+        115713,
+        115969,
+        116033,
+        116049,
+        116053,
+        116054,
+        116225,
+        116353,
+        116385,
+        116393,
+        116395,
+        116497,
+        116501,
+        116502,
+        116505,
+        116507,
+        262145,
+        327681,
+        344065,
+        348161,
+        349185,
+        349441,
+        349505,
+        349521,
+        349525,
+        349526,
+        1048577
+      ]
+    }
+  ],
+  "cycles_all_z": [
+    {
+      "cycle": [
+        0
+      ],
+      "length": 1,
+      "verified": true
+    },
+    {
+      "cycle": [
+        1,
+        4,
+        2
+      ],
+      "length": 3,
+      "verified": true
+    },
+    {
+      "cycle": [
+        -1,
+        -2
+      ],
+      "length": 2,
+      "verified": true
+    },
+    {
+      "cycle": [
+        -5,
+        -14,
+        -7,
+        -20,
+        -10
+      ],
+      "length": 5,
+      "verified": true
+    },
+    {
+      "cycle": [
+        -17,
+        -50,
+        -25,
+        -74,
+        -37,
+        -110,
+        -55,
+        -164,
+        -82,
+        -41,
+        -122,
+        -61,
+        -182,
+        -91,
+        -272,
+        -136,
+        -68,
+        -34
+      ],
+      "length": 18,
+      "verified": true
+    }
+  ]
+}

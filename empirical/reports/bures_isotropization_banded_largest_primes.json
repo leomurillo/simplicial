@@ -1,0 +1,1616 @@
+{
+  "claim_tested": "finite-n linearization of the CRT/Bures isotropization lemma",
+  "parameters": {
+    "rows": "30,210,2310,30030",
+    "dimension": 3,
+    "xi_mode": "largest_primes",
+    "quotient_basis": "fourier",
+    "diag_scaling": "raw",
+    "bures_scaling": "sld",
+    "bandwidths": "1,2,3,sqrt,pow:0.5,pow:0.75,frac:0.25,complete",
+    "global_control_max_states": 1000,
+    "bures_anisotropy_tol": 1e-10,
+    "diag_anisotropy_floor": 0.001,
+    "decay_slack": 1e-12,
+    "report": "empirical\\reports\\bures_isotropization_banded_largest_primes.md",
+    "json": "empirical\\reports\\bures_isotropization_banded_largest_primes.json"
+  },
+  "rows": [
+    {
+      "row": 30,
+      "primes": [
+        2,
+        3,
+        5
+      ],
+      "state_count": 30,
+      "xi_mode": "largest_primes",
+      "quotient_basis": "fourier",
+      "xi_labels": [
+        "p5:f1c",
+        "p3:f1c",
+        "p2:f1r"
+      ],
+      "diag_model": "CRT leg cycles, scaling=raw",
+      "bures_model": "CRT leg complete off-diagonal coherences, scaling=sld",
+      "global_complete_control": "all pairs, scaling=sld",
+      "diag": {
+        "edge_count": 75,
+        "total_edge_weight": 75.0,
+        "symbol": [
+          [
+            2.76393202250021,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            5.999999999999999,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            3.9999999999999996
+          ]
+        ],
+        "eigenvalues": [
+          2.76393202250021,
+          3.9999999999999996,
+          5.999999999999999
+        ],
+        "trace": 12.76393202250021,
+        "anisotropy": 0.3692484114654954,
+        "mean_point_anisotropy": 0.3431530746488535,
+        "max_point_anisotropy": 0.6498882115663508,
+        "fourth_moment": 48.729490168751575,
+        "normalized_fourth_moment": 0.2991044693099163,
+        "mean_point_fourth_moment": 48.729490168751575,
+        "max_point_fourth_moment": 63.66186271093949
+      },
+      "bures": {
+        "edge_count": 105,
+        "total_edge_weight": 29.49999999999995,
+        "symbol": [
+          [
+            2.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            2.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.9999999999999998
+          ]
+        ],
+        "eigenvalues": [
+          1.9999999999999998,
+          2.0,
+          2.0
+        ],
+        "trace": 6.0,
+        "anisotropy": 5.551115123125783e-17,
+        "mean_point_anisotropy": 0.26624443124625136,
+        "max_point_anisotropy": 0.4316450321909971,
+        "fourth_moment": 25.999999999999982,
+        "normalized_fourth_moment": 0.7222222222222218,
+        "mean_point_fourth_moment": 26.000000000000004,
+        "max_point_fourth_moment": 39.00000000000001
+      },
+      "global_complete": {
+        "edge_count": 435,
+        "total_edge_weight": 14.49999999999996,
+        "symbol": [
+          [
+            1.9999999999999964,
+            -8.673617379884074e-19,
+            6.678685382510707e-17
+          ],
+          [
+            -8.673617379884074e-19,
+            2.0000000000000013,
+            -1.2281842209915796e-16
+          ],
+          [
+            6.678685382510707e-17,
+            -1.2281842209915796e-16,
+            2.0000000000000036
+          ]
+        ],
+        "eigenvalues": [
+          1.9999999999999964,
+          2.000000000000001,
+          2.000000000000004
+        ],
+        "trace": 6.000000000000002,
+        "anisotropy": 1.887379141862766e-15,
+        "mean_point_anisotropy": 0.583429794589885,
+        "max_point_anisotropy": 0.7142857142857145,
+        "fourth_moment": 49.99999999999992,
+        "normalized_fourth_moment": 1.388888888888886,
+        "mean_point_fourth_moment": 50.00000000000002,
+        "max_point_fourth_moment": 81.00000000000001
+      },
+      "banded": [
+        {
+          "spec": "1",
+          "model": "CRT leg cyclic band, bandwidth=1, scaling=sld",
+          "edge_count": 75,
+          "total_edge_weight": 23.499999999999968,
+          "symbol": [
+            [
+              0.552786404500042,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              2.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.9999999999999998
+            ]
+          ],
+          "eigenvalues": [
+            0.552786404500042,
+            1.9999999999999998,
+            2.0
+          ],
+          "trace": 4.552786404500042,
+          "anisotropy": 0.566915270681799,
+          "mean_point_anisotropy": 0.6105471095168787,
+          "max_point_anisotropy": 0.7741159964473351,
+          "fourth_moment": 18.14589803375031,
+          "normalized_fourth_moment": 0.8754350180199644,
+          "mean_point_fourth_moment": 18.145898033750317,
+          "max_point_fourth_moment": 22.9323725421879
+        },
+        {
+          "spec": "2",
+          "model": "CRT leg cyclic band, bandwidth=2, scaling=sld",
+          "edge_count": 105,
+          "total_edge_weight": 29.49999999999995,
+          "symbol": [
+            [
+              2.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              2.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.9999999999999998
+            ]
+          ],
+          "eigenvalues": [
+            1.9999999999999998,
+            2.0,
+            2.0
+          ],
+          "trace": 6.0,
+          "anisotropy": 5.551115123125783e-17,
+          "mean_point_anisotropy": 0.26624443124625136,
+          "max_point_anisotropy": 0.4316450321909971,
+          "fourth_moment": 25.999999999999982,
+          "normalized_fourth_moment": 0.7222222222222218,
+          "mean_point_fourth_moment": 26.000000000000004,
+          "max_point_fourth_moment": 39.00000000000001
+        },
+        {
+          "spec": "3",
+          "model": "CRT leg cyclic band, bandwidth=3, scaling=sld",
+          "edge_count": 105,
+          "total_edge_weight": 29.49999999999995,
+          "symbol": [
+            [
+              2.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              2.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.9999999999999998
+            ]
+          ],
+          "eigenvalues": [
+            1.9999999999999998,
+            2.0,
+            2.0
+          ],
+          "trace": 6.0,
+          "anisotropy": 5.551115123125783e-17,
+          "mean_point_anisotropy": 0.26624443124625136,
+          "max_point_anisotropy": 0.4316450321909971,
+          "fourth_moment": 25.999999999999982,
+          "normalized_fourth_moment": 0.7222222222222218,
+          "mean_point_fourth_moment": 26.000000000000004,
+          "max_point_fourth_moment": 39.00000000000001
+        },
+        {
+          "spec": "sqrt",
+          "model": "CRT leg cyclic band, bandwidth=sqrt, scaling=sld",
+          "edge_count": 105,
+          "total_edge_weight": 29.49999999999995,
+          "symbol": [
+            [
+              2.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              2.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.9999999999999998
+            ]
+          ],
+          "eigenvalues": [
+            1.9999999999999998,
+            2.0,
+            2.0
+          ],
+          "trace": 6.0,
+          "anisotropy": 5.551115123125783e-17,
+          "mean_point_anisotropy": 0.26624443124625136,
+          "max_point_anisotropy": 0.4316450321909971,
+          "fourth_moment": 25.999999999999982,
+          "normalized_fourth_moment": 0.7222222222222218,
+          "mean_point_fourth_moment": 26.000000000000004,
+          "max_point_fourth_moment": 39.00000000000001
+        },
+        {
+          "spec": "pow:0.5",
+          "model": "CRT leg cyclic band, bandwidth=pow:0.5, scaling=sld",
+          "edge_count": 105,
+          "total_edge_weight": 29.49999999999995,
+          "symbol": [
+            [
+              2.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              2.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.9999999999999998
+            ]
+          ],
+          "eigenvalues": [
+            1.9999999999999998,
+            2.0,
+            2.0
+          ],
+          "trace": 6.0,
+          "anisotropy": 5.551115123125783e-17,
+          "mean_point_anisotropy": 0.26624443124625136,
+          "max_point_anisotropy": 0.4316450321909971,
+          "fourth_moment": 25.999999999999982,
+          "normalized_fourth_moment": 0.7222222222222218,
+          "mean_point_fourth_moment": 26.000000000000004,
+          "max_point_fourth_moment": 39.00000000000001
+        },
+        {
+          "spec": "pow:0.75",
+          "model": "CRT leg cyclic band, bandwidth=pow:0.75, scaling=sld",
+          "edge_count": 105,
+          "total_edge_weight": 29.49999999999995,
+          "symbol": [
+            [
+              2.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              2.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.9999999999999998
+            ]
+          ],
+          "eigenvalues": [
+            1.9999999999999998,
+            2.0,
+            2.0
+          ],
+          "trace": 6.0,
+          "anisotropy": 5.551115123125783e-17,
+          "mean_point_anisotropy": 0.26624443124625136,
+          "max_point_anisotropy": 0.4316450321909971,
+          "fourth_moment": 25.999999999999982,
+          "normalized_fourth_moment": 0.7222222222222218,
+          "mean_point_fourth_moment": 26.000000000000004,
+          "max_point_fourth_moment": 39.00000000000001
+        },
+        {
+          "spec": "frac:0.25",
+          "model": "CRT leg cyclic band, bandwidth=frac:0.25, scaling=sld",
+          "edge_count": 75,
+          "total_edge_weight": 23.499999999999968,
+          "symbol": [
+            [
+              0.552786404500042,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              2.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.9999999999999998
+            ]
+          ],
+          "eigenvalues": [
+            0.552786404500042,
+            1.9999999999999998,
+            2.0
+          ],
+          "trace": 4.552786404500042,
+          "anisotropy": 0.566915270681799,
+          "mean_point_anisotropy": 0.6105471095168787,
+          "max_point_anisotropy": 0.7741159964473351,
+          "fourth_moment": 18.14589803375031,
+          "normalized_fourth_moment": 0.8754350180199644,
+          "mean_point_fourth_moment": 18.145898033750317,
+          "max_point_fourth_moment": 22.9323725421879
+        },
+        {
+          "spec": "complete",
+          "model": "CRT leg cyclic band, bandwidth=complete, scaling=sld",
+          "edge_count": 105,
+          "total_edge_weight": 29.49999999999995,
+          "symbol": [
+            [
+              2.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              2.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.9999999999999998
+            ]
+          ],
+          "eigenvalues": [
+            1.9999999999999998,
+            2.0,
+            2.0
+          ],
+          "trace": 6.0,
+          "anisotropy": 5.551115123125783e-17,
+          "mean_point_anisotropy": 0.26624443124625136,
+          "max_point_anisotropy": 0.4316450321909971,
+          "fourth_moment": 25.999999999999982,
+          "normalized_fourth_moment": 0.7222222222222218,
+          "mean_point_fourth_moment": 26.000000000000004,
+          "max_point_fourth_moment": 39.00000000000001
+        }
+      ]
+    },
+    {
+      "row": 210,
+      "primes": [
+        2,
+        3,
+        5,
+        7
+      ],
+      "state_count": 210,
+      "xi_mode": "largest_primes",
+      "quotient_basis": "fourier",
+      "xi_labels": [
+        "p7:f1c",
+        "p5:f1c",
+        "p3:f1c"
+      ],
+      "diag_model": "CRT leg cycles, scaling=raw",
+      "bures_model": "CRT leg complete off-diagonal coherences, scaling=sld",
+      "global_complete_control": "all pairs, scaling=sld",
+      "diag": {
+        "edge_count": 735,
+        "total_edge_weight": 735.0,
+        "symbol": [
+          [
+            1.506040792565067,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            2.7639320225002075,
+            -7.745789462839957e-16
+          ],
+          [
+            0.0,
+            -7.745789462839957e-16,
+            5.999999999999989
+          ]
+        ],
+        "eigenvalues": [
+          1.506040792565067,
+          2.7639320225002075,
+          5.999999999999989
+        ],
+        "trace": 10.269972815065264,
+        "anisotropy": 0.5987123347219636,
+        "mean_point_anisotropy": 0.5895031418535751,
+        "max_point_anisotropy": 0.8814597338407578,
+        "fourth_moment": 34.430609320404145,
+        "normalized_fourth_moment": 0.3264420680422611,
+        "mean_point_fourth_moment": 34.43060932040415,
+        "max_point_fourth_moment": 50.558437716105935
+      },
+      "bures": {
+        "edge_count": 1365,
+        "total_edge_weight": 296.4999999999996,
+        "symbol": [
+          [
+            1.9999999999999991,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.9999999999999947,
+            -3.3989503853532804e-16
+          ],
+          [
+            0.0,
+            -3.3989503853532804e-16,
+            1.999999999999999
+          ]
+        ],
+        "eigenvalues": [
+          1.9999999999999944,
+          1.9999999999999991,
+          1.9999999999999991
+        ],
+        "trace": 5.999999999999993,
+        "anisotropy": 1.1657341758564161e-15,
+        "mean_point_anisotropy": 0.3065795308802768,
+        "max_point_anisotropy": 0.46376053429231834,
+        "fourth_moment": 27.000000000000014,
+        "normalized_fourth_moment": 0.7500000000000022,
+        "mean_point_fourth_moment": 27.00000000000004,
+        "max_point_fourth_moment": 48.500000000000064
+      },
+      "global_complete": {
+        "edge_count": 21945,
+        "total_edge_weight": 104.50000000003264,
+        "symbol": [
+          [
+            1.9999999999998999,
+            3.120604902956403e-16,
+            -3.2368855859554735e-16
+          ],
+          [
+            3.120604902956403e-16,
+            2.000000000000089,
+            -1.0325439968145312e-15
+          ],
+          [
+            -3.2368855859554735e-16,
+            -1.0325439968145312e-15,
+            1.9999999999994795
+          ]
+        ],
+        "eigenvalues": [
+          1.9999999999994793,
+          1.9999999999998999,
+          2.000000000000088
+        ],
+        "trace": 5.999999999999468,
+        "anisotropy": 1.5215606552489416e-13,
+        "mean_point_anisotropy": 0.5727964447046903,
+        "max_point_anisotropy": 0.7500000000000018,
+        "fourth_moment": 50.999999999996994,
+        "normalized_fourth_moment": 1.4166666666668342,
+        "mean_point_fourth_moment": 51.00000000000011,
+        "max_point_fourth_moment": 102.50000000000021
+      },
+      "banded": [
+        {
+          "spec": "1",
+          "model": "CRT leg cyclic band, bandwidth=1, scaling=sld",
+          "edge_count": 735,
+          "total_edge_weight": 194.49999999999937,
+          "symbol": [
+            [
+              0.215148684652152,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.5527864045000422,
+              -2.302802272736209e-16
+            ],
+            [
+              0.0,
+              -2.302802272736209e-16,
+              1.999999999999999
+            ]
+          ],
+          "eigenvalues": [
+            0.215148684652152,
+            0.5527864045000422,
+            1.999999999999999
+          ],
+          "trace": 2.767935089152193,
+          "anisotropy": 0.805747861402868,
+          "mean_point_anisotropy": 0.7922598537753992,
+          "max_point_anisotropy": 0.94741608262864,
+          "fourth_moment": 10.388915055414985,
+          "normalized_fourth_moment": 1.3559959510995736,
+          "mean_point_fourth_moment": 10.388915055414982,
+          "max_point_fourth_moment": 15.346168971497406
+        },
+        {
+          "spec": "2",
+          "model": "CRT leg cyclic band, bandwidth=2, scaling=sld",
+          "edge_count": 1155,
+          "total_edge_weight": 266.4999999999982,
+          "symbol": [
+            [
+              0.9137320754843344,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.9999999999999947,
+              -3.3989503853532804e-16
+            ],
+            [
+              0.0,
+              -3.3989503853532804e-16,
+              1.999999999999999
+            ]
+          ],
+          "eigenvalues": [
+            0.9137320754843344,
+            1.9999999999999944,
+            1.9999999999999991
+          ],
+          "trace": 4.913732075484328,
+          "anisotropy": 0.37280981791543083,
+          "mean_point_anisotropy": 0.4290181205772559,
+          "max_point_anisotropy": 0.5406201225083378,
+          "fourth_moment": 20.805115479884293,
+          "normalized_fourth_moment": 0.8616823266288792,
+          "mean_point_fourth_moment": 20.805115479884254,
+          "max_point_fourth_moment": 34.39041572650101
+        },
+        {
+          "spec": "3",
+          "model": "CRT leg cyclic band, bandwidth=3, scaling=sld",
+          "edge_count": 1365,
+          "total_edge_weight": 296.4999999999996,
+          "symbol": [
+            [
+              1.9999999999999991,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.9999999999999947,
+              -3.3989503853532804e-16
+            ],
+            [
+              0.0,
+              -3.3989503853532804e-16,
+              1.999999999999999
+            ]
+          ],
+          "eigenvalues": [
+            1.9999999999999944,
+            1.9999999999999991,
+            1.9999999999999991
+          ],
+          "trace": 5.999999999999993,
+          "anisotropy": 1.1657341758564161e-15,
+          "mean_point_anisotropy": 0.3065795308802768,
+          "max_point_anisotropy": 0.46376053429231834,
+          "fourth_moment": 27.000000000000014,
+          "normalized_fourth_moment": 0.7500000000000022,
+          "mean_point_fourth_moment": 27.00000000000004,
+          "max_point_fourth_moment": 48.500000000000064
+        },
+        {
+          "spec": "sqrt",
+          "model": "CRT leg cyclic band, bandwidth=sqrt, scaling=sld",
+          "edge_count": 1155,
+          "total_edge_weight": 266.4999999999982,
+          "symbol": [
+            [
+              0.9137320754843344,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.9999999999999947,
+              -3.3989503853532804e-16
+            ],
+            [
+              0.0,
+              -3.3989503853532804e-16,
+              1.999999999999999
+            ]
+          ],
+          "eigenvalues": [
+            0.9137320754843344,
+            1.9999999999999944,
+            1.9999999999999991
+          ],
+          "trace": 4.913732075484328,
+          "anisotropy": 0.37280981791543083,
+          "mean_point_anisotropy": 0.4290181205772559,
+          "max_point_anisotropy": 0.5406201225083378,
+          "fourth_moment": 20.805115479884293,
+          "normalized_fourth_moment": 0.8616823266288792,
+          "mean_point_fourth_moment": 20.805115479884254,
+          "max_point_fourth_moment": 34.39041572650101
+        },
+        {
+          "spec": "pow:0.5",
+          "model": "CRT leg cyclic band, bandwidth=pow:0.5, scaling=sld",
+          "edge_count": 1155,
+          "total_edge_weight": 266.4999999999982,
+          "symbol": [
+            [
+              0.9137320754843344,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.9999999999999947,
+              -3.3989503853532804e-16
+            ],
+            [
+              0.0,
+              -3.3989503853532804e-16,
+              1.999999999999999
+            ]
+          ],
+          "eigenvalues": [
+            0.9137320754843344,
+            1.9999999999999944,
+            1.9999999999999991
+          ],
+          "trace": 4.913732075484328,
+          "anisotropy": 0.37280981791543083,
+          "mean_point_anisotropy": 0.4290181205772559,
+          "max_point_anisotropy": 0.5406201225083378,
+          "fourth_moment": 20.805115479884293,
+          "normalized_fourth_moment": 0.8616823266288792,
+          "mean_point_fourth_moment": 20.805115479884254,
+          "max_point_fourth_moment": 34.39041572650101
+        },
+        {
+          "spec": "pow:0.75",
+          "model": "CRT leg cyclic band, bandwidth=pow:0.75, scaling=sld",
+          "edge_count": 1365,
+          "total_edge_weight": 296.4999999999996,
+          "symbol": [
+            [
+              1.9999999999999991,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.9999999999999947,
+              -3.3989503853532804e-16
+            ],
+            [
+              0.0,
+              -3.3989503853532804e-16,
+              1.999999999999999
+            ]
+          ],
+          "eigenvalues": [
+            1.9999999999999944,
+            1.9999999999999991,
+            1.9999999999999991
+          ],
+          "trace": 5.999999999999993,
+          "anisotropy": 1.1657341758564161e-15,
+          "mean_point_anisotropy": 0.3065795308802768,
+          "max_point_anisotropy": 0.46376053429231834,
+          "fourth_moment": 27.000000000000014,
+          "normalized_fourth_moment": 0.7500000000000022,
+          "mean_point_fourth_moment": 27.00000000000004,
+          "max_point_fourth_moment": 48.500000000000064
+        },
+        {
+          "spec": "frac:0.25",
+          "model": "CRT leg cyclic band, bandwidth=frac:0.25, scaling=sld",
+          "edge_count": 735,
+          "total_edge_weight": 194.49999999999937,
+          "symbol": [
+            [
+              0.215148684652152,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.5527864045000422,
+              -2.302802272736209e-16
+            ],
+            [
+              0.0,
+              -2.302802272736209e-16,
+              1.999999999999999
+            ]
+          ],
+          "eigenvalues": [
+            0.215148684652152,
+            0.5527864045000422,
+            1.999999999999999
+          ],
+          "trace": 2.767935089152193,
+          "anisotropy": 0.805747861402868,
+          "mean_point_anisotropy": 0.7922598537753992,
+          "max_point_anisotropy": 0.94741608262864,
+          "fourth_moment": 10.388915055414985,
+          "normalized_fourth_moment": 1.3559959510995736,
+          "mean_point_fourth_moment": 10.388915055414982,
+          "max_point_fourth_moment": 15.346168971497406
+        },
+        {
+          "spec": "complete",
+          "model": "CRT leg cyclic band, bandwidth=complete, scaling=sld",
+          "edge_count": 1365,
+          "total_edge_weight": 296.4999999999996,
+          "symbol": [
+            [
+              1.9999999999999991,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.9999999999999947,
+              -3.3989503853532804e-16
+            ],
+            [
+              0.0,
+              -3.3989503853532804e-16,
+              1.999999999999999
+            ]
+          ],
+          "eigenvalues": [
+            1.9999999999999944,
+            1.9999999999999991,
+            1.9999999999999991
+          ],
+          "trace": 5.999999999999993,
+          "anisotropy": 1.1657341758564161e-15,
+          "mean_point_anisotropy": 0.3065795308802768,
+          "max_point_anisotropy": 0.46376053429231834,
+          "fourth_moment": 27.000000000000014,
+          "normalized_fourth_moment": 0.7500000000000022,
+          "mean_point_fourth_moment": 27.00000000000004,
+          "max_point_fourth_moment": 48.500000000000064
+        }
+      ]
+    },
+    {
+      "row": 2310,
+      "primes": [
+        2,
+        3,
+        5,
+        7,
+        11
+      ],
+      "state_count": 2310,
+      "xi_mode": "largest_primes",
+      "quotient_basis": "fourier",
+      "xi_labels": [
+        "p11:f1c",
+        "p7:f1c",
+        "p5:f1c"
+      ],
+      "diag_model": "CRT leg cycles, scaling=raw",
+      "bures_model": "CRT leg complete off-diagonal coherences, scaling=sld",
+      "global_complete_control": "all pairs, scaling=sld",
+      "diag": {
+        "edge_count": 10395,
+        "total_edge_weight": 10395.0,
+        "symbol": [
+          [
+            0.6349858686752798,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.5060407925650294,
+            4.972203947604951e-16
+          ],
+          [
+            0.0,
+            4.972203947604951e-16,
+            2.763932022500188
+          ]
+        ],
+        "eigenvalues": [
+          0.6349858686752798,
+          1.5060407925650294,
+          2.763932022500188
+        ],
+        "trace": 4.904958683740498,
+        "anisotropy": 0.6263599833794874,
+        "mean_point_anisotropy": 0.6588813910106792,
+        "max_point_anisotropy": 0.9433015792507039,
+        "fourth_moment": 7.7330146104668955,
+        "normalized_fourth_moment": 0.3214238684664794,
+        "mean_point_fourth_moment": 7.7330146104670785,
+        "max_point_fourth_moment": 10.72152953341207
+      },
+      "bures": {
+        "edge_count": 26565,
+        "total_edge_weight": 4311.499999999477,
+        "symbol": [
+          [
+            1.9999999999999503,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.9999999999998688,
+            4.519900182306592e-16
+          ],
+          [
+            0.0,
+            4.519900182306592e-16,
+            2.000000000000047
+          ]
+        ],
+        "eigenvalues": [
+          1.9999999999998688,
+          1.9999999999999503,
+          2.000000000000047
+        ],
+        "trace": 5.999999999999866,
+        "anisotropy": 4.4575454438700975e-14,
+        "mean_point_anisotropy": 0.310322496311039,
+        "max_point_anisotropy": 0.48496214975460517,
+        "fourth_moment": 27.00000000000238,
+        "normalized_fourth_moment": 0.7500000000000996,
+        "mean_point_fourth_moment": 27.000000000000046,
+        "max_point_fourth_moment": 52.50000000000009
+      },
+      "global_complete": null,
+      "banded": [
+        {
+          "spec": "1",
+          "model": "CRT leg cyclic band, bandwidth=1, scaling=sld",
+          "edge_count": 10395,
+          "total_edge_weight": 2349.4999999998777,
+          "symbol": [
+            [
+              0.05772598806138783,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.2151486846521573,
+              9.072693387306673e-17
+            ],
+            [
+              0.0,
+              9.072693387306673e-17,
+              0.5527864045000511
+            ]
+          ],
+          "eigenvalues": [
+            0.05772598806138783,
+            0.2151486846521573,
+            0.5527864045000511
+          ],
+          "trace": 0.8256610772135963,
+          "anisotropy": 0.810893312683809,
+          "mean_point_anisotropy": 0.811696389606142,
+          "max_point_anisotropy": 0.9738232135359187,
+          "fourth_moment": 1.4164064454207288,
+          "normalized_fourth_moment": 2.0777068455300536,
+          "mean_point_fourth_moment": 1.4164064454206882,
+          "max_point_fourth_moment": 1.9064500457979445
+        },
+        {
+          "spec": "2",
+          "model": "CRT leg cyclic band, bandwidth=2, scaling=sld",
+          "edge_count": 17325,
+          "total_edge_weight": 3351.4999999999154,
+          "symbol": [
+            [
+              0.27030234696979005,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.9137320754843005,
+              3.419596558790458e-16
+            ],
+            [
+              0.0,
+              3.419596558790458e-16,
+              2.000000000000047
+            ]
+          ],
+          "eigenvalues": [
+            0.27030234696979005,
+            0.9137320754843005,
+            2.000000000000047
+          ],
+          "trace": 3.1840344224541375,
+          "anisotropy": 0.7618798682646288,
+          "mean_point_anisotropy": 0.7393323819663203,
+          "max_point_anisotropy": 0.9148328650718183,
+          "fourth_moment": 12.205413713915435,
+          "normalized_fourth_moment": 1.2039182457292086,
+          "mean_point_fourth_moment": 12.205413713915705,
+          "max_point_fourth_moment": 21.4571710950646
+        },
+        {
+          "spec": "3",
+          "model": "CRT leg cyclic band, bandwidth=3, scaling=sld",
+          "edge_count": 21945,
+          "total_edge_weight": 3891.5000000000396,
+          "symbol": [
+            [
+              0.6856895608873824,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.9999999999998688,
+              4.519900182306592e-16
+            ],
+            [
+              0.0,
+              4.519900182306592e-16,
+              2.000000000000047
+            ]
+          ],
+          "eigenvalues": [
+            0.6856895608873824,
+            1.9999999999998688,
+            2.000000000000047
+          ],
+          "trace": 4.685689560887298,
+          "anisotropy": 0.4893754133960213,
+          "mean_point_anisotropy": 0.5370617584517832,
+          "max_point_anisotropy": 0.6630008018555201,
+          "fourth_moment": 19.82380716829314,
+          "normalized_fourth_moment": 0.902900805352577,
+          "mean_point_fourth_moment": 19.823807168292582,
+          "max_point_fourth_moment": 37.3304112086616
+        },
+        {
+          "spec": "sqrt",
+          "model": "CRT leg cyclic band, bandwidth=sqrt, scaling=sld",
+          "edge_count": 19635,
+          "total_edge_weight": 3561.4999999997763,
+          "symbol": [
+            [
+              0.6856895608873824,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.9137320754843005,
+              3.419596558790458e-16
+            ],
+            [
+              0.0,
+              3.419596558790458e-16,
+              2.000000000000047
+            ]
+          ],
+          "eigenvalues": [
+            0.6856895608873824,
+            0.9137320754843005,
+            2.000000000000047
+          ],
+          "trace": 3.59942163637173,
+          "anisotropy": 0.4893754133960213,
+          "mean_point_anisotropy": 0.45082648996592867,
+          "max_point_anisotropy": 0.6630008018555201,
+          "fourth_moment": 13.628922648176118,
+          "normalized_fourth_moment": 1.0519523808227358,
+          "mean_point_fourth_moment": 13.628922648176783,
+          "max_point_fourth_moment": 23.220826935162524
+        },
+        {
+          "spec": "pow:0.5",
+          "model": "CRT leg cyclic band, bandwidth=pow:0.5, scaling=sld",
+          "edge_count": 19635,
+          "total_edge_weight": 3561.4999999997763,
+          "symbol": [
+            [
+              0.6856895608873824,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.9137320754843005,
+              3.419596558790458e-16
+            ],
+            [
+              0.0,
+              3.419596558790458e-16,
+              2.000000000000047
+            ]
+          ],
+          "eigenvalues": [
+            0.6856895608873824,
+            0.9137320754843005,
+            2.000000000000047
+          ],
+          "trace": 3.59942163637173,
+          "anisotropy": 0.4893754133960213,
+          "mean_point_anisotropy": 0.45082648996592867,
+          "max_point_anisotropy": 0.6630008018555201,
+          "fourth_moment": 13.628922648176118,
+          "normalized_fourth_moment": 1.0519523808227358,
+          "mean_point_fourth_moment": 13.628922648176783,
+          "max_point_fourth_moment": 23.220826935162524
+        },
+        {
+          "spec": "pow:0.75",
+          "model": "CRT leg cyclic band, bandwidth=pow:0.75, scaling=sld",
+          "edge_count": 26565,
+          "total_edge_weight": 4311.499999999477,
+          "symbol": [
+            [
+              1.9999999999999503,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.9999999999998688,
+              4.519900182306592e-16
+            ],
+            [
+              0.0,
+              4.519900182306592e-16,
+              2.000000000000047
+            ]
+          ],
+          "eigenvalues": [
+            1.9999999999998688,
+            1.9999999999999503,
+            2.000000000000047
+          ],
+          "trace": 5.999999999999866,
+          "anisotropy": 4.4575454438700975e-14,
+          "mean_point_anisotropy": 0.310322496311039,
+          "max_point_anisotropy": 0.48496214975460517,
+          "fourth_moment": 27.00000000000238,
+          "normalized_fourth_moment": 0.7500000000000996,
+          "mean_point_fourth_moment": 27.000000000000046,
+          "max_point_fourth_moment": 52.50000000000009
+        },
+        {
+          "spec": "frac:0.25",
+          "model": "CRT leg cyclic band, bandwidth=frac:0.25, scaling=sld",
+          "edge_count": 12705,
+          "total_edge_weight": 2559.4999999997644,
+          "symbol": [
+            [
+              0.27030234696979005,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.2151486846521573,
+              9.072693387306673e-17
+            ],
+            [
+              0.0,
+              9.072693387306673e-17,
+              0.5527864045000511
+            ]
+          ],
+          "eigenvalues": [
+            0.2151486846521573,
+            0.27030234696979005,
+            0.5527864045000511
+          ],
+          "trace": 1.0382374361219986,
+          "anisotropy": 0.4396696083006729,
+          "mean_point_anisotropy": 0.507728072977879,
+          "max_point_anisotropy": 0.7901376638339096,
+          "fourth_moment": 1.7892132894464463,
+          "normalized_fourth_moment": 1.659849632206985,
+          "mean_point_fourth_moment": 1.7892132894464166,
+          "max_point_fourth_moment": 2.4129243400609592
+        },
+        {
+          "spec": "complete",
+          "model": "CRT leg cyclic band, bandwidth=complete, scaling=sld",
+          "edge_count": 26565,
+          "total_edge_weight": 4311.499999999477,
+          "symbol": [
+            [
+              1.9999999999999503,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.9999999999998688,
+              4.519900182306592e-16
+            ],
+            [
+              0.0,
+              4.519900182306592e-16,
+              2.000000000000047
+            ]
+          ],
+          "eigenvalues": [
+            1.9999999999998688,
+            1.9999999999999503,
+            2.000000000000047
+          ],
+          "trace": 5.999999999999866,
+          "anisotropy": 4.4575454438700975e-14,
+          "mean_point_anisotropy": 0.310322496311039,
+          "max_point_anisotropy": 0.48496214975460517,
+          "fourth_moment": 27.00000000000238,
+          "normalized_fourth_moment": 0.7500000000000996,
+          "mean_point_fourth_moment": 27.000000000000046,
+          "max_point_fourth_moment": 52.50000000000009
+        }
+      ]
+    },
+    {
+      "row": 30030,
+      "primes": [
+        2,
+        3,
+        5,
+        7,
+        11,
+        13
+      ],
+      "state_count": 30030,
+      "xi_mode": "largest_primes",
+      "quotient_basis": "fourier",
+      "xi_labels": [
+        "p13:f1c",
+        "p11:f1c",
+        "p7:f1c"
+      ],
+      "diag_model": "CRT leg cycles, scaling=raw",
+      "bures_model": "CRT leg complete off-diagonal coherences, scaling=sld",
+      "global_complete_control": "all pairs, scaling=sld",
+      "diag": {
+        "edge_count": 165165,
+        "total_edge_weight": 165165.0,
+        "symbol": [
+          [
+            0.45817589738725906,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.6349858686752056,
+            3.375717519635049e-17
+          ],
+          [
+            0.0,
+            3.375717519635049e-17,
+            1.5060407925645478
+          ]
+        ],
+        "eigenvalues": [
+          0.45817589738725906,
+          0.6349858686752056,
+          1.5060407925645478
+        ],
+        "trace": 2.599202558627012,
+        "anisotropy": 0.533477238299507,
+        "mean_point_anisotropy": 0.6403730842613504,
+        "max_point_anisotropy": 0.9563480374449825,
+        "fourth_moment": 2.1609683064248317,
+        "normalized_fourth_moment": 0.3198660488177323,
+        "mean_point_fourth_moment": 2.1609683064253797,
+        "max_point_fourth_moment": 3.923986755172481
+      },
+      "bures": {
+        "edge_count": 525525,
+        "total_edge_weight": 69909.49999992743,
+        "symbol": [
+          [
+            2.0000000000015894,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.9999999999990692,
+            9.499874276435516e-17
+          ],
+          [
+            0.0,
+            9.499874276435516e-17,
+            1.9999999999999893
+          ]
+        ],
+        "eigenvalues": [
+          1.9999999999990692,
+          1.9999999999999893,
+          2.0000000000015894
+        ],
+        "trace": 6.000000000000648,
+        "anisotropy": 6.300515664746725e-13,
+        "mean_point_anisotropy": 0.3100818056169662,
+        "max_point_anisotropy": 0.4891817710527394,
+        "fourth_moment": 27.000000000002984,
+        "normalized_fourth_moment": 0.7499999999999208,
+        "mean_point_fourth_moment": 26.99999999999999,
+        "max_point_fourth_moment": 52.49999999999997
+      },
+      "global_complete": null,
+      "banded": [
+        {
+          "spec": "1",
+          "model": "CRT leg cyclic band, bandwidth=1, scaling=sld",
+          "edge_count": 165165,
+          "total_edge_weight": 32853.49999999778,
+          "symbol": [
+            [
+              0.035244299799015874,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.05772598806137397,
+              3.391794616226591e-18
+            ],
+            [
+              0.0,
+              3.391794616226591e-18,
+              0.21514868465212428
+            ]
+          ],
+          "eigenvalues": [
+            0.035244299799015874,
+            0.05772598806137397,
+            0.21514868465212428
+          ],
+          "trace": 0.30811897251251413,
+          "anisotropy": 0.7184881207732623,
+          "mean_point_anisotropy": 0.749862853096154,
+          "max_point_anisotropy": 0.9762559102900082,
+          "fourth_moment": 0.2826194781865403,
+          "normalized_fourth_moment": 2.9769065957032907,
+          "mean_point_fourth_moment": 0.28261947818651517,
+          "max_point_fourth_moment": 0.5021021138177306
+        },
+        {
+          "spec": "2",
+          "model": "CRT leg cyclic band, bandwidth=2, scaling=sld",
+          "edge_count": 285285,
+          "total_edge_weight": 48189.499999957334,
+          "symbol": [
+            [
+              0.16814745465091674,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.2703023469697706,
+              1.5495292287911152e-17
+            ],
+            [
+              0.0,
+              1.5495292287911152e-17,
+              0.913732075484367
+            ]
+          ],
+          "eigenvalues": [
+            0.16814745465091674,
+            0.2703023469697706,
+            0.913732075484367
+          ],
+          "trace": 1.3521818771050542,
+          "anisotropy": 0.689156786930074,
+          "mean_point_anisotropy": 0.7189968884776492,
+          "max_point_anisotropy": 0.8766808890435444,
+          "fourth_moment": 3.389741453987138,
+          "normalized_fourth_moment": 1.8539428939000526,
+          "mean_point_fourth_moment": 3.3897414539854425,
+          "max_point_fourth_moment": 4.2660377148111035
+        },
+        {
+          "spec": "3",
+          "model": "CRT leg cyclic band, bandwidth=3, scaling=sld",
+          "edge_count": 375375,
+          "total_edge_weight": 57519.4999999327,
+          "symbol": [
+            [
+              0.4387515530337588,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.6856895608876074,
+              3.799534317986814e-17
+            ],
+            [
+              0.0,
+              3.799534317986814e-17,
+              1.9999999999999893
+            ]
+          ],
+          "eigenvalues": [
+            0.4387515530337588,
+            0.6856895608876074,
+            1.9999999999999893
+          ],
+          "trace": 3.1244411139213555,
+          "anisotropy": 0.6401834762643515,
+          "mean_point_anisotropy": 0.6088159544565546,
+          "max_point_anisotropy": 0.8184964959272875,
+          "fourth_moment": 11.72209404446752,
+          "normalized_fourth_moment": 1.2007718923510968,
+          "mean_point_fourth_moment": 11.722094044463537,
+          "max_point_fourth_moment": 21.007191472479683
+        },
+        {
+          "spec": "sqrt",
+          "model": "CRT leg cyclic band, bandwidth=sqrt, scaling=sld",
+          "edge_count": 345345,
+          "total_edge_weight": 53229.49999995863,
+          "symbol": [
+            [
+              0.4387515530337588,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.6856895608876074,
+              3.3511190688003155e-17
+            ],
+            [
+              0.0,
+              3.3511190688003155e-17,
+              0.913732075484367
+            ]
+          ],
+          "eigenvalues": [
+            0.4387515530337588,
+            0.6856895608876074,
+            0.913732075484367
+          ],
+          "trace": 2.0381731894057333,
+          "anisotropy": 0.3511913286307425,
+          "mean_point_anisotropy": 0.35833893428353275,
+          "max_point_anisotropy": 0.5148856160863783,
+          "fourth_moment": 5.527209524346289,
+          "normalized_fourth_moment": 1.3305272055309105,
+          "mean_point_fourth_moment": 5.527209524347742,
+          "max_point_fourth_moment": 6.897607198980613
+        },
+        {
+          "spec": "pow:0.5",
+          "model": "CRT leg cyclic band, bandwidth=pow:0.5, scaling=sld",
+          "edge_count": 345345,
+          "total_edge_weight": 53229.49999995863,
+          "symbol": [
+            [
+              0.4387515530337588,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.6856895608876074,
+              3.3511190688003155e-17
+            ],
+            [
+              0.0,
+              3.3511190688003155e-17,
+              0.913732075484367
+            ]
+          ],
+          "eigenvalues": [
+            0.4387515530337588,
+            0.6856895608876074,
+            0.913732075484367
+          ],
+          "trace": 2.0381731894057333,
+          "anisotropy": 0.3511913286307425,
+          "mean_point_anisotropy": 0.35833893428353275,
+          "max_point_anisotropy": 0.5148856160863783,
+          "fourth_moment": 5.527209524346289,
+          "normalized_fourth_moment": 1.3305272055309105,
+          "mean_point_fourth_moment": 5.527209524347742,
+          "max_point_fourth_moment": 6.897607198980613
+        },
+        {
+          "spec": "pow:0.75",
+          "model": "CRT leg cyclic band, bandwidth=pow:0.75, scaling=sld",
+          "edge_count": 525525,
+          "total_edge_weight": 69909.49999992743,
+          "symbol": [
+            [
+              2.0000000000015894,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.9999999999990692,
+              9.499874276435516e-17
+            ],
+            [
+              0.0,
+              9.499874276435516e-17,
+              1.9999999999999893
+            ]
+          ],
+          "eigenvalues": [
+            1.9999999999990692,
+            1.9999999999999893,
+            2.0000000000015894
+          ],
+          "trace": 6.000000000000648,
+          "anisotropy": 6.300515664746725e-13,
+          "mean_point_anisotropy": 0.3100818056169662,
+          "max_point_anisotropy": 0.4891817710527394,
+          "fourth_moment": 27.000000000002984,
+          "normalized_fourth_moment": 0.7499999999999208,
+          "mean_point_fourth_moment": 26.99999999999999,
+          "max_point_fourth_moment": 52.49999999999997
+        },
+        {
+          "spec": "frac:0.25",
+          "model": "CRT leg cyclic band, bandwidth=frac:0.25, scaling=sld",
+          "edge_count": 255255,
+          "total_edge_weight": 40203.49999995316,
+          "symbol": [
+            [
+              0.4387515530337588,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.2703023469697706,
+              1.2611515291390916e-17
+            ],
+            [
+              0.0,
+              1.2611515291390916e-17,
+              0.21514868465212428
+            ]
+          ],
+          "eigenvalues": [
+            0.21514868465212428,
+            0.2703023469697706,
+            0.4387515530337588
+          ],
+          "trace": 0.9242025846556536,
+          "anisotropy": 0.3419525724183137,
+          "mean_point_anisotropy": 0.4310487512236895,
+          "max_point_anisotropy": 0.7526662726293626,
+          "fourth_moment": 1.5416021318679205,
+          "normalized_fourth_moment": 1.80483683003814,
+          "mean_point_fourth_moment": 1.5416021318670858,
+          "max_point_fourth_moment": 2.1573320616912004
+        },
+        {
+          "spec": "complete",
+          "model": "CRT leg cyclic band, bandwidth=complete, scaling=sld",
+          "edge_count": 525525,
+          "total_edge_weight": 69909.49999992743,
+          "symbol": [
+            [
+              2.0000000000015894,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.9999999999990692,
+              9.499874276435516e-17
+            ],
+            [
+              0.0,
+              9.499874276435516e-17,
+              1.9999999999999893
+            ]
+          ],
+          "eigenvalues": [
+            1.9999999999990692,
+            1.9999999999999893,
+            2.0000000000015894
+          ],
+          "trace": 6.000000000000648,
+          "anisotropy": 6.300515664746725e-13,
+          "mean_point_anisotropy": 0.3100818056169662,
+          "max_point_anisotropy": 0.4891817710527394,
+          "fourth_moment": 27.000000000002984,
+          "normalized_fourth_moment": 0.7499999999999208,
+          "mean_point_fourth_moment": 26.99999999999999,
+          "max_point_fourth_moment": 52.49999999999997
+        }
+      ]
+    }
+  ],
+  "summary": {
+    "status": "KILL_OR_INCONCLUSIVE",
+    "kills": [
+      "Bures normalized fourth moment increased along the tested refinement"
+    ],
+    "finest_row": 30030,
+    "finest_diag_anisotropy": 0.533477238299507,
+    "finest_bures_anisotropy": 6.300515664746725e-13,
+    "finest_global_complete_anisotropy": null,
+    "finest_bures_normalized_fourth": 0.7499999999999208,
+    "finest_diag_normalized_fourth": 0.3198660488177323
+  }
+}

@@ -1,0 +1,169 @@
+{
+  "claim_tested": "honest off-diagonal Bures generator on target-local pairs",
+  "parameters": {
+    "row": 30,
+    "dimension": 3,
+    "xi_mode": "largest_primes",
+    "quotient_basis": "residue",
+    "target_h_scale": 8.0,
+    "target_mesh_denominator": "distinct",
+    "max_target_pairs": 2000000,
+    "explicit_max_states": 64,
+    "explicit_max_pairs": 20000,
+    "phase": "four_phase",
+    "report": "empirical\\reports\\bures_offdiagonal_generator_audit_z30.md",
+    "json": "empirical\\reports\\bures_offdiagonal_generator_audit_z30.json"
+  },
+  "row": 30,
+  "primes": [
+    2,
+    3,
+    5
+  ],
+  "state_count": 30,
+  "xi_labels": [
+    "p5:res",
+    "p3:res",
+    "p2:res"
+  ],
+  "target_radius": 2.5746383589483464,
+  "target_pair_count": 281,
+  "classical_shadow": {
+    "edge_count": 281,
+    "symbol": [
+      [
+        20.66666666666667,
+        1.7763568394002506e-16,
+        -8.881784197001253e-17
+      ],
+      [
+        1.7763568394002506e-16,
+        24.800000000000004,
+        -1.7763568394002506e-16
+      ],
+      [
+        -8.881784197001253e-17,
+        -1.7763568394002506e-16,
+        29.066666666666666
+      ]
+    ],
+    "eigenvalues": [
+      20.66666666666667,
+      24.800000000000015,
+      29.066666666666666
+    ],
+    "trace": 74.53333333333335,
+    "anisotropy": 0.16890080428954413,
+    "fourth_moment": 368.73333333333335,
+    "normalized_fourth_moment": 0.06637603566296829
+  },
+  "explicit_bures": {
+    "derivation_second": [
+      [
+        18600.000000000004,
+        -1.0658141036401503e-13,
+        -2.6645352591003757e-14
+      ],
+      [
+        -1.0658141036401503e-13,
+        22320.000000000004,
+        1.3322676295501878e-13
+      ],
+      [
+        -2.6645352591003757e-14,
+        1.3322676295501878e-13,
+        26160.0
+      ]
+    ],
+    "derivation_eigenvalues": [
+      18600.000000000004,
+      22320.000000000004,
+      26160.0
+    ],
+    "lindblad_quadratic": [
+      [
+        9300.0,
+        0.0,
+        1.5987211554602254e-13
+      ],
+      [
+        -5.3290705182007514e-14,
+        11160.000000000002,
+        5.3290705182007514e-14
+      ],
+      [
+        -1.0658141036401503e-13,
+        -3.197442310920451e-13,
+        13080.0
+      ]
+    ],
+    "lindblad_eigenvalues": [
+      9300.0,
+      11160.000000000002,
+      13079.999999999998
+    ],
+    "hamiltonian_symmetric_form": [
+      [
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0
+      ]
+    ],
+    "max_abs_hamiltonian_symmetric_form": 0.0,
+    "max_abs_lindblad_minus_half_derivation": 1.8189894035458565e-12,
+    "normalization": "Bures at rho=I/N uses <X,Y>_B = N Tr(X^*Y)",
+    "state_count": 30
+  },
+  "edge_formula": {
+    "symbol": [
+      [
+        18600.000000000004,
+        6.394884621840902e-14,
+        0.0
+      ],
+      [
+        6.394884621840902e-14,
+        22320.000000000004,
+        -1.1368683772161603e-13
+      ],
+      [
+        0.0,
+        -1.1368683772161603e-13,
+        26160.0
+      ]
+    ],
+    "eigenvalues": [
+      18600.000000000004,
+      22320.000000000004,
+      26160.0
+    ],
+    "anisotropy": 0.16890080428954415,
+    "trace": 67080.0,
+    "fourth_moment": 331860.0,
+    "normalized_fourth_moment": 7.375115073663145e-05,
+    "unit_symbol_fourth_ratio": 1.6490757304710792,
+    "edge_weight_sum": 281.0
+  },
+  "summary": {
+    "status": "EXPLICIT_BUILT",
+    "target_pair_count": 281,
+    "classical_anisotropy": 0.16890080428954413,
+    "classical_q4": 0.06637603566296829,
+    "classical_unit_symbol_fourth_ratio": 1.6490757304710792,
+    "bures_derivation_q4": 7.375115073663145e-05,
+    "bures_unit_symbol_fourth_ratio": 1.6490757304710792,
+    "max_abs_derivation_minus_edge_formula": 2.469136006766348e-13,
+    "max_abs_hamiltonian_symmetric_form": 0.0,
+    "max_abs_lindblad_minus_half_derivation": 1.8189894035458565e-12
+  }
+}

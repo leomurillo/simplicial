@@ -1,0 +1,6512 @@
+{
+  "purpose": "First-order packet-respect price atlas: compute the plane-rotation mu* required by Theorem 3.5 of Paper 25 across supported rows.",
+  "config": {
+    "rows": [
+      "f2-u2",
+      "f2-u3",
+      "f2-u4",
+      "f2-u5",
+      "f4-u2",
+      "f4-u3",
+      "f8-u2"
+    ],
+    "amplitudes": [
+      0.1,
+      0.35,
+      0.5
+    ],
+    "epsilon": 1e-06,
+    "skip_lowest": true,
+    "ledger_weights": {
+      "block": 1.0,
+      "mix": 1.0,
+      "fisher_projection": 1.0,
+      "reciprocal_projection": 1.0,
+      "closure": 1.0,
+      "resource": 0.1,
+      "depth": 0.1
+    }
+  },
+  "results": [
+    {
+      "row_key": "f2-u2",
+      "row": "F_2[u]/(u^2)",
+      "target_packet": "u^2",
+      "target_depth": 2,
+      "packet_sizes": {
+        "u": 1,
+        "u^2": 2
+      },
+      "active_prefix_dimension": 3,
+      "total_dimension": 3,
+      "amplitude_fraction": 0.1,
+      "actual_amplitude": 0.0475,
+      "probability_min": 0.22625,
+      "probability_max": 0.27375,
+      "base_J0": 0.20919013336513426,
+      "base_J": 0.20919013336513426,
+      "base_block_coupling": 0.00919013336513425,
+      "cross_pair_count": 2,
+      "singular_pair_count": 2,
+      "descent_pair_count": 2,
+      "positive_mu_summary": {
+        "min": 0.0004365428019070805,
+        "p05": 0.0004365428019070805,
+        "median": 0.0004365428019070805,
+        "mean": 0.0004365428019070805,
+        "p95": 0.0004365428019070805,
+        "max": 0.0004365428019070805
+      },
+      "all_mu_summary": {
+        "min": 0.0004365428019070805,
+        "p05": 0.0004365428019070805,
+        "median": 0.0004365428019070805,
+        "mean": 0.0004365428019070805,
+        "p95": 0.0004365428019070805,
+        "max": 0.0004365428019070805
+      },
+      "max_mu_star": 0.0004365428019070805,
+      "best_pair": [
+        0,
+        1
+      ],
+      "best_d_J0_at_zero": -0.0008730626638309147,
+      "best_one_sided_descent_rate": 0.000873085603814161,
+      "quadratic_impurity_c_formula": 2.6666666666666665,
+      "quadratic_impurity_c_error_max": 3.5553782140596013e-12,
+      "top_pairs": [
+        {
+          "pair": [
+            0,
+            1
+          ],
+          "d_J0_at_zero": -0.0008730626638309147,
+          "one_sided_descent_rate": 0.000873085603814161,
+          "observed_quadratic_impurity_c": 2.666666666663111,
+          "nu": 2.0,
+          "mu": 0.0004365428019070805
+        },
+        {
+          "pair": [
+            0,
+            2
+          ],
+          "d_J0_at_zero": -0.0008730626638309147,
+          "one_sided_descent_rate": 0.000873085603814161,
+          "observed_quadratic_impurity_c": 2.666666666663111,
+          "nu": 2.0,
+          "mu": 0.0004365428019070805
+        }
+      ]
+    },
+    {
+      "row_key": "f2-u2",
+      "row": "F_2[u]/(u^2)",
+      "target_packet": "u^2",
+      "target_depth": 2,
+      "packet_sizes": {
+        "u": 1,
+        "u^2": 2
+      },
+      "active_prefix_dimension": 3,
+      "total_dimension": 3,
+      "amplitude_fraction": 0.35,
+      "actual_amplitude": 0.16624999999999998,
+      "probability_min": 0.166875,
+      "probability_max": 0.333125,
+      "base_J0": 0.33974823251944836,
+      "base_J": 0.33974823251944836,
+      "base_block_coupling": 0.13974823251944835,
+      "cross_pair_count": 2,
+      "singular_pair_count": 2,
+      "descent_pair_count": 2,
+      "positive_mu_summary": {
+        "min": 0.023233314466741817,
+        "p05": 0.023233314466741817,
+        "median": 0.023233314466741817,
+        "mean": 0.023233314466741817,
+        "p95": 0.023233314466741817,
+        "max": 0.023233314466741817
+      },
+      "all_mu_summary": {
+        "min": 0.023233314466741817,
+        "p05": 0.023233314466741817,
+        "median": 0.023233314466741817,
+        "mean": 0.023233314466741817,
+        "p95": 0.023233314466741817,
+        "max": 0.023233314466741817
+      },
+      "max_mu_star": 0.023233314466741817,
+      "best_pair": [
+        0,
+        1
+      ],
+      "best_d_J0_at_zero": -0.046466287317858956,
+      "best_one_sided_descent_rate": 0.046466628933483634,
+      "quadratic_impurity_c_formula": 2.6666666666666665,
+      "quadratic_impurity_c_error_max": 3.5553782140596013e-12,
+      "top_pairs": [
+        {
+          "pair": [
+            0,
+            1
+          ],
+          "d_J0_at_zero": -0.046466287317858956,
+          "one_sided_descent_rate": 0.046466628933483634,
+          "observed_quadratic_impurity_c": 2.666666666663111,
+          "nu": 2.0,
+          "mu": 0.023233314466741817
+        },
+        {
+          "pair": [
+            0,
+            2
+          ],
+          "d_J0_at_zero": -0.046466287317858956,
+          "one_sided_descent_rate": 0.046466628933483634,
+          "observed_quadratic_impurity_c": 2.666666666663111,
+          "nu": 2.0,
+          "mu": 0.023233314466741817
+        }
+      ]
+    },
+    {
+      "row_key": "f2-u2",
+      "row": "F_2[u]/(u^2)",
+      "target_packet": "u^2",
+      "target_depth": 2,
+      "packet_sizes": {
+        "u": 1,
+        "u^2": 2
+      },
+      "active_prefix_dimension": 3,
+      "total_dimension": 3,
+      "amplitude_fraction": 0.5,
+      "actual_amplitude": 0.2375,
+      "probability_min": 0.13125,
+      "probability_max": 0.36875,
+      "base_J0": 0.5762569856056948,
+      "base_J": 0.5762569856056948,
+      "base_block_coupling": 0.37625698560569487,
+      "cross_pair_count": 2,
+      "singular_pair_count": 2,
+      "descent_pair_count": 2,
+      "positive_mu_summary": {
+        "min": 0.08936148321314619,
+        "p05": 0.08936148321314619,
+        "median": 0.08936148321314619,
+        "mean": 0.08936148321314619,
+        "p95": 0.08936148321314619,
+        "max": 0.08936148321314619
+      },
+      "all_mu_summary": {
+        "min": 0.08936148321314619,
+        "p05": 0.08936148321314619,
+        "median": 0.08936148321314619,
+        "mean": 0.08936148321314619,
+        "p95": 0.08936148321314619,
+        "max": 0.08936148321314619
+      },
+      "max_mu_star": 0.08936148321314619,
+      "best_pair": [
+        0,
+        1
+      ],
+      "best_d_J0_at_zero": -0.17872206814484315,
+      "best_one_sided_descent_rate": 0.17872296642629237,
+      "quadratic_impurity_c_formula": 2.6666666666666665,
+      "quadratic_impurity_c_error_max": 3.5553782140596013e-12,
+      "top_pairs": [
+        {
+          "pair": [
+            0,
+            1
+          ],
+          "d_J0_at_zero": -0.17872206814484315,
+          "one_sided_descent_rate": 0.17872296642629237,
+          "observed_quadratic_impurity_c": 2.666666666663111,
+          "nu": 2.0,
+          "mu": 0.08936148321314619
+        },
+        {
+          "pair": [
+            0,
+            2
+          ],
+          "d_J0_at_zero": -0.17872206814484315,
+          "one_sided_descent_rate": 0.17872296642629237,
+          "observed_quadratic_impurity_c": 2.666666666663111,
+          "nu": 2.0,
+          "mu": 0.08936148321314619
+        }
+      ]
+    },
+    {
+      "row_key": "f2-u3",
+      "row": "F_2[u]/(u^3)",
+      "target_packet": "u^2",
+      "target_depth": 2,
+      "packet_sizes": {
+        "u": 1,
+        "u^2": 2,
+        "u^3": 4
+      },
+      "active_prefix_dimension": 3,
+      "total_dimension": 7,
+      "amplitude_fraction": 0.1,
+      "actual_amplitude": 0.0475,
+      "probability_min": 0.113125,
+      "probability_max": 0.136875,
+      "base_J0": 0.11871394288894377,
+      "base_J": 0.11871394288894377,
+      "base_block_coupling": 0.009190133365134238,
+      "cross_pair_count": 14,
+      "singular_pair_count": 14,
+      "descent_pair_count": 2,
+      "positive_mu_summary": {
+        "min": 0.0004365426423125207,
+        "p05": 0.0004365426506391934,
+        "median": 0.00043654272557924756,
+        "mean": 0.00043654272557924756,
+        "p95": 0.0004365428005193017,
+        "max": 0.0004365428088459744
+      },
+      "all_mu_summary": {
+        "min": 0.0,
+        "p05": 0.0,
+        "median": 0.0,
+        "mean": 6.236324651132108e-05,
+        "p95": 0.0004365427005992295,
+        "max": 0.0004365428088459744
+      },
+      "max_mu_star": 0.0004365428088459744,
+      "best_pair": [
+        0,
+        1
+      ],
+      "best_d_J0_at_zero": -0.0008730626707698086,
+      "best_one_sided_descent_rate": 0.0008730856176919488,
+      "quadratic_impurity_c_formula": 1.1428571428571428,
+      "quadratic_impurity_c_error_max": 1.5236700789955648e-12,
+      "top_pairs": [
+        {
+          "pair": [
+            0,
+            1
+          ],
+          "d_J0_at_zero": -0.0008730626707698086,
+          "one_sided_descent_rate": 0.0008730856176919488,
+          "observed_quadratic_impurity_c": 1.1428571428556191,
+          "nu": 2.0,
+          "mu": 0.0004365428088459744
+        },
+        {
+          "pair": [
+            0,
+            2
+          ],
+          "d_J0_at_zero": -0.0008730626707698086,
+          "one_sided_descent_rate": 0.0008730852846250414,
+          "observed_quadratic_impurity_c": 1.1428571428556191,
+          "nu": 2.0,
+          "mu": 0.0004365426423125207
+        },
+        {
+          "pair": [
+            0,
+            3
+          ],
+          "d_J0_at_zero": -0.666666666759852,
+          "one_sided_descent_rate": 0.0,
+          "observed_quadratic_impurity_c": 1.1428571428556191,
+          "nu": 2.0,
+          "mu": 0.0
+        },
+        {
+          "pair": [
+            0,
+            4
+          ],
+          "d_J0_at_zero": -0.666666666759852,
+          "one_sided_descent_rate": 0.0,
+          "observed_quadratic_impurity_c": 1.1428571428556191,
+          "nu": 2.0,
+          "mu": 0.0
+        },
+        {
+          "pair": [
+            0,
+            5
+          ],
+          "d_J0_at_zero": -0.666666666759852,
+          "one_sided_descent_rate": 0.0,
+          "observed_quadratic_impurity_c": 1.1428571428556191,
+          "nu": 2.0,
+          "mu": 0.0
+        },
+        {
+          "pair": [
+            0,
+            6
+          ],
+          "d_J0_at_zero": -0.666666666759852,
+          "one_sided_descent_rate": 0.0,
+          "observed_quadratic_impurity_c": 1.1428571428556191,
+          "nu": 2.0,
+          "mu": 0.0
+        },
+        {
+          "pair": [
+            1,
+            3
+          ],
+          "d_J0_at_zero": -0.666666666759852,
+          "one_sided_descent_rate": 0.0,
+          "observed_quadratic_impurity_c": 1.1428571428556191,
+          "nu": 2.0,
+          "mu": 0.0
+        },
+        {
+          "pair": [
+            1,
+            4
+          ],
+          "d_J0_at_zero": -0.666666666759852,
+          "one_sided_descent_rate": 0.0,
+          "observed_quadratic_impurity_c": 1.1428571428556191,
+          "nu": 2.0,
+          "mu": 0.0
+        },
+        {
+          "pair": [
+            1,
+            5
+          ],
+          "d_J0_at_zero": -0.666666666759852,
+          "one_sided_descent_rate": 0.0,
+          "observed_quadratic_impurity_c": 1.1428571428556191,
+          "nu": 2.0,
+          "mu": 0.0
+        },
+        {
+          "pair": [
+            1,
+            6
+          ],
+          "d_J0_at_zero": -0.666666666759852,
+          "one_sided_descent_rate": 0.0,
+          "observed_quadratic_impurity_c": 1.1428571428556191,
+          "nu": 2.0,
+          "mu": 0.0
+        }
+      ]
+    },
+    {
+      "row_key": "f2-u3",
+      "row": "F_2[u]/(u^3)",
+      "target_packet": "u^2",
+      "target_depth": 2,
+      "packet_sizes": {
+        "u": 1,
+        "u^2": 2,
+        "u^3": 4
+      },
+      "active_prefix_dimension": 3,
+      "total_dimension": 7,
+      "amplitude_fraction": 0.35,
+      "actual_amplitude": 0.16624999999999998,
+      "probability_min": 0.0834375,
+      "probability_max": 0.1665625,
+      "base_J0": 0.24927204204325776,
+      "base_J": 0.24927204204325776,
+      "base_block_coupling": 0.13974823251944823,
+      "cross_pair_count": 14,
+      "singular_pair_count": 14,
+      "descent_pair_count": 2,
+      "positive_mu_summary": {
+        "min": 0.023233314300208363,
+        "p05": 0.023233314308535036,
+        "median": 0.02323331438347509,
+        "mean": 0.02323331438347509,
+        "p95": 0.023233314458415144,
+        "max": 0.023233314466741817
+      },
+      "all_mu_summary": {
+        "min": 0.0,
+        "p05": 0.0,
+        "median": 0.0,
+        "mean": 0.0033190449119250127,
+        "p95": 0.023233314358495072,
+        "max": 0.023233314466741817
+      },
+      "max_mu_star": 0.023233314466741817,
+      "best_pair": [
+        0,
+        1
+      ],
+      "best_d_J0_at_zero": -0.04646628729010338,
+      "best_one_sided_descent_rate": 0.046466628933483634,
+      "quadratic_impurity_c_formula": 1.1428571428571428,
+      "quadratic_impurity_c_error_max": 1.5236700789955648e-12,
+      "top_pairs": [
+        {
+          "pair": [
+            0,
+            1
+          ],
+          "d_J0_at_zero": -0.04646628729010338,
+          "one_sided_descent_rate": 0.046466628933483634,
+          "observed_quadratic_impurity_c": 1.1428571428556191,
+          "nu": 2.0,
+          "mu": 0.023233314466741817
+        },
+        {
+          "pair": [
+            0,
+            2
+          ],
+          "d_J0_at_zero": -0.04646628729010338,
+          "one_sided_descent_rate": 0.046466628600416726,
+          "observed_quadratic_impurity_c": 1.1428571428556191,
+          "nu": 2.0,
+          "mu": 0.023233314300208363
+        },
+        {
+          "pair": [
+            0,
+            3
+          ],
+          "d_J0_at_zero": -0.666666666759852,
+          "one_sided_descent_rate": 0.0,
+          "observed_quadratic_impurity_c": 1.1428571428556191,
+          "nu": 2.0,
+          "mu": 0.0
+        },
+        {
+          "pair": [
+            0,
+            4
+          ],
+          "d_J0_at_zero": -0.666666666759852,
+          "one_sided_descent_rate": 0.0,
+          "observed_quadratic_impurity_c": 1.1428571428556191,
+          "nu": 2.0,
+          "mu": 0.0
+        },
+        {
+          "pair": [
+            0,
+            5
+          ],
+          "d_J0_at_zero": -0.666666666759852,
+          "one_sided_descent_rate": 0.0,
+          "observed_quadratic_impurity_c": 1.1428571428556191,
+          "nu": 2.0,
+          "mu": 0.0
+        },
+        {
+          "pair": [
+            0,
+            6
+          ],
+          "d_J0_at_zero": -0.666666666759852,
+          "one_sided_descent_rate": 0.0,
+          "observed_quadratic_impurity_c": 1.1428571428556191,
+          "nu": 2.0,
+          "mu": 0.0
+        },
+        {
+          "pair": [
+            1,
+            3
+          ],
+          "d_J0_at_zero": -0.666666666759852,
+          "one_sided_descent_rate": 0.0,
+          "observed_quadratic_impurity_c": 1.1428571428556191,
+          "nu": 2.0,
+          "mu": 0.0
+        },
+        {
+          "pair": [
+            1,
+            4
+          ],
+          "d_J0_at_zero": -0.666666666759852,
+          "one_sided_descent_rate": 0.0,
+          "observed_quadratic_impurity_c": 1.1428571428556191,
+          "nu": 2.0,
+          "mu": 0.0
+        },
+        {
+          "pair": [
+            1,
+            5
+          ],
+          "d_J0_at_zero": -0.666666666759852,
+          "one_sided_descent_rate": 0.0,
+          "observed_quadratic_impurity_c": 1.1428571428556191,
+          "nu": 2.0,
+          "mu": 0.0
+        },
+        {
+          "pair": [
+            1,
+            6
+          ],
+          "d_J0_at_zero": -0.666666666759852,
+          "one_sided_descent_rate": 0.0,
+          "observed_quadratic_impurity_c": 1.1428571428556191,
+          "nu": 2.0,
+          "mu": 0.0
+        }
+      ]
+    },
+    {
+      "row_key": "f2-u3",
+      "row": "F_2[u]/(u^3)",
+      "target_packet": "u^2",
+      "target_depth": 2,
+      "packet_sizes": {
+        "u": 1,
+        "u^2": 2,
+        "u^3": 4
+      },
+      "active_prefix_dimension": 3,
+      "total_dimension": 7,
+      "amplitude_fraction": 0.5,
+      "actual_amplitude": 0.2375,
+      "probability_min": 0.065625,
+      "probability_max": 0.184375,
+      "base_J0": 0.4857807951295043,
+      "base_J": 0.4857807951295043,
+      "base_block_coupling": 0.37625698560569476,
+      "cross_pair_count": 14,
+      "singular_pair_count": 14,
+      "descent_pair_count": 2,
+      "positive_mu_summary": {
+        "min": 0.08936148310212388,
+        "p05": 0.08936148311045056,
+        "median": 0.08936148318539061,
+        "mean": 0.08936148318539061,
+        "p95": 0.08936148326033067,
+        "max": 0.08936148326865734
+      },
+      "all_mu_summary": {
+        "min": 0.0,
+        "p05": 0.0,
+        "median": 0.0,
+        "mean": 0.012765926169341515,
+        "p95": 0.08936148316041059,
+        "max": 0.08936148326865734
+      },
+      "max_mu_star": 0.08936148326865734,
+      "best_pair": [
+        0,
+        1
+      ],
+      "best_d_J0_at_zero": -0.1787220682003543,
+      "best_one_sided_descent_rate": 0.17872296653731468,
+      "quadratic_impurity_c_formula": 1.1428571428571428,
+      "quadratic_impurity_c_error_max": 1.5236700789955648e-12,
+      "top_pairs": [
+        {
+          "pair": [
+            0,
+            1
+          ],
+          "d_J0_at_zero": -0.1787220682003543,
+          "one_sided_descent_rate": 0.17872296653731468,
+          "observed_quadratic_impurity_c": 1.1428571428556191,
+          "nu": 2.0,
+          "mu": 0.08936148326865734
+        },
+        {
+          "pair": [
+            0,
+            2
+          ],
+          "d_J0_at_zero": -0.1787220682003543,
+          "one_sided_descent_rate": 0.17872296620424777,
+          "observed_quadratic_impurity_c": 1.1428571428556191,
+          "nu": 2.0,
+          "mu": 0.08936148310212388
+        },
+        {
+          "pair": [
+            0,
+            3
+          ],
+          "d_J0_at_zero": -0.666666666759852,
+          "one_sided_descent_rate": 0.0,
+          "observed_quadratic_impurity_c": 1.1428571428556191,
+          "nu": 2.0,
+          "mu": 0.0
+        },
+        {
+          "pair": [
+            0,
+            4
+          ],
+          "d_J0_at_zero": -0.666666666759852,
+          "one_sided_descent_rate": 0.0,
+          "observed_quadratic_impurity_c": 1.1428571428556191,
+          "nu": 2.0,
+          "mu": 0.0
+        },
+        {
+          "pair": [
+            0,
+            5
+          ],
+          "d_J0_at_zero": -0.666666666759852,
+          "one_sided_descent_rate": 0.0,
+          "observed_quadratic_impurity_c": 1.1428571428556191,
+          "nu": 2.0,
+          "mu": 0.0
+        },
+        {
+          "pair": [
+            0,
+            6
+          ],
+          "d_J0_at_zero": -0.666666666759852,
+          "one_sided_descent_rate": 0.0,
+          "observed_quadratic_impurity_c": 1.1428571428556191,
+          "nu": 2.0,
+          "mu": 0.0
+        },
+        {
+          "pair": [
+            1,
+            3
+          ],
+          "d_J0_at_zero": -0.666666666759852,
+          "one_sided_descent_rate": 0.0,
+          "observed_quadratic_impurity_c": 1.1428571428556191,
+          "nu": 2.0,
+          "mu": 0.0
+        },
+        {
+          "pair": [
+            1,
+            4
+          ],
+          "d_J0_at_zero": -0.666666666759852,
+          "one_sided_descent_rate": 0.0,
+          "observed_quadratic_impurity_c": 1.1428571428556191,
+          "nu": 2.0,
+          "mu": 0.0
+        },
+        {
+          "pair": [
+            1,
+            5
+          ],
+          "d_J0_at_zero": -0.666666666759852,
+          "one_sided_descent_rate": 0.0,
+          "observed_quadratic_impurity_c": 1.1428571428556191,
+          "nu": 2.0,
+          "mu": 0.0
+        },
+        {
+          "pair": [
+            1,
+            6
+          ],
+          "d_J0_at_zero": -0.666666666759852,
+          "one_sided_descent_rate": 0.0,
+          "observed_quadratic_impurity_c": 1.1428571428556191,
+          "nu": 2.0,
+          "mu": 0.0
+        }
+      ]
+    },
+    {
+      "row_key": "f2-u3",
+      "row": "F_2[u]/(u^3)",
+      "target_packet": "u^3",
+      "target_depth": 3,
+      "packet_sizes": {
+        "u": 1,
+        "u^2": 2,
+        "u^3": 4
+      },
+      "active_prefix_dimension": 7,
+      "total_dimension": 7,
+      "amplitude_fraction": 0.1,
+      "actual_amplitude": 0.02375,
+      "probability_min": 0.113125,
+      "probability_max": 0.136875,
+      "base_J0": 0.21380593528610645,
+      "base_J": 0.21380593528610645,
+      "base_block_coupling": 0.013805935286106434,
+      "cross_pair_count": 14,
+      "singular_pair_count": 14,
+      "descent_pair_count": 14,
+      "positive_mu_summary": {
+        "min": 1.0367637304220523e-05,
+        "p05": 1.0367637304220523e-05,
+        "median": 0.0002182702490971522,
+        "mean": 0.00021975051342096715,
+        "p95": 0.000327402507882546,
+        "max": 0.000327402507882546
+      },
+      "all_mu_summary": {
+        "min": 1.0367637304220523e-05,
+        "p05": 1.0367637304220523e-05,
+        "median": 0.0002182702490971522,
+        "mean": 0.00021975051342096715,
+        "p95": 0.000327402507882546,
+        "max": 0.000327402507882546
+      },
+      "max_mu_star": 0.000327402507882546,
+      "best_pair": [
+        0,
+        3
+      ],
+      "best_d_J0_at_zero": -0.0006547971054260415,
+      "best_one_sided_descent_rate": 0.000654805015765092,
+      "quadratic_impurity_c_formula": 1.1428571428571428,
+      "quadratic_impurity_c_error_max": 1.5236700789955648e-12,
+      "top_pairs": [
+        {
+          "pair": [
+            0,
+            3
+          ],
+          "d_J0_at_zero": -0.0006547971054260415,
+          "one_sided_descent_rate": 0.000654805015765092,
+          "observed_quadratic_impurity_c": 1.1428571428556191,
+          "nu": 2.0,
+          "mu": 0.000327402507882546
+        },
+        {
+          "pair": [
+            0,
+            4
+          ],
+          "d_J0_at_zero": -0.0006547971054260415,
+          "one_sided_descent_rate": 0.000654805015765092,
+          "observed_quadratic_impurity_c": 1.1428571428556191,
+          "nu": 2.0,
+          "mu": 0.000327402507882546
+        },
+        {
+          "pair": [
+            0,
+            5
+          ],
+          "d_J0_at_zero": -0.0006547971054260415,
+          "one_sided_descent_rate": 0.000654805015765092,
+          "observed_quadratic_impurity_c": 1.1428571428556191,
+          "nu": 2.0,
+          "mu": 0.000327402507882546
+        },
+        {
+          "pair": [
+            0,
+            6
+          ],
+          "d_J0_at_zero": -0.0006547971054260415,
+          "one_sided_descent_rate": 0.000654805015765092,
+          "observed_quadratic_impurity_c": 1.1428571428556191,
+          "nu": 2.0,
+          "mu": 0.000327402507882546
+        },
+        {
+          "pair": [
+            1,
+            4
+          ],
+          "d_J0_at_zero": -0.0004365314498766537,
+          "one_sided_descent_rate": 0.0004365404981943044,
+          "observed_quadratic_impurity_c": 1.1428571428556191,
+          "nu": 2.0,
+          "mu": 0.0002182702490971522
+        },
+        {
+          "pair": [
+            1,
+            5
+          ],
+          "d_J0_at_zero": -0.0004365314498766537,
+          "one_sided_descent_rate": 0.0004365404981943044,
+          "observed_quadratic_impurity_c": 1.1428571428556191,
+          "nu": 2.0,
+          "mu": 0.0002182702490971522
+        },
+        {
+          "pair": [
+            1,
+            6
+          ],
+          "d_J0_at_zero": -0.0004365314498766537,
+          "one_sided_descent_rate": 0.0004365404981943044,
+          "observed_quadratic_impurity_c": 1.1428571428556191,
+          "nu": 2.0,
+          "mu": 0.0002182702490971522
+        },
+        {
+          "pair": [
+            2,
+            3
+          ],
+          "d_J0_at_zero": -0.0004365314498766537,
+          "one_sided_descent_rate": 0.0004365404981943044,
+          "observed_quadratic_impurity_c": 1.1428571428556191,
+          "nu": 2.0,
+          "mu": 0.0002182702490971522
+        },
+        {
+          "pair": [
+            2,
+            4
+          ],
+          "d_J0_at_zero": -0.0004365314498766537,
+          "one_sided_descent_rate": 0.0004365404981943044,
+          "observed_quadratic_impurity_c": 1.1428571428556191,
+          "nu": 2.0,
+          "mu": 0.0002182702490971522
+        },
+        {
+          "pair": [
+            2,
+            5
+          ],
+          "d_J0_at_zero": -0.0004365314498766537,
+          "one_sided_descent_rate": 0.0004365404981943044,
+          "observed_quadratic_impurity_c": 1.1428571428556191,
+          "nu": 2.0,
+          "mu": 0.0002182702490971522
+        }
+      ]
+    },
+    {
+      "row_key": "f2-u3",
+      "row": "F_2[u]/(u^3)",
+      "target_packet": "u^3",
+      "target_depth": 3,
+      "packet_sizes": {
+        "u": 1,
+        "u^2": 2,
+        "u^3": 4
+      },
+      "active_prefix_dimension": 7,
+      "total_dimension": 7,
+      "amplitude_fraction": 0.35,
+      "actual_amplitude": 0.08312499999999999,
+      "probability_min": 0.0834375,
+      "probability_max": 0.1665625,
+      "base_J0": 0.4134848589120419,
+      "base_J": 0.4134848589120419,
+      "base_block_coupling": 0.2134848589120419,
+      "cross_pair_count": 14,
+      "singular_pair_count": 14,
+      "descent_pair_count": 14,
+      "positive_mu_summary": {
+        "min": 0.001931258930554236,
+        "p05": 0.001931258930554236,
+        "median": 0.011616637818345765,
+        "mean": 0.011892520270149833,
+        "p95": 0.01742491601008922,
+        "max": 0.01742491601008922
+      },
+      "all_mu_summary": {
+        "min": 0.001931258930554236,
+        "p05": 0.001931258930554236,
+        "median": 0.011616637818345765,
+        "mean": 0.011892520270149833,
+        "p95": 0.01742491601008922,
+        "max": 0.01742491601008922
+      },
+      "max_mu_star": 0.01742491601008922,
+      "best_pair": [
+        0,
+        3
+      ],
+      "best_d_J0_at_zero": -0.034849715502272005,
+      "best_one_sided_descent_rate": 0.03484983202017844,
+      "quadratic_impurity_c_formula": 1.1428571428571428,
+      "quadratic_impurity_c_error_max": 1.5236700789955648e-12,
+      "top_pairs": [
+        {
+          "pair": [
+            0,
+            3
+          ],
+          "d_J0_at_zero": -0.034849715502272005,
+          "one_sided_descent_rate": 0.03484983202017844,
+          "observed_quadratic_impurity_c": 1.1428571428556191,
+          "nu": 2.0,
+          "mu": 0.01742491601008922
+        },
+        {
+          "pair": [
+            0,
+            4
+          ],
+          "d_J0_at_zero": -0.034849715502272005,
+          "one_sided_descent_rate": 0.03484983202017844,
+          "observed_quadratic_impurity_c": 1.1428571428556191,
+          "nu": 2.0,
+          "mu": 0.01742491601008922
+        },
+        {
+          "pair": [
+            0,
+            5
+          ],
+          "d_J0_at_zero": -0.034849715502272005,
+          "one_sided_descent_rate": 0.034849831798133835,
+          "observed_quadratic_impurity_c": 1.1428571428556191,
+          "nu": 2.0,
+          "mu": 0.017424915899066917
+        },
+        {
+          "pair": [
+            0,
+            6
+          ],
+          "d_J0_at_zero": -0.034849715502272005,
+          "one_sided_descent_rate": 0.034849831798133835,
+          "observed_quadratic_impurity_c": 1.1428571428556191,
+          "nu": 2.0,
+          "mu": 0.017424915899066917
+        },
+        {
+          "pair": [
+            1,
+            3
+          ],
+          "d_J0_at_zero": -0.023233143742196205,
+          "one_sided_descent_rate": 0.02323327563669153,
+          "observed_quadratic_impurity_c": 1.1428571428556191,
+          "nu": 2.0,
+          "mu": 0.011616637818345765
+        },
+        {
+          "pair": [
+            1,
+            4
+          ],
+          "d_J0_at_zero": -0.023233143631173903,
+          "one_sided_descent_rate": 0.02323327563669153,
+          "observed_quadratic_impurity_c": 1.1428571428556191,
+          "nu": 2.0,
+          "mu": 0.011616637818345765
+        },
+        {
+          "pair": [
+            2,
+            3
+          ],
+          "d_J0_at_zero": -0.023233143631173903,
+          "one_sided_descent_rate": 0.02323327563669153,
+          "observed_quadratic_impurity_c": 1.1428571428556191,
+          "nu": 2.0,
+          "mu": 0.011616637818345765
+        },
+        {
+          "pair": [
+            2,
+            4
+          ],
+          "d_J0_at_zero": -0.023233143631173903,
+          "one_sided_descent_rate": 0.02323327563669153,
+          "observed_quadratic_impurity_c": 1.1428571428556191,
+          "nu": 2.0,
+          "mu": 0.011616637818345765
+        },
+        {
+          "pair": [
+            1,
+            5
+          ],
+          "d_J0_at_zero": -0.023233143631173903,
+          "one_sided_descent_rate": 0.023233275414646926,
+          "observed_quadratic_impurity_c": 1.1428571428556191,
+          "nu": 2.0,
+          "mu": 0.011616637707323463
+        },
+        {
+          "pair": [
+            1,
+            6
+          ],
+          "d_J0_at_zero": -0.023233143631173903,
+          "one_sided_descent_rate": 0.023233275414646926,
+          "observed_quadratic_impurity_c": 1.1428571428556191,
+          "nu": 2.0,
+          "mu": 0.011616637707323463
+        }
+      ]
+    },
+    {
+      "row_key": "f2-u3",
+      "row": "F_2[u]/(u^3)",
+      "target_packet": "u^3",
+      "target_depth": 3,
+      "packet_sizes": {
+        "u": 1,
+        "u^2": 2,
+        "u^3": 4
+      },
+      "active_prefix_dimension": 7,
+      "total_dimension": 7,
+      "amplitude_fraction": 0.5,
+      "actual_amplitude": 0.11875,
+      "probability_min": 0.065625,
+      "probability_max": 0.184375,
+      "base_J0": 0.7856087240028632,
+      "base_J": 0.7856087240028632,
+      "base_block_coupling": 0.5856087240028632,
+      "cross_pair_count": 14,
+      "singular_pair_count": 14,
+      "descent_pair_count": 14,
+      "positive_mu_summary": {
+        "min": 0.010611644007951782,
+        "p05": 0.010611644007951782,
+        "median": 0.04468068387497581,
+        "mean": 0.04619660401042732,
+        "p95": 0.0670209242381592,
+        "max": 0.06702092431032369
+      },
+      "all_mu_summary": {
+        "min": 0.010611644007951782,
+        "p05": 0.010611644007951782,
+        "median": 0.04468068387497581,
+        "mean": 0.04619660401042732,
+        "p95": 0.0670209242381592,
+        "max": 0.06702092431032369
+      },
+      "max_mu_star": 0.06702092431032369,
+      "best_pair": [
+        0,
+        3
+      ],
+      "best_d_J0_at_zero": -0.1340415511918991,
+      "best_one_sided_descent_rate": 0.13404184862064739,
+      "quadratic_impurity_c_formula": 1.1428571428571428,
+      "quadratic_impurity_c_error_max": 1.5236700789955648e-12,
+      "top_pairs": [
+        {
+          "pair": [
+            0,
+            3
+          ],
+          "d_J0_at_zero": -0.1340415511918991,
+          "one_sided_descent_rate": 0.13404184862064739,
+          "observed_quadratic_impurity_c": 1.1428571428556191,
+          "nu": 2.0,
+          "mu": 0.06702092431032369
+        },
+        {
+          "pair": [
+            0,
+            4
+          ],
+          "d_J0_at_zero": -0.1340415511918991,
+          "one_sided_descent_rate": 0.13404184839860278,
+          "observed_quadratic_impurity_c": 1.1428571428556191,
+          "nu": 2.0,
+          "mu": 0.06702092419930139
+        },
+        {
+          "pair": [
+            0,
+            5
+          ],
+          "d_J0_at_zero": -0.1340415511918991,
+          "one_sided_descent_rate": 0.13404184839860278,
+          "observed_quadratic_impurity_c": 1.1428571428556191,
+          "nu": 2.0,
+          "mu": 0.06702092419930139
+        },
+        {
+          "pair": [
+            0,
+            6
+          ],
+          "d_J0_at_zero": -0.1340415511918991,
+          "one_sided_descent_rate": 0.13404184839860278,
+          "observed_quadratic_impurity_c": 1.1428571428556191,
+          "nu": 2.0,
+          "mu": 0.06702092419930139
+        },
+        {
+          "pair": [
+            1,
+            3
+          ],
+          "d_J0_at_zero": -0.08936103412793273,
+          "one_sided_descent_rate": 0.08936136797199623,
+          "observed_quadratic_impurity_c": 1.1428571428556191,
+          "nu": 2.0,
+          "mu": 0.044680683985998115
+        },
+        {
+          "pair": [
+            2,
+            3
+          ],
+          "d_J0_at_zero": -0.08936103412793273,
+          "one_sided_descent_rate": 0.08936136797199623,
+          "observed_quadratic_impurity_c": 1.1428571428556191,
+          "nu": 2.0,
+          "mu": 0.044680683985998115
+        },
+        {
+          "pair": [
+            1,
+            4
+          ],
+          "d_J0_at_zero": -0.08936103412793273,
+          "one_sided_descent_rate": 0.08936136774995163,
+          "observed_quadratic_impurity_c": 1.1428571428556191,
+          "nu": 2.0,
+          "mu": 0.04468068387497581
+        },
+        {
+          "pair": [
+            1,
+            5
+          ],
+          "d_J0_at_zero": -0.08936103412793273,
+          "one_sided_descent_rate": 0.08936136774995163,
+          "observed_quadratic_impurity_c": 1.1428571428556191,
+          "nu": 2.0,
+          "mu": 0.04468068387497581
+        },
+        {
+          "pair": [
+            1,
+            6
+          ],
+          "d_J0_at_zero": -0.08936103412793273,
+          "one_sided_descent_rate": 0.08936136774995163,
+          "observed_quadratic_impurity_c": 1.1428571428556191,
+          "nu": 2.0,
+          "mu": 0.04468068387497581
+        },
+        {
+          "pair": [
+            2,
+            4
+          ],
+          "d_J0_at_zero": -0.08936103412793273,
+          "one_sided_descent_rate": 0.08936136774995163,
+          "observed_quadratic_impurity_c": 1.1428571428556191,
+          "nu": 2.0,
+          "mu": 0.04468068387497581
+        }
+      ]
+    },
+    {
+      "row_key": "f2-u4",
+      "row": "F_2[u]/(u^4)",
+      "target_packet": "u^2",
+      "target_depth": 2,
+      "packet_sizes": {
+        "u": 1,
+        "u^2": 2,
+        "u^3": 4,
+        "u^4": 8
+      },
+      "active_prefix_dimension": 3,
+      "total_dimension": 15,
+      "amplitude_fraction": 0.1,
+      "actual_amplitude": 0.0475,
+      "probability_min": 0.0565625,
+      "probability_max": 0.0684375,
+      "base_J0": 0.07919013336513427,
+      "base_J": 0.07919013336513427,
+      "base_block_coupling": 0.009190133365134261,
+      "cross_pair_count": 70,
+      "singular_pair_count": 38,
+      "descent_pair_count": 2,
+      "positive_mu_summary": {
+        "min": 0.00043654274639592927,
+        "p05": 0.00043654274917148683,
+        "median": 0.0004365427741515049,
+        "mean": 0.0004365427741515049,
+        "p95": 0.00043654279913152294,
+        "max": 0.0004365428019070805
+      },
+      "all_mu_summary": {
+        "min": 0.0,
+        "p05": 0.0,
+        "median": 0.0,
+        "mean": 1.2472650690042997e-05,
+        "p95": 0.0,
+        "max": 0.0004365428019070805
+      },
+      "max_mu_star": 0.0004365428019070805,
+      "best_pair": [
+        0,
+        1
+      ],
+      "best_d_J0_at_zero": -0.0008730626707698086,
+      "best_one_sided_descent_rate": 0.000873085603814161,
+      "quadratic_impurity_c_formula": 0.5333333333333333,
+      "quadratic_impurity_c_error_max": 7.109868249699502e-13,
+      "top_pairs": [
+        {
+          "pair": [
+            0,
+            1
+          ],
+          "d_J0_at_zero": -0.0008730626707698086,
+          "one_sided_descent_rate": 0.000873085603814161,
+          "observed_quadratic_impurity_c": 0.5333333333326223,
+          "nu": 2.0,
+          "mu": 0.0004365428019070805
+        },
+        {
+          "pair": [
+            0,
+            2
+          ],
+          "d_J0_at_zero": -0.0008730626707698086,
+          "one_sided_descent_rate": 0.0008730854927918585,
+          "observed_quadratic_impurity_c": 0.5333333333326223,
+          "nu": 2.0,
+          "mu": 0.00043654274639592927
+        },
+        {
+          "pair": [
+            0,
+            3
+          ],
+          "d_J0_at_zero": -0.6666666667043408,
+          "one_sided_descent_rate": 0.0,
+          "observed_quadratic_impurity_c": 0.5333333333326223,
+          "nu": 2.0,
+          "mu": 0.0
+        },
+        {
+          "pair": [
+            0,
+            4
+          ],
+          "d_J0_at_zero": -0.6666666667043408,
+          "one_sided_descent_rate": 0.0,
+          "observed_quadratic_impurity_c": 0.5333333333326223,
+          "nu": 2.0,
+          "mu": 0.0
+        },
+        {
+          "pair": [
+            0,
+            5
+          ],
+          "d_J0_at_zero": -0.6666666667043408,
+          "one_sided_descent_rate": 0.0,
+          "observed_quadratic_impurity_c": 0.5333333333326223,
+          "nu": 2.0,
+          "mu": 0.0
+        },
+        {
+          "pair": [
+            0,
+            6
+          ],
+          "d_J0_at_zero": -0.666666666759852,
+          "one_sided_descent_rate": 0.0,
+          "observed_quadratic_impurity_c": 0.5333333333326223,
+          "nu": 2.0,
+          "mu": 0.0
+        },
+        {
+          "pair": [
+            0,
+            7
+          ],
+          "d_J0_at_zero": -0.666666666759852,
+          "one_sided_descent_rate": 0.0,
+          "observed_quadratic_impurity_c": 0.5333333333326223,
+          "nu": 2.0,
+          "mu": 0.0
+        },
+        {
+          "pair": [
+            0,
+            8
+          ],
+          "d_J0_at_zero": -0.666666666759852,
+          "one_sided_descent_rate": 0.0,
+          "observed_quadratic_impurity_c": 0.5333333333326223,
+          "nu": 2.0,
+          "mu": 0.0
+        },
+        {
+          "pair": [
+            0,
+            9
+          ],
+          "d_J0_at_zero": -0.6666666667043408,
+          "one_sided_descent_rate": 0.0,
+          "observed_quadratic_impurity_c": 0.5333333333326223,
+          "nu": 2.0,
+          "mu": 0.0
+        },
+        {
+          "pair": [
+            0,
+            10
+          ],
+          "d_J0_at_zero": -0.6666666667043408,
+          "one_sided_descent_rate": 0.0,
+          "observed_quadratic_impurity_c": 0.5333333333326223,
+          "nu": 2.0,
+          "mu": 0.0
+        }
+      ]
+    },
+    {
+      "row_key": "f2-u4",
+      "row": "F_2[u]/(u^4)",
+      "target_packet": "u^2",
+      "target_depth": 2,
+      "packet_sizes": {
+        "u": 1,
+        "u^2": 2,
+        "u^3": 4,
+        "u^4": 8
+      },
+      "active_prefix_dimension": 3,
+      "total_dimension": 15,
+      "amplitude_fraction": 0.35,
+      "actual_amplitude": 0.16624999999999998,
+      "probability_min": 0.04171875,
+      "probability_max": 0.08328125,
+      "base_J0": 0.20974823251944835,
+      "base_J": 0.20974823251944835,
+      "base_block_coupling": 0.13974823251944835,
+      "cross_pair_count": 70,
+      "singular_pair_count": 38,
+      "descent_pair_count": 2,
+      "positive_mu_summary": {
+        "min": 0.023233314425108453,
+        "p05": 0.02323331442788401,
+        "median": 0.02323331445286403,
+        "mean": 0.02323331445286403,
+        "p95": 0.023233314477844047,
+        "max": 0.023233314480619605
+      },
+      "all_mu_summary": {
+        "min": 0.0,
+        "p05": 0.0,
+        "median": 0.0,
+        "mean": 0.0006638089843675436,
+        "p95": 0.0,
+        "max": 0.023233314480619605
+      },
+      "max_mu_star": 0.023233314480619605,
+      "best_pair": [
+        0,
+        1
+      ],
+      "best_d_J0_at_zero": -0.04646628729010338,
+      "best_one_sided_descent_rate": 0.04646662896123921,
+      "quadratic_impurity_c_formula": 0.5333333333333333,
+      "quadratic_impurity_c_error_max": 7.109868249699502e-13,
+      "top_pairs": [
+        {
+          "pair": [
+            0,
+            1
+          ],
+          "d_J0_at_zero": -0.04646628729010338,
+          "one_sided_descent_rate": 0.04646662896123921,
+          "observed_quadratic_impurity_c": 0.5333333333326223,
+          "nu": 2.0,
+          "mu": 0.023233314480619605
+        },
+        {
+          "pair": [
+            0,
+            2
+          ],
+          "d_J0_at_zero": -0.04646628729010338,
+          "one_sided_descent_rate": 0.04646662885021691,
+          "observed_quadratic_impurity_c": 0.5333333333326223,
+          "nu": 2.0,
+          "mu": 0.023233314425108453
+        },
+        {
+          "pair": [
+            0,
+            3
+          ],
+          "d_J0_at_zero": -0.6666666667043408,
+          "one_sided_descent_rate": 0.0,
+          "observed_quadratic_impurity_c": 0.5333333333326223,
+          "nu": 2.0,
+          "mu": 0.0
+        },
+        {
+          "pair": [
+            0,
+            4
+          ],
+          "d_J0_at_zero": -0.6666666667043408,
+          "one_sided_descent_rate": 0.0,
+          "observed_quadratic_impurity_c": 0.5333333333326223,
+          "nu": 2.0,
+          "mu": 0.0
+        },
+        {
+          "pair": [
+            0,
+            5
+          ],
+          "d_J0_at_zero": -0.6666666667043408,
+          "one_sided_descent_rate": 0.0,
+          "observed_quadratic_impurity_c": 0.5333333333326223,
+          "nu": 2.0,
+          "mu": 0.0
+        },
+        {
+          "pair": [
+            0,
+            6
+          ],
+          "d_J0_at_zero": -0.666666666759852,
+          "one_sided_descent_rate": 0.0,
+          "observed_quadratic_impurity_c": 0.5333333333326223,
+          "nu": 2.0,
+          "mu": 0.0
+        },
+        {
+          "pair": [
+            0,
+            7
+          ],
+          "d_J0_at_zero": -0.666666666759852,
+          "one_sided_descent_rate": 0.0,
+          "observed_quadratic_impurity_c": 0.5333333333326223,
+          "nu": 2.0,
+          "mu": 0.0
+        },
+        {
+          "pair": [
+            0,
+            8
+          ],
+          "d_J0_at_zero": -0.666666666759852,
+          "one_sided_descent_rate": 0.0,
+          "observed_quadratic_impurity_c": 0.5333333333326223,
+          "nu": 2.0,
+          "mu": 0.0
+        },
+        {
+          "pair": [
+            0,
+            9
+          ],
+          "d_J0_at_zero": -0.6666666667043408,
+          "one_sided_descent_rate": 0.0,
+          "observed_quadratic_impurity_c": 0.5333333333326223,
+          "nu": 2.0,
+          "mu": 0.0
+        },
+        {
+          "pair": [
+            0,
+            10
+          ],
+          "d_J0_at_zero": -0.6666666667043408,
+          "one_sided_descent_rate": 0.0,
+          "observed_quadratic_impurity_c": 0.5333333333326223,
+          "nu": 2.0,
+          "mu": 0.0
+        }
+      ]
+    },
+    {
+      "row_key": "f2-u4",
+      "row": "F_2[u]/(u^4)",
+      "target_packet": "u^2",
+      "target_depth": 2,
+      "packet_sizes": {
+        "u": 1,
+        "u^2": 2,
+        "u^3": 4,
+        "u^4": 8
+      },
+      "active_prefix_dimension": 3,
+      "total_dimension": 15,
+      "amplitude_fraction": 0.5,
+      "actual_amplitude": 0.2375,
+      "probability_min": 0.0328125,
+      "probability_max": 0.0921875,
+      "base_J0": 0.4462569856056949,
+      "base_J": 0.4462569856056949,
+      "base_block_coupling": 0.37625698560569487,
+      "cross_pair_count": 70,
+      "singular_pair_count": 38,
+      "descent_pair_count": 2,
+      "positive_mu_summary": {
+        "min": 0.08936148315763504,
+        "p05": 0.08936148316041059,
+        "median": 0.08936148318539061,
+        "mean": 0.08936148318539061,
+        "p95": 0.08936148321037063,
+        "max": 0.08936148321314619
+      },
+      "all_mu_summary": {
+        "min": 0.0,
+        "p05": 0.0,
+        "median": 0.0,
+        "mean": 0.002553185233868303,
+        "p95": 0.0,
+        "max": 0.08936148321314619
+      },
+      "max_mu_star": 0.08936148321314619,
+      "best_pair": [
+        0,
+        1
+      ],
+      "best_d_J0_at_zero": -0.17872206814484315,
+      "best_one_sided_descent_rate": 0.17872296642629237,
+      "quadratic_impurity_c_formula": 0.5333333333333333,
+      "quadratic_impurity_c_error_max": 7.109868249699502e-13,
+      "top_pairs": [
+        {
+          "pair": [
+            0,
+            1
+          ],
+          "d_J0_at_zero": -0.17872206814484315,
+          "one_sided_descent_rate": 0.17872296642629237,
+          "observed_quadratic_impurity_c": 0.5333333333326223,
+          "nu": 2.0,
+          "mu": 0.08936148321314619
+        },
+        {
+          "pair": [
+            0,
+            2
+          ],
+          "d_J0_at_zero": -0.17872206814484315,
+          "one_sided_descent_rate": 0.17872296631527007,
+          "observed_quadratic_impurity_c": 0.5333333333326223,
+          "nu": 2.0,
+          "mu": 0.08936148315763504
+        },
+        {
+          "pair": [
+            0,
+            3
+          ],
+          "d_J0_at_zero": -0.6666666667043408,
+          "one_sided_descent_rate": 0.0,
+          "observed_quadratic_impurity_c": 0.5333333333326223,
+          "nu": 2.0,
+          "mu": 0.0
+        },
+        {
+          "pair": [
+            0,
+            4
+          ],
+          "d_J0_at_zero": -0.6666666667043408,
+          "one_sided_descent_rate": 0.0,
+          "observed_quadratic_impurity_c": 0.5333333333326223,
+          "nu": 2.0,
+          "mu": 0.0
+        },
+        {
+          "pair": [
+            0,
+            5
+          ],
+          "d_J0_at_zero": -0.6666666667043408,
+          "one_sided_descent_rate": 0.0,
+          "observed_quadratic_impurity_c": 0.5333333333326223,
+          "nu": 2.0,
+          "mu": 0.0
+        },
+        {
+          "pair": [
+            0,
+            6
+          ],
+          "d_J0_at_zero": -0.666666666759852,
+          "one_sided_descent_rate": 0.0,
+          "observed_quadratic_impurity_c": 0.5333333333326223,
+          "nu": 2.0,
+          "mu": 0.0
+        },
+        {
+          "pair": [
+            0,
+            7
+          ],
+          "d_J0_at_zero": -0.666666666759852,
+          "one_sided_descent_rate": 0.0,
+          "observed_quadratic_impurity_c": 0.5333333333326223,
+          "nu": 2.0,
+          "mu": 0.0
+        },
+        {
+          "pair": [
+            0,
+            8
+          ],
+          "d_J0_at_zero": -0.666666666759852,
+          "one_sided_descent_rate": 0.0,
+          "observed_quadratic_impurity_c": 0.5333333333326223,
+          "nu": 2.0,
+          "mu": 0.0
+        },
+        {
+          "pair": [
+            0,
+            9
+          ],
+          "d_J0_at_zero": -0.6666666667043408,
+          "one_sided_descent_rate": 0.0,
+          "observed_quadratic_impurity_c": 0.5333333333326223,
+          "nu": 2.0,
+          "mu": 0.0
+        },
+        {
+          "pair": [
+            0,
+            10
+          ],
+          "d_J0_at_zero": -0.6666666667043408,
+          "one_sided_descent_rate": 0.0,
+          "observed_quadratic_impurity_c": 0.5333333333326223,
+          "nu": 2.0,
+          "mu": 0.0
+        }
+      ]
+    },
+    {
+      "row_key": "f2-u4",
+      "row": "F_2[u]/(u^4)",
+      "target_packet": "u^3",
+      "target_depth": 3,
+      "packet_sizes": {
+        "u": 1,
+        "u^2": 2,
+        "u^3": 4,
+        "u^4": 8
+      },
+      "active_prefix_dimension": 7,
+      "total_dimension": 15,
+      "amplitude_fraction": 0.1,
+      "actual_amplitude": 0.02375,
+      "probability_min": 0.0565625,
+      "probability_max": 0.0684375,
+      "base_J0": 0.13547260195277314,
+      "base_J": 0.13547260195277314,
+      "base_block_coupling": 0.01380593528610645,
+      "cross_pair_count": 70,
+      "singular_pair_count": 70,
+      "descent_pair_count": 14,
+      "positive_mu_summary": {
+        "min": 1.036752628191806e-05,
+        "p05": 1.0367598446414661e-05,
+        "median": 0.0002182702352193644,
+        "mean": 0.00021975049756063823,
+        "p95": 0.000327402507882546,
+        "max": 0.000327402507882546
+      },
+      "all_mu_summary": {
+        "min": 0.0,
+        "p05": 0.0,
+        "median": 0.0,
+        "mean": 4.395009951212765e-05,
+        "p95": 0.00027829298518411395,
+        "max": 0.000327402507882546
+      },
+      "max_mu_star": 0.000327402507882546,
+      "best_pair": [
+        0,
+        3
+      ],
+      "best_d_J0_at_zero": -0.0006547972303261318,
+      "best_one_sided_descent_rate": 0.000654805015765092,
+      "quadratic_impurity_c_formula": 0.5333333333333333,
+      "quadratic_impurity_c_error_max": 7.109868249699502e-13,
+      "top_pairs": [
+        {
+          "pair": [
+            0,
+            3
+          ],
+          "d_J0_at_zero": -0.0006547972303261318,
+          "one_sided_descent_rate": 0.000654805015765092,
+          "observed_quadratic_impurity_c": 0.5333333333326223,
+          "nu": 2.0,
+          "mu": 0.000327402507882546
+        },
+        {
+          "pair": [
+            0,
+            4
+          ],
+          "d_J0_at_zero": -0.0006547972303261318,
+          "one_sided_descent_rate": 0.000654805015765092,
+          "observed_quadratic_impurity_c": 0.5333333333326223,
+          "nu": 2.0,
+          "mu": 0.000327402507882546
+        },
+        {
+          "pair": [
+            0,
+            5
+          ],
+          "d_J0_at_zero": -0.0006547971193038293,
+          "one_sided_descent_rate": 0.000654805015765092,
+          "observed_quadratic_impurity_c": 0.5333333333326223,
+          "nu": 2.0,
+          "mu": 0.000327402507882546
+        },
+        {
+          "pair": [
+            0,
+            6
+          ],
+          "d_J0_at_zero": -0.0006547971193038293,
+          "one_sided_descent_rate": 0.000654805015765092,
+          "observed_quadratic_impurity_c": 0.5333333333326223,
+          "nu": 2.0,
+          "mu": 0.000327402507882546
+        },
+        {
+          "pair": [
+            1,
+            4
+          ],
+          "d_J0_at_zero": -0.00043653154702116836,
+          "one_sided_descent_rate": 0.0004365404704387288,
+          "observed_quadratic_impurity_c": 0.5333333333326223,
+          "nu": 2.0,
+          "mu": 0.0002182702352193644
+        },
+        {
+          "pair": [
+            1,
+            5
+          ],
+          "d_J0_at_zero": -0.0004365314359988659,
+          "one_sided_descent_rate": 0.0004365404704387288,
+          "observed_quadratic_impurity_c": 0.5333333333326223,
+          "nu": 2.0,
+          "mu": 0.0002182702352193644
+        },
+        {
+          "pair": [
+            1,
+            6
+          ],
+          "d_J0_at_zero": -0.0004365314359988659,
+          "one_sided_descent_rate": 0.0004365404704387288,
+          "observed_quadratic_impurity_c": 0.5333333333326223,
+          "nu": 2.0,
+          "mu": 0.0002182702352193644
+        },
+        {
+          "pair": [
+            2,
+            3
+          ],
+          "d_J0_at_zero": -0.0004365314359988659,
+          "one_sided_descent_rate": 0.0004365404704387288,
+          "observed_quadratic_impurity_c": 0.5333333333326223,
+          "nu": 2.0,
+          "mu": 0.0002182702352193644
+        },
+        {
+          "pair": [
+            2,
+            4
+          ],
+          "d_J0_at_zero": -0.00043653154702116836,
+          "one_sided_descent_rate": 0.0004365404704387288,
+          "observed_quadratic_impurity_c": 0.5333333333326223,
+          "nu": 2.0,
+          "mu": 0.0002182702352193644
+        },
+        {
+          "pair": [
+            2,
+            5
+          ],
+          "d_J0_at_zero": -0.0004365314359988659,
+          "one_sided_descent_rate": 0.0004365404704387288,
+          "observed_quadratic_impurity_c": 0.5333333333326223,
+          "nu": 2.0,
+          "mu": 0.0002182702352193644
+        }
+      ]
+    },
+    {
+      "row_key": "f2-u4",
+      "row": "F_2[u]/(u^4)",
+      "target_packet": "u^3",
+      "target_depth": 3,
+      "packet_sizes": {
+        "u": 1,
+        "u^2": 2,
+        "u^3": 4,
+        "u^4": 8
+      },
+      "active_prefix_dimension": 7,
+      "total_dimension": 15,
+      "amplitude_fraction": 0.35,
+      "actual_amplitude": 0.08312499999999999,
+      "probability_min": 0.04171875,
+      "probability_max": 0.08328125,
+      "base_J0": 0.33515152557870875,
+      "base_J": 0.33515152557870875,
+      "base_block_coupling": 0.21348485891204208,
+      "cross_pair_count": 70,
+      "singular_pair_count": 70,
+      "descent_pair_count": 14,
+      "positive_mu_summary": {
+        "min": 0.0019312588195319336,
+        "p05": 0.0019312588916964302,
+        "median": 0.011616637846101341,
+        "mean": 0.011892520278079997,
+        "p95": 0.01742491601008922,
+        "max": 0.01742491601008922
+      },
+      "all_mu_summary": {
+        "min": 0.0,
+        "p05": 0.0,
+        "median": 0.0,
+        "mean": 0.0023785040556159993,
+        "p95": 0.01481119077523239,
+        "max": 0.01742491601008922
+      },
+      "max_mu_star": 0.01742491601008922,
+      "best_pair": [
+        0,
+        3
+      ],
+      "best_d_J0_at_zero": -0.03484971561329431,
+      "best_one_sided_descent_rate": 0.03484983202017844,
+      "quadratic_impurity_c_formula": 0.5333333333333333,
+      "quadratic_impurity_c_error_max": 7.109868249699502e-13,
+      "top_pairs": [
+        {
+          "pair": [
+            0,
+            3
+          ],
+          "d_J0_at_zero": -0.03484971561329431,
+          "one_sided_descent_rate": 0.03484983202017844,
+          "observed_quadratic_impurity_c": 0.5333333333326223,
+          "nu": 2.0,
+          "mu": 0.01742491601008922
+        },
+        {
+          "pair": [
+            0,
+            4
+          ],
+          "d_J0_at_zero": -0.03484971561329431,
+          "one_sided_descent_rate": 0.03484983202017844,
+          "observed_quadratic_impurity_c": 0.5333333333326223,
+          "nu": 2.0,
+          "mu": 0.01742491601008922
+        },
+        {
+          "pair": [
+            0,
+            5
+          ],
+          "d_J0_at_zero": -0.034849715502272005,
+          "one_sided_descent_rate": 0.034849831798133835,
+          "observed_quadratic_impurity_c": 0.5333333333326223,
+          "nu": 2.0,
+          "mu": 0.017424915899066917
+        },
+        {
+          "pair": [
+            0,
+            6
+          ],
+          "d_J0_at_zero": -0.034849715502272005,
+          "one_sided_descent_rate": 0.034849831798133835,
+          "observed_quadratic_impurity_c": 0.5333333333326223,
+          "nu": 2.0,
+          "mu": 0.017424915899066917
+        },
+        {
+          "pair": [
+            1,
+            3
+          ],
+          "d_J0_at_zero": -0.02323314376995178,
+          "one_sided_descent_rate": 0.023233275692202682,
+          "observed_quadratic_impurity_c": 0.5333333333326223,
+          "nu": 2.0,
+          "mu": 0.011616637846101341
+        },
+        {
+          "pair": [
+            1,
+            4
+          ],
+          "d_J0_at_zero": -0.02323314376995178,
+          "one_sided_descent_rate": 0.023233275692202682,
+          "observed_quadratic_impurity_c": 0.5333333333326223,
+          "nu": 2.0,
+          "mu": 0.011616637846101341
+        },
+        {
+          "pair": [
+            2,
+            3
+          ],
+          "d_J0_at_zero": -0.023233143658929478,
+          "one_sided_descent_rate": 0.023233275692202682,
+          "observed_quadratic_impurity_c": 0.5333333333326223,
+          "nu": 2.0,
+          "mu": 0.011616637846101341
+        },
+        {
+          "pair": [
+            2,
+            4
+          ],
+          "d_J0_at_zero": -0.02323314376995178,
+          "one_sided_descent_rate": 0.023233275692202682,
+          "observed_quadratic_impurity_c": 0.5333333333326223,
+          "nu": 2.0,
+          "mu": 0.011616637846101341
+        },
+        {
+          "pair": [
+            1,
+            5
+          ],
+          "d_J0_at_zero": -0.023233143658929478,
+          "one_sided_descent_rate": 0.023233275470158077,
+          "observed_quadratic_impurity_c": 0.5333333333326223,
+          "nu": 2.0,
+          "mu": 0.011616637735079038
+        },
+        {
+          "pair": [
+            1,
+            6
+          ],
+          "d_J0_at_zero": -0.023233143658929478,
+          "one_sided_descent_rate": 0.023233275470158077,
+          "observed_quadratic_impurity_c": 0.5333333333326223,
+          "nu": 2.0,
+          "mu": 0.011616637735079038
+        }
+      ]
+    },
+    {
+      "row_key": "f2-u4",
+      "row": "F_2[u]/(u^4)",
+      "target_packet": "u^3",
+      "target_depth": 3,
+      "packet_sizes": {
+        "u": 1,
+        "u^2": 2,
+        "u^3": 4,
+        "u^4": 8
+      },
+      "active_prefix_dimension": 7,
+      "total_dimension": 15,
+      "amplitude_fraction": 0.5,
+      "actual_amplitude": 0.11875,
+      "probability_min": 0.0328125,
+      "probability_max": 0.0921875,
+      "base_J0": 0.7072753906695302,
+      "base_J": 0.7072753906695302,
+      "base_block_coupling": 0.5856087240028636,
+      "cross_pair_count": 70,
+      "singular_pair_count": 70,
+      "descent_pair_count": 14,
+      "positive_mu_summary": {
+        "min": 0.010611644007951782,
+        "p05": 0.010611644080116278,
+        "median": 0.044680683930486964,
+        "mean": 0.04619660400249716,
+        "p95": 0.06702092418264805,
+        "max": 0.06702092425481254
+      },
+      "all_mu_summary": {
+        "min": 0.0,
+        "p05": 0.0,
+        "median": 0.0,
+        "mean": 0.009239320800499431,
+        "p95": 0.0569678160478037,
+        "max": 0.06702092425481254
+      },
+      "max_mu_star": 0.06702092425481254,
+      "best_pair": [
+        0,
+        3
+      ],
+      "best_d_J0_at_zero": -0.1340415511918991,
+      "best_one_sided_descent_rate": 0.13404184850962508,
+      "quadratic_impurity_c_formula": 0.5333333333333333,
+      "quadratic_impurity_c_error_max": 7.109868249699502e-13,
+      "top_pairs": [
+        {
+          "pair": [
+            0,
+            3
+          ],
+          "d_J0_at_zero": -0.1340415511918991,
+          "one_sided_descent_rate": 0.13404184850962508,
+          "observed_quadratic_impurity_c": 0.5333333333326223,
+          "nu": 2.0,
+          "mu": 0.06702092425481254
+        },
+        {
+          "pair": [
+            0,
+            4
+          ],
+          "d_J0_at_zero": -0.1340415511918991,
+          "one_sided_descent_rate": 0.13404184828758048,
+          "observed_quadratic_impurity_c": 0.5333333333326223,
+          "nu": 2.0,
+          "mu": 0.06702092414379024
+        },
+        {
+          "pair": [
+            0,
+            5
+          ],
+          "d_J0_at_zero": -0.1340415510808768,
+          "one_sided_descent_rate": 0.13404184828758048,
+          "observed_quadratic_impurity_c": 0.5333333333326223,
+          "nu": 2.0,
+          "mu": 0.06702092414379024
+        },
+        {
+          "pair": [
+            0,
+            6
+          ],
+          "d_J0_at_zero": -0.1340415510808768,
+          "one_sided_descent_rate": 0.13404184828758048,
+          "observed_quadratic_impurity_c": 0.5333333333326223,
+          "nu": 2.0,
+          "mu": 0.06702092414379024
+        },
+        {
+          "pair": [
+            1,
+            3
+          ],
+          "d_J0_at_zero": -0.08936103412793273,
+          "one_sided_descent_rate": 0.08936136786097393,
+          "observed_quadratic_impurity_c": 0.5333333333326223,
+          "nu": 2.0,
+          "mu": 0.044680683930486964
+        },
+        {
+          "pair": [
+            1,
+            5
+          ],
+          "d_J0_at_zero": -0.08936103423895503,
+          "one_sided_descent_rate": 0.08936136786097393,
+          "observed_quadratic_impurity_c": 0.5333333333326223,
+          "nu": 2.0,
+          "mu": 0.044680683930486964
+        },
+        {
+          "pair": [
+            1,
+            6
+          ],
+          "d_J0_at_zero": -0.08936103423895503,
+          "one_sided_descent_rate": 0.08936136786097393,
+          "observed_quadratic_impurity_c": 0.5333333333326223,
+          "nu": 2.0,
+          "mu": 0.044680683930486964
+        },
+        {
+          "pair": [
+            2,
+            3
+          ],
+          "d_J0_at_zero": -0.08936103412793273,
+          "one_sided_descent_rate": 0.08936136786097393,
+          "observed_quadratic_impurity_c": 0.5333333333326223,
+          "nu": 2.0,
+          "mu": 0.044680683930486964
+        },
+        {
+          "pair": [
+            2,
+            5
+          ],
+          "d_J0_at_zero": -0.08936103423895503,
+          "one_sided_descent_rate": 0.08936136786097393,
+          "observed_quadratic_impurity_c": 0.5333333333326223,
+          "nu": 2.0,
+          "mu": 0.044680683930486964
+        },
+        {
+          "pair": [
+            2,
+            6
+          ],
+          "d_J0_at_zero": -0.08936103434997733,
+          "one_sided_descent_rate": 0.08936136786097393,
+          "observed_quadratic_impurity_c": 0.5333333333326223,
+          "nu": 2.0,
+          "mu": 0.044680683930486964
+        }
+      ]
+    },
+    {
+      "row_key": "f2-u4",
+      "row": "F_2[u]/(u^4)",
+      "target_packet": "u^4",
+      "target_depth": 4,
+      "packet_sizes": {
+        "u": 1,
+        "u^2": 2,
+        "u^3": 4,
+        "u^4": 8
+      },
+      "active_prefix_dimension": 15,
+      "total_dimension": 15,
+      "amplitude_fraction": 0.1,
+      "actual_amplitude": 0.011875,
+      "probability_min": 0.0565625,
+      "probability_max": 0.0684375,
+      "base_J0": 0.21611902005619382,
+      "base_J": 0.21611902005619382,
+      "base_block_coupling": 0.016119020056193825,
+      "cross_pair_count": 70,
+      "singular_pair_count": 70,
+      "descent_pair_count": 70,
+      "positive_mu_summary": {
+        "min": 2.591898917714275e-06,
+        "p05": 5.1838117132163575e-06,
+        "median": 0.00010913482617613823,
+        "mean": 0.00011024512889891623,
+        "p95": 0.00019098402026518357,
+        "max": 0.00019098402026518357
+      },
+      "all_mu_summary": {
+        "min": 2.591898917714275e-06,
+        "p05": 5.1838117132163575e-06,
+        "median": 0.00010913482617613823,
+        "mean": 0.00011024512889891623,
+        "p95": 0.00019098402026518357,
+        "max": 0.00019098402026518357
+      },
+      "max_mu_star": 0.00019098402026518357,
+      "best_pair": [
+        0,
+        7
+      ],
+      "best_d_J0_at_zero": -0.0003819649180281104,
+      "best_one_sided_descent_rate": 0.00038196804053036715,
+      "quadratic_impurity_c_formula": 0.5333333333333333,
+      "quadratic_impurity_c_error_max": 7.109868249699502e-13,
+      "top_pairs": [
+        {
+          "pair": [
+            0,
+            7
+          ],
+          "d_J0_at_zero": -0.0003819649180281104,
+          "one_sided_descent_rate": 0.00038196804053036715,
+          "observed_quadratic_impurity_c": 0.5333333333326223,
+          "nu": 2.0,
+          "mu": 0.00019098402026518357
+        },
+        {
+          "pair": [
+            0,
+            8
+          ],
+          "d_J0_at_zero": -0.0003819649180281104,
+          "one_sided_descent_rate": 0.00038196804053036715,
+          "observed_quadratic_impurity_c": 0.5333333333326223,
+          "nu": 2.0,
+          "mu": 0.00019098402026518357
+        },
+        {
+          "pair": [
+            0,
+            9
+          ],
+          "d_J0_at_zero": -0.0003819649180281104,
+          "one_sided_descent_rate": 0.00038196804053036715,
+          "observed_quadratic_impurity_c": 0.5333333333326223,
+          "nu": 2.0,
+          "mu": 0.00019098402026518357
+        },
+        {
+          "pair": [
+            0,
+            10
+          ],
+          "d_J0_at_zero": -0.0003819649180281104,
+          "one_sided_descent_rate": 0.00038196804053036715,
+          "observed_quadratic_impurity_c": 0.5333333333326223,
+          "nu": 2.0,
+          "mu": 0.00019098402026518357
+        },
+        {
+          "pair": [
+            0,
+            11
+          ],
+          "d_J0_at_zero": -0.0003819649180281104,
+          "one_sided_descent_rate": 0.00038196804053036715,
+          "observed_quadratic_impurity_c": 0.5333333333326223,
+          "nu": 2.0,
+          "mu": 0.00019098402026518357
+        },
+        {
+          "pair": [
+            0,
+            12
+          ],
+          "d_J0_at_zero": -0.0003819649180281104,
+          "one_sided_descent_rate": 0.00038196804053036715,
+          "observed_quadratic_impurity_c": 0.5333333333326223,
+          "nu": 2.0,
+          "mu": 0.00019098402026518357
+        },
+        {
+          "pair": [
+            0,
+            13
+          ],
+          "d_J0_at_zero": -0.0003819649180281104,
+          "one_sided_descent_rate": 0.00038196804053036715,
+          "observed_quadratic_impurity_c": 0.5333333333326223,
+          "nu": 2.0,
+          "mu": 0.00019098402026518357
+        },
+        {
+          "pair": [
+            0,
+            14
+          ],
+          "d_J0_at_zero": -0.0003819649180281104,
+          "one_sided_descent_rate": 0.00038196804053036715,
+          "observed_quadratic_impurity_c": 0.5333333333326223,
+          "nu": 2.0,
+          "mu": 0.00019098402026518357
+        },
+        {
+          "pair": [
+            1,
+            7
+          ],
+          "d_J0_at_zero": -0.00032739849720186953,
+          "one_sided_descent_rate": 0.00032740191113767025,
+          "observed_quadratic_impurity_c": 0.5333333333326223,
+          "nu": 2.0,
+          "mu": 0.00016370095556883513
+        },
+        {
+          "pair": [
+            1,
+            8
+          ],
+          "d_J0_at_zero": -0.00032739849720186953,
+          "one_sided_descent_rate": 0.00032740191113767025,
+          "observed_quadratic_impurity_c": 0.5333333333326223,
+          "nu": 2.0,
+          "mu": 0.00016370095556883513
+        }
+      ]
+    },
+    {
+      "row_key": "f2-u4",
+      "row": "F_2[u]/(u^4)",
+      "target_packet": "u^4",
+      "target_depth": 4,
+      "packet_sizes": {
+        "u": 1,
+        "u^2": 2,
+        "u^3": 4,
+        "u^4": 8
+      },
+      "active_prefix_dimension": 15,
+      "total_dimension": 15,
+      "amplitude_fraction": 0.35,
+      "actual_amplitude": 0.041562499999999995,
+      "probability_min": 0.04171875,
+      "probability_max": 0.08328125,
+      "base_J0": 0.4513187996415563,
+      "base_J": 0.4513187996415563,
+      "base_block_coupling": 0.25131879964155635,
+      "cross_pair_count": 70,
+      "singular_pair_count": 70,
+      "descent_pair_count": 70,
+      "positive_mu_summary": {
+        "min": 0.000482814732638559,
+        "p05": 0.0009656285215875471,
+        "median": 0.00580831405194715,
+        "mean": 0.006015227257564045,
+        "p95": 0.010164522667999165,
+        "max": 0.010164522667999165
+      },
+      "all_mu_summary": {
+        "min": 0.000482814732638559,
+        "p05": 0.0009656285215875471,
+        "median": 0.00580831405194715,
+        "mean": 0.006015227257564045,
+        "p95": 0.010164522667999165,
+        "max": 0.010164522667999165
+      },
+      "max_mu_star": 0.010164522667999165,
+      "best_pair": [
+        0,
+        7
+      ],
+      "best_d_J0_at_zero": -0.02032900070503274,
+      "best_one_sided_descent_rate": 0.02032904533599833,
+      "quadratic_impurity_c_formula": 0.5333333333333333,
+      "quadratic_impurity_c_error_max": 7.109868249699502e-13,
+      "top_pairs": [
+        {
+          "pair": [
+            0,
+            7
+          ],
+          "d_J0_at_zero": -0.02032900070503274,
+          "one_sided_descent_rate": 0.02032904533599833,
+          "observed_quadratic_impurity_c": 0.5333333333326223,
+          "nu": 2.0,
+          "mu": 0.010164522667999165
+        },
+        {
+          "pair": [
+            0,
+            8
+          ],
+          "d_J0_at_zero": -0.02032900070503274,
+          "one_sided_descent_rate": 0.02032904533599833,
+          "observed_quadratic_impurity_c": 0.5333333333326223,
+          "nu": 2.0,
+          "mu": 0.010164522667999165
+        },
+        {
+          "pair": [
+            0,
+            9
+          ],
+          "d_J0_at_zero": -0.02032900070503274,
+          "one_sided_descent_rate": 0.02032904533599833,
+          "observed_quadratic_impurity_c": 0.5333333333326223,
+          "nu": 2.0,
+          "mu": 0.010164522667999165
+        },
+        {
+          "pair": [
+            0,
+            10
+          ],
+          "d_J0_at_zero": -0.02032900070503274,
+          "one_sided_descent_rate": 0.02032904533599833,
+          "observed_quadratic_impurity_c": 0.5333333333326223,
+          "nu": 2.0,
+          "mu": 0.010164522667999165
+        },
+        {
+          "pair": [
+            0,
+            11
+          ],
+          "d_J0_at_zero": -0.02032900070503274,
+          "one_sided_descent_rate": 0.02032904533599833,
+          "observed_quadratic_impurity_c": 0.5333333333326223,
+          "nu": 2.0,
+          "mu": 0.010164522667999165
+        },
+        {
+          "pair": [
+            0,
+            12
+          ],
+          "d_J0_at_zero": -0.02032900070503274,
+          "one_sided_descent_rate": 0.02032904533599833,
+          "observed_quadratic_impurity_c": 0.5333333333326223,
+          "nu": 2.0,
+          "mu": 0.010164522667999165
+        },
+        {
+          "pair": [
+            0,
+            13
+          ],
+          "d_J0_at_zero": -0.02032900070503274,
+          "one_sided_descent_rate": 0.02032904533599833,
+          "observed_quadratic_impurity_c": 0.5333333333326223,
+          "nu": 2.0,
+          "mu": 0.010164522667999165
+        },
+        {
+          "pair": [
+            0,
+            14
+          ],
+          "d_J0_at_zero": -0.02032900070503274,
+          "one_sided_descent_rate": 0.02032904533599833,
+          "observed_quadratic_impurity_c": 0.5333333333326223,
+          "nu": 2.0,
+          "mu": 0.010164522667999165
+        },
+        {
+          "pair": [
+            1,
+            7
+          ],
+          "d_J0_at_zero": -0.017424857723380427,
+          "one_sided_descent_rate": 0.017424906295637754,
+          "observed_quadratic_impurity_c": 0.5333333333326223,
+          "nu": 2.0,
+          "mu": 0.008712453147818877
+        },
+        {
+          "pair": [
+            1,
+            8
+          ],
+          "d_J0_at_zero": -0.017424857723380427,
+          "one_sided_descent_rate": 0.017424906295637754,
+          "observed_quadratic_impurity_c": 0.5333333333326223,
+          "nu": 2.0,
+          "mu": 0.008712453147818877
+        }
+      ]
+    },
+    {
+      "row_key": "f2-u4",
+      "row": "F_2[u]/(u^4)",
+      "target_packet": "u^4",
+      "target_depth": 4,
+      "packet_sizes": {
+        "u": 1,
+        "u^2": 2,
+        "u^3": 4,
+        "u^4": 8
+      },
+      "active_prefix_dimension": 15,
+      "total_dimension": 15,
+      "amplitude_fraction": 0.5,
+      "actual_amplitude": 0.059375,
+      "probability_min": 0.0328125,
+      "probability_max": 0.0921875,
+      "base_J0": 0.895590404600028,
+      "base_J": 0.895590404600028,
+      "base_block_coupling": 0.6955904046000281,
+      "cross_pair_count": 70,
+      "singular_pair_count": 70,
+      "descent_pair_count": 70,
+      "positive_mu_summary": {
+        "min": 0.0026529110019879454,
+        "p05": 0.0053058166749053726,
+        "median": 0.02234032747683301,
+        "mean": 0.023477270695769294,
+        "p95": 0.03909550775060833,
+        "max": 0.039095507775588345
+      },
+      "all_mu_summary": {
+        "min": 0.0026529110019879454,
+        "p05": 0.0053058166749053726,
+        "median": 0.02234032747683301,
+        "mean": 0.023477270695769294,
+        "p95": 0.03909550775060833,
+        "max": 0.039095507775588345
+      },
+      "max_mu_star": 0.039095507775588345,
+      "best_pair": [
+        0,
+        11
+      ],
+      "best_d_J0_at_zero": -0.07819090480642998,
+      "best_one_sided_descent_rate": 0.07819101555117669,
+      "quadratic_impurity_c_formula": 0.5333333333333333,
+      "quadratic_impurity_c_error_max": 7.109868249699502e-13,
+      "top_pairs": [
+        {
+          "pair": [
+            0,
+            11
+          ],
+          "d_J0_at_zero": -0.07819090480642998,
+          "one_sided_descent_rate": 0.07819101555117669,
+          "observed_quadratic_impurity_c": 0.5333333333326223,
+          "nu": 2.0,
+          "mu": 0.039095507775588345
+        },
+        {
+          "pair": [
+            0,
+            12
+          ],
+          "d_J0_at_zero": -0.07819090480642998,
+          "one_sided_descent_rate": 0.07819101555117669,
+          "observed_quadratic_impurity_c": 0.5333333333326223,
+          "nu": 2.0,
+          "mu": 0.039095507775588345
+        },
+        {
+          "pair": [
+            0,
+            13
+          ],
+          "d_J0_at_zero": -0.07819090480642998,
+          "one_sided_descent_rate": 0.07819101555117669,
+          "observed_quadratic_impurity_c": 0.5333333333326223,
+          "nu": 2.0,
+          "mu": 0.039095507775588345
+        },
+        {
+          "pair": [
+            0,
+            14
+          ],
+          "d_J0_at_zero": -0.07819090480642998,
+          "one_sided_descent_rate": 0.07819101555117669,
+          "observed_quadratic_impurity_c": 0.5333333333326223,
+          "nu": 2.0,
+          "mu": 0.039095507775588345
+        },
+        {
+          "pair": [
+            0,
+            7
+          ],
+          "d_J0_at_zero": -0.07819090480642998,
+          "one_sided_descent_rate": 0.07819101544015439,
+          "observed_quadratic_impurity_c": 0.5333333333326223,
+          "nu": 2.0,
+          "mu": 0.039095507720077194
+        },
+        {
+          "pair": [
+            0,
+            8
+          ],
+          "d_J0_at_zero": -0.07819090480642998,
+          "one_sided_descent_rate": 0.07819101544015439,
+          "observed_quadratic_impurity_c": 0.5333333333326223,
+          "nu": 2.0,
+          "mu": 0.039095507720077194
+        },
+        {
+          "pair": [
+            0,
+            9
+          ],
+          "d_J0_at_zero": -0.07819090480642998,
+          "one_sided_descent_rate": 0.07819101544015439,
+          "observed_quadratic_impurity_c": 0.5333333333326223,
+          "nu": 2.0,
+          "mu": 0.039095507720077194
+        },
+        {
+          "pair": [
+            0,
+            10
+          ],
+          "d_J0_at_zero": -0.07819090480642998,
+          "one_sided_descent_rate": 0.07819101544015439,
+          "observed_quadratic_impurity_c": 0.5333333333326223,
+          "nu": 2.0,
+          "mu": 0.039095507720077194
+        },
+        {
+          "pair": [
+            1,
+            11
+          ],
+          "d_J0_at_zero": -0.0670207755404384,
+          "one_sided_descent_rate": 0.0670208953890139,
+          "observed_quadratic_impurity_c": 0.5333333333326223,
+          "nu": 2.0,
+          "mu": 0.03351044769450695
+        },
+        {
+          "pair": [
+            1,
+            12
+          ],
+          "d_J0_at_zero": -0.0670207755404384,
+          "one_sided_descent_rate": 0.0670208953890139,
+          "observed_quadratic_impurity_c": 0.5333333333326223,
+          "nu": 2.0,
+          "mu": 0.03351044769450695
+        }
+      ]
+    },
+    {
+      "row_key": "f2-u5",
+      "row": "F_2[u]/(u^5)",
+      "target_packet": "u^2",
+      "target_depth": 2,
+      "packet_sizes": {
+        "u": 1,
+        "u^2": 2,
+        "u^3": 4,
+        "u^4": 8,
+        "u^5": 16
+      },
+      "active_prefix_dimension": 3,
+      "total_dimension": 31,
+      "amplitude_fraction": 0.1,
+      "actual_amplitude": 0.0475,
+      "probability_min": 0.02828125,
+      "probability_max": 0.03421875,
+      "base_J0": 0.05886755271997296,
+      "base_J": 0.05886755271997296,
+      "base_block_coupling": 0.009190133365134238,
+      "cross_pair_count": 310,
+      "singular_pair_count": 86,
+      "descent_pair_count": 2,
+      "positive_mu_summary": {
+        "min": 0.0004365427498653762,
+        "p05": 0.0004365427526409338,
+        "median": 0.00043654277762095184,
+        "mean": 0.00043654277762095184,
+        "p95": 0.0004365428026009699,
+        "max": 0.00043654280537652745
+      },
+      "all_mu_summary": {
+        "min": 0.0,
+        "p05": 0.0,
+        "median": 0.0,
+        "mean": 2.8164050169093668e-06,
+        "p95": 0.0,
+        "max": 0.00043654280537652745
+      },
+      "max_mu_star": 0.00043654280537652745,
+      "best_pair": [
+        0,
+        1
+      ],
+      "best_d_J0_at_zero": -0.0008730626707698086,
+      "best_one_sided_descent_rate": 0.0008730856107530549,
+      "quadratic_impurity_c_formula": 0.25806451612903225,
+      "quadratic_impurity_c_error_max": 3.44058115331336e-13,
+      "top_pairs": [
+        {
+          "pair": [
+            0,
+            1
+          ],
+          "d_J0_at_zero": -0.0008730626707698086,
+          "one_sided_descent_rate": 0.0008730856107530549,
+          "observed_quadratic_impurity_c": 0.2580645161286882,
+          "nu": 2.0,
+          "mu": 0.00043654280537652745
+        },
+        {
+          "pair": [
+            0,
+            2
+          ],
+          "d_J0_at_zero": -0.0008730626707698086,
+          "one_sided_descent_rate": 0.0008730854997307524,
+          "observed_quadratic_impurity_c": 0.2580645161286882,
+          "nu": 2.0,
+          "mu": 0.0004365427498653762
+        },
+        {
+          "pair": [
+            0,
+            3
+          ],
+          "d_J0_at_zero": -0.666666666759852,
+          "one_sided_descent_rate": 0.0,
+          "observed_quadratic_impurity_c": 0.2580645161286882,
+          "nu": 2.0,
+          "mu": 0.0
+        },
+        {
+          "pair": [
+            0,
+            4
+          ],
+          "d_J0_at_zero": -0.666666666759852,
+          "one_sided_descent_rate": 0.0,
+          "observed_quadratic_impurity_c": 0.2580645161286882,
+          "nu": 2.0,
+          "mu": 0.0
+        },
+        {
+          "pair": [
+            0,
+            5
+          ],
+          "d_J0_at_zero": -0.666666666759852,
+          "one_sided_descent_rate": 0.0,
+          "observed_quadratic_impurity_c": 0.2580645161286882,
+          "nu": 2.0,
+          "mu": 0.0
+        },
+        {
+          "pair": [
+            0,
+            6
+          ],
+          "d_J0_at_zero": -0.666666666759852,
+          "one_sided_descent_rate": 0.0,
+          "observed_quadratic_impurity_c": 0.2580645161286882,
+          "nu": 2.0,
+          "mu": 0.0
+        },
+        {
+          "pair": [
+            0,
+            7
+          ],
+          "d_J0_at_zero": -0.666666666759852,
+          "one_sided_descent_rate": 0.0,
+          "observed_quadratic_impurity_c": 0.2580645161286882,
+          "nu": 2.0,
+          "mu": 0.0
+        },
+        {
+          "pair": [
+            0,
+            8
+          ],
+          "d_J0_at_zero": -0.666666666759852,
+          "one_sided_descent_rate": 0.0,
+          "observed_quadratic_impurity_c": 0.2580645161286882,
+          "nu": 2.0,
+          "mu": 0.0
+        },
+        {
+          "pair": [
+            0,
+            9
+          ],
+          "d_J0_at_zero": -0.666666666759852,
+          "one_sided_descent_rate": 0.0,
+          "observed_quadratic_impurity_c": 0.2580645161286882,
+          "nu": 2.0,
+          "mu": 0.0
+        },
+        {
+          "pair": [
+            0,
+            10
+          ],
+          "d_J0_at_zero": -0.666666666759852,
+          "one_sided_descent_rate": 0.0,
+          "observed_quadratic_impurity_c": 0.2580645161286882,
+          "nu": 2.0,
+          "mu": 0.0
+        }
+      ]
+    },
+    {
+      "row_key": "f2-u5",
+      "row": "F_2[u]/(u^5)",
+      "target_packet": "u^2",
+      "target_depth": 2,
+      "packet_sizes": {
+        "u": 1,
+        "u^2": 2,
+        "u^3": 4,
+        "u^4": 8,
+        "u^5": 16
+      },
+      "active_prefix_dimension": 3,
+      "total_dimension": 31,
+      "amplitude_fraction": 0.35,
+      "actual_amplitude": 0.16624999999999998,
+      "probability_min": 0.020859375,
+      "probability_max": 0.041640625,
+      "base_J0": 0.18942565187428698,
+      "base_J": 0.18942565187428698,
+      "base_block_coupling": 0.13974823251944826,
+      "cross_pair_count": 310,
+      "singular_pair_count": 86,
+      "descent_pair_count": 2,
+      "positive_mu_summary": {
+        "min": 0.023233314411230666,
+        "p05": 0.023233314414006223,
+        "median": 0.02323331443898624,
+        "mean": 0.02323331443898624,
+        "p95": 0.02323331446396626,
+        "max": 0.023233314466741817
+      },
+      "all_mu_summary": {
+        "min": 0.0,
+        "p05": 0.0,
+        "median": 0.0,
+        "mean": 0.00014989235121926607,
+        "p95": 0.0,
+        "max": 0.023233314466741817
+      },
+      "max_mu_star": 0.023233314466741817,
+      "best_pair": [
+        0,
+        1
+      ],
+      "best_d_J0_at_zero": -0.04646628730398117,
+      "best_one_sided_descent_rate": 0.046466628933483634,
+      "quadratic_impurity_c_formula": 0.25806451612903225,
+      "quadratic_impurity_c_error_max": 3.44058115331336e-13,
+      "top_pairs": [
+        {
+          "pair": [
+            0,
+            1
+          ],
+          "d_J0_at_zero": -0.04646628730398117,
+          "one_sided_descent_rate": 0.046466628933483634,
+          "observed_quadratic_impurity_c": 0.2580645161286882,
+          "nu": 2.0,
+          "mu": 0.023233314466741817
+        },
+        {
+          "pair": [
+            0,
+            2
+          ],
+          "d_J0_at_zero": -0.04646628730398117,
+          "one_sided_descent_rate": 0.04646662882246133,
+          "observed_quadratic_impurity_c": 0.2580645161286882,
+          "nu": 2.0,
+          "mu": 0.023233314411230666
+        },
+        {
+          "pair": [
+            0,
+            3
+          ],
+          "d_J0_at_zero": -0.666666666759852,
+          "one_sided_descent_rate": 0.0,
+          "observed_quadratic_impurity_c": 0.2580645161286882,
+          "nu": 2.0,
+          "mu": 0.0
+        },
+        {
+          "pair": [
+            0,
+            4
+          ],
+          "d_J0_at_zero": -0.666666666759852,
+          "one_sided_descent_rate": 0.0,
+          "observed_quadratic_impurity_c": 0.2580645161286882,
+          "nu": 2.0,
+          "mu": 0.0
+        },
+        {
+          "pair": [
+            0,
+            5
+          ],
+          "d_J0_at_zero": -0.666666666759852,
+          "one_sided_descent_rate": 0.0,
+          "observed_quadratic_impurity_c": 0.2580645161286882,
+          "nu": 2.0,
+          "mu": 0.0
+        },
+        {
+          "pair": [
+            0,
+            6
+          ],
+          "d_J0_at_zero": -0.666666666759852,
+          "one_sided_descent_rate": 0.0,
+          "observed_quadratic_impurity_c": 0.2580645161286882,
+          "nu": 2.0,
+          "mu": 0.0
+        },
+        {
+          "pair": [
+            0,
+            7
+          ],
+          "d_J0_at_zero": -0.666666666759852,
+          "one_sided_descent_rate": 0.0,
+          "observed_quadratic_impurity_c": 0.2580645161286882,
+          "nu": 2.0,
+          "mu": 0.0
+        },
+        {
+          "pair": [
+            0,
+            8
+          ],
+          "d_J0_at_zero": -0.666666666759852,
+          "one_sided_descent_rate": 0.0,
+          "observed_quadratic_impurity_c": 0.2580645161286882,
+          "nu": 2.0,
+          "mu": 0.0
+        },
+        {
+          "pair": [
+            0,
+            9
+          ],
+          "d_J0_at_zero": -0.666666666759852,
+          "one_sided_descent_rate": 0.0,
+          "observed_quadratic_impurity_c": 0.2580645161286882,
+          "nu": 2.0,
+          "mu": 0.0
+        },
+        {
+          "pair": [
+            0,
+            10
+          ],
+          "d_J0_at_zero": -0.666666666759852,
+          "one_sided_descent_rate": 0.0,
+          "observed_quadratic_impurity_c": 0.2580645161286882,
+          "nu": 2.0,
+          "mu": 0.0
+        }
+      ]
+    },
+    {
+      "row_key": "f2-u5",
+      "row": "F_2[u]/(u^5)",
+      "target_packet": "u^2",
+      "target_depth": 2,
+      "packet_sizes": {
+        "u": 1,
+        "u^2": 2,
+        "u^3": 4,
+        "u^4": 8,
+        "u^5": 16
+      },
+      "active_prefix_dimension": 3,
+      "total_dimension": 31,
+      "amplitude_fraction": 0.5,
+      "actual_amplitude": 0.2375,
+      "probability_min": 0.01640625,
+      "probability_max": 0.04609375,
+      "base_J0": 0.4259344049605336,
+      "base_J": 0.4259344049605336,
+      "base_block_coupling": 0.3762569856056948,
+      "cross_pair_count": 310,
+      "singular_pair_count": 86,
+      "descent_pair_count": 2,
+      "positive_mu_summary": {
+        "min": 0.08936148318539061,
+        "p05": 0.08936148318816617,
+        "median": 0.08936148321314619,
+        "mean": 0.08936148321314619,
+        "p95": 0.0893614832381262,
+        "max": 0.08936148324090176
+      },
+      "all_mu_summary": {
+        "min": 0.0,
+        "p05": 0.0,
+        "median": 0.0,
+        "mean": 0.0005765256981493303,
+        "p95": 0.0,
+        "max": 0.08936148324090176
+      },
+      "max_mu_star": 0.08936148324090176,
+      "best_pair": [
+        0,
+        1
+      ],
+      "best_d_J0_at_zero": -0.1787220682003543,
+      "best_one_sided_descent_rate": 0.17872296648180352,
+      "quadratic_impurity_c_formula": 0.25806451612903225,
+      "quadratic_impurity_c_error_max": 3.44058115331336e-13,
+      "top_pairs": [
+        {
+          "pair": [
+            0,
+            1
+          ],
+          "d_J0_at_zero": -0.1787220682003543,
+          "one_sided_descent_rate": 0.17872296648180352,
+          "observed_quadratic_impurity_c": 0.2580645161286882,
+          "nu": 2.0,
+          "mu": 0.08936148324090176
+        },
+        {
+          "pair": [
+            0,
+            2
+          ],
+          "d_J0_at_zero": -0.17872206814484315,
+          "one_sided_descent_rate": 0.17872296637078122,
+          "observed_quadratic_impurity_c": 0.2580645161286882,
+          "nu": 2.0,
+          "mu": 0.08936148318539061
+        },
+        {
+          "pair": [
+            0,
+            3
+          ],
+          "d_J0_at_zero": -0.666666666759852,
+          "one_sided_descent_rate": 0.0,
+          "observed_quadratic_impurity_c": 0.2580645161286882,
+          "nu": 2.0,
+          "mu": 0.0
+        },
+        {
+          "pair": [
+            0,
+            4
+          ],
+          "d_J0_at_zero": -0.666666666759852,
+          "one_sided_descent_rate": 0.0,
+          "observed_quadratic_impurity_c": 0.2580645161286882,
+          "nu": 2.0,
+          "mu": 0.0
+        },
+        {
+          "pair": [
+            0,
+            5
+          ],
+          "d_J0_at_zero": -0.666666666759852,
+          "one_sided_descent_rate": 0.0,
+          "observed_quadratic_impurity_c": 0.2580645161286882,
+          "nu": 2.0,
+          "mu": 0.0
+        },
+        {
+          "pair": [
+            0,
+            6
+          ],
+          "d_J0_at_zero": -0.666666666759852,
+          "one_sided_descent_rate": 0.0,
+          "observed_quadratic_impurity_c": 0.2580645161286882,
+          "nu": 2.0,
+          "mu": 0.0
+        },
+        {
+          "pair": [
+            0,
+            7
+          ],
+          "d_J0_at_zero": -0.666666666759852,
+          "one_sided_descent_rate": 0.0,
+          "observed_quadratic_impurity_c": 0.2580645161286882,
+          "nu": 2.0,
+          "mu": 0.0
+        },
+        {
+          "pair": [
+            0,
+            8
+          ],
+          "d_J0_at_zero": -0.666666666759852,
+          "one_sided_descent_rate": 0.0,
+          "observed_quadratic_impurity_c": 0.2580645161286882,
+          "nu": 2.0,
+          "mu": 0.0
+        },
+        {
+          "pair": [
+            0,
+            9
+          ],
+          "d_J0_at_zero": -0.666666666759852,
+          "one_sided_descent_rate": 0.0,
+          "observed_quadratic_impurity_c": 0.2580645161286882,
+          "nu": 2.0,
+          "mu": 0.0
+        },
+        {
+          "pair": [
+            0,
+            10
+          ],
+          "d_J0_at_zero": -0.666666666759852,
+          "one_sided_descent_rate": 0.0,
+          "observed_quadratic_impurity_c": 0.2580645161286882,
+          "nu": 2.0,
+          "mu": 0.0
+        }
+      ]
+    },
+    {
+      "row_key": "f2-u5",
+      "row": "F_2[u]/(u^5)",
+      "target_packet": "u^3",
+      "target_depth": 3,
+      "packet_sizes": {
+        "u": 1,
+        "u^2": 2,
+        "u^3": 4,
+        "u^4": 8,
+        "u^5": 16
+      },
+      "active_prefix_dimension": 7,
+      "total_dimension": 31,
+      "amplitude_fraction": 0.1,
+      "actual_amplitude": 0.02375,
+      "probability_min": 0.02828125,
+      "probability_max": 0.03421875,
+      "base_J0": 0.09638658044739676,
+      "base_J": 0.09638658044739676,
+      "base_block_coupling": 0.013805935286106437,
+      "cross_pair_count": 310,
+      "singular_pair_count": 182,
+      "descent_pair_count": 14,
+      "positive_mu_summary": {
+        "min": 1.0367533220811964e-05,
+        "p05": 1.0367605385308565e-05,
+        "median": 0.0002182702490971522,
+        "mean": 0.00021975051441223772,
+        "p95": 0.000327402507882546,
+        "max": 0.000327402507882546
+      },
+      "all_mu_summary": {
+        "min": 0.0,
+        "p05": 0.0,
+        "median": 0.0,
+        "mean": 9.92421677990751e-06,
+        "p95": 0.0,
+        "max": 0.000327402507882546
+      },
+      "max_mu_star": 0.000327402507882546,
+      "best_pair": [
+        0,
+        3
+      ],
+      "best_d_J0_at_zero": -0.0006547971123649354,
+      "best_one_sided_descent_rate": 0.000654805015765092,
+      "quadratic_impurity_c_formula": 0.25806451612903225,
+      "quadratic_impurity_c_error_max": 3.44058115331336e-13,
+      "top_pairs": [
+        {
+          "pair": [
+            0,
+            3
+          ],
+          "d_J0_at_zero": -0.0006547971123649354,
+          "one_sided_descent_rate": 0.000654805015765092,
+          "observed_quadratic_impurity_c": 0.2580645161286882,
+          "nu": 2.0,
+          "mu": 0.000327402507882546
+        },
+        {
+          "pair": [
+            0,
+            4
+          ],
+          "d_J0_at_zero": -0.0006547971123649354,
+          "one_sided_descent_rate": 0.000654805015765092,
+          "observed_quadratic_impurity_c": 0.2580645161286882,
+          "nu": 2.0,
+          "mu": 0.000327402507882546
+        },
+        {
+          "pair": [
+            0,
+            5
+          ],
+          "d_J0_at_zero": -0.000654797001342633,
+          "one_sided_descent_rate": 0.000654805015765092,
+          "observed_quadratic_impurity_c": 0.2580645161286882,
+          "nu": 2.0,
+          "mu": 0.000327402507882546
+        },
+        {
+          "pair": [
+            0,
+            6
+          ],
+          "d_J0_at_zero": -0.000654797001342633,
+          "one_sided_descent_rate": 0.000654805015765092,
+          "observed_quadratic_impurity_c": 0.2580645161286882,
+          "nu": 2.0,
+          "mu": 0.000327402507882546
+        },
+        {
+          "pair": [
+            1,
+            3
+          ],
+          "d_J0_at_zero": -0.00043653133885435125,
+          "one_sided_descent_rate": 0.0004365404981943044,
+          "observed_quadratic_impurity_c": 0.2580645161286882,
+          "nu": 2.0,
+          "mu": 0.0002182702490971522
+        },
+        {
+          "pair": [
+            1,
+            4
+          ],
+          "d_J0_at_zero": -0.0004365314498766537,
+          "one_sided_descent_rate": 0.0004365404981943044,
+          "observed_quadratic_impurity_c": 0.2580645161286882,
+          "nu": 2.0,
+          "mu": 0.0002182702490971522
+        },
+        {
+          "pair": [
+            1,
+            5
+          ],
+          "d_J0_at_zero": -0.00043653133885435125,
+          "one_sided_descent_rate": 0.0004365404981943044,
+          "observed_quadratic_impurity_c": 0.2580645161286882,
+          "nu": 2.0,
+          "mu": 0.0002182702490971522
+        },
+        {
+          "pair": [
+            1,
+            6
+          ],
+          "d_J0_at_zero": -0.00043653133885435125,
+          "one_sided_descent_rate": 0.0004365404981943044,
+          "observed_quadratic_impurity_c": 0.2580645161286882,
+          "nu": 2.0,
+          "mu": 0.0002182702490971522
+        },
+        {
+          "pair": [
+            2,
+            3
+          ],
+          "d_J0_at_zero": -0.00043653133885435125,
+          "one_sided_descent_rate": 0.0004365404981943044,
+          "observed_quadratic_impurity_c": 0.2580645161286882,
+          "nu": 2.0,
+          "mu": 0.0002182702490971522
+        },
+        {
+          "pair": [
+            2,
+            4
+          ],
+          "d_J0_at_zero": -0.0004365314498766537,
+          "one_sided_descent_rate": 0.0004365404981943044,
+          "observed_quadratic_impurity_c": 0.2580645161286882,
+          "nu": 2.0,
+          "mu": 0.0002182702490971522
+        }
+      ]
+    },
+    {
+      "row_key": "f2-u5",
+      "row": "F_2[u]/(u^5)",
+      "target_packet": "u^3",
+      "target_depth": 3,
+      "packet_sizes": {
+        "u": 1,
+        "u^2": 2,
+        "u^3": 4,
+        "u^4": 8,
+        "u^5": 16
+      },
+      "active_prefix_dimension": 7,
+      "total_dimension": 31,
+      "amplitude_fraction": 0.35,
+      "actual_amplitude": 0.08312499999999999,
+      "probability_min": 0.020859375,
+      "probability_max": 0.041640625,
+      "base_J0": 0.29606550407333215,
+      "base_J": 0.29606550407333215,
+      "base_block_coupling": 0.21348485891204183,
+      "cross_pair_count": 310,
+      "singular_pair_count": 182,
+      "descent_pair_count": 14,
+      "positive_mu_summary": {
+        "min": 0.0019312588195319336,
+        "p05": 0.0019312588916964302,
+        "median": 0.011616637818345765,
+        "mean": 0.011892520293940325,
+        "p95": 0.01742491595457807,
+        "max": 0.01742491595457807
+      },
+      "all_mu_summary": {
+        "min": 0.0,
+        "p05": 0.0,
+        "median": 0.0,
+        "mean": 0.0005370815616618211,
+        "p95": 0.0,
+        "max": 0.01742491595457807
+      },
+      "max_mu_star": 0.01742491595457807,
+      "best_pair": [
+        0,
+        3
+      ],
+      "best_d_J0_at_zero": -0.034849715557783156,
+      "best_one_sided_descent_rate": 0.03484983190915614,
+      "quadratic_impurity_c_formula": 0.25806451612903225,
+      "quadratic_impurity_c_error_max": 3.44058115331336e-13,
+      "top_pairs": [
+        {
+          "pair": [
+            0,
+            3
+          ],
+          "d_J0_at_zero": -0.034849715557783156,
+          "one_sided_descent_rate": 0.03484983190915614,
+          "observed_quadratic_impurity_c": 0.2580645161286882,
+          "nu": 2.0,
+          "mu": 0.01742491595457807
+        },
+        {
+          "pair": [
+            0,
+            4
+          ],
+          "d_J0_at_zero": -0.034849715557783156,
+          "one_sided_descent_rate": 0.03484983190915614,
+          "observed_quadratic_impurity_c": 0.2580645161286882,
+          "nu": 2.0,
+          "mu": 0.01742491595457807
+        },
+        {
+          "pair": [
+            0,
+            5
+          ],
+          "d_J0_at_zero": -0.034849715446760854,
+          "one_sided_descent_rate": 0.03484983190915614,
+          "observed_quadratic_impurity_c": 0.2580645161286882,
+          "nu": 2.0,
+          "mu": 0.01742491595457807
+        },
+        {
+          "pair": [
+            0,
+            6
+          ],
+          "d_J0_at_zero": -0.034849715446760854,
+          "one_sided_descent_rate": 0.03484983190915614,
+          "observed_quadratic_impurity_c": 0.2580645161286882,
+          "nu": 2.0,
+          "mu": 0.01742491595457807
+        },
+        {
+          "pair": [
+            1,
+            3
+          ],
+          "d_J0_at_zero": -0.023233143631173903,
+          "one_sided_descent_rate": 0.02323327563669153,
+          "observed_quadratic_impurity_c": 0.2580645161286882,
+          "nu": 2.0,
+          "mu": 0.011616637818345765
+        },
+        {
+          "pair": [
+            1,
+            4
+          ],
+          "d_J0_at_zero": -0.023233143742196205,
+          "one_sided_descent_rate": 0.02323327563669153,
+          "observed_quadratic_impurity_c": 0.2580645161286882,
+          "nu": 2.0,
+          "mu": 0.011616637818345765
+        },
+        {
+          "pair": [
+            1,
+            5
+          ],
+          "d_J0_at_zero": -0.023233143631173903,
+          "one_sided_descent_rate": 0.02323327563669153,
+          "observed_quadratic_impurity_c": 0.2580645161286882,
+          "nu": 2.0,
+          "mu": 0.011616637818345765
+        },
+        {
+          "pair": [
+            1,
+            6
+          ],
+          "d_J0_at_zero": -0.023233143631173903,
+          "one_sided_descent_rate": 0.02323327563669153,
+          "observed_quadratic_impurity_c": 0.2580645161286882,
+          "nu": 2.0,
+          "mu": 0.011616637818345765
+        },
+        {
+          "pair": [
+            2,
+            3
+          ],
+          "d_J0_at_zero": -0.023233143631173903,
+          "one_sided_descent_rate": 0.02323327563669153,
+          "observed_quadratic_impurity_c": 0.2580645161286882,
+          "nu": 2.0,
+          "mu": 0.011616637818345765
+        },
+        {
+          "pair": [
+            2,
+            4
+          ],
+          "d_J0_at_zero": -0.023233143742196205,
+          "one_sided_descent_rate": 0.02323327563669153,
+          "observed_quadratic_impurity_c": 0.2580645161286882,
+          "nu": 2.0,
+          "mu": 0.011616637818345765
+        }
+      ]
+    },
+    {
+      "row_key": "f2-u5",
+      "row": "F_2[u]/(u^5)",
+      "target_packet": "u^3",
+      "target_depth": 3,
+      "packet_sizes": {
+        "u": 1,
+        "u^2": 2,
+        "u^3": 4,
+        "u^4": 8,
+        "u^5": 16
+      },
+      "active_prefix_dimension": 7,
+      "total_dimension": 31,
+      "amplitude_fraction": 0.5,
+      "actual_amplitude": 0.11875,
+      "probability_min": 0.01640625,
+      "probability_max": 0.04609375,
+      "base_J0": 0.6681893691641536,
+      "base_J": 0.6681893691641536,
+      "base_block_coupling": 0.5856087240028632,
+      "cross_pair_count": 310,
+      "singular_pair_count": 182,
+      "descent_pair_count": 14,
+      "positive_mu_summary": {
+        "min": 0.010611643896929479,
+        "p05": 0.010611643969093976,
+        "median": 0.04468068404150927,
+        "mean": 0.04619660412144962,
+        "p95": 0.06702092436583484,
+        "max": 0.06702092436583484
+      },
+      "all_mu_summary": {
+        "min": 0.0,
+        "p05": 0.0,
+        "median": 0.0,
+        "mean": 0.0020862982506461123,
+        "p95": 0.0,
+        "max": 0.06702092436583484
+      },
+      "max_mu_star": 0.06702092436583484,
+      "best_pair": [
+        0,
+        3
+      ],
+      "best_d_J0_at_zero": -0.1340415513029214,
+      "best_one_sided_descent_rate": 0.1340418487316697,
+      "quadratic_impurity_c_formula": 0.25806451612903225,
+      "quadratic_impurity_c_error_max": 3.44058115331336e-13,
+      "top_pairs": [
+        {
+          "pair": [
+            0,
+            3
+          ],
+          "d_J0_at_zero": -0.1340415513029214,
+          "one_sided_descent_rate": 0.1340418487316697,
+          "observed_quadratic_impurity_c": 0.2580645161286882,
+          "nu": 2.0,
+          "mu": 0.06702092436583484
+        },
+        {
+          "pair": [
+            0,
+            4
+          ],
+          "d_J0_at_zero": -0.1340415513029214,
+          "one_sided_descent_rate": 0.1340418487316697,
+          "observed_quadratic_impurity_c": 0.2580645161286882,
+          "nu": 2.0,
+          "mu": 0.06702092436583484
+        },
+        {
+          "pair": [
+            0,
+            5
+          ],
+          "d_J0_at_zero": -0.1340415511918991,
+          "one_sided_descent_rate": 0.1340418487316697,
+          "observed_quadratic_impurity_c": 0.2580645161286882,
+          "nu": 2.0,
+          "mu": 0.06702092436583484
+        },
+        {
+          "pair": [
+            0,
+            6
+          ],
+          "d_J0_at_zero": -0.1340415511918991,
+          "one_sided_descent_rate": 0.1340418487316697,
+          "observed_quadratic_impurity_c": 0.2580645161286882,
+          "nu": 2.0,
+          "mu": 0.06702092436583484
+        },
+        {
+          "pair": [
+            1,
+            3
+          ],
+          "d_J0_at_zero": -0.08936103423895503,
+          "one_sided_descent_rate": 0.08936136808301853,
+          "observed_quadratic_impurity_c": 0.2580645161286882,
+          "nu": 2.0,
+          "mu": 0.04468068404150927
+        },
+        {
+          "pair": [
+            1,
+            4
+          ],
+          "d_J0_at_zero": -0.08936103434997733,
+          "one_sided_descent_rate": 0.08936136808301853,
+          "observed_quadratic_impurity_c": 0.2580645161286882,
+          "nu": 2.0,
+          "mu": 0.04468068404150927
+        },
+        {
+          "pair": [
+            1,
+            5
+          ],
+          "d_J0_at_zero": -0.08936103423895503,
+          "one_sided_descent_rate": 0.08936136808301853,
+          "observed_quadratic_impurity_c": 0.2580645161286882,
+          "nu": 2.0,
+          "mu": 0.04468068404150927
+        },
+        {
+          "pair": [
+            1,
+            6
+          ],
+          "d_J0_at_zero": -0.08936103423895503,
+          "one_sided_descent_rate": 0.08936136808301853,
+          "observed_quadratic_impurity_c": 0.2580645161286882,
+          "nu": 2.0,
+          "mu": 0.04468068404150927
+        },
+        {
+          "pair": [
+            2,
+            3
+          ],
+          "d_J0_at_zero": -0.08936103423895503,
+          "one_sided_descent_rate": 0.08936136808301853,
+          "observed_quadratic_impurity_c": 0.2580645161286882,
+          "nu": 2.0,
+          "mu": 0.04468068404150927
+        },
+        {
+          "pair": [
+            2,
+            4
+          ],
+          "d_J0_at_zero": -0.08936103434997733,
+          "one_sided_descent_rate": 0.08936136808301853,
+          "observed_quadratic_impurity_c": 0.2580645161286882,
+          "nu": 2.0,
+          "mu": 0.04468068404150927
+        }
+      ]
+    },
+    {
+      "row_key": "f2-u5",
+      "row": "F_2[u]/(u^5)",
+      "target_packet": "u^4",
+      "target_depth": 4,
+      "packet_sizes": {
+        "u": 1,
+        "u^2": 2,
+        "u^3": 4,
+        "u^4": 8,
+        "u^5": 16
+      },
+      "active_prefix_dimension": 15,
+      "total_dimension": 31,
+      "amplitude_fraction": 0.1,
+      "actual_amplitude": 0.011875,
+      "probability_min": 0.02828125,
+      "probability_max": 0.03421875,
+      "base_J0": 0.1445061168303874,
+      "base_J": 0.1445061168303874,
+      "base_block_coupling": 0.016119020056193808,
+      "cross_pair_count": 310,
+      "singular_pair_count": 310,
+      "descent_pair_count": 70,
+      "positive_mu_summary": {
+        "min": 2.5919266732898905e-06,
+        "p05": 5.183825591004165e-06,
+        "median": 0.00010913484005392604,
+        "mean": 0.00011024514317321226,
+        "p95": 0.00019098403414297138,
+        "max": 0.00019098403414297138
+      },
+      "all_mu_summary": {
+        "min": 0.0,
+        "p05": 0.0,
+        "median": 0.0,
+        "mean": 2.4894064587499543e-05,
+        "p95": 0.00016370096944662293,
+        "max": 0.00019098403414297138
+      },
+      "max_mu_star": 0.00019098403414297138,
+      "best_pair": [
+        0,
+        7
+      ],
+      "best_d_J0_at_zero": -0.0003819649180281104,
+      "best_one_sided_descent_rate": 0.00038196806828594276,
+      "quadratic_impurity_c_formula": 0.25806451612903225,
+      "quadratic_impurity_c_error_max": 3.44058115331336e-13,
+      "top_pairs": [
+        {
+          "pair": [
+            0,
+            7
+          ],
+          "d_J0_at_zero": -0.0003819649180281104,
+          "one_sided_descent_rate": 0.00038196806828594276,
+          "observed_quadratic_impurity_c": 0.2580645161286882,
+          "nu": 2.0,
+          "mu": 0.00019098403414297138
+        },
+        {
+          "pair": [
+            0,
+            8
+          ],
+          "d_J0_at_zero": -0.0003819649180281104,
+          "one_sided_descent_rate": 0.00038196806828594276,
+          "observed_quadratic_impurity_c": 0.2580645161286882,
+          "nu": 2.0,
+          "mu": 0.00019098403414297138
+        },
+        {
+          "pair": [
+            0,
+            9
+          ],
+          "d_J0_at_zero": -0.0003819649180281104,
+          "one_sided_descent_rate": 0.00038196806828594276,
+          "observed_quadratic_impurity_c": 0.2580645161286882,
+          "nu": 2.0,
+          "mu": 0.00019098403414297138
+        },
+        {
+          "pair": [
+            0,
+            10
+          ],
+          "d_J0_at_zero": -0.0003819649180281104,
+          "one_sided_descent_rate": 0.00038196806828594276,
+          "observed_quadratic_impurity_c": 0.2580645161286882,
+          "nu": 2.0,
+          "mu": 0.00019098403414297138
+        },
+        {
+          "pair": [
+            0,
+            11
+          ],
+          "d_J0_at_zero": -0.0003819649180281104,
+          "one_sided_descent_rate": 0.00038196806828594276,
+          "observed_quadratic_impurity_c": 0.2580645161286882,
+          "nu": 2.0,
+          "mu": 0.00019098403414297138
+        },
+        {
+          "pair": [
+            0,
+            12
+          ],
+          "d_J0_at_zero": -0.0003819649180281104,
+          "one_sided_descent_rate": 0.00038196806828594276,
+          "observed_quadratic_impurity_c": 0.2580645161286882,
+          "nu": 2.0,
+          "mu": 0.00019098403414297138
+        },
+        {
+          "pair": [
+            0,
+            13
+          ],
+          "d_J0_at_zero": -0.0003819649180281104,
+          "one_sided_descent_rate": 0.00038196806828594276,
+          "observed_quadratic_impurity_c": 0.2580645161286882,
+          "nu": 2.0,
+          "mu": 0.00019098403414297138
+        },
+        {
+          "pair": [
+            0,
+            14
+          ],
+          "d_J0_at_zero": -0.0003819649180281104,
+          "one_sided_descent_rate": 0.00038196806828594276,
+          "observed_quadratic_impurity_c": 0.2580645161286882,
+          "nu": 2.0,
+          "mu": 0.00019098403414297138
+        },
+        {
+          "pair": [
+            1,
+            7
+          ],
+          "d_J0_at_zero": -0.00032739849720186953,
+          "one_sided_descent_rate": 0.00032740193889324587,
+          "observed_quadratic_impurity_c": 0.2580645161286882,
+          "nu": 2.0,
+          "mu": 0.00016370096944662293
+        },
+        {
+          "pair": [
+            1,
+            8
+          ],
+          "d_J0_at_zero": -0.00032739849720186953,
+          "one_sided_descent_rate": 0.00032740193889324587,
+          "observed_quadratic_impurity_c": 0.2580645161286882,
+          "nu": 2.0,
+          "mu": 0.00016370096944662293
+        }
+      ]
+    },
+    {
+      "row_key": "f2-u5",
+      "row": "F_2[u]/(u^5)",
+      "target_packet": "u^4",
+      "target_depth": 4,
+      "packet_sizes": {
+        "u": 1,
+        "u^2": 2,
+        "u^3": 4,
+        "u^4": 8,
+        "u^5": 16
+      },
+      "active_prefix_dimension": 15,
+      "total_dimension": 31,
+      "amplitude_fraction": 0.35,
+      "actual_amplitude": 0.041562499999999995,
+      "probability_min": 0.020859375,
+      "probability_max": 0.041640625,
+      "base_J0": 0.3797058964157498,
+      "base_J": 0.3797058964157498,
+      "base_block_coupling": 0.25131879964155623,
+      "cross_pair_count": 310,
+      "singular_pair_count": 310,
+      "descent_pair_count": 70,
+      "positive_mu_summary": {
+        "min": 0.000482814732638559,
+        "p05": 0.0009656285215875471,
+        "median": 0.0058083140797027255,
+        "mean": 0.006015227273424374,
+        "p95": 0.010164522667999165,
+        "max": 0.010164522723510316
+      },
+      "all_mu_summary": {
+        "min": 0.0,
+        "p05": 0.0,
+        "median": 0.0,
+        "mean": 0.0013582771262571167,
+        "p95": 0.008712453147818877,
+        "max": 0.010164522723510316
+      },
+      "max_mu_star": 0.010164522723510316,
+      "best_pair": [
+        0,
+        7
+      ],
+      "best_d_J0_at_zero": -0.020329000732788316,
+      "best_one_sided_descent_rate": 0.020329045447020633,
+      "quadratic_impurity_c_formula": 0.25806451612903225,
+      "quadratic_impurity_c_error_max": 3.44058115331336e-13,
+      "top_pairs": [
+        {
+          "pair": [
+            0,
+            7
+          ],
+          "d_J0_at_zero": -0.020329000732788316,
+          "one_sided_descent_rate": 0.020329045447020633,
+          "observed_quadratic_impurity_c": 0.2580645161286882,
+          "nu": 2.0,
+          "mu": 0.010164522723510316
+        },
+        {
+          "pair": [
+            0,
+            8
+          ],
+          "d_J0_at_zero": -0.020329000732788316,
+          "one_sided_descent_rate": 0.020329045447020633,
+          "observed_quadratic_impurity_c": 0.2580645161286882,
+          "nu": 2.0,
+          "mu": 0.010164522723510316
+        },
+        {
+          "pair": [
+            0,
+            9
+          ],
+          "d_J0_at_zero": -0.020329000677277165,
+          "one_sided_descent_rate": 0.02032904533599833,
+          "observed_quadratic_impurity_c": 0.2580645161286882,
+          "nu": 2.0,
+          "mu": 0.010164522667999165
+        },
+        {
+          "pair": [
+            0,
+            10
+          ],
+          "d_J0_at_zero": -0.020329000677277165,
+          "one_sided_descent_rate": 0.02032904533599833,
+          "observed_quadratic_impurity_c": 0.2580645161286882,
+          "nu": 2.0,
+          "mu": 0.010164522667999165
+        },
+        {
+          "pair": [
+            0,
+            11
+          ],
+          "d_J0_at_zero": -0.020329000677277165,
+          "one_sided_descent_rate": 0.02032904533599833,
+          "observed_quadratic_impurity_c": 0.2580645161286882,
+          "nu": 2.0,
+          "mu": 0.010164522667999165
+        },
+        {
+          "pair": [
+            0,
+            12
+          ],
+          "d_J0_at_zero": -0.020329000677277165,
+          "one_sided_descent_rate": 0.02032904533599833,
+          "observed_quadratic_impurity_c": 0.2580645161286882,
+          "nu": 2.0,
+          "mu": 0.010164522667999165
+        },
+        {
+          "pair": [
+            0,
+            13
+          ],
+          "d_J0_at_zero": -0.020329000677277165,
+          "one_sided_descent_rate": 0.02032904533599833,
+          "observed_quadratic_impurity_c": 0.2580645161286882,
+          "nu": 2.0,
+          "mu": 0.010164522667999165
+        },
+        {
+          "pair": [
+            0,
+            14
+          ],
+          "d_J0_at_zero": -0.020329000677277165,
+          "one_sided_descent_rate": 0.02032904533599833,
+          "observed_quadratic_impurity_c": 0.2580645161286882,
+          "nu": 2.0,
+          "mu": 0.010164522667999165
+        },
+        {
+          "pair": [
+            1,
+            7
+          ],
+          "d_J0_at_zero": -0.017424857723380427,
+          "one_sided_descent_rate": 0.017424906295637754,
+          "observed_quadratic_impurity_c": 0.2580645161286882,
+          "nu": 2.0,
+          "mu": 0.008712453147818877
+        },
+        {
+          "pair": [
+            1,
+            8
+          ],
+          "d_J0_at_zero": -0.017424857723380427,
+          "one_sided_descent_rate": 0.017424906295637754,
+          "observed_quadratic_impurity_c": 0.2580645161286882,
+          "nu": 2.0,
+          "mu": 0.008712453147818877
+        }
+      ]
+    },
+    {
+      "row_key": "f2-u5",
+      "row": "F_2[u]/(u^5)",
+      "target_packet": "u^4",
+      "target_depth": 4,
+      "packet_sizes": {
+        "u": 1,
+        "u^2": 2,
+        "u^3": 4,
+        "u^4": 8,
+        "u^5": 16
+      },
+      "active_prefix_dimension": 15,
+      "total_dimension": 31,
+      "amplitude_fraction": 0.5,
+      "actual_amplitude": 0.059375,
+      "probability_min": 0.01640625,
+      "probability_max": 0.04609375,
+      "base_J0": 0.8239775013742212,
+      "base_J": 0.8239775013742212,
+      "base_block_coupling": 0.6955904046000276,
+      "cross_pair_count": 310,
+      "singular_pair_count": 310,
+      "descent_pair_count": 70,
+      "positive_mu_summary": {
+        "min": 0.0026529110019879454,
+        "p05": 0.0053058166749053726,
+        "median": 0.02234032747683301,
+        "mean": 0.023477270686253097,
+        "p95": 0.039095507720077194,
+        "max": 0.039095507720077194
+      },
+      "all_mu_summary": {
+        "min": 0.0,
+        "p05": 0.0,
+        "median": 0.0,
+        "mean": 0.005301319187218441,
+        "p95": 0.0335104476389958,
+        "max": 0.039095507720077194
+      },
+      "max_mu_star": 0.039095507720077194,
+      "best_pair": [
+        0,
+        7
+      ],
+      "best_d_J0_at_zero": -0.07819090475091883,
+      "best_one_sided_descent_rate": 0.07819101544015439,
+      "quadratic_impurity_c_formula": 0.25806451612903225,
+      "quadratic_impurity_c_error_max": 3.44058115331336e-13,
+      "top_pairs": [
+        {
+          "pair": [
+            0,
+            7
+          ],
+          "d_J0_at_zero": -0.07819090475091883,
+          "one_sided_descent_rate": 0.07819101544015439,
+          "observed_quadratic_impurity_c": 0.2580645161286882,
+          "nu": 2.0,
+          "mu": 0.039095507720077194
+        },
+        {
+          "pair": [
+            0,
+            8
+          ],
+          "d_J0_at_zero": -0.07819090475091883,
+          "one_sided_descent_rate": 0.07819101544015439,
+          "observed_quadratic_impurity_c": 0.2580645161286882,
+          "nu": 2.0,
+          "mu": 0.039095507720077194
+        },
+        {
+          "pair": [
+            0,
+            9
+          ],
+          "d_J0_at_zero": -0.07819090475091883,
+          "one_sided_descent_rate": 0.07819101544015439,
+          "observed_quadratic_impurity_c": 0.2580645161286882,
+          "nu": 2.0,
+          "mu": 0.039095507720077194
+        },
+        {
+          "pair": [
+            0,
+            10
+          ],
+          "d_J0_at_zero": -0.07819090475091883,
+          "one_sided_descent_rate": 0.07819101544015439,
+          "observed_quadratic_impurity_c": 0.2580645161286882,
+          "nu": 2.0,
+          "mu": 0.039095507720077194
+        },
+        {
+          "pair": [
+            0,
+            11
+          ],
+          "d_J0_at_zero": -0.07819090475091883,
+          "one_sided_descent_rate": 0.07819101544015439,
+          "observed_quadratic_impurity_c": 0.2580645161286882,
+          "nu": 2.0,
+          "mu": 0.039095507720077194
+        },
+        {
+          "pair": [
+            0,
+            12
+          ],
+          "d_J0_at_zero": -0.07819090475091883,
+          "one_sided_descent_rate": 0.07819101544015439,
+          "observed_quadratic_impurity_c": 0.2580645161286882,
+          "nu": 2.0,
+          "mu": 0.039095507720077194
+        },
+        {
+          "pair": [
+            0,
+            13
+          ],
+          "d_J0_at_zero": -0.07819090475091883,
+          "one_sided_descent_rate": 0.07819101544015439,
+          "observed_quadratic_impurity_c": 0.2580645161286882,
+          "nu": 2.0,
+          "mu": 0.039095507720077194
+        },
+        {
+          "pair": [
+            0,
+            14
+          ],
+          "d_J0_at_zero": -0.07819090475091883,
+          "one_sided_descent_rate": 0.07819101544015439,
+          "observed_quadratic_impurity_c": 0.2580645161286882,
+          "nu": 2.0,
+          "mu": 0.039095507720077194
+        },
+        {
+          "pair": [
+            1,
+            7
+          ],
+          "d_J0_at_zero": -0.06702077548492724,
+          "one_sided_descent_rate": 0.0670208952779916,
+          "observed_quadratic_impurity_c": 0.2580645161286882,
+          "nu": 2.0,
+          "mu": 0.0335104476389958
+        },
+        {
+          "pair": [
+            1,
+            8
+          ],
+          "d_J0_at_zero": -0.06702077548492724,
+          "one_sided_descent_rate": 0.0670208952779916,
+          "observed_quadratic_impurity_c": 0.2580645161286882,
+          "nu": 2.0,
+          "mu": 0.0335104476389958
+        }
+      ]
+    },
+    {
+      "row_key": "f2-u5",
+      "row": "F_2[u]/(u^5)",
+      "target_packet": "u^5",
+      "target_depth": 5,
+      "packet_sizes": {
+        "u": 1,
+        "u^2": 2,
+        "u^3": 4,
+        "u^4": 8,
+        "u^5": 16
+      },
+      "active_prefix_dimension": 31,
+      "total_dimension": 31,
+      "amplitude_fraction": 0.1,
+      "actual_amplitude": 0.0059375,
+      "probability_min": 0.02828125,
+      "probability_max": 0.03421875,
+      "base_J0": 0.2172768583936378,
+      "base_J": 0.2172768583936378,
+      "base_block_coupling": 0.017276858393637805,
+      "cross_pair_count": 310,
+      "singular_pair_count": 310,
+      "descent_pair_count": 310,
+      "positive_mu_summary": {
+        "min": 6.479816683224726e-07,
+        "p05": 2.591898917714275e-06,
+        "median": 5.4567336760236174e-05,
+        "mean": 5.521504490183766e-05,
+        "p95": 9.924336907829464e-05,
+        "max": 0.00010231271385663376
+      },
+      "all_mu_summary": {
+        "min": 6.479816683224726e-07,
+        "p05": 2.591898917714275e-06,
+        "median": 5.4567336760236174e-05,
+        "mean": 5.521504490183766e-05,
+        "p95": 9.924336907829464e-05,
+        "max": 0.00010231271385663376
+      },
+      "max_mu_star": 0.00010231271385663376,
+      "best_pair": [
+        0,
+        15
+      ],
+      "best_d_J0_at_zero": -0.00020462406769006236,
+      "best_one_sided_descent_rate": 0.00020462542771326753,
+      "quadratic_impurity_c_formula": 0.25806451612903225,
+      "quadratic_impurity_c_error_max": 3.44058115331336e-13,
+      "top_pairs": [
+        {
+          "pair": [
+            0,
+            15
+          ],
+          "d_J0_at_zero": -0.00020462406769006236,
+          "one_sided_descent_rate": 0.00020462542771326753,
+          "observed_quadratic_impurity_c": 0.2580645161286882,
+          "nu": 2.0,
+          "mu": 0.00010231271385663376
+        },
+        {
+          "pair": [
+            0,
+            16
+          ],
+          "d_J0_at_zero": -0.00020462406769006236,
+          "one_sided_descent_rate": 0.00020462542771326753,
+          "observed_quadratic_impurity_c": 0.2580645161286882,
+          "nu": 2.0,
+          "mu": 0.00010231271385663376
+        },
+        {
+          "pair": [
+            0,
+            17
+          ],
+          "d_J0_at_zero": -0.00020462406769006236,
+          "one_sided_descent_rate": 0.00020462542771326753,
+          "observed_quadratic_impurity_c": 0.2580645161286882,
+          "nu": 2.0,
+          "mu": 0.00010231271385663376
+        },
+        {
+          "pair": [
+            0,
+            18
+          ],
+          "d_J0_at_zero": -0.00020462406769006236,
+          "one_sided_descent_rate": 0.00020462542771326753,
+          "observed_quadratic_impurity_c": 0.2580645161286882,
+          "nu": 2.0,
+          "mu": 0.00010231271385663376
+        },
+        {
+          "pair": [
+            0,
+            19
+          ],
+          "d_J0_at_zero": -0.00020462406769006236,
+          "one_sided_descent_rate": 0.00020462542771326753,
+          "observed_quadratic_impurity_c": 0.2580645161286882,
+          "nu": 2.0,
+          "mu": 0.00010231271385663376
+        },
+        {
+          "pair": [
+            0,
+            20
+          ],
+          "d_J0_at_zero": -0.00020462406769006236,
+          "one_sided_descent_rate": 0.00020462542771326753,
+          "observed_quadratic_impurity_c": 0.2580645161286882,
+          "nu": 2.0,
+          "mu": 0.00010231271385663376
+        },
+        {
+          "pair": [
+            0,
+            21
+          ],
+          "d_J0_at_zero": -0.00020462406769006236,
+          "one_sided_descent_rate": 0.00020462542771326753,
+          "observed_quadratic_impurity_c": 0.2580645161286882,
+          "nu": 2.0,
+          "mu": 0.00010231271385663376
+        },
+        {
+          "pair": [
+            0,
+            22
+          ],
+          "d_J0_at_zero": -0.00020462406769006236,
+          "one_sided_descent_rate": 0.00020462542771326753,
+          "observed_quadratic_impurity_c": 0.2580645161286882,
+          "nu": 2.0,
+          "mu": 0.00010231271385663376
+        },
+        {
+          "pair": [
+            0,
+            23
+          ],
+          "d_J0_at_zero": -0.00020462406769006236,
+          "one_sided_descent_rate": 0.00020462542771326753,
+          "observed_quadratic_impurity_c": 0.2580645161286882,
+          "nu": 2.0,
+          "mu": 0.00010231271385663376
+        },
+        {
+          "pair": [
+            0,
+            24
+          ],
+          "d_J0_at_zero": -0.00020462406769006236,
+          "one_sided_descent_rate": 0.00020462542771326753,
+          "observed_quadratic_impurity_c": 0.2580645161286882,
+          "nu": 2.0,
+          "mu": 0.00010231271385663376
+        }
+      ]
+    },
+    {
+      "row_key": "f2-u5",
+      "row": "F_2[u]/(u^5)",
+      "target_packet": "u^5",
+      "target_depth": 5,
+      "packet_sizes": {
+        "u": 1,
+        "u^2": 2,
+        "u^3": 4,
+        "u^4": 8,
+        "u^5": 16
+      },
+      "active_prefix_dimension": 31,
+      "total_dimension": 31,
+      "amplitude_fraction": 0.35,
+      "actual_amplitude": 0.020781249999999998,
+      "probability_min": 0.020859375,
+      "probability_max": 0.041640625,
+      "base_J0": 0.47047717688961765,
+      "base_J": 0.47047717688961765,
+      "base_block_coupling": 0.2704771768896177,
+      "cross_pair_count": 310,
+      "singular_pair_count": 310,
+      "descent_pair_count": 310,
+      "positive_mu_summary": {
+        "min": 0.00012070364152627633,
+        "p05": 0.0004828139832380174,
+        "median": 0.0029041557769726722,
+        "mean": 0.003024855509976697,
+        "p95": 0.005281919676636275,
+        "max": 0.00544527747892154
+      },
+      "all_mu_summary": {
+        "min": 0.00012070364152627633,
+        "p05": 0.0004828139832380174,
+        "median": 0.0029041557769726722,
+        "mean": 0.003024855509976697,
+        "p95": 0.005281919676636275,
+        "max": 0.00544527747892154
+      },
+      "max_mu_star": 0.00544527747892154,
+      "best_pair": [
+        0,
+        15
+      ],
+      "best_d_J0_at_zero": -0.01089053608405166,
+      "best_one_sided_descent_rate": 0.01089055495784308,
+      "quadratic_impurity_c_formula": 0.25806451612903225,
+      "quadratic_impurity_c_error_max": 3.44058115331336e-13,
+      "top_pairs": [
+        {
+          "pair": [
+            0,
+            15
+          ],
+          "d_J0_at_zero": -0.01089053608405166,
+          "one_sided_descent_rate": 0.01089055495784308,
+          "observed_quadratic_impurity_c": 0.2580645161286882,
+          "nu": 2.0,
+          "mu": 0.00544527747892154
+        },
+        {
+          "pair": [
+            0,
+            16
+          ],
+          "d_J0_at_zero": -0.01089053608405166,
+          "one_sided_descent_rate": 0.01089055495784308,
+          "observed_quadratic_impurity_c": 0.2580645161286882,
+          "nu": 2.0,
+          "mu": 0.00544527747892154
+        },
+        {
+          "pair": [
+            0,
+            17
+          ],
+          "d_J0_at_zero": -0.01089053608405166,
+          "one_sided_descent_rate": 0.01089055495784308,
+          "observed_quadratic_impurity_c": 0.2580645161286882,
+          "nu": 2.0,
+          "mu": 0.00544527747892154
+        },
+        {
+          "pair": [
+            0,
+            18
+          ],
+          "d_J0_at_zero": -0.01089053608405166,
+          "one_sided_descent_rate": 0.01089055495784308,
+          "observed_quadratic_impurity_c": 0.2580645161286882,
+          "nu": 2.0,
+          "mu": 0.00544527747892154
+        },
+        {
+          "pair": [
+            0,
+            19
+          ],
+          "d_J0_at_zero": -0.01089053608405166,
+          "one_sided_descent_rate": 0.01089055495784308,
+          "observed_quadratic_impurity_c": 0.2580645161286882,
+          "nu": 2.0,
+          "mu": 0.00544527747892154
+        },
+        {
+          "pair": [
+            0,
+            20
+          ],
+          "d_J0_at_zero": -0.01089053608405166,
+          "one_sided_descent_rate": 0.01089055495784308,
+          "observed_quadratic_impurity_c": 0.2580645161286882,
+          "nu": 2.0,
+          "mu": 0.00544527747892154
+        },
+        {
+          "pair": [
+            0,
+            21
+          ],
+          "d_J0_at_zero": -0.01089053608405166,
+          "one_sided_descent_rate": 0.01089055495784308,
+          "observed_quadratic_impurity_c": 0.2580645161286882,
+          "nu": 2.0,
+          "mu": 0.00544527747892154
+        },
+        {
+          "pair": [
+            0,
+            22
+          ],
+          "d_J0_at_zero": -0.01089053608405166,
+          "one_sided_descent_rate": 0.01089055495784308,
+          "observed_quadratic_impurity_c": 0.2580645161286882,
+          "nu": 2.0,
+          "mu": 0.00544527747892154
+        },
+        {
+          "pair": [
+            0,
+            23
+          ],
+          "d_J0_at_zero": -0.01089053608405166,
+          "one_sided_descent_rate": 0.01089055495784308,
+          "observed_quadratic_impurity_c": 0.2580645161286882,
+          "nu": 2.0,
+          "mu": 0.00544527747892154
+        },
+        {
+          "pair": [
+            0,
+            24
+          ],
+          "d_J0_at_zero": -0.01089053608405166,
+          "one_sided_descent_rate": 0.01089055495784308,
+          "observed_quadratic_impurity_c": 0.2580645161286882,
+          "nu": 2.0,
+          "mu": 0.00544527747892154
+        }
+      ]
+    },
+    {
+      "row_key": "f2-u5",
+      "row": "F_2[u]/(u^5)",
+      "target_packet": "u^5",
+      "target_depth": 5,
+      "packet_sizes": {
+        "u": 1,
+        "u^2": 2,
+        "u^3": 4,
+        "u^4": 8,
+        "u^5": 16
+      },
+      "active_prefix_dimension": 31,
+      "total_dimension": 31,
+      "amplitude_fraction": 0.5,
+      "actual_amplitude": 0.0296875,
+      "probability_min": 0.01640625,
+      "probability_max": 0.04609375,
+      "base_J0": 0.951907697748255,
+      "base_J": 0.951907697748255,
+      "base_block_coupling": 0.751907697748255,
+      "cross_pair_count": 310,
+      "singular_pair_count": 310,
+      "descent_pair_count": 310,
+      "positive_mu_summary": {
+        "min": 0.0006632276949858351,
+        "p05": 0.0026529069496739055,
+        "median": 0.011170160130191675,
+        "mean": 0.01183337781597974,
+        "p95": 0.020315696003248025,
+        "max": 0.02094401529983969
+      },
+      "all_mu_summary": {
+        "min": 0.0006632276949858351,
+        "p05": 0.0026529069496739055,
+        "median": 0.011170160130191675,
+        "mean": 0.01183337781597974,
+        "p95": 0.020315696003248025,
+        "max": 0.02094401529983969
+      },
+      "max_mu_star": 0.02094401529983969,
+      "best_pair": [
+        0,
+        15
+      ],
+      "best_d_J0_at_zero": -0.041887984747468465,
+      "best_one_sided_descent_rate": 0.04188803059967938,
+      "quadratic_impurity_c_formula": 0.25806451612903225,
+      "quadratic_impurity_c_error_max": 3.44058115331336e-13,
+      "top_pairs": [
+        {
+          "pair": [
+            0,
+            15
+          ],
+          "d_J0_at_zero": -0.041887984747468465,
+          "one_sided_descent_rate": 0.04188803059967938,
+          "observed_quadratic_impurity_c": 0.2580645161286882,
+          "nu": 2.0,
+          "mu": 0.02094401529983969
+        },
+        {
+          "pair": [
+            0,
+            16
+          ],
+          "d_J0_at_zero": -0.041887984747468465,
+          "one_sided_descent_rate": 0.04188803059967938,
+          "observed_quadratic_impurity_c": 0.2580645161286882,
+          "nu": 2.0,
+          "mu": 0.02094401529983969
+        },
+        {
+          "pair": [
+            0,
+            17
+          ],
+          "d_J0_at_zero": -0.041887984747468465,
+          "one_sided_descent_rate": 0.04188803059967938,
+          "observed_quadratic_impurity_c": 0.2580645161286882,
+          "nu": 2.0,
+          "mu": 0.02094401529983969
+        },
+        {
+          "pair": [
+            0,
+            18
+          ],
+          "d_J0_at_zero": -0.041887984747468465,
+          "one_sided_descent_rate": 0.04188803059967938,
+          "observed_quadratic_impurity_c": 0.2580645161286882,
+          "nu": 2.0,
+          "mu": 0.02094401529983969
+        },
+        {
+          "pair": [
+            0,
+            19
+          ],
+          "d_J0_at_zero": -0.041887984747468465,
+          "one_sided_descent_rate": 0.04188803059967938,
+          "observed_quadratic_impurity_c": 0.2580645161286882,
+          "nu": 2.0,
+          "mu": 0.02094401529983969
+        },
+        {
+          "pair": [
+            0,
+            20
+          ],
+          "d_J0_at_zero": -0.041887984747468465,
+          "one_sided_descent_rate": 0.04188803059967938,
+          "observed_quadratic_impurity_c": 0.2580645161286882,
+          "nu": 2.0,
+          "mu": 0.02094401529983969
+        },
+        {
+          "pair": [
+            0,
+            21
+          ],
+          "d_J0_at_zero": -0.041887984747468465,
+          "one_sided_descent_rate": 0.04188803059967938,
+          "observed_quadratic_impurity_c": 0.2580645161286882,
+          "nu": 2.0,
+          "mu": 0.02094401529983969
+        },
+        {
+          "pair": [
+            0,
+            22
+          ],
+          "d_J0_at_zero": -0.041887984802979616,
+          "one_sided_descent_rate": 0.04188803059967938,
+          "observed_quadratic_impurity_c": 0.2580645161286882,
+          "nu": 2.0,
+          "mu": 0.02094401529983969
+        },
+        {
+          "pair": [
+            0,
+            23
+          ],
+          "d_J0_at_zero": -0.041887984802979616,
+          "one_sided_descent_rate": 0.04188803059967938,
+          "observed_quadratic_impurity_c": 0.2580645161286882,
+          "nu": 2.0,
+          "mu": 0.02094401529983969
+        },
+        {
+          "pair": [
+            0,
+            24
+          ],
+          "d_J0_at_zero": -0.041887984802979616,
+          "one_sided_descent_rate": 0.04188803059967938,
+          "observed_quadratic_impurity_c": 0.2580645161286882,
+          "nu": 2.0,
+          "mu": 0.02094401529983969
+        }
+      ]
+    },
+    {
+      "row_key": "f4-u2",
+      "row": "F_4[u]/(u^2)",
+      "target_packet": "u^2",
+      "target_depth": 2,
+      "packet_sizes": {
+        "u": 3,
+        "u^2": 12
+      },
+      "active_prefix_dimension": 15,
+      "total_dimension": 15,
+      "amplitude_fraction": 0.1,
+      "actual_amplitude": 0.02375,
+      "probability_min": 0.0565625,
+      "probability_max": 0.08031250000000001,
+      "base_J0": 0.23003006765376338,
+      "base_J": 0.23003006765376338,
+      "base_block_coupling": 0.03003006765376337,
+      "cross_pair_count": 36,
+      "singular_pair_count": 36,
+      "descent_pair_count": 36,
+      "positive_mu_summary": {
+        "min": 0.006435613791877515,
+        "p05": 0.006435613791877515,
+        "median": 0.006435613902899817,
+        "mean": 0.006435613884781594,
+        "p95": 0.006435613902899817,
+        "max": 0.006435613916777605
+      },
+      "all_mu_summary": {
+        "min": 0.006435613791877515,
+        "p05": 0.006435613791877515,
+        "median": 0.006435613902899817,
+        "mean": 0.006435613884781594,
+        "p95": 0.006435613902899817,
+        "max": 0.006435613916777605
+      },
+      "max_mu_star": 0.006435613916777605,
+      "best_pair": [
+        1,
+        12
+      ],
+      "best_d_J0_at_zero": 0.012871220672616701,
+      "best_one_sided_descent_rate": 0.01287122783355521,
+      "quadratic_impurity_c_formula": 0.5333333333333333,
+      "quadratic_impurity_c_error_max": 7.109868249699502e-13,
+      "top_pairs": [
+        {
+          "pair": [
+            1,
+            12
+          ],
+          "d_J0_at_zero": 0.012871220672616701,
+          "one_sided_descent_rate": 0.01287122783355521,
+          "observed_quadratic_impurity_c": 0.5333333333326223,
+          "nu": 2.0,
+          "mu": 0.006435613916777605
+        },
+        {
+          "pair": [
+            0,
+            3
+          ],
+          "d_J0_at_zero": 0.012871220658738913,
+          "one_sided_descent_rate": 0.012871227805799634,
+          "observed_quadratic_impurity_c": 0.5333333333326223,
+          "nu": 2.0,
+          "mu": 0.006435613902899817
+        },
+        {
+          "pair": [
+            0,
+            4
+          ],
+          "d_J0_at_zero": 0.012871220658738913,
+          "one_sided_descent_rate": 0.012871227805799634,
+          "observed_quadratic_impurity_c": 0.5333333333326223,
+          "nu": 2.0,
+          "mu": 0.006435613902899817
+        },
+        {
+          "pair": [
+            0,
+            5
+          ],
+          "d_J0_at_zero": 0.012871220658738913,
+          "one_sided_descent_rate": 0.012871227805799634,
+          "observed_quadratic_impurity_c": 0.5333333333326223,
+          "nu": 2.0,
+          "mu": 0.006435613902899817
+        },
+        {
+          "pair": [
+            0,
+            6
+          ],
+          "d_J0_at_zero": 0.012871220769761216,
+          "one_sided_descent_rate": 0.012871227805799634,
+          "observed_quadratic_impurity_c": 0.5333333333326223,
+          "nu": 2.0,
+          "mu": 0.006435613902899817
+        },
+        {
+          "pair": [
+            0,
+            7
+          ],
+          "d_J0_at_zero": 0.012871220658738913,
+          "one_sided_descent_rate": 0.012871227805799634,
+          "observed_quadratic_impurity_c": 0.5333333333326223,
+          "nu": 2.0,
+          "mu": 0.006435613902899817
+        },
+        {
+          "pair": [
+            0,
+            8
+          ],
+          "d_J0_at_zero": 0.012871220658738913,
+          "one_sided_descent_rate": 0.012871227805799634,
+          "observed_quadratic_impurity_c": 0.5333333333326223,
+          "nu": 2.0,
+          "mu": 0.006435613902899817
+        },
+        {
+          "pair": [
+            0,
+            9
+          ],
+          "d_J0_at_zero": 0.012871220658738913,
+          "one_sided_descent_rate": 0.012871227805799634,
+          "observed_quadratic_impurity_c": 0.5333333333326223,
+          "nu": 2.0,
+          "mu": 0.006435613902899817
+        },
+        {
+          "pair": [
+            0,
+            10
+          ],
+          "d_J0_at_zero": 0.012871220658738913,
+          "one_sided_descent_rate": 0.012871227805799634,
+          "observed_quadratic_impurity_c": 0.5333333333326223,
+          "nu": 2.0,
+          "mu": 0.006435613902899817
+        },
+        {
+          "pair": [
+            0,
+            11
+          ],
+          "d_J0_at_zero": 0.012871220658738913,
+          "one_sided_descent_rate": 0.012871227805799634,
+          "observed_quadratic_impurity_c": 0.5333333333326223,
+          "nu": 2.0,
+          "mu": 0.006435613902899817
+        }
+      ]
+    },
+    {
+      "row_key": "f4-u2",
+      "row": "F_4[u]/(u^2)",
+      "target_packet": "u^2",
+      "target_depth": 2,
+      "packet_sizes": {
+        "u": 3,
+        "u^2": 12
+      },
+      "active_prefix_dimension": 15,
+      "total_dimension": 15,
+      "amplitude_fraction": 0.35,
+      "actual_amplitude": 0.08312499999999999,
+      "probability_min": 0.04171875,
+      "probability_max": 0.12484374999999999,
+      "base_J0": 0.4798463823317617,
+      "base_J": 0.4798463823317617,
+      "base_block_coupling": 0.27984638233176173,
+      "cross_pair_count": 36,
+      "singular_pair_count": 36,
+      "descent_pair_count": 36,
+      "positive_mu_summary": {
+        "min": 0.05443402373295214,
+        "p05": 0.05443402373295214,
+        "median": 0.05443402373295214,
+        "mean": 0.05443402374066202,
+        "p95": 0.05443402378846329,
+        "max": 0.05443402378846329
+      },
+      "all_mu_summary": {
+        "min": 0.05443402373295214,
+        "p05": 0.05443402373295214,
+        "median": 0.05443402373295214,
+        "mean": 0.05443402374066202,
+        "p95": 0.05443402378846329,
+        "max": 0.05443402378846329
+      },
+      "max_mu_star": 0.05443402378846329,
+      "best_pair": [
+        0,
+        7
+      ],
+      "best_d_J0_at_zero": 0.10886801626863729,
+      "best_one_sided_descent_rate": 0.10886804757692659,
+      "quadratic_impurity_c_formula": 0.5333333333333333,
+      "quadratic_impurity_c_error_max": 7.109868249699502e-13,
+      "top_pairs": [
+        {
+          "pair": [
+            0,
+            7
+          ],
+          "d_J0_at_zero": 0.10886801626863729,
+          "one_sided_descent_rate": 0.10886804757692659,
+          "observed_quadratic_impurity_c": 0.5333333333326223,
+          "nu": 2.0,
+          "mu": 0.05443402378846329
+        },
+        {
+          "pair": [
+            0,
+            8
+          ],
+          "d_J0_at_zero": 0.10886801626863729,
+          "one_sided_descent_rate": 0.10886804757692659,
+          "observed_quadratic_impurity_c": 0.5333333333326223,
+          "nu": 2.0,
+          "mu": 0.05443402378846329
+        },
+        {
+          "pair": [
+            0,
+            9
+          ],
+          "d_J0_at_zero": 0.10886801632414844,
+          "one_sided_descent_rate": 0.10886804757692659,
+          "observed_quadratic_impurity_c": 0.5333333333326223,
+          "nu": 2.0,
+          "mu": 0.05443402378846329
+        },
+        {
+          "pair": [
+            0,
+            10
+          ],
+          "d_J0_at_zero": 0.10886801632414844,
+          "one_sided_descent_rate": 0.10886804757692659,
+          "observed_quadratic_impurity_c": 0.5333333333326223,
+          "nu": 2.0,
+          "mu": 0.05443402378846329
+        },
+        {
+          "pair": [
+            1,
+            8
+          ],
+          "d_J0_at_zero": 0.10886801626863729,
+          "one_sided_descent_rate": 0.10886804757692659,
+          "observed_quadratic_impurity_c": 0.5333333333326223,
+          "nu": 2.0,
+          "mu": 0.05443402378846329
+        },
+        {
+          "pair": [
+            0,
+            3
+          ],
+          "d_J0_at_zero": 0.10886801621312614,
+          "one_sided_descent_rate": 0.10886804746590428,
+          "observed_quadratic_impurity_c": 0.5333333333326223,
+          "nu": 2.0,
+          "mu": 0.05443402373295214
+        },
+        {
+          "pair": [
+            0,
+            4
+          ],
+          "d_J0_at_zero": 0.10886801621312614,
+          "one_sided_descent_rate": 0.10886804746590428,
+          "observed_quadratic_impurity_c": 0.5333333333326223,
+          "nu": 2.0,
+          "mu": 0.05443402373295214
+        },
+        {
+          "pair": [
+            0,
+            5
+          ],
+          "d_J0_at_zero": 0.10886801621312614,
+          "one_sided_descent_rate": 0.10886804746590428,
+          "observed_quadratic_impurity_c": 0.5333333333326223,
+          "nu": 2.0,
+          "mu": 0.05443402373295214
+        },
+        {
+          "pair": [
+            0,
+            6
+          ],
+          "d_J0_at_zero": 0.10886801621312614,
+          "one_sided_descent_rate": 0.10886804746590428,
+          "observed_quadratic_impurity_c": 0.5333333333326223,
+          "nu": 2.0,
+          "mu": 0.05443402373295214
+        },
+        {
+          "pair": [
+            0,
+            11
+          ],
+          "d_J0_at_zero": 0.10886801626863729,
+          "one_sided_descent_rate": 0.10886804746590428,
+          "observed_quadratic_impurity_c": 0.5333333333326223,
+          "nu": 2.0,
+          "mu": 0.05443402373295214
+        }
+      ]
+    },
+    {
+      "row_key": "f4-u2",
+      "row": "F_4[u]/(u^2)",
+      "target_packet": "u^2",
+      "target_depth": 2,
+      "packet_sizes": {
+        "u": 3,
+        "u^2": 12
+      },
+      "active_prefix_dimension": 15,
+      "total_dimension": 15,
+      "amplitude_fraction": 0.5,
+      "actual_amplitude": 0.11875,
+      "probability_min": 0.0328125,
+      "probability_max": 0.1515625,
+      "base_J0": 0.8264084972919977,
+      "base_J": 0.8264084972919977,
+      "base_block_coupling": 0.6264084972919978,
+      "cross_pair_count": 36,
+      "singular_pair_count": 36,
+      "descent_pair_count": 36,
+      "positive_mu_summary": {
+        "min": 0.11440654185124188,
+        "p05": 0.11440654185124188,
+        "median": 0.11440654185124188,
+        "mean": 0.11440654188362338,
+        "p95": 0.11440654196226419,
+        "max": 0.11440654196226419
+      },
+      "all_mu_summary": {
+        "min": 0.11440654185124188,
+        "p05": 0.11440654185124188,
+        "median": 0.11440654185124188,
+        "mean": 0.11440654188362338,
+        "p95": 0.11440654196226419,
+        "max": 0.11440654196226419
+      },
+      "max_mu_star": 0.11440654196226419,
+      "best_pair": [
+        0,
+        4
+      ],
+      "best_d_J0_at_zero": 0.22881310390854281,
+      "best_one_sided_descent_rate": 0.22881308392452837,
+      "quadratic_impurity_c_formula": 0.5333333333333333,
+      "quadratic_impurity_c_error_max": 7.109868249699502e-13,
+      "top_pairs": [
+        {
+          "pair": [
+            0,
+            4
+          ],
+          "d_J0_at_zero": 0.22881310390854281,
+          "one_sided_descent_rate": 0.22881308392452837,
+          "observed_quadratic_impurity_c": 0.5333333333326223,
+          "nu": 2.0,
+          "mu": 0.11440654196226419
+        },
+        {
+          "pair": [
+            0,
+            5
+          ],
+          "d_J0_at_zero": 0.22881310390854281,
+          "one_sided_descent_rate": 0.22881308392452837,
+          "observed_quadratic_impurity_c": 0.5333333333326223,
+          "nu": 2.0,
+          "mu": 0.11440654196226419
+        },
+        {
+          "pair": [
+            0,
+            9
+          ],
+          "d_J0_at_zero": 0.22881310390854281,
+          "one_sided_descent_rate": 0.22881308392452837,
+          "observed_quadratic_impurity_c": 0.5333333333326223,
+          "nu": 2.0,
+          "mu": 0.11440654196226419
+        },
+        {
+          "pair": [
+            0,
+            10
+          ],
+          "d_J0_at_zero": 0.22881310390854281,
+          "one_sided_descent_rate": 0.22881308392452837,
+          "observed_quadratic_impurity_c": 0.5333333333326223,
+          "nu": 2.0,
+          "mu": 0.11440654196226419
+        },
+        {
+          "pair": [
+            1,
+            4
+          ],
+          "d_J0_at_zero": 0.22881310390854281,
+          "one_sided_descent_rate": 0.22881308392452837,
+          "observed_quadratic_impurity_c": 0.5333333333326223,
+          "nu": 2.0,
+          "mu": 0.11440654196226419
+        },
+        {
+          "pair": [
+            0,
+            6
+          ],
+          "d_J0_at_zero": 0.22881310385303166,
+          "one_sided_descent_rate": 0.22881308381350607,
+          "observed_quadratic_impurity_c": 0.5333333333326223,
+          "nu": 2.0,
+          "mu": 0.11440654190675303
+        },
+        {
+          "pair": [
+            0,
+            7
+          ],
+          "d_J0_at_zero": 0.22881310385303166,
+          "one_sided_descent_rate": 0.22881308381350607,
+          "observed_quadratic_impurity_c": 0.5333333333326223,
+          "nu": 2.0,
+          "mu": 0.11440654190675303
+        },
+        {
+          "pair": [
+            0,
+            8
+          ],
+          "d_J0_at_zero": 0.22881310385303166,
+          "one_sided_descent_rate": 0.22881308381350607,
+          "observed_quadratic_impurity_c": 0.5333333333326223,
+          "nu": 2.0,
+          "mu": 0.11440654190675303
+        },
+        {
+          "pair": [
+            1,
+            5
+          ],
+          "d_J0_at_zero": 0.22881310385303166,
+          "one_sided_descent_rate": 0.22881308381350607,
+          "observed_quadratic_impurity_c": 0.5333333333326223,
+          "nu": 2.0,
+          "mu": 0.11440654190675303
+        },
+        {
+          "pair": [
+            1,
+            6
+          ],
+          "d_J0_at_zero": 0.22881310385303166,
+          "one_sided_descent_rate": 0.22881308381350607,
+          "observed_quadratic_impurity_c": 0.5333333333326223,
+          "nu": 2.0,
+          "mu": 0.11440654190675303
+        }
+      ]
+    },
+    {
+      "row_key": "f4-u3",
+      "row": "F_4[u]/(u^3)",
+      "target_packet": "u^2",
+      "target_depth": 2,
+      "packet_sizes": {
+        "u": 3,
+        "u^2": 12,
+        "u^3": 48
+      },
+      "active_prefix_dimension": 15,
+      "total_dimension": 63,
+      "amplitude_fraction": 0.1,
+      "actual_amplitude": 0.02375,
+      "probability_min": 0.014140625,
+      "probability_max": 0.020078125000000002,
+      "base_J0": 0.12050625812995386,
+      "base_J": 0.12050625812995386,
+      "base_block_coupling": 0.030030067653763377,
+      "cross_pair_count": 756,
+      "singular_pair_count": 756,
+      "descent_pair_count": 36,
+      "positive_mu_summary": {
+        "min": 0.006435613916777605,
+        "p05": 0.006435613916777605,
+        "median": 0.006435613916777605,
+        "mean": 0.006435613916777605,
+        "p95": 0.006435613916777605,
+        "max": 0.006435613916777605
+      },
+      "all_mu_summary": {
+        "min": 0.0,
+        "p05": 0.0,
+        "median": 0.0,
+        "mean": 0.00030645780556083836,
+        "p95": 0.0,
+        "max": 0.006435613916777605
+      },
+      "max_mu_star": 0.006435613916777605,
+      "best_pair": [
+        0,
+        3
+      ],
+      "best_d_J0_at_zero": 0.012871220665677807,
+      "best_one_sided_descent_rate": 0.01287122783355521,
+      "quadratic_impurity_c_formula": 0.12698412698412698,
+      "quadratic_impurity_c_error_max": 1.6930901125533637e-13,
+      "top_pairs": [
+        {
+          "pair": [
+            0,
+            3
+          ],
+          "d_J0_at_zero": 0.012871220665677807,
+          "one_sided_descent_rate": 0.01287122783355521,
+          "observed_quadratic_impurity_c": 0.12698412698395767,
+          "nu": 2.0,
+          "mu": 0.006435613916777605
+        },
+        {
+          "pair": [
+            0,
+            4
+          ],
+          "d_J0_at_zero": 0.012871220665677807,
+          "one_sided_descent_rate": 0.01287122783355521,
+          "observed_quadratic_impurity_c": 0.12698412698395767,
+          "nu": 2.0,
+          "mu": 0.006435613916777605
+        },
+        {
+          "pair": [
+            0,
+            5
+          ],
+          "d_J0_at_zero": 0.012871220658738913,
+          "one_sided_descent_rate": 0.01287122783355521,
+          "observed_quadratic_impurity_c": 0.12698412698395767,
+          "nu": 2.0,
+          "mu": 0.006435613916777605
+        },
+        {
+          "pair": [
+            0,
+            6
+          ],
+          "d_J0_at_zero": 0.012871220658738913,
+          "one_sided_descent_rate": 0.01287122783355521,
+          "observed_quadratic_impurity_c": 0.12698412698395767,
+          "nu": 2.0,
+          "mu": 0.006435613916777605
+        },
+        {
+          "pair": [
+            0,
+            7
+          ],
+          "d_J0_at_zero": 0.012871220665677807,
+          "one_sided_descent_rate": 0.01287122783355521,
+          "observed_quadratic_impurity_c": 0.12698412698395767,
+          "nu": 2.0,
+          "mu": 0.006435613916777605
+        },
+        {
+          "pair": [
+            0,
+            8
+          ],
+          "d_J0_at_zero": 0.012871220665677807,
+          "one_sided_descent_rate": 0.01287122783355521,
+          "observed_quadratic_impurity_c": 0.12698412698395767,
+          "nu": 2.0,
+          "mu": 0.006435613916777605
+        },
+        {
+          "pair": [
+            0,
+            9
+          ],
+          "d_J0_at_zero": 0.012871220665677807,
+          "one_sided_descent_rate": 0.01287122783355521,
+          "observed_quadratic_impurity_c": 0.12698412698395767,
+          "nu": 2.0,
+          "mu": 0.006435613916777605
+        },
+        {
+          "pair": [
+            0,
+            10
+          ],
+          "d_J0_at_zero": 0.012871220665677807,
+          "one_sided_descent_rate": 0.01287122783355521,
+          "observed_quadratic_impurity_c": 0.12698412698395767,
+          "nu": 2.0,
+          "mu": 0.006435613916777605
+        },
+        {
+          "pair": [
+            0,
+            11
+          ],
+          "d_J0_at_zero": 0.012871220665677807,
+          "one_sided_descent_rate": 0.01287122783355521,
+          "observed_quadratic_impurity_c": 0.12698412698395767,
+          "nu": 2.0,
+          "mu": 0.006435613916777605
+        },
+        {
+          "pair": [
+            0,
+            12
+          ],
+          "d_J0_at_zero": 0.012871220665677807,
+          "one_sided_descent_rate": 0.01287122783355521,
+          "observed_quadratic_impurity_c": 0.12698412698395767,
+          "nu": 2.0,
+          "mu": 0.006435613916777605
+        }
+      ]
+    },
+    {
+      "row_key": "f4-u3",
+      "row": "F_4[u]/(u^3)",
+      "target_packet": "u^2",
+      "target_depth": 2,
+      "packet_sizes": {
+        "u": 3,
+        "u^2": 12,
+        "u^3": 48
+      },
+      "active_prefix_dimension": 15,
+      "total_dimension": 63,
+      "amplitude_fraction": 0.35,
+      "actual_amplitude": 0.08312499999999999,
+      "probability_min": 0.0104296875,
+      "probability_max": 0.031210937499999997,
+      "base_J0": 0.3703225728079522,
+      "base_J": 0.3703225728079522,
+      "base_block_coupling": 0.27984638233176173,
+      "cross_pair_count": 756,
+      "singular_pair_count": 756,
+      "descent_pair_count": 36,
+      "positive_mu_summary": {
+        "min": 0.05443402373295214,
+        "p05": 0.05443402373295214,
+        "median": 0.05443402378846329,
+        "mean": 0.054434023771501555,
+        "p95": 0.05443402378846329,
+        "max": 0.05443402378846329
+      },
+      "all_mu_summary": {
+        "min": 0.0,
+        "p05": 0.0,
+        "median": 0.0,
+        "mean": 0.0025920963700715024,
+        "p95": 0.0,
+        "max": 0.05443402378846329
+      },
+      "max_mu_star": 0.05443402378846329,
+      "best_pair": [
+        0,
+        3
+      ],
+      "best_d_J0_at_zero": 0.10886801626863729,
+      "best_one_sided_descent_rate": 0.10886804757692659,
+      "quadratic_impurity_c_formula": 0.12698412698412698,
+      "quadratic_impurity_c_error_max": 1.6930901125533637e-13,
+      "top_pairs": [
+        {
+          "pair": [
+            0,
+            3
+          ],
+          "d_J0_at_zero": 0.10886801626863729,
+          "one_sided_descent_rate": 0.10886804757692659,
+          "observed_quadratic_impurity_c": 0.12698412698395767,
+          "nu": 2.0,
+          "mu": 0.05443402378846329
+        },
+        {
+          "pair": [
+            0,
+            4
+          ],
+          "d_J0_at_zero": 0.10886801626863729,
+          "one_sided_descent_rate": 0.10886804757692659,
+          "observed_quadratic_impurity_c": 0.12698412698395767,
+          "nu": 2.0,
+          "mu": 0.05443402378846329
+        },
+        {
+          "pair": [
+            0,
+            5
+          ],
+          "d_J0_at_zero": 0.10886801626863729,
+          "one_sided_descent_rate": 0.10886804757692659,
+          "observed_quadratic_impurity_c": 0.12698412698395767,
+          "nu": 2.0,
+          "mu": 0.05443402378846329
+        },
+        {
+          "pair": [
+            0,
+            6
+          ],
+          "d_J0_at_zero": 0.10886801626863729,
+          "one_sided_descent_rate": 0.10886804757692659,
+          "observed_quadratic_impurity_c": 0.12698412698395767,
+          "nu": 2.0,
+          "mu": 0.05443402378846329
+        },
+        {
+          "pair": [
+            0,
+            7
+          ],
+          "d_J0_at_zero": 0.10886801621312614,
+          "one_sided_descent_rate": 0.10886804757692659,
+          "observed_quadratic_impurity_c": 0.12698412698395767,
+          "nu": 2.0,
+          "mu": 0.05443402378846329
+        },
+        {
+          "pair": [
+            0,
+            8
+          ],
+          "d_J0_at_zero": 0.10886801621312614,
+          "one_sided_descent_rate": 0.10886804757692659,
+          "observed_quadratic_impurity_c": 0.12698412698395767,
+          "nu": 2.0,
+          "mu": 0.05443402378846329
+        },
+        {
+          "pair": [
+            0,
+            9
+          ],
+          "d_J0_at_zero": 0.10886801621312614,
+          "one_sided_descent_rate": 0.10886804757692659,
+          "observed_quadratic_impurity_c": 0.12698412698395767,
+          "nu": 2.0,
+          "mu": 0.05443402378846329
+        },
+        {
+          "pair": [
+            0,
+            10
+          ],
+          "d_J0_at_zero": 0.10886801621312614,
+          "one_sided_descent_rate": 0.10886804757692659,
+          "observed_quadratic_impurity_c": 0.12698412698395767,
+          "nu": 2.0,
+          "mu": 0.05443402378846329
+        },
+        {
+          "pair": [
+            0,
+            11
+          ],
+          "d_J0_at_zero": 0.10886801626863729,
+          "one_sided_descent_rate": 0.10886804757692659,
+          "observed_quadratic_impurity_c": 0.12698412698395767,
+          "nu": 2.0,
+          "mu": 0.05443402378846329
+        },
+        {
+          "pair": [
+            0,
+            12
+          ],
+          "d_J0_at_zero": 0.10886801626863729,
+          "one_sided_descent_rate": 0.10886804757692659,
+          "observed_quadratic_impurity_c": 0.12698412698395767,
+          "nu": 2.0,
+          "mu": 0.05443402378846329
+        }
+      ]
+    },
+    {
+      "row_key": "f4-u3",
+      "row": "F_4[u]/(u^3)",
+      "target_packet": "u^2",
+      "target_depth": 2,
+      "packet_sizes": {
+        "u": 3,
+        "u^2": 12,
+        "u^3": 48
+      },
+      "active_prefix_dimension": 15,
+      "total_dimension": 63,
+      "amplitude_fraction": 0.5,
+      "actual_amplitude": 0.11875,
+      "probability_min": 0.008203125,
+      "probability_max": 0.037890625,
+      "base_J0": 0.7168846877681884,
+      "base_J": 0.7168846877681884,
+      "base_block_coupling": 0.6264084972919977,
+      "cross_pair_count": 756,
+      "singular_pair_count": 756,
+      "descent_pair_count": 36,
+      "positive_mu_summary": {
+        "min": 0.11440654179573073,
+        "p05": 0.11440654179573073,
+        "median": 0.11440654190675303,
+        "mean": 0.11440654187745548,
+        "p95": 0.11440654190675303,
+        "max": 0.11440654190675303
+      },
+      "all_mu_summary": {
+        "min": 0.0,
+        "p05": 0.0,
+        "median": 0.0,
+        "mean": 0.0054479305655931185,
+        "p95": 0.0,
+        "max": 0.11440654190675303
+      },
+      "max_mu_star": 0.11440654190675303,
+      "best_pair": [
+        0,
+        4
+      ],
+      "best_d_J0_at_zero": 0.22881310390854281,
+      "best_one_sided_descent_rate": 0.22881308381350607,
+      "quadratic_impurity_c_formula": 0.12698412698412698,
+      "quadratic_impurity_c_error_max": 1.6930901125533637e-13,
+      "top_pairs": [
+        {
+          "pair": [
+            0,
+            4
+          ],
+          "d_J0_at_zero": 0.22881310390854281,
+          "one_sided_descent_rate": 0.22881308381350607,
+          "observed_quadratic_impurity_c": 0.12698412698395767,
+          "nu": 2.0,
+          "mu": 0.11440654190675303
+        },
+        {
+          "pair": [
+            0,
+            5
+          ],
+          "d_J0_at_zero": 0.22881310390854281,
+          "one_sided_descent_rate": 0.22881308381350607,
+          "observed_quadratic_impurity_c": 0.12698412698395767,
+          "nu": 2.0,
+          "mu": 0.11440654190675303
+        },
+        {
+          "pair": [
+            0,
+            6
+          ],
+          "d_J0_at_zero": 0.22881310390854281,
+          "one_sided_descent_rate": 0.22881308381350607,
+          "observed_quadratic_impurity_c": 0.12698412698395767,
+          "nu": 2.0,
+          "mu": 0.11440654190675303
+        },
+        {
+          "pair": [
+            0,
+            7
+          ],
+          "d_J0_at_zero": 0.22881310390854281,
+          "one_sided_descent_rate": 0.22881308381350607,
+          "observed_quadratic_impurity_c": 0.12698412698395767,
+          "nu": 2.0,
+          "mu": 0.11440654190675303
+        },
+        {
+          "pair": [
+            0,
+            8
+          ],
+          "d_J0_at_zero": 0.22881310390854281,
+          "one_sided_descent_rate": 0.22881308381350607,
+          "observed_quadratic_impurity_c": 0.12698412698395767,
+          "nu": 2.0,
+          "mu": 0.11440654190675303
+        },
+        {
+          "pair": [
+            0,
+            9
+          ],
+          "d_J0_at_zero": 0.22881310390854281,
+          "one_sided_descent_rate": 0.22881308381350607,
+          "observed_quadratic_impurity_c": 0.12698412698395767,
+          "nu": 2.0,
+          "mu": 0.11440654190675303
+        },
+        {
+          "pair": [
+            0,
+            10
+          ],
+          "d_J0_at_zero": 0.22881310390854281,
+          "one_sided_descent_rate": 0.22881308381350607,
+          "observed_quadratic_impurity_c": 0.12698412698395767,
+          "nu": 2.0,
+          "mu": 0.11440654190675303
+        },
+        {
+          "pair": [
+            0,
+            14
+          ],
+          "d_J0_at_zero": 0.22881310390854281,
+          "one_sided_descent_rate": 0.22881308381350607,
+          "observed_quadratic_impurity_c": 0.12698412698395767,
+          "nu": 2.0,
+          "mu": 0.11440654190675303
+        },
+        {
+          "pair": [
+            1,
+            3
+          ],
+          "d_J0_at_zero": 0.22881310396405397,
+          "one_sided_descent_rate": 0.22881308381350607,
+          "observed_quadratic_impurity_c": 0.12698412698395767,
+          "nu": 2.0,
+          "mu": 0.11440654190675303
+        },
+        {
+          "pair": [
+            1,
+            4
+          ],
+          "d_J0_at_zero": 0.22881310390854281,
+          "one_sided_descent_rate": 0.22881308381350607,
+          "observed_quadratic_impurity_c": 0.12698412698395767,
+          "nu": 2.0,
+          "mu": 0.11440654190675303
+        }
+      ]
+    },
+    {
+      "row_key": "f4-u3",
+      "row": "F_4[u]/(u^3)",
+      "target_packet": "u^3",
+      "target_depth": 3,
+      "packet_sizes": {
+        "u": 3,
+        "u^2": 12,
+        "u^3": 48
+      },
+      "active_prefix_dimension": 63,
+      "total_dimension": 63,
+      "amplitude_fraction": 0.1,
+      "actual_amplitude": 0.0059375,
+      "probability_min": 0.014140625,
+      "probability_max": 0.020078125000000002,
+      "base_J0": 0.23769003408252776,
+      "base_J": 0.23769003408252776,
+      "base_block_coupling": 0.03769003408252775,
+      "cross_pair_count": 756,
+      "singular_pair_count": 756,
+      "descent_pair_count": 756,
+      "positive_mu_summary": {
+        "min": 3.811238824535934e-05,
+        "p05": 0.0014751754401354233,
+        "median": 0.0016089033022526067,
+        "mean": 0.0015086317627242983,
+        "p95": 0.0016089033022526067,
+        "max": 0.0016089033022526067
+      },
+      "all_mu_summary": {
+        "min": 3.811238824535934e-05,
+        "p05": 0.0014751754401354233,
+        "median": 0.0016089033022526067,
+        "mean": 0.0015086317627242983,
+        "p95": 0.0016089033022526067,
+        "max": 0.0016089033022526067
+      },
+      "max_mu_star": 0.0016089033022526067,
+      "best_pair": [
+        3,
+        15
+      ],
+      "best_d_J0_at_zero": 0.0032178051612152814,
+      "best_one_sided_descent_rate": 0.0032178066045052134,
+      "quadratic_impurity_c_formula": 0.12698412698412698,
+      "quadratic_impurity_c_error_max": 1.6930901125533637e-13,
+      "top_pairs": [
+        {
+          "pair": [
+            3,
+            15
+          ],
+          "d_J0_at_zero": 0.0032178051612152814,
+          "one_sided_descent_rate": 0.0032178066045052134,
+          "observed_quadratic_impurity_c": 0.12698412698395767,
+          "nu": 2.0,
+          "mu": 0.0016089033022526067
+        },
+        {
+          "pair": [
+            3,
+            16
+          ],
+          "d_J0_at_zero": 0.0032178051612152814,
+          "one_sided_descent_rate": 0.0032178066045052134,
+          "observed_quadratic_impurity_c": 0.12698412698395767,
+          "nu": 2.0,
+          "mu": 0.0016089033022526067
+        },
+        {
+          "pair": [
+            3,
+            17
+          ],
+          "d_J0_at_zero": 0.0032178051612152814,
+          "one_sided_descent_rate": 0.0032178066045052134,
+          "observed_quadratic_impurity_c": 0.12698412698395767,
+          "nu": 2.0,
+          "mu": 0.0016089033022526067
+        },
+        {
+          "pair": [
+            3,
+            18
+          ],
+          "d_J0_at_zero": 0.0032178051612152814,
+          "one_sided_descent_rate": 0.0032178066045052134,
+          "observed_quadratic_impurity_c": 0.12698412698395767,
+          "nu": 2.0,
+          "mu": 0.0016089033022526067
+        },
+        {
+          "pair": [
+            3,
+            19
+          ],
+          "d_J0_at_zero": 0.0032178051612152814,
+          "one_sided_descent_rate": 0.0032178066045052134,
+          "observed_quadratic_impurity_c": 0.12698412698395767,
+          "nu": 2.0,
+          "mu": 0.0016089033022526067
+        },
+        {
+          "pair": [
+            3,
+            20
+          ],
+          "d_J0_at_zero": 0.0032178051612152814,
+          "one_sided_descent_rate": 0.0032178066045052134,
+          "observed_quadratic_impurity_c": 0.12698412698395767,
+          "nu": 2.0,
+          "mu": 0.0016089033022526067
+        },
+        {
+          "pair": [
+            3,
+            21
+          ],
+          "d_J0_at_zero": 0.0032178051612152814,
+          "one_sided_descent_rate": 0.0032178066045052134,
+          "observed_quadratic_impurity_c": 0.12698412698395767,
+          "nu": 2.0,
+          "mu": 0.0016089033022526067
+        },
+        {
+          "pair": [
+            3,
+            22
+          ],
+          "d_J0_at_zero": 0.0032178051612152814,
+          "one_sided_descent_rate": 0.0032178066045052134,
+          "observed_quadratic_impurity_c": 0.12698412698395767,
+          "nu": 2.0,
+          "mu": 0.0016089033022526067
+        },
+        {
+          "pair": [
+            3,
+            23
+          ],
+          "d_J0_at_zero": 0.0032178051612152814,
+          "one_sided_descent_rate": 0.0032178066045052134,
+          "observed_quadratic_impurity_c": 0.12698412698395767,
+          "nu": 2.0,
+          "mu": 0.0016089033022526067
+        },
+        {
+          "pair": [
+            3,
+            24
+          ],
+          "d_J0_at_zero": 0.0032178051612152814,
+          "one_sided_descent_rate": 0.0032178066045052134,
+          "observed_quadratic_impurity_c": 0.12698412698395767,
+          "nu": 2.0,
+          "mu": 0.0016089033022526067
+        }
+      ]
+    },
+    {
+      "row_key": "f4-u3",
+      "row": "F_4[u]/(u^3)",
+      "target_packet": "u^3",
+      "target_depth": 3,
+      "packet_sizes": {
+        "u": 3,
+        "u^2": 12,
+        "u^3": 48
+      },
+      "active_prefix_dimension": 63,
+      "total_dimension": 63,
+      "amplitude_fraction": 0.35,
+      "actual_amplitude": 0.020781249999999998,
+      "probability_min": 0.0104296875,
+      "probability_max": 0.031210937499999997,
+      "base_J0": 0.5672110341309516,
+      "base_J": 0.5672110341309516,
+      "base_block_coupling": 0.3672110341309517,
+      "cross_pair_count": 756,
+      "singular_pair_count": 756,
+      "descent_pair_count": 756,
+      "positive_mu_summary": {
+        "min": 0.004350765026028824,
+        "p05": 0.009246834742349108,
+        "median": 0.013608503046658171,
+        "mean": 0.012336864409895431,
+        "p95": 0.013608503046658171,
+        "max": 0.013608503046658171
+      },
+      "all_mu_summary": {
+        "min": 0.004350765026028824,
+        "p05": 0.009246834742349108,
+        "median": 0.013608503046658171,
+        "mean": 0.012336864409895431,
+        "p95": 0.013608503046658171,
+        "max": 0.013608503046658171
+      },
+      "max_mu_star": 0.013608503046658171,
+      "best_pair": [
+        3,
+        15
+      ],
+      "best_d_J0_at_zero": 0.027217004039403747,
+      "best_one_sided_descent_rate": 0.027217006093316343,
+      "quadratic_impurity_c_formula": 0.12698412698412698,
+      "quadratic_impurity_c_error_max": 1.6930901125533637e-13,
+      "top_pairs": [
+        {
+          "pair": [
+            3,
+            15
+          ],
+          "d_J0_at_zero": 0.027217004039403747,
+          "one_sided_descent_rate": 0.027217006093316343,
+          "observed_quadratic_impurity_c": 0.12698412698395767,
+          "nu": 2.0,
+          "mu": 0.013608503046658171
+        },
+        {
+          "pair": [
+            3,
+            16
+          ],
+          "d_J0_at_zero": 0.027217004039403747,
+          "one_sided_descent_rate": 0.027217006093316343,
+          "observed_quadratic_impurity_c": 0.12698412698395767,
+          "nu": 2.0,
+          "mu": 0.013608503046658171
+        },
+        {
+          "pair": [
+            3,
+            17
+          ],
+          "d_J0_at_zero": 0.027217004039403747,
+          "one_sided_descent_rate": 0.027217006093316343,
+          "observed_quadratic_impurity_c": 0.12698412698395767,
+          "nu": 2.0,
+          "mu": 0.013608503046658171
+        },
+        {
+          "pair": [
+            3,
+            18
+          ],
+          "d_J0_at_zero": 0.027217004039403747,
+          "one_sided_descent_rate": 0.027217006093316343,
+          "observed_quadratic_impurity_c": 0.12698412698395767,
+          "nu": 2.0,
+          "mu": 0.013608503046658171
+        },
+        {
+          "pair": [
+            3,
+            19
+          ],
+          "d_J0_at_zero": 0.027217004039403747,
+          "one_sided_descent_rate": 0.027217006093316343,
+          "observed_quadratic_impurity_c": 0.12698412698395767,
+          "nu": 2.0,
+          "mu": 0.013608503046658171
+        },
+        {
+          "pair": [
+            3,
+            20
+          ],
+          "d_J0_at_zero": 0.027217004039403747,
+          "one_sided_descent_rate": 0.027217006093316343,
+          "observed_quadratic_impurity_c": 0.12698412698395767,
+          "nu": 2.0,
+          "mu": 0.013608503046658171
+        },
+        {
+          "pair": [
+            3,
+            21
+          ],
+          "d_J0_at_zero": 0.027217004039403747,
+          "one_sided_descent_rate": 0.027217006093316343,
+          "observed_quadratic_impurity_c": 0.12698412698395767,
+          "nu": 2.0,
+          "mu": 0.013608503046658171
+        },
+        {
+          "pair": [
+            3,
+            22
+          ],
+          "d_J0_at_zero": 0.027217004039403747,
+          "one_sided_descent_rate": 0.027217006093316343,
+          "observed_quadratic_impurity_c": 0.12698412698395767,
+          "nu": 2.0,
+          "mu": 0.013608503046658171
+        },
+        {
+          "pair": [
+            3,
+            23
+          ],
+          "d_J0_at_zero": 0.027217004039403747,
+          "one_sided_descent_rate": 0.027217006093316343,
+          "observed_quadratic_impurity_c": 0.12698412698395767,
+          "nu": 2.0,
+          "mu": 0.013608503046658171
+        },
+        {
+          "pair": [
+            3,
+            24
+          ],
+          "d_J0_at_zero": 0.027217004039403747,
+          "one_sided_descent_rate": 0.027217006093316343,
+          "observed_quadratic_impurity_c": 0.12698412698395767,
+          "nu": 2.0,
+          "mu": 0.013608503046658171
+        }
+      ]
+    },
+    {
+      "row_key": "f4-u3",
+      "row": "F_4[u]/(u^3)",
+      "target_packet": "u^3",
+      "target_depth": 3,
+      "packet_sizes": {
+        "u": 3,
+        "u^2": 12,
+        "u^3": 48
+      },
+      "active_prefix_dimension": 63,
+      "total_dimension": 63,
+      "amplitude_fraction": 0.5,
+      "actual_amplitude": 0.0296875,
+      "probability_min": 0.008203125,
+      "probability_max": 0.037890625,
+      "base_J0": 1.062510668790845,
+      "base_J": 1.062510668790845,
+      "base_block_coupling": 0.862510668790845,
+      "cross_pair_count": 756,
+      "singular_pair_count": 756,
+      "descent_pair_count": 756,
+      "positive_mu_summary": {
+        "min": 0.01465425381041996,
+        "p05": 0.014654253921442262,
+        "median": 0.028601625512436613,
+        "mean": 0.02552943050111421,
+        "p95": 0.028601625623458915,
+        "max": 0.028601625623458915
+      },
+      "all_mu_summary": {
+        "min": 0.01465425381041996,
+        "p05": 0.014654253921442262,
+        "median": 0.028601625512436613,
+        "mean": 0.02552943050111421,
+        "p95": 0.028601625623458915,
+        "max": 0.028601625623458915
+      },
+      "max_mu_star": 0.028601625623458915,
+      "best_pair": [
+        3,
+        17
+      ],
+      "best_d_J0_at_zero": 0.05720327600489128,
+      "best_one_sided_descent_rate": 0.05720325124691783,
+      "quadratic_impurity_c_formula": 0.12698412698412698,
+      "quadratic_impurity_c_error_max": 1.6930901125533637e-13,
+      "top_pairs": [
+        {
+          "pair": [
+            3,
+            17
+          ],
+          "d_J0_at_zero": 0.05720327600489128,
+          "one_sided_descent_rate": 0.05720325124691783,
+          "observed_quadratic_impurity_c": 0.12698412698395767,
+          "nu": 2.0,
+          "mu": 0.028601625623458915
+        },
+        {
+          "pair": [
+            3,
+            18
+          ],
+          "d_J0_at_zero": 0.05720327600489128,
+          "one_sided_descent_rate": 0.05720325124691783,
+          "observed_quadratic_impurity_c": 0.12698412698395767,
+          "nu": 2.0,
+          "mu": 0.028601625623458915
+        },
+        {
+          "pair": [
+            3,
+            20
+          ],
+          "d_J0_at_zero": 0.05720327600489128,
+          "one_sided_descent_rate": 0.05720325124691783,
+          "observed_quadratic_impurity_c": 0.12698412698395767,
+          "nu": 2.0,
+          "mu": 0.028601625623458915
+        },
+        {
+          "pair": [
+            3,
+            25
+          ],
+          "d_J0_at_zero": 0.05720327600489128,
+          "one_sided_descent_rate": 0.05720325124691783,
+          "observed_quadratic_impurity_c": 0.12698412698395767,
+          "nu": 2.0,
+          "mu": 0.028601625623458915
+        },
+        {
+          "pair": [
+            3,
+            26
+          ],
+          "d_J0_at_zero": 0.05720327600489128,
+          "one_sided_descent_rate": 0.05720325124691783,
+          "observed_quadratic_impurity_c": 0.12698412698395767,
+          "nu": 2.0,
+          "mu": 0.028601625623458915
+        },
+        {
+          "pair": [
+            3,
+            28
+          ],
+          "d_J0_at_zero": 0.05720327600489128,
+          "one_sided_descent_rate": 0.05720325124691783,
+          "observed_quadratic_impurity_c": 0.12698412698395767,
+          "nu": 2.0,
+          "mu": 0.028601625623458915
+        },
+        {
+          "pair": [
+            3,
+            31
+          ],
+          "d_J0_at_zero": 0.05720327600489128,
+          "one_sided_descent_rate": 0.05720325124691783,
+          "observed_quadratic_impurity_c": 0.12698412698395767,
+          "nu": 2.0,
+          "mu": 0.028601625623458915
+        },
+        {
+          "pair": [
+            3,
+            32
+          ],
+          "d_J0_at_zero": 0.05720327600489128,
+          "one_sided_descent_rate": 0.05720325124691783,
+          "observed_quadratic_impurity_c": 0.12698412698395767,
+          "nu": 2.0,
+          "mu": 0.028601625623458915
+        },
+        {
+          "pair": [
+            3,
+            34
+          ],
+          "d_J0_at_zero": 0.05720327600489128,
+          "one_sided_descent_rate": 0.05720325124691783,
+          "observed_quadratic_impurity_c": 0.12698412698395767,
+          "nu": 2.0,
+          "mu": 0.028601625623458915
+        },
+        {
+          "pair": [
+            3,
+            36
+          ],
+          "d_J0_at_zero": 0.05720327600489128,
+          "one_sided_descent_rate": 0.05720325124691783,
+          "observed_quadratic_impurity_c": 0.12698412698395767,
+          "nu": 2.0,
+          "mu": 0.028601625623458915
+        }
+      ]
+    },
+    {
+      "row_key": "f8-u2",
+      "row": "F_8[u]/(u^2)",
+      "target_packet": "u^2",
+      "target_depth": 2,
+      "packet_sizes": {
+        "u": 7,
+        "u^2": 56
+      },
+      "active_prefix_dimension": 63,
+      "total_dimension": 63,
+      "amplitude_fraction": 0.1,
+      "actual_amplitude": 0.011875,
+      "probability_min": 0.014140625,
+      "probability_max": 0.026015625,
+      "base_J0": 0.24869200581197184,
+      "base_J": 0.24869200581197184,
+      "base_block_coupling": 0.04869200581197185,
+      "cross_pair_count": 392,
+      "singular_pair_count": 392,
+      "descent_pair_count": 392,
+      "positive_mu_summary": {
+        "min": 0.005879684558673937,
+        "p05": 0.005879684558673937,
+        "median": 0.005879684614185088,
+        "mean": 0.0058796845925187455,
+        "p95": 0.005879684614185088,
+        "max": 0.005879684614185088
+      },
+      "all_mu_summary": {
+        "min": 0.005879684558673937,
+        "p05": 0.005879684558673937,
+        "median": 0.005879684614185088,
+        "mean": 0.0058796845925187455,
+        "p95": 0.005879684614185088,
+        "max": 0.005879684614185088
+      },
+      "max_mu_star": 0.005879684614185088,
+      "best_pair": [
+        0,
+        7
+      ],
+      "best_d_J0_at_zero": 0.011759367840591395,
+      "best_one_sided_descent_rate": 0.011759369228370176,
+      "quadratic_impurity_c_formula": 0.12698412698412698,
+      "quadratic_impurity_c_error_max": 1.6930901125533637e-13,
+      "top_pairs": [
+        {
+          "pair": [
+            0,
+            7
+          ],
+          "d_J0_at_zero": 0.011759367840591395,
+          "one_sided_descent_rate": 0.011759369228370176,
+          "observed_quadratic_impurity_c": 0.12698412698395767,
+          "nu": 2.0,
+          "mu": 0.005879684614185088
+        },
+        {
+          "pair": [
+            0,
+            8
+          ],
+          "d_J0_at_zero": 0.011759367840591395,
+          "one_sided_descent_rate": 0.011759369228370176,
+          "observed_quadratic_impurity_c": 0.12698412698395767,
+          "nu": 2.0,
+          "mu": 0.005879684614185088
+        },
+        {
+          "pair": [
+            0,
+            9
+          ],
+          "d_J0_at_zero": 0.011759367896102546,
+          "one_sided_descent_rate": 0.011759369228370176,
+          "observed_quadratic_impurity_c": 0.12698412698395767,
+          "nu": 2.0,
+          "mu": 0.005879684614185088
+        },
+        {
+          "pair": [
+            0,
+            10
+          ],
+          "d_J0_at_zero": 0.011759367840591395,
+          "one_sided_descent_rate": 0.011759369228370176,
+          "observed_quadratic_impurity_c": 0.12698412698395767,
+          "nu": 2.0,
+          "mu": 0.005879684614185088
+        },
+        {
+          "pair": [
+            0,
+            11
+          ],
+          "d_J0_at_zero": 0.011759367896102546,
+          "one_sided_descent_rate": 0.011759369228370176,
+          "observed_quadratic_impurity_c": 0.12698412698395767,
+          "nu": 2.0,
+          "mu": 0.005879684614185088
+        },
+        {
+          "pair": [
+            0,
+            12
+          ],
+          "d_J0_at_zero": 0.011759367840591395,
+          "one_sided_descent_rate": 0.011759369228370176,
+          "observed_quadratic_impurity_c": 0.12698412698395767,
+          "nu": 2.0,
+          "mu": 0.005879684614185088
+        },
+        {
+          "pair": [
+            0,
+            13
+          ],
+          "d_J0_at_zero": 0.011759367896102546,
+          "one_sided_descent_rate": 0.011759369228370176,
+          "observed_quadratic_impurity_c": 0.12698412698395767,
+          "nu": 2.0,
+          "mu": 0.005879684614185088
+        },
+        {
+          "pair": [
+            0,
+            14
+          ],
+          "d_J0_at_zero": 0.011759367840591395,
+          "one_sided_descent_rate": 0.011759369228370176,
+          "observed_quadratic_impurity_c": 0.12698412698395767,
+          "nu": 2.0,
+          "mu": 0.005879684614185088
+        },
+        {
+          "pair": [
+            0,
+            15
+          ],
+          "d_J0_at_zero": 0.011759367896102546,
+          "one_sided_descent_rate": 0.011759369228370176,
+          "observed_quadratic_impurity_c": 0.12698412698395767,
+          "nu": 2.0,
+          "mu": 0.005879684614185088
+        },
+        {
+          "pair": [
+            0,
+            16
+          ],
+          "d_J0_at_zero": 0.011759367840591395,
+          "one_sided_descent_rate": 0.011759369228370176,
+          "observed_quadratic_impurity_c": 0.12698412698395767,
+          "nu": 2.0,
+          "mu": 0.005879684614185088
+        }
+      ]
+    },
+    {
+      "row_key": "f8-u2",
+      "row": "F_8[u]/(u^2)",
+      "target_packet": "u^2",
+      "target_depth": 2,
+      "packet_sizes": {
+        "u": 7,
+        "u^2": 56
+      },
+      "active_prefix_dimension": 63,
+      "total_dimension": 63,
+      "amplitude_fraction": 0.35,
+      "actual_amplitude": 0.041562499999999995,
+      "probability_min": 0.0104296875,
+      "probability_max": 0.051992187499999995,
+      "base_J0": 0.47452425372068185,
+      "base_J": 0.47452425372068185,
+      "base_block_coupling": 0.2745242537206819,
+      "cross_pair_count": 392,
+      "singular_pair_count": 392,
+      "descent_pair_count": 392,
+      "positive_mu_summary": {
+        "min": 0.03198520825975493,
+        "p05": 0.03198520825975493,
+        "median": 0.03198520825975493,
+        "mean": 0.031985208261029414,
+        "p95": 0.03198520825975493,
+        "max": 0.03198520831526608
+      },
+      "all_mu_summary": {
+        "min": 0.03198520825975493,
+        "p05": 0.03198520825975493,
+        "median": 0.03198520825975493,
+        "mean": 0.031985208261029414,
+        "p95": 0.03198520825975493,
+        "max": 0.03198520831526608
+      },
+      "max_mu_star": 0.03198520831526608,
+      "best_pair": [
+        0,
+        43
+      ],
+      "best_d_J0_at_zero": 0.06397045398953694,
+      "best_one_sided_descent_rate": 0.06397041663053216,
+      "quadratic_impurity_c_formula": 0.12698412698412698,
+      "quadratic_impurity_c_error_max": 1.6930901125533637e-13,
+      "top_pairs": [
+        {
+          "pair": [
+            0,
+            43
+          ],
+          "d_J0_at_zero": 0.06397045398953694,
+          "one_sided_descent_rate": 0.06397041663053216,
+          "observed_quadratic_impurity_c": 0.12698412698395767,
+          "nu": 2.0,
+          "mu": 0.03198520831526608
+        },
+        {
+          "pair": [
+            5,
+            7
+          ],
+          "d_J0_at_zero": 0.06397045398953694,
+          "one_sided_descent_rate": 0.06397041663053216,
+          "observed_quadratic_impurity_c": 0.12698412698395767,
+          "nu": 2.0,
+          "mu": 0.03198520831526608
+        },
+        {
+          "pair": [
+            5,
+            8
+          ],
+          "d_J0_at_zero": 0.06397045398953694,
+          "one_sided_descent_rate": 0.06397041663053216,
+          "observed_quadratic_impurity_c": 0.12698412698395767,
+          "nu": 2.0,
+          "mu": 0.03198520831526608
+        },
+        {
+          "pair": [
+            5,
+            9
+          ],
+          "d_J0_at_zero": 0.06397045398953694,
+          "one_sided_descent_rate": 0.06397041663053216,
+          "observed_quadratic_impurity_c": 0.12698412698395767,
+          "nu": 2.0,
+          "mu": 0.03198520831526608
+        },
+        {
+          "pair": [
+            5,
+            32
+          ],
+          "d_J0_at_zero": 0.06397045404504809,
+          "one_sided_descent_rate": 0.06397041663053216,
+          "observed_quadratic_impurity_c": 0.12698412698395767,
+          "nu": 2.0,
+          "mu": 0.03198520831526608
+        },
+        {
+          "pair": [
+            6,
+            7
+          ],
+          "d_J0_at_zero": 0.06397045398953694,
+          "one_sided_descent_rate": 0.06397041663053216,
+          "observed_quadratic_impurity_c": 0.12698412698395767,
+          "nu": 2.0,
+          "mu": 0.03198520831526608
+        },
+        {
+          "pair": [
+            6,
+            8
+          ],
+          "d_J0_at_zero": 0.06397045398953694,
+          "one_sided_descent_rate": 0.06397041663053216,
+          "observed_quadratic_impurity_c": 0.12698412698395767,
+          "nu": 2.0,
+          "mu": 0.03198520831526608
+        },
+        {
+          "pair": [
+            6,
+            23
+          ],
+          "d_J0_at_zero": 0.06397045398953694,
+          "one_sided_descent_rate": 0.06397041663053216,
+          "observed_quadratic_impurity_c": 0.12698412698395767,
+          "nu": 2.0,
+          "mu": 0.03198520831526608
+        },
+        {
+          "pair": [
+            6,
+            24
+          ],
+          "d_J0_at_zero": 0.06397045398953694,
+          "one_sided_descent_rate": 0.06397041663053216,
+          "observed_quadratic_impurity_c": 0.12698412698395767,
+          "nu": 2.0,
+          "mu": 0.03198520831526608
+        },
+        {
+          "pair": [
+            0,
+            7
+          ],
+          "d_J0_at_zero": 0.06397045393402578,
+          "one_sided_descent_rate": 0.06397041651950985,
+          "observed_quadratic_impurity_c": 0.12698412698395767,
+          "nu": 2.0,
+          "mu": 0.03198520825975493
+        }
+      ]
+    },
+    {
+      "row_key": "f8-u2",
+      "row": "F_8[u]/(u^2)",
+      "target_packet": "u^2",
+      "target_depth": 2,
+      "packet_sizes": {
+        "u": 7,
+        "u^2": 56
+      },
+      "active_prefix_dimension": 63,
+      "total_dimension": 63,
+      "amplitude_fraction": 0.5,
+      "actual_amplitude": 0.059375,
+      "probability_min": 0.008203125,
+      "probability_max": 0.06757812499999999,
+      "base_J0": 0.7360835458733819,
+      "base_J": 0.7360835458733819,
+      "base_block_coupling": 0.5360835458733819,
+      "cross_pair_count": 392,
+      "singular_pair_count": 392,
+      "descent_pair_count": 392,
+      "positive_mu_summary": {
+        "min": 0.06109565930945138,
+        "p05": 0.06109565930945138,
+        "median": 0.06109565936496253,
+        "mean": 0.061095659359864565,
+        "p95": 0.06109565942047368,
+        "max": 0.06109565942047368
+      },
+      "all_mu_summary": {
+        "min": 0.06109565930945138,
+        "p05": 0.06109565930945138,
+        "median": 0.06109565936496253,
+        "mean": 0.061095659359864565,
+        "p95": 0.06109565942047368,
+        "max": 0.06109565942047368
+      },
+      "max_mu_star": 0.06109565942047368,
+      "best_pair": [
+        0,
+        60
+      ],
+      "best_d_J0_at_zero": 0.1221914919247169,
+      "best_one_sided_descent_rate": 0.12219131884094736,
+      "quadratic_impurity_c_formula": 0.12698412698412698,
+      "quadratic_impurity_c_error_max": 1.6930901125533637e-13,
+      "top_pairs": [
+        {
+          "pair": [
+            0,
+            60
+          ],
+          "d_J0_at_zero": 0.1221914919247169,
+          "one_sided_descent_rate": 0.12219131884094736,
+          "observed_quadratic_impurity_c": 0.12698412698395767,
+          "nu": 2.0,
+          "mu": 0.06109565942047368
+        },
+        {
+          "pair": [
+            0,
+            62
+          ],
+          "d_J0_at_zero": 0.1221914919247169,
+          "one_sided_descent_rate": 0.12219131884094736,
+          "observed_quadratic_impurity_c": 0.12698412698395767,
+          "nu": 2.0,
+          "mu": 0.06109565942047368
+        },
+        {
+          "pair": [
+            2,
+            15
+          ],
+          "d_J0_at_zero": 0.12219149198022805,
+          "one_sided_descent_rate": 0.12219131884094736,
+          "observed_quadratic_impurity_c": 0.12698412698395767,
+          "nu": 2.0,
+          "mu": 0.06109565942047368
+        },
+        {
+          "pair": [
+            2,
+            16
+          ],
+          "d_J0_at_zero": 0.12219149198022805,
+          "one_sided_descent_rate": 0.12219131884094736,
+          "observed_quadratic_impurity_c": 0.12698412698395767,
+          "nu": 2.0,
+          "mu": 0.06109565942047368
+        },
+        {
+          "pair": [
+            2,
+            29
+          ],
+          "d_J0_at_zero": 0.1221914919247169,
+          "one_sided_descent_rate": 0.12219131884094736,
+          "observed_quadratic_impurity_c": 0.12698412698395767,
+          "nu": 2.0,
+          "mu": 0.06109565942047368
+        },
+        {
+          "pair": [
+            2,
+            55
+          ],
+          "d_J0_at_zero": 0.12219149198022805,
+          "one_sided_descent_rate": 0.12219131884094736,
+          "observed_quadratic_impurity_c": 0.12698412698395767,
+          "nu": 2.0,
+          "mu": 0.06109565942047368
+        },
+        {
+          "pair": [
+            2,
+            56
+          ],
+          "d_J0_at_zero": 0.12219149198022805,
+          "one_sided_descent_rate": 0.12219131884094736,
+          "observed_quadratic_impurity_c": 0.12698412698395767,
+          "nu": 2.0,
+          "mu": 0.06109565942047368
+        },
+        {
+          "pair": [
+            2,
+            57
+          ],
+          "d_J0_at_zero": 0.12219149198022805,
+          "one_sided_descent_rate": 0.12219131884094736,
+          "observed_quadratic_impurity_c": 0.12698412698395767,
+          "nu": 2.0,
+          "mu": 0.06109565942047368
+        },
+        {
+          "pair": [
+            2,
+            60
+          ],
+          "d_J0_at_zero": 0.1221914919247169,
+          "one_sided_descent_rate": 0.12219131884094736,
+          "observed_quadratic_impurity_c": 0.12698412698395767,
+          "nu": 2.0,
+          "mu": 0.06109565942047368
+        },
+        {
+          "pair": [
+            2,
+            61
+          ],
+          "d_J0_at_zero": 0.1221914919247169,
+          "one_sided_descent_rate": 0.12219131884094736,
+          "observed_quadratic_impurity_c": 0.12698412698395767,
+          "nu": 2.0,
+          "mu": 0.06109565942047368
+        }
+      ]
+    }
+  ]
+}

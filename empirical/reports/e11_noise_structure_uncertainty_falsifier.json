@@ -1,0 +1,1045 @@
+{
+  "timestamp": "2026-06-03T22:28:19.284365+00:00",
+  "finding": "UNCERTAINTY_FITS_BUT_GATE_RECOVERS_STRUCTURE",
+  "config": {
+    "seed": 20260603,
+    "route_trials": 900,
+    "null_trials": 450,
+    "sweep_route_trials": 700,
+    "sweep_null_trials": 350,
+    "main_structure_mix": 0.5,
+    "mix_grid": [
+      0.0,
+      0.25,
+      0.5,
+      0.75,
+      1.0
+    ],
+    "n_train": 96,
+    "n_test": 96,
+    "n_distractors": 12,
+    "precision_noise": 0.05,
+    "structure_noise": 0.04,
+    "alpha": 0.05,
+    "ridge": 0.001,
+    "structure_threshold": 0.5,
+    "decision_margin": 0.01,
+    "false_admission_margin": 0.05,
+    "detection_floor": 0.85
+  },
+  "main_train_counts": {
+    "structure_world": 473,
+    "uncertainty_world": 427,
+    "noise_world": 450
+  },
+  "main_test_counts": {
+    "structure_world": 455,
+    "uncertainty_world": 445,
+    "noise_world": 450
+  },
+  "main_train_means": {
+    "structure_world": {
+      "scalar": 1.0,
+      "expected_uncertainty": 0.49230388346346365,
+      "unexpected_uncertainty": 0.7826727521630485,
+      "volatility_signal": 0.9219786604649033,
+      "train_best_gain": 0.9987976666108624,
+      "heldout_best_gain": 0.21667443105767334,
+      "target_precision": 0.7948061574078344,
+      "target_structure": 1.0
+    },
+    "uncertainty_world": {
+      "scalar": 1.0,
+      "expected_uncertainty": 0.501828981173435,
+      "unexpected_uncertainty": 0.7781061571788515,
+      "volatility_signal": 0.879757457966988,
+      "train_best_gain": 0.998792058817987,
+      "heldout_best_gain": 0.01851662160246027,
+      "target_precision": 0.7225745149811426,
+      "target_structure": 0.0
+    },
+    "noise_world": {
+      "scalar": 1.0,
+      "expected_uncertainty": 0.7473587770081142,
+      "unexpected_uncertainty": 0.12513785552937504,
+      "volatility_signal": 0.4414657478543999,
+      "train_best_gain": 0.9987993208217089,
+      "heldout_best_gain": 0.018085408413579904,
+      "target_precision": 0.37602546780982077,
+      "target_structure": 0.0
+    }
+  },
+  "main_test_means": {
+    "structure_world": {
+      "scalar": 1.0,
+      "expected_uncertainty": 0.49295002487603856,
+      "unexpected_uncertainty": 0.788006766082944,
+      "volatility_signal": 0.9223092265064814,
+      "train_best_gain": 0.998779040158521,
+      "heldout_best_gain": 0.21840945378179932,
+      "target_precision": 0.7948603859701064,
+      "target_structure": 1.0
+    },
+    "uncertainty_world": {
+      "scalar": 1.0,
+      "expected_uncertainty": 0.5047507849375243,
+      "unexpected_uncertainty": 0.7699364643915164,
+      "volatility_signal": 0.8813247348152079,
+      "train_best_gain": 0.9988101024437818,
+      "heldout_best_gain": 0.01844779389818287,
+      "target_precision": 0.7230490291643508,
+      "target_structure": 0.0
+    },
+    "noise_world": {
+      "scalar": 1.0,
+      "expected_uncertainty": 0.7540799103646629,
+      "unexpected_uncertainty": 0.12717559769901723,
+      "volatility_signal": 0.4433217924907977,
+      "train_best_gain": 0.9988013736550715,
+      "heldout_best_gain": 0.018408838659156147,
+      "target_precision": 0.3780099443327644,
+      "target_structure": 0.0
+    }
+  },
+  "main_eval": {
+    "structure_gate": 0.043731739620848864,
+    "models": {
+      "scalar": {
+        "precision": {
+          "name": "scalar",
+          "feature_kind": "scalar",
+          "target_kind": "precision",
+          "coef": [
+            0.6343483367915363,
+            -7.976776495560954e-13
+          ],
+          "mean": [
+            1.0
+          ],
+          "sd": [
+            1.0
+          ]
+        },
+        "structure": {
+          "name": "scalar",
+          "feature_kind": "scalar",
+          "target_kind": "structure",
+          "coef": [
+            0.35484629511200994,
+            -2.351898957370004e-12
+          ],
+          "mean": [
+            1.0
+          ],
+          "sd": [
+            1.0
+          ]
+        }
+      },
+      "continuous_uncertainty": {
+        "precision": {
+          "name": "continuous_uncertainty",
+          "feature_kind": "continuous_uncertainty",
+          "target_kind": "precision",
+          "coef": [
+            0.6343483367915355,
+            -5.88427988091666e-13,
+            -0.013267202040734862,
+            0.09151969127160654,
+            0.0656646050682083,
+            -0.02072541317960101,
+            4.273909141358049e-05,
+            4.2739091442432875e-05,
+            -0.03152294215086248
+          ],
+          "mean": [
+            1.0,
+            0.5803349344392054,
+            0.5620500562049712,
+            0.7484532796194691,
+            0.7944064155321875,
+            0.9987964442903595,
+            0.9987964442903595,
+            0.9109949353269235
+          ],
+          "sd": [
+            1.0,
+            0.17465842633763315,
+            0.3362466917517003,
+            0.2528949597439117,
+            0.10887398190316862,
+            0.00017329380869683287,
+            0.00017329380869683287,
+            0.1130190312611275
+          ]
+        },
+        "structure": {
+          "name": "continuous_uncertainty",
+          "feature_kind": "continuous_uncertainty",
+          "target_kind": "structure",
+          "coef": [
+            0.3548462951119562,
+            -1.024952901713619e-12,
+            0.017906970250010555,
+            0.004455213828488383,
+            0.11849722710311655,
+            0.02693410113037381,
+            0.003007246994675618,
+            0.0030072469962106104,
+            -0.34579320739071406
+          ],
+          "mean": [
+            1.0,
+            0.5803349344392054,
+            0.5620500562049712,
+            0.7484532796194691,
+            0.7944064155321875,
+            0.9987964442903595,
+            0.9987964442903595,
+            0.9109949353269235
+          ],
+          "sd": [
+            1.0,
+            0.17465842633763315,
+            0.3362466917517003,
+            0.2528949597439117,
+            0.10887398190316862,
+            0.00017329380869683287,
+            0.00017329380869683287,
+            0.1130190312611275
+          ]
+        }
+      },
+      "bucket_structure_gate": {
+        "precision": {
+          "name": "bucket_structure_gate",
+          "feature_kind": "bucket_structure_gate",
+          "target_kind": "precision",
+          "coef": [
+            0.6343483367915362,
+            -3.7210637652039926e-13,
+            0.0831477865131947,
+            0.03052010964906435
+          ],
+          "mean": [
+            1.0,
+            0.36666666666666664,
+            0.07731467940603089
+          ],
+          "sd": [
+            1.0,
+            0.48189440982670145,
+            0.11944018483745143
+          ]
+        },
+        "structure": {
+          "name": "bucket_structure_gate",
+          "feature_kind": "bucket_structure_gate",
+          "target_kind": "structure",
+          "coef": [
+            0.3548462951120101,
+            -7.179303838766786e-13,
+            0.2895238207300344,
+            0.14611580060122475
+          ],
+          "mean": [
+            1.0,
+            0.36666666666666664,
+            0.07731467940603089
+          ],
+          "sd": [
+            1.0,
+            0.48189440982670145,
+            0.11944018483745143
+          ]
+        }
+      },
+      "governed_uncertainty_gate": {
+        "precision": {
+          "name": "governed_uncertainty_gate",
+          "feature_kind": "governed_uncertainty_gate",
+          "target_kind": "precision",
+          "coef": [
+            0.6343483367915359,
+            -5.693640442772117e-13,
+            -0.013955246060678364,
+            0.0910255996071965,
+            0.06243403563206606,
+            -0.021453536821656013,
+            1.8015434965649412e-05,
+            1.801543493735754e-05,
+            -0.012938272278216496,
+            0.018869116167062387,
+            0.004138413451735579
+          ],
+          "mean": [
+            1.0,
+            0.5803349344392054,
+            0.5620500562049712,
+            0.7484532796194691,
+            0.7944064155321875,
+            0.9987964442903595,
+            0.9987964442903595,
+            0.9109949353269235,
+            0.36666666666666664,
+            0.07731467940603089
+          ],
+          "sd": [
+            1.0,
+            0.17465842633763315,
+            0.3362466917517003,
+            0.2528949597439117,
+            0.10887398190316862,
+            0.00017329380869683287,
+            0.00017329380869683287,
+            0.1130190312611275,
+            0.48189440982670145,
+            0.11944018483745143
+          ]
+        },
+        "structure": {
+          "name": "governed_uncertainty_gate",
+          "feature_kind": "governed_uncertainty_gate",
+          "target_kind": "structure",
+          "coef": [
+            0.3548462951119618,
+            -7.608468716282904e-13,
+            0.007707867014670307,
+            -0.002932982678929913,
+            0.07193671636023885,
+            0.016387268962619907,
+            0.002716407103422843,
+            0.0027164071042662533,
+            -0.11157992164001058,
+            0.27523503374149233,
+            0.02316469584768145
+          ],
+          "mean": [
+            1.0,
+            0.5803349344392054,
+            0.5620500562049712,
+            0.7484532796194691,
+            0.7944064155321875,
+            0.9987964442903595,
+            0.9987964442903595,
+            0.9109949353269235,
+            0.36666666666666664,
+            0.07731467940603089
+          ],
+          "sd": [
+            1.0,
+            0.17465842633763315,
+            0.3362466917517003,
+            0.2528949597439117,
+            0.10887398190316862,
+            0.00017329380869683287,
+            0.00017329380869683287,
+            0.1130190312611275,
+            0.48189440982670145,
+            0.11944018483745143
+          ]
+        }
+      },
+      "hybrid_uncertainty_structure": {
+        "precision": {
+          "name": "hybrid_uncertainty_structure",
+          "feature_kind": "hybrid_uncertainty_structure",
+          "target_kind": "precision",
+          "coef": [
+            0.6343483367915371,
+            -5.694457270898484e-13,
+            -0.01395627537834744,
+            0.09102549148187239,
+            0.062433250825973126,
+            -0.021453940302704314,
+            -4.906947322781243e-05,
+            -4.906947398294685e-05,
+            0.09117239035731005,
+            -0.09117266817192407,
+            0.018873908081133577,
+            0.004109447868848767,
+            0.19530804653741743
+          ],
+          "mean": [
+            1.0,
+            0.5803349344392054,
+            0.5620500562049712,
+            0.7484532796194691,
+            0.7944064155321875,
+            0.9987964442903595,
+            0.9987964442903595,
+            0.9109949353269235,
+            0.08780150896343783,
+            0.36666666666666664,
+            0.07731467940603089,
+            0.08790732627107505
+          ],
+          "sd": [
+            1.0,
+            0.17465842633763315,
+            0.3362466917517003,
+            0.2528949597439117,
+            0.10887398190316862,
+            0.00017329380869683287,
+            0.00017329380869683287,
+            0.1130190312611275,
+            0.11301878005121775,
+            0.48189440982670145,
+            0.11944018483745143,
+            0.11315540516163786
+          ]
+        },
+        "structure": {
+          "name": "hybrid_uncertainty_structure",
+          "feature_kind": "hybrid_uncertainty_structure",
+          "target_kind": "structure",
+          "coef": [
+            0.3548462951119594,
+            -7.606410574611904e-13,
+            0.007710430989378113,
+            -0.002932778032069002,
+            0.07193872641380722,
+            0.016388274727502167,
+            0.002832679132303924,
+            0.0028326791349380523,
+            -0.3057380651212091,
+            0.30574308824768726,
+            0.27522352229004976,
+            0.023227692175603422,
+            -0.49995411798767675
+          ],
+          "mean": [
+            1.0,
+            0.5803349344392054,
+            0.5620500562049712,
+            0.7484532796194691,
+            0.7944064155321875,
+            0.9987964442903595,
+            0.9987964442903595,
+            0.9109949353269235,
+            0.08780150896343783,
+            0.36666666666666664,
+            0.07731467940603089,
+            0.08790732627107505
+          ],
+          "sd": [
+            1.0,
+            0.17465842633763315,
+            0.3362466917517003,
+            0.2528949597439117,
+            0.10887398190316862,
+            0.00017329380869683287,
+            0.00017329380869683287,
+            0.1130190312611275,
+            0.11301878005121775,
+            0.48189440982670145,
+            0.11944018483745143,
+            0.11315540516163786
+          ]
+        }
+      }
+    },
+    "overall": {
+      "scalar": {
+        "precision": {
+          "rmse_observed": 0.19482304955868884,
+          "rmse_clean": 0.19039532082090202,
+          "r2_observed": -0.00021353164348703046
+        },
+        "structure_regression": {
+          "rmse_observed": 0.45814188630471625,
+          "rmse_clean": 0.4730330246140463,
+          "r2_observed": -0.0007401641271125303
+        },
+        "structure_classification": {
+          "accuracy": 0.662962962962963,
+          "structure_detection": 0.0,
+          "nonstructure_false_admission": 0.0,
+          "uncertainty_false_admission": 0.0,
+          "noise_false_admission": 0.0
+        }
+      },
+      "continuous_uncertainty": {
+        "precision": {
+          "rmse_observed": 0.06451665555052193,
+          "rmse_clean": 0.03993149743546914,
+          "r2_observed": 0.8903128521598842
+        },
+        "structure_regression": {
+          "rmse_observed": 0.22910028077288638,
+          "rmse_clean": 0.23730131839443544,
+          "r2_observed": 0.7497508713654123
+        },
+        "structure_classification": {
+          "accuracy": 0.9385185185185185,
+          "structure_detection": 0.8175824175824176,
+          "nonstructure_false_admission": 0.0,
+          "uncertainty_false_admission": 0.0,
+          "noise_false_admission": 0.0
+        }
+      },
+      "bucket_structure_gate": {
+        "precision": {
+          "rmse_observed": 0.16497374359310407,
+          "rmse_clean": 0.15941005073022818,
+          "r2_observed": 0.28279763880528963
+        },
+        "structure_regression": {
+          "rmse_observed": 0.193974895480724,
+          "rmse_clean": 0.19919366243577682,
+          "r2_observed": 0.8206041533354246
+        },
+        "structure_classification": {
+          "accuracy": 0.9496296296296296,
+          "structure_detection": 0.9494505494505494,
+          "nonstructure_false_admission": 0.05027932960893855,
+          "uncertainty_false_admission": 0.04719101123595506,
+          "noise_false_admission": 0.05333333333333334
+        }
+      },
+      "governed_uncertainty_gate": {
+        "precision": {
+          "rmse_observed": 0.0637556816190802,
+          "rmse_clean": 0.03888483467642087,
+          "r2_observed": 0.8928851120094954
+        },
+        "structure_regression": {
+          "rmse_observed": 0.18770986073176518,
+          "rmse_clean": 0.19276486641658677,
+          "r2_observed": 0.8320053288276644
+        },
+        "structure_classification": {
+          "accuracy": 0.9496296296296296,
+          "structure_detection": 0.9494505494505494,
+          "nonstructure_false_admission": 0.05027932960893855,
+          "uncertainty_false_admission": 0.04719101123595506,
+          "noise_false_admission": 0.05333333333333334
+        }
+      },
+      "hybrid_uncertainty_structure": {
+        "precision": {
+          "rmse_observed": 0.06375716138512977,
+          "rmse_clean": 0.03888716378324771,
+          "r2_observed": 0.8928801396898504
+        },
+        "structure_regression": {
+          "rmse_observed": 0.18770674612523802,
+          "rmse_clean": 0.19276173511288397,
+          "r2_observed": 0.8320109037394604
+        },
+        "structure_classification": {
+          "accuracy": 0.9496296296296296,
+          "structure_detection": 0.9494505494505494,
+          "nonstructure_false_admission": 0.05027932960893855,
+          "uncertainty_false_admission": 0.04719101123595506,
+          "noise_false_admission": 0.05333333333333334
+        }
+      }
+    },
+    "by_source": {
+      "structure_world": {
+        "scalar": {
+          "precision": {
+            "rmse_observed": 0.17360261044746386,
+            "rmse_clean": 0.16861839079425617,
+            "r2_observed": -4.881504478910727
+          },
+          "structure": {
+            "accuracy": 0.0,
+            "structure_detection": 0.0,
+            "nonstructure_false_admission": NaN,
+            "uncertainty_false_admission": NaN,
+            "noise_false_admission": NaN
+          }
+        },
+        "continuous_uncertainty": {
+          "precision": {
+            "rmse_observed": 0.06877312060923757,
+            "rmse_clean": 0.046635509946644324,
+            "r2_observed": 0.07697515390919174
+          },
+          "structure": {
+            "accuracy": 0.8175824175824176,
+            "structure_detection": 0.8175824175824176,
+            "nonstructure_false_admission": NaN,
+            "uncertainty_false_admission": NaN,
+            "noise_false_admission": NaN
+          }
+        },
+        "bucket_structure_gate": {
+          "precision": {
+            "rmse_observed": 0.09492912768247946,
+            "rmse_clean": 0.08263817883701975,
+            "r2_observed": -0.7586317501502757
+          },
+          "structure": {
+            "accuracy": 0.9494505494505494,
+            "structure_detection": 0.9494505494505494,
+            "nonstructure_false_admission": NaN,
+            "uncertainty_false_admission": NaN,
+            "noise_false_admission": NaN
+          }
+        },
+        "governed_uncertainty_gate": {
+          "precision": {
+            "rmse_observed": 0.0659086591181217,
+            "rmse_clean": 0.04193046140355995,
+            "r2_observed": 0.1522635012768646
+          },
+          "structure": {
+            "accuracy": 0.9494505494505494,
+            "structure_detection": 0.9494505494505494,
+            "nonstructure_false_admission": NaN,
+            "uncertainty_false_admission": NaN,
+            "noise_false_admission": NaN
+          }
+        },
+        "hybrid_uncertainty_structure": {
+          "precision": {
+            "rmse_observed": 0.0659116901067903,
+            "rmse_clean": 0.04193408857586006,
+            "r2_observed": 0.15218552855406287
+          },
+          "structure": {
+            "accuracy": 0.9494505494505494,
+            "structure_detection": 0.9494505494505494,
+            "nonstructure_false_admission": NaN,
+            "uncertainty_false_admission": NaN,
+            "noise_false_admission": NaN
+          }
+        }
+      },
+      "uncertainty_world": {
+        "scalar": {
+          "precision": {
+            "rmse_observed": 0.11741861904850259,
+            "rmse_clean": 0.10948491600424991,
+            "r2_observed": -1.1921871928133903
+          },
+          "structure": {
+            "accuracy": 1.0,
+            "structure_detection": NaN,
+            "nonstructure_false_admission": 0.0,
+            "uncertainty_false_admission": 0.0,
+            "noise_false_admission": NaN
+          }
+        },
+        "continuous_uncertainty": {
+          "precision": {
+            "rmse_observed": 0.061106984724082304,
+            "rmse_clean": 0.03469767373441045,
+            "r2_observed": 0.4062749016378854
+          },
+          "structure": {
+            "accuracy": 1.0,
+            "structure_detection": NaN,
+            "nonstructure_false_admission": 0.0,
+            "uncertainty_false_admission": 0.0,
+            "noise_false_admission": NaN
+          }
+        },
+        "bucket_structure_gate": {
+          "precision": {
+            "rmse_observed": 0.18228232938846245,
+            "rmse_clean": 0.17879146854037783,
+            "r2_observed": -4.283148754785155
+          },
+          "structure": {
+            "accuracy": 0.952808988764045,
+            "structure_detection": NaN,
+            "nonstructure_false_admission": 0.04719101123595506,
+            "uncertainty_false_admission": 0.04719101123595506,
+            "noise_false_admission": NaN
+          }
+        },
+        "governed_uncertainty_gate": {
+          "precision": {
+            "rmse_observed": 0.06125910156389792,
+            "rmse_clean": 0.03606912171069918,
+            "r2_observed": 0.4033152399963993
+          },
+          "structure": {
+            "accuracy": 0.952808988764045,
+            "structure_detection": NaN,
+            "nonstructure_false_admission": 0.04719101123595506,
+            "uncertainty_false_admission": 0.04719101123595506,
+            "noise_false_admission": NaN
+          }
+        },
+        "hybrid_uncertainty_structure": {
+          "precision": {
+            "rmse_observed": 0.06125939245201485,
+            "rmse_clean": 0.03607010892926935,
+            "r2_observed": 0.40330957328193884
+          },
+          "structure": {
+            "accuracy": 0.952808988764045,
+            "structure_detection": NaN,
+            "nonstructure_false_admission": 0.04719101123595506,
+            "uncertainty_false_admission": 0.04719101123595506,
+            "noise_false_admission": NaN
+          }
+        }
+      },
+      "noise_world": {
+        "scalar": {
+          "precision": {
+            "rmse_observed": 0.2641238130868856,
+            "rmse_clean": 0.26105421164038906,
+            "r2_observed": -12.406900414715466
+          },
+          "structure": {
+            "accuracy": 1.0,
+            "structure_detection": NaN,
+            "nonstructure_false_admission": 0.0,
+            "uncertainty_false_admission": NaN,
+            "noise_false_admission": 0.0
+          }
+        },
+        "continuous_uncertainty": {
+          "precision": {
+            "rmse_observed": 0.0633429375307519,
+            "rmse_clean": 0.03733612010914559,
+            "r2_observed": 0.2289018406354386
+          },
+          "structure": {
+            "accuracy": 1.0,
+            "structure_detection": NaN,
+            "nonstructure_false_admission": 0.0,
+            "uncertainty_false_admission": NaN,
+            "noise_false_admission": 0.0
+          }
+        },
+        "bucket_structure_gate": {
+          "precision": {
+            "rmse_observed": 0.19919759114235092,
+            "rmse_clean": 0.19421261174181448,
+            "r2_observed": -6.625730119067376
+          },
+          "structure": {
+            "accuracy": 0.9466666666666667,
+            "structure_detection": NaN,
+            "nonstructure_false_admission": 0.05333333333333334,
+            "uncertainty_false_admission": NaN,
+            "noise_false_admission": 0.05333333333333334
+          }
+        },
+        "governed_uncertainty_gate": {
+          "precision": {
+            "rmse_observed": 0.06396219380101659,
+            "rmse_clean": 0.03836490803269798,
+            "r2_observed": 0.2137512491367669
+          },
+          "structure": {
+            "accuracy": 0.9466666666666667,
+            "structure_detection": NaN,
+            "nonstructure_false_admission": 0.05333333333333334,
+            "uncertainty_false_admission": NaN,
+            "noise_false_admission": 0.05333333333333334
+          }
+        },
+        "hybrid_uncertainty_structure": {
+          "precision": {
+            "rmse_observed": 0.06396318530841688,
+            "rmse_clean": 0.03836706386048355,
+            "r2_observed": 0.21372687294042703
+          },
+          "structure": {
+            "accuracy": 0.9466666666666667,
+            "structure_detection": NaN,
+            "nonstructure_false_admission": 0.05333333333333334,
+            "uncertainty_false_admission": NaN,
+            "noise_false_admission": 0.05333333333333334
+          }
+        }
+      }
+    },
+    "precision_winner": "governed_uncertainty_gate",
+    "structure_winner": "continuous_uncertainty",
+    "prediction_sample": {
+      "scalar": {
+        "precision": [
+          0.6343483367915363,
+          0.6343483367915363,
+          0.6343483367915363,
+          0.6343483367915363,
+          0.6343483367915363,
+          0.6343483367915363,
+          0.6343483367915363,
+          0.6343483367915363
+        ],
+        "structure": [
+          0.35484629511200994,
+          0.35484629511200994,
+          0.35484629511200994,
+          0.35484629511200994,
+          0.35484629511200994,
+          0.35484629511200994,
+          0.35484629511200994,
+          0.35484629511200994
+        ]
+      },
+      "continuous_uncertainty": {
+        "precision": [
+          0.39595309920926974,
+          0.5995243232938798,
+          0.8921489879659361,
+          0.8173565288167779,
+          0.6036817044257232,
+          0.4285142246851504,
+          0.8188061336135901,
+          0.4517655596510562
+        ],
+        "structure": [
+          0.07378264849160894,
+          0.10728431203526947,
+          1.062928857907543,
+          0.6819775909170097,
+          0.14888293605480524,
+          0.06617008814141914,
+          1.1210935165633589,
+          0.13822628515498572
+        ]
+      },
+      "bucket_structure_gate": {
+        "precision": [
+          0.551326422858672,
+          0.551326422858672,
+          0.7976254933122916,
+          0.7705347904271007,
+          0.551326422858672,
+          0.551326422858672,
+          0.8056058202627846,
+          0.551326422858672
+        ],
+        "structure": [
+          0.03996965974055859,
+          0.03996965974055859,
+          0.9938793894453957,
+          0.8641819608832106,
+          0.03996965974055859,
+          0.03996965974055859,
+          1.0320854075376853,
+          0.03996965974055859
+        ]
+      },
+      "governed_uncertainty_gate": {
+        "precision": [
+          0.3931476616825146,
+          0.5951825195709514,
+          0.8885030501661976,
+          0.8290808200255692,
+          0.597559848810888,
+          0.42568320275269605,
+          0.8119562320969681,
+          0.44508137887469823
+        ],
+        "structure": [
+          0.03128008795916132,
+          0.04458555858823626,
+          1.0099990796286846,
+          0.8515267368153048,
+          0.06254640497462982,
+          0.023926610803454318,
+          1.0214165543426146,
+          0.04792725235274764
+        ]
+      },
+      "hybrid_uncertainty_structure": {
+        "precision": [
+          0.3931472445647556,
+          0.5951798126275422,
+          0.8885036194762145,
+          0.8291159679427492,
+          0.5975696316542476,
+          0.4256961980500897,
+          0.811956905665236,
+          0.4451058881684345
+        ],
+        "structure": [
+          0.0312805389276733,
+          0.04459245525913659,
+          1.0099976359306424,
+          0.851436810335944,
+          0.06252198316892787,
+          0.023892943946588013,
+          1.0214147703369651,
+          0.04786644527125205
+        ]
+      }
+    }
+  },
+  "decision_quantities": {
+    "continuous_precision_rmse": 0.06451665555052193,
+    "bucket_precision_rmse": 0.16497374359310407,
+    "hybrid_precision_rmse": 0.06375716138512977,
+    "continuous_false_structure": 0.0,
+    "bucket_false_structure": 0.05027932960893855,
+    "governed_false_structure": 0.05027932960893855,
+    "continuous_structure_detection": 0.8175824175824176,
+    "bucket_structure_detection": 0.9494505494505494,
+    "governed_structure_detection": 0.9494505494505494
+  },
+  "phase_sweep": [
+    {
+      "structure_mix": 0.0,
+      "counts": {
+        "structure_world": 0,
+        "uncertainty_world": 700,
+        "noise_world": 350
+      },
+      "precision_winner": "continuous_uncertainty",
+      "structure_winner": "scalar",
+      "structure_gate": 0.04426361769852716,
+      "precision_rmse": {
+        "scalar": 0.1778607998028724,
+        "continuous_uncertainty": 0.058953923067583396,
+        "bucket_structure_gate": 0.17792239045061098,
+        "governed_uncertainty_gate": 0.05898208104110832,
+        "hybrid_uncertainty_structure": 0.05898224586020958
+      },
+      "structure_false_admission": {
+        "scalar": 0.0,
+        "continuous_uncertainty": 0.0,
+        "bucket_structure_gate": 0.0,
+        "governed_uncertainty_gate": 0.0,
+        "hybrid_uncertainty_structure": 0.0
+      },
+      "structure_detection": {
+        "scalar": NaN,
+        "continuous_uncertainty": NaN,
+        "bucket_structure_gate": NaN,
+        "governed_uncertainty_gate": NaN,
+        "hybrid_uncertainty_structure": NaN
+      }
+    },
+    {
+      "structure_mix": 0.25,
+      "counts": {
+        "structure_world": 172,
+        "uncertainty_world": 528,
+        "noise_world": 350
+      },
+      "precision_winner": "continuous_uncertainty",
+      "structure_winner": "continuous_uncertainty",
+      "structure_gate": 0.04598702715507652,
+      "precision_rmse": {
+        "scalar": 0.18825154606041042,
+        "continuous_uncertainty": 0.06358655024841929,
+        "bucket_structure_gate": 0.17358550932199934,
+        "governed_uncertainty_gate": 0.06364679840638635,
+        "hybrid_uncertainty_structure": 0.0636472305893903
+      },
+      "structure_false_admission": {
+        "scalar": 0.0,
+        "continuous_uncertainty": 0.0,
+        "bucket_structure_gate": 0.009111617312072893,
+        "governed_uncertainty_gate": 0.004555808656036446,
+        "hybrid_uncertainty_structure": 0.004555808656036446
+      },
+      "structure_detection": {
+        "scalar": 0.0,
+        "continuous_uncertainty": 0.8255813953488372,
+        "bucket_structure_gate": 0.9127906976744186,
+        "governed_uncertainty_gate": 0.9302325581395349,
+        "hybrid_uncertainty_structure": 0.9302325581395349
+      }
+    },
+    {
+      "structure_mix": 0.5,
+      "counts": {
+        "structure_world": 356,
+        "uncertainty_world": 344,
+        "noise_world": 350
+      },
+      "precision_winner": "governed_uncertainty_gate",
+      "structure_winner": "continuous_uncertainty",
+      "structure_gate": 0.04226371466184908,
+      "precision_rmse": {
+        "scalar": 0.19781474787365938,
+        "continuous_uncertainty": 0.06562229903117572,
+        "bucket_structure_gate": 0.16994163890735045,
+        "governed_uncertainty_gate": 0.06498699845994163,
+        "hybrid_uncertainty_structure": 0.06498837351882093
+      },
+      "structure_false_admission": {
+        "scalar": 0.0,
+        "continuous_uncertainty": 0.0,
+        "bucket_structure_gate": 0.059077809798270896,
+        "governed_uncertainty_gate": 0.059077809798270896,
+        "hybrid_uncertainty_structure": 0.059077809798270896
+      },
+      "structure_detection": {
+        "scalar": 0.0,
+        "continuous_uncertainty": 0.8342696629213483,
+        "bucket_structure_gate": 0.9634831460674157,
+        "governed_uncertainty_gate": 0.9634831460674157,
+        "hybrid_uncertainty_structure": 0.9634831460674157
+      }
+    },
+    {
+      "structure_mix": 0.75,
+      "counts": {
+        "structure_world": 531,
+        "uncertainty_world": 169,
+        "noise_world": 350
+      },
+      "precision_winner": "governed_uncertainty_gate",
+      "structure_winner": "scalar",
+      "structure_gate": 0.04513122119728785,
+      "precision_rmse": {
+        "scalar": 0.20257161278468472,
+        "continuous_uncertainty": 0.0637426933810372,
+        "bucket_structure_gate": 0.15051857135360092,
+        "governed_uncertainty_gate": 0.06261620842473072,
+        "hybrid_uncertainty_structure": 0.06261946214033993
+      },
+      "structure_false_admission": {
+        "scalar": 0.0,
+        "continuous_uncertainty": 0.019267822736030827,
+        "bucket_structure_gate": 0.046242774566473986,
+        "governed_uncertainty_gate": 0.046242774566473986,
+        "hybrid_uncertainty_structure": 0.046242774566473986
+      },
+      "structure_detection": {
+        "scalar": 0.0,
+        "continuous_uncertainty": 0.9096045197740112,
+        "bucket_structure_gate": 0.9340866290018832,
+        "governed_uncertainty_gate": 0.9340866290018832,
+        "hybrid_uncertainty_structure": 0.9340866290018832
+      }
+    },
+    {
+      "structure_mix": 1.0,
+      "counts": {
+        "structure_world": 700,
+        "uncertainty_world": 0,
+        "noise_world": 350
+      },
+      "precision_winner": "governed_uncertainty_gate",
+      "structure_winner": "continuous_uncertainty",
+      "structure_gate": 0.04375859147182659,
+      "precision_rmse": {
+        "scalar": 0.20603190658604484,
+        "continuous_uncertainty": 0.06475316285713624,
+        "bucket_structure_gate": 0.10982511203093619,
+        "governed_uncertainty_gate": 0.06207080493142618,
+        "hybrid_uncertainty_structure": 0.062070957276317895
+      },
+      "structure_false_admission": {
+        "scalar": 1.0,
+        "continuous_uncertainty": 0.0,
+        "bucket_structure_gate": 0.04857142857142857,
+        "governed_uncertainty_gate": 0.002857142857142857,
+        "hybrid_uncertainty_structure": 0.002857142857142857
+      },
+      "structure_detection": {
+        "scalar": 1.0,
+        "continuous_uncertainty": 0.9971428571428571,
+        "bucket_structure_gate": 0.9571428571428572,
+        "governed_uncertainty_gate": 0.9914285714285714,
+        "hybrid_uncertainty_structure": 0.9914285714285714
+      }
+    }
+  ]
+}

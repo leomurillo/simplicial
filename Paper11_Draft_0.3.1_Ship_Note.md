@@ -1,0 +1,3 @@
+# Paper 11 Draft 0.3.1 Ship Note
+
+Paper 11 Draft 0.3.1 ships the measured arity-4 mixed-lift row for \(R={\mathbb F}_4[u]/(u^2)\): the \(592\) arity-2 commutator orbits lift exactly onto the seven mixed TTWW/TWWW arity-4 orbits and onto no pure orbit, the full paired-slot coefficient table gives \(R^{(4)}=-1:44,\ 1:504,\ 2:44\), and the H4-to-H3 contraction audit records \(16/18\) valid H4 contraction orbits with the two failures named as the pure diagonal controls TTTT orbit \(0\) and WWWW orbit \(9\).  The boundary is unchanged: Draft 0.3.1 does not claim a constructed \(\operatorname{Ext}_{CH}^{(4)}\) cohomology class and does not claim an operadic composition law.

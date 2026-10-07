@@ -1,0 +1,42 @@
+[
+  {
+    "file": "C:\\Users\\leomu\\Downloads\\que-ver-en-costa-rica-correos-portada.jpg",
+    "width": 256,
+    "height": 256,
+    "raw_rgb_bytes": 196608,
+    "webp_lossless_bytes": 63034,
+    "apex_bytes": 69318,
+    "delta_vs_webp": 6284,
+    "ratio_vs_webp": 1.0996922295903797,
+    "roundtrip_ok": true,
+    "encode_s": 5.04093209997518,
+    "decode_s": 2.620010700018611,
+    "encode_stats": {
+      "transform": "r-gr-bavg",
+      "scheme": "ch-ctx-apex128",
+      "bytes": 69318,
+      "header_metadata_bytes": 213,
+      "entropy_bytes": 69105,
+      "max_symbol": 208,
+      "entropy_encode_s": 2.36210900003789,
+      "predictors": {
+        "pred-6": 55,
+        "pred-4": 102,
+        "pred-8": 17,
+        "pred-7": 3,
+        "pred-9": 1,
+        "pred-20": 2,
+        "pred-5": 12
+      }
+    },
+    "decode_stats": {
+      "transform": "r-gr-bavg",
+      "scheme": "ch-ctx-apex128",
+      "width": 256,
+      "height": 256,
+      "max_symbol": 208,
+      "metadata_bytes": 213,
+      "entropy_bytes": 69105
+    }
+  }
+]

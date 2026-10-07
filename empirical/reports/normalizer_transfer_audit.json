@@ -1,0 +1,814 @@
+{
+  "purpose": "Transfer audit for B3: compare source-minimal subgroup descent against source normalizer saturation on held-out normalizer transforms of the source task.",
+  "config": {
+    "rows": [
+      "c7",
+      "c8",
+      "c12",
+      "f4-u2",
+      "f2-u4"
+    ],
+    "source_tasks": 64,
+    "transfers_per_source": 8,
+    "max_source_size": 2,
+    "amplitude_min": 0.15,
+    "amplitude_max": 0.45,
+    "resource_weight": 0.25,
+    "seed": 20260514
+  },
+  "rows": [
+    {
+      "key": "c7",
+      "row": "C_7",
+      "label_count": 7,
+      "normalizer_action_count": 6,
+      "source_tasks": 64,
+      "transfers_per_source": 8,
+      "winner_by_mean_J": "full",
+      "policies": {
+        "full": {
+          "count": 512.0,
+          "mean_J": 0.25,
+          "mean_fisher_projection_error": 0.0,
+          "mean_reciprocal_projection_error": 0.0,
+          "mean_closure_leakage": 0.0,
+          "mean_descent_balance_cost": 0.0,
+          "mean_resource_cost": 1.0,
+          "mean_support_size": 6.0,
+          "mean_structural_cost": 0.0,
+          "wins": 512
+        },
+        "oracle_minimal": {
+          "count": 512.0,
+          "mean_J": 0.25,
+          "mean_fisher_projection_error": 0.0,
+          "mean_reciprocal_projection_error": 0.0,
+          "mean_closure_leakage": 0.0,
+          "mean_descent_balance_cost": 0.0,
+          "mean_resource_cost": 1.0,
+          "mean_support_size": 6.0,
+          "mean_structural_cost": 0.0,
+          "wins": 0
+        },
+        "source_conductor_packet": {
+          "count": 512.0,
+          "mean_J": 0.25,
+          "mean_fisher_projection_error": 0.0,
+          "mean_reciprocal_projection_error": 0.0,
+          "mean_closure_leakage": 0.0,
+          "mean_descent_balance_cost": 0.0,
+          "mean_resource_cost": 1.0,
+          "mean_support_size": 6.0,
+          "mean_structural_cost": 0.0,
+          "wins": 0
+        },
+        "source_minimal": {
+          "count": 512.0,
+          "mean_J": 0.25,
+          "mean_fisher_projection_error": 0.0,
+          "mean_reciprocal_projection_error": 0.0,
+          "mean_closure_leakage": 0.0,
+          "mean_descent_balance_cost": 0.0,
+          "mean_resource_cost": 1.0,
+          "mean_support_size": 6.0,
+          "mean_structural_cost": 0.0,
+          "wins": 0
+        },
+        "source_normalizer": {
+          "count": 512.0,
+          "mean_J": 0.25,
+          "mean_fisher_projection_error": 0.0,
+          "mean_reciprocal_projection_error": 0.0,
+          "mean_closure_leakage": 0.0,
+          "mean_descent_balance_cost": 0.0,
+          "mean_resource_cost": 1.0,
+          "mean_support_size": 6.0,
+          "mean_structural_cost": 0.0,
+          "wins": 0
+        },
+        "source_raw": {
+          "count": 512.0,
+          "mean_J": 2.220896454897313,
+          "mean_fisher_projection_error": 0.647654267397313,
+          "mean_reciprocal_projection_error": 0.646484375,
+          "mean_closure_leakage": 0.1767578125,
+          "mean_descent_balance_cost": 0.6666666666666666,
+          "mean_resource_cost": 0.3333333333333333,
+          "mean_support_size": 2.0,
+          "mean_structural_cost": 2.1375631215639794,
+          "wins": 0
+        }
+      },
+      "transfer_summary": {
+        "count": 512.0,
+        "mean_premium": 0.0,
+        "mean_structural_gain": 0.0,
+        "mean_net_gain": 0.0,
+        "normalizer_beats_minimal_rate": 0.0
+      },
+      "examples": []
+    },
+    {
+      "key": "c8",
+      "row": "C_8",
+      "label_count": 8,
+      "normalizer_action_count": 4,
+      "source_tasks": 64,
+      "transfers_per_source": 8,
+      "winner_by_mean_J": "oracle_minimal",
+      "policies": {
+        "oracle_minimal": {
+          "count": 512.0,
+          "mean_J": 0.17299107142857142,
+          "mean_fisher_projection_error": 2.9539527331472077e-31,
+          "mean_reciprocal_projection_error": 2.834270666443736e-30,
+          "mean_closure_leakage": 0.0,
+          "mean_descent_balance_cost": 0.0,
+          "mean_resource_cost": 0.6919642857142857,
+          "mean_support_size": 4.84375,
+          "mean_structural_cost": 0.0,
+          "wins": 224
+        },
+        "source_minimal": {
+          "count": 512.0,
+          "mean_J": 0.17299107142857142,
+          "mean_fisher_projection_error": 2.9539527331472077e-31,
+          "mean_reciprocal_projection_error": 2.834270666443736e-30,
+          "mean_closure_leakage": 0.0,
+          "mean_descent_balance_cost": 0.0,
+          "mean_resource_cost": 0.6919642857142857,
+          "mean_support_size": 4.84375,
+          "mean_structural_cost": 0.0,
+          "wins": 0
+        },
+        "source_normalizer": {
+          "count": 512.0,
+          "mean_J": 0.17299107142857142,
+          "mean_fisher_projection_error": 2.9539527331472077e-31,
+          "mean_reciprocal_projection_error": 2.834270666443736e-30,
+          "mean_closure_leakage": 0.0,
+          "mean_descent_balance_cost": 0.0,
+          "mean_resource_cost": 0.6919642857142857,
+          "mean_support_size": 4.84375,
+          "mean_structural_cost": 0.0,
+          "wins": 0
+        },
+        "full": {
+          "count": 512.0,
+          "mean_J": 0.25,
+          "mean_fisher_projection_error": 0.0,
+          "mean_reciprocal_projection_error": 0.0,
+          "mean_closure_leakage": 0.0,
+          "mean_descent_balance_cost": 0.0,
+          "mean_resource_cost": 1.0,
+          "mean_support_size": 7.0,
+          "mean_structural_cost": 0.0,
+          "wins": 288
+        },
+        "source_conductor_packet": {
+          "count": 512.0,
+          "mean_J": 0.8486356411710145,
+          "mean_fisher_projection_error": 0.0266490340281575,
+          "mean_reciprocal_projection_error": 5.234402170244804e-30,
+          "mean_closure_leakage": 0.3984375,
+          "mean_descent_balance_cost": 0.31919642857142855,
+          "mean_resource_cost": 0.41741071428571425,
+          "mean_support_size": 2.921875,
+          "mean_structural_cost": 0.744282962599586,
+          "wins": 0
+        },
+        "source_raw": {
+          "count": 512.0,
+          "mean_J": 1.3320483156378593,
+          "mean_fisher_projection_error": 0.2664791192092878,
+          "mean_reciprocal_projection_error": 0.24609375,
+          "mean_closure_leakage": 0.275390625,
+          "mean_descent_balance_cost": 0.4799107142857143,
+          "mean_resource_cost": 0.25669642857142855,
+          "mean_support_size": 1.796875,
+          "mean_structural_cost": 1.267874208495002,
+          "wins": 0
+        }
+      },
+      "transfer_summary": {
+        "count": 512.0,
+        "mean_premium": 0.0,
+        "mean_structural_gain": 0.0,
+        "mean_net_gain": 0.0,
+        "normalizer_beats_minimal_rate": 0.0
+      },
+      "examples": []
+    },
+    {
+      "key": "c12",
+      "row": "C_12",
+      "label_count": 12,
+      "normalizer_action_count": 4,
+      "source_tasks": 64,
+      "transfers_per_source": 8,
+      "winner_by_mean_J": "oracle_minimal",
+      "policies": {
+        "oracle_minimal": {
+          "count": 512.0,
+          "mean_J": 0.12109375,
+          "mean_fisher_projection_error": 1.6408759865296804e-30,
+          "mean_reciprocal_projection_error": 6.998124759106803e-29,
+          "mean_closure_leakage": 0.0,
+          "mean_descent_balance_cost": 0.0,
+          "mean_resource_cost": 0.484375,
+          "mean_support_size": 5.328125,
+          "mean_structural_cost": 0.0,
+          "wins": 368
+        },
+        "source_minimal": {
+          "count": 512.0,
+          "mean_J": 0.12109375,
+          "mean_fisher_projection_error": 1.6408759865296804e-30,
+          "mean_reciprocal_projection_error": 6.998124759106803e-29,
+          "mean_closure_leakage": 0.0,
+          "mean_descent_balance_cost": 0.0,
+          "mean_resource_cost": 0.484375,
+          "mean_support_size": 5.328125,
+          "mean_structural_cost": 0.0,
+          "wins": 0
+        },
+        "source_normalizer": {
+          "count": 512.0,
+          "mean_J": 0.12109375,
+          "mean_fisher_projection_error": 1.6408759865296804e-30,
+          "mean_reciprocal_projection_error": 6.998124759106803e-29,
+          "mean_closure_leakage": 0.0,
+          "mean_descent_balance_cost": 0.0,
+          "mean_resource_cost": 0.484375,
+          "mean_support_size": 5.328125,
+          "mean_structural_cost": 0.0,
+          "wins": 0
+        },
+        "full": {
+          "count": 512.0,
+          "mean_J": 0.25,
+          "mean_fisher_projection_error": 0.0,
+          "mean_reciprocal_projection_error": 0.0,
+          "mean_closure_leakage": 0.0,
+          "mean_descent_balance_cost": 0.0,
+          "mean_resource_cost": 1.0,
+          "mean_support_size": 11.0,
+          "mean_structural_cost": 0.0,
+          "wins": 144
+        },
+        "source_conductor_packet": {
+          "count": 512.0,
+          "mean_J": 0.835389980185024,
+          "mean_fisher_projection_error": 0.02374225291229671,
+          "mean_reciprocal_projection_error": 8.0807874230003e-29,
+          "mean_closure_leakage": 0.3671875,
+          "mean_descent_balance_cost": 0.38835227272727274,
+          "mean_resource_cost": 0.22443181818181818,
+          "mean_support_size": 2.46875,
+          "mean_structural_cost": 0.7792820256395694,
+          "wins": 0
+        },
+        "source_raw": {
+          "count": 512.0,
+          "mean_J": 1.0751058749779272,
+          "mean_fisher_projection_error": 0.15674649997792733,
+          "mean_reciprocal_projection_error": 0.13671875,
+          "mean_closure_leakage": 0.298828125,
+          "mean_descent_balance_cost": 0.4394886363636364,
+          "mean_resource_cost": 0.17329545454545456,
+          "mean_support_size": 1.90625,
+          "mean_structural_cost": 1.0317820113415637,
+          "wins": 0
+        }
+      },
+      "transfer_summary": {
+        "count": 512.0,
+        "mean_premium": 0.0,
+        "mean_structural_gain": 0.0,
+        "mean_net_gain": 0.0,
+        "normalizer_beats_minimal_rate": 0.0
+      },
+      "examples": []
+    },
+    {
+      "key": "f4-u2",
+      "row": "F_4[u]/(u^2)",
+      "label_count": 16,
+      "normalizer_action_count": 24,
+      "source_tasks": 64,
+      "transfers_per_source": 8,
+      "winner_by_mean_J": "oracle_minimal",
+      "policies": {
+        "oracle_minimal": {
+          "count": 512.0,
+          "mean_J": 0.03229166666666667,
+          "mean_fisher_projection_error": 0.0,
+          "mean_reciprocal_projection_error": 0.0,
+          "mean_closure_leakage": 0.0,
+          "mean_descent_balance_cost": 0.0,
+          "mean_resource_cost": 0.12916666666666668,
+          "mean_support_size": 1.9375,
+          "mean_structural_cost": 0.0,
+          "wins": 512
+        },
+        "source_normalizer": {
+          "count": 512.0,
+          "mean_J": 0.2,
+          "mean_fisher_projection_error": 0.0,
+          "mean_reciprocal_projection_error": 0.0,
+          "mean_closure_leakage": 0.0,
+          "mean_descent_balance_cost": 0.0,
+          "mean_resource_cost": 0.8,
+          "mean_support_size": 12.0,
+          "mean_structural_cost": 0.0,
+          "wins": 0
+        },
+        "full": {
+          "count": 512.0,
+          "mean_J": 0.25,
+          "mean_fisher_projection_error": 0.0,
+          "mean_reciprocal_projection_error": 0.0,
+          "mean_closure_leakage": 0.0,
+          "mean_descent_balance_cost": 0.0,
+          "mean_resource_cost": 1.0,
+          "mean_support_size": 15.0,
+          "mean_structural_cost": 0.0,
+          "wins": 0
+        },
+        "source_conductor_packet": {
+          "count": 512.0,
+          "mean_J": 0.3597978041199768,
+          "mean_fisher_projection_error": 0.005891554119976786,
+          "mean_reciprocal_projection_error": 9.81252291862437e-34,
+          "mean_closure_leakage": 0.0625,
+          "mean_descent_balance_cost": 0.12187500000000001,
+          "mean_resource_cost": 0.678125,
+          "mean_support_size": 10.171875,
+          "mean_structural_cost": 0.19026655411997678,
+          "wins": 0
+        },
+        "source_minimal": {
+          "count": 512.0,
+          "mean_J": 1.5306682751172347,
+          "mean_fisher_projection_error": 0.7493531709505681,
+          "mean_reciprocal_projection_error": 0.7490234375,
+          "mean_closure_leakage": 0.0,
+          "mean_descent_balance_cost": 0.0,
+          "mean_resource_cost": 0.12916666666666668,
+          "mean_support_size": 1.9375,
+          "mean_structural_cost": 1.498376608450568,
+          "wins": 0
+        },
+        "source_raw": {
+          "count": 512.0,
+          "mean_J": 1.756130600688065,
+          "mean_fisher_projection_error": 0.7795029965213984,
+          "mean_reciprocal_projection_error": 0.77734375,
+          "mean_closure_leakage": 0.0185546875,
+          "mean_descent_balance_cost": 0.15625,
+          "mean_resource_cost": 0.09791666666666667,
+          "mean_support_size": 1.46875,
+          "mean_structural_cost": 1.7316514340213984,
+          "wins": 0
+        }
+      },
+      "transfer_summary": {
+        "count": 512.0,
+        "mean_premium": 0.16770833333333335,
+        "mean_structural_gain": 1.498376608450568,
+        "mean_net_gain": 1.3306682751172347,
+        "normalizer_beats_minimal_rate": 0.8125
+      },
+      "examples": [
+        {
+          "source": [
+            "(w+1)u"
+          ],
+          "target": [
+            "wu"
+          ],
+          "source_minimal": [
+            "(w+1)u"
+          ],
+          "source_normalizer": [
+            "(w+1)u",
+            "u",
+            "wu"
+          ],
+          "minimal_J": 2.0166666666666666,
+          "normalizer_J": 0.05,
+          "premium": 0.03333333333333334,
+          "structural_gain": 2.0
+        },
+        {
+          "source": [
+            "(w+1)u"
+          ],
+          "target": [
+            "u"
+          ],
+          "source_minimal": [
+            "(w+1)u"
+          ],
+          "source_normalizer": [
+            "(w+1)u",
+            "u",
+            "wu"
+          ],
+          "minimal_J": 2.0166666666666666,
+          "normalizer_J": 0.05,
+          "premium": 0.03333333333333334,
+          "structural_gain": 2.0
+        },
+        {
+          "source": [
+            "(w+1)u"
+          ],
+          "target": [
+            "(w+1)u"
+          ],
+          "source_minimal": [
+            "(w+1)u"
+          ],
+          "source_normalizer": [
+            "(w+1)u",
+            "u",
+            "wu"
+          ],
+          "minimal_J": 0.016666666666666666,
+          "normalizer_J": 0.05,
+          "premium": 0.03333333333333334,
+          "structural_gain": 0.0
+        },
+        {
+          "source": [
+            "(w+1)u"
+          ],
+          "target": [
+            "u"
+          ],
+          "source_minimal": [
+            "(w+1)u"
+          ],
+          "source_normalizer": [
+            "(w+1)u",
+            "u",
+            "wu"
+          ],
+          "minimal_J": 2.0166666666666666,
+          "normalizer_J": 0.05,
+          "premium": 0.03333333333333334,
+          "structural_gain": 2.0
+        },
+        {
+          "source": [
+            "(w+1)u"
+          ],
+          "target": [
+            "(w+1)u"
+          ],
+          "source_minimal": [
+            "(w+1)u"
+          ],
+          "source_normalizer": [
+            "(w+1)u",
+            "u",
+            "wu"
+          ],
+          "minimal_J": 0.016666666666666666,
+          "normalizer_J": 0.05,
+          "premium": 0.03333333333333334,
+          "structural_gain": 0.0
+        },
+        {
+          "source": [
+            "(w+1)u"
+          ],
+          "target": [
+            "(w+1)u"
+          ],
+          "source_minimal": [
+            "(w+1)u"
+          ],
+          "source_normalizer": [
+            "(w+1)u",
+            "u",
+            "wu"
+          ],
+          "minimal_J": 0.016666666666666666,
+          "normalizer_J": 0.05,
+          "premium": 0.03333333333333334,
+          "structural_gain": 0.0
+        }
+      ]
+    },
+    {
+      "key": "f2-u4",
+      "row": "F_2[u]/(u^4)",
+      "label_count": 16,
+      "normalizer_action_count": 32,
+      "source_tasks": 64,
+      "transfers_per_source": 8,
+      "winner_by_mean_J": "oracle_minimal",
+      "policies": {
+        "oracle_minimal": {
+          "count": 512.0,
+          "mean_J": 0.034895833333333334,
+          "mean_fisher_projection_error": 0.0,
+          "mean_reciprocal_projection_error": 0.0,
+          "mean_closure_leakage": 0.0,
+          "mean_descent_balance_cost": 0.0,
+          "mean_resource_cost": 0.13958333333333334,
+          "mean_support_size": 2.09375,
+          "mean_structural_cost": 0.0,
+          "wins": 512
+        },
+        "source_normalizer": {
+          "count": 512.0,
+          "mean_J": 0.203125,
+          "mean_fisher_projection_error": 0.0,
+          "mean_reciprocal_projection_error": 0.0,
+          "mean_closure_leakage": 0.0,
+          "mean_descent_balance_cost": 0.0,
+          "mean_resource_cost": 0.8125,
+          "mean_support_size": 12.1875,
+          "mean_structural_cost": 0.0,
+          "wins": 0
+        },
+        "full": {
+          "count": 512.0,
+          "mean_J": 0.25,
+          "mean_fisher_projection_error": 0.0,
+          "mean_reciprocal_projection_error": 0.0,
+          "mean_closure_leakage": 0.0,
+          "mean_descent_balance_cost": 0.0,
+          "mean_resource_cost": 1.0,
+          "mean_support_size": 15.0,
+          "mean_structural_cost": 0.0,
+          "wins": 0
+        },
+        "source_conductor_packet": {
+          "count": 512.0,
+          "mean_J": 0.5601660581738515,
+          "mean_fisher_projection_error": 0.00655742722147055,
+          "mean_reciprocal_projection_error": 8.302926545810626e-34,
+          "mean_closure_leakage": 0.0703125,
+          "mean_descent_balance_cost": 0.3549107142857143,
+          "mean_resource_cost": 0.5135416666666667,
+          "mean_support_size": 7.703125,
+          "mean_structural_cost": 0.4317806415071848,
+          "wins": 0
+        },
+        "source_minimal": {
+          "count": 512.0,
+          "mean_J": 1.4332867623463188,
+          "mean_fisher_projection_error": 0.6991721790129855,
+          "mean_reciprocal_projection_error": 0.69921875,
+          "mean_closure_leakage": 0.0,
+          "mean_descent_balance_cost": 0.0,
+          "mean_resource_cost": 0.13958333333333334,
+          "mean_support_size": 2.09375,
+          "mean_structural_cost": 1.3983909290129855,
+          "wins": 0
+        },
+        "source_raw": {
+          "count": 512.0,
+          "mean_J": 1.6946088674069963,
+          "mean_fisher_projection_error": 0.7306765757403296,
+          "mean_reciprocal_projection_error": 0.7255859375,
+          "mean_closure_leakage": 0.0302734375,
+          "mean_descent_balance_cost": 0.18229166666666666,
+          "mean_resource_cost": 0.103125,
+          "mean_support_size": 1.546875,
+          "mean_structural_cost": 1.6688276174069963,
+          "wins": 0
+        }
+      },
+      "transfer_summary": {
+        "count": 512.0,
+        "mean_premium": 0.16822916666666668,
+        "mean_structural_gain": 1.3983909290129855,
+        "mean_net_gain": 1.2301617623463188,
+        "normalizer_beats_minimal_rate": 0.798828125
+      },
+      "examples": [
+        {
+          "source": [
+            "1+u^3",
+            "u^2+u^3"
+          ],
+          "target": [
+            "1+u^3",
+            "u^2+u^3"
+          ],
+          "source_minimal": [
+            "1+u^2",
+            "1+u^3",
+            "u^2+u^3"
+          ],
+          "source_normalizer": [
+            "1",
+            "1+u",
+            "1+u+u^2",
+            "1+u+u^2+u^3",
+            "1+u+u^3",
+            "1+u^2",
+            "1+u^2+u^3",
+            "1+u^3",
+            "u",
+            "u+u^2",
+            "u+u^2+u^3",
+            "u+u^3",
+            "u^2",
+            "u^2+u^3",
+            "u^3"
+          ],
+          "minimal_J": 0.05,
+          "normalizer_J": 0.25,
+          "premium": 0.2,
+          "structural_gain": 0.0
+        },
+        {
+          "source": [
+            "1+u^3",
+            "u^2+u^3"
+          ],
+          "target": [
+            "1+u^2",
+            "u^2+u^3"
+          ],
+          "source_minimal": [
+            "1+u^2",
+            "1+u^3",
+            "u^2+u^3"
+          ],
+          "source_normalizer": [
+            "1",
+            "1+u",
+            "1+u+u^2",
+            "1+u+u^2+u^3",
+            "1+u+u^3",
+            "1+u^2",
+            "1+u^2+u^3",
+            "1+u^3",
+            "u",
+            "u+u^2",
+            "u+u^2+u^3",
+            "u+u^3",
+            "u^2",
+            "u^2+u^3",
+            "u^3"
+          ],
+          "minimal_J": 0.05,
+          "normalizer_J": 0.25,
+          "premium": 0.2,
+          "structural_gain": 0.0
+        },
+        {
+          "source": [
+            "1+u^3",
+            "u^2+u^3"
+          ],
+          "target": [
+            "1+u+u^2",
+            "u^2"
+          ],
+          "source_minimal": [
+            "1+u^2",
+            "1+u^3",
+            "u^2+u^3"
+          ],
+          "source_normalizer": [
+            "1",
+            "1+u",
+            "1+u+u^2",
+            "1+u+u^2+u^3",
+            "1+u+u^3",
+            "1+u^2",
+            "1+u^2+u^3",
+            "1+u^3",
+            "u",
+            "u+u^2",
+            "u+u^2+u^3",
+            "u+u^3",
+            "u^2",
+            "u^2+u^3",
+            "u^3"
+          ],
+          "minimal_J": 2.05,
+          "normalizer_J": 0.25,
+          "premium": 0.2,
+          "structural_gain": 1.9999999999999998
+        },
+        {
+          "source": [
+            "1+u^3",
+            "u^2+u^3"
+          ],
+          "target": [
+            "1+u^3",
+            "u^2+u^3"
+          ],
+          "source_minimal": [
+            "1+u^2",
+            "1+u^3",
+            "u^2+u^3"
+          ],
+          "source_normalizer": [
+            "1",
+            "1+u",
+            "1+u+u^2",
+            "1+u+u^2+u^3",
+            "1+u+u^3",
+            "1+u^2",
+            "1+u^2+u^3",
+            "1+u^3",
+            "u",
+            "u+u^2",
+            "u+u^2+u^3",
+            "u+u^3",
+            "u^2",
+            "u^2+u^3",
+            "u^3"
+          ],
+          "minimal_J": 0.05,
+          "normalizer_J": 0.25,
+          "premium": 0.2,
+          "structural_gain": 0.0
+        },
+        {
+          "source": [
+            "1+u^3",
+            "u^2+u^3"
+          ],
+          "target": [
+            "1+u+u^3",
+            "u^2"
+          ],
+          "source_minimal": [
+            "1+u^2",
+            "1+u^3",
+            "u^2+u^3"
+          ],
+          "source_normalizer": [
+            "1",
+            "1+u",
+            "1+u+u^2",
+            "1+u+u^2+u^3",
+            "1+u+u^3",
+            "1+u^2",
+            "1+u^2+u^3",
+            "1+u^3",
+            "u",
+            "u+u^2",
+            "u+u^2+u^3",
+            "u+u^3",
+            "u^2",
+            "u^2+u^3",
+            "u^3"
+          ],
+          "minimal_J": 2.05,
+          "normalizer_J": 0.25,
+          "premium": 0.2,
+          "structural_gain": 1.9999999999999998
+        },
+        {
+          "source": [
+            "1+u^3",
+            "u^2+u^3"
+          ],
+          "target": [
+            "1+u+u^2",
+            "u^2"
+          ],
+          "source_minimal": [
+            "1+u^2",
+            "1+u^3",
+            "u^2+u^3"
+          ],
+          "source_normalizer": [
+            "1",
+            "1+u",
+            "1+u+u^2",
+            "1+u+u^2+u^3",
+            "1+u+u^3",
+            "1+u^2",
+            "1+u^2+u^3",
+            "1+u^3",
+            "u",
+            "u+u^2",
+            "u+u^2+u^3",
+            "u+u^3",
+            "u^2",
+            "u^2+u^3",
+            "u^3"
+          ],
+          "minimal_J": 2.05,
+          "normalizer_J": 0.25,
+          "premium": 0.2,
+          "structural_gain": 1.9999999999999998
+        }
+      ]
+    }
+  ]
+}

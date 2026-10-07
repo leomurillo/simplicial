@@ -1,0 +1,3425 @@
+[
+  {
+    "row": "F_2[u]/(u^2)",
+    "ring_name": "F_2[u]/(u^2)",
+    "n_labels": 4,
+    "conductor_order": [
+      "u",
+      "u^2"
+    ],
+    "packet_sizes": {
+      "u": 1,
+      "u^2": 2
+    },
+    "d_max": 2,
+    "n_max_carry_order": 4,
+    "adjacent_psl_boundaries": [
+      [
+        "u",
+        "u^2"
+      ]
+    ],
+    "tests": [
+      {
+        "target_packet": "u",
+        "d_star": 1,
+        "h_hat_total_energy": 1.0,
+        "by_shallow_depth": [
+          {
+            "depth": 0,
+            "depth_savings": 1,
+            "missed_boundaries": [
+              [
+                "u",
+                "u^2"
+              ]
+            ],
+            "total_carry_squared": 0.0,
+            "lambda_crit": 0.0,
+            "per_boundary": [
+              {
+                "boundary": [
+                  "u",
+                  "u^2"
+                ],
+                "forward_by_n": [
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "reverse_by_n": [
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "boundary_total": 0.0
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "target_packet": "u^2",
+        "d_star": 2,
+        "h_hat_total_energy": 2.0,
+        "by_shallow_depth": [
+          {
+            "depth": 0,
+            "depth_savings": 2,
+            "missed_boundaries": [
+              [
+                "u",
+                "u^2"
+              ]
+            ],
+            "total_carry_squared": 4.25,
+            "lambda_crit": 2.125,
+            "per_boundary": [
+              {
+                "boundary": [
+                  "u",
+                  "u^2"
+                ],
+                "forward_by_n": [
+                  2.0,
+                  0.0,
+                  0.125,
+                  0.0
+                ],
+                "reverse_by_n": [
+                  2.0,
+                  0.0,
+                  0.125,
+                  0.0
+                ],
+                "boundary_total": 4.25
+              }
+            ]
+          },
+          {
+            "depth": 1,
+            "depth_savings": 1,
+            "missed_boundaries": [
+              [
+                "u",
+                "u^2"
+              ]
+            ],
+            "total_carry_squared": 4.25,
+            "lambda_crit": 4.25,
+            "per_boundary": [
+              {
+                "boundary": [
+                  "u",
+                  "u^2"
+                ],
+                "forward_by_n": [
+                  2.0,
+                  0.0,
+                  0.125,
+                  0.0
+                ],
+                "reverse_by_n": [
+                  2.0,
+                  0.0,
+                  0.125,
+                  0.0
+                ],
+                "boundary_total": 4.25
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "row_lambda_crit": 2.125,
+    "dagger_holds": true
+  },
+  {
+    "row": "F_2[u]/(u^3)",
+    "ring_name": "F_2[u]/(u^3)",
+    "n_labels": 8,
+    "conductor_order": [
+      "u",
+      "u^2",
+      "u^3"
+    ],
+    "packet_sizes": {
+      "u": 1,
+      "u^2": 2,
+      "u^3": 4
+    },
+    "d_max": 3,
+    "n_max_carry_order": 4,
+    "adjacent_psl_boundaries": [
+      [
+        "u",
+        "u^2"
+      ],
+      [
+        "u^2",
+        "u^3"
+      ]
+    ],
+    "tests": [
+      {
+        "target_packet": "u",
+        "d_star": 1,
+        "h_hat_total_energy": 1.0,
+        "by_shallow_depth": [
+          {
+            "depth": 0,
+            "depth_savings": 1,
+            "missed_boundaries": [
+              [
+                "u",
+                "u^2"
+              ],
+              [
+                "u^2",
+                "u^3"
+              ]
+            ],
+            "total_carry_squared": 0.0,
+            "lambda_crit": 0.0,
+            "per_boundary": [
+              {
+                "boundary": [
+                  "u",
+                  "u^2"
+                ],
+                "forward_by_n": [
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "reverse_by_n": [
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "boundary_total": 0.0
+              },
+              {
+                "boundary": [
+                  "u^2",
+                  "u^3"
+                ],
+                "forward_by_n": [
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "reverse_by_n": [
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "boundary_total": 0.0
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "target_packet": "u^2",
+        "d_star": 2,
+        "h_hat_total_energy": 2.0,
+        "by_shallow_depth": [
+          {
+            "depth": 0,
+            "depth_savings": 2,
+            "missed_boundaries": [
+              [
+                "u",
+                "u^2"
+              ],
+              [
+                "u^2",
+                "u^3"
+              ]
+            ],
+            "total_carry_squared": 4.015625,
+            "lambda_crit": 2.0078125,
+            "per_boundary": [
+              {
+                "boundary": [
+                  "u",
+                  "u^2"
+                ],
+                "forward_by_n": [
+                  2.0,
+                  0.0,
+                  0.0078125,
+                  0.0
+                ],
+                "reverse_by_n": [
+                  2.0,
+                  0.0,
+                  0.0078125,
+                  0.0
+                ],
+                "boundary_total": 4.015625
+              },
+              {
+                "boundary": [
+                  "u^2",
+                  "u^3"
+                ],
+                "forward_by_n": [
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "reverse_by_n": [
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "boundary_total": 0.0
+              }
+            ]
+          },
+          {
+            "depth": 1,
+            "depth_savings": 1,
+            "missed_boundaries": [
+              [
+                "u",
+                "u^2"
+              ],
+              [
+                "u^2",
+                "u^3"
+              ]
+            ],
+            "total_carry_squared": 4.015625,
+            "lambda_crit": 4.015625,
+            "per_boundary": [
+              {
+                "boundary": [
+                  "u",
+                  "u^2"
+                ],
+                "forward_by_n": [
+                  2.0,
+                  0.0,
+                  0.0078125,
+                  0.0
+                ],
+                "reverse_by_n": [
+                  2.0,
+                  0.0,
+                  0.0078125,
+                  0.0
+                ],
+                "boundary_total": 4.015625
+              },
+              {
+                "boundary": [
+                  "u^2",
+                  "u^3"
+                ],
+                "forward_by_n": [
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "reverse_by_n": [
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "boundary_total": 0.0
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "target_packet": "u^3",
+        "d_star": 3,
+        "h_hat_total_energy": 4.0,
+        "by_shallow_depth": [
+          {
+            "depth": 0,
+            "depth_savings": 3,
+            "missed_boundaries": [
+              [
+                "u",
+                "u^2"
+              ],
+              [
+                "u^2",
+                "u^3"
+              ]
+            ],
+            "total_carry_squared": 18.0625,
+            "lambda_crit": 6.020833333333333,
+            "per_boundary": [
+              {
+                "boundary": [
+                  "u",
+                  "u^2"
+                ],
+                "forward_by_n": [
+                  0.0,
+                  0.5,
+                  0.0,
+                  0.03125
+                ],
+                "reverse_by_n": [
+                  0.0,
+                  0.5,
+                  0.0,
+                  0.03125
+                ],
+                "boundary_total": 1.0625
+              },
+              {
+                "boundary": [
+                  "u^2",
+                  "u^3"
+                ],
+                "forward_by_n": [
+                  8.0,
+                  0.0,
+                  0.5,
+                  0.0
+                ],
+                "reverse_by_n": [
+                  8.0,
+                  0.0,
+                  0.5,
+                  0.0
+                ],
+                "boundary_total": 17.0
+              }
+            ]
+          },
+          {
+            "depth": 1,
+            "depth_savings": 2,
+            "missed_boundaries": [
+              [
+                "u",
+                "u^2"
+              ],
+              [
+                "u^2",
+                "u^3"
+              ]
+            ],
+            "total_carry_squared": 18.0625,
+            "lambda_crit": 9.03125,
+            "per_boundary": [
+              {
+                "boundary": [
+                  "u",
+                  "u^2"
+                ],
+                "forward_by_n": [
+                  0.0,
+                  0.5,
+                  0.0,
+                  0.03125
+                ],
+                "reverse_by_n": [
+                  0.0,
+                  0.5,
+                  0.0,
+                  0.03125
+                ],
+                "boundary_total": 1.0625
+              },
+              {
+                "boundary": [
+                  "u^2",
+                  "u^3"
+                ],
+                "forward_by_n": [
+                  8.0,
+                  0.0,
+                  0.5,
+                  0.0
+                ],
+                "reverse_by_n": [
+                  8.0,
+                  0.0,
+                  0.5,
+                  0.0
+                ],
+                "boundary_total": 17.0
+              }
+            ]
+          },
+          {
+            "depth": 2,
+            "depth_savings": 1,
+            "missed_boundaries": [
+              [
+                "u^2",
+                "u^3"
+              ]
+            ],
+            "total_carry_squared": 17.0,
+            "lambda_crit": 17.0,
+            "per_boundary": [
+              {
+                "boundary": [
+                  "u^2",
+                  "u^3"
+                ],
+                "forward_by_n": [
+                  8.0,
+                  0.0,
+                  0.5,
+                  0.0
+                ],
+                "reverse_by_n": [
+                  8.0,
+                  0.0,
+                  0.5,
+                  0.0
+                ],
+                "boundary_total": 17.0
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "row_lambda_crit": 2.0078125,
+    "dagger_holds": true
+  },
+  {
+    "row": "F_2[u]/(u^4)",
+    "ring_name": "F_2[u]/(u^4)",
+    "n_labels": 16,
+    "conductor_order": [
+      "u",
+      "u^2",
+      "u^3",
+      "u^4"
+    ],
+    "packet_sizes": {
+      "u": 1,
+      "u^2": 2,
+      "u^3": 4,
+      "u^4": 8
+    },
+    "d_max": 4,
+    "n_max_carry_order": 4,
+    "adjacent_psl_boundaries": [
+      [
+        "u",
+        "u^2"
+      ],
+      [
+        "u^2",
+        "u^3"
+      ],
+      [
+        "u^3",
+        "u^4"
+      ]
+    ],
+    "tests": [
+      {
+        "target_packet": "u",
+        "d_star": 1,
+        "h_hat_total_energy": 1.0,
+        "by_shallow_depth": [
+          {
+            "depth": 0,
+            "depth_savings": 1,
+            "missed_boundaries": [
+              [
+                "u",
+                "u^2"
+              ],
+              [
+                "u^2",
+                "u^3"
+              ],
+              [
+                "u^3",
+                "u^4"
+              ]
+            ],
+            "total_carry_squared": 0.0,
+            "lambda_crit": 0.0,
+            "per_boundary": [
+              {
+                "boundary": [
+                  "u",
+                  "u^2"
+                ],
+                "forward_by_n": [
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "reverse_by_n": [
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "boundary_total": 0.0
+              },
+              {
+                "boundary": [
+                  "u^2",
+                  "u^3"
+                ],
+                "forward_by_n": [
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "reverse_by_n": [
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "boundary_total": 0.0
+              },
+              {
+                "boundary": [
+                  "u^3",
+                  "u^4"
+                ],
+                "forward_by_n": [
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "reverse_by_n": [
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "boundary_total": 0.0
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "target_packet": "u^2",
+        "d_star": 2,
+        "h_hat_total_energy": 2.0,
+        "by_shallow_depth": [
+          {
+            "depth": 0,
+            "depth_savings": 2,
+            "missed_boundaries": [
+              [
+                "u",
+                "u^2"
+              ],
+              [
+                "u^2",
+                "u^3"
+              ],
+              [
+                "u^3",
+                "u^4"
+              ]
+            ],
+            "total_carry_squared": 4.0009765625,
+            "lambda_crit": 2.00048828125,
+            "per_boundary": [
+              {
+                "boundary": [
+                  "u",
+                  "u^2"
+                ],
+                "forward_by_n": [
+                  2.0,
+                  0.0,
+                  0.00048828125,
+                  0.0
+                ],
+                "reverse_by_n": [
+                  2.0,
+                  0.0,
+                  0.00048828125,
+                  0.0
+                ],
+                "boundary_total": 4.0009765625
+              },
+              {
+                "boundary": [
+                  "u^2",
+                  "u^3"
+                ],
+                "forward_by_n": [
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "reverse_by_n": [
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "boundary_total": 0.0
+              },
+              {
+                "boundary": [
+                  "u^3",
+                  "u^4"
+                ],
+                "forward_by_n": [
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "reverse_by_n": [
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "boundary_total": 0.0
+              }
+            ]
+          },
+          {
+            "depth": 1,
+            "depth_savings": 1,
+            "missed_boundaries": [
+              [
+                "u",
+                "u^2"
+              ],
+              [
+                "u^2",
+                "u^3"
+              ],
+              [
+                "u^3",
+                "u^4"
+              ]
+            ],
+            "total_carry_squared": 4.0009765625,
+            "lambda_crit": 4.0009765625,
+            "per_boundary": [
+              {
+                "boundary": [
+                  "u",
+                  "u^2"
+                ],
+                "forward_by_n": [
+                  2.0,
+                  0.0,
+                  0.00048828125,
+                  0.0
+                ],
+                "reverse_by_n": [
+                  2.0,
+                  0.0,
+                  0.00048828125,
+                  0.0
+                ],
+                "boundary_total": 4.0009765625
+              },
+              {
+                "boundary": [
+                  "u^2",
+                  "u^3"
+                ],
+                "forward_by_n": [
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "reverse_by_n": [
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "boundary_total": 0.0
+              },
+              {
+                "boundary": [
+                  "u^3",
+                  "u^4"
+                ],
+                "forward_by_n": [
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "reverse_by_n": [
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "boundary_total": 0.0
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "target_packet": "u^3",
+        "d_star": 3,
+        "h_hat_total_energy": 4.0,
+        "by_shallow_depth": [
+          {
+            "depth": 0,
+            "depth_savings": 3,
+            "missed_boundaries": [
+              [
+                "u",
+                "u^2"
+              ],
+              [
+                "u^2",
+                "u^3"
+              ],
+              [
+                "u^3",
+                "u^4"
+              ]
+            ],
+            "total_carry_squared": 16.3134765625,
+            "lambda_crit": 5.437825520833333,
+            "per_boundary": [
+              {
+                "boundary": [
+                  "u",
+                  "u^2"
+                ],
+                "forward_by_n": [
+                  0.0,
+                  0.125,
+                  0.0,
+                  0.00048828125
+                ],
+                "reverse_by_n": [
+                  0.0,
+                  0.125,
+                  0.0,
+                  0.00048828125
+                ],
+                "boundary_total": 0.2509765625
+              },
+              {
+                "boundary": [
+                  "u^2",
+                  "u^3"
+                ],
+                "forward_by_n": [
+                  8.0,
+                  0.0,
+                  0.03125,
+                  0.0
+                ],
+                "reverse_by_n": [
+                  8.0,
+                  0.0,
+                  0.03125,
+                  0.0
+                ],
+                "boundary_total": 16.0625
+              },
+              {
+                "boundary": [
+                  "u^3",
+                  "u^4"
+                ],
+                "forward_by_n": [
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "reverse_by_n": [
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "boundary_total": 0.0
+              }
+            ]
+          },
+          {
+            "depth": 1,
+            "depth_savings": 2,
+            "missed_boundaries": [
+              [
+                "u",
+                "u^2"
+              ],
+              [
+                "u^2",
+                "u^3"
+              ],
+              [
+                "u^3",
+                "u^4"
+              ]
+            ],
+            "total_carry_squared": 16.3134765625,
+            "lambda_crit": 8.15673828125,
+            "per_boundary": [
+              {
+                "boundary": [
+                  "u",
+                  "u^2"
+                ],
+                "forward_by_n": [
+                  0.0,
+                  0.125,
+                  0.0,
+                  0.00048828125
+                ],
+                "reverse_by_n": [
+                  0.0,
+                  0.125,
+                  0.0,
+                  0.00048828125
+                ],
+                "boundary_total": 0.2509765625
+              },
+              {
+                "boundary": [
+                  "u^2",
+                  "u^3"
+                ],
+                "forward_by_n": [
+                  8.0,
+                  0.0,
+                  0.03125,
+                  0.0
+                ],
+                "reverse_by_n": [
+                  8.0,
+                  0.0,
+                  0.03125,
+                  0.0
+                ],
+                "boundary_total": 16.0625
+              },
+              {
+                "boundary": [
+                  "u^3",
+                  "u^4"
+                ],
+                "forward_by_n": [
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "reverse_by_n": [
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "boundary_total": 0.0
+              }
+            ]
+          },
+          {
+            "depth": 2,
+            "depth_savings": 1,
+            "missed_boundaries": [
+              [
+                "u^2",
+                "u^3"
+              ],
+              [
+                "u^3",
+                "u^4"
+              ]
+            ],
+            "total_carry_squared": 16.0625,
+            "lambda_crit": 16.0625,
+            "per_boundary": [
+              {
+                "boundary": [
+                  "u^2",
+                  "u^3"
+                ],
+                "forward_by_n": [
+                  8.0,
+                  0.0,
+                  0.03125,
+                  0.0
+                ],
+                "reverse_by_n": [
+                  8.0,
+                  0.0,
+                  0.03125,
+                  0.0
+                ],
+                "boundary_total": 16.0625
+              },
+              {
+                "boundary": [
+                  "u^3",
+                  "u^4"
+                ],
+                "forward_by_n": [
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "reverse_by_n": [
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "boundary_total": 0.0
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "target_packet": "u^4",
+        "d_star": 4,
+        "h_hat_total_energy": 8.0,
+        "by_shallow_depth": [
+          {
+            "depth": 0,
+            "depth_savings": 4,
+            "missed_boundaries": [
+              [
+                "u",
+                "u^2"
+              ],
+              [
+                "u^2",
+                "u^3"
+              ],
+              [
+                "u^3",
+                "u^4"
+              ]
+            ],
+            "total_carry_squared": 73.3125,
+            "lambda_crit": 18.328125,
+            "per_boundary": [
+              {
+                "boundary": [
+                  "u",
+                  "u^2"
+                ],
+                "forward_by_n": [
+                  0.0,
+                  0.5,
+                  0.0,
+                  0.03125
+                ],
+                "reverse_by_n": [
+                  0.0,
+                  0.5,
+                  0.0,
+                  0.03125
+                ],
+                "boundary_total": 1.0625
+              },
+              {
+                "boundary": [
+                  "u^2",
+                  "u^3"
+                ],
+                "forward_by_n": [
+                  0.0,
+                  2.0,
+                  0.0,
+                  0.125
+                ],
+                "reverse_by_n": [
+                  0.0,
+                  2.0,
+                  0.0,
+                  0.125
+                ],
+                "boundary_total": 4.25
+              },
+              {
+                "boundary": [
+                  "u^3",
+                  "u^4"
+                ],
+                "forward_by_n": [
+                  32.0,
+                  0.0,
+                  2.0,
+                  0.0
+                ],
+                "reverse_by_n": [
+                  32.0,
+                  0.0,
+                  2.0,
+                  0.0
+                ],
+                "boundary_total": 68.0
+              }
+            ]
+          },
+          {
+            "depth": 1,
+            "depth_savings": 3,
+            "missed_boundaries": [
+              [
+                "u",
+                "u^2"
+              ],
+              [
+                "u^2",
+                "u^3"
+              ],
+              [
+                "u^3",
+                "u^4"
+              ]
+            ],
+            "total_carry_squared": 73.3125,
+            "lambda_crit": 24.4375,
+            "per_boundary": [
+              {
+                "boundary": [
+                  "u",
+                  "u^2"
+                ],
+                "forward_by_n": [
+                  0.0,
+                  0.5,
+                  0.0,
+                  0.03125
+                ],
+                "reverse_by_n": [
+                  0.0,
+                  0.5,
+                  0.0,
+                  0.03125
+                ],
+                "boundary_total": 1.0625
+              },
+              {
+                "boundary": [
+                  "u^2",
+                  "u^3"
+                ],
+                "forward_by_n": [
+                  0.0,
+                  2.0,
+                  0.0,
+                  0.125
+                ],
+                "reverse_by_n": [
+                  0.0,
+                  2.0,
+                  0.0,
+                  0.125
+                ],
+                "boundary_total": 4.25
+              },
+              {
+                "boundary": [
+                  "u^3",
+                  "u^4"
+                ],
+                "forward_by_n": [
+                  32.0,
+                  0.0,
+                  2.0,
+                  0.0
+                ],
+                "reverse_by_n": [
+                  32.0,
+                  0.0,
+                  2.0,
+                  0.0
+                ],
+                "boundary_total": 68.0
+              }
+            ]
+          },
+          {
+            "depth": 2,
+            "depth_savings": 2,
+            "missed_boundaries": [
+              [
+                "u^2",
+                "u^3"
+              ],
+              [
+                "u^3",
+                "u^4"
+              ]
+            ],
+            "total_carry_squared": 72.25,
+            "lambda_crit": 36.125,
+            "per_boundary": [
+              {
+                "boundary": [
+                  "u^2",
+                  "u^3"
+                ],
+                "forward_by_n": [
+                  0.0,
+                  2.0,
+                  0.0,
+                  0.125
+                ],
+                "reverse_by_n": [
+                  0.0,
+                  2.0,
+                  0.0,
+                  0.125
+                ],
+                "boundary_total": 4.25
+              },
+              {
+                "boundary": [
+                  "u^3",
+                  "u^4"
+                ],
+                "forward_by_n": [
+                  32.0,
+                  0.0,
+                  2.0,
+                  0.0
+                ],
+                "reverse_by_n": [
+                  32.0,
+                  0.0,
+                  2.0,
+                  0.0
+                ],
+                "boundary_total": 68.0
+              }
+            ]
+          },
+          {
+            "depth": 3,
+            "depth_savings": 1,
+            "missed_boundaries": [
+              [
+                "u^3",
+                "u^4"
+              ]
+            ],
+            "total_carry_squared": 68.0,
+            "lambda_crit": 68.0,
+            "per_boundary": [
+              {
+                "boundary": [
+                  "u^3",
+                  "u^4"
+                ],
+                "forward_by_n": [
+                  32.0,
+                  0.0,
+                  2.0,
+                  0.0
+                ],
+                "reverse_by_n": [
+                  32.0,
+                  0.0,
+                  2.0,
+                  0.0
+                ],
+                "boundary_total": 68.0
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "row_lambda_crit": 2.00048828125,
+    "dagger_holds": true
+  },
+  {
+    "row": "F_2[u]/(u^5)",
+    "ring_name": "F_2[u]/(u^5)",
+    "n_labels": 32,
+    "conductor_order": [
+      "u",
+      "u^2",
+      "u^3",
+      "u^4",
+      "u^5"
+    ],
+    "packet_sizes": {
+      "u": 1,
+      "u^2": 2,
+      "u^3": 4,
+      "u^4": 8,
+      "u^5": 16
+    },
+    "d_max": 5,
+    "n_max_carry_order": 4,
+    "adjacent_psl_boundaries": [
+      [
+        "u",
+        "u^2"
+      ],
+      [
+        "u^2",
+        "u^3"
+      ],
+      [
+        "u^3",
+        "u^4"
+      ],
+      [
+        "u^4",
+        "u^5"
+      ]
+    ],
+    "tests": [
+      {
+        "target_packet": "u",
+        "d_star": 1,
+        "h_hat_total_energy": 1.0,
+        "by_shallow_depth": [
+          {
+            "depth": 0,
+            "depth_savings": 1,
+            "missed_boundaries": [
+              [
+                "u",
+                "u^2"
+              ],
+              [
+                "u^2",
+                "u^3"
+              ],
+              [
+                "u^3",
+                "u^4"
+              ],
+              [
+                "u^4",
+                "u^5"
+              ]
+            ],
+            "total_carry_squared": 0.0,
+            "lambda_crit": 0.0,
+            "per_boundary": [
+              {
+                "boundary": [
+                  "u",
+                  "u^2"
+                ],
+                "forward_by_n": [
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "reverse_by_n": [
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "boundary_total": 0.0
+              },
+              {
+                "boundary": [
+                  "u^2",
+                  "u^3"
+                ],
+                "forward_by_n": [
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "reverse_by_n": [
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "boundary_total": 0.0
+              },
+              {
+                "boundary": [
+                  "u^3",
+                  "u^4"
+                ],
+                "forward_by_n": [
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "reverse_by_n": [
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "boundary_total": 0.0
+              },
+              {
+                "boundary": [
+                  "u^4",
+                  "u^5"
+                ],
+                "forward_by_n": [
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "reverse_by_n": [
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "boundary_total": 0.0
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "target_packet": "u^2",
+        "d_star": 2,
+        "h_hat_total_energy": 2.0,
+        "by_shallow_depth": [
+          {
+            "depth": 0,
+            "depth_savings": 2,
+            "missed_boundaries": [
+              [
+                "u",
+                "u^2"
+              ],
+              [
+                "u^2",
+                "u^3"
+              ],
+              [
+                "u^3",
+                "u^4"
+              ],
+              [
+                "u^4",
+                "u^5"
+              ]
+            ],
+            "total_carry_squared": 4.00006103515625,
+            "lambda_crit": 2.000030517578125,
+            "per_boundary": [
+              {
+                "boundary": [
+                  "u",
+                  "u^2"
+                ],
+                "forward_by_n": [
+                  2.0,
+                  0.0,
+                  3.0517578125e-05,
+                  0.0
+                ],
+                "reverse_by_n": [
+                  2.0,
+                  0.0,
+                  3.0517578125e-05,
+                  0.0
+                ],
+                "boundary_total": 4.00006103515625
+              },
+              {
+                "boundary": [
+                  "u^2",
+                  "u^3"
+                ],
+                "forward_by_n": [
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "reverse_by_n": [
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "boundary_total": 0.0
+              },
+              {
+                "boundary": [
+                  "u^3",
+                  "u^4"
+                ],
+                "forward_by_n": [
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "reverse_by_n": [
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "boundary_total": 0.0
+              },
+              {
+                "boundary": [
+                  "u^4",
+                  "u^5"
+                ],
+                "forward_by_n": [
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "reverse_by_n": [
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "boundary_total": 0.0
+              }
+            ]
+          },
+          {
+            "depth": 1,
+            "depth_savings": 1,
+            "missed_boundaries": [
+              [
+                "u",
+                "u^2"
+              ],
+              [
+                "u^2",
+                "u^3"
+              ],
+              [
+                "u^3",
+                "u^4"
+              ],
+              [
+                "u^4",
+                "u^5"
+              ]
+            ],
+            "total_carry_squared": 4.00006103515625,
+            "lambda_crit": 4.00006103515625,
+            "per_boundary": [
+              {
+                "boundary": [
+                  "u",
+                  "u^2"
+                ],
+                "forward_by_n": [
+                  2.0,
+                  0.0,
+                  3.0517578125e-05,
+                  0.0
+                ],
+                "reverse_by_n": [
+                  2.0,
+                  0.0,
+                  3.0517578125e-05,
+                  0.0
+                ],
+                "boundary_total": 4.00006103515625
+              },
+              {
+                "boundary": [
+                  "u^2",
+                  "u^3"
+                ],
+                "forward_by_n": [
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "reverse_by_n": [
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "boundary_total": 0.0
+              },
+              {
+                "boundary": [
+                  "u^3",
+                  "u^4"
+                ],
+                "forward_by_n": [
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "reverse_by_n": [
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "boundary_total": 0.0
+              },
+              {
+                "boundary": [
+                  "u^4",
+                  "u^5"
+                ],
+                "forward_by_n": [
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "reverse_by_n": [
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "boundary_total": 0.0
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "target_packet": "u^3",
+        "d_star": 3,
+        "h_hat_total_energy": 4.0,
+        "by_shallow_depth": [
+          {
+            "depth": 0,
+            "depth_savings": 3,
+            "missed_boundaries": [
+              [
+                "u",
+                "u^2"
+              ],
+              [
+                "u^2",
+                "u^3"
+              ],
+              [
+                "u^3",
+                "u^4"
+              ],
+              [
+                "u^4",
+                "u^5"
+              ]
+            ],
+            "total_carry_squared": 16.066421508789062,
+            "lambda_crit": 5.3554738362630205,
+            "per_boundary": [
+              {
+                "boundary": [
+                  "u",
+                  "u^2"
+                ],
+                "forward_by_n": [
+                  0.0,
+                  0.03125,
+                  0.0,
+                  7.62939453125e-06
+                ],
+                "reverse_by_n": [
+                  0.0,
+                  0.03125,
+                  0.0,
+                  7.62939453125e-06
+                ],
+                "boundary_total": 0.0625152587890625
+              },
+              {
+                "boundary": [
+                  "u^2",
+                  "u^3"
+                ],
+                "forward_by_n": [
+                  8.0,
+                  0.0,
+                  0.001953125,
+                  0.0
+                ],
+                "reverse_by_n": [
+                  8.0,
+                  0.0,
+                  0.001953125,
+                  0.0
+                ],
+                "boundary_total": 16.00390625
+              },
+              {
+                "boundary": [
+                  "u^3",
+                  "u^4"
+                ],
+                "forward_by_n": [
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "reverse_by_n": [
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "boundary_total": 0.0
+              },
+              {
+                "boundary": [
+                  "u^4",
+                  "u^5"
+                ],
+                "forward_by_n": [
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "reverse_by_n": [
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "boundary_total": 0.0
+              }
+            ]
+          },
+          {
+            "depth": 1,
+            "depth_savings": 2,
+            "missed_boundaries": [
+              [
+                "u",
+                "u^2"
+              ],
+              [
+                "u^2",
+                "u^3"
+              ],
+              [
+                "u^3",
+                "u^4"
+              ],
+              [
+                "u^4",
+                "u^5"
+              ]
+            ],
+            "total_carry_squared": 16.066421508789062,
+            "lambda_crit": 8.033210754394531,
+            "per_boundary": [
+              {
+                "boundary": [
+                  "u",
+                  "u^2"
+                ],
+                "forward_by_n": [
+                  0.0,
+                  0.03125,
+                  0.0,
+                  7.62939453125e-06
+                ],
+                "reverse_by_n": [
+                  0.0,
+                  0.03125,
+                  0.0,
+                  7.62939453125e-06
+                ],
+                "boundary_total": 0.0625152587890625
+              },
+              {
+                "boundary": [
+                  "u^2",
+                  "u^3"
+                ],
+                "forward_by_n": [
+                  8.0,
+                  0.0,
+                  0.001953125,
+                  0.0
+                ],
+                "reverse_by_n": [
+                  8.0,
+                  0.0,
+                  0.001953125,
+                  0.0
+                ],
+                "boundary_total": 16.00390625
+              },
+              {
+                "boundary": [
+                  "u^3",
+                  "u^4"
+                ],
+                "forward_by_n": [
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "reverse_by_n": [
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "boundary_total": 0.0
+              },
+              {
+                "boundary": [
+                  "u^4",
+                  "u^5"
+                ],
+                "forward_by_n": [
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "reverse_by_n": [
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "boundary_total": 0.0
+              }
+            ]
+          },
+          {
+            "depth": 2,
+            "depth_savings": 1,
+            "missed_boundaries": [
+              [
+                "u^2",
+                "u^3"
+              ],
+              [
+                "u^3",
+                "u^4"
+              ],
+              [
+                "u^4",
+                "u^5"
+              ]
+            ],
+            "total_carry_squared": 16.00390625,
+            "lambda_crit": 16.00390625,
+            "per_boundary": [
+              {
+                "boundary": [
+                  "u^2",
+                  "u^3"
+                ],
+                "forward_by_n": [
+                  8.0,
+                  0.0,
+                  0.001953125,
+                  0.0
+                ],
+                "reverse_by_n": [
+                  8.0,
+                  0.0,
+                  0.001953125,
+                  0.0
+                ],
+                "boundary_total": 16.00390625
+              },
+              {
+                "boundary": [
+                  "u^3",
+                  "u^4"
+                ],
+                "forward_by_n": [
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "reverse_by_n": [
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "boundary_total": 0.0
+              },
+              {
+                "boundary": [
+                  "u^4",
+                  "u^5"
+                ],
+                "forward_by_n": [
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "reverse_by_n": [
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "boundary_total": 0.0
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "target_packet": "u^4",
+        "d_star": 4,
+        "h_hat_total_energy": 8.0,
+        "by_shallow_depth": [
+          {
+            "depth": 0,
+            "depth_savings": 4,
+            "missed_boundaries": [
+              [
+                "u",
+                "u^2"
+              ],
+              [
+                "u^2",
+                "u^3"
+              ],
+              [
+                "u^3",
+                "u^4"
+              ],
+              [
+                "u^4",
+                "u^5"
+              ]
+            ],
+            "total_carry_squared": 65.5048828125,
+            "lambda_crit": 16.376220703125,
+            "per_boundary": [
+              {
+                "boundary": [
+                  "u",
+                  "u^2"
+                ],
+                "forward_by_n": [
+                  0.0,
+                  0.125,
+                  0.0,
+                  0.00048828125
+                ],
+                "reverse_by_n": [
+                  0.0,
+                  0.125,
+                  0.0,
+                  0.00048828125
+                ],
+                "boundary_total": 0.2509765625
+              },
+              {
+                "boundary": [
+                  "u^2",
+                  "u^3"
+                ],
+                "forward_by_n": [
+                  0.0,
+                  0.5,
+                  0.0,
+                  0.001953125
+                ],
+                "reverse_by_n": [
+                  0.0,
+                  0.5,
+                  0.0,
+                  0.001953125
+                ],
+                "boundary_total": 1.00390625
+              },
+              {
+                "boundary": [
+                  "u^3",
+                  "u^4"
+                ],
+                "forward_by_n": [
+                  32.0,
+                  0.0,
+                  0.125,
+                  0.0
+                ],
+                "reverse_by_n": [
+                  32.0,
+                  0.0,
+                  0.125,
+                  0.0
+                ],
+                "boundary_total": 64.25
+              },
+              {
+                "boundary": [
+                  "u^4",
+                  "u^5"
+                ],
+                "forward_by_n": [
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "reverse_by_n": [
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "boundary_total": 0.0
+              }
+            ]
+          },
+          {
+            "depth": 1,
+            "depth_savings": 3,
+            "missed_boundaries": [
+              [
+                "u",
+                "u^2"
+              ],
+              [
+                "u^2",
+                "u^3"
+              ],
+              [
+                "u^3",
+                "u^4"
+              ],
+              [
+                "u^4",
+                "u^5"
+              ]
+            ],
+            "total_carry_squared": 65.5048828125,
+            "lambda_crit": 21.8349609375,
+            "per_boundary": [
+              {
+                "boundary": [
+                  "u",
+                  "u^2"
+                ],
+                "forward_by_n": [
+                  0.0,
+                  0.125,
+                  0.0,
+                  0.00048828125
+                ],
+                "reverse_by_n": [
+                  0.0,
+                  0.125,
+                  0.0,
+                  0.00048828125
+                ],
+                "boundary_total": 0.2509765625
+              },
+              {
+                "boundary": [
+                  "u^2",
+                  "u^3"
+                ],
+                "forward_by_n": [
+                  0.0,
+                  0.5,
+                  0.0,
+                  0.001953125
+                ],
+                "reverse_by_n": [
+                  0.0,
+                  0.5,
+                  0.0,
+                  0.001953125
+                ],
+                "boundary_total": 1.00390625
+              },
+              {
+                "boundary": [
+                  "u^3",
+                  "u^4"
+                ],
+                "forward_by_n": [
+                  32.0,
+                  0.0,
+                  0.125,
+                  0.0
+                ],
+                "reverse_by_n": [
+                  32.0,
+                  0.0,
+                  0.125,
+                  0.0
+                ],
+                "boundary_total": 64.25
+              },
+              {
+                "boundary": [
+                  "u^4",
+                  "u^5"
+                ],
+                "forward_by_n": [
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "reverse_by_n": [
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "boundary_total": 0.0
+              }
+            ]
+          },
+          {
+            "depth": 2,
+            "depth_savings": 2,
+            "missed_boundaries": [
+              [
+                "u^2",
+                "u^3"
+              ],
+              [
+                "u^3",
+                "u^4"
+              ],
+              [
+                "u^4",
+                "u^5"
+              ]
+            ],
+            "total_carry_squared": 65.25390625,
+            "lambda_crit": 32.626953125,
+            "per_boundary": [
+              {
+                "boundary": [
+                  "u^2",
+                  "u^3"
+                ],
+                "forward_by_n": [
+                  0.0,
+                  0.5,
+                  0.0,
+                  0.001953125
+                ],
+                "reverse_by_n": [
+                  0.0,
+                  0.5,
+                  0.0,
+                  0.001953125
+                ],
+                "boundary_total": 1.00390625
+              },
+              {
+                "boundary": [
+                  "u^3",
+                  "u^4"
+                ],
+                "forward_by_n": [
+                  32.0,
+                  0.0,
+                  0.125,
+                  0.0
+                ],
+                "reverse_by_n": [
+                  32.0,
+                  0.0,
+                  0.125,
+                  0.0
+                ],
+                "boundary_total": 64.25
+              },
+              {
+                "boundary": [
+                  "u^4",
+                  "u^5"
+                ],
+                "forward_by_n": [
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "reverse_by_n": [
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "boundary_total": 0.0
+              }
+            ]
+          },
+          {
+            "depth": 3,
+            "depth_savings": 1,
+            "missed_boundaries": [
+              [
+                "u^3",
+                "u^4"
+              ],
+              [
+                "u^4",
+                "u^5"
+              ]
+            ],
+            "total_carry_squared": 64.25,
+            "lambda_crit": 64.25,
+            "per_boundary": [
+              {
+                "boundary": [
+                  "u^3",
+                  "u^4"
+                ],
+                "forward_by_n": [
+                  32.0,
+                  0.0,
+                  0.125,
+                  0.0
+                ],
+                "reverse_by_n": [
+                  32.0,
+                  0.0,
+                  0.125,
+                  0.0
+                ],
+                "boundary_total": 64.25
+              },
+              {
+                "boundary": [
+                  "u^4",
+                  "u^5"
+                ],
+                "forward_by_n": [
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "reverse_by_n": [
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "boundary_total": 0.0
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "target_packet": "u^5",
+        "d_star": 5,
+        "h_hat_total_energy": 16.0,
+        "by_shallow_depth": [
+          {
+            "depth": 0,
+            "depth_savings": 5,
+            "missed_boundaries": [
+              [
+                "u",
+                "u^2"
+              ],
+              [
+                "u^2",
+                "u^3"
+              ],
+              [
+                "u^3",
+                "u^4"
+              ],
+              [
+                "u^4",
+                "u^5"
+              ]
+            ],
+            "total_carry_squared": 294.3125,
+            "lambda_crit": 58.8625,
+            "per_boundary": [
+              {
+                "boundary": [
+                  "u",
+                  "u^2"
+                ],
+                "forward_by_n": [
+                  0.0,
+                  0.5,
+                  0.0,
+                  0.03125
+                ],
+                "reverse_by_n": [
+                  0.0,
+                  0.5,
+                  0.0,
+                  0.03125
+                ],
+                "boundary_total": 1.0625
+              },
+              {
+                "boundary": [
+                  "u^2",
+                  "u^3"
+                ],
+                "forward_by_n": [
+                  0.0,
+                  2.0,
+                  0.0,
+                  0.125
+                ],
+                "reverse_by_n": [
+                  0.0,
+                  2.0,
+                  0.0,
+                  0.125
+                ],
+                "boundary_total": 4.25
+              },
+              {
+                "boundary": [
+                  "u^3",
+                  "u^4"
+                ],
+                "forward_by_n": [
+                  0.0,
+                  8.0,
+                  0.0,
+                  0.5
+                ],
+                "reverse_by_n": [
+                  0.0,
+                  8.0,
+                  0.0,
+                  0.5
+                ],
+                "boundary_total": 17.0
+              },
+              {
+                "boundary": [
+                  "u^4",
+                  "u^5"
+                ],
+                "forward_by_n": [
+                  128.0,
+                  0.0,
+                  8.0,
+                  0.0
+                ],
+                "reverse_by_n": [
+                  128.0,
+                  0.0,
+                  8.0,
+                  0.0
+                ],
+                "boundary_total": 272.0
+              }
+            ]
+          },
+          {
+            "depth": 1,
+            "depth_savings": 4,
+            "missed_boundaries": [
+              [
+                "u",
+                "u^2"
+              ],
+              [
+                "u^2",
+                "u^3"
+              ],
+              [
+                "u^3",
+                "u^4"
+              ],
+              [
+                "u^4",
+                "u^5"
+              ]
+            ],
+            "total_carry_squared": 294.3125,
+            "lambda_crit": 73.578125,
+            "per_boundary": [
+              {
+                "boundary": [
+                  "u",
+                  "u^2"
+                ],
+                "forward_by_n": [
+                  0.0,
+                  0.5,
+                  0.0,
+                  0.03125
+                ],
+                "reverse_by_n": [
+                  0.0,
+                  0.5,
+                  0.0,
+                  0.03125
+                ],
+                "boundary_total": 1.0625
+              },
+              {
+                "boundary": [
+                  "u^2",
+                  "u^3"
+                ],
+                "forward_by_n": [
+                  0.0,
+                  2.0,
+                  0.0,
+                  0.125
+                ],
+                "reverse_by_n": [
+                  0.0,
+                  2.0,
+                  0.0,
+                  0.125
+                ],
+                "boundary_total": 4.25
+              },
+              {
+                "boundary": [
+                  "u^3",
+                  "u^4"
+                ],
+                "forward_by_n": [
+                  0.0,
+                  8.0,
+                  0.0,
+                  0.5
+                ],
+                "reverse_by_n": [
+                  0.0,
+                  8.0,
+                  0.0,
+                  0.5
+                ],
+                "boundary_total": 17.0
+              },
+              {
+                "boundary": [
+                  "u^4",
+                  "u^5"
+                ],
+                "forward_by_n": [
+                  128.0,
+                  0.0,
+                  8.0,
+                  0.0
+                ],
+                "reverse_by_n": [
+                  128.0,
+                  0.0,
+                  8.0,
+                  0.0
+                ],
+                "boundary_total": 272.0
+              }
+            ]
+          },
+          {
+            "depth": 2,
+            "depth_savings": 3,
+            "missed_boundaries": [
+              [
+                "u^2",
+                "u^3"
+              ],
+              [
+                "u^3",
+                "u^4"
+              ],
+              [
+                "u^4",
+                "u^5"
+              ]
+            ],
+            "total_carry_squared": 293.25,
+            "lambda_crit": 97.75,
+            "per_boundary": [
+              {
+                "boundary": [
+                  "u^2",
+                  "u^3"
+                ],
+                "forward_by_n": [
+                  0.0,
+                  2.0,
+                  0.0,
+                  0.125
+                ],
+                "reverse_by_n": [
+                  0.0,
+                  2.0,
+                  0.0,
+                  0.125
+                ],
+                "boundary_total": 4.25
+              },
+              {
+                "boundary": [
+                  "u^3",
+                  "u^4"
+                ],
+                "forward_by_n": [
+                  0.0,
+                  8.0,
+                  0.0,
+                  0.5
+                ],
+                "reverse_by_n": [
+                  0.0,
+                  8.0,
+                  0.0,
+                  0.5
+                ],
+                "boundary_total": 17.0
+              },
+              {
+                "boundary": [
+                  "u^4",
+                  "u^5"
+                ],
+                "forward_by_n": [
+                  128.0,
+                  0.0,
+                  8.0,
+                  0.0
+                ],
+                "reverse_by_n": [
+                  128.0,
+                  0.0,
+                  8.0,
+                  0.0
+                ],
+                "boundary_total": 272.0
+              }
+            ]
+          },
+          {
+            "depth": 3,
+            "depth_savings": 2,
+            "missed_boundaries": [
+              [
+                "u^3",
+                "u^4"
+              ],
+              [
+                "u^4",
+                "u^5"
+              ]
+            ],
+            "total_carry_squared": 289.0,
+            "lambda_crit": 144.5,
+            "per_boundary": [
+              {
+                "boundary": [
+                  "u^3",
+                  "u^4"
+                ],
+                "forward_by_n": [
+                  0.0,
+                  8.0,
+                  0.0,
+                  0.5
+                ],
+                "reverse_by_n": [
+                  0.0,
+                  8.0,
+                  0.0,
+                  0.5
+                ],
+                "boundary_total": 17.0
+              },
+              {
+                "boundary": [
+                  "u^4",
+                  "u^5"
+                ],
+                "forward_by_n": [
+                  128.0,
+                  0.0,
+                  8.0,
+                  0.0
+                ],
+                "reverse_by_n": [
+                  128.0,
+                  0.0,
+                  8.0,
+                  0.0
+                ],
+                "boundary_total": 272.0
+              }
+            ]
+          },
+          {
+            "depth": 4,
+            "depth_savings": 1,
+            "missed_boundaries": [
+              [
+                "u^4",
+                "u^5"
+              ]
+            ],
+            "total_carry_squared": 272.0,
+            "lambda_crit": 272.0,
+            "per_boundary": [
+              {
+                "boundary": [
+                  "u^4",
+                  "u^5"
+                ],
+                "forward_by_n": [
+                  128.0,
+                  0.0,
+                  8.0,
+                  0.0
+                ],
+                "reverse_by_n": [
+                  128.0,
+                  0.0,
+                  8.0,
+                  0.0
+                ],
+                "boundary_total": 272.0
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "row_lambda_crit": 2.000030517578125,
+    "dagger_holds": true
+  },
+  {
+    "row": "F_4[u]/(u^2)",
+    "ring_name": "F_4[u]/(u^2)",
+    "n_labels": 16,
+    "conductor_order": [
+      "u",
+      "u^2"
+    ],
+    "packet_sizes": {
+      "u": 3,
+      "u^2": 12
+    },
+    "d_max": 2,
+    "n_max_carry_order": 4,
+    "adjacent_psl_boundaries": [
+      [
+        "u",
+        "u^2"
+      ]
+    ],
+    "tests": [
+      {
+        "target_packet": "u",
+        "d_star": 1,
+        "h_hat_total_energy": 3.0,
+        "by_shallow_depth": [
+          {
+            "depth": 0,
+            "depth_savings": 1,
+            "missed_boundaries": [
+              [
+                "u",
+                "u^2"
+              ]
+            ],
+            "total_carry_squared": 0.0,
+            "lambda_crit": 0.0,
+            "per_boundary": [
+              {
+                "boundary": [
+                  "u",
+                  "u^2"
+                ],
+                "forward_by_n": [
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "reverse_by_n": [
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "boundary_total": 0.0
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "target_packet": "u^2",
+        "d_star": 2,
+        "h_hat_total_energy": 12.0,
+        "by_shallow_depth": [
+          {
+            "depth": 0,
+            "depth_savings": 2,
+            "missed_boundaries": [
+              [
+                "u",
+                "u^2"
+              ]
+            ],
+            "total_carry_squared": 110.8125,
+            "lambda_crit": 55.40625,
+            "per_boundary": [
+              {
+                "boundary": [
+                  "u",
+                  "u^2"
+                ],
+                "forward_by_n": [
+                  36.0,
+                  9.0,
+                  6.890625,
+                  3.515625
+                ],
+                "reverse_by_n": [
+                  36.0,
+                  9.0,
+                  6.890625,
+                  3.515625
+                ],
+                "boundary_total": 110.8125
+              }
+            ]
+          },
+          {
+            "depth": 1,
+            "depth_savings": 1,
+            "missed_boundaries": [
+              [
+                "u",
+                "u^2"
+              ]
+            ],
+            "total_carry_squared": 110.8125,
+            "lambda_crit": 110.8125,
+            "per_boundary": [
+              {
+                "boundary": [
+                  "u",
+                  "u^2"
+                ],
+                "forward_by_n": [
+                  36.0,
+                  9.0,
+                  6.890625,
+                  3.515625
+                ],
+                "reverse_by_n": [
+                  36.0,
+                  9.0,
+                  6.890625,
+                  3.515625
+                ],
+                "boundary_total": 110.8125
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "row_lambda_crit": 55.40625,
+    "dagger_holds": true
+  },
+  {
+    "row": "F_4[u]/(u^3)",
+    "ring_name": "F_4[u]/(u^3)",
+    "n_labels": 64,
+    "conductor_order": [
+      "u",
+      "u^2",
+      "u^3"
+    ],
+    "packet_sizes": {
+      "u": 3,
+      "u^2": 12,
+      "u^3": 48
+    },
+    "d_max": 3,
+    "n_max_carry_order": 4,
+    "adjacent_psl_boundaries": [
+      [
+        "u",
+        "u^2"
+      ],
+      [
+        "u^2",
+        "u^3"
+      ]
+    ],
+    "tests": [
+      {
+        "target_packet": "u",
+        "d_star": 1,
+        "h_hat_total_energy": 3.0,
+        "by_shallow_depth": [
+          {
+            "depth": 0,
+            "depth_savings": 1,
+            "missed_boundaries": [
+              [
+                "u",
+                "u^2"
+              ],
+              [
+                "u^2",
+                "u^3"
+              ]
+            ],
+            "total_carry_squared": 0.0,
+            "lambda_crit": 0.0,
+            "per_boundary": [
+              {
+                "boundary": [
+                  "u",
+                  "u^2"
+                ],
+                "forward_by_n": [
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "reverse_by_n": [
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "boundary_total": 0.0
+              },
+              {
+                "boundary": [
+                  "u^2",
+                  "u^3"
+                ],
+                "forward_by_n": [
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "reverse_by_n": [
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "boundary_total": 0.0
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "target_packet": "u^2",
+        "d_star": 2,
+        "h_hat_total_energy": 12.0,
+        "by_shallow_depth": [
+          {
+            "depth": 0,
+            "depth_savings": 2,
+            "missed_boundaries": [
+              [
+                "u",
+                "u^2"
+              ],
+              [
+                "u^2",
+                "u^3"
+              ]
+            ],
+            "total_carry_squared": 73.18054962158203,
+            "lambda_crit": 36.590274810791016,
+            "per_boundary": [
+              {
+                "boundary": [
+                  "u",
+                  "u^2"
+                ],
+                "forward_by_n": [
+                  36.0,
+                  0.5625,
+                  0.02691650390625,
+                  0.000858306884765625
+                ],
+                "reverse_by_n": [
+                  36.0,
+                  0.5625,
+                  0.02691650390625,
+                  0.000858306884765625
+                ],
+                "boundary_total": 73.18054962158203
+              },
+              {
+                "boundary": [
+                  "u^2",
+                  "u^3"
+                ],
+                "forward_by_n": [
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "reverse_by_n": [
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "boundary_total": 0.0
+              }
+            ]
+          },
+          {
+            "depth": 1,
+            "depth_savings": 1,
+            "missed_boundaries": [
+              [
+                "u",
+                "u^2"
+              ],
+              [
+                "u^2",
+                "u^3"
+              ]
+            ],
+            "total_carry_squared": 73.18054962158203,
+            "lambda_crit": 73.18054962158203,
+            "per_boundary": [
+              {
+                "boundary": [
+                  "u",
+                  "u^2"
+                ],
+                "forward_by_n": [
+                  36.0,
+                  0.5625,
+                  0.02691650390625,
+                  0.000858306884765625
+                ],
+                "reverse_by_n": [
+                  36.0,
+                  0.5625,
+                  0.02691650390625,
+                  0.000858306884765625
+                ],
+                "boundary_total": 73.18054962158203
+              },
+              {
+                "boundary": [
+                  "u^2",
+                  "u^3"
+                ],
+                "forward_by_n": [
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "reverse_by_n": [
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "boundary_total": 0.0
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "target_packet": "u^3",
+        "d_star": 3,
+        "h_hat_total_energy": 48.0,
+        "by_shallow_depth": [
+          {
+            "depth": 0,
+            "depth_savings": 3,
+            "missed_boundaries": [
+              [
+                "u",
+                "u^2"
+              ],
+              [
+                "u^2",
+                "u^3"
+              ]
+            ],
+            "total_carry_squared": 1831.376953125,
+            "lambda_crit": 610.458984375,
+            "per_boundary": [
+              {
+                "boundary": [
+                  "u",
+                  "u^2"
+                ],
+                "forward_by_n": [
+                  0.0,
+                  20.25,
+                  5.0625,
+                  3.8759765625
+                ],
+                "reverse_by_n": [
+                  0.0,
+                  20.25,
+                  5.0625,
+                  3.8759765625
+                ],
+                "boundary_total": 58.376953125
+              },
+              {
+                "boundary": [
+                  "u^2",
+                  "u^3"
+                ],
+                "forward_by_n": [
+                  576.0,
+                  144.0,
+                  110.25,
+                  56.25
+                ],
+                "reverse_by_n": [
+                  576.0,
+                  144.0,
+                  110.25,
+                  56.25
+                ],
+                "boundary_total": 1773.0
+              }
+            ]
+          },
+          {
+            "depth": 1,
+            "depth_savings": 2,
+            "missed_boundaries": [
+              [
+                "u",
+                "u^2"
+              ],
+              [
+                "u^2",
+                "u^3"
+              ]
+            ],
+            "total_carry_squared": 1831.376953125,
+            "lambda_crit": 915.6884765625,
+            "per_boundary": [
+              {
+                "boundary": [
+                  "u",
+                  "u^2"
+                ],
+                "forward_by_n": [
+                  0.0,
+                  20.25,
+                  5.0625,
+                  3.8759765625
+                ],
+                "reverse_by_n": [
+                  0.0,
+                  20.25,
+                  5.0625,
+                  3.8759765625
+                ],
+                "boundary_total": 58.376953125
+              },
+              {
+                "boundary": [
+                  "u^2",
+                  "u^3"
+                ],
+                "forward_by_n": [
+                  576.0,
+                  144.0,
+                  110.25,
+                  56.25
+                ],
+                "reverse_by_n": [
+                  576.0,
+                  144.0,
+                  110.25,
+                  56.25
+                ],
+                "boundary_total": 1773.0
+              }
+            ]
+          },
+          {
+            "depth": 2,
+            "depth_savings": 1,
+            "missed_boundaries": [
+              [
+                "u^2",
+                "u^3"
+              ]
+            ],
+            "total_carry_squared": 1773.0,
+            "lambda_crit": 1773.0,
+            "per_boundary": [
+              {
+                "boundary": [
+                  "u^2",
+                  "u^3"
+                ],
+                "forward_by_n": [
+                  576.0,
+                  144.0,
+                  110.25,
+                  56.25
+                ],
+                "reverse_by_n": [
+                  576.0,
+                  144.0,
+                  110.25,
+                  56.25
+                ],
+                "boundary_total": 1773.0
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "row_lambda_crit": 36.590274810791016,
+    "dagger_holds": true
+  },
+  {
+    "row": "F_8[u]/(u^2)",
+    "ring_name": "F_8[u]/(u^2)",
+    "n_labels": 64,
+    "conductor_order": [
+      "u",
+      "u^2"
+    ],
+    "packet_sizes": {
+      "u": 7,
+      "u^2": 56
+    },
+    "d_max": 2,
+    "n_max_carry_order": 4,
+    "adjacent_psl_boundaries": [
+      [
+        "u",
+        "u^2"
+      ]
+    ],
+    "tests": [
+      {
+        "target_packet": "u",
+        "d_star": 1,
+        "h_hat_total_energy": 7.0,
+        "by_shallow_depth": [
+          {
+            "depth": 0,
+            "depth_savings": 1,
+            "missed_boundaries": [
+              [
+                "u",
+                "u^2"
+              ]
+            ],
+            "total_carry_squared": 0.0,
+            "lambda_crit": 0.0,
+            "per_boundary": [
+              {
+                "boundary": [
+                  "u",
+                  "u^2"
+                ],
+                "forward_by_n": [
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "reverse_by_n": [
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "boundary_total": 0.0
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "target_packet": "u^2",
+        "d_star": 2,
+        "h_hat_total_energy": 56.0,
+        "by_shallow_depth": [
+          {
+            "depth": 0,
+            "depth_savings": 2,
+            "missed_boundaries": [
+              [
+                "u",
+                "u^2"
+              ]
+            ],
+            "total_carry_squared": 1848.0751953125,
+            "lambda_crit": 924.03759765625,
+            "per_boundary": [
+              {
+                "boundary": [
+                  "u",
+                  "u^2"
+                ],
+                "forward_by_n": [
+                  392.0,
+                  220.5,
+                  176.955078125,
+                  134.58251953125
+                ],
+                "reverse_by_n": [
+                  392.0,
+                  220.5,
+                  176.955078125,
+                  134.58251953125
+                ],
+                "boundary_total": 1848.0751953125
+              }
+            ]
+          },
+          {
+            "depth": 1,
+            "depth_savings": 1,
+            "missed_boundaries": [
+              [
+                "u",
+                "u^2"
+              ]
+            ],
+            "total_carry_squared": 1848.0751953125,
+            "lambda_crit": 1848.0751953125,
+            "per_boundary": [
+              {
+                "boundary": [
+                  "u",
+                  "u^2"
+                ],
+                "forward_by_n": [
+                  392.0,
+                  220.5,
+                  176.955078125,
+                  134.58251953125
+                ],
+                "reverse_by_n": [
+                  392.0,
+                  220.5,
+                  176.955078125,
+                  134.58251953125
+                ],
+                "boundary_total": 1848.0751953125
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "row_lambda_crit": 924.03759765625,
+    "dagger_holds": true
+  },
+  {
+    "row": "F_16[u]/(u^2)",
+    "ring_name": "F_16[u]/(u^2)",
+    "n_labels": 256,
+    "conductor_order": [
+      "u",
+      "u^2"
+    ],
+    "packet_sizes": {
+      "u": 15,
+      "u^2": 240
+    },
+    "d_max": 2,
+    "n_max_carry_order": 4,
+    "adjacent_psl_boundaries": [
+      [
+        "u",
+        "u^2"
+      ]
+    ],
+    "tests": [
+      {
+        "target_packet": "u",
+        "d_star": 1,
+        "h_hat_total_energy": 15.0,
+        "by_shallow_depth": [
+          {
+            "depth": 0,
+            "depth_savings": 1,
+            "missed_boundaries": [
+              [
+                "u",
+                "u^2"
+              ]
+            ],
+            "total_carry_squared": 0.0,
+            "lambda_crit": 0.0,
+            "per_boundary": [
+              {
+                "boundary": [
+                  "u",
+                  "u^2"
+                ],
+                "forward_by_n": [
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "reverse_by_n": [
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "boundary_total": 0.0
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "target_packet": "u^2",
+        "d_star": 2,
+        "h_hat_total_energy": 240.0,
+        "by_shallow_depth": [
+          {
+            "depth": 0,
+            "depth_savings": 2,
+            "missed_boundaries": [
+              [
+                "u",
+                "u^2"
+              ]
+            ],
+            "total_carry_squared": 21899.933624267578,
+            "lambda_crit": 10949.966812133789,
+            "per_boundary": [
+              {
+                "boundary": [
+                  "u",
+                  "u^2"
+                ],
+                "forward_by_n": [
+                  3600.0,
+                  2756.25,
+                  2445.611572265625,
+                  2148.105239868164
+                ],
+                "reverse_by_n": [
+                  3600.0,
+                  2756.25,
+                  2445.611572265625,
+                  2148.105239868164
+                ],
+                "boundary_total": 21899.933624267578
+              }
+            ]
+          },
+          {
+            "depth": 1,
+            "depth_savings": 1,
+            "missed_boundaries": [
+              [
+                "u",
+                "u^2"
+              ]
+            ],
+            "total_carry_squared": 21899.933624267578,
+            "lambda_crit": 21899.933624267578,
+            "per_boundary": [
+              {
+                "boundary": [
+                  "u",
+                  "u^2"
+                ],
+                "forward_by_n": [
+                  3600.0,
+                  2756.25,
+                  2445.611572265625,
+                  2148.105239868164
+                ],
+                "reverse_by_n": [
+                  3600.0,
+                  2756.25,
+                  2445.611572265625,
+                  2148.105239868164
+                ],
+                "boundary_total": 21899.933624267578
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "row_lambda_crit": 10949.966812133789,
+    "dagger_holds": true
+  }
+]

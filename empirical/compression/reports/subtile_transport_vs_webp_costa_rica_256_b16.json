@@ -1,0 +1,468 @@
+[
+  {
+    "file": "C:\\Users\\leomu\\Downloads\\que-ver-en-costa-rica-correos-portada.jpg",
+    "crop_size": 256,
+    "block_size": 16,
+    "width": 256,
+    "height": 256,
+    "raw_rgb_bytes": 196608,
+    "webp_lossless_bytes": 63034,
+    "webp_lossless_encode_s": 5.015207199990982,
+    "direct_block_apex_ans": {
+      "best_scheme": "ch-ctx-energy",
+      "bytes": 69678,
+      "ideal_best_scheme": "ch-ctx-grad-energy",
+      "ideal_no_codebook_bytes": 66555,
+      "metadata_bytes": 192,
+      "energy_metadata_bytes": 72,
+      "blocks": 768,
+      "transported_blocks": 0,
+      "dc_blocks": 0,
+      "saved_direct_score_bytes": 0,
+      "model_counts": {
+        "pred-6": 68,
+        "pred-4": 93,
+        "pred-8": 16,
+        "pred-7": 3,
+        "pred-20": 3,
+        "direct": 768,
+        "pred-5": 6,
+        "pred-2": 3
+      },
+      "schemes": {
+        "ch-ctx": {
+          "bytes": 70625,
+          "ideal_no_codebook_bytes": 69301,
+          "contexts": 23,
+          "new_symbols": 1223,
+          "extra_metadata_bytes": 0
+        },
+        "ch-ctx-grad": {
+          "bytes": 71006,
+          "ideal_no_codebook_bytes": 68842,
+          "contexts": 62,
+          "new_symbols": 2059,
+          "extra_metadata_bytes": 0
+        },
+        "ch-ctx-mode": {
+          "bytes": 70625,
+          "ideal_no_codebook_bytes": 69301,
+          "contexts": 23,
+          "new_symbols": 1223,
+          "extra_metadata_bytes": 0
+        },
+        "ch-ctx-mode-grad": {
+          "bytes": 71006,
+          "ideal_no_codebook_bytes": 68842,
+          "contexts": 62,
+          "new_symbols": 2059,
+          "extra_metadata_bytes": 0
+        },
+        "ch-ctx-energy": {
+          "bytes": 69678,
+          "ideal_no_codebook_bytes": 66963,
+          "contexts": 61,
+          "new_symbols": 2610,
+          "extra_metadata_bytes": 72
+        },
+        "ch-ctx-grad-energy": {
+          "bytes": 70641,
+          "ideal_no_codebook_bytes": 66555,
+          "contexts": 152,
+          "new_symbols": 4002,
+          "extra_metadata_bytes": 72
+        },
+        "ch-ctx-mode-energy": {
+          "bytes": 69678,
+          "ideal_no_codebook_bytes": 66963,
+          "contexts": 61,
+          "new_symbols": 2610,
+          "extra_metadata_bytes": 72
+        }
+      }
+    },
+    "refined_subtile_apex_ans": {
+      "best_scheme": "ch-ctx-energy",
+      "bytes": 69834,
+      "ideal_best_scheme": "ch-ctx-grad-energy",
+      "ideal_no_codebook_bytes": 66703,
+      "metadata_bytes": 326,
+      "energy_metadata_bytes": 72,
+      "blocks": 768,
+      "transported_blocks": 6,
+      "dc_blocks": 10,
+      "saved_direct_score_bytes": 40,
+      "model_counts": {
+        "pred-6": 68,
+        "pred-4": 93,
+        "pred-8": 16,
+        "pred-7": 3,
+        "pred-20": 3,
+        "direct": 752,
+        "dc": 10,
+        "copy": 6,
+        "pred-5": 6,
+        "pred-2": 3
+      },
+      "schemes": {
+        "ch-ctx": {
+          "bytes": 70778,
+          "ideal_no_codebook_bytes": 69453,
+          "contexts": 23,
+          "new_symbols": 1226,
+          "extra_metadata_bytes": 0
+        },
+        "ch-ctx-grad": {
+          "bytes": 71147,
+          "ideal_no_codebook_bytes": 68988,
+          "contexts": 62,
+          "new_symbols": 2054,
+          "extra_metadata_bytes": 0
+        },
+        "ch-ctx-mode": {
+          "bytes": 71134,
+          "ideal_no_codebook_bytes": 69213,
+          "contexts": 57,
+          "new_symbols": 1860,
+          "extra_metadata_bytes": 0
+        },
+        "ch-ctx-mode-grad": {
+          "bytes": 71548,
+          "ideal_no_codebook_bytes": 68685,
+          "contexts": 109,
+          "new_symbols": 2808,
+          "extra_metadata_bytes": 0
+        },
+        "ch-ctx-energy": {
+          "bytes": 69834,
+          "ideal_no_codebook_bytes": 67114,
+          "contexts": 61,
+          "new_symbols": 2618,
+          "extra_metadata_bytes": 72
+        },
+        "ch-ctx-grad-energy": {
+          "bytes": 70785,
+          "ideal_no_codebook_bytes": 66703,
+          "contexts": 152,
+          "new_symbols": 4000,
+          "extra_metadata_bytes": 72
+        },
+        "ch-ctx-mode-energy": {
+          "bytes": 70247,
+          "ideal_no_codebook_bytes": 66908,
+          "contexts": 106,
+          "new_symbols": 3277,
+          "extra_metadata_bytes": 72
+        }
+      }
+    },
+    "subtile_apex_ans": {
+      "best_scheme": "ch-ctx-energy",
+      "bytes": 69678,
+      "ideal_best_scheme": "ch-ctx-grad-energy",
+      "ideal_no_codebook_bytes": 66555,
+      "metadata_bytes": 192,
+      "energy_metadata_bytes": 72,
+      "blocks": 768,
+      "transported_blocks": 0,
+      "dc_blocks": 0,
+      "saved_direct_score_bytes": 0,
+      "model_counts": {
+        "pred-6": 68,
+        "pred-4": 93,
+        "pred-8": 16,
+        "pred-7": 3,
+        "pred-20": 3,
+        "direct": 768,
+        "pred-5": 6,
+        "pred-2": 3
+      },
+      "schemes": {
+        "ch-ctx": {
+          "bytes": 70625,
+          "ideal_no_codebook_bytes": 69301,
+          "contexts": 23,
+          "new_symbols": 1223,
+          "extra_metadata_bytes": 0
+        },
+        "ch-ctx-grad": {
+          "bytes": 71006,
+          "ideal_no_codebook_bytes": 68842,
+          "contexts": 62,
+          "new_symbols": 2059,
+          "extra_metadata_bytes": 0
+        },
+        "ch-ctx-mode": {
+          "bytes": 70625,
+          "ideal_no_codebook_bytes": 69301,
+          "contexts": 23,
+          "new_symbols": 1223,
+          "extra_metadata_bytes": 0
+        },
+        "ch-ctx-mode-grad": {
+          "bytes": 71006,
+          "ideal_no_codebook_bytes": 68842,
+          "contexts": 62,
+          "new_symbols": 2059,
+          "extra_metadata_bytes": 0
+        },
+        "ch-ctx-energy": {
+          "bytes": 69678,
+          "ideal_no_codebook_bytes": 66963,
+          "contexts": 61,
+          "new_symbols": 2610,
+          "extra_metadata_bytes": 72
+        },
+        "ch-ctx-grad-energy": {
+          "bytes": 70641,
+          "ideal_no_codebook_bytes": 66555,
+          "contexts": 152,
+          "new_symbols": 4002,
+          "extra_metadata_bytes": 72
+        },
+        "ch-ctx-mode-energy": {
+          "bytes": 69678,
+          "ideal_no_codebook_bytes": 66963,
+          "contexts": 61,
+          "new_symbols": 2610,
+          "extra_metadata_bytes": 72
+        }
+      }
+    },
+    "estimate_s": 77.60896119999234
+  },
+  {
+    "file": "C:\\Users\\leomu\\Downloads\\central-valley-san-jose-costa-rica.jpg",
+    "crop_size": 256,
+    "block_size": 16,
+    "width": 256,
+    "height": 256,
+    "raw_rgb_bytes": 196608,
+    "webp_lossless_bytes": 80852,
+    "webp_lossless_encode_s": 7.964893800002756,
+    "direct_block_apex_ans": {
+      "best_scheme": "ch-ctx-grad",
+      "bytes": 79269,
+      "ideal_best_scheme": "ch-ctx-grad-energy",
+      "ideal_no_codebook_bytes": 75885,
+      "metadata_bytes": 192,
+      "energy_metadata_bytes": 72,
+      "blocks": 768,
+      "transported_blocks": 0,
+      "dc_blocks": 0,
+      "saved_direct_score_bytes": 0,
+      "model_counts": {
+        "pred-4": 124,
+        "pred-9": 15,
+        "pred-20": 10,
+        "pred-7": 8,
+        "pred-3": 2,
+        "direct": 768,
+        "pred-5": 5,
+        "pred-14": 2,
+        "pred-6": 26
+      },
+      "schemes": {
+        "ch-ctx": {
+          "bytes": 79452,
+          "ideal_no_codebook_bytes": 77773,
+          "contexts": 22,
+          "new_symbols": 1475,
+          "extra_metadata_bytes": 0
+        },
+        "ch-ctx-grad": {
+          "bytes": 79269,
+          "ideal_no_codebook_bytes": 76567,
+          "contexts": 66,
+          "new_symbols": 2511,
+          "extra_metadata_bytes": 0
+        },
+        "ch-ctx-mode": {
+          "bytes": 79452,
+          "ideal_no_codebook_bytes": 77773,
+          "contexts": 22,
+          "new_symbols": 1475,
+          "extra_metadata_bytes": 0
+        },
+        "ch-ctx-mode-grad": {
+          "bytes": 79269,
+          "ideal_no_codebook_bytes": 76567,
+          "contexts": 66,
+          "new_symbols": 2511,
+          "extra_metadata_bytes": 0
+        },
+        "ch-ctx-energy": {
+          "bytes": 79910,
+          "ideal_no_codebook_bytes": 76448,
+          "contexts": 78,
+          "new_symbols": 3272,
+          "extra_metadata_bytes": 72
+        },
+        "ch-ctx-grad-energy": {
+          "bytes": 80672,
+          "ideal_no_codebook_bytes": 75885,
+          "contexts": 149,
+          "new_symbols": 4636,
+          "extra_metadata_bytes": 72
+        },
+        "ch-ctx-mode-energy": {
+          "bytes": 79910,
+          "ideal_no_codebook_bytes": 76448,
+          "contexts": 78,
+          "new_symbols": 3272,
+          "extra_metadata_bytes": 72
+        }
+      }
+    },
+    "refined_subtile_apex_ans": {
+      "best_scheme": "ch-ctx-grad",
+      "bytes": 79374,
+      "ideal_best_scheme": "ch-ctx-grad-energy",
+      "ideal_no_codebook_bytes": 75989,
+      "metadata_bytes": 294,
+      "energy_metadata_bytes": 72,
+      "blocks": 768,
+      "transported_blocks": 0,
+      "dc_blocks": 3,
+      "saved_direct_score_bytes": 3,
+      "model_counts": {
+        "pred-4": 124,
+        "pred-9": 15,
+        "pred-20": 10,
+        "pred-7": 8,
+        "pred-3": 2,
+        "direct": 765,
+        "dc": 3,
+        "pred-5": 5,
+        "pred-14": 2,
+        "pred-6": 26
+      },
+      "schemes": {
+        "ch-ctx": {
+          "bytes": 79553,
+          "ideal_no_codebook_bytes": 77873,
+          "contexts": 22,
+          "new_symbols": 1475,
+          "extra_metadata_bytes": 0
+        },
+        "ch-ctx-grad": {
+          "bytes": 79374,
+          "ideal_no_codebook_bytes": 76669,
+          "contexts": 66,
+          "new_symbols": 2515,
+          "extra_metadata_bytes": 0
+        },
+        "ch-ctx-mode": {
+          "bytes": 79649,
+          "ideal_no_codebook_bytes": 77842,
+          "contexts": 29,
+          "new_symbols": 1609,
+          "extra_metadata_bytes": 0
+        },
+        "ch-ctx-mode-grad": {
+          "bytes": 79468,
+          "ideal_no_codebook_bytes": 76642,
+          "contexts": 73,
+          "new_symbols": 2642,
+          "extra_metadata_bytes": 0
+        },
+        "ch-ctx-energy": {
+          "bytes": 80014,
+          "ideal_no_codebook_bytes": 76551,
+          "contexts": 78,
+          "new_symbols": 3273,
+          "extra_metadata_bytes": 72
+        },
+        "ch-ctx-grad-energy": {
+          "bytes": 80778,
+          "ideal_no_codebook_bytes": 75989,
+          "contexts": 149,
+          "new_symbols": 4639,
+          "extra_metadata_bytes": 72
+        },
+        "ch-ctx-mode-energy": {
+          "bytes": 80156,
+          "ideal_no_codebook_bytes": 76509,
+          "contexts": 90,
+          "new_symbols": 3470,
+          "extra_metadata_bytes": 72
+        }
+      }
+    },
+    "subtile_apex_ans": {
+      "best_scheme": "ch-ctx-grad",
+      "bytes": 79269,
+      "ideal_best_scheme": "ch-ctx-grad-energy",
+      "ideal_no_codebook_bytes": 75885,
+      "metadata_bytes": 192,
+      "energy_metadata_bytes": 72,
+      "blocks": 768,
+      "transported_blocks": 0,
+      "dc_blocks": 0,
+      "saved_direct_score_bytes": 0,
+      "model_counts": {
+        "pred-4": 124,
+        "pred-9": 15,
+        "pred-20": 10,
+        "pred-7": 8,
+        "pred-3": 2,
+        "direct": 768,
+        "pred-5": 5,
+        "pred-14": 2,
+        "pred-6": 26
+      },
+      "schemes": {
+        "ch-ctx": {
+          "bytes": 79452,
+          "ideal_no_codebook_bytes": 77773,
+          "contexts": 22,
+          "new_symbols": 1475,
+          "extra_metadata_bytes": 0
+        },
+        "ch-ctx-grad": {
+          "bytes": 79269,
+          "ideal_no_codebook_bytes": 76567,
+          "contexts": 66,
+          "new_symbols": 2511,
+          "extra_metadata_bytes": 0
+        },
+        "ch-ctx-mode": {
+          "bytes": 79452,
+          "ideal_no_codebook_bytes": 77773,
+          "contexts": 22,
+          "new_symbols": 1475,
+          "extra_metadata_bytes": 0
+        },
+        "ch-ctx-mode-grad": {
+          "bytes": 79269,
+          "ideal_no_codebook_bytes": 76567,
+          "contexts": 66,
+          "new_symbols": 2511,
+          "extra_metadata_bytes": 0
+        },
+        "ch-ctx-energy": {
+          "bytes": 79910,
+          "ideal_no_codebook_bytes": 76448,
+          "contexts": 78,
+          "new_symbols": 3272,
+          "extra_metadata_bytes": 72
+        },
+        "ch-ctx-grad-energy": {
+          "bytes": 80672,
+          "ideal_no_codebook_bytes": 75885,
+          "contexts": 149,
+          "new_symbols": 4636,
+          "extra_metadata_bytes": 72
+        },
+        "ch-ctx-mode-energy": {
+          "bytes": 79910,
+          "ideal_no_codebook_bytes": 76448,
+          "contexts": 78,
+          "new_symbols": 3272,
+          "extra_metadata_bytes": 72
+        }
+      }
+    },
+    "estimate_s": 83.39158320002025
+  }
+]

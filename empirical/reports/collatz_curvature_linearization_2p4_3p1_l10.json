@@ -1,0 +1,2177 @@
+{
+  "settings": {
+    "two_bits": 4,
+    "three_pow": 1,
+    "lift_bits": 10,
+    "min_affine_image_size": 12
+  },
+  "kernel_summary": {
+    "modulus": 48,
+    "odd_sources": 24,
+    "hidden_lifts_per_source": 1024,
+    "total_samples": 24576,
+    "outdegree_distribution": {
+      "2": 12,
+      "4": 6,
+      "8": 3,
+      "16": 3
+    },
+    "mean_row_entropy_bits": 1.86474043,
+    "max_row_entropy_bits": 3.91792346,
+    "carry_distribution": {
+      "1": 12288,
+      "2": 6144,
+      "3": 3072,
+      "4": 1536,
+      "5": 768,
+      "6": 384,
+      "7": 192,
+      "8": 96,
+      "9": 48,
+      "10": 24,
+      "11": 12,
+      "12": 6,
+      "13": 3,
+      "14": 2,
+      "16": 1
+    }
+  },
+  "seed_model": {
+    "multiplier": 3,
+    "offset": 1,
+    "metrics": {
+      "name": "seed affine 3n+1",
+      "multiplier": 3,
+      "offset": 1,
+      "mean_fisher_energy": 6.41683968,
+      "mean_fisher_norm": 2.35390807,
+      "max_fisher_norm": 3.1092704,
+      "mean_hellinger": 0.66041268,
+      "max_hellinger": 0.76928639,
+      "mean_l1": 1.41674805,
+      "max_l1": 1.66674805
+    },
+    "top_delta_distribution": [
+      [
+        1,
+        0.08337402
+      ],
+      [
+        37,
+        0.08337402
+      ],
+      [
+        43,
+        0.08337402
+      ],
+      [
+        7,
+        0.08333333
+      ],
+      [
+        13,
+        0.08329264
+      ],
+      [
+        19,
+        0.08329264
+      ],
+      [
+        25,
+        0.08329264
+      ],
+      [
+        31,
+        0.08329264
+      ],
+      [
+        33,
+        0.04174805
+      ],
+      [
+        39,
+        0.04170736
+      ],
+      [
+        3,
+        0.04166667
+      ],
+      [
+        9,
+        0.04166667
+      ],
+      [
+        15,
+        0.04166667
+      ],
+      [
+        45,
+        0.04166667
+      ],
+      [
+        21,
+        0.04162598
+      ],
+      [
+        27,
+        0.04162598
+      ]
+    ]
+  },
+  "source_blind_null_model": {
+    "multiplier": 0,
+    "offset": 0,
+    "metrics": {
+      "name": "source-blind null",
+      "multiplier": 0,
+      "offset": 0,
+      "mean_fisher_energy": 6.41683968,
+      "mean_fisher_norm": 2.35390807,
+      "max_fisher_norm": 3.1092704,
+      "mean_hellinger": 0.66041268,
+      "max_hellinger": 0.76928639,
+      "mean_l1": 1.41674805,
+      "max_l1": 1.66674805
+    },
+    "top_delta_distribution": [
+      [
+        5,
+        0.08337402
+      ],
+      [
+        11,
+        0.08337402
+      ],
+      [
+        17,
+        0.08337402
+      ],
+      [
+        23,
+        0.08333333
+      ],
+      [
+        29,
+        0.08329264
+      ],
+      [
+        35,
+        0.08329264
+      ],
+      [
+        41,
+        0.08329264
+      ],
+      [
+        47,
+        0.08329264
+      ],
+      [
+        1,
+        0.04174805
+      ],
+      [
+        7,
+        0.04170736
+      ],
+      [
+        13,
+        0.04166667
+      ],
+      [
+        19,
+        0.04166667
+      ],
+      [
+        25,
+        0.04166667
+      ],
+      [
+        31,
+        0.04166667
+      ],
+      [
+        37,
+        0.04162598
+      ],
+      [
+        43,
+        0.04162598
+      ]
+    ]
+  },
+  "best_model": {
+    "multiplier": 2,
+    "offset": 0,
+    "metrics": {
+      "name": "best affine-convolution",
+      "multiplier": 2,
+      "offset": 0,
+      "mean_fisher_energy": 7.08342497,
+      "mean_fisher_norm": 2.49622405,
+      "max_fisher_norm": 3.31677209,
+      "mean_hellinger": 0.75052154,
+      "max_hellinger": 0.84344256,
+      "mean_l1": 1.58379788,
+      "max_l1": 1.83341471
+    },
+    "top_delta_distribution": [
+      [
+        5,
+        0.04170736
+      ],
+      [
+        7,
+        0.04170736
+      ],
+      [
+        13,
+        0.04170736
+      ],
+      [
+        23,
+        0.04170736
+      ],
+      [
+        35,
+        0.04170736
+      ],
+      [
+        39,
+        0.04170736
+      ],
+      [
+        45,
+        0.04170736
+      ],
+      [
+        1,
+        0.04166667
+      ],
+      [
+        9,
+        0.04166667
+      ],
+      [
+        11,
+        0.04166667
+      ],
+      [
+        15,
+        0.04166667
+      ],
+      [
+        17,
+        0.04166667
+      ],
+      [
+        25,
+        0.04166667
+      ],
+      [
+        27,
+        0.04166667
+      ],
+      [
+        31,
+        0.04166667
+      ],
+      [
+        33,
+        0.04166667
+      ],
+      [
+        43,
+        0.04166667
+      ],
+      [
+        3,
+        0.04162598
+      ],
+      [
+        19,
+        0.04162598
+      ],
+      [
+        21,
+        0.04162598
+      ],
+      [
+        29,
+        0.04162598
+      ],
+      [
+        37,
+        0.04162598
+      ],
+      [
+        41,
+        0.04162598
+      ],
+      [
+        47,
+        0.04162598
+      ]
+    ]
+  },
+  "carry_conditioned_model": {
+    "multiplier": 2,
+    "offset": 0,
+    "metrics": {
+      "name": "same-base carry-conditioned affine",
+      "multiplier": 2,
+      "offset": 0,
+      "mean_fisher_energy": 7.083299,
+      "mean_fisher_norm": 2.49614711,
+      "max_fisher_norm": 3.31662479,
+      "mean_hellinger": 0.75050016,
+      "max_hellinger": 0.84340077,
+      "mean_l1": 1.5836046,
+      "max_l1": 1.83333333
+    }
+  },
+  "carry_sliced_model": {
+    "metrics": {
+      "name": "carry-sliced affine",
+      "multiplier": -1,
+      "offset": -1,
+      "mean_fisher_energy": 6.75000699,
+      "mean_fisher_norm": 2.21826354,
+      "max_fisher_norm": 3.31662479,
+      "mean_hellinger": 0.61429569,
+      "max_hellinger": 0.84340077,
+      "mean_l1": 1.33391656,
+      "max_l1": 1.83333333
+    },
+    "per_carry_models": {
+      "1": {
+        "multiplier": 1,
+        "offset": 0,
+        "metrics": {
+          "name": "carry-sliced affine s=1",
+          "multiplier": 1,
+          "offset": 0,
+          "mean_fisher_energy": 11.0,
+          "mean_fisher_norm": 3.31662479,
+          "max_fisher_norm": 3.31662479,
+          "mean_hellinger": 0.84340077,
+          "max_hellinger": 0.84340077,
+          "mean_l1": 1.83333333,
+          "max_l1": 1.83333333
+        },
+        "top_delta_distribution": [
+          [
+            0,
+            0.04166667
+          ],
+          [
+            2,
+            0.04166667
+          ],
+          [
+            4,
+            0.04166667
+          ],
+          [
+            6,
+            0.04166667
+          ],
+          [
+            8,
+            0.04166667
+          ],
+          [
+            10,
+            0.04166667
+          ],
+          [
+            12,
+            0.04166667
+          ],
+          [
+            14,
+            0.04166667
+          ],
+          [
+            16,
+            0.04166667
+          ],
+          [
+            18,
+            0.04166667
+          ],
+          [
+            20,
+            0.04166667
+          ],
+          [
+            22,
+            0.04166667
+          ],
+          [
+            24,
+            0.04166667
+          ],
+          [
+            26,
+            0.04166667
+          ],
+          [
+            28,
+            0.04166667
+          ],
+          [
+            30,
+            0.04166667
+          ],
+          [
+            32,
+            0.04166667
+          ],
+          [
+            34,
+            0.04166667
+          ],
+          [
+            36,
+            0.04166667
+          ],
+          [
+            38,
+            0.04166667
+          ],
+          [
+            40,
+            0.04166667
+          ],
+          [
+            42,
+            0.04166667
+          ],
+          [
+            44,
+            0.04166667
+          ],
+          [
+            46,
+            0.04166667
+          ]
+        ]
+      },
+      "2": {
+        "multiplier": 1,
+        "offset": 0,
+        "metrics": {
+          "name": "carry-sliced affine s=2",
+          "multiplier": 1,
+          "offset": 0,
+          "mean_fisher_energy": 5.0,
+          "mean_fisher_norm": 2.23606798,
+          "max_fisher_norm": 2.23606798,
+          "mean_hellinger": 0.769254,
+          "max_hellinger": 0.769254,
+          "mean_l1": 1.66666667,
+          "max_l1": 1.66666667
+        },
+        "top_delta_distribution": [
+          [
+            0,
+            0.04166667
+          ],
+          [
+            2,
+            0.04166667
+          ],
+          [
+            4,
+            0.04166667
+          ],
+          [
+            6,
+            0.04166667
+          ],
+          [
+            8,
+            0.04166667
+          ],
+          [
+            10,
+            0.04166667
+          ],
+          [
+            12,
+            0.04166667
+          ],
+          [
+            14,
+            0.04166667
+          ],
+          [
+            16,
+            0.04166667
+          ],
+          [
+            18,
+            0.04166667
+          ],
+          [
+            20,
+            0.04166667
+          ],
+          [
+            22,
+            0.04166667
+          ],
+          [
+            24,
+            0.04166667
+          ],
+          [
+            26,
+            0.04166667
+          ],
+          [
+            28,
+            0.04166667
+          ],
+          [
+            30,
+            0.04166667
+          ],
+          [
+            32,
+            0.04166667
+          ],
+          [
+            34,
+            0.04166667
+          ],
+          [
+            36,
+            0.04166667
+          ],
+          [
+            38,
+            0.04166667
+          ],
+          [
+            40,
+            0.04166667
+          ],
+          [
+            42,
+            0.04166667
+          ],
+          [
+            44,
+            0.04166667
+          ],
+          [
+            46,
+            0.04166667
+          ]
+        ]
+      },
+      "3": {
+        "multiplier": 0,
+        "offset": 0,
+        "metrics": {
+          "name": "carry-sliced affine s=3",
+          "multiplier": 0,
+          "offset": 0,
+          "mean_fisher_energy": 0.0,
+          "mean_fisher_norm": 0.0,
+          "max_fisher_norm": 0.0,
+          "mean_hellinger": 0.0,
+          "max_hellinger": 0.0,
+          "mean_l1": 0.0,
+          "max_l1": 0.0
+        },
+        "top_delta_distribution": [
+          [
+            5,
+            0.125
+          ],
+          [
+            11,
+            0.125
+          ],
+          [
+            17,
+            0.125
+          ],
+          [
+            23,
+            0.125
+          ],
+          [
+            29,
+            0.125
+          ],
+          [
+            35,
+            0.125
+          ],
+          [
+            41,
+            0.125
+          ],
+          [
+            47,
+            0.125
+          ]
+        ]
+      },
+      "4": {
+        "multiplier": 0,
+        "offset": 0,
+        "metrics": {
+          "name": "carry-sliced affine s=4",
+          "multiplier": 0,
+          "offset": 0,
+          "mean_fisher_energy": 0.0,
+          "mean_fisher_norm": 0.0,
+          "max_fisher_norm": 0.0,
+          "mean_hellinger": 0.0,
+          "max_hellinger": 0.0,
+          "mean_l1": 0.0,
+          "max_l1": 0.0
+        },
+        "top_delta_distribution": [
+          [
+            1,
+            0.125
+          ],
+          [
+            7,
+            0.125
+          ],
+          [
+            13,
+            0.125
+          ],
+          [
+            19,
+            0.125
+          ],
+          [
+            25,
+            0.125
+          ],
+          [
+            31,
+            0.125
+          ],
+          [
+            37,
+            0.125
+          ],
+          [
+            43,
+            0.125
+          ]
+        ]
+      },
+      "5": {
+        "multiplier": 0,
+        "offset": 0,
+        "metrics": {
+          "name": "carry-sliced affine s=5",
+          "multiplier": 0,
+          "offset": 0,
+          "mean_fisher_energy": 0.0,
+          "mean_fisher_norm": 0.0,
+          "max_fisher_norm": 0.0,
+          "mean_hellinger": 0.0,
+          "max_hellinger": 0.0,
+          "mean_l1": 0.0,
+          "max_l1": 0.0
+        },
+        "top_delta_distribution": [
+          [
+            5,
+            0.125
+          ],
+          [
+            11,
+            0.125
+          ],
+          [
+            17,
+            0.125
+          ],
+          [
+            23,
+            0.125
+          ],
+          [
+            29,
+            0.125
+          ],
+          [
+            35,
+            0.125
+          ],
+          [
+            41,
+            0.125
+          ],
+          [
+            47,
+            0.125
+          ]
+        ]
+      },
+      "6": {
+        "multiplier": 0,
+        "offset": 0,
+        "metrics": {
+          "name": "carry-sliced affine s=6",
+          "multiplier": 0,
+          "offset": 0,
+          "mean_fisher_energy": 0.0,
+          "mean_fisher_norm": 0.0,
+          "max_fisher_norm": 0.0,
+          "mean_hellinger": 0.0,
+          "max_hellinger": 0.0,
+          "mean_l1": 0.0,
+          "max_l1": 0.0
+        },
+        "top_delta_distribution": [
+          [
+            1,
+            0.125
+          ],
+          [
+            7,
+            0.125
+          ],
+          [
+            13,
+            0.125
+          ],
+          [
+            19,
+            0.125
+          ],
+          [
+            25,
+            0.125
+          ],
+          [
+            31,
+            0.125
+          ],
+          [
+            37,
+            0.125
+          ],
+          [
+            43,
+            0.125
+          ]
+        ]
+      },
+      "7": {
+        "multiplier": 0,
+        "offset": 0,
+        "metrics": {
+          "name": "carry-sliced affine s=7",
+          "multiplier": 0,
+          "offset": 0,
+          "mean_fisher_energy": 0.0,
+          "mean_fisher_norm": 0.0,
+          "max_fisher_norm": 0.0,
+          "mean_hellinger": 0.0,
+          "max_hellinger": 0.0,
+          "mean_l1": 0.0,
+          "max_l1": 0.0
+        },
+        "top_delta_distribution": [
+          [
+            5,
+            0.125
+          ],
+          [
+            11,
+            0.125
+          ],
+          [
+            17,
+            0.125
+          ],
+          [
+            23,
+            0.125
+          ],
+          [
+            29,
+            0.125
+          ],
+          [
+            35,
+            0.125
+          ],
+          [
+            41,
+            0.125
+          ],
+          [
+            47,
+            0.125
+          ]
+        ]
+      },
+      "8": {
+        "multiplier": 0,
+        "offset": 0,
+        "metrics": {
+          "name": "carry-sliced affine s=8",
+          "multiplier": 0,
+          "offset": 0,
+          "mean_fisher_energy": 0.0,
+          "mean_fisher_norm": 0.0,
+          "max_fisher_norm": 0.0,
+          "mean_hellinger": 0.0,
+          "max_hellinger": 0.0,
+          "mean_l1": 0.0,
+          "max_l1": 0.0
+        },
+        "top_delta_distribution": [
+          [
+            1,
+            0.125
+          ],
+          [
+            7,
+            0.125
+          ],
+          [
+            13,
+            0.125
+          ],
+          [
+            19,
+            0.125
+          ],
+          [
+            25,
+            0.125
+          ],
+          [
+            31,
+            0.125
+          ],
+          [
+            37,
+            0.125
+          ],
+          [
+            43,
+            0.125
+          ]
+        ]
+      },
+      "9": {
+        "multiplier": 0,
+        "offset": 0,
+        "metrics": {
+          "name": "carry-sliced affine s=9",
+          "multiplier": 0,
+          "offset": 0,
+          "mean_fisher_energy": 0.0,
+          "mean_fisher_norm": 0.0,
+          "max_fisher_norm": 0.0,
+          "mean_hellinger": 0.0,
+          "max_hellinger": 0.0,
+          "mean_l1": 0.0,
+          "max_l1": 0.0
+        },
+        "top_delta_distribution": [
+          [
+            5,
+            0.125
+          ],
+          [
+            11,
+            0.125
+          ],
+          [
+            17,
+            0.125
+          ],
+          [
+            23,
+            0.125
+          ],
+          [
+            29,
+            0.125
+          ],
+          [
+            35,
+            0.125
+          ],
+          [
+            41,
+            0.125
+          ],
+          [
+            47,
+            0.125
+          ]
+        ]
+      },
+      "10": {
+        "multiplier": 0,
+        "offset": 0,
+        "metrics": {
+          "name": "carry-sliced affine s=10",
+          "multiplier": 0,
+          "offset": 0,
+          "mean_fisher_energy": 0.0,
+          "mean_fisher_norm": 0.0,
+          "max_fisher_norm": 0.0,
+          "mean_hellinger": 0.0,
+          "max_hellinger": 0.0,
+          "mean_l1": 0.0,
+          "max_l1": 0.0
+        },
+        "top_delta_distribution": [
+          [
+            1,
+            0.125
+          ],
+          [
+            7,
+            0.125
+          ],
+          [
+            13,
+            0.125
+          ],
+          [
+            19,
+            0.125
+          ],
+          [
+            25,
+            0.125
+          ],
+          [
+            31,
+            0.125
+          ],
+          [
+            37,
+            0.125
+          ],
+          [
+            43,
+            0.125
+          ]
+        ]
+      },
+      "11": {
+        "multiplier": 0,
+        "offset": 0,
+        "metrics": {
+          "name": "carry-sliced affine s=11",
+          "multiplier": 0,
+          "offset": 0,
+          "mean_fisher_energy": 2.66666667,
+          "mean_fisher_norm": 1.62693077,
+          "max_fisher_norm": 1.82574186,
+          "mean_hellinger": 0.51233754,
+          "max_hellinger": 0.55052391,
+          "mean_l1": 0.88888889,
+          "max_l1": 1.0
+        },
+        "top_delta_distribution": [
+          [
+            5,
+            0.16666667
+          ],
+          [
+            11,
+            0.16666667
+          ],
+          [
+            17,
+            0.16666667
+          ],
+          [
+            23,
+            0.16666667
+          ],
+          [
+            29,
+            0.08333333
+          ],
+          [
+            35,
+            0.08333333
+          ],
+          [
+            41,
+            0.08333333
+          ],
+          [
+            47,
+            0.08333333
+          ]
+        ]
+      },
+      "12": {
+        "multiplier": 0,
+        "offset": 0,
+        "metrics": {
+          "name": "carry-sliced affine s=12",
+          "multiplier": 0,
+          "offset": 0,
+          "mean_fisher_energy": 8.0,
+          "mean_fisher_norm": 2.82842712,
+          "max_fisher_norm": 2.82842712,
+          "mean_hellinger": 0.65011517,
+          "max_hellinger": 0.65011517,
+          "mean_l1": 1.33333333,
+          "max_l1": 1.33333333
+        },
+        "top_delta_distribution": [
+          [
+            1,
+            0.16666667
+          ],
+          [
+            7,
+            0.16666667
+          ],
+          [
+            13,
+            0.16666667
+          ],
+          [
+            19,
+            0.16666667
+          ],
+          [
+            25,
+            0.16666667
+          ],
+          [
+            31,
+            0.16666667
+          ]
+        ]
+      },
+      "13": {
+        "multiplier": 0,
+        "offset": 0,
+        "metrics": {
+          "name": "carry-sliced affine s=13",
+          "multiplier": 0,
+          "offset": 0,
+          "mean_fisher_energy": 16.0,
+          "mean_fisher_norm": 4.0,
+          "max_fisher_norm": 4.0,
+          "mean_hellinger": 0.65011517,
+          "max_hellinger": 0.65011517,
+          "mean_l1": 1.33333333,
+          "max_l1": 1.33333333
+        },
+        "top_delta_distribution": [
+          [
+            5,
+            0.33333333
+          ],
+          [
+            11,
+            0.33333333
+          ],
+          [
+            17,
+            0.33333333
+          ]
+        ]
+      },
+      "14": {
+        "multiplier": 0,
+        "offset": 0,
+        "metrics": {
+          "name": "carry-sliced affine s=14",
+          "multiplier": 0,
+          "offset": 0,
+          "mean_fisher_energy": 12.0,
+          "mean_fisher_norm": 3.46410162,
+          "max_fisher_norm": 3.46410162,
+          "mean_hellinger": 0.5411961,
+          "max_hellinger": 0.5411961,
+          "mean_l1": 1.0,
+          "max_l1": 1.0
+        },
+        "top_delta_distribution": [
+          [
+            1,
+            0.5
+          ],
+          [
+            7,
+            0.5
+          ]
+        ]
+      },
+      "16": {
+        "multiplier": 0,
+        "offset": 0,
+        "metrics": {
+          "name": "carry-sliced affine s=16",
+          "multiplier": 0,
+          "offset": 0,
+          "mean_fisher_energy": 0.0,
+          "mean_fisher_norm": 0.0,
+          "max_fisher_norm": 0.0,
+          "mean_hellinger": 0.0,
+          "max_hellinger": 0.0,
+          "mean_l1": 0.0,
+          "max_l1": 0.0
+        },
+        "top_delta_distribution": [
+          [
+            1,
+            1.0
+          ]
+        ]
+      }
+    }
+  },
+  "exact_carry_lift_oracle": {
+    "metrics": {
+      "name": "exact carry-lift oracle",
+      "multiplier": -1,
+      "offset": -1,
+      "mean_fisher_energy": 0.0,
+      "mean_fisher_norm": 0.0,
+      "max_fisher_norm": 0.0,
+      "mean_hellinger": 0.0,
+      "max_hellinger": 0.0,
+      "mean_l1": 0.0,
+      "max_l1": 0.0
+    },
+    "formula_audit": [
+      {
+        "carry": 1,
+        "samples": 12288,
+        "sources_hit": 12,
+        "source_target_edges": 24,
+        "mean_source_outdegree": 2.0,
+        "max_source_outdegree": 2,
+        "lift_bits_required": 1,
+        "complete_lift_cycle_sampled": true,
+        "lift_cells": 24,
+        "deterministic_lift_cells": 24,
+        "max_lift_cell_outdegree": 1,
+        "mean_lift_cell_sample_count": 512.0,
+        "formula_failures": 0
+      },
+      {
+        "carry": 2,
+        "samples": 6144,
+        "sources_hit": 6,
+        "source_target_edges": 24,
+        "mean_source_outdegree": 4.0,
+        "max_source_outdegree": 4,
+        "lift_bits_required": 2,
+        "complete_lift_cycle_sampled": true,
+        "lift_cells": 24,
+        "deterministic_lift_cells": 24,
+        "max_lift_cell_outdegree": 1,
+        "mean_lift_cell_sample_count": 256.0,
+        "formula_failures": 0
+      },
+      {
+        "carry": 3,
+        "samples": 3072,
+        "sources_hit": 3,
+        "source_target_edges": 24,
+        "mean_source_outdegree": 8.0,
+        "max_source_outdegree": 8,
+        "lift_bits_required": 3,
+        "complete_lift_cycle_sampled": true,
+        "lift_cells": 24,
+        "deterministic_lift_cells": 24,
+        "max_lift_cell_outdegree": 1,
+        "mean_lift_cell_sample_count": 128.0,
+        "formula_failures": 0
+      },
+      {
+        "carry": 4,
+        "samples": 1536,
+        "sources_hit": 3,
+        "source_target_edges": 24,
+        "mean_source_outdegree": 8.0,
+        "max_source_outdegree": 8,
+        "lift_bits_required": 4,
+        "complete_lift_cycle_sampled": true,
+        "lift_cells": 24,
+        "deterministic_lift_cells": 24,
+        "max_lift_cell_outdegree": 1,
+        "mean_lift_cell_sample_count": 64.0,
+        "formula_failures": 0
+      },
+      {
+        "carry": 5,
+        "samples": 768,
+        "sources_hit": 3,
+        "source_target_edges": 24,
+        "mean_source_outdegree": 8.0,
+        "max_source_outdegree": 8,
+        "lift_bits_required": 5,
+        "complete_lift_cycle_sampled": true,
+        "lift_cells": 24,
+        "deterministic_lift_cells": 24,
+        "max_lift_cell_outdegree": 1,
+        "mean_lift_cell_sample_count": 32.0,
+        "formula_failures": 0
+      },
+      {
+        "carry": 6,
+        "samples": 384,
+        "sources_hit": 3,
+        "source_target_edges": 24,
+        "mean_source_outdegree": 8.0,
+        "max_source_outdegree": 8,
+        "lift_bits_required": 6,
+        "complete_lift_cycle_sampled": true,
+        "lift_cells": 24,
+        "deterministic_lift_cells": 24,
+        "max_lift_cell_outdegree": 1,
+        "mean_lift_cell_sample_count": 16.0,
+        "formula_failures": 0
+      },
+      {
+        "carry": 7,
+        "samples": 192,
+        "sources_hit": 3,
+        "source_target_edges": 24,
+        "mean_source_outdegree": 8.0,
+        "max_source_outdegree": 8,
+        "lift_bits_required": 7,
+        "complete_lift_cycle_sampled": true,
+        "lift_cells": 24,
+        "deterministic_lift_cells": 24,
+        "max_lift_cell_outdegree": 1,
+        "mean_lift_cell_sample_count": 8.0,
+        "formula_failures": 0
+      },
+      {
+        "carry": 8,
+        "samples": 96,
+        "sources_hit": 3,
+        "source_target_edges": 24,
+        "mean_source_outdegree": 8.0,
+        "max_source_outdegree": 8,
+        "lift_bits_required": 8,
+        "complete_lift_cycle_sampled": true,
+        "lift_cells": 24,
+        "deterministic_lift_cells": 24,
+        "max_lift_cell_outdegree": 1,
+        "mean_lift_cell_sample_count": 4.0,
+        "formula_failures": 0
+      },
+      {
+        "carry": 9,
+        "samples": 48,
+        "sources_hit": 3,
+        "source_target_edges": 24,
+        "mean_source_outdegree": 8.0,
+        "max_source_outdegree": 8,
+        "lift_bits_required": 9,
+        "complete_lift_cycle_sampled": true,
+        "lift_cells": 24,
+        "deterministic_lift_cells": 24,
+        "max_lift_cell_outdegree": 1,
+        "mean_lift_cell_sample_count": 2.0,
+        "formula_failures": 0
+      },
+      {
+        "carry": 10,
+        "samples": 24,
+        "sources_hit": 3,
+        "source_target_edges": 24,
+        "mean_source_outdegree": 8.0,
+        "max_source_outdegree": 8,
+        "lift_bits_required": 10,
+        "complete_lift_cycle_sampled": true,
+        "lift_cells": 24,
+        "deterministic_lift_cells": 24,
+        "max_lift_cell_outdegree": 1,
+        "mean_lift_cell_sample_count": 1.0,
+        "formula_failures": 0
+      },
+      {
+        "carry": 11,
+        "samples": 12,
+        "sources_hit": 3,
+        "source_target_edges": 12,
+        "mean_source_outdegree": 4.0,
+        "max_source_outdegree": 4,
+        "lift_bits_required": 11,
+        "complete_lift_cycle_sampled": false,
+        "lift_cells": 12,
+        "deterministic_lift_cells": 12,
+        "max_lift_cell_outdegree": 1,
+        "mean_lift_cell_sample_count": 1.0,
+        "formula_failures": 0
+      },
+      {
+        "carry": 12,
+        "samples": 6,
+        "sources_hit": 3,
+        "source_target_edges": 6,
+        "mean_source_outdegree": 2.0,
+        "max_source_outdegree": 2,
+        "lift_bits_required": 12,
+        "complete_lift_cycle_sampled": false,
+        "lift_cells": 6,
+        "deterministic_lift_cells": 6,
+        "max_lift_cell_outdegree": 1,
+        "mean_lift_cell_sample_count": 1.0,
+        "formula_failures": 0
+      },
+      {
+        "carry": 13,
+        "samples": 3,
+        "sources_hit": 3,
+        "source_target_edges": 3,
+        "mean_source_outdegree": 1.0,
+        "max_source_outdegree": 1,
+        "lift_bits_required": 13,
+        "complete_lift_cycle_sampled": false,
+        "lift_cells": 3,
+        "deterministic_lift_cells": 3,
+        "max_lift_cell_outdegree": 1,
+        "mean_lift_cell_sample_count": 1.0,
+        "formula_failures": 0
+      },
+      {
+        "carry": 14,
+        "samples": 2,
+        "sources_hit": 2,
+        "source_target_edges": 2,
+        "mean_source_outdegree": 1.0,
+        "max_source_outdegree": 1,
+        "lift_bits_required": 14,
+        "complete_lift_cycle_sampled": false,
+        "lift_cells": 2,
+        "deterministic_lift_cells": 2,
+        "max_lift_cell_outdegree": 1,
+        "mean_lift_cell_sample_count": 1.0,
+        "formula_failures": 0
+      },
+      {
+        "carry": 16,
+        "samples": 1,
+        "sources_hit": 1,
+        "source_target_edges": 1,
+        "mean_source_outdegree": 1.0,
+        "max_source_outdegree": 1,
+        "lift_bits_required": 16,
+        "complete_lift_cycle_sampled": false,
+        "lift_cells": 1,
+        "deterministic_lift_cells": 1,
+        "max_lift_cell_outdegree": 1,
+        "mean_lift_cell_sample_count": 1.0,
+        "formula_failures": 0
+      }
+    ]
+  },
+  "carry_residual_rows": [
+    {
+      "carry": 1,
+      "samples": 12288,
+      "sources_hit": 12,
+      "global_residual_energy": 132.00000668,
+      "carry_conditioned_residual_energy": 132.0,
+      "carry_sliced_residual_energy": 132.0,
+      "reduction_fraction": 5e-08,
+      "sliced_reduction_fraction": 5e-08,
+      "sliced_multiplier": 1,
+      "sliced_offset": 0,
+      "sliced_image_size": 12,
+      "top_affine_deltas": [
+        [
+          0,
+          0.04166667
+        ],
+        [
+          2,
+          0.04166667
+        ],
+        [
+          4,
+          0.04166667
+        ],
+        [
+          6,
+          0.04166667
+        ],
+        [
+          8,
+          0.04166667
+        ],
+        [
+          10,
+          0.04166667
+        ],
+        [
+          12,
+          0.04166667
+        ],
+        [
+          14,
+          0.04166667
+        ]
+      ]
+    },
+    {
+      "carry": 2,
+      "samples": 6144,
+      "sources_hit": 6,
+      "global_residual_energy": 30.00000334,
+      "carry_conditioned_residual_energy": 30.0,
+      "carry_sliced_residual_energy": 30.0,
+      "reduction_fraction": 1.1e-07,
+      "sliced_reduction_fraction": 1.1e-07,
+      "sliced_multiplier": 1,
+      "sliced_offset": 0,
+      "sliced_image_size": 6,
+      "top_affine_deltas": [
+        [
+          0,
+          0.04166667
+        ],
+        [
+          2,
+          0.04166667
+        ],
+        [
+          4,
+          0.04166667
+        ],
+        [
+          6,
+          0.04166667
+        ],
+        [
+          8,
+          0.04166667
+        ],
+        [
+          10,
+          0.04166667
+        ],
+        [
+          12,
+          0.04166667
+        ],
+        [
+          14,
+          0.04166667
+        ]
+      ]
+    },
+    {
+      "carry": 3,
+      "samples": 3072,
+      "sources_hit": 3,
+      "global_residual_energy": 6.00000167,
+      "carry_conditioned_residual_energy": 6.0,
+      "carry_sliced_residual_energy": 0.0,
+      "reduction_fraction": 2.8e-07,
+      "sliced_reduction_fraction": 1.0,
+      "sliced_multiplier": 0,
+      "sliced_offset": 0,
+      "sliced_image_size": 1,
+      "top_affine_deltas": [
+        [
+          5,
+          0.125
+        ],
+        [
+          11,
+          0.125
+        ],
+        [
+          17,
+          0.125
+        ],
+        [
+          23,
+          0.125
+        ],
+        [
+          29,
+          0.125
+        ],
+        [
+          35,
+          0.125
+        ],
+        [
+          41,
+          0.125
+        ],
+        [
+          47,
+          0.125
+        ]
+      ]
+    },
+    {
+      "carry": 4,
+      "samples": 1536,
+      "sources_hit": 3,
+      "global_residual_energy": 1.50000042,
+      "carry_conditioned_residual_energy": 1.5,
+      "carry_sliced_residual_energy": 0.0,
+      "reduction_fraction": 2.8e-07,
+      "sliced_reduction_fraction": 1.0,
+      "sliced_multiplier": 0,
+      "sliced_offset": 0,
+      "sliced_image_size": 1,
+      "top_affine_deltas": [
+        [
+          1,
+          0.125
+        ],
+        [
+          7,
+          0.125
+        ],
+        [
+          13,
+          0.125
+        ],
+        [
+          19,
+          0.125
+        ],
+        [
+          25,
+          0.125
+        ],
+        [
+          31,
+          0.125
+        ],
+        [
+          37,
+          0.125
+        ],
+        [
+          43,
+          0.125
+        ]
+      ]
+    },
+    {
+      "carry": 5,
+      "samples": 768,
+      "sources_hit": 3,
+      "global_residual_energy": 0.3750001,
+      "carry_conditioned_residual_energy": 0.375,
+      "carry_sliced_residual_energy": 0.0,
+      "reduction_fraction": 2.8e-07,
+      "sliced_reduction_fraction": 1.0,
+      "sliced_multiplier": 0,
+      "sliced_offset": 0,
+      "sliced_image_size": 1,
+      "top_affine_deltas": [
+        [
+          5,
+          0.125
+        ],
+        [
+          11,
+          0.125
+        ],
+        [
+          17,
+          0.125
+        ],
+        [
+          23,
+          0.125
+        ],
+        [
+          29,
+          0.125
+        ],
+        [
+          35,
+          0.125
+        ],
+        [
+          41,
+          0.125
+        ],
+        [
+          47,
+          0.125
+        ]
+      ]
+    },
+    {
+      "carry": 6,
+      "samples": 384,
+      "sources_hit": 3,
+      "global_residual_energy": 0.09375003,
+      "carry_conditioned_residual_energy": 0.09375,
+      "carry_sliced_residual_energy": 0.0,
+      "reduction_fraction": 2.8e-07,
+      "sliced_reduction_fraction": 1.0,
+      "sliced_multiplier": 0,
+      "sliced_offset": 0,
+      "sliced_image_size": 1,
+      "top_affine_deltas": [
+        [
+          1,
+          0.125
+        ],
+        [
+          7,
+          0.125
+        ],
+        [
+          13,
+          0.125
+        ],
+        [
+          19,
+          0.125
+        ],
+        [
+          25,
+          0.125
+        ],
+        [
+          31,
+          0.125
+        ],
+        [
+          37,
+          0.125
+        ],
+        [
+          43,
+          0.125
+        ]
+      ]
+    },
+    {
+      "carry": 7,
+      "samples": 192,
+      "sources_hit": 3,
+      "global_residual_energy": 0.02343751,
+      "carry_conditioned_residual_energy": 0.0234375,
+      "carry_sliced_residual_energy": 0.0,
+      "reduction_fraction": 2.8e-07,
+      "sliced_reduction_fraction": 1.0,
+      "sliced_multiplier": 0,
+      "sliced_offset": 0,
+      "sliced_image_size": 1,
+      "top_affine_deltas": [
+        [
+          5,
+          0.125
+        ],
+        [
+          11,
+          0.125
+        ],
+        [
+          17,
+          0.125
+        ],
+        [
+          23,
+          0.125
+        ],
+        [
+          29,
+          0.125
+        ],
+        [
+          35,
+          0.125
+        ],
+        [
+          41,
+          0.125
+        ],
+        [
+          47,
+          0.125
+        ]
+      ]
+    },
+    {
+      "carry": 8,
+      "samples": 96,
+      "sources_hit": 3,
+      "global_residual_energy": 0.00585938,
+      "carry_conditioned_residual_energy": 0.00585938,
+      "carry_sliced_residual_energy": 0.0,
+      "reduction_fraction": 2.8e-07,
+      "sliced_reduction_fraction": 1.0,
+      "sliced_multiplier": 0,
+      "sliced_offset": 0,
+      "sliced_image_size": 1,
+      "top_affine_deltas": [
+        [
+          1,
+          0.125
+        ],
+        [
+          7,
+          0.125
+        ],
+        [
+          13,
+          0.125
+        ],
+        [
+          19,
+          0.125
+        ],
+        [
+          25,
+          0.125
+        ],
+        [
+          31,
+          0.125
+        ],
+        [
+          37,
+          0.125
+        ],
+        [
+          43,
+          0.125
+        ]
+      ]
+    },
+    {
+      "carry": 9,
+      "samples": 48,
+      "sources_hit": 3,
+      "global_residual_energy": 0.00146484,
+      "carry_conditioned_residual_energy": 0.00146484,
+      "carry_sliced_residual_energy": 0.0,
+      "reduction_fraction": 2.8e-07,
+      "sliced_reduction_fraction": 1.0,
+      "sliced_multiplier": 0,
+      "sliced_offset": 0,
+      "sliced_image_size": 1,
+      "top_affine_deltas": [
+        [
+          5,
+          0.125
+        ],
+        [
+          11,
+          0.125
+        ],
+        [
+          17,
+          0.125
+        ],
+        [
+          23,
+          0.125
+        ],
+        [
+          29,
+          0.125
+        ],
+        [
+          35,
+          0.125
+        ],
+        [
+          41,
+          0.125
+        ],
+        [
+          47,
+          0.125
+        ]
+      ]
+    },
+    {
+      "carry": 10,
+      "samples": 24,
+      "sources_hit": 3,
+      "global_residual_energy": 0.00036621,
+      "carry_conditioned_residual_energy": 0.00036621,
+      "carry_sliced_residual_energy": 0.0,
+      "reduction_fraction": 2.8e-07,
+      "sliced_reduction_fraction": 1.0,
+      "sliced_multiplier": 0,
+      "sliced_offset": 0,
+      "sliced_image_size": 1,
+      "top_affine_deltas": [
+        [
+          1,
+          0.125
+        ],
+        [
+          7,
+          0.125
+        ],
+        [
+          13,
+          0.125
+        ],
+        [
+          19,
+          0.125
+        ],
+        [
+          25,
+          0.125
+        ],
+        [
+          31,
+          0.125
+        ],
+        [
+          37,
+          0.125
+        ],
+        [
+          43,
+          0.125
+        ]
+      ]
+    },
+    {
+      "carry": 11,
+      "samples": 12,
+      "sources_hit": 3,
+      "global_residual_energy": 0.00022884,
+      "carry_conditioned_residual_energy": 0.00018311,
+      "carry_sliced_residual_energy": 0.00012207,
+      "reduction_fraction": 0.19984381,
+      "sliced_reduction_fraction": 0.46656254,
+      "sliced_multiplier": 0,
+      "sliced_offset": 0,
+      "sliced_image_size": 1,
+      "top_affine_deltas": [
+        [
+          5,
+          0.16666667
+        ],
+        [
+          11,
+          0.16666667
+        ],
+        [
+          17,
+          0.16666667
+        ],
+        [
+          23,
+          0.16666667
+        ],
+        [
+          29,
+          0.08333333
+        ],
+        [
+          35,
+          0.08333333
+        ],
+        [
+          41,
+          0.08333333
+        ],
+        [
+          47,
+          0.08333333
+        ]
+      ]
+    },
+    {
+      "carry": 12,
+      "samples": 6,
+      "sources_hit": 3,
+      "global_residual_energy": 0.00012587,
+      "carry_conditioned_residual_energy": 9.155e-05,
+      "carry_sliced_residual_energy": 9.155e-05,
+      "reduction_fraction": 0.27264121,
+      "sliced_reduction_fraction": 0.27264121,
+      "sliced_multiplier": 0,
+      "sliced_offset": 0,
+      "sliced_image_size": 1,
+      "top_affine_deltas": [
+        [
+          1,
+          0.16666667
+        ],
+        [
+          7,
+          0.16666667
+        ],
+        [
+          13,
+          0.16666667
+        ],
+        [
+          19,
+          0.16666667
+        ],
+        [
+          25,
+          0.16666667
+        ],
+        [
+          31,
+          0.16666667
+        ]
+      ]
+    },
+    {
+      "carry": 13,
+      "samples": 3,
+      "sources_hit": 3,
+      "global_residual_energy": 6.58e-05,
+      "carry_conditioned_residual_energy": 4.578e-05,
+      "carry_sliced_residual_energy": 4.578e-05,
+      "reduction_fraction": 0.30432815,
+      "sliced_reduction_fraction": 0.30432815,
+      "sliced_multiplier": 0,
+      "sliced_offset": 0,
+      "sliced_image_size": 1,
+      "top_affine_deltas": [
+        [
+          5,
+          0.33333333
+        ],
+        [
+          11,
+          0.33333333
+        ],
+        [
+          17,
+          0.33333333
+        ]
+      ]
+    },
+    {
+      "carry": 14,
+      "samples": 2,
+      "sources_hit": 2,
+      "global_residual_energy": 4.387e-05,
+      "carry_conditioned_residual_energy": 2.289e-05,
+      "carry_sliced_residual_energy": 2.289e-05,
+      "reduction_fraction": 0.47821657,
+      "sliced_reduction_fraction": 0.47821657,
+      "sliced_multiplier": 0,
+      "sliced_offset": 0,
+      "sliced_image_size": 1,
+      "top_affine_deltas": [
+        [
+          1,
+          0.5
+        ],
+        [
+          7,
+          0.5
+        ]
+      ]
+    },
+    {
+      "carry": 16,
+      "samples": 1,
+      "sources_hit": 1,
+      "global_residual_energy": 2.193e-05,
+      "carry_conditioned_residual_energy": 0.0,
+      "carry_sliced_residual_energy": 0.0,
+      "reduction_fraction": 1.0,
+      "sliced_reduction_fraction": 1.0,
+      "sliced_multiplier": 0,
+      "sliced_offset": 0,
+      "sliced_image_size": 1,
+      "top_affine_deltas": [
+        [
+          1,
+          1.0
+        ]
+      ]
+    }
+  ],
+  "top_residual_edges": [
+    {
+      "source": 3,
+      "target": 5,
+      "true_probability": 0.5,
+      "model_probability": 0.04162598,
+      "residual": 0.45837402,
+      "carry_mix": {
+        "1": 1.0
+      }
+    },
+    {
+      "source": 7,
+      "target": 35,
+      "true_probability": 0.5,
+      "model_probability": 0.04162598,
+      "residual": 0.45837402,
+      "carry_mix": {
+        "1": 1.0
+      }
+    },
+    {
+      "source": 11,
+      "target": 41,
+      "true_probability": 0.5,
+      "model_probability": 0.04162598,
+      "residual": 0.45837402,
+      "carry_mix": {
+        "1": 1.0
+      }
+    },
+    {
+      "source": 15,
+      "target": 23,
+      "true_probability": 0.5,
+      "model_probability": 0.04162598,
+      "residual": 0.45837402,
+      "carry_mix": {
+        "1": 1.0
+      }
+    },
+    {
+      "source": 23,
+      "target": 35,
+      "true_probability": 0.5,
+      "model_probability": 0.04162598,
+      "residual": 0.45837402,
+      "carry_mix": {
+        "1": 1.0
+      }
+    },
+    {
+      "source": 39,
+      "target": 11,
+      "true_probability": 0.5,
+      "model_probability": 0.04162598,
+      "residual": 0.45837402,
+      "carry_mix": {
+        "1": 1.0
+      }
+    },
+    {
+      "source": 43,
+      "target": 41,
+      "true_probability": 0.5,
+      "model_probability": 0.04162598,
+      "residual": 0.45837402,
+      "carry_mix": {
+        "1": 1.0
+      }
+    },
+    {
+      "source": 11,
+      "target": 17,
+      "true_probability": 0.5,
+      "model_probability": 0.04166667,
+      "residual": 0.45833333,
+      "carry_mix": {
+        "1": 1.0
+      }
+    },
+    {
+      "source": 15,
+      "target": 47,
+      "true_probability": 0.5,
+      "model_probability": 0.04166667,
+      "residual": 0.45833333,
+      "carry_mix": {
+        "1": 1.0
+      }
+    },
+    {
+      "source": 19,
+      "target": 5,
+      "true_probability": 0.5,
+      "model_probability": 0.04166667,
+      "residual": 0.45833333,
+      "carry_mix": {
+        "1": 1.0
+      }
+    },
+    {
+      "source": 27,
+      "target": 17,
+      "true_probability": 0.5,
+      "model_probability": 0.04166667,
+      "residual": 0.45833333,
+      "carry_mix": {
+        "1": 1.0
+      }
+    },
+    {
+      "source": 31,
+      "target": 23,
+      "true_probability": 0.5,
+      "model_probability": 0.04166667,
+      "residual": 0.45833333,
+      "carry_mix": {
+        "1": 1.0
+      }
+    },
+    {
+      "source": 31,
+      "target": 47,
+      "true_probability": 0.5,
+      "model_probability": 0.04166667,
+      "residual": 0.45833333,
+      "carry_mix": {
+        "1": 1.0
+      }
+    },
+    {
+      "source": 35,
+      "target": 5,
+      "true_probability": 0.5,
+      "model_probability": 0.04166667,
+      "residual": 0.45833333,
+      "carry_mix": {
+        "1": 1.0
+      }
+    },
+    {
+      "source": 43,
+      "target": 17,
+      "true_probability": 0.5,
+      "model_probability": 0.04166667,
+      "residual": 0.45833333,
+      "carry_mix": {
+        "1": 1.0
+      }
+    },
+    {
+      "source": 47,
+      "target": 23,
+      "true_probability": 0.5,
+      "model_probability": 0.04166667,
+      "residual": 0.45833333,
+      "carry_mix": {
+        "1": 1.0
+      }
+    }
+  ]
+}

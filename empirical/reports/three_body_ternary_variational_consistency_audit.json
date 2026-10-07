@@ -1,0 +1,56 @@
+{
+  "claim_tested": "force-level projection equals Euler-Lagrange dynamics of L_ref",
+  "kill_condition": "relative acceleration residual > 0.001",
+  "parameters": {
+    "masses": [
+      1.0,
+      1.25,
+      0.85
+    ],
+    "delta": 0.15,
+    "epsilon": 0.001,
+    "seed": 2863,
+    "samples": 3,
+    "fd_step": 1e-06,
+    "variation_step": 2e-05,
+    "min_shape_quality": 0.001,
+    "consistency_tol": 0.001,
+    "lstsq_rcond": 1e-10,
+    "report": "empirical\\reports\\three_body_ternary_variational_consistency_audit.md",
+    "json": "empirical\\reports\\three_body_ternary_variational_consistency_audit.json"
+  },
+  "samples": [
+    {
+      "seed": 2863,
+      "evaluated": true,
+      "shape_quality": 0.17480325253499424,
+      "relative_acceleration_residual": 0.9999999999997129,
+      "variational_acceleration_norm": 2841.7155096088027,
+      "projected_force_acceleration_norm": 1.4206153376559524e-08
+    },
+    {
+      "seed": 2864,
+      "evaluated": true,
+      "shape_quality": 0.13561626910832364,
+      "relative_acceleration_residual": 0.9999999999759601,
+      "variational_acceleration_norm": 56.297165899661465,
+      "projected_force_acceleration_norm": 2.344996766992978e-08
+    },
+    {
+      "seed": 2865,
+      "evaluated": true,
+      "shape_quality": 0.17044271497100838,
+      "relative_acceleration_residual": 1.0000000000136242,
+      "variational_acceleration_norm": 371.6403966218244,
+      "projected_force_acceleration_norm": 1.411807726737264e-07
+    }
+  ],
+  "summary": {
+    "status": "KILL",
+    "E3_red_status": "EVALUABLE_ONLY_IF_STATUS_PASS",
+    "max_relative_acceleration_residual": 1.0000000000136242,
+    "kills": [
+      "projected force is not Euler-Lagrange for L_ref within tolerance"
+    ]
+  }
+}

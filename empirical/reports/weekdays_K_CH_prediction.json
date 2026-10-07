@@ -1,0 +1,390 @@
+{
+  "peak": 0.76,
+  "neighbor": 0.09,
+  "floor": 0.015,
+  "centroid_source": "parametric",
+  "empirical_centroids_path": null,
+  "empirical_outputs_available_locally": false,
+  "centroids": [
+    [
+      0.76,
+      0.09,
+      0.015,
+      0.015,
+      0.015,
+      0.015,
+      0.09
+    ],
+    [
+      0.09,
+      0.76,
+      0.09,
+      0.015,
+      0.015,
+      0.015,
+      0.015
+    ],
+    [
+      0.015,
+      0.09,
+      0.76,
+      0.09,
+      0.015,
+      0.015,
+      0.015
+    ],
+    [
+      0.015,
+      0.015,
+      0.09,
+      0.76,
+      0.09,
+      0.015,
+      0.015
+    ],
+    [
+      0.015,
+      0.015,
+      0.015,
+      0.09,
+      0.76,
+      0.09,
+      0.015
+    ],
+    [
+      0.015,
+      0.015,
+      0.015,
+      0.015,
+      0.09,
+      0.76,
+      0.09
+    ],
+    [
+      0.09,
+      0.015,
+      0.015,
+      0.015,
+      0.015,
+      0.09,
+      0.76
+    ]
+  ],
+  "adjacent": {
+    "start": "Monday",
+    "end": "Tuesday",
+    "cyclic_separation": 1,
+    "h_moment": [
+      -0.67,
+      0.67,
+      0.075,
+      0.0,
+      0.0,
+      0.0,
+      -0.075
+    ],
+    "h_natural_delta": [
+      -2.133508763,
+      2.133508763,
+      1.7917594692,
+      0.0,
+      0.0,
+      0.0,
+      -1.7917594692
+    ],
+    "h_hellinger_tangent_at_uniform": [
+      -0.8863266892,
+      0.8863266892,
+      0.0992156742,
+      0.0,
+      0.0,
+      0.0,
+      -0.0992156742
+    ],
+    "fisher_norm_h": 2.5225681358,
+    "cubic_T_hhh": 0.0,
+    "cubic_T_unit": 0.0,
+    "K_h_h": [
+      2.23325,
+      2.23325,
+      -0.869675,
+      -0.90905,
+      -0.90905,
+      -0.90905,
+      -0.869675
+    ],
+    "fisher_norm_K_h_h": 9.8876778015,
+    "endpoint_deviation_m_norm": 2.4719194504,
+    "endpoint_deviation_e_norm": 2.4719194504,
+    "midpoint_deviation_m_norm": 0.6179798626,
+    "midpoint_deviation_e_norm": 0.6179798626,
+    "exact_max_m_vs_lc_hellinger": 0.0210882315,
+    "exact_max_e_vs_lc_hellinger": 0.0250241255,
+    "exact_mean_m_vs_lc_hellinger": 0.0171877409,
+    "exact_mean_e_vs_lc_hellinger": 0.019823846,
+    "exact_m_path_length_hellinger": 0.6193672384,
+    "exact_e_path_length_hellinger": 0.6205849205,
+    "exact_lc_path_length_hellinger": 0.6182062049
+  },
+  "nonadjacent": {
+    "start": "Monday",
+    "end": "Wednesday",
+    "cyclic_separation": 2,
+    "h_moment": [
+      -0.745,
+      0.0,
+      0.745,
+      0.075,
+      0.0,
+      0.0,
+      -0.075
+    ],
+    "h_natural_delta": [
+      -3.9252682322,
+      0.0,
+      3.9252682322,
+      1.7917594692,
+      0.0,
+      0.0,
+      -1.7917594692
+    ],
+    "h_hellinger_tangent_at_uniform": [
+      -0.9855423634,
+      0.0,
+      0.9855423634,
+      0.0992156742,
+      0.0,
+      0.0,
+      -0.0992156742
+    ],
+    "fisher_norm_h": 2.8016245287,
+    "cubic_T_hhh": 0.0,
+    "cubic_T_unit": 0.0,
+    "K_h_h": [
+      2.763875,
+      -1.1213,
+      2.763875,
+      -1.081925,
+      -1.1213,
+      -1.1213,
+      -1.081925
+    ],
+    "fisher_norm_K_h_h": 12.2367283858,
+    "endpoint_deviation_m_norm": 3.0591820964,
+    "endpoint_deviation_e_norm": 3.0591820964,
+    "midpoint_deviation_m_norm": 0.7647955241,
+    "midpoint_deviation_e_norm": 0.7647955241,
+    "exact_max_m_vs_lc_hellinger": 0.0664101614,
+    "exact_max_e_vs_lc_hellinger": 0.1315015276,
+    "exact_mean_m_vs_lc_hellinger": 0.057669869,
+    "exact_mean_e_vs_lc_hellinger": 0.0865034837,
+    "exact_m_path_length_hellinger": 0.8252845496,
+    "exact_e_path_length_hellinger": 0.8634425319,
+    "exact_lc_path_length_hellinger": 0.814304073
+  },
+  "correlations": {
+    "hellinger_chord_vs_cyclic_arc": 0.9100096146,
+    "moment_chord_vs_cyclic_arc": 0.8864480974,
+    "natural_chord_vs_cyclic_arc": 0.9412947419,
+    "lc_distance_vs_cyclic_arc": 0.9117762302
+  },
+  "gap_accounting": {
+    "wurgaft_manifold_r": 0.9896,
+    "wurgaft_text_linear_r": 0.89,
+    "wurgaft_text_gap": 0.0996,
+    "intrinsic_behavior_linear_r": 0.8864480974,
+    "intrinsic_behavior_gap_to_wurgaft_manifold_r": 0.1031519026,
+    "residual_vs_wurgaft_text_linear_r": -0.0035519026,
+    "explained_fraction_of_text_gap": 1.0356616726
+  },
+  "character_basis": {
+    "monday_direction_hat": [
+      {
+        "real": 0.0,
+        "imag": 0.0
+      },
+      {
+        "real": 0.3169320815,
+        "imag": 0.0
+      },
+      {
+        "real": 0.2689677813,
+        "imag": 0.0
+      },
+      {
+        "real": 0.2305033989,
+        "imag": -0.0
+      },
+      {
+        "real": 0.2305033989,
+        "imag": -0.0
+      },
+      {
+        "real": 0.2689677813,
+        "imag": 0.0
+      },
+      {
+        "real": 0.3169320815,
+        "imag": 0.0
+      }
+    ],
+    "monday_direction_operator_nontrivial": [
+      [
+        {
+          "real": 0.0,
+          "imag": 0.0
+        },
+        {
+          "real": 0.8385234703,
+          "imag": 0.0
+        },
+        {
+          "real": 0.7116218599,
+          "imag": 0.0
+        },
+        {
+          "real": 0.6098546698,
+          "imag": -0.0
+        },
+        {
+          "real": 0.6098546698,
+          "imag": -0.0
+        },
+        {
+          "real": 0.7116218599,
+          "imag": 0.0
+        }
+      ],
+      [
+        {
+          "real": 0.8385234703,
+          "imag": 0.0
+        },
+        {
+          "real": 0.0,
+          "imag": 0.0
+        },
+        {
+          "real": 0.8385234703,
+          "imag": 0.0
+        },
+        {
+          "real": 0.7116218599,
+          "imag": 0.0
+        },
+        {
+          "real": 0.6098546698,
+          "imag": -0.0
+        },
+        {
+          "real": 0.6098546698,
+          "imag": -0.0
+        }
+      ],
+      [
+        {
+          "real": 0.7116218599,
+          "imag": 0.0
+        },
+        {
+          "real": 0.8385234703,
+          "imag": 0.0
+        },
+        {
+          "real": 0.0,
+          "imag": 0.0
+        },
+        {
+          "real": 0.8385234703,
+          "imag": 0.0
+        },
+        {
+          "real": 0.7116218599,
+          "imag": 0.0
+        },
+        {
+          "real": 0.6098546698,
+          "imag": -0.0
+        }
+      ],
+      [
+        {
+          "real": 0.6098546698,
+          "imag": -0.0
+        },
+        {
+          "real": 0.7116218599,
+          "imag": 0.0
+        },
+        {
+          "real": 0.8385234703,
+          "imag": 0.0
+        },
+        {
+          "real": 0.0,
+          "imag": 0.0
+        },
+        {
+          "real": 0.8385234703,
+          "imag": 0.0
+        },
+        {
+          "real": 0.7116218599,
+          "imag": 0.0
+        }
+      ],
+      [
+        {
+          "real": 0.6098546698,
+          "imag": -0.0
+        },
+        {
+          "real": 0.6098546698,
+          "imag": -0.0
+        },
+        {
+          "real": 0.7116218599,
+          "imag": 0.0
+        },
+        {
+          "real": 0.8385234703,
+          "imag": 0.0
+        },
+        {
+          "real": 0.0,
+          "imag": 0.0
+        },
+        {
+          "real": 0.8385234703,
+          "imag": 0.0
+        }
+      ],
+      [
+        {
+          "real": 0.7116218599,
+          "imag": 0.0
+        },
+        {
+          "real": 0.6098546698,
+          "imag": -0.0
+        },
+        {
+          "real": 0.6098546698,
+          "imag": -0.0
+        },
+        {
+          "real": 0.7116218599,
+          "imag": 0.0
+        },
+        {
+          "real": 0.8385234703,
+          "imag": 0.0
+        },
+        {
+          "real": 0.0,
+          "imag": 0.0
+        }
+      ]
+    ]
+  }
+}

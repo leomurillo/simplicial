@@ -1,0 +1,1272 @@
+{
+  "probe": "r_p_parity_N1",
+  "exact": true,
+  "N_range": [
+    2,
+    30
+  ],
+  "rows": [
+    {
+      "N": 2,
+      "sf(P)": 1,
+      "Q(sqrt sf) conductor": 1,
+      "det_in_Q_zetaN": true,
+      "N_mod_4": 2,
+      "relevant_primes": [
+        {
+          "p": 2,
+          "r_p": 0,
+          "even": true
+        }
+      ],
+      "naive_per_prime_all_even": true
+    },
+    {
+      "N": 3,
+      "sf(P)": 3,
+      "Q(sqrt sf) conductor": 12,
+      "det_in_Q_zetaN": false,
+      "N_mod_4": 3,
+      "relevant_primes": [
+        {
+          "p": 2,
+          "r_p": 2,
+          "even": true
+        },
+        {
+          "p": 3,
+          "r_p": 1,
+          "even": false
+        }
+      ],
+      "naive_per_prime_all_even": false
+    },
+    {
+      "N": 4,
+      "sf(P)": 1,
+      "Q(sqrt sf) conductor": 1,
+      "det_in_Q_zetaN": true,
+      "N_mod_4": 0,
+      "relevant_primes": [
+        {
+          "p": 2,
+          "r_p": 2,
+          "even": true
+        },
+        {
+          "p": 3,
+          "r_p": 2,
+          "even": true
+        }
+      ],
+      "naive_per_prime_all_even": true
+    },
+    {
+      "N": 5,
+      "sf(P)": 5,
+      "Q(sqrt sf) conductor": 5,
+      "det_in_Q_zetaN": true,
+      "N_mod_4": 1,
+      "relevant_primes": [
+        {
+          "p": 2,
+          "r_p": 2,
+          "even": true
+        },
+        {
+          "p": 3,
+          "r_p": 2,
+          "even": true
+        }
+      ],
+      "naive_per_prime_all_even": true
+    },
+    {
+      "N": 6,
+      "sf(P)": 1,
+      "Q(sqrt sf) conductor": 1,
+      "det_in_Q_zetaN": true,
+      "N_mod_4": 2,
+      "relevant_primes": [
+        {
+          "p": 2,
+          "r_p": 2,
+          "even": true
+        },
+        {
+          "p": 3,
+          "r_p": 2,
+          "even": true
+        },
+        {
+          "p": 5,
+          "r_p": 2,
+          "even": true
+        }
+      ],
+      "naive_per_prime_all_even": true
+    },
+    {
+      "N": 7,
+      "sf(P)": 7,
+      "Q(sqrt sf) conductor": 28,
+      "det_in_Q_zetaN": false,
+      "N_mod_4": 3,
+      "relevant_primes": [
+        {
+          "p": 2,
+          "r_p": 4,
+          "even": true
+        },
+        {
+          "p": 3,
+          "r_p": 4,
+          "even": true
+        },
+        {
+          "p": 5,
+          "r_p": 2,
+          "even": true
+        },
+        {
+          "p": 7,
+          "r_p": 5,
+          "even": false
+        }
+      ],
+      "naive_per_prime_all_even": false
+    },
+    {
+      "N": 8,
+      "sf(P)": 1,
+      "Q(sqrt sf) conductor": 1,
+      "det_in_Q_zetaN": true,
+      "N_mod_4": 0,
+      "relevant_primes": [
+        {
+          "p": 3,
+          "r_p": 4,
+          "even": true
+        },
+        {
+          "p": 5,
+          "r_p": 2,
+          "even": true
+        },
+        {
+          "p": 7,
+          "r_p": 2,
+          "even": true
+        }
+      ],
+      "naive_per_prime_all_even": true
+    },
+    {
+      "N": 9,
+      "sf(P)": 1,
+      "Q(sqrt sf) conductor": 1,
+      "det_in_Q_zetaN": true,
+      "N_mod_4": 1,
+      "relevant_primes": [
+        {
+          "p": 2,
+          "r_p": 6,
+          "even": true
+        },
+        {
+          "p": 3,
+          "r_p": 4,
+          "even": true
+        },
+        {
+          "p": 5,
+          "r_p": 2,
+          "even": true
+        },
+        {
+          "p": 7,
+          "r_p": 2,
+          "even": true
+        }
+      ],
+      "naive_per_prime_all_even": true
+    },
+    {
+      "N": 10,
+      "sf(P)": 1,
+      "Q(sqrt sf) conductor": 1,
+      "det_in_Q_zetaN": true,
+      "N_mod_4": 2,
+      "relevant_primes": [
+        {
+          "p": 2,
+          "r_p": 2,
+          "even": true
+        },
+        {
+          "p": 3,
+          "r_p": 4,
+          "even": true
+        },
+        {
+          "p": 7,
+          "r_p": 2,
+          "even": true
+        }
+      ],
+      "naive_per_prime_all_even": true
+    },
+    {
+      "N": 11,
+      "sf(P)": 11,
+      "Q(sqrt sf) conductor": 44,
+      "det_in_Q_zetaN": false,
+      "N_mod_4": 3,
+      "relevant_primes": [
+        {
+          "p": 2,
+          "r_p": 8,
+          "even": true
+        },
+        {
+          "p": 3,
+          "r_p": 4,
+          "even": true
+        },
+        {
+          "p": 5,
+          "r_p": 4,
+          "even": true
+        },
+        {
+          "p": 7,
+          "r_p": 2,
+          "even": true
+        },
+        {
+          "p": 11,
+          "r_p": 9,
+          "even": false
+        }
+      ],
+      "naive_per_prime_all_even": false
+    },
+    {
+      "N": 12,
+      "sf(P)": 1,
+      "Q(sqrt sf) conductor": 1,
+      "det_in_Q_zetaN": true,
+      "N_mod_4": 0,
+      "relevant_primes": [
+        {
+          "p": 2,
+          "r_p": 8,
+          "even": true
+        },
+        {
+          "p": 3,
+          "r_p": 6,
+          "even": true
+        },
+        {
+          "p": 5,
+          "r_p": 4,
+          "even": true
+        },
+        {
+          "p": 7,
+          "r_p": 2,
+          "even": true
+        },
+        {
+          "p": 11,
+          "r_p": 2,
+          "even": true
+        }
+      ],
+      "naive_per_prime_all_even": true
+    },
+    {
+      "N": 13,
+      "sf(P)": 13,
+      "Q(sqrt sf) conductor": 13,
+      "det_in_Q_zetaN": true,
+      "N_mod_4": 1,
+      "relevant_primes": [
+        {
+          "p": 2,
+          "r_p": 8,
+          "even": true
+        },
+        {
+          "p": 3,
+          "r_p": 6,
+          "even": true
+        },
+        {
+          "p": 5,
+          "r_p": 4,
+          "even": true
+        },
+        {
+          "p": 7,
+          "r_p": 2,
+          "even": true
+        },
+        {
+          "p": 11,
+          "r_p": 2,
+          "even": true
+        }
+      ],
+      "naive_per_prime_all_even": true
+    },
+    {
+      "N": 14,
+      "sf(P)": 1,
+      "Q(sqrt sf) conductor": 1,
+      "det_in_Q_zetaN": true,
+      "N_mod_4": 2,
+      "relevant_primes": [
+        {
+          "p": 2,
+          "r_p": 4,
+          "even": true
+        },
+        {
+          "p": 3,
+          "r_p": 6,
+          "even": true
+        },
+        {
+          "p": 5,
+          "r_p": 4,
+          "even": true
+        },
+        {
+          "p": 7,
+          "r_p": 10,
+          "even": true
+        },
+        {
+          "p": 11,
+          "r_p": 2,
+          "even": true
+        },
+        {
+          "p": 13,
+          "r_p": 2,
+          "even": true
+        }
+      ],
+      "naive_per_prime_all_even": true
+    },
+    {
+      "N": 15,
+      "sf(P)": 15,
+      "Q(sqrt sf) conductor": 60,
+      "det_in_Q_zetaN": false,
+      "N_mod_4": 3,
+      "relevant_primes": [
+        {
+          "p": 2,
+          "r_p": 10,
+          "even": true
+        },
+        {
+          "p": 3,
+          "r_p": 7,
+          "even": false
+        },
+        {
+          "p": 7,
+          "r_p": 4,
+          "even": true
+        },
+        {
+          "p": 11,
+          "r_p": 2,
+          "even": true
+        },
+        {
+          "p": 13,
+          "r_p": 2,
+          "even": true
+        }
+      ],
+      "naive_per_prime_all_even": false
+    },
+    {
+      "N": 16,
+      "sf(P)": 1,
+      "Q(sqrt sf) conductor": 1,
+      "det_in_Q_zetaN": true,
+      "N_mod_4": 0,
+      "relevant_primes": [
+        {
+          "p": 3,
+          "r_p": 8,
+          "even": true
+        },
+        {
+          "p": 5,
+          "r_p": 6,
+          "even": true
+        },
+        {
+          "p": 7,
+          "r_p": 4,
+          "even": true
+        },
+        {
+          "p": 11,
+          "r_p": 2,
+          "even": true
+        },
+        {
+          "p": 13,
+          "r_p": 2,
+          "even": true
+        }
+      ],
+      "naive_per_prime_all_even": true
+    },
+    {
+      "N": 17,
+      "sf(P)": 17,
+      "Q(sqrt sf) conductor": 17,
+      "det_in_Q_zetaN": true,
+      "N_mod_4": 1,
+      "relevant_primes": [
+        {
+          "p": 2,
+          "r_p": 10,
+          "even": true
+        },
+        {
+          "p": 3,
+          "r_p": 8,
+          "even": true
+        },
+        {
+          "p": 5,
+          "r_p": 6,
+          "even": true
+        },
+        {
+          "p": 7,
+          "r_p": 4,
+          "even": true
+        },
+        {
+          "p": 11,
+          "r_p": 2,
+          "even": true
+        },
+        {
+          "p": 13,
+          "r_p": 2,
+          "even": true
+        }
+      ],
+      "naive_per_prime_all_even": true
+    },
+    {
+      "N": 18,
+      "sf(P)": 1,
+      "Q(sqrt sf) conductor": 1,
+      "det_in_Q_zetaN": true,
+      "N_mod_4": 2,
+      "relevant_primes": [
+        {
+          "p": 2,
+          "r_p": 6,
+          "even": true
+        },
+        {
+          "p": 3,
+          "r_p": 8,
+          "even": true
+        },
+        {
+          "p": 5,
+          "r_p": 6,
+          "even": true
+        },
+        {
+          "p": 7,
+          "r_p": 4,
+          "even": true
+        },
+        {
+          "p": 11,
+          "r_p": 2,
+          "even": true
+        },
+        {
+          "p": 13,
+          "r_p": 2,
+          "even": true
+        },
+        {
+          "p": 17,
+          "r_p": 2,
+          "even": true
+        }
+      ],
+      "naive_per_prime_all_even": true
+    },
+    {
+      "N": 19,
+      "sf(P)": 19,
+      "Q(sqrt sf) conductor": 76,
+      "det_in_Q_zetaN": false,
+      "N_mod_4": 3,
+      "relevant_primes": [
+        {
+          "p": 2,
+          "r_p": 12,
+          "even": true
+        },
+        {
+          "p": 3,
+          "r_p": 8,
+          "even": true
+        },
+        {
+          "p": 5,
+          "r_p": 6,
+          "even": true
+        },
+        {
+          "p": 7,
+          "r_p": 4,
+          "even": true
+        },
+        {
+          "p": 11,
+          "r_p": 2,
+          "even": true
+        },
+        {
+          "p": 13,
+          "r_p": 2,
+          "even": true
+        },
+        {
+          "p": 17,
+          "r_p": 2,
+          "even": true
+        },
+        {
+          "p": 19,
+          "r_p": 17,
+          "even": false
+        }
+      ],
+      "naive_per_prime_all_even": false
+    },
+    {
+      "N": 20,
+      "sf(P)": 1,
+      "Q(sqrt sf) conductor": 1,
+      "det_in_Q_zetaN": true,
+      "N_mod_4": 0,
+      "relevant_primes": [
+        {
+          "p": 2,
+          "r_p": 12,
+          "even": true
+        },
+        {
+          "p": 3,
+          "r_p": 8,
+          "even": true
+        },
+        {
+          "p": 7,
+          "r_p": 4,
+          "even": true
+        },
+        {
+          "p": 11,
+          "r_p": 2,
+          "even": true
+        },
+        {
+          "p": 13,
+          "r_p": 2,
+          "even": true
+        },
+        {
+          "p": 17,
+          "r_p": 2,
+          "even": true
+        },
+        {
+          "p": 19,
+          "r_p": 2,
+          "even": true
+        }
+      ],
+      "naive_per_prime_all_even": true
+    },
+    {
+      "N": 21,
+      "sf(P)": 21,
+      "Q(sqrt sf) conductor": 21,
+      "det_in_Q_zetaN": true,
+      "N_mod_4": 1,
+      "relevant_primes": [
+        {
+          "p": 2,
+          "r_p": 12,
+          "even": true
+        },
+        {
+          "p": 3,
+          "r_p": 11,
+          "even": false
+        },
+        {
+          "p": 5,
+          "r_p": 8,
+          "even": true
+        },
+        {
+          "p": 7,
+          "r_p": 15,
+          "even": false
+        },
+        {
+          "p": 11,
+          "r_p": 2,
+          "even": true
+        },
+        {
+          "p": 13,
+          "r_p": 2,
+          "even": true
+        },
+        {
+          "p": 17,
+          "r_p": 2,
+          "even": true
+        },
+        {
+          "p": 19,
+          "r_p": 2,
+          "even": true
+        }
+      ],
+      "naive_per_prime_all_even": false
+    },
+    {
+      "N": 22,
+      "sf(P)": 1,
+      "Q(sqrt sf) conductor": 1,
+      "det_in_Q_zetaN": true,
+      "N_mod_4": 2,
+      "relevant_primes": [
+        {
+          "p": 2,
+          "r_p": 8,
+          "even": true
+        },
+        {
+          "p": 3,
+          "r_p": 10,
+          "even": true
+        },
+        {
+          "p": 5,
+          "r_p": 8,
+          "even": true
+        },
+        {
+          "p": 7,
+          "r_p": 6,
+          "even": true
+        },
+        {
+          "p": 11,
+          "r_p": 18,
+          "even": true
+        },
+        {
+          "p": 13,
+          "r_p": 2,
+          "even": true
+        },
+        {
+          "p": 17,
+          "r_p": 2,
+          "even": true
+        },
+        {
+          "p": 19,
+          "r_p": 2,
+          "even": true
+        }
+      ],
+      "naive_per_prime_all_even": true
+    },
+    {
+      "N": 23,
+      "sf(P)": 23,
+      "Q(sqrt sf) conductor": 92,
+      "det_in_Q_zetaN": false,
+      "N_mod_4": 3,
+      "relevant_primes": [
+        {
+          "p": 2,
+          "r_p": 14,
+          "even": true
+        },
+        {
+          "p": 3,
+          "r_p": 10,
+          "even": true
+        },
+        {
+          "p": 5,
+          "r_p": 8,
+          "even": true
+        },
+        {
+          "p": 7,
+          "r_p": 6,
+          "even": true
+        },
+        {
+          "p": 11,
+          "r_p": 4,
+          "even": true
+        },
+        {
+          "p": 13,
+          "r_p": 2,
+          "even": true
+        },
+        {
+          "p": 17,
+          "r_p": 2,
+          "even": true
+        },
+        {
+          "p": 19,
+          "r_p": 2,
+          "even": true
+        },
+        {
+          "p": 23,
+          "r_p": 21,
+          "even": false
+        }
+      ],
+      "naive_per_prime_all_even": false
+    },
+    {
+      "N": 24,
+      "sf(P)": 1,
+      "Q(sqrt sf) conductor": 1,
+      "det_in_Q_zetaN": true,
+      "N_mod_4": 0,
+      "relevant_primes": [
+        {
+          "p": 3,
+          "r_p": 12,
+          "even": true
+        },
+        {
+          "p": 5,
+          "r_p": 8,
+          "even": true
+        },
+        {
+          "p": 7,
+          "r_p": 6,
+          "even": true
+        },
+        {
+          "p": 11,
+          "r_p": 4,
+          "even": true
+        },
+        {
+          "p": 13,
+          "r_p": 2,
+          "even": true
+        },
+        {
+          "p": 17,
+          "r_p": 2,
+          "even": true
+        },
+        {
+          "p": 19,
+          "r_p": 2,
+          "even": true
+        },
+        {
+          "p": 23,
+          "r_p": 2,
+          "even": true
+        }
+      ],
+      "naive_per_prime_all_even": true
+    },
+    {
+      "N": 25,
+      "sf(P)": 1,
+      "Q(sqrt sf) conductor": 1,
+      "det_in_Q_zetaN": true,
+      "N_mod_4": 1,
+      "relevant_primes": [
+        {
+          "p": 2,
+          "r_p": 16,
+          "even": true
+        },
+        {
+          "p": 3,
+          "r_p": 12,
+          "even": true
+        },
+        {
+          "p": 7,
+          "r_p": 6,
+          "even": true
+        },
+        {
+          "p": 11,
+          "r_p": 4,
+          "even": true
+        },
+        {
+          "p": 13,
+          "r_p": 2,
+          "even": true
+        },
+        {
+          "p": 17,
+          "r_p": 2,
+          "even": true
+        },
+        {
+          "p": 19,
+          "r_p": 2,
+          "even": true
+        },
+        {
+          "p": 23,
+          "r_p": 2,
+          "even": true
+        }
+      ],
+      "naive_per_prime_all_even": true
+    },
+    {
+      "N": 26,
+      "sf(P)": 1,
+      "Q(sqrt sf) conductor": 1,
+      "det_in_Q_zetaN": true,
+      "N_mod_4": 2,
+      "relevant_primes": [
+        {
+          "p": 2,
+          "r_p": 8,
+          "even": true
+        },
+        {
+          "p": 3,
+          "r_p": 12,
+          "even": true
+        },
+        {
+          "p": 5,
+          "r_p": 8,
+          "even": true
+        },
+        {
+          "p": 7,
+          "r_p": 6,
+          "even": true
+        },
+        {
+          "p": 11,
+          "r_p": 4,
+          "even": true
+        },
+        {
+          "p": 17,
+          "r_p": 2,
+          "even": true
+        },
+        {
+          "p": 19,
+          "r_p": 2,
+          "even": true
+        },
+        {
+          "p": 23,
+          "r_p": 2,
+          "even": true
+        }
+      ],
+      "naive_per_prime_all_even": true
+    },
+    {
+      "N": 27,
+      "sf(P)": 3,
+      "Q(sqrt sf) conductor": 12,
+      "det_in_Q_zetaN": false,
+      "N_mod_4": 3,
+      "relevant_primes": [
+        {
+          "p": 2,
+          "r_p": 18,
+          "even": true
+        },
+        {
+          "p": 3,
+          "r_p": 13,
+          "even": false
+        },
+        {
+          "p": 5,
+          "r_p": 8,
+          "even": true
+        },
+        {
+          "p": 7,
+          "r_p": 6,
+          "even": true
+        },
+        {
+          "p": 11,
+          "r_p": 4,
+          "even": true
+        },
+        {
+          "p": 13,
+          "r_p": 4,
+          "even": true
+        },
+        {
+          "p": 17,
+          "r_p": 2,
+          "even": true
+        },
+        {
+          "p": 19,
+          "r_p": 2,
+          "even": true
+        },
+        {
+          "p": 23,
+          "r_p": 2,
+          "even": true
+        }
+      ],
+      "naive_per_prime_all_even": false
+    },
+    {
+      "N": 28,
+      "sf(P)": 1,
+      "Q(sqrt sf) conductor": 1,
+      "det_in_Q_zetaN": true,
+      "N_mod_4": 0,
+      "relevant_primes": [
+        {
+          "p": 2,
+          "r_p": 18,
+          "even": true
+        },
+        {
+          "p": 3,
+          "r_p": 14,
+          "even": true
+        },
+        {
+          "p": 5,
+          "r_p": 8,
+          "even": true
+        },
+        {
+          "p": 7,
+          "r_p": 20,
+          "even": true
+        },
+        {
+          "p": 11,
+          "r_p": 4,
+          "even": true
+        },
+        {
+          "p": 13,
+          "r_p": 4,
+          "even": true
+        },
+        {
+          "p": 17,
+          "r_p": 2,
+          "even": true
+        },
+        {
+          "p": 19,
+          "r_p": 2,
+          "even": true
+        },
+        {
+          "p": 23,
+          "r_p": 2,
+          "even": true
+        }
+      ],
+      "naive_per_prime_all_even": true
+    },
+    {
+      "N": 29,
+      "sf(P)": 29,
+      "Q(sqrt sf) conductor": 29,
+      "det_in_Q_zetaN": true,
+      "N_mod_4": 1,
+      "relevant_primes": [
+        {
+          "p": 2,
+          "r_p": 18,
+          "even": true
+        },
+        {
+          "p": 3,
+          "r_p": 14,
+          "even": true
+        },
+        {
+          "p": 5,
+          "r_p": 8,
+          "even": true
+        },
+        {
+          "p": 7,
+          "r_p": 8,
+          "even": true
+        },
+        {
+          "p": 11,
+          "r_p": 4,
+          "even": true
+        },
+        {
+          "p": 13,
+          "r_p": 4,
+          "even": true
+        },
+        {
+          "p": 17,
+          "r_p": 2,
+          "even": true
+        },
+        {
+          "p": 19,
+          "r_p": 2,
+          "even": true
+        },
+        {
+          "p": 23,
+          "r_p": 2,
+          "even": true
+        }
+      ],
+      "naive_per_prime_all_even": true
+    },
+    {
+      "N": 30,
+      "sf(P)": 1,
+      "Q(sqrt sf) conductor": 1,
+      "det_in_Q_zetaN": true,
+      "N_mod_4": 2,
+      "relevant_primes": [
+        {
+          "p": 2,
+          "r_p": 10,
+          "even": true
+        },
+        {
+          "p": 3,
+          "r_p": 14,
+          "even": true
+        },
+        {
+          "p": 7,
+          "r_p": 8,
+          "even": true
+        },
+        {
+          "p": 11,
+          "r_p": 4,
+          "even": true
+        },
+        {
+          "p": 13,
+          "r_p": 4,
+          "even": true
+        },
+        {
+          "p": 17,
+          "r_p": 2,
+          "even": true
+        },
+        {
+          "p": 19,
+          "r_p": 2,
+          "even": true
+        },
+        {
+          "p": 23,
+          "r_p": 2,
+          "even": true
+        },
+        {
+          "p": 29,
+          "r_p": 2,
+          "even": true
+        }
+      ],
+      "naive_per_prime_all_even": true
+    }
+  ],
+  "naive_per_prime_flags": [
+    {
+      "N": 3,
+      "p": 3,
+      "r_p": 1
+    },
+    {
+      "N": 7,
+      "p": 7,
+      "r_p": 5
+    },
+    {
+      "N": 11,
+      "p": 11,
+      "r_p": 9
+    },
+    {
+      "N": 15,
+      "p": 3,
+      "r_p": 7
+    },
+    {
+      "N": 19,
+      "p": 19,
+      "r_p": 17
+    },
+    {
+      "N": 21,
+      "p": 3,
+      "r_p": 11
+    },
+    {
+      "N": 21,
+      "p": 7,
+      "r_p": 15
+    },
+    {
+      "N": 23,
+      "p": 23,
+      "r_p": 21
+    },
+    {
+      "N": 27,
+      "p": 3,
+      "r_p": 13
+    }
+  ],
+  "conductor_violations_of_conj_4_2": [
+    {
+      "N": 3,
+      "sf(P)": 3,
+      "N_mod_4": 3
+    },
+    {
+      "N": 7,
+      "sf(P)": 7,
+      "N_mod_4": 3
+    },
+    {
+      "N": 11,
+      "sf(P)": 11,
+      "N_mod_4": 3
+    },
+    {
+      "N": 15,
+      "sf(P)": 15,
+      "N_mod_4": 3
+    },
+    {
+      "N": 19,
+      "sf(P)": 19,
+      "N_mod_4": 3
+    },
+    {
+      "N": 23,
+      "sf(P)": 23,
+      "N_mod_4": 3
+    },
+    {
+      "N": 27,
+      "sf(P)": 3,
+      "N_mod_4": 3
+    }
+  ],
+  "conj_4_2_holds_all_N_2_to_30": false,
+  "PASS": false
+}
+
+=== r_p(N) PARITY TABLE (relevant primes; E=even, O=odd) + conductor verdict ===
+  N  N%4 |  sf(P)  cond | det in Q(zN)? | per-prime r_p(parity)
+----------------------------------------------------------------------------------
+  2    2 |      1     1 |        True   | 2:0E
+  3    3 |      3    12 |       False   | 2:2E  3:1O
+  4    0 |      1     1 |        True   | 2:2E  3:2E
+  5    1 |      5     5 |        True   | 2:2E  3:2E
+  6    2 |      1     1 |        True   | 2:2E  3:2E  5:2E
+  7    3 |      7    28 |       False   | 2:4E  3:4E  5:2E  7:5O
+  8    0 |      1     1 |        True   | 3:4E  5:2E  7:2E
+  9    1 |      1     1 |        True   | 2:6E  3:4E  5:2E  7:2E
+ 10    2 |      1     1 |        True   | 2:2E  3:4E  7:2E
+ 11    3 |     11    44 |       False   | 2:8E  3:4E  5:4E  7:2E  11:9O
+ 12    0 |      1     1 |        True   | 2:8E  3:6E  5:4E  7:2E  11:2E
+ 13    1 |     13    13 |        True   | 2:8E  3:6E  5:4E  7:2E  11:2E
+ 14    2 |      1     1 |        True   | 2:4E  3:6E  5:4E  7:10E  11:2E  13:2E
+ 15    3 |     15    60 |       False   | 2:10E  3:7O  7:4E  11:2E  13:2E
+ 16    0 |      1     1 |        True   | 3:8E  5:6E  7:4E  11:2E  13:2E
+ 17    1 |     17    17 |        True   | 2:10E  3:8E  5:6E  7:4E  11:2E  13:2E
+ 18    2 |      1     1 |        True   | 2:6E  3:8E  5:6E  7:4E  11:2E  13:2E  17:2E
+ 19    3 |     19    76 |       False   | 2:12E  3:8E  5:6E  7:4E  11:2E  13:2E  17:2E  19:17O
+ 20    0 |      1     1 |        True   | 2:12E  3:8E  7:4E  11:2E  13:2E  17:2E  19:2E
+ 21    1 |     21    21 |        True   | 2:12E  3:11O  5:8E  7:15O  11:2E  13:2E  17:2E  19:2E
+ 22    2 |      1     1 |        True   | 2:8E  3:10E  5:8E  7:6E  11:18E  13:2E  17:2E  19:2E
+ 23    3 |     23    92 |       False   | 2:14E  3:10E  5:8E  7:6E  11:4E  13:2E  17:2E  19:2E  23:21O
+ 24    0 |      1     1 |        True   | 3:12E  5:8E  7:6E  11:4E  13:2E  17:2E  19:2E  23:2E
+ 25    1 |      1     1 |        True   | 2:16E  3:12E  7:6E  11:4E  13:2E  17:2E  19:2E  23:2E
+ 26    2 |      1     1 |        True   | 2:8E  3:12E  5:8E  7:6E  11:4E  17:2E  19:2E  23:2E
+ 27    3 |      3    12 |       False   | 2:18E  3:13O  5:8E  7:6E  11:4E  13:4E  17:2E  19:2E  23:2E
+ 28    0 |      1     1 |        True   | 2:18E  3:14E  5:8E  7:20E  11:4E  13:4E  17:2E  19:2E  23:2E
+ 29    1 |     29    29 |        True   | 2:18E  3:14E  5:8E  7:8E  11:4E  13:4E  17:2E  19:2E  23:2E
+ 30    2 |      1     1 |        True   | 2:10E  3:14E  7:8E  11:4E  13:4E  17:2E  19:2E  23:2E  29:2E
+
+=== VERDICT (authoritative = conductor test, matches direct determinant probe) ===
+Conjecture 4.2 (det U_N in Q(zeta_N)) FAILS at N = [3, 7, 11, 15, 19, 23, 27]
+  -> exactly N = 3 (mod 4): [3]
+  In every failing case sf(P) = 3 mod 4, conductor 4*sf, so sqrt(sf P)
+  needs the factor 4 (i.e. i): det U_N = +-i lies in Q(zeta_4) \ Q(zeta_N),
+  hence in Q(zeta_{4N}). det U_N is STILL a root of unity (Conj 4.1 holds).
+
+Naive per-prime count (N1 section 7.5 as literally stated) would flag N = [3, 7, 11, 15, 19, 21, 23, 27]
+  -> false positives removed by the conductor test: N = [21]
+  This is a substantive correction to N1's Conjecture 4.2 / section-7.5 wording.
+
+PASS = False

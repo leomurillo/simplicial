@@ -1,0 +1,188 @@
+{
+  "webp": 231732,
+  "items": [
+    {
+      "name": "l32",
+      "bytes": 235088,
+      "delta_vs_webp": 3356,
+      "roundtrip_ok": true,
+      "stats": {
+        "codec": "SGF8",
+        "scheme": "ch-ctx-energy-unitary-split-blend71-apex128",
+        "label_context": true,
+        "transforms": [
+          "r-gr-bg",
+          "r-gr-bavg",
+          "g-rg-bavg",
+          "g-bg-ravg",
+          "ycocg",
+          "rgb"
+        ],
+        "bytes": 235088,
+        "header_metadata_bytes": 1107,
+        "entropy_bytes": 233981,
+        "command_rle_bytes": 116,
+        "command_rle_runs": 58,
+        "predictor_metadata_bytes": 480,
+        "energy_metadata_bytes": 288,
+        "unitary_metadata_bytes": 192,
+        "max_symbol": 297,
+        "predictors": {
+          "pred-4": 410,
+          "pred-6": 229,
+          "pred-8": 55,
+          "pred-7": 13,
+          "pred-20": 2,
+          "pred-9": 7,
+          "pred-5": 31,
+          "pred-2": 16,
+          "pred-14": 5
+        },
+        "residual_s": 31.713568900013342,
+        "entropy_encode_s": 19.647657199995592
+      },
+      "decode_stats": {
+        "codec": "SGF8",
+        "scheme": "ch-ctx-energy-unitary-split-blend71-apex128",
+        "label_context": true,
+        "transforms": [
+          "r-gr-bg",
+          "r-gr-bavg",
+          "g-rg-bavg",
+          "g-bg-ravg",
+          "ycocg",
+          "rgb"
+        ],
+        "width": 512,
+        "height": 512,
+        "max_symbol": 297,
+        "metadata_bytes": 1107,
+        "entropy_bytes": 233981,
+        "command_rle_bytes": 116
+      },
+      "elapsed_s": 94.99062029999914
+    },
+    {
+      "name": "l64",
+      "bytes": 234675,
+      "delta_vs_webp": 2943,
+      "roundtrip_ok": true,
+      "stats": {
+        "codec": "SGF8",
+        "scheme": "ch-ctx-energy-unitary-split-blend71-apex128",
+        "label_context": true,
+        "transforms": [
+          "r-gr-bg",
+          "r-gr-bavg",
+          "g-rg-bavg",
+          "g-bg-ravg",
+          "ycocg",
+          "rgb"
+        ],
+        "bytes": 234675,
+        "header_metadata_bytes": 1081,
+        "entropy_bytes": 233594,
+        "command_rle_bytes": 90,
+        "command_rle_runs": 45,
+        "predictor_metadata_bytes": 480,
+        "energy_metadata_bytes": 288,
+        "unitary_metadata_bytes": 192,
+        "max_symbol": 253,
+        "predictors": {
+          "pred-4": 413,
+          "pred-6": 231,
+          "pred-8": 52,
+          "pred-7": 12,
+          "pred-20": 3,
+          "pred-9": 8,
+          "pred-5": 30,
+          "pred-2": 15,
+          "pred-14": 4
+        },
+        "residual_s": 27.690666600014083,
+        "entropy_encode_s": 16.503730900003575
+      },
+      "decode_stats": {
+        "codec": "SGF8",
+        "scheme": "ch-ctx-energy-unitary-split-blend71-apex128",
+        "label_context": true,
+        "transforms": [
+          "r-gr-bg",
+          "r-gr-bavg",
+          "g-rg-bavg",
+          "g-bg-ravg",
+          "ycocg",
+          "rgb"
+        ],
+        "width": 512,
+        "height": 512,
+        "max_symbol": 253,
+        "metadata_bytes": 1081,
+        "entropy_bytes": 233594,
+        "command_rle_bytes": 90
+      },
+      "elapsed_s": 95.22651120001683
+    },
+    {
+      "name": "global",
+      "bytes": 234473,
+      "delta_vs_webp": 2741,
+      "roundtrip_ok": true,
+      "stats": {
+        "codec": "SGF8",
+        "scheme": "ch-ctx-energy-unitary-split-blend71-apex128",
+        "label_context": true,
+        "transforms": [
+          "r-gr-bg",
+          "r-gr-bavg",
+          "g-rg-bavg",
+          "g-bg-ravg",
+          "ycocg",
+          "rgb"
+        ],
+        "bytes": 234473,
+        "header_metadata_bytes": 994,
+        "entropy_bytes": 233479,
+        "command_rle_bytes": 3,
+        "command_rle_runs": 1,
+        "predictor_metadata_bytes": 480,
+        "energy_metadata_bytes": 288,
+        "unitary_metadata_bytes": 192,
+        "max_symbol": 253,
+        "predictors": {
+          "pred-4": 403,
+          "pred-6": 237,
+          "pred-8": 57,
+          "pred-5": 29,
+          "pred-7": 12,
+          "pred-20": 3,
+          "pred-9": 8,
+          "pred-2": 15,
+          "pred-14": 4
+        },
+        "residual_s": 35.45871829998214,
+        "entropy_encode_s": 20.918510799994692
+      },
+      "decode_stats": {
+        "codec": "SGF8",
+        "scheme": "ch-ctx-energy-unitary-split-blend71-apex128",
+        "label_context": true,
+        "transforms": [
+          "r-gr-bg",
+          "r-gr-bavg",
+          "g-rg-bavg",
+          "g-bg-ravg",
+          "ycocg",
+          "rgb"
+        ],
+        "width": 512,
+        "height": 512,
+        "max_symbol": 253,
+        "metadata_bytes": 994,
+        "entropy_bytes": 233479,
+        "command_rle_bytes": 3
+      },
+      "elapsed_s": 113.81947749998653
+    }
+  ]
+}

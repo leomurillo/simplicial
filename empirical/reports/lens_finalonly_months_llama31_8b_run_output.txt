@@ -1,0 +1,7 @@
+# wrote empirical/reports/lens_finalonly_months_llama31_8b.json
+# months on llama31_8b (final layer lens, N=12, n_examples=84):
+#   f_2_final = 0.05060772102299997
+#   f_3_final = 0.06638965431110318
+#   f_4_final = 0.05908215001018404
+#   f_6_final = 0.16650548387747055
+#   f_12_final = 0.6574149907782423

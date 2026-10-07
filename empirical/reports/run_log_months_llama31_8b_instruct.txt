@@ -1,0 +1,52 @@
+/home/leomu/simplicial/empirical/layerwise_packet_spectroscopy.py:3: SyntaxWarning: invalid escape sequence '\l'
+  """
+`torch_dtype` is deprecated! Use `dtype` instead!
+# layerwise_packet_spectroscopy version audit_kappa_driver_v0.2_2026_06_12
+# model-tag=llama31_8b_instruct  task=months  layers=all
+# transformers available: True
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00, 55.66it/s]
+# wrote empirical/reports/layerwise_packet_spectroscopy_months_llama31_8b_instruct.json
+# months on llama31_8b_instruct (layerwise lens, N=12, 33 layers):
+#  ell, f_2, f_3, f_4, f_6, f_12
+#    0, 0.0014, 0.0663, 0.4422, 0.1647, 0.3255
+#    1, 0.0013, 0.1191, 0.3885, 0.3271, 0.1641
+#    2, 0.0179, 0.1037, 0.1785, 0.0534, 0.6466
+#    3, 0.0336, 0.0176, 0.3081, 0.0851, 0.5556
+#    4, 0.0354, 0.0461, 0.2958, 0.0129, 0.6098
+#    5, 0.0012, 0.1605, 0.3654, 0.0076, 0.4653
+#    6, 0.0485, 0.1320, 0.4319, 0.0361, 0.3515
+#    7, 0.0027, 0.0413, 0.5864, 0.2147, 0.1550
+#    8, 0.1221, 0.1758, 0.4132, 0.2468, 0.0421
+#    9, 0.0031, 0.0690, 0.4936, 0.1586, 0.2757
+#   10, 0.0686, 0.2475, 0.1896, 0.0522, 0.4421
+#   11, 0.0076, 0.2505, 0.2800, 0.0569, 0.4051
+#   12, 0.0395, 0.3054, 0.2445, 0.0078, 0.4028
+#   13, 0.0723, 0.1345, 0.1077, 0.5100, 0.1755
+#   14, 0.0068, 0.0917, 0.0680, 0.5518, 0.2816
+#   15, 0.0206, 0.0257, 0.0772, 0.5640, 0.3125
+#   16, 0.0029, 0.1269, 0.0619, 0.1808, 0.6275
+#   17, 0.0697, 0.1813, 0.0320, 0.0705, 0.6465
+#   18, 0.0405, 0.1840, 0.0527, 0.1552, 0.5675
+#   19, 0.0811, 0.2595, 0.0778, 0.1540, 0.4276
+#   20, 0.2233, 0.2238, 0.1596, 0.1780, 0.2153
+#   21, 0.2039, 0.1999, 0.1389, 0.2734, 0.1838
+#   22, 0.0684, 0.0499, 0.0476, 0.1293, 0.7048
+#   23, 0.0428, 0.0447, 0.0502, 0.1228, 0.7395
+#   24, 0.0391, 0.0599, 0.0424, 0.0914, 0.7671
+#   25, 0.0379, 0.0647, 0.0470, 0.1043, 0.7461
+#   26, 0.0393, 0.0586, 0.0459, 0.1170, 0.7393
+#   27, 0.1006, 0.0523, 0.0427, 0.1163, 0.6881
+#   28, 0.1040, 0.0608, 0.0650, 0.1286, 0.6417
+#   29, 0.0944, 0.0821, 0.0710, 0.1633, 0.5892
+#   30, 0.0720, 0.1023, 0.0956, 0.1575, 0.5725
+#   31, 0.0940, 0.1023, 0.0926, 0.1592, 0.5520
+#   32, 0.0898, 0.0890, 0.0649, 0.1571, 0.5991
+# forward 20/84
+# forward 40/84
+# forward 60/84
+# forward 80/84
+# forward 84/84
+# wrote /home/leomu/simplicial/empirical/data/residual_streams_months_llama31_8b_instruct.safetensors  shape=(84, 33, 4096) dtype=BF16
+# wrote /home/leomu/simplicial/empirical/data/W_U_VR_months_llama31_8b_instruct.npz  shape=(12, 4096)
+# wrote /home/leomu/simplicial/empirical/data/capture_manifest_months_llama31_8b_instruct.json
+# invoking lens scorer: /home/leomu/venv/bin/python /home/leomu/simplicial/empirical/native_logit_lens_packet_score_layerwise.py --mode layerwise --N 12 --token-ids 6186,7552,5587,5936,3297,5651,5887,6287,6250,6664,6841,6790 --residual-streams /home/leomu/simplicial/empirical/data/residual_streams_months_llama31_8b_instruct.safetensors --unembedding-VR /home/leomu/simplicial/empirical/data/W_U_VR_months_llama31_8b_instruct.npz --task months --model-tag llama31_8b_instruct --output empirical/reports/layerwise_packet_spectroscopy_months_llama31_8b_instruct.json

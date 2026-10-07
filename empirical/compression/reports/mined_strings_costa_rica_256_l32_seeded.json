@@ -1,0 +1,2051 @@
+[
+  {
+    "file": "C:\\Users\\leomu\\Downloads\\que-ver-en-costa-rica-correos-portada.jpg",
+    "crop_size": 256,
+    "string_len": 32,
+    "width": 256,
+    "height": 256,
+    "raw_rgb_bytes": 196608,
+    "webp_lossless_bytes": 63034,
+    "webp_lossless_encode_s": 2.7975694999913685,
+    "direct_string_apex": {
+      "best_scheme": "ch-ctx-energy-apex128",
+      "bytes": 68436,
+      "ideal_best_scheme": "ch-ctx-grad-energy-unitary",
+      "ideal_no_codebook_bytes": 65690,
+      "metadata_bytes": 192,
+      "energy_metadata_bytes": 72,
+      "unitary_metadata_bytes": 48,
+      "strings": 6144,
+      "copy_strings": 0,
+      "dc_strings": 0,
+      "saved_direct_score_bytes": 0,
+      "model_counts": {
+        "pred-6": 68,
+        "pred-4": 93,
+        "pred-8": 16,
+        "pred-7": 3,
+        "pred-20": 3,
+        "direct": 6144,
+        "pred-5": 6,
+        "pred-2": 3
+      },
+      "schemes": {
+        "ch-ctx": {
+          "bytes": 70625,
+          "ideal_no_codebook_bytes": 69301,
+          "contexts": 23,
+          "new_symbols": 1223,
+          "extra_metadata_bytes": 0
+        },
+        "ch-ctx-apex8": {
+          "bytes": 70374,
+          "ideal_no_codebook_bytes": 69301,
+          "contexts": 23,
+          "new_symbols": 1223,
+          "extra_metadata_bytes": 0,
+          "prior_strength": 8.0
+        },
+        "ch-ctx-apex32": {
+          "bytes": 70148,
+          "ideal_no_codebook_bytes": 69301,
+          "contexts": 23,
+          "new_symbols": 1223,
+          "extra_metadata_bytes": 0,
+          "prior_strength": 32.0
+        },
+        "ch-ctx-apex128": {
+          "bytes": 70032,
+          "ideal_no_codebook_bytes": 69301,
+          "contexts": 23,
+          "new_symbols": 1223,
+          "extra_metadata_bytes": 0,
+          "prior_strength": 128.0
+        },
+        "ch-ctx-apex512": {
+          "bytes": 70175,
+          "ideal_no_codebook_bytes": 69301,
+          "contexts": 23,
+          "new_symbols": 1223,
+          "extra_metadata_bytes": 0,
+          "prior_strength": 512.0
+        },
+        "ch-ctx-grad": {
+          "bytes": 71120,
+          "ideal_no_codebook_bytes": 68748,
+          "contexts": 78,
+          "new_symbols": 2300,
+          "extra_metadata_bytes": 0
+        },
+        "ch-ctx-grad-apex8": {
+          "bytes": 70463,
+          "ideal_no_codebook_bytes": 68748,
+          "contexts": 78,
+          "new_symbols": 2300,
+          "extra_metadata_bytes": 0,
+          "prior_strength": 8.0
+        },
+        "ch-ctx-grad-apex32": {
+          "bytes": 70110,
+          "ideal_no_codebook_bytes": 68748,
+          "contexts": 78,
+          "new_symbols": 2300,
+          "extra_metadata_bytes": 0,
+          "prior_strength": 32.0
+        },
+        "ch-ctx-grad-apex128": {
+          "bytes": 69999,
+          "ideal_no_codebook_bytes": 68748,
+          "contexts": 78,
+          "new_symbols": 2300,
+          "extra_metadata_bytes": 0,
+          "prior_strength": 128.0
+        },
+        "ch-ctx-grad-apex512": {
+          "bytes": 70332,
+          "ideal_no_codebook_bytes": 68748,
+          "contexts": 78,
+          "new_symbols": 2300,
+          "extra_metadata_bytes": 0,
+          "prior_strength": 512.0
+        },
+        "ch-ctx-mode": {
+          "bytes": 70625,
+          "ideal_no_codebook_bytes": 69301,
+          "contexts": 23,
+          "new_symbols": 1223,
+          "extra_metadata_bytes": 0
+        },
+        "ch-ctx-mode-apex8": {
+          "bytes": 70374,
+          "ideal_no_codebook_bytes": 69301,
+          "contexts": 23,
+          "new_symbols": 1223,
+          "extra_metadata_bytes": 0,
+          "prior_strength": 8.0
+        },
+        "ch-ctx-mode-apex32": {
+          "bytes": 70148,
+          "ideal_no_codebook_bytes": 69301,
+          "contexts": 23,
+          "new_symbols": 1223,
+          "extra_metadata_bytes": 0,
+          "prior_strength": 32.0
+        },
+        "ch-ctx-mode-apex128": {
+          "bytes": 70032,
+          "ideal_no_codebook_bytes": 69301,
+          "contexts": 23,
+          "new_symbols": 1223,
+          "extra_metadata_bytes": 0,
+          "prior_strength": 128.0
+        },
+        "ch-ctx-mode-apex512": {
+          "bytes": 70175,
+          "ideal_no_codebook_bytes": 69301,
+          "contexts": 23,
+          "new_symbols": 1223,
+          "extra_metadata_bytes": 0,
+          "prior_strength": 512.0
+        },
+        "ch-ctx-mode-grad": {
+          "bytes": 71120,
+          "ideal_no_codebook_bytes": 68748,
+          "contexts": 78,
+          "new_symbols": 2300,
+          "extra_metadata_bytes": 0
+        },
+        "ch-ctx-mode-grad-apex8": {
+          "bytes": 70463,
+          "ideal_no_codebook_bytes": 68748,
+          "contexts": 78,
+          "new_symbols": 2300,
+          "extra_metadata_bytes": 0,
+          "prior_strength": 8.0
+        },
+        "ch-ctx-mode-grad-apex32": {
+          "bytes": 70110,
+          "ideal_no_codebook_bytes": 68748,
+          "contexts": 78,
+          "new_symbols": 2300,
+          "extra_metadata_bytes": 0,
+          "prior_strength": 32.0
+        },
+        "ch-ctx-mode-grad-apex128": {
+          "bytes": 69999,
+          "ideal_no_codebook_bytes": 68748,
+          "contexts": 78,
+          "new_symbols": 2300,
+          "extra_metadata_bytes": 0,
+          "prior_strength": 128.0
+        },
+        "ch-ctx-mode-grad-apex512": {
+          "bytes": 70332,
+          "ideal_no_codebook_bytes": 68748,
+          "contexts": 78,
+          "new_symbols": 2300,
+          "extra_metadata_bytes": 0,
+          "prior_strength": 512.0
+        },
+        "ch-ctx-energy": {
+          "bytes": 69678,
+          "ideal_no_codebook_bytes": 66963,
+          "contexts": 61,
+          "new_symbols": 2610,
+          "extra_metadata_bytes": 72
+        },
+        "ch-ctx-energy-apex8": {
+          "bytes": 69034,
+          "ideal_no_codebook_bytes": 66963,
+          "contexts": 61,
+          "new_symbols": 2610,
+          "extra_metadata_bytes": 72,
+          "prior_strength": 8.0
+        },
+        "ch-ctx-energy-apex32": {
+          "bytes": 68595,
+          "ideal_no_codebook_bytes": 66963,
+          "contexts": 61,
+          "new_symbols": 2610,
+          "extra_metadata_bytes": 72,
+          "prior_strength": 32.0
+        },
+        "ch-ctx-energy-apex128": {
+          "bytes": 68436,
+          "ideal_no_codebook_bytes": 66963,
+          "contexts": 61,
+          "new_symbols": 2610,
+          "extra_metadata_bytes": 72,
+          "prior_strength": 128.0
+        },
+        "ch-ctx-energy-apex512": {
+          "bytes": 68902,
+          "ideal_no_codebook_bytes": 66963,
+          "contexts": 61,
+          "new_symbols": 2610,
+          "extra_metadata_bytes": 72,
+          "prior_strength": 512.0
+        },
+        "ch-ctx-unitary": {
+          "bytes": 70232,
+          "ideal_no_codebook_bytes": 67932,
+          "contexts": 64,
+          "new_symbols": 2209,
+          "extra_metadata_bytes": 48
+        },
+        "ch-ctx-unitary-apex8": {
+          "bytes": 69633,
+          "ideal_no_codebook_bytes": 67932,
+          "contexts": 64,
+          "new_symbols": 2209,
+          "extra_metadata_bytes": 48,
+          "prior_strength": 8.0
+        },
+        "ch-ctx-unitary-apex32": {
+          "bytes": 69301,
+          "ideal_no_codebook_bytes": 67932,
+          "contexts": 64,
+          "new_symbols": 2209,
+          "extra_metadata_bytes": 48,
+          "prior_strength": 32.0
+        },
+        "ch-ctx-unitary-apex128": {
+          "bytes": 69230,
+          "ideal_no_codebook_bytes": 67932,
+          "contexts": 64,
+          "new_symbols": 2209,
+          "extra_metadata_bytes": 48,
+          "prior_strength": 128.0
+        },
+        "ch-ctx-unitary-apex512": {
+          "bytes": 69662,
+          "ideal_no_codebook_bytes": 67932,
+          "contexts": 64,
+          "new_symbols": 2209,
+          "extra_metadata_bytes": 48,
+          "prior_strength": 512.0
+        },
+        "ch-ctx-energy-unitary": {
+          "bytes": 70355,
+          "ideal_no_codebook_bytes": 66420,
+          "contexts": 131,
+          "new_symbols": 3868,
+          "extra_metadata_bytes": 120
+        },
+        "ch-ctx-energy-unitary-apex8": {
+          "bytes": 69189,
+          "ideal_no_codebook_bytes": 66420,
+          "contexts": 131,
+          "new_symbols": 3868,
+          "extra_metadata_bytes": 120,
+          "prior_strength": 8.0
+        },
+        "ch-ctx-energy-unitary-apex32": {
+          "bytes": 68640,
+          "ideal_no_codebook_bytes": 66420,
+          "contexts": 131,
+          "new_symbols": 3868,
+          "extra_metadata_bytes": 120,
+          "prior_strength": 32.0
+        },
+        "ch-ctx-energy-unitary-apex128": {
+          "bytes": 68553,
+          "ideal_no_codebook_bytes": 66420,
+          "contexts": 131,
+          "new_symbols": 3868,
+          "extra_metadata_bytes": 120,
+          "prior_strength": 128.0
+        },
+        "ch-ctx-energy-unitary-apex512": {
+          "bytes": 69295,
+          "ideal_no_codebook_bytes": 66420,
+          "contexts": 131,
+          "new_symbols": 3868,
+          "extra_metadata_bytes": 120,
+          "prior_strength": 512.0
+        },
+        "ch-ctx-grad-energy-unitary": {
+          "bytes": 71537,
+          "ideal_no_codebook_bytes": 65690,
+          "contexts": 308,
+          "new_symbols": 5850,
+          "extra_metadata_bytes": 120
+        },
+        "ch-ctx-grad-energy-unitary-apex8": {
+          "bytes": 69429,
+          "ideal_no_codebook_bytes": 65690,
+          "contexts": 308,
+          "new_symbols": 5850,
+          "extra_metadata_bytes": 120,
+          "prior_strength": 8.0
+        },
+        "ch-ctx-grad-energy-unitary-apex32": {
+          "bytes": 68773,
+          "ideal_no_codebook_bytes": 65690,
+          "contexts": 308,
+          "new_symbols": 5850,
+          "extra_metadata_bytes": 120,
+          "prior_strength": 32.0
+        },
+        "ch-ctx-grad-energy-unitary-apex128": {
+          "bytes": 68799,
+          "ideal_no_codebook_bytes": 65690,
+          "contexts": 308,
+          "new_symbols": 5850,
+          "extra_metadata_bytes": 120,
+          "prior_strength": 128.0
+        },
+        "ch-ctx-grad-energy-unitary-apex512": {
+          "bytes": 69791,
+          "ideal_no_codebook_bytes": 65690,
+          "contexts": 308,
+          "new_symbols": 5850,
+          "extra_metadata_bytes": 120,
+          "prior_strength": 512.0
+        }
+      }
+    },
+    "mined_string_apex": {
+      "best_scheme": "ch-ctx-energy-apex128",
+      "bytes": 69196,
+      "ideal_best_scheme": "ch-ctx-grad-energy-unitary",
+      "ideal_no_codebook_bytes": 66452,
+      "metadata_bytes": 975,
+      "energy_metadata_bytes": 72,
+      "unitary_metadata_bytes": 48,
+      "strings": 6144,
+      "copy_strings": 5,
+      "dc_strings": 0,
+      "saved_direct_score_bytes": 16,
+      "model_counts": {
+        "pred-6": 68,
+        "pred-4": 93,
+        "pred-8": 16,
+        "pred-7": 3,
+        "pred-20": 3,
+        "direct": 6139,
+        "copy+": 5,
+        "pred-5": 6,
+        "pred-2": 3
+      },
+      "schemes": {
+        "ch-ctx": {
+          "bytes": 71385,
+          "ideal_no_codebook_bytes": 70061,
+          "contexts": 23,
+          "new_symbols": 1223,
+          "extra_metadata_bytes": 0
+        },
+        "ch-ctx-apex8": {
+          "bytes": 71135,
+          "ideal_no_codebook_bytes": 70061,
+          "contexts": 23,
+          "new_symbols": 1223,
+          "extra_metadata_bytes": 0,
+          "prior_strength": 8.0
+        },
+        "ch-ctx-apex32": {
+          "bytes": 70909,
+          "ideal_no_codebook_bytes": 70061,
+          "contexts": 23,
+          "new_symbols": 1223,
+          "extra_metadata_bytes": 0,
+          "prior_strength": 32.0
+        },
+        "ch-ctx-apex128": {
+          "bytes": 70793,
+          "ideal_no_codebook_bytes": 70061,
+          "contexts": 23,
+          "new_symbols": 1223,
+          "extra_metadata_bytes": 0,
+          "prior_strength": 128.0
+        },
+        "ch-ctx-apex512": {
+          "bytes": 70936,
+          "ideal_no_codebook_bytes": 70061,
+          "contexts": 23,
+          "new_symbols": 1223,
+          "extra_metadata_bytes": 0,
+          "prior_strength": 512.0
+        },
+        "ch-ctx-grad": {
+          "bytes": 71881,
+          "ideal_no_codebook_bytes": 69509,
+          "contexts": 78,
+          "new_symbols": 2300,
+          "extra_metadata_bytes": 0
+        },
+        "ch-ctx-grad-apex8": {
+          "bytes": 71223,
+          "ideal_no_codebook_bytes": 69509,
+          "contexts": 78,
+          "new_symbols": 2300,
+          "extra_metadata_bytes": 0,
+          "prior_strength": 8.0
+        },
+        "ch-ctx-grad-apex32": {
+          "bytes": 70871,
+          "ideal_no_codebook_bytes": 69509,
+          "contexts": 78,
+          "new_symbols": 2300,
+          "extra_metadata_bytes": 0,
+          "prior_strength": 32.0
+        },
+        "ch-ctx-grad-apex128": {
+          "bytes": 70760,
+          "ideal_no_codebook_bytes": 69509,
+          "contexts": 78,
+          "new_symbols": 2300,
+          "extra_metadata_bytes": 0,
+          "prior_strength": 128.0
+        },
+        "ch-ctx-grad-apex512": {
+          "bytes": 71092,
+          "ideal_no_codebook_bytes": 69509,
+          "contexts": 78,
+          "new_symbols": 2300,
+          "extra_metadata_bytes": 0,
+          "prior_strength": 512.0
+        },
+        "ch-ctx-mode": {
+          "bytes": 71421,
+          "ideal_no_codebook_bytes": 70047,
+          "contexts": 35,
+          "new_symbols": 1274,
+          "extra_metadata_bytes": 0
+        },
+        "ch-ctx-mode-apex8": {
+          "bytes": 71134,
+          "ideal_no_codebook_bytes": 70047,
+          "contexts": 35,
+          "new_symbols": 1274,
+          "extra_metadata_bytes": 0,
+          "prior_strength": 8.0
+        },
+        "ch-ctx-mode-apex32": {
+          "bytes": 70906,
+          "ideal_no_codebook_bytes": 70047,
+          "contexts": 35,
+          "new_symbols": 1274,
+          "extra_metadata_bytes": 0,
+          "prior_strength": 32.0
+        },
+        "ch-ctx-mode-apex128": {
+          "bytes": 70790,
+          "ideal_no_codebook_bytes": 70047,
+          "contexts": 35,
+          "new_symbols": 1274,
+          "extra_metadata_bytes": 0,
+          "prior_strength": 128.0
+        },
+        "ch-ctx-mode-apex512": {
+          "bytes": 70933,
+          "ideal_no_codebook_bytes": 70047,
+          "contexts": 35,
+          "new_symbols": 1274,
+          "extra_metadata_bytes": 0,
+          "prior_strength": 512.0
+        },
+        "ch-ctx-mode-grad": {
+          "bytes": 71924,
+          "ideal_no_codebook_bytes": 69491,
+          "contexts": 96,
+          "new_symbols": 2363,
+          "extra_metadata_bytes": 0
+        },
+        "ch-ctx-mode-grad-apex8": {
+          "bytes": 71222,
+          "ideal_no_codebook_bytes": 69491,
+          "contexts": 96,
+          "new_symbols": 2363,
+          "extra_metadata_bytes": 0,
+          "prior_strength": 8.0
+        },
+        "ch-ctx-mode-grad-apex32": {
+          "bytes": 70868,
+          "ideal_no_codebook_bytes": 69491,
+          "contexts": 96,
+          "new_symbols": 2363,
+          "extra_metadata_bytes": 0,
+          "prior_strength": 32.0
+        },
+        "ch-ctx-mode-grad-apex128": {
+          "bytes": 70757,
+          "ideal_no_codebook_bytes": 69491,
+          "contexts": 96,
+          "new_symbols": 2363,
+          "extra_metadata_bytes": 0,
+          "prior_strength": 128.0
+        },
+        "ch-ctx-mode-grad-apex512": {
+          "bytes": 71089,
+          "ideal_no_codebook_bytes": 69491,
+          "contexts": 96,
+          "new_symbols": 2363,
+          "extra_metadata_bytes": 0,
+          "prior_strength": 512.0
+        },
+        "ch-ctx-energy": {
+          "bytes": 70438,
+          "ideal_no_codebook_bytes": 67724,
+          "contexts": 61,
+          "new_symbols": 2610,
+          "extra_metadata_bytes": 72
+        },
+        "ch-ctx-energy-apex8": {
+          "bytes": 69795,
+          "ideal_no_codebook_bytes": 67724,
+          "contexts": 61,
+          "new_symbols": 2610,
+          "extra_metadata_bytes": 72,
+          "prior_strength": 8.0
+        },
+        "ch-ctx-energy-apex32": {
+          "bytes": 69355,
+          "ideal_no_codebook_bytes": 67724,
+          "contexts": 61,
+          "new_symbols": 2610,
+          "extra_metadata_bytes": 72,
+          "prior_strength": 32.0
+        },
+        "ch-ctx-energy-apex128": {
+          "bytes": 69196,
+          "ideal_no_codebook_bytes": 67724,
+          "contexts": 61,
+          "new_symbols": 2610,
+          "extra_metadata_bytes": 72,
+          "prior_strength": 128.0
+        },
+        "ch-ctx-energy-apex512": {
+          "bytes": 69661,
+          "ideal_no_codebook_bytes": 67724,
+          "contexts": 61,
+          "new_symbols": 2610,
+          "extra_metadata_bytes": 72,
+          "prior_strength": 512.0
+        },
+        "ch-ctx-unitary": {
+          "bytes": 70992,
+          "ideal_no_codebook_bytes": 68692,
+          "contexts": 64,
+          "new_symbols": 2209,
+          "extra_metadata_bytes": 48
+        },
+        "ch-ctx-unitary-apex8": {
+          "bytes": 70393,
+          "ideal_no_codebook_bytes": 68692,
+          "contexts": 64,
+          "new_symbols": 2209,
+          "extra_metadata_bytes": 48,
+          "prior_strength": 8.0
+        },
+        "ch-ctx-unitary-apex32": {
+          "bytes": 70060,
+          "ideal_no_codebook_bytes": 68692,
+          "contexts": 64,
+          "new_symbols": 2209,
+          "extra_metadata_bytes": 48,
+          "prior_strength": 32.0
+        },
+        "ch-ctx-unitary-apex128": {
+          "bytes": 69990,
+          "ideal_no_codebook_bytes": 68692,
+          "contexts": 64,
+          "new_symbols": 2209,
+          "extra_metadata_bytes": 48,
+          "prior_strength": 128.0
+        },
+        "ch-ctx-unitary-apex512": {
+          "bytes": 70422,
+          "ideal_no_codebook_bytes": 68692,
+          "contexts": 64,
+          "new_symbols": 2209,
+          "extra_metadata_bytes": 48,
+          "prior_strength": 512.0
+        },
+        "ch-ctx-energy-unitary": {
+          "bytes": 71115,
+          "ideal_no_codebook_bytes": 67181,
+          "contexts": 131,
+          "new_symbols": 3867,
+          "extra_metadata_bytes": 120
+        },
+        "ch-ctx-energy-unitary-apex8": {
+          "bytes": 69950,
+          "ideal_no_codebook_bytes": 67181,
+          "contexts": 131,
+          "new_symbols": 3867,
+          "extra_metadata_bytes": 120,
+          "prior_strength": 8.0
+        },
+        "ch-ctx-energy-unitary-apex32": {
+          "bytes": 69400,
+          "ideal_no_codebook_bytes": 67181,
+          "contexts": 131,
+          "new_symbols": 3867,
+          "extra_metadata_bytes": 120,
+          "prior_strength": 32.0
+        },
+        "ch-ctx-energy-unitary-apex128": {
+          "bytes": 69314,
+          "ideal_no_codebook_bytes": 67181,
+          "contexts": 131,
+          "new_symbols": 3867,
+          "extra_metadata_bytes": 120,
+          "prior_strength": 128.0
+        },
+        "ch-ctx-energy-unitary-apex512": {
+          "bytes": 70055,
+          "ideal_no_codebook_bytes": 67181,
+          "contexts": 131,
+          "new_symbols": 3867,
+          "extra_metadata_bytes": 120,
+          "prior_strength": 512.0
+        },
+        "ch-ctx-grad-energy-unitary": {
+          "bytes": 72298,
+          "ideal_no_codebook_bytes": 66452,
+          "contexts": 308,
+          "new_symbols": 5850,
+          "extra_metadata_bytes": 120
+        },
+        "ch-ctx-grad-energy-unitary-apex8": {
+          "bytes": 70190,
+          "ideal_no_codebook_bytes": 66452,
+          "contexts": 308,
+          "new_symbols": 5850,
+          "extra_metadata_bytes": 120,
+          "prior_strength": 8.0
+        },
+        "ch-ctx-grad-energy-unitary-apex32": {
+          "bytes": 69534,
+          "ideal_no_codebook_bytes": 66452,
+          "contexts": 308,
+          "new_symbols": 5850,
+          "extra_metadata_bytes": 120,
+          "prior_strength": 32.0
+        },
+        "ch-ctx-grad-energy-unitary-apex128": {
+          "bytes": 69559,
+          "ideal_no_codebook_bytes": 66452,
+          "contexts": 308,
+          "new_symbols": 5850,
+          "extra_metadata_bytes": 120,
+          "prior_strength": 128.0
+        },
+        "ch-ctx-grad-energy-unitary-apex512": {
+          "bytes": 70551,
+          "ideal_no_codebook_bytes": 66452,
+          "contexts": 308,
+          "new_symbols": 5850,
+          "extra_metadata_bytes": 120,
+          "prior_strength": 512.0
+        }
+      }
+    },
+    "deployed_apex": {
+      "best_scheme": "ch-ctx-energy-apex128",
+      "bytes": 68436,
+      "ideal_best_scheme": "ch-ctx-grad-energy-unitary",
+      "ideal_no_codebook_bytes": 65690,
+      "metadata_bytes": 192,
+      "energy_metadata_bytes": 72,
+      "unitary_metadata_bytes": 48,
+      "strings": 6144,
+      "copy_strings": 0,
+      "dc_strings": 0,
+      "saved_direct_score_bytes": 0,
+      "model_counts": {
+        "pred-6": 68,
+        "pred-4": 93,
+        "pred-8": 16,
+        "pred-7": 3,
+        "pred-20": 3,
+        "direct": 6144,
+        "pred-5": 6,
+        "pred-2": 3
+      },
+      "schemes": {
+        "ch-ctx": {
+          "bytes": 70625,
+          "ideal_no_codebook_bytes": 69301,
+          "contexts": 23,
+          "new_symbols": 1223,
+          "extra_metadata_bytes": 0
+        },
+        "ch-ctx-apex8": {
+          "bytes": 70374,
+          "ideal_no_codebook_bytes": 69301,
+          "contexts": 23,
+          "new_symbols": 1223,
+          "extra_metadata_bytes": 0,
+          "prior_strength": 8.0
+        },
+        "ch-ctx-apex32": {
+          "bytes": 70148,
+          "ideal_no_codebook_bytes": 69301,
+          "contexts": 23,
+          "new_symbols": 1223,
+          "extra_metadata_bytes": 0,
+          "prior_strength": 32.0
+        },
+        "ch-ctx-apex128": {
+          "bytes": 70032,
+          "ideal_no_codebook_bytes": 69301,
+          "contexts": 23,
+          "new_symbols": 1223,
+          "extra_metadata_bytes": 0,
+          "prior_strength": 128.0
+        },
+        "ch-ctx-apex512": {
+          "bytes": 70175,
+          "ideal_no_codebook_bytes": 69301,
+          "contexts": 23,
+          "new_symbols": 1223,
+          "extra_metadata_bytes": 0,
+          "prior_strength": 512.0
+        },
+        "ch-ctx-grad": {
+          "bytes": 71120,
+          "ideal_no_codebook_bytes": 68748,
+          "contexts": 78,
+          "new_symbols": 2300,
+          "extra_metadata_bytes": 0
+        },
+        "ch-ctx-grad-apex8": {
+          "bytes": 70463,
+          "ideal_no_codebook_bytes": 68748,
+          "contexts": 78,
+          "new_symbols": 2300,
+          "extra_metadata_bytes": 0,
+          "prior_strength": 8.0
+        },
+        "ch-ctx-grad-apex32": {
+          "bytes": 70110,
+          "ideal_no_codebook_bytes": 68748,
+          "contexts": 78,
+          "new_symbols": 2300,
+          "extra_metadata_bytes": 0,
+          "prior_strength": 32.0
+        },
+        "ch-ctx-grad-apex128": {
+          "bytes": 69999,
+          "ideal_no_codebook_bytes": 68748,
+          "contexts": 78,
+          "new_symbols": 2300,
+          "extra_metadata_bytes": 0,
+          "prior_strength": 128.0
+        },
+        "ch-ctx-grad-apex512": {
+          "bytes": 70332,
+          "ideal_no_codebook_bytes": 68748,
+          "contexts": 78,
+          "new_symbols": 2300,
+          "extra_metadata_bytes": 0,
+          "prior_strength": 512.0
+        },
+        "ch-ctx-mode": {
+          "bytes": 70625,
+          "ideal_no_codebook_bytes": 69301,
+          "contexts": 23,
+          "new_symbols": 1223,
+          "extra_metadata_bytes": 0
+        },
+        "ch-ctx-mode-apex8": {
+          "bytes": 70374,
+          "ideal_no_codebook_bytes": 69301,
+          "contexts": 23,
+          "new_symbols": 1223,
+          "extra_metadata_bytes": 0,
+          "prior_strength": 8.0
+        },
+        "ch-ctx-mode-apex32": {
+          "bytes": 70148,
+          "ideal_no_codebook_bytes": 69301,
+          "contexts": 23,
+          "new_symbols": 1223,
+          "extra_metadata_bytes": 0,
+          "prior_strength": 32.0
+        },
+        "ch-ctx-mode-apex128": {
+          "bytes": 70032,
+          "ideal_no_codebook_bytes": 69301,
+          "contexts": 23,
+          "new_symbols": 1223,
+          "extra_metadata_bytes": 0,
+          "prior_strength": 128.0
+        },
+        "ch-ctx-mode-apex512": {
+          "bytes": 70175,
+          "ideal_no_codebook_bytes": 69301,
+          "contexts": 23,
+          "new_symbols": 1223,
+          "extra_metadata_bytes": 0,
+          "prior_strength": 512.0
+        },
+        "ch-ctx-mode-grad": {
+          "bytes": 71120,
+          "ideal_no_codebook_bytes": 68748,
+          "contexts": 78,
+          "new_symbols": 2300,
+          "extra_metadata_bytes": 0
+        },
+        "ch-ctx-mode-grad-apex8": {
+          "bytes": 70463,
+          "ideal_no_codebook_bytes": 68748,
+          "contexts": 78,
+          "new_symbols": 2300,
+          "extra_metadata_bytes": 0,
+          "prior_strength": 8.0
+        },
+        "ch-ctx-mode-grad-apex32": {
+          "bytes": 70110,
+          "ideal_no_codebook_bytes": 68748,
+          "contexts": 78,
+          "new_symbols": 2300,
+          "extra_metadata_bytes": 0,
+          "prior_strength": 32.0
+        },
+        "ch-ctx-mode-grad-apex128": {
+          "bytes": 69999,
+          "ideal_no_codebook_bytes": 68748,
+          "contexts": 78,
+          "new_symbols": 2300,
+          "extra_metadata_bytes": 0,
+          "prior_strength": 128.0
+        },
+        "ch-ctx-mode-grad-apex512": {
+          "bytes": 70332,
+          "ideal_no_codebook_bytes": 68748,
+          "contexts": 78,
+          "new_symbols": 2300,
+          "extra_metadata_bytes": 0,
+          "prior_strength": 512.0
+        },
+        "ch-ctx-energy": {
+          "bytes": 69678,
+          "ideal_no_codebook_bytes": 66963,
+          "contexts": 61,
+          "new_symbols": 2610,
+          "extra_metadata_bytes": 72
+        },
+        "ch-ctx-energy-apex8": {
+          "bytes": 69034,
+          "ideal_no_codebook_bytes": 66963,
+          "contexts": 61,
+          "new_symbols": 2610,
+          "extra_metadata_bytes": 72,
+          "prior_strength": 8.0
+        },
+        "ch-ctx-energy-apex32": {
+          "bytes": 68595,
+          "ideal_no_codebook_bytes": 66963,
+          "contexts": 61,
+          "new_symbols": 2610,
+          "extra_metadata_bytes": 72,
+          "prior_strength": 32.0
+        },
+        "ch-ctx-energy-apex128": {
+          "bytes": 68436,
+          "ideal_no_codebook_bytes": 66963,
+          "contexts": 61,
+          "new_symbols": 2610,
+          "extra_metadata_bytes": 72,
+          "prior_strength": 128.0
+        },
+        "ch-ctx-energy-apex512": {
+          "bytes": 68902,
+          "ideal_no_codebook_bytes": 66963,
+          "contexts": 61,
+          "new_symbols": 2610,
+          "extra_metadata_bytes": 72,
+          "prior_strength": 512.0
+        },
+        "ch-ctx-unitary": {
+          "bytes": 70232,
+          "ideal_no_codebook_bytes": 67932,
+          "contexts": 64,
+          "new_symbols": 2209,
+          "extra_metadata_bytes": 48
+        },
+        "ch-ctx-unitary-apex8": {
+          "bytes": 69633,
+          "ideal_no_codebook_bytes": 67932,
+          "contexts": 64,
+          "new_symbols": 2209,
+          "extra_metadata_bytes": 48,
+          "prior_strength": 8.0
+        },
+        "ch-ctx-unitary-apex32": {
+          "bytes": 69301,
+          "ideal_no_codebook_bytes": 67932,
+          "contexts": 64,
+          "new_symbols": 2209,
+          "extra_metadata_bytes": 48,
+          "prior_strength": 32.0
+        },
+        "ch-ctx-unitary-apex128": {
+          "bytes": 69230,
+          "ideal_no_codebook_bytes": 67932,
+          "contexts": 64,
+          "new_symbols": 2209,
+          "extra_metadata_bytes": 48,
+          "prior_strength": 128.0
+        },
+        "ch-ctx-unitary-apex512": {
+          "bytes": 69662,
+          "ideal_no_codebook_bytes": 67932,
+          "contexts": 64,
+          "new_symbols": 2209,
+          "extra_metadata_bytes": 48,
+          "prior_strength": 512.0
+        },
+        "ch-ctx-energy-unitary": {
+          "bytes": 70355,
+          "ideal_no_codebook_bytes": 66420,
+          "contexts": 131,
+          "new_symbols": 3868,
+          "extra_metadata_bytes": 120
+        },
+        "ch-ctx-energy-unitary-apex8": {
+          "bytes": 69189,
+          "ideal_no_codebook_bytes": 66420,
+          "contexts": 131,
+          "new_symbols": 3868,
+          "extra_metadata_bytes": 120,
+          "prior_strength": 8.0
+        },
+        "ch-ctx-energy-unitary-apex32": {
+          "bytes": 68640,
+          "ideal_no_codebook_bytes": 66420,
+          "contexts": 131,
+          "new_symbols": 3868,
+          "extra_metadata_bytes": 120,
+          "prior_strength": 32.0
+        },
+        "ch-ctx-energy-unitary-apex128": {
+          "bytes": 68553,
+          "ideal_no_codebook_bytes": 66420,
+          "contexts": 131,
+          "new_symbols": 3868,
+          "extra_metadata_bytes": 120,
+          "prior_strength": 128.0
+        },
+        "ch-ctx-energy-unitary-apex512": {
+          "bytes": 69295,
+          "ideal_no_codebook_bytes": 66420,
+          "contexts": 131,
+          "new_symbols": 3868,
+          "extra_metadata_bytes": 120,
+          "prior_strength": 512.0
+        },
+        "ch-ctx-grad-energy-unitary": {
+          "bytes": 71537,
+          "ideal_no_codebook_bytes": 65690,
+          "contexts": 308,
+          "new_symbols": 5850,
+          "extra_metadata_bytes": 120
+        },
+        "ch-ctx-grad-energy-unitary-apex8": {
+          "bytes": 69429,
+          "ideal_no_codebook_bytes": 65690,
+          "contexts": 308,
+          "new_symbols": 5850,
+          "extra_metadata_bytes": 120,
+          "prior_strength": 8.0
+        },
+        "ch-ctx-grad-energy-unitary-apex32": {
+          "bytes": 68773,
+          "ideal_no_codebook_bytes": 65690,
+          "contexts": 308,
+          "new_symbols": 5850,
+          "extra_metadata_bytes": 120,
+          "prior_strength": 32.0
+        },
+        "ch-ctx-grad-energy-unitary-apex128": {
+          "bytes": 68799,
+          "ideal_no_codebook_bytes": 65690,
+          "contexts": 308,
+          "new_symbols": 5850,
+          "extra_metadata_bytes": 120,
+          "prior_strength": 128.0
+        },
+        "ch-ctx-grad-energy-unitary-apex512": {
+          "bytes": 69791,
+          "ideal_no_codebook_bytes": 65690,
+          "contexts": 308,
+          "new_symbols": 5850,
+          "extra_metadata_bytes": 120,
+          "prior_strength": 512.0
+        }
+      }
+    },
+    "estimate_s": 36.635767699975986
+  },
+  {
+    "file": "C:\\Users\\leomu\\Downloads\\central-valley-san-jose-costa-rica.jpg",
+    "crop_size": 256,
+    "string_len": 32,
+    "width": 256,
+    "height": 256,
+    "raw_rgb_bytes": 196608,
+    "webp_lossless_bytes": 80852,
+    "webp_lossless_encode_s": 4.963550499989651,
+    "direct_string_apex": {
+      "best_scheme": "ch-ctx-grad-apex128",
+      "bytes": 78132,
+      "ideal_best_scheme": "ch-ctx-grad-energy-unitary",
+      "ideal_no_codebook_bytes": 74879,
+      "metadata_bytes": 192,
+      "energy_metadata_bytes": 72,
+      "unitary_metadata_bytes": 48,
+      "strings": 6144,
+      "copy_strings": 0,
+      "dc_strings": 0,
+      "saved_direct_score_bytes": 0,
+      "model_counts": {
+        "pred-4": 124,
+        "pred-9": 15,
+        "pred-20": 10,
+        "pred-7": 8,
+        "pred-3": 2,
+        "direct": 6144,
+        "pred-5": 5,
+        "pred-14": 2,
+        "pred-6": 26
+      },
+      "schemes": {
+        "ch-ctx": {
+          "bytes": 79452,
+          "ideal_no_codebook_bytes": 77773,
+          "contexts": 22,
+          "new_symbols": 1475,
+          "extra_metadata_bytes": 0
+        },
+        "ch-ctx-apex8": {
+          "bytes": 79197,
+          "ideal_no_codebook_bytes": 77773,
+          "contexts": 22,
+          "new_symbols": 1475,
+          "extra_metadata_bytes": 0,
+          "prior_strength": 8.0
+        },
+        "ch-ctx-apex32": {
+          "bytes": 78927,
+          "ideal_no_codebook_bytes": 77773,
+          "contexts": 22,
+          "new_symbols": 1475,
+          "extra_metadata_bytes": 0,
+          "prior_strength": 32.0
+        },
+        "ch-ctx-apex128": {
+          "bytes": 78832,
+          "ideal_no_codebook_bytes": 77773,
+          "contexts": 22,
+          "new_symbols": 1475,
+          "extra_metadata_bytes": 0,
+          "prior_strength": 128.0
+        },
+        "ch-ctx-apex512": {
+          "bytes": 79232,
+          "ideal_no_codebook_bytes": 77773,
+          "contexts": 22,
+          "new_symbols": 1475,
+          "extra_metadata_bytes": 0,
+          "prior_strength": 512.0
+        },
+        "ch-ctx-grad": {
+          "bytes": 79213,
+          "ideal_no_codebook_bytes": 76269,
+          "contexts": 72,
+          "new_symbols": 2752,
+          "extra_metadata_bytes": 0
+        },
+        "ch-ctx-grad-apex8": {
+          "bytes": 78590,
+          "ideal_no_codebook_bytes": 76269,
+          "contexts": 72,
+          "new_symbols": 2752,
+          "extra_metadata_bytes": 0,
+          "prior_strength": 8.0
+        },
+        "ch-ctx-grad-apex32": {
+          "bytes": 78174,
+          "ideal_no_codebook_bytes": 76269,
+          "contexts": 72,
+          "new_symbols": 2752,
+          "extra_metadata_bytes": 0,
+          "prior_strength": 32.0
+        },
+        "ch-ctx-grad-apex128": {
+          "bytes": 78132,
+          "ideal_no_codebook_bytes": 76269,
+          "contexts": 72,
+          "new_symbols": 2752,
+          "extra_metadata_bytes": 0,
+          "prior_strength": 128.0
+        },
+        "ch-ctx-grad-apex512": {
+          "bytes": 78936,
+          "ideal_no_codebook_bytes": 76269,
+          "contexts": 72,
+          "new_symbols": 2752,
+          "extra_metadata_bytes": 0,
+          "prior_strength": 512.0
+        },
+        "ch-ctx-mode": {
+          "bytes": 79452,
+          "ideal_no_codebook_bytes": 77773,
+          "contexts": 22,
+          "new_symbols": 1475,
+          "extra_metadata_bytes": 0
+        },
+        "ch-ctx-mode-apex8": {
+          "bytes": 79197,
+          "ideal_no_codebook_bytes": 77773,
+          "contexts": 22,
+          "new_symbols": 1475,
+          "extra_metadata_bytes": 0,
+          "prior_strength": 8.0
+        },
+        "ch-ctx-mode-apex32": {
+          "bytes": 78927,
+          "ideal_no_codebook_bytes": 77773,
+          "contexts": 22,
+          "new_symbols": 1475,
+          "extra_metadata_bytes": 0,
+          "prior_strength": 32.0
+        },
+        "ch-ctx-mode-apex128": {
+          "bytes": 78832,
+          "ideal_no_codebook_bytes": 77773,
+          "contexts": 22,
+          "new_symbols": 1475,
+          "extra_metadata_bytes": 0,
+          "prior_strength": 128.0
+        },
+        "ch-ctx-mode-apex512": {
+          "bytes": 79232,
+          "ideal_no_codebook_bytes": 77773,
+          "contexts": 22,
+          "new_symbols": 1475,
+          "extra_metadata_bytes": 0,
+          "prior_strength": 512.0
+        },
+        "ch-ctx-mode-grad": {
+          "bytes": 79213,
+          "ideal_no_codebook_bytes": 76269,
+          "contexts": 72,
+          "new_symbols": 2752,
+          "extra_metadata_bytes": 0
+        },
+        "ch-ctx-mode-grad-apex8": {
+          "bytes": 78590,
+          "ideal_no_codebook_bytes": 76269,
+          "contexts": 72,
+          "new_symbols": 2752,
+          "extra_metadata_bytes": 0,
+          "prior_strength": 8.0
+        },
+        "ch-ctx-mode-grad-apex32": {
+          "bytes": 78174,
+          "ideal_no_codebook_bytes": 76269,
+          "contexts": 72,
+          "new_symbols": 2752,
+          "extra_metadata_bytes": 0,
+          "prior_strength": 32.0
+        },
+        "ch-ctx-mode-grad-apex128": {
+          "bytes": 78132,
+          "ideal_no_codebook_bytes": 76269,
+          "contexts": 72,
+          "new_symbols": 2752,
+          "extra_metadata_bytes": 0,
+          "prior_strength": 128.0
+        },
+        "ch-ctx-mode-grad-apex512": {
+          "bytes": 78936,
+          "ideal_no_codebook_bytes": 76269,
+          "contexts": 72,
+          "new_symbols": 2752,
+          "extra_metadata_bytes": 0,
+          "prior_strength": 512.0
+        },
+        "ch-ctx-energy": {
+          "bytes": 79910,
+          "ideal_no_codebook_bytes": 76448,
+          "contexts": 78,
+          "new_symbols": 3272,
+          "extra_metadata_bytes": 72
+        },
+        "ch-ctx-energy-apex8": {
+          "bytes": 79164,
+          "ideal_no_codebook_bytes": 76448,
+          "contexts": 78,
+          "new_symbols": 3272,
+          "extra_metadata_bytes": 72,
+          "prior_strength": 8.0
+        },
+        "ch-ctx-energy-apex32": {
+          "bytes": 78676,
+          "ideal_no_codebook_bytes": 76448,
+          "contexts": 78,
+          "new_symbols": 3272,
+          "extra_metadata_bytes": 72,
+          "prior_strength": 32.0
+        },
+        "ch-ctx-energy-apex128": {
+          "bytes": 78651,
+          "ideal_no_codebook_bytes": 76448,
+          "contexts": 78,
+          "new_symbols": 3272,
+          "extra_metadata_bytes": 72,
+          "prior_strength": 128.0
+        },
+        "ch-ctx-energy-apex512": {
+          "bytes": 79610,
+          "ideal_no_codebook_bytes": 76448,
+          "contexts": 78,
+          "new_symbols": 3272,
+          "extra_metadata_bytes": 72,
+          "prior_strength": 512.0
+        },
+        "ch-ctx-unitary": {
+          "bytes": 79756,
+          "ideal_no_codebook_bytes": 76989,
+          "contexts": 61,
+          "new_symbols": 2549,
+          "extra_metadata_bytes": 48
+        },
+        "ch-ctx-unitary-apex8": {
+          "bytes": 79203,
+          "ideal_no_codebook_bytes": 76989,
+          "contexts": 61,
+          "new_symbols": 2549,
+          "extra_metadata_bytes": 48,
+          "prior_strength": 8.0
+        },
+        "ch-ctx-unitary-apex32": {
+          "bytes": 78804,
+          "ideal_no_codebook_bytes": 76989,
+          "contexts": 61,
+          "new_symbols": 2549,
+          "extra_metadata_bytes": 48,
+          "prior_strength": 32.0
+        },
+        "ch-ctx-unitary-apex128": {
+          "bytes": 78764,
+          "ideal_no_codebook_bytes": 76989,
+          "contexts": 61,
+          "new_symbols": 2549,
+          "extra_metadata_bytes": 48,
+          "prior_strength": 128.0
+        },
+        "ch-ctx-unitary-apex512": {
+          "bytes": 79584,
+          "ideal_no_codebook_bytes": 76989,
+          "contexts": 61,
+          "new_symbols": 2549,
+          "extra_metadata_bytes": 48,
+          "prior_strength": 512.0
+        },
+        "ch-ctx-energy-unitary": {
+          "bytes": 81086,
+          "ideal_no_codebook_bytes": 75909,
+          "contexts": 155,
+          "new_symbols": 5047,
+          "extra_metadata_bytes": 120
+        },
+        "ch-ctx-energy-unitary-apex8": {
+          "bytes": 79792,
+          "ideal_no_codebook_bytes": 75909,
+          "contexts": 155,
+          "new_symbols": 5047,
+          "extra_metadata_bytes": 120,
+          "prior_strength": 8.0
+        },
+        "ch-ctx-energy-unitary-apex32": {
+          "bytes": 79128,
+          "ideal_no_codebook_bytes": 75909,
+          "contexts": 155,
+          "new_symbols": 5047,
+          "extra_metadata_bytes": 120,
+          "prior_strength": 32.0
+        },
+        "ch-ctx-energy-unitary-apex128": {
+          "bytes": 79195,
+          "ideal_no_codebook_bytes": 75909,
+          "contexts": 155,
+          "new_symbols": 5047,
+          "extra_metadata_bytes": 120,
+          "prior_strength": 128.0
+        },
+        "ch-ctx-energy-unitary-apex512": {
+          "bytes": 80599,
+          "ideal_no_codebook_bytes": 75909,
+          "contexts": 155,
+          "new_symbols": 5047,
+          "extra_metadata_bytes": 120,
+          "prior_strength": 512.0
+        },
+        "ch-ctx-grad-energy-unitary": {
+          "bytes": 82644,
+          "ideal_no_codebook_bytes": 74879,
+          "contexts": 364,
+          "new_symbols": 7784,
+          "extra_metadata_bytes": 120
+        },
+        "ch-ctx-grad-energy-unitary-apex8": {
+          "bytes": 80308,
+          "ideal_no_codebook_bytes": 74879,
+          "contexts": 364,
+          "new_symbols": 7784,
+          "extra_metadata_bytes": 120,
+          "prior_strength": 8.0
+        },
+        "ch-ctx-grad-energy-unitary-apex32": {
+          "bytes": 79452,
+          "ideal_no_codebook_bytes": 74879,
+          "contexts": 364,
+          "new_symbols": 7784,
+          "extra_metadata_bytes": 120,
+          "prior_strength": 32.0
+        },
+        "ch-ctx-grad-energy-unitary-apex128": {
+          "bytes": 79639,
+          "ideal_no_codebook_bytes": 74879,
+          "contexts": 364,
+          "new_symbols": 7784,
+          "extra_metadata_bytes": 120,
+          "prior_strength": 128.0
+        },
+        "ch-ctx-grad-energy-unitary-apex512": {
+          "bytes": 81433,
+          "ideal_no_codebook_bytes": 74879,
+          "contexts": 364,
+          "new_symbols": 7784,
+          "extra_metadata_bytes": 120,
+          "prior_strength": 512.0
+        }
+      }
+    },
+    "mined_string_apex": {
+      "best_scheme": "ch-ctx-grad-apex128",
+      "bytes": 78900,
+      "ideal_best_scheme": "ch-ctx-grad-energy-unitary",
+      "ideal_no_codebook_bytes": 75647,
+      "metadata_bytes": 962,
+      "energy_metadata_bytes": 72,
+      "unitary_metadata_bytes": 48,
+      "strings": 6144,
+      "copy_strings": 0,
+      "dc_strings": 1,
+      "saved_direct_score_bytes": 3,
+      "model_counts": {
+        "pred-4": 124,
+        "pred-9": 15,
+        "pred-20": 10,
+        "pred-7": 8,
+        "pred-3": 2,
+        "direct": 6143,
+        "dc": 1,
+        "pred-5": 5,
+        "pred-14": 2,
+        "pred-6": 26
+      },
+      "schemes": {
+        "ch-ctx": {
+          "bytes": 80220,
+          "ideal_no_codebook_bytes": 78540,
+          "contexts": 22,
+          "new_symbols": 1475,
+          "extra_metadata_bytes": 0
+        },
+        "ch-ctx-apex8": {
+          "bytes": 79965,
+          "ideal_no_codebook_bytes": 78540,
+          "contexts": 22,
+          "new_symbols": 1475,
+          "extra_metadata_bytes": 0,
+          "prior_strength": 8.0
+        },
+        "ch-ctx-apex32": {
+          "bytes": 79695,
+          "ideal_no_codebook_bytes": 78540,
+          "contexts": 22,
+          "new_symbols": 1475,
+          "extra_metadata_bytes": 0,
+          "prior_strength": 32.0
+        },
+        "ch-ctx-apex128": {
+          "bytes": 79599,
+          "ideal_no_codebook_bytes": 78540,
+          "contexts": 22,
+          "new_symbols": 1475,
+          "extra_metadata_bytes": 0,
+          "prior_strength": 128.0
+        },
+        "ch-ctx-apex512": {
+          "bytes": 80000,
+          "ideal_no_codebook_bytes": 78540,
+          "contexts": 22,
+          "new_symbols": 1475,
+          "extra_metadata_bytes": 0,
+          "prior_strength": 512.0
+        },
+        "ch-ctx-grad": {
+          "bytes": 79981,
+          "ideal_no_codebook_bytes": 77037,
+          "contexts": 72,
+          "new_symbols": 2752,
+          "extra_metadata_bytes": 0
+        },
+        "ch-ctx-grad-apex8": {
+          "bytes": 79358,
+          "ideal_no_codebook_bytes": 77037,
+          "contexts": 72,
+          "new_symbols": 2752,
+          "extra_metadata_bytes": 0,
+          "prior_strength": 8.0
+        },
+        "ch-ctx-grad-apex32": {
+          "bytes": 78942,
+          "ideal_no_codebook_bytes": 77037,
+          "contexts": 72,
+          "new_symbols": 2752,
+          "extra_metadata_bytes": 0,
+          "prior_strength": 32.0
+        },
+        "ch-ctx-grad-apex128": {
+          "bytes": 78900,
+          "ideal_no_codebook_bytes": 77037,
+          "contexts": 72,
+          "new_symbols": 2752,
+          "extra_metadata_bytes": 0,
+          "prior_strength": 128.0
+        },
+        "ch-ctx-grad-apex512": {
+          "bytes": 79704,
+          "ideal_no_codebook_bytes": 77037,
+          "contexts": 72,
+          "new_symbols": 2752,
+          "extra_metadata_bytes": 0,
+          "prior_strength": 512.0
+        },
+        "ch-ctx-mode": {
+          "bytes": 80233,
+          "ideal_no_codebook_bytes": 78532,
+          "contexts": 25,
+          "new_symbols": 1499,
+          "extra_metadata_bytes": 0
+        },
+        "ch-ctx-mode-apex8": {
+          "bytes": 79967,
+          "ideal_no_codebook_bytes": 78532,
+          "contexts": 25,
+          "new_symbols": 1499,
+          "extra_metadata_bytes": 0,
+          "prior_strength": 8.0
+        },
+        "ch-ctx-mode-apex32": {
+          "bytes": 79696,
+          "ideal_no_codebook_bytes": 78532,
+          "contexts": 25,
+          "new_symbols": 1499,
+          "extra_metadata_bytes": 0,
+          "prior_strength": 32.0
+        },
+        "ch-ctx-mode-apex128": {
+          "bytes": 79600,
+          "ideal_no_codebook_bytes": 78532,
+          "contexts": 25,
+          "new_symbols": 1499,
+          "extra_metadata_bytes": 0,
+          "prior_strength": 128.0
+        },
+        "ch-ctx-mode-apex512": {
+          "bytes": 80000,
+          "ideal_no_codebook_bytes": 78532,
+          "contexts": 25,
+          "new_symbols": 1499,
+          "extra_metadata_bytes": 0,
+          "prior_strength": 512.0
+        },
+        "ch-ctx-mode-grad": {
+          "bytes": 79994,
+          "ideal_no_codebook_bytes": 77029,
+          "contexts": 75,
+          "new_symbols": 2776,
+          "extra_metadata_bytes": 0
+        },
+        "ch-ctx-mode-grad-apex8": {
+          "bytes": 79360,
+          "ideal_no_codebook_bytes": 77029,
+          "contexts": 75,
+          "new_symbols": 2776,
+          "extra_metadata_bytes": 0,
+          "prior_strength": 8.0
+        },
+        "ch-ctx-mode-grad-apex32": {
+          "bytes": 78943,
+          "ideal_no_codebook_bytes": 77029,
+          "contexts": 75,
+          "new_symbols": 2776,
+          "extra_metadata_bytes": 0,
+          "prior_strength": 32.0
+        },
+        "ch-ctx-mode-grad-apex128": {
+          "bytes": 78901,
+          "ideal_no_codebook_bytes": 77029,
+          "contexts": 75,
+          "new_symbols": 2776,
+          "extra_metadata_bytes": 0,
+          "prior_strength": 128.0
+        },
+        "ch-ctx-mode-grad-apex512": {
+          "bytes": 79705,
+          "ideal_no_codebook_bytes": 77029,
+          "contexts": 75,
+          "new_symbols": 2776,
+          "extra_metadata_bytes": 0,
+          "prior_strength": 512.0
+        },
+        "ch-ctx-energy": {
+          "bytes": 80678,
+          "ideal_no_codebook_bytes": 77216,
+          "contexts": 78,
+          "new_symbols": 3272,
+          "extra_metadata_bytes": 72
+        },
+        "ch-ctx-energy-apex8": {
+          "bytes": 79932,
+          "ideal_no_codebook_bytes": 77216,
+          "contexts": 78,
+          "new_symbols": 3272,
+          "extra_metadata_bytes": 72,
+          "prior_strength": 8.0
+        },
+        "ch-ctx-energy-apex32": {
+          "bytes": 79444,
+          "ideal_no_codebook_bytes": 77216,
+          "contexts": 78,
+          "new_symbols": 3272,
+          "extra_metadata_bytes": 72,
+          "prior_strength": 32.0
+        },
+        "ch-ctx-energy-apex128": {
+          "bytes": 79419,
+          "ideal_no_codebook_bytes": 77216,
+          "contexts": 78,
+          "new_symbols": 3272,
+          "extra_metadata_bytes": 72,
+          "prior_strength": 128.0
+        },
+        "ch-ctx-energy-apex512": {
+          "bytes": 80377,
+          "ideal_no_codebook_bytes": 77216,
+          "contexts": 78,
+          "new_symbols": 3272,
+          "extra_metadata_bytes": 72,
+          "prior_strength": 512.0
+        },
+        "ch-ctx-unitary": {
+          "bytes": 80524,
+          "ideal_no_codebook_bytes": 77757,
+          "contexts": 61,
+          "new_symbols": 2549,
+          "extra_metadata_bytes": 48
+        },
+        "ch-ctx-unitary-apex8": {
+          "bytes": 79970,
+          "ideal_no_codebook_bytes": 77757,
+          "contexts": 61,
+          "new_symbols": 2549,
+          "extra_metadata_bytes": 48,
+          "prior_strength": 8.0
+        },
+        "ch-ctx-unitary-apex32": {
+          "bytes": 79572,
+          "ideal_no_codebook_bytes": 77757,
+          "contexts": 61,
+          "new_symbols": 2549,
+          "extra_metadata_bytes": 48,
+          "prior_strength": 32.0
+        },
+        "ch-ctx-unitary-apex128": {
+          "bytes": 79532,
+          "ideal_no_codebook_bytes": 77757,
+          "contexts": 61,
+          "new_symbols": 2549,
+          "extra_metadata_bytes": 48,
+          "prior_strength": 128.0
+        },
+        "ch-ctx-unitary-apex512": {
+          "bytes": 80352,
+          "ideal_no_codebook_bytes": 77757,
+          "contexts": 61,
+          "new_symbols": 2549,
+          "extra_metadata_bytes": 48,
+          "prior_strength": 512.0
+        },
+        "ch-ctx-energy-unitary": {
+          "bytes": 81854,
+          "ideal_no_codebook_bytes": 76676,
+          "contexts": 155,
+          "new_symbols": 5047,
+          "extra_metadata_bytes": 120
+        },
+        "ch-ctx-energy-unitary-apex8": {
+          "bytes": 80560,
+          "ideal_no_codebook_bytes": 76676,
+          "contexts": 155,
+          "new_symbols": 5047,
+          "extra_metadata_bytes": 120,
+          "prior_strength": 8.0
+        },
+        "ch-ctx-energy-unitary-apex32": {
+          "bytes": 79896,
+          "ideal_no_codebook_bytes": 76676,
+          "contexts": 155,
+          "new_symbols": 5047,
+          "extra_metadata_bytes": 120,
+          "prior_strength": 32.0
+        },
+        "ch-ctx-energy-unitary-apex128": {
+          "bytes": 79963,
+          "ideal_no_codebook_bytes": 76676,
+          "contexts": 155,
+          "new_symbols": 5047,
+          "extra_metadata_bytes": 120,
+          "prior_strength": 128.0
+        },
+        "ch-ctx-energy-unitary-apex512": {
+          "bytes": 81365,
+          "ideal_no_codebook_bytes": 76676,
+          "contexts": 155,
+          "new_symbols": 5047,
+          "extra_metadata_bytes": 120,
+          "prior_strength": 512.0
+        },
+        "ch-ctx-grad-energy-unitary": {
+          "bytes": 83412,
+          "ideal_no_codebook_bytes": 75647,
+          "contexts": 364,
+          "new_symbols": 7784,
+          "extra_metadata_bytes": 120
+        },
+        "ch-ctx-grad-energy-unitary-apex8": {
+          "bytes": 81076,
+          "ideal_no_codebook_bytes": 75647,
+          "contexts": 364,
+          "new_symbols": 7784,
+          "extra_metadata_bytes": 120,
+          "prior_strength": 8.0
+        },
+        "ch-ctx-grad-energy-unitary-apex32": {
+          "bytes": 80220,
+          "ideal_no_codebook_bytes": 75647,
+          "contexts": 364,
+          "new_symbols": 7784,
+          "extra_metadata_bytes": 120,
+          "prior_strength": 32.0
+        },
+        "ch-ctx-grad-energy-unitary-apex128": {
+          "bytes": 80407,
+          "ideal_no_codebook_bytes": 75647,
+          "contexts": 364,
+          "new_symbols": 7784,
+          "extra_metadata_bytes": 120,
+          "prior_strength": 128.0
+        },
+        "ch-ctx-grad-energy-unitary-apex512": {
+          "bytes": 82200,
+          "ideal_no_codebook_bytes": 75647,
+          "contexts": 364,
+          "new_symbols": 7784,
+          "extra_metadata_bytes": 120,
+          "prior_strength": 512.0
+        }
+      }
+    },
+    "deployed_apex": {
+      "best_scheme": "ch-ctx-grad-apex128",
+      "bytes": 78132,
+      "ideal_best_scheme": "ch-ctx-grad-energy-unitary",
+      "ideal_no_codebook_bytes": 74879,
+      "metadata_bytes": 192,
+      "energy_metadata_bytes": 72,
+      "unitary_metadata_bytes": 48,
+      "strings": 6144,
+      "copy_strings": 0,
+      "dc_strings": 0,
+      "saved_direct_score_bytes": 0,
+      "model_counts": {
+        "pred-4": 124,
+        "pred-9": 15,
+        "pred-20": 10,
+        "pred-7": 8,
+        "pred-3": 2,
+        "direct": 6144,
+        "pred-5": 5,
+        "pred-14": 2,
+        "pred-6": 26
+      },
+      "schemes": {
+        "ch-ctx": {
+          "bytes": 79452,
+          "ideal_no_codebook_bytes": 77773,
+          "contexts": 22,
+          "new_symbols": 1475,
+          "extra_metadata_bytes": 0
+        },
+        "ch-ctx-apex8": {
+          "bytes": 79197,
+          "ideal_no_codebook_bytes": 77773,
+          "contexts": 22,
+          "new_symbols": 1475,
+          "extra_metadata_bytes": 0,
+          "prior_strength": 8.0
+        },
+        "ch-ctx-apex32": {
+          "bytes": 78927,
+          "ideal_no_codebook_bytes": 77773,
+          "contexts": 22,
+          "new_symbols": 1475,
+          "extra_metadata_bytes": 0,
+          "prior_strength": 32.0
+        },
+        "ch-ctx-apex128": {
+          "bytes": 78832,
+          "ideal_no_codebook_bytes": 77773,
+          "contexts": 22,
+          "new_symbols": 1475,
+          "extra_metadata_bytes": 0,
+          "prior_strength": 128.0
+        },
+        "ch-ctx-apex512": {
+          "bytes": 79232,
+          "ideal_no_codebook_bytes": 77773,
+          "contexts": 22,
+          "new_symbols": 1475,
+          "extra_metadata_bytes": 0,
+          "prior_strength": 512.0
+        },
+        "ch-ctx-grad": {
+          "bytes": 79213,
+          "ideal_no_codebook_bytes": 76269,
+          "contexts": 72,
+          "new_symbols": 2752,
+          "extra_metadata_bytes": 0
+        },
+        "ch-ctx-grad-apex8": {
+          "bytes": 78590,
+          "ideal_no_codebook_bytes": 76269,
+          "contexts": 72,
+          "new_symbols": 2752,
+          "extra_metadata_bytes": 0,
+          "prior_strength": 8.0
+        },
+        "ch-ctx-grad-apex32": {
+          "bytes": 78174,
+          "ideal_no_codebook_bytes": 76269,
+          "contexts": 72,
+          "new_symbols": 2752,
+          "extra_metadata_bytes": 0,
+          "prior_strength": 32.0
+        },
+        "ch-ctx-grad-apex128": {
+          "bytes": 78132,
+          "ideal_no_codebook_bytes": 76269,
+          "contexts": 72,
+          "new_symbols": 2752,
+          "extra_metadata_bytes": 0,
+          "prior_strength": 128.0
+        },
+        "ch-ctx-grad-apex512": {
+          "bytes": 78936,
+          "ideal_no_codebook_bytes": 76269,
+          "contexts": 72,
+          "new_symbols": 2752,
+          "extra_metadata_bytes": 0,
+          "prior_strength": 512.0
+        },
+        "ch-ctx-mode": {
+          "bytes": 79452,
+          "ideal_no_codebook_bytes": 77773,
+          "contexts": 22,
+          "new_symbols": 1475,
+          "extra_metadata_bytes": 0
+        },
+        "ch-ctx-mode-apex8": {
+          "bytes": 79197,
+          "ideal_no_codebook_bytes": 77773,
+          "contexts": 22,
+          "new_symbols": 1475,
+          "extra_metadata_bytes": 0,
+          "prior_strength": 8.0
+        },
+        "ch-ctx-mode-apex32": {
+          "bytes": 78927,
+          "ideal_no_codebook_bytes": 77773,
+          "contexts": 22,
+          "new_symbols": 1475,
+          "extra_metadata_bytes": 0,
+          "prior_strength": 32.0
+        },
+        "ch-ctx-mode-apex128": {
+          "bytes": 78832,
+          "ideal_no_codebook_bytes": 77773,
+          "contexts": 22,
+          "new_symbols": 1475,
+          "extra_metadata_bytes": 0,
+          "prior_strength": 128.0
+        },
+        "ch-ctx-mode-apex512": {
+          "bytes": 79232,
+          "ideal_no_codebook_bytes": 77773,
+          "contexts": 22,
+          "new_symbols": 1475,
+          "extra_metadata_bytes": 0,
+          "prior_strength": 512.0
+        },
+        "ch-ctx-mode-grad": {
+          "bytes": 79213,
+          "ideal_no_codebook_bytes": 76269,
+          "contexts": 72,
+          "new_symbols": 2752,
+          "extra_metadata_bytes": 0
+        },
+        "ch-ctx-mode-grad-apex8": {
+          "bytes": 78590,
+          "ideal_no_codebook_bytes": 76269,
+          "contexts": 72,
+          "new_symbols": 2752,
+          "extra_metadata_bytes": 0,
+          "prior_strength": 8.0
+        },
+        "ch-ctx-mode-grad-apex32": {
+          "bytes": 78174,
+          "ideal_no_codebook_bytes": 76269,
+          "contexts": 72,
+          "new_symbols": 2752,
+          "extra_metadata_bytes": 0,
+          "prior_strength": 32.0
+        },
+        "ch-ctx-mode-grad-apex128": {
+          "bytes": 78132,
+          "ideal_no_codebook_bytes": 76269,
+          "contexts": 72,
+          "new_symbols": 2752,
+          "extra_metadata_bytes": 0,
+          "prior_strength": 128.0
+        },
+        "ch-ctx-mode-grad-apex512": {
+          "bytes": 78936,
+          "ideal_no_codebook_bytes": 76269,
+          "contexts": 72,
+          "new_symbols": 2752,
+          "extra_metadata_bytes": 0,
+          "prior_strength": 512.0
+        },
+        "ch-ctx-energy": {
+          "bytes": 79910,
+          "ideal_no_codebook_bytes": 76448,
+          "contexts": 78,
+          "new_symbols": 3272,
+          "extra_metadata_bytes": 72
+        },
+        "ch-ctx-energy-apex8": {
+          "bytes": 79164,
+          "ideal_no_codebook_bytes": 76448,
+          "contexts": 78,
+          "new_symbols": 3272,
+          "extra_metadata_bytes": 72,
+          "prior_strength": 8.0
+        },
+        "ch-ctx-energy-apex32": {
+          "bytes": 78676,
+          "ideal_no_codebook_bytes": 76448,
+          "contexts": 78,
+          "new_symbols": 3272,
+          "extra_metadata_bytes": 72,
+          "prior_strength": 32.0
+        },
+        "ch-ctx-energy-apex128": {
+          "bytes": 78651,
+          "ideal_no_codebook_bytes": 76448,
+          "contexts": 78,
+          "new_symbols": 3272,
+          "extra_metadata_bytes": 72,
+          "prior_strength": 128.0
+        },
+        "ch-ctx-energy-apex512": {
+          "bytes": 79610,
+          "ideal_no_codebook_bytes": 76448,
+          "contexts": 78,
+          "new_symbols": 3272,
+          "extra_metadata_bytes": 72,
+          "prior_strength": 512.0
+        },
+        "ch-ctx-unitary": {
+          "bytes": 79756,
+          "ideal_no_codebook_bytes": 76989,
+          "contexts": 61,
+          "new_symbols": 2549,
+          "extra_metadata_bytes": 48
+        },
+        "ch-ctx-unitary-apex8": {
+          "bytes": 79203,
+          "ideal_no_codebook_bytes": 76989,
+          "contexts": 61,
+          "new_symbols": 2549,
+          "extra_metadata_bytes": 48,
+          "prior_strength": 8.0
+        },
+        "ch-ctx-unitary-apex32": {
+          "bytes": 78804,
+          "ideal_no_codebook_bytes": 76989,
+          "contexts": 61,
+          "new_symbols": 2549,
+          "extra_metadata_bytes": 48,
+          "prior_strength": 32.0
+        },
+        "ch-ctx-unitary-apex128": {
+          "bytes": 78764,
+          "ideal_no_codebook_bytes": 76989,
+          "contexts": 61,
+          "new_symbols": 2549,
+          "extra_metadata_bytes": 48,
+          "prior_strength": 128.0
+        },
+        "ch-ctx-unitary-apex512": {
+          "bytes": 79584,
+          "ideal_no_codebook_bytes": 76989,
+          "contexts": 61,
+          "new_symbols": 2549,
+          "extra_metadata_bytes": 48,
+          "prior_strength": 512.0
+        },
+        "ch-ctx-energy-unitary": {
+          "bytes": 81086,
+          "ideal_no_codebook_bytes": 75909,
+          "contexts": 155,
+          "new_symbols": 5047,
+          "extra_metadata_bytes": 120
+        },
+        "ch-ctx-energy-unitary-apex8": {
+          "bytes": 79792,
+          "ideal_no_codebook_bytes": 75909,
+          "contexts": 155,
+          "new_symbols": 5047,
+          "extra_metadata_bytes": 120,
+          "prior_strength": 8.0
+        },
+        "ch-ctx-energy-unitary-apex32": {
+          "bytes": 79128,
+          "ideal_no_codebook_bytes": 75909,
+          "contexts": 155,
+          "new_symbols": 5047,
+          "extra_metadata_bytes": 120,
+          "prior_strength": 32.0
+        },
+        "ch-ctx-energy-unitary-apex128": {
+          "bytes": 79195,
+          "ideal_no_codebook_bytes": 75909,
+          "contexts": 155,
+          "new_symbols": 5047,
+          "extra_metadata_bytes": 120,
+          "prior_strength": 128.0
+        },
+        "ch-ctx-energy-unitary-apex512": {
+          "bytes": 80599,
+          "ideal_no_codebook_bytes": 75909,
+          "contexts": 155,
+          "new_symbols": 5047,
+          "extra_metadata_bytes": 120,
+          "prior_strength": 512.0
+        },
+        "ch-ctx-grad-energy-unitary": {
+          "bytes": 82644,
+          "ideal_no_codebook_bytes": 74879,
+          "contexts": 364,
+          "new_symbols": 7784,
+          "extra_metadata_bytes": 120
+        },
+        "ch-ctx-grad-energy-unitary-apex8": {
+          "bytes": 80308,
+          "ideal_no_codebook_bytes": 74879,
+          "contexts": 364,
+          "new_symbols": 7784,
+          "extra_metadata_bytes": 120,
+          "prior_strength": 8.0
+        },
+        "ch-ctx-grad-energy-unitary-apex32": {
+          "bytes": 79452,
+          "ideal_no_codebook_bytes": 74879,
+          "contexts": 364,
+          "new_symbols": 7784,
+          "extra_metadata_bytes": 120,
+          "prior_strength": 32.0
+        },
+        "ch-ctx-grad-energy-unitary-apex128": {
+          "bytes": 79639,
+          "ideal_no_codebook_bytes": 74879,
+          "contexts": 364,
+          "new_symbols": 7784,
+          "extra_metadata_bytes": 120,
+          "prior_strength": 128.0
+        },
+        "ch-ctx-grad-energy-unitary-apex512": {
+          "bytes": 81433,
+          "ideal_no_codebook_bytes": 74879,
+          "contexts": 364,
+          "new_symbols": 7784,
+          "extra_metadata_bytes": 120,
+          "prior_strength": 512.0
+        }
+      }
+    },
+    "estimate_s": 61.63430700002937
+  }
+]

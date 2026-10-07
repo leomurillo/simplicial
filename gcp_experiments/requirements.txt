@@ -1,0 +1,5 @@
+# GCP-only. Install torch CPU build explicitly (see README), then:
+transformers>=4.40
+numpy>=1.26
+datasets>=2.18   # optional: wikitext corpus; falls back to a built-in corpus if absent
+# torch installed separately:  pip install torch --index-url https://download.pytorch.org/whl/cpu

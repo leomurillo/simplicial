@@ -1,0 +1,1477 @@
+{
+  "purpose": "Baseline for Helmert/NZSBTL flags: compare conductor-respecting packet blocks with Haar-random mixed orthogonal blocks at equal block sizes using off-centroid Fisher block coupling.",
+  "config": {
+    "rows": [
+      "f4-u2",
+      "f2-u4",
+      "f2-u5"
+    ],
+    "samples": 1000,
+    "seed": 20260515,
+    "amplitude_fraction": 0.35,
+    "ledger_weights": {
+      "block": 1.0,
+      "mix": 1.0,
+      "fisher_projection": 1.0,
+      "reciprocal_projection": 1.0,
+      "closure": 1.0,
+      "resource": 0.1,
+      "depth": 0.1
+    },
+    "skip_lowest": true
+  },
+  "results": [
+    {
+      "row_key": "f4-u2",
+      "row": "F_4[u]/(u^2)",
+      "ring_name": "F_4[u]/(u^2)",
+      "target_packet": "u^2",
+      "conductor_order": [
+        "u",
+        "u^2"
+      ],
+      "packet_sizes": {
+        "u": 3,
+        "u^2": 12
+      },
+      "samples": 1000,
+      "seed": 20260532,
+      "amplitude_fraction": 0.35,
+      "actual_amplitude": 0.08312499999999999,
+      "probability_min": 0.04171875,
+      "probability_max": 0.12484374999999999,
+      "h_hat_indicator_energy": 12.0,
+      "target_depth": 2,
+      "active_prefix_dimension": 15,
+      "ledger_weights": {
+        "block": 1.0,
+        "mix": 1.0,
+        "fisher_projection": 1.0,
+        "reciprocal_projection": 1.0,
+        "closure": 1.0,
+        "resource": 0.1,
+        "depth": 0.1
+      },
+      "conductor_full_ledger": {
+        "J": 0.4798463823317617,
+        "block_coupling": 0.27984638233176173,
+        "mix_impurity": 0.0,
+        "fisher_projection_error": 0.0,
+        "reciprocal_projection_error": 0.0,
+        "closure_leakage": 0.0,
+        "resource_cost": 1.0,
+        "depth_cost": 1.0
+      },
+      "random_mixed_J": {
+        "min": 0.40299272797782193,
+        "p05": 0.5211053110771747,
+        "median": 0.6362333218521692,
+        "mean": 0.6403797712682678,
+        "p95": 0.7771060421978581,
+        "max": 0.9521493775565829
+      },
+      "random_mixed_better_J_count": 12,
+      "random_mixed_better_J_fraction": 0.012,
+      "full_J_break_even_mix_weight": {
+        "min": 0.0,
+        "p05": 0.0,
+        "median": 0.1931874620039277,
+        "mean": 0.2541699256889382,
+        "p95": 0.7290687712187869,
+        "max": 1.8192865965880416
+      },
+      "random_mixed_ledger_terms": {
+        "block_coupling": {
+          "min": 0.0868089254391125,
+          "p05": 0.15188831755490828,
+          "median": 0.24179976039953913,
+          "mean": 0.24654201800827402,
+          "p95": 0.3588452880143215,
+          "max": 0.4902103156170223
+        },
+        "mix_impurity": {
+          "min": 0.04703446472732243,
+          "p05": 0.11700892637458842,
+          "median": 0.19260257899058833,
+          "mean": 0.19383775325999353,
+          "p95": 0.26711813329063494,
+          "max": 0.3574017814544981
+        },
+        "fisher_projection_error": {
+          "min": 0.0,
+          "p05": 0.0,
+          "median": 0.0,
+          "mean": 8.137934770502397e-17,
+          "p95": 4.440892098500626e-16,
+          "max": 8.881784197001252e-16
+        },
+        "reciprocal_projection_error": {
+          "min": 0.0,
+          "p05": 0.0,
+          "median": 3.3306690738754696e-16,
+          "mean": 2.808864252301646e-16,
+          "p95": 5.551115123125783e-16,
+          "max": 1.1102230246251565e-15
+        },
+        "closure_leakage": {
+          "min": 0.0,
+          "p05": 0.0,
+          "median": 0.0,
+          "mean": 0.0,
+          "p95": 0.0,
+          "max": 0.0
+        },
+        "resource_cost": {
+          "min": 1.0,
+          "p05": 1.0,
+          "median": 1.0,
+          "mean": 1.0,
+          "p95": 1.0,
+          "max": 1.0
+        },
+        "depth_cost": {
+          "min": 1.0,
+          "p05": 1.0,
+          "median": 1.0,
+          "mean": 1.0,
+          "p95": 1.0,
+          "max": 1.0
+        }
+      },
+      "conductor_block_coupling": 0.27984638233176173,
+      "canonical_axis_offdiag_energy": 0.81540341679244,
+      "packet_respecting_block_random_spread": 7.771561172376096e-16,
+      "packet_respecting_block_random_summary": {
+        "min": 0.2798463823317613,
+        "p05": 0.27984638233176157,
+        "median": 0.27984638233176173,
+        "mean": 0.27984638233176173,
+        "p95": 0.27984638233176184,
+        "max": 0.27984638233176207
+      },
+      "random_mixed_block_coupling": {
+        "min": 0.0868089254391125,
+        "p05": 0.15188831755490828,
+        "median": 0.24179976039953913,
+        "mean": 0.24654201800827402,
+        "p95": 0.3588452880143215,
+        "max": 0.4902103156170223
+      },
+      "random_mixed_packet_purity": {
+        "min": 0.7999999999999996,
+        "p05": 0.7999999999999999,
+        "median": 0.8,
+        "mean": 0.8000000000000002,
+        "p95": 0.8000000000000002,
+        "max": 0.8000000000000004
+      },
+      "random_mixed_packet_commutator_impurity": {
+        "min": 0.04703446472732243,
+        "p05": 0.11700892637458842,
+        "median": 0.19260257899058833,
+        "mean": 0.19383775325999353,
+        "p95": 0.26711813329063494,
+        "max": 0.3574017814544981
+      },
+      "mix_impurity_weight": 1.0,
+      "random_mixed_total_cost": {
+        "min": 0.202992727977821,
+        "p05": 0.32110531107717455,
+        "median": 0.4362333218521687,
+        "mean": 0.44037977126826755,
+        "p95": 0.5771060421978579,
+        "max": 0.7521493775565828
+      },
+      "random_mixed_better_with_mix_price_count": 12,
+      "random_mixed_better_with_mix_price_fraction": 0.012,
+      "break_even_mix_weight": {
+        "min": 0.0,
+        "p05": 0.0,
+        "median": 0.19318746200392822,
+        "mean": 0.2541699256889397,
+        "p95": 0.7290687712187888,
+        "max": 1.819286596588052
+      },
+      "random_mixed_better_count": 728,
+      "random_mixed_better_fraction": 0.728,
+      "oracle_eigenbasis_block_coupling": 1.1527368661965817e-30,
+      "gram_eigenvalue_min": 0.5351890916940806,
+      "gram_eigenvalue_max": 1.4981273408239701
+    },
+    {
+      "row_key": "f2-u4",
+      "row": "F_2[u]/(u^4)",
+      "ring_name": "F_2[u]/(u^4)",
+      "target_packet": "u^2",
+      "conductor_order": [
+        "u",
+        "u^2",
+        "u^3",
+        "u^4"
+      ],
+      "packet_sizes": {
+        "u": 1,
+        "u^2": 2,
+        "u^3": 4,
+        "u^4": 8
+      },
+      "samples": 1000,
+      "seed": 20261532,
+      "amplitude_fraction": 0.35,
+      "actual_amplitude": 0.16624999999999998,
+      "probability_min": 0.04171875,
+      "probability_max": 0.08328125,
+      "h_hat_indicator_energy": 2.0,
+      "target_depth": 2,
+      "active_prefix_dimension": 3,
+      "ledger_weights": {
+        "block": 1.0,
+        "mix": 1.0,
+        "fisher_projection": 1.0,
+        "reciprocal_projection": 1.0,
+        "closure": 1.0,
+        "resource": 0.1,
+        "depth": 0.1
+      },
+      "conductor_full_ledger": {
+        "J": 0.20974823251944835,
+        "block_coupling": 0.13974823251944835,
+        "mix_impurity": 0.0,
+        "fisher_projection_error": 0.0,
+        "reciprocal_projection_error": 0.0,
+        "closure_leakage": 0.0,
+        "resource_cost": 0.2,
+        "depth_cost": 0.5
+      },
+      "random_mixed_J": {
+        "min": 1.8565884547439289,
+        "p05": 2.6670495942152357,
+        "median": 3.451828292517062,
+        "mean": 3.4337441602920284,
+        "p95": 4.064306886655372,
+        "max": 4.294044757812267
+      },
+      "random_mixed_better_J_count": 0,
+      "random_mixed_better_J_fraction": 0.0,
+      "full_J_break_even_mix_weight": {
+        "min": 0.0,
+        "p05": 0.0,
+        "median": 0.0,
+        "mean": 0.0,
+        "p95": 0.0,
+        "max": 0.0
+      },
+      "random_mixed_ledger_terms": {
+        "block_coupling": {
+          "min": 0.3809734485138013,
+          "p05": 0.49162859964115635,
+          "median": 0.6106887209140482,
+          "mean": 0.6076946730121204,
+          "p95": 0.7145987028042536,
+          "max": 0.7895721069886967
+        },
+        "mix_impurity": {
+          "min": 0.5048991063417033,
+          "p05": 0.641570122325724,
+          "median": 0.7361135666290484,
+          "mean": 0.7339093025778256,
+          "p95": 0.8109469586432979,
+          "max": 0.8719443109934659
+        },
+        "fisher_projection_error": {
+          "min": 0.2205712105794655,
+          "p05": 0.5442979321885346,
+          "median": 0.8294804012255053,
+          "mean": 0.8022446957499503,
+          "p95": 0.9761884964576081,
+          "max": 0.9991661533285793
+        },
+        "reciprocal_projection_error": {
+          "min": 0.2571430932532556,
+          "p05": 0.5554217569163611,
+          "median": 0.8264564350059302,
+          "mean": 0.802976914993622,
+          "p95": 0.9751574913286555,
+          "max": 0.9986369817050335
+        },
+        "closure_leakage": {
+          "min": 0.0,
+          "p05": 0.0,
+          "median": 0.5043612385324698,
+          "mean": 0.4169185739585103,
+          "p95": 0.8211866210460106,
+          "max": 0.8678909793912717
+        },
+        "resource_cost": {
+          "min": 0.2,
+          "p05": 0.2,
+          "median": 0.2,
+          "mean": 0.20000000000000004,
+          "p95": 0.2,
+          "max": 0.2
+        },
+        "depth_cost": {
+          "min": 0.5,
+          "p05": 0.5,
+          "median": 0.5,
+          "mean": 0.5,
+          "p95": 0.5,
+          "max": 0.5
+        }
+      },
+      "conductor_block_coupling": 0.13974823251944835,
+      "canonical_axis_offdiag_energy": 1.0323127694963112,
+      "packet_respecting_block_random_spread": 3.608224830031759e-16,
+      "packet_respecting_block_random_summary": {
+        "min": 0.13974823251944812,
+        "p05": 0.1397482325194483,
+        "median": 0.13974823251944835,
+        "mean": 0.13974823251944835,
+        "p95": 0.1397482325194484,
+        "max": 0.13974823251944848
+      },
+      "random_mixed_block_coupling": {
+        "min": 0.3809734485138013,
+        "p05": 0.49162859964115635,
+        "median": 0.6106887209140482,
+        "mean": 0.6076946730121204,
+        "p95": 0.7145987028042536,
+        "max": 0.7895721069886967
+      },
+      "random_mixed_packet_purity": {
+        "min": 0.5333333333333331,
+        "p05": 0.5333333333333332,
+        "median": 0.5333333333333333,
+        "mean": 0.5374513841380584,
+        "p95": 0.5563578462450656,
+        "max": 0.5887093626006652
+      },
+      "random_mixed_packet_commutator_impurity": {
+        "min": 0.5048991063417033,
+        "p05": 0.641570122325724,
+        "median": 0.7361135666290484,
+        "mean": 0.7339093025778256,
+        "p95": 0.8109469586432979,
+        "max": 0.8719443109934659
+      },
+      "mix_impurity_weight": 1.0,
+      "random_mixed_total_cost": {
+        "min": 1.0616329979470984,
+        "p05": 1.1943382247213437,
+        "median": 1.3489109517198,
+        "mean": 1.3416039755899463,
+        "p95": 1.4704121144338094,
+        "max": 1.5516592566187604
+      },
+      "random_mixed_better_with_mix_price_count": 0,
+      "random_mixed_better_with_mix_price_fraction": 0.0,
+      "break_even_mix_weight": {
+        "min": 0.0,
+        "p05": 0.0,
+        "median": 0.0,
+        "mean": 0.0,
+        "p95": 0.0,
+        "max": 0.0
+      },
+      "random_mixed_better_count": 0,
+      "random_mixed_better_fraction": 0.0,
+      "oracle_eigenbasis_block_coupling": 2.7502045380041634e-30,
+      "gram_eigenvalue_min": 0.7504690431519696,
+      "gram_eigenvalue_max": 1.4981273408239706
+    },
+    {
+      "row_key": "f2-u4",
+      "row": "F_2[u]/(u^4)",
+      "ring_name": "F_2[u]/(u^4)",
+      "target_packet": "u^3",
+      "conductor_order": [
+        "u",
+        "u^2",
+        "u^3",
+        "u^4"
+      ],
+      "packet_sizes": {
+        "u": 1,
+        "u^2": 2,
+        "u^3": 4,
+        "u^4": 8
+      },
+      "samples": 1000,
+      "seed": 20261549,
+      "amplitude_fraction": 0.35,
+      "actual_amplitude": 0.08312499999999999,
+      "probability_min": 0.04171875,
+      "probability_max": 0.08328125,
+      "h_hat_indicator_energy": 4.0,
+      "target_depth": 3,
+      "active_prefix_dimension": 7,
+      "ledger_weights": {
+        "block": 1.0,
+        "mix": 1.0,
+        "fisher_projection": 1.0,
+        "reciprocal_projection": 1.0,
+        "closure": 1.0,
+        "resource": 0.1,
+        "depth": 0.1
+      },
+      "conductor_full_ledger": {
+        "J": 0.33515152557870875,
+        "block_coupling": 0.21348485891204208,
+        "mix_impurity": 0.0,
+        "fisher_projection_error": 0.0,
+        "reciprocal_projection_error": 0.0,
+        "closure_leakage": 0.0,
+        "resource_cost": 0.4666666666666667,
+        "depth_cost": 0.75
+      },
+      "random_mixed_J": {
+        "min": 1.4368263223861422,
+        "p05": 1.792720282112949,
+        "median": 2.441139754481447,
+        "mean": 2.4840698385121587,
+        "p95": 3.2986868101143783,
+        "max": 3.8049175527319994
+      },
+      "random_mixed_better_J_count": 0,
+      "random_mixed_better_J_fraction": 0.0,
+      "full_J_break_even_mix_weight": {
+        "min": 0.0,
+        "p05": 0.0,
+        "median": 0.0,
+        "mean": 0.0,
+        "p95": 0.0,
+        "max": 0.0
+      },
+      "random_mixed_ledger_terms": {
+        "block_coupling": {
+          "min": 0.16891189484867003,
+          "p05": 0.23728540686533073,
+          "median": 0.3143423499995414,
+          "mean": 0.3115309166894092,
+          "p95": 0.3775190428173729,
+          "max": 0.4132481679022544
+        },
+        "mix_impurity": {
+          "min": 0.558898466875444,
+          "p05": 0.6338127178715245,
+          "median": 0.7350158059481823,
+          "mean": 0.7314659559491674,
+          "p95": 0.8114208367543646,
+          "max": 0.8779705141317623
+        },
+        "fisher_projection_error": {
+          "min": 0.08489058999688204,
+          "p05": 0.25164711199660744,
+          "median": 0.5302165531259935,
+          "mean": 0.5303886695379936,
+          "p95": 0.809956259013415,
+          "max": 0.9574292596680352
+        },
+        "reciprocal_projection_error": {
+          "min": 0.09878446408969188,
+          "p05": 0.23702820540231953,
+          "median": 0.5391854209099867,
+          "mean": 0.5332194734516819,
+          "p95": 0.807094431697909,
+          "max": 0.9692858563987525
+        },
+        "closure_leakage": {
+          "min": 0.0,
+          "p05": 0.0,
+          "median": 0.11056025562425398,
+          "mean": 0.2557981562172395,
+          "p95": 0.81367827913403,
+          "max": 0.8876658010628284
+        },
+        "resource_cost": {
+          "min": 0.4666666666666667,
+          "p05": 0.4666666666666667,
+          "median": 0.4666666666666667,
+          "mean": 0.46666666666666673,
+          "p95": 0.4666666666666667,
+          "max": 0.4666666666666667
+        },
+        "depth_cost": {
+          "min": 0.75,
+          "p05": 0.75,
+          "median": 0.75,
+          "mean": 0.75,
+          "p95": 0.75,
+          "max": 0.75
+        }
+      },
+      "conductor_block_coupling": 0.21348485891204208,
+      "canonical_axis_offdiag_energy": 0.5296751702131988,
+      "packet_respecting_block_random_spread": 4.718447854656915e-16,
+      "packet_respecting_block_random_summary": {
+        "min": 0.21348485891204186,
+        "p05": 0.213484858912042,
+        "median": 0.21348485891204208,
+        "mean": 0.2134848589120421,
+        "p95": 0.21348485891204216,
+        "max": 0.21348485891204233
+      },
+      "random_mixed_block_coupling": {
+        "min": 0.16891189484867003,
+        "p05": 0.23728540686533073,
+        "median": 0.3143423499995414,
+        "mean": 0.3115309166894092,
+        "p95": 0.3775190428173729,
+        "max": 0.4132481679022544
+      },
+      "random_mixed_packet_purity": {
+        "min": 0.5333333333333331,
+        "p05": 0.5333333333333332,
+        "median": 0.5333333333333333,
+        "mean": 0.5381531346127738,
+        "p95": 0.5591133046397976,
+        "max": 0.6311565789549304
+      },
+      "random_mixed_packet_commutator_impurity": {
+        "min": 0.558898466875444,
+        "p05": 0.6338127178715245,
+        "median": 0.7350158059481823,
+        "mean": 0.7314659559491674,
+        "p95": 0.8114208367543646,
+        "max": 0.8779705141317623
+      },
+      "mix_impurity_weight": 1.0,
+      "random_mixed_total_cost": {
+        "min": 0.7687948295094533,
+        "p05": 0.9215854503708648,
+        "median": 1.0447954686012064,
+        "mean": 1.0429968726385763,
+        "p95": 1.1527815835229773,
+        "max": 1.248724773755518
+      },
+      "random_mixed_better_with_mix_price_count": 0,
+      "random_mixed_better_with_mix_price_fraction": 0.0,
+      "break_even_mix_weight": {
+        "min": 0.0,
+        "p05": 0.0,
+        "median": 0.0,
+        "mean": 0.0002876196353140756,
+        "p95": 0.0,
+        "max": 0.0698085653420305
+      },
+      "random_mixed_better_count": 15,
+      "random_mixed_better_fraction": 0.015,
+      "oracle_eigenbasis_block_coupling": 2.007001217797338e-30,
+      "gram_eigenvalue_min": 0.7504690431519702,
+      "gram_eigenvalue_max": 1.498127340823971
+    },
+    {
+      "row_key": "f2-u4",
+      "row": "F_2[u]/(u^4)",
+      "ring_name": "F_2[u]/(u^4)",
+      "target_packet": "u^4",
+      "conductor_order": [
+        "u",
+        "u^2",
+        "u^3",
+        "u^4"
+      ],
+      "packet_sizes": {
+        "u": 1,
+        "u^2": 2,
+        "u^3": 4,
+        "u^4": 8
+      },
+      "samples": 1000,
+      "seed": 20261566,
+      "amplitude_fraction": 0.35,
+      "actual_amplitude": 0.041562499999999995,
+      "probability_min": 0.04171875,
+      "probability_max": 0.08328125,
+      "h_hat_indicator_energy": 8.0,
+      "target_depth": 4,
+      "active_prefix_dimension": 15,
+      "ledger_weights": {
+        "block": 1.0,
+        "mix": 1.0,
+        "fisher_projection": 1.0,
+        "reciprocal_projection": 1.0,
+        "closure": 1.0,
+        "resource": 0.1,
+        "depth": 0.1
+      },
+      "conductor_full_ledger": {
+        "J": 0.4513187996415563,
+        "block_coupling": 0.25131879964155635,
+        "mix_impurity": 0.0,
+        "fisher_projection_error": 0.0,
+        "reciprocal_projection_error": 0.0,
+        "closure_leakage": 0.0,
+        "resource_cost": 1.0,
+        "depth_cost": 1.0
+      },
+      "random_mixed_J": {
+        "min": 0.89808180222149,
+        "p05": 0.9904607118256137,
+        "median": 1.0954978945559928,
+        "mean": 1.0911436723662955,
+        "p95": 1.1808791901265159,
+        "max": 1.2511552269810235
+      },
+      "random_mixed_better_J_count": 0,
+      "random_mixed_better_J_fraction": 0.0,
+      "full_J_break_even_mix_weight": {
+        "min": 0.025595287002942942,
+        "p05": 0.07347210601691516,
+        "median": 0.12170837012086529,
+        "mean": 0.12812986128521545,
+        "p95": 0.2012230538468896,
+        "max": 0.2846262371126004
+      },
+      "random_mixed_ledger_terms": {
+        "block_coupling": {
+          "min": 0.052092366354672605,
+          "p05": 0.10409076846326758,
+          "median": 0.16159770389729466,
+          "mean": 0.15770473467229168,
+          "p95": 0.19775881261923667,
+          "max": 0.23377606850916596
+        },
+        "mix_impurity": {
+          "min": 0.5633832824100471,
+          "p05": 0.6433790043719452,
+          "median": 0.7382883607412347,
+          "mean": 0.7334389376940035,
+          "p95": 0.8117253519206993,
+          "max": 0.8833695727646507
+        },
+        "fisher_projection_error": {
+          "min": 0.0,
+          "p05": 0.0,
+          "median": 0.0,
+          "mean": 7.760458942129844e-17,
+          "p95": 3.3306690738754696e-16,
+          "max": 6.661338147750939e-16
+        },
+        "reciprocal_projection_error": {
+          "min": 0.0,
+          "p05": 0.0,
+          "median": 0.0,
+          "mean": 1.1191048088221578e-16,
+          "p95": 3.3306690738754696e-16,
+          "max": 7.771561172376096e-16
+        },
+        "closure_leakage": {
+          "min": 0.0,
+          "p05": 0.0,
+          "median": 0.0,
+          "mean": 0.0,
+          "p95": 0.0,
+          "max": 0.0
+        },
+        "resource_cost": {
+          "min": 1.0,
+          "p05": 1.0,
+          "median": 1.0,
+          "mean": 1.0,
+          "p95": 1.0,
+          "max": 1.0
+        },
+        "depth_cost": {
+          "min": 1.0,
+          "p05": 1.0,
+          "median": 1.0,
+          "mean": 1.0,
+          "p95": 1.0,
+          "max": 1.0
+        }
+      },
+      "conductor_block_coupling": 0.25131879964155635,
+      "canonical_axis_offdiag_energy": 0.2682172814728605,
+      "packet_respecting_block_random_spread": 4.996003610813204e-16,
+      "packet_respecting_block_random_summary": {
+        "min": 0.25131879964155607,
+        "p05": 0.25131879964155623,
+        "median": 0.25131879964155635,
+        "mean": 0.25131879964155635,
+        "p95": 0.25131879964155646,
+        "max": 0.25131879964155657
+      },
+      "random_mixed_block_coupling": {
+        "min": 0.052092366354672605,
+        "p05": 0.10409076846326758,
+        "median": 0.16159770389729466,
+        "mean": 0.15770473467229168,
+        "p95": 0.19775881261923667,
+        "max": 0.23377606850916596
+      },
+      "random_mixed_packet_purity": {
+        "min": 0.5333333333333331,
+        "p05": 0.5333333333333332,
+        "median": 0.5333333333333333,
+        "mean": 0.5376440994461031,
+        "p95": 0.5580535871998812,
+        "max": 0.6071849456298508
+      },
+      "random_mixed_packet_commutator_impurity": {
+        "min": 0.5633832824100471,
+        "p05": 0.6433790043719452,
+        "median": 0.7382883607412347,
+        "mean": 0.7334389376940035,
+        "p95": 0.8117253519206993,
+        "max": 0.8833695727646507
+      },
+      "mix_impurity_weight": 1.0,
+      "random_mixed_total_cost": {
+        "min": 0.6980818022214901,
+        "p05": 0.7904607118256136,
+        "median": 0.8954978945559926,
+        "mean": 0.8911436723662953,
+        "p95": 0.9808791901265157,
+        "max": 1.0511552269810231
+      },
+      "random_mixed_better_with_mix_price_count": 0,
+      "random_mixed_better_with_mix_price_fraction": 0.0,
+      "break_even_mix_weight": {
+        "min": 0.025595287002943633,
+        "p05": 0.07347210601691581,
+        "median": 0.12170837012086544,
+        "mean": 0.12812986128521583,
+        "p95": 0.20122305384689043,
+        "max": 0.2846262371126004
+      },
+      "random_mixed_better_count": 1000,
+      "random_mixed_better_fraction": 1.0,
+      "oracle_eigenbasis_block_coupling": 1.5321870367463063e-30,
+      "gram_eigenvalue_min": 0.7667581222282072,
+      "gram_eigenvalue_max": 1.4663009877492372
+    },
+    {
+      "row_key": "f2-u5",
+      "row": "F_2[u]/(u^5)",
+      "ring_name": "F_2[u]/(u^5)",
+      "target_packet": "u^2",
+      "conductor_order": [
+        "u",
+        "u^2",
+        "u^3",
+        "u^4",
+        "u^5"
+      ],
+      "packet_sizes": {
+        "u": 1,
+        "u^2": 2,
+        "u^3": 4,
+        "u^4": 8,
+        "u^5": 16
+      },
+      "samples": 1000,
+      "seed": 20262532,
+      "amplitude_fraction": 0.35,
+      "actual_amplitude": 0.16624999999999998,
+      "probability_min": 0.020859375,
+      "probability_max": 0.041640625,
+      "h_hat_indicator_energy": 2.0,
+      "target_depth": 2,
+      "active_prefix_dimension": 3,
+      "ledger_weights": {
+        "block": 1.0,
+        "mix": 1.0,
+        "fisher_projection": 1.0,
+        "reciprocal_projection": 1.0,
+        "closure": 1.0,
+        "resource": 0.1,
+        "depth": 0.1
+      },
+      "conductor_full_ledger": {
+        "J": 0.18942565187428698,
+        "block_coupling": 0.13974823251944826,
+        "mix_impurity": 0.0,
+        "fisher_projection_error": 0.0,
+        "reciprocal_projection_error": 0.0,
+        "closure_leakage": 0.0,
+        "resource_cost": 0.0967741935483871,
+        "depth_cost": 0.4
+      },
+      "random_mixed_J": {
+        "min": 3.5479213278311197,
+        "p05": 3.8936898582503066,
+        "median": 4.591108932560126,
+        "mean": 4.514134059866559,
+        "p95": 5.010048888966056,
+        "max": 5.208479387750736
+      },
+      "random_mixed_better_J_count": 0,
+      "random_mixed_better_J_fraction": 0.0,
+      "full_J_break_even_mix_weight": {
+        "min": 0.0,
+        "p05": 0.0,
+        "median": 0.0,
+        "mean": 0.0,
+        "p95": 0.0,
+        "max": 0.0
+      },
+      "random_mixed_ledger_terms": {
+        "block_coupling": {
+          "min": 1.1683404150943824,
+          "p05": 1.272521403374984,
+          "median": 1.384685491557915,
+          "mean": 1.3854397921476385,
+          "p95": 1.4973224470095001,
+          "max": 1.6227548135120577
+        },
+        "mix_impurity": {
+          "min": 0.7226975586724627,
+          "p05": 0.7693920403749375,
+          "median": 0.8083138879994607,
+          "mean": 0.807993619712661,
+          "p95": 0.847796173433868,
+          "max": 0.8796250025350213
+        },
+        "fisher_projection_error": {
+          "min": 0.5376836600154209,
+          "p05": 0.7645751108801034,
+          "median": 0.9174917877339639,
+          "mean": 0.9029519002628056,
+          "p95": 0.9887282265921229,
+          "max": 0.999253915215175
+        },
+        "reciprocal_projection_error": {
+          "min": 0.5711550645675039,
+          "p05": 0.7632992917777666,
+          "median": 0.9202532270130028,
+          "mean": 0.9034647644379579,
+          "p95": 0.9886770336586779,
+          "max": 0.9987812580012695
+        },
+        "closure_leakage": {
+          "min": 0.0,
+          "p05": 0.0,
+          "median": 0.6027413067337736,
+          "mean": 0.4646065639506571,
+          "p95": 0.8317856398426126,
+          "max": 0.8743270152947508
+        },
+        "resource_cost": {
+          "min": 0.0967741935483871,
+          "p05": 0.0967741935483871,
+          "median": 0.0967741935483871,
+          "mean": 0.09677419354838708,
+          "p95": 0.0967741935483871,
+          "max": 0.0967741935483871
+        },
+        "depth_cost": {
+          "min": 0.4,
+          "p05": 0.4,
+          "median": 0.4,
+          "mean": 0.4000000000000001,
+          "p95": 0.4,
+          "max": 0.4
+        }
+      },
+      "conductor_block_coupling": 0.13974823251944826,
+      "canonical_axis_offdiag_energy": 2.2120987917778088,
+      "packet_respecting_block_random_spread": 3.0531133177191805e-16,
+      "packet_respecting_block_random_summary": {
+        "min": 0.13974823251944812,
+        "p05": 0.13974823251944823,
+        "median": 0.1397482325194483,
+        "mean": 0.1397482325194483,
+        "p95": 0.13974823251944835,
+        "max": 0.13974823251944843
+      },
+      "random_mixed_block_coupling": {
+        "min": 1.1683404150943824,
+        "p05": 1.272521403374984,
+        "median": 1.384685491557915,
+        "mean": 1.3854397921476385,
+        "p95": 1.4973224470095001,
+        "max": 1.6227548135120577
+      },
+      "random_mixed_packet_purity": {
+        "min": 0.5161290322580644,
+        "p05": 0.5161290322580645,
+        "median": 0.5161290322580645,
+        "mean": 0.5166504247543884,
+        "p95": 0.5198826143655207,
+        "max": 0.529188729281442
+      },
+      "random_mixed_packet_commutator_impurity": {
+        "min": 0.7226975586724627,
+        "p05": 0.7693920403749375,
+        "median": 0.8083138879994607,
+        "mean": 0.807993619712661,
+        "p95": 0.847796173433868,
+        "max": 0.8796250025350213
+      },
+      "mix_impurity_weight": 1.0,
+      "random_mixed_total_cost": {
+        "min": 1.975647181224618,
+        "p05": 2.074206954190984,
+        "median": 2.193453618185151,
+        "mean": 2.1934334118603,
+        "p95": 2.3165245683633473,
+        "max": 2.440562396712034
+      },
+      "random_mixed_better_with_mix_price_count": 0,
+      "random_mixed_better_with_mix_price_fraction": 0.0,
+      "break_even_mix_weight": {
+        "min": 0.0,
+        "p05": 0.0,
+        "median": 0.0,
+        "mean": 0.0,
+        "p95": 0.0,
+        "max": 0.0
+      },
+      "random_mixed_better_count": 0,
+      "random_mixed_better_fraction": 0.0,
+      "oracle_eigenbasis_block_coupling": 1.2326247005031046e-29,
+      "gram_eigenvalue_min": 0.7504690431519693,
+      "gram_eigenvalue_max": 1.4981273408239713
+    },
+    {
+      "row_key": "f2-u5",
+      "row": "F_2[u]/(u^5)",
+      "ring_name": "F_2[u]/(u^5)",
+      "target_packet": "u^3",
+      "conductor_order": [
+        "u",
+        "u^2",
+        "u^3",
+        "u^4",
+        "u^5"
+      ],
+      "packet_sizes": {
+        "u": 1,
+        "u^2": 2,
+        "u^3": 4,
+        "u^4": 8,
+        "u^5": 16
+      },
+      "samples": 1000,
+      "seed": 20262549,
+      "amplitude_fraction": 0.35,
+      "actual_amplitude": 0.08312499999999999,
+      "probability_min": 0.020859375,
+      "probability_max": 0.041640625,
+      "h_hat_indicator_energy": 4.0,
+      "target_depth": 3,
+      "active_prefix_dimension": 7,
+      "ledger_weights": {
+        "block": 1.0,
+        "mix": 1.0,
+        "fisher_projection": 1.0,
+        "reciprocal_projection": 1.0,
+        "closure": 1.0,
+        "resource": 0.1,
+        "depth": 0.1
+      },
+      "conductor_full_ledger": {
+        "J": 0.29606550407333215,
+        "block_coupling": 0.21348485891204183,
+        "mix_impurity": 0.0,
+        "fisher_projection_error": 0.0,
+        "reciprocal_projection_error": 0.0,
+        "closure_leakage": 0.0,
+        "resource_cost": 0.22580645161290322,
+        "depth_cost": 0.6
+      },
+      "random_mixed_J": {
+        "min": 2.391722491312171,
+        "p05": 2.8726460194445007,
+        "median": 3.4343228520549998,
+        "mean": 3.4720836592673554,
+        "p95": 4.114249880356519,
+        "max": 4.385712412736829
+      },
+      "random_mixed_better_J_count": 0,
+      "random_mixed_better_J_fraction": 0.0,
+      "full_J_break_even_mix_weight": {
+        "min": 0.0,
+        "p05": 0.0,
+        "median": 0.0,
+        "mean": 0.0,
+        "p95": 0.0,
+        "max": 0.0
+      },
+      "random_mixed_ledger_terms": {
+        "block_coupling": {
+          "min": 0.5654027513638894,
+          "p05": 0.636593147515736,
+          "median": 0.7106130769225798,
+          "mean": 0.7094207104167888,
+          "p95": 0.781478589940089,
+          "max": 0.8339071810760517
+        },
+        "mix_impurity": {
+          "min": 0.7348742197187512,
+          "p05": 0.7693455520963162,
+          "median": 0.8069979041000288,
+          "mean": 0.8077398422543944,
+          "p95": 0.8454479610083852,
+          "max": 0.8840259351885602
+        },
+        "fisher_projection_error": {
+          "min": 0.3187016538812033,
+          "p05": 0.5685678307617595,
+          "median": 0.7846415352448793,
+          "mean": 0.7706503052955737,
+          "p95": 0.9247369335017125,
+          "max": 0.9752391349465046
+        },
+        "reciprocal_projection_error": {
+          "min": 0.38380580957988364,
+          "p05": 0.5866865457712543,
+          "median": 0.7816372892501444,
+          "mean": 0.7707323634781017,
+          "p95": 0.9220216192733961,
+          "max": 0.9817093627018136
+        },
+        "closure_leakage": {
+          "min": 0.0,
+          "p05": 0.0,
+          "median": 0.2845242142908823,
+          "mean": 0.3309597926612065,
+          "p95": 0.8525054100979435,
+          "max": 0.8922071591414606
+        },
+        "resource_cost": {
+          "min": 0.22580645161290322,
+          "p05": 0.22580645161290322,
+          "median": 0.22580645161290322,
+          "mean": 0.2258064516129031,
+          "p95": 0.22580645161290322,
+          "max": 0.22580645161290322
+        },
+        "depth_cost": {
+          "min": 0.6,
+          "p05": 0.6,
+          "median": 0.6,
+          "mean": 0.5999999999999998,
+          "p95": 0.6,
+          "max": 0.6
+        }
+      },
+      "conductor_block_coupling": 0.21348485891204183,
+      "canonical_axis_offdiag_energy": 1.1350182218854266,
+      "packet_respecting_block_random_spread": 5.551115123125783e-16,
+      "packet_respecting_block_random_summary": {
+        "min": 0.21348485891204155,
+        "p05": 0.21348485891204175,
+        "median": 0.21348485891204186,
+        "mean": 0.21348485891204183,
+        "p95": 0.21348485891204194,
+        "max": 0.2134848589120421
+      },
+      "random_mixed_block_coupling": {
+        "min": 0.5654027513638894,
+        "p05": 0.636593147515736,
+        "median": 0.7106130769225798,
+        "mean": 0.7094207104167888,
+        "p95": 0.781478589940089,
+        "max": 0.8339071810760517
+      },
+      "random_mixed_packet_purity": {
+        "min": 0.5161290322580644,
+        "p05": 0.5161290322580645,
+        "median": 0.5161290322580645,
+        "mean": 0.5167261703352927,
+        "p95": 0.5203127311949225,
+        "max": 0.535232915684884
+      },
+      "random_mixed_packet_commutator_impurity": {
+        "min": 0.7348742197187512,
+        "p05": 0.7693455520963162,
+        "median": 0.8069979041000288,
+        "mean": 0.8077398422543944,
+        "p95": 0.8454479610083852,
+        "max": 0.8840259351885602
+      },
+      "mix_impurity_weight": 1.0,
+      "random_mixed_total_cost": {
+        "min": 1.3694307938148038,
+        "p05": 1.4351219021760262,
+        "median": 1.517707924508763,
+        "mean": 1.5171605526711833,
+        "p95": 1.5947020781643824,
+        "max": 1.6740780342817674
+      },
+      "random_mixed_better_with_mix_price_count": 0,
+      "random_mixed_better_with_mix_price_fraction": 0.0,
+      "break_even_mix_weight": {
+        "min": 0.0,
+        "p05": 0.0,
+        "median": 0.0,
+        "mean": 0.0,
+        "p95": 0.0,
+        "max": 0.0
+      },
+      "random_mixed_better_count": 0,
+      "random_mixed_better_fraction": 0.0,
+      "oracle_eigenbasis_block_coupling": 6.513827853463601e-30,
+      "gram_eigenvalue_min": 0.7504690431519696,
+      "gram_eigenvalue_max": 1.4981273408239706
+    },
+    {
+      "row_key": "f2-u5",
+      "row": "F_2[u]/(u^5)",
+      "ring_name": "F_2[u]/(u^5)",
+      "target_packet": "u^4",
+      "conductor_order": [
+        "u",
+        "u^2",
+        "u^3",
+        "u^4",
+        "u^5"
+      ],
+      "packet_sizes": {
+        "u": 1,
+        "u^2": 2,
+        "u^3": 4,
+        "u^4": 8,
+        "u^5": 16
+      },
+      "samples": 1000,
+      "seed": 20262566,
+      "amplitude_fraction": 0.35,
+      "actual_amplitude": 0.041562499999999995,
+      "probability_min": 0.020859375,
+      "probability_max": 0.041640625,
+      "h_hat_indicator_energy": 8.0,
+      "target_depth": 4,
+      "active_prefix_dimension": 15,
+      "ledger_weights": {
+        "block": 1.0,
+        "mix": 1.0,
+        "fisher_projection": 1.0,
+        "reciprocal_projection": 1.0,
+        "closure": 1.0,
+        "resource": 0.1,
+        "depth": 0.1
+      },
+      "conductor_full_ledger": {
+        "J": 0.3797058964157498,
+        "block_coupling": 0.25131879964155623,
+        "mix_impurity": 0.0,
+        "fisher_projection_error": 0.0,
+        "reciprocal_projection_error": 0.0,
+        "closure_leakage": 0.0,
+        "resource_cost": 0.4838709677419355,
+        "depth_cost": 0.8
+      },
+      "random_mixed_J": {
+        "min": 1.6841596913202592,
+        "p05": 2.0099029567497437,
+        "median": 2.4986205222628555,
+        "mean": 2.5352684717713467,
+        "p95": 3.1823828426333836,
+        "max": 3.69091834276144
+      },
+      "random_mixed_better_J_count": 0,
+      "random_mixed_better_J_fraction": 0.0,
+      "full_J_break_even_mix_weight": {
+        "min": 0.0,
+        "p05": 0.0,
+        "median": 0.0,
+        "mean": 0.0,
+        "p95": 0.0,
+        "max": 0.0
+      },
+      "random_mixed_ledger_terms": {
+        "block_coupling": {
+          "min": 0.2585802203809285,
+          "p05": 0.3064753475265737,
+          "median": 0.36121698028286536,
+          "mean": 0.3597086216572466,
+          "p95": 0.40864827529811437,
+          "max": 0.4442063123806199
+        },
+        "mix_impurity": {
+          "min": 0.7225641159157353,
+          "p05": 0.7643244251854594,
+          "median": 0.8085643160770749,
+          "mean": 0.8069608106760059,
+          "p95": 0.846815616518,
+          "max": 0.8664101698197415
+        },
+        "fisher_projection_error": {
+          "min": 0.17082589196781528,
+          "p05": 0.322693368667156,
+          "median": 0.5252695391203098,
+          "mean": 0.5214748084335349,
+          "p95": 0.7299551993272515,
+          "max": 0.8464925594142632
+        },
+        "reciprocal_projection_error": {
+          "min": 0.1572085301003061,
+          "p05": 0.3258789549173503,
+          "median": 0.517563512786661,
+          "mean": 0.5196299493505676,
+          "p95": 0.7153763384241291,
+          "max": 0.8472532722632429
+        },
+        "closure_leakage": {
+          "min": 0.0,
+          "p05": 0.0,
+          "median": 0.055021022779585316,
+          "mean": 0.1991071848797981,
+          "p95": 0.7106513978074437,
+          "max": 0.8944343410013446
+        },
+        "resource_cost": {
+          "min": 0.4838709677419355,
+          "p05": 0.4838709677419355,
+          "median": 0.4838709677419355,
+          "mean": 0.4838709677419357,
+          "p95": 0.4838709677419355,
+          "max": 0.4838709677419355
+        },
+        "depth_cost": {
+          "min": 0.8,
+          "p05": 0.8,
+          "median": 0.8,
+          "mean": 0.8000000000000002,
+          "p95": 0.8,
+          "max": 0.8
+        }
+      },
+      "conductor_block_coupling": 0.25131879964155623,
+      "canonical_axis_offdiag_energy": 0.5747513174418468,
+      "packet_respecting_block_random_spread": 4.996003610813204e-16,
+      "packet_respecting_block_random_summary": {
+        "min": 0.25131879964155596,
+        "p05": 0.25131879964155607,
+        "median": 0.25131879964155623,
+        "mean": 0.2513187996415562,
+        "p95": 0.25131879964155635,
+        "max": 0.25131879964155646
+      },
+      "random_mixed_block_coupling": {
+        "min": 0.2585802203809285,
+        "p05": 0.3064753475265737,
+        "median": 0.36121698028286536,
+        "mean": 0.3597086216572466,
+        "p95": 0.40864827529811437,
+        "max": 0.4442063123806199
+      },
+      "random_mixed_packet_purity": {
+        "min": 0.5161290322580644,
+        "p05": 0.5161290322580645,
+        "median": 0.5161290322580645,
+        "mean": 0.5167338074920744,
+        "p95": 0.5206694355083552,
+        "max": 0.5301466070746492
+      },
+      "random_mixed_packet_commutator_impurity": {
+        "min": 0.7225641159157353,
+        "p05": 0.7643244251854594,
+        "median": 0.8085643160770749,
+        "mean": 0.8069608106760059,
+        "p95": 0.846815616518,
+        "max": 0.8664101698197415
+      },
+      "mix_impurity_weight": 1.0,
+      "random_mixed_total_cost": {
+        "min": 1.005077180156098,
+        "p05": 1.1025422608633575,
+        "median": 1.1683334899063642,
+        "mean": 1.1666694323332527,
+        "p95": 1.2283302351223222,
+        "max": 1.2954886207304133
+      },
+      "random_mixed_better_with_mix_price_count": 0,
+      "random_mixed_better_with_mix_price_fraction": 0.0,
+      "break_even_mix_weight": {
+        "min": 0.0,
+        "p05": 0.0,
+        "median": 0.0,
+        "mean": 0.0,
+        "p95": 0.0,
+        "max": 0.0
+      },
+      "random_mixed_better_count": 0,
+      "random_mixed_better_fraction": 0.0,
+      "oracle_eigenbasis_block_coupling": 5.683686101756234e-30,
+      "gram_eigenvalue_min": 0.7504690431519696,
+      "gram_eigenvalue_max": 1.4981273408239704
+    },
+    {
+      "row_key": "f2-u5",
+      "row": "F_2[u]/(u^5)",
+      "ring_name": "F_2[u]/(u^5)",
+      "target_packet": "u^5",
+      "conductor_order": [
+        "u",
+        "u^2",
+        "u^3",
+        "u^4",
+        "u^5"
+      ],
+      "packet_sizes": {
+        "u": 1,
+        "u^2": 2,
+        "u^3": 4,
+        "u^4": 8,
+        "u^5": 16
+      },
+      "samples": 1000,
+      "seed": 20262583,
+      "amplitude_fraction": 0.35,
+      "actual_amplitude": 0.020781249999999998,
+      "probability_min": 0.020859375,
+      "probability_max": 0.041640625,
+      "h_hat_indicator_energy": 16.0,
+      "target_depth": 5,
+      "active_prefix_dimension": 31,
+      "ledger_weights": {
+        "block": 1.0,
+        "mix": 1.0,
+        "fisher_projection": 1.0,
+        "reciprocal_projection": 1.0,
+        "closure": 1.0,
+        "resource": 0.1,
+        "depth": 0.1
+      },
+      "conductor_full_ledger": {
+        "J": 0.47047717688961765,
+        "block_coupling": 0.2704771768896177,
+        "mix_impurity": 0.0,
+        "fisher_projection_error": 0.0,
+        "reciprocal_projection_error": 0.0,
+        "closure_leakage": 0.0,
+        "resource_cost": 1.0,
+        "depth_cost": 1.0
+      },
+      "random_mixed_J": {
+        "min": 1.0959712521344398,
+        "p05": 1.1416674363761234,
+        "median": 1.193036405931179,
+        "mean": 1.1916266427291315,
+        "p95": 1.242007534296507,
+        "max": 1.278142513966404
+      },
+      "random_mixed_better_J_count": 0,
+      "random_mixed_better_J_fraction": 0.0,
+      "full_J_break_even_mix_weight": {
+        "min": 0.05161800234652636,
+        "p05": 0.07303688168602288,
+        "median": 0.10772384617123507,
+        "mean": 0.10970211786761327,
+        "p95": 0.15230131125098792,
+        "max": 0.18931239095143937
+      },
+      "random_mixed_ledger_terms": {
+        "block_coupling": {
+          "min": 0.10910054999223914,
+          "p05": 0.14699003279181236,
+          "median": 0.1831370744089939,
+          "mean": 0.18167943891601784,
+          "p95": 0.21092557958063274,
+          "max": 0.23041502528821386
+        },
+        "mix_impurity": {
+          "min": 0.7222719053814847,
+          "p05": 0.7685793179311738,
+          "median": 0.8107490001642622,
+          "mean": 0.8099472038131137,
+          "p95": 0.8510713956827064,
+          "max": 0.883597467264399
+        },
+        "fisher_projection_error": {
+          "min": 0.0,
+          "p05": 0.0,
+          "median": 0.0,
+          "mean": 7.571721027943568e-17,
+          "p95": 3.3306690738754696e-16,
+          "max": 6.661338147750939e-16
+        },
+        "reciprocal_projection_error": {
+          "min": 0.0,
+          "p05": 0.0,
+          "median": 0.0,
+          "mean": 1.8984813721090178e-17,
+          "p95": 2.220446049250313e-16,
+          "max": 5.551115123125783e-16
+        },
+        "closure_leakage": {
+          "min": 0.0,
+          "p05": 0.0,
+          "median": 0.0,
+          "mean": 0.0,
+          "p95": 0.0,
+          "max": 0.0
+        },
+        "resource_cost": {
+          "min": 1.0,
+          "p05": 1.0,
+          "median": 1.0,
+          "mean": 1.0,
+          "p95": 1.0,
+          "max": 1.0
+        },
+        "depth_cost": {
+          "min": 1.0,
+          "p05": 1.0,
+          "median": 1.0,
+          "mean": 1.0,
+          "p95": 1.0,
+          "max": 1.0
+        }
+      },
+      "conductor_block_coupling": 0.2704771768896177,
+      "canonical_axis_offdiag_energy": 0.2891862103457067,
+      "packet_respecting_block_random_spread": 4.996003610813204e-16,
+      "packet_respecting_block_random_summary": {
+        "min": 0.27047717688961753,
+        "p05": 0.27047717688961764,
+        "median": 0.27047717688961775,
+        "mean": 0.2704771768896177,
+        "p95": 0.27047717688961787,
+        "max": 0.27047717688961803
+      },
+      "random_mixed_block_coupling": {
+        "min": 0.10910054999223914,
+        "p05": 0.14699003279181236,
+        "median": 0.1831370744089939,
+        "mean": 0.18167943891601784,
+        "p95": 0.21092557958063274,
+        "max": 0.23041502528821386
+      },
+      "random_mixed_packet_purity": {
+        "min": 0.5161290322580644,
+        "p05": 0.5161290322580645,
+        "median": 0.5161290322580645,
+        "mean": 0.5167458841326177,
+        "p95": 0.5213496525029784,
+        "max": 0.5297233090846775
+      },
+      "random_mixed_packet_commutator_impurity": {
+        "min": 0.7222719053814847,
+        "p05": 0.7685793179311738,
+        "median": 0.8107490001642622,
+        "mean": 0.8099472038131137,
+        "p95": 0.8510713956827064,
+        "max": 0.883597467264399
+      },
+      "mix_impurity_weight": 1.0,
+      "random_mixed_total_cost": {
+        "min": 0.8959712521344398,
+        "p05": 0.9416674363761233,
+        "median": 0.9930364059311791,
+        "mean": 0.9916266427291315,
+        "p95": 1.0420075342965067,
+        "max": 1.0781425139664038
+      },
+      "random_mixed_better_with_mix_price_count": 0,
+      "random_mixed_better_with_mix_price_fraction": 0.0,
+      "break_even_mix_weight": {
+        "min": 0.05161800234652667,
+        "p05": 0.07303688168602344,
+        "median": 0.10772384617123552,
+        "mean": 0.10970211786761362,
+        "p95": 0.15230131125098834,
+        "max": 0.18931239095144017
+      },
+      "random_mixed_better_count": 1000,
+      "random_mixed_better_fraction": 1.0,
+      "oracle_eigenbasis_block_coupling": 8.778590445761052e-30,
+      "gram_eigenvalue_min": 0.7584345150752049,
+      "gram_eigenvalue_max": 1.4823932319014856
+    }
+  ]
+}

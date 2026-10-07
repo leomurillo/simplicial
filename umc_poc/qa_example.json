@@ -1,0 +1,10 @@
+[
+  {"query": "what is the intrinsic cross product operator on quadray coordinates and its cubic identity",
+   "gold_doc_ids": ["01"], "gold_answer": "K(u), with K(u)^3 = -K(u)"},
+  {"query": "how is the Bekenstein bound the capacity of the categorical little sphere",
+   "gold_doc_ids": ["32.1"], "gold_answer": "capacity = log Q on a curvature-1/4 Hellinger sphere"},
+  {"query": "what is the smooth primorial and the smooth Mertens constant",
+   "gold_doc_ids": ["T33"], "gold_answer": "pri(z)=e^{Li^{-1}(z)}/2pi; gamma-tilde* ~ 0.612"},
+  {"query": "Fisher metric and the Amari-Chentsov cubic on the categorical simplex",
+   "gold_doc_ids": ["01c","13"], "gold_answer": "Fisher = M-inner product; moving AC cubic"}
+]

@@ -1,0 +1,207 @@
+==============================================================================
+ INSERT 16 / item C2  --  Conductor-Misspecification Certificate
+ Contribution 2 of the FEP/AI bridge, executed as a deterministic
+ finite certificate (cf. INSERT 15 for Contribution 1).
+ Anchored objects: Paper 12 Fisher metric & Amari-Chentsov cubic.
+ Exact integer/rational arithmetic. No fitted model, no tolerance.
+==============================================================================
+
+[Claim under test -- Paper 12, verbatim objects]
+  g_p(u,v)   = sum_y u_y v_y / p_y          (quadratic; what a
+                                             2nd-order
+                                             preconditioner sees)
+  T_p(u,v,w) = sum_y u_y v_y w_y / p_y^2     (cubic; the first
+                                             object it does NOT
+                                             see unless cubic-
+                                             aware)
+  At max entropy on Z/nZ the tangent space splits into
+  conductor packets indexed by additive characters.
+
+[Scope note -- extends beyond active inference]
+  (Q) holds for ANY second-order preconditioner on a categorical
+  (softmax) head: natural gradient, K-FAC, Gauss-Newton, Adam's
+  diagonal empirical Fisher, the NTK Gram. Discrete-state active
+  inference is ONE instance; LLM/classifier token heads are
+  another. The certificate is a statement about 2nd-order
+  optimization of ring-structured categorical outputs in general.
+
+------------------------------------------------------------------------------
+ R = Z/6Z   (tangent dim = 5)
+------------------------------------------------------------------------------
+  conductor packets (d | n, d>1) -> characters:
+     conductor   2 : [3]
+     conductor   3 : [2, 4]
+     conductor   6 : [1, 5]
+  (Q) Fisher form packet-block-diagonal at p_*      : True
+      cross-packet NONZERO Fisher entries           : NONE (exact)
+  (C) Amari-Chentsov cubic cross-packet coupling    : True
+      # surviving cross-packet cubic triples        : 18
+      # surviving same-packet  cubic triples        : 2
+      sample cross-packet couplings (k,l,m)->(cond,cond,cond):
+        (1, 1, 4) -> conductors (6, 6, 3)
+        (1, 2, 3) -> conductors (6, 3, 2)
+        (1, 3, 2) -> conductors (6, 2, 3)
+        (1, 4, 1) -> conductors (6, 3, 6)
+        (2, 1, 3) -> conductors (3, 6, 2)
+        (2, 3, 1) -> conductors (3, 2, 6)
+        (2, 5, 5) -> conductors (3, 6, 6)
+        (3, 1, 2) -> conductors (2, 6, 3)
+  >>> certificate on Z/6Z : CONFIRMED
+
+------------------------------------------------------------------------------
+ R = Z/12Z   (tangent dim = 11)
+------------------------------------------------------------------------------
+  conductor packets (d | n, d>1) -> characters:
+     conductor   2 : [6]
+     conductor   3 : [4, 8]
+     conductor   4 : [3, 9]
+     conductor   6 : [2, 10]
+     conductor  12 : [1, 5, 7, 11]
+  (Q) Fisher form packet-block-diagonal at p_*      : True
+      cross-packet NONZERO Fisher entries           : NONE (exact)
+  (C) Amari-Chentsov cubic cross-packet coupling    : True
+      # surviving cross-packet cubic triples        : 108
+      # surviving same-packet  cubic triples        : 2
+      sample cross-packet couplings (k,l,m)->(cond,cond,cond):
+        (1, 1, 10) -> conductors (12, 12, 6)
+        (1, 2, 9) -> conductors (12, 6, 4)
+        (1, 3, 8) -> conductors (12, 4, 3)
+        (1, 4, 7) -> conductors (12, 3, 12)
+        (1, 5, 6) -> conductors (12, 12, 2)
+        (1, 6, 5) -> conductors (12, 2, 12)
+        (1, 7, 4) -> conductors (12, 12, 3)
+        (1, 8, 3) -> conductors (12, 3, 4)
+  >>> certificate on Z/12Z : CONFIRMED
+
+------------------------------------------------------------------------------
+ R = Z/30Z   (tangent dim = 29)
+------------------------------------------------------------------------------
+  conductor packets (d | n, d>1) -> characters:
+     conductor   2 : [15]
+     conductor   3 : [10, 20]
+     conductor   5 : [6, 12, 18, 24]
+     conductor   6 : [5, 25]
+     conductor  10 : [3, 9, 21, 27]
+     conductor  15 : [2, 4, 8, 14, 16, 22, 26, 28]
+     conductor  30 : [1, 7, 11, 13, 17, 19, 23, 29]
+  (Q) Fisher form packet-block-diagonal at p_*      : True
+      cross-packet NONZERO Fisher entries           : NONE (exact)
+  (C) Amari-Chentsov cubic cross-packet coupling    : True
+      # surviving cross-packet cubic triples        : 774
+      # surviving same-packet  cubic triples        : 38
+      sample cross-packet couplings (k,l,m)->(cond,cond,cond):
+        (1, 1, 28) -> conductors (30, 30, 15)
+        (1, 2, 27) -> conductors (30, 15, 10)
+        (1, 3, 26) -> conductors (30, 10, 15)
+        (1, 4, 25) -> conductors (30, 15, 6)
+        (1, 5, 24) -> conductors (30, 6, 5)
+        (1, 6, 23) -> conductors (30, 5, 30)
+        (1, 7, 22) -> conductors (30, 30, 15)
+        (1, 8, 21) -> conductors (30, 15, 10)
+  >>> certificate on Z/30Z : CONFIRMED
+
+------------------------------------------------------------------------------
+ R = Z/8Z   (tangent dim = 7)
+------------------------------------------------------------------------------
+  conductor packets (d | n, d>1) -> characters:
+     conductor   2 : [4]
+     conductor   4 : [2, 6]
+     conductor   8 : [1, 3, 5, 7]
+  (Q) Fisher form packet-block-diagonal at p_*      : True
+      cross-packet NONZERO Fisher entries           : NONE (exact)
+  (C) Amari-Chentsov cubic cross-packet coupling    : True
+      # surviving cross-packet cubic triples        : 42
+      # surviving same-packet  cubic triples        : 0
+      sample cross-packet couplings (k,l,m)->(cond,cond,cond):
+        (1, 1, 6) -> conductors (8, 8, 4)
+        (1, 2, 5) -> conductors (8, 4, 8)
+        (1, 3, 4) -> conductors (8, 8, 2)
+        (1, 4, 3) -> conductors (8, 2, 8)
+        (1, 5, 2) -> conductors (8, 8, 4)
+        (1, 6, 1) -> conductors (8, 4, 8)
+        (2, 1, 5) -> conductors (4, 8, 8)
+        (2, 2, 4) -> conductors (4, 4, 2)
+  >>> certificate on Z/8Z : CONFIRMED
+
+------------------------------------------------------------------------------
+ R = Z/18Z   (tangent dim = 17)
+------------------------------------------------------------------------------
+  conductor packets (d | n, d>1) -> characters:
+     conductor   2 : [9]
+     conductor   3 : [6, 12]
+     conductor   6 : [3, 15]
+     conductor   9 : [2, 4, 8, 10, 14, 16]
+     conductor  18 : [1, 5, 7, 11, 13, 17]
+  (Q) Fisher form packet-block-diagonal at p_*      : True
+      cross-packet NONZERO Fisher entries           : NONE (exact)
+  (C) Amari-Chentsov cubic cross-packet coupling    : True
+      # surviving cross-packet cubic triples        : 252
+      # surviving same-packet  cubic triples        : 20
+      sample cross-packet couplings (k,l,m)->(cond,cond,cond):
+        (1, 1, 16) -> conductors (18, 18, 9)
+        (1, 2, 15) -> conductors (18, 9, 6)
+        (1, 3, 14) -> conductors (18, 6, 9)
+        (1, 4, 13) -> conductors (18, 9, 18)
+        (1, 5, 12) -> conductors (18, 18, 3)
+        (1, 6, 11) -> conductors (18, 3, 18)
+        (1, 7, 10) -> conductors (18, 18, 9)
+        (1, 8, 9) -> conductors (18, 9, 2)
+  >>> certificate on Z/18Z : CONFIRMED
+
+==============================================================================
+ VERDICT
+==============================================================================
+  >>> C2 CERTIFICATE CONFIRMED on every ring tested (pre-claimed branch A).
+
+  For every R = Z/nZ in the ladder, EXACTLY and FINITELY:
+   (Q) the quadratic Fisher form is packet-block-diagonal at
+       maximum entropy -- zero cross-packet entries, by exact
+       additive-character orthogonality. A preconditioner
+       built from g alone carries NO inter-packet coupling.
+   (C) the Amari-Chentsov cubic has nonzero cross-packet
+       coupling (the k+l+m==0 mod n selection rule connects
+       characters in distinct conductor packets).
+
+  Therefore: there exists structured information -- the
+  cross-packet cubic coupling -- that is provably present in
+  the geometry and provably invisible to ANY purely second-
+  order preconditioner. The misspecification is EXACT and
+  FINITE, not suggestive.
+
+  THIS is the finite fact the FEP/2nd-order-optimization
+  stack cannot derive from inside itself: its own curvature
+  model (the quadratic Fisher object) is, on a ring-
+  structured categorical index, provably blind to a coupling
+  the next cumulant floor demonstrably carries. The
+  diagnostic is named and computable: project the update
+  onto conductor packets; any cross-packet cubic mass is
+  exactly what the 2nd-order preconditioner mis-prices.
+
+  BOUND (firewall, binding): this certifies the
+  MISSPECIFICATION ONLY. It does NOT claim real SGD/Adam
+  trajectories ARE governed by conductor geometry -- that
+  remains the SUGGESTIVE empirical claim (Paper 12 /
+  beyond_smooth self-bound; C12 Llama-3.1-8B hook is
+  suggestive evidence, not proof). The certificate stays on
+  the finite-linear-algebra side of that line.
+
+==============================================================================
+ FIREWALL SELF-CHECK (INSERT 04 sec 1.4, inherited; binding)
+==============================================================================
+  PASS: emits only (i) exact packet decompositions, (ii) the
+  exact (k-l) mod n / (k+l+m) mod n vanishing decisions, (iii)
+  integer counts. No mass/length/energy/time/charge, no
+  c/hbar/G/alpha, no physical free-energy value, no learning
+  rate, no claim about any trained model's actual trajectory.
+  The result is a finite linear-algebra MISSPECIFICATION
+  certificate, strictly weaker than (and firewalled from) the
+  suggestive empirical 'optimizer discovers conductor geometry'
+  claim, which is NOT made here.
+
+==============================================================================
+ Status: deterministic run complete. All packet/coupling
+ decisions are exact integer arithmetic mod n; floating point
+ never enters a vanishing decision. Both branches pre-claimed;
+ the realized branch is a STATED result. Tests Paper 12's own
+ anchored objects, not a reconstruction.
+==============================================================================

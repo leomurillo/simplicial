@@ -1,0 +1,3089 @@
+{
+  "config": {
+    "rows": [
+      6,
+      12,
+      18
+    ],
+    "seeds": 50,
+    "seed_offset": 20260515,
+    "amplitude": 0.04,
+    "speed": 0.02,
+    "horizon": 1.0,
+    "steps": 240,
+    "tolerance": 1e-14
+  },
+  "summaries": [
+    {
+      "row": 6,
+      "support": [
+        2,
+        3,
+        6
+      ],
+      "outside": [],
+      "seeds": 50,
+      "mean_abs_normalized_charge": 0.4576669873421315,
+      "std_abs_normalized_charge": 0.3238241625485614,
+      "mean_force_leakage": 3.130211572086444e-32,
+      "median_force_leakage": 2.99462700215127e-32,
+      "max_force_leakage": 2.24770916749381e-31,
+      "leakage_snr_vs_z6_floor": null,
+      "max_sum_error": 4.440892098500626e-16,
+      "min_probability": 0.14658809356874178,
+      "assessment": "known-closed baseline at numerical floor"
+    },
+    {
+      "row": 12,
+      "support": [
+        2,
+        3,
+        6
+      ],
+      "outside": [
+        4,
+        12
+      ],
+      "seeds": 50,
+      "mean_abs_normalized_charge": 0.5188291961375023,
+      "std_abs_normalized_charge": 0.3739154599361745,
+      "mean_force_leakage": 9.499674292147756e-32,
+      "median_force_leakage": 4.568536774655873e-32,
+      "max_force_leakage": 1.9731566556696044e-30,
+      "leakage_snr_vs_z6_floor": 9.499674292147756e-18,
+      "max_sum_error": 4.440892098500626e-16,
+      "min_probability": 0.07295868120580386,
+      "assessment": "no cubic-force leakage above baseline"
+    },
+    {
+      "row": 18,
+      "support": [
+        2,
+        3,
+        6
+      ],
+      "outside": [
+        9,
+        18
+      ],
+      "seeds": 50,
+      "mean_abs_normalized_charge": 0.5569860897561236,
+      "std_abs_normalized_charge": 0.40112066004600094,
+      "mean_force_leakage": 5.221415148811549e-32,
+      "median_force_leakage": 5.13083116021738e-32,
+      "max_force_leakage": 4.4862774137642155e-31,
+      "leakage_snr_vs_z6_floor": 5.2214151488115495e-18,
+      "max_sum_error": 2.220446049250313e-16,
+      "min_probability": 0.04838503689282494,
+      "assessment": "no cubic-force leakage above baseline"
+    }
+  ],
+  "audits": {
+    "6": [
+      {
+        "row": 6,
+        "seed": 20266515,
+        "support": [
+          2,
+          3,
+          6
+        ],
+        "outside": [],
+        "min_probability": 0.15044680672035365,
+        "max_sum_error": 2.220446049250313e-16,
+        "mean_abs_normalized_charge": 0.24036223890570654,
+        "mean_signed_normalized_charge": -0.24036223890570654,
+        "mean_force_leakage": 2.0552420004501275e-32,
+        "max_force_leakage": 7.302111191439718e-32,
+        "mean_energy_density": 0.00019826356208017308,
+        "energy_density_span": 1.481689206320495e-06
+      },
+      {
+        "row": 6,
+        "seed": 20266516,
+        "support": [
+          2,
+          3,
+          6
+        ],
+        "outside": [],
+        "min_probability": 0.15316118838834353,
+        "max_sum_error": 2.220446049250313e-16,
+        "mean_abs_normalized_charge": 0.49594715995363003,
+        "mean_signed_normalized_charge": -0.49594715995363003,
+        "mean_force_leakage": 3.4823320767477067e-32,
+        "max_force_leakage": 1.1521518541486214e-31,
+        "mean_energy_density": 0.0001970519102887993,
+        "energy_density_span": 9.682684170663597e-07
+      },
+      {
+        "row": 6,
+        "seed": 20266517,
+        "support": [
+          2,
+          3,
+          6
+        ],
+        "outside": [],
+        "min_probability": 0.15071486627134612,
+        "max_sum_error": 3.3306690738754696e-16,
+        "mean_abs_normalized_charge": 0.4876203254640384,
+        "mean_signed_normalized_charge": -0.4876203254640384,
+        "mean_force_leakage": 2.570291630851423e-32,
+        "max_force_leakage": 1.011796324661474e-31,
+        "mean_energy_density": 0.00019708802863270403,
+        "energy_density_span": 1.0392607734028322e-06
+      },
+      {
+        "row": 6,
+        "seed": 20266518,
+        "support": [
+          2,
+          3,
+          6
+        ],
+        "outside": [],
+        "min_probability": 0.15446623230658998,
+        "max_sum_error": 2.220446049250313e-16,
+        "mean_abs_normalized_charge": 0.352317036824021,
+        "mean_signed_normalized_charge": 0.352317036824021,
+        "mean_force_leakage": 3.063585441997378e-32,
+        "max_force_leakage": 1.320328251529253e-31,
+        "mean_energy_density": 0.00020102698331247182,
+        "energy_density_span": 2.0775988395796907e-06
+      },
+      {
+        "row": 6,
+        "seed": 20266519,
+        "support": [
+          2,
+          3,
+          6
+        ],
+        "outside": [],
+        "min_probability": 0.15359012671763664,
+        "max_sum_error": 3.3306690738754696e-16,
+        "mean_abs_normalized_charge": 0.13218905588409183,
+        "mean_signed_normalized_charge": -0.13218905588409183,
+        "mean_force_leakage": 2.553775136576085e-32,
+        "max_force_leakage": 8.294228705612689e-32,
+        "mean_energy_density": 0.0001987887133996191,
+        "energy_density_span": 1.4383037647194147e-06
+      },
+      {
+        "row": 6,
+        "seed": 20266520,
+        "support": [
+          2,
+          3,
+          6
+        ],
+        "outside": [],
+        "min_probability": 0.1551393488397087,
+        "max_sum_error": 2.220446049250313e-16,
+        "mean_abs_normalized_charge": 0.013612969445021586,
+        "mean_signed_normalized_charge": -0.00909149724530268,
+        "mean_force_leakage": 3.3967804757832855e-32,
+        "max_force_leakage": 2.055205822285068e-31,
+        "mean_energy_density": 0.00019937380270591934,
+        "energy_density_span": 1.4946366878272122e-06
+      },
+      {
+        "row": 6,
+        "seed": 20266521,
+        "support": [
+          2,
+          3,
+          6
+        ],
+        "outside": [],
+        "min_probability": 0.1503568571157644,
+        "max_sum_error": 2.220446049250313e-16,
+        "mean_abs_normalized_charge": 0.32938652654947104,
+        "mean_signed_normalized_charge": -0.32938652654947104,
+        "mean_force_leakage": 3.306877933715711e-32,
+        "max_force_leakage": 1.8241776841773676e-31,
+        "mean_energy_density": 0.00019784285979213725,
+        "energy_density_span": 1.3258867970037953e-06
+      },
+      {
+        "row": 6,
+        "seed": 20266522,
+        "support": [
+          2,
+          3,
+          6
+        ],
+        "outside": [],
+        "min_probability": 0.14916955906223134,
+        "max_sum_error": 2.220446049250313e-16,
+        "mean_abs_normalized_charge": 0.766651220141107,
+        "mean_signed_normalized_charge": -0.766651220141107,
+        "mean_force_leakage": 3.1040147546975687e-32,
+        "max_force_leakage": 1.5125435732466694e-31,
+        "mean_energy_density": 0.00019571500745393719,
+        "energy_density_span": 8.079552228916107e-07
+      },
+      {
+        "row": 6,
+        "seed": 20266523,
+        "support": [
+          2,
+          3,
+          6
+        ],
+        "outside": [],
+        "min_probability": 0.1483025701403047,
+        "max_sum_error": 2.220446049250313e-16,
+        "mean_abs_normalized_charge": 0.7519609537559739,
+        "mean_signed_normalized_charge": -0.7519609537559739,
+        "mean_force_leakage": 2.4850517654036814e-32,
+        "max_force_leakage": 9.83713196956266e-32,
+        "mean_energy_density": 0.00019577679126764314,
+        "energy_density_span": 1.0024863025897787e-06
+      },
+      {
+        "row": 6,
+        "seed": 20266524,
+        "support": [
+          2,
+          3,
+          6
+        ],
+        "outside": [],
+        "min_probability": 0.15131341346453614,
+        "max_sum_error": 2.220446049250313e-16,
+        "mean_abs_normalized_charge": 0.3492475073500025,
+        "mean_signed_normalized_charge": -0.3492475073500025,
+        "mean_force_leakage": 3.613862812070217e-32,
+        "max_force_leakage": 1.4744602955340669e-31,
+        "mean_energy_density": 0.00019775017761608193,
+        "energy_density_span": 1.2700650382330386e-06
+      },
+      {
+        "row": 6,
+        "seed": 20266525,
+        "support": [
+          2,
+          3,
+          6
+        ],
+        "outside": [],
+        "min_probability": 0.15460499613454456,
+        "max_sum_error": 2.220446049250313e-16,
+        "mean_abs_normalized_charge": 0.40778437653278393,
+        "mean_signed_normalized_charge": 0.40778437653278393,
+        "mean_force_leakage": 2.7480625638532945e-32,
+        "max_force_leakage": 1.6594528617604355e-31,
+        "mean_energy_density": 0.00020127387541247173,
+        "energy_density_span": 2.196141276027678e-06
+      },
+      {
+        "row": 6,
+        "seed": 20266526,
+        "support": [
+          2,
+          3,
+          6
+        ],
+        "outside": [],
+        "min_probability": 0.14871828944043614,
+        "max_sum_error": 2.220446049250313e-16,
+        "mean_abs_normalized_charge": 0.8815430001083401,
+        "mean_signed_normalized_charge": -0.8815430001083401,
+        "mean_force_leakage": 2.747929547214305e-32,
+        "max_force_leakage": 1.1892439467605883e-31,
+        "mean_energy_density": 0.0001951428628077951,
+        "energy_density_span": 6.849867281235884e-07
+      },
+      {
+        "row": 6,
+        "seed": 20266527,
+        "support": [
+          2,
+          3,
+          6
+        ],
+        "outside": [],
+        "min_probability": 0.15395429611212377,
+        "max_sum_error": 3.3306690738754696e-16,
+        "mean_abs_normalized_charge": 0.2745785646106619,
+        "mean_signed_normalized_charge": 0.2745785646106619,
+        "mean_force_leakage": 3.769272243245874e-32,
+        "max_force_leakage": 1.0139293194947156e-31,
+        "mean_energy_density": 0.00020067358930544836,
+        "energy_density_span": 1.9723309525345703e-06
+      },
+      {
+        "row": 6,
+        "seed": 20266528,
+        "support": [
+          2,
+          3,
+          6
+        ],
+        "outside": [],
+        "min_probability": 0.15754490659268397,
+        "max_sum_error": 2.220446049250313e-16,
+        "mean_abs_normalized_charge": 0.6700832571040803,
+        "mean_signed_normalized_charge": 0.6700832571040803,
+        "mean_force_leakage": 5.147053575227675e-32,
+        "max_force_leakage": 1.9547838221023719e-31,
+        "mean_energy_density": 0.00020244388945047783,
+        "energy_density_span": 2.574042368932479e-06
+      },
+      {
+        "row": 6,
+        "seed": 20266529,
+        "support": [
+          2,
+          3,
+          6
+        ],
+        "outside": [],
+        "min_probability": 0.14785277663865526,
+        "max_sum_error": 2.220446049250313e-16,
+        "mean_abs_normalized_charge": 0.9172552899993779,
+        "mean_signed_normalized_charge": -0.9172552899993779,
+        "mean_force_leakage": 2.6589675275306634e-32,
+        "max_force_leakage": 9.700993972625152e-32,
+        "mean_energy_density": 0.0001949549298861945,
+        "energy_density_span": 8.056142769547316e-07
+      },
+      {
+        "row": 6,
+        "seed": 20266530,
+        "support": [
+          2,
+          3,
+          6
+        ],
+        "outside": [],
+        "min_probability": 0.15057663228367493,
+        "max_sum_error": 3.3306690738754696e-16,
+        "mean_abs_normalized_charge": 0.35861886754311273,
+        "mean_signed_normalized_charge": -0.35861886754311273,
+        "mean_force_leakage": 2.612844853075121e-32,
+        "max_force_leakage": 1.7242570101441737e-31,
+        "mean_energy_density": 0.00019770483762036862,
+        "energy_density_span": 1.2639509183495063e-06
+      },
+      {
+        "row": 6,
+        "seed": 20266531,
+        "support": [
+          2,
+          3,
+          6
+        ],
+        "outside": [],
+        "min_probability": 0.15298972948637973,
+        "max_sum_error": 2.220446049250313e-16,
+        "mean_abs_normalized_charge": 0.21525770824059104,
+        "mean_signed_normalized_charge": -0.21525770824059104,
+        "mean_force_leakage": 4.532672415081168e-32,
+        "max_force_leakage": 2.24770916749381e-31,
+        "mean_energy_density": 0.00019840215488509022,
+        "energy_density_span": 1.2547729645107693e-06
+      },
+      {
+        "row": 6,
+        "seed": 20266532,
+        "support": [
+          2,
+          3,
+          6
+        ],
+        "outside": [],
+        "min_probability": 0.15337487931309254,
+        "max_sum_error": 2.220446049250313e-16,
+        "mean_abs_normalized_charge": 0.11546460154156835,
+        "mean_signed_normalized_charge": 0.11546460154156835,
+        "mean_force_leakage": 2.5353558501236663e-32,
+        "max_force_leakage": 1.0670060062061507e-31,
+        "mean_energy_density": 0.0001999336090142661,
+        "energy_density_span": 1.8769148064100608e-06
+      },
+      {
+        "row": 6,
+        "seed": 20266533,
+        "support": [
+          2,
+          3,
+          6
+        ],
+        "outside": [],
+        "min_probability": 0.15277642921828366,
+        "max_sum_error": 2.220446049250313e-16,
+        "mean_abs_normalized_charge": 0.14376353225583832,
+        "mean_signed_normalized_charge": -0.14376353225583832,
+        "mean_force_leakage": 4.433933345944043e-32,
+        "max_force_leakage": 1.518681788824298e-31,
+        "mean_energy_density": 0.0001987364014168175,
+        "energy_density_span": 1.3948929106282696e-06
+      },
+      {
+        "row": 6,
+        "seed": 20266534,
+        "support": [
+          2,
+          3,
+          6
+        ],
+        "outside": [],
+        "min_probability": 0.15311048394950322,
+        "max_sum_error": 4.440892098500626e-16,
+        "mean_abs_normalized_charge": 0.4627917822680535,
+        "mean_signed_normalized_charge": -0.4627917822680535,
+        "mean_force_leakage": 2.3560996764469415e-32,
+        "max_force_leakage": 1.0881575083753795e-31,
+        "mean_energy_density": 0.00019721248455155691,
+        "energy_density_span": 1.0080018641546787e-06
+      },
+      {
+        "row": 6,
+        "seed": 20266535,
+        "support": [
+          2,
+          3,
+          6
+        ],
+        "outside": [],
+        "min_probability": 0.15533625336247942,
+        "max_sum_error": 2.220446049250313e-16,
+        "mean_abs_normalized_charge": 0.2681433832885957,
+        "mean_signed_normalized_charge": 0.2681433832885957,
+        "mean_force_leakage": 2.2210314170065775e-32,
+        "max_force_leakage": 7.14977740775913e-32,
+        "mean_energy_density": 0.00020064366408166314,
+        "energy_density_span": 1.969464831215207e-06
+      },
+      {
+        "row": 6,
+        "seed": 20266536,
+        "support": [
+          2,
+          3,
+          6
+        ],
+        "outside": [],
+        "min_probability": 0.15381227376024328,
+        "max_sum_error": 2.220446049250313e-16,
+        "mean_abs_normalized_charge": 0.15574790507714537,
+        "mean_signed_normalized_charge": 0.15574790507714537,
+        "mean_force_leakage": 2.582908193719155e-32,
+        "max_force_leakage": 1.0368362971251935e-31,
+        "mean_energy_density": 0.0002001284111464127,
+        "energy_density_span": 1.8224494374349787e-06
+      },
+      {
+        "row": 6,
+        "seed": 20266537,
+        "support": [
+          2,
+          3,
+          6
+        ],
+        "outside": [],
+        "min_probability": 0.15442139833895585,
+        "max_sum_error": 2.220446049250313e-16,
+        "mean_abs_normalized_charge": 0.40061550631639475,
+        "mean_signed_normalized_charge": 0.40061550631639475,
+        "mean_force_leakage": 4.6964301437099267e-32,
+        "max_force_leakage": 2.1052401375975885e-31,
+        "mean_energy_density": 0.0002012365565534284,
+        "energy_density_span": 2.2402411167618975e-06
+      },
+      {
+        "row": 6,
+        "seed": 20266538,
+        "support": [
+          2,
+          3,
+          6
+        ],
+        "outside": [],
+        "min_probability": 0.15442388461289652,
+        "max_sum_error": 4.440892098500626e-16,
+        "mean_abs_normalized_charge": 0.07195914864460781,
+        "mean_signed_normalized_charge": 0.07195914864460781,
+        "mean_force_leakage": 4.158649199734349e-32,
+        "max_force_leakage": 1.7894449537738238e-31,
+        "mean_energy_density": 0.00019973402453205068,
+        "energy_density_span": 1.8014914450025909e-06
+      },
+      {
+        "row": 6,
+        "seed": 20266539,
+        "support": [
+          2,
+          3,
+          6
+        ],
+        "outside": [],
+        "min_probability": 0.14940876429228195,
+        "max_sum_error": 2.220446049250313e-16,
+        "mean_abs_normalized_charge": 0.7557548888957764,
+        "mean_signed_normalized_charge": -0.7557548888957764,
+        "mean_force_leakage": 2.9683471856706205e-32,
+        "max_force_leakage": 1.3383562212135803e-31,
+        "mean_energy_density": 0.0001957697220337443,
+        "energy_density_span": 8.086938706164642e-07
+      },
+      {
+        "row": 6,
+        "seed": 20266540,
+        "support": [
+          2,
+          3,
+          6
+        ],
+        "outside": [],
+        "min_probability": 0.14882921210176145,
+        "max_sum_error": 2.220446049250313e-16,
+        "mean_abs_normalized_charge": 0.5685812886966661,
+        "mean_signed_normalized_charge": -0.5685812886966661,
+        "mean_force_leakage": 3.7268170449881954e-32,
+        "max_force_leakage": 1.6049839390181968e-31,
+        "mean_energy_density": 0.00019667585084446815,
+        "energy_density_span": 1.2237764108310111e-06
+      },
+      {
+        "row": 6,
+        "seed": 20266541,
+        "support": [
+          2,
+          3,
+          6
+        ],
+        "outside": [],
+        "min_probability": 0.148448362093388,
+        "max_sum_error": 3.3306690738754696e-16,
+        "mean_abs_normalized_charge": 0.8328920350242397,
+        "mean_signed_normalized_charge": -0.8328920350242397,
+        "mean_force_leakage": 3.8100103039686794e-32,
+        "max_force_leakage": 2.128272168690588e-31,
+        "mean_energy_density": 0.0001953813958138105,
+        "energy_density_span": 8.10069501621703e-07
+      },
+      {
+        "row": 6,
+        "seed": 20266542,
+        "support": [
+          2,
+          3,
+          6
+        ],
+        "outside": [],
+        "min_probability": 0.14757940857342353,
+        "max_sum_error": 2.220446049250313e-16,
+        "mean_abs_normalized_charge": 1.1104385892422377,
+        "mean_signed_normalized_charge": -1.1104385892422377,
+        "mean_force_leakage": 3.391855472123376e-32,
+        "max_force_leakage": 1.184915454523428e-31,
+        "mean_energy_density": 0.00019398302614428788,
+        "energy_density_span": 5.2534302885944e-07
+      },
+      {
+        "row": 6,
+        "seed": 20266543,
+        "support": [
+          2,
+          3,
+          6
+        ],
+        "outside": [],
+        "min_probability": 0.15847118957269668,
+        "max_sum_error": 2.220446049250313e-16,
+        "mean_abs_normalized_charge": 1.3138498854567944,
+        "mean_signed_normalized_charge": 1.3138498854567944,
+        "mean_force_leakage": 3.3412256222877525e-32,
+        "max_force_leakage": 1.5998746261448865e-31,
+        "mean_energy_density": 0.0002052010356379497,
+        "energy_density_span": 3.683060008549086e-06
+      },
+      {
+        "row": 6,
+        "seed": 20266544,
+        "support": [
+          2,
+          3,
+          6
+        ],
+        "outside": [],
+        "min_probability": 0.1526813860594396,
+        "max_sum_error": 2.220446049250313e-16,
+        "mean_abs_normalized_charge": 0.23924752456290302,
+        "mean_signed_normalized_charge": 0.23924752456290302,
+        "mean_force_leakage": 4.439342055163988e-32,
+        "max_force_leakage": 1.9182865245867057e-31,
+        "mean_energy_density": 0.00020049957111677167,
+        "energy_density_span": 2.0698247769813276e-06
+      },
+      {
+        "row": 6,
+        "seed": 20266545,
+        "support": [
+          2,
+          3,
+          6
+        ],
+        "outside": [],
+        "min_probability": 0.14658809356874178,
+        "max_sum_error": 2.220446049250313e-16,
+        "mean_abs_normalized_charge": 1.3374062528308355,
+        "mean_signed_normalized_charge": -1.3374062528308355,
+        "mean_force_leakage": 2.7686937909580224e-32,
+        "max_force_leakage": 1.1190793957142287e-31,
+        "mean_energy_density": 0.00019281242733937276,
+        "energy_density_span": 3.782734762222879e-07
+      },
+      {
+        "row": 6,
+        "seed": 20266546,
+        "support": [
+          2,
+          3,
+          6
+        ],
+        "outside": [],
+        "min_probability": 0.1500441530155108,
+        "max_sum_error": 2.220446049250313e-16,
+        "mean_abs_normalized_charge": 0.5613777811053088,
+        "mean_signed_normalized_charge": -0.5613777811053088,
+        "mean_force_leakage": 2.9840581994933235e-32,
+        "max_force_leakage": 1.4353541268502385e-31,
+        "mean_energy_density": 0.00019672569077917065,
+        "energy_density_span": 1.0104252276261605e-06
+      },
+      {
+        "row": 6,
+        "seed": 20266547,
+        "support": [
+          2,
+          3,
+          6
+        ],
+        "outside": [],
+        "min_probability": 0.15186609521133815,
+        "max_sum_error": 2.220446049250313e-16,
+        "mean_abs_normalized_charge": 0.3079331104504619,
+        "mean_signed_normalized_charge": -0.3079331104504619,
+        "mean_force_leakage": 2.4021772828732563e-32,
+        "max_force_leakage": 7.543623830718791e-32,
+        "mean_energy_density": 0.00019795090690852843,
+        "energy_density_span": 1.277256231503078e-06
+      },
+      {
+        "row": 6,
+        "seed": 20266548,
+        "support": [
+          2,
+          3,
+          6
+        ],
+        "outside": [],
+        "min_probability": 0.14917117305034341,
+        "max_sum_error": 2.220446049250313e-16,
+        "mean_abs_normalized_charge": 0.536946003470837,
+        "mean_signed_normalized_charge": -0.536946003470837,
+        "mean_force_leakage": 2.2280204501124975e-32,
+        "max_force_leakage": 9.991784542283699e-32,
+        "mean_energy_density": 0.00019683348442375525,
+        "energy_density_span": 1.2047905433877344e-06
+      },
+      {
+        "row": 6,
+        "seed": 20266549,
+        "support": [
+          2,
+          3,
+          6
+        ],
+        "outside": [],
+        "min_probability": 0.15549207754477246,
+        "max_sum_error": 2.220446049250313e-16,
+        "mean_abs_normalized_charge": 0.21452257313768547,
+        "mean_signed_normalized_charge": 0.21452257313768547,
+        "mean_force_leakage": 3.144711990212018e-32,
+        "max_force_leakage": 1.4036655110858817e-31,
+        "mean_energy_density": 0.00020040008291703174,
+        "energy_density_span": 1.8798853630096993e-06
+      },
+      {
+        "row": 6,
+        "seed": 20266550,
+        "support": [
+          2,
+          3,
+          6
+        ],
+        "outside": [],
+        "min_probability": 0.1517137304336253,
+        "max_sum_error": 2.220446049250313e-16,
+        "mean_abs_normalized_charge": 0.16321320522899624,
+        "mean_signed_normalized_charge": 0.16321320522899624,
+        "mean_force_leakage": 3.265503769316553e-32,
+        "max_force_leakage": 1.5184538728611772e-31,
+        "mean_energy_density": 0.00020014232690410103,
+        "energy_density_span": 2.071333331073031e-06
+      },
+      {
+        "row": 6,
+        "seed": 20266551,
+        "support": [
+          2,
+          3,
+          6
+        ],
+        "outside": [],
+        "min_probability": 0.14885276897046912,
+        "max_sum_error": 2.220446049250313e-16,
+        "mean_abs_normalized_charge": 0.6426737864878632,
+        "mean_signed_normalized_charge": -0.6426737864878632,
+        "mean_force_leakage": 1.862360907229105e-32,
+        "max_force_leakage": 1.0253170708850663e-31,
+        "mean_energy_density": 0.00019631707594777292,
+        "energy_density_span": 1.0894481845729394e-06
+      },
+      {
+        "row": 6,
+        "seed": 20266552,
+        "support": [
+          2,
+          3,
+          6
+        ],
+        "outside": [],
+        "min_probability": 0.15076990180389466,
+        "max_sum_error": 2.220446049250313e-16,
+        "mean_abs_normalized_charge": 0.29819910722308024,
+        "mean_signed_normalized_charge": -0.29819910722308024,
+        "mean_force_leakage": 2.4614369400131392e-32,
+        "max_force_leakage": 1.0115785714871155e-31,
+        "mean_energy_density": 0.0001979925062379967,
+        "energy_density_span": 1.3549138589455357e-06
+      },
+      {
+        "row": 6,
+        "seed": 20266553,
+        "support": [
+          2,
+          3,
+          6
+        ],
+        "outside": [],
+        "min_probability": 0.15435398487000657,
+        "max_sum_error": 2.220446049250313e-16,
+        "mean_abs_normalized_charge": 0.20698386492157064,
+        "mean_signed_normalized_charge": 0.20698386492157064,
+        "mean_force_leakage": 2.5969992714976216e-32,
+        "max_force_leakage": 1.3288624269748818e-31,
+        "mean_energy_density": 0.00020036758145831248,
+        "energy_density_span": 1.846454369588865e-06
+      },
+      {
+        "row": 6,
+        "seed": 20266554,
+        "support": [
+          2,
+          3,
+          6
+        ],
+        "outside": [],
+        "min_probability": 0.14910633176055466,
+        "max_sum_error": 2.220446049250313e-16,
+        "mean_abs_normalized_charge": 0.6334575243503818,
+        "mean_signed_normalized_charge": -0.6334575243503818,
+        "mean_force_leakage": 3.2318962487763476e-32,
+        "max_force_leakage": 1.1765238710395858e-31,
+        "mean_energy_density": 0.00019636731592703835,
+        "energy_density_span": 1.0203040525087433e-06
+      },
+      {
+        "row": 6,
+        "seed": 20266555,
+        "support": [
+          2,
+          3,
+          6
+        ],
+        "outside": [],
+        "min_probability": 0.15588658601552402,
+        "max_sum_error": 4.440892098500626e-16,
+        "mean_abs_normalized_charge": 0.6954071955013456,
+        "mean_signed_normalized_charge": 0.6954071955013456,
+        "mean_force_leakage": 4.15497383798163e-32,
+        "max_force_leakage": 1.888143108729318e-31,
+        "mean_energy_density": 0.00020254856639232056,
+        "energy_density_span": 2.6820532171633682e-06
+      },
+      {
+        "row": 6,
+        "seed": 20266556,
+        "support": [
+          2,
+          3,
+          6
+        ],
+        "outside": [],
+        "min_probability": 0.1508026867775503,
+        "max_sum_error": 2.220446049250313e-16,
+        "mean_abs_normalized_charge": 0.16408813185685225,
+        "mean_signed_normalized_charge": -0.16408813185685225,
+        "mean_force_leakage": 2.704264075916698e-32,
+        "max_force_leakage": 1.3116246133844744e-31,
+        "mean_energy_density": 0.00019862298168422498,
+        "energy_density_span": 1.596528930499744e-06
+      },
+      {
+        "row": 6,
+        "seed": 20266557,
+        "support": [
+          2,
+          3,
+          6
+        ],
+        "outside": [],
+        "min_probability": 0.15187566787417217,
+        "max_sum_error": 4.440892098500626e-16,
+        "mean_abs_normalized_charge": 0.04768073877521728,
+        "mean_signed_normalized_charge": 0.04768073877521728,
+        "mean_force_leakage": 3.005195804809216e-32,
+        "max_force_leakage": 1.5731654071910107e-31,
+        "mean_energy_density": 0.0001996168373277428,
+        "energy_density_span": 1.8263302557828371e-06
+      },
+      {
+        "row": 6,
+        "seed": 20266558,
+        "support": [
+          2,
+          3,
+          6
+        ],
+        "outside": [],
+        "min_probability": 0.15571852051196128,
+        "max_sum_error": 2.220446049250313e-16,
+        "mean_abs_normalized_charge": 0.5528684481651699,
+        "mean_signed_normalized_charge": 0.5528684481651699,
+        "mean_force_leakage": 2.1855191122833205e-32,
+        "max_force_leakage": 1.2903429936320852e-31,
+        "mean_energy_density": 0.0002019213077737721,
+        "energy_density_span": 2.431911622242217e-06
+      },
+      {
+        "row": 6,
+        "seed": 20266559,
+        "support": [
+          2,
+          3,
+          6
+        ],
+        "outside": [],
+        "min_probability": 0.1523243862377704,
+        "max_sum_error": 2.220446049250313e-16,
+        "mean_abs_normalized_charge": 0.019802721889040427,
+        "mean_signed_normalized_charge": -0.013652519283995938,
+        "mean_force_leakage": 3.5753457696602665e-32,
+        "max_force_leakage": 1.4278576445973768e-31,
+        "mean_energy_density": 0.00019934141682295036,
+        "energy_density_span": 1.6260746359515678e-06
+      },
+      {
+        "row": 6,
+        "seed": 20266560,
+        "support": [
+          2,
+          3,
+          6
+        ],
+        "outside": [],
+        "min_probability": 0.1493290417742818,
+        "max_sum_error": 2.220446049250313e-16,
+        "mean_abs_normalized_charge": 0.6626330187412782,
+        "mean_signed_normalized_charge": -0.6626330187412782,
+        "mean_force_leakage": 2.816552264947775e-32,
+        "max_force_leakage": 1.1520224268778586e-31,
+        "mean_energy_density": 0.00019622585520589074,
+        "energy_density_span": 9.62080404025501e-07
+      },
+      {
+        "row": 6,
+        "seed": 20266561,
+        "support": [
+          2,
+          3,
+          6
+        ],
+        "outside": [],
+        "min_probability": 0.1509111805732553,
+        "max_sum_error": 2.220446049250313e-16,
+        "mean_abs_normalized_charge": 0.11398561716578808,
+        "mean_signed_normalized_charge": 0.11398561716578808,
+        "mean_force_leakage": 3.3965761218637474e-32,
+        "max_force_leakage": 1.4314300906813408e-31,
+        "mean_energy_density": 0.0001999082953963129,
+        "energy_density_span": 2.0946822286727626e-06
+      },
+      {
+        "row": 6,
+        "seed": 20266562,
+        "support": [
+          2,
+          3,
+          6
+        ],
+        "outside": [],
+        "min_probability": 0.1561943615297064,
+        "max_sum_error": 2.220446049250313e-16,
+        "mean_abs_normalized_charge": 0.6744785610063113,
+        "mean_signed_normalized_charge": 0.6744785610063113,
+        "mean_force_leakage": 2.9043215744297654e-32,
+        "max_force_leakage": 1.2638301052876388e-31,
+        "mean_energy_density": 0.00020245348275065058,
+        "energy_density_span": 2.6800852312111893e-06
+      },
+      {
+        "row": 6,
+        "seed": 20266563,
+        "support": [
+          2,
+          3,
+          6
+        ],
+        "outside": [],
+        "min_probability": 0.15175726610523343,
+        "max_sum_error": 2.220446049250313e-16,
+        "mean_abs_normalized_charge": 0.06337010229187916,
+        "mean_signed_normalized_charge": 0.06337010229187916,
+        "mean_force_leakage": 2.8923375340236526e-32,
+        "max_force_leakage": 1.1148658028648653e-31,
+        "mean_energy_density": 0.00019968526556795506,
+        "energy_density_span": 1.8985773323816233e-06
+      },
+      {
+        "row": 6,
+        "seed": 20266564,
+        "support": [
+          2,
+          3,
+          6
+        ],
+        "outside": [],
+        "min_probability": 0.14787245399244742,
+        "max_sum_error": 2.220446049250313e-16,
+        "mean_abs_normalized_charge": 0.9026554928238347,
+        "mean_signed_normalized_charge": -0.9026554928238347,
+        "mean_force_leakage": 3.4190113935156877e-32,
+        "max_force_leakage": 1.081455042086027e-31,
+        "mean_energy_density": 0.00019502760140411064,
+        "energy_density_span": 8.294137651294604e-07
+      }
+    ],
+    "12": [
+      {
+        "row": 12,
+        "seed": 20272515,
+        "support": [
+          2,
+          3,
+          6
+        ],
+        "outside": [
+          4,
+          12
+        ],
+        "min_probability": 0.07602138173188164,
+        "max_sum_error": 4.440892098500626e-16,
+        "mean_abs_normalized_charge": 0.04623186984767803,
+        "mean_signed_normalized_charge": -0.04623186984767803,
+        "mean_force_leakage": 5.836431658807423e-32,
+        "max_force_leakage": 1.5617803456679824e-31,
+        "mean_energy_density": 0.00019863085142940735,
+        "energy_density_span": 2.8227565218275313e-06
+      },
+      {
+        "row": 12,
+        "seed": 20272516,
+        "support": [
+          2,
+          3,
+          6
+        ],
+        "outside": [
+          4,
+          12
+        ],
+        "min_probability": 0.07653670811306827,
+        "max_sum_error": 4.440892098500626e-16,
+        "mean_abs_normalized_charge": 0.22474749483883108,
+        "mean_signed_normalized_charge": -0.22474749483883108,
+        "mean_force_leakage": 1.0264230114899095e-31,
+        "max_force_leakage": 2.023803559690792e-31,
+        "mean_energy_density": 0.00019780283835844523,
+        "energy_density_span": 2.4230598859666965e-06
+      },
+      {
+        "row": 12,
+        "seed": 20272517,
+        "support": [
+          2,
+          3,
+          6
+        ],
+        "outside": [
+          4,
+          12
+        ],
+        "min_probability": 0.07732059106117531,
+        "max_sum_error": 4.440892098500626e-16,
+        "mean_abs_normalized_charge": 0.04409757206617691,
+        "mean_signed_normalized_charge": 0.04409757206617691,
+        "mean_force_leakage": 5.830788811028043e-32,
+        "max_force_leakage": 1.9330458971360588e-31,
+        "mean_energy_density": 0.0001990581202820759,
+        "energy_density_span": 2.859347763568018e-06
+      },
+      {
+        "row": 12,
+        "seed": 20272518,
+        "support": [
+          2,
+          3,
+          6
+        ],
+        "outside": [
+          4,
+          12
+        ],
+        "min_probability": 0.07794373046875788,
+        "max_sum_error": 4.440892098500626e-16,
+        "mean_abs_normalized_charge": 0.3398866637187421,
+        "mean_signed_normalized_charge": 0.3398866637187421,
+        "mean_force_leakage": 7.57609713379316e-32,
+        "max_force_leakage": 1.4684034171000085e-31,
+        "mean_energy_density": 0.00020041720775288436,
+        "energy_density_span": 3.238527330163475e-06
+      },
+      {
+        "row": 12,
+        "seed": 20272519,
+        "support": [
+          2,
+          3,
+          6
+        ],
+        "outside": [
+          4,
+          12
+        ],
+        "min_probability": 0.07313463154439714,
+        "max_sum_error": 2.220446049250313e-16,
+        "mean_abs_normalized_charge": 1.3992614998363357,
+        "mean_signed_normalized_charge": -1.3992614998363357,
+        "mean_force_leakage": 8.328189142926536e-32,
+        "max_force_leakage": 2.998418399943307e-31,
+        "mean_energy_density": 0.00019193451528079364,
+        "energy_density_span": 1.5576236149818234e-06
+      },
+      {
+        "row": 12,
+        "seed": 20272520,
+        "support": [
+          2,
+          3,
+          6
+        ],
+        "outside": [
+          4,
+          12
+        ],
+        "min_probability": 0.07514566716437554,
+        "max_sum_error": 2.220446049250313e-16,
+        "mean_abs_normalized_charge": 0.33166328475153517,
+        "mean_signed_normalized_charge": -0.33166328475153517,
+        "mean_force_leakage": 3.4196470800839497e-31,
+        "max_force_leakage": 6.708606125170966e-31,
+        "mean_energy_density": 0.0001972727329348653,
+        "energy_density_span": 2.5807390073941984e-06
+      },
+      {
+        "row": 12,
+        "seed": 20272521,
+        "support": [
+          2,
+          3,
+          6
+        ],
+        "outside": [
+          4,
+          12
+        ],
+        "min_probability": 0.07821096181638625,
+        "max_sum_error": 3.3306690738754696e-16,
+        "mean_abs_normalized_charge": 0.9301433752504202,
+        "mean_signed_normalized_charge": 0.9301433752504202,
+        "mean_force_leakage": 3.435132927448069e-32,
+        "max_force_leakage": 1.0184484941948309e-31,
+        "mean_energy_density": 0.00020301623216952716,
+        "energy_density_span": 4.251739229120744e-06
+      },
+      {
+        "row": 12,
+        "seed": 20272522,
+        "support": [
+          2,
+          3,
+          6
+        ],
+        "outside": [
+          4,
+          12
+        ],
+        "min_probability": 0.07558048208489625,
+        "max_sum_error": 3.3306690738754696e-16,
+        "mean_abs_normalized_charge": 0.24897098063377107,
+        "mean_signed_normalized_charge": -0.24897098063377107,
+        "mean_force_leakage": 6.3045016195075e-32,
+        "max_force_leakage": 1.5755235440599673e-31,
+        "mean_energy_density": 0.0001976772430923104,
+        "energy_density_span": 2.5373669000950966e-06
+      },
+      {
+        "row": 12,
+        "seed": 20272523,
+        "support": [
+          2,
+          3,
+          6
+        ],
+        "outside": [
+          4,
+          12
+        ],
+        "min_probability": 0.07409570563611705,
+        "max_sum_error": 3.3306690738754696e-16,
+        "mean_abs_normalized_charge": 0.9359305518737377,
+        "mean_signed_normalized_charge": -0.9359305518737377,
+        "mean_force_leakage": 3.0326262190706125e-32,
+        "max_force_leakage": 1.0958865903532918e-31,
+        "mean_energy_density": 0.00019431303874096955,
+        "energy_density_span": 1.8609166910016567e-06
+      },
+      {
+        "row": 12,
+        "seed": 20272524,
+        "support": [
+          2,
+          3,
+          6
+        ],
+        "outside": [
+          4,
+          12
+        ],
+        "min_probability": 0.0774065012849357,
+        "max_sum_error": 4.440892098500626e-16,
+        "mean_abs_normalized_charge": 0.8481381316721154,
+        "mean_signed_normalized_charge": 0.8481381316721154,
+        "mean_force_leakage": 2.826827357707615e-32,
+        "max_force_leakage": 1.3534735148210598e-31,
+        "mean_energy_density": 0.000202655527811071,
+        "energy_density_span": 4.1782912088028125e-06
+      },
+      {
+        "row": 12,
+        "seed": 20272525,
+        "support": [
+          2,
+          3,
+          6
+        ],
+        "outside": [
+          4,
+          12
+        ],
+        "min_probability": 0.07495014162577687,
+        "max_sum_error": 3.3306690738754696e-16,
+        "mean_abs_normalized_charge": 0.47509232202600016,
+        "mean_signed_normalized_charge": -0.47509232202600016,
+        "mean_force_leakage": 4.040567818219582e-32,
+        "max_force_leakage": 1.7889161466741188e-31,
+        "mean_energy_density": 0.00019658723746674927,
+        "energy_density_span": 2.3433380211273114e-06
+      },
+      {
+        "row": 12,
+        "seed": 20272526,
+        "support": [
+          2,
+          3,
+          6
+        ],
+        "outside": [
+          4,
+          12
+        ],
+        "min_probability": 0.0770990586602885,
+        "max_sum_error": 4.440892098500626e-16,
+        "mean_abs_normalized_charge": 0.31541973364523845,
+        "mean_signed_normalized_charge": -0.31541973364523845,
+        "mean_force_leakage": 2.555574553936617e-32,
+        "max_force_leakage": 9.608927475366473e-32,
+        "mean_energy_density": 0.000197370948586144,
+        "energy_density_span": 2.3088169906974442e-06
+      },
+      {
+        "row": 12,
+        "seed": 20272527,
+        "support": [
+          2,
+          3,
+          6
+        ],
+        "outside": [
+          4,
+          12
+        ],
+        "min_probability": 0.07528723317648567,
+        "max_sum_error": 4.440892098500626e-16,
+        "mean_abs_normalized_charge": 0.6002103817755496,
+        "mean_signed_normalized_charge": -0.6002103817755496,
+        "mean_force_leakage": 4.379565717820829e-32,
+        "max_force_leakage": 1.6409986834762174e-31,
+        "mean_energy_density": 0.00019598486590798189,
+        "energy_density_span": 2.1013244637838155e-06
+      },
+      {
+        "row": 12,
+        "seed": 20272528,
+        "support": [
+          2,
+          3,
+          6
+        ],
+        "outside": [
+          4,
+          12
+        ],
+        "min_probability": 0.077476399099082,
+        "max_sum_error": 3.3306690738754696e-16,
+        "mean_abs_normalized_charge": 0.1325937928571208,
+        "mean_signed_normalized_charge": 0.1325937928571208,
+        "mean_force_leakage": 7.1710430502258e-32,
+        "max_force_leakage": 2.006165132404902e-31,
+        "mean_energy_density": 0.00019947121606794937,
+        "energy_density_span": 2.932634193643542e-06
+      },
+      {
+        "row": 12,
+        "seed": 20272529,
+        "support": [
+          2,
+          3,
+          6
+        ],
+        "outside": [
+          4,
+          12
+        ],
+        "min_probability": 0.07409493590108195,
+        "max_sum_error": 2.220446049250313e-16,
+        "mean_abs_normalized_charge": 0.8901671583991044,
+        "mean_signed_normalized_charge": -0.8901671583991044,
+        "mean_force_leakage": 1.0693570946412964e-31,
+        "max_force_leakage": 3.9309403973005313e-31,
+        "mean_energy_density": 0.00019454034458757098,
+        "energy_density_span": 1.9490949256699766e-06
+      },
+      {
+        "row": 12,
+        "seed": 20272530,
+        "support": [
+          2,
+          3,
+          6
+        ],
+        "outside": [
+          4,
+          12
+        ],
+        "min_probability": 0.0739810393409206,
+        "max_sum_error": 4.440892098500626e-16,
+        "mean_abs_normalized_charge": 0.9293771228019,
+        "mean_signed_normalized_charge": -0.9293771228019,
+        "mean_force_leakage": 3.405781870618074e-32,
+        "max_force_leakage": 1.745865901271395e-31,
+        "mean_energy_density": 0.00019434220072132144,
+        "energy_density_span": 1.938190317026645e-06
+      },
+      {
+        "row": 12,
+        "seed": 20272531,
+        "support": [
+          2,
+          3,
+          6
+        ],
+        "outside": [
+          4,
+          12
+        ],
+        "min_probability": 0.07451355241498687,
+        "max_sum_error": 4.440892098500626e-16,
+        "mean_abs_normalized_charge": 0.6901176962842089,
+        "mean_signed_normalized_charge": -0.6901176962842089,
+        "mean_force_leakage": 8.68942424307604e-32,
+        "max_force_leakage": 2.775529054742377e-31,
+        "mean_energy_density": 0.00019553513953391973,
+        "energy_density_span": 2.1360070739657837e-06
+      },
+      {
+        "row": 12,
+        "seed": 20272532,
+        "support": [
+          2,
+          3,
+          6
+        ],
+        "outside": [
+          4,
+          12
+        ],
+        "min_probability": 0.07370216319738779,
+        "max_sum_error": 4.440892098500626e-16,
+        "mean_abs_normalized_charge": 1.2048868352586808,
+        "mean_signed_normalized_charge": -1.2048868352586808,
+        "mean_force_leakage": 3.0680678673790224e-32,
+        "max_force_leakage": 9.869674616305538e-32,
+        "mean_energy_density": 0.00019294660325358418,
+        "energy_density_span": 1.5963411329930318e-06
+      },
+      {
+        "row": 12,
+        "seed": 20272533,
+        "support": [
+          2,
+          3,
+          6
+        ],
+        "outside": [
+          4,
+          12
+        ],
+        "min_probability": 0.0751526097093919,
+        "max_sum_error": 2.220446049250313e-16,
+        "mean_abs_normalized_charge": 0.3896637093081624,
+        "mean_signed_normalized_charge": -0.3896637093081624,
+        "mean_force_leakage": 1.2135958768251635e-31,
+        "max_force_leakage": 4.388416439482259e-31,
+        "mean_energy_density": 0.0001969987783424946,
+        "energy_density_span": 2.451822470212942e-06
+      },
+      {
+        "row": 12,
+        "seed": 20272534,
+        "support": [
+          2,
+          3,
+          6
+        ],
+        "outside": [
+          4,
+          12
+        ],
+        "min_probability": 0.07459243769723246,
+        "max_sum_error": 2.220446049250313e-16,
+        "mean_abs_normalized_charge": 0.9469258752926111,
+        "mean_signed_normalized_charge": -0.9469258752926111,
+        "mean_force_leakage": 6.344714758442445e-32,
+        "max_force_leakage": 1.9044441684030212e-31,
+        "mean_energy_density": 0.00019426476369105192,
+        "energy_density_span": 1.7217625670292358e-06
+      },
+      {
+        "row": 12,
+        "seed": 20272535,
+        "support": [
+          2,
+          3,
+          6
+        ],
+        "outside": [
+          4,
+          12
+        ],
+        "min_probability": 0.07874917245065557,
+        "max_sum_error": 2.220446049250313e-16,
+        "mean_abs_normalized_charge": 0.9335120715826979,
+        "mean_signed_normalized_charge": 0.9335120715826979,
+        "mean_force_leakage": 2.2763417821050043e-32,
+        "max_force_leakage": 1.0550486638160289e-31,
+        "mean_energy_density": 0.0002030345732473671,
+        "energy_density_span": 4.219755781203539e-06
+      },
+      {
+        "row": 12,
+        "seed": 20272536,
+        "support": [
+          2,
+          3,
+          6
+        ],
+        "outside": [
+          4,
+          12
+        ],
+        "min_probability": 0.07622732627594761,
+        "max_sum_error": 4.440892098500626e-16,
+        "mean_abs_normalized_charge": 0.22656324248302934,
+        "mean_signed_normalized_charge": 0.22656324248302934,
+        "mean_force_leakage": 5.581854365249188e-32,
+        "max_force_leakage": 1.995975151000968e-31,
+        "mean_energy_density": 0.00019988577269314267,
+        "energy_density_span": 3.2619415931804685e-06
+      },
+      {
+        "row": 12,
+        "seed": 20272537,
+        "support": [
+          2,
+          3,
+          6
+        ],
+        "outside": [
+          4,
+          12
+        ],
+        "min_probability": 0.07545419237491767,
+        "max_sum_error": 3.3306690738754696e-16,
+        "mean_abs_normalized_charge": 0.12614362246073846,
+        "mean_signed_normalized_charge": 0.12614362246073846,
+        "mean_force_leakage": 3.334271246145447e-32,
+        "max_force_leakage": 8.966801005993644e-32,
+        "mean_energy_density": 0.00019941118458923068,
+        "energy_density_span": 3.2924801867485266e-06
+      },
+      {
+        "row": 12,
+        "seed": 20272538,
+        "support": [
+          2,
+          3,
+          6
+        ],
+        "outside": [
+          4,
+          12
+        ],
+        "min_probability": 0.07686303017043361,
+        "max_sum_error": 3.3306690738754696e-16,
+        "mean_abs_normalized_charge": 0.01837131702013607,
+        "mean_signed_normalized_charge": 0.01355651194211956,
+        "mean_force_leakage": 1.1584079536343267e-31,
+        "max_force_leakage": 2.324177012411272e-31,
+        "mean_energy_density": 0.00019891791916975128,
+        "energy_density_span": 2.796736146347254e-06
+      },
+      {
+        "row": 12,
+        "seed": 20272539,
+        "support": [
+          2,
+          3,
+          6
+        ],
+        "outside": [
+          4,
+          12
+        ],
+        "min_probability": 0.0770513399165041,
+        "max_sum_error": 3.3306690738754696e-16,
+        "mean_abs_normalized_charge": 0.4474775168580316,
+        "mean_signed_normalized_charge": 0.4474775168580316,
+        "mean_force_leakage": 6.214040412282626e-32,
+        "max_force_leakage": 2.0386392960113896e-31,
+        "mean_energy_density": 0.0002008901129067717,
+        "energy_density_span": 3.532027766168914e-06
+      },
+      {
+        "row": 12,
+        "seed": 20272540,
+        "support": [
+          2,
+          3,
+          6
+        ],
+        "outside": [
+          4,
+          12
+        ],
+        "min_probability": 0.0739375306101163,
+        "max_sum_error": 3.3306690738754696e-16,
+        "mean_abs_normalized_charge": 0.9221413816942107,
+        "mean_signed_normalized_charge": -0.9221413816942107,
+        "mean_force_leakage": 3.7073232044885976e-32,
+        "max_force_leakage": 1.0945824978536396e-31,
+        "mean_energy_density": 0.00019437741546595523,
+        "energy_density_span": 1.9653583538502685e-06
+      },
+      {
+        "row": 12,
+        "seed": 20272541,
+        "support": [
+          2,
+          3,
+          6
+        ],
+        "outside": [
+          4,
+          12
+        ],
+        "min_probability": 0.07889431599390079,
+        "max_sum_error": 4.440892098500626e-16,
+        "mean_abs_normalized_charge": 1.0686551982463721,
+        "mean_signed_normalized_charge": 1.0686551982463721,
+        "mean_force_leakage": 4.632583294954331e-32,
+        "max_force_leakage": 1.3363118227750186e-31,
+        "mean_energy_density": 0.0002036102563265767,
+        "energy_density_span": 4.479093819376146e-06
+      },
+      {
+        "row": 12,
+        "seed": 20272542,
+        "support": [
+          2,
+          3,
+          6
+        ],
+        "outside": [
+          4,
+          12
+        ],
+        "min_probability": 0.0743254144774245,
+        "max_sum_error": 3.3306690738754696e-16,
+        "mean_abs_normalized_charge": 0.6012305872801291,
+        "mean_signed_normalized_charge": -0.6012305872801291,
+        "mean_force_leakage": 3.488690028564383e-32,
+        "max_force_leakage": 1.1060389147719353e-31,
+        "mean_energy_density": 0.00019596167329026445,
+        "energy_density_span": 2.3880875489852105e-06
+      },
+      {
+        "row": 12,
+        "seed": 20272543,
+        "support": [
+          2,
+          3,
+          6
+        ],
+        "outside": [
+          4,
+          12
+        ],
+        "min_probability": 0.07495278135663924,
+        "max_sum_error": 4.440892098500626e-16,
+        "mean_abs_normalized_charge": 0.42214181602659656,
+        "mean_signed_normalized_charge": -0.42214181602659656,
+        "mean_force_leakage": 2.6192282107927454e-32,
+        "max_force_leakage": 8.505235920629974e-32,
+        "mean_energy_density": 0.00019683997326120416,
+        "energy_density_span": 2.449962540017651e-06
+      },
+      {
+        "row": 12,
+        "seed": 20272544,
+        "support": [
+          2,
+          3,
+          6
+        ],
+        "outside": [
+          4,
+          12
+        ],
+        "min_probability": 0.07787038013719008,
+        "max_sum_error": 3.3306690738754696e-16,
+        "mean_abs_normalized_charge": 0.6981616763500654,
+        "mean_signed_normalized_charge": 0.6981616763500654,
+        "mean_force_leakage": 4.504490254357415e-32,
+        "max_force_leakage": 1.8253912377423927e-31,
+        "mean_energy_density": 0.00020200706323417617,
+        "energy_density_span": 3.8733720556004075e-06
+      },
+      {
+        "row": 12,
+        "seed": 20272545,
+        "support": [
+          2,
+          3,
+          6
+        ],
+        "outside": [
+          4,
+          12
+        ],
+        "min_probability": 0.07744602831556466,
+        "max_sum_error": 4.440892098500626e-16,
+        "mean_abs_normalized_charge": 0.15629013635492056,
+        "mean_signed_normalized_charge": 0.15629013635492056,
+        "mean_force_leakage": 7.962971297100616e-32,
+        "max_force_leakage": 1.9126338109427659e-31,
+        "mean_energy_density": 0.0001995788939858504,
+        "energy_density_span": 2.982405462760297e-06
+      },
+      {
+        "row": 12,
+        "seed": 20272546,
+        "support": [
+          2,
+          3,
+          6
+        ],
+        "outside": [
+          4,
+          12
+        ],
+        "min_probability": 0.07457521237942154,
+        "max_sum_error": 4.440892098500626e-16,
+        "mean_abs_normalized_charge": 0.7094054339722138,
+        "mean_signed_normalized_charge": -0.7094054339722138,
+        "mean_force_leakage": 2.3515563816724983e-32,
+        "max_force_leakage": 8.177415308856474e-32,
+        "mean_energy_density": 0.00019544062846840689,
+        "energy_density_span": 2.1068200107060217e-06
+      },
+      {
+        "row": 12,
+        "seed": 20272547,
+        "support": [
+          2,
+          3,
+          6
+        ],
+        "outside": [
+          4,
+          12
+        ],
+        "min_probability": 0.07728155989417212,
+        "max_sum_error": 2.220446049250313e-16,
+        "mean_abs_normalized_charge": 0.8324662623327059,
+        "mean_signed_normalized_charge": 0.8324662623327059,
+        "mean_force_leakage": 1.0196807280226977e-31,
+        "max_force_leakage": 2.0961971321650845e-31,
+        "mean_energy_density": 0.0002025863467842508,
+        "energy_density_span": 4.16451568634017e-06
+      },
+      {
+        "row": 12,
+        "seed": 20272548,
+        "support": [
+          2,
+          3,
+          6
+        ],
+        "outside": [
+          4,
+          12
+        ],
+        "min_probability": 0.07611077323839713,
+        "max_sum_error": 3.3306690738754696e-16,
+        "mean_abs_normalized_charge": 0.12116059850753129,
+        "mean_signed_normalized_charge": -0.12116059850753129,
+        "mean_force_leakage": 1.3248363416380758e-31,
+        "max_force_leakage": 3.5090128438605925e-31,
+        "mean_energy_density": 0.00019827988169475862,
+        "energy_density_span": 2.7214819251947546e-06
+      },
+      {
+        "row": 12,
+        "seed": 20272549,
+        "support": [
+          2,
+          3,
+          6
+        ],
+        "outside": [
+          4,
+          12
+        ],
+        "min_probability": 0.07659051159845617,
+        "max_sum_error": 4.440892098500626e-16,
+        "mean_abs_normalized_charge": 0.2640319889952821,
+        "mean_signed_normalized_charge": 0.2640319889952821,
+        "mean_force_leakage": 2.852840920751597e-32,
+        "max_force_leakage": 1.3081649806277587e-31,
+        "mean_energy_density": 0.00020006496123495737,
+        "energy_density_span": 3.218190323311861e-06
+      },
+      {
+        "row": 12,
+        "seed": 20272550,
+        "support": [
+          2,
+          3,
+          6
+        ],
+        "outside": [
+          4,
+          12
+        ],
+        "min_probability": 0.07546780120964185,
+        "max_sum_error": 2.220446049250313e-16,
+        "mean_abs_normalized_charge": 0.42751837381658303,
+        "mean_signed_normalized_charge": -0.42751837381658303,
+        "mean_force_leakage": 2.618336521589633e-32,
+        "max_force_leakage": 5.964550952772456e-32,
+        "mean_energy_density": 0.00019682364665715436,
+        "energy_density_span": 2.302132500530329e-06
+      },
+      {
+        "row": 12,
+        "seed": 20272551,
+        "support": [
+          2,
+          3,
+          6
+        ],
+        "outside": [
+          4,
+          12
+        ],
+        "min_probability": 0.07801965877906786,
+        "max_sum_error": 4.440892098500626e-16,
+        "mean_abs_normalized_charge": 0.6375587182827529,
+        "mean_signed_normalized_charge": 0.6375587182827529,
+        "mean_force_leakage": 2.3815955954111416e-32,
+        "max_force_leakage": 1.096456902370528e-31,
+        "mean_energy_density": 0.00020174348189869813,
+        "energy_density_span": 3.743043612227688e-06
+      },
+      {
+        "row": 12,
+        "seed": 20272552,
+        "support": [
+          2,
+          3,
+          6
+        ],
+        "outside": [
+          4,
+          12
+        ],
+        "min_probability": 0.07631105223820911,
+        "max_sum_error": 3.3306690738754696e-16,
+        "mean_abs_normalized_charge": 0.2376291896300119,
+        "mean_signed_normalized_charge": -0.2376291896300119,
+        "mean_force_leakage": 3.3731624852301274e-32,
+        "max_force_leakage": 1.314962359920118e-31,
+        "mean_energy_density": 0.00019773819591946713,
+        "energy_density_span": 2.45457289811774e-06
+      },
+      {
+        "row": 12,
+        "seed": 20272553,
+        "support": [
+          2,
+          3,
+          6
+        ],
+        "outside": [
+          4,
+          12
+        ],
+        "min_probability": 0.07565771211451008,
+        "max_sum_error": 3.3306690738754696e-16,
+        "mean_abs_normalized_charge": 0.5774495208824627,
+        "mean_signed_normalized_charge": -0.5774495208824627,
+        "mean_force_leakage": 3.27802326632984e-32,
+        "max_force_leakage": 9.848318621880922e-32,
+        "mean_energy_density": 0.00019609756879183528,
+        "energy_density_span": 2.1049670326474864e-06
+      },
+      {
+        "row": 12,
+        "seed": 20272554,
+        "support": [
+          2,
+          3,
+          6
+        ],
+        "outside": [
+          4,
+          12
+        ],
+        "min_probability": 0.07759353747931722,
+        "max_sum_error": 4.440892098500626e-16,
+        "mean_abs_normalized_charge": 0.01895248236767385,
+        "mean_signed_normalized_charge": 0.01811830692039317,
+        "mean_force_leakage": 8.08056323151556e-32,
+        "max_force_leakage": 1.8198531830543099e-31,
+        "mean_energy_density": 0.00019894559015878657,
+        "energy_density_span": 2.721504465869214e-06
+      },
+      {
+        "row": 12,
+        "seed": 20272555,
+        "support": [
+          2,
+          3,
+          6
+        ],
+        "outside": [
+          4,
+          12
+        ],
+        "min_probability": 0.07502819178938384,
+        "max_sum_error": 4.440892098500626e-16,
+        "mean_abs_normalized_charge": 0.40745873032977226,
+        "mean_signed_normalized_charge": -0.40745873032977226,
+        "mean_force_leakage": 3.725042552213066e-32,
+        "max_force_leakage": 1.4611388480204398e-31,
+        "mean_energy_density": 0.0001969125450552256,
+        "energy_density_span": 2.4396453121047453e-06
+      },
+      {
+        "row": 12,
+        "seed": 20272556,
+        "support": [
+          2,
+          3,
+          6
+        ],
+        "outside": [
+          4,
+          12
+        ],
+        "min_probability": 0.07295868120580386,
+        "max_sum_error": 4.440892098500626e-16,
+        "mean_abs_normalized_charge": 1.5437834785918876,
+        "mean_signed_normalized_charge": -1.5437834785918876,
+        "mean_force_leakage": 3.915647086644176e-32,
+        "max_force_leakage": 2.0844420653055666e-31,
+        "mean_energy_density": 0.00019117736671454843,
+        "energy_density_span": 1.4011412093002434e-06
+      },
+      {
+        "row": 12,
+        "seed": 20272557,
+        "support": [
+          2,
+          3,
+          6
+        ],
+        "outside": [
+          4,
+          12
+        ],
+        "min_probability": 0.07685408723986074,
+        "max_sum_error": 4.440892098500626e-16,
+        "mean_abs_normalized_charge": 0.014548758810436048,
+        "mean_signed_normalized_charge": 0.0066087817311994475,
+        "mean_force_leakage": 4.411321889130458e-32,
+        "max_force_leakage": 1.1461650060194083e-31,
+        "mean_energy_density": 0.00019888892301019438,
+        "energy_density_span": 2.745149722767565e-06
+      },
+      {
+        "row": 12,
+        "seed": 20272558,
+        "support": [
+          2,
+          3,
+          6
+        ],
+        "outside": [
+          4,
+          12
+        ],
+        "min_probability": 0.07542632806557922,
+        "max_sum_error": 2.220446049250313e-16,
+        "mean_abs_normalized_charge": 0.17807023909142053,
+        "mean_signed_normalized_charge": -0.17807023909142053,
+        "mean_force_leakage": 3.9104128078875003e-32,
+        "max_force_leakage": 1.3844623651874813e-31,
+        "mean_energy_density": 0.00019800821966965658,
+        "energy_density_span": 2.6941040790958175e-06
+      },
+      {
+        "row": 12,
+        "seed": 20272559,
+        "support": [
+          2,
+          3,
+          6
+        ],
+        "outside": [
+          4,
+          12
+        ],
+        "min_probability": 0.07434917126254594,
+        "max_sum_error": 2.220446049250313e-16,
+        "mean_abs_normalized_charge": 0.709905664392719,
+        "mean_signed_normalized_charge": -0.709905664392719,
+        "mean_force_leakage": 1.514544931906762e-31,
+        "max_force_leakage": 3.902621172523354e-31,
+        "mean_energy_density": 0.000195434515060203,
+        "energy_density_span": 2.1659178109135232e-06
+      },
+      {
+        "row": 12,
+        "seed": 20272560,
+        "support": [
+          2,
+          3,
+          6
+        ],
+        "outside": [
+          4,
+          12
+        ],
+        "min_probability": 0.07742819592985438,
+        "max_sum_error": 4.440892098500626e-16,
+        "mean_abs_normalized_charge": 0.11162193419150286,
+        "mean_signed_normalized_charge": -0.11162193419150286,
+        "mean_force_leakage": 1.2510191576702367e-30,
+        "max_force_leakage": 1.9731566556696044e-30,
+        "mean_energy_density": 0.00019834130850432104,
+        "energy_density_span": 2.5152097684329557e-06
+      },
+      {
+        "row": 12,
+        "seed": 20272561,
+        "support": [
+          2,
+          3,
+          6
+        ],
+        "outside": [
+          4,
+          12
+        ],
+        "min_probability": 0.07612121050707966,
+        "max_sum_error": 3.3306690738754696e-16,
+        "mean_abs_normalized_charge": 0.5685033847355268,
+        "mean_signed_normalized_charge": -0.5685033847355268,
+        "mean_force_leakage": 2.6691287818142167e-32,
+        "max_force_leakage": 1.0280431214789206e-31,
+        "mean_energy_density": 0.00019614580276257912,
+        "energy_density_span": 2.0431336718500584e-06
+      },
+      {
+        "row": 12,
+        "seed": 20272562,
+        "support": [
+          2,
+          3,
+          6
+        ],
+        "outside": [
+          4,
+          12
+        ],
+        "min_probability": 0.07786194904837337,
+        "max_sum_error": 2.220446049250313e-16,
+        "mean_abs_normalized_charge": 0.2789016921643509,
+        "mean_signed_normalized_charge": 0.2789016921643509,
+        "mean_force_leakage": 2.523864986436336e-31,
+        "max_force_leakage": 6.527136028069101e-31,
+        "mean_energy_density": 0.00020014190872722466,
+        "energy_density_span": 3.131572052018759e-06
+      },
+      {
+        "row": 12,
+        "seed": 20272563,
+        "support": [
+          2,
+          3,
+          6
+        ],
+        "outside": [
+          4,
+          12
+        ],
+        "min_probability": 0.07611806885219403,
+        "max_sum_error": 4.440892098500626e-16,
+        "mean_abs_normalized_charge": 0.12997618921889045,
+        "mean_signed_normalized_charge": -0.12997618921889045,
+        "mean_force_leakage": 2.3486823168487935e-31,
+        "max_force_leakage": 4.677781509081027e-31,
+        "mean_energy_density": 0.00019823669930205728,
+        "energy_density_span": 2.7329066982406582e-06
+      },
+      {
+        "row": 12,
+        "seed": 20272564,
+        "support": [
+          2,
+          3,
+          6
+        ],
+        "outside": [
+          4,
+          12
+        ],
+        "min_probability": 0.07513895021382828,
+        "max_sum_error": 3.3306690738754696e-16,
+        "mean_abs_normalized_charge": 0.6283025480665453,
+        "mean_signed_normalized_charge": -0.6283025480665453,
+        "mean_force_leakage": 1.2976635258853558e-31,
+        "max_force_leakage": 4.2198844471009054e-31,
+        "mean_energy_density": 0.00019584716488258238,
+        "energy_density_span": 2.071020513425649e-06
+      }
+    ],
+    "18": [
+      {
+        "row": 18,
+        "seed": 20278515,
+        "support": [
+          2,
+          3,
+          6
+        ],
+        "outside": [
+          9,
+          18
+        ],
+        "min_probability": 0.05039072843251442,
+        "max_sum_error": 2.220446049250313e-16,
+        "mean_abs_normalized_charge": 0.05272241872062541,
+        "mean_signed_normalized_charge": 0.05272241872062541,
+        "mean_force_leakage": 5.22007821801717e-32,
+        "max_force_leakage": 1.7607254610110753e-31,
+        "mean_energy_density": 0.0001985301112586449,
+        "energy_density_span": 4.264863850187372e-06
+      },
+      {
+        "row": 18,
+        "seed": 20278516,
+        "support": [
+          2,
+          3,
+          6
+        ],
+        "outside": [
+          9,
+          18
+        ],
+        "min_probability": 0.049602066391143104,
+        "max_sum_error": 2.220446049250313e-16,
+        "mean_abs_normalized_charge": 0.8605886493630803,
+        "mean_signed_normalized_charge": -0.8605886493630803,
+        "mean_force_leakage": 6.97501663522092e-32,
+        "max_force_leakage": 2.899608575329401e-31,
+        "mean_energy_density": 0.0001941422238549538,
+        "energy_density_span": 3.0631403213557797e-06
+      },
+      {
+        "row": 18,
+        "seed": 20278517,
+        "support": [
+          2,
+          3,
+          6
+        ],
+        "outside": [
+          9,
+          18
+        ],
+        "min_probability": 0.052385308261018816,
+        "max_sum_error": 2.220446049250313e-16,
+        "mean_abs_normalized_charge": 0.7417790265307569,
+        "mean_signed_normalized_charge": 0.7417790265307569,
+        "mean_force_leakage": 2.4614365472384394e-32,
+        "max_force_leakage": 7.751969138798183e-32,
+        "mean_energy_density": 0.00020165248292597062,
+        "energy_density_span": 5.072786731199374e-06
+      },
+      {
+        "row": 18,
+        "seed": 20278518,
+        "support": [
+          2,
+          3,
+          6
+        ],
+        "outside": [
+          9,
+          18
+        ],
+        "min_probability": 0.0524037749304117,
+        "max_sum_error": 2.220446049250313e-16,
+        "mean_abs_normalized_charge": 0.9719155292093582,
+        "mean_signed_normalized_charge": 0.9719155292093582,
+        "mean_force_leakage": 5.757894062398016e-32,
+        "max_force_leakage": 2.20402933801467e-31,
+        "mean_energy_density": 0.0002026495566167372,
+        "energy_density_span": 5.461814095802822e-06
+      },
+      {
+        "row": 18,
+        "seed": 20278519,
+        "support": [
+          2,
+          3,
+          6
+        ],
+        "outside": [
+          9,
+          18
+        ],
+        "min_probability": 0.050836791645163804,
+        "max_sum_error": 2.220446049250313e-16,
+        "mean_abs_normalized_charge": 0.44264503081040146,
+        "mean_signed_normalized_charge": -0.44264503081040146,
+        "mean_force_leakage": 7.631780766535875e-32,
+        "max_force_leakage": 2.293364000578773e-31,
+        "mean_energy_density": 0.0001962035058753425,
+        "energy_density_span": 3.3973630705775443e-06
+      },
+      {
+        "row": 18,
+        "seed": 20278520,
+        "support": [
+          2,
+          3,
+          6
+        ],
+        "outside": [
+          9,
+          18
+        ],
+        "min_probability": 0.05106491462715549,
+        "max_sum_error": 2.220446049250313e-16,
+        "mean_abs_normalized_charge": 0.322014004153944,
+        "mean_signed_normalized_charge": 0.322014004153944,
+        "mean_force_leakage": 4.00887103695884e-32,
+        "max_force_leakage": 1.55523492779644e-31,
+        "mean_energy_density": 0.00019977590483154648,
+        "energy_density_span": 4.499521938583864e-06
+      },
+      {
+        "row": 18,
+        "seed": 20278521,
+        "support": [
+          2,
+          3,
+          6
+        ],
+        "outside": [
+          9,
+          18
+        ],
+        "min_probability": 0.05203761157488521,
+        "max_sum_error": 2.220446049250313e-16,
+        "mean_abs_normalized_charge": 1.1974884139395232,
+        "mean_signed_normalized_charge": 1.1974884139395232,
+        "mean_force_leakage": 4.584490815070995e-32,
+        "max_force_leakage": 3.335102577313307e-31,
+        "mean_energy_density": 0.00020360740289232371,
+        "energy_density_span": 5.868931030067107e-06
+      },
+      {
+        "row": 18,
+        "seed": 20278522,
+        "support": [
+          2,
+          3,
+          6
+        ],
+        "outside": [
+          9,
+          18
+        ],
+        "min_probability": 0.050188475585824364,
+        "max_sum_error": 2.220446049250313e-16,
+        "mean_abs_normalized_charge": 0.2879751094646389,
+        "mean_signed_normalized_charge": -0.2879751094646389,
+        "mean_force_leakage": 6.205945810763889e-32,
+        "max_force_leakage": 2.197461512363312e-31,
+        "mean_energy_density": 0.00019693698233839288,
+        "energy_density_span": 3.7145072218942724e-06
+      },
+      {
+        "row": 18,
+        "seed": 20278523,
+        "support": [
+          2,
+          3,
+          6
+        ],
+        "outside": [
+          9,
+          18
+        ],
+        "min_probability": 0.049563894853972265,
+        "max_sum_error": 2.220446049250313e-16,
+        "mean_abs_normalized_charge": 0.7303984158113932,
+        "mean_signed_normalized_charge": -0.7303984158113932,
+        "mean_force_leakage": 4.547089537466476e-32,
+        "max_force_leakage": 2.321820043049762e-31,
+        "mean_energy_density": 0.00019478394046403946,
+        "energy_density_span": 3.2931793830927954e-06
+      },
+      {
+        "row": 18,
+        "seed": 20278524,
+        "support": [
+          2,
+          3,
+          6
+        ],
+        "outside": [
+          9,
+          18
+        ],
+        "min_probability": 0.04908882956671384,
+        "max_sum_error": 2.220446049250313e-16,
+        "mean_abs_normalized_charge": 1.1027061045281663,
+        "mean_signed_normalized_charge": -1.1027061045281663,
+        "mean_force_leakage": 6.059549144940685e-32,
+        "max_force_leakage": 2.0369389296571e-31,
+        "mean_energy_density": 0.0001929129298753491,
+        "energy_density_span": 2.985187094322781e-06
+      },
+      {
+        "row": 18,
+        "seed": 20278525,
+        "support": [
+          2,
+          3,
+          6
+        ],
+        "outside": [
+          9,
+          18
+        ],
+        "min_probability": 0.04932573445299713,
+        "max_sum_error": 2.220446049250313e-16,
+        "mean_abs_normalized_charge": 0.9277217963589203,
+        "mean_signed_normalized_charge": -0.9277217963589203,
+        "mean_force_leakage": 5.060333411243727e-32,
+        "max_force_leakage": 1.9957213428115003e-31,
+        "mean_energy_density": 0.00019379936728938888,
+        "energy_density_span": 3.121458503630597e-06
+      },
+      {
+        "row": 18,
+        "seed": 20278526,
+        "support": [
+          2,
+          3,
+          6
+        ],
+        "outside": [
+          9,
+          18
+        ],
+        "min_probability": 0.051588873312346295,
+        "max_sum_error": 2.220446049250313e-16,
+        "mean_abs_normalized_charge": 0.02295073150195178,
+        "mean_signed_normalized_charge": -0.02286733054498408,
+        "mean_force_leakage": 4.5113979680330666e-32,
+        "max_force_leakage": 2.0644932057431324e-31,
+        "mean_energy_density": 0.00019820323165332547,
+        "energy_density_span": 3.84228433328418e-06
+      },
+      {
+        "row": 18,
+        "seed": 20278527,
+        "support": [
+          2,
+          3,
+          6
+        ],
+        "outside": [
+          9,
+          18
+        ],
+        "min_probability": 0.051699993000579515,
+        "max_sum_error": 2.220446049250313e-16,
+        "mean_abs_normalized_charge": 0.40769235508167956,
+        "mean_signed_normalized_charge": 0.40769235508167956,
+        "mean_force_leakage": 4.88854122901009e-32,
+        "max_force_leakage": 1.8299494489590244e-31,
+        "mean_energy_density": 0.00020017501409940112,
+        "energy_density_span": 4.4867178321921495e-06
+      },
+      {
+        "row": 18,
+        "seed": 20278528,
+        "support": [
+          2,
+          3,
+          6
+        ],
+        "outside": [
+          9,
+          18
+        ],
+        "min_probability": 0.050558372184634166,
+        "max_sum_error": 2.220446049250313e-16,
+        "mean_abs_normalized_charge": 0.5747200739339686,
+        "mean_signed_normalized_charge": -0.5747200739339686,
+        "mean_force_leakage": 4.6249837849891493e-32,
+        "max_force_leakage": 1.7282493384826824e-31,
+        "mean_energy_density": 0.00019556057588482396,
+        "energy_density_span": 3.267154674753929e-06
+      },
+      {
+        "row": 18,
+        "seed": 20278529,
+        "support": [
+          2,
+          3,
+          6
+        ],
+        "outside": [
+          9,
+          18
+        ],
+        "min_probability": 0.05058026342696396,
+        "max_sum_error": 2.220446049250313e-16,
+        "mean_abs_normalized_charge": 0.3223167406698581,
+        "mean_signed_normalized_charge": -0.3223167406698581,
+        "mean_force_leakage": 5.074755869024514e-32,
+        "max_force_leakage": 2.140972658715746e-31,
+        "mean_energy_density": 0.00019678283649111696,
+        "energy_density_span": 3.5287985372064762e-06
+      },
+      {
+        "row": 18,
+        "seed": 20278530,
+        "support": [
+          2,
+          3,
+          6
+        ],
+        "outside": [
+          9,
+          18
+        ],
+        "min_probability": 0.052223104930508295,
+        "max_sum_error": 2.220446049250313e-16,
+        "mean_abs_normalized_charge": 0.6364817317537109,
+        "mean_signed_normalized_charge": 0.6364817317537109,
+        "mean_force_leakage": 4.9210693613149817e-32,
+        "max_force_leakage": 2.2288105341084323e-31,
+        "mean_energy_density": 0.0002011939129598618,
+        "energy_density_span": 4.856905812462739e-06
+      },
+      {
+        "row": 18,
+        "seed": 20278531,
+        "support": [
+          2,
+          3,
+          6
+        ],
+        "outside": [
+          9,
+          18
+        ],
+        "min_probability": 0.05064404147539825,
+        "max_sum_error": 2.220446049250313e-16,
+        "mean_abs_normalized_charge": 0.05597975716569901,
+        "mean_signed_normalized_charge": 0.05597975716569901,
+        "mean_force_leakage": 4.411532845241894e-32,
+        "max_force_leakage": 1.4067341610417121e-31,
+        "mean_energy_density": 0.00019854912710238744,
+        "energy_density_span": 4.2189813297836614e-06
+      },
+      {
+        "row": 18,
+        "seed": 20278532,
+        "support": [
+          2,
+          3,
+          6
+        ],
+        "outside": [
+          9,
+          18
+        ],
+        "min_probability": 0.04972685428915589,
+        "max_sum_error": 2.220446049250313e-16,
+        "mean_abs_normalized_charge": 0.6058561689171852,
+        "mean_signed_normalized_charge": -0.6058561689171852,
+        "mean_force_leakage": 7.23976433881873e-32,
+        "max_force_leakage": 4.4862774137642155e-31,
+        "mean_energy_density": 0.00019539743796328742,
+        "energy_density_span": 3.40907644736624e-06
+      },
+      {
+        "row": 18,
+        "seed": 20278533,
+        "support": [
+          2,
+          3,
+          6
+        ],
+        "outside": [
+          9,
+          18
+        ],
+        "min_probability": 0.05026789741859921,
+        "max_sum_error": 2.220446049250313e-16,
+        "mean_abs_normalized_charge": 0.34100607554728585,
+        "mean_signed_normalized_charge": -0.34100607554728585,
+        "mean_force_leakage": 6.004542520166683e-32,
+        "max_force_leakage": 2.179731272175796e-31,
+        "mean_energy_density": 0.00019668551511998835,
+        "energy_density_span": 3.622024187278862e-06
+      },
+      {
+        "row": 18,
+        "seed": 20278534,
+        "support": [
+          2,
+          3,
+          6
+        ],
+        "outside": [
+          9,
+          18
+        ],
+        "min_probability": 0.051635609356943855,
+        "max_sum_error": 2.220446049250313e-16,
+        "mean_abs_normalized_charge": 0.23212575547838363,
+        "mean_signed_normalized_charge": 0.23212575547838363,
+        "mean_force_leakage": 3.7686232463392075e-32,
+        "max_force_leakage": 1.262759168086652e-31,
+        "mean_energy_density": 0.0001993793076411104,
+        "energy_density_span": 4.219413144359484e-06
+      },
+      {
+        "row": 18,
+        "seed": 20278535,
+        "support": [
+          2,
+          3,
+          6
+        ],
+        "outside": [
+          9,
+          18
+        ],
+        "min_probability": 0.05076935475682635,
+        "max_sum_error": 2.220446049250313e-16,
+        "mean_abs_normalized_charge": 0.024426437281804058,
+        "mean_signed_normalized_charge": -0.02208972186631943,
+        "mean_force_leakage": 7.215183203074757e-32,
+        "max_force_leakage": 2.4634280466179845e-31,
+        "mean_energy_density": 0.0001981970462337194,
+        "energy_density_span": 3.972609909645258e-06
+      },
+      {
+        "row": 18,
+        "seed": 20278536,
+        "support": [
+          2,
+          3,
+          6
+        ],
+        "outside": [
+          9,
+          18
+        ],
+        "min_probability": 0.0502146832986213,
+        "max_sum_error": 2.220446049250313e-16,
+        "mean_abs_normalized_charge": 0.3186388719499411,
+        "mean_signed_normalized_charge": -0.3186388719499411,
+        "mean_force_leakage": 6.244756658450873e-32,
+        "max_force_leakage": 1.7484009553871127e-31,
+        "mean_energy_density": 0.00019679083718274917,
+        "energy_density_span": 3.6740656178146274e-06
+      },
+      {
+        "row": 18,
+        "seed": 20278537,
+        "support": [
+          2,
+          3,
+          6
+        ],
+        "outside": [
+          9,
+          18
+        ],
+        "min_probability": 0.049920379536544005,
+        "max_sum_error": 2.220446049250313e-16,
+        "mean_abs_normalized_charge": 0.5414865023167326,
+        "mean_signed_normalized_charge": -0.5414865023167326,
+        "mean_force_leakage": 4.6899636436210715e-32,
+        "max_force_leakage": 1.628066303108754e-31,
+        "mean_energy_density": 0.0001957141506366123,
+        "energy_density_span": 3.439710665568567e-06
+      },
+      {
+        "row": 18,
+        "seed": 20278538,
+        "support": [
+          2,
+          3,
+          6
+        ],
+        "outside": [
+          9,
+          18
+        ],
+        "min_probability": 0.05066780124087428,
+        "max_sum_error": 2.220446049250313e-16,
+        "mean_abs_normalized_charge": 0.27653183171096,
+        "mean_signed_normalized_charge": 0.27653183171096,
+        "mean_force_leakage": 5.957247103966944e-32,
+        "max_force_leakage": 1.918425843550845e-31,
+        "mean_energy_density": 0.0001995578877041524,
+        "energy_density_span": 4.570422824557314e-06
+      },
+      {
+        "row": 18,
+        "seed": 20278539,
+        "support": [
+          2,
+          3,
+          6
+        ],
+        "outside": [
+          9,
+          18
+        ],
+        "min_probability": 0.05082724543326215,
+        "max_sum_error": 2.220446049250313e-16,
+        "mean_abs_normalized_charge": 0.033964612218732655,
+        "mean_signed_normalized_charge": -0.033939604533388325,
+        "mean_force_leakage": 4.9295958198453006e-32,
+        "max_force_leakage": 1.8789898919796386e-31,
+        "mean_energy_density": 0.00019814134944745357,
+        "energy_density_span": 3.962065640099869e-06
+      },
+      {
+        "row": 18,
+        "seed": 20278540,
+        "support": [
+          2,
+          3,
+          6
+        ],
+        "outside": [
+          9,
+          18
+        ],
+        "min_probability": 0.05211681514220952,
+        "max_sum_error": 2.220446049250313e-16,
+        "mean_abs_normalized_charge": 0.45360728998218597,
+        "mean_signed_normalized_charge": 0.45360728998218597,
+        "mean_force_leakage": 4.483738624977138e-32,
+        "max_force_leakage": 1.56756074939311e-31,
+        "mean_energy_density": 0.00020037847148711375,
+        "energy_density_span": 4.5888189059913075e-06
+      },
+      {
+        "row": 18,
+        "seed": 20278541,
+        "support": [
+          2,
+          3,
+          6
+        ],
+        "outside": [
+          9,
+          18
+        ],
+        "min_probability": 0.05099998628516245,
+        "max_sum_error": 2.220446049250313e-16,
+        "mean_abs_normalized_charge": 0.3511038644271018,
+        "mean_signed_normalized_charge": 0.3511038644271018,
+        "mean_force_leakage": 5.707032506646296e-32,
+        "max_force_leakage": 1.947590983790902e-31,
+        "mean_energy_density": 0.0001999004406188896,
+        "energy_density_span": 4.6257443443899074e-06
+      },
+      {
+        "row": 18,
+        "seed": 20278542,
+        "support": [
+          2,
+          3,
+          6
+        ],
+        "outside": [
+          9,
+          18
+        ],
+        "min_probability": 0.051511216344926815,
+        "max_sum_error": 2.220446049250313e-16,
+        "mean_abs_normalized_charge": 0.46200860432583407,
+        "mean_signed_normalized_charge": 0.46200860432583407,
+        "mean_force_leakage": 2.5624809399716905e-32,
+        "max_force_leakage": 1.1530684836554164e-31,
+        "mean_energy_density": 0.0002004104880797692,
+        "energy_density_span": 4.66561390711912e-06
+      },
+      {
+        "row": 18,
+        "seed": 20278543,
+        "support": [
+          2,
+          3,
+          6
+        ],
+        "outside": [
+          9,
+          18
+        ],
+        "min_probability": 0.04913870598069547,
+        "max_sum_error": 2.220446049250313e-16,
+        "mean_abs_normalized_charge": 1.1134994005048235,
+        "mean_signed_normalized_charge": -1.1134994005048235,
+        "mean_force_leakage": 2.799315971312207e-32,
+        "max_force_leakage": 1.4296092421904288e-31,
+        "mean_energy_density": 0.0001928603758287422,
+        "energy_density_span": 2.9213666265006646e-06
+      },
+      {
+        "row": 18,
+        "seed": 20278544,
+        "support": [
+          2,
+          3,
+          6
+        ],
+        "outside": [
+          9,
+          18
+        ],
+        "min_probability": 0.05115338838152065,
+        "max_sum_error": 2.220446049250313e-16,
+        "mean_abs_normalized_charge": 0.07150865577320684,
+        "mean_signed_normalized_charge": 0.07150865577320684,
+        "mean_force_leakage": 7.203415402733068e-32,
+        "max_force_leakage": 2.288773915876641e-31,
+        "mean_energy_density": 0.0001986344400983785,
+        "energy_density_span": 4.068727145105795e-06
+      },
+      {
+        "row": 18,
+        "seed": 20278545,
+        "support": [
+          2,
+          3,
+          6
+        ],
+        "outside": [
+          9,
+          18
+        ],
+        "min_probability": 0.05060219239352757,
+        "max_sum_error": 2.220446049250313e-16,
+        "mean_abs_normalized_charge": 0.28283595103306425,
+        "mean_signed_normalized_charge": -0.28283595103306425,
+        "mean_force_leakage": 5.937938606466863e-32,
+        "max_force_leakage": 2.8330920815823217e-31,
+        "mean_energy_density": 0.00019697003703489385,
+        "energy_density_span": 3.5974881720450373e-06
+      },
+      {
+        "row": 18,
+        "seed": 20278546,
+        "support": [
+          2,
+          3,
+          6
+        ],
+        "outside": [
+          9,
+          18
+        ],
+        "min_probability": 0.052425283368655665,
+        "max_sum_error": 2.220446049250313e-16,
+        "mean_abs_normalized_charge": 0.5479013108735423,
+        "mean_signed_normalized_charge": 0.5479013108735423,
+        "mean_force_leakage": 6.567827035266467e-32,
+        "max_force_leakage": 2.3592829749434946e-31,
+        "mean_energy_density": 0.0002008091397983445,
+        "energy_density_span": 4.630167839100082e-06
+      },
+      {
+        "row": 18,
+        "seed": 20278547,
+        "support": [
+          2,
+          3,
+          6
+        ],
+        "outside": [
+          9,
+          18
+        ],
+        "min_probability": 0.05203455990140663,
+        "max_sum_error": 2.220446049250313e-16,
+        "mean_abs_normalized_charge": 0.4193111787946701,
+        "mean_signed_normalized_charge": 0.4193111787946701,
+        "mean_force_leakage": 4.981224925600731e-32,
+        "max_force_leakage": 2.6107191973410817e-31,
+        "mean_energy_density": 0.00020022571162574523,
+        "energy_density_span": 4.522163202547961e-06
+      },
+      {
+        "row": 18,
+        "seed": 20278548,
+        "support": [
+          2,
+          3,
+          6
+        ],
+        "outside": [
+          9,
+          18
+        ],
+        "min_probability": 0.04863319948957411,
+        "max_sum_error": 2.220446049250313e-16,
+        "mean_abs_normalized_charge": 1.5282237384045696,
+        "mean_signed_normalized_charge": -1.5282237384045696,
+        "mean_force_leakage": 4.856868298525792e-32,
+        "max_force_leakage": 2.5727485583579154e-31,
+        "mean_energy_density": 0.00019070803970829366,
+        "energy_density_span": 2.6143103120995965e-06
+      },
+      {
+        "row": 18,
+        "seed": 20278549,
+        "support": [
+          2,
+          3,
+          6
+        ],
+        "outside": [
+          9,
+          18
+        ],
+        "min_probability": 0.04838503689282494,
+        "max_sum_error": 2.220446049250313e-16,
+        "mean_abs_normalized_charge": 1.7786380283670877,
+        "mean_signed_normalized_charge": -1.7786380283670877,
+        "mean_force_leakage": 5.567176983096921e-32,
+        "max_force_leakage": 2.341039732510446e-31,
+        "mean_energy_density": 0.0001893744224652537,
+        "energy_density_span": 2.4159909951281043e-06
+      },
+      {
+        "row": 18,
+        "seed": 20278550,
+        "support": [
+          2,
+          3,
+          6
+        ],
+        "outside": [
+          9,
+          18
+        ],
+        "min_probability": 0.05168499407942309,
+        "max_sum_error": 2.220446049250313e-16,
+        "mean_abs_normalized_charge": 0.3367795198132967,
+        "mean_signed_normalized_charge": 0.3367795198132967,
+        "mean_force_leakage": 7.394323691284109e-32,
+        "max_force_leakage": 2.288088042234346e-31,
+        "mean_energy_density": 0.00019984665587210098,
+        "energy_density_span": 4.475480455098653e-06
+      },
+      {
+        "row": 18,
+        "seed": 20278551,
+        "support": [
+          2,
+          3,
+          6
+        ],
+        "outside": [
+          9,
+          18
+        ],
+        "min_probability": 0.05223875532614348,
+        "max_sum_error": 2.220446049250313e-16,
+        "mean_abs_normalized_charge": 0.5466061139398593,
+        "mean_signed_normalized_charge": 0.5466061139398593,
+        "mean_force_leakage": 5.724083947513781e-32,
+        "max_force_leakage": 2.078203386843382e-31,
+        "mean_energy_density": 0.00020080267699292603,
+        "energy_density_span": 4.635853190112051e-06
+      },
+      {
+        "row": 18,
+        "seed": 20278552,
+        "support": [
+          2,
+          3,
+          6
+        ],
+        "outside": [
+          9,
+          18
+        ],
+        "min_probability": 0.05083920491931986,
+        "max_sum_error": 2.220446049250313e-16,
+        "mean_abs_normalized_charge": 0.047854773828973636,
+        "mean_signed_normalized_charge": -0.047854773828973636,
+        "mean_force_leakage": 4.523457460624566e-32,
+        "max_force_leakage": 1.946606636639976e-31,
+        "mean_energy_density": 0.00019807506617192913,
+        "energy_density_span": 3.960454265311412e-06
+      },
+      {
+        "row": 18,
+        "seed": 20278553,
+        "support": [
+          2,
+          3,
+          6
+        ],
+        "outside": [
+          9,
+          18
+        ],
+        "min_probability": 0.05115704959612758,
+        "max_sum_error": 2.220446049250313e-16,
+        "mean_abs_normalized_charge": 0.19050321552902813,
+        "mean_signed_normalized_charge": -0.19050321552902813,
+        "mean_force_leakage": 4.843034171064164e-32,
+        "max_force_leakage": 1.7859383460865205e-31,
+        "mean_energy_density": 0.00019741141643907768,
+        "energy_density_span": 3.6748240351235897e-06
+      },
+      {
+        "row": 18,
+        "seed": 20278554,
+        "support": [
+          2,
+          3,
+          6
+        ],
+        "outside": [
+          9,
+          18
+        ],
+        "min_probability": 0.04905002982719579,
+        "max_sum_error": 2.220446049250313e-16,
+        "mean_abs_normalized_charge": 1.2298759380298636,
+        "mean_signed_normalized_charge": -1.2298759380298636,
+        "mean_force_leakage": 4.876834361500647e-32,
+        "max_force_leakage": 1.7669038062246024e-31,
+        "mean_energy_density": 0.00019226551797018964,
+        "energy_density_span": 2.7843031251569255e-06
+      },
+      {
+        "row": 18,
+        "seed": 20278555,
+        "support": [
+          2,
+          3,
+          6
+        ],
+        "outside": [
+          9,
+          18
+        ],
+        "min_probability": 0.05139116390608798,
+        "max_sum_error": 2.220446049250313e-16,
+        "mean_abs_normalized_charge": 0.490432588407572,
+        "mean_signed_normalized_charge": 0.490432588407572,
+        "mean_force_leakage": 5.715690750196283e-32,
+        "max_force_leakage": 2.9704082276080467e-31,
+        "mean_energy_density": 0.0002005345768706091,
+        "energy_density_span": 4.743979558390461e-06
+      },
+      {
+        "row": 18,
+        "seed": 20278556,
+        "support": [
+          2,
+          3,
+          6
+        ],
+        "outside": [
+          9,
+          18
+        ],
+        "min_probability": 0.051823977988569254,
+        "max_sum_error": 2.220446049250313e-16,
+        "mean_abs_normalized_charge": 0.5656223013220759,
+        "mean_signed_normalized_charge": 0.5656223013220759,
+        "mean_force_leakage": 5.916610066674946e-32,
+        "max_force_leakage": 2.491522919404904e-31,
+        "mean_energy_density": 0.00020086832830890896,
+        "energy_density_span": 4.8732260188697634e-06
+      },
+      {
+        "row": 18,
+        "seed": 20278557,
+        "support": [
+          2,
+          3,
+          6
+        ],
+        "outside": [
+          9,
+          18
+        ],
+        "min_probability": 0.0505453794258921,
+        "max_sum_error": 2.220446049250313e-16,
+        "mean_abs_normalized_charge": 0.4016641416454733,
+        "mean_signed_normalized_charge": -0.4016641416454733,
+        "mean_force_leakage": 5.371680048888355e-32,
+        "max_force_leakage": 1.8752381889710304e-31,
+        "mean_energy_density": 0.0001964006473679415,
+        "energy_density_span": 3.4532089969809584e-06
+      },
+      {
+        "row": 18,
+        "seed": 20278558,
+        "support": [
+          2,
+          3,
+          6
+        ],
+        "outside": [
+          9,
+          18
+        ],
+        "min_probability": 0.0514704200626093,
+        "max_sum_error": 2.220446049250313e-16,
+        "mean_abs_normalized_charge": 0.6059108207558915,
+        "mean_signed_normalized_charge": 0.6059108207558915,
+        "mean_force_leakage": 3.68373774094024e-32,
+        "max_force_leakage": 1.6256912354369076e-31,
+        "mean_energy_density": 0.00020104965511566134,
+        "energy_density_span": 4.907171703090587e-06
+      },
+      {
+        "row": 18,
+        "seed": 20278559,
+        "support": [
+          2,
+          3,
+          6
+        ],
+        "outside": [
+          9,
+          18
+        ],
+        "min_probability": 0.05037915726774648,
+        "max_sum_error": 2.220446049250313e-16,
+        "mean_abs_normalized_charge": 0.3272155781213968,
+        "mean_signed_normalized_charge": -0.3272155781213968,
+        "mean_force_leakage": 5.620092347604308e-32,
+        "max_force_leakage": 3.128107474013347e-31,
+        "mean_energy_density": 0.00019675493042996416,
+        "energy_density_span": 3.588513501832127e-06
+      },
+      {
+        "row": 18,
+        "seed": 20278560,
+        "support": [
+          2,
+          3,
+          6
+        ],
+        "outside": [
+          9,
+          18
+        ],
+        "min_probability": 0.04968328916792979,
+        "max_sum_error": 2.220446049250313e-16,
+        "mean_abs_normalized_charge": 0.7209805537310431,
+        "mean_signed_normalized_charge": -0.7209805537310431,
+        "mean_force_leakage": 2.4832924017941386e-32,
+        "max_force_leakage": 1.153747524025483e-31,
+        "mean_energy_density": 0.00019483283989886683,
+        "energy_density_span": 3.262928221849234e-06
+      },
+      {
+        "row": 18,
+        "seed": 20278561,
+        "support": [
+          2,
+          3,
+          6
+        ],
+        "outside": [
+          9,
+          18
+        ],
+        "min_probability": 0.05234942123340101,
+        "max_sum_error": 2.220446049250313e-16,
+        "mean_abs_normalized_charge": 0.6850685302765384,
+        "mean_signed_normalized_charge": 0.6850685302765384,
+        "mean_force_leakage": 6.624884181840783e-32,
+        "max_force_leakage": 2.5450057804989736e-31,
+        "mean_energy_density": 0.00020141041093584773,
+        "energy_density_span": 4.909831911524575e-06
+      },
+      {
+        "row": 18,
+        "seed": 20278562,
+        "support": [
+          2,
+          3,
+          6
+        ],
+        "outside": [
+          9,
+          18
+        ],
+        "min_probability": 0.048763571096064974,
+        "max_sum_error": 2.220446049250313e-16,
+        "mean_abs_normalized_charge": 1.4466878170979363,
+        "mean_signed_normalized_charge": -1.4466878170979363,
+        "mean_force_leakage": 5.313966966910191e-32,
+        "max_force_leakage": 3.0164879707722886e-31,
+        "mean_energy_density": 0.0001911379675581758,
+        "energy_density_span": 2.639353835850051e-06
+      },
+      {
+        "row": 18,
+        "seed": 20278563,
+        "support": [
+          2,
+          3,
+          6
+        ],
+        "outside": [
+          9,
+          18
+        ],
+        "min_probability": 0.05202159174423649,
+        "max_sum_error": 2.220446049250313e-16,
+        "mean_abs_normalized_charge": 0.44494335075426494,
+        "mean_signed_normalized_charge": 0.44494335075426494,
+        "mean_force_leakage": 4.130699979981202e-32,
+        "max_force_leakage": 1.371611022764367e-31,
+        "mean_energy_density": 0.00020034043929101946,
+        "energy_density_span": 4.566272318857714e-06
+      },
+      {
+        "row": 18,
+        "seed": 20278564,
+        "support": [
+          2,
+          3,
+          6
+        ],
+        "outside": [
+          9,
+          18
+        ],
+        "min_probability": 0.04986383890020282,
+        "max_sum_error": 2.220446049250313e-16,
+        "mean_abs_normalized_charge": 0.7683890776481852,
+        "mean_signed_normalized_charge": -0.7683890776481852,
+        "mean_force_leakage": 5.186906451410246e-32,
+        "max_force_leakage": 1.981420296760856e-31,
+        "mean_energy_density": 0.00019460370368066783,
+        "energy_density_span": 3.1156032300044e-06
+      }
+    ]
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "model": "EleutherAI/pythia-410m",
+  "metric": "compositional-centroid slope vs k (1.0=tracks k)",
+  "trained_L0_embed": {
+    "centroids": {
+      "k=2": 1.406,
+      "k=3": 2.267,
+      "k=4": 2.206
+    },
+    "slope_vs_k": 0.4
+  },
+  "trained_L4_early": {
+    "centroids": {
+      "k=2": 2.023,
+      "k=3": 2.184,
+      "k=4": 2.276
+    },
+    "slope_vs_k": 0.127
+  },
+  "trained_L12_mid": {
+    "centroids": {
+      "k=2": 1.473,
+      "k=3": 2.177,
+      "k=4": 2.347
+    },
+    "slope_vs_k": 0.437
+  },
+  "trained_L22_late": {
+    "centroids": {
+      "k=2": 1.444,
+      "k=3": 2.031,
+      "k=4": 2.671
+    },
+    "slope_vs_k": 0.614
+  },
+  "untrained_L12_mid": {
+    "centroids": {
+      "k=2": 1.402,
+      "k=3": 2.035,
+      "k=4": 2.413
+    },
+    "slope_vs_k": 0.506
+  },
+  "interpretation": "depth: slope embed=0.4 vs mid=0.437 (not sharper shallow); untrained mid slope=0.506 vs trained mid=0.437 (~same -> architectural mixing, not learned)"
+}

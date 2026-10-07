@@ -1,0 +1,162 @@
+{
+  "claim_tested": "conservative Hamiltonian Schur completion for Green-kernel localization",
+  "parameters": {
+    "row": 210,
+    "dimension": 3,
+    "xi_mode": "largest_primes",
+    "quotient_basis": "residue",
+    "target_h_scale": 9.0,
+    "target_mesh_denominator": "distinct",
+    "max_target_pairs": 2000000,
+    "target_weight": 1.0,
+    "alpha_safety": 1.25,
+    "complete_alpha": null,
+    "factor_tolerance": 1e-10,
+    "r_min_quantile": 0.1,
+    "r_max_quantile": 0.8,
+    "report": "empirical\\reports\\hamiltonian_schur_audit_z210_hscale9.md",
+    "json": "empirical\\reports\\hamiltonian_schur_audit_z210_hscale9.json"
+  },
+  "row": 210,
+  "primes": [
+    2,
+    3,
+    5,
+    7
+  ],
+  "state_count": 210,
+  "hidden_coordinate_dim": 209,
+  "phase_space_dim": 838,
+  "xi_labels": [
+    "p7:res",
+    "p5:res",
+    "p3:res"
+  ],
+  "target_radius": 1.9077116993069876,
+  "target_pair_count": 7177,
+  "target_components": 1,
+  "complete_alpha": 163.19388884422614,
+  "moments": {
+    "K_PP_complete": {
+      "eigenvalues": [
+        326.3877776884139,
+        326.38777768842226,
+        326.38777768847217
+      ],
+      "anisotropy": 8.925656583247615e-14,
+      "trace": 979.1633330653085,
+      "fourth_moment": 8469.762831015836,
+      "normalized_fourth_moment": 0.008834072629049313,
+      "unit_symbol_fourth_ratio": 2.8833333333336455
+    },
+    "K_target": {
+      "eigenvalues": [
+        40.36190476190852,
+        43.5809523809563,
+        47.88571428571413
+      ],
+      "anisotropy": 0.08525793222529213,
+      "trace": 131.82857142857893,
+      "fourth_moment": 309.7190476190442,
+      "normalized_fourth_moment": 0.017821687473344724,
+      "unit_symbol_fourth_ratio": 0.7831358666858785
+    },
+    "K_eff": {
+      "eigenvalues": [
+        40.36190476190767,
+        43.580952380955445,
+        47.88571428571355
+      ],
+      "anisotropy": 0.08525793222529657,
+      "trace": 131.82857142857665,
+      "fourth_moment": 309.7190476190767,
+      "normalized_fourth_moment": 0.01782168747334721,
+      "unit_symbol_fourth_ratio": 0.7831358666859742
+    }
+  },
+  "kernels": {
+    "K_PP_complete": {
+      "name": "K_PP_complete",
+      "inverse_r_fit": {
+        "used_points": 156,
+        "r_min": 1.224744871391589,
+        "r_max": 2.0615528128088303,
+        "r2": -0.03607169529499621,
+        "slope": -1.580911186896695e-20,
+        "intercept": -2.917943064920864e-05,
+        "value_min": -2.917943064920882e-05,
+        "value_max": -2.9179430649208554e-05
+      },
+      "shell_anisotropy": {
+        "mean_shell_cv": 1.3427280219121669e-15,
+        "max_shell_cv": 1.834541413622731e-15
+      },
+      "green_source": 0.006098501005684604,
+      "green_min": -2.917943064920882e-05,
+      "green_max": 0.006098501005684604,
+      "real_range": 0.006127680436333813
+    },
+    "K_target": {
+      "name": "K_target",
+      "inverse_r_fit": {
+        "used_points": 156,
+        "r_min": 1.224744871391589,
+        "r_max": 2.0615528128088303,
+        "r2": 0.4808816507155196,
+        "slope": 0.00045347761739264014,
+        "intercept": -0.00029820893875622326,
+        "value_min": -0.0001412285424650455,
+        "value_max": 3.0245176452592246e-05
+      },
+      "shell_anisotropy": {
+        "mean_shell_cv": 0.04278511242102911,
+        "max_shell_cv": 0.262254940663491
+      },
+      "green_source": 0.007735329725628225,
+      "green_min": -0.00016264075115264082,
+      "green_max": 0.007735329725628225,
+      "real_range": 0.007897970476780865
+    },
+    "K_eff_schur": {
+      "name": "K_eff_schur",
+      "inverse_r_fit": {
+        "used_points": 156,
+        "r_min": 1.224744871391589,
+        "r_max": 2.0615528128088303,
+        "r2": 0.48088165071552,
+        "slope": 0.00045347761739264063,
+        "intercept": -0.00029820893875622353,
+        "value_min": -0.00014122854246504863,
+        "value_max": 3.024517645259219e-05
+      },
+      "shell_anisotropy": {
+        "mean_shell_cv": 0.04278511242105196,
+        "max_shell_cv": 0.26225494066349153
+      },
+      "green_source": 0.007735329725628227,
+      "green_min": -0.00016264075115264397,
+      "green_max": 0.007735329725628227,
+      "real_range": 0.00789797047678087
+    }
+  },
+  "schur_consistency": {
+    "max_abs_K_eff_minus_target": 1.9895196601282805e-13,
+    "relative_K_eff_minus_target": 2.644611777216956e-15,
+    "difference_min_eig": -5.684341886080802e-14,
+    "difference_max_eig": 143.69366825639267,
+    "K_full_min_eig": -2.4836000714713116e-13,
+    "K_full_second_min_eig": 0.11884940362837032,
+    "K_eff_min_eig": 1.9984014443252818e-15,
+    "K_eff_second_min_eig": 19.500220587833297
+  },
+  "hamiltonian_checks": {
+    "max_abs_J_plus_JT": 0.0,
+    "max_abs_H_minus_HT": 0.0,
+    "max_abs_LTH_plus_HL": 0.0,
+    "max_real_eig_L": 2.6756374893466134e-14
+  },
+  "interpretation": {
+    "status": "CONSERVATIVE_EXISTENCE_COMPLETION",
+    "caveat": "K_PQ is chosen by spectral factorization of K_PP-K_target; this proves finite Hamiltonian Schur realizability, not CRT/Bures canonicity."
+  }
+}

@@ -1,0 +1,37 @@
+[
+  {
+    "file": "C:\\Users\\leomu\\OneDrive\\Pictures\\133925289798805247.jpg",
+    "original_width": 3840,
+    "original_height": 2160,
+    "width": 256,
+    "height": 256,
+    "raw_rgb_bytes": 196608,
+    "source_jpeg_bytes": 2139258,
+    "png_bytes": 79802,
+    "png_encode_s": 0.07505230000242591,
+    "png_decode_s": 0.001556300005177036,
+    "gzip_rgb_bytes": 89409,
+    "gzip_rgb_encode_s": 0.011111600004369393,
+    "gzip_rgb_decode_s": 0.0008534999942639843,
+    "hcs2d_bytes": 196622,
+    "hcs2d_encode_s": 85.45761379998294,
+    "hcs2d_decode_s": 0.00011140000424347818,
+    "hcs2d_raw_blocks": 3072,
+    "hcs2d_song_blocks": 0,
+    "hcs_rgb": {
+      "bytes": 196635,
+      "encode_s": 0.6043042999808677,
+      "decode_s": 8.680002065375447e-05
+    },
+    "hcs_planar": {
+      "bytes": 196635,
+      "encode_s": 2.368532699998468,
+      "decode_s": 0.029105699999490753
+    },
+    "hcs_left_residual": {
+      "bytes": 196635,
+      "encode_s": 3.490144600014901,
+      "decode_s": 0.038511849983478896
+    }
+  }
+]

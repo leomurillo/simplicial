@@ -1,0 +1,189 @@
+[
+  {
+    "file": "C:\\Users\\leomu\\Downloads\\que-ver-en-costa-rica-correos-portada.jpg",
+    "width": 64,
+    "height": 64,
+    "raw_rgb_bytes": 12288,
+    "webp_lossless_bytes": 6032,
+    "transform": "r-gr-bg",
+    "scheme": "ch-ctx-energy-unitary-split-blend71-apex128",
+    "rows": [
+      {
+        "model": "baseline",
+        "mix": "0/1",
+        "bytes": 5897,
+        "delta_vs_webp": -135,
+        "roundtrip_ok": true,
+        "encode_s": 0.26254309999058023,
+        "decode_s": 0.5204035000060685,
+        "encode_stats": {
+          "codec": "SM30",
+          "model": "baseline",
+          "transform": "r-gr-bg",
+          "scheme": "ch-ctx-energy-unitary-split-blend71-apex128",
+          "mix": "0/1",
+          "bytes": 5897,
+          "header_metadata_bytes": 37,
+          "entropy_bytes": 5860,
+          "predictor_metadata_bytes": 8,
+          "energy_metadata_bytes": 5,
+          "unitary_metadata_bytes": 3,
+          "max_symbol": 241,
+          "moment_class_counts": {
+            "0": 15,
+            "1": 4209,
+            "2": 8064
+          },
+          "predictors": {
+            "pred-4": 10,
+            "pred-6": 2
+          },
+          "residual_s": 2.00001522898674e-07,
+          "entropy_encode_s": 0.26241189998108894,
+          "shared_residual_build_s": 0.31474290002370253
+        },
+        "decode_stats": {
+          "codec": "SM30",
+          "model": "baseline",
+          "transform": "r-gr-bg",
+          "scheme": "ch-ctx-energy-unitary-split-blend71-apex128",
+          "metadata_bytes": 37,
+          "entropy_bytes": 5860,
+          "max_symbol": 241
+        }
+      },
+      {
+        "model": "hard-moment-context",
+        "mix": "0/1",
+        "bytes": 5927,
+        "delta_vs_webp": -105,
+        "roundtrip_ok": true,
+        "encode_s": 0.2238136000232771,
+        "decode_s": 0.5102360000018962,
+        "encode_stats": {
+          "codec": "SM30",
+          "model": "hard-moment-context",
+          "transform": "r-gr-bg",
+          "scheme": "ch-ctx-energy-unitary-split-blend71-apex128",
+          "mix": "0/1",
+          "bytes": 5927,
+          "header_metadata_bytes": 37,
+          "entropy_bytes": 5890,
+          "predictor_metadata_bytes": 8,
+          "energy_metadata_bytes": 5,
+          "unitary_metadata_bytes": 3,
+          "max_symbol": 241,
+          "moment_class_counts": {
+            "0": 15,
+            "1": 4209,
+            "2": 8064
+          },
+          "predictors": {
+            "pred-4": 10,
+            "pred-6": 2
+          },
+          "residual_s": 1.00000761449337e-07,
+          "entropy_encode_s": 0.22367750003468245,
+          "shared_residual_build_s": 0.31474290002370253
+        },
+        "decode_stats": {
+          "codec": "SM30",
+          "model": "hard-moment-context",
+          "transform": "r-gr-bg",
+          "scheme": "ch-ctx-energy-unitary-split-blend71-apex128",
+          "metadata_bytes": 37,
+          "entropy_bytes": 5890,
+          "max_symbol": 241
+        }
+      },
+      {
+        "model": "soft-moment-prior",
+        "mix": "1/2",
+        "bytes": 5933,
+        "delta_vs_webp": -99,
+        "roundtrip_ok": true,
+        "encode_s": 0.20129420002922416,
+        "decode_s": 1.2427212999900803,
+        "encode_stats": {
+          "codec": "SM30",
+          "model": "soft-moment-prior",
+          "transform": "r-gr-bg",
+          "scheme": "ch-ctx-energy-unitary-split-blend71-apex128",
+          "mix": "1/2",
+          "bytes": 5933,
+          "header_metadata_bytes": 37,
+          "entropy_bytes": 5896,
+          "predictor_metadata_bytes": 8,
+          "energy_metadata_bytes": 5,
+          "unitary_metadata_bytes": 3,
+          "max_symbol": 241,
+          "moment_class_counts": {
+            "0": 15,
+            "1": 4209,
+            "2": 8064
+          },
+          "predictors": {
+            "pred-4": 10,
+            "pred-6": 2
+          },
+          "residual_s": 2.00001522898674e-07,
+          "entropy_encode_s": 0.20123760000569746,
+          "shared_residual_build_s": 0.31474290002370253
+        },
+        "decode_stats": {
+          "codec": "SM30",
+          "model": "soft-moment-prior",
+          "transform": "r-gr-bg",
+          "scheme": "ch-ctx-energy-unitary-split-blend71-apex128",
+          "metadata_bytes": 37,
+          "entropy_bytes": 5896,
+          "max_symbol": 241
+        }
+      },
+      {
+        "model": "inverted-moment-prior",
+        "mix": "1/2",
+        "bytes": 5982,
+        "delta_vs_webp": -50,
+        "roundtrip_ok": true,
+        "encode_s": 0.4764061000314541,
+        "decode_s": 1.0677461000159383,
+        "encode_stats": {
+          "codec": "SM30",
+          "model": "inverted-moment-prior",
+          "transform": "r-gr-bg",
+          "scheme": "ch-ctx-energy-unitary-split-blend71-apex128",
+          "mix": "1/2",
+          "bytes": 5982,
+          "header_metadata_bytes": 37,
+          "entropy_bytes": 5945,
+          "predictor_metadata_bytes": 8,
+          "energy_metadata_bytes": 5,
+          "unitary_metadata_bytes": 3,
+          "max_symbol": 241,
+          "moment_class_counts": {
+            "0": 15,
+            "1": 4209,
+            "2": 8064
+          },
+          "predictors": {
+            "pred-4": 10,
+            "pred-6": 2
+          },
+          "residual_s": 2.00001522898674e-07,
+          "entropy_encode_s": 0.4762612999766134,
+          "shared_residual_build_s": 0.31474290002370253
+        },
+        "decode_stats": {
+          "codec": "SM30",
+          "model": "inverted-moment-prior",
+          "transform": "r-gr-bg",
+          "scheme": "ch-ctx-energy-unitary-split-blend71-apex128",
+          "metadata_bytes": 37,
+          "entropy_bytes": 5945,
+          "max_symbol": 241
+        }
+      }
+    ]
+  }
+]

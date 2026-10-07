@@ -1,0 +1,776 @@
+{
+  "timestamp": "2026-06-03T22:16:24.118890+00:00",
+  "config": {
+    "seed": 20260603,
+    "route_trials": 900,
+    "null_trials": 450,
+    "sweep_route_trials": 700,
+    "sweep_null_trials": 350,
+    "main_bucket_mix": 0.5,
+    "mix_grid": [
+      0.0,
+      0.25,
+      0.5,
+      0.75,
+      1.0
+    ],
+    "length_choices": [
+      60,
+      90,
+      140
+    ],
+    "move_prob": 0.72,
+    "bucket_gate": 0.14,
+    "continuous_scale": 0.13,
+    "weak_range": [
+      0.035,
+      0.105
+    ],
+    "strong_range": [
+      0.175,
+      0.265
+    ],
+    "continuous_range": [
+      0.025,
+      0.265
+    ],
+    "behavior_noise": 0.07,
+    "alpha": 0.05,
+    "ridge": 0.001,
+    "class_threshold": 0.25,
+    "decision_margin": 0.01
+  },
+  "finding": "FLOW_FITS_BUT_GATE_GOVERNS_FALSE_ADMISSION",
+  "main_train_counts": {
+    "bucket_world": 447,
+    "continuous_world": 453,
+    "null_world": 450
+  },
+  "main_test_counts": {
+    "bucket_world": 445,
+    "continuous_world": 455,
+    "null_world": 450
+  },
+  "main_train_means": {
+    "bucket_world": {
+      "strength": 0.15046712610255228,
+      "target_clean_abs": 0.5324384787472036,
+      "scalar_score": 1.0933183834104676,
+      "symmetric_score": 0.7148307943609957,
+      "current_hat_abs": 0.1633127374738113,
+      "length": 98.38926174496645
+    },
+    "continuous_world": {
+      "strength": 0.1446300656138204,
+      "target_clean_abs": 0.7308776404175701,
+      "scalar_score": 1.0918526779344264,
+      "symmetric_score": 0.720662952451032,
+      "current_hat_abs": 0.1537439994393637,
+      "length": 94.96688741721854
+    },
+    "null_world": {
+      "strength": 0.0,
+      "target_clean_abs": 0.0,
+      "scalar_score": 1.0926668542578983,
+      "symmetric_score": 0.7174232804232805,
+      "current_hat_abs": 0.08160317460317461,
+      "length": 94.02222222222223
+    }
+  },
+  "main_test_means": {
+    "bucket_world": {
+      "strength": 0.14624789442560993,
+      "target_clean_abs": 0.5191011235955056,
+      "scalar_score": 1.0920049445547817,
+      "symmetric_score": 0.7200570715177457,
+      "current_hat_abs": 0.15914392723381485,
+      "length": 96.74157303370787
+    },
+    "continuous_world": {
+      "strength": 0.14637021964721683,
+      "target_clean_abs": 0.7288898303939487,
+      "scalar_score": 1.0918518321713686,
+      "symmetric_score": 0.7206663178091749,
+      "current_hat_abs": 0.15394383394383396,
+      "length": 97.58241758241758
+    },
+    "null_world": {
+      "strength": 0.0,
+      "target_clean_abs": 0.0,
+      "scalar_score": 1.091929753915339,
+      "symmetric_score": 0.7203562610229277,
+      "current_hat_abs": 0.07512169312169312,
+      "length": 97.0
+    }
+  },
+  "main_eval": {
+    "current_gate": 0.2,
+    "models": {
+      "scalar": {
+        "name": "scalar",
+        "feature_kind": "scalar",
+        "coef": [
+          0.014426102394774497,
+          0.00914530434037124
+        ],
+        "mean": [
+          1.092609381410984
+        ],
+        "sd": [
+          0.012433197928040934
+        ]
+      },
+      "symmetric": {
+        "name": "symmetric",
+        "feature_kind": "symmetric",
+        "coef": [
+          0.014426102394773592,
+          0.004572653763575744,
+          -0.004572653963944075
+        ],
+        "mean": [
+          1.0926093814109819,
+          0.7176519694297481
+        ],
+        "sd": [
+          0.012433197928040937,
+          0.049472678560833754
+        ]
+      },
+      "continuous_solenoidal": {
+        "name": "continuous_solenoidal",
+        "feature_kind": "continuous_solenoidal",
+        "coef": [
+          0.014426102394773328,
+          0.00547866832851952,
+          -0.005478668444245741,
+          0.18332181790516847,
+          -0.008684740657342207,
+          0.30593119979248057,
+          0.0067818815513181
+        ],
+        "mean": [
+          1.0926093814109819,
+          0.7176519694297481,
+          0.005552028218694878,
+          0.1328653733098179,
+          0.08468982457807035,
+          1.8753526094808115
+        ],
+        "sd": [
+          0.012433197928040937,
+          0.049472678560833754,
+          0.16356372460377144,
+          0.09555474660550534,
+          2.3228136024890276,
+          1.3732035495179127
+        ]
+      },
+      "bucket_current": {
+        "name": "bucket_current",
+        "feature_kind": "bucket_current",
+        "coef": [
+          0.01442610239477399,
+          0.0022072724415728917,
+          -0.002207272646627666,
+          0.3980173292233553,
+          -0.01331781040499028
+        ],
+        "mean": [
+          1.0926093814109819,
+          0.7176519694297481,
+          0.014814814814814815,
+          0.2325925925925926
+        ],
+        "sd": [
+          0.012433197928040937,
+          0.049472678560833754,
+          0.4820509452895982,
+          0.4224846487905181
+        ]
+      },
+      "governed_flow_gate": {
+        "name": "governed_flow_gate",
+        "feature_kind": "governed_flow_gate",
+        "coef": [
+          0.014426102394774156,
+          0.0019628356341617735,
+          -0.001962835814074864,
+          0.1785880108391872,
+          0.035519703892620616,
+          0.2218111894023656,
+          -0.007436547062171825,
+          -0.0383329663496358
+        ],
+        "mean": [
+          1.0926093814109819,
+          0.7176519694297481,
+          0.003607877718988832,
+          0.0638418577307466,
+          0.05143759554925081,
+          0.8926716360154554,
+          0.2325925925925926
+        ],
+        "sd": [
+          0.012433197928040937,
+          0.049472678560833754,
+          0.1344661617233028,
+          0.11839925097617525,
+          1.8958672989772134,
+          1.6733487358648529,
+          0.4224846487905181
+        ]
+      },
+      "hybrid_flow_gate": {
+        "name": "hybrid_flow_gate",
+        "feature_kind": "hybrid_flow_gate",
+        "coef": [
+          0.014426102394773337,
+          0.0053870630189611565,
+          -0.005387063137525952,
+          0.1727352792370528,
+          0.0020849949555957568,
+          0.30314465824760245,
+          0.009321810016964137,
+          0.016695920649269426,
+          -0.016454048223626897
+        ],
+        "mean": [
+          1.0926093814109819,
+          0.7176519694297481,
+          0.005552028218694878,
+          0.1328653733098179,
+          0.08468982457807035,
+          1.8753526094808115,
+          0.014814814814814815,
+          0.2325925925925926
+        ],
+        "sd": [
+          0.012433197928040937,
+          0.049472678560833754,
+          0.16356372460377144,
+          0.09555474660550534,
+          2.3228136024890276,
+          1.3732035495179127,
+          0.4820509452895982,
+          0.4224846487905181
+        ]
+      }
+    },
+    "overall": {
+      "scalar": {
+        "rmse_observed": 0.6126921950937956,
+        "rmse_clean": 0.6065126709392916,
+        "mae_observed": 0.4477229624688411,
+        "r2_observed": 0.0003160188843975842,
+        "corr_observed": 0.034937154954482456,
+        "route_accuracy_clean": 0.5111111111111111,
+        "action_rate_predicted": 0.0
+      },
+      "symmetric": {
+        "rmse_observed": 0.6126921950225478,
+        "rmse_clean": 0.6065126708564875,
+        "mae_observed": 0.4477229625850416,
+        "r2_observed": 0.0003160191168969373,
+        "corr_observed": 0.03493715495448249,
+        "route_accuracy_clean": 0.5111111111111111,
+        "action_rate_predicted": 0.0
+      },
+      "continuous_solenoidal": {
+        "rmse_observed": 0.377910657741223,
+        "rmse_clean": 0.3682099187372297,
+        "mae_observed": 0.30190643391866834,
+        "r2_observed": 0.6196737363320425,
+        "corr_observed": 0.7873566113746976,
+        "route_accuracy_clean": 0.6962962962962963,
+        "action_rate_predicted": 0.5866666666666667
+      },
+      "bucket_current": {
+        "rmse_observed": 0.4670614546486347,
+        "rmse_clean": 0.4577752898839258,
+        "mae_observed": 0.3058456076324147,
+        "r2_observed": 0.41906694001800604,
+        "corr_observed": 0.6473841657252146,
+        "route_accuracy_clean": 0.6925925925925925,
+        "action_rate_predicted": 0.22592592592592592
+      },
+      "governed_flow_gate": {
+        "rmse_observed": 0.4669828653073713,
+        "rmse_clean": 0.4581089213703067,
+        "mae_observed": 0.3102045228348188,
+        "r2_observed": 0.419262423096316,
+        "corr_observed": 0.6475389143337925,
+        "route_accuracy_clean": 0.6925925925925925,
+        "action_rate_predicted": 0.22592592592592592
+      },
+      "hybrid_flow_gate": {
+        "rmse_observed": 0.37746061697127775,
+        "rmse_clean": 0.3677368463420843,
+        "mae_observed": 0.29999235501361865,
+        "r2_observed": 0.6205790318317731,
+        "corr_observed": 0.7879324262434786,
+        "route_accuracy_clean": 0.6992592592592592,
+        "action_rate_predicted": 0.5785185185185185
+      }
+    },
+    "by_source": {
+      "bucket_world": {
+        "scalar": {
+          "rmse_observed": 0.7303411628112281,
+          "rmse_clean": 0.7200837562452912,
+          "mae_observed": 0.5526340607892127,
+          "r2_observed": -0.0004606468173709022,
+          "corr_observed": -6.418199146974206e-05,
+          "route_accuracy_clean": 0.48089887640449436,
+          "action_rate_predicted": 0.0
+        },
+        "symmetric": {
+          "rmse_observed": 0.7303411628565851,
+          "rmse_clean": 0.7200837562473854,
+          "mae_observed": 0.5526340610195181,
+          "r2_observed": -0.00046064694163616693,
+          "corr_observed": -6.41819914694955e-05,
+          "route_accuracy_clean": 0.48089887640449436,
+          "action_rate_predicted": 0.0
+        },
+        "continuous_solenoidal": {
+          "rmse_observed": 0.41496494537068096,
+          "rmse_clean": 0.4040757721735412,
+          "mae_observed": 0.3367271219538212,
+          "r2_observed": 0.677023239242886,
+          "corr_observed": 0.8245210842186207,
+          "route_accuracy_clean": 0.7325842696629213,
+          "action_rate_predicted": 0.7033707865168539
+        },
+        "bucket_current": {
+          "rmse_observed": 0.5214423973801258,
+          "rmse_clean": 0.5093563786844331,
+          "mae_observed": 0.33811816629626223,
+          "r2_observed": 0.49001061970685256,
+          "corr_observed": 0.7029966250083695,
+          "route_accuracy_clean": 0.7393258426966293,
+          "action_rate_predicted": 0.32134831460674157
+        },
+        "governed_flow_gate": {
+          "rmse_observed": 0.5208508073947484,
+          "rmse_clean": 0.5096568823502906,
+          "mae_observed": 0.33888578944492687,
+          "r2_observed": 0.4911671557525402,
+          "corr_observed": 0.7020299853291934,
+          "route_accuracy_clean": 0.7393258426966293,
+          "action_rate_predicted": 0.32134831460674157
+        },
+        "hybrid_flow_gate": {
+          "rmse_observed": 0.41447359594025346,
+          "rmse_clean": 0.4034519641649648,
+          "mae_observed": 0.3337382187713075,
+          "r2_observed": 0.6777876435434447,
+          "corr_observed": 0.8249005833576057,
+          "route_accuracy_clean": 0.7348314606741573,
+          "action_rate_predicted": 0.6943820224719102
+        }
+      },
+      "continuous_world": {
+        "scalar": {
+          "rmse_observed": 0.7657945349291546,
+          "rmse_clean": 0.7642404403251492,
+          "mae_observed": 0.7285320470940035,
+          "r2_observed": 7.716718452988047e-05,
+          "corr_observed": 0.08370657883896374,
+          "route_accuracy_clean": 0.05714285714285714,
+          "action_rate_predicted": 0.0
+        },
+        "symmetric": {
+          "rmse_observed": 0.7657945346763708,
+          "rmse_clean": 0.764240440099657,
+          "mae_observed": 0.7285320468920683,
+          "r2_observed": 7.71678446659374e-05,
+          "corr_observed": 0.08370657883896365,
+          "route_accuracy_clean": 0.05714285714285714,
+          "action_rate_predicted": 0.0
+        },
+        "continuous_solenoidal": {
+          "rmse_observed": 0.41559663061670593,
+          "rmse_clean": 0.406864769463345,
+          "mae_observed": 0.3401706622057607,
+          "r2_observed": 0.7054995275128344,
+          "corr_observed": 0.8486770462072899,
+          "route_accuracy_clean": 0.7142857142857143,
+          "action_rate_predicted": 0.6989010989010989
+        },
+        "bucket_current": {
+          "rmse_observed": 0.5924321441458733,
+          "rmse_clean": 0.586455242584147,
+          "mae_observed": 0.49111343396901147,
+          "r2_observed": 0.4015619641458624,
+          "corr_observed": 0.634102996611832,
+          "route_accuracy_clean": 0.378021978021978,
+          "action_rate_predicted": 0.3208791208791209
+        },
+        "governed_flow_gate": {
+          "rmse_observed": 0.5978562948872717,
+          "rmse_clean": 0.5918288521740095,
+          "mae_observed": 0.5074512512660239,
+          "r2_observed": 0.39055352044055347,
+          "corr_observed": 0.6249886293986114,
+          "route_accuracy_clean": 0.378021978021978,
+          "action_rate_predicted": 0.3208791208791209
+        },
+        "hybrid_flow_gate": {
+          "rmse_observed": 0.41796324264450735,
+          "rmse_clean": 0.4092920722815498,
+          "mae_observed": 0.3422983973981905,
+          "r2_observed": 0.7021359160225051,
+          "corr_observed": 0.8461371097387642,
+          "route_accuracy_clean": 0.7120879120879121,
+          "action_rate_predicted": 0.6923076923076923
+        }
+      },
+      "null_world": {
+        "scalar": {
+          "rmse_observed": 0.07580452940264165,
+          "rmse_clean": 0.01614124143410695,
+          "mae_observed": 0.06004835745325385,
+          "r2_observed": -0.10309294358376042,
+          "corr_observed": -0.050876083305775074,
+          "route_accuracy_clean": 1.0,
+          "action_rate_predicted": 0.0
+        },
+        "symmetric": {
+          "rmse_observed": 0.07580452982497075,
+          "rmse_clean": 0.016141242802556792,
+          "mae_observed": 0.06004835777828785,
+          "r2_observed": -0.10309295587506417,
+          "corr_observed": -0.05087608330577538,
+          "route_accuracy_clean": 1.0,
+          "action_rate_predicted": 0.0
+        },
+        "continuous_solenoidal": {
+          "rmse_observed": 0.28901055509012086,
+          "rmse_clean": 0.2790955613394938,
+          "mae_observed": 0.22878325603806823,
+          "r2_observed": -15.034270382377326,
+          "corr_observed": -0.012348247775984951,
+          "route_accuracy_clean": 0.6422222222222222,
+          "action_rate_predicted": 0.35777777777777775
+        },
+        "bucket_current": {
+          "rmse_observed": 0.17516447043057068,
+          "rmse_clean": 0.1560840945384852,
+          "mae_observed": 0.08660527521338425,
+          "r2_observed": -4.889980207063213,
+          "corr_observed": -0.04300005439714972,
+          "route_accuracy_clean": 0.9644444444444444,
+          "action_rate_predicted": 0.035555555555555556
+        },
+        "governed_flow_gate": {
+          "rmse_observed": 0.1566655427513914,
+          "rmse_clean": 0.13628698742290787,
+          "mae_observed": 0.08240357821771574,
+          "r2_observed": -3.711603868739931,
+          "corr_observed": -0.03132688798429115,
+          "route_accuracy_clean": 0.9644444444444444,
+          "action_rate_predicted": 0.035555555555555556
+        },
+        "hybrid_flow_gate": {
+          "rmse_observed": 0.2844567478131855,
+          "rmse_clean": 0.2744903233594039,
+          "mae_observed": 0.22384533577550364,
+          "r2_observed": -14.532961843316349,
+          "corr_observed": -0.011072712316913631,
+          "route_accuracy_clean": 0.6511111111111111,
+          "action_rate_predicted": 0.3488888888888889
+        }
+      }
+    },
+    "null_false_action": {
+      "scalar": 0.0,
+      "symmetric": 0.0,
+      "continuous_solenoidal": 0.35777777777777775,
+      "bucket_current": 0.035555555555555556,
+      "governed_flow_gate": 0.035555555555555556,
+      "hybrid_flow_gate": 0.3488888888888889
+    },
+    "winner": "hybrid_flow_gate",
+    "predictions_sample": {
+      "scalar": [
+        -0.0034371916892708063,
+        0.0146082411812302,
+        0.015635217035648744,
+        0.0033115067826239436,
+        0.005805591000498038,
+        0.01152731361797392,
+        0.036174734124023514,
+        0.025611553907145118
+      ],
+      "symmetric": [
+        -0.0034371983053032196,
+        0.014608241248688945,
+        0.01563521748346888,
+        0.0033115026661085165,
+        0.00580558780771718,
+        0.011527312544348819,
+        0.03617474217906955,
+        0.02561155804990352
+      ],
+      "continuous_solenoidal": [
+        -0.9501813853442271,
+        0.47476080252641906,
+        -0.3301690906607223,
+        -0.344934596378916,
+        -0.5236622433512563,
+        0.08269530963182148,
+        0.11222632106820885,
+        0.11074209801796027
+      ],
+      "bucket_current": [
+        -0.8562944303998594,
+        0.009613724257945261,
+        0.010109457482897764,
+        0.004160658783467151,
+        0.005364582329780499,
+        0.00812652458308759,
+        0.020024121981948813,
+        0.014925151668151145
+      ],
+      "governed_flow_gate": [
+        -0.9424811422667284,
+        0.009612767795742567,
+        0.010053602746627976,
+        0.004763583336002569,
+        0.0058341825024386725,
+        0.0082902629430862,
+        0.018870301764337013,
+        0.014335999412372378
+      ],
+      "hybrid_flow_gate": [
+        -0.9702553705139771,
+        0.47547659145014154,
+        -0.3151809617326178,
+        -0.32969958287854817,
+        -0.49833953856945246,
+        0.07516277736330014,
+        0.10420001965516096,
+        0.10277539179182597
+      ]
+    }
+  },
+  "decision_quantities": {
+    "continuous_rmse": 0.377910657741223,
+    "bucket_rmse": 0.4670614546486347,
+    "governed_rmse": 0.4669828653073713,
+    "hybrid_rmse": 0.37746061697127775,
+    "hybrid_gain_over_continuous": 0.0004500407699452591,
+    "bucket_penalty_vs_continuous": 0.08915079690741168,
+    "bucket_null_false_action": 0.035555555555555556,
+    "continuous_null_false_action": 0.35777777777777775,
+    "governed_null_false_action": 0.035555555555555556
+  },
+  "phase_sweep": [
+    {
+      "bucket_mix": 0.0,
+      "train_counts": {
+        "bucket_world": 0,
+        "continuous_world": 700,
+        "null_world": 350
+      },
+      "test_counts": {
+        "bucket_world": 0,
+        "continuous_world": 700,
+        "null_world": 350
+      },
+      "winner": "continuous_solenoidal",
+      "current_gate": 0.18888888888888888,
+      "overall_rmse": {
+        "scalar": 0.628806092618231,
+        "symmetric": 0.6288060926949562,
+        "continuous_solenoidal": 0.35082581849626193,
+        "bucket_current": 0.4617711365191826,
+        "governed_flow_gate": 0.4645136028951942,
+        "hybrid_flow_gate": 0.3509103872538758
+      },
+      "overall_route_accuracy": {
+        "scalar": 0.35523809523809524,
+        "symmetric": 0.35523809523809524,
+        "continuous_solenoidal": 0.6952380952380952,
+        "bucket_current": 0.5838095238095238,
+        "governed_flow_gate": 0.5838095238095238,
+        "hybrid_flow_gate": 0.6952380952380952
+      },
+      "null_false_action": {
+        "scalar": 0.0,
+        "symmetric": 0.0,
+        "continuous_solenoidal": 0.3628571428571429,
+        "bucket_current": 0.03428571428571429,
+        "governed_flow_gate": 0.03428571428571429,
+        "hybrid_flow_gate": 0.37714285714285717
+      },
+      "hybrid_gain_over_continuous": -8.456875761386762e-05,
+      "bucket_penalty_vs_continuous": 0.11094531802292068
+    },
+    {
+      "bucket_mix": 0.25,
+      "train_counts": {
+        "bucket_world": 176,
+        "continuous_world": 524,
+        "null_world": 350
+      },
+      "test_counts": {
+        "bucket_world": 162,
+        "continuous_world": 538,
+        "null_world": 350
+      },
+      "winner": "hybrid_flow_gate",
+      "current_gate": 0.18333333333333332,
+      "overall_rmse": {
+        "scalar": 0.6093914560803098,
+        "symmetric": 0.6093914560798236,
+        "continuous_solenoidal": 0.36825038467995075,
+        "bucket_current": 0.4542437660577236,
+        "governed_flow_gate": 0.4559591969025939,
+        "hybrid_flow_gate": 0.3670627604097774
+      },
+      "overall_route_accuracy": {
+        "scalar": 0.42952380952380953,
+        "symmetric": 0.42952380952380953,
+        "continuous_solenoidal": 0.6752380952380952,
+        "bucket_current": 0.6352380952380953,
+        "governed_flow_gate": 0.6352380952380953,
+        "hybrid_flow_gate": 0.680952380952381
+      },
+      "null_false_action": {
+        "scalar": 0.0,
+        "symmetric": 0.0,
+        "continuous_solenoidal": 0.37142857142857144,
+        "bucket_current": 0.04,
+        "governed_flow_gate": 0.04,
+        "hybrid_flow_gate": 0.3742857142857143
+      },
+      "hybrid_gain_over_continuous": 0.0011876242701733264,
+      "bucket_penalty_vs_continuous": 0.08599338137777285
+    },
+    {
+      "bucket_mix": 0.5,
+      "train_counts": {
+        "bucket_world": 338,
+        "continuous_world": 362,
+        "null_world": 350
+      },
+      "test_counts": {
+        "bucket_world": 341,
+        "continuous_world": 359,
+        "null_world": 350
+      },
+      "winner": "continuous_solenoidal",
+      "current_gate": 0.2,
+      "overall_rmse": {
+        "scalar": 0.6102588938115884,
+        "symmetric": 0.610258895058776,
+        "continuous_solenoidal": 0.3650690193018562,
+        "bucket_current": 0.4679309960327491,
+        "governed_flow_gate": 0.46714742083252175,
+        "hybrid_flow_gate": 0.36537354263805505
+      },
+      "overall_route_accuracy": {
+        "scalar": 0.5066666666666667,
+        "symmetric": 0.5066666666666667,
+        "continuous_solenoidal": 0.7038095238095238,
+        "bucket_current": 0.680952380952381,
+        "governed_flow_gate": 0.680952380952381,
+        "hybrid_flow_gate": 0.6971428571428572
+      },
+      "null_false_action": {
+        "scalar": 0.0,
+        "symmetric": 0.0,
+        "continuous_solenoidal": 0.32285714285714284,
+        "bucket_current": 0.025714285714285714,
+        "governed_flow_gate": 0.025714285714285714,
+        "hybrid_flow_gate": 0.34
+      },
+      "hybrid_gain_over_continuous": -0.00030452333619884753,
+      "bucket_penalty_vs_continuous": 0.10286197673089292
+    },
+    {
+      "bucket_mix": 0.75,
+      "train_counts": {
+        "bucket_world": 526,
+        "continuous_world": 174,
+        "null_world": 350
+      },
+      "test_counts": {
+        "bucket_world": 553,
+        "continuous_world": 147,
+        "null_world": 350
+      },
+      "winner": "hybrid_flow_gate",
+      "current_gate": 0.18333333333333332,
+      "overall_rmse": {
+        "scalar": 0.5927621154485648,
+        "symmetric": 0.5927621154074761,
+        "continuous_solenoidal": 0.37302098542757806,
+        "bucket_current": 0.4196446290548788,
+        "governed_flow_gate": 0.4183349646634916,
+        "hybrid_flow_gate": 0.3673339566300611
+      },
+      "overall_route_accuracy": {
+        "scalar": 0.6009523809523809,
+        "symmetric": 0.6009523809523809,
+        "continuous_solenoidal": 0.68,
+        "bucket_current": 0.780952380952381,
+        "governed_flow_gate": 0.780952380952381,
+        "hybrid_flow_gate": 0.7257142857142858
+      },
+      "null_false_action": {
+        "scalar": 0.0,
+        "symmetric": 0.0,
+        "continuous_solenoidal": 0.3742857142857143,
+        "bucket_current": 0.045714285714285714,
+        "governed_flow_gate": 0.045714285714285714,
+        "hybrid_flow_gate": 0.26857142857142857
+      },
+      "hybrid_gain_over_continuous": 0.00568702879751698,
+      "bucket_penalty_vs_continuous": 0.04662364362730076
+    },
+    {
+      "bucket_mix": 1.0,
+      "train_counts": {
+        "bucket_world": 700,
+        "continuous_world": 0,
+        "null_world": 350
+      },
+      "test_counts": {
+        "bucket_world": 700,
+        "continuous_world": 0,
+        "null_world": 350
+      },
+      "winner": "hybrid_flow_gate",
+      "current_gate": 0.15714285714285714,
+      "overall_rmse": {
+        "scalar": 0.5774812655718627,
+        "symmetric": 0.5774812655538166,
+        "continuous_solenoidal": 0.35416390582425084,
+        "bucket_current": 0.38128634393752797,
+        "governed_flow_gate": 0.36641095643264554,
+        "hybrid_flow_gate": 0.34606397494402397
+      },
+      "overall_route_accuracy": {
+        "scalar": 0.6733333333333333,
+        "symmetric": 0.6733333333333333,
+        "continuous_solenoidal": 0.7257142857142858,
+        "bucket_current": 0.8419047619047619,
+        "governed_flow_gate": 0.8419047619047619,
+        "hybrid_flow_gate": 0.7942857142857143
+      },
+      "null_false_action": {
+        "scalar": 0.0,
+        "symmetric": 0.0,
+        "continuous_solenoidal": 0.3,
+        "bucket_current": 0.06,
+        "governed_flow_gate": 0.06,
+        "hybrid_flow_gate": 0.14857142857142858
+      },
+      "hybrid_gain_over_continuous": 0.008099930880226869,
+      "bucket_penalty_vs_continuous": 0.027122438113277136
+    }
+  ]
+}

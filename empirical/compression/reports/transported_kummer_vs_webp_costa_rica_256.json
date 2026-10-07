@@ -1,0 +1,252 @@
+[
+  {
+    "file": "C:\\Users\\leomu\\Downloads\\que-ver-en-costa-rica-correos-portada.jpg",
+    "crop_size": 256,
+    "width": 256,
+    "height": 256,
+    "raw_rgb_bytes": 196608,
+    "webp_lossless_bytes": 63034,
+    "webp_lossless_encode_s": 3.4840818000084255,
+    "baseline_apex_ans": {
+      "best_scheme": "ch-ctx-energy",
+      "bytes": 69606,
+      "ideal_best_scheme": "ch-ctx-grad-energy",
+      "ideal_no_codebook_bytes": 66633,
+      "metadata_bytes": 192,
+      "transport_tiles": 0,
+      "transport_saved_local_bytes": 0,
+      "model_counts": {
+        "local-p6": 68,
+        "local-p4": 93,
+        "local-p8": 16,
+        "local-p7": 3,
+        "local-p20": 3,
+        "local-p5": 6,
+        "local-p2": 3
+      },
+      "kummer_counts": {
+        "2": 93,
+        "4": 87,
+        "1": 11,
+        "6": 1
+      },
+      "schemes": {
+        "ch-ctx": {
+          "bytes": 70625,
+          "ideal_no_codebook_bytes": 69301,
+          "contexts": 23,
+          "new_symbols": 1223
+        },
+        "ch-ctx-transport": {
+          "bytes": 70625,
+          "ideal_no_codebook_bytes": 69301,
+          "contexts": 23,
+          "new_symbols": 1223
+        },
+        "ch-ctx-grad": {
+          "bytes": 70971,
+          "ideal_no_codebook_bytes": 69022,
+          "contexts": 58,
+          "new_symbols": 1858
+        },
+        "ch-ctx-energy": {
+          "bytes": 69606,
+          "ideal_no_codebook_bytes": 66891,
+          "contexts": 61,
+          "new_symbols": 2610
+        },
+        "ch-ctx-grad-energy": {
+          "bytes": 70096,
+          "ideal_no_codebook_bytes": 66633,
+          "contexts": 110,
+          "new_symbols": 3377
+        }
+      }
+    },
+    "transported_kummer_apex_ans": {
+      "best_scheme": "ch-ctx-energy",
+      "bytes": 69604,
+      "ideal_best_scheme": "ch-ctx-grad-energy",
+      "ideal_no_codebook_bytes": 66633,
+      "metadata_bytes": 198,
+      "transport_tiles": 2,
+      "transport_saved_local_bytes": 4,
+      "model_counts": {
+        "local-p6": 67,
+        "local-p4": 93,
+        "local-p8": 16,
+        "residual-s1-g1": 1,
+        "local-p20": 3,
+        "local-p7": 2,
+        "local-p5": 6,
+        "local-p2": 3,
+        "residual-s0-g0": 1
+      },
+      "kummer_counts": {
+        "2": 93,
+        "4": 87,
+        "1": 11,
+        "6": 1
+      },
+      "schemes": {
+        "ch-ctx": {
+          "bytes": 70624,
+          "ideal_no_codebook_bytes": 69299,
+          "contexts": 23,
+          "new_symbols": 1224
+        },
+        "ch-ctx-transport": {
+          "bytes": 70817,
+          "ideal_no_codebook_bytes": 69219,
+          "contexts": 37,
+          "new_symbols": 1511
+        },
+        "ch-ctx-grad": {
+          "bytes": 70971,
+          "ideal_no_codebook_bytes": 69021,
+          "contexts": 58,
+          "new_symbols": 1859
+        },
+        "ch-ctx-energy": {
+          "bytes": 69604,
+          "ideal_no_codebook_bytes": 66891,
+          "contexts": 61,
+          "new_symbols": 2608
+        },
+        "ch-ctx-grad-energy": {
+          "bytes": 70094,
+          "ideal_no_codebook_bytes": 66633,
+          "contexts": 110,
+          "new_symbols": 3375
+        }
+      }
+    },
+    "estimate_s": 23.832953799981624
+  },
+  {
+    "file": "C:\\Users\\leomu\\Downloads\\central-valley-san-jose-costa-rica.jpg",
+    "crop_size": 256,
+    "width": 256,
+    "height": 256,
+    "raw_rgb_bytes": 196608,
+    "webp_lossless_bytes": 80852,
+    "webp_lossless_encode_s": 5.872786599997198,
+    "baseline_apex_ans": {
+      "best_scheme": "ch-ctx-grad",
+      "bytes": 78958,
+      "ideal_best_scheme": "ch-ctx-grad-energy",
+      "ideal_no_codebook_bytes": 76043,
+      "metadata_bytes": 192,
+      "transport_tiles": 0,
+      "transport_saved_local_bytes": 0,
+      "model_counts": {
+        "local-p4": 124,
+        "local-p9": 15,
+        "local-p20": 10,
+        "local-p7": 8,
+        "local-p3": 2,
+        "local-p5": 5,
+        "local-p14": 2,
+        "local-p6": 26
+      },
+      "kummer_counts": {
+        "6": 37,
+        "1": 31,
+        "2": 81,
+        "4": 36,
+        "7": 7
+      },
+      "schemes": {
+        "ch-ctx": {
+          "bytes": 79452,
+          "ideal_no_codebook_bytes": 77773,
+          "contexts": 22,
+          "new_symbols": 1475
+        },
+        "ch-ctx-transport": {
+          "bytes": 79452,
+          "ideal_no_codebook_bytes": 77773,
+          "contexts": 22,
+          "new_symbols": 1475
+        },
+        "ch-ctx-grad": {
+          "bytes": 78958,
+          "ideal_no_codebook_bytes": 76617,
+          "contexts": 50,
+          "new_symbols": 2123
+        },
+        "ch-ctx-energy": {
+          "bytes": 79838,
+          "ideal_no_codebook_bytes": 76376,
+          "contexts": 78,
+          "new_symbols": 3272
+        },
+        "ch-ctx-grad-energy": {
+          "bytes": 80019,
+          "ideal_no_codebook_bytes": 76043,
+          "contexts": 104,
+          "new_symbols": 3779
+        }
+      }
+    },
+    "transported_kummer_apex_ans": {
+      "best_scheme": "ch-ctx-grad",
+      "bytes": 78958,
+      "ideal_best_scheme": "ch-ctx-grad-energy",
+      "ideal_no_codebook_bytes": 76043,
+      "metadata_bytes": 192,
+      "transport_tiles": 0,
+      "transport_saved_local_bytes": 0,
+      "model_counts": {
+        "local-p4": 124,
+        "local-p9": 15,
+        "local-p20": 10,
+        "local-p7": 8,
+        "local-p3": 2,
+        "local-p5": 5,
+        "local-p14": 2,
+        "local-p6": 26
+      },
+      "kummer_counts": {
+        "6": 37,
+        "1": 31,
+        "2": 81,
+        "4": 36,
+        "7": 7
+      },
+      "schemes": {
+        "ch-ctx": {
+          "bytes": 79452,
+          "ideal_no_codebook_bytes": 77773,
+          "contexts": 22,
+          "new_symbols": 1475
+        },
+        "ch-ctx-transport": {
+          "bytes": 79452,
+          "ideal_no_codebook_bytes": 77773,
+          "contexts": 22,
+          "new_symbols": 1475
+        },
+        "ch-ctx-grad": {
+          "bytes": 78958,
+          "ideal_no_codebook_bytes": 76617,
+          "contexts": 50,
+          "new_symbols": 2123
+        },
+        "ch-ctx-energy": {
+          "bytes": 79838,
+          "ideal_no_codebook_bytes": 76376,
+          "contexts": 78,
+          "new_symbols": 3272
+        },
+        "ch-ctx-grad-energy": {
+          "bytes": 80019,
+          "ideal_no_codebook_bytes": 76043,
+          "contexts": 104,
+          "new_symbols": 3779
+        }
+      }
+    },
+    "estimate_s": 24.05668759997934
+  }
+]

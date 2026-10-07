@@ -1,0 +1,1438 @@
+{
+  "timestamp": "2026-06-03T23:39:06.647246+00:00",
+  "finding": "RISK_FITS_BUT_GATE_RECOVERS_REFUSAL",
+  "config": {
+    "seed": 20260603,
+    "route_trials": 900,
+    "null_trials": 450,
+    "sweep_route_trials": 700,
+    "sweep_null_trials": 350,
+    "main_forbidden_mix": 0.4,
+    "risk_share": 0.35,
+    "bait_share": 0.35,
+    "mix_grid": [
+      0.0,
+      0.2,
+      0.4,
+      0.7,
+      1.0
+    ],
+    "inhibition_noise": 0.045,
+    "refusal_noise": 0.04,
+    "alpha": 0.05,
+    "ridge": 0.001,
+    "refusal_threshold": 0.5,
+    "decision_margin": 0.01,
+    "false_admission_margin": 0.05,
+    "detection_floor": 0.85
+  },
+  "main_train_counts": {
+    "forbidden_world": 377,
+    "risk_world": 177,
+    "bait_world": 191,
+    "allowed_world": 155,
+    "no_signal_world": 450
+  },
+  "main_test_counts": {
+    "forbidden_world": 352,
+    "risk_world": 195,
+    "bait_world": 198,
+    "allowed_world": 155,
+    "no_signal_world": 450
+  },
+  "main_train_means": {
+    "forbidden_world": {
+      "scalar": 0.9994747347336094,
+      "competence_gain": 0.8615839634459803,
+      "action_value": 0.8675529562487521,
+      "ordinary_risk": 0.3161425915887578,
+      "preference_conflict": 0.3112784816866898,
+      "train_rule_pressure": 0.8730756411274759,
+      "heldout_rule_pressure": 0.8765945118397515,
+      "governance_score": 0.85523721879593,
+      "target_inhibition": 0.95,
+      "target_refusal": 1.0
+    },
+    "risk_world": {
+      "scalar": 1.0014992115532817,
+      "competence_gain": 0.8570893450277036,
+      "action_value": 0.8639294279812578,
+      "ordinary_risk": 0.8761531778488383,
+      "preference_conflict": 0.7618820202660368,
+      "train_rule_pressure": 0.14924041233874183,
+      "heldout_rule_pressure": 0.14606571695742682,
+      "governance_score": 0.2816365583454793,
+      "target_inhibition": 0.980760109827655,
+      "target_refusal": 0.0
+    },
+    "bait_world": {
+      "scalar": 0.9995710472557863,
+      "competence_gain": 0.8713337721815034,
+      "action_value": 0.8748453046721453,
+      "ordinary_risk": 0.33075498375955303,
+      "preference_conflict": 0.2938008555800569,
+      "train_rule_pressure": 0.8782577419759665,
+      "heldout_rule_pressure": 0.1419568095834321,
+      "governance_score": 0.2772436210998346,
+      "target_inhibition": 0.3291783613207552,
+      "target_refusal": 0.0
+    },
+    "allowed_world": {
+      "scalar": 0.9995025555864796,
+      "competence_gain": 0.8522864744016008,
+      "action_value": 0.8741169411687147,
+      "ordinary_risk": 0.1420879098173945,
+      "preference_conflict": 0.12011354283563648,
+      "train_rule_pressure": 0.12088312541345447,
+      "heldout_rule_pressure": 0.11874785501502066,
+      "governance_score": 0.2462616872325076,
+      "target_inhibition": 0.07303682539649639,
+      "target_refusal": 0.0
+    },
+    "no_signal_world": {
+      "scalar": 0.9994984296232011,
+      "competence_gain": 0.10071413794786704,
+      "action_value": 0.096907938259968,
+      "ordinary_risk": 0.13417953723595563,
+      "preference_conflict": 0.1232991895122586,
+      "train_rule_pressure": 0.10126963514809643,
+      "heldout_rule_pressure": 0.10288356933354234,
+      "governance_score": 0.09219916086838137,
+      "target_inhibition": 0.7572905304819654,
+      "target_refusal": 0.0
+    }
+  },
+  "main_test_means": {
+    "forbidden_world": {
+      "scalar": 0.9992493419354833,
+      "competence_gain": 0.8593926243946854,
+      "action_value": 0.8575911667232156,
+      "ordinary_risk": 0.31104184699285414,
+      "preference_conflict": 0.30560354514173105,
+      "train_rule_pressure": 0.8729825857508708,
+      "heldout_rule_pressure": 0.8728966516982086,
+      "governance_score": 0.8530806719701487,
+      "target_inhibition": 0.95,
+      "target_refusal": 1.0
+    },
+    "risk_world": {
+      "scalar": 0.9980943272384217,
+      "competence_gain": 0.8723253643430978,
+      "action_value": 0.8749537836490474,
+      "ordinary_risk": 0.8756753759206849,
+      "preference_conflict": 0.7706772803506535,
+      "train_rule_pressure": 0.1390347815151595,
+      "heldout_rule_pressure": 0.148143216773783,
+      "governance_score": 0.2835279481029615,
+      "target_inhibition": 0.9812203445616786,
+      "target_refusal": 0.0
+    },
+    "bait_world": {
+      "scalar": 0.9995814906403641,
+      "competence_gain": 0.856888630843926,
+      "action_value": 0.8749773461287997,
+      "ordinary_risk": 0.3184512088830937,
+      "preference_conflict": 0.29130417770829714,
+      "train_rule_pressure": 0.8792267261665652,
+      "heldout_rule_pressure": 0.14803583032704506,
+      "governance_score": 0.2721045801156649,
+      "target_inhibition": 0.31548671864206085,
+      "target_refusal": 0.0
+    },
+    "allowed_world": {
+      "scalar": 0.9974888736673103,
+      "competence_gain": 0.8612875638113513,
+      "action_value": 0.8789927832561362,
+      "ordinary_risk": 0.1345705568467119,
+      "preference_conflict": 0.11765690585411791,
+      "train_rule_pressure": 0.11242536632301113,
+      "heldout_rule_pressure": 0.10870502052804153,
+      "governance_score": 0.24616637020941967,
+      "target_inhibition": 0.06937068146414269,
+      "target_refusal": 0.0
+    },
+    "no_signal_world": {
+      "scalar": 1.0001748661678995,
+      "competence_gain": 0.09821063684534194,
+      "action_value": 0.10215474944577033,
+      "ordinary_risk": 0.13265065115321115,
+      "preference_conflict": 0.11990435442080327,
+      "train_rule_pressure": 0.10434993001644989,
+      "heldout_rule_pressure": 0.10076448777018432,
+      "governance_score": 0.09275205917871412,
+      "target_inhibition": 0.7480468421092117,
+      "target_refusal": 0.0
+    }
+  },
+  "main_eval": {
+    "governance_gate": 0.3682789032721068,
+    "models": {
+      "scalar": {
+        "inhibition": {
+          "name": "scalar",
+          "feature_kind": "scalar",
+          "target_kind": "inhibition",
+          "coef": [
+            0.701054227838405,
+            0.002987922802210605
+          ],
+          "mean": [
+            0.999764885119779
+          ],
+          "sd": [
+            0.020124605974380493
+          ]
+        },
+        "refusal": {
+          "name": "scalar",
+          "feature_kind": "scalar",
+          "target_kind": "refusal",
+          "coef": [
+            0.28733099625007047,
+            -0.003569701495390488
+          ],
+          "mean": [
+            0.999764885119779
+          ],
+          "sd": [
+            0.020124605974380493
+          ]
+        }
+      },
+      "continuous_risk": {
+        "inhibition": {
+          "name": "continuous_risk",
+          "feature_kind": "continuous_risk",
+          "target_kind": "inhibition",
+          "coef": [
+            0.7010542278384057,
+            -0.0011200807467853058,
+            -0.1480038062757449,
+            -0.2768987015021609,
+            0.09838436746962204,
+            0.15506255065958682,
+            0.006850603386414824,
+            0.0841495904050796,
+            0.10561975046003437,
+            0.11632582655513377,
+            0.01881810949540418
+          ],
+          "mean": [
+            0.9997648851197787,
+            0.6076833217662913,
+            0.6119815737399842,
+            0.3109951771734499,
+            0.2832765207546675,
+            0.1931532892976619,
+            0.43527445826826167,
+            0.40962348165652135,
+            0.508566517898891,
+            0.42459569883238346
+          ],
+          "sd": [
+            0.0201246059743805,
+            0.37250222412791056,
+            0.3771365400734941,
+            0.2495023170428955,
+            0.21921086719043437,
+            0.05835428534176777,
+            0.3849249154716577,
+            0.3492832376952263,
+            0.36248316317550344,
+            0.24815861183858964
+          ]
+        },
+        "refusal": {
+          "name": "continuous_risk",
+          "feature_kind": "continuous_risk",
+          "target_kind": "refusal",
+          "coef": [
+            0.28733099625006997,
+            0.0013526260104403988,
+            0.011473248921548529,
+            0.017535385680564123,
+            -0.06276507442889302,
+            0.061837547552188406,
+            -0.011481268808819415,
+            0.15519266936293608,
+            0.1628850773259041,
+            -0.03040909535974794,
+            -0.0053418162883959106
+          ],
+          "mean": [
+            0.9997648851197787,
+            0.6076833217662913,
+            0.6119815737399842,
+            0.3109951771734499,
+            0.2832765207546675,
+            0.1931532892976619,
+            0.43527445826826167,
+            0.40962348165652135,
+            0.508566517898891,
+            0.42459569883238346
+          ],
+          "sd": [
+            0.0201246059743805,
+            0.37250222412791056,
+            0.3771365400734941,
+            0.2495023170428955,
+            0.21921086719043437,
+            0.05835428534176777,
+            0.3849249154716577,
+            0.3492832376952263,
+            0.36248316317550344,
+            0.24815861183858964
+          ]
+        }
+      },
+      "governance_gate": {
+        "inhibition": {
+          "name": "governance_gate",
+          "feature_kind": "governance_gate",
+          "target_kind": "inhibition",
+          "coef": [
+            0.7010542278384054,
+            0.004183851105934732,
+            -0.03881568778776297,
+            0.1895610236148254
+          ],
+          "mean": [
+            0.9997648851197787,
+            0.3148148148148148,
+            0.2529320588067984
+          ],
+          "sd": [
+            0.0201246059743805,
+            0.4644420816290536,
+            0.38469187652970754
+          ]
+        },
+        "refusal": {
+          "name": "governance_gate",
+          "feature_kind": "governance_gate",
+          "target_kind": "refusal",
+          "coef": [
+            0.2873309962500702,
+            -0.0007593727994022977,
+            -0.19817638310742888,
+            0.6157367504042556
+          ],
+          "mean": [
+            0.9997648851197787,
+            0.3148148148148148,
+            0.2529320588067984
+          ],
+          "sd": [
+            0.0201246059743805,
+            0.4644420816290536,
+            0.38469187652970754
+          ]
+        }
+      },
+      "governed_risk_gate": {
+        "inhibition": {
+          "name": "governed_risk_gate",
+          "feature_kind": "governed_risk_gate",
+          "target_kind": "inhibition",
+          "coef": [
+            0.7010542278384055,
+            -0.0012836781513896472,
+            -0.13555474331901016,
+            -0.2557201764607671,
+            0.13635418050411552,
+            0.12128755354623535,
+            0.01190268381763665,
+            -0.007788970867920446,
+            0.008948519190106533,
+            0.0757863003845297,
+            0.017268840668294365,
+            -0.130702351767773,
+            0.3931933247141935
+          ],
+          "mean": [
+            0.9997648851197787,
+            0.6076833217662913,
+            0.6119815737399842,
+            0.3109951771734499,
+            0.2832765207546675,
+            0.1931532892976619,
+            0.43527445826826167,
+            0.40962348165652135,
+            0.508566517898891,
+            0.42459569883238346,
+            0.3148148148148148,
+            0.2529320588067984
+          ],
+          "sd": [
+            0.0201246059743805,
+            0.37250222412791056,
+            0.3771365400734941,
+            0.2495023170428955,
+            0.21921086719043437,
+            0.05835428534176777,
+            0.3849249154716577,
+            0.3492832376952263,
+            0.36248316317550344,
+            0.24815861183858964,
+            0.4644420816290536,
+            0.38469187652970754
+          ]
+        },
+        "refusal": {
+          "name": "governed_risk_gate",
+          "feature_kind": "governed_risk_gate",
+          "target_kind": "refusal",
+          "coef": [
+            0.2873309962500699,
+            0.001227930663067853,
+            0.030750418938116798,
+            0.05052832995795807,
+            -0.004781901372834612,
+            0.009091961388720872,
+            -0.003900476160770629,
+            0.012911338763053252,
+            0.013132337699340333,
+            -0.09364838480420856,
+            -0.007060790443685217,
+            -0.1866220585192539,
+            0.5935787684921819
+          ],
+          "mean": [
+            0.9997648851197787,
+            0.6076833217662913,
+            0.6119815737399842,
+            0.3109951771734499,
+            0.2832765207546675,
+            0.1931532892976619,
+            0.43527445826826167,
+            0.40962348165652135,
+            0.508566517898891,
+            0.42459569883238346,
+            0.3148148148148148,
+            0.2529320588067984
+          ],
+          "sd": [
+            0.0201246059743805,
+            0.37250222412791056,
+            0.3771365400734941,
+            0.2495023170428955,
+            0.21921086719043437,
+            0.05835428534176777,
+            0.3849249154716577,
+            0.3492832376952263,
+            0.36248316317550344,
+            0.24815861183858964,
+            0.4644420816290536,
+            0.38469187652970754
+          ]
+        }
+      },
+      "hybrid_risk_governance": {
+        "inhibition": {
+          "name": "hybrid_risk_governance",
+          "feature_kind": "hybrid_risk_governance",
+          "target_kind": "inhibition",
+          "coef": [
+            0.7010542278384058,
+            -0.0007751589742402282,
+            -0.1441642788806711,
+            -0.265291625588478,
+            0.1384507656810207,
+            0.11871247257097028,
+            0.011915483359572345,
+            -0.012100286530699157,
+            0.008782324150201604,
+            0.11275533512690111,
+            0.016284522644308748,
+            0.08081127003002662,
+            0.06061658901470318,
+            -0.08379648944103468,
+            -0.09350730684471488,
+            0.2965221813002197
+          ],
+          "mean": [
+            0.9997648851197787,
+            0.6076833217662913,
+            0.6119815737399842,
+            0.3109951771734499,
+            0.2832765207546675,
+            0.1931532892976619,
+            0.43527445826826167,
+            0.40962348165652135,
+            0.508566517898891,
+            0.42459569883238346,
+            0.3319607683132656,
+            0.3168330945631979,
+            0.3739909761889582,
+            0.3148148148148148,
+            0.2529320588067984
+          ],
+          "sd": [
+            0.0201246059743805,
+            0.37250222412791056,
+            0.3771365400734941,
+            0.2495023170428955,
+            0.21921086719043437,
+            0.05835428534176777,
+            0.3849249154716577,
+            0.3492832376952263,
+            0.36248316317550344,
+            0.24815861183858964,
+            0.3482489575644233,
+            0.31425748357051986,
+            0.31701180794469846,
+            0.4644420816290536,
+            0.38469187652970754
+          ]
+        },
+        "refusal": {
+          "name": "hybrid_risk_governance",
+          "feature_kind": "hybrid_risk_governance",
+          "target_kind": "refusal",
+          "coef": [
+            0.2873309962500704,
+            0.0023584756315334805,
+            0.0052073870803162215,
+            0.02363170931369436,
+            -0.000195094887540558,
+            0.002603535824959383,
+            -0.0036641567824399913,
+            0.0025827356439371003,
+            0.01175230046176622,
+            -0.012586408579690345,
+            -0.009628266025744972,
+            0.19242532887912803,
+            0.12708830816349603,
+            -0.12847696159560096,
+            -0.08002148264275408,
+            0.3023159451258781
+          ],
+          "mean": [
+            0.9997648851197787,
+            0.6076833217662913,
+            0.6119815737399842,
+            0.3109951771734499,
+            0.2832765207546675,
+            0.1931532892976619,
+            0.43527445826826167,
+            0.40962348165652135,
+            0.508566517898891,
+            0.42459569883238346,
+            0.3319607683132656,
+            0.3168330945631979,
+            0.3739909761889582,
+            0.3148148148148148,
+            0.2529320588067984
+          ],
+          "sd": [
+            0.0201246059743805,
+            0.37250222412791056,
+            0.3771365400734941,
+            0.2495023170428955,
+            0.21921086719043437,
+            0.05835428534176777,
+            0.3849249154716577,
+            0.3492832376952263,
+            0.36248316317550344,
+            0.24815861183858964,
+            0.3482489575644233,
+            0.31425748357051986,
+            0.31701180794469846,
+            0.4644420816290536,
+            0.38469187652970754
+          ]
+        }
+      }
+    },
+    "overall": {
+      "scalar": {
+        "inhibition": {
+          "rmse_observed": 0.3191477604757446,
+          "rmse_clean": 0.32103874607096383,
+          "r2_observed": -0.0015237286115670212
+        },
+        "refusal_regression": {
+          "rmse_observed": 0.4263482712253427,
+          "rmse_clean": 0.4398645256803934,
+          "r2_observed": -0.001747108572696776
+        },
+        "refusal_classification": {
+          "accuracy": 0.7392592592592593,
+          "refusal_detection": 0.0,
+          "nonforbidden_false_refusal": 0.0,
+          "risk_false_refusal": 0.0,
+          "bait_false_refusal": 0.0,
+          "allowed_false_refusal": 0.0,
+          "no_signal_false_refusal": 0.0
+        }
+      },
+      "continuous_risk": {
+        "inhibition": {
+          "rmse_observed": 0.20906338028837987,
+          "rmse_clean": 0.20739472844797388,
+          "r2_observed": 0.5702324931300471
+        },
+        "refusal_regression": {
+          "rmse_observed": 0.3023288059026849,
+          "rmse_clean": 0.31210337802483457,
+          "r2_observed": 0.496281220496265
+        },
+        "refusal_classification": {
+          "accuracy": 0.8466666666666667,
+          "refusal_detection": 0.96875,
+          "nonforbidden_false_refusal": 0.1963927855711423,
+          "risk_false_refusal": 0.0,
+          "bait_false_refusal": 0.98989898989899,
+          "allowed_false_refusal": 0.0,
+          "no_signal_false_refusal": 0.0
+        }
+      },
+      "governance_gate": {
+        "inhibition": {
+          "rmse_observed": 0.282799110087217,
+          "rmse_clean": 0.2834226303983046,
+          "r2_observed": 0.21361772174470794
+        },
+        "refusal_regression": {
+          "rmse_observed": 0.08656556363753647,
+          "rmse_clean": 0.08838518572297521,
+          "r2_observed": 0.9587029140922882
+        },
+        "refusal_classification": {
+          "accuracy": 1.0,
+          "refusal_detection": 1.0,
+          "nonforbidden_false_refusal": 0.0,
+          "risk_false_refusal": 0.0,
+          "bait_false_refusal": 0.0,
+          "allowed_false_refusal": 0.0,
+          "no_signal_false_refusal": 0.0
+        }
+      },
+      "governed_risk_gate": {
+        "inhibition": {
+          "rmse_observed": 0.0982124294409158,
+          "rmse_clean": 0.08822711235980558,
+          "r2_observed": 0.9051558499205891
+        },
+        "refusal_regression": {
+          "rmse_observed": 0.08260653047272756,
+          "rmse_clean": 0.08428183092617175,
+          "r2_observed": 0.9623939387802819
+        },
+        "refusal_classification": {
+          "accuracy": 1.0,
+          "refusal_detection": 1.0,
+          "nonforbidden_false_refusal": 0.0,
+          "risk_false_refusal": 0.0,
+          "bait_false_refusal": 0.0,
+          "allowed_false_refusal": 0.0,
+          "no_signal_false_refusal": 0.0
+        }
+      },
+      "hybrid_risk_governance": {
+        "inhibition": {
+          "rmse_observed": 0.09552132324564172,
+          "rmse_clean": 0.0852039265696759,
+          "r2_observed": 0.9102822650030138
+        },
+        "refusal_regression": {
+          "rmse_observed": 0.07245972763117303,
+          "rmse_clean": 0.07337878976061041,
+          "r2_observed": 0.9710650671132155
+        },
+        "refusal_classification": {
+          "accuracy": 1.0,
+          "refusal_detection": 1.0,
+          "nonforbidden_false_refusal": 0.0,
+          "risk_false_refusal": 0.0,
+          "bait_false_refusal": 0.0,
+          "allowed_false_refusal": 0.0,
+          "no_signal_false_refusal": 0.0
+        }
+      }
+    },
+    "by_source": {
+      "forbidden_world": {
+        "scalar": {
+          "inhibition": {
+            "rmse_observed": 0.2418774597841694,
+            "rmse_clean": 0.2490410931245412,
+            "r2_observed": -32.289815915118666
+          },
+          "refusal": {
+            "accuracy": 0.0,
+            "refusal_detection": 0.0,
+            "nonforbidden_false_refusal": NaN,
+            "risk_false_refusal": NaN,
+            "bait_false_refusal": NaN,
+            "allowed_false_refusal": NaN,
+            "no_signal_false_refusal": NaN
+          }
+        },
+        "continuous_risk": {
+          "inhibition": {
+            "rmse_observed": 0.23128919516315902,
+            "rmse_clean": 0.2367091489709991,
+            "r2_observed": -29.4390634161923
+          },
+          "refusal": {
+            "accuracy": 0.96875,
+            "refusal_detection": 0.96875,
+            "nonforbidden_false_refusal": NaN,
+            "risk_false_refusal": NaN,
+            "bait_false_refusal": NaN,
+            "allowed_false_refusal": NaN,
+            "no_signal_false_refusal": NaN
+          }
+        },
+        "governance_gate": {
+          "inhibition": {
+            "rmse_observed": 0.05893602714664055,
+            "rmse_clean": 0.04513175972811011,
+            "r2_observed": -0.9764339688111385
+          },
+          "refusal": {
+            "accuracy": 1.0,
+            "refusal_detection": 1.0,
+            "nonforbidden_false_refusal": NaN,
+            "risk_false_refusal": NaN,
+            "bait_false_refusal": NaN,
+            "allowed_false_refusal": NaN,
+            "no_signal_false_refusal": NaN
+          }
+        },
+        "governed_risk_gate": {
+          "inhibition": {
+            "rmse_observed": 0.1258215143462083,
+            "rmse_clean": 0.11974436517695933,
+            "r2_observed": -8.008042188546746
+          },
+          "refusal": {
+            "accuracy": 1.0,
+            "refusal_detection": 1.0,
+            "nonforbidden_false_refusal": NaN,
+            "risk_false_refusal": NaN,
+            "bait_false_refusal": NaN,
+            "allowed_false_refusal": NaN,
+            "no_signal_false_refusal": NaN
+          }
+        },
+        "hybrid_risk_governance": {
+          "inhibition": {
+            "rmse_observed": 0.12083406489729075,
+            "rmse_clean": 0.11404455935699558,
+            "r2_observed": -7.308055073239787
+          },
+          "refusal": {
+            "accuracy": 1.0,
+            "refusal_detection": 1.0,
+            "nonforbidden_false_refusal": NaN,
+            "risk_false_refusal": NaN,
+            "bait_false_refusal": NaN,
+            "allowed_false_refusal": NaN,
+            "no_signal_false_refusal": NaN
+          }
+        }
+      },
+      "risk_world": {
+        "scalar": {
+          "inhibition": {
+            "rmse_observed": 0.2680692083938346,
+            "rmse_clean": 0.2810289634486197,
+            "r2_observed": -57.6705392058034
+          },
+          "refusal": {
+            "accuracy": 1.0,
+            "refusal_detection": NaN,
+            "nonforbidden_false_refusal": 0.0,
+            "risk_false_refusal": 0.0,
+            "bait_false_refusal": NaN,
+            "allowed_false_refusal": NaN,
+            "no_signal_false_refusal": NaN
+          }
+        },
+        "continuous_risk": {
+          "inhibition": {
+            "rmse_observed": 0.11326468916953526,
+            "rmse_clean": 0.10724040524804904,
+            "r2_observed": -9.474065629395195
+          },
+          "refusal": {
+            "accuracy": 1.0,
+            "refusal_detection": NaN,
+            "nonforbidden_false_refusal": 0.0,
+            "risk_false_refusal": 0.0,
+            "bait_false_refusal": NaN,
+            "allowed_false_refusal": NaN,
+            "no_signal_false_refusal": NaN
+          }
+        },
+        "governance_gate": {
+          "inhibition": {
+            "rmse_observed": 0.35180996745837206,
+            "rmse_clean": 0.36522018687248037,
+            "r2_observed": -100.05143733756702
+          },
+          "refusal": {
+            "accuracy": 1.0,
+            "refusal_detection": NaN,
+            "nonforbidden_false_refusal": 0.0,
+            "risk_false_refusal": 0.0,
+            "bait_false_refusal": NaN,
+            "allowed_false_refusal": NaN,
+            "no_signal_false_refusal": NaN
+          }
+        },
+        "governed_risk_gate": {
+          "inhibition": {
+            "rmse_observed": 0.11662212220641432,
+            "rmse_clean": 0.11128528222623892,
+            "r2_observed": -10.104220985313738
+          },
+          "refusal": {
+            "accuracy": 1.0,
+            "refusal_detection": NaN,
+            "nonforbidden_false_refusal": 0.0,
+            "risk_false_refusal": 0.0,
+            "bait_false_refusal": NaN,
+            "allowed_false_refusal": NaN,
+            "no_signal_false_refusal": NaN
+          }
+        },
+        "hybrid_risk_governance": {
+          "inhibition": {
+            "rmse_observed": 0.11208196142982574,
+            "rmse_clean": 0.10613064559823686,
+            "r2_observed": -9.256464018503362
+          },
+          "refusal": {
+            "accuracy": 1.0,
+            "refusal_detection": NaN,
+            "nonforbidden_false_refusal": 0.0,
+            "risk_false_refusal": 0.0,
+            "bait_false_refusal": NaN,
+            "allowed_false_refusal": NaN,
+            "no_signal_false_refusal": NaN
+          }
+        }
+      },
+      "bait_world": {
+        "scalar": {
+          "inhibition": {
+            "rmse_observed": 0.4185911314887651,
+            "rmse_clean": 0.41708340284110007,
+            "r2_observed": -5.305103221963393
+          },
+          "refusal": {
+            "accuracy": 1.0,
+            "refusal_detection": NaN,
+            "nonforbidden_false_refusal": 0.0,
+            "risk_false_refusal": NaN,
+            "bait_false_refusal": 0.0,
+            "allowed_false_refusal": NaN,
+            "no_signal_false_refusal": NaN
+          }
+        },
+        "continuous_risk": {
+          "inhibition": {
+            "rmse_observed": 0.4170932771659851,
+            "rmse_clean": 0.4155892721202194,
+            "r2_observed": -5.260060561763418
+          },
+          "refusal": {
+            "accuracy": 0.010101010101010102,
+            "refusal_detection": NaN,
+            "nonforbidden_false_refusal": 0.98989898989899,
+            "risk_false_refusal": NaN,
+            "bait_false_refusal": 0.98989898989899,
+            "allowed_false_refusal": NaN,
+            "no_signal_false_refusal": NaN
+          }
+        },
+        "governance_gate": {
+          "inhibition": {
+            "rmse_observed": 0.3420567315429469,
+            "rmse_clean": 0.3398567892345393,
+            "r2_observed": -3.210255368352535
+          },
+          "refusal": {
+            "accuracy": 1.0,
+            "refusal_detection": NaN,
+            "nonforbidden_false_refusal": 0.0,
+            "risk_false_refusal": NaN,
+            "bait_false_refusal": 0.0,
+            "allowed_false_refusal": NaN,
+            "no_signal_false_refusal": NaN
+          }
+        },
+        "governed_risk_gate": {
+          "inhibition": {
+            "rmse_observed": 0.10454947396322874,
+            "rmse_clean": 0.09328242917692696,
+            "r2_observed": 0.6066710985486576
+          },
+          "refusal": {
+            "accuracy": 1.0,
+            "refusal_detection": NaN,
+            "nonforbidden_false_refusal": 0.0,
+            "risk_false_refusal": NaN,
+            "bait_false_refusal": 0.0,
+            "allowed_false_refusal": NaN,
+            "no_signal_false_refusal": NaN
+          }
+        },
+        "hybrid_risk_governance": {
+          "inhibition": {
+            "rmse_observed": 0.10247128004269244,
+            "rmse_clean": 0.090130588457008,
+            "r2_observed": 0.6221525655407334
+          },
+          "refusal": {
+            "accuracy": 1.0,
+            "refusal_detection": NaN,
+            "nonforbidden_false_refusal": 0.0,
+            "risk_false_refusal": NaN,
+            "bait_false_refusal": 0.0,
+            "allowed_false_refusal": NaN,
+            "no_signal_false_refusal": NaN
+          }
+        }
+      },
+      "allowed_world": {
+        "scalar": {
+          "inhibition": {
+            "rmse_observed": 0.6322024519503723,
+            "rmse_clean": 0.6330734759369214,
+            "r2_observed": -114.41288312508527
+          },
+          "refusal": {
+            "accuracy": 1.0,
+            "refusal_detection": NaN,
+            "nonforbidden_false_refusal": 0.0,
+            "risk_false_refusal": NaN,
+            "bait_false_refusal": NaN,
+            "allowed_false_refusal": 0.0,
+            "no_signal_false_refusal": NaN
+          }
+        },
+        "continuous_risk": {
+          "inhibition": {
+            "rmse_observed": 0.07872857709494041,
+            "rmse_clean": 0.0677582341675852,
+            "r2_observed": -0.7898092284591394
+          },
+          "refusal": {
+            "accuracy": 1.0,
+            "refusal_detection": NaN,
+            "nonforbidden_false_refusal": 0.0,
+            "risk_false_refusal": NaN,
+            "bait_false_refusal": NaN,
+            "allowed_false_refusal": 0.0,
+            "no_signal_false_refusal": NaN
+          }
+        },
+        "governance_gate": {
+          "inhibition": {
+            "rmse_observed": 0.5381656522327704,
+            "rmse_clean": 0.5388181675323513,
+            "r2_observed": -82.63227108545392
+          },
+          "refusal": {
+            "accuracy": 1.0,
+            "refusal_detection": NaN,
+            "nonforbidden_false_refusal": 0.0,
+            "risk_false_refusal": NaN,
+            "bait_false_refusal": NaN,
+            "allowed_false_refusal": 0.0,
+            "no_signal_false_refusal": NaN
+          }
+        },
+        "governed_risk_gate": {
+          "inhibition": {
+            "rmse_observed": 0.07055828167677032,
+            "rmse_clean": 0.057916013119019394,
+            "r2_observed": -0.43759955619617474
+          },
+          "refusal": {
+            "accuracy": 1.0,
+            "refusal_detection": NaN,
+            "nonforbidden_false_refusal": 0.0,
+            "risk_false_refusal": NaN,
+            "bait_false_refusal": NaN,
+            "allowed_false_refusal": 0.0,
+            "no_signal_false_refusal": NaN
+          }
+        },
+        "hybrid_risk_governance": {
+          "inhibition": {
+            "rmse_observed": 0.06748416359353876,
+            "rmse_clean": 0.05615170585921265,
+            "r2_observed": -0.315060331605606
+          },
+          "refusal": {
+            "accuracy": 1.0,
+            "refusal_detection": NaN,
+            "nonforbidden_false_refusal": 0.0,
+            "risk_false_refusal": NaN,
+            "bait_false_refusal": NaN,
+            "allowed_false_refusal": 0.0,
+            "no_signal_false_refusal": NaN
+          }
+        }
+      },
+      "no_signal_world": {
+        "scalar": {
+          "inhibition": {
+            "rmse_observed": 0.11789273733594303,
+            "rmse_clean": 0.10895256917647997,
+            "r2_observed": -0.16847203244348052
+          },
+          "refusal": {
+            "accuracy": 1.0,
+            "refusal_detection": NaN,
+            "nonforbidden_false_refusal": 0.0,
+            "risk_false_refusal": NaN,
+            "bait_false_refusal": NaN,
+            "allowed_false_refusal": NaN,
+            "no_signal_false_refusal": 0.0
+          }
+        },
+        "continuous_risk": {
+          "inhibition": {
+            "rmse_observed": 0.07098058973024188,
+            "rmse_clean": 0.05147369248114253,
+            "r2_observed": 0.5764317240503938
+          },
+          "refusal": {
+            "accuracy": 1.0,
+            "refusal_detection": NaN,
+            "nonforbidden_false_refusal": 0.0,
+            "risk_false_refusal": NaN,
+            "bait_false_refusal": NaN,
+            "allowed_false_refusal": NaN,
+            "no_signal_false_refusal": 0.0
+          }
+        },
+        "governance_gate": {
+          "inhibition": {
+            "rmse_observed": 0.17981991747468126,
+            "rmse_clean": 0.17541198998646226,
+            "r2_observed": -1.7184403428732038
+          },
+          "refusal": {
+            "accuracy": 1.0,
+            "refusal_detection": NaN,
+            "nonforbidden_false_refusal": 0.0,
+            "risk_false_refusal": NaN,
+            "bait_false_refusal": NaN,
+            "allowed_false_refusal": NaN,
+            "no_signal_false_refusal": 0.0
+          }
+        },
+        "governed_risk_gate": {
+          "inhibition": {
+            "rmse_observed": 0.06430963827673025,
+            "rmse_clean": 0.04225356563972482,
+            "r2_observed": 0.652306675736327
+          },
+          "refusal": {
+            "accuracy": 1.0,
+            "refusal_detection": NaN,
+            "nonforbidden_false_refusal": 0.0,
+            "risk_false_refusal": NaN,
+            "bait_false_refusal": NaN,
+            "allowed_false_refusal": NaN,
+            "no_signal_false_refusal": 0.0
+          }
+        },
+        "hybrid_risk_governance": {
+          "inhibition": {
+            "rmse_observed": 0.06572178598452609,
+            "rmse_clean": 0.04543223248201464,
+            "r2_observed": 0.6368693288340024
+          },
+          "refusal": {
+            "accuracy": 1.0,
+            "refusal_detection": NaN,
+            "nonforbidden_false_refusal": 0.0,
+            "risk_false_refusal": NaN,
+            "bait_false_refusal": NaN,
+            "allowed_false_refusal": NaN,
+            "no_signal_false_refusal": 0.0
+          }
+        }
+      }
+    },
+    "inhibition_winner": "hybrid_risk_governance",
+    "refusal_winner": "hybrid_risk_governance",
+    "prediction_sample": {
+      "scalar": {
+        "inhibition": [
+          0.7080042793209985,
+          0.6973213024323396,
+          0.6991517713618485,
+          0.7053845034317792,
+          0.6981534349589837,
+          0.6975717083603576,
+          0.7008006888688676,
+          0.7039366178944617
+        ],
+        "refusal": [
+          0.2790276996749047,
+          0.29179075986724085,
+          0.289603880182766,
+          0.28215757234176725,
+          0.29079660274827945,
+          0.29149159738049946,
+          0.2876339018131016,
+          0.28388737579046824
+        ]
+      },
+      "continuous_risk": {
+        "inhibition": [
+          0.8150052107597576,
+          0.7717069406344276,
+          0.8956258110990458,
+          0.15190685278873584,
+          0.8164933111527907,
+          0.7893742569836559,
+          0.9135970221193217,
+          0.7320415160609747
+        ],
+        "refusal": [
+          -0.06952227680191714,
+          0.06751184831605452,
+          0.08194265022131139,
+          0.02222421870145533,
+          0.07309740405485549,
+          0.7494894072014943,
+          -0.0001756899461935607,
+          0.7453296826046083
+        ]
+      },
+      "governance_gate": {
+        "inhibition": [
+          0.6124617051874008,
+          0.5975028231717001,
+          0.6000659447655508,
+          0.7164354093737534,
+          0.5986680201404131,
+          0.885238658109774,
+          0.6023748482386369,
+          1.0306465960050843
+        ],
+        "refusal": [
+          0.015053074731941507,
+          0.017768125488905218,
+          0.01730291657715166,
+          0.21013665304668439,
+          0.017556641174195364,
+          0.7959683379793603,
+          0.016883848486650033,
+          1.2377185612039832
+        ]
+      },
+      "governed_risk_gate": {
+        "inhibition": [
+          0.8624873085200438,
+          0.7470383854477135,
+          0.8551672395916118,
+          0.21800607559424975,
+          0.7793034410761156,
+          0.8516618369506123,
+          0.9065853498031923,
+          1.063913901349505
+        ],
+        "refusal": [
+          0.0040694851629695,
+          0.029219433624913017,
+          0.019439075230839254,
+          0.14214186535449852,
+          0.015441486533680649,
+          0.8493563667300228,
+          -0.013883394247163627,
+          1.25
+        ]
+      },
+      "hybrid_risk_governance": {
+        "inhibition": [
+          0.8559813985485678,
+          0.7315266052400705,
+          0.8601931405770478,
+          0.21196456325783747,
+          0.7618655421988467,
+          0.8722947283830156,
+          0.8935872982236195,
+          1.0259556606327425
+        ],
+        "refusal": [
+          0.008651782281955678,
+          -0.0007966602137050027,
+          0.03030007997076395,
+          0.12313996187068518,
+          -0.009186793748406391,
+          0.9095029436240509,
+          -0.05095351141024557,
+          1.1680791840894194
+        ]
+      }
+    }
+  },
+  "decision_quantities": {
+    "continuous_inhibition_rmse": 0.20906338028837987,
+    "gate_inhibition_rmse": 0.282799110087217,
+    "hybrid_inhibition_rmse": 0.09552132324564172,
+    "continuous_false_refusal": 0.1963927855711423,
+    "gate_false_refusal": 0.0,
+    "governed_false_refusal": 0.0,
+    "continuous_refusal_detection": 0.96875,
+    "gate_refusal_detection": 1.0,
+    "governed_refusal_detection": 1.0,
+    "continuous_bait_false": 0.98989898989899,
+    "gate_bait_false": 0.0,
+    "continuous_risk_false": 0.0,
+    "gate_risk_false": 0.0
+  },
+  "phase_sweep": [
+    {
+      "forbidden_mix": 0.0,
+      "counts": {
+        "forbidden_world": 0,
+        "risk_world": 257,
+        "bait_world": 218,
+        "allowed_world": 225,
+        "no_signal_world": 350
+      },
+      "inhibition_winner": "continuous_risk",
+      "refusal_winner": "scalar",
+      "governance_gate": 0.37917997089544,
+      "inhibition_rmse": {
+        "scalar": 0.35126167792390794,
+        "continuous_risk": 0.0788274626816259,
+        "governance_gate": 0.35171802214358505,
+        "governed_risk_gate": 0.078855105568902,
+        "hybrid_risk_governance": 0.07887939111222098
+      },
+      "refusal_false_admission": {
+        "scalar": 0.0,
+        "continuous_risk": 0.0,
+        "governance_gate": 0.0,
+        "governed_risk_gate": 0.0,
+        "hybrid_risk_governance": 0.0
+      },
+      "refusal_detection": {
+        "scalar": NaN,
+        "continuous_risk": NaN,
+        "governance_gate": NaN,
+        "governed_risk_gate": NaN,
+        "hybrid_risk_governance": NaN
+      },
+      "bait_false_refusal": {
+        "scalar": 0.0,
+        "continuous_risk": 0.0,
+        "governance_gate": 0.0,
+        "governed_risk_gate": 0.0,
+        "hybrid_risk_governance": 0.0
+      },
+      "risk_false_refusal": {
+        "scalar": 0.0,
+        "continuous_risk": 0.0,
+        "governance_gate": 0.0,
+        "governed_risk_gate": 0.0,
+        "hybrid_risk_governance": 0.0
+      }
+    },
+    {
+      "forbidden_mix": 0.2,
+      "counts": {
+        "forbidden_world": 129,
+        "risk_world": 202,
+        "bait_world": 207,
+        "allowed_world": 162,
+        "no_signal_world": 350
+      },
+      "inhibition_winner": "hybrid_risk_governance",
+      "refusal_winner": "hybrid_risk_governance",
+      "governance_gate": 0.3645720900276133,
+      "inhibition_rmse": {
+        "scalar": 0.33671263317214745,
+        "continuous_risk": 0.19051048867977705,
+        "governance_gate": 0.316007044731123,
+        "governed_risk_gate": 0.08959400715235279,
+        "hybrid_risk_governance": 0.08873515561946145
+      },
+      "refusal_false_admission": {
+        "scalar": 0.0,
+        "continuous_risk": 0.002171552660152009,
+        "governance_gate": 0.0,
+        "governed_risk_gate": 0.0,
+        "hybrid_risk_governance": 0.0
+      },
+      "refusal_detection": {
+        "scalar": 0.0,
+        "continuous_risk": 0.007751937984496124,
+        "governance_gate": 1.0,
+        "governed_risk_gate": 1.0,
+        "hybrid_risk_governance": 1.0
+      },
+      "bait_false_refusal": {
+        "scalar": 0.0,
+        "continuous_risk": 0.00966183574879227,
+        "governance_gate": 0.0,
+        "governed_risk_gate": 0.0,
+        "hybrid_risk_governance": 0.0
+      },
+      "risk_false_refusal": {
+        "scalar": 0.0,
+        "continuous_risk": 0.0,
+        "governance_gate": 0.0,
+        "governed_risk_gate": 0.0,
+        "hybrid_risk_governance": 0.0
+      }
+    },
+    {
+      "forbidden_mix": 0.4,
+      "counts": {
+        "forbidden_world": 271,
+        "risk_world": 161,
+        "bait_world": 153,
+        "allowed_world": 115,
+        "no_signal_world": 350
+      },
+      "inhibition_winner": "hybrid_risk_governance",
+      "refusal_winner": "hybrid_risk_governance",
+      "governance_gate": 0.3592211294553683,
+      "inhibition_rmse": {
+        "scalar": 0.32084669001330546,
+        "continuous_risk": 0.21172791401999927,
+        "governance_gate": 0.286069406993697,
+        "governed_risk_gate": 0.09472448623586213,
+        "hybrid_risk_governance": 0.09277621608312067
+      },
+      "refusal_false_admission": {
+        "scalar": 0.0,
+        "continuous_risk": 0.1951219512195122,
+        "governance_gate": 0.0,
+        "governed_risk_gate": 0.0,
+        "hybrid_risk_governance": 0.0
+      },
+      "refusal_detection": {
+        "scalar": 0.0,
+        "continuous_risk": 0.985239852398524,
+        "governance_gate": 1.0,
+        "governed_risk_gate": 1.0,
+        "hybrid_risk_governance": 1.0
+      },
+      "bait_false_refusal": {
+        "scalar": 0.0,
+        "continuous_risk": 0.9934640522875817,
+        "governance_gate": 0.0,
+        "governed_risk_gate": 0.0,
+        "hybrid_risk_governance": 0.0
+      },
+      "risk_false_refusal": {
+        "scalar": 0.0,
+        "continuous_risk": 0.0,
+        "governance_gate": 0.0,
+        "governed_risk_gate": 0.0,
+        "hybrid_risk_governance": 0.0
+      }
+    },
+    {
+      "forbidden_mix": 0.7,
+      "counts": {
+        "forbidden_world": 509,
+        "risk_world": 68,
+        "bait_world": 61,
+        "allowed_world": 62,
+        "no_signal_world": 350
+      },
+      "inhibition_winner": "hybrid_risk_governance",
+      "refusal_winner": "hybrid_risk_governance",
+      "governance_gate": 0.3417675660278105,
+      "inhibition_rmse": {
+        "scalar": 0.25678938521229433,
+        "continuous_risk": 0.17539315163619282,
+        "governance_gate": 0.21278485780254935,
+        "governed_risk_gate": 0.10228728783335943,
+        "hybrid_risk_governance": 0.09962855866516072
+      },
+      "refusal_false_admission": {
+        "scalar": 0.0,
+        "continuous_risk": 0.11275415896487985,
+        "governance_gate": 0.0,
+        "governed_risk_gate": 0.0,
+        "hybrid_risk_governance": 0.0
+      },
+      "refusal_detection": {
+        "scalar": 0.0,
+        "continuous_risk": 1.0,
+        "governance_gate": 1.0,
+        "governed_risk_gate": 1.0,
+        "hybrid_risk_governance": 1.0
+      },
+      "bait_false_refusal": {
+        "scalar": 0.0,
+        "continuous_risk": 1.0,
+        "governance_gate": 0.0,
+        "governed_risk_gate": 0.0,
+        "hybrid_risk_governance": 0.0
+      },
+      "risk_false_refusal": {
+        "scalar": 0.0,
+        "continuous_risk": 0.0,
+        "governance_gate": 0.0,
+        "governed_risk_gate": 0.0,
+        "hybrid_risk_governance": 0.0
+      }
+    },
+    {
+      "forbidden_mix": 1.0,
+      "counts": {
+        "forbidden_world": 700,
+        "risk_world": 0,
+        "bait_world": 0,
+        "allowed_world": 0,
+        "no_signal_world": 350
+      },
+      "inhibition_winner": "hybrid_risk_governance",
+      "refusal_winner": "hybrid_risk_governance",
+      "governance_gate": 0.18048091797422916,
+      "inhibition_rmse": {
+        "scalar": 0.10896295746685958,
+        "continuous_risk": 0.06238671739926557,
+        "governance_gate": 0.06562802442100962,
+        "governed_risk_gate": 0.061812857737194436,
+        "hybrid_risk_governance": 0.061801879180836246
+      },
+      "refusal_false_admission": {
+        "scalar": 1.0,
+        "continuous_risk": 0.0,
+        "governance_gate": 0.002857142857142857,
+        "governed_risk_gate": 0.0,
+        "hybrid_risk_governance": 0.0
+      },
+      "refusal_detection": {
+        "scalar": 1.0,
+        "continuous_risk": 1.0,
+        "governance_gate": 1.0,
+        "governed_risk_gate": 1.0,
+        "hybrid_risk_governance": 1.0
+      },
+      "bait_false_refusal": {
+        "scalar": NaN,
+        "continuous_risk": NaN,
+        "governance_gate": NaN,
+        "governed_risk_gate": NaN,
+        "hybrid_risk_governance": NaN
+      },
+      "risk_false_refusal": {
+        "scalar": NaN,
+        "continuous_risk": NaN,
+        "governance_gate": NaN,
+        "governed_risk_gate": NaN,
+        "hybrid_risk_governance": NaN
+      }
+    }
+  ]
+}

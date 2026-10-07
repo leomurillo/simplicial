@@ -1,0 +1,109 @@
+{
+  "claim_tested": "G_split gate for conservative Bures Hamiltonian Schur reduction",
+  "parameters": {
+    "row": 30,
+    "dimension": 3,
+    "xi_mode": "largest_primes",
+    "quotient_basis": "residue",
+    "target_h_scale": 7.0,
+    "target_mesh_denominator": "distinct",
+    "max_target_pairs": 2000000,
+    "max_states": 64,
+    "beta": 0.75,
+    "tie_breaker": 0.05,
+    "tolerance": 1e-10,
+    "candidates": "diagonal_readout,target_q_only,target_symplectic_pairs,xi_q,xi_once_closure",
+    "report": "empirical\\reports\\bures_hamiltonian_split_audit.md",
+    "json": "empirical\\reports\\bures_hamiltonian_split_audit.json"
+  },
+  "row": 30,
+  "primes": [
+    2,
+    3,
+    5
+  ],
+  "state_count": 30,
+  "xi_labels": [
+    "p5:res",
+    "p3:res",
+    "p2:res"
+  ],
+  "target_radius": 2.2528085640798032,
+  "target_pair_count": 169,
+  "unitary_orbit": {
+    "real_dimension": 870,
+    "matrix_unit_pairs": 435,
+    "rho_min": 0.007592188873263136,
+    "rho_max": 0.10885872856696666,
+    "rho_condition": 14.33825348448938,
+    "min_abs_kks_weight": 1.342135692036523e-05,
+    "max_abs_kks_weight": 0.10126653969370351,
+    "equilibrium_residual": 0.0,
+    "skew_defect": 0.0,
+    "rank_J": 870
+  },
+  "splits": [
+    {
+      "name": "diagonal_readout",
+      "status": "INVALID_EMPTY_OR_NOT_TANGENT",
+      "p_dim": 0,
+      "q_dim": 870,
+      "rank_J_PP": 0,
+      "relative_cross": null,
+      "relative_invariance_defect": null,
+      "reason": "P has no nonzero tangent directions on the unitary leaf."
+    },
+    {
+      "name": "target_q_only",
+      "status": "FAIL_SPLIT",
+      "p_dim": 169,
+      "q_dim": 701,
+      "rank_J_PP": 0,
+      "nondegenerate_P": false,
+      "relative_cross": 0.4781581541113873,
+      "relative_invariance_defect": 1.0,
+      "norm_J_PP": 0.0,
+      "norm_J_PQ": 0.5720435679460455,
+      "norm_J_QP": 0.5720435679460455
+    },
+    {
+      "name": "target_symplectic_pairs",
+      "status": "PASS_SYMPLECTIC_BLOCK",
+      "p_dim": 338,
+      "q_dim": 532,
+      "rank_J_PP": 338,
+      "nondegenerate_P": true,
+      "relative_cross": 0.0,
+      "relative_invariance_defect": 0.0,
+      "norm_J_PP": 0.8089917720575927,
+      "norm_J_PQ": 0.0,
+      "norm_J_QP": 0.0
+    },
+    {
+      "name": "xi_q",
+      "status": "FAIL_SPLIT",
+      "p_dim": 3,
+      "q_dim": 867,
+      "rank_J_PP": 0,
+      "nondegenerate_P": false,
+      "relative_cross": 0.06415589720968444,
+      "relative_invariance_defect": 1.0,
+      "norm_J_PP": 0.0,
+      "norm_J_PQ": 0.07675278154110146,
+      "norm_J_QP": 0.07675278154110146
+    },
+    {
+      "name": "xi_once_closure",
+      "status": "FAIL_SPLIT",
+      "p_dim": 6,
+      "q_dim": 864,
+      "rank_J_PP": 6,
+      "nondegenerate_P": true,
+      "relative_cross": 0.07749944521871631,
+      "relative_invariance_defect": 0.6494896489889902,
+      "norm_J_PP": 0.10854482460528506,
+      "norm_J_PQ": 0.09271630897760692,
+      "norm_J_QP": 0.09271630897760691
+    }
+  ]
+}

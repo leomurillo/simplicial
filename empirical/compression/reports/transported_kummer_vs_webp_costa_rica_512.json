@@ -1,0 +1,265 @@
+[
+  {
+    "file": "C:\\Users\\leomu\\Downloads\\que-ver-en-costa-rica-correos-portada.jpg",
+    "crop_size": 512,
+    "width": 512,
+    "height": 512,
+    "raw_rgb_bytes": 786432,
+    "webp_lossless_bytes": 231732,
+    "webp_lossless_encode_s": 6.101275199995143,
+    "baseline_apex_ans": {
+      "best_scheme": "ch-ctx-energy",
+      "bytes": 250198,
+      "ideal_best_scheme": "ch-ctx-grad-energy",
+      "ideal_no_codebook_bytes": 245545,
+      "metadata_bytes": 768,
+      "transport_tiles": 0,
+      "transport_saved_local_bytes": 0,
+      "model_counts": {
+        "local-p4": 418,
+        "local-p6": 244,
+        "local-p8": 57,
+        "local-p5": 19,
+        "local-p7": 8,
+        "local-p20": 4,
+        "local-p9": 4,
+        "local-p2": 12,
+        "local-p14": 2
+      },
+      "kummer_counts": {
+        "2": 334,
+        "4": 296,
+        "1": 95,
+        "6": 25,
+        "7": 18
+      },
+      "schemes": {
+        "ch-ctx": {
+          "bytes": 253505,
+          "ideal_no_codebook_bytes": 251823,
+          "contexts": 24,
+          "new_symbols": 1457
+        },
+        "ch-ctx-transport": {
+          "bytes": 253505,
+          "ideal_no_codebook_bytes": 251823,
+          "contexts": 24,
+          "new_symbols": 1457
+        },
+        "ch-ctx-grad": {
+          "bytes": 253368,
+          "ideal_no_codebook_bytes": 250616,
+          "contexts": 59,
+          "new_symbols": 2479
+        },
+        "ch-ctx-energy": {
+          "bytes": 250198,
+          "ideal_no_codebook_bytes": 246488,
+          "contexts": 70,
+          "new_symbols": 3408
+        },
+        "ch-ctx-grad-energy": {
+          "bytes": 250767,
+          "ideal_no_codebook_bytes": 245545,
+          "contexts": 129,
+          "new_symbols": 4894
+        }
+      }
+    },
+    "transported_kummer_apex_ans": {
+      "best_scheme": "ch-ctx-energy",
+      "bytes": 250198,
+      "ideal_best_scheme": "ch-ctx-grad-energy",
+      "ideal_no_codebook_bytes": 245546,
+      "metadata_bytes": 774,
+      "transport_tiles": 2,
+      "transport_saved_local_bytes": 3,
+      "model_counts": {
+        "local-p4": 418,
+        "local-p6": 243,
+        "local-p8": 57,
+        "local-p5": 19,
+        "local-p7": 7,
+        "local-p20": 4,
+        "residual-s1-g0": 1,
+        "local-p9": 4,
+        "local-p2": 12,
+        "residual-s0-g0": 1,
+        "local-p14": 2
+      },
+      "kummer_counts": {
+        "2": 334,
+        "4": 296,
+        "1": 95,
+        "6": 25,
+        "7": 18
+      },
+      "schemes": {
+        "ch-ctx": {
+          "bytes": 253504,
+          "ideal_no_codebook_bytes": 251822,
+          "contexts": 24,
+          "new_symbols": 1457
+        },
+        "ch-ctx-transport": {
+          "bytes": 253702,
+          "ideal_no_codebook_bytes": 251744,
+          "contexts": 38,
+          "new_symbols": 1746
+        },
+        "ch-ctx-grad": {
+          "bytes": 253368,
+          "ideal_no_codebook_bytes": 250616,
+          "contexts": 59,
+          "new_symbols": 2479
+        },
+        "ch-ctx-energy": {
+          "bytes": 250198,
+          "ideal_no_codebook_bytes": 246489,
+          "contexts": 70,
+          "new_symbols": 3407
+        },
+        "ch-ctx-grad-energy": {
+          "bytes": 250767,
+          "ideal_no_codebook_bytes": 245546,
+          "contexts": 129,
+          "new_symbols": 4893
+        }
+      }
+    },
+    "estimate_s": 105.53113000001758
+  },
+  {
+    "file": "C:\\Users\\leomu\\Downloads\\central-valley-san-jose-costa-rica.jpg",
+    "crop_size": 512,
+    "width": 512,
+    "height": 512,
+    "raw_rgb_bytes": 786432,
+    "webp_lossless_bytes": 307430,
+    "webp_lossless_encode_s": 10.588650699995924,
+    "baseline_apex_ans": {
+      "best_scheme": "ch-ctx-grad",
+      "bytes": 303155,
+      "ideal_best_scheme": "ch-ctx-grad-energy",
+      "ideal_no_codebook_bytes": 297090,
+      "metadata_bytes": 768,
+      "transport_tiles": 0,
+      "transport_saved_local_bytes": 0,
+      "model_counts": {
+        "local-p4": 482,
+        "local-p5": 28,
+        "local-p14": 14,
+        "local-p20": 50,
+        "local-p6": 96,
+        "local-p1": 2,
+        "local-p9": 39,
+        "local-p7": 27,
+        "local-p3": 29,
+        "local-p12": 1
+      },
+      "kummer_counts": {
+        "2": 316,
+        "4": 206,
+        "1": 100,
+        "6": 108,
+        "7": 34,
+        "5": 4
+      },
+      "schemes": {
+        "ch-ctx": {
+          "bytes": 307000,
+          "ideal_no_codebook_bytes": 304346,
+          "contexts": 23,
+          "new_symbols": 2174
+        },
+        "ch-ctx-transport": {
+          "bytes": 307000,
+          "ideal_no_codebook_bytes": 304346,
+          "contexts": 23,
+          "new_symbols": 2174
+        },
+        "ch-ctx-grad": {
+          "bytes": 303155,
+          "ideal_no_codebook_bytes": 298941,
+          "contexts": 66,
+          "new_symbols": 3684
+        },
+        "ch-ctx-energy": {
+          "bytes": 304637,
+          "ideal_no_codebook_bytes": 298475,
+          "contexts": 90,
+          "new_symbols": 5517
+        },
+        "ch-ctx-grad-energy": {
+          "bytes": 304590,
+          "ideal_no_codebook_bytes": 297090,
+          "contexts": 133,
+          "new_symbols": 6848
+        }
+      }
+    },
+    "transported_kummer_apex_ans": {
+      "best_scheme": "ch-ctx-grad",
+      "bytes": 303155,
+      "ideal_best_scheme": "ch-ctx-grad-energy",
+      "ideal_no_codebook_bytes": 297090,
+      "metadata_bytes": 771,
+      "transport_tiles": 1,
+      "transport_saved_local_bytes": 2,
+      "model_counts": {
+        "local-p4": 481,
+        "local-p5": 28,
+        "local-p14": 14,
+        "local-p20": 50,
+        "local-p6": 96,
+        "local-p1": 2,
+        "local-p9": 39,
+        "local-p7": 27,
+        "local-p3": 29,
+        "local-p12": 1,
+        "residual-s0-g0": 1
+      },
+      "kummer_counts": {
+        "2": 316,
+        "4": 206,
+        "1": 100,
+        "6": 108,
+        "7": 34,
+        "5": 4
+      },
+      "schemes": {
+        "ch-ctx": {
+          "bytes": 306999,
+          "ideal_no_codebook_bytes": 304345,
+          "contexts": 23,
+          "new_symbols": 2174
+        },
+        "ch-ctx-transport": {
+          "bytes": 307014,
+          "ideal_no_codebook_bytes": 304332,
+          "contexts": 27,
+          "new_symbols": 2199
+        },
+        "ch-ctx-grad": {
+          "bytes": 303155,
+          "ideal_no_codebook_bytes": 298941,
+          "contexts": 66,
+          "new_symbols": 3684
+        },
+        "ch-ctx-energy": {
+          "bytes": 304636,
+          "ideal_no_codebook_bytes": 298475,
+          "contexts": 90,
+          "new_symbols": 5517
+        },
+        "ch-ctx-grad-energy": {
+          "bytes": 304590,
+          "ideal_no_codebook_bytes": 297090,
+          "contexts": 133,
+          "new_symbols": 6848
+        }
+      }
+    },
+    "estimate_s": 92.37099349999335
+  }
+]

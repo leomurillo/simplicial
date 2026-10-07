@@ -1,0 +1,446 @@
+{
+  "alpha": 0.01,
+  "dataset_path": "months\\subspace\\pca_k64\\result\\train_dataset.json",
+  "features_path": "months\\subspace\\pca_k64\\result\\features\\training_features.safetensors",
+  "model_pretty": "Llama-3.1-8B",
+  "model_tag": "llama31_8b",
+  "n_test": 24,
+  "n_train": 60,
+  "results": {
+    "decimal_sum_digits": {
+      "decodability": {
+        "decimal_carry10": {
+          "chance": 0.5,
+          "classes": 2,
+          "test_accuracy": 0.5833333333333334,
+          "train_accuracy": 0.5833333333333334
+        },
+        "raw_sum_class": {
+          "chance": 0.05555555555555555,
+          "classes": 18,
+          "test_accuracy": 0.3333333333333333,
+          "train_accuracy": 0.7166666666666667
+        },
+        "result_month": {
+          "chance": 0.08333333333333333,
+          "classes": 12,
+          "test_accuracy": 0.4166666666666667,
+          "train_accuracy": 0.6166666666666667
+        },
+        "sum_ones_digit": {
+          "chance": 0.1,
+          "classes": 10,
+          "test_accuracy": 0.16666666666666666,
+          "train_accuracy": 0.1
+        },
+        "wrap_carry12": {
+          "chance": 0.5,
+          "classes": 2,
+          "test_accuracy": 0.6666666666666666,
+          "train_accuracy": 0.6666666666666666
+        }
+      },
+      "full_result_probe": {
+        "chance": 0.08333333333333333,
+        "classes": 12,
+        "packet_energy": {
+          "2": 1.363571088565957e-20,
+          "3": 5.932509146674755,
+          "4": 7.893327498546352,
+          "6": 2.514266634157577,
+          "12": 1.6260169663593542
+        },
+        "packet_fractions": {
+          "2": 7.589680297778407e-22,
+          "3": 0.33020535683446056,
+          "4": 0.43934513353926957,
+          "6": 0.1399448851375698,
+          "12": 0.09050462448870016
+        },
+        "test_accuracy": 0.4166666666666667,
+        "train_accuracy": 0.6166666666666667
+      },
+      "quotient_result_probes": {
+        "2": {
+          "chance": 0.5,
+          "classes": 2,
+          "test_accuracy": 0.5,
+          "train_accuracy": 0.5
+        },
+        "3": {
+          "chance": 0.3333333333333333,
+          "classes": 3,
+          "test_accuracy": 0.5416666666666666,
+          "train_accuracy": 0.75
+        },
+        "4": {
+          "chance": 0.25,
+          "classes": 4,
+          "test_accuracy": 0.5,
+          "train_accuracy": 0.6666666666666666
+        },
+        "6": {
+          "chance": 0.16666666666666666,
+          "classes": 6,
+          "test_accuracy": 0.5416666666666666,
+          "train_accuracy": 0.7166666666666667
+        },
+        "12": {
+          "chance": 0.08333333333333333,
+          "classes": 12,
+          "test_accuracy": 0.4166666666666667,
+          "train_accuracy": 0.6166666666666667
+        }
+      }
+    },
+    "linear_source_offset": {
+      "decodability": {
+        "decimal_carry10": {
+          "chance": 0.5,
+          "classes": 2,
+          "test_accuracy": 0.6666666666666666,
+          "train_accuracy": 0.6666666666666666
+        },
+        "raw_sum_class": {
+          "chance": 0.05555555555555555,
+          "classes": 18,
+          "test_accuracy": 0.7083333333333334,
+          "train_accuracy": 1.0
+        },
+        "result_month": {
+          "chance": 0.08333333333333333,
+          "classes": 12,
+          "test_accuracy": 0.75,
+          "train_accuracy": 1.0
+        },
+        "sum_ones_digit": {
+          "chance": 0.1,
+          "classes": 10,
+          "test_accuracy": 0.8333333333333334,
+          "train_accuracy": 1.0
+        },
+        "wrap_carry12": {
+          "chance": 0.5,
+          "classes": 2,
+          "test_accuracy": 0.5833333333333334,
+          "train_accuracy": 0.7166666666666667
+        }
+      },
+      "full_result_probe": {
+        "chance": 0.08333333333333333,
+        "classes": 12,
+        "packet_energy": {
+          "2": 3.5872318980024724,
+          "3": 12.509187765616785,
+          "4": 11.453180419923283,
+          "6": 10.160342369297071,
+          "12": 11.409851171674067
+        },
+        "packet_fractions": {
+          "2": 0.07303027218364028,
+          "3": 0.2546669446789769,
+          "4": 0.23316833347213964,
+          "6": 0.2068482300020589,
+          "12": 0.23228621966318436
+        },
+        "test_accuracy": 0.75,
+        "train_accuracy": 1.0
+      },
+      "quotient_result_probes": {
+        "2": {
+          "chance": 0.5,
+          "classes": 2,
+          "test_accuracy": 0.9583333333333334,
+          "train_accuracy": 1.0
+        },
+        "3": {
+          "chance": 0.3333333333333333,
+          "classes": 3,
+          "test_accuracy": 0.6666666666666666,
+          "train_accuracy": 1.0
+        },
+        "4": {
+          "chance": 0.25,
+          "classes": 4,
+          "test_accuracy": 0.5833333333333334,
+          "train_accuracy": 1.0
+        },
+        "6": {
+          "chance": 0.16666666666666666,
+          "classes": 6,
+          "test_accuracy": 0.875,
+          "train_accuracy": 1.0
+        },
+        "12": {
+          "chance": 0.08333333333333333,
+          "classes": 12,
+          "test_accuracy": 0.75,
+          "train_accuracy": 1.0
+        }
+      }
+    },
+    "none": {
+      "decodability": {
+        "decimal_carry10": {
+          "chance": 0.5,
+          "classes": 2,
+          "test_accuracy": 0.75,
+          "train_accuracy": 1.0
+        },
+        "raw_sum_class": {
+          "chance": 0.05555555555555555,
+          "classes": 18,
+          "test_accuracy": 0.625,
+          "train_accuracy": 1.0
+        },
+        "result_month": {
+          "chance": 0.08333333333333333,
+          "classes": 12,
+          "test_accuracy": 0.6666666666666666,
+          "train_accuracy": 1.0
+        },
+        "sum_ones_digit": {
+          "chance": 0.1,
+          "classes": 10,
+          "test_accuracy": 0.5833333333333334,
+          "train_accuracy": 1.0
+        },
+        "wrap_carry12": {
+          "chance": 0.5,
+          "classes": 2,
+          "test_accuracy": 0.875,
+          "train_accuracy": 1.0
+        }
+      },
+      "full_result_probe": {
+        "chance": 0.08333333333333333,
+        "classes": 12,
+        "packet_energy": {
+          "2": 6.902081321411561,
+          "3": 12.882466171596564,
+          "4": 18.87706991245708,
+          "6": 9.214139286254522,
+          "12": 9.708342081370718
+        },
+        "packet_fractions": {
+          "2": 0.11986088987185754,
+          "3": 0.2237156862063569,
+          "4": 0.32781740644829716,
+          "6": 0.16001186929333988,
+          "12": 0.1685941481801485
+        },
+        "test_accuracy": 0.6666666666666666,
+        "train_accuracy": 1.0
+      },
+      "quotient_result_probes": {
+        "2": {
+          "chance": 0.5,
+          "classes": 2,
+          "test_accuracy": 0.9166666666666666,
+          "train_accuracy": 1.0
+        },
+        "3": {
+          "chance": 0.3333333333333333,
+          "classes": 3,
+          "test_accuracy": 0.5833333333333334,
+          "train_accuracy": 1.0
+        },
+        "4": {
+          "chance": 0.25,
+          "classes": 4,
+          "test_accuracy": 0.5833333333333334,
+          "train_accuracy": 1.0
+        },
+        "6": {
+          "chance": 0.16666666666666666,
+          "classes": 6,
+          "test_accuracy": 0.7916666666666666,
+          "train_accuracy": 1.0
+        },
+        "12": {
+          "chance": 0.08333333333333333,
+          "classes": 12,
+          "test_accuracy": 0.6666666666666666,
+          "train_accuracy": 1.0
+        }
+      }
+    },
+    "raw_sum_class": {
+      "decodability": {
+        "decimal_carry10": {
+          "chance": 0.5,
+          "classes": 2,
+          "test_accuracy": 0.5833333333333334,
+          "train_accuracy": 0.5833333333333334
+        },
+        "raw_sum_class": {
+          "chance": 0.05555555555555555,
+          "classes": 18,
+          "test_accuracy": 0.08333333333333333,
+          "train_accuracy": 0.1
+        },
+        "result_month": {
+          "chance": 0.08333333333333333,
+          "classes": 12,
+          "test_accuracy": 0.16666666666666666,
+          "train_accuracy": 0.18333333333333332
+        },
+        "sum_ones_digit": {
+          "chance": 0.1,
+          "classes": 10,
+          "test_accuracy": 0.041666666666666664,
+          "train_accuracy": 0.11666666666666667
+        },
+        "wrap_carry12": {
+          "chance": 0.5,
+          "classes": 2,
+          "test_accuracy": 0.6666666666666666,
+          "train_accuracy": 0.6666666666666666
+        }
+      },
+      "full_result_probe": {
+        "chance": 0.08333333333333333,
+        "classes": 12,
+        "packet_energy": {
+          "2": 5.937985991198058e-20,
+          "3": 3.294061998568384e-19,
+          "4": 1.0272386541799095e-19,
+          "6": 3.1278219346572987e-20,
+          "12": 3.185419868632912e-19
+        },
+        "packet_fractions": {
+          "2": 0.0,
+          "3": 0.0,
+          "4": 0.0,
+          "6": 0.0,
+          "12": 0.0
+        },
+        "test_accuracy": 0.16666666666666666,
+        "train_accuracy": 0.18333333333333332
+      },
+      "quotient_result_probes": {
+        "2": {
+          "chance": 0.5,
+          "classes": 2,
+          "test_accuracy": 0.5416666666666666,
+          "train_accuracy": 0.55
+        },
+        "3": {
+          "chance": 0.3333333333333333,
+          "classes": 3,
+          "test_accuracy": 0.4583333333333333,
+          "train_accuracy": 0.35
+        },
+        "4": {
+          "chance": 0.25,
+          "classes": 4,
+          "test_accuracy": 0.4166666666666667,
+          "train_accuracy": 0.23333333333333334
+        },
+        "6": {
+          "chance": 0.16666666666666666,
+          "classes": 6,
+          "test_accuracy": 0.125,
+          "train_accuracy": 0.26666666666666666
+        },
+        "12": {
+          "chance": 0.08333333333333333,
+          "classes": 12,
+          "test_accuracy": 0.16666666666666666,
+          "train_accuracy": 0.18333333333333332
+        }
+      }
+    }
+  },
+  "run_date": "2026-05-16",
+  "seed": 20260516,
+  "test_indices": [
+    58,
+    22,
+    68,
+    42,
+    63,
+    48,
+    23,
+    14,
+    33,
+    64,
+    79,
+    77,
+    35,
+    71,
+    55,
+    72,
+    9,
+    32,
+    31,
+    69,
+    20,
+    43,
+    36,
+    16
+  ],
+  "test_per_class": 2,
+  "train_indices": [
+    38,
+    28,
+    75,
+    73,
+    37,
+    65,
+    17,
+    7,
+    82,
+    0,
+    70,
+    13,
+    83,
+    39,
+    53,
+    74,
+    26,
+    27,
+    67,
+    21,
+    12,
+    59,
+    76,
+    50,
+    80,
+    81,
+    25,
+    4,
+    18,
+    52,
+    45,
+    54,
+    62,
+    46,
+    3,
+    15,
+    51,
+    49,
+    66,
+    1,
+    47,
+    41,
+    24,
+    30,
+    78,
+    2,
+    57,
+    5,
+    60,
+    29,
+    11,
+    61,
+    34,
+    8,
+    44,
+    6,
+    40,
+    19,
+    10,
+    56
+  ]
+}

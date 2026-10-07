@@ -1,0 +1,43 @@
+{
+  "model": "EleutherAI/pythia-410m",
+  "K": 5,
+  "T": 12,
+  "n_windows": 60,
+  "metric": "functional-ANOVA interaction spectrum (frac per order; a_k=per-interaction strength)",
+  "trained": {
+    "frac_per_order": [
+      0.7616,
+      0.1634,
+      0.0591,
+      0.0143,
+      0.0016
+    ],
+    "a_k": [
+      0.15232,
+      0.01634,
+      0.00591,
+      0.00287,
+      0.00163
+    ],
+    "a3_over_a1": 0.039
+  },
+  "untrained": {
+    "frac_per_order": [
+      0.8682,
+      0.1246,
+      0.0069,
+      0.0003,
+      0.0
+    ],
+    "a_k": [
+      0.17364,
+      0.01246,
+      0.00069,
+      6e-05,
+      2e-05
+    ],
+    "a3_over_a1": 0.004
+  },
+  "verdict": "FALSIFY",
+  "verdict_note": "trained a3/a1=0.04 (genuine>0.5=False), untrained a3/a1=0.00, training-not-flattened=True"
+}

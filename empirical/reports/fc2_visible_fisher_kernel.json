@@ -1,0 +1,3049 @@
+{
+  "classification_layer": "FC2 visible Fisher-jet kernel",
+  "source_theorem_status": "FC2 source theorem is treated as solved; this report classifies visible shadows and tested projection kernels",
+  "projection_conventions": {
+    "raw_support_projection": "support-gauge C2 quotient from fc2_row_classifier; residual 0 means erasure in that projection, not filtered triviality",
+    "k_ch": "antisymmetric mixed second-order Fisher commutator.  It is a Fisher-jet shadow of [kappa], not an Ext_CH detector by itself",
+    "h4_lift": "input-side lift of a commutator key (left_mode,right_mode,alpha,beta,input,output) to closed H4 cells (left_mode,right_mode,alpha,input) and (left_mode,right_mode,beta,input)"
+  },
+  "exact_limits": {
+    "max_exact_mode_pairs": 100,
+    "max_exact_candidate_products": 50000,
+    "sample_mode_pairs_per_packet": 0,
+    "force_exact": [
+      "f2-u5",
+      "f8-u2"
+    ]
+  },
+  "rows": [
+    {
+      "row_key": "f4-u2",
+      "ring": "F_4[u]/(u^2)",
+      "label_count": 16,
+      "nontrivial_label_count": 15,
+      "gamma_size": 24,
+      "packets": {
+        "u": 3,
+        "u^2": 12
+      },
+      "eligibility": {
+        "mixed_packet_pairs": 1,
+        "conductor_mixed_mode_pairs": 36,
+        "candidate_tangent_products": 7560,
+        "max_exact_mode_pairs": 100,
+        "max_exact_candidate_products": 50000,
+        "forced_exact": false
+      },
+      "visible_shadow": {
+        "status": "exact",
+        "commutator_entries": 14112,
+        "unique_support_keys": 14112,
+        "commutator_orbits": 592,
+        "commutator_orbit_size_distribution": {
+          "12": 8,
+          "24": 584
+        },
+        "coefficient_distribution": {
+          "-1": 7056,
+          "1": 7056
+        },
+        "representative_commutator_orbits_sample": [
+          {
+            "id": 0,
+            "representative": {
+              "left_mode": "u",
+              "right_mode": "1",
+              "alpha": "u",
+              "beta": "wu",
+              "input": "1",
+              "output": "wu"
+            },
+            "size": 24,
+            "ambient_size": 24,
+            "missing": 0
+          },
+          {
+            "id": 1,
+            "representative": {
+              "left_mode": "u",
+              "right_mode": "1",
+              "alpha": "u",
+              "beta": "wu",
+              "input": "1+(w+1)u",
+              "output": "u"
+            },
+            "size": 24,
+            "ambient_size": 24,
+            "missing": 0
+          },
+          {
+            "id": 2,
+            "representative": {
+              "left_mode": "u",
+              "right_mode": "1",
+              "alpha": "u",
+              "beta": "1",
+              "input": "u",
+              "output": "u"
+            },
+            "size": 12,
+            "ambient_size": 12,
+            "missing": 0
+          },
+          {
+            "id": 3,
+            "representative": {
+              "left_mode": "u",
+              "right_mode": "1",
+              "alpha": "u",
+              "beta": "1",
+              "input": "1",
+              "output": "1"
+            },
+            "size": 12,
+            "ambient_size": 12,
+            "missing": 0
+          },
+          {
+            "id": 4,
+            "representative": {
+              "left_mode": "u",
+              "right_mode": "1",
+              "alpha": "u",
+              "beta": "1+u",
+              "input": "1",
+              "output": "1+u"
+            },
+            "size": 12,
+            "ambient_size": 12,
+            "missing": 0
+          },
+          {
+            "id": 5,
+            "representative": {
+              "left_mode": "u",
+              "right_mode": "1",
+              "alpha": "u",
+              "beta": "1+wu",
+              "input": "(w+1)u",
+              "output": "u"
+            },
+            "size": 24,
+            "ambient_size": 24,
+            "missing": 0
+          },
+          {
+            "id": 6,
+            "representative": {
+              "left_mode": "u",
+              "right_mode": "1",
+              "alpha": "u",
+              "beta": "1+wu",
+              "input": "1",
+              "output": "1+wu"
+            },
+            "size": 24,
+            "ambient_size": 24,
+            "missing": 0
+          },
+          {
+            "id": 7,
+            "representative": {
+              "left_mode": "u",
+              "right_mode": "1",
+              "alpha": "u",
+              "beta": "w",
+              "input": "1",
+              "output": "w"
+            },
+            "size": 24,
+            "ambient_size": 24,
+            "missing": 0
+          },
+          {
+            "id": 8,
+            "representative": {
+              "left_mode": "u",
+              "right_mode": "1",
+              "alpha": "u",
+              "beta": "w",
+              "input": "w+1+u",
+              "output": "u"
+            },
+            "size": 24,
+            "ambient_size": 24,
+            "missing": 0
+          },
+          {
+            "id": 9,
+            "representative": {
+              "left_mode": "u",
+              "right_mode": "1",
+              "alpha": "u",
+              "beta": "w+u",
+              "input": "1",
+              "output": "w+u"
+            },
+            "size": 24,
+            "ambient_size": 24,
+            "missing": 0
+          },
+          {
+            "id": 10,
+            "representative": {
+              "left_mode": "u",
+              "right_mode": "1",
+              "alpha": "u",
+              "beta": "w+u",
+              "input": "w+1",
+              "output": "u"
+            },
+            "size": 24,
+            "ambient_size": 24,
+            "missing": 0
+          },
+          {
+            "id": 11,
+            "representative": {
+              "left_mode": "u",
+              "right_mode": "1",
+              "alpha": "u",
+              "beta": "w+wu",
+              "input": "1",
+              "output": "w+wu"
+            },
+            "size": 24,
+            "ambient_size": 24,
+            "missing": 0
+          },
+          {
+            "id": 12,
+            "representative": {
+              "left_mode": "u",
+              "right_mode": "1",
+              "alpha": "u",
+              "beta": "w+wu",
+              "input": "w+1+(w+1)u",
+              "output": "u"
+            },
+            "size": 24,
+            "ambient_size": 24,
+            "missing": 0
+          },
+          {
+            "id": 13,
+            "representative": {
+              "left_mode": "u",
+              "right_mode": "1",
+              "alpha": "u",
+              "beta": "w+(w+1)u",
+              "input": "1",
+              "output": "w+(w+1)u"
+            },
+            "size": 24,
+            "ambient_size": 24,
+            "missing": 0
+          },
+          {
+            "id": 14,
+            "representative": {
+              "left_mode": "u",
+              "right_mode": "1",
+              "alpha": "u",
+              "beta": "w+(w+1)u",
+              "input": "w+1+wu",
+              "output": "u"
+            },
+            "size": 24,
+            "ambient_size": 24,
+            "missing": 0
+          },
+          {
+            "id": 15,
+            "representative": {
+              "left_mode": "u",
+              "right_mode": "1",
+              "alpha": "wu",
+              "beta": "u",
+              "input": "1",
+              "output": "wu"
+            },
+            "size": 24,
+            "ambient_size": 24,
+            "missing": 0
+          },
+          {
+            "id": 16,
+            "representative": {
+              "left_mode": "u",
+              "right_mode": "1",
+              "alpha": "wu",
+              "beta": "u",
+              "input": "1+(w+1)u",
+              "output": "u"
+            },
+            "size": 24,
+            "ambient_size": 24,
+            "missing": 0
+          },
+          {
+            "id": 17,
+            "representative": {
+              "left_mode": "u",
+              "right_mode": "1",
+              "alpha": "wu",
+              "beta": "(w+1)u",
+              "input": "1+wu",
+              "output": "wu"
+            },
+            "size": 24,
+            "ambient_size": 24,
+            "missing": 0
+          },
+          {
+            "id": 18,
+            "representative": {
+              "left_mode": "u",
+              "right_mode": "1",
+              "alpha": "wu",
+              "beta": "(w+1)u",
+              "input": "1+(w+1)u",
+              "output": "(w+1)u"
+            },
+            "size": 24,
+            "ambient_size": 24,
+            "missing": 0
+          },
+          {
+            "id": 19,
+            "representative": {
+              "left_mode": "u",
+              "right_mode": "1",
+              "alpha": "wu",
+              "beta": "1",
+              "input": "u",
+              "output": "wu"
+            },
+            "size": 24,
+            "ambient_size": 24,
+            "missing": 0
+          }
+        ],
+        "input_side_h4_lift": {
+          "lifted_commutator_orbits": 592,
+          "h4_orbits_hit": 7,
+          "closed_input_side_hits": 14112,
+          "h2_to_h4_multiplicity": {
+            "1": 592
+          },
+          "h4_family_orbits_total": {
+            "TTTT": 2,
+            "TTWW": 4,
+            "TWWW": 3,
+            "WWWW": 9
+          },
+          "h4_family_orbits_hit": {
+            "TTWW": 4,
+            "TWWW": 3
+          },
+          "h4_entry_hits_by_family": {
+            "TTWW": 6048,
+            "TWWW": 8064
+          },
+          "mixed_h4_orbits_hit": 7,
+          "mixed_h4_orbits_total": 7,
+          "pure_h4_orbits_hit": 0,
+          "pure_h4_orbits_total": 11,
+          "h4_orbit_image_table": [
+            {
+              "h4_orbit": 3,
+              "family": "TTWW",
+              "size": 72,
+              "h2_commutator_orbits": 32,
+              "entry_hits": 672,
+              "representative": "((w+1)u, (w+1)u, w+1, w+1)"
+            },
+            {
+              "h4_orbit": 1,
+              "family": "TTWW",
+              "size": 144,
+              "h2_commutator_orbits": 56,
+              "entry_hits": 1344,
+              "representative": "((w+1)u, (w+1)u, 1, 1)"
+            },
+            {
+              "h4_orbit": 4,
+              "family": "TTWW",
+              "size": 144,
+              "h2_commutator_orbits": 56,
+              "entry_hits": 1344,
+              "representative": "((w+1)u, 1, 1+u, wu)"
+            },
+            {
+              "h4_orbit": 5,
+              "family": "TTWW",
+              "size": 288,
+              "h2_commutator_orbits": 112,
+              "entry_hits": 2688,
+              "representative": "((w+1)u, 1, 1+wu, u)"
+            },
+            {
+              "h4_orbit": 6,
+              "family": "TWWW",
+              "size": 288,
+              "h2_commutator_orbits": 84,
+              "entry_hits": 2016,
+              "representative": "((w+1)u, 1, w, w+1+(w+1)u)"
+            },
+            {
+              "h4_orbit": 8,
+              "family": "TWWW",
+              "size": 288,
+              "h2_commutator_orbits": 84,
+              "entry_hits": 2016,
+              "representative": "((w+1)u, 1, w+1+u, w+wu)"
+            },
+            {
+              "h4_orbit": 7,
+              "family": "TWWW",
+              "size": 576,
+              "h2_commutator_orbits": 168,
+              "entry_hits": 4032,
+              "representative": "((w+1)u, 1, w+(w+1)u, w+1)"
+            }
+          ]
+        },
+        "packet_pair_rows": [
+          {
+            "left_conductor": "u",
+            "right_conductor": "u^2",
+            "left_mode_count": 3,
+            "right_mode_count": 12,
+            "mode_pair_count": 36,
+            "tangent_operator_pairs_per_mode_pair": 210,
+            "candidate_tangent_products": 7560,
+            "commutator_entries": 14112,
+            "unique_support_keys": 14112,
+            "commutator_orbits": 592,
+            "coefficient_distribution": {
+              "-1": 7056,
+              "1": 7056
+            },
+            "input_side_h4_lift": {
+              "lifted_commutator_orbits": 592,
+              "h4_orbits_hit": 7,
+              "closed_input_side_hits": 14112,
+              "h4_family_orbits_hit": {
+                "TTWW": 4,
+                "TWWW": 3
+              },
+              "h4_entry_hits_by_family": {
+                "TTWW": 6048,
+                "TWWW": 8064
+              },
+              "mixed_h4_orbits_hit": 7,
+              "mixed_h4_orbits_total": 7,
+              "pure_h4_orbits_hit": 0,
+              "pure_h4_orbits_total": 11
+            }
+          }
+        ],
+        "timing_seconds": {
+          "witness_generation": 0.005,
+          "commutator_orbits": 0.051,
+          "h4_orbits": 0.066
+        }
+      },
+      "execution_notes": [],
+      "residual_accounting": {
+        "full_filtered_residual_atoms": 1569,
+        "raw_support_projection_residual": 0,
+        "raw_support_erased_atoms": 1569,
+        "visible_fisher_shadow_present": true,
+        "tested_fisher_channel": "conductor-mixed K_CH commutator with input-side H4 lift",
+        "atom_resolution_status": "not atom-resolved: K_CH/H4 is a Fisher-jet shadow of [kappa], not a standalone Ext_CH atom detector",
+        "atom_level_visible_count": null,
+        "atom_level_invisible_count": null,
+        "unresolved_filtered_atoms_for_atom_level_visibility": 1569,
+        "shadow_status": "exact"
+      }
+    },
+    {
+      "row_key": "f2-u5",
+      "ring": "F_2[u]/(u^5)",
+      "label_count": 32,
+      "nontrivial_label_count": 31,
+      "gamma_size": 128,
+      "packets": {
+        "u": 1,
+        "u^2": 2,
+        "u^3": 4,
+        "u^4": 8,
+        "u^5": 16
+      },
+      "eligibility": {
+        "mixed_packet_pairs": 10,
+        "conductor_mixed_mode_pairs": 310,
+        "candidate_tangent_products": 288300,
+        "max_exact_mode_pairs": 100,
+        "max_exact_candidate_products": 50000,
+        "forced_exact": true
+      },
+      "visible_shadow": {
+        "status": "exact",
+        "commutator_entries": 558000,
+        "unique_support_keys": 558000,
+        "commutator_orbits": 6656,
+        "commutator_orbit_size_distribution": {
+          "128": 3732,
+          "16": 248,
+          "2": 8,
+          "32": 2292,
+          "4": 8,
+          "8": 368
+        },
+        "coefficient_distribution": {
+          "-1": 279000,
+          "1": 279000
+        },
+        "representative_commutator_orbits_sample": [
+          {
+            "id": 0,
+            "representative": {
+              "left_mode": "u^4",
+              "right_mode": "u^3",
+              "alpha": "u^4",
+              "beta": "u^3",
+              "input": "u^4",
+              "output": "u^4"
+            },
+            "size": 2,
+            "ambient_size": 2,
+            "missing": 0
+          },
+          {
+            "id": 1,
+            "representative": {
+              "left_mode": "u^4",
+              "right_mode": "u^3",
+              "alpha": "u^4",
+              "beta": "u^3",
+              "input": "u^3",
+              "output": "u^3"
+            },
+            "size": 2,
+            "ambient_size": 2,
+            "missing": 0
+          },
+          {
+            "id": 2,
+            "representative": {
+              "left_mode": "u^4",
+              "right_mode": "u^3",
+              "alpha": "u^4",
+              "beta": "u^3+u^4",
+              "input": "u^3",
+              "output": "u^3+u^4"
+            },
+            "size": 2,
+            "ambient_size": 2,
+            "missing": 0
+          },
+          {
+            "id": 3,
+            "representative": {
+              "left_mode": "u^4",
+              "right_mode": "u^3",
+              "alpha": "u^4",
+              "beta": "u^2",
+              "input": "u^3",
+              "output": "u^2"
+            },
+            "size": 8,
+            "ambient_size": 8,
+            "missing": 0
+          },
+          {
+            "id": 4,
+            "representative": {
+              "left_mode": "u^4",
+              "right_mode": "u^3",
+              "alpha": "u^4",
+              "beta": "u^2",
+              "input": "u^2+u^3+u^4",
+              "output": "u^4"
+            },
+            "size": 8,
+            "ambient_size": 8,
+            "missing": 0
+          },
+          {
+            "id": 5,
+            "representative": {
+              "left_mode": "u^4",
+              "right_mode": "u^3",
+              "alpha": "u^4",
+              "beta": "u",
+              "input": "u^3",
+              "output": "u"
+            },
+            "size": 8,
+            "ambient_size": 8,
+            "missing": 0
+          },
+          {
+            "id": 6,
+            "representative": {
+              "left_mode": "u^4",
+              "right_mode": "u^3",
+              "alpha": "u^4",
+              "beta": "u",
+              "input": "u+u^3+u^4",
+              "output": "u^4"
+            },
+            "size": 8,
+            "ambient_size": 8,
+            "missing": 0
+          },
+          {
+            "id": 7,
+            "representative": {
+              "left_mode": "u^4",
+              "right_mode": "u^3",
+              "alpha": "u^4",
+              "beta": "u+u^2",
+              "input": "u^3",
+              "output": "u+u^2"
+            },
+            "size": 8,
+            "ambient_size": 8,
+            "missing": 0
+          },
+          {
+            "id": 8,
+            "representative": {
+              "left_mode": "u^4",
+              "right_mode": "u^3",
+              "alpha": "u^4",
+              "beta": "u+u^2",
+              "input": "u+u^2+u^3+u^4",
+              "output": "u^4"
+            },
+            "size": 8,
+            "ambient_size": 8,
+            "missing": 0
+          },
+          {
+            "id": 9,
+            "representative": {
+              "left_mode": "u^4",
+              "right_mode": "u^3",
+              "alpha": "u^4",
+              "beta": "1",
+              "input": "u^3",
+              "output": "1"
+            },
+            "size": 32,
+            "ambient_size": 32,
+            "missing": 0
+          },
+          {
+            "id": 10,
+            "representative": {
+              "left_mode": "u^4",
+              "right_mode": "u^3",
+              "alpha": "u^4",
+              "beta": "1",
+              "input": "1+u^3+u^4",
+              "output": "u^4"
+            },
+            "size": 32,
+            "ambient_size": 32,
+            "missing": 0
+          },
+          {
+            "id": 11,
+            "representative": {
+              "left_mode": "u^4",
+              "right_mode": "u^3",
+              "alpha": "u^3",
+              "beta": "u^4",
+              "input": "u^4",
+              "output": "u^4"
+            },
+            "size": 2,
+            "ambient_size": 2,
+            "missing": 0
+          },
+          {
+            "id": 12,
+            "representative": {
+              "left_mode": "u^4",
+              "right_mode": "u^3",
+              "alpha": "u^3",
+              "beta": "u^4",
+              "input": "u^3",
+              "output": "u^3"
+            },
+            "size": 2,
+            "ambient_size": 2,
+            "missing": 0
+          },
+          {
+            "id": 13,
+            "representative": {
+              "left_mode": "u^4",
+              "right_mode": "u^3",
+              "alpha": "u^3",
+              "beta": "u^3+u^4",
+              "input": "u^4",
+              "output": "u^3+u^4"
+            },
+            "size": 2,
+            "ambient_size": 2,
+            "missing": 0
+          },
+          {
+            "id": 14,
+            "representative": {
+              "left_mode": "u^4",
+              "right_mode": "u^3",
+              "alpha": "u^3",
+              "beta": "u^2",
+              "input": "u^4",
+              "output": "u^2"
+            },
+            "size": 8,
+            "ambient_size": 8,
+            "missing": 0
+          },
+          {
+            "id": 15,
+            "representative": {
+              "left_mode": "u^4",
+              "right_mode": "u^3",
+              "alpha": "u^3",
+              "beta": "u^2",
+              "input": "u^2+u^3+u^4",
+              "output": "u^3"
+            },
+            "size": 8,
+            "ambient_size": 8,
+            "missing": 0
+          },
+          {
+            "id": 16,
+            "representative": {
+              "left_mode": "u^4",
+              "right_mode": "u^3",
+              "alpha": "u^3",
+              "beta": "u",
+              "input": "u^4",
+              "output": "u"
+            },
+            "size": 8,
+            "ambient_size": 8,
+            "missing": 0
+          },
+          {
+            "id": 17,
+            "representative": {
+              "left_mode": "u^4",
+              "right_mode": "u^3",
+              "alpha": "u^3",
+              "beta": "u",
+              "input": "u+u^3+u^4",
+              "output": "u^3"
+            },
+            "size": 8,
+            "ambient_size": 8,
+            "missing": 0
+          },
+          {
+            "id": 18,
+            "representative": {
+              "left_mode": "u^4",
+              "right_mode": "u^3",
+              "alpha": "u^3",
+              "beta": "u+u^2",
+              "input": "u^4",
+              "output": "u+u^2"
+            },
+            "size": 8,
+            "ambient_size": 8,
+            "missing": 0
+          },
+          {
+            "id": 19,
+            "representative": {
+              "left_mode": "u^4",
+              "right_mode": "u^3",
+              "alpha": "u^3",
+              "beta": "u+u^2",
+              "input": "u+u^2+u^3+u^4",
+              "output": "u^3"
+            },
+            "size": 8,
+            "ambient_size": 8,
+            "missing": 0
+          }
+        ],
+        "input_side_h4_lift": {
+          "lifted_commutator_orbits": 6656,
+          "h4_orbits_hit": 43,
+          "closed_input_side_hits": 558000,
+          "h2_to_h4_multiplicity": {
+            "1": 6656
+          },
+          "h4_family_orbits_total": {
+            "1111": 1,
+            "1122": 1,
+            "1133": 1,
+            "1144": 1,
+            "1155": 1,
+            "1233": 1,
+            "1244": 2,
+            "1255": 1,
+            "1344": 1,
+            "1355": 2,
+            "1455": 1,
+            "2222": 2,
+            "2233": 2,
+            "2244": 3,
+            "2255": 2,
+            "2344": 1,
+            "2355": 2,
+            "2455": 2,
+            "3333": 4,
+            "3344": 4,
+            "3355": 7,
+            "3455": 2,
+            "4444": 8,
+            "4455": 6,
+            "5555": 14
+          },
+          "h4_family_orbits_hit": {
+            "1122": 1,
+            "1133": 1,
+            "1144": 1,
+            "1155": 1,
+            "1233": 1,
+            "1244": 2,
+            "1255": 1,
+            "1344": 1,
+            "1355": 2,
+            "1455": 1,
+            "2233": 2,
+            "2244": 3,
+            "2255": 2,
+            "2344": 1,
+            "2355": 2,
+            "2455": 2,
+            "3344": 4,
+            "3355": 7,
+            "3455": 2,
+            "4455": 6
+          },
+          "h4_entry_hits_by_family": {
+            "1122": 240,
+            "1133": 480,
+            "1144": 960,
+            "1155": 1920,
+            "1233": 2400,
+            "1244": 4800,
+            "1255": 9600,
+            "1344": 9600,
+            "1355": 19200,
+            "1455": 38400,
+            "2233": 1920,
+            "2244": 3840,
+            "2255": 7680,
+            "2344": 19200,
+            "2355": 38400,
+            "2455": 76800,
+            "3344": 15360,
+            "3355": 30720,
+            "3455": 153600,
+            "4455": 122880
+          },
+          "mixed_h4_orbits_hit": 43,
+          "mixed_h4_orbits_total": 43,
+          "pure_h4_orbits_hit": 0,
+          "pure_h4_orbits_total": 29,
+          "h4_orbit_image_table": [
+            {
+              "h4_orbit": 70,
+              "family": "1122",
+              "size": 12,
+              "h2_commutator_orbits": 24,
+              "entry_hits": 240,
+              "representative": "(u^3, u^3, u^4, u^4)"
+            },
+            {
+              "h4_orbit": 64,
+              "family": "1133",
+              "size": 24,
+              "h2_commutator_orbits": 32,
+              "entry_hits": 480,
+              "representative": "(u^2, u^2, u^4, u^4)"
+            },
+            {
+              "h4_orbit": 48,
+              "family": "1144",
+              "size": 48,
+              "h2_commutator_orbits": 36,
+              "entry_hits": 960,
+              "representative": "(u, u, u^4, u^4)"
+            },
+            {
+              "h4_orbit": 11,
+              "family": "1155",
+              "size": 96,
+              "h2_commutator_orbits": 48,
+              "entry_hits": 1920,
+              "representative": "(1, 1, u^4, u^4)"
+            },
+            {
+              "h4_orbit": 66,
+              "family": "1233",
+              "size": 96,
+              "h2_commutator_orbits": 120,
+              "entry_hits": 2400,
+              "representative": "(u^2, u^2+u^3, u^3+u^4, u^4)"
+            },
+            {
+              "h4_orbit": 55,
+              "family": "1244",
+              "size": 96,
+              "h2_commutator_orbits": 90,
+              "entry_hits": 2400,
+              "representative": "(u, u+u^3, u^3+u^4, u^4)"
+            },
+            {
+              "h4_orbit": 57,
+              "family": "1244",
+              "size": 96,
+              "h2_commutator_orbits": 90,
+              "entry_hits": 2400,
+              "representative": "(u, u+u^3+u^4, u^3, u^4)"
+            },
+            {
+              "h4_orbit": 35,
+              "family": "1255",
+              "size": 384,
+              "h2_commutator_orbits": 180,
+              "entry_hits": 9600,
+              "representative": "(1, 1+u^3, u^3+u^4, u^4)"
+            },
+            {
+              "h4_orbit": 52,
+              "family": "1344",
+              "size": 384,
+              "h2_commutator_orbits": 180,
+              "entry_hits": 9600,
+              "representative": "(u, u+u^2, u^2+u^4, u^4)"
+            },
+            {
+              "h4_orbit": 25,
+              "family": "1355",
+              "size": 384,
+              "h2_commutator_orbits": 180,
+              "entry_hits": 9600,
+              "representative": "(1, 1+u^2, u^2+u^4, u^4)"
+            },
+            {
+              "h4_orbit": 29,
+              "family": "1355",
+              "size": 384,
+              "h2_commutator_orbits": 240,
+              "entry_hits": 9600,
+              "representative": "(1, 1+u^2+u^3, u^2+u^3+u^4, u^4)"
+            },
+            {
+              "h4_orbit": 20,
+              "family": "1455",
+              "size": 1536,
+              "h2_commutator_orbits": 300,
+              "entry_hits": 38400,
+              "representative": "(1, 1+u, u+u^4, u^4)"
+            },
+            {
+              "h4_orbit": 63,
+              "family": "2233",
+              "size": 48,
+              "h2_commutator_orbits": 48,
+              "entry_hits": 960,
+              "representative": "(u^2, u^2, u^3, u^3)"
+            },
+            {
+              "h4_orbit": 67,
+              "family": "2233",
+              "size": 48,
+              "h2_commutator_orbits": 48,
+              "entry_hits": 960,
+              "representative": "(u^2, u^2+u^4, u^3, u^3+u^4)"
+            },
+            {
+              "h4_orbit": 46,
+              "family": "2244",
+              "size": 48,
+              "h2_commutator_orbits": 36,
+              "entry_hits": 960,
+              "representative": "(u, u, u^3, u^3)"
+            },
+            {
+              "h4_orbit": 47,
+              "family": "2244",
+              "size": 48,
+              "h2_commutator_orbits": 36,
+              "entry_hits": 960,
+              "representative": "(u, u, u^3+u^4, u^3+u^4)"
+            },
+            {
+              "h4_orbit": 59,
+              "family": "2244",
+              "size": 96,
+              "h2_commutator_orbits": 72,
+              "entry_hits": 1920,
+              "representative": "(u, u+u^4, u^3, u^3+u^4)"
+            },
+            {
+              "h4_orbit": 10,
+              "family": "2255",
+              "size": 192,
+              "h2_commutator_orbits": 72,
+              "entry_hits": 3840,
+              "representative": "(1, 1, u^3, u^3)"
+            },
+            {
+              "h4_orbit": 39,
+              "family": "2255",
+              "size": 192,
+              "h2_commutator_orbits": 72,
+              "entry_hits": 3840,
+              "representative": "(1, 1+u^4, u^3, u^3+u^4)"
+            },
+            {
+              "h4_orbit": 51,
+              "family": "2344",
+              "size": 768,
+              "h2_commutator_orbits": 360,
+              "entry_hits": 19200,
+              "representative": "(u, u+u^2, u^2+u^3, u^3)"
+            },
+            {
+              "h4_orbit": 24,
+              "family": "2355",
+              "size": 768,
+              "h2_commutator_orbits": 360,
+              "entry_hits": 19200,
+              "representative": "(1, 1+u^2, u^2+u^3, u^3)"
+            },
+            {
+              "h4_orbit": 28,
+              "family": "2355",
+              "size": 768,
+              "h2_commutator_orbits": 360,
+              "entry_hits": 19200,
+              "representative": "(1, 1+u^2+u^3, u^2, u^3)"
+            },
+            {
+              "h4_orbit": 18,
+              "family": "2455",
+              "size": 1536,
+              "h2_commutator_orbits": 300,
+              "entry_hits": 38400,
+              "representative": "(1, 1+u, u+u^3, u^3)"
+            },
+            {
+              "h4_orbit": 19,
+              "family": "2455",
+              "size": 1536,
+              "h2_commutator_orbits": 300,
+              "entry_hits": 38400,
+              "representative": "(1, 1+u, u+u^3+u^4, u^3+u^4)"
+            },
+            {
+              "h4_orbit": 45,
+              "family": "3344",
+              "size": 192,
+              "h2_commutator_orbits": 72,
+              "entry_hits": 3840,
+              "representative": "(u, u, u^2, u^2)"
+            },
+            {
+              "h4_orbit": 54,
+              "family": "3344",
+              "size": 192,
+              "h2_commutator_orbits": 72,
+              "entry_hits": 3840,
+              "representative": "(u, u+u^3, u^2, u^2+u^3)"
+            },
+            {
+              "h4_orbit": 56,
+              "family": "3344",
+              "size": 192,
+              "h2_commutator_orbits": 72,
+              "entry_hits": 3840,
+              "representative": "(u, u+u^3+u^4, u^2, u^2+u^3+u^4)"
+            },
+            {
+              "h4_orbit": 58,
+              "family": "3344",
+              "size": 192,
+              "h2_commutator_orbits": 72,
+              "entry_hits": 3840,
+              "representative": "(u, u+u^4, u^2, u^2+u^4)"
+            },
+            {
+              "h4_orbit": 8,
+              "family": "3355",
+              "size": 96,
+              "h2_commutator_orbits": 48,
+              "entry_hits": 1920,
+              "representative": "(1, 1, u^2+u^3, u^2+u^3)"
+            },
+            {
+              "h4_orbit": 9,
+              "family": "3355",
+              "size": 96,
+              "h2_commutator_orbits": 48,
+              "entry_hits": 1920,
+              "representative": "(1, 1, u^2+u^3+u^4, u^2+u^3+u^4)"
+            },
+            {
+              "h4_orbit": 7,
+              "family": "3355",
+              "size": 192,
+              "h2_commutator_orbits": 72,
+              "entry_hits": 3840,
+              "representative": "(1, 1, u^2, u^2)"
+            },
+            {
+              "h4_orbit": 37,
+              "family": "3355",
+              "size": 192,
+              "h2_commutator_orbits": 72,
+              "entry_hits": 3840,
+              "representative": "(1, 1+u^4, u^2, u^2+u^4)"
+            },
+            {
+              "h4_orbit": 38,
+              "family": "3355",
+              "size": 192,
+              "h2_commutator_orbits": 96,
+              "entry_hits": 3840,
+              "representative": "(1, 1+u^4, u^2+u^3, u^2+u^3+u^4)"
+            },
+            {
+              "h4_orbit": 33,
+              "family": "3355",
+              "size": 384,
+              "h2_commutator_orbits": 144,
+              "entry_hits": 7680,
+              "representative": "(1, 1+u^3, u^2, u^2+u^3)"
+            },
+            {
+              "h4_orbit": 34,
+              "family": "3355",
+              "size": 384,
+              "h2_commutator_orbits": 144,
+              "entry_hits": 7680,
+              "representative": "(1, 1+u^3, u^2+u^3+u^4, u^2+u^4)"
+            },
+            {
+              "h4_orbit": 16,
+              "family": "3455",
+              "size": 3072,
+              "h2_commutator_orbits": 600,
+              "entry_hits": 76800,
+              "representative": "(1, 1+u, u+u^2, u^2)"
+            },
+            {
+              "h4_orbit": 17,
+              "family": "3455",
+              "size": 3072,
+              "h2_commutator_orbits": 600,
+              "entry_hits": 76800,
+              "representative": "(1, 1+u, u+u^2+u^3, u^2+u^3)"
+            },
+            {
+              "h4_orbit": 6,
+              "family": "4455",
+              "size": 768,
+              "h2_commutator_orbits": 120,
+              "entry_hits": 15360,
+              "representative": "(1, 1, u, u)"
+            },
+            {
+              "h4_orbit": 31,
+              "family": "4455",
+              "size": 768,
+              "h2_commutator_orbits": 120,
+              "entry_hits": 15360,
+              "representative": "(1, 1+u^3, u, u+u^3)"
+            },
+            {
+              "h4_orbit": 32,
+              "family": "4455",
+              "size": 768,
+              "h2_commutator_orbits": 120,
+              "entry_hits": 15360,
+              "representative": "(1, 1+u^3, u+u^2, u+u^2+u^3)"
+            },
+            {
+              "h4_orbit": 36,
+              "family": "4455",
+              "size": 768,
+              "h2_commutator_orbits": 120,
+              "entry_hits": 15360,
+              "representative": "(1, 1+u^4, u, u+u^4)"
+            },
+            {
+              "h4_orbit": 23,
+              "family": "4455",
+              "size": 1536,
+              "h2_commutator_orbits": 240,
+              "entry_hits": 30720,
+              "representative": "(1, 1+u^2, u, u+u^2)"
+            },
+            {
+              "h4_orbit": 27,
+              "family": "4455",
+              "size": 1536,
+              "h2_commutator_orbits": 240,
+              "entry_hits": 30720,
+              "representative": "(1, 1+u^2+u^3, u, u+u^2+u^3)"
+            }
+          ]
+        },
+        "packet_pair_rows": [
+          {
+            "left_conductor": "u",
+            "right_conductor": "u^2",
+            "left_mode_count": 1,
+            "right_mode_count": 2,
+            "mode_pair_count": 2,
+            "tangent_operator_pairs_per_mode_pair": 930,
+            "candidate_tangent_products": 1860,
+            "commutator_entries": 3600,
+            "unique_support_keys": 3600,
+            "commutator_orbits": 120,
+            "coefficient_distribution": {
+              "-1": 1800,
+              "1": 1800
+            },
+            "input_side_h4_lift": {
+              "lifted_commutator_orbits": 120,
+              "h4_orbits_hit": 5,
+              "closed_input_side_hits": 3600,
+              "h4_family_orbits_hit": {
+                "1122": 1,
+                "1233": 1,
+                "1244": 2,
+                "1255": 1
+              },
+              "h4_entry_hits_by_family": {
+                "1122": 240,
+                "1233": 480,
+                "1244": 960,
+                "1255": 1920
+              },
+              "mixed_h4_orbits_hit": 5,
+              "mixed_h4_orbits_total": 43,
+              "pure_h4_orbits_hit": 0,
+              "pure_h4_orbits_total": 29
+            }
+          },
+          {
+            "left_conductor": "u",
+            "right_conductor": "u^3",
+            "left_mode_count": 1,
+            "right_mode_count": 4,
+            "mode_pair_count": 4,
+            "tangent_operator_pairs_per_mode_pair": 930,
+            "candidate_tangent_products": 3720,
+            "commutator_entries": 7200,
+            "unique_support_keys": 7200,
+            "commutator_orbits": 200,
+            "coefficient_distribution": {
+              "-1": 3600,
+              "1": 3600
+            },
+            "input_side_h4_lift": {
+              "lifted_commutator_orbits": 200,
+              "h4_orbits_hit": 5,
+              "closed_input_side_hits": 7200,
+              "h4_family_orbits_hit": {
+                "1133": 1,
+                "1233": 1,
+                "1344": 1,
+                "1355": 2
+              },
+              "h4_entry_hits_by_family": {
+                "1133": 480,
+                "1233": 960,
+                "1344": 1920,
+                "1355": 3840
+              },
+              "mixed_h4_orbits_hit": 5,
+              "mixed_h4_orbits_total": 43,
+              "pure_h4_orbits_hit": 0,
+              "pure_h4_orbits_total": 29
+            }
+          },
+          {
+            "left_conductor": "u",
+            "right_conductor": "u^4",
+            "left_mode_count": 1,
+            "right_mode_count": 8,
+            "mode_pair_count": 8,
+            "tangent_operator_pairs_per_mode_pair": 930,
+            "candidate_tangent_products": 7440,
+            "commutator_entries": 14400,
+            "unique_support_keys": 14400,
+            "commutator_orbits": 240,
+            "coefficient_distribution": {
+              "-1": 7200,
+              "1": 7200
+            },
+            "input_side_h4_lift": {
+              "lifted_commutator_orbits": 240,
+              "h4_orbits_hit": 5,
+              "closed_input_side_hits": 14400,
+              "h4_family_orbits_hit": {
+                "1144": 1,
+                "1244": 2,
+                "1344": 1,
+                "1455": 1
+              },
+              "h4_entry_hits_by_family": {
+                "1144": 960,
+                "1244": 1920,
+                "1344": 3840,
+                "1455": 7680
+              },
+              "mixed_h4_orbits_hit": 5,
+              "mixed_h4_orbits_total": 43,
+              "pure_h4_orbits_hit": 0,
+              "pure_h4_orbits_total": 29
+            }
+          },
+          {
+            "left_conductor": "u",
+            "right_conductor": "u^5",
+            "left_mode_count": 1,
+            "right_mode_count": 16,
+            "mode_pair_count": 16,
+            "tangent_operator_pairs_per_mode_pair": 930,
+            "candidate_tangent_products": 14880,
+            "commutator_entries": 28800,
+            "unique_support_keys": 28800,
+            "commutator_orbits": 408,
+            "coefficient_distribution": {
+              "-1": 14400,
+              "1": 14400
+            },
+            "input_side_h4_lift": {
+              "lifted_commutator_orbits": 408,
+              "h4_orbits_hit": 5,
+              "closed_input_side_hits": 28800,
+              "h4_family_orbits_hit": {
+                "1155": 1,
+                "1255": 1,
+                "1355": 2,
+                "1455": 1
+              },
+              "h4_entry_hits_by_family": {
+                "1155": 1920,
+                "1255": 3840,
+                "1355": 7680,
+                "1455": 15360
+              },
+              "mixed_h4_orbits_hit": 5,
+              "mixed_h4_orbits_total": 43,
+              "pure_h4_orbits_hit": 0,
+              "pure_h4_orbits_total": 29
+            }
+          },
+          {
+            "left_conductor": "u^2",
+            "right_conductor": "u^3",
+            "left_mode_count": 2,
+            "right_mode_count": 4,
+            "mode_pair_count": 8,
+            "tangent_operator_pairs_per_mode_pair": 930,
+            "candidate_tangent_products": 7440,
+            "commutator_entries": 14400,
+            "unique_support_keys": 14400,
+            "commutator_orbits": 360,
+            "coefficient_distribution": {
+              "-1": 7200,
+              "1": 7200
+            },
+            "input_side_h4_lift": {
+              "lifted_commutator_orbits": 360,
+              "h4_orbits_hit": 6,
+              "closed_input_side_hits": 14400,
+              "h4_family_orbits_hit": {
+                "1233": 1,
+                "2233": 2,
+                "2344": 1,
+                "2355": 2
+              },
+              "h4_entry_hits_by_family": {
+                "1233": 960,
+                "2233": 1920,
+                "2344": 3840,
+                "2355": 7680
+              },
+              "mixed_h4_orbits_hit": 6,
+              "mixed_h4_orbits_total": 43,
+              "pure_h4_orbits_hit": 0,
+              "pure_h4_orbits_total": 29
+            }
+          },
+          {
+            "left_conductor": "u^2",
+            "right_conductor": "u^4",
+            "left_mode_count": 2,
+            "right_mode_count": 8,
+            "mode_pair_count": 16,
+            "tangent_operator_pairs_per_mode_pair": 930,
+            "candidate_tangent_products": 14880,
+            "commutator_entries": 28800,
+            "unique_support_keys": 28800,
+            "commutator_orbits": 480,
+            "coefficient_distribution": {
+              "-1": 14400,
+              "1": 14400
+            },
+            "input_side_h4_lift": {
+              "lifted_commutator_orbits": 480,
+              "h4_orbits_hit": 8,
+              "closed_input_side_hits": 28800,
+              "h4_family_orbits_hit": {
+                "1244": 2,
+                "2244": 3,
+                "2344": 1,
+                "2455": 2
+              },
+              "h4_entry_hits_by_family": {
+                "1244": 1920,
+                "2244": 3840,
+                "2344": 7680,
+                "2455": 15360
+              },
+              "mixed_h4_orbits_hit": 8,
+              "mixed_h4_orbits_total": 43,
+              "pure_h4_orbits_hit": 0,
+              "pure_h4_orbits_total": 29
+            }
+          },
+          {
+            "left_conductor": "u^2",
+            "right_conductor": "u^5",
+            "left_mode_count": 2,
+            "right_mode_count": 16,
+            "mode_pair_count": 32,
+            "tangent_operator_pairs_per_mode_pair": 930,
+            "candidate_tangent_products": 29760,
+            "commutator_entries": 57600,
+            "unique_support_keys": 57600,
+            "commutator_orbits": 744,
+            "coefficient_distribution": {
+              "-1": 28800,
+              "1": 28800
+            },
+            "input_side_h4_lift": {
+              "lifted_commutator_orbits": 744,
+              "h4_orbits_hit": 7,
+              "closed_input_side_hits": 57600,
+              "h4_family_orbits_hit": {
+                "1255": 1,
+                "2255": 2,
+                "2355": 2,
+                "2455": 2
+              },
+              "h4_entry_hits_by_family": {
+                "1255": 3840,
+                "2255": 7680,
+                "2355": 15360,
+                "2455": 30720
+              },
+              "mixed_h4_orbits_hit": 7,
+              "mixed_h4_orbits_total": 43,
+              "pure_h4_orbits_hit": 0,
+              "pure_h4_orbits_total": 29
+            }
+          },
+          {
+            "left_conductor": "u^3",
+            "right_conductor": "u^4",
+            "left_mode_count": 4,
+            "right_mode_count": 8,
+            "mode_pair_count": 32,
+            "tangent_operator_pairs_per_mode_pair": 930,
+            "candidate_tangent_products": 29760,
+            "commutator_entries": 57600,
+            "unique_support_keys": 57600,
+            "commutator_orbits": 744,
+            "coefficient_distribution": {
+              "-1": 28800,
+              "1": 28800
+            },
+            "input_side_h4_lift": {
+              "lifted_commutator_orbits": 744,
+              "h4_orbits_hit": 8,
+              "closed_input_side_hits": 57600,
+              "h4_family_orbits_hit": {
+                "1344": 1,
+                "2344": 1,
+                "3344": 4,
+                "3455": 2
+              },
+              "h4_entry_hits_by_family": {
+                "1344": 3840,
+                "2344": 7680,
+                "3344": 15360,
+                "3455": 30720
+              },
+              "mixed_h4_orbits_hit": 8,
+              "mixed_h4_orbits_total": 43,
+              "pure_h4_orbits_hit": 0,
+              "pure_h4_orbits_total": 29
+            }
+          },
+          {
+            "left_conductor": "u^3",
+            "right_conductor": "u^5",
+            "left_mode_count": 4,
+            "right_mode_count": 16,
+            "mode_pair_count": 64,
+            "tangent_operator_pairs_per_mode_pair": 930,
+            "candidate_tangent_products": 59520,
+            "commutator_entries": 115200,
+            "unique_support_keys": 115200,
+            "commutator_orbits": 1560,
+            "coefficient_distribution": {
+              "-1": 57600,
+              "1": 57600
+            },
+            "input_side_h4_lift": {
+              "lifted_commutator_orbits": 1560,
+              "h4_orbits_hit": 13,
+              "closed_input_side_hits": 115200,
+              "h4_family_orbits_hit": {
+                "1355": 2,
+                "2355": 2,
+                "3355": 7,
+                "3455": 2
+              },
+              "h4_entry_hits_by_family": {
+                "1355": 7680,
+                "2355": 15360,
+                "3355": 30720,
+                "3455": 61440
+              },
+              "mixed_h4_orbits_hit": 13,
+              "mixed_h4_orbits_total": 43,
+              "pure_h4_orbits_hit": 0,
+              "pure_h4_orbits_total": 29
+            }
+          },
+          {
+            "left_conductor": "u^4",
+            "right_conductor": "u^5",
+            "left_mode_count": 8,
+            "right_mode_count": 16,
+            "mode_pair_count": 128,
+            "tangent_operator_pairs_per_mode_pair": 930,
+            "candidate_tangent_products": 119040,
+            "commutator_entries": 230400,
+            "unique_support_keys": 230400,
+            "commutator_orbits": 1800,
+            "coefficient_distribution": {
+              "-1": 115200,
+              "1": 115200
+            },
+            "input_side_h4_lift": {
+              "lifted_commutator_orbits": 1800,
+              "h4_orbits_hit": 11,
+              "closed_input_side_hits": 230400,
+              "h4_family_orbits_hit": {
+                "1455": 1,
+                "2455": 2,
+                "3455": 2,
+                "4455": 6
+              },
+              "h4_entry_hits_by_family": {
+                "1455": 15360,
+                "2455": 30720,
+                "3455": 61440,
+                "4455": 122880
+              },
+              "mixed_h4_orbits_hit": 11,
+              "mixed_h4_orbits_total": 43,
+              "pure_h4_orbits_hit": 0,
+              "pure_h4_orbits_total": 29
+            }
+          }
+        ],
+        "timing_seconds": {
+          "witness_generation": 0.399,
+          "commutator_orbits": 11.833,
+          "h4_orbits": 4.427
+        }
+      },
+      "execution_notes": [
+        "2026-05-14 pre-streaming forced exact run timed out after 900 seconds.  After the streaming orbit canonicalizer was added, `--force-exact f2-u5` completed exactly; the combined report records the current timing."
+      ],
+      "residual_accounting": {
+        "full_filtered_residual_atoms": 19140,
+        "raw_support_projection_residual": 0,
+        "raw_support_erased_atoms": 19140,
+        "visible_fisher_shadow_present": true,
+        "tested_fisher_channel": "conductor-mixed K_CH commutator with input-side H4 lift",
+        "atom_resolution_status": "not atom-resolved: K_CH/H4 is a Fisher-jet shadow of [kappa], not a standalone Ext_CH atom detector",
+        "atom_level_visible_count": null,
+        "atom_level_invisible_count": null,
+        "unresolved_filtered_atoms_for_atom_level_visibility": 19140,
+        "shadow_status": "exact"
+      }
+    },
+    {
+      "row_key": "f8-u2",
+      "ring": "F_8[u]/(u^2)",
+      "label_count": 64,
+      "nontrivial_label_count": 63,
+      "gamma_size": 168,
+      "packets": {
+        "u": 7,
+        "u^2": 56
+      },
+      "eligibility": {
+        "mixed_packet_pairs": 1,
+        "conductor_mixed_mode_pairs": 392,
+        "candidate_tangent_products": 1531152,
+        "max_exact_mode_pairs": 100,
+        "max_exact_candidate_products": 50000,
+        "forced_exact": true
+      },
+      "visible_shadow": {
+        "status": "exact",
+        "commutator_entries": 3013696,
+        "unique_support_keys": 3013696,
+        "commutator_orbits": 17944,
+        "commutator_orbit_size_distribution": {
+          "168": 17936,
+          "56": 8
+        },
+        "coefficient_distribution": {
+          "-1": 1506848,
+          "1": 1506848
+        },
+        "representative_commutator_orbits_sample": [
+          {
+            "id": 0,
+            "representative": {
+              "left_mode": "u",
+              "right_mode": "1",
+              "alpha": "u",
+              "beta": "b*u",
+              "input": "1",
+              "output": "b*u"
+            },
+            "size": 168,
+            "ambient_size": 168,
+            "missing": 0
+          },
+          {
+            "id": 1,
+            "representative": {
+              "left_mode": "u",
+              "right_mode": "1",
+              "alpha": "u",
+              "beta": "b*u",
+              "input": "1+(1+b)*u",
+              "output": "u"
+            },
+            "size": 168,
+            "ambient_size": 168,
+            "missing": 0
+          },
+          {
+            "id": 2,
+            "representative": {
+              "left_mode": "u",
+              "right_mode": "1",
+              "alpha": "u",
+              "beta": "(1+b)*u",
+              "input": "1",
+              "output": "(1+b)*u"
+            },
+            "size": 168,
+            "ambient_size": 168,
+            "missing": 0
+          },
+          {
+            "id": 3,
+            "representative": {
+              "left_mode": "u",
+              "right_mode": "1",
+              "alpha": "u",
+              "beta": "(1+b)*u",
+              "input": "1+b*u",
+              "output": "u"
+            },
+            "size": 168,
+            "ambient_size": 168,
+            "missing": 0
+          },
+          {
+            "id": 4,
+            "representative": {
+              "left_mode": "u",
+              "right_mode": "1",
+              "alpha": "u",
+              "beta": "1",
+              "input": "u",
+              "output": "u"
+            },
+            "size": 56,
+            "ambient_size": 56,
+            "missing": 0
+          },
+          {
+            "id": 5,
+            "representative": {
+              "left_mode": "u",
+              "right_mode": "1",
+              "alpha": "u",
+              "beta": "1",
+              "input": "1",
+              "output": "1"
+            },
+            "size": 56,
+            "ambient_size": 56,
+            "missing": 0
+          },
+          {
+            "id": 6,
+            "representative": {
+              "left_mode": "u",
+              "right_mode": "1",
+              "alpha": "u",
+              "beta": "1+u",
+              "input": "1",
+              "output": "1+u"
+            },
+            "size": 56,
+            "ambient_size": 56,
+            "missing": 0
+          },
+          {
+            "id": 7,
+            "representative": {
+              "left_mode": "u",
+              "right_mode": "1",
+              "alpha": "u",
+              "beta": "1+b*u",
+              "input": "(1+b)*u",
+              "output": "u"
+            },
+            "size": 168,
+            "ambient_size": 168,
+            "missing": 0
+          },
+          {
+            "id": 8,
+            "representative": {
+              "left_mode": "u",
+              "right_mode": "1",
+              "alpha": "u",
+              "beta": "1+b*u",
+              "input": "1",
+              "output": "1+b*u"
+            },
+            "size": 168,
+            "ambient_size": 168,
+            "missing": 0
+          },
+          {
+            "id": 9,
+            "representative": {
+              "left_mode": "u",
+              "right_mode": "1",
+              "alpha": "u",
+              "beta": "1+(1+b)*u",
+              "input": "b*u",
+              "output": "u"
+            },
+            "size": 168,
+            "ambient_size": 168,
+            "missing": 0
+          },
+          {
+            "id": 10,
+            "representative": {
+              "left_mode": "u",
+              "right_mode": "1",
+              "alpha": "u",
+              "beta": "1+(1+b)*u",
+              "input": "1",
+              "output": "1+(1+b)*u"
+            },
+            "size": 168,
+            "ambient_size": 168,
+            "missing": 0
+          },
+          {
+            "id": 11,
+            "representative": {
+              "left_mode": "u",
+              "right_mode": "1",
+              "alpha": "u",
+              "beta": "b",
+              "input": "1",
+              "output": "b"
+            },
+            "size": 168,
+            "ambient_size": 168,
+            "missing": 0
+          },
+          {
+            "id": 12,
+            "representative": {
+              "left_mode": "u",
+              "right_mode": "1",
+              "alpha": "u",
+              "beta": "b",
+              "input": "1+b+u",
+              "output": "u"
+            },
+            "size": 168,
+            "ambient_size": 168,
+            "missing": 0
+          },
+          {
+            "id": 13,
+            "representative": {
+              "left_mode": "u",
+              "right_mode": "1",
+              "alpha": "u",
+              "beta": "b+u",
+              "input": "1",
+              "output": "b+u"
+            },
+            "size": 168,
+            "ambient_size": 168,
+            "missing": 0
+          },
+          {
+            "id": 14,
+            "representative": {
+              "left_mode": "u",
+              "right_mode": "1",
+              "alpha": "u",
+              "beta": "b+u",
+              "input": "1+b",
+              "output": "u"
+            },
+            "size": 168,
+            "ambient_size": 168,
+            "missing": 0
+          },
+          {
+            "id": 15,
+            "representative": {
+              "left_mode": "u",
+              "right_mode": "1",
+              "alpha": "u",
+              "beta": "b+b*u",
+              "input": "1",
+              "output": "b+b*u"
+            },
+            "size": 168,
+            "ambient_size": 168,
+            "missing": 0
+          },
+          {
+            "id": 16,
+            "representative": {
+              "left_mode": "u",
+              "right_mode": "1",
+              "alpha": "u",
+              "beta": "b+b*u",
+              "input": "1+b+(1+b)*u",
+              "output": "u"
+            },
+            "size": 168,
+            "ambient_size": 168,
+            "missing": 0
+          },
+          {
+            "id": 17,
+            "representative": {
+              "left_mode": "u",
+              "right_mode": "1",
+              "alpha": "u",
+              "beta": "b+(1+b)*u",
+              "input": "1",
+              "output": "b+(1+b)*u"
+            },
+            "size": 168,
+            "ambient_size": 168,
+            "missing": 0
+          },
+          {
+            "id": 18,
+            "representative": {
+              "left_mode": "u",
+              "right_mode": "1",
+              "alpha": "u",
+              "beta": "b+(1+b)*u",
+              "input": "1+b+b*u",
+              "output": "u"
+            },
+            "size": 168,
+            "ambient_size": 168,
+            "missing": 0
+          },
+          {
+            "id": 19,
+            "representative": {
+              "left_mode": "u",
+              "right_mode": "1",
+              "alpha": "u",
+              "beta": "b+b^2*u",
+              "input": "1",
+              "output": "b+b^2*u"
+            },
+            "size": 168,
+            "ambient_size": 168,
+            "missing": 0
+          }
+        ],
+        "input_side_h4_lift": {
+          "lifted_commutator_orbits": 17944,
+          "h4_orbits_hit": 30,
+          "closed_input_side_hits": 3013696,
+          "h2_to_h4_multiplicity": {
+            "1": 17944
+          },
+          "h4_family_orbits_total": {
+            "1111": 3,
+            "1122": 10,
+            "1222": 20,
+            "2222": 53
+          },
+          "h4_family_orbits_hit": {
+            "1122": 10,
+            "1222": 20
+          },
+          "h4_entry_hits_by_family": {
+            "1122": 680512,
+            "1222": 2333184
+          },
+          "mixed_h4_orbits_hit": 30,
+          "mixed_h4_orbits_total": 30,
+          "pure_h4_orbits_hit": 0,
+          "pure_h4_orbits_total": 56,
+          "h4_orbit_image_table": [
+            {
+              "h4_orbit": 3,
+              "family": "1122",
+              "size": 336,
+              "h2_commutator_orbits": 88,
+              "entry_hits": 13888,
+              "representative": "((1+b)*u, (1+b)*u, 1+b, 1+b)"
+            },
+            {
+              "h4_orbit": 2,
+              "family": "1122",
+              "size": 1008,
+              "h2_commutator_orbits": 248,
+              "entry_hits": 41664,
+              "representative": "((1+b)*u, (1+b)*u, 1, 1)"
+            },
+            {
+              "h4_orbit": 4,
+              "family": "1122",
+              "size": 1008,
+              "h2_commutator_orbits": 248,
+              "entry_hits": 41664,
+              "representative": "((1+b)*u, (1+b)*u, 1+b^2, 1+b^2)"
+            },
+            {
+              "h4_orbit": 6,
+              "family": "1122",
+              "size": 2016,
+              "h2_commutator_orbits": 496,
+              "entry_hits": 83328,
+              "representative": "((1+b)*u, (1+b+b^2)*u, 1, 1+b^2*u)"
+            },
+            {
+              "h4_orbit": 7,
+              "family": "1122",
+              "size": 2016,
+              "h2_commutator_orbits": 496,
+              "entry_hits": 83328,
+              "representative": "((1+b)*u, (1+b+b^2)*u, 1+b, 1+b+b^2*u)"
+            },
+            {
+              "h4_orbit": 8,
+              "family": "1122",
+              "size": 2016,
+              "h2_commutator_orbits": 496,
+              "entry_hits": 83328,
+              "representative": "((1+b)*u, (1+b+b^2)*u, 1+b+b^2, 1+b+b^2+b^2*u)"
+            },
+            {
+              "h4_orbit": 9,
+              "family": "1122",
+              "size": 2016,
+              "h2_commutator_orbits": 496,
+              "entry_hits": 83328,
+              "representative": "((1+b)*u, (1+b+b^2)*u, 1+b^2, 1+b^2+b^2*u)"
+            },
+            {
+              "h4_orbit": 10,
+              "family": "1122",
+              "size": 2016,
+              "h2_commutator_orbits": 496,
+              "entry_hits": 83328,
+              "representative": "((1+b)*u, (1+b+b^2)*u, b, b+b^2*u)"
+            },
+            {
+              "h4_orbit": 11,
+              "family": "1122",
+              "size": 2016,
+              "h2_commutator_orbits": 496,
+              "entry_hits": 83328,
+              "representative": "((1+b)*u, (1+b+b^2)*u, b+b^2, b+b^2+b^2*u)"
+            },
+            {
+              "h4_orbit": 12,
+              "family": "1122",
+              "size": 2016,
+              "h2_commutator_orbits": 496,
+              "entry_hits": 83328,
+              "representative": "((1+b)*u, (1+b+b^2)*u, b^2, b^2+b^2*u)"
+            },
+            {
+              "h4_orbit": 22,
+              "family": "1222",
+              "size": 1344,
+              "h2_commutator_orbits": 248,
+              "entry_hits": 41664,
+              "representative": "((1+b)*u, 1, 1+b+b^2+b^2*u, b+b^2+(1+b+b^2)*u)"
+            },
+            {
+              "h4_orbit": 23,
+              "family": "1222",
+              "size": 1344,
+              "h2_commutator_orbits": 248,
+              "entry_hits": 41664,
+              "representative": "((1+b)*u, 1, 1+b+b^2+u, b+b^2+b*u)"
+            },
+            {
+              "h4_orbit": 13,
+              "family": "1222",
+              "size": 4032,
+              "h2_commutator_orbits": 744,
+              "entry_hits": 124992,
+              "representative": "((1+b)*u, 1, 1+b, b+(1+b)*u)"
+            },
+            {
+              "h4_orbit": 14,
+              "family": "1222",
+              "size": 4032,
+              "h2_commutator_orbits": 744,
+              "entry_hits": 124992,
+              "representative": "((1+b)*u, 1, 1+b+(1+b)*u, b)"
+            },
+            {
+              "h4_orbit": 15,
+              "family": "1222",
+              "size": 4032,
+              "h2_commutator_orbits": 744,
+              "entry_hits": 124992,
+              "representative": "((1+b)*u, 1, 1+b+(1+b+b^2)*u, b+b^2*u)"
+            },
+            {
+              "h4_orbit": 16,
+              "family": "1222",
+              "size": 4032,
+              "h2_commutator_orbits": 744,
+              "entry_hits": 124992,
+              "representative": "((1+b)*u, 1, 1+b+(1+b^2)*u, b+(b+b^2)*u)"
+            },
+            {
+              "h4_orbit": 17,
+              "family": "1222",
+              "size": 4032,
+              "h2_commutator_orbits": 744,
+              "entry_hits": 124992,
+              "representative": "((1+b)*u, 1, 1+b+(b+b^2)*u, b+(1+b^2)*u)"
+            },
+            {
+              "h4_orbit": 18,
+              "family": "1222",
+              "size": 4032,
+              "h2_commutator_orbits": 744,
+              "entry_hits": 124992,
+              "representative": "((1+b)*u, 1, 1+b+b*u, b+u)"
+            },
+            {
+              "h4_orbit": 19,
+              "family": "1222",
+              "size": 4032,
+              "h2_commutator_orbits": 744,
+              "entry_hits": 124992,
+              "representative": "((1+b)*u, 1, 1+b+b^2, b+b^2+(1+b)*u)"
+            },
+            {
+              "h4_orbit": 20,
+              "family": "1222",
+              "size": 4032,
+              "h2_commutator_orbits": 744,
+              "entry_hits": 124992,
+              "representative": "((1+b)*u, 1, 1+b+b^2*u, b+(1+b+b^2)*u)"
+            },
+            {
+              "h4_orbit": 21,
+              "family": "1222",
+              "size": 4032,
+              "h2_commutator_orbits": 744,
+              "entry_hits": 124992,
+              "representative": "((1+b)*u, 1, 1+b+b^2+(1+b+b^2)*u, b+b^2+b^2*u)"
+            },
+            {
+              "h4_orbit": 24,
+              "family": "1222",
+              "size": 4032,
+              "h2_commutator_orbits": 744,
+              "entry_hits": 124992,
+              "representative": "((1+b)*u, 1, 1+b+u, b+b*u)"
+            },
+            {
+              "h4_orbit": 25,
+              "family": "1222",
+              "size": 4032,
+              "h2_commutator_orbits": 744,
+              "entry_hits": 124992,
+              "representative": "((1+b)*u, 1, 1+b^2, b^2+(1+b)*u)"
+            },
+            {
+              "h4_orbit": 26,
+              "family": "1222",
+              "size": 4032,
+              "h2_commutator_orbits": 744,
+              "entry_hits": 124992,
+              "representative": "((1+b)*u, 1, 1+b^2+(1+b)*u, b^2)"
+            },
+            {
+              "h4_orbit": 27,
+              "family": "1222",
+              "size": 4032,
+              "h2_commutator_orbits": 744,
+              "entry_hits": 124992,
+              "representative": "((1+b)*u, 1, 1+b^2+(1+b+b^2)*u, b^2+b^2*u)"
+            },
+            {
+              "h4_orbit": 28,
+              "family": "1222",
+              "size": 4032,
+              "h2_commutator_orbits": 744,
+              "entry_hits": 124992,
+              "representative": "((1+b)*u, 1, 1+b^2+(1+b^2)*u, b^2+(b+b^2)*u)"
+            },
+            {
+              "h4_orbit": 29,
+              "family": "1222",
+              "size": 4032,
+              "h2_commutator_orbits": 744,
+              "entry_hits": 124992,
+              "representative": "((1+b)*u, 1, 1+b^2+(b+b^2)*u, b^2+(1+b^2)*u)"
+            },
+            {
+              "h4_orbit": 30,
+              "family": "1222",
+              "size": 4032,
+              "h2_commutator_orbits": 744,
+              "entry_hits": 124992,
+              "representative": "((1+b)*u, 1, 1+b^2+b*u, b^2+u)"
+            },
+            {
+              "h4_orbit": 31,
+              "family": "1222",
+              "size": 4032,
+              "h2_commutator_orbits": 744,
+              "entry_hits": 124992,
+              "representative": "((1+b)*u, 1, 1+b^2+b^2*u, b^2+(1+b+b^2)*u)"
+            },
+            {
+              "h4_orbit": 32,
+              "family": "1222",
+              "size": 4032,
+              "h2_commutator_orbits": 744,
+              "entry_hits": 124992,
+              "representative": "((1+b)*u, 1, 1+b^2+u, b^2+b*u)"
+            }
+          ]
+        },
+        "packet_pair_rows": [
+          {
+            "left_conductor": "u",
+            "right_conductor": "u^2",
+            "left_mode_count": 7,
+            "right_mode_count": 56,
+            "mode_pair_count": 392,
+            "tangent_operator_pairs_per_mode_pair": 3906,
+            "candidate_tangent_products": 1531152,
+            "commutator_entries": 3013696,
+            "unique_support_keys": 3013696,
+            "commutator_orbits": 17944,
+            "coefficient_distribution": {
+              "-1": 1506848,
+              "1": 1506848
+            },
+            "input_side_h4_lift": {
+              "lifted_commutator_orbits": 17944,
+              "h4_orbits_hit": 30,
+              "closed_input_side_hits": 3013696,
+              "h4_family_orbits_hit": {
+                "1122": 10,
+                "1222": 20
+              },
+              "h4_entry_hits_by_family": {
+                "1122": 680512,
+                "1222": 2333184
+              },
+              "mixed_h4_orbits_hit": 30,
+              "mixed_h4_orbits_total": 30,
+              "pure_h4_orbits_hit": 0,
+              "pure_h4_orbits_total": 56
+            }
+          }
+        ],
+        "timing_seconds": {
+          "witness_generation": 2.813,
+          "commutator_orbits": 45.971,
+          "h4_orbits": 123.489
+        }
+      },
+      "execution_notes": [
+        "2026-05-14 pre-sparse forced exact runs timed out after 900 seconds.  After the sparse commutator formula and support-set orbiting path were added, `--force-exact f8-u2` completed exactly; the combined report records the current timing."
+      ],
+      "residual_accounting": {
+        "full_filtered_residual_atoms": 158081,
+        "raw_support_projection_residual": 0,
+        "raw_support_erased_atoms": 158081,
+        "visible_fisher_shadow_present": true,
+        "tested_fisher_channel": "conductor-mixed K_CH commutator with input-side H4 lift",
+        "atom_resolution_status": "not atom-resolved: K_CH/H4 is a Fisher-jet shadow of [kappa], not a standalone Ext_CH atom detector",
+        "atom_level_visible_count": null,
+        "atom_level_invisible_count": null,
+        "unresolved_filtered_atoms_for_atom_level_visibility": 158081,
+        "shadow_status": "exact"
+      }
+    },
+    {
+      "row_key": "f16-field",
+      "ring": "F_16",
+      "label_count": 16,
+      "nontrivial_label_count": 15,
+      "gamma_size": 60,
+      "packets": {
+        "field": 15
+      },
+      "eligibility": {
+        "mixed_packet_pairs": 0,
+        "conductor_mixed_mode_pairs": 0,
+        "candidate_tangent_products": 0,
+        "max_exact_mode_pairs": 100,
+        "max_exact_candidate_products": 50000,
+        "forced_exact": false
+      },
+      "visible_shadow": {
+        "status": "empty",
+        "reason": "one conductor packet only; no conductor-mixed K_CH mode pairs",
+        "commutator_entries": 0,
+        "unique_support_keys": 0,
+        "commutator_orbits": 0,
+        "packet_pair_rows": []
+      },
+      "execution_notes": [],
+      "residual_accounting": {
+        "full_filtered_residual_atoms": 225,
+        "raw_support_projection_residual": 0,
+        "raw_support_erased_atoms": 225,
+        "visible_fisher_shadow_present": false,
+        "tested_fisher_channel": "conductor-mixed K_CH commutator with input-side H4 lift",
+        "atom_resolution_status": "not atom-resolved: K_CH/H4 is a Fisher-jet shadow of [kappa], not a standalone Ext_CH atom detector",
+        "atom_level_visible_count": null,
+        "atom_level_invisible_count": null,
+        "unresolved_filtered_atoms_for_atom_level_visibility": 225,
+        "shadow_status": "empty"
+      }
+    },
+    {
+      "row_key": "f2-u4-control",
+      "ring": "F_2[u]/(u^4)",
+      "label_count": 16,
+      "nontrivial_label_count": 15,
+      "gamma_size": 32,
+      "packets": {
+        "u": 1,
+        "u^2": 2,
+        "u^3": 4,
+        "u^4": 8
+      },
+      "eligibility": {
+        "mixed_packet_pairs": 6,
+        "conductor_mixed_mode_pairs": 70,
+        "candidate_tangent_products": 14700,
+        "max_exact_mode_pairs": 100,
+        "max_exact_candidate_products": 50000,
+        "forced_exact": false
+      },
+      "visible_shadow": {
+        "status": "exact",
+        "commutator_entries": 27440,
+        "unique_support_keys": 27440,
+        "commutator_orbits": 1148,
+        "commutator_orbit_size_distribution": {
+          "2": 8,
+          "32": 764,
+          "4": 8,
+          "8": 368
+        },
+        "coefficient_distribution": {
+          "-1": 13720,
+          "1": 13720
+        },
+        "representative_commutator_orbits_sample": [
+          {
+            "id": 0,
+            "representative": {
+              "left_mode": "u",
+              "right_mode": "1",
+              "alpha": "1",
+              "beta": "u",
+              "input": "1",
+              "output": "1"
+            },
+            "size": 32,
+            "ambient_size": 32,
+            "missing": 0
+          },
+          {
+            "id": 1,
+            "representative": {
+              "left_mode": "u",
+              "right_mode": "1",
+              "alpha": "1",
+              "beta": "u",
+              "input": "u",
+              "output": "u"
+            },
+            "size": 32,
+            "ambient_size": 32,
+            "missing": 0
+          },
+          {
+            "id": 2,
+            "representative": {
+              "left_mode": "u",
+              "right_mode": "1",
+              "alpha": "1",
+              "beta": "1+u",
+              "input": "u",
+              "output": "1+u"
+            },
+            "size": 32,
+            "ambient_size": 32,
+            "missing": 0
+          },
+          {
+            "id": 3,
+            "representative": {
+              "left_mode": "u",
+              "right_mode": "1",
+              "alpha": "1",
+              "beta": "u^2",
+              "input": "u",
+              "output": "u^2"
+            },
+            "size": 32,
+            "ambient_size": 32,
+            "missing": 0
+          },
+          {
+            "id": 4,
+            "representative": {
+              "left_mode": "u",
+              "right_mode": "1",
+              "alpha": "1",
+              "beta": "u^2",
+              "input": "1+u+u^2",
+              "output": "1"
+            },
+            "size": 32,
+            "ambient_size": 32,
+            "missing": 0
+          },
+          {
+            "id": 5,
+            "representative": {
+              "left_mode": "u",
+              "right_mode": "1",
+              "alpha": "1",
+              "beta": "1+u^2",
+              "input": "u",
+              "output": "1+u^2"
+            },
+            "size": 32,
+            "ambient_size": 32,
+            "missing": 0
+          },
+          {
+            "id": 6,
+            "representative": {
+              "left_mode": "u",
+              "right_mode": "1",
+              "alpha": "1",
+              "beta": "1+u^2",
+              "input": "u+u^2",
+              "output": "1"
+            },
+            "size": 32,
+            "ambient_size": 32,
+            "missing": 0
+          },
+          {
+            "id": 7,
+            "representative": {
+              "left_mode": "u",
+              "right_mode": "1",
+              "alpha": "1",
+              "beta": "u+u^2",
+              "input": "u",
+              "output": "u+u^2"
+            },
+            "size": 32,
+            "ambient_size": 32,
+            "missing": 0
+          },
+          {
+            "id": 8,
+            "representative": {
+              "left_mode": "u",
+              "right_mode": "1",
+              "alpha": "1",
+              "beta": "u+u^2",
+              "input": "1+u^2",
+              "output": "1"
+            },
+            "size": 32,
+            "ambient_size": 32,
+            "missing": 0
+          },
+          {
+            "id": 9,
+            "representative": {
+              "left_mode": "u",
+              "right_mode": "1",
+              "alpha": "1",
+              "beta": "1+u+u^2",
+              "input": "u",
+              "output": "1+u+u^2"
+            },
+            "size": 32,
+            "ambient_size": 32,
+            "missing": 0
+          },
+          {
+            "id": 10,
+            "representative": {
+              "left_mode": "u",
+              "right_mode": "1",
+              "alpha": "1",
+              "beta": "1+u+u^2",
+              "input": "u^2",
+              "output": "1"
+            },
+            "size": 32,
+            "ambient_size": 32,
+            "missing": 0
+          },
+          {
+            "id": 11,
+            "representative": {
+              "left_mode": "u",
+              "right_mode": "1",
+              "alpha": "1",
+              "beta": "u^3",
+              "input": "u",
+              "output": "u^3"
+            },
+            "size": 32,
+            "ambient_size": 32,
+            "missing": 0
+          },
+          {
+            "id": 12,
+            "representative": {
+              "left_mode": "u",
+              "right_mode": "1",
+              "alpha": "1",
+              "beta": "u^3",
+              "input": "1+u+u^3",
+              "output": "1"
+            },
+            "size": 32,
+            "ambient_size": 32,
+            "missing": 0
+          },
+          {
+            "id": 13,
+            "representative": {
+              "left_mode": "u",
+              "right_mode": "1",
+              "alpha": "1",
+              "beta": "1+u^3",
+              "input": "u",
+              "output": "1+u^3"
+            },
+            "size": 32,
+            "ambient_size": 32,
+            "missing": 0
+          },
+          {
+            "id": 14,
+            "representative": {
+              "left_mode": "u",
+              "right_mode": "1",
+              "alpha": "1",
+              "beta": "1+u^3",
+              "input": "u+u^3",
+              "output": "1"
+            },
+            "size": 32,
+            "ambient_size": 32,
+            "missing": 0
+          },
+          {
+            "id": 15,
+            "representative": {
+              "left_mode": "u",
+              "right_mode": "1",
+              "alpha": "1",
+              "beta": "u+u^3",
+              "input": "u",
+              "output": "u+u^3"
+            },
+            "size": 32,
+            "ambient_size": 32,
+            "missing": 0
+          },
+          {
+            "id": 16,
+            "representative": {
+              "left_mode": "u",
+              "right_mode": "1",
+              "alpha": "1",
+              "beta": "u+u^3",
+              "input": "1+u^3",
+              "output": "1"
+            },
+            "size": 32,
+            "ambient_size": 32,
+            "missing": 0
+          },
+          {
+            "id": 17,
+            "representative": {
+              "left_mode": "u",
+              "right_mode": "1",
+              "alpha": "1",
+              "beta": "1+u+u^3",
+              "input": "u",
+              "output": "1+u+u^3"
+            },
+            "size": 32,
+            "ambient_size": 32,
+            "missing": 0
+          },
+          {
+            "id": 18,
+            "representative": {
+              "left_mode": "u",
+              "right_mode": "1",
+              "alpha": "1",
+              "beta": "1+u+u^3",
+              "input": "u^3",
+              "output": "1"
+            },
+            "size": 32,
+            "ambient_size": 32,
+            "missing": 0
+          },
+          {
+            "id": 19,
+            "representative": {
+              "left_mode": "u",
+              "right_mode": "1",
+              "alpha": "1",
+              "beta": "u^2+u^3",
+              "input": "u",
+              "output": "u^2+u^3"
+            },
+            "size": 32,
+            "ambient_size": 32,
+            "missing": 0
+          }
+        ],
+        "input_side_h4_lift": {
+          "lifted_commutator_orbits": 1148,
+          "h4_orbits_hit": 17,
+          "closed_input_side_hits": 27440,
+          "h2_to_h4_multiplicity": {
+            "1": 1148
+          },
+          "h4_family_orbits_total": {
+            "1111": 1,
+            "1122": 1,
+            "1133": 1,
+            "1144": 1,
+            "1233": 1,
+            "1244": 2,
+            "1344": 1,
+            "2222": 2,
+            "2233": 2,
+            "2244": 3,
+            "2344": 1,
+            "3333": 4,
+            "3344": 4,
+            "4444": 8
+          },
+          "h4_family_orbits_hit": {
+            "1122": 1,
+            "1133": 1,
+            "1144": 1,
+            "1233": 1,
+            "1244": 2,
+            "1344": 1,
+            "2233": 2,
+            "2244": 3,
+            "2344": 1,
+            "3344": 4
+          },
+          "h4_entry_hits_by_family": {
+            "1122": 112,
+            "1133": 224,
+            "1144": 448,
+            "1233": 1120,
+            "1244": 2240,
+            "1344": 4480,
+            "2233": 896,
+            "2244": 1792,
+            "2344": 8960,
+            "3344": 7168
+          },
+          "mixed_h4_orbits_hit": 17,
+          "mixed_h4_orbits_total": 17,
+          "pure_h4_orbits_hit": 0,
+          "pure_h4_orbits_total": 15,
+          "h4_orbit_image_table": [
+            {
+              "h4_orbit": 30,
+              "family": "1122",
+              "size": 12,
+              "h2_commutator_orbits": 20,
+              "entry_hits": 112,
+              "representative": "(u^2, u^2, u^3, u^3)"
+            },
+            {
+              "h4_orbit": 24,
+              "family": "1133",
+              "size": 24,
+              "h2_commutator_orbits": 20,
+              "entry_hits": 224,
+              "representative": "(u, u, u^3, u^3)"
+            },
+            {
+              "h4_orbit": 8,
+              "family": "1144",
+              "size": 48,
+              "h2_commutator_orbits": 32,
+              "entry_hits": 448,
+              "representative": "(1, 1, u^3, u^3)"
+            },
+            {
+              "h4_orbit": 26,
+              "family": "1233",
+              "size": 96,
+              "h2_commutator_orbits": 80,
+              "entry_hits": 1120,
+              "representative": "(u, u+u^2, u^2+u^3, u^3)"
+            },
+            {
+              "h4_orbit": 15,
+              "family": "1244",
+              "size": 96,
+              "h2_commutator_orbits": 80,
+              "entry_hits": 1120,
+              "representative": "(1, 1+u^2, u^2+u^3, u^3)"
+            },
+            {
+              "h4_orbit": 17,
+              "family": "1244",
+              "size": 96,
+              "h2_commutator_orbits": 80,
+              "entry_hits": 1120,
+              "representative": "(1, 1+u^2+u^3, u^2, u^3)"
+            },
+            {
+              "h4_orbit": 12,
+              "family": "1344",
+              "size": 384,
+              "h2_commutator_orbits": 140,
+              "entry_hits": 4480,
+              "representative": "(1, 1+u, u+u^3, u^3)"
+            },
+            {
+              "h4_orbit": 23,
+              "family": "2233",
+              "size": 48,
+              "h2_commutator_orbits": 32,
+              "entry_hits": 448,
+              "representative": "(u, u, u^2, u^2)"
+            },
+            {
+              "h4_orbit": 27,
+              "family": "2233",
+              "size": 48,
+              "h2_commutator_orbits": 32,
+              "entry_hits": 448,
+              "representative": "(u, u+u^3, u^2, u^2+u^3)"
+            },
+            {
+              "h4_orbit": 6,
+              "family": "2244",
+              "size": 48,
+              "h2_commutator_orbits": 32,
+              "entry_hits": 448,
+              "representative": "(1, 1, u^2, u^2)"
+            },
+            {
+              "h4_orbit": 7,
+              "family": "2244",
+              "size": 48,
+              "h2_commutator_orbits": 32,
+              "entry_hits": 448,
+              "representative": "(1, 1, u^2+u^3, u^2+u^3)"
+            },
+            {
+              "h4_orbit": 19,
+              "family": "2244",
+              "size": 96,
+              "h2_commutator_orbits": 64,
+              "entry_hits": 896,
+              "representative": "(1, 1+u^3, u^2, u^2+u^3)"
+            },
+            {
+              "h4_orbit": 11,
+              "family": "2344",
+              "size": 768,
+              "h2_commutator_orbits": 280,
+              "entry_hits": 8960,
+              "representative": "(1, 1+u, u+u^2, u^2)"
+            },
+            {
+              "h4_orbit": 5,
+              "family": "3344",
+              "size": 192,
+              "h2_commutator_orbits": 56,
+              "entry_hits": 1792,
+              "representative": "(1, 1, u, u)"
+            },
+            {
+              "h4_orbit": 14,
+              "family": "3344",
+              "size": 192,
+              "h2_commutator_orbits": 56,
+              "entry_hits": 1792,
+              "representative": "(1, 1+u^2, u, u+u^2)"
+            },
+            {
+              "h4_orbit": 16,
+              "family": "3344",
+              "size": 192,
+              "h2_commutator_orbits": 56,
+              "entry_hits": 1792,
+              "representative": "(1, 1+u^2+u^3, u, u+u^2+u^3)"
+            },
+            {
+              "h4_orbit": 18,
+              "family": "3344",
+              "size": 192,
+              "h2_commutator_orbits": 56,
+              "entry_hits": 1792,
+              "representative": "(1, 1+u^3, u, u+u^3)"
+            }
+          ]
+        },
+        "packet_pair_rows": [
+          {
+            "left_conductor": "u",
+            "right_conductor": "u^2",
+            "left_mode_count": 1,
+            "right_mode_count": 2,
+            "mode_pair_count": 2,
+            "tangent_operator_pairs_per_mode_pair": 210,
+            "candidate_tangent_products": 420,
+            "commutator_entries": 784,
+            "unique_support_keys": 784,
+            "commutator_orbits": 68,
+            "coefficient_distribution": {
+              "-1": 392,
+              "1": 392
+            },
+            "input_side_h4_lift": {
+              "lifted_commutator_orbits": 68,
+              "h4_orbits_hit": 4,
+              "closed_input_side_hits": 784,
+              "h4_family_orbits_hit": {
+                "1122": 1,
+                "1233": 1,
+                "1244": 2
+              },
+              "h4_entry_hits_by_family": {
+                "1122": 112,
+                "1233": 224,
+                "1244": 448
+              },
+              "mixed_h4_orbits_hit": 4,
+              "mixed_h4_orbits_total": 17,
+              "pure_h4_orbits_hit": 0,
+              "pure_h4_orbits_total": 15
+            }
+          },
+          {
+            "left_conductor": "u",
+            "right_conductor": "u^3",
+            "left_mode_count": 1,
+            "right_mode_count": 4,
+            "mode_pair_count": 4,
+            "tangent_operator_pairs_per_mode_pair": 210,
+            "candidate_tangent_products": 840,
+            "commutator_entries": 1568,
+            "unique_support_keys": 1568,
+            "commutator_orbits": 80,
+            "coefficient_distribution": {
+              "-1": 784,
+              "1": 784
+            },
+            "input_side_h4_lift": {
+              "lifted_commutator_orbits": 80,
+              "h4_orbits_hit": 3,
+              "closed_input_side_hits": 1568,
+              "h4_family_orbits_hit": {
+                "1133": 1,
+                "1233": 1,
+                "1344": 1
+              },
+              "h4_entry_hits_by_family": {
+                "1133": 224,
+                "1233": 448,
+                "1344": 896
+              },
+              "mixed_h4_orbits_hit": 3,
+              "mixed_h4_orbits_total": 17,
+              "pure_h4_orbits_hit": 0,
+              "pure_h4_orbits_total": 15
+            }
+          },
+          {
+            "left_conductor": "u",
+            "right_conductor": "u^4",
+            "left_mode_count": 1,
+            "right_mode_count": 8,
+            "mode_pair_count": 8,
+            "tangent_operator_pairs_per_mode_pair": 210,
+            "candidate_tangent_products": 1680,
+            "commutator_entries": 3136,
+            "unique_support_keys": 3136,
+            "commutator_orbits": 152,
+            "coefficient_distribution": {
+              "-1": 1568,
+              "1": 1568
+            },
+            "input_side_h4_lift": {
+              "lifted_commutator_orbits": 152,
+              "h4_orbits_hit": 4,
+              "closed_input_side_hits": 3136,
+              "h4_family_orbits_hit": {
+                "1144": 1,
+                "1244": 2,
+                "1344": 1
+              },
+              "h4_entry_hits_by_family": {
+                "1144": 448,
+                "1244": 896,
+                "1344": 1792
+              },
+              "mixed_h4_orbits_hit": 4,
+              "mixed_h4_orbits_total": 17,
+              "pure_h4_orbits_hit": 0,
+              "pure_h4_orbits_total": 15
+            }
+          },
+          {
+            "left_conductor": "u^2",
+            "right_conductor": "u^3",
+            "left_mode_count": 2,
+            "right_mode_count": 4,
+            "mode_pair_count": 8,
+            "tangent_operator_pairs_per_mode_pair": 210,
+            "candidate_tangent_products": 1680,
+            "commutator_entries": 3136,
+            "unique_support_keys": 3136,
+            "commutator_orbits": 152,
+            "coefficient_distribution": {
+              "-1": 1568,
+              "1": 1568
+            },
+            "input_side_h4_lift": {
+              "lifted_commutator_orbits": 152,
+              "h4_orbits_hit": 4,
+              "closed_input_side_hits": 3136,
+              "h4_family_orbits_hit": {
+                "1233": 1,
+                "2233": 2,
+                "2344": 1
+              },
+              "h4_entry_hits_by_family": {
+                "1233": 448,
+                "2233": 896,
+                "2344": 1792
+              },
+              "mixed_h4_orbits_hit": 4,
+              "mixed_h4_orbits_total": 17,
+              "pure_h4_orbits_hit": 0,
+              "pure_h4_orbits_total": 15
+            }
+          },
+          {
+            "left_conductor": "u^2",
+            "right_conductor": "u^4",
+            "left_mode_count": 2,
+            "right_mode_count": 8,
+            "mode_pair_count": 16,
+            "tangent_operator_pairs_per_mode_pair": 210,
+            "candidate_tangent_products": 3360,
+            "commutator_entries": 6272,
+            "unique_support_keys": 6272,
+            "commutator_orbits": 304,
+            "coefficient_distribution": {
+              "-1": 3136,
+              "1": 3136
+            },
+            "input_side_h4_lift": {
+              "lifted_commutator_orbits": 304,
+              "h4_orbits_hit": 6,
+              "closed_input_side_hits": 6272,
+              "h4_family_orbits_hit": {
+                "1244": 2,
+                "2244": 3,
+                "2344": 1
+              },
+              "h4_entry_hits_by_family": {
+                "1244": 896,
+                "2244": 1792,
+                "2344": 3584
+              },
+              "mixed_h4_orbits_hit": 6,
+              "mixed_h4_orbits_total": 17,
+              "pure_h4_orbits_hit": 0,
+              "pure_h4_orbits_total": 15
+            }
+          },
+          {
+            "left_conductor": "u^3",
+            "right_conductor": "u^4",
+            "left_mode_count": 4,
+            "right_mode_count": 8,
+            "mode_pair_count": 32,
+            "tangent_operator_pairs_per_mode_pair": 210,
+            "candidate_tangent_products": 6720,
+            "commutator_entries": 12544,
+            "unique_support_keys": 12544,
+            "commutator_orbits": 392,
+            "coefficient_distribution": {
+              "-1": 6272,
+              "1": 6272
+            },
+            "input_side_h4_lift": {
+              "lifted_commutator_orbits": 392,
+              "h4_orbits_hit": 6,
+              "closed_input_side_hits": 12544,
+              "h4_family_orbits_hit": {
+                "1344": 1,
+                "2344": 1,
+                "3344": 4
+              },
+              "h4_entry_hits_by_family": {
+                "1344": 1792,
+                "2344": 3584,
+                "3344": 7168
+              },
+              "mixed_h4_orbits_hit": 6,
+              "mixed_h4_orbits_total": 17,
+              "pure_h4_orbits_hit": 0,
+              "pure_h4_orbits_total": 15
+            }
+          }
+        ],
+        "timing_seconds": {
+          "witness_generation": 0.016,
+          "commutator_orbits": 0.147,
+          "h4_orbits": 0.27
+        }
+      },
+      "execution_notes": [],
+      "residual_accounting": {
+        "full_filtered_residual_atoms": 1540,
+        "raw_support_projection_residual": 0,
+        "raw_support_erased_atoms": 1540,
+        "visible_fisher_shadow_present": true,
+        "tested_fisher_channel": "conductor-mixed K_CH commutator with input-side H4 lift",
+        "atom_resolution_status": "not atom-resolved: K_CH/H4 is a Fisher-jet shadow of [kappa], not a standalone Ext_CH atom detector",
+        "atom_level_visible_count": null,
+        "atom_level_invisible_count": null,
+        "unresolved_filtered_atoms_for_atom_level_visibility": 1540,
+        "shadow_status": "exact"
+      }
+    }
+  ],
+  "exact_rows": [
+    "f4-u2",
+    "f2-u5",
+    "f8-u2",
+    "f2-u4-control"
+  ],
+  "gated_rows": [],
+  "empty_rows": [
+    "f16-field"
+  ],
+  "fc1_implications": [
+    "Conductor packet sizes, mixed mode-pair counts, H4 orbit image families, and commutator-orbit multiplicities are row macrovariables for the FC1 census.",
+    "Rows can agree on raw-support erasure while differing in the visible Fisher-shadow support."
+  ],
+  "fc3_implications": [
+    "FC3 should keep full filtered residual cost separate from projection-visible Fisher-shadow cost.",
+    "Gated rows carry explicit computation-price metadata: the information-investment channel can charge the cost of making a hidden filtered residual visible."
+  ]
+}

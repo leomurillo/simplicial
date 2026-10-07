@@ -1,0 +1,213 @@
+{
+  "purpose": "Held-out displacement test for reusable arithmetic frames: compare mixed flags selected/evaluated on a Fourier-pure training displacement against their mean score on random held-out Fourier directions in the same packet or prefix.",
+  "config": {
+    "rows": [
+      "f2-u2",
+      "f2-u3",
+      "f4-u2"
+    ],
+    "flags": 500,
+    "holdouts": 25,
+    "seed": 20260515,
+    "amplitude_fraction": 0.35,
+    "support": "prefix",
+    "skip_lowest": true,
+    "ledger_weights": {
+      "block": 1.0,
+      "mix": 1.0,
+      "fisher_projection": 1.0,
+      "reciprocal_projection": 1.0,
+      "closure": 1.0,
+      "resource": 0.1,
+      "depth": 0.1
+    }
+  },
+  "results": [
+    {
+      "row_key": "f2-u2",
+      "row": "F_2[u]/(u^2)",
+      "target_packet": "u^2",
+      "target_depth": 2,
+      "active_prefix_dimension": 3,
+      "total_dimension": 3,
+      "packet_sizes": {
+        "u": 1,
+        "u^2": 2
+      },
+      "support": "prefix",
+      "amplitude_fraction": 0.35,
+      "flags": 500,
+      "holdouts": 25,
+      "seed": 20260552,
+      "conductor_train_J": 0.33974823251944836,
+      "conductor_holdout_mean_J": 0.3248446899255337,
+      "train_winner_count": 72,
+      "heldout_winner_count": 47,
+      "train_winner_heldout_winner_count": 40,
+      "train_margin": {
+        "min": -0.13318397765261386,
+        "p05": -0.0710337139688732,
+        "median": 0.26973449258739535,
+        "mean": 0.2625544807170811,
+        "p95": 0.5802155363820652,
+        "max": 0.6095432891307617
+      },
+      "holdout_margin": {
+        "min": -0.07016876609325973,
+        "p05": -0.016858175178155778,
+        "median": 0.2928093942993412,
+        "mean": 0.29151161243678697,
+        "p95": 0.5924333602444877,
+        "max": 0.6078625753896326
+      },
+      "heldout_lambda": {
+        "min": 0.02416612305706221,
+        "p05": 0.0868900648675128,
+        "median": 0.13449841680413396,
+        "mean": 8.71020297439528,
+        "p95": 2.2192384275074546,
+        "max": 2773.2002860109
+      }
+    },
+    {
+      "row_key": "f2-u3",
+      "row": "F_2[u]/(u^3)",
+      "target_packet": "u^2",
+      "target_depth": 2,
+      "active_prefix_dimension": 3,
+      "total_dimension": 7,
+      "packet_sizes": {
+        "u": 1,
+        "u^2": 2,
+        "u^3": 4
+      },
+      "support": "prefix",
+      "amplitude_fraction": 0.35,
+      "flags": 500,
+      "holdouts": 25,
+      "seed": 20261552,
+      "conductor_train_J": 0.24927204204325776,
+      "conductor_holdout_mean_J": 0.22107285640847096,
+      "train_winner_count": 0,
+      "heldout_winner_count": 0,
+      "train_winner_heldout_winner_count": 0,
+      "train_margin": {
+        "min": 0.6450552658061699,
+        "p05": 1.0826130468783113,
+        "median": 2.222519667790433,
+        "mean": 2.1699349944269697,
+        "p95": 3.096641883673955,
+        "max": 3.379818869644108
+      },
+      "holdout_margin": {
+        "min": 1.3429275561779186,
+        "p05": 1.6067338767236432,
+        "median": 2.229057008873671,
+        "mean": 2.2438453705196784,
+        "p95": 2.851741859116113,
+        "max": 3.0326799861676053
+      },
+      "heldout_lambda": {
+        "min": 0.0,
+        "p05": 0.0,
+        "median": 0.0,
+        "mean": 0.0,
+        "p95": 0.0,
+        "max": 0.0
+      }
+    },
+    {
+      "row_key": "f2-u3",
+      "row": "F_2[u]/(u^3)",
+      "target_packet": "u^3",
+      "target_depth": 3,
+      "active_prefix_dimension": 7,
+      "total_dimension": 7,
+      "packet_sizes": {
+        "u": 1,
+        "u^2": 2,
+        "u^3": 4
+      },
+      "support": "prefix",
+      "amplitude_fraction": 0.35,
+      "flags": 500,
+      "holdouts": 25,
+      "seed": 20261589,
+      "conductor_train_J": 0.4134848589120419,
+      "conductor_holdout_mean_J": 0.42408210933231855,
+      "train_winner_count": 0,
+      "heldout_winner_count": 0,
+      "train_winner_heldout_winner_count": 0,
+      "train_margin": {
+        "min": 0.043554984883201975,
+        "p05": 0.29209271756206945,
+        "median": 0.500581938013333,
+        "mean": 0.4971098423240553,
+        "p95": 0.6870925243843607,
+        "max": 0.8373077722080178
+      },
+      "holdout_margin": {
+        "min": 0.13192446586849854,
+        "p05": 0.35746010205284734,
+        "median": 0.5562584097637367,
+        "mean": 0.551406918510874,
+        "p95": 0.7405737544962365,
+        "max": 0.8656726800563603
+      },
+      "heldout_lambda": {
+        "min": 0.0,
+        "p05": 0.02688345222979745,
+        "median": 0.07335036518688315,
+        "mean": 0.07780537908275524,
+        "p95": 0.1417986017737829,
+        "max": 0.2700930721666801
+      }
+    },
+    {
+      "row_key": "f4-u2",
+      "row": "F_4[u]/(u^2)",
+      "target_packet": "u^2",
+      "target_depth": 2,
+      "active_prefix_dimension": 15,
+      "total_dimension": 15,
+      "packet_sizes": {
+        "u": 3,
+        "u^2": 12
+      },
+      "support": "prefix",
+      "amplitude_fraction": 0.35,
+      "flags": 500,
+      "holdouts": 25,
+      "seed": 20262552,
+      "conductor_train_J": 0.4798463823317617,
+      "conductor_holdout_mean_J": 0.3948193279844486,
+      "train_winner_count": 8,
+      "heldout_winner_count": 1,
+      "train_winner_heldout_winner_count": 1,
+      "train_margin": {
+        "min": -0.09527572228457726,
+        "p05": 0.033215917902051584,
+        "median": 0.1612027495087649,
+        "mean": 0.16313226133120678,
+        "p95": 0.2934884136329937,
+        "max": 0.38892518770695306
+      },
+      "holdout_margin": {
+        "min": -0.015257277628253796,
+        "p05": 0.09039083091228323,
+        "median": 0.16257912019380072,
+        "mean": 0.1642053222491312,
+        "p95": 0.24683899583009028,
+        "max": 0.3205399263692243
+      },
+      "heldout_lambda": {
+        "min": 0.005210276267860061,
+        "p05": 0.06594273840080181,
+        "median": 0.15591711380863515,
+        "mean": 0.16981311188353188,
+        "p95": 0.29952631470993984,
+        "max": 1.404419164823175
+      }
+    }
+  ]
+}

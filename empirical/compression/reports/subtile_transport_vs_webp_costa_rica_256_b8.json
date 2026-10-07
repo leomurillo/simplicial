@@ -1,0 +1,123 @@
+[
+  {
+    "file": "C:\\Users\\leomu\\Downloads\\que-ver-en-costa-rica-correos-portada.jpg",
+    "crop_size": 256,
+    "block_size": 8,
+    "width": 256,
+    "height": 256,
+    "raw_rgb_bytes": 196608,
+    "webp_lossless_bytes": 63034,
+    "webp_lossless_encode_s": 4.797778999985894,
+    "subtile_apex_ans": {
+      "best_scheme": "ch-ctx",
+      "bytes": 70996,
+      "ideal_best_scheme": "ch-ctx-mode-grad",
+      "ideal_no_codebook_bytes": 68931,
+      "metadata_bytes": 724,
+      "blocks": 3072,
+      "transported_blocks": 24,
+      "dc_blocks": 38,
+      "saved_direct_score_bytes": 102,
+      "model_counts": {
+        "pred-6": 68,
+        "pred-4": 93,
+        "pred-8": 16,
+        "pred-7": 3,
+        "pred-20": 3,
+        "direct": 3010,
+        "copy": 24,
+        "dc": 38,
+        "pred-5": 6,
+        "pred-2": 3
+      },
+      "schemes": {
+        "ch-ctx": {
+          "bytes": 70996,
+          "ideal_no_codebook_bytes": 69672,
+          "contexts": 23,
+          "new_symbols": 1223
+        },
+        "ch-ctx-grad": {
+          "bytes": 71540,
+          "ideal_no_codebook_bytes": 69148,
+          "contexts": 66,
+          "new_symbols": 2302
+        },
+        "ch-ctx-mode": {
+          "bytes": 71297,
+          "ideal_no_codebook_bytes": 69476,
+          "contexts": 58,
+          "new_symbols": 1739
+        },
+        "ch-ctx-mode-grad": {
+          "bytes": 71931,
+          "ideal_no_codebook_bytes": 68931,
+          "contexts": 122,
+          "new_symbols": 2939
+        }
+      }
+    },
+    "estimate_s": 78.00289550001617
+  },
+  {
+    "file": "C:\\Users\\leomu\\Downloads\\central-valley-san-jose-costa-rica.jpg",
+    "crop_size": 256,
+    "block_size": 8,
+    "width": 256,
+    "height": 256,
+    "raw_rgb_bytes": 196608,
+    "webp_lossless_bytes": 80852,
+    "webp_lossless_encode_s": 4.165137400006643,
+    "subtile_apex_ans": {
+      "best_scheme": "ch-ctx-grad",
+      "bytes": 79681,
+      "ideal_best_scheme": "ch-ctx-mode-grad",
+      "ideal_no_codebook_bytes": 76764,
+      "metadata_bytes": 655,
+      "blocks": 3072,
+      "transported_blocks": 15,
+      "dc_blocks": 17,
+      "saved_direct_score_bytes": 44,
+      "model_counts": {
+        "pred-4": 124,
+        "pred-9": 15,
+        "pred-20": 10,
+        "pred-7": 8,
+        "pred-3": 2,
+        "direct": 3040,
+        "pred-5": 5,
+        "pred-14": 2,
+        "pred-6": 26,
+        "dc": 17,
+        "copy": 15
+      },
+      "schemes": {
+        "ch-ctx": {
+          "bytes": 79839,
+          "ideal_no_codebook_bytes": 78160,
+          "contexts": 22,
+          "new_symbols": 1475
+        },
+        "ch-ctx-grad": {
+          "bytes": 79681,
+          "ideal_no_codebook_bytes": 76870,
+          "contexts": 64,
+          "new_symbols": 2625
+        },
+        "ch-ctx-mode": {
+          "bytes": 80020,
+          "ideal_no_codebook_bytes": 78066,
+          "contexts": 45,
+          "new_symbols": 1756
+        },
+        "ch-ctx-mode-grad": {
+          "bytes": 79906,
+          "ideal_no_codebook_bytes": 76764,
+          "contexts": 100,
+          "new_symbols": 2967
+        }
+      }
+    },
+    "estimate_s": 77.57815229997505
+  }
+]

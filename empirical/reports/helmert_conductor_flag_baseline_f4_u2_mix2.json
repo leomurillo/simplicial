@@ -1,0 +1,200 @@
+{
+  "purpose": "Baseline for Helmert/NZSBTL flags: compare conductor-respecting packet blocks with Haar-random mixed orthogonal blocks at equal block sizes using off-centroid Fisher block coupling.",
+  "config": {
+    "rows": [
+      "f4-u2"
+    ],
+    "samples": 1000,
+    "seed": 20260515,
+    "amplitude_fraction": 0.35,
+    "ledger_weights": {
+      "block": 1.0,
+      "mix": 2.0,
+      "fisher_projection": 1.0,
+      "reciprocal_projection": 1.0,
+      "closure": 1.0,
+      "resource": 0.1,
+      "depth": 0.1
+    },
+    "skip_lowest": true
+  },
+  "results": [
+    {
+      "row_key": "f4-u2",
+      "row": "F_4[u]/(u^2)",
+      "ring_name": "F_4[u]/(u^2)",
+      "target_packet": "u^2",
+      "conductor_order": [
+        "u",
+        "u^2"
+      ],
+      "packet_sizes": {
+        "u": 3,
+        "u^2": 12
+      },
+      "samples": 1000,
+      "seed": 20260532,
+      "amplitude_fraction": 0.35,
+      "actual_amplitude": 0.08312499999999999,
+      "probability_min": 0.04171875,
+      "probability_max": 0.12484374999999999,
+      "h_hat_indicator_energy": 12.0,
+      "target_depth": 2,
+      "active_prefix_dimension": 15,
+      "ledger_weights": {
+        "block": 1.0,
+        "mix": 2.0,
+        "fisher_projection": 1.0,
+        "reciprocal_projection": 1.0,
+        "closure": 1.0,
+        "resource": 0.1,
+        "depth": 0.1
+      },
+      "conductor_full_ledger": {
+        "J": 0.4798463823317617,
+        "block_coupling": 0.27984638233176173,
+        "mix_impurity": 0.0,
+        "fisher_projection_error": 0.0,
+        "reciprocal_projection_error": 0.0,
+        "closure_leakage": 0.0,
+        "resource_cost": 1.0,
+        "depth_cost": 1.0
+      },
+      "random_mixed_J": {
+        "min": 0.49679830794702984,
+        "p05": 0.6537860280189871,
+        "median": 0.8333122899720244,
+        "mean": 0.8342175245282615,
+        "p95": 1.0268937785581282,
+        "max": 1.2561612728793947
+      },
+      "random_mixed_better_J_count": 0,
+      "random_mixed_better_J_fraction": 0.0,
+      "full_J_break_even_mix_weight": {
+        "min": 0.0,
+        "p05": 0.0,
+        "median": 0.19318746200392767,
+        "mean": 0.25416992568893826,
+        "p95": 0.7290687712187867,
+        "max": 1.8192865965880423
+      },
+      "random_mixed_ledger_terms": {
+        "block_coupling": {
+          "min": 0.0868089254391125,
+          "p05": 0.15188831755490828,
+          "median": 0.24179976039953913,
+          "mean": 0.24654201800827402,
+          "p95": 0.3588452880143215,
+          "max": 0.4902103156170223
+        },
+        "mix_impurity": {
+          "min": 0.04703446472732243,
+          "p05": 0.11700892637458842,
+          "median": 0.19260257899058833,
+          "mean": 0.19383775325999353,
+          "p95": 0.26711813329063494,
+          "max": 0.3574017814544981
+        },
+        "fisher_projection_error": {
+          "min": 0.0,
+          "p05": 0.0,
+          "median": 0.0,
+          "mean": 8.137934770502397e-17,
+          "p95": 4.440892098500626e-16,
+          "max": 8.881784197001252e-16
+        },
+        "reciprocal_projection_error": {
+          "min": 0.0,
+          "p05": 0.0,
+          "median": 3.3306690738754696e-16,
+          "mean": 2.808864252301646e-16,
+          "p95": 5.551115123125783e-16,
+          "max": 1.1102230246251565e-15
+        },
+        "closure_leakage": {
+          "min": 0.0,
+          "p05": 0.0,
+          "median": 0.0,
+          "mean": 0.0,
+          "p95": 0.0,
+          "max": 0.0
+        },
+        "resource_cost": {
+          "min": 1.0,
+          "p05": 1.0,
+          "median": 1.0,
+          "mean": 1.0,
+          "p95": 1.0,
+          "max": 1.0
+        },
+        "depth_cost": {
+          "min": 1.0,
+          "p05": 1.0,
+          "median": 1.0,
+          "mean": 1.0,
+          "p95": 1.0,
+          "max": 1.0
+        }
+      },
+      "conductor_block_coupling": 0.27984638233176173,
+      "canonical_axis_offdiag_energy": 0.81540341679244,
+      "packet_respecting_block_random_spread": 7.771561172376096e-16,
+      "packet_respecting_block_random_summary": {
+        "min": 0.2798463823317613,
+        "p05": 0.27984638233176157,
+        "median": 0.27984638233176173,
+        "mean": 0.27984638233176173,
+        "p95": 0.27984638233176184,
+        "max": 0.27984638233176207
+      },
+      "random_mixed_block_coupling": {
+        "min": 0.0868089254391125,
+        "p05": 0.15188831755490828,
+        "median": 0.24179976039953913,
+        "mean": 0.24654201800827402,
+        "p95": 0.3588452880143215,
+        "max": 0.4902103156170223
+      },
+      "random_mixed_packet_purity": {
+        "min": 0.7999999999999996,
+        "p05": 0.7999999999999999,
+        "median": 0.8,
+        "mean": 0.8000000000000002,
+        "p95": 0.8000000000000002,
+        "max": 0.8000000000000004
+      },
+      "random_mixed_packet_commutator_impurity": {
+        "min": 0.04703446472732243,
+        "p05": 0.11700892637458842,
+        "median": 0.19260257899058833,
+        "mean": 0.19383775325999353,
+        "p95": 0.26711813329063494,
+        "max": 0.3574017814544981
+      },
+      "mix_impurity_weight": 2.0,
+      "random_mixed_total_cost": {
+        "min": 0.296798307947029,
+        "p05": 0.453786028018987,
+        "median": 0.6333122899720245,
+        "mean": 0.6342175245282611,
+        "p95": 0.8268937785581272,
+        "max": 1.0561612728793943
+      },
+      "random_mixed_better_with_mix_price_count": 0,
+      "random_mixed_better_with_mix_price_fraction": 0.0,
+      "break_even_mix_weight": {
+        "min": 0.0,
+        "p05": 0.0,
+        "median": 0.19318746200392822,
+        "mean": 0.2541699256889397,
+        "p95": 0.7290687712187888,
+        "max": 1.819286596588052
+      },
+      "random_mixed_better_count": 728,
+      "random_mixed_better_fraction": 0.728,
+      "oracle_eigenbasis_block_coupling": 1.1527368661965817e-30,
+      "gram_eigenvalue_min": 0.5351890916940806,
+      "gram_eigenvalue_max": 1.4981273408239701
+    }
+  ]
+}

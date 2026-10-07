@@ -1,0 +1,3277 @@
+{
+  "constructor": {
+    "ring": "F_4[u]/(u^2)",
+    "label_count": 16,
+    "nontrivial_label_count": 15,
+    "packets": {
+      "u": 3,
+      "u^2": 12
+    },
+    "gamma_size": 24,
+    "quotient_shift_count": 44,
+    "quotient_shift_support_distribution": {
+      "2": 3,
+      "3": 25,
+      "8": 12,
+      "12": 4
+    },
+    "carry_record_count": 369,
+    "carry_path_distribution": {
+      "u->u->u": 9,
+      "u->u->u^2": 36,
+      "u^2->u->u": 36,
+      "u^2->u->u^2": 144,
+      "u^2->u^2->u^2": 144
+    },
+    "associativity_failures": 0
+  },
+  "h3": {
+    "cells": 210,
+    "orbits": 5,
+    "family_orbit_counts": {
+      "TTT": 1,
+      "TWW": 2,
+      "WWW": 2
+    },
+    "orbit_size_distribution": {
+      "6": 1,
+      "24": 1,
+      "36": 1,
+      "72": 2
+    },
+    "signature_collisions": 0
+  },
+  "h4": {
+    "cells": 3165,
+    "orbits": 18,
+    "family_orbit_counts": {
+      "TTTT": 2,
+      "TTWW": 4,
+      "TWWW": 3,
+      "WWWW": 9
+    },
+    "orbit_size_distribution": {
+      "3": 1,
+      "12": 1,
+      "18": 1,
+      "36": 1,
+      "72": 5,
+      "144": 3,
+      "288": 4,
+      "576": 2
+    },
+    "signature_collisions": 1
+  },
+  "tower_contraction": {
+    "ring": "F_4[u]/(u^2)",
+    "source_arity": 4,
+    "target_arity": 3,
+    "source_cells": 3165,
+    "target_cells": 210,
+    "source_orbits": 18,
+    "target_orbits": 5,
+    "candidate_pair_contractions": 18990,
+    "valid_nonzero_contractions": 17640,
+    "invalid_zero_merge_contractions": 1350,
+    "target_orbits_hit": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "target_orbits_hit_count": 5,
+    "source_orbits_with_valid_contractions": 16,
+    "pair_position_counts": {
+      "01": 2940,
+      "02": 2940,
+      "03": 2940,
+      "12": 2940,
+      "13": 2940,
+      "23": 2940
+    },
+    "family_transitions": {
+      "TTTT->TTT": 72,
+      "TTWW->TTT": 432,
+      "TTWW->TWW": 3024,
+      "TWWW->TWW": 3456,
+      "TWWW->WWW": 3456,
+      "WWWW->TWW": 2592,
+      "WWWW->WWW": 4608
+    },
+    "source_orbit_rows": [
+      {
+        "id": 0,
+        "arity": 4,
+        "size": 3,
+        "family": "TTTT",
+        "representative_cell": [
+          [
+            0,
+            3
+          ],
+          [
+            0,
+            3
+          ],
+          [
+            0,
+            3
+          ],
+          [
+            0,
+            3
+          ]
+        ],
+        "representative": "((w+1)u, (w+1)u, (w+1)u, (w+1)u)",
+        "valid_contractions": 0,
+        "target_images": []
+      },
+      {
+        "id": 1,
+        "arity": 4,
+        "size": 144,
+        "family": "TTWW",
+        "representative_cell": [
+          [
+            0,
+            3
+          ],
+          [
+            0,
+            3
+          ],
+          [
+            1,
+            0
+          ],
+          [
+            1,
+            0
+          ]
+        ],
+        "representative": "((w+1)u, (w+1)u, 1, 1)",
+        "valid_contractions": 576,
+        "target_images": [
+          {
+            "target_orbit": 0,
+            "target_family": "TWW",
+            "count": 576
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "arity": 4,
+        "size": 18,
+        "family": "TTTT",
+        "representative_cell": [
+          [
+            0,
+            3
+          ],
+          [
+            0,
+            3
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "representative": "((w+1)u, (w+1)u, u, u)",
+        "valid_contractions": 72,
+        "target_images": [
+          {
+            "target_orbit": 1,
+            "target_family": "TTT",
+            "count": 72
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "arity": 4,
+        "size": 72,
+        "family": "TTWW",
+        "representative_cell": [
+          [
+            0,
+            3
+          ],
+          [
+            0,
+            3
+          ],
+          [
+            3,
+            0
+          ],
+          [
+            3,
+            0
+          ]
+        ],
+        "representative": "((w+1)u, (w+1)u, w+1, w+1)",
+        "valid_contractions": 288,
+        "target_images": [
+          {
+            "target_orbit": 2,
+            "target_family": "TWW",
+            "count": 288
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "arity": 4,
+        "size": 144,
+        "family": "TTWW",
+        "representative_cell": [
+          [
+            0,
+            3
+          ],
+          [
+            1,
+            0
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            0,
+            2
+          ]
+        ],
+        "representative": "((w+1)u, 1, 1+u, wu)",
+        "valid_contractions": 864,
+        "target_images": [
+          {
+            "target_orbit": 0,
+            "target_family": "TWW",
+            "count": 576
+          },
+          {
+            "target_orbit": 1,
+            "target_family": "TTT",
+            "count": 144
+          },
+          {
+            "target_orbit": 2,
+            "target_family": "TWW",
+            "count": 144
+          }
+        ]
+      },
+      {
+        "id": 5,
+        "arity": 4,
+        "size": 288,
+        "family": "TTWW",
+        "representative_cell": [
+          [
+            0,
+            3
+          ],
+          [
+            1,
+            0
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "representative": "((w+1)u, 1, 1+wu, u)",
+        "valid_contractions": 1728,
+        "target_images": [
+          {
+            "target_orbit": 0,
+            "target_family": "TWW",
+            "count": 864
+          },
+          {
+            "target_orbit": 1,
+            "target_family": "TTT",
+            "count": 288
+          },
+          {
+            "target_orbit": 2,
+            "target_family": "TWW",
+            "count": 576
+          }
+        ]
+      },
+      {
+        "id": 6,
+        "arity": 4,
+        "size": 288,
+        "family": "TWWW",
+        "representative_cell": [
+          [
+            0,
+            3
+          ],
+          [
+            1,
+            0
+          ],
+          [
+            2,
+            0
+          ],
+          [
+            3,
+            3
+          ]
+        ],
+        "representative": "((w+1)u, 1, w, w+1+(w+1)u)",
+        "valid_contractions": 1728,
+        "target_images": [
+          {
+            "target_orbit": 0,
+            "target_family": "TWW",
+            "count": 576
+          },
+          {
+            "target_orbit": 2,
+            "target_family": "TWW",
+            "count": 288
+          },
+          {
+            "target_orbit": 3,
+            "target_family": "WWW",
+            "count": 288
+          },
+          {
+            "target_orbit": 4,
+            "target_family": "WWW",
+            "count": 576
+          }
+        ]
+      },
+      {
+        "id": 7,
+        "arity": 4,
+        "size": 576,
+        "family": "TWWW",
+        "representative_cell": [
+          [
+            0,
+            3
+          ],
+          [
+            1,
+            0
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            3,
+            0
+          ]
+        ],
+        "representative": "((w+1)u, 1, w+(w+1)u, w+1)",
+        "valid_contractions": 3456,
+        "target_images": [
+          {
+            "target_orbit": 0,
+            "target_family": "TWW",
+            "count": 1152
+          },
+          {
+            "target_orbit": 2,
+            "target_family": "TWW",
+            "count": 576
+          },
+          {
+            "target_orbit": 3,
+            "target_family": "WWW",
+            "count": 576
+          },
+          {
+            "target_orbit": 4,
+            "target_family": "WWW",
+            "count": 1152
+          }
+        ]
+      },
+      {
+        "id": 8,
+        "arity": 4,
+        "size": 288,
+        "family": "TWWW",
+        "representative_cell": [
+          [
+            0,
+            3
+          ],
+          [
+            1,
+            0
+          ],
+          [
+            3,
+            1
+          ],
+          [
+            2,
+            2
+          ]
+        ],
+        "representative": "((w+1)u, 1, w+1+u, w+wu)",
+        "valid_contractions": 1728,
+        "target_images": [
+          {
+            "target_orbit": 0,
+            "target_family": "TWW",
+            "count": 576
+          },
+          {
+            "target_orbit": 2,
+            "target_family": "TWW",
+            "count": 288
+          },
+          {
+            "target_orbit": 4,
+            "target_family": "WWW",
+            "count": 864
+          }
+        ]
+      },
+      {
+        "id": 9,
+        "arity": 4,
+        "size": 12,
+        "family": "WWWW",
+        "representative_cell": [
+          [
+            1,
+            0
+          ],
+          [
+            1,
+            0
+          ],
+          [
+            1,
+            0
+          ],
+          [
+            1,
+            0
+          ]
+        ],
+        "representative": "(1, 1, 1, 1)",
+        "valid_contractions": 0,
+        "target_images": []
+      },
+      {
+        "id": 10,
+        "arity": 4,
+        "size": 72,
+        "family": "WWWW",
+        "representative_cell": [
+          [
+            1,
+            0
+          ],
+          [
+            1,
+            0
+          ],
+          [
+            1,
+            3
+          ],
+          [
+            1,
+            3
+          ]
+        ],
+        "representative": "(1, 1, 1+(w+1)u, 1+(w+1)u)",
+        "valid_contractions": 288,
+        "target_images": [
+          {
+            "target_orbit": 0,
+            "target_family": "TWW",
+            "count": 288
+          }
+        ]
+      },
+      {
+        "id": 11,
+        "arity": 4,
+        "size": 36,
+        "family": "WWWW",
+        "representative_cell": [
+          [
+            1,
+            0
+          ],
+          [
+            1,
+            0
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            1,
+            1
+          ]
+        ],
+        "representative": "(1, 1, 1+u, 1+u)",
+        "valid_contractions": 144,
+        "target_images": [
+          {
+            "target_orbit": 2,
+            "target_family": "TWW",
+            "count": 144
+          }
+        ]
+      },
+      {
+        "id": 12,
+        "arity": 4,
+        "size": 72,
+        "family": "WWWW",
+        "representative_cell": [
+          [
+            1,
+            0
+          ],
+          [
+            1,
+            0
+          ],
+          [
+            2,
+            0
+          ],
+          [
+            2,
+            0
+          ]
+        ],
+        "representative": "(1, 1, w, w)",
+        "valid_contractions": 288,
+        "target_images": [
+          {
+            "target_orbit": 3,
+            "target_family": "WWW",
+            "count": 288
+          }
+        ]
+      },
+      {
+        "id": 13,
+        "arity": 4,
+        "size": 144,
+        "family": "WWWW",
+        "representative_cell": [
+          [
+            1,
+            0
+          ],
+          [
+            1,
+            0
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            2,
+            3
+          ]
+        ],
+        "representative": "(1, 1, w+(w+1)u, w+(w+1)u)",
+        "valid_contractions": 576,
+        "target_images": [
+          {
+            "target_orbit": 4,
+            "target_family": "WWW",
+            "count": 576
+          }
+        ]
+      },
+      {
+        "id": 14,
+        "arity": 4,
+        "size": 72,
+        "family": "WWWW",
+        "representative_cell": [
+          [
+            1,
+            0
+          ],
+          [
+            1,
+            0
+          ],
+          [
+            3,
+            3
+          ],
+          [
+            3,
+            3
+          ]
+        ],
+        "representative": "(1, 1, w+1+(w+1)u, w+1+(w+1)u)",
+        "valid_contractions": 288,
+        "target_images": [
+          {
+            "target_orbit": 4,
+            "target_family": "WWW",
+            "count": 288
+          }
+        ]
+      },
+      {
+        "id": 15,
+        "arity": 4,
+        "size": 72,
+        "family": "WWWW",
+        "representative_cell": [
+          [
+            1,
+            0
+          ],
+          [
+            1,
+            3
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            1,
+            2
+          ]
+        ],
+        "representative": "(1, 1+(w+1)u, 1+u, 1+wu)",
+        "valid_contractions": 432,
+        "target_images": [
+          {
+            "target_orbit": 0,
+            "target_family": "TWW",
+            "count": 288
+          },
+          {
+            "target_orbit": 2,
+            "target_family": "TWW",
+            "count": 144
+          }
+        ]
+      },
+      {
+        "id": 16,
+        "arity": 4,
+        "size": 288,
+        "family": "WWWW",
+        "representative_cell": [
+          [
+            1,
+            0
+          ],
+          [
+            1,
+            3
+          ],
+          [
+            2,
+            0
+          ],
+          [
+            2,
+            3
+          ]
+        ],
+        "representative": "(1, 1+(w+1)u, w, w+(w+1)u)",
+        "valid_contractions": 1728,
+        "target_images": [
+          {
+            "target_orbit": 0,
+            "target_family": "TWW",
+            "count": 576
+          },
+          {
+            "target_orbit": 3,
+            "target_family": "WWW",
+            "count": 288
+          },
+          {
+            "target_orbit": 4,
+            "target_family": "WWW",
+            "count": 864
+          }
+        ]
+      },
+      {
+        "id": 17,
+        "arity": 4,
+        "size": 576,
+        "family": "WWWW",
+        "representative_cell": [
+          [
+            1,
+            0
+          ],
+          [
+            1,
+            3
+          ],
+          [
+            3,
+            0
+          ],
+          [
+            3,
+            3
+          ]
+        ],
+        "representative": "(1, 1+(w+1)u, w+1, w+1+(w+1)u)",
+        "valid_contractions": 3456,
+        "target_images": [
+          {
+            "target_orbit": 0,
+            "target_family": "TWW",
+            "count": 576
+          },
+          {
+            "target_orbit": 2,
+            "target_family": "TWW",
+            "count": 576
+          },
+          {
+            "target_orbit": 3,
+            "target_family": "WWW",
+            "count": 576
+          },
+          {
+            "target_orbit": 4,
+            "target_family": "WWW",
+            "count": 1728
+          }
+        ]
+      }
+    ],
+    "target_orbit_rows": [
+      {
+        "id": 0,
+        "arity": 3,
+        "size": 72,
+        "family": "TWW",
+        "representative_cell": [
+          [
+            0,
+            3
+          ],
+          [
+            1,
+            0
+          ],
+          [
+            1,
+            3
+          ]
+        ],
+        "representative": "((w+1)u, 1, 1+(w+1)u)",
+        "preimage_source_orbits": 10,
+        "valid_contractions_received": 6048,
+        "source_preimages": [
+          {
+            "source_orbit": 1,
+            "source_family": "TTWW",
+            "count": 576
+          },
+          {
+            "source_orbit": 4,
+            "source_family": "TTWW",
+            "count": 576
+          },
+          {
+            "source_orbit": 5,
+            "source_family": "TTWW",
+            "count": 864
+          },
+          {
+            "source_orbit": 6,
+            "source_family": "TWWW",
+            "count": 576
+          },
+          {
+            "source_orbit": 7,
+            "source_family": "TWWW",
+            "count": 1152
+          },
+          {
+            "source_orbit": 8,
+            "source_family": "TWWW",
+            "count": 576
+          },
+          {
+            "source_orbit": 10,
+            "source_family": "WWWW",
+            "count": 288
+          },
+          {
+            "source_orbit": 15,
+            "source_family": "WWWW",
+            "count": 288
+          },
+          {
+            "source_orbit": 16,
+            "source_family": "WWWW",
+            "count": 576
+          },
+          {
+            "source_orbit": 17,
+            "source_family": "WWWW",
+            "count": 576
+          }
+        ]
+      },
+      {
+        "id": 1,
+        "arity": 3,
+        "size": 6,
+        "family": "TTT",
+        "representative_cell": [
+          [
+            0,
+            3
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            2
+          ]
+        ],
+        "representative": "((w+1)u, u, wu)",
+        "preimage_source_orbits": 3,
+        "valid_contractions_received": 504,
+        "source_preimages": [
+          {
+            "source_orbit": 2,
+            "source_family": "TTTT",
+            "count": 72
+          },
+          {
+            "source_orbit": 4,
+            "source_family": "TTWW",
+            "count": 144
+          },
+          {
+            "source_orbit": 5,
+            "source_family": "TTWW",
+            "count": 288
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "arity": 3,
+        "size": 36,
+        "family": "TWW",
+        "representative_cell": [
+          [
+            0,
+            3
+          ],
+          [
+            3,
+            0
+          ],
+          [
+            3,
+            3
+          ]
+        ],
+        "representative": "((w+1)u, w+1, w+1+(w+1)u)",
+        "preimage_source_orbits": 9,
+        "valid_contractions_received": 3024,
+        "source_preimages": [
+          {
+            "source_orbit": 3,
+            "source_family": "TTWW",
+            "count": 288
+          },
+          {
+            "source_orbit": 4,
+            "source_family": "TTWW",
+            "count": 144
+          },
+          {
+            "source_orbit": 5,
+            "source_family": "TTWW",
+            "count": 576
+          },
+          {
+            "source_orbit": 6,
+            "source_family": "TWWW",
+            "count": 288
+          },
+          {
+            "source_orbit": 7,
+            "source_family": "TWWW",
+            "count": 576
+          },
+          {
+            "source_orbit": 8,
+            "source_family": "TWWW",
+            "count": 288
+          },
+          {
+            "source_orbit": 11,
+            "source_family": "WWWW",
+            "count": 144
+          },
+          {
+            "source_orbit": 15,
+            "source_family": "WWWW",
+            "count": 144
+          },
+          {
+            "source_orbit": 17,
+            "source_family": "WWWW",
+            "count": 576
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "arity": 3,
+        "size": 24,
+        "family": "WWW",
+        "representative_cell": [
+          [
+            1,
+            0
+          ],
+          [
+            2,
+            0
+          ],
+          [
+            3,
+            0
+          ]
+        ],
+        "representative": "(1, w, w+1)",
+        "preimage_source_orbits": 5,
+        "valid_contractions_received": 2016,
+        "source_preimages": [
+          {
+            "source_orbit": 6,
+            "source_family": "TWWW",
+            "count": 288
+          },
+          {
+            "source_orbit": 7,
+            "source_family": "TWWW",
+            "count": 576
+          },
+          {
+            "source_orbit": 12,
+            "source_family": "WWWW",
+            "count": 288
+          },
+          {
+            "source_orbit": 16,
+            "source_family": "WWWW",
+            "count": 288
+          },
+          {
+            "source_orbit": 17,
+            "source_family": "WWWW",
+            "count": 576
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "arity": 3,
+        "size": 72,
+        "family": "WWW",
+        "representative_cell": [
+          [
+            1,
+            0
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            3,
+            3
+          ]
+        ],
+        "representative": "(1, w+(w+1)u, w+1+(w+1)u)",
+        "preimage_source_orbits": 7,
+        "valid_contractions_received": 6048,
+        "source_preimages": [
+          {
+            "source_orbit": 6,
+            "source_family": "TWWW",
+            "count": 576
+          },
+          {
+            "source_orbit": 7,
+            "source_family": "TWWW",
+            "count": 1152
+          },
+          {
+            "source_orbit": 8,
+            "source_family": "TWWW",
+            "count": 864
+          },
+          {
+            "source_orbit": 13,
+            "source_family": "WWWW",
+            "count": 576
+          },
+          {
+            "source_orbit": 14,
+            "source_family": "WWWW",
+            "count": 288
+          },
+          {
+            "source_orbit": 16,
+            "source_family": "WWWW",
+            "count": 864
+          },
+          {
+            "source_orbit": 17,
+            "source_family": "WWWW",
+            "count": 1728
+          }
+        ]
+      }
+    ]
+  },
+  "cocycle": {
+    "ring": "F_4[u]/(u^2)",
+    "gamma_size": 24,
+    "raw_atom_count": 1569,
+    "raw_pair_count": 369,
+    "raw_coefficient_distribution": {
+      "-1": 1569
+    },
+    "raw_path_distribution": {
+      "u->u->u": 9,
+      "u->u->u^2": 36,
+      "u^2->u->u": 36,
+      "u^2->u->u^2": 912,
+      "u^2->u^2->u^2": 576
+    },
+    "atom_orbit_count": 71,
+    "atom_orbit_size_distribution": {
+      "3": 1,
+      "6": 1,
+      "12": 8,
+      "24": 61
+    },
+    "atom_orbit_missing_total": 0,
+    "pair_orbit_count": 20,
+    "pair_orbit_size_distribution": {
+      "3": 1,
+      "6": 1,
+      "12": 6,
+      "24": 12
+    },
+    "pair_orbit_missing_total": 0,
+    "canonical_atom_orbits": [
+      {
+        "representative": {
+          "left_eta": "(w+1)u",
+          "right_eta": "(w+1)u",
+          "source": "u",
+          "middle": "u",
+          "target": "u",
+          "output": "(w+1)u",
+          "input": "(w+1)u",
+          "coefficient": -1
+        },
+        "size": 3,
+        "coefficients": {
+          "-1": 3
+        },
+        "path": "u->u->u"
+      },
+      {
+        "representative": {
+          "left_eta": "(w+1)u",
+          "right_eta": "u",
+          "source": "u",
+          "middle": "u",
+          "target": "u",
+          "output": "(w+1)u",
+          "input": "u",
+          "coefficient": -1
+        },
+        "size": 6,
+        "coefficients": {
+          "-1": 6
+        },
+        "path": "u->u->u"
+      },
+      {
+        "representative": {
+          "left_eta": "1",
+          "right_eta": "(w+1)u",
+          "source": "u",
+          "middle": "u",
+          "target": "u^2",
+          "output": "1",
+          "input": "(w+1)u",
+          "coefficient": -1
+        },
+        "size": 24,
+        "coefficients": {
+          "-1": 24
+        },
+        "path": "u->u->u^2"
+      },
+      {
+        "representative": {
+          "left_eta": "1",
+          "right_eta": "u",
+          "source": "u",
+          "middle": "u",
+          "target": "u^2",
+          "output": "1",
+          "input": "u",
+          "coefficient": -1
+        },
+        "size": 12,
+        "coefficients": {
+          "-1": 12
+        },
+        "path": "u->u->u^2"
+      },
+      {
+        "representative": {
+          "left_eta": "(w+1)u",
+          "right_eta": "1",
+          "source": "u^2",
+          "middle": "u",
+          "target": "u",
+          "output": "(w+1)u",
+          "input": "1",
+          "coefficient": -1
+        },
+        "size": 24,
+        "coefficients": {
+          "-1": 24
+        },
+        "path": "u^2->u->u"
+      },
+      {
+        "representative": {
+          "left_eta": "(w+1)u",
+          "right_eta": "w+1",
+          "source": "u^2",
+          "middle": "u",
+          "target": "u",
+          "output": "(w+1)u",
+          "input": "w+1",
+          "coefficient": -1
+        },
+        "size": 12,
+        "coefficients": {
+          "-1": 12
+        },
+        "path": "u^2->u->u"
+      },
+      {
+        "representative": {
+          "left_eta": "1",
+          "right_eta": "1",
+          "source": "u^2",
+          "middle": "u",
+          "target": "u^2",
+          "output": "1",
+          "input": "1",
+          "coefficient": -1
+        },
+        "size": 12,
+        "coefficients": {
+          "-1": 12
+        },
+        "path": "u^2->u->u^2"
+      },
+      {
+        "representative": {
+          "left_eta": "1",
+          "right_eta": "1",
+          "source": "u^2",
+          "middle": "u",
+          "target": "u^2",
+          "output": "w",
+          "input": "w",
+          "coefficient": -1
+        },
+        "size": 24,
+        "coefficients": {
+          "-1": 24
+        },
+        "path": "u^2->u->u^2"
+      },
+      {
+        "representative": {
+          "left_eta": "1",
+          "right_eta": "1",
+          "source": "u^2",
+          "middle": "u",
+          "target": "u^2",
+          "output": "w+(w+1)u",
+          "input": "w+(w+1)u",
+          "coefficient": -1
+        },
+        "size": 24,
+        "coefficients": {
+          "-1": 24
+        },
+        "path": "u^2->u->u^2"
+      },
+      {
+        "representative": {
+          "left_eta": "1",
+          "right_eta": "1",
+          "source": "u^2",
+          "middle": "u",
+          "target": "u^2",
+          "output": "w+1+(w+1)u",
+          "input": "w+1+(w+1)u",
+          "coefficient": -1
+        },
+        "size": 24,
+        "coefficients": {
+          "-1": 24
+        },
+        "path": "u^2->u->u^2"
+      },
+      {
+        "representative": {
+          "left_eta": "1",
+          "right_eta": "1",
+          "source": "u^2",
+          "middle": "u",
+          "target": "u^2",
+          "output": "w+1+u",
+          "input": "w+1+u",
+          "coefficient": -1
+        },
+        "size": 24,
+        "coefficients": {
+          "-1": 24
+        },
+        "path": "u^2->u->u^2"
+      },
+      {
+        "representative": {
+          "left_eta": "1",
+          "right_eta": "1+(w+1)u",
+          "source": "u^2",
+          "middle": "u",
+          "target": "u^2",
+          "output": "1",
+          "input": "1+(w+1)u",
+          "coefficient": -1
+        },
+        "size": 24,
+        "coefficients": {
+          "-1": 24
+        },
+        "path": "u^2->u->u^2"
+      },
+      {
+        "representative": {
+          "left_eta": "1",
+          "right_eta": "1+(w+1)u",
+          "source": "u^2",
+          "middle": "u",
+          "target": "u^2",
+          "output": "w",
+          "input": "w+(w+1)u",
+          "coefficient": -1
+        },
+        "size": 24,
+        "coefficients": {
+          "-1": 24
+        },
+        "path": "u^2->u->u^2"
+      },
+      {
+        "representative": {
+          "left_eta": "1",
+          "right_eta": "1+(w+1)u",
+          "source": "u^2",
+          "middle": "u",
+          "target": "u^2",
+          "output": "w+(w+1)u",
+          "input": "w",
+          "coefficient": -1
+        },
+        "size": 24,
+        "coefficients": {
+          "-1": 24
+        },
+        "path": "u^2->u->u^2"
+      },
+      {
+        "representative": {
+          "left_eta": "1",
+          "right_eta": "1+(w+1)u",
+          "source": "u^2",
+          "middle": "u",
+          "target": "u^2",
+          "output": "w+1",
+          "input": "w+1+(w+1)u",
+          "coefficient": -1
+        },
+        "size": 24,
+        "coefficients": {
+          "-1": 24
+        },
+        "path": "u^2->u->u^2"
+      },
+      {
+        "representative": {
+          "left_eta": "1",
+          "right_eta": "1+(w+1)u",
+          "source": "u^2",
+          "middle": "u",
+          "target": "u^2",
+          "output": "w+1+(w+1)u",
+          "input": "w+1",
+          "coefficient": -1
+        },
+        "size": 24,
+        "coefficients": {
+          "-1": 24
+        },
+        "path": "u^2->u->u^2"
+      },
+      {
+        "representative": {
+          "left_eta": "1",
+          "right_eta": "1+(w+1)u",
+          "source": "u^2",
+          "middle": "u",
+          "target": "u^2",
+          "output": "w+1+u",
+          "input": "w+1+wu",
+          "coefficient": -1
+        },
+        "size": 24,
+        "coefficients": {
+          "-1": 24
+        },
+        "path": "u^2->u->u^2"
+      },
+      {
+        "representative": {
+          "left_eta": "1",
+          "right_eta": "1+(w+1)u",
+          "source": "u^2",
+          "middle": "u",
+          "target": "u^2",
+          "output": "w+1+wu",
+          "input": "w+1+u",
+          "coefficient": -1
+        },
+        "size": 24,
+        "coefficients": {
+          "-1": 24
+        },
+        "path": "u^2->u->u^2"
+      },
+      {
+        "representative": {
+          "left_eta": "1",
+          "right_eta": "1+(w+1)u",
+          "source": "u^2",
+          "middle": "u",
+          "target": "u^2",
+          "output": "w+u",
+          "input": "w+wu",
+          "coefficient": -1
+        },
+        "size": 24,
+        "coefficients": {
+          "-1": 24
+        },
+        "path": "u^2->u->u^2"
+      },
+      {
+        "representative": {
+          "left_eta": "1",
+          "right_eta": "1+(w+1)u",
+          "source": "u^2",
+          "middle": "u",
+          "target": "u^2",
+          "output": "w+wu",
+          "input": "w+u",
+          "coefficient": -1
+        },
+        "size": 24,
+        "coefficients": {
+          "-1": 24
+        },
+        "path": "u^2->u->u^2"
+      },
+      {
+        "representative": {
+          "left_eta": "1",
+          "right_eta": "1+u",
+          "source": "u^2",
+          "middle": "u",
+          "target": "u^2",
+          "output": "1",
+          "input": "1+u",
+          "coefficient": -1
+        },
+        "size": 12,
+        "coefficients": {
+          "-1": 12
+        },
+        "path": "u^2->u->u^2"
+      },
+      {
+        "representative": {
+          "left_eta": "1",
+          "right_eta": "1+u",
+          "source": "u^2",
+          "middle": "u",
+          "target": "u^2",
+          "output": "w",
+          "input": "w+u",
+          "coefficient": -1
+        },
+        "size": 24,
+        "coefficients": {
+          "-1": 24
+        },
+        "path": "u^2->u->u^2"
+      },
+      {
+        "representative": {
+          "left_eta": "1",
+          "right_eta": "1+u",
+          "source": "u^2",
+          "middle": "u",
+          "target": "u^2",
+          "output": "w+(w+1)u",
+          "input": "w+wu",
+          "coefficient": -1
+        },
+        "size": 24,
+        "coefficients": {
+          "-1": 24
+        },
+        "path": "u^2->u->u^2"
+      },
+      {
+        "representative": {
+          "left_eta": "1",
+          "right_eta": "1+u",
+          "source": "u^2",
+          "middle": "u",
+          "target": "u^2",
+          "output": "w+1+(w+1)u",
+          "input": "w+1+wu",
+          "coefficient": -1
+        },
+        "size": 24,
+        "coefficients": {
+          "-1": 24
+        },
+        "path": "u^2->u->u^2"
+      },
+      {
+        "representative": {
+          "left_eta": "1",
+          "right_eta": "1+u",
+          "source": "u^2",
+          "middle": "u",
+          "target": "u^2",
+          "output": "w+1+u",
+          "input": "w+1",
+          "coefficient": -1
+        },
+        "size": 24,
+        "coefficients": {
+          "-1": 24
+        },
+        "path": "u^2->u->u^2"
+      },
+      {
+        "representative": {
+          "left_eta": "1",
+          "right_eta": "w",
+          "source": "u^2",
+          "middle": "u",
+          "target": "u^2",
+          "output": "1",
+          "input": "w",
+          "coefficient": -1
+        },
+        "size": 24,
+        "coefficients": {
+          "-1": 24
+        },
+        "path": "u^2->u->u^2"
+      },
+      {
+        "representative": {
+          "left_eta": "1",
+          "right_eta": "w",
+          "source": "u^2",
+          "middle": "u",
+          "target": "u^2",
+          "output": "w",
+          "input": "1",
+          "coefficient": -1
+        },
+        "size": 24,
+        "coefficients": {
+          "-1": 24
+        },
+        "path": "u^2->u->u^2"
+      },
+      {
+        "representative": {
+          "left_eta": "1",
+          "right_eta": "w",
+          "source": "u^2",
+          "middle": "u",
+          "target": "u^2",
+          "output": "w+(w+1)u",
+          "input": "1+(w+1)u",
+          "coefficient": -1
+        },
+        "size": 24,
+        "coefficients": {
+          "-1": 24
+        },
+        "path": "u^2->u->u^2"
+      },
+      {
+        "representative": {
+          "left_eta": "1",
+          "right_eta": "w",
+          "source": "u^2",
+          "middle": "u",
+          "target": "u^2",
+          "output": "w+u",
+          "input": "1+u",
+          "coefficient": -1
+        },
+        "size": 24,
+        "coefficients": {
+          "-1": 24
+        },
+        "path": "u^2->u->u^2"
+      },
+      {
+        "representative": {
+          "left_eta": "1",
+          "right_eta": "w",
+          "source": "u^2",
+          "middle": "u",
+          "target": "u^2",
+          "output": "w+wu",
+          "input": "1+wu",
+          "coefficient": -1
+        },
+        "size": 24,
+        "coefficients": {
+          "-1": 24
+        },
+        "path": "u^2->u->u^2"
+      },
+      {
+        "representative": {
+          "left_eta": "1",
+          "right_eta": "w+(w+1)u",
+          "source": "u^2",
+          "middle": "u",
+          "target": "u^2",
+          "output": "1",
+          "input": "w+(w+1)u",
+          "coefficient": -1
+        },
+        "size": 24,
+        "coefficients": {
+          "-1": 24
+        },
+        "path": "u^2->u->u^2"
+      },
+      {
+        "representative": {
+          "left_eta": "1",
+          "right_eta": "w+(w+1)u",
+          "source": "u^2",
+          "middle": "u",
+          "target": "u^2",
+          "output": "w",
+          "input": "1+(w+1)u",
+          "coefficient": -1
+        },
+        "size": 24,
+        "coefficients": {
+          "-1": 24
+        },
+        "path": "u^2->u->u^2"
+      },
+      {
+        "representative": {
+          "left_eta": "1",
+          "right_eta": "w+(w+1)u",
+          "source": "u^2",
+          "middle": "u",
+          "target": "u^2",
+          "output": "w+(w+1)u",
+          "input": "1",
+          "coefficient": -1
+        },
+        "size": 24,
+        "coefficients": {
+          "-1": 24
+        },
+        "path": "u^2->u->u^2"
+      },
+      {
+        "representative": {
+          "left_eta": "1",
+          "right_eta": "w+(w+1)u",
+          "source": "u^2",
+          "middle": "u",
+          "target": "u^2",
+          "output": "w+u",
+          "input": "1+wu",
+          "coefficient": -1
+        },
+        "size": 24,
+        "coefficients": {
+          "-1": 24
+        },
+        "path": "u^2->u->u^2"
+      },
+      {
+        "representative": {
+          "left_eta": "1",
+          "right_eta": "w+(w+1)u",
+          "source": "u^2",
+          "middle": "u",
+          "target": "u^2",
+          "output": "w+wu",
+          "input": "1+u",
+          "coefficient": -1
+        },
+        "size": 24,
+        "coefficients": {
+          "-1": 24
+        },
+        "path": "u^2->u->u^2"
+      },
+      {
+        "representative": {
+          "left_eta": "1",
+          "right_eta": "w+1+(w+1)u",
+          "source": "u^2",
+          "middle": "u",
+          "target": "u^2",
+          "output": "1",
+          "input": "w+1+(w+1)u",
+          "coefficient": -1
+        },
+        "size": 24,
+        "coefficients": {
+          "-1": 24
+        },
+        "path": "u^2->u->u^2"
+      },
+      {
+        "representative": {
+          "left_eta": "1",
+          "right_eta": "w+1+(w+1)u",
+          "source": "u^2",
+          "middle": "u",
+          "target": "u^2",
+          "output": "w+1",
+          "input": "1+(w+1)u",
+          "coefficient": -1
+        },
+        "size": 24,
+        "coefficients": {
+          "-1": 24
+        },
+        "path": "u^2->u->u^2"
+      },
+      {
+        "representative": {
+          "left_eta": "1",
+          "right_eta": "w+1+(w+1)u",
+          "source": "u^2",
+          "middle": "u",
+          "target": "u^2",
+          "output": "w+1+(w+1)u",
+          "input": "1",
+          "coefficient": -1
+        },
+        "size": 24,
+        "coefficients": {
+          "-1": 24
+        },
+        "path": "u^2->u->u^2"
+      },
+      {
+        "representative": {
+          "left_eta": "1",
+          "right_eta": "w+1+(w+1)u",
+          "source": "u^2",
+          "middle": "u",
+          "target": "u^2",
+          "output": "w+1+u",
+          "input": "1+wu",
+          "coefficient": -1
+        },
+        "size": 24,
+        "coefficients": {
+          "-1": 24
+        },
+        "path": "u^2->u->u^2"
+      },
+      {
+        "representative": {
+          "left_eta": "1",
+          "right_eta": "w+1+(w+1)u",
+          "source": "u^2",
+          "middle": "u",
+          "target": "u^2",
+          "output": "w+1+wu",
+          "input": "1+u",
+          "coefficient": -1
+        },
+        "size": 24,
+        "coefficients": {
+          "-1": 24
+        },
+        "path": "u^2->u->u^2"
+      },
+      {
+        "representative": {
+          "left_eta": "1",
+          "right_eta": "w+1+u",
+          "source": "u^2",
+          "middle": "u",
+          "target": "u^2",
+          "output": "1",
+          "input": "w+1+u",
+          "coefficient": -1
+        },
+        "size": 24,
+        "coefficients": {
+          "-1": 24
+        },
+        "path": "u^2->u->u^2"
+      },
+      {
+        "representative": {
+          "left_eta": "1",
+          "right_eta": "w+1+u",
+          "source": "u^2",
+          "middle": "u",
+          "target": "u^2",
+          "output": "w+1",
+          "input": "1+u",
+          "coefficient": -1
+        },
+        "size": 24,
+        "coefficients": {
+          "-1": 24
+        },
+        "path": "u^2->u->u^2"
+      },
+      {
+        "representative": {
+          "left_eta": "1",
+          "right_eta": "w+1+u",
+          "source": "u^2",
+          "middle": "u",
+          "target": "u^2",
+          "output": "w+1+(w+1)u",
+          "input": "1+wu",
+          "coefficient": -1
+        },
+        "size": 24,
+        "coefficients": {
+          "-1": 24
+        },
+        "path": "u^2->u->u^2"
+      },
+      {
+        "representative": {
+          "left_eta": "1",
+          "right_eta": "w+1+u",
+          "source": "u^2",
+          "middle": "u",
+          "target": "u^2",
+          "output": "w+1+u",
+          "input": "1",
+          "coefficient": -1
+        },
+        "size": 24,
+        "coefficients": {
+          "-1": 24
+        },
+        "path": "u^2->u->u^2"
+      },
+      {
+        "representative": {
+          "left_eta": "1",
+          "right_eta": "w+1+u",
+          "source": "u^2",
+          "middle": "u",
+          "target": "u^2",
+          "output": "w+1+wu",
+          "input": "1+(w+1)u",
+          "coefficient": -1
+        },
+        "size": 24,
+        "coefficients": {
+          "-1": 24
+        },
+        "path": "u^2->u->u^2"
+      },
+      {
+        "representative": {
+          "left_eta": "1",
+          "right_eta": "1",
+          "source": "u^2",
+          "middle": "u^2",
+          "target": "u^2",
+          "output": "1",
+          "input": "1",
+          "coefficient": -1
+        },
+        "size": 12,
+        "coefficients": {
+          "-1": 12
+        },
+        "path": "u^2->u^2->u^2"
+      },
+      {
+        "representative": {
+          "left_eta": "1",
+          "right_eta": "1",
+          "source": "u^2",
+          "middle": "u^2",
+          "target": "u^2",
+          "output": "1+(w+1)u",
+          "input": "1+(w+1)u",
+          "coefficient": -1
+        },
+        "size": 24,
+        "coefficients": {
+          "-1": 24
+        },
+        "path": "u^2->u^2->u^2"
+      },
+      {
+        "representative": {
+          "left_eta": "1",
+          "right_eta": "1",
+          "source": "u^2",
+          "middle": "u^2",
+          "target": "u^2",
+          "output": "1+u",
+          "input": "1+u",
+          "coefficient": -1
+        },
+        "size": 12,
+        "coefficients": {
+          "-1": 12
+        },
+        "path": "u^2->u^2->u^2"
+      },
+      {
+        "representative": {
+          "left_eta": "1",
+          "right_eta": "1+(w+1)u",
+          "source": "u^2",
+          "middle": "u^2",
+          "target": "u^2",
+          "output": "1",
+          "input": "1+(w+1)u",
+          "coefficient": -1
+        },
+        "size": 24,
+        "coefficients": {
+          "-1": 24
+        },
+        "path": "u^2->u^2->u^2"
+      },
+      {
+        "representative": {
+          "left_eta": "1",
+          "right_eta": "1+(w+1)u",
+          "source": "u^2",
+          "middle": "u^2",
+          "target": "u^2",
+          "output": "1+(w+1)u",
+          "input": "1",
+          "coefficient": -1
+        },
+        "size": 24,
+        "coefficients": {
+          "-1": 24
+        },
+        "path": "u^2->u^2->u^2"
+      },
+      {
+        "representative": {
+          "left_eta": "1",
+          "right_eta": "1+(w+1)u",
+          "source": "u^2",
+          "middle": "u^2",
+          "target": "u^2",
+          "output": "1+u",
+          "input": "1+wu",
+          "coefficient": -1
+        },
+        "size": 24,
+        "coefficients": {
+          "-1": 24
+        },
+        "path": "u^2->u^2->u^2"
+      },
+      {
+        "representative": {
+          "left_eta": "1",
+          "right_eta": "1+(w+1)u",
+          "source": "u^2",
+          "middle": "u^2",
+          "target": "u^2",
+          "output": "1+wu",
+          "input": "1+u",
+          "coefficient": -1
+        },
+        "size": 24,
+        "coefficients": {
+          "-1": 24
+        },
+        "path": "u^2->u^2->u^2"
+      },
+      {
+        "representative": {
+          "left_eta": "1",
+          "right_eta": "1+u",
+          "source": "u^2",
+          "middle": "u^2",
+          "target": "u^2",
+          "output": "1",
+          "input": "1+u",
+          "coefficient": -1
+        },
+        "size": 12,
+        "coefficients": {
+          "-1": 12
+        },
+        "path": "u^2->u^2->u^2"
+      },
+      {
+        "representative": {
+          "left_eta": "1",
+          "right_eta": "1+u",
+          "source": "u^2",
+          "middle": "u^2",
+          "target": "u^2",
+          "output": "1+(w+1)u",
+          "input": "1+wu",
+          "coefficient": -1
+        },
+        "size": 24,
+        "coefficients": {
+          "-1": 24
+        },
+        "path": "u^2->u^2->u^2"
+      },
+      {
+        "representative": {
+          "left_eta": "1",
+          "right_eta": "1+u",
+          "source": "u^2",
+          "middle": "u^2",
+          "target": "u^2",
+          "output": "1+u",
+          "input": "1",
+          "coefficient": -1
+        },
+        "size": 12,
+        "coefficients": {
+          "-1": 12
+        },
+        "path": "u^2->u^2->u^2"
+      },
+      {
+        "representative": {
+          "left_eta": "1",
+          "right_eta": "w",
+          "source": "u^2",
+          "middle": "u^2",
+          "target": "u^2",
+          "output": "1",
+          "input": "w",
+          "coefficient": -1
+        },
+        "size": 24,
+        "coefficients": {
+          "-1": 24
+        },
+        "path": "u^2->u^2->u^2"
+      },
+      {
+        "representative": {
+          "left_eta": "1",
+          "right_eta": "w",
+          "source": "u^2",
+          "middle": "u^2",
+          "target": "u^2",
+          "output": "1+(w+1)u",
+          "input": "w+(w+1)u",
+          "coefficient": -1
+        },
+        "size": 24,
+        "coefficients": {
+          "-1": 24
+        },
+        "path": "u^2->u^2->u^2"
+      },
+      {
+        "representative": {
+          "left_eta": "1",
+          "right_eta": "w",
+          "source": "u^2",
+          "middle": "u^2",
+          "target": "u^2",
+          "output": "1+u",
+          "input": "w+u",
+          "coefficient": -1
+        },
+        "size": 24,
+        "coefficients": {
+          "-1": 24
+        },
+        "path": "u^2->u^2->u^2"
+      },
+      {
+        "representative": {
+          "left_eta": "1",
+          "right_eta": "w",
+          "source": "u^2",
+          "middle": "u^2",
+          "target": "u^2",
+          "output": "1+wu",
+          "input": "w+wu",
+          "coefficient": -1
+        },
+        "size": 24,
+        "coefficients": {
+          "-1": 24
+        },
+        "path": "u^2->u^2->u^2"
+      },
+      {
+        "representative": {
+          "left_eta": "1",
+          "right_eta": "w+(w+1)u",
+          "source": "u^2",
+          "middle": "u^2",
+          "target": "u^2",
+          "output": "1",
+          "input": "w+(w+1)u",
+          "coefficient": -1
+        },
+        "size": 24,
+        "coefficients": {
+          "-1": 24
+        },
+        "path": "u^2->u^2->u^2"
+      },
+      {
+        "representative": {
+          "left_eta": "1",
+          "right_eta": "w+(w+1)u",
+          "source": "u^2",
+          "middle": "u^2",
+          "target": "u^2",
+          "output": "1+(w+1)u",
+          "input": "w",
+          "coefficient": -1
+        },
+        "size": 24,
+        "coefficients": {
+          "-1": 24
+        },
+        "path": "u^2->u^2->u^2"
+      },
+      {
+        "representative": {
+          "left_eta": "1",
+          "right_eta": "w+(w+1)u",
+          "source": "u^2",
+          "middle": "u^2",
+          "target": "u^2",
+          "output": "1+u",
+          "input": "w+wu",
+          "coefficient": -1
+        },
+        "size": 24,
+        "coefficients": {
+          "-1": 24
+        },
+        "path": "u^2->u^2->u^2"
+      },
+      {
+        "representative": {
+          "left_eta": "1",
+          "right_eta": "w+(w+1)u",
+          "source": "u^2",
+          "middle": "u^2",
+          "target": "u^2",
+          "output": "1+wu",
+          "input": "w+u",
+          "coefficient": -1
+        },
+        "size": 24,
+        "coefficients": {
+          "-1": 24
+        },
+        "path": "u^2->u^2->u^2"
+      },
+      {
+        "representative": {
+          "left_eta": "1",
+          "right_eta": "w+1+(w+1)u",
+          "source": "u^2",
+          "middle": "u^2",
+          "target": "u^2",
+          "output": "1",
+          "input": "w+1+(w+1)u",
+          "coefficient": -1
+        },
+        "size": 24,
+        "coefficients": {
+          "-1": 24
+        },
+        "path": "u^2->u^2->u^2"
+      },
+      {
+        "representative": {
+          "left_eta": "1",
+          "right_eta": "w+1+(w+1)u",
+          "source": "u^2",
+          "middle": "u^2",
+          "target": "u^2",
+          "output": "1+(w+1)u",
+          "input": "w+1",
+          "coefficient": -1
+        },
+        "size": 24,
+        "coefficients": {
+          "-1": 24
+        },
+        "path": "u^2->u^2->u^2"
+      },
+      {
+        "representative": {
+          "left_eta": "1",
+          "right_eta": "w+1+(w+1)u",
+          "source": "u^2",
+          "middle": "u^2",
+          "target": "u^2",
+          "output": "1+u",
+          "input": "w+1+wu",
+          "coefficient": -1
+        },
+        "size": 24,
+        "coefficients": {
+          "-1": 24
+        },
+        "path": "u^2->u^2->u^2"
+      },
+      {
+        "representative": {
+          "left_eta": "1",
+          "right_eta": "w+1+(w+1)u",
+          "source": "u^2",
+          "middle": "u^2",
+          "target": "u^2",
+          "output": "1+wu",
+          "input": "w+1+u",
+          "coefficient": -1
+        },
+        "size": 24,
+        "coefficients": {
+          "-1": 24
+        },
+        "path": "u^2->u^2->u^2"
+      },
+      {
+        "representative": {
+          "left_eta": "1",
+          "right_eta": "w+1+u",
+          "source": "u^2",
+          "middle": "u^2",
+          "target": "u^2",
+          "output": "1",
+          "input": "w+1+u",
+          "coefficient": -1
+        },
+        "size": 24,
+        "coefficients": {
+          "-1": 24
+        },
+        "path": "u^2->u^2->u^2"
+      },
+      {
+        "representative": {
+          "left_eta": "1",
+          "right_eta": "w+1+u",
+          "source": "u^2",
+          "middle": "u^2",
+          "target": "u^2",
+          "output": "1+(w+1)u",
+          "input": "w+1+wu",
+          "coefficient": -1
+        },
+        "size": 24,
+        "coefficients": {
+          "-1": 24
+        },
+        "path": "u^2->u^2->u^2"
+      },
+      {
+        "representative": {
+          "left_eta": "1",
+          "right_eta": "w+1+u",
+          "source": "u^2",
+          "middle": "u^2",
+          "target": "u^2",
+          "output": "1+u",
+          "input": "w+1",
+          "coefficient": -1
+        },
+        "size": 24,
+        "coefficients": {
+          "-1": 24
+        },
+        "path": "u^2->u^2->u^2"
+      },
+      {
+        "representative": {
+          "left_eta": "1",
+          "right_eta": "w+1+u",
+          "source": "u^2",
+          "middle": "u^2",
+          "target": "u^2",
+          "output": "1+wu",
+          "input": "w+1+(w+1)u",
+          "coefficient": -1
+        },
+        "size": 24,
+        "coefficients": {
+          "-1": 24
+        },
+        "path": "u^2->u^2->u^2"
+      }
+    ],
+    "canonical_pair_orbits": [
+      {
+        "representative": {
+          "left_eta": "(w+1)u",
+          "right_eta": "(w+1)u",
+          "source": "u",
+          "middle": "u",
+          "target": "u"
+        },
+        "size": 3,
+        "atom_count": 3,
+        "coefficients": {
+          "-1": 3
+        },
+        "path": "u->u->u"
+      },
+      {
+        "representative": {
+          "left_eta": "(w+1)u",
+          "right_eta": "u",
+          "source": "u",
+          "middle": "u",
+          "target": "u"
+        },
+        "size": 6,
+        "atom_count": 6,
+        "coefficients": {
+          "-1": 6
+        },
+        "path": "u->u->u"
+      },
+      {
+        "representative": {
+          "left_eta": "1",
+          "right_eta": "(w+1)u",
+          "source": "u",
+          "middle": "u",
+          "target": "u^2"
+        },
+        "size": 24,
+        "atom_count": 24,
+        "coefficients": {
+          "-1": 24
+        },
+        "path": "u->u->u^2"
+      },
+      {
+        "representative": {
+          "left_eta": "1",
+          "right_eta": "u",
+          "source": "u",
+          "middle": "u",
+          "target": "u^2"
+        },
+        "size": 12,
+        "atom_count": 12,
+        "coefficients": {
+          "-1": 12
+        },
+        "path": "u->u->u^2"
+      },
+      {
+        "representative": {
+          "left_eta": "(w+1)u",
+          "right_eta": "1",
+          "source": "u^2",
+          "middle": "u",
+          "target": "u"
+        },
+        "size": 24,
+        "atom_count": 24,
+        "coefficients": {
+          "-1": 24
+        },
+        "path": "u^2->u->u"
+      },
+      {
+        "representative": {
+          "left_eta": "(w+1)u",
+          "right_eta": "w+1",
+          "source": "u^2",
+          "middle": "u",
+          "target": "u"
+        },
+        "size": 12,
+        "atom_count": 12,
+        "coefficients": {
+          "-1": 12
+        },
+        "path": "u^2->u->u"
+      },
+      {
+        "representative": {
+          "left_eta": "1",
+          "right_eta": "1",
+          "source": "u^2",
+          "middle": "u",
+          "target": "u^2"
+        },
+        "size": 12,
+        "atom_count": 108,
+        "coefficients": {
+          "-1": 108
+        },
+        "path": "u^2->u->u^2"
+      },
+      {
+        "representative": {
+          "left_eta": "1",
+          "right_eta": "1+(w+1)u",
+          "source": "u^2",
+          "middle": "u",
+          "target": "u^2"
+        },
+        "size": 24,
+        "atom_count": 216,
+        "coefficients": {
+          "-1": 216
+        },
+        "path": "u^2->u->u^2"
+      },
+      {
+        "representative": {
+          "left_eta": "1",
+          "right_eta": "1+u",
+          "source": "u^2",
+          "middle": "u",
+          "target": "u^2"
+        },
+        "size": 12,
+        "atom_count": 108,
+        "coefficients": {
+          "-1": 108
+        },
+        "path": "u^2->u->u^2"
+      },
+      {
+        "representative": {
+          "left_eta": "1",
+          "right_eta": "w",
+          "source": "u^2",
+          "middle": "u",
+          "target": "u^2"
+        },
+        "size": 24,
+        "atom_count": 120,
+        "coefficients": {
+          "-1": 120
+        },
+        "path": "u^2->u->u^2"
+      },
+      {
+        "representative": {
+          "left_eta": "1",
+          "right_eta": "w+(w+1)u",
+          "source": "u^2",
+          "middle": "u",
+          "target": "u^2"
+        },
+        "size": 24,
+        "atom_count": 120,
+        "coefficients": {
+          "-1": 120
+        },
+        "path": "u^2->u->u^2"
+      },
+      {
+        "representative": {
+          "left_eta": "1",
+          "right_eta": "w+1+(w+1)u",
+          "source": "u^2",
+          "middle": "u",
+          "target": "u^2"
+        },
+        "size": 24,
+        "atom_count": 120,
+        "coefficients": {
+          "-1": 120
+        },
+        "path": "u^2->u->u^2"
+      },
+      {
+        "representative": {
+          "left_eta": "1",
+          "right_eta": "w+1+u",
+          "source": "u^2",
+          "middle": "u",
+          "target": "u^2"
+        },
+        "size": 24,
+        "atom_count": 120,
+        "coefficients": {
+          "-1": 120
+        },
+        "path": "u^2->u->u^2"
+      },
+      {
+        "representative": {
+          "left_eta": "1",
+          "right_eta": "1",
+          "source": "u^2",
+          "middle": "u^2",
+          "target": "u^2"
+        },
+        "size": 12,
+        "atom_count": 48,
+        "coefficients": {
+          "-1": 48
+        },
+        "path": "u^2->u^2->u^2"
+      },
+      {
+        "representative": {
+          "left_eta": "1",
+          "right_eta": "1+(w+1)u",
+          "source": "u^2",
+          "middle": "u^2",
+          "target": "u^2"
+        },
+        "size": 24,
+        "atom_count": 96,
+        "coefficients": {
+          "-1": 96
+        },
+        "path": "u^2->u^2->u^2"
+      },
+      {
+        "representative": {
+          "left_eta": "1",
+          "right_eta": "1+u",
+          "source": "u^2",
+          "middle": "u^2",
+          "target": "u^2"
+        },
+        "size": 12,
+        "atom_count": 48,
+        "coefficients": {
+          "-1": 48
+        },
+        "path": "u^2->u^2->u^2"
+      },
+      {
+        "representative": {
+          "left_eta": "1",
+          "right_eta": "w",
+          "source": "u^2",
+          "middle": "u^2",
+          "target": "u^2"
+        },
+        "size": 24,
+        "atom_count": 96,
+        "coefficients": {
+          "-1": 96
+        },
+        "path": "u^2->u^2->u^2"
+      },
+      {
+        "representative": {
+          "left_eta": "1",
+          "right_eta": "w+(w+1)u",
+          "source": "u^2",
+          "middle": "u^2",
+          "target": "u^2"
+        },
+        "size": 24,
+        "atom_count": 96,
+        "coefficients": {
+          "-1": 96
+        },
+        "path": "u^2->u^2->u^2"
+      },
+      {
+        "representative": {
+          "left_eta": "1",
+          "right_eta": "w+1+(w+1)u",
+          "source": "u^2",
+          "middle": "u^2",
+          "target": "u^2"
+        },
+        "size": 24,
+        "atom_count": 96,
+        "coefficients": {
+          "-1": 96
+        },
+        "path": "u^2->u^2->u^2"
+      },
+      {
+        "representative": {
+          "left_eta": "1",
+          "right_eta": "w+1+u",
+          "source": "u^2",
+          "middle": "u^2",
+          "target": "u^2"
+        },
+        "size": 24,
+        "atom_count": 96,
+        "coefficients": {
+          "-1": 96
+        },
+        "path": "u^2->u^2->u^2"
+      }
+    ]
+  },
+  "arity2_full_defect": {
+    "orbit_count": 4438,
+    "missing_total": 0,
+    "nonconstant_orbits": 0,
+    "orbit_size_distribution": {
+      "12": 14,
+      "24": 4424
+    },
+    "coefficient_entry_distribution": {
+      "2": 6120,
+      "3": 936,
+      "4": 86112,
+      "5": 13176
+    }
+  },
+  "arity2_commutator": {
+    "orbit_count": 592,
+    "missing_total": 0,
+    "nonconstant_orbits": 0,
+    "orbit_size_distribution": {
+      "12": 8,
+      "24": 584
+    },
+    "coefficient_entry_distribution": {
+      "-1": 7056,
+      "1": 7056
+    }
+  },
+  "r4_mixed_lift": {
+    "records": 592,
+    "mixed_orbit_groups": 7,
+    "inherited_coefficient_distribution": {
+      "-1": 296,
+      "1": 296
+    },
+    "unrestricted_leibniz_distribution": {
+      "-2": 44,
+      "1": 504,
+      "2": 44
+    },
+    "paired_slot_distribution": {
+      "-1": 44,
+      "1": 504,
+      "2": 44
+    }
+  },
+  "controls": [
+    {
+      "ring": "F_16",
+      "gamma_size": 60,
+      "arity3": {
+        "cells": 210,
+        "orbits": 2,
+        "family_orbit_counts": {
+          "FFF": 2
+        },
+        "orbit_size_distribution": {
+          "30": 1,
+          "180": 1
+        }
+      },
+      "arity4": {
+        "cells": 3165,
+        "orbits": 7,
+        "family_orbit_counts": {
+          "FFFF": 7
+        },
+        "orbit_size_distribution": {
+          "15": 1,
+          "90": 1,
+          "180": 1,
+          "360": 2,
+          "720": 1,
+          "1440": 1
+        }
+      }
+    },
+    {
+      "ring": "F_2[u]/(u^4)",
+      "gamma_size": 32,
+      "arity3": {
+        "cells": 210,
+        "orbits": 7,
+        "family_orbit_counts": {
+          "122": 1,
+          "133": 1,
+          "144": 1,
+          "233": 1,
+          "244": 2,
+          "344": 1
+        },
+        "orbit_size_distribution": {
+          "6": 1,
+          "12": 1,
+          "24": 4,
+          "96": 1
+        }
+      },
+      "arity4": {
+        "cells": 3165,
+        "orbits": 32,
+        "family_orbit_counts": {
+          "1111": 1,
+          "1122": 1,
+          "1133": 1,
+          "1144": 1,
+          "1233": 1,
+          "1244": 2,
+          "1344": 1,
+          "2222": 2,
+          "2233": 2,
+          "2244": 3,
+          "2344": 1,
+          "3333": 4,
+          "3344": 4,
+          "4444": 8
+        },
+        "orbit_size_distribution": {
+          "1": 1,
+          "2": 1,
+          "4": 1,
+          "6": 1,
+          "8": 1,
+          "12": 2,
+          "24": 6,
+          "48": 6,
+          "96": 6,
+          "192": 5,
+          "384": 1,
+          "768": 1
+        }
+      }
+    }
+  ],
+  "spec_equivalence": {
+    "f4_u2_constructor": {
+      "ring": "F_4[u]/(u^2) [spec]",
+      "label_count": 16,
+      "nontrivial_label_count": 15,
+      "packets": {
+        "u": 3,
+        "u^2": 12
+      },
+      "gamma_size": 24,
+      "quotient_shift_count": 44,
+      "quotient_shift_support_distribution": {
+        "2": 3,
+        "3": 25,
+        "8": 12,
+        "12": 4
+      },
+      "carry_record_count": 369,
+      "carry_path_distribution": {
+        "u->u->u": 9,
+        "u->u->u^2": 36,
+        "u^2->u->u": 36,
+        "u^2->u->u^2": 144,
+        "u^2->u^2->u^2": 144
+      },
+      "associativity_failures": 0
+    },
+    "f16_old": {
+      "ring": "F_16",
+      "gamma_size": 60,
+      "arity3": {
+        "cells": 210,
+        "orbits": 2,
+        "family_orbit_counts": {
+          "FFF": 2
+        },
+        "orbit_size_distribution": {
+          "30": 1,
+          "180": 1
+        }
+      },
+      "arity4": {
+        "cells": 3165,
+        "orbits": 7,
+        "family_orbit_counts": {
+          "FFFF": 7
+        },
+        "orbit_size_distribution": {
+          "15": 1,
+          "90": 1,
+          "180": 1,
+          "360": 2,
+          "720": 1,
+          "1440": 1
+        }
+      }
+    },
+    "f16_spec": {
+      "ring": "F_16 [spec]",
+      "gamma_size": 60,
+      "arity3": {
+        "cells": 210,
+        "orbits": 2,
+        "family_orbit_counts": {
+          "FFF": 2
+        },
+        "orbit_size_distribution": {
+          "30": 1,
+          "180": 1
+        }
+      },
+      "arity4": {
+        "cells": 3165,
+        "orbits": 7,
+        "family_orbit_counts": {
+          "FFFF": 7
+        },
+        "orbit_size_distribution": {
+          "15": 1,
+          "90": 1,
+          "180": 1,
+          "360": 2,
+          "720": 1,
+          "1440": 1
+        }
+      }
+    },
+    "f2_u4_old": {
+      "ring": "F_2[u]/(u^4)",
+      "gamma_size": 32,
+      "arity3": {
+        "cells": 210,
+        "orbits": 7,
+        "family_orbit_counts": {
+          "122": 1,
+          "133": 1,
+          "144": 1,
+          "233": 1,
+          "244": 2,
+          "344": 1
+        },
+        "orbit_size_distribution": {
+          "6": 1,
+          "12": 1,
+          "24": 4,
+          "96": 1
+        }
+      },
+      "arity4": {
+        "cells": 3165,
+        "orbits": 32,
+        "family_orbit_counts": {
+          "1111": 1,
+          "1122": 1,
+          "1133": 1,
+          "1144": 1,
+          "1233": 1,
+          "1244": 2,
+          "1344": 1,
+          "2222": 2,
+          "2233": 2,
+          "2244": 3,
+          "2344": 1,
+          "3333": 4,
+          "3344": 4,
+          "4444": 8
+        },
+        "orbit_size_distribution": {
+          "1": 1,
+          "2": 1,
+          "4": 1,
+          "6": 1,
+          "8": 1,
+          "12": 2,
+          "24": 6,
+          "48": 6,
+          "96": 6,
+          "192": 5,
+          "384": 1,
+          "768": 1
+        }
+      }
+    },
+    "f2_u4_spec": {
+      "ring": "F_2[u]/(u^4) [spec]",
+      "gamma_size": 32,
+      "arity3": {
+        "cells": 210,
+        "orbits": 7,
+        "family_orbit_counts": {
+          "122": 1,
+          "133": 1,
+          "144": 1,
+          "233": 1,
+          "244": 2,
+          "344": 1
+        },
+        "orbit_size_distribution": {
+          "6": 1,
+          "12": 1,
+          "24": 4,
+          "96": 1
+        }
+      },
+      "arity4": {
+        "cells": 3165,
+        "orbits": 32,
+        "family_orbit_counts": {
+          "1111": 1,
+          "1122": 1,
+          "1133": 1,
+          "1144": 1,
+          "1233": 1,
+          "1244": 2,
+          "1344": 1,
+          "2222": 2,
+          "2233": 2,
+          "2244": 3,
+          "2344": 1,
+          "3333": 4,
+          "3344": 4,
+          "4444": 8
+        },
+        "orbit_size_distribution": {
+          "1": 1,
+          "2": 1,
+          "4": 1,
+          "6": 1,
+          "8": 1,
+          "12": 2,
+          "24": 6,
+          "48": 6,
+          "96": 6,
+          "192": 5,
+          "384": 1,
+          "768": 1
+        }
+      }
+    }
+  },
+  "checks": [
+    {
+      "name": "F4[u]/u2 label count",
+      "actual": 16,
+      "expected": 16,
+      "passed": true
+    },
+    {
+      "name": "F4[u]/u2 nontrivial label count",
+      "actual": 15,
+      "expected": 15,
+      "passed": true
+    },
+    {
+      "name": "F4[u]/u2 packet sizes",
+      "actual": {
+        "u": 3,
+        "u^2": 12
+      },
+      "expected": {
+        "u": 3,
+        "u^2": 12
+      },
+      "passed": true
+    },
+    {
+      "name": "F4[u]/u2 Gamma size",
+      "actual": 24,
+      "expected": 24,
+      "passed": true
+    },
+    {
+      "name": "quotient-shift associativity failures",
+      "actual": 0,
+      "expected": 0,
+      "passed": true
+    },
+    {
+      "name": "H3 closed cells",
+      "actual": 210,
+      "expected": 210,
+      "passed": true
+    },
+    {
+      "name": "H3 Gamma x S3 orbits",
+      "actual": 5,
+      "expected": 5,
+      "passed": true
+    },
+    {
+      "name": "H3 signature collisions",
+      "actual": 0,
+      "expected": 0,
+      "passed": true
+    },
+    {
+      "name": "H4 closed cells",
+      "actual": 3165,
+      "expected": 3165,
+      "passed": true
+    },
+    {
+      "name": "H4 Gamma x S4 orbits",
+      "actual": 18,
+      "expected": 18,
+      "passed": true
+    },
+    {
+      "name": "H4 family orbit counts",
+      "actual": {
+        "TTTT": 2,
+        "TTWW": 4,
+        "TWWW": 3,
+        "WWWW": 9
+      },
+      "expected": {
+        "TTTT": 2,
+        "TTWW": 4,
+        "TWWW": 3,
+        "WWWW": 9
+      },
+      "passed": true
+    },
+    {
+      "name": "H4-to-H3 candidate pair contractions",
+      "actual": 18990,
+      "expected": 18990,
+      "passed": true
+    },
+    {
+      "name": "H4-to-H3 valid nonzero contractions",
+      "actual": 17640,
+      "expected": 17640,
+      "passed": true
+    },
+    {
+      "name": "H4-to-H3 H3 orbits hit",
+      "actual": 5,
+      "expected": 5,
+      "passed": true
+    },
+    {
+      "name": "H4-to-H3 H4 orbits with valid contractions",
+      "actual": 16,
+      "expected": 16,
+      "passed": true
+    },
+    {
+      "name": "Ext_CH raw carry atoms",
+      "actual": 1569,
+      "expected": 1569,
+      "passed": true
+    },
+    {
+      "name": "Ext_CH raw carry pairs",
+      "actual": 369,
+      "expected": 369,
+      "passed": true
+    },
+    {
+      "name": "Ext_CH atom orbits",
+      "actual": 71,
+      "expected": 71,
+      "passed": true
+    },
+    {
+      "name": "Ext_CH pair orbits",
+      "actual": 20,
+      "expected": 20,
+      "passed": true
+    },
+    {
+      "name": "Ext_CH pair orbit missing total",
+      "actual": 0,
+      "expected": 0,
+      "passed": true
+    },
+    {
+      "name": "arity-2 full-defect orbits",
+      "actual": 4438,
+      "expected": 4438,
+      "passed": true
+    },
+    {
+      "name": "arity-2 full-defect missing support",
+      "actual": 0,
+      "expected": 0,
+      "passed": true
+    },
+    {
+      "name": "arity-2 full-defect nonconstant orbits",
+      "actual": 0,
+      "expected": 0,
+      "passed": true
+    },
+    {
+      "name": "arity-2 commutator orbits",
+      "actual": 592,
+      "expected": 592,
+      "passed": true
+    },
+    {
+      "name": "arity-2 commutator missing support",
+      "actual": 0,
+      "expected": 0,
+      "passed": true
+    },
+    {
+      "name": "arity-2 commutator nonconstant orbits",
+      "actual": 0,
+      "expected": 0,
+      "passed": true
+    },
+    {
+      "name": "arity-2 commutator coefficient distribution",
+      "actual": {
+        "-1": 7056,
+        "1": 7056
+      },
+      "expected": {
+        "-1": 7056,
+        "1": 7056
+      },
+      "passed": true
+    },
+    {
+      "name": "F4[u]/u2 spec constructor summary",
+      "actual": {
+        "label_count": 16,
+        "nontrivial_label_count": 15,
+        "packets": {
+          "u": 3,
+          "u^2": 12
+        },
+        "gamma_size": 24,
+        "quotient_shift_count": 44,
+        "quotient_shift_support_distribution": {
+          "2": 3,
+          "3": 25,
+          "8": 12,
+          "12": 4
+        },
+        "carry_record_count": 369,
+        "carry_path_distribution": {
+          "u->u->u": 9,
+          "u->u->u^2": 36,
+          "u^2->u->u": 36,
+          "u^2->u->u^2": 144,
+          "u^2->u^2->u^2": 144
+        },
+        "associativity_failures": 0
+      },
+      "expected": {
+        "label_count": 16,
+        "nontrivial_label_count": 15,
+        "packets": {
+          "u": 3,
+          "u^2": 12
+        },
+        "gamma_size": 24,
+        "quotient_shift_count": 44,
+        "quotient_shift_support_distribution": {
+          "2": 3,
+          "3": 25,
+          "8": 12,
+          "12": 4
+        },
+        "carry_record_count": 369,
+        "carry_path_distribution": {
+          "u->u->u": 9,
+          "u->u->u^2": 36,
+          "u^2->u->u": 36,
+          "u^2->u->u^2": 144,
+          "u^2->u^2->u^2": 144
+        },
+        "associativity_failures": 0
+      },
+      "passed": true
+    },
+    {
+      "name": "F16 spec Gamma",
+      "actual": 60,
+      "expected": 60,
+      "passed": true
+    },
+    {
+      "name": "F16 spec H3/H4 controls",
+      "actual": [
+        2,
+        7
+      ],
+      "expected": [
+        2,
+        7
+      ],
+      "passed": true
+    },
+    {
+      "name": "F2[u]/u4 spec Gamma",
+      "actual": 32,
+      "expected": 32,
+      "passed": true
+    },
+    {
+      "name": "F2[u]/u4 spec H3/H4 controls",
+      "actual": [
+        7,
+        32
+      ],
+      "expected": [
+        7,
+        32
+      ],
+      "passed": true
+    },
+    {
+      "name": "R4 mixed-lift records",
+      "actual": 592,
+      "expected": 592,
+      "passed": true
+    },
+    {
+      "name": "R4 mixed orbit groups",
+      "actual": 7,
+      "expected": 7,
+      "passed": true
+    },
+    {
+      "name": "R4 paired-slot distribution",
+      "actual": {
+        "-1": 44,
+        "1": 504,
+        "2": 44
+      },
+      "expected": {
+        "-1": 44,
+        "1": 504,
+        "2": 44
+      },
+      "passed": true
+    },
+    {
+      "name": "F16 H3 control orbits",
+      "actual": 2,
+      "expected": 2,
+      "passed": true
+    },
+    {
+      "name": "F16 H4 control orbits",
+      "actual": 7,
+      "expected": 7,
+      "passed": true
+    },
+    {
+      "name": "F2[u]/u4 H3 control orbits",
+      "actual": 7,
+      "expected": 7,
+      "passed": true
+    },
+    {
+      "name": "F2[u]/u4 H4 control orbits",
+      "actual": 32,
+      "expected": 32,
+      "passed": true
+    }
+  ]
+}

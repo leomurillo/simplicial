@@ -1,0 +1,674 @@
+{
+  "settings": {
+    "max_length": 8,
+    "max_total_depth": 21,
+    "max_carry": 8,
+    "height_threshold": 1.584962500721
+  },
+  "results": {
+    "totals": {
+      "words": 359083,
+      "contracting_words": 358130,
+      "negative_q_words": 0,
+      "zero_q_words": 8,
+      "trivial_zero_words": 8,
+      "positive_q_words": 358122
+    },
+    "append_one_by_run": {
+      "1": {
+        "count": 83151,
+        "negative_q": 0,
+        "zero_q": 0,
+        "positive_q": 83151,
+        "min_q": 1,
+        "min_q_example": {
+          "word": [
+            1,
+            3,
+            1
+          ],
+          "signature": "(1 3 1)",
+          "m": 3,
+          "S": 5,
+          "height": 0.245112497837,
+          "q": 1,
+          "first_n": 19,
+          "image": 17,
+          "anchor": [
+            1,
+            3
+          ],
+          "anchor_signature": "(1 3)",
+          "anchor_q": 4,
+          "drop_from_anchor": 3
+        },
+        "max_drop": 1092,
+        "max_drop_example": {
+          "word": [
+            2,
+            1,
+            1,
+            1,
+            1,
+            7,
+            3,
+            1
+          ],
+          "signature": "(2 1^4 7 3 1)",
+          "m": 8,
+          "S": 17,
+          "height": 4.320299994231,
+          "q": 62153,
+          "first_n": 130857,
+          "image": 6551,
+          "anchor": [
+            2,
+            1,
+            1,
+            1,
+            1,
+            7,
+            3
+          ],
+          "anchor_signature": "(2 1^4 7 3)",
+          "anchor_q": 63245,
+          "drop_from_anchor": 1092
+        }
+      },
+      "2": {
+        "count": 26563,
+        "negative_q": 0,
+        "zero_q": 0,
+        "positive_q": 26563,
+        "min_q": 2,
+        "min_q_example": {
+          "word": [
+            2,
+            2,
+            2,
+            1,
+            1
+          ],
+          "signature": "(2^3 1^2)",
+          "m": 5,
+          "S": 8,
+          "height": 0.075187496394,
+          "q": 2,
+          "first_n": 129,
+          "image": 125,
+          "anchor": [
+            2,
+            2,
+            2
+          ],
+          "anchor_signature": "(2^3)",
+          "anchor_q": 0,
+          "drop_from_anchor": -2
+        },
+        "max_drop": 905,
+        "max_drop_example": {
+          "word": [
+            2,
+            2,
+            2,
+            1,
+            2,
+            4,
+            1,
+            1
+          ],
+          "signature": "(2^3 1 2 4 1^2)",
+          "m": 8,
+          "S": 15,
+          "height": 2.320299994231,
+          "q": 6500,
+          "first_n": 16257,
+          "image": 3257,
+          "anchor": [
+            2,
+            2,
+            2,
+            1,
+            2,
+            4
+          ],
+          "anchor_signature": "(2^3 1 2 4)",
+          "anchor_q": 7405,
+          "drop_from_anchor": 905
+        }
+      },
+      "3": {
+        "count": 7573,
+        "negative_q": 0,
+        "zero_q": 0,
+        "positive_q": 7573,
+        "min_q": 1,
+        "min_q_example": {
+          "word": [
+            3,
+            2,
+            1,
+            1,
+            1
+          ],
+          "signature": "(3 2 1^3)",
+          "m": 5,
+          "S": 8,
+          "height": 0.075187496394,
+          "q": 1,
+          "first_n": 109,
+          "image": 107,
+          "anchor": [
+            3,
+            2
+          ],
+          "anchor_signature": "(3 2)",
+          "anchor_q": 16,
+          "drop_from_anchor": 15
+        },
+        "max_drop": 570,
+        "max_drop_example": {
+          "word": [
+            2,
+            2,
+            3,
+            1,
+            3,
+            1,
+            1,
+            1
+          ],
+          "signature": "(2^2 3 1 3 1^3)",
+          "m": 8,
+          "S": 14,
+          "height": 1.320299994231,
+          "q": 1207,
+          "first_n": 4033,
+          "image": 1619,
+          "anchor": [
+            2,
+            2,
+            3,
+            1,
+            3
+          ],
+          "anchor_signature": "(2^2 3 1 3)",
+          "anchor_q": 1777,
+          "drop_from_anchor": 570
+        }
+      },
+      "4": {
+        "count": 1848,
+        "negative_q": 0,
+        "zero_q": 0,
+        "positive_q": 1848,
+        "min_q": 2,
+        "min_q_example": {
+          "word": [
+            4,
+            1,
+            1,
+            1,
+            1
+          ],
+          "signature": "(4 1^4)",
+          "m": 5,
+          "S": 8,
+          "height": 0.075187496394,
+          "q": 2,
+          "first_n": 165,
+          "image": 161,
+          "anchor": [
+            4
+          ],
+          "anchor_signature": "(4)",
+          "anchor_q": 2,
+          "drop_from_anchor": 0
+        },
+        "max_drop": 260,
+        "max_drop_example": {
+          "word": [
+            2,
+            2,
+            1,
+            4,
+            1,
+            1,
+            1,
+            1
+          ],
+          "signature": "(2^2 1 4 1^4)",
+          "m": 8,
+          "S": 13,
+          "height": 0.320299994231,
+          "q": 77,
+          "first_n": 801,
+          "image": 647,
+          "anchor": [
+            2,
+            2,
+            1,
+            4
+          ],
+          "anchor_signature": "(2^2 1 4)",
+          "anchor_q": 337,
+          "drop_from_anchor": 260
+        }
+      },
+      "5": {
+        "count": 359,
+        "negative_q": 0,
+        "zero_q": 0,
+        "positive_q": 359,
+        "min_q": 115,
+        "min_q_example": {
+          "word": [
+            2,
+            4,
+            2,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "signature": "(2 4 2 1^5)",
+          "m": 8,
+          "S": 13,
+          "height": 0.320299994231,
+          "q": 115,
+          "first_n": 1201,
+          "image": 971,
+          "anchor": [
+            2,
+            4,
+            2
+          ],
+          "anchor_signature": "(2 4 2)",
+          "anchor_q": 79,
+          "drop_from_anchor": -36
+        },
+        "max_drop": -36,
+        "max_drop_example": {
+          "word": [
+            1,
+            3,
+            4,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "signature": "(1 3 4 1^5)",
+          "m": 8,
+          "S": 13,
+          "height": 0.320299994231,
+          "q": 116,
+          "first_n": 1203,
+          "image": 971,
+          "anchor": [
+            1,
+            3,
+            4
+          ],
+          "anchor_signature": "(1 3 4)",
+          "anchor_q": 80,
+          "drop_from_anchor": -36
+        }
+      },
+      "6": {
+        "count": 48,
+        "negative_q": 0,
+        "zero_q": 0,
+        "positive_q": 48,
+        "min_q": 174,
+        "min_q_example": {
+          "word": [
+            3,
+            4,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "signature": "(3 4 1^6)",
+          "m": 8,
+          "S": 13,
+          "height": 0.320299994231,
+          "q": 174,
+          "first_n": 1805,
+          "image": 1457,
+          "anchor": [
+            3,
+            4
+          ],
+          "anchor_signature": "(3 4)",
+          "anchor_q": 6,
+          "drop_from_anchor": -168
+        },
+        "max_drop": -168,
+        "max_drop_example": {
+          "word": [
+            3,
+            4,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "signature": "(3 4 1^6)",
+          "m": 8,
+          "S": 13,
+          "height": 0.320299994231,
+          "q": 174,
+          "first_n": 1805,
+          "image": 1457,
+          "anchor": [
+            3,
+            4
+          ],
+          "anchor_signature": "(3 4)",
+          "anchor_q": 6,
+          "drop_from_anchor": -168
+        }
+      },
+      "7": {
+        "count": 3,
+        "negative_q": 0,
+        "zero_q": 0,
+        "positive_q": 3,
+        "min_q": 1077,
+        "min_q_example": {
+          "word": [
+            6,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "signature": "(6 1^7)",
+          "m": 8,
+          "S": 13,
+          "height": 0.320299994231,
+          "q": 1077,
+          "first_n": 10901,
+          "image": 8747,
+          "anchor": [
+            6
+          ],
+          "anchor_signature": "(6)",
+          "anchor_q": 10,
+          "drop_from_anchor": -1067
+        },
+        "max_drop": -1067,
+        "max_drop_example": {
+          "word": [
+            6,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "signature": "(6 1^7)",
+          "m": 8,
+          "S": 13,
+          "height": 0.320299994231,
+          "q": 1077,
+          "first_n": 10901,
+          "image": 8747,
+          "anchor": [
+            6
+          ],
+          "anchor_signature": "(6)",
+          "anchor_q": 10,
+          "drop_from_anchor": -1067
+        }
+      }
+    },
+    "boundary_by_final": {
+      "2": {
+        "count": 222,
+        "negative_q": 0,
+        "zero_q": 0,
+        "positive_q": 222,
+        "min_q": 2,
+        "min_q_example": {
+          "word": [
+            1,
+            2,
+            2,
+            1,
+            2
+          ],
+          "signature": "(1 2^2 1 2)",
+          "m": 5,
+          "S": 8,
+          "height": 0.075187496394,
+          "q": 2,
+          "first_n": 107,
+          "image": 103,
+          "prefix": [
+            1,
+            2,
+            2,
+            1
+          ],
+          "prefix_signature": "(1 2^2 1)"
+        },
+        "max_drop": null,
+        "max_drop_example": null
+      },
+      "3": {
+        "count": 386,
+        "negative_q": 0,
+        "zero_q": 0,
+        "positive_q": 386,
+        "min_q": 1,
+        "min_q_example": {
+          "word": [
+            1,
+            1,
+            2,
+            3
+          ],
+          "signature": "(1^2 2 3)",
+          "m": 4,
+          "S": 7,
+          "height": 0.660149997115,
+          "q": 1,
+          "first_n": 7,
+          "image": 5,
+          "prefix": [
+            1,
+            1,
+            2
+          ],
+          "prefix_signature": "(1^2 2)"
+        },
+        "max_drop": null,
+        "max_drop_example": null
+      },
+      "4": {
+        "count": 442,
+        "negative_q": 0,
+        "zero_q": 0,
+        "positive_q": 442,
+        "min_q": 1,
+        "min_q_example": {
+          "word": [
+            1,
+            4
+          ],
+          "signature": "(1 4)",
+          "m": 2,
+          "S": 5,
+          "height": 1.830074998558,
+          "q": 1,
+          "first_n": 3,
+          "image": 1,
+          "prefix": [
+            1
+          ],
+          "prefix_signature": "(1)"
+        },
+        "max_drop": null,
+        "max_drop_example": null
+      },
+      "5": {
+        "count": 456,
+        "negative_q": 0,
+        "zero_q": 0,
+        "positive_q": 456,
+        "min_q": 5,
+        "min_q_example": {
+          "word": [
+            1,
+            1,
+            1,
+            5
+          ],
+          "signature": "(1^3 5)",
+          "m": 4,
+          "S": 8,
+          "height": 1.660149997115,
+          "q": 5,
+          "first_n": 15,
+          "image": 5,
+          "prefix": [
+            1,
+            1,
+            1
+          ],
+          "prefix_signature": "(1^3)"
+        },
+        "max_drop": null,
+        "max_drop_example": null
+      },
+      "6": {
+        "count": 458,
+        "negative_q": 0,
+        "zero_q": 0,
+        "positive_q": 458,
+        "min_q": 25,
+        "min_q_example": {
+          "word": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            6
+          ],
+          "signature": "(1^7 6)",
+          "m": 8,
+          "S": 13,
+          "height": 0.320299994231,
+          "q": 25,
+          "first_n": 255,
+          "image": 205,
+          "prefix": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "prefix_signature": "(1^7)"
+        },
+        "max_drop": null,
+        "max_drop_example": null
+      },
+      "7": {
+        "count": 458,
+        "negative_q": 0,
+        "zero_q": 0,
+        "positive_q": 458,
+        "min_q": 233,
+        "min_q_example": {
+          "word": [
+            1,
+            7
+          ],
+          "signature": "(1 7)",
+          "m": 2,
+          "S": 8,
+          "height": 4.830074998558,
+          "q": 233,
+          "first_n": 483,
+          "image": 17,
+          "prefix": [
+            1
+          ],
+          "prefix_signature": "(1)"
+        },
+        "max_drop": null,
+        "max_drop_example": null
+      },
+      "8": {
+        "count": 458,
+        "negative_q": 0,
+        "zero_q": 0,
+        "positive_q": 458,
+        "min_q": 37,
+        "min_q_example": {
+          "word": [
+            1,
+            2,
+            8
+          ],
+          "signature": "(1 2 8)",
+          "m": 3,
+          "S": 11,
+          "height": 6.245112497837,
+          "q": 37,
+          "first_n": 75,
+          "image": 1,
+          "prefix": [
+            1,
+            2
+          ],
+          "prefix_signature": "(1 2)"
+        },
+        "max_drop": null,
+        "max_drop_example": null
+      }
+    },
+    "irreducible_stats": {
+      "count": 122432,
+      "negative_q": 0,
+      "zero_q": 1,
+      "positive_q": 122431,
+      "min_q": 0,
+      "min_q_example": {
+        "word": [
+          2
+        ],
+        "signature": "(2)",
+        "m": 1,
+        "S": 2,
+        "height": 0.415037499279,
+        "q": 0,
+        "first_n": 1,
+        "image": 1,
+        "reason": "root"
+      },
+      "max_drop": null,
+      "max_drop_example": null
+    }
+  }
+}

@@ -1,0 +1,152 @@
+==============================================================================
+AUDIT  פ11  --  the conductor-fusion boundary  ∂_n S  is the leak
+==============================================================================
+PRE-CLAIM (before the computation runs).
+T11 Thm 4.1: a projected n-leg apex vertex closes on H_S iff S is fusion-closed,
+and its UNIVERSAL residual support is the conductor-fusion boundary
+   ∂_n S = Fuse_n(S) \ (S u {1}).
+Test bed N=6=2*3, packets H_2=span{χ3}, H_3=span{χ2,χ4}, H_6=span{χ1,χ5};
+take S={2,3} (the non-unit sector A_2 (+) A_3), n=3 (cubic).
+
+  K : ∂_3{2,3} = {6} exactly -- the mixed non-unit sector leaks precisely into
+      the unit-indexed full-conductor packet H_6.
+  L : ∂_3{2,3} != {6}  (empty, or includes packets other than 6).
+  JOINT-ON-DISJOINT : ∂_3{2,3}={6}, yet the two pure axes self-close by
+      DIFFERENT mechanisms -- the 2-axis triple {χ3,χ3,χ3} stays at conductor 2
+      (p=2 parity BLOCKS cancellation), while the 3-axis triple {χ2,χ2,χ2}
+      cancels to conductor 1 (odd prime, free cancellation). Parity-asymmetric.
+Check: exact conductor arithmetic, brute-force over all cubic triples.
+------------------------------------------------------------------------------
+    H_1 (N=6): indices []
+    H_2 (N=6): indices [3]
+    H_3 (N=6): indices [2, 4]
+    H_6 (N=6): indices [1, 5]
+
+    ∂_3 S  for S={2, 3} :  {6}
+    Cl_3(S)  (minimal fusion-closed sector)         :  {2, 3, 6}
+
+    3-axis cube  χ2+χ2+χ2 = χ0: cond=1  (odd prime 3: cancels to conductor 1, the trivial gauge)
+    2-axis cube  χ3+χ3+χ3 = χ3: cond=2  (prime 2: parity blocks cancellation, stays conductor 2)
+    => ∂_3{2}=set(), ∂_3{3}=set() (both self-close, by the two different mechanisms)
+------------------------------------------------------------------------------
+    breadth check (other cross-prime moduli):
+      N=12, S={2, 3}: ∂_3 S = {6}, Cl_3 = {2, 3, 6}
+      N=12, S={3, 4}: ∂_3 S = {12, 6}, Cl_3 = {2, 3, 4, 6, 12}
+      N=30, S={2, 3, 5}: ∂_3 S = {10, 6, 30, 15}, Cl_3 = {2, 3, 5, 6, 10, 30, 15}
+
+REALIZED BRANCH  פ11 :  K + JOINT-ON-DISJOINT
+  K: ∂_3{2,3} = {6} exactly -- the non-unit sector leaks into H_6.
+  JOINT-ON-DISJOINT: the boundary is parity-asymmetric -- 3-axis cancels
+  to the trivial packet, 2-axis is parity-locked at conductor 2.
+
+==============================================================================
+AUDIT  פ12  --  the 'infinite' tower is the finite algebra  R[t]/(P_x)
+==============================================================================
+PRE-CLAIM (before the computation runs).
+T12 Thm 6: a centered ledger with r distinct levels lam_1..lam_r has apex tower
+~= R[t]/(P_x), P_x(t)=prod_j (t-lam_j); moments mu_n=sum_j W_j lam_j^n obey the
+degree-r recurrence read off P_x, and the moment Hankel matrices have rank r.
+Test ledger: the 4-slot centered ledger y=(-1,-1,0,2)  (sum=0), with distinct
+levels {-1,0,2} (r=3), uniform weight 1/4 per slot.
+
+  K : Hankel rank stabilizes at r=3, AND the moments satisfy the exact degree-3
+      recurrence from P_x(t)=(t+1)t(t-2)=t^3 - t^2 - 2t, i.e.
+      mu_{n+3} = mu_{n+2} + 2 mu_{n+1}.  (The tower is finite spectral data.)
+  L : rank grows past 3 / no finite recurrence (the tower carries unbounded
+      new information).
+Check: exact rational moments, exact Hankel ranks, exact recurrence residuals.
+------------------------------------------------------------------------------
+    distinct levels lam = ['-1', '0', '2']  (r=3)
+    moments mu_0..mu_8 = ['1', '0', '3/2', '3/2', '9/2', '15/2', '33/2', '63/2', '129/2']
+    (mu_0=1, mu_1=0 since the ledger is centered)
+
+    Hankel rank H_k = [mu_{i+j}]_{0<=i,j<=k}:
+      k=0: (1x1)  rank = 1
+      k=1: (2x2)  rank = 2
+      k=2: (3x3)  rank = 3
+      k=3: (4x4)  rank = 3
+      k=4: (5x5)  rank = 3
+      k=5: (6x6)  rank = 3
+
+    P_x(t) = (t+1) t (t-2) = t^3 - t^2 - 2t   =>   mu_(n+3) - mu_(n+2) - 2 mu_(n+1) = 0 ?
+    exact recurrence residuals (n=0..8): ['0', '0', '0', '0', '0', '0', '0', '0', '0']
+------------------------------------------------------------------------------
+REALIZED BRANCH  פ12 :  K
+  Hankel rank stabilizes at r=3 (=#distinct levels) and the moments obey
+  the exact degree-3 recurrence: the tower IS the finite algebra R[t]/(P_x).
+
+==============================================================================
+AUDIT  פ14  --  curvature = boundary leakage  (one set, many names)
+==============================================================================
+PRE-CLAIM (before the computation runs).
+T14 Thm 6 (equivalence): the projected cubic CURVATURE defect
+   R_S(u,v,w) = (1 - Pi_S - Pi_1)(u*v*w),   u,v,w in H_S,
+(pointwise product * of characters) is supported on EXACTLY the same set as the
+fusion boundary ∂_3 S of פ11 -- and that set is simultaneously the renormalization
+source, the beta source, and the Noether defect. At N=6, S={2,3}, the claim is
+that this single set is {1,5} = H_6.
+
+  K : the cubic residual of H_S basis triples is supported exactly on the index
+      set {1,5} = H_6 = ∂_3{2,3}; curvature support = fusion boundary.
+  L : the curvature support differs from ∂_3 S.
+  JOINT-ON-DISJOINT : support is {1,5}=H_6, but reached only by specific input
+      multisets ({χ3,χ3,χ2}-type -> index 1; {χ3,χ2,χ2}... -> index 5, etc.).
+Check: exact pointwise character products on the H_S basis; membership exact.
+------------------------------------------------------------------------------
+    H_S basis indices (N=6, S={2,3}): [2, 3, 4]
+    cubic residual support (off H_S (+) H_1): indices [1, 5]
+    cond of each: { χ1->cond 6, χ5->cond 6 }
+    => support packet = H_6 (all leaked indices have conductor 6)
+      witness  χ2*χ2*χ3 = χ1  (index 1 in H_6)
+      witness  χ3*χ4*χ4 = χ5  (index 5 in H_6)
+
+    curvature support conductor set == ∂_3{2,3} == {6} ?  True
+------------------------------------------------------------------------------
+REALIZED BRANCH  פ14 :  K + JOINT-ON-DISJOINT
+  The SAME set {1,5}=H_6 is the curvature defect support, the projection
+  residual, the renormalization/beta source, and the Noether defect (T14
+  Thm 6). Five interior names; one exterior boundary. JOINT: reached only
+  by the specific witness multisets shown.
+
+==============================================================================
+AUDIT  פ15  --  the real place {oo} is not a finite packet
+==============================================================================
+PRE-CLAIM (before the computation runs).
+T15 Prop 12.2: the primorial sequence P=(1,2,6,30,210,2310,30030,...) is NOT a
+moment sequence -- its Hankel determinant D_3 is NEGATIVE -- so the smooth
+primorial פ = e^{Li^-1(z)}/(2π) admits no Mellin/moment representation, and the
+real place {oo} (the gamma factor, the 1/2π) is a TERMINAL external boundary,
+not recoverable from finite-prime data. Contrast: the factorial (1,1,2,6,24,...)
+IS a moment sequence (n! = ∫ t^n e^-t dt -- that is exactly why Gamma exists).
+
+  K : D_3(primorial) < 0  (matching T15's exact value -787680), so the primorial
+      is not a moment sequence and the real place is a terminal boundary; while
+      the factorial has all Hankel D_k > 0 (a genuine moment sequence).
+  L : D_3(primorial) >= 0 (the primorial IS a moment sequence; the real place is
+      a finite packet, self-completing).
+Check: exact INTEGER Hankel determinants D_0..D_3 of both sequences.
+------------------------------------------------------------------------------
+    primorial (1,2,6,30,210,...) -- a pure finite-prime / Euler-product object:
+      D_0 = 1
+      D_1 = 2
+      D_2 = 24
+      D_3 = -787680   <-- NEGATIVE
+
+    factorial (1,1,2,6,24,...) -- the archimedean object n! = ∫_0^oo t^n e^-t dt:
+      D_0 = 1   (>0)
+      D_1 = 1   (>0)
+      D_2 = 4   (>0)
+      D_3 = 144   (>0)
+
+    D_3(primorial) == T15 Prop 12.2 value (-787680) ?  True
+------------------------------------------------------------------------------
+REALIZED BRANCH  פ15 :  K
+  D_3(primorial) = -787680 < 0: the primorial is NOT a moment sequence, so a
+  finite-prime object cannot generate its own real-place completion -- the
+  archimedean boundary {oo} (the gamma factor, the 1/2π of the smooth
+  primorial פ) must be adjoined from outside. The factorial, by contrast,
+  IS a moment sequence: that is exactly why Euler's Gamma completes it.
+
+==============================================================================
+END OF SETTLEMENTS  (deterministic; re-run reproduces this transcript)
+==============================================================================

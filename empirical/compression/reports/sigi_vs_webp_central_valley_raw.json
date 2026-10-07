@@ -1,0 +1,28 @@
+[
+  {
+    "file": "C:\\Users\\leomu\\Downloads\\central-valley-san-jose-costa-rica.jpg",
+    "width": 1920,
+    "height": 1080,
+    "raw_rgb_bytes": 6220800,
+    "source_jpeg_bytes": 467355,
+    "webp_lossless_bytes": 2177892,
+    "webp_lossless_encode_s": 33.1657273999881,
+    "sigi_best_mode": "g-bg-ravg-ctx-rice",
+    "sigi_bytes": 2382719,
+    "sigi_estimate_s": 49.3220575999876,
+    "sigi_modes": {
+      "ycocg-ctx-rice": {
+        "bytes": 2390865,
+        "estimate_s": 99.6375490000064
+      },
+      "green16-ctx-rice": {
+        "bytes": 2577582,
+        "estimate_s": 46.803461800009245
+      },
+      "g-bg-ravg-ctx-rice": {
+        "bytes": 2382719,
+        "estimate_s": 49.3220575999876
+      }
+    }
+  }
+]

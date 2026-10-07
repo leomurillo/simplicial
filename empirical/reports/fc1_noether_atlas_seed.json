@@ -1,0 +1,225 @@
+{
+  "coordinate_count_convention": "packet energies + H3 orbits + H4 orbits + K_CH commutator orbits + carry-pair orbits when present.  This is a seed count, not a dimension theorem for all smooth functions.",
+  "purpose": "FC1 Noether-atlas seed: finite coordinate skeleton for exact finite-sufficient Hamiltonian differentials at fixed row/jet data.",
+  "rows": [
+    {
+      "carry_pair_orbits": 5,
+      "finite_observation_coordinate_count_seed": 15,
+      "full_filtered_residual": 225,
+      "gamma_size": 60,
+      "h3_family_orbits": {
+        "FFF": 2
+      },
+      "h3_orbits": 2,
+      "h4_family_orbits": {
+        "FFFF": 7
+      },
+      "h4_orbits": 7,
+      "k_ch_commutator_entries": 0,
+      "k_ch_commutator_orbits": 0,
+      "noether_next_step": "enumerate Hamiltonian tuple support patterns in this finite coordinate skeleton; compute normalizer stabilizers and determinant characters",
+      "packet_energy_coordinates": 1,
+      "packets": {
+        "field": 15
+      },
+      "raw_carry_atoms": 225,
+      "ring": "F_16",
+      "row_key": "f16-field",
+      "support_projection_residual": 0,
+      "visible_shadow_status": "empty"
+    },
+    {
+      "carry_pair_orbits": 33,
+      "finite_observation_coordinate_count_seed": 1224,
+      "full_filtered_residual": 1540,
+      "gamma_size": 32,
+      "h3_family_orbits": {
+        "122": 1,
+        "133": 1,
+        "144": 1,
+        "233": 1,
+        "244": 2,
+        "344": 1
+      },
+      "h3_orbits": 7,
+      "h4_family_orbits": {
+        "1111": 1,
+        "1122": 1,
+        "1133": 1,
+        "1144": 1,
+        "1233": 1,
+        "1244": 2,
+        "1344": 1,
+        "2222": 2,
+        "2233": 2,
+        "2244": 3,
+        "2344": 1,
+        "3333": 4,
+        "3344": 4,
+        "4444": 8
+      },
+      "h4_mixed_orbits_hit": 17,
+      "h4_mixed_orbits_total": 17,
+      "h4_orbits": 32,
+      "h4_pure_orbits_hit": 0,
+      "h4_pure_orbits_total": 15,
+      "k_ch_commutator_entries": 27440,
+      "k_ch_commutator_orbits": 1148,
+      "noether_next_step": "enumerate Hamiltonian tuple support patterns in this finite coordinate skeleton; compute normalizer stabilizers and determinant characters",
+      "packet_energy_coordinates": 4,
+      "packets": {
+        "u": 1,
+        "u^2": 2,
+        "u^3": 4,
+        "u^4": 8
+      },
+      "raw_carry_atoms": 1540,
+      "ring": "F_2[u]/(u^4)",
+      "row_key": "f2-u4-control",
+      "support_projection_residual": 0,
+      "visible_shadow_status": "exact"
+    },
+    {
+      "carry_pair_orbits": 81,
+      "finite_observation_coordinate_count_seed": 6826,
+      "full_filtered_residual": 19140,
+      "gamma_size": 128,
+      "h3_family_orbits": {
+        "122": 1,
+        "133": 1,
+        "144": 1,
+        "155": 1,
+        "233": 1,
+        "244": 2,
+        "255": 1,
+        "344": 1,
+        "355": 2,
+        "455": 1
+      },
+      "h3_orbits": 12,
+      "h4_family_orbits": {
+        "1111": 1,
+        "1122": 1,
+        "1133": 1,
+        "1144": 1,
+        "1155": 1,
+        "1233": 1,
+        "1244": 2,
+        "1255": 1,
+        "1344": 1,
+        "1355": 2,
+        "1455": 1,
+        "2222": 2,
+        "2233": 2,
+        "2244": 3,
+        "2255": 2,
+        "2344": 1,
+        "2355": 2,
+        "2455": 2,
+        "3333": 4,
+        "3344": 4,
+        "3355": 7,
+        "3455": 2,
+        "4444": 8,
+        "4455": 6,
+        "5555": 14
+      },
+      "h4_mixed_orbits_hit": 43,
+      "h4_mixed_orbits_total": 43,
+      "h4_orbits": 72,
+      "h4_pure_orbits_hit": 0,
+      "h4_pure_orbits_total": 29,
+      "k_ch_commutator_entries": 558000,
+      "k_ch_commutator_orbits": 6656,
+      "noether_next_step": "enumerate Hamiltonian tuple support patterns in this finite coordinate skeleton; compute normalizer stabilizers and determinant characters",
+      "packet_energy_coordinates": 5,
+      "packets": {
+        "u": 1,
+        "u^2": 2,
+        "u^3": 4,
+        "u^4": 8,
+        "u^5": 16
+      },
+      "proof_extraction_status": "finite lemma ready after independent certificate check",
+      "raw_carry_atoms": 19140,
+      "ring": "F_2[u]/(u^5)",
+      "row_key": "f2-u5",
+      "support_projection_residual": 0,
+      "visible_shadow_status": "exact"
+    },
+    {
+      "carry_pair_orbits": 20,
+      "finite_observation_coordinate_count_seed": 637,
+      "full_filtered_residual": 1569,
+      "gamma_size": 24,
+      "h3_family_orbits": {
+        "TTT": 1,
+        "TWW": 2,
+        "WWW": 2
+      },
+      "h3_orbits": 5,
+      "h4_family_orbits": {
+        "TTTT": 2,
+        "TTWW": 4,
+        "TWWW": 3,
+        "WWWW": 9
+      },
+      "h4_mixed_orbits_hit": 7,
+      "h4_mixed_orbits_total": 7,
+      "h4_orbits": 18,
+      "h4_pure_orbits_hit": 0,
+      "h4_pure_orbits_total": 11,
+      "k_ch_commutator_entries": 14112,
+      "k_ch_commutator_orbits": 592,
+      "noether_next_step": "enumerate Hamiltonian tuple support patterns in this finite coordinate skeleton; compute normalizer stabilizers and determinant characters",
+      "packet_energy_coordinates": 2,
+      "packets": {
+        "u": 3,
+        "u^2": 12
+      },
+      "proof_extraction_status": "finite lemma ready after independent certificate check",
+      "raw_carry_atoms": 1569,
+      "ring": "F_4[u]/(u^2)",
+      "row_key": "f4-u2",
+      "support_projection_residual": 0,
+      "visible_shadow_status": "exact"
+    },
+    {
+      "carry_pair_orbits": 49,
+      "finite_observation_coordinate_count_seed": 18089,
+      "full_filtered_residual": 158081,
+      "gamma_size": 168,
+      "h3_family_orbits": {
+        "111": 1,
+        "122": 3,
+        "222": 4
+      },
+      "h3_orbits": 8,
+      "h4_family_orbits": {
+        "1111": 3,
+        "1122": 10,
+        "1222": 20,
+        "2222": 53
+      },
+      "h4_mixed_orbits_hit": 30,
+      "h4_mixed_orbits_total": 30,
+      "h4_orbits": 86,
+      "h4_pure_orbits_hit": 0,
+      "h4_pure_orbits_total": 56,
+      "k_ch_commutator_entries": 3013696,
+      "k_ch_commutator_orbits": 17944,
+      "noether_next_step": "enumerate Hamiltonian tuple support patterns in this finite coordinate skeleton; compute normalizer stabilizers and determinant characters",
+      "packet_energy_coordinates": 2,
+      "packets": {
+        "u": 7,
+        "u^2": 56
+      },
+      "proof_extraction_status": "finite lemma ready after independent certificate check",
+      "raw_carry_atoms": 158081,
+      "ring": "F_8[u]/(u^2)",
+      "row_key": "f8-u2",
+      "support_projection_residual": 0,
+      "visible_shadow_status": "exact"
+    }
+  ]
+}

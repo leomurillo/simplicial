@@ -1,0 +1,59 @@
+{
+  "model": "EleutherAI/pythia-410m",
+  "layers": [
+    4,
+    10,
+    16,
+    22
+  ],
+  "d_sub": 32,
+  "meta": {
+    "n_tokens": 3500,
+    "hidden_dim": 1024,
+    "layers": [
+      4,
+      10,
+      16,
+      22
+    ]
+  },
+  "target": "next-token surprisal",
+  "by_layer": {
+    "4": {
+      "R2_poly1": 0.1638,
+      "R2_poly2": 0.2203,
+      "R2_rbf": 0.2309,
+      "dark": 0.0106,
+      "dark_visible": 0.048
+    },
+    "10": {
+      "R2_poly1": 0.2617,
+      "R2_poly2": 0.307,
+      "R2_rbf": 0.3171,
+      "dark": 0.0101,
+      "dark_visible": 0.033
+    },
+    "16": {
+      "R2_poly1": 0.322,
+      "R2_poly2": 0.3451,
+      "R2_rbf": 0.3504,
+      "dark": 0.0054,
+      "dark_visible": 0.016
+    },
+    "22": {
+      "R2_poly1": 0.3378,
+      "R2_poly2": 0.3505,
+      "R2_rbf": 0.3484,
+      "dark": -0.0021,
+      "dark_visible": -0.006
+    }
+  },
+  "dark_visible_by_layer": {
+    "4": 0.048,
+    "10": 0.033,
+    "16": 0.016,
+    "22": -0.006
+  },
+  "verdict": "CONFIRM",
+  "verdict_note": "RBF beats poly2 at early/mid (max dark:visible=0.05), last-layer=-0.01; dominates=True, decreasing=True"
+}

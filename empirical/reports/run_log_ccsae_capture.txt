@@ -1,0 +1,15 @@
+`torch_dtype` is deprecated! Use `dtype` instead!
+# corpus: 3456 prompts (24 templates x 12 starts x 12 offsets)
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00, 87.87it/s]
+# 16/3456
+# 336/3456
+# 656/3456
+# 976/3456
+# 1296/3456
+# 1616/3456
+# 1936/3456
+# 2256/3456
+# 2576/3456
+# 2896/3456
+# 3216/3456
+# wrote empirical/data/ccsae_corpus_months_llama31_8b.safetensors shape=(3456, 2, 4096) (rows kept = [30, 32])

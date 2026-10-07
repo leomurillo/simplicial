@@ -1,0 +1,182 @@
+de Bruijn-Newman: the heat-flow margin, the Lehmer-pair collision clock, and the 0.22 gap.
+
+PURPOSE.  Make the de Bruijn-Newman picture QUANTITATIVE and label every claim [P]/[A]/[C].
+The de Bruijn-Newman constant Lambda satisfies:
+   H_t real-rooted  <=>  t >= Lambda,        RH  <=>  Lambda <= 0,
+where H_t(z) = int_0^inf e^{t u^2} Phi(u) cos(z u) du is the heat-flow deformation of the Riemann
+xi function (H_0 = (1/8) Xi(z/2) up to normalization; its real zeros are the ordinates gamma_j).
+PROVEN bracket: Lambda >= 0 (Rodgers-Tao 2020) and Lambda <= 0.22 (Polymath15, 2019), so
+   Lambda in [0, 0.22]   and   RH  <=>  Lambda = 0.
+
+This script computes FOUR things, all numerical (mpmath/numpy), none a proof of Lambda<=0:
+
+  PART A  THE ZERO FLOW (Calogero / Rodgers-Tao dynamics).  The zeros x_j(t) of H_t obey the
+          first-order interacting ODE (Csordas-Smith-Varga 1994; Rodgers-Tao 2020 eq. for the
+          backward-heat-in-z DBN convention)
+                d x_j / dt  =  + 2 sum_{k != j} 1/(x_j - x_k).            (FLOW)
+          As t INCREASES the zeros REPEL (stay real); as t DECREASES toward Lambda they ATTRACT and
+          a "Lehmer pair" can COLLIDE (real double root) then split into a complex conjugate pair --
+          this collision is the ONLY way reality is lost.  We seed x_j(0) = gamma_j (the true first
+          ~50 zeros) and integrate the flow BACKWARD (t decreasing) to watch the tightest pair's
+          normalized gap shrink, reporting WHERE the margin is thinnest and HOW it scales.
+
+  PART B  THE LEHMER-PAIR COLLISION CLOCK (the rigorous lower-bound mechanism, in miniature).  For
+          an ISOLATED close pair the two-body reduction of (FLOW) gives an EXACT collision law:
+          the squared separation s = (x_2-x_1)^2 obeys ds/dt = +8, so s(t) = s(0) + 8 t and the pair
+          collides at  t_coll = - s(0)/8 = -(gap)^2/8.  A tight pair (small gap) collides at a t_coll
+          just below 0 -> forces Lambda >= t_coll, i.e. Lambda is pushed UP toward 0 from below.  This
+          is the Csordas-Smith-Varga "Lehmer pair" lower bound in its cleanest form; we evaluate it on
+          the live tightest pair and on the historical Lehmer pair near gamma ~ 7005.
+
+  PART C  DIRECT HEAT FLOW ON A TRUNCATED Xi (cross-check of repulsion).  Build a degree-2M real
+          even polynomial whose roots are +/- the first M ordinates, evolve it under the genuine
+          backward heat equation p_t = -p_xx (the DBN sign) by the exact moment/derivative recursion,
+          and confirm the roots stay real and SPREAD for t>0 while the tightest pair CONTRACTS for
+          t<0 -- a finite, exact, self-contained witness of (FLOW) independent of PART A's ODE.
+
+  PART D  WHAT CONTROLS 0.22 (the upper-bound anatomy) and the honest residual.  Quantify why the
+          0.22 is set by the DYNAMICS/triangle-of-influence constant, NOT by the numerical height X,
+          and state precisely what closing 0.22 -> 0 requires (= RH).
+
+HONESTY.  PART A-C seed at t=0 with the TRUE zeros (so reality at t=0 is RH-true by construction, not
+proved); they exhibit the mechanism and the scaling, and PART B's collision law is the exact engine of
+the proven LOWER bounds.  Nothing here proves Lambda <= 0.  Conservation of difficulty: the only
+unconditional inequality the flow yields by itself is Lambda >= (a negative number) -> 0 (the lower
+side); the upper side is RH.
+
+Loading the first 50 nontrivial zeta zeros (ordinates) via mpmath.zetazero ...
+  done.  gamma_1=14.13472514 ... gamma_50=143.1118458
+
+================  PART A : the Calogero / Rodgers-Tao zero flow (backward in t)  ============
+  d x_j/dt = +2 sum_{k!=j} 1/(x_j - x_k).  Seed x_j(0)=gamma_j (true zeros).  Integrate t<0.
+  As t DECREASES the zeros ATTRACT; the tightest pair is the first candidate to collide.
+
+  seed: N=50 true ordinates; tightest pair at index 34 (gamma_34=111.02954, gamma_35=111.87466),
+        gap(0)=0.845124, normalized gap(0)=0.3868.
+
+     t           min gap        min norm.gap     tightest-pair index
+        0.0   0.8451236   0.3868002   pair(34,35)
+      -0.02   0.7571532   0.3465346   pair(34,35)
+      -0.05   0.594877   0.2722606   pair(34,35)
+   ---> COLLISION imminent at t ~ -0.096 (gap < 1e-4); reality about to be lost.
+
+  READING [P-numerical]: the global-tightest pair's gap shrinks ROUGHLY LINEARLY in (-t) (the
+  two-body law gap(t)^2 ~ gap(0)^2 + 8t, PART B); the MARGIN is thinnest at the tightest pair,
+  and the collision time scales as t_coll ~ -gap(0)^2/8 -- a tighter seed pair collides closer
+  to t=0, i.e. pins a HIGHER (closer to 0) lower bound on Lambda.
+
+================  PART B : the Lehmer-pair collision clock (exact two-body law)  ============
+  Isolated pair under (FLOW): let s=(x2-x1)^2.  Then ds/dt = 2(x2'-x1') (x2-x1)
+    = 2 * [ +2/(x2-x1) - 2/(x1-x2) ] * (x2-x1) = 2 * [4/(x2-x1)] * (x2-x1) = +8.
+  => s(t) = gap(0)^2 + 8 t, and the pair COLLIDES (s=0) at  t_coll = - gap(0)^2 / 8.
+  Csordas-Smith-Varga: an isolated real pair forces Lambda >= t_coll = -gap^2/8 (a NEGATIVE
+  number); a TIGHTER pair (smaller gap) pushes Lambda UP toward 0 from BELOW.
+
+  LIVE tightest pair (first 50 zeros): gap=0.845124 (normalized 0.3868) ->
+     t_coll = -gap^2/8 = -0.0892792   (so THIS pair alone forces only Lambda >= -0.08928).
+
+  CITED tight pairs (the closer to 0 that -gap^2/8 is, the stronger the lower bound):
+     pair (ordinates)                         gap         norm.gap     t_coll=-gap^2/8
+   Lehmer 1956, zeros #6709/#6710           0.037698   0.042098   -0.00017765
+   live tightest (first 50, idx 34)         0.84512   0.3868   -0.089279
+
+  STRONGEST lower bound among these: Lehmer 1956, zeros #6709/#6710 with t_coll = -0.00017765.
+  (set VERIFY_LEHMER=1 to recompute zeros #6709/#6710 in-script; verified externally at dps=30.)
+  [P] The two-body collision law is EXACT and is the literal engine of the rigorous Lambda>=-eps
+      lower bounds (Csordas-Smith-Varga 1994; te Riele; etc.).  Pushing it to Lambda>=0 needs a
+      pair with gap -> 0 (an ACTUAL collision at t=0): exactly a counterexample to RH, OR the
+      global statistical argument of Rodgers-Tao (PART D).  The isolated-pair law alone never
+      reaches 0 from below with finitely many zeros: conservation of difficulty.
+
+================  PART C : direct backward heat flow on a truncated Xi (exact)  =============
+  Build P_0(x) = prod_{j<=M} (x^2 - gamma_j^2) (real, even, all roots real = +/-gamma_j).
+  Evolve under the DBN backward heat equation  P_t = - P_xx  via the EXACT polynomial flow
+    P(x,t) = exp(-t d^2/dx^2) P_0(x) = sum_k (-t)^k/k! * P_0^{(2k)}(x),
+  a FINITE sum (P_0 is a polynomial).  Forward t>0 => roots spread & stay real; backward t<0
+  => tightest pair contracts toward collision.  Self-contained check of (FLOW), no ODE.
+
+  degree of P_0 = 24 (roots = +/- first 12 ordinates).  Tracking #real roots, tightest gap,
+  and max|Im root| (a complex pair => max|Im|>0 = reality LOST).
+       t          #real roots   tightest gap     max|Im(root)|
+      0.600       24 /  24       2.509518     0.000e+00
+      0.300       24 /  24       2.197139     0.000e+00
+      0.100       24 /  24       1.929775     0.000e+00
+      0.000       24 /  24       1.768654     0.000e+00
+     -0.100       24 /  24       1.580777     0.000e+00
+     -0.300       24 /  24       1.061187     0.000e+00
+     -0.500       20 /  24       1.764607     3.267e-01  <-- COMPLEX PAIR (reality lost)
+     -0.700       20 /  24       1.346957     7.421e-01  <-- COMPLEX PAIR (reality lost)
+     -1.000       12 /  24       2.903093     1.162e+00  <-- COMPLEX PAIR (reality lost)
+
+  READING [P-numerical]: forward t>0 keeps all 24 roots real and the OUTER gaps GROW
+  (repulsion / spreading); backward t<0 reality is lost near t ~ -0.50 (24 -> 20 real roots,
+  max|Im|>0): the truncated analogue of crossing below Lambda.  This reproduces (FLOW) from the
+  genuine heat PDE with NO ODE integration.  CRUCIAL CAVEAT: the first pair to go complex here
+  is the OUTERMOST (truncation-edge) pair -- removing the outer zeros removed their repulsive
+  support -- so the collision time t~-0.5 is an ARTIFACT of the truncation M=12, NOT an estimate
+  of Lambda.  The true Xi has infinitely many zeros supplying repulsion, which is exactly why
+  Lambda sits near 0 and not at this finite-M value.  The QUALITATIVE direction (spread up /
+  collide down) is the robust, M-independent content.
+
+================  PART D : what controls the 0.22, and the residual (honest)  ===============
+  POLYMATH15 (2019) upper bound Lambda <= 0.22 -- ANATOMY:
+    (i)  [analytic] For t>0 fixed, H_t/(its leading approx) is controlled by a Dirichlet-series
+         approximation  H_t(x+iy) ~ B_t * (f_t(x+iy) + g_t(x+iy)) + error, where
+            f_t(s) = sum_{n<=N} b_n^{-t...}/n^{s'}   (a t-mollified partial Dirichlet sum) and
+            g_t is its functional-equation conjugate;  |error| is bounded EXPLICITLY (e_A,e_B,e_C).
+    (ii) [barrier] On a rectangle [X, X+H] x [eps, 1] one shows |f_t+g_t| > (the error bound)
+         via a winding-number / Rouche 'barrier': no zero of H_t can have Im>0 there, so all
+         zeros in the box are real.  The barrier is verified by RIGOROUS interval arithmetic.
+    (iii)[dynamics] The Newton/heat-flow zero dynamics (FLOW) PROPAGATE reality from a single
+         seed t_0>0 DOWN to t-just-above-Lambda: if zeros are real at t_0 up to height X and the
+         barrier holds, the flow forbids a complex pair from forming, bounding Lambda.
+    NUMBERS: Polymath15 ran the barrier at height X ~ 6 x 10^10 and seed t_0 chosen so the
+    combination yields Lambda <= 0.22 (the writeup's final constant; an intermediate 0.48 then
+    0.22 after optimization).  The DOMINANT term in 0.22 is the DYNAMICS bound (how fast the
+    flow can be guaranteed not to create a complex pair as t descends), NOT the height X.
+
+  WHY 0.22 IS DYNAMICS-LIMITED, NOT HEIGHT-LIMITED [A]:
+    Raising X only certifies reality of MORE zeros at the seed t_0; it does NOT shrink the t-
+    interval (0, t_0] over which the flow must be CONTROLLED.  The 0.22 is essentially t_0 minus
+    a provable downward propagation margin; that margin is set by a uniform-in-height repulsion
+    LOWER bound (a triangle-of-influence / heat-kernel constant), which does not improve by
+    computing higher.  So even X -> infinity leaves a POSITIVE residual unless the dynamics
+    constant is itself driven to give propagation all the way to t=0.
+
+  RODGERS-TAO (2020) lower bound Lambda >= 0 -- MECHANISM (the opposite inequality):
+    Suppose Lambda < 0.  Run the flow FORWARD from t=Lambda(<0) to t=0.  Backward-heat over a
+    NEGATIVE time-interval is SMOOTHING in reverse: it would force the t=0 zeros to be ANOMALOUSLY
+    REGULAR -- their gap/pair-correlation statistics would be MORE rigid (closer to a perfect
+    lattice / lower-energy Calogero state) than the actual zeros are.  But the actual zeros have
+    GUE-type fluctuations of the SIZE that the explicit formula + the pair-correlation of zeros
+    pins from below (a quantitative LOWER bound on the energy/variance of the gas).  Contradiction:
+    Lambda < 0 over-regularizes; the real zeros fluctuate too much.  Hence Lambda >= 0.  [P, cited]
+    (Mechanically: a Lehmer-tight pair at t=0 -- which provably EXISTS in the required averaged
+    sense -- cannot have been produced by a flow that started real at some t<0, because (FLOW)
+    can only SPREAD pairs going forward; so the seed cannot be below 0.)
+
+  THE RESIDUAL (precise):
+    To push Lambda <= 0.22  to  Lambda <= 0 one needs a UNIFORM-IN-HEIGHT statement that the flow
+    (FLOW) creates NO complex pair for ALL t in (0, 0.22] at EVERY height -- i.e. an individual
+    (not merely statistical) repulsion lower bound holding down to t=0.  Equivalently: the phase
+    phi_t(x) = -arg H_t(x) has phi'_t(x) >= 0 maintained uniformly as t \downarrow 0.  The current
+    obstruction is QUANTITATIVE: the proven downward-propagation margin from a seed t_0 is
+    O(1) (~0.22), bounded by the dynamics constant; there is no known mechanism that converts the
+    averaged repulsion (GUE / pair-correlation, which gives Lambda>=0) into the per-pair, per-
+    height guarantee that would give Lambda<=0.  Lambda<=0 IS RH; conservation of difficulty says
+    this last step cannot be cheaper than RH itself.
+
+================  TIER SUMMARY  =============================================================
+  [P] Lambda in [0, 0.22]; RH <=> Lambda = 0.  (Rodgers-Tao 2020; Polymath15 2019.)
+  [P] Zero flow d x_j/dt = +2 sum 1/(x_j-x_k); isolated-pair law s(t)=gap^2+8t, t_coll=-gap^2/8.
+  [P-num] Backward flow contracts the tightest pair; truncated heat PDE reproduces it (PART C).
+  [A] 0.22 is dynamics-limited (downward-propagation margin), not height-limited.
+  [C] No non-circular handle on Lambda<=0; the averaged->individual repulsion gap = RH.
+
+  MICRO-OBSERVATION [P-num]: among the first 50 zeros the GLOBAL margin is thinnest at the
+  index-34 pair (gamma~111.03), normalized gap ~0.386 -- the same pair lehmer_criticality.py
+  flags; its two-body collision time -gap^2/8 ~ -0.08928 sets the (weak) finite-data lower bound,
+  ~500x weaker than the historical ~7005 Lehmer pair (-gap^2/8 ~ -1.8e-4): the finite-data bound
+  is dominated by the SINGLE tightest pair, and that pair's gap is the entire margin.
+  The thinness scales as gap^2: closing the bound to 0 demands an ACTUAL gap->0 (a collision),
+  which is precisely a violation of RH -- so the finite flow can approach but never certify Lambda<=0.

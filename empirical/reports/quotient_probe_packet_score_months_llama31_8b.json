@@ -1,0 +1,259 @@
+{
+  "alpha": 0.01,
+  "dataset_path": "months\\subspace\\pca_k64\\result\\train_dataset.json",
+  "features_path": "months\\subspace\\pca_k64\\result\\features\\training_features.safetensors",
+  "model_pretty": "Llama-3.1-8B",
+  "model_tag": "llama31_8b",
+  "n_labels": 12,
+  "n_test": 24,
+  "n_train": 60,
+  "quotients": [
+    2,
+    3,
+    4,
+    6,
+    12
+  ],
+  "results": {
+    "2": {
+      "allowed_packets": [
+        "H_2"
+      ],
+      "forbidden_fraction": 5.5755549270368e-33,
+      "forbidden_packets": [
+        "H_3",
+        "H_4",
+        "H_6",
+        "H_12"
+      ],
+      "max_forbidden_energy": 1.3853856066625521e-30,
+      "packet_energy": {
+        "2": 248.47492757081187,
+        "3": 0.0,
+        "4": 0.0,
+        "6": 1.3853856066625521e-30,
+        "12": 0.0
+      },
+      "packet_fractions": {
+        "2": 1.0,
+        "3": 0.0,
+        "4": 0.0,
+        "6": 5.5755549270368e-33,
+        "12": 0.0
+      },
+      "target_classes": 2,
+      "test_accuracy": 0.9166666666666666,
+      "train_accuracy": 1.0
+    },
+    "3": {
+      "allowed_packets": [
+        "H_3"
+      ],
+      "forbidden_fraction": 0.0,
+      "forbidden_packets": [
+        "H_2",
+        "H_4",
+        "H_6",
+        "H_12"
+      ],
+      "max_forbidden_energy": 0.0,
+      "packet_energy": {
+        "2": 0.0,
+        "3": 206.1194587455529,
+        "4": 0.0,
+        "6": 0.0,
+        "12": 0.0
+      },
+      "packet_fractions": {
+        "2": 0.0,
+        "3": 1.0,
+        "4": 0.0,
+        "6": 0.0,
+        "12": 0.0
+      },
+      "target_classes": 3,
+      "test_accuracy": 0.5833333333333334,
+      "train_accuracy": 1.0
+    },
+    "4": {
+      "allowed_packets": [
+        "H_2",
+        "H_4"
+      ],
+      "forbidden_fraction": 3.553059614486825e-33,
+      "forbidden_packets": [
+        "H_3",
+        "H_6",
+        "H_12"
+      ],
+      "max_forbidden_energy": 5.350148749914481e-31,
+      "packet_energy": {
+        "2": 62.11873189270376,
+        "3": 0.0,
+        "4": 169.89362921210338,
+        "6": 2.893388753117758e-31,
+        "12": 5.350148749914481e-31
+      },
+      "packet_fractions": {
+        "2": 0.26773888941478774,
+        "3": 0.0,
+        "4": 0.7322611105852123,
+        "6": 1.2470838792122482e-33,
+        "12": 2.3059757352745763e-33
+      },
+      "target_classes": 4,
+      "test_accuracy": 0.5833333333333334,
+      "train_accuracy": 1.0
+    },
+    "6": {
+      "allowed_packets": [
+        "H_2",
+        "H_3",
+        "H_6"
+      ],
+      "forbidden_fraction": 0.0,
+      "forbidden_packets": [
+        "H_4",
+        "H_12"
+      ],
+      "max_forbidden_energy": 0.0,
+      "packet_energy": {
+        "2": 27.608325285645684,
+        "3": 51.529864686387626,
+        "4": 0.0,
+        "6": 36.85655714501626,
+        "12": 0.0
+      },
+      "packet_fractions": {
+        "2": 0.23801358226839614,
+        "3": 0.4442430883045864,
+        "4": 0.0,
+        "6": 0.31774332942701744,
+        "12": 0.0
+      },
+      "target_classes": 6,
+      "test_accuracy": 0.7916666666666666,
+      "train_accuracy": 1.0
+    },
+    "12": {
+      "allowed_packets": [
+        "H_2",
+        "H_3",
+        "H_4",
+        "H_6",
+        "H_12"
+      ],
+      "forbidden_fraction": 0.0,
+      "forbidden_packets": [],
+      "max_forbidden_energy": 0.0,
+      "packet_energy": {
+        "2": 6.902081321411428,
+        "3": 12.882466171596727,
+        "4": 18.87706991245577,
+        "6": 9.214139286254122,
+        "12": 9.708342081370391
+      },
+      "packet_fractions": {
+        "2": 0.1198608898718594,
+        "3": 0.22371568620636753,
+        "4": 0.32781740644828583,
+        "6": 0.1600118692933385,
+        "12": 0.1685941481801487
+      },
+      "target_classes": 12,
+      "test_accuracy": 0.6666666666666666,
+      "train_accuracy": 1.0
+    }
+  },
+  "run_date": "2026-05-16",
+  "seed": 20260516,
+  "test_indices": [
+    58,
+    22,
+    68,
+    42,
+    63,
+    48,
+    23,
+    14,
+    33,
+    64,
+    79,
+    77,
+    35,
+    71,
+    55,
+    72,
+    9,
+    32,
+    31,
+    69,
+    20,
+    43,
+    36,
+    16
+  ],
+  "test_per_class": 2,
+  "train_indices": [
+    38,
+    28,
+    75,
+    73,
+    37,
+    65,
+    17,
+    7,
+    82,
+    0,
+    70,
+    13,
+    83,
+    39,
+    53,
+    74,
+    26,
+    27,
+    67,
+    21,
+    12,
+    59,
+    76,
+    50,
+    80,
+    81,
+    25,
+    4,
+    18,
+    52,
+    45,
+    54,
+    62,
+    46,
+    3,
+    15,
+    51,
+    49,
+    66,
+    1,
+    47,
+    41,
+    24,
+    30,
+    78,
+    2,
+    57,
+    5,
+    60,
+    29,
+    11,
+    61,
+    34,
+    8,
+    44,
+    6,
+    40,
+    19,
+    10,
+    56
+  ]
+}

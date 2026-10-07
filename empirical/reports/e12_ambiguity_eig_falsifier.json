@@ -1,0 +1,1090 @@
+{
+  "timestamp": "2026-06-03T22:47:33.809088+00:00",
+  "finding": "EIG_FITS_BUT_GATE_RECOVERS_AMBIGUITY",
+  "config": {
+    "seed": 20260603,
+    "route_trials": 900,
+    "null_trials": 450,
+    "sweep_route_trials": 700,
+    "sweep_null_trials": 350,
+    "main_ambiguity_mix": 0.5,
+    "mix_grid": [
+      0.0,
+      0.25,
+      0.5,
+      0.75,
+      1.0
+    ],
+    "effort_noise": 0.045,
+    "ambiguity_noise": 0.04,
+    "alpha": 0.05,
+    "ridge": 0.001,
+    "ambiguity_threshold": 0.5,
+    "decision_margin": 0.01,
+    "false_admission_margin": 0.05,
+    "detection_floor": 0.85
+  },
+  "main_train_counts": {
+    "ambiguity_world": 450,
+    "eig_world": 450,
+    "no_sample_world": 450
+  },
+  "main_test_counts": {
+    "ambiguity_world": 469,
+    "eig_world": 431,
+    "no_sample_world": 450
+  },
+  "main_train_means": {
+    "ambiguity_world": {
+      "scalar": 1.0017894708805424,
+      "train_eig": 0.5211652387724369,
+      "heldout_eig": 0.515612422767474,
+      "train_candidate_entropy": 0.8084087296942128,
+      "heldout_candidate_entropy": 0.8012063973418823,
+      "train_set_size": 4.75433636026732,
+      "heldout_set_size": 4.786782139026471,
+      "ambiguity_score": 1.2736897482935132,
+      "target_effort": 0.8894030516880781,
+      "target_ambiguity": 1.0
+    },
+    "eig_world": {
+      "scalar": 0.9990584036343968,
+      "train_eig": 0.5830595870995853,
+      "heldout_eig": 0.4606867548491946,
+      "train_candidate_entropy": 0.7895462762430389,
+      "heldout_candidate_entropy": 0.22503506522085445,
+      "train_set_size": 4.8059783899159125,
+      "heldout_set_size": 1.402049028455463,
+      "ambiguity_score": 0.44359254128019043,
+      "target_effort": 0.7510982730769061,
+      "target_ambiguity": 0.0
+    },
+    "no_sample_world": {
+      "scalar": 0.9999231337865329,
+      "train_eig": -0.1496172013265925,
+      "heldout_eig": -0.14976077134177254,
+      "train_candidate_entropy": 0.16150944346901733,
+      "heldout_candidate_entropy": 0.13840724995253398,
+      "train_set_size": 1.3634717636217004,
+      "heldout_set_size": 1.3017297850406688,
+      "ambiguity_score": 0.3544896800347313,
+      "target_effort": 0.18346855466206666,
+      "target_ambiguity": 0.0
+    }
+  },
+  "main_test_means": {
+    "ambiguity_world": {
+      "scalar": 0.9987045975468819,
+      "train_eig": 0.5255972235009977,
+      "heldout_eig": 0.5263571507612312,
+      "train_candidate_entropy": 0.7972651200883624,
+      "heldout_candidate_entropy": 0.8082521091544015,
+      "train_set_size": 4.72361514507017,
+      "heldout_set_size": 4.816608779003067,
+      "ambiguity_score": 1.276077077815852,
+      "target_effort": 0.8961107375753803,
+      "target_ambiguity": 1.0
+    },
+    "eig_world": {
+      "scalar": 1.0023456432206808,
+      "train_eig": 0.5956875713049438,
+      "heldout_eig": 0.46756095470572434,
+      "train_candidate_entropy": 0.7970957392360407,
+      "heldout_candidate_entropy": 0.22254341991930596,
+      "train_set_size": 4.661092795613806,
+      "heldout_set_size": 1.4295955403429124,
+      "ambiguity_score": 0.4451804990683121,
+      "target_effort": 0.7574262833802726,
+      "target_ambiguity": 0.0
+    },
+    "no_sample_world": {
+      "scalar": 0.9991098404160453,
+      "train_eig": -0.14956014080980348,
+      "heldout_eig": -0.1496681469133668,
+      "train_candidate_entropy": 0.16366966537275876,
+      "heldout_candidate_entropy": 0.13806387192162206,
+      "train_set_size": 1.3389341386631712,
+      "heldout_set_size": 1.2994819298287696,
+      "ambiguity_score": 0.3564159829317105,
+      "target_effort": 0.18275069449283607,
+      "target_ambiguity": 0.0
+    }
+  },
+  "main_eval": {
+    "ambiguity_gate": 0.5541759187506123,
+    "models": {
+      "scalar": {
+        "effort": {
+          "name": "scalar",
+          "feature_kind": "scalar",
+          "target_kind": "effort",
+          "coef": [
+            0.6072287944510115,
+            0.006932931340690031
+          ],
+          "mean": [
+            1.0002570027671573
+          ],
+          "sd": [
+            0.020963993955290486
+          ]
+        },
+        "ambiguity": {
+          "name": "scalar",
+          "feature_kind": "scalar",
+          "target_kind": "ambiguity",
+          "coef": [
+            0.33998190669022554,
+            0.024249331888109966
+          ],
+          "mean": [
+            1.0002570027671573
+          ],
+          "sd": [
+            0.020963993955290486
+          ]
+        }
+      },
+      "continuous_eig": {
+        "effort": {
+          "name": "continuous_eig",
+          "feature_kind": "continuous_eig",
+          "target_kind": "effort",
+          "coef": [
+            0.6072287944510112,
+            0.003380078627982471,
+            0.044289359877316005,
+            0.05853865726756406,
+            0.093033960377236,
+            0.03955765737358569,
+            -0.05535752810018359,
+            -0.007518170291936842,
+            0.026542964989524954,
+            0.015576317154446013
+          ],
+          "mean": [
+            1.0002570027671565,
+            0.3182025415151462,
+            0.48948581850626116,
+            0.5693087144477217,
+            0.6872177273230224,
+            0.33242118937261944,
+            1.1627409300157656,
+            0.5864881498020894,
+            3.6412621712683158
+          ],
+          "sd": [
+            0.02096399395529049,
+            0.3523313954393577,
+            0.3685125129548898,
+            0.29558707399307693,
+            0.2873631670489513,
+            0.08609380623135185,
+            0.05474238796606569,
+            0.31680975997035354,
+            1.8289129368332224
+          ]
+        },
+        "ambiguity": {
+          "name": "continuous_eig",
+          "feature_kind": "continuous_eig",
+          "target_kind": "ambiguity",
+          "coef": [
+            0.33998190669021583,
+            0.020940438119393955,
+            -0.4305271798609981,
+            0.15738894684000662,
+            0.21741161547019275,
+            -0.07303673451641368,
+            -0.09369915367015295,
+            -0.020349056313819947,
+            0.25693988496858156,
+            0.029846027892524704
+          ],
+          "mean": [
+            1.0002570027671565,
+            0.3182025415151462,
+            0.48948581850626116,
+            0.5693087144477217,
+            0.6872177273230224,
+            0.33242118937261944,
+            1.1627409300157656,
+            0.5864881498020894,
+            3.6412621712683158
+          ],
+          "sd": [
+            0.02096399395529049,
+            0.3523313954393577,
+            0.3685125129548898,
+            0.29558707399307693,
+            0.2873631670489513,
+            0.08609380623135185,
+            0.05474238796606569,
+            0.31680975997035354,
+            1.8289129368332224
+          ]
+        }
+      },
+      "ambiguity_set_gate": {
+        "effort": {
+          "name": "ambiguity_set_gate",
+          "feature_kind": "ambiguity_set_gate",
+          "target_kind": "effort",
+          "coef": [
+            0.6072287944510125,
+            -0.0033578464991774505,
+            0.08529452486291628,
+            0.11904501528402352
+          ],
+          "mean": [
+            1.0002570027671565,
+            0.36592592592592593,
+            0.4437288455892647
+          ],
+          "sd": [
+            0.02096399395529049,
+            0.4816888442357541,
+            0.600064977118259
+          ]
+        },
+        "ambiguity": {
+          "name": "ambiguity_set_gate",
+          "feature_kind": "ambiguity_set_gate",
+          "target_kind": "ambiguity",
+          "coef": [
+            0.33998190669022404,
+            0.001669535506363838,
+            -0.18189429728922268,
+            0.6236927887885885
+          ],
+          "mean": [
+            1.0002570027671565,
+            0.36592592592592593,
+            0.4437288455892647
+          ],
+          "sd": [
+            0.02096399395529049,
+            0.4816888442357541,
+            0.600064977118259
+          ]
+        }
+      },
+      "governed_eig_gate": {
+        "effort": {
+          "name": "governed_eig_gate",
+          "feature_kind": "governed_eig_gate",
+          "target_kind": "effort",
+          "coef": [
+            0.6072287944510129,
+            -0.00029862265460379843,
+            0.13587470399794851,
+            0.017618338392075366,
+            0.05051557113019582,
+            0.05451665684933638,
+            -0.03820241414625448,
+            -0.003925708968869507,
+            -0.01955015377955025,
+            0.008455417184103087,
+            -0.040490933194823914,
+            0.12361597946129055
+          ],
+          "mean": [
+            1.0002570027671565,
+            0.3182025415151462,
+            0.48948581850626116,
+            0.5693087144477217,
+            0.6872177273230224,
+            0.33242118937261944,
+            1.1627409300157656,
+            0.5864881498020894,
+            3.6412621712683158,
+            0.36592592592592593,
+            0.4437288455892647
+          ],
+          "sd": [
+            0.02096399395529049,
+            0.3523313954393577,
+            0.3685125129548898,
+            0.29558707399307693,
+            0.2873631670489513,
+            0.08609380623135185,
+            0.05474238796606569,
+            0.31680975997035354,
+            1.8289129368332224,
+            0.4816888442357541,
+            0.600064977118259
+          ]
+        },
+        "ambiguity": {
+          "name": "governed_eig_gate",
+          "feature_kind": "governed_eig_gate",
+          "target_kind": "ambiguity",
+          "coef": [
+            0.33998190669022416,
+            0.0014133456550446226,
+            0.05479931297532068,
+            -0.059349439151835576,
+            -0.008926419799144835,
+            0.005839708907726704,
+            -0.0026405417943430407,
+            -0.001265709871415105,
+            0.01233704377986922,
+            -0.007248566073376269,
+            -0.1823932188198681,
+            0.6245301558218198
+          ],
+          "mean": [
+            1.0002570027671565,
+            0.3182025415151462,
+            0.48948581850626116,
+            0.5693087144477217,
+            0.6872177273230224,
+            0.33242118937261944,
+            1.1627409300157656,
+            0.5864881498020894,
+            3.6412621712683158,
+            0.36592592592592593,
+            0.4437288455892647
+          ],
+          "sd": [
+            0.02096399395529049,
+            0.3523313954393577,
+            0.3685125129548898,
+            0.29558707399307693,
+            0.2873631670489513,
+            0.08609380623135185,
+            0.05474238796606569,
+            0.31680975997035354,
+            1.8289129368332224,
+            0.4816888442357541,
+            0.600064977118259
+          ]
+        }
+      },
+      "hybrid_eig_ambiguity": {
+        "effort": {
+          "name": "hybrid_eig_ambiguity",
+          "feature_kind": "hybrid_eig_ambiguity",
+          "target_kind": "effort",
+          "coef": [
+            0.6072287944510129,
+            -0.0006285182818959673,
+            -0.021758471125341457,
+            0.017486510444065947,
+            0.02865977947607788,
+            0.03374987130800598,
+            -0.030136855211356423,
+            -0.0033122985772584853,
+            0.012597527251562957,
+            0.00898347567125497,
+            0.18829368379733594,
+            0.013169757002825525,
+            0.0037966073615306687,
+            0.015691456804637217,
+            -0.016258003608226216,
+            -0.01919088259084723,
+            0.05864683259281922
+          ],
+          "mean": [
+            1.0002570027671565,
+            0.3182025415151462,
+            0.48948581850626116,
+            0.5693087144477217,
+            0.6872177273230224,
+            0.33242118937261944,
+            1.1627409300157656,
+            0.5864881498020894,
+            3.6412621712683158,
+            0.2755128020916342,
+            0.3882162375050903,
+            2.4968536508408667,
+            0.5070455042986923,
+            0.6905906565361437,
+            0.36592592592592593,
+            0.4437288455892647
+          ],
+          "sd": [
+            0.02096399395529049,
+            0.3523313954393577,
+            0.3685125129548898,
+            0.29558707399307693,
+            0.2873631670489513,
+            0.08609380623135185,
+            0.05474238796606569,
+            0.31680975997035354,
+            1.8289129368332224,
+            0.32426281448230837,
+            0.3077677900698904,
+            1.741964703563119,
+            0.2805767459638703,
+            0.42531033847689076,
+            0.4816888442357541,
+            0.600064977118259
+          ]
+        },
+        "ambiguity": {
+          "name": "hybrid_eig_ambiguity",
+          "feature_kind": "hybrid_eig_ambiguity",
+          "target_kind": "ambiguity",
+          "coef": [
+            0.33998190669022377,
+            0.001830521616043382,
+            0.0669098990409572,
+            -0.051780958608946784,
+            -0.009468134027009438,
+            -0.002279562672218818,
+            -0.0009258670299625113,
+            -0.002756349693230448,
+            0.005494786398715292,
+            -0.008977663451503321,
+            -0.015604985233319815,
+            0.07870277593126923,
+            -0.09504385598940315,
+            0.05834197726780817,
+            -0.06477398701411252,
+            -0.2641863924023846,
+            0.738183372439922
+          ],
+          "mean": [
+            1.0002570027671565,
+            0.3182025415151462,
+            0.48948581850626116,
+            0.5693087144477217,
+            0.6872177273230224,
+            0.33242118937261944,
+            1.1627409300157656,
+            0.5864881498020894,
+            3.6412621712683158,
+            0.2755128020916342,
+            0.3882162375050903,
+            2.4968536508408667,
+            0.5070455042986923,
+            0.6905906565361437,
+            0.36592592592592593,
+            0.4437288455892647
+          ],
+          "sd": [
+            0.02096399395529049,
+            0.3523313954393577,
+            0.3685125129548898,
+            0.29558707399307693,
+            0.2873631670489513,
+            0.08609380623135185,
+            0.05474238796606569,
+            0.31680975997035354,
+            1.8289129368332224,
+            0.32426281448230837,
+            0.3077677900698904,
+            1.741964703563119,
+            0.2805767459638703,
+            0.42531033847689076,
+            0.4816888442357541,
+            0.600064977118259
+          ]
+        }
+      }
+    },
+    "overall": {
+      "scalar": {
+        "effort": {
+          "rmse_observed": 0.3242342042514766,
+          "rmse_clean": 0.3218645553372587,
+          "r2_observed": -0.0002705527761190929
+        },
+        "ambiguity_regression": {
+          "rmse_observed": 0.46494157982163375,
+          "rmse_clean": 0.4778988609973486,
+          "r2_observed": -0.00804928965220042
+        },
+        "ambiguity_classification": {
+          "accuracy": 0.6525925925925926,
+          "ambiguity_detection": 0.0,
+          "nonambiguity_false_admission": 0.0,
+          "eig_false_admission": 0.0,
+          "no_sample_false_admission": 0.0
+        }
+      },
+      "continuous_eig": {
+        "effort": {
+          "rmse_observed": 0.09344427240603127,
+          "rmse_clean": 0.0842152633846863,
+          "r2_observed": 0.9169183330082269
+        },
+        "ambiguity_regression": {
+          "rmse_observed": 0.39066685643950094,
+          "rmse_clean": 0.401642740166414,
+          "r2_observed": 0.2882980924557573
+        },
+        "ambiguity_classification": {
+          "accuracy": 0.7325925925925926,
+          "ambiguity_detection": 0.5650319829424307,
+          "nonambiguity_false_admission": 0.1782065834279228,
+          "eig_false_admission": 0.3642691415313225,
+          "no_sample_false_admission": 0.0
+        }
+      },
+      "ambiguity_set_gate": {
+        "effort": {
+          "rmse_observed": 0.24714759264048072,
+          "rmse_clean": 0.24328083510872522,
+          "r2_observed": 0.41881740822245084
+        },
+        "ambiguity_regression": {
+          "rmse_observed": 0.09233950655661466,
+          "rmse_clean": 0.09381406753022165,
+          "r2_observed": 0.9602387441644069
+        },
+        "ambiguity_classification": {
+          "accuracy": 1.0,
+          "ambiguity_detection": 1.0,
+          "nonambiguity_false_admission": 0.0,
+          "eig_false_admission": 0.0,
+          "no_sample_false_admission": 0.0
+        }
+      },
+      "governed_eig_gate": {
+        "effort": {
+          "rmse_observed": 0.061306390694343425,
+          "rmse_clean": 0.04300674581611349,
+          "r2_observed": 0.9642388624267964
+        },
+        "ambiguity_regression": {
+          "rmse_observed": 0.09255636965327721,
+          "rmse_clean": 0.09413194945326135,
+          "r2_observed": 0.9600517629939733
+        },
+        "ambiguity_classification": {
+          "accuracy": 1.0,
+          "ambiguity_detection": 1.0,
+          "nonambiguity_false_admission": 0.0,
+          "eig_false_admission": 0.0,
+          "no_sample_false_admission": 0.0
+        }
+      },
+      "hybrid_eig_ambiguity": {
+        "effort": {
+          "rmse_observed": 0.05224393287721135,
+          "rmse_clean": 0.029417505632520713,
+          "r2_observed": 0.9740300236650258
+        },
+        "ambiguity_regression": {
+          "rmse_observed": 0.0741112596248895,
+          "rmse_clean": 0.07545544862518919,
+          "r2_observed": 0.9743874167194571
+        },
+        "ambiguity_classification": {
+          "accuracy": 1.0,
+          "ambiguity_detection": 1.0,
+          "nonambiguity_false_admission": 0.0,
+          "eig_false_admission": 0.0,
+          "no_sample_false_admission": 0.0
+        }
+      }
+    },
+    "by_source": {
+      "ambiguity_world": {
+        "scalar": {
+          "effort": {
+            "rmse_observed": 0.2997305633971421,
+            "rmse_clean": 0.3037816031272192,
+            "r2_observed": -9.446630129513421
+          },
+          "ambiguity": {
+            "accuracy": 0.0,
+            "ambiguity_detection": 0.0,
+            "nonambiguity_false_admission": NaN,
+            "eig_false_admission": NaN,
+            "no_sample_false_admission": NaN
+          }
+        },
+        "continuous_eig": {
+          "effort": {
+            "rmse_observed": 0.1062933076277377,
+            "rmse_clean": 0.1025778569460981,
+            "r2_observed": -0.31379015049998116
+          },
+          "ambiguity": {
+            "accuracy": 0.5650319829424307,
+            "ambiguity_detection": 0.5650319829424307,
+            "nonambiguity_false_admission": NaN,
+            "eig_false_admission": NaN,
+            "no_sample_false_admission": NaN
+          }
+        },
+        "ambiguity_set_gate": {
+          "effort": {
+            "rmse_observed": 0.09601426059996458,
+            "rmse_clean": 0.09664940661440476,
+            "r2_observed": -0.07197743102296839
+          },
+          "ambiguity": {
+            "accuracy": 1.0,
+            "ambiguity_detection": 1.0,
+            "nonambiguity_false_admission": NaN,
+            "eig_false_admission": NaN,
+            "no_sample_false_admission": NaN
+          }
+        },
+        "governed_eig_gate": {
+          "effort": {
+            "rmse_observed": 0.06570862257578561,
+            "rmse_clean": 0.053121408753279864,
+            "r2_observed": 0.4979362274404888
+          },
+          "ambiguity": {
+            "accuracy": 1.0,
+            "ambiguity_detection": 1.0,
+            "nonambiguity_false_admission": NaN,
+            "eig_false_admission": NaN,
+            "no_sample_false_admission": NaN
+          }
+        },
+        "hybrid_eig_ambiguity": {
+          "effort": {
+            "rmse_observed": 0.05690308381742412,
+            "rmse_clean": 0.03929221216385593,
+            "r2_observed": 0.6234819810589757
+          },
+          "ambiguity": {
+            "accuracy": 1.0,
+            "ambiguity_detection": 1.0,
+            "nonambiguity_false_admission": NaN,
+            "eig_false_admission": NaN,
+            "no_sample_false_admission": NaN
+          }
+        }
+      },
+      "eig_world": {
+        "scalar": {
+          "effort": {
+            "rmse_observed": 0.19671103453847474,
+            "rmse_clean": 0.18982714669325912,
+            "r2_observed": -1.3972058112309438
+          },
+          "ambiguity": {
+            "accuracy": 1.0,
+            "ambiguity_detection": NaN,
+            "nonambiguity_false_admission": 0.0,
+            "eig_false_admission": 0.0,
+            "no_sample_false_admission": NaN
+          }
+        },
+        "continuous_eig": {
+          "effort": {
+            "rmse_observed": 0.10641995384087476,
+            "rmse_clean": 0.09681459151005532,
+            "r2_observed": 0.29839284485595896
+          },
+          "ambiguity": {
+            "accuracy": 0.6357308584686775,
+            "ambiguity_detection": NaN,
+            "nonambiguity_false_admission": 0.3642691415313225,
+            "eig_false_admission": 0.3642691415313225,
+            "no_sample_false_admission": NaN
+          }
+        },
+        "ambiguity_set_gate": {
+          "effort": {
+            "rmse_observed": 0.31235221076324676,
+            "rmse_clean": 0.3084558597441313,
+            "r2_observed": -5.044175209633143
+          },
+          "ambiguity": {
+            "accuracy": 1.0,
+            "ambiguity_detection": NaN,
+            "nonambiguity_false_admission": 0.0,
+            "eig_false_admission": 0.0,
+            "no_sample_false_admission": NaN
+          }
+        },
+        "governed_eig_gate": {
+          "effort": {
+            "rmse_observed": 0.06375618774375882,
+            "rmse_clean": 0.045088650747853815,
+            "r2_observed": 0.7481786437289228
+          },
+          "ambiguity": {
+            "accuracy": 1.0,
+            "ambiguity_detection": NaN,
+            "nonambiguity_false_admission": 0.0,
+            "eig_false_admission": 0.0,
+            "no_sample_false_admission": NaN
+          }
+        },
+        "hybrid_eig_ambiguity": {
+          "effort": {
+            "rmse_observed": 0.05058069337655843,
+            "rmse_clean": 0.027317791492045586,
+            "r2_observed": 0.8415043183550615
+          },
+          "ambiguity": {
+            "accuracy": 1.0,
+            "ambiguity_detection": NaN,
+            "nonambiguity_false_admission": 0.0,
+            "eig_false_admission": 0.0,
+            "no_sample_false_admission": NaN
+          }
+        }
+      },
+      "no_sample_world": {
+        "scalar": {
+          "effort": {
+            "rmse_observed": 0.4297562532240069,
+            "rmse_clean": 0.42437932756343755,
+            "r2_observed": -83.85707816387388
+          },
+          "ambiguity": {
+            "accuracy": 1.0,
+            "ambiguity_detection": NaN,
+            "nonambiguity_false_admission": 0.0,
+            "eig_false_admission": NaN,
+            "no_sample_false_admission": 0.0
+          }
+        },
+        "continuous_eig": {
+          "effort": {
+            "rmse_observed": 0.05977591281508432,
+            "rmse_clean": 0.03650794655209969,
+            "r2_observed": -0.6417086940885526
+          },
+          "ambiguity": {
+            "accuracy": 1.0,
+            "ambiguity_detection": NaN,
+            "nonambiguity_false_admission": 0.0,
+            "eig_false_admission": NaN,
+            "no_sample_false_admission": 0.0
+          }
+        },
+        "ambiguity_set_gate": {
+          "effort": {
+            "rmse_observed": 0.28318418924709937,
+            "rmse_clean": 0.2769357339227711,
+            "r2_observed": -35.845263677601224
+          },
+          "ambiguity": {
+            "accuracy": 1.0,
+            "ambiguity_detection": NaN,
+            "nonambiguity_false_admission": 0.0,
+            "eig_false_admission": NaN,
+            "no_sample_false_admission": 0.0
+          }
+        },
+        "governed_eig_gate": {
+          "effort": {
+            "rmse_observed": 0.05368680922342269,
+            "rmse_clean": 0.025701382284678487,
+            "r2_observed": -0.32427704487226783
+          },
+          "ambiguity": {
+            "accuracy": 1.0,
+            "ambiguity_detection": NaN,
+            "nonambiguity_false_admission": 0.0,
+            "eig_false_admission": NaN,
+            "no_sample_false_admission": 0.0
+          }
+        },
+        "hybrid_eig_ambiguity": {
+          "effort": {
+            "rmse_observed": 0.04861302068303551,
+            "rmse_clean": 0.016503094120249282,
+            "r2_observed": -0.085797606972559
+          },
+          "ambiguity": {
+            "accuracy": 1.0,
+            "ambiguity_detection": NaN,
+            "nonambiguity_false_admission": 0.0,
+            "eig_false_admission": NaN,
+            "no_sample_false_admission": 0.0
+          }
+        }
+      }
+    },
+    "effort_winner": "hybrid_eig_ambiguity",
+    "ambiguity_winner": "hybrid_eig_ambiguity",
+    "prediction_sample": {
+      "scalar": {
+        "effort": [
+          0.6024588947973356,
+          0.610376366562251,
+          0.603639191134032,
+          0.6048995832921795,
+          0.609401322276896,
+          0.6138400642189679,
+          0.5982969974997219,
+          0.6093100735308628
+        ],
+        "ambiguity": [
+          0.3232982163302607,
+          0.3509911778075145,
+          0.32742654188093917,
+          0.331835018793542,
+          0.3475807628878675,
+          0.3631061620631402,
+          0.3087411373841973,
+          0.347261601912776
+        ]
+      },
+      "continuous_eig": {
+        "effort": [
+          0.889509288019978,
+          0.8246552387230006,
+          0.773148279355021,
+          0.20238391718296847,
+          0.15564954234727713,
+          0.7579256964901497,
+          0.12313618467176604,
+          0.7546786139470701
+        ],
+        "ambiguity": [
+          0.6260383397742721,
+          0.584718360532538,
+          0.45074435118569484,
+          0.0554919772123289,
+          -0.04340031064390504,
+          0.5243229294110854,
+          -0.14682026717106567,
+          0.5722477841054074
+        ]
+      },
+      "ambiguity_set_gate": {
+        "effort": [
+          0.8327001801845769,
+          0.8743302868141013,
+          0.895116887271056,
+          0.45553099636920324,
+          0.45335065622919307,
+          0.8435583295246208,
+          0.4587288456625609,
+          0.45339485099578825
+        ],
+        "ambiguity": [
+          0.680327491336841,
+          0.9204302881510871,
+          1.0106161984207496,
+          0.01640030275224802,
+          0.017484377107817584,
+          0.768835061326933,
+          0.01481031853451531,
+          0.017462403282616112
+        ]
+      },
+      "governed_eig_gate": {
+        "effort": [
+          0.9016731533947508,
+          0.8853081847912618,
+          0.87766887394814,
+          0.19582717641909653,
+          0.16582270154452358,
+          0.8022876793900815,
+          0.15406891311194992,
+          0.6500743210322963
+        ],
+        "ambiguity": [
+          0.7030910087102201,
+          0.9073060208550832,
+          1.0017907071462038,
+          0.020176583652322,
+          0.010370043624050584,
+          0.7683155210208545,
+          0.017295538201401783,
+          0.015564150029660051
+        ]
+      },
+      "hybrid_eig_ambiguity": {
+        "effort": [
+          0.9259282083160593,
+          0.9335471993975207,
+          0.8226962279301334,
+          0.19376131984938078,
+          0.1538664416050034,
+          0.8865505723356313,
+          0.1641597322327818,
+          0.6838853560975322
+        ],
+        "ambiguity": [
+          0.6676739490483689,
+          0.9882285023261096,
+          0.9989867680397235,
+          0.004830425389097593,
+          -0.019801901398846987,
+          0.834852427779131,
+          0.027755220616486366,
+          0.04771264047045696
+        ]
+      }
+    }
+  },
+  "decision_quantities": {
+    "continuous_effort_rmse": 0.09344427240603127,
+    "bucket_effort_rmse": 0.24714759264048072,
+    "hybrid_effort_rmse": 0.05224393287721135,
+    "continuous_false_ambiguity": 0.1782065834279228,
+    "bucket_false_ambiguity": 0.0,
+    "governed_false_ambiguity": 0.0,
+    "continuous_ambiguity_detection": 0.5650319829424307,
+    "bucket_ambiguity_detection": 1.0,
+    "governed_ambiguity_detection": 1.0
+  },
+  "phase_sweep": [
+    {
+      "ambiguity_mix": 0.0,
+      "counts": {
+        "ambiguity_world": 0,
+        "eig_world": 700,
+        "no_sample_world": 350
+      },
+      "effort_winner": "hybrid_eig_ambiguity",
+      "ambiguity_winner": "scalar",
+      "ambiguity_gate": 0.5680459765803998,
+      "effort_rmse": {
+        "scalar": 0.2938378289827405,
+        "continuous_eig": 0.05612893245750087,
+        "ambiguity_set_gate": 0.28917721378765693,
+        "governed_eig_gate": 0.056184047360761734,
+        "hybrid_eig_ambiguity": 0.04899372348862419
+      },
+      "ambiguity_false_admission": {
+        "scalar": 0.0,
+        "continuous_eig": 0.0,
+        "ambiguity_set_gate": 0.0,
+        "governed_eig_gate": 0.0,
+        "hybrid_eig_ambiguity": 0.0
+      },
+      "ambiguity_detection": {
+        "scalar": NaN,
+        "continuous_eig": NaN,
+        "ambiguity_set_gate": NaN,
+        "governed_eig_gate": NaN,
+        "hybrid_eig_ambiguity": NaN
+      }
+    },
+    {
+      "ambiguity_mix": 0.25,
+      "counts": {
+        "ambiguity_world": 175,
+        "eig_world": 525,
+        "no_sample_world": 350
+      },
+      "effort_winner": "hybrid_eig_ambiguity",
+      "ambiguity_winner": "hybrid_eig_ambiguity",
+      "ambiguity_gate": 0.577676684045624,
+      "effort_rmse": {
+        "scalar": 0.3044185811154833,
+        "continuous_eig": 0.08374292926469648,
+        "ambiguity_set_gate": 0.27117682526504544,
+        "governed_eig_gate": 0.059525753754024295,
+        "hybrid_eig_ambiguity": 0.051318974798703385
+      },
+      "ambiguity_false_admission": {
+        "scalar": 0.0,
+        "continuous_eig": 0.001142857142857143,
+        "ambiguity_set_gate": 0.0,
+        "governed_eig_gate": 0.0,
+        "hybrid_eig_ambiguity": 0.0
+      },
+      "ambiguity_detection": {
+        "scalar": 0.0,
+        "continuous_eig": 0.0,
+        "ambiguity_set_gate": 0.9942857142857143,
+        "governed_eig_gate": 0.9942857142857143,
+        "hybrid_eig_ambiguity": 1.0
+      }
+    },
+    {
+      "ambiguity_mix": 0.5,
+      "counts": {
+        "ambiguity_world": 343,
+        "eig_world": 357,
+        "no_sample_world": 350
+      },
+      "effort_winner": "hybrid_eig_ambiguity",
+      "ambiguity_winner": "hybrid_eig_ambiguity",
+      "ambiguity_gate": 0.5643829898031032,
+      "effort_rmse": {
+        "scalar": 0.3197543270684573,
+        "continuous_eig": 0.0924485261715289,
+        "ambiguity_set_gate": 0.2529836893020576,
+        "governed_eig_gate": 0.05871679979134797,
+        "hybrid_eig_ambiguity": 0.05093783564873961
+      },
+      "ambiguity_false_admission": {
+        "scalar": 0.0,
+        "continuous_eig": 0.2079207920792079,
+        "ambiguity_set_gate": 0.0,
+        "governed_eig_gate": 0.0,
+        "hybrid_eig_ambiguity": 0.0
+      },
+      "ambiguity_detection": {
+        "scalar": 0.0,
+        "continuous_eig": 0.641399416909621,
+        "ambiguity_set_gate": 1.0,
+        "governed_eig_gate": 1.0,
+        "hybrid_eig_ambiguity": 1.0
+      }
+    },
+    {
+      "ambiguity_mix": 0.75,
+      "counts": {
+        "ambiguity_world": 537,
+        "eig_world": 163,
+        "no_sample_world": 350
+      },
+      "effort_winner": "hybrid_eig_ambiguity",
+      "ambiguity_winner": "hybrid_eig_ambiguity",
+      "ambiguity_gate": 0.5433765955641024,
+      "effort_rmse": {
+        "scalar": 0.3331018087339886,
+        "continuous_eig": 0.08358133914310768,
+        "ambiguity_set_gate": 0.20219657524065276,
+        "governed_eig_gate": 0.06112561366298942,
+        "hybrid_eig_ambiguity": 0.05421182157893466
+      },
+      "ambiguity_false_admission": {
+        "scalar": 0.44834307992202727,
+        "continuous_eig": 0.3060428849902534,
+        "ambiguity_set_gate": 0.0,
+        "governed_eig_gate": 0.0,
+        "hybrid_eig_ambiguity": 0.0
+      },
+      "ambiguity_detection": {
+        "scalar": 0.40782122905027934,
+        "continuous_eig": 0.9906890130353817,
+        "ambiguity_set_gate": 1.0,
+        "governed_eig_gate": 1.0,
+        "hybrid_eig_ambiguity": 1.0
+      }
+    },
+    {
+      "ambiguity_mix": 1.0,
+      "counts": {
+        "ambiguity_world": 700,
+        "eig_world": 0,
+        "no_sample_world": 350
+      },
+      "effort_winner": "hybrid_eig_ambiguity",
+      "ambiguity_winner": "hybrid_eig_ambiguity",
+      "ambiguity_gate": 0.48997310467810207,
+      "effort_rmse": {
+        "scalar": 0.3427127491157366,
+        "continuous_eig": 0.06424809710731981,
+        "ambiguity_set_gate": 0.11239242767027942,
+        "governed_eig_gate": 0.060052815761195505,
+        "hybrid_eig_ambiguity": 0.05445576933616399
+      },
+      "ambiguity_false_admission": {
+        "scalar": 1.0,
+        "continuous_eig": 0.0,
+        "ambiguity_set_gate": 0.06,
+        "governed_eig_gate": 0.0,
+        "hybrid_eig_ambiguity": 0.0
+      },
+      "ambiguity_detection": {
+        "scalar": 1.0,
+        "continuous_eig": 1.0,
+        "ambiguity_set_gate": 1.0,
+        "governed_eig_gate": 1.0,
+        "hybrid_eig_ambiguity": 1.0
+      }
+    }
+  ]
+}

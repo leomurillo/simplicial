@@ -1,0 +1,180 @@
+==============================================================================
+ Universal W Probe at N=30
+==============================================================================
+ Dimension: 29 x 29
+
+Computing Helmert-Fourier coefficients C_{kc}...
+  done in 0.1s
+
+Unitarity check ||W*W - I||_F = 1.5595e-15
+
+------------------------------------------------------------------------------
+ W eigenspectrum on the unit circle
+------------------------------------------------------------------------------
+  |eigenvalue| range: [1.0000000000, 1.0000000000]
+  (should all be 1.0 for unitary W)
+
+  Eigenvalue angles (in units of pi):
+    arg(lambda_ 0) = -0.994074 pi
+    arg(lambda_ 1) = -0.764503 pi
+    arg(lambda_ 2) = -0.516049 pi
+    arg(lambda_ 3) = -0.515806 pi
+    arg(lambda_ 4) = -0.515397 pi
+    arg(lambda_ 5) = -0.514622 pi
+    arg(lambda_ 6) = -0.512902 pi
+    arg(lambda_ 7) = -0.507928 pi
+    arg(lambda_ 8) = -0.480551 pi
+    arg(lambda_ 9) = -0.015999 pi
+    arg(lambda_10) = -0.015724 pi
+    arg(lambda_11) = -0.015250 pi
+    arg(lambda_12) = -0.014321 pi
+    arg(lambda_13) = -0.012146 pi
+    arg(lambda_14) = -0.005197 pi
+    arg(lambda_15) = +0.039819 pi
+    arg(lambda_16) = +0.484058 pi
+    arg(lambda_17) = +0.484370 pi
+    arg(lambda_18) = +0.484924 pi
+    arg(lambda_19) = +0.486050 pi
+    arg(lambda_20) = +0.488840 pi
+    arg(lambda_21) = +0.497366 pi
+    arg(lambda_22) = +0.520699 pi
+    arg(lambda_23) = +0.983906 pi
+    arg(lambda_24) = +0.984122 pi
+    arg(lambda_25) = +0.984478 pi
+    arg(lambda_26) = +0.985130 pi
+    arg(lambda_27) = +0.986512 pi
+    arg(lambda_28) = +0.990197 pi
+
+------------------------------------------------------------------------------
+ Search for natural eigenvalue structure
+------------------------------------------------------------------------------
+
+  Check: are W eigenvalues N-th roots of unity?
+    Max distance from nearest N=30-th root: 9.7885e-02
+    Max distance from nearest 60-th root: 5.0555e-02
+    Max distance from nearest 120-th root: 2.4906e-02
+    Max distance from nearest 900-th root: 3.2515e-03
+    Max distance from nearest 1800-th root: 1.7298e-03
+
+  tr(W) = -0.775568 + -0.545552i
+  sum(eigs) = -0.775568 + -0.545552i
+  W^2: ||W^2 - (tr/n)I||_F = 5.3820e+00, tr/n = +0.0025+0.0339j++0.0339i
+  W^3: ||W^3 - (tr/n)I||_F = 5.3833e+00, tr/n = +0.0218-0.0146j+-0.0146i
+  W^4: ||W^4 - (tr/n)I||_F = 2.1404e+00, tr/n = +0.9126-0.0959j+-0.0959i
+  W^6: ||W^6 - (tr/n)I||_F = 5.3811e+00, tr/n = -0.0147-0.0359j+-0.0359i
+  W^30: ||W^30 - (tr/n)I||_F = 5.3621e+00, tr/n = -0.0270-0.0883j+-0.0883i
+
+------------------------------------------------------------------------------
+ Galois action: conductor orbit decomposition
+------------------------------------------------------------------------------
+
+  Conductor of chi_c for c=1..29:
+    {1: 30, 2: 15, 3: 10, 4: 15, 5: 6, 6: 5, 7: 30, 8: 15, 9: 10, 10: 3, 11: 30, 12: 5, 13: 30, 14: 15, 15: 2, 16: 15, 17: 30, 18: 5, 19: 30, 20: 3, 21: 10, 22: 15, 23: 30, 24: 5, 25: 6, 26: 15, 27: 10, 28: 15, 29: 30}
+
+  Conductor orbits (size phi(d) at conductor d):
+    conductor d=  2: size phi(2)=1, c in [15]
+    conductor d=  3: size phi(3)=2, c in [10, 20]
+    conductor d=  5: size phi(5)=4, c in [6, 12, 18, 24]
+    conductor d=  6: size phi(6)=2, c in [5, 25]
+    conductor d= 10: size phi(10)=4, c in [3, 9, 21, 27]
+    conductor d= 15: size phi(15)=8, c in [2, 4, 8, 14, 16, 22, 26, 28]
+    conductor d= 30: size phi(30)=8, c in [1, 7, 11, 13, 17, 19, 23, 29]
+
+------------------------------------------------------------------------------
+ Does W preserve conductor-orbit subspaces?
+------------------------------------------------------------------------------
+     conductor d   orbit size      ||[W, P_d]||_F
+    d=  2 (   )            1          1.3888e+00
+    d=  3 (   )            2          1.9301e+00
+    d=  5 (   )            4          2.6314e+00
+    d=  6 (   )            2          1.9279e+00
+    d= 10 (   )            4          2.6330e+00
+    d= 15 (   )            8          3.4237e+00
+    d= 30 (split)            8          3.3799e+00
+
+------------------------------------------------------------------------------
+ Dirichlet character alignment with W eigenvectors
+------------------------------------------------------------------------------
+
+  Action of W on Dirichlet vectors: W*dv / dv (if eigenvector, this is constant)
+    (alpha,beta)    ||W*dv||     overlap with eigvec             best eigval
+       (0,0)    1.000000  v_ 0 @ overlap=0.1775    arg/pi =  -0.7645
+       (0,1)    1.000000  v_11 @ overlap=0.1214    arg/pi =  +0.4841
+       (1,0)    1.000000  v_22 @ overlap=0.1192    arg/pi =  -0.5160
+       (1,1)    1.000000  v_ 2 @ overlap=0.1277    arg/pi =  +0.5207
+       (2,0)    1.000000  v_15 @ overlap=0.1519    arg/pi =  -0.0157
+       (2,1)    1.000000  v_22 @ overlap=0.1994    arg/pi =  -0.5160
+       (3,0)    1.000000  v_ 1 @ overlap=0.1096    arg/pi =  +0.0398
+       (3,1)    1.000000  v_ 3 @ overlap=0.1485    arg/pi =  -0.4806
+
+------------------------------------------------------------------------------
+ Action of W on prime-arithmetic vector vec(Lambda)
+------------------------------------------------------------------------------
+
+  Lambda(c) for c=1..29:
+    [0.0, 0.6931, 1.0986, 0.6931, 1.6094, 0.0, 1.9459, 0.6931, 1.0986, 0.0, 2.3979, 0.0, 2.5649, 0.0, 0.0, 0.6931, 2.8332, 0.0, 2.9444, 0.0, 0.0, 0.0, 3.1355, 0.0, 1.6094, 0.0, 1.0986, 0.0, 3.3673]
+
+  ||vec(Lambda)|| = 8.043973
+  ||W * vec(Lambda)|| = 8.043973 (should equal above since W unitary)
+
+  |coefficients of vec(Lambda) in W eigenbasis|, sorted descending:
+    coef_0 = 18.515145  (eigvec_0, eigval @ arg/pi = -0.7645)
+    coef_1 = 9.484689  (eigvec_2, eigval @ arg/pi = +0.5207)
+    coef_2 = 7.555315  (eigvec_16, eigval @ arg/pi = -0.0160)
+    coef_3 = 3.839275  (eigvec_28, eigval @ arg/pi = +0.9839)
+    coef_4 = 3.798049  (eigvec_14, eigval @ arg/pi = -0.0152)
+    coef_5 = 3.426854  (eigvec_3, eigval @ arg/pi = -0.4806)
+    coef_6 = 3.196563  (eigvec_4, eigval @ arg/pi = -0.9941)
+    coef_7 = 2.717076  (eigvec_9, eigval @ arg/pi = +0.4849)
+    coef_8 = 2.571420  (eigvec_20, eigval @ arg/pi = -0.5154)
+    coef_9 = 1.674323  (eigvec_11, eigval @ arg/pi = +0.4841)
+
+------------------------------------------------------------------------------
+ Trace identities
+------------------------------------------------------------------------------
+  tr(W^ 1) =    -0.775568 +    -0.545552i, |.|=0.9482
+  tr(W^ 2) =    +0.072568 +    +0.983959i, |.|=0.9866
+  tr(W^ 3) =    +0.631745 +    -0.424111i, |.|=0.7609
+  tr(W^ 4) =   +26.465208 +    -2.781706i, |.|=26.6110
+  tr(W^ 5) =    +0.532354 +    +1.141074i, |.|=1.2591
+  tr(W^ 6) =    -0.425733 +    -1.041441i, |.|=1.1251
+  tr(W^10) =    +0.060786 +    +0.637792i, |.|=0.6407
+  tr(W^15) =    -0.829358 +    +1.869956i, |.|=2.0456
+  tr(W^29) =    -0.902923 +    -0.736824i, |.|=1.1654
+  tr(W^30) =    -0.782716 +    -2.562116i, |.|=2.6790
+
+------------------------------------------------------------------------------
+ L-function zero connection?
+------------------------------------------------------------------------------
+
+  Eigenvalue arguments (units of pi), sorted:
+    [ 0- 4]: -0.9941  -0.7645  -0.5160  -0.5158  -0.5154
+    [ 5- 9]: -0.5146  -0.5129  -0.5079  -0.4806  -0.0160
+    [10-14]: -0.0157  -0.0152  -0.0143  -0.0121  -0.0052
+    [15-19]: +0.0398  +0.4841  +0.4844  +0.4849  +0.4860
+    [20-24]: +0.4888  +0.4974  +0.5207  +0.9839  +0.9841
+    [25-28]: +0.9845  +0.9851  +0.9865  +0.9902
+
+  Mean angle gap: 0.070867 pi
+  Max angle gap: 0.464552 pi (uniform spacing would give 0.068966 pi)
+  Min angle gap: 0.000216 pi
+  Spacing irregularity (std/mean): 2.0743
+
+==============================================================================
+ Summary
+==============================================================================
+
+At N=30:
+  - W is unitary (||W*W - I|| = 1.56e-15).
+  - Eigenvalues on unit circle, |moduli| in [1.0000e+00, 1.0000].
+  - tr(W) = -0.7756 + -0.5456i.
+
+Key questions probed:
+  1. Are W eigenvalues N-th roots of unity? (look at root-distance output above)
+  2. Does W respect conductor-orbit subspaces? (commutator norms above)
+  3. Do Dirichlet characters of (Z/30)* align with W eigenvectors?
+  4. Does W * vec(Lambda) decompose cleanly?
+  5. Is there an L-function spectrum hidden in W's angles?
+
+Look at the structured output above for the verdict.
+

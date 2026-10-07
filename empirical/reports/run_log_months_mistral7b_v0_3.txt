@@ -1,0 +1,52 @@
+/home/leomu/simplicial/empirical/layerwise_packet_spectroscopy.py:3: SyntaxWarning: invalid escape sequence '\l'
+  """
+`torch_dtype` is deprecated! Use `dtype` instead!
+# layerwise_packet_spectroscopy version audit_kappa_driver_v0.2_2026_06_12
+# model-tag=mistral7b_v0_3  task=months  layers=all
+# transformers available: True
+Loading checkpoint shards:   0%|          | 0/3 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 3/3 [00:00<00:00, 33.37it/s]
+# wrote empirical/reports/layerwise_packet_spectroscopy_months_mistral7b_v0_3.json
+# months on mistral7b_v0_3 (layerwise lens, N=12, 33 layers):
+#  ell, f_2, f_3, f_4, f_6, f_12
+#    0, 0.0024, 0.1700, 0.0604, 0.1638, 0.6033
+#    1, 0.4168, 0.1042, 0.0096, 0.0860, 0.3835
+#    2, 0.0000, 0.1790, 0.0077, 0.1356, 0.6777
+#    3, 0.0103, 0.0139, 0.2504, 0.2875, 0.4379
+#    4, 0.0115, 0.0776, 0.0769, 0.3739, 0.4600
+#    5, 0.0334, 0.1761, 0.1071, 0.4924, 0.1910
+#    6, 0.1123, 0.2119, 0.0231, 0.3854, 0.2673
+#    7, 0.0589, 0.4844, 0.0763, 0.2616, 0.1188
+#    8, 0.1054, 0.2400, 0.1771, 0.2977, 0.1799
+#    9, 0.1812, 0.3065, 0.1847, 0.1060, 0.2216
+#   10, 0.1852, 0.1605, 0.3810, 0.1255, 0.1479
+#   11, 0.3512, 0.2349, 0.1736, 0.1359, 0.1044
+#   12, 0.2168, 0.2229, 0.2218, 0.0773, 0.2613
+#   13, 0.2479, 0.1043, 0.1594, 0.0887, 0.3996
+#   14, 0.2008, 0.1456, 0.0355, 0.0831, 0.5350
+#   15, 0.5767, 0.0903, 0.0614, 0.0209, 0.2506
+#   16, 0.2770, 0.1148, 0.0336, 0.2105, 0.3641
+#   17, 0.1950, 0.1305, 0.0988, 0.1404, 0.4353
+#   18, 0.0460, 0.0347, 0.0328, 0.0634, 0.8231
+#   19, 0.0375, 0.0607, 0.0350, 0.0577, 0.8091
+#   20, 0.0170, 0.0629, 0.0522, 0.0648, 0.8031
+#   21, 0.0439, 0.0625, 0.0555, 0.0833, 0.7548
+#   22, 0.0413, 0.0886, 0.0730, 0.1063, 0.6908
+#   23, 0.0297, 0.0554, 0.0695, 0.1015, 0.7439
+#   24, 0.0256, 0.0391, 0.0413, 0.0865, 0.8075
+#   25, 0.0241, 0.0381, 0.0380, 0.1034, 0.7964
+#   26, 0.0338, 0.0488, 0.0354, 0.1212, 0.7608
+#   27, 0.0280, 0.0365, 0.0267, 0.1272, 0.7816
+#   28, 0.0281, 0.0376, 0.0306, 0.1397, 0.7640
+#   29, 0.0257, 0.0362, 0.0302, 0.1359, 0.7720
+#   30, 0.0235, 0.0349, 0.0296, 0.1420, 0.7700
+#   31, 0.0267, 0.0438, 0.0254, 0.1383, 0.7658
+#   32, 0.0231, 0.0327, 0.0191, 0.1399, 0.7852
+# forward 20/84
+# forward 40/84
+# forward 60/84
+# forward 80/84
+# forward 84/84
+# wrote /home/leomu/simplicial/empirical/data/residual_streams_months_mistral7b_v0_3.safetensors  shape=(84, 33, 4096) dtype=BF16
+# wrote /home/leomu/simplicial/empirical/data/W_U_VR_months_mistral7b_v0_3.npz  shape=(12, 4096)
+# wrote /home/leomu/simplicial/empirical/data/capture_manifest_months_mistral7b_v0_3.json
+# invoking lens scorer: /home/leomu/venv/bin/python /home/leomu/simplicial/empirical/native_logit_lens_packet_score_layerwise.py --mode layerwise --N 12 --token-ids 5392,6121,4885,4767,3014,4980,5166,4396,4842,5295,5117,5693 --residual-streams /home/leomu/simplicial/empirical/data/residual_streams_months_mistral7b_v0_3.safetensors --unembedding-VR /home/leomu/simplicial/empirical/data/W_U_VR_months_mistral7b_v0_3.npz --task months --model-tag mistral7b_v0_3 --output empirical/reports/layerwise_packet_spectroscopy_months_mistral7b_v0_3.json

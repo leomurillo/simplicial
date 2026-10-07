@@ -1,0 +1,34 @@
+module dims: {'Q_L': 6, 'uRc': 3, 'eRc': 1, 'L_L': 2, 'dRc': 3}  total N = 15
+num gauge generators: 12
+
+[gauge only] dim commutant of gauge action on matter space = 5
+
+=== Branch BLOCK : conductor classes ===
+  conductor 1 : ['eRc']
+  conductor 2 : ['L_L']
+  conductor 3 : ['uRc', 'dRc']
+  conductor 6 : ['Q_L']
+  dim commutant (gauge AND conductor-grading-preserving) = 5
+  -> per-module gauge-trivial phases expected = 5
+  -> EXTRA J_F freedom not killed by this branch = 0
+
+=== Branch TENSOR : conductor classes ===
+  conductor 1 : ['eRc']
+  conductor 2 : ['L_L']
+  conductor 3 : ['uRc', 'dRc']
+  conductor 6 : ['Q_L']
+  dim commutant (gauge AND conductor-grading-preserving) = 5
+  -> per-module gauge-trivial phases expected = 5
+  -> EXTRA J_F freedom not killed by this branch = 0
+
+======================================================================
+DECISIVE TEST: remove U(1)_Y. Can CRT conductor grading substitute?
+======================================================================
+[su(2)+su(3) only] dim commutant = 7  (rigid would be 5; excess = mixing freedom Y normally kills)
+  + block  conductor grading: commutant = 7  -> excess over 5 = 2
+  + tensor conductor grading: commutant = 7  -> excess over 5 = 2
+
+ROBUSTNESS: force Y(uRc)=Y(dRc) (collapse hypercharge) WITH full gauge
+  commutant with Y(uRc)=Y(dRc) = 7  (jump above 5 = the freedom Y was killing)
+    + block  grading then re-pins to: 7
+    + tensor grading then re-pins to: 7

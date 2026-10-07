@@ -1,0 +1,129 @@
+[
+  {
+    "file": "C:\\Users\\leomu\\Downloads\\que-ver-en-costa-rica-correos-portada.jpg",
+    "width": 64,
+    "height": 64,
+    "tile_count": 4,
+    "raw_rgb_bytes": 12288,
+    "webp_lossless_bytes": 6032,
+    "scheme": "ch-ctx-energy-unitary-split-blend71-apex128",
+    "transforms": [
+      "r-gr-bg",
+      "r-gr-bavg",
+      "g-rg-bavg",
+      "g-bg-ravg",
+      "ycocg",
+      "rgb"
+    ],
+    "tau_bits": 16,
+    "lambdas": [
+      0,
+      32
+    ],
+    "selection_s": 1.1975444999989122,
+    "selection_fields": [
+      {
+        "lambda_bits": 0,
+        "unary_bits": 46216,
+        "boundary_edges": 0,
+        "objective_bits": 46216,
+        "changed_edges_by_pair": {},
+        "label_counts": {
+          "r-gr-bg": 4
+        },
+        "face_hit_rate": 1.0,
+        "mean_regret_bits": 0.0,
+        "max_regret_bits": 0,
+        "rle_bytes": 2,
+        "rle_runs": 1
+      },
+      {
+        "lambda_bits": 32,
+        "unary_bits": 46216,
+        "boundary_edges": 0,
+        "objective_bits": 46216,
+        "changed_edges_by_pair": {},
+        "label_counts": {
+          "r-gr-bg": 4
+        },
+        "face_hit_rate": 1.0,
+        "mean_regret_bits": 0.0,
+        "max_regret_bits": 0,
+        "rle_bytes": 2,
+        "rle_runs": 1
+      }
+    ],
+    "encoded": [
+      {
+        "rank": 1,
+        "lambda_bits": 0,
+        "bytes": 5903,
+        "delta_vs_webp": -129,
+        "ratio_vs_webp": 0.9786140583554377,
+        "roundtrip_ok": true,
+        "encode_s": 0.8757471999851987,
+        "decode_s": 0.7744356999755837,
+        "field": {
+          "lambda_bits": 0,
+          "unary_bits": 46216,
+          "boundary_edges": 0,
+          "objective_bits": 46216,
+          "changed_edges_by_pair": {},
+          "label_counts": {
+            "r-gr-bg": 4
+          },
+          "face_hit_rate": 1.0,
+          "mean_regret_bits": 0.0,
+          "max_regret_bits": 0,
+          "rle_bytes": 2,
+          "rle_runs": 1
+        },
+        "encode_stats": {
+          "codec": "SGF8",
+          "scheme": "ch-ctx-energy-unitary-split-blend71-apex128",
+          "transforms": [
+            "r-gr-bg",
+            "r-gr-bavg",
+            "g-rg-bavg",
+            "g-bg-ravg",
+            "ycocg",
+            "rgb"
+          ],
+          "bytes": 5903,
+          "header_metadata_bytes": 43,
+          "entropy_bytes": 5860,
+          "command_rle_bytes": 2,
+          "command_rle_runs": 1,
+          "predictor_metadata_bytes": 8,
+          "energy_metadata_bytes": 5,
+          "unitary_metadata_bytes": 3,
+          "max_symbol": 241,
+          "predictors": {
+            "pred-4": 10,
+            "pred-6": 2
+          },
+          "residual_s": 0.5462516999687068,
+          "entropy_encode_s": 0.3293764000409283
+        },
+        "decode_stats": {
+          "codec": "SGF8",
+          "scheme": "ch-ctx-energy-unitary-split-blend71-apex128",
+          "transforms": [
+            "r-gr-bg",
+            "r-gr-bavg",
+            "g-rg-bavg",
+            "g-bg-ravg",
+            "ycocg",
+            "rgb"
+          ],
+          "width": 64,
+          "height": 64,
+          "max_symbol": 241,
+          "metadata_bytes": 43,
+          "entropy_bytes": 5860,
+          "command_rle_bytes": 2
+        }
+      }
+    ]
+  }
+]

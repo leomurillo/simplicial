@@ -1,0 +1,152 @@
+"""
+Updated N=30 computation with LMFDB chi_5(2) AND chi_5(4) data.
+
+LMFDB-confirmed:
+- chi_5(2): non-self-dual, order 4 quartic. All 50 zeros (25 negative + 25 positive).
+- chi_5(4): self-dual, order 2 (Legendre). 25 positive γ (zeros at ±γ pairs).
+"""
+
+# LMFDB chi_5(4) Legendre, self-dual: only POSITIVE gamma listed (each pairs with -γ)
+chi5_legendre_positive_gammas = [
+    6.64845334472771471612327845997, 9.831444432886669616348321347458,
+    11.95884562608351453026565868826, 16.03382112838423567459325378224,
+    17.566994292325555202701595268144, 19.54073262278475025037869002299,
+    22.227405454459410911877624963081, 24.58846621740819520765626997608,
+    26.77609594800414011652357496527, 28.46103510017752247518697827232,
+    29.70790935048096556923098651865, 33.00045600687051436794975917721,
+    34.728812978904808674143729833981, 35.86863837181227459459504863887,
+    38.12918472143653185015141827037, 39.56057294640318170505509505995,
+    41.84243854579169430850930688531, 44.03129006144169504470090805842,
+    45.4273000827822893888415619096, 46.49272715949140534533919935167,
+    48.34566182106784617654820130449, 51.08775192674649135525825720413,
+    52.1259022313169741886041306959, 53.83044519544216335105426902233,
+    55.58928033540481015096458899849,
+]
+
+# LMFDB chi_5(2): non-self-dual, all 50 zeros
+chi5_2_all_abs_gammas = sorted([
+    # negative gammas (abs values)
+    55.53255063917714331177635885562, 53.75667308835424588804456665093,
+    51.08998804633721267564942694432, 49.5201121831721842836352461905,
+    48.47765991878316956160896236195, 46.26641381346456449258634989372,
+    45.08582264962074326882242881556, 43.12543488567473830905726366337,
+    40.508934445122041603749872022008, 39.0916158639927091132955773909,
+    37.84761841624699497844836046640, 36.09652653725364935231283520536,
+    33.30774552092450944486851535240, 31.714038216978378088676011094547,
+    29.70278103479729044076360156773, 27.81247022179307495811051208168,
+    26.47278891481336832795849047572, 22.9655764347914803808601277723,
+    21.2830471577778699486763506284, 19.72905478631162605830813598374,
+    16.99590394259028444664793427768, 14.11546426656964617536066631834,
+    11.2828964415816001332254807924, 9.44293112972850911710026212431,
+    4.13290370521285159500191933156,
+    # positive gammas
+    6.18357819545085391437751730970, 8.45722917442323072160535286274,
+    12.67494641701135578048229914508, 14.82502557032842825143025217404,
+    17.33780210685303969091451014241, 18.9985880416861449287245250119,
+    22.48758458302875002505567290925, 24.36527977540229805651909575745,
+    25.531186800433429601457551452466, 27.982756935693594324451001091893,
+    30.46364068840366112797004484191, 32.195159688892272026544832306389,
+    34.45722878527839758405756301004, 35.49089317885139349790895129816,
+    37.27195057455605008724509915557, 40.39611485175259003483748872182,
+    41.53645675792969665969385524901, 42.99208544275153854582429789755,
+    44.82617597081092363119666478355, 46.59016101776473881831044964340,
+    48.4778466442218740132847945792, 50.66421039080575037299754421231,
+    51.977053467572707629124054585044, 53.442232173354543204000399997353,
+    54.48544238876467911470039917979,
+])
+
+zeros_zeta_positive = [
+    14.134725141734694, 21.022039638771555, 25.010857580145689,
+    30.424876125859513, 32.935061587739190, 37.586178158825671,
+    40.918719012147495, 43.327073280915000, 48.005150881167160,
+    49.773832477672302, 52.970321477714461, 56.446247697063395,
+    59.347044002602353, 60.831778524609810, 65.112544048081607,
+    67.079810529494174, 69.546401711173979, 72.067157674481908,
+    75.704690699083933, 77.144840068874805, 79.337375020249368,
+    82.910380854086030, 84.735492980517050, 87.425274613125229,
+    88.809111207634465,
+]
+
+zeros_chi3_positive = [
+    8.039737155681467, 11.249206207772935, 15.704619176721626,
+    18.261997495693128, 20.455770807742493, 24.059414856493451,
+    26.577868735774585, 28.218164506233386, 30.745040261382496,
+    33.897388927259419, 35.608412653938635, 37.551796556364627,
+    39.485207260929351, 42.616379226157568, 44.120572912072202,
+    46.274118023513140, 47.514104510117322, 50.375138650636266,
+    52.496749599060754, 54.193843101551914,
+]
+
+def ell_n(zeros, n):
+    return sum(1.0/z**(2*n) for z in zeros)
+
+print("=== N=30 joint cumulant: precise computation with available LMFDB data ===\n")
+
+# Self-dual L-functions: zeros at ±γ; ell = 2 × sum positive γ
+self_dual = [
+    ("zeta", zeros_zeta_positive, "self-dual"),
+    ("chi_{-3} (cond 3)", zeros_chi3_positive, "self-dual"),
+    ("chi_5(4) Legendre [LMFDB]", chi5_legendre_positive_gammas, "self-dual"),
+]
+
+print(f"{'L-function':<35} {'#zeros':>8} {'ell_1 (×2)':>14}")
+print("-" * 65)
+total = 0.0
+for name, zeros, _ in self_dual:
+    e1 = 2 * ell_n(zeros, 1)
+    total += e1
+    print(f"  {name:<33} {len(zeros):>8} {e1:>14.6e}")
+
+# Non-self-dual chi_5(2) + chi_5(3) pair
+e1_chi52 = ell_n(chi5_2_all_abs_gammas, 1)
+e1_pair_chi5quartic = 2 * e1_chi52  # pair contributes 2x per-L-function ell_1
+total += e1_pair_chi5quartic
+print(f"  {'chi_5(2)+chi_5(3) pair [LMFDB]':<33} {len(chi5_2_all_abs_gammas)*2:>8} {e1_pair_chi5quartic:>14.6e}")
+
+# Still placeholder: chi_15 trio (need LMFDB)
+chi_15_qq_placeholder = 0.193  # mpmath estimate, self-dual real character
+chi_15_q1_combined = 0.335     # mpmath: 0.217 + 0.118 (capturing all |γ| for one chi_15_q1)
+print()
+print(f"  PLACEHOLDERS (need LMFDB):")
+chi15_qq_doubled = 2 * chi_15_qq_placeholder
+total += chi15_qq_doubled
+print(f"  {'chi_15(chi_3 x chi_5_quad), self-dual':<33} {'~':>8} {chi15_qq_doubled:>14.6e}  (mpmath ×2)")
+
+chi15_pair = 2 * chi_15_q1_combined
+total += chi15_pair
+print(f"  {'chi_15 quartic pair, non-self-dual':<33} {'~':>8} {chi15_pair:>14.6e}  (mpmath, all γ ×2)")
+
+print("-" * 65)
+print(f"  {'TOTAL ell_1^joint(30) [partial LMFDB]':<33} {'':<8} {total:>14.6e}")
+
+# Comparison
+trace = 1.5191
+print()
+print(f"=== Comparison ===")
+print(f"Observed trace at N=30, T=7:  {trace:.4f}")
+print(f"ell_1^joint(30) [partial LMFDB]: {total:.4f}")
+print(f"Ratio (trace/joint):              {trace/total:.4f}")
+print()
+print(f"With LMFDB data for chi_5(2) and chi_5(4):")
+print(f"  - 3 of 4 self-dual contributions now precise")
+print(f"  - chi_5 quartic pair contribution now precise (LMFDB)")
+print(f"  - chi_15 trio still placeholder (need LMFDB to fully validate)")
+print()
+
+# Higher-precision compute of chi_5(4) Legendre contribution
+print(f"=== chi_5(4) Legendre contribution refinement ===")
+print(f"  LMFDB 25 positive γ:        {ell_n(chi5_legendre_positive_gammas, 1):.6f}")
+print(f"  Doubled (self-dual full ell_1): {2*ell_n(chi5_legendre_positive_gammas, 1):.6f}")
+print(f"  My old mpmath (first 10 positive γ only, not doubled): 0.056")
+print(f"  Old × 2 (proper self-dual): {2*0.056:.4f}")
+print(f"  Improvement from LMFDB: more zeros captured → larger ell_1")
+
+# Order verification
+print()
+print(f"=== chi_5(4) order verification ===")
+print(f"From LMFDB page (image):")
+print(f"  Self-dual: yes")
+print(f"  Dirichlet series: all real ±1 coefficients")
+print(f"  Conductor: 5, Conrey label: chi_5(4, .)")
+print(f"  Inference: ORDER = 2 (Legendre quadratic mod 5)")
+print(f"  Confirmation: chi(2) = -1 (since 4 = 2^2 in Conrey conv, gives chi(2)=e^{{2πi·2/4}}=-1)")

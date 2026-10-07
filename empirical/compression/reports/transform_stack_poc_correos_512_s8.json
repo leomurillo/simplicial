@@ -1,0 +1,71 @@
+[
+  {
+    "file": "C:\\Users\\leomu\\Downloads\\que-ver-en-costa-rica-correos-portada.jpg",
+    "width": 512,
+    "height": 512,
+    "raw_rgb_bytes": 786432,
+    "webp_lossless_bytes": 231732,
+    "stack_bytes": 234472,
+    "delta_vs_webp": 2740,
+    "ratio_vs_webp": 1.0118240035903543,
+    "roundtrip_ok": true,
+    "encode_s": 215.0392232000013,
+    "decode_s": 56.06216899998253,
+    "encode_stats": {
+      "codec": "SGST",
+      "scheme": "ch-ctx-energy-unitary-split-blend71-apex128",
+      "transforms": [
+        "r-gr-bg",
+        "r-gr-bavg",
+        "g-rg-bavg",
+        "g-bg-ravg",
+        "ycocg",
+        "rgb"
+      ],
+      "command_span": 8,
+      "bytes": 234472,
+      "header_metadata_bytes": 993,
+      "entropy_bytes": 233479,
+      "command_metadata_bytes": 2,
+      "command_count": 4,
+      "predictor_metadata_bytes": 480,
+      "energy_metadata_bytes": 288,
+      "unitary_metadata_bytes": 192,
+      "max_symbol": 253,
+      "command_counts": {
+        "r-gr-bg": 256
+      },
+      "predictors": {
+        "pred-4": 403,
+        "pred-6": 237,
+        "pred-8": 57,
+        "pred-5": 29,
+        "pred-7": 12,
+        "pred-20": 3,
+        "pred-9": 8,
+        "pred-2": 15,
+        "pred-14": 4
+      },
+      "select_s": 151.9907291000127,
+      "residual_s": 38.19007100001909,
+      "entropy_encode_s": 24.848996700020507
+    },
+    "decode_stats": {
+      "codec": "SGST",
+      "scheme": "ch-ctx-energy-unitary-split-blend71-apex128",
+      "transforms": [
+        "r-gr-bg",
+        "r-gr-bavg",
+        "g-rg-bavg",
+        "g-bg-ravg",
+        "ycocg",
+        "rgb"
+      ],
+      "width": 512,
+      "height": 512,
+      "max_symbol": 253,
+      "metadata_bytes": 993,
+      "entropy_bytes": 233479
+    }
+  }
+]

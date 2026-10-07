@@ -1,0 +1,296 @@
+{
+  "config": {
+    "contexts": 64,
+    "steps": 2500,
+    "batch_size": 128,
+    "signal_scale": 2.4,
+    "adam_lr": 0.08,
+    "natural_lr": 0.003,
+    "closed_lr": 0.08,
+    "max_natural_rms": 4.0,
+    "adam_beta1": 0.9,
+    "adam_beta2": 0.999,
+    "adam_eps": 1e-08,
+    "closed_gradient_projection": 1.0,
+    "closed_update_projection": 1.0
+  },
+  "projection_fractions": [
+    0.0,
+    0.25,
+    0.5,
+    0.75,
+    1.0
+  ],
+  "closed_generators": [
+    "1",
+    "u",
+    "wu"
+  ],
+  "closed_modes": [
+    "u",
+    "wu",
+    "(w+1)u",
+    "1",
+    "1+u",
+    "1+wu",
+    "1+(w+1)u"
+  ],
+  "target_summary": {
+    "target_logit_leakage_mean": 0.0,
+    "target_probability_leakage_mean": 0.0,
+    "target_tame_energy_mean": 0.517811404059,
+    "target_wild_energy_mean": 0.482188595941
+  },
+  "pareto_rows": [
+    {
+      "gradient_projection": 0.0,
+      "update_projection": 0.0,
+      "final_true_kl_mean": 0.036156221468,
+      "final_true_kl_std": 0.002221249378,
+      "final_probability_leakage_mean": 0.043926299273,
+      "final_probability_leakage_std": 0.005328631284,
+      "cumulative_update_leakage_mean": 0.528193581381,
+      "cumulative_kch_carry_leakage_mean": 0.557145236624
+    },
+    {
+      "gradient_projection": 0.0,
+      "update_projection": 0.25,
+      "final_true_kl_mean": 0.030855565579,
+      "final_true_kl_std": 0.001601301984,
+      "final_probability_leakage_mean": 0.033062524487,
+      "final_probability_leakage_std": 0.003054363422,
+      "cumulative_update_leakage_mean": 0.386341082041,
+      "cumulative_kch_carry_leakage_mean": 0.534043482106
+    },
+    {
+      "gradient_projection": 0.0,
+      "update_projection": 0.5,
+      "final_true_kl_mean": 0.025559152143,
+      "final_true_kl_std": 0.001173710997,
+      "final_probability_leakage_mean": 0.022090361615,
+      "final_probability_leakage_std": 0.001794227658,
+      "cumulative_update_leakage_mean": 0.218601874045,
+      "cumulative_kch_carry_leakage_mean": 0.405238700479
+    },
+    {
+      "gradient_projection": 0.0,
+      "update_projection": 0.75,
+      "final_true_kl_mean": 0.020294592228,
+      "final_true_kl_std": 0.001022944574,
+      "final_probability_leakage_mean": 0.011298535934,
+      "final_probability_leakage_std": 0.001274434458,
+      "cumulative_update_leakage_mean": 0.065379256696,
+      "cumulative_kch_carry_leakage_mean": 0.158570979071
+    },
+    {
+      "gradient_projection": 0.0,
+      "update_projection": 1.0,
+      "final_true_kl_mean": 0.014998080586,
+      "final_true_kl_std": 0.000926503979,
+      "final_probability_leakage_mean": 0.0,
+      "final_probability_leakage_std": 0.0,
+      "cumulative_update_leakage_mean": 0.0,
+      "cumulative_kch_carry_leakage_mean": 0.0
+    },
+    {
+      "gradient_projection": 0.25,
+      "update_projection": 0.0,
+      "final_true_kl_mean": 0.035726455953,
+      "final_true_kl_std": 0.001886851864,
+      "final_probability_leakage_mean": 0.039691360318,
+      "final_probability_leakage_std": 0.004562353002,
+      "cumulative_update_leakage_mean": 0.385987227252,
+      "cumulative_kch_carry_leakage_mean": 0.551673751859
+    },
+    {
+      "gradient_projection": 0.25,
+      "update_projection": 0.25,
+      "final_true_kl_mean": 0.031080041667,
+      "final_true_kl_std": 0.001436849461,
+      "final_probability_leakage_mean": 0.029767065411,
+      "final_probability_leakage_std": 0.002566785733,
+      "cumulative_update_leakage_mean": 0.261255590306,
+      "cumulative_kch_carry_leakage_mean": 0.470288343668
+    },
+    {
+      "gradient_projection": 0.25,
+      "update_projection": 0.5,
+      "final_true_kl_mean": 0.026438101791,
+      "final_true_kl_std": 0.001224280345,
+      "final_probability_leakage_mean": 0.019861559377,
+      "final_probability_leakage_std": 0.001752818342,
+      "cumulative_update_leakage_mean": 0.135849464648,
+      "cumulative_kch_carry_leakage_mean": 0.307821386585
+    },
+    {
+      "gradient_projection": 0.25,
+      "update_projection": 0.75,
+      "final_true_kl_mean": 0.021840633573,
+      "final_true_kl_std": 0.001166672665,
+      "final_probability_leakage_mean": 0.010184962751,
+      "final_probability_leakage_std": 0.001256524497,
+      "cumulative_update_leakage_mean": 0.037836213582,
+      "cumulative_kch_carry_leakage_mean": 0.104539968238
+    },
+    {
+      "gradient_projection": 0.25,
+      "update_projection": 1.0,
+      "final_true_kl_mean": 0.017220960803,
+      "final_true_kl_std": 0.001107808995,
+      "final_probability_leakage_mean": 0.0,
+      "final_probability_leakage_std": 0.0,
+      "cumulative_update_leakage_mean": 0.0,
+      "cumulative_kch_carry_leakage_mean": 0.0
+    },
+    {
+      "gradient_projection": 0.5,
+      "update_projection": 0.0,
+      "final_true_kl_mean": 0.034125092387,
+      "final_true_kl_std": 0.001507868944,
+      "final_probability_leakage_mean": 0.032379595989,
+      "final_probability_leakage_std": 0.003250864609,
+      "cumulative_update_leakage_mean": 0.219287563368,
+      "cumulative_kch_carry_leakage_mean": 0.465227685984
+    },
+    {
+      "gradient_projection": 0.5,
+      "update_projection": 0.25,
+      "final_true_kl_mean": 0.030478368819,
+      "final_true_kl_std": 0.001397919115,
+      "final_probability_leakage_mean": 0.024143281474,
+      "final_probability_leakage_std": 0.001978919108,
+      "cumulative_update_leakage_mean": 0.136454879072,
+      "cumulative_kch_carry_leakage_mean": 0.343755914251
+    },
+    {
+      "gradient_projection": 0.5,
+      "update_projection": 0.5,
+      "final_true_kl_mean": 0.026868794451,
+      "final_true_kl_std": 0.001405666962,
+      "final_probability_leakage_mean": 0.016143370788,
+      "final_probability_leakage_std": 0.001784757187,
+      "cumulative_update_leakage_mean": 0.065632692586,
+      "cumulative_kch_carry_leakage_mean": 0.193876346001
+    },
+    {
+      "gradient_projection": 0.5,
+      "update_projection": 0.75,
+      "final_true_kl_mean": 0.023307722123,
+      "final_true_kl_std": 0.001394211767,
+      "final_probability_leakage_mean": 0.008314584051,
+      "final_probability_leakage_std": 0.001193041367,
+      "cumulative_update_leakage_mean": 0.017267719035,
+      "cumulative_kch_carry_leakage_mean": 0.058787312535
+    },
+    {
+      "gradient_projection": 0.5,
+      "update_projection": 1.0,
+      "final_true_kl_mean": 0.019737477403,
+      "final_true_kl_std": 0.0013689555,
+      "final_probability_leakage_mean": 0.0,
+      "final_probability_leakage_std": 0.0,
+      "cumulative_update_leakage_mean": 0.0,
+      "cumulative_kch_carry_leakage_mean": 0.0
+    },
+    {
+      "gradient_projection": 0.75,
+      "update_projection": 0.0,
+      "final_true_kl_mean": 0.030176728002,
+      "final_true_kl_std": 0.0016046219,
+      "final_probability_leakage_mean": 0.01961165849,
+      "final_probability_leakage_std": 0.001921535377,
+      "cumulative_update_leakage_mean": 0.067266596648,
+      "cumulative_kch_carry_leakage_mean": 0.219475969382
+    },
+    {
+      "gradient_projection": 0.75,
+      "update_projection": 0.25,
+      "final_true_kl_mean": 0.02810823769,
+      "final_true_kl_std": 0.001652239499,
+      "final_probability_leakage_mean": 0.014725493803,
+      "final_probability_leakage_std": 0.001995878597,
+      "cumulative_update_leakage_mean": 0.03898569913,
+      "cumulative_kch_carry_leakage_mean": 0.137381002143
+    },
+    {
+      "gradient_projection": 0.75,
+      "update_projection": 0.5,
+      "final_true_kl_mean": 0.026080782938,
+      "final_true_kl_std": 0.00165324082,
+      "final_probability_leakage_mean": 0.010019590361,
+      "final_probability_leakage_std": 0.001747943342,
+      "cumulative_update_leakage_mean": 0.017712780638,
+      "cumulative_kch_carry_leakage_mean": 0.067366149359
+    },
+    {
+      "gradient_projection": 0.75,
+      "update_projection": 0.75,
+      "final_true_kl_mean": 0.024038915133,
+      "final_true_kl_std": 0.001645029305,
+      "final_probability_leakage_mean": 0.005119562445,
+      "final_probability_leakage_std": 0.000933466104,
+      "cumulative_update_leakage_mean": 0.004490697848,
+      "cumulative_kch_carry_leakage_mean": 0.018978222865
+    },
+    {
+      "gradient_projection": 0.75,
+      "update_projection": 1.0,
+      "final_true_kl_mean": 0.022023426249,
+      "final_true_kl_std": 0.001651470137,
+      "final_probability_leakage_mean": 0.0,
+      "final_probability_leakage_std": 0.0,
+      "cumulative_update_leakage_mean": 0.0,
+      "cumulative_kch_carry_leakage_mean": 0.0
+    },
+    {
+      "gradient_projection": 1.0,
+      "update_projection": 0.0,
+      "final_true_kl_mean": 0.023031112385,
+      "final_true_kl_std": 0.001791345265,
+      "final_probability_leakage_mean": 0.0,
+      "final_probability_leakage_std": 0.0,
+      "cumulative_update_leakage_mean": 0.0,
+      "cumulative_kch_carry_leakage_mean": 0.0
+    },
+    {
+      "gradient_projection": 1.0,
+      "update_projection": 0.25,
+      "final_true_kl_mean": 0.023031112385,
+      "final_true_kl_std": 0.001791345265,
+      "final_probability_leakage_mean": 0.0,
+      "final_probability_leakage_std": 0.0,
+      "cumulative_update_leakage_mean": 0.0,
+      "cumulative_kch_carry_leakage_mean": 0.0
+    },
+    {
+      "gradient_projection": 1.0,
+      "update_projection": 0.5,
+      "final_true_kl_mean": 0.023031112385,
+      "final_true_kl_std": 0.001791345265,
+      "final_probability_leakage_mean": 0.0,
+      "final_probability_leakage_std": 0.0,
+      "cumulative_update_leakage_mean": 0.0,
+      "cumulative_kch_carry_leakage_mean": 0.0
+    },
+    {
+      "gradient_projection": 1.0,
+      "update_projection": 0.75,
+      "final_true_kl_mean": 0.023031112385,
+      "final_true_kl_std": 0.001791345265,
+      "final_probability_leakage_mean": 0.0,
+      "final_probability_leakage_std": 0.0,
+      "cumulative_update_leakage_mean": 0.0,
+      "cumulative_kch_carry_leakage_mean": 0.0
+    },
+    {
+      "gradient_projection": 1.0,
+      "update_projection": 1.0,
+      "final_true_kl_mean": 0.023031112385,
+      "final_true_kl_std": 0.001791345265,
+      "final_probability_leakage_mean": 0.0,
+      "final_probability_leakage_std": 0.0,
+      "cumulative_update_leakage_mean": 0.0,
+      "cumulative_kch_carry_leakage_mean": 0.0
+    }
+  ]
+}

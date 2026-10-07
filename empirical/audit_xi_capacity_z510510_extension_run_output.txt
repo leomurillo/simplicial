@@ -1,0 +1,60 @@
+==============================================================================
+ Audit xi: capacity scaling extension to Z/510510
+ Tests audit iota's PNT-heuristic shape prediction at primorial row 7
+==============================================================================
+
+         Row    n   dim_V         T_total      pure_V      Capacity_V     log10      PNT pred     ratio
+  ----------  ---  ------  --------------  ----------  --------------  --------  ------------  --------
+  Z/      6    2       3               6           2    3.333333e-01   -0.4771    3.4657e-01     0.962
+  Z/     30    3       7             150           6    4.000000e-02   -1.3979    4.9438e-02     0.809
+  Z/    210    4      13            7350          14    1.904762e-03   -2.7202    2.2633e-03     0.842
+  Z/   2310    5      23          889350          34    3.823017e-05   -4.4176    3.3931e-05     1.127
+  Z/  30030    6      35       150300150          62    4.125079e-07   -6.3846    3.2187e-07     1.282
+  Z/ 510510    7      51     43436743350         110    2.532418e-09   -8.5965    1.6464e-09     1.538
+
+------------------------------------------------------------------------------
+ Verification against v2insert-09 anchors:
+------------------------------------------------------------------------------
+  Z/      6: dim_V=3/3, T_total=6/6, pure_V=2/2  [OK]
+  Z/     30: dim_V=7/7, T_total=150/150, pure_V=6/6  [OK]
+  Z/    210: dim_V=13/13, T_total=7350/7350, pure_V=14/14  [OK]
+  Z/   2310: dim_V=23/23, T_total=889350/889350, pure_V=34/34  [OK]
+  Z/  30030: dim_V=35/35, T_total=150300150/150300150, pure_V=62/62  [OK]
+  All v2insert-09 anchors reproduced exactly.  [PASS]
+
+------------------------------------------------------------------------------
+ Audit xi headline: Z/510510 = 2*3*5*7*11*13*17 (the 7th primorial)
+------------------------------------------------------------------------------
+  dim_V = 51  (= 1 + 2 + 4 + 6 + 10 + 12 + 16)
+  T_total = 43436743350  (= 510510^2 / 6)
+  pure_V = 110
+  Capacity_V = 2.532418e-09  (= 110/43436743350)
+  log10(Capacity_V) = -8.5965
+
+  PNT-heuristic prediction: 1.6464e-09
+  Ratio Capacity_V / prediction: 1.538
+
+  Per-step decay factor (row 6 -> row 7):
+  Capacity_V(Z/30030) / Capacity_V(Z/510510) = 162.89x
+  (audit theta pattern: 8.3x -> 21x -> 50x -> 93x -> 163x)
+  Predicted by p_7^2 = 17^2 = 289 (with |V| growth correction: ~ p_7^2 * (n_6/n_7)^c)
+
+------------------------------------------------------------------------------
+ Three-outcome adjudication (v2insert-04 sec 3.1)
+------------------------------------------------------------------------------
+  K-branch (PNT-heuristic extrapolates within factor of 2):
+    Capacity_V(Z/510510) / PNT_pred = 1.538
+    -> WITHIN factor of 2.  K-branch REALIZED.
+    The joint-on-disjoint settlement of audit iota extrapolates
+    cleanly to the 7th primorial row.
+
+  Multiplicative constant K = Capacity_V * N^2 / (n^2 * ln(n)):
+         Row    K observed
+  Z/      6        4.3281
+  Z/     30        3.6410
+  Z/    210        3.7871
+  Z/   2310        5.0701
+  Z/  30030        5.7671
+  Z/ 510510        6.9219
+  Mean K = 4.9192, range [3.6410, 6.9219], spread = 1.901x
+  (audit iota 5-row spread was 1.584x)

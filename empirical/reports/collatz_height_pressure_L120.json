@@ -1,0 +1,4865 @@
+{
+  "settings": {
+    "max_length": 120,
+    "barriers": [
+      0.0,
+      2.0,
+      4.0,
+      8.0
+    ]
+  },
+  "pressure": {
+    "theta_min": 0.4380326593,
+    "pressure_min_log2": -0.0793186128,
+    "chernoff_rate_bits": 0.0793186128,
+    "spectral_radius_min": 0.9465045768,
+    "nonzero_root": 1.0,
+    "mean_height": 0.4150374993
+  },
+  "bad_prefix_rows": [
+    {
+      "length": 1,
+      "threshold_total_depth": 1,
+      "bad_mass": 0.5,
+      "bad_log2_mass": -1.0,
+      "chernoff_log2_bound": -0.0793186128,
+      "bound_slack_bits": 0.9206813872
+    },
+    {
+      "length": 2,
+      "threshold_total_depth": 3,
+      "bad_mass": 0.5,
+      "bad_log2_mass": -1.0,
+      "chernoff_log2_bound": -0.1586372255,
+      "bound_slack_bits": 0.8413627745
+    },
+    {
+      "length": 3,
+      "threshold_total_depth": 4,
+      "bad_mass": 0.3125,
+      "bad_log2_mass": -1.6780719051,
+      "chernoff_log2_bound": -0.2379558383,
+      "bound_slack_bits": 1.4401160668
+    },
+    {
+      "length": 4,
+      "threshold_total_depth": 6,
+      "bad_mass": 0.34375,
+      "bad_log2_mass": -1.5405683814,
+      "chernoff_log2_bound": -0.3172744511,
+      "bound_slack_bits": 1.2232939303
+    },
+    {
+      "length": 5,
+      "threshold_total_depth": 7,
+      "bad_mass": 0.2265625,
+      "bad_log2_mass": -2.1420190049,
+      "chernoff_log2_bound": -0.3965930639,
+      "bound_slack_bits": 1.745425941
+    },
+    {
+      "length": 6,
+      "threshold_total_depth": 9,
+      "bad_mass": 0.25390625,
+      "bad_log2_mass": -1.977632187,
+      "chernoff_log2_bound": -0.4759116766,
+      "bound_slack_bits": 1.5017205103
+    },
+    {
+      "length": 7,
+      "threshold_total_depth": 11,
+      "bad_mass": 0.2744140625,
+      "bad_log2_mass": -1.8655736798,
+      "chernoff_log2_bound": -0.5552302894,
+      "bound_slack_bits": 1.3103433904
+    },
+    {
+      "length": 8,
+      "threshold_total_depth": 12,
+      "bad_mass": 0.1938476562,
+      "bad_log2_mass": -2.3670048029,
+      "chernoff_log2_bound": -0.6345489022,
+      "bound_slack_bits": 1.7324559007
+    },
+    {
+      "length": 9,
+      "threshold_total_depth": 14,
+      "bad_mass": 0.2119750977,
+      "bad_log2_mass": -2.2380333046,
+      "chernoff_log2_bound": -0.713867515,
+      "bound_slack_bits": 1.5241657896
+    },
+    {
+      "length": 10,
+      "threshold_total_depth": 15,
+      "bad_mass": 0.1508789063,
+      "bad_log2_mass": -2.7285369721,
+      "chernoff_log2_bound": -0.7931861277,
+      "bound_slack_bits": 1.9353508443
+    },
+    {
+      "length": 11,
+      "threshold_total_depth": 17,
+      "bad_mass": 0.1661529541,
+      "bad_log2_mass": -2.5894161514,
+      "chernoff_log2_bound": -0.8725047405,
+      "bound_slack_bits": 1.7169114108
+    },
+    {
+      "length": 12,
+      "threshold_total_depth": 19,
+      "bad_mass": 0.1796417236,
+      "bad_log2_mass": -2.4768056252,
+      "chernoff_log2_bound": -0.9518233533,
+      "bound_slack_bits": 1.5249822719
+    },
+    {
+      "length": 13,
+      "threshold_total_depth": 20,
+      "bad_mass": 0.1315879822,
+      "bad_log2_mass": -2.92590036,
+      "chernoff_log2_bound": -1.0311419661,
+      "bound_slack_bits": 1.8947583939
+    },
+    {
+      "length": 14,
+      "threshold_total_depth": 22,
+      "bad_mass": 0.1431393623,
+      "bad_log2_mass": -2.8045076371,
+      "chernoff_log2_bound": -1.1104605788,
+      "bound_slack_bits": 1.6940470583
+    },
+    {
+      "length": 15,
+      "threshold_total_depth": 23,
+      "bad_mass": 0.1050198078,
+      "bad_log2_mass": -3.2512666342,
+      "chernoff_log2_bound": -1.1897791916,
+      "bound_slack_bits": 2.0614874426
+    },
+    {
+      "length": 16,
+      "threshold_total_depth": 25,
+      "bad_mass": 0.1147614717,
+      "bad_log2_mass": -3.1232897198,
+      "chernoff_log2_bound": -1.2690978044,
+      "bound_slack_bits": 1.8541919154
+    },
+    {
+      "length": 17,
+      "threshold_total_depth": 26,
+      "bad_mass": 0.084318772,
+      "bad_log2_mass": -3.5680023345,
+      "chernoff_log2_bound": -1.3484164172,
+      "bound_slack_bits": 2.2195859173
+    },
+    {
+      "length": 18,
+      "threshold_total_depth": 28,
+      "bad_mass": 0.092466671,
+      "bad_log2_mass": -3.43492274,
+      "chernoff_log2_bound": -1.4277350299,
+      "bound_slack_bits": 2.0071877101
+    },
+    {
+      "length": 19,
+      "threshold_total_depth": 30,
+      "bad_mass": 0.100244211,
+      "bad_log2_mass": -3.3184091695,
+      "chernoff_log2_bound": -1.5070536427,
+      "bound_slack_bits": 1.8113555268
+    },
+    {
+      "length": 20,
+      "threshold_total_depth": 31,
+      "bad_mass": 0.0748063922,
+      "bad_log2_mass": -3.7406946364,
+      "chernoff_log2_bound": -1.5863722555,
+      "bound_slack_bits": 2.1543223809
+    },
+    {
+      "length": 21,
+      "threshold_total_depth": 33,
+      "bad_mass": 0.0813778287,
+      "bad_log2_mass": -3.619220402,
+      "chernoff_log2_bound": -1.6656908683,
+      "bound_slack_bits": 1.9535295337
+    },
+    {
+      "length": 22,
+      "threshold_total_depth": 34,
+      "bad_mass": 0.0607247425,
+      "bad_log2_mass": -4.0415717231,
+      "chernoff_log2_bound": -1.745009481,
+      "bound_slack_bits": 2.2965622421
+    },
+    {
+      "length": 23,
+      "threshold_total_depth": 36,
+      "bad_mass": 0.066249082,
+      "bad_log2_mass": -3.9159557266,
+      "chernoff_log2_bound": -1.8243280938,
+      "bound_slack_bits": 2.0916276328
+    },
+    {
+      "length": 24,
+      "threshold_total_depth": 38,
+      "bad_mass": 0.0716533271,
+      "bad_log2_mass": -3.8028224937,
+      "chernoff_log2_bound": -1.9036467066,
+      "bound_slack_bits": 1.8991757871
+    },
+    {
+      "length": 25,
+      "threshold_total_depth": 39,
+      "bad_mass": 0.0540645107,
+      "bad_log2_mass": -4.2091743061,
+      "chernoff_log2_bound": -1.9829653194,
+      "bound_slack_bits": 2.2262089868
+    },
+    {
+      "length": 26,
+      "threshold_total_depth": 41,
+      "bad_mass": 0.058637603,
+      "bad_log2_mass": -4.0920300604,
+      "chernoff_log2_bound": -2.0622839321,
+      "bound_slack_bits": 2.0297461283
+    },
+    {
+      "length": 27,
+      "threshold_total_depth": 42,
+      "bad_mass": 0.0442147735,
+      "bad_log2_mass": -4.4993276915,
+      "chernoff_log2_bound": -2.1416025449,
+      "bound_slack_bits": 2.3577251466
+    },
+    {
+      "length": 28,
+      "threshold_total_depth": 44,
+      "bad_mass": 0.0480708772,
+      "bad_log2_mass": -4.3786930594,
+      "chernoff_log2_bound": -2.2209211577,
+      "bound_slack_bits": 2.1577719017
+    },
+    {
+      "length": 29,
+      "threshold_total_depth": 45,
+      "bad_mass": 0.0362271301,
+      "bad_log2_mass": -4.78678567,
+      "chernoff_log2_bound": -2.3002397705,
+      "bound_slack_bits": 2.4865458995
+    },
+    {
+      "length": 30,
+      "threshold_total_depth": 47,
+      "bad_mass": 0.0394703468,
+      "bad_log2_mass": -4.663086993,
+      "chernoff_log2_bound": -2.3795583832,
+      "bound_slack_bits": 2.2835286097
+    },
+    {
+      "length": 31,
+      "threshold_total_depth": 49,
+      "bad_mass": 0.0427165666,
+      "bad_log2_mass": -4.5490604973,
+      "chernoff_log2_bound": -2.458876996,
+      "bound_slack_bits": 2.0901835013
+    },
+    {
+      "length": 32,
+      "threshold_total_depth": 50,
+      "bad_mass": 0.0324543235,
+      "bad_log2_mass": -4.9454455042,
+      "chernoff_log2_bound": -2.5381956088,
+      "bound_slack_bits": 2.4072498954
+    },
+    {
+      "length": 33,
+      "threshold_total_depth": 52,
+      "bad_mass": 0.0351971105,
+      "bad_log2_mass": -4.8283991924,
+      "chernoff_log2_bound": -2.6175142216,
+      "bound_slack_bits": 2.2108849709
+    },
+    {
+      "length": 34,
+      "threshold_total_depth": 53,
+      "bad_mass": 0.0267194053,
+      "bad_log2_mass": -5.2259682937,
+      "chernoff_log2_bound": -2.6968328343,
+      "bound_slack_bits": 2.5291354593
+    },
+    {
+      "length": 35,
+      "threshold_total_depth": 55,
+      "bad_mass": 0.0290320734,
+      "bad_log2_mass": -5.1062085806,
+      "chernoff_log2_bound": -2.7761514471,
+      "bound_slack_bits": 2.3300571334
+    },
+    {
+      "length": 36,
+      "threshold_total_depth": 57,
+      "bad_mass": 0.0313683402,
+      "bad_log2_mass": -4.9945469972,
+      "chernoff_log2_bound": -2.8554700599,
+      "bound_slack_bits": 2.1390769373
+    },
+    {
+      "length": 37,
+      "threshold_total_depth": 58,
+      "bad_mass": 0.023970162,
+      "bad_log2_mass": -5.3826165283,
+      "chernoff_log2_bound": -2.9347886727,
+      "bound_slack_bits": 2.4478278556
+    },
+    {
+      "length": 38,
+      "threshold_total_depth": 60,
+      "bad_mass": 0.025946948,
+      "bad_log2_mass": -5.2682913396,
+      "chernoff_log2_bound": -3.0141072854,
+      "bound_slack_bits": 2.2541840542
+    },
+    {
+      "length": 39,
+      "threshold_total_depth": 61,
+      "bad_mass": 0.0198085074,
+      "bad_log2_mass": -5.657736011,
+      "chernoff_log2_bound": -3.0934258982,
+      "bound_slack_bits": 2.5643101128
+    },
+    {
+      "length": 40,
+      "threshold_total_depth": 63,
+      "bad_mass": 0.0214782728,
+      "bad_log2_mass": -5.5409782103,
+      "chernoff_log2_bound": -3.172744511,
+      "bound_slack_bits": 2.3682336993
+    },
+    {
+      "length": 41,
+      "threshold_total_depth": 64,
+      "bad_mass": 0.0163828795,
+      "bad_log2_mass": -5.9316672341,
+      "chernoff_log2_bound": -3.2520631238,
+      "bound_slack_bits": 2.6796041103
+    },
+    {
+      "length": 42,
+      "threshold_total_depth": 66,
+      "bad_mass": 0.0177913622,
+      "bad_log2_mass": -5.8126792125,
+      "chernoff_log2_bound": -3.3313817365,
+      "bound_slack_bits": 2.481297476
+    },
+    {
+      "length": 43,
+      "threshold_total_depth": 68,
+      "bad_mass": 0.0192300267,
+      "bad_log2_mass": -5.7004954259,
+      "chernoff_log2_bound": -3.4107003493,
+      "bound_slack_bits": 2.2897950766
+    },
+    {
+      "length": 44,
+      "threshold_total_depth": 69,
+      "bad_mass": 0.0147467468,
+      "bad_log2_mass": -6.0834594687,
+      "chernoff_log2_bound": -3.4900189621,
+      "bound_slack_bits": 2.5934405066
+    },
+    {
+      "length": 45,
+      "threshold_total_depth": 71,
+      "bad_mass": 0.015963581,
+      "bad_log2_mass": -5.9690718683,
+      "chernoff_log2_bound": -3.5693375749,
+      "bound_slack_bits": 2.3997342935
+    },
+    {
+      "length": 46,
+      "threshold_total_depth": 72,
+      "bad_mass": 0.0122304537,
+      "bad_log2_mass": -6.353378271,
+      "chernoff_log2_bound": -3.6486561876,
+      "bound_slack_bits": 2.7047220834
+    },
+    {
+      "length": 47,
+      "threshold_total_depth": 74,
+      "bad_mass": 0.0132584163,
+      "bad_log2_mass": -6.2369477347,
+      "chernoff_log2_bound": -3.7279748004,
+      "bound_slack_bits": 2.5089729343
+    },
+    {
+      "length": 48,
+      "threshold_total_depth": 76,
+      "bad_mass": 0.0143133278,
+      "bad_log2_mass": -6.1264970616,
+      "chernoff_log2_bound": -3.8072934132,
+      "bound_slack_bits": 2.3192036484
+    },
+    {
+      "length": 49,
+      "threshold_total_depth": 77,
+      "bad_mass": 0.0110167294,
+      "bad_log2_mass": -6.5041602058,
+      "chernoff_log2_bound": -3.886612026,
+      "bound_slack_bits": 2.6175481798
+    },
+    {
+      "length": 50,
+      "threshold_total_depth": 79,
+      "bad_mass": 0.0119098964,
+      "bad_log2_mass": -6.3916953225,
+      "chernoff_log2_bound": -3.9659306387,
+      "bound_slack_bits": 2.4257646838
+    },
+    {
+      "length": 51,
+      "threshold_total_depth": 80,
+      "bad_mass": 0.0091580488,
+      "bad_log2_mass": -6.7707440386,
+      "chernoff_log2_bound": -4.0452492515,
+      "bound_slack_bits": 2.725494787
+    },
+    {
+      "length": 52,
+      "threshold_total_depth": 82,
+      "bad_mass": 0.0099134579,
+      "bad_log2_mass": -6.6563959116,
+      "chernoff_log2_bound": -4.1245678643,
+      "bound_slack_bits": 2.5318280473
+    },
+    {
+      "length": 53,
+      "threshold_total_depth": 84,
+      "bad_mass": 0.010691595,
+      "bad_log2_mass": -6.5473790999,
+      "chernoff_log2_bound": -4.2038864771,
+      "bound_slack_bits": 2.3434926228
+    },
+    {
+      "length": 54,
+      "threshold_total_depth": 85,
+      "bad_mass": 0.008254411,
+      "bad_log2_mass": -6.920619008,
+      "chernoff_log2_bound": -4.2832050898,
+      "bound_slack_bits": 2.6374139182
+    },
+    {
+      "length": 55,
+      "threshold_total_depth": 87,
+      "bad_mass": 0.0089137765,
+      "bad_log2_mass": -6.8097475024,
+      "chernoff_log2_bound": -4.3625237026,
+      "bound_slack_bits": 2.4472237998
+    },
+    {
+      "length": 56,
+      "threshold_total_depth": 88,
+      "bad_mass": 0.0068751929,
+      "bad_log2_mass": -7.1843840988,
+      "chernoff_log2_bound": -4.4418423154,
+      "bound_slack_bits": 2.7425417834
+    },
+    {
+      "length": 57,
+      "threshold_total_depth": 90,
+      "bad_mass": 0.0074333765,
+      "bad_log2_mass": -7.0717666077,
+      "chernoff_log2_bound": -4.5211609282,
+      "bound_slack_bits": 2.5506056795
+    },
+    {
+      "length": 58,
+      "threshold_total_depth": 91,
+      "bad_mass": 0.0057281703,
+      "bad_log2_mass": -7.4477099073,
+      "chernoff_log2_bound": -4.6004795409,
+      "bound_slack_bits": 2.8472303664
+    },
+    {
+      "length": 59,
+      "threshold_total_depth": 93,
+      "bad_mass": 0.0062003014,
+      "bad_log2_mass": -7.3334459375,
+      "chernoff_log2_bound": -4.6797981537,
+      "bound_slack_bits": 2.6536477838
+    },
+    {
+      "length": 60,
+      "threshold_total_depth": 95,
+      "bad_mass": 0.0066893515,
+      "bad_log2_mass": -7.2239179265,
+      "chernoff_log2_bound": -4.7591167665,
+      "bound_slack_bits": 2.46480116
+    },
+    {
+      "length": 61,
+      "threshold_total_depth": 96,
+      "bad_mass": 0.0051729565,
+      "bad_log2_mass": -7.5947952133,
+      "chernoff_log2_bound": -4.8384353793,
+      "bound_slack_bits": 2.7563598341
+    },
+    {
+      "length": 62,
+      "threshold_total_depth": 98,
+      "bad_mass": 0.0055872721,
+      "bad_log2_mass": -7.4836402015,
+      "chernoff_log2_bound": -4.917753992,
+      "bound_slack_bits": 2.5658862095
+    },
+    {
+      "length": 63,
+      "threshold_total_depth": 99,
+      "bad_mass": 0.0043167935,
+      "bad_log2_mass": -7.8558242131,
+      "chernoff_log2_bound": -4.9970726048,
+      "bound_slack_bits": 2.8587516082
+    },
+    {
+      "length": 64,
+      "threshold_total_depth": 101,
+      "bad_mass": 0.0046675241,
+      "bad_log2_mass": -7.7431268253,
+      "chernoff_log2_bound": -5.0763912176,
+      "bound_slack_bits": 2.6667356077
+    },
+    {
+      "length": 65,
+      "threshold_total_depth": 103,
+      "bad_mass": 0.0050316666,
+      "bad_log2_mass": -7.6347479434,
+      "chernoff_log2_bound": -5.1557098304,
+      "bound_slack_bits": 2.479038113
+    },
+    {
+      "length": 66,
+      "threshold_total_depth": 104,
+      "bad_mass": 0.0038998081,
+      "bad_log2_mass": -8.0023811532,
+      "chernoff_log2_bound": -5.2350284431,
+      "bound_slack_bits": 2.7673527101
+    },
+    {
+      "length": 67,
+      "threshold_total_depth": 106,
+      "bad_mass": 0.0042084968,
+      "bad_log2_mass": -7.8924792694,
+      "chernoff_log2_bound": -5.3143470559,
+      "bound_slack_bits": 2.5781322134
+    },
+    {
+      "length": 68,
+      "threshold_total_depth": 107,
+      "bad_mass": 0.0032588823,
+      "bad_log2_mass": -8.2614070301,
+      "chernoff_log2_bound": -5.3936656687,
+      "bound_slack_bits": 2.8677413614
+    },
+    {
+      "length": 69,
+      "threshold_total_depth": 109,
+      "bad_mass": 0.0035203754,
+      "bad_log2_mass": -8.1500549966,
+      "chernoff_log2_bound": -5.4729842815,
+      "bound_slack_bits": 2.6770707151
+    },
+    {
+      "length": 70,
+      "threshold_total_depth": 110,
+      "bad_mass": 0.0027237148,
+      "bad_log2_mass": -8.5202086614,
+      "chernoff_log2_bound": -5.5523028942,
+      "bound_slack_bits": 2.9679057671
+    },
+    {
+      "length": 71,
+      "threshold_total_depth": 112,
+      "bad_mass": 0.0029450865,
+      "bad_log2_mass": -8.4074742815,
+      "chernoff_log2_bound": -5.631621507,
+      "bound_slack_bits": 2.7758527744
+    },
+    {
+      "length": 72,
+      "threshold_total_depth": 114,
+      "bad_mass": 0.003175812,
+      "bad_log2_mass": -8.2986587917,
+      "chernoff_log2_bound": -5.7109401198,
+      "bound_slack_bits": 2.5877186719
+    },
+    {
+      "length": 73,
+      "threshold_total_depth": 115,
+      "bad_mass": 0.0024640769,
+      "bad_log2_mass": -8.6647369884,
+      "chernoff_log2_bound": -5.7902587326,
+      "bound_slack_bits": 2.8744782558
+    },
+    {
+      "length": 74,
+      "threshold_total_depth": 117,
+      "bad_mass": 0.0026596397,
+      "bad_log2_mass": -8.5545534808,
+      "chernoff_log2_bound": -5.8695773453,
+      "bound_slack_bits": 2.6849761354
+    },
+    {
+      "length": 75,
+      "threshold_total_depth": 118,
+      "bad_mass": 0.0020618519,
+      "bad_log2_mass": -8.9218435594,
+      "chernoff_log2_bound": -5.9488959581,
+      "bound_slack_bits": 2.9729476013
+    },
+    {
+      "length": 76,
+      "threshold_total_depth": 120,
+      "bad_mass": 0.0022275116,
+      "bad_log2_mass": -8.8103513472,
+      "chernoff_log2_bound": -6.0282145709,
+      "bound_slack_bits": 2.7821367763
+    },
+    {
+      "length": 77,
+      "threshold_total_depth": 122,
+      "bad_mass": 0.002400437,
+      "bad_log2_mass": -8.702487194,
+      "chernoff_log2_bound": -6.1075331837,
+      "bound_slack_bits": 2.5949540103
+    },
+    {
+      "length": 78,
+      "threshold_total_depth": 123,
+      "bad_mass": 0.0018657229,
+      "bad_log2_mass": -9.0660495712,
+      "chernoff_log2_bound": -6.1868517964,
+      "bound_slack_bits": 2.8791977747
+    },
+    {
+      "length": 79,
+      "threshold_total_depth": 125,
+      "bad_mass": 0.0020123669,
+      "bad_log2_mass": -8.9568909249,
+      "chernoff_log2_bound": -6.2661704092,
+      "bound_slack_bits": 2.6907205157
+    },
+    {
+      "length": 80,
+      "threshold_total_depth": 126,
+      "bad_mass": 0.0015628055,
+      "bad_log2_mass": -9.3216460161,
+      "chernoff_log2_bound": -6.345489022,
+      "bound_slack_bits": 2.9761569941
+    },
+    {
+      "length": 81,
+      "threshold_total_depth": 128,
+      "bad_mass": 0.0016870925,
+      "bad_log2_mass": -9.2112452001,
+      "chernoff_log2_bound": -6.4248076348,
+      "bound_slack_bits": 2.7864375654
+    },
+    {
+      "length": 82,
+      "threshold_total_depth": 129,
+      "bad_mass": 0.0013091634,
+      "bad_log2_mass": -9.577139125,
+      "chernoff_log2_bound": -6.5041262475,
+      "bound_slack_bits": 3.0730128775
+    },
+    {
+      "length": 83,
+      "threshold_total_depth": 131,
+      "bad_mass": 0.0014144478,
+      "bad_log2_mass": -9.4655453931,
+      "chernoff_log2_bound": -6.5834448603,
+      "bound_slack_bits": 2.8821005328
+    },
+    {
+      "length": 84,
+      "threshold_total_depth": 133,
+      "bad_mass": 0.0015246637,
+      "bad_log2_mass": -9.3572932338,
+      "chernoff_log2_bound": -6.6627634731,
+      "bound_slack_bits": 2.6945297607
+    },
+    {
+      "length": 85,
+      "threshold_total_depth": 134,
+      "bad_mass": 0.0011859118,
+      "bad_log2_mass": -9.7197876011,
+      "chernoff_log2_bound": -6.7420820859,
+      "bound_slack_bits": 2.9777055153
+    },
+    {
+      "length": 86,
+      "threshold_total_depth": 136,
+      "bad_mass": 0.0012793674,
+      "bad_log2_mass": -9.6103536015,
+      "chernoff_log2_bound": -6.8214006986,
+      "bound_slack_bits": 2.7889529028
+    },
+    {
+      "length": 87,
+      "threshold_total_depth": 137,
+      "bad_mass": 0.0009943432,
+      "bad_log2_mass": -9.9739685495,
+      "chernoff_log2_bound": -6.9007193114,
+      "bound_slack_bits": 3.0732492381
+    },
+    {
+      "length": 88,
+      "threshold_total_depth": 139,
+      "bad_mass": 0.0010735487,
+      "bad_log2_mass": -9.8633966554,
+      "chernoff_log2_bound": -6.9800379242,
+      "bound_slack_bits": 2.8833587312
+    },
+    {
+      "length": 89,
+      "threshold_total_depth": 141,
+      "bad_mass": 0.0011565535,
+      "bad_log2_mass": -9.7559522436,
+      "chernoff_log2_bound": -7.059356537,
+      "bound_slack_bits": 2.6965957067
+    },
+    {
+      "length": 90,
+      "threshold_total_depth": 142,
+      "bad_mass": 0.0009008551,
+      "bad_log2_mass": -10.1164172925,
+      "chernoff_log2_bound": -7.1386751497,
+      "bound_slack_bits": 2.9777421427
+    },
+    {
+      "length": 91,
+      "threshold_total_depth": 144,
+      "bad_mass": 0.000971266,
+      "bad_log2_mass": -10.007845942,
+      "chernoff_log2_bound": -7.2179937625,
+      "bound_slack_bits": 2.7898521795
+    },
+    {
+      "length": 92,
+      "threshold_total_depth": 145,
+      "bad_mass": 0.0007559555,
+      "bad_log2_mass": -10.3694110498,
+      "chernoff_log2_bound": -7.2973123753,
+      "bound_slack_bits": 3.0720986745
+    },
+    {
+      "length": 93,
+      "threshold_total_depth": 147,
+      "bad_mass": 0.0008156556,
+      "bad_log2_mass": -10.2597522114,
+      "chernoff_log2_bound": -7.3766309881,
+      "bound_slack_bits": 2.8831212234
+    },
+    {
+      "length": 94,
+      "threshold_total_depth": 148,
+      "bad_mass": 0.0006343761,
+      "bad_log2_mass": -10.6223740292,
+      "chernoff_log2_bound": -7.4559496008,
+      "bound_slack_bits": 3.1664244284
+    },
+    {
+      "length": 95,
+      "threshold_total_depth": 150,
+      "bad_mass": 0.0006849731,
+      "bad_log2_mass": -10.5116651474,
+      "chernoff_log2_bound": -7.5352682136,
+      "bound_slack_bits": 2.9763969338
+    },
+    {
+      "length": 96,
+      "threshold_total_depth": 152,
+      "bad_mass": 0.0007381142,
+      "bad_log2_mass": -10.4038684314,
+      "chernoff_log2_bound": -7.6145868264,
+      "bound_slack_bits": 2.7892816051
+    },
+    {
+      "length": 97,
+      "threshold_total_depth": 153,
+      "bad_mass": 0.0005752276,
+      "bad_log2_mass": -10.7635794761,
+      "chernoff_log2_bound": -7.6939054392,
+      "bound_slack_bits": 3.069674037
+    },
+    {
+      "length": 98,
+      "threshold_total_depth": 155,
+      "bad_mass": 0.000620302,
+      "bad_log2_mass": -10.6547415733,
+      "chernoff_log2_bound": -7.7732240519,
+      "bound_slack_bits": 2.8815175214
+    },
+    {
+      "length": 99,
+      "threshold_total_depth": 156,
+      "bad_mass": 0.0004830665,
+      "bad_log2_mass": -11.0154904864,
+      "chernoff_log2_bound": -7.8525426647,
+      "bound_slack_bits": 3.1629478217
+    },
+    {
+      "length": 100,
+      "threshold_total_depth": 158,
+      "bad_mass": 0.0005212831,
+      "bad_log2_mass": -10.9056452974,
+      "chernoff_log2_bound": -7.9318612775,
+      "bound_slack_bits": 2.9737840199
+    },
+    {
+      "length": 101,
+      "threshold_total_depth": 160,
+      "bad_mass": 0.0005614526,
+      "bad_log2_mass": -10.7985481545,
+      "chernoff_log2_bound": -8.0111798903,
+      "bound_slack_bits": 2.7873682643
+    },
+    {
+      "length": 102,
+      "threshold_total_depth": 161,
+      "bad_mass": 0.0004380631,
+      "bad_log2_mass": -11.1565737906,
+      "chernoff_log2_bound": -8.090498503,
+      "bound_slack_bits": 3.0660752876
+    },
+    {
+      "length": 103,
+      "threshold_total_depth": 163,
+      "bad_mass": 0.0004721464,
+      "bad_log2_mass": -11.0484781055,
+      "chernoff_log2_bound": -8.1698171158,
+      "bound_slack_bits": 2.8786609897
+    },
+    {
+      "length": 104,
+      "threshold_total_depth": 164,
+      "bad_mass": 0.0003681237,
+      "bad_log2_mass": -11.4075217877,
+      "chernoff_log2_bound": -8.2491357286,
+      "bound_slack_bits": 3.1583860591
+    },
+    {
+      "length": 105,
+      "threshold_total_depth": 166,
+      "bad_mass": 0.0003970316,
+      "bad_log2_mass": -11.2984583964,
+      "chernoff_log2_bound": -8.3284543414,
+      "bound_slack_bits": 2.970004055
+    },
+    {
+      "length": 106,
+      "threshold_total_depth": 168,
+      "bad_mass": 0.0004274383,
+      "bad_log2_mass": -11.1919962783,
+      "chernoff_log2_bound": -8.4077729541,
+      "bound_slack_bits": 2.7842233241
+    },
+    {
+      "length": 107,
+      "threshold_total_depth": 169,
+      "bad_mass": 0.0003338568,
+      "bad_log2_mass": -11.5484828716,
+      "chernoff_log2_bound": -8.4870915669,
+      "bound_slack_bits": 3.0613913047
+    },
+    {
+      "length": 108,
+      "threshold_total_depth": 171,
+      "bad_mass": 0.0003596643,
+      "bad_log2_mass": -11.4410615932,
+      "chernoff_log2_bound": -8.5664101797,
+      "bound_slack_bits": 2.8746514135
+    },
+    {
+      "length": 109,
+      "threshold_total_depth": 172,
+      "bad_mass": 0.0002807267,
+      "bad_log2_mass": -11.7985459015,
+      "chernoff_log2_bound": -8.6457287925,
+      "bound_slack_bits": 3.152817109
+    },
+    {
+      "length": 110,
+      "threshold_total_depth": 174,
+      "bad_mass": 0.0003026224,
+      "bad_log2_mass": -11.690193631,
+      "chernoff_log2_bound": -8.7250474052,
+      "bound_slack_bits": 2.9651462257
+    },
+    {
+      "length": 111,
+      "threshold_total_depth": 175,
+      "bad_mass": 0.0002360463,
+      "bad_log2_mass": -12.0486423338,
+      "chernoff_log2_bound": -8.804366018,
+      "bound_slack_bits": 3.2442763157
+    },
+    {
+      "length": 112,
+      "threshold_total_depth": 177,
+      "bad_mass": 0.0002546166,
+      "bad_log2_mass": -11.9393860372,
+      "chernoff_log2_bound": -8.8836846308,
+      "bound_slack_bits": 3.0557014064
+    },
+    {
+      "length": 113,
+      "threshold_total_depth": 179,
+      "bad_mass": 0.0002741817,
+      "bad_log2_mass": -11.8325803228,
+      "chernoff_log2_bound": -8.9630032436,
+      "bound_slack_bits": 2.8695770792
+    },
+    {
+      "length": 114,
+      "threshold_total_depth": 180,
+      "bad_mass": 0.000214218,
+      "bad_log2_mass": -12.1886329575,
+      "chernoff_log2_bound": -9.0423218563,
+      "bound_slack_bits": 3.1463111011
+    },
+    {
+      "length": 115,
+      "threshold_total_depth": 182,
+      "bad_mass": 0.0002308222,
+      "bad_log2_mass": -12.080930378,
+      "chernoff_log2_bound": -9.1216404691,
+      "bound_slack_bits": 2.9592899089
+    },
+    {
+      "length": 116,
+      "threshold_total_depth": 183,
+      "bad_mass": 0.000180223,
+      "bad_log2_mass": -12.4379289938,
+      "chernoff_log2_bound": -9.2009590819,
+      "bound_slack_bits": 3.2369699119
+    },
+    {
+      "length": 117,
+      "threshold_total_depth": 185,
+      "bad_mass": 0.0001943097,
+      "bad_log2_mass": -12.3293543306,
+      "chernoff_log2_bound": -9.2802776947,
+      "bound_slack_bits": 3.0490766359
+    },
+    {
+      "length": 118,
+      "threshold_total_depth": 187,
+      "bad_mass": 0.0002091589,
+      "bad_log2_mass": -12.2231127816,
+      "chernoff_log2_bound": -9.3595963074,
+      "bound_slack_bits": 2.8635164742
+    },
+    {
+      "length": 119,
+      "threshold_total_depth": 188,
+      "bad_mass": 0.0001635652,
+      "bad_log2_mass": -12.5778462045,
+      "chernoff_log2_bound": -9.4389149202,
+      "bound_slack_bits": 3.1389312843
+    },
+    {
+      "length": 120,
+      "threshold_total_depth": 190,
+      "bad_mass": 0.0001761706,
+      "bad_log2_mass": -12.4707395789,
+      "chernoff_log2_bound": -9.518233533,
+      "bound_slack_bits": 2.9525060459
+    }
+  ],
+  "survival_by_barrier": {
+    "0.0": [
+      {
+        "length": 1,
+        "barrier": 0.0,
+        "states": 1,
+        "max_allowed_total_depth": 1,
+        "survival_mass": 0.5,
+        "survival_log2_mass": -1.0
+      },
+      {
+        "length": 2,
+        "barrier": 0.0,
+        "states": 2,
+        "max_allowed_total_depth": 3,
+        "survival_mass": 0.375,
+        "survival_log2_mass": -1.4150374993
+      },
+      {
+        "length": 3,
+        "barrier": 0.0,
+        "states": 2,
+        "max_allowed_total_depth": 4,
+        "survival_mass": 0.25,
+        "survival_log2_mass": -2.0
+      },
+      {
+        "length": 4,
+        "barrier": 0.0,
+        "states": 3,
+        "max_allowed_total_depth": 6,
+        "survival_mass": 0.203125,
+        "survival_log2_mass": -2.2995602819
+      },
+      {
+        "length": 5,
+        "barrier": 0.0,
+        "states": 3,
+        "max_allowed_total_depth": 7,
+        "survival_mass": 0.1484375,
+        "survival_log2_mass": -2.7520724866
+      },
+      {
+        "length": 6,
+        "barrier": 0.0,
+        "states": 4,
+        "max_allowed_total_depth": 9,
+        "survival_mass": 0.125,
+        "survival_log2_mass": -3.0
+      },
+      {
+        "length": 7,
+        "barrier": 0.0,
+        "states": 5,
+        "max_allowed_total_depth": 11,
+        "survival_mass": 0.1103515625,
+        "survival_log2_mass": -3.1798210376
+      },
+      {
+        "length": 8,
+        "barrier": 0.0,
+        "states": 5,
+        "max_allowed_total_depth": 12,
+        "survival_mass": 0.0895996094,
+        "survival_log2_mass": -3.4803637472
+      },
+      {
+        "length": 9,
+        "barrier": 0.0,
+        "states": 6,
+        "max_allowed_total_depth": 14,
+        "survival_mass": 0.0790405273,
+        "survival_log2_mass": -3.6612636174
+      },
+      {
+        "length": 10,
+        "barrier": 0.0,
+        "states": 6,
+        "max_allowed_total_depth": 15,
+        "survival_mass": 0.0645141602,
+        "survival_log2_mass": -3.9542403386
+      },
+      {
+        "length": 11,
+        "barrier": 0.0,
+        "states": 7,
+        "max_allowed_total_depth": 17,
+        "survival_mass": 0.057182312,
+        "survival_log2_mass": -4.1282872372
+      },
+      {
+        "length": 12,
+        "barrier": 0.0,
+        "states": 8,
+        "max_allowed_total_depth": 19,
+        "survival_mass": 0.0521240234,
+        "survival_log2_mass": -4.2619077404
+      },
+      {
+        "length": 13,
+        "barrier": 0.0,
+        "states": 8,
+        "max_allowed_total_depth": 20,
+        "survival_mass": 0.0444517136,
+        "survival_log2_mass": -4.4916171554
+      },
+      {
+        "length": 14,
+        "barrier": 0.0,
+        "states": 9,
+        "max_allowed_total_depth": 22,
+        "survival_mass": 0.0402467251,
+        "survival_log2_mass": -4.6349847954
+      },
+      {
+        "length": 15,
+        "barrier": 0.0,
+        "states": 9,
+        "max_allowed_total_depth": 23,
+        "survival_mass": 0.0341631174,
+        "survival_log2_mass": -4.8714165619
+      },
+      {
+        "length": 16,
+        "barrier": 0.0,
+        "states": 10,
+        "max_allowed_total_depth": 25,
+        "survival_mass": 0.0309161544,
+        "survival_log2_mass": -5.0154953141
+      },
+      {
+        "length": 17,
+        "barrier": 0.0,
+        "states": 10,
+        "max_allowed_total_depth": 26,
+        "survival_mass": 0.0262602121,
+        "survival_log2_mass": -5.250977623
+      },
+      {
+        "length": 18,
+        "barrier": 0.0,
+        "states": 11,
+        "max_allowed_total_depth": 28,
+        "survival_mass": 0.0237883516,
+        "survival_log2_mass": -5.3936008873
+      },
+      {
+        "length": 19,
+        "barrier": 0.0,
+        "states": 12,
+        "max_allowed_total_depth": 30,
+        "survival_mass": 0.022018401,
+        "survival_log2_mass": -5.5051464903
+      },
+      {
+        "length": 20,
+        "barrier": 0.0,
+        "states": 12,
+        "max_allowed_total_depth": 31,
+        "survival_mass": 0.0192539222,
+        "survival_log2_mass": -5.6987038268
+      },
+      {
+        "length": 21,
+        "barrier": 0.0,
+        "states": 13,
+        "max_allowed_total_depth": 33,
+        "survival_mass": 0.0176855405,
+        "survival_log2_mass": -5.82128588
+      },
+      {
+        "length": 22,
+        "barrier": 0.0,
+        "states": 13,
+        "max_allowed_total_depth": 34,
+        "survival_mass": 0.0153575894,
+        "survival_log2_mass": -6.0249044075
+      },
+      {
+        "length": 23,
+        "barrier": 0.0,
+        "states": 14,
+        "max_allowed_total_depth": 36,
+        "survival_mass": 0.0140772112,
+        "survival_log2_mass": -6.150494631
+      },
+      {
+        "length": 24,
+        "barrier": 0.0,
+        "states": 15,
+        "max_allowed_total_depth": 38,
+        "survival_mass": 0.0131386909,
+        "survival_log2_mass": -6.2500346498
+      },
+      {
+        "length": 25,
+        "barrier": 0.0,
+        "states": 15,
+        "max_allowed_total_depth": 39,
+        "survival_mass": 0.011646689,
+        "survival_log2_mass": -6.4239363136
+      },
+      {
+        "length": 26,
+        "barrier": 0.0,
+        "states": 16,
+        "max_allowed_total_depth": 41,
+        "survival_mass": 0.0107829079,
+        "survival_log2_mass": -6.5351098925
+      },
+      {
+        "length": 27,
+        "barrier": 0.0,
+        "states": 16,
+        "max_allowed_total_depth": 42,
+        "survival_mass": 0.0094816414,
+        "survival_log2_mass": -6.7206474478
+      },
+      {
+        "length": 28,
+        "barrier": 0.0,
+        "states": 17,
+        "max_allowed_total_depth": 44,
+        "survival_mass": 0.0087535069,
+        "survival_log2_mass": -6.8359231607
+      },
+      {
+        "length": 29,
+        "barrier": 0.0,
+        "states": 17,
+        "max_allowed_total_depth": 45,
+        "survival_mass": 0.0076724347,
+        "survival_log2_mass": -7.0260998244
+      },
+      {
+        "length": 30,
+        "barrier": 0.0,
+        "states": 18,
+        "max_allowed_total_depth": 47,
+        "survival_mass": 0.0070745712,
+        "survival_log2_mass": -7.1431415765
+      },
+      {
+        "length": 31,
+        "barrier": 0.0,
+        "states": 19,
+        "max_allowed_total_depth": 49,
+        "survival_mass": 0.0066333782,
+        "survival_log2_mass": -7.2360405091
+      },
+      {
+        "length": 32,
+        "barrier": 0.0,
+        "states": 19,
+        "max_allowed_total_depth": 50,
+        "survival_mass": 0.0059273481,
+        "survival_log2_mass": -7.3983974879
+      },
+      {
+        "length": 33,
+        "barrier": 0.0,
+        "states": 20,
+        "max_allowed_total_depth": 52,
+        "survival_mass": 0.0055149864,
+        "survival_log2_mass": -7.5024269645
+      },
+      {
+        "length": 34,
+        "barrier": 0.0,
+        "states": 20,
+        "max_allowed_total_depth": 53,
+        "survival_mass": 0.0048892041,
+        "survival_log2_mass": -7.6761846625
+      },
+      {
+        "length": 35,
+        "barrier": 0.0,
+        "states": 21,
+        "max_allowed_total_depth": 55,
+        "survival_mass": 0.0045357951,
+        "survival_log2_mass": -7.7844288189
+      },
+      {
+        "length": 36,
+        "barrier": 0.0,
+        "states": 22,
+        "max_allowed_total_depth": 57,
+        "survival_mass": 0.0042715057,
+        "survival_log2_mass": -7.8710395688
+      },
+      {
+        "length": 37,
+        "barrier": 0.0,
+        "states": 22,
+        "max_allowed_total_depth": 58,
+        "survival_mass": 0.0038443813,
+        "survival_log2_mass": -8.0230328441
+      },
+      {
+        "length": 38,
+        "barrier": 0.0,
+        "states": 23,
+        "max_allowed_total_depth": 60,
+        "survival_mass": 0.0035921193,
+        "survival_log2_mass": -8.1209490322
+      },
+      {
+        "length": 39,
+        "barrier": 0.0,
+        "states": 23,
+        "max_allowed_total_depth": 61,
+        "survival_mass": 0.0032061653,
+        "survival_log2_mass": -8.2849354865
+      },
+      {
+        "length": 40,
+        "barrier": 0.0,
+        "states": 24,
+        "max_allowed_total_depth": 63,
+        "survival_mass": 0.0029861308,
+        "survival_log2_mass": -8.3875069401
+      },
+      {
+        "length": 41,
+        "barrier": 0.0,
+        "states": 24,
+        "max_allowed_total_depth": 64,
+        "survival_mass": 0.0026547231,
+        "survival_log2_mass": -8.5572229074
+      },
+      {
+        "length": 42,
+        "barrier": 0.0,
+        "states": 25,
+        "max_allowed_total_depth": 66,
+        "survival_mass": 0.0024682486,
+        "survival_log2_mass": -8.6622965911
+      },
+      {
+        "length": 43,
+        "barrier": 0.0,
+        "states": 26,
+        "max_allowed_total_depth": 68,
+        "survival_mass": 0.0023288056,
+        "survival_log2_mass": -8.7461940527
+      },
+      {
+        "length": 44,
+        "barrier": 0.0,
+        "states": 26,
+        "max_allowed_total_depth": 69,
+        "survival_mass": 0.0021031888,
+        "survival_log2_mass": -8.893205918
+      },
+      {
+        "length": 45,
+        "barrier": 0.0,
+        "states": 27,
+        "max_allowed_total_depth": 71,
+        "survival_mass": 0.0019696302,
+        "survival_log2_mass": -8.9878594676
+      },
+      {
+        "length": 46,
+        "barrier": 0.0,
+        "states": 27,
+        "max_allowed_total_depth": 72,
+        "survival_mass": 0.0017647957,
+        "survival_log2_mass": -9.1462831097
+      },
+      {
+        "length": 47,
+        "barrier": 0.0,
+        "states": 28,
+        "max_allowed_total_depth": 74,
+        "survival_mass": 0.0016476199,
+        "survival_log2_mass": -9.2454008665
+      },
+      {
+        "length": 48,
+        "barrier": 0.0,
+        "states": 29,
+        "max_allowed_total_depth": 76,
+        "survival_mass": 0.0015591139,
+        "survival_log2_mass": -9.3250579991
+      },
+      {
+        "length": 49,
+        "barrier": 0.0,
+        "states": 29,
+        "max_allowed_total_depth": 77,
+        "survival_mass": 0.0014148727,
+        "survival_log2_mass": -9.4651120648
+      },
+      {
+        "length": 50,
+        "barrier": 0.0,
+        "states": 30,
+        "max_allowed_total_depth": 79,
+        "survival_mass": 0.0013287993,
+        "survival_log2_mass": -9.5556610259
+      },
+      {
+        "length": 51,
+        "barrier": 0.0,
+        "states": 30,
+        "max_allowed_total_depth": 80,
+        "survival_mass": 0.0011960289,
+        "survival_log2_mass": -9.7075320683
+      },
+      {
+        "length": 52,
+        "barrier": 0.0,
+        "states": 31,
+        "max_allowed_total_depth": 82,
+        "survival_mass": 0.0011195751,
+        "survival_log2_mass": -9.8028330102
+      },
+      {
+        "length": 53,
+        "barrier": 0.0,
+        "states": 32,
+        "max_allowed_total_depth": 84,
+        "survival_mass": 0.0010615469,
+        "survival_log2_mass": -9.8796161914
+      },
+      {
+        "length": 54,
+        "barrier": 0.0,
+        "states": 32,
+        "max_allowed_total_depth": 85,
+        "survival_mass": 0.0009666041,
+        "survival_log2_mass": -10.0147872828
+      },
+      {
+        "length": 55,
+        "barrier": 0.0,
+        "states": 33,
+        "max_allowed_total_depth": 87,
+        "survival_mass": 0.0009096818,
+        "survival_log2_mass": -10.1023503967
+      },
+      {
+        "length": 56,
+        "barrier": 0.0,
+        "states": 33,
+        "max_allowed_total_depth": 88,
+        "survival_mass": 0.0008215585,
+        "survival_log2_mass": -10.2493491052
+      },
+      {
+        "length": 57,
+        "barrier": 0.0,
+        "states": 34,
+        "max_allowed_total_depth": 90,
+        "survival_mass": 0.0007705928,
+        "survival_log2_mass": -10.3417436784
+      },
+      {
+        "length": 58,
+        "barrier": 0.0,
+        "states": 34,
+        "max_allowed_total_depth": 91,
+        "survival_mass": 0.000692968,
+        "survival_log2_mass": -10.4949237247
+      },
+      {
+        "length": 59,
+        "barrier": 0.0,
+        "states": 35,
+        "max_allowed_total_depth": 93,
+        "survival_mass": 0.0006486933,
+        "survival_log2_mass": -10.5901757852
+      },
+      {
+        "length": 60,
+        "barrier": 0.0,
+        "states": 36,
+        "max_allowed_total_depth": 95,
+        "survival_mass": 0.0006152346,
+        "survival_log2_mass": -10.6665758199
+      },
+      {
+        "length": 61,
+        "barrier": 0.0,
+        "states": 36,
+        "max_allowed_total_depth": 96,
+        "survival_mass": 0.0005606161,
+        "survival_log2_mass": -10.8006992741
+      },
+      {
+        "length": 62,
+        "barrier": 0.0,
+        "states": 37,
+        "max_allowed_total_depth": 98,
+        "survival_mass": 0.0005279277,
+        "survival_log2_mass": -10.8873720723
+      },
+      {
+        "length": 63,
+        "barrier": 0.0,
+        "states": 37,
+        "max_allowed_total_depth": 99,
+        "survival_mass": 0.0004773566,
+        "survival_log2_mass": -11.0326450722
+      },
+      {
+        "length": 64,
+        "barrier": 0.0,
+        "states": 38,
+        "max_allowed_total_depth": 101,
+        "survival_mass": 0.000448117,
+        "survival_log2_mass": -11.1238369122
+      },
+      {
+        "length": 65,
+        "barrier": 0.0,
+        "states": 39,
+        "max_allowed_total_depth": 103,
+        "survival_mass": 0.0004258456,
+        "survival_log2_mass": -11.197381788
+      },
+      {
+        "length": 66,
+        "barrier": 0.0,
+        "states": 39,
+        "max_allowed_total_depth": 104,
+        "survival_mass": 0.0003892897,
+        "survival_log2_mass": -11.326868364
+      },
+      {
+        "length": 67,
+        "barrier": 0.0,
+        "states": 40,
+        "max_allowed_total_depth": 106,
+        "survival_mass": 0.0003672819,
+        "survival_log2_mass": -11.4108245893
+      },
+      {
+        "length": 68,
+        "barrier": 0.0,
+        "states": 40,
+        "max_allowed_total_depth": 107,
+        "survival_mass": 0.0003330933,
+        "survival_log2_mass": -11.5517860592
+      },
+      {
+        "length": 69,
+        "barrier": 0.0,
+        "states": 41,
+        "max_allowed_total_depth": 109,
+        "survival_mass": 0.0003132339,
+        "survival_log2_mass": -11.6404718039
+      },
+      {
+        "length": 70,
+        "barrier": 0.0,
+        "states": 41,
+        "max_allowed_total_depth": 110,
+        "survival_mass": 0.0002828791,
+        "survival_log2_mass": -11.7875270307
+      },
+      {
+        "length": 71,
+        "barrier": 0.0,
+        "states": 42,
+        "max_allowed_total_depth": 112,
+        "survival_mass": 0.0002654885,
+        "survival_log2_mass": -11.8790631379
+      },
+      {
+        "length": 72,
+        "barrier": 0.0,
+        "states": 43,
+        "max_allowed_total_depth": 114,
+        "survival_mass": 0.0002522993,
+        "survival_log2_mass": -11.9525761911
+      },
+      {
+        "length": 73,
+        "barrier": 0.0,
+        "states": 43,
+        "max_allowed_total_depth": 115,
+        "survival_mass": 0.0002307026,
+        "survival_log2_mass": -12.0816778917
+      },
+      {
+        "length": 74,
+        "barrier": 0.0,
+        "states": 44,
+        "max_allowed_total_depth": 117,
+        "survival_mass": 0.0002177271,
+        "survival_log2_mass": -12.1651912435
+      },
+      {
+        "length": 75,
+        "barrier": 0.0,
+        "states": 44,
+        "max_allowed_total_depth": 118,
+        "survival_mass": 0.0001975898,
+        "survival_log2_mass": -12.3052040911
+      },
+      {
+        "length": 76,
+        "barrier": 0.0,
+        "states": 45,
+        "max_allowed_total_depth": 120,
+        "survival_mass": 0.0001859008,
+        "survival_log2_mass": -12.3931796788
+      },
+      {
+        "length": 77,
+        "barrier": 0.0,
+        "states": 46,
+        "max_allowed_total_depth": 122,
+        "survival_mass": 0.0001769693,
+        "survival_log2_mass": -12.4642130467
+      },
+      {
+        "length": 78,
+        "barrier": 0.0,
+        "states": 46,
+        "max_allowed_total_depth": 123,
+        "survival_mass": 0.0001622694,
+        "survival_log2_mass": -12.589321328
+      },
+      {
+        "length": 79,
+        "barrier": 0.0,
+        "states": 47,
+        "max_allowed_total_depth": 125,
+        "survival_mass": 0.0001533893,
+        "survival_log2_mass": -12.670514096
+      },
+      {
+        "length": 80,
+        "barrier": 0.0,
+        "states": 47,
+        "max_allowed_total_depth": 126,
+        "survival_mass": 0.000139556,
+        "survival_log2_mass": -12.8068682525
+      },
+      {
+        "length": 81,
+        "barrier": 0.0,
+        "states": 48,
+        "max_allowed_total_depth": 128,
+        "survival_mass": 0.0001314927,
+        "survival_log2_mass": -12.892729805
+      },
+      {
+        "length": 82,
+        "barrier": 0.0,
+        "states": 48,
+        "max_allowed_total_depth": 129,
+        "survival_mass": 0.0001191337,
+        "survival_log2_mass": -13.0351302127
+      },
+      {
+        "length": 83,
+        "barrier": 0.0,
+        "states": 49,
+        "max_allowed_total_depth": 131,
+        "survival_mass": 0.0001120288,
+        "survival_log2_mass": -13.1238427679
+      },
+      {
+        "length": 84,
+        "barrier": 0.0,
+        "states": 50,
+        "max_allowed_total_depth": 133,
+        "survival_mass": 0.0001066255,
+        "survival_log2_mass": -13.1951593296
+      },
+      {
+        "length": 85,
+        "barrier": 0.0,
+        "states": 50,
+        "max_allowed_total_depth": 134,
+        "survival_mass": 9.77571e-05,
+        "survival_log2_mass": -13.3204396456
+      },
+      {
+        "length": 86,
+        "barrier": 0.0,
+        "states": 51,
+        "max_allowed_total_depth": 136,
+        "survival_mass": 9.2413e-05,
+        "survival_log2_mass": -13.4015449414
+      },
+      {
+        "length": 87,
+        "barrier": 0.0,
+        "states": 51,
+        "max_allowed_total_depth": 137,
+        "survival_mass": 8.40993e-05,
+        "survival_log2_mass": -13.5375464394
+      },
+      {
+        "length": 88,
+        "barrier": 0.0,
+        "states": 52,
+        "max_allowed_total_depth": 139,
+        "survival_mass": 7.92591e-05,
+        "survival_log2_mass": -13.6230642296
+      },
+      {
+        "length": 89,
+        "barrier": 0.0,
+        "states": 53,
+        "max_allowed_total_depth": 141,
+        "survival_mass": 7.55519e-05,
+        "survival_log2_mass": -13.6921733826
+      },
+      {
+        "length": 90,
+        "barrier": 0.0,
+        "states": 53,
+        "max_allowed_total_depth": 142,
+        "survival_mass": 6.94376e-05,
+        "survival_log2_mass": -13.8139230781
+      },
+      {
+        "length": 91,
+        "barrier": 0.0,
+        "states": 54,
+        "max_allowed_total_depth": 144,
+        "survival_mass": 6.57345e-05,
+        "survival_log2_mass": -13.8929906391
+      },
+      {
+        "length": 92,
+        "barrier": 0.0,
+        "states": 54,
+        "max_allowed_total_depth": 145,
+        "survival_mass": 5.99535e-05,
+        "survival_log2_mass": -14.0257971275
+      },
+      {
+        "length": 93,
+        "barrier": 0.0,
+        "states": 55,
+        "max_allowed_total_depth": 147,
+        "survival_mass": 5.65749e-05,
+        "survival_log2_mass": -14.1094782349
+      },
+      {
+        "length": 94,
+        "barrier": 0.0,
+        "states": 55,
+        "max_allowed_total_depth": 148,
+        "survival_mass": 5.13855e-05,
+        "survival_log2_mass": -14.2482799949
+      },
+      {
+        "length": 95,
+        "barrier": 0.0,
+        "states": 56,
+        "max_allowed_total_depth": 150,
+        "survival_mass": 4.83943e-05,
+        "survival_log2_mass": -14.3348036001
+      },
+      {
+        "length": 96,
+        "barrier": 0.0,
+        "states": 57,
+        "max_allowed_total_depth": 152,
+        "survival_mass": 4.61147e-05,
+        "survival_log2_mass": -14.4044123589
+      },
+      {
+        "length": 97,
+        "barrier": 0.0,
+        "states": 57,
+        "max_allowed_total_depth": 153,
+        "survival_mass": 4.23665e-05,
+        "survival_log2_mass": -14.5267168463
+      },
+      {
+        "length": 98,
+        "barrier": 0.0,
+        "states": 58,
+        "max_allowed_total_depth": 155,
+        "survival_mass": 4.01027e-05,
+        "survival_log2_mass": -14.6059417483
+      },
+      {
+        "length": 99,
+        "barrier": 0.0,
+        "states": 58,
+        "max_allowed_total_depth": 156,
+        "survival_mass": 3.65744e-05,
+        "survival_log2_mass": -14.7388062201
+      },
+      {
+        "length": 100,
+        "barrier": 0.0,
+        "states": 59,
+        "max_allowed_total_depth": 158,
+        "survival_mass": 3.45155e-05,
+        "survival_log2_mass": -14.8223966272
+      },
+      {
+        "length": 101,
+        "barrier": 0.0,
+        "states": 60,
+        "max_allowed_total_depth": 160,
+        "survival_mass": 3.29356e-05,
+        "survival_log2_mass": -14.8899926091
+      },
+      {
+        "length": 102,
+        "barrier": 0.0,
+        "states": 60,
+        "max_allowed_total_depth": 161,
+        "survival_mass": 3.03258e-05,
+        "survival_log2_mass": -15.0090970582
+      },
+      {
+        "length": 103,
+        "barrier": 0.0,
+        "states": 61,
+        "max_allowed_total_depth": 163,
+        "survival_mass": 2.87419e-05,
+        "survival_log2_mass": -15.0864863818
+      },
+      {
+        "length": 104,
+        "barrier": 0.0,
+        "states": 61,
+        "max_allowed_total_depth": 164,
+        "survival_mass": 2.62652e-05,
+        "survival_log2_mass": -15.2164872456
+      },
+      {
+        "length": 105,
+        "barrier": 0.0,
+        "states": 62,
+        "max_allowed_total_depth": 166,
+        "survival_mass": 2.48148e-05,
+        "survival_log2_mass": -15.2984394819
+      },
+      {
+        "length": 106,
+        "barrier": 0.0,
+        "states": 63,
+        "max_allowed_total_depth": 168,
+        "survival_mass": 2.36991e-05,
+        "survival_log2_mass": -15.3648109869
+      },
+      {
+        "length": 107,
+        "barrier": 0.0,
+        "states": 63,
+        "max_allowed_total_depth": 169,
+        "survival_mass": 2.18523e-05,
+        "survival_log2_mass": -15.4818554897
+      },
+      {
+        "length": 108,
+        "barrier": 0.0,
+        "states": 64,
+        "max_allowed_total_depth": 171,
+        "survival_mass": 2.0729e-05,
+        "survival_log2_mass": -15.5579923689
+      },
+      {
+        "length": 109,
+        "barrier": 0.0,
+        "states": 64,
+        "max_allowed_total_depth": 172,
+        "survival_mass": 1.89694e-05,
+        "survival_log2_mass": -15.6859646341
+      },
+      {
+        "length": 110,
+        "barrier": 0.0,
+        "states": 65,
+        "max_allowed_total_depth": 174,
+        "survival_mass": 1.79369e-05,
+        "survival_log2_mass": -15.7667096997
+      },
+      {
+        "length": 111,
+        "barrier": 0.0,
+        "states": 65,
+        "max_allowed_total_depth": 175,
+        "survival_mass": 1.63459e-05,
+        "survival_log2_mass": -15.900709953
+      },
+      {
+        "length": 112,
+        "barrier": 0.0,
+        "states": 66,
+        "max_allowed_total_depth": 177,
+        "survival_mass": 1.54253e-05,
+        "survival_log2_mass": -15.984338868
+      },
+      {
+        "length": 113,
+        "barrier": 0.0,
+        "states": 67,
+        "max_allowed_total_depth": 179,
+        "survival_mass": 1.47216e-05,
+        "survival_log2_mass": -16.0517017383
+      },
+      {
+        "length": 114,
+        "barrier": 0.0,
+        "states": 67,
+        "max_allowed_total_depth": 180,
+        "survival_mass": 1.35616e-05,
+        "survival_log2_mass": -16.1701131505
+      },
+      {
+        "length": 115,
+        "barrier": 0.0,
+        "states": 68,
+        "max_allowed_total_depth": 182,
+        "survival_mass": 1.28587e-05,
+        "survival_log2_mass": -16.2468904772
+      },
+      {
+        "length": 116,
+        "barrier": 0.0,
+        "states": 68,
+        "max_allowed_total_depth": 183,
+        "survival_mass": 1.17605e-05,
+        "survival_log2_mass": -16.3756897457
+      },
+      {
+        "length": 117,
+        "barrier": 0.0,
+        "states": 69,
+        "max_allowed_total_depth": 185,
+        "survival_mass": 1.11176e-05,
+        "survival_log2_mass": -16.4567925741
+      },
+      {
+        "length": 118,
+        "barrier": 0.0,
+        "states": 70,
+        "max_allowed_total_depth": 187,
+        "survival_mass": 1.06231e-05,
+        "survival_log2_mass": -16.5224400944
+      },
+      {
+        "length": 119,
+        "barrier": 0.0,
+        "states": 70,
+        "max_allowed_total_depth": 188,
+        "survival_mass": 9.8043e-06,
+        "survival_log2_mass": -16.6381473152
+      },
+      {
+        "length": 120,
+        "barrier": 0.0,
+        "states": 71,
+        "max_allowed_total_depth": 190,
+        "survival_mass": 9.3061e-06,
+        "survival_log2_mass": -16.7133862719
+      }
+    ],
+    "2.0": [
+      {
+        "length": 1,
+        "barrier": 2.0,
+        "states": 3,
+        "max_allowed_total_depth": 3,
+        "survival_mass": 0.875,
+        "survival_log2_mass": -0.1926450779
+      },
+      {
+        "length": 2,
+        "barrier": 2.0,
+        "states": 4,
+        "max_allowed_total_depth": 5,
+        "survival_mass": 0.78125,
+        "survival_log2_mass": -0.3561438102
+      },
+      {
+        "length": 3,
+        "barrier": 2.0,
+        "states": 4,
+        "max_allowed_total_depth": 6,
+        "survival_mass": 0.640625,
+        "survival_log2_mass": -0.6424479954
+      },
+      {
+        "length": 4,
+        "barrier": 2.0,
+        "states": 5,
+        "max_allowed_total_depth": 8,
+        "survival_mass": 0.56640625,
+        "survival_log2_mass": -0.82009091
+      },
+      {
+        "length": 5,
+        "barrier": 2.0,
+        "states": 5,
+        "max_allowed_total_depth": 9,
+        "survival_mass": 0.462890625,
+        "survival_log2_mass": -1.1112567511
+      },
+      {
+        "length": 6,
+        "barrier": 2.0,
+        "states": 6,
+        "max_allowed_total_depth": 11,
+        "survival_mass": 0.41015625,
+        "survival_log2_mass": -1.2857544823
+      },
+      {
+        "length": 7,
+        "barrier": 2.0,
+        "states": 7,
+        "max_allowed_total_depth": 13,
+        "survival_mass": 0.3736572266,
+        "survival_log2_mass": -1.4202126705
+      },
+      {
+        "length": 8,
+        "barrier": 2.0,
+        "states": 7,
+        "max_allowed_total_depth": 14,
+        "survival_mass": 0.3182373047,
+        "survival_log2_mass": -1.6518251325
+      },
+      {
+        "length": 9,
+        "barrier": 2.0,
+        "states": 8,
+        "max_allowed_total_depth": 16,
+        "survival_mass": 0.2878570557,
+        "survival_log2_mass": -1.7965755203
+      },
+      {
+        "length": 10,
+        "barrier": 2.0,
+        "states": 8,
+        "max_allowed_total_depth": 17,
+        "survival_mass": 0.243927002,
+        "survival_log2_mass": -2.0354786261
+      },
+      {
+        "length": 11,
+        "barrier": 2.0,
+        "states": 9,
+        "max_allowed_total_depth": 19,
+        "survival_mass": 0.2205066681,
+        "survival_log2_mass": -2.1811058115
+      },
+      {
+        "length": 12,
+        "barrier": 2.0,
+        "states": 10,
+        "max_allowed_total_depth": 21,
+        "survival_mass": 0.2037343979,
+        "survival_log2_mass": -2.2952385138
+      },
+      {
+        "length": 13,
+        "barrier": 2.0,
+        "states": 10,
+        "max_allowed_total_depth": 22,
+        "survival_mass": 0.1775681973,
+        "survival_log2_mass": -2.4935548791
+      },
+      {
+        "length": 14,
+        "barrier": 2.0,
+        "states": 11,
+        "max_allowed_total_depth": 24,
+        "survival_mass": 0.1627579331,
+        "survival_log2_mass": -2.61920023
+      },
+      {
+        "length": 15,
+        "barrier": 2.0,
+        "states": 11,
+        "max_allowed_total_depth": 25,
+        "survival_mass": 0.140827775,
+        "survival_log2_mass": -2.8279961948
+      },
+      {
+        "length": 16,
+        "barrier": 2.0,
+        "states": 12,
+        "max_allowed_total_depth": 27,
+        "survival_mass": 0.1288065091,
+        "survival_log2_mass": -2.9567225948
+      },
+      {
+        "length": 17,
+        "barrier": 2.0,
+        "states": 12,
+        "max_allowed_total_depth": 28,
+        "survival_mass": 0.1112335548,
+        "survival_log2_mass": -3.1683360369
+      },
+      {
+        "length": 18,
+        "barrier": 2.0,
+        "states": 13,
+        "max_allowed_total_depth": 30,
+        "survival_mass": 0.1016937569,
+        "survival_log2_mass": -3.297696982
+      },
+      {
+        "length": 19,
+        "barrier": 2.0,
+        "states": 14,
+        "max_allowed_total_depth": 32,
+        "survival_mass": 0.0947515329,
+        "survival_log2_mass": -3.3997069064
+      },
+      {
+        "length": 20,
+        "barrier": 2.0,
+        "states": 14,
+        "max_allowed_total_depth": 33,
+        "survival_mass": 0.0837684397,
+        "survival_log2_mass": -3.5774493879
+      },
+      {
+        "length": 21,
+        "barrier": 2.0,
+        "states": 15,
+        "max_allowed_total_depth": 35,
+        "survival_mass": 0.0774419348,
+        "survival_log2_mass": -3.6907411928
+      },
+      {
+        "length": 22,
+        "barrier": 2.0,
+        "states": 15,
+        "max_allowed_total_depth": 36,
+        "survival_mass": 0.0679434457,
+        "survival_log2_mass": -3.8795218043
+      },
+      {
+        "length": 23,
+        "barrier": 2.0,
+        "states": 16,
+        "max_allowed_total_depth": 38,
+        "survival_mass": 0.0626480699,
+        "survival_log2_mass": -3.9965861263
+      },
+      {
+        "length": 24,
+        "barrier": 2.0,
+        "states": 17,
+        "max_allowed_total_depth": 40,
+        "survival_mass": 0.0587270477,
+        "survival_log2_mass": -4.0898310766
+      },
+      {
+        "length": 25,
+        "barrier": 2.0,
+        "states": 17,
+        "max_allowed_total_depth": 41,
+        "survival_mass": 0.0524420764,
+        "survival_log2_mass": -4.2531313802
+      },
+      {
+        "length": 26,
+        "barrier": 2.0,
+        "states": 18,
+        "max_allowed_total_depth": 43,
+        "survival_mass": 0.0487672073,
+        "survival_log2_mass": -4.3579448311
+      },
+      {
+        "length": 27,
+        "barrier": 2.0,
+        "states": 18,
+        "max_allowed_total_depth": 44,
+        "survival_mass": 0.0431887677,
+        "survival_log2_mass": -4.5332000381
+      },
+      {
+        "length": 28,
+        "barrier": 2.0,
+        "states": 19,
+        "max_allowed_total_depth": 46,
+        "survival_mass": 0.0400386734,
+        "survival_log2_mass": -4.6424620162
+      },
+      {
+        "length": 29,
+        "barrier": 2.0,
+        "states": 19,
+        "max_allowed_total_depth": 47,
+        "survival_mass": 0.0353290468,
+        "survival_log2_mass": -4.8230013639
+      },
+      {
+        "length": 30,
+        "barrier": 2.0,
+        "states": 20,
+        "max_allowed_total_depth": 49,
+        "survival_mass": 0.0327026961,
+        "survival_log2_mass": -4.9344466114
+      },
+      {
+        "length": 31,
+        "barrier": 2.0,
+        "states": 21,
+        "max_allowed_total_depth": 51,
+        "survival_mass": 0.0307522715,
+        "survival_log2_mass": -5.0231632116
+      },
+      {
+        "length": 32,
+        "barrier": 2.0,
+        "states": 21,
+        "max_allowed_total_depth": 52,
+        "survival_mass": 0.0276146961,
+        "survival_log2_mass": -5.178419939
+      },
+      {
+        "length": 33,
+        "barrier": 2.0,
+        "states": 22,
+        "max_allowed_total_depth": 54,
+        "survival_mass": 0.0257704805,
+        "survival_log2_mass": -5.2781367545
+      },
+      {
+        "length": 34,
+        "barrier": 2.0,
+        "states": 22,
+        "max_allowed_total_depth": 55,
+        "survival_mass": 0.0229578651,
+        "survival_log2_mass": -5.4448676998
+      },
+      {
+        "length": 35,
+        "barrier": 2.0,
+        "states": 23,
+        "max_allowed_total_depth": 57,
+        "survival_mass": 0.0213598784,
+        "survival_log2_mass": -5.5489527537
+      },
+      {
+        "length": 36,
+        "barrier": 2.0,
+        "states": 24,
+        "max_allowed_total_depth": 59,
+        "survival_mass": 0.0201593058,
+        "survival_log2_mass": -5.6324102304
+      },
+      {
+        "length": 37,
+        "barrier": 2.0,
+        "states": 24,
+        "max_allowed_total_depth": 60,
+        "survival_mass": 0.0182114959,
+        "survival_log2_mass": -5.7790067551
+      },
+      {
+        "length": 38,
+        "barrier": 2.0,
+        "states": 25,
+        "max_allowed_total_depth": 62,
+        "survival_mass": 0.0170556294,
+        "survival_log2_mass": -5.8736081911
+      },
+      {
+        "length": 39,
+        "barrier": 2.0,
+        "states": 25,
+        "max_allowed_total_depth": 63,
+        "survival_mass": 0.0152805517,
+        "survival_log2_mass": -6.0321595593
+      },
+      {
+        "length": 40,
+        "barrier": 2.0,
+        "states": 26,
+        "max_allowed_total_depth": 65,
+        "survival_mass": 0.0142639405,
+        "survival_log2_mass": -6.1314835995
+      },
+      {
+        "length": 41,
+        "barrier": 2.0,
+        "states": 26,
+        "max_allowed_total_depth": 66,
+        "survival_mass": 0.0127273058,
+        "survival_log2_mass": -6.2959291358
+      },
+      {
+        "length": 42,
+        "barrier": 2.0,
+        "states": 27,
+        "max_allowed_total_depth": 68,
+        "survival_mass": 0.0118589332,
+        "survival_log2_mass": -6.3978819556
+      },
+      {
+        "length": 43,
+        "barrier": 2.0,
+        "states": 28,
+        "max_allowed_total_depth": 70,
+        "survival_mass": 0.0112073945,
+        "survival_log2_mass": -6.4794052685
+      },
+      {
+        "length": 44,
+        "barrier": 2.0,
+        "states": 28,
+        "max_allowed_total_depth": 71,
+        "survival_mass": 0.0101502358,
+        "survival_log2_mass": -6.6223429512
+      },
+      {
+        "length": 45,
+        "barrier": 2.0,
+        "states": 29,
+        "max_allowed_total_depth": 73,
+        "survival_mass": 0.0095222497,
+        "survival_log2_mass": -6.7144818204
+      },
+      {
+        "length": 46,
+        "barrier": 2.0,
+        "states": 29,
+        "max_allowed_total_depth": 74,
+        "survival_mass": 0.0085564689,
+        "survival_log2_mass": -6.8687687457
+      },
+      {
+        "length": 47,
+        "barrier": 2.0,
+        "states": 30,
+        "max_allowed_total_depth": 76,
+        "survival_mass": 0.0080021237,
+        "survival_log2_mass": -6.9654013539
+      },
+      {
+        "length": 48,
+        "barrier": 2.0,
+        "states": 31,
+        "max_allowed_total_depth": 78,
+        "survival_mass": 0.007582302,
+        "survival_log2_mass": -7.0431483614
+      },
+      {
+        "length": 49,
+        "barrier": 2.0,
+        "states": 31,
+        "max_allowed_total_depth": 79,
+        "survival_mass": 0.0068965666,
+        "survival_log2_mass": -7.1799059765
+      },
+      {
+        "length": 50,
+        "barrier": 2.0,
+        "states": 32,
+        "max_allowed_total_depth": 81,
+        "survival_mass": 0.0064862273,
+        "survival_log2_mass": -7.2684047131
+      },
+      {
+        "length": 51,
+        "barrier": 2.0,
+        "states": 32,
+        "max_allowed_total_depth": 82,
+        "survival_mass": 0.005851861,
+        "survival_log2_mass": -7.4168887909
+      },
+      {
+        "length": 52,
+        "barrier": 2.0,
+        "states": 33,
+        "max_allowed_total_depth": 84,
+        "survival_mass": 0.0054855721,
+        "survival_log2_mass": -7.5101421828
+      },
+      {
+        "length": 53,
+        "barrier": 2.0,
+        "states": 34,
+        "max_allowed_total_depth": 86,
+        "survival_mass": 0.0052069607,
+        "survival_log2_mass": -7.5853427662
+      },
+      {
+        "length": 54,
+        "barrier": 2.0,
+        "states": 34,
+        "max_allowed_total_depth": 87,
+        "survival_mass": 0.0047502731,
+        "survival_log2_mass": -7.717773841
+      },
+      {
+        "length": 55,
+        "barrier": 2.0,
+        "states": 35,
+        "max_allowed_total_depth": 89,
+        "survival_mass": 0.004475844,
+        "survival_log2_mass": -7.8036245368
+      },
+      {
+        "length": 56,
+        "barrier": 2.0,
+        "states": 35,
+        "max_allowed_total_depth": 90,
+        "survival_mass": 0.004050213,
+        "survival_log2_mass": -7.9477865187
+      },
+      {
+        "length": 57,
+        "barrier": 2.0,
+        "states": 36,
+        "max_allowed_total_depth": 92,
+        "survival_mass": 0.0038034949,
+        "survival_log2_mass": -8.038458628
+      },
+      {
+        "length": 58,
+        "barrier": 2.0,
+        "states": 36,
+        "max_allowed_total_depth": 93,
+        "survival_mass": 0.0034270506,
+        "survival_log2_mass": -8.1888167847
+      },
+      {
+        "length": 59,
+        "barrier": 2.0,
+        "states": 37,
+        "max_allowed_total_depth": 95,
+        "survival_mass": 0.0032118661,
+        "survival_log2_mass": -8.2823725162
+      },
+      {
+        "length": 60,
+        "barrier": 2.0,
+        "states": 38,
+        "max_allowed_total_depth": 97,
+        "survival_mass": 0.003048967,
+        "survival_log2_mass": -8.3574637662
+      },
+      {
+        "length": 61,
+        "barrier": 2.0,
+        "states": 38,
+        "max_allowed_total_depth": 98,
+        "survival_mass": 0.0027826548,
+        "survival_log2_mass": -8.4893223484
+      },
+      {
+        "length": 62,
+        "barrier": 2.0,
+        "states": 39,
+        "max_allowed_total_depth": 100,
+        "survival_mass": 0.0026229771,
+        "survival_log2_mass": -8.5745790738
+      },
+      {
+        "length": 63,
+        "barrier": 2.0,
+        "states": 39,
+        "max_allowed_total_depth": 101,
+        "survival_mass": 0.0023755794,
+        "survival_log2_mass": -8.7175048621
+      },
+      {
+        "length": 64,
+        "barrier": 2.0,
+        "states": 40,
+        "max_allowed_total_depth": 103,
+        "survival_mass": 0.0022322753,
+        "survival_log2_mass": -8.8072693368
+      },
+      {
+        "length": 65,
+        "barrier": 2.0,
+        "states": 41,
+        "max_allowed_total_depth": 105,
+        "survival_mass": 0.0021229639,
+        "survival_log2_mass": -8.8797044544
+      },
+      {
+        "length": 66,
+        "barrier": 2.0,
+        "states": 41,
+        "max_allowed_total_depth": 106,
+        "survival_mass": 0.0019433175,
+        "survival_log2_mass": -9.0072626524
+      },
+      {
+        "length": 67,
+        "barrier": 2.0,
+        "states": 42,
+        "max_allowed_total_depth": 108,
+        "survival_mass": 0.0018349968,
+        "survival_log2_mass": -9.0900067348
+      },
+      {
+        "length": 68,
+        "barrier": 2.0,
+        "states": 42,
+        "max_allowed_total_depth": 109,
+        "survival_mass": 0.0016665113,
+        "survival_log2_mass": -9.228953185
+      },
+      {
+        "length": 69,
+        "barrier": 2.0,
+        "states": 43,
+        "max_allowed_total_depth": 111,
+        "survival_mass": 0.0015684895,
+        "survival_log2_mass": -9.3164084027
+      },
+      {
+        "length": 70,
+        "barrier": 2.0,
+        "states": 43,
+        "max_allowed_total_depth": 112,
+        "survival_mass": 0.0014184777,
+        "survival_log2_mass": -9.4614408208
+      },
+      {
+        "length": 71,
+        "barrier": 2.0,
+        "states": 44,
+        "max_allowed_total_depth": 114,
+        "survival_mass": 0.0013324027,
+        "survival_log2_mass": -9.5517541286
+      },
+      {
+        "length": 72,
+        "barrier": 2.0,
+        "states": 45,
+        "max_allowed_total_depth": 116,
+        "survival_mass": 0.0012670431,
+        "survival_log2_mass": -9.6243186648
+      },
+      {
+        "length": 73,
+        "barrier": 2.0,
+        "states": 45,
+        "max_allowed_total_depth": 117,
+        "survival_mass": 0.0011599082,
+        "survival_log2_mass": -9.7517736126
+      },
+      {
+        "length": 74,
+        "barrier": 2.0,
+        "states": 46,
+        "max_allowed_total_depth": 119,
+        "survival_mass": 0.0010954565,
+        "survival_log2_mass": -9.8342521245
+      },
+      {
+        "length": 75,
+        "barrier": 2.0,
+        "states": 46,
+        "max_allowed_total_depth": 120,
+        "survival_mass": 0.0009953252,
+        "survival_log2_mass": -9.9725444787
+      },
+      {
+        "length": 76,
+        "barrier": 2.0,
+        "states": 47,
+        "max_allowed_total_depth": 122,
+        "survival_mass": 0.0009371265,
+        "survival_log2_mass": -10.0594686488
+      },
+      {
+        "length": 77,
+        "barrier": 2.0,
+        "states": 48,
+        "max_allowed_total_depth": 124,
+        "survival_mass": 0.0008926111,
+        "survival_log2_mass": -10.1296806929
+      },
+      {
+        "length": 78,
+        "barrier": 2.0,
+        "states": 48,
+        "max_allowed_total_depth": 125,
+        "survival_mass": 0.0008192789,
+        "survival_log2_mass": -10.253357724
+      },
+      {
+        "length": 79,
+        "barrier": 2.0,
+        "states": 49,
+        "max_allowed_total_depth": 127,
+        "survival_mass": 0.0007749298,
+        "survival_log2_mass": -10.333646818
+      },
+      {
+        "length": 80,
+        "barrier": 2.0,
+        "states": 49,
+        "max_allowed_total_depth": 128,
+        "survival_mass": 0.0007057796,
+        "survival_log2_mass": -10.4684947472
+      },
+      {
+        "length": 81,
+        "barrier": 2.0,
+        "states": 50,
+        "max_allowed_total_depth": 130,
+        "survival_mass": 0.0006654268,
+        "survival_log2_mass": -10.5534324899
+      },
+      {
+        "length": 82,
+        "barrier": 2.0,
+        "states": 50,
+        "max_allowed_total_depth": 131,
+        "survival_mass": 0.0006035202,
+        "survival_log2_mass": -10.6943104231
+      },
+      {
+        "length": 83,
+        "barrier": 2.0,
+        "states": 51,
+        "max_allowed_total_depth": 133,
+        "survival_mass": 0.0005678908,
+        "survival_log2_mass": -10.7820987517
+      },
+      {
+        "length": 84,
+        "barrier": 2.0,
+        "states": 52,
+        "max_allowed_total_depth": 135,
+        "survival_mass": 0.0005407707,
+        "survival_log2_mass": -10.8526954929
+      },
+      {
+        "length": 85,
+        "barrier": 2.0,
+        "states": 52,
+        "max_allowed_total_depth": 136,
+        "survival_mass": 0.0004962232,
+        "survival_log2_mass": -10.9767230799
+      },
+      {
+        "length": 86,
+        "barrier": 2.0,
+        "states": 53,
+        "max_allowed_total_depth": 138,
+        "survival_mass": 0.0004693533,
+        "survival_log2_mass": -11.0570381422
+      },
+      {
+        "length": 87,
+        "barrier": 2.0,
+        "states": 53,
+        "max_allowed_total_depth": 139,
+        "survival_mass": 0.0004275193,
+        "survival_log2_mass": -11.1917228617
+      },
+      {
+        "length": 88,
+        "barrier": 2.0,
+        "states": 54,
+        "max_allowed_total_depth": 141,
+        "survival_mass": 0.0004031396,
+        "survival_log2_mass": -11.2764329654
+      },
+      {
+        "length": 89,
+        "barrier": 2.0,
+        "states": 55,
+        "max_allowed_total_depth": 143,
+        "survival_mass": 0.000384452,
+        "survival_log2_mass": -11.3449089382
+      },
+      {
+        "length": 90,
+        "barrier": 2.0,
+        "states": 55,
+        "max_allowed_total_depth": 144,
+        "survival_mass": 0.0003536101,
+        "survival_log2_mass": -11.4655528857
+      },
+      {
+        "length": 91,
+        "barrier": 2.0,
+        "states": 56,
+        "max_allowed_total_depth": 146,
+        "survival_mass": 0.0003349144,
+        "survival_log2_mass": -11.5439199358
+      },
+      {
+        "length": 92,
+        "barrier": 2.0,
+        "states": 56,
+        "max_allowed_total_depth": 147,
+        "survival_mass": 0.0003057083,
+        "survival_log2_mass": -11.6755564949
+      },
+      {
+        "length": 93,
+        "barrier": 2.0,
+        "states": 57,
+        "max_allowed_total_depth": 149,
+        "survival_mass": 0.0002886247,
+        "survival_log2_mass": -11.7585176922
+      },
+      {
+        "length": 94,
+        "barrier": 2.0,
+        "states": 57,
+        "max_allowed_total_depth": 150,
+        "survival_mass": 0.0002623662,
+        "survival_log2_mass": -11.8961307368
+      },
+      {
+        "length": 95,
+        "barrier": 2.0,
+        "states": 58,
+        "max_allowed_total_depth": 152,
+        "survival_mass": 0.0002472177,
+        "survival_log2_mass": -11.9819304071
+      },
+      {
+        "length": 96,
+        "barrier": 2.0,
+        "states": 59,
+        "max_allowed_total_depth": 154,
+        "survival_mass": 0.0002356652,
+        "survival_log2_mass": -12.0509735895
+      },
+      {
+        "length": 97,
+        "barrier": 2.0,
+        "states": 59,
+        "max_allowed_total_depth": 155,
+        "survival_mass": 0.0002166581,
+        "survival_log2_mass": -12.1722919699
+      },
+      {
+        "length": 98,
+        "barrier": 2.0,
+        "states": 60,
+        "max_allowed_total_depth": 157,
+        "survival_mass": 0.0002051699,
+        "survival_log2_mass": -12.2508930039
+      },
+      {
+        "length": 99,
+        "barrier": 2.0,
+        "states": 60,
+        "max_allowed_total_depth": 158,
+        "survival_mass": 0.000187254,
+        "survival_log2_mass": -12.3827161249
+      },
+      {
+        "length": 100,
+        "barrier": 2.0,
+        "states": 61,
+        "max_allowed_total_depth": 160,
+        "survival_mass": 0.0001767912,
+        "survival_log2_mass": -12.4656659601
+      },
+      {
+        "length": 101,
+        "barrier": 2.0,
+        "states": 62,
+        "max_allowed_total_depth": 162,
+        "survival_mass": 0.0001687578,
+        "survival_log2_mass": -12.5327583813
+      },
+      {
+        "length": 102,
+        "barrier": 2.0,
+        "states": 62,
+        "max_allowed_total_depth": 163,
+        "survival_mass": 0.0001554801,
+        "survival_log2_mass": -12.650981991
+      },
+      {
+        "length": 103,
+        "barrier": 2.0,
+        "states": 63,
+        "max_allowed_total_depth": 165,
+        "survival_mass": 0.0001474168,
+        "survival_log2_mass": -12.7278118235
+      },
+      {
+        "length": 104,
+        "barrier": 2.0,
+        "states": 63,
+        "max_allowed_total_depth": 166,
+        "survival_mass": 0.0001348014,
+        "survival_log2_mass": -12.8568768329
+      },
+      {
+        "length": 105,
+        "barrier": 2.0,
+        "states": 64,
+        "max_allowed_total_depth": 168,
+        "survival_mass": 0.0001274084,
+        "survival_log2_mass": -12.938251716
+      },
+      {
+        "length": 106,
+        "barrier": 2.0,
+        "states": 65,
+        "max_allowed_total_depth": 170,
+        "survival_mass": 0.0001217181,
+        "survival_log2_mass": -13.0041682439
+      },
+      {
+        "length": 107,
+        "barrier": 2.0,
+        "states": 65,
+        "max_allowed_total_depth": 171,
+        "survival_mass": 0.0001122952,
+        "survival_log2_mass": -13.1204158187
+      },
+      {
+        "length": 108,
+        "barrier": 2.0,
+        "states": 66,
+        "max_allowed_total_depth": 173,
+        "survival_mass": 0.0001065601,
+        "survival_log2_mass": -13.1960454959
+      },
+      {
+        "length": 109,
+        "barrier": 2.0,
+        "states": 66,
+        "max_allowed_total_depth": 174,
+        "survival_mass": 9.75723e-05,
+        "survival_log2_mass": -13.3231684548
+      },
+      {
+        "length": 110,
+        "barrier": 2.0,
+        "states": 67,
+        "max_allowed_total_depth": 176,
+        "survival_mass": 9.2295e-05,
+        "survival_log2_mass": -13.4033886513
+      },
+      {
+        "length": 111,
+        "barrier": 2.0,
+        "states": 67,
+        "max_allowed_total_depth": 177,
+        "survival_mass": 8.41592e-05,
+        "survival_log2_mass": -13.5365201466
+      },
+      {
+        "length": 112,
+        "barrier": 2.0,
+        "states": 68,
+        "max_allowed_total_depth": 179,
+        "survival_mass": 7.94486e-05,
+        "survival_log2_mass": -13.6196178227
+      },
+      {
+        "length": 113,
+        "barrier": 2.0,
+        "states": 69,
+        "max_allowed_total_depth": 181,
+        "survival_mass": 7.58462e-05,
+        "survival_log2_mass": -13.6865640289
+      },
+      {
+        "length": 114,
+        "barrier": 2.0,
+        "states": 69,
+        "max_allowed_total_depth": 182,
+        "survival_mass": 6.99049e-05,
+        "survival_log2_mass": -13.8042473335
+      },
+      {
+        "length": 115,
+        "barrier": 2.0,
+        "states": 70,
+        "max_allowed_total_depth": 184,
+        "survival_mass": 6.63032e-05,
+        "survival_log2_mass": -13.8805623485
+      },
+      {
+        "length": 116,
+        "barrier": 2.0,
+        "states": 70,
+        "max_allowed_total_depth": 185,
+        "survival_mass": 6.06729e-05,
+        "survival_log2_mass": -14.0085883459
+      },
+      {
+        "length": 117,
+        "barrier": 2.0,
+        "states": 71,
+        "max_allowed_total_depth": 187,
+        "survival_mass": 5.73752e-05,
+        "survival_log2_mass": -14.0892138471
+      },
+      {
+        "length": 118,
+        "barrier": 2.0,
+        "states": 72,
+        "max_allowed_total_depth": 189,
+        "survival_mass": 5.48372e-05,
+        "survival_log2_mass": -14.1544848611
+      },
+      {
+        "length": 119,
+        "barrier": 2.0,
+        "states": 72,
+        "max_allowed_total_depth": 190,
+        "survival_mass": 5.06341e-05,
+        "survival_log2_mass": -14.2695321978
+      },
+      {
+        "length": 120,
+        "barrier": 2.0,
+        "states": 73,
+        "max_allowed_total_depth": 192,
+        "survival_mass": 4.80751e-05,
+        "survival_log2_mass": -14.3443506804
+      }
+    ],
+    "4.0": [
+      {
+        "length": 1,
+        "barrier": 4.0,
+        "states": 5,
+        "max_allowed_total_depth": 5,
+        "survival_mass": 0.96875,
+        "survival_log2_mass": -0.0458036896
+      },
+      {
+        "length": 2,
+        "barrier": 4.0,
+        "states": 6,
+        "max_allowed_total_depth": 7,
+        "survival_mass": 0.9296875,
+        "survival_log2_mass": -0.1051822367
+      },
+      {
+        "length": 3,
+        "barrier": 4.0,
+        "states": 6,
+        "max_allowed_total_depth": 8,
+        "survival_mass": 0.8515625,
+        "survival_log2_mass": -0.2318156752
+      },
+      {
+        "length": 4,
+        "barrier": 4.0,
+        "states": 7,
+        "max_allowed_total_depth": 10,
+        "survival_mass": 0.7978515625,
+        "survival_log2_mass": -0.3258077319
+      },
+      {
+        "length": 5,
+        "barrier": 4.0,
+        "states": 7,
+        "max_allowed_total_depth": 11,
+        "survival_mass": 0.7099609375,
+        "survival_log2_mass": -0.4941884461
+      },
+      {
+        "length": 6,
+        "barrier": 4.0,
+        "states": 8,
+        "max_allowed_total_depth": 13,
+        "survival_mass": 0.6573486328,
+        "survival_log2_mass": -0.6052693706
+      },
+      {
+        "length": 7,
+        "barrier": 4.0,
+        "states": 9,
+        "max_allowed_total_depth": 15,
+        "survival_mass": 0.616973877,
+        "survival_log2_mass": -0.6967186888
+      },
+      {
+        "length": 8,
+        "barrier": 4.0,
+        "states": 9,
+        "max_allowed_total_depth": 16,
+        "survival_mass": 0.5509185791,
+        "survival_log2_mass": -0.8600889779
+      },
+      {
+        "length": 9,
+        "barrier": 4.0,
+        "states": 10,
+        "max_allowed_total_depth": 18,
+        "survival_mass": 0.5116119385,
+        "survival_log2_mass": -0.966878165
+      },
+      {
+        "length": 10,
+        "barrier": 4.0,
+        "states": 10,
+        "max_allowed_total_depth": 19,
+        "survival_mass": 0.4514293671,
+        "survival_log2_mass": -1.1474278209
+      },
+      {
+        "length": 11,
+        "barrier": 4.0,
+        "states": 11,
+        "max_allowed_total_depth": 21,
+        "survival_mass": 0.4172310829,
+        "survival_log2_mass": -1.261081455
+      },
+      {
+        "length": 12,
+        "barrier": 4.0,
+        "states": 12,
+        "max_allowed_total_depth": 23,
+        "survival_mass": 0.391617775,
+        "survival_log2_mass": -1.3524818466
+      },
+      {
+        "length": 13,
+        "barrier": 4.0,
+        "states": 12,
+        "max_allowed_total_depth": 24,
+        "survival_mass": 0.3502482772,
+        "survival_log2_mass": -1.5135501406
+      },
+      {
+        "length": 14,
+        "barrier": 4.0,
+        "states": 13,
+        "max_allowed_total_depth": 26,
+        "survival_mass": 0.3258745372,
+        "survival_log2_mass": -1.6176114659
+      },
+      {
+        "length": 15,
+        "barrier": 4.0,
+        "states": 13,
+        "max_allowed_total_depth": 27,
+        "survival_mass": 0.2887027338,
+        "survival_log2_mass": -1.7923433259
+      },
+      {
+        "length": 16,
+        "barrier": 4.0,
+        "states": 14,
+        "max_allowed_total_depth": 29,
+        "survival_mass": 0.2676178645,
+        "survival_log2_mass": -1.9017536702
+      },
+      {
+        "length": 17,
+        "barrier": 4.0,
+        "states": 14,
+        "max_allowed_total_depth": 30,
+        "survival_mass": 0.2360132169,
+        "survival_log2_mass": -2.0830604412
+      },
+      {
+        "length": 18,
+        "barrier": 4.0,
+        "states": 15,
+        "max_allowed_total_depth": 32,
+        "survival_mass": 0.2183479904,
+        "survival_log2_mass": -2.1952988416
+      },
+      {
+        "length": 19,
+        "barrier": 4.0,
+        "states": 16,
+        "max_allowed_total_depth": 34,
+        "survival_mass": 0.2052140409,
+        "survival_log2_mass": -2.28479865
+      },
+      {
+        "length": 20,
+        "barrier": 4.0,
+        "states": 16,
+        "max_allowed_total_depth": 35,
+        "survival_mass": 0.1840740033,
+        "survival_log2_mass": -2.441642205
+      },
+      {
+        "length": 21,
+        "barrier": 4.0,
+        "states": 17,
+        "max_allowed_total_depth": 37,
+        "survival_mass": 0.1716444484,
+        "survival_log2_mass": -2.5425048986
+      },
+      {
+        "length": 22,
+        "barrier": 4.0,
+        "states": 17,
+        "max_allowed_total_depth": 38,
+        "survival_mass": 0.1526895742,
+        "survival_log2_mass": -2.711326538
+      },
+      {
+        "length": 23,
+        "barrier": 4.0,
+        "states": 18,
+        "max_allowed_total_depth": 40,
+        "survival_mass": 0.1419246404,
+        "survival_log2_mass": -2.8168030089
+      },
+      {
+        "length": 24,
+        "barrier": 4.0,
+        "states": 19,
+        "max_allowed_total_depth": 42,
+        "survival_mass": 0.1338413935,
+        "survival_log2_mass": -2.9014037232
+      },
+      {
+        "length": 25,
+        "barrier": 4.0,
+        "states": 19,
+        "max_allowed_total_depth": 43,
+        "survival_mass": 0.1207353854,
+        "survival_log2_mass": -3.0500795288
+      },
+      {
+        "length": 26,
+        "barrier": 4.0,
+        "states": 20,
+        "max_allowed_total_depth": 45,
+        "survival_mass": 0.1129653636,
+        "survival_log2_mass": -3.1460476006
+      },
+      {
+        "length": 27,
+        "barrier": 4.0,
+        "states": 20,
+        "max_allowed_total_depth": 46,
+        "survival_mass": 0.1010434343,
+        "survival_log2_mass": -3.3069525147
+      },
+      {
+        "length": 28,
+        "barrier": 4.0,
+        "states": 21,
+        "max_allowed_total_depth": 48,
+        "survival_mass": 0.0942239468,
+        "survival_log2_mass": -3.4077624261
+      },
+      {
+        "length": 29,
+        "barrier": 4.0,
+        "states": 21,
+        "max_allowed_total_depth": 49,
+        "survival_mass": 0.0839271927,
+        "survival_log2_mass": -3.5747178644
+      },
+      {
+        "length": 30,
+        "barrier": 4.0,
+        "states": 22,
+        "max_allowed_total_depth": 51,
+        "survival_mass": 0.0781166668,
+        "survival_log2_mass": -3.6782257978
+      },
+      {
+        "length": 31,
+        "barrier": 4.0,
+        "states": 23,
+        "max_allowed_total_depth": 53,
+        "survival_mass": 0.0737623029,
+        "survival_log2_mass": -3.7609724919
+      },
+      {
+        "length": 32,
+        "barrier": 4.0,
+        "states": 23,
+        "max_allowed_total_depth": 54,
+        "survival_mass": 0.0667047614,
+        "survival_log2_mass": -3.9060664445
+      },
+      {
+        "length": 33,
+        "barrier": 4.0,
+        "states": 24,
+        "max_allowed_total_depth": 56,
+        "survival_mass": 0.0625182622,
+        "survival_log2_mass": -3.9995785131
+      },
+      {
+        "length": 34,
+        "barrier": 4.0,
+        "states": 24,
+        "max_allowed_total_depth": 57,
+        "survival_mass": 0.0560874369,
+        "survival_log2_mass": -4.1561785347
+      },
+      {
+        "length": 35,
+        "barrier": 4.0,
+        "states": 25,
+        "max_allowed_total_depth": 59,
+        "survival_mass": 0.0524018035,
+        "survival_log2_mass": -4.2542397244
+      },
+      {
+        "length": 36,
+        "barrier": 4.0,
+        "states": 26,
+        "max_allowed_total_depth": 61,
+        "survival_mass": 0.0496140245,
+        "survival_log2_mass": -4.3331082008
+      },
+      {
+        "length": 37,
+        "barrier": 4.0,
+        "states": 26,
+        "max_allowed_total_depth": 62,
+        "survival_mass": 0.0450654362,
+        "survival_log2_mass": -4.4718348363
+      },
+      {
+        "length": 38,
+        "barrier": 4.0,
+        "states": 27,
+        "max_allowed_total_depth": 64,
+        "survival_mass": 0.0423473755,
+        "survival_log2_mass": -4.5615836291
+      },
+      {
+        "length": 39,
+        "barrier": 4.0,
+        "states": 27,
+        "max_allowed_total_depth": 65,
+        "survival_mass": 0.0381501935,
+        "survival_log2_mass": -4.7121658137
+      },
+      {
+        "length": 40,
+        "barrier": 4.0,
+        "states": 28,
+        "max_allowed_total_depth": 67,
+        "survival_mass": 0.0357302123,
+        "survival_log2_mass": -4.8067117051
+      },
+      {
+        "length": 41,
+        "barrier": 4.0,
+        "states": 28,
+        "max_allowed_total_depth": 68,
+        "survival_mass": 0.032053102,
+        "survival_log2_mass": -4.9633922049
+      },
+      {
+        "length": 42,
+        "barrier": 4.0,
+        "states": 29,
+        "max_allowed_total_depth": 70,
+        "survival_mass": 0.0299617908,
+        "survival_log2_mass": -5.0607323355
+      },
+      {
+        "length": 43,
+        "barrier": 4.0,
+        "states": 30,
+        "max_allowed_total_depth": 72,
+        "survival_mass": 0.0283848613,
+        "survival_log2_mass": -5.1387344964
+      },
+      {
+        "length": 44,
+        "barrier": 4.0,
+        "states": 30,
+        "max_allowed_total_depth": 73,
+        "survival_mass": 0.0258154536,
+        "survival_log2_mass": -5.2756212405
+      },
+      {
+        "length": 45,
+        "barrier": 4.0,
+        "states": 31,
+        "max_allowed_total_depth": 75,
+        "survival_mass": 0.0242812276,
+        "survival_log2_mass": -5.3640148244
+      },
+      {
+        "length": 46,
+        "barrier": 4.0,
+        "states": 31,
+        "max_allowed_total_depth": 76,
+        "survival_mass": 0.0219120152,
+        "survival_log2_mass": -5.512134018
+      },
+      {
+        "length": 47,
+        "barrier": 4.0,
+        "states": 32,
+        "max_allowed_total_depth": 78,
+        "survival_mass": 0.0205452416,
+        "survival_log2_mass": -5.6050518942
+      },
+      {
+        "length": 48,
+        "barrier": 4.0,
+        "states": 33,
+        "max_allowed_total_depth": 80,
+        "survival_mass": 0.0195060329,
+        "survival_log2_mass": -5.6799357909
+      },
+      {
+        "length": 49,
+        "barrier": 4.0,
+        "states": 33,
+        "max_allowed_total_depth": 81,
+        "survival_mass": 0.0178028645,
+        "survival_log2_mass": -5.8117467967
+      },
+      {
+        "length": 50,
+        "barrier": 4.0,
+        "states": 34,
+        "max_allowed_total_depth": 83,
+        "survival_mass": 0.0167794356,
+        "survival_log2_mass": -5.8971619967
+      },
+      {
+        "length": 51,
+        "barrier": 4.0,
+        "states": 34,
+        "max_allowed_total_depth": 84,
+        "survival_mass": 0.0151919652,
+        "survival_log2_mass": -6.0405476875
+      },
+      {
+        "length": 52,
+        "barrier": 4.0,
+        "states": 35,
+        "max_allowed_total_depth": 86,
+        "survival_mass": 0.0142715663,
+        "survival_log2_mass": -6.1307125111
+      },
+      {
+        "length": 53,
+        "barrier": 4.0,
+        "states": 36,
+        "max_allowed_total_depth": 88,
+        "survival_mass": 0.0135692007,
+        "survival_log2_mass": -6.2035204451
+      },
+      {
+        "length": 54,
+        "barrier": 4.0,
+        "states": 36,
+        "max_allowed_total_depth": 89,
+        "survival_mass": 0.0124147131,
+        "survival_log2_mass": -6.3318052662
+      },
+      {
+        "length": 55,
+        "barrier": 4.0,
+        "states": 37,
+        "max_allowed_total_depth": 91,
+        "survival_mass": 0.0117185686,
+        "survival_log2_mass": -6.4150598335
+      },
+      {
+        "length": 56,
+        "barrier": 4.0,
+        "states": 37,
+        "max_allowed_total_depth": 92,
+        "survival_mass": 0.0106358699,
+        "survival_log2_mass": -6.5549181514
+      },
+      {
+        "length": 57,
+        "barrier": 4.0,
+        "states": 38,
+        "max_allowed_total_depth": 94,
+        "survival_mass": 0.0100061267,
+        "survival_log2_mass": -6.6429725698
+      },
+      {
+        "length": 58,
+        "barrier": 4.0,
+        "states": 38,
+        "max_allowed_total_depth": 95,
+        "survival_mass": 0.009042644,
+        "survival_log2_mass": -6.7890396203
+      },
+      {
+        "length": 59,
+        "barrier": 4.0,
+        "states": 39,
+        "max_allowed_total_depth": 97,
+        "survival_mass": 0.0084900474,
+        "survival_log2_mass": -6.880011673
+      },
+      {
+        "length": 60,
+        "barrier": 4.0,
+        "states": 40,
+        "max_allowed_total_depth": 99,
+        "survival_mass": 0.0080706137,
+        "survival_log2_mass": -6.9531059075
+      },
+      {
+        "length": 61,
+        "barrier": 4.0,
+        "states": 40,
+        "max_allowed_total_depth": 100,
+        "survival_mass": 0.0073833628,
+        "survival_log2_mass": -7.0815062358
+      },
+      {
+        "length": 62,
+        "barrier": 4.0,
+        "states": 41,
+        "max_allowed_total_depth": 102,
+        "survival_mass": 0.0069701357,
+        "survival_log2_mass": -7.1645975315
+      },
+      {
+        "length": 63,
+        "barrier": 4.0,
+        "states": 41,
+        "max_allowed_total_depth": 103,
+        "survival_mass": 0.0063284499,
+        "survival_log2_mass": -7.3039321093
+      },
+      {
+        "length": 64,
+        "barrier": 4.0,
+        "states": 42,
+        "max_allowed_total_depth": 105,
+        "survival_mass": 0.0059557143,
+        "survival_log2_mass": -7.3915097315
+      },
+      {
+        "length": 65,
+        "barrier": 4.0,
+        "states": 43,
+        "max_allowed_total_depth": 107,
+        "survival_mass": 0.0056707608,
+        "survival_log2_mass": -7.4622419857
+      },
+      {
+        "length": 66,
+        "barrier": 4.0,
+        "states": 43,
+        "max_allowed_total_depth": 108,
+        "survival_mass": 0.0052015617,
+        "survival_log2_mass": -7.5868394494
+      },
+      {
+        "length": 67,
+        "barrier": 4.0,
+        "states": 44,
+        "max_allowed_total_depth": 110,
+        "survival_mass": 0.0049179743,
+        "survival_log2_mass": -7.6677201034
+      },
+      {
+        "length": 68,
+        "barrier": 4.0,
+        "states": 44,
+        "max_allowed_total_depth": 111,
+        "survival_mass": 0.0044760211,
+        "survival_log2_mass": -7.8035674634
+      },
+      {
+        "length": 69,
+        "barrier": 4.0,
+        "states": 45,
+        "max_allowed_total_depth": 113,
+        "survival_mass": 0.0042182844,
+        "survival_log2_mass": -7.8891279078
+      },
+      {
+        "length": 70,
+        "barrier": 4.0,
+        "states": 45,
+        "max_allowed_total_depth": 114,
+        "survival_mass": 0.003823092,
+        "survival_log2_mass": -8.0310443842
+      },
+      {
+        "length": 71,
+        "barrier": 4.0,
+        "states": 46,
+        "max_allowed_total_depth": 116,
+        "survival_mass": 0.0035957988,
+        "survival_log2_mass": -8.1194719908
+      },
+      {
+        "length": 72,
+        "barrier": 4.0,
+        "states": 47,
+        "max_allowed_total_depth": 118,
+        "survival_mass": 0.0034228839,
+        "survival_log2_mass": -8.1905719393
+      },
+      {
+        "length": 73,
+        "barrier": 4.0,
+        "states": 47,
+        "max_allowed_total_depth": 119,
+        "survival_mass": 0.0031389919,
+        "survival_log2_mass": -8.3154829738
+      },
+      {
+        "length": 74,
+        "barrier": 4.0,
+        "states": 48,
+        "max_allowed_total_depth": 121,
+        "survival_mass": 0.0029678601,
+        "survival_log2_mass": -8.3963611836
+      },
+      {
+        "length": 75,
+        "barrier": 4.0,
+        "states": 48,
+        "max_allowed_total_depth": 122,
+        "survival_mass": 0.0027015592,
+        "survival_log2_mass": -8.5319919757
+      },
+      {
+        "length": 76,
+        "barrier": 4.0,
+        "states": 49,
+        "max_allowed_total_depth": 124,
+        "survival_mass": 0.0025464656,
+        "survival_log2_mass": -8.6172880426
+      },
+      {
+        "length": 77,
+        "barrier": 4.0,
+        "states": 50,
+        "max_allowed_total_depth": 126,
+        "survival_mass": 0.0024276449,
+        "survival_log2_mass": -8.6862268697
+      },
+      {
+        "length": 78,
+        "barrier": 4.0,
+        "states": 50,
+        "max_allowed_total_depth": 127,
+        "survival_mass": 0.0022316334,
+        "survival_log2_mass": -8.8076842611
+      },
+      {
+        "length": 79,
+        "barrier": 4.0,
+        "states": 51,
+        "max_allowed_total_depth": 129,
+        "survival_mass": 0.0021128842,
+        "survival_log2_mass": -8.8865706151
+      },
+      {
+        "length": 80,
+        "barrier": 4.0,
+        "states": 51,
+        "max_allowed_total_depth": 130,
+        "survival_mass": 0.0019274648,
+        "survival_log2_mass": -9.0190797521
+      },
+      {
+        "length": 81,
+        "barrier": 4.0,
+        "states": 52,
+        "max_allowed_total_depth": 132,
+        "survival_mass": 0.0018190718,
+        "survival_log2_mass": -9.1025818224
+      },
+      {
+        "length": 82,
+        "barrier": 4.0,
+        "states": 52,
+        "max_allowed_total_depth": 133,
+        "survival_mass": 0.0016525469,
+        "survival_log2_mass": -9.2410930767
+      },
+      {
+        "length": 83,
+        "barrier": 4.0,
+        "states": 53,
+        "max_allowed_total_depth": 135,
+        "survival_mass": 0.001556538,
+        "survival_log2_mass": -9.3274435288
+      },
+      {
+        "length": 84,
+        "barrier": 4.0,
+        "states": 54,
+        "max_allowed_total_depth": 137,
+        "survival_mass": 0.0014833561,
+        "survival_log2_mass": -9.3969193425
+      },
+      {
+        "length": 85,
+        "barrier": 4.0,
+        "states": 54,
+        "max_allowed_total_depth": 138,
+        "survival_mass": 0.0013630031,
+        "survival_log2_mass": -9.5189954803
+      },
+      {
+        "length": 86,
+        "barrier": 4.0,
+        "states": 55,
+        "max_allowed_total_depth": 140,
+        "survival_mass": 0.0012902992,
+        "survival_log2_mass": -9.5980785916
+      },
+      {
+        "length": 87,
+        "barrier": 4.0,
+        "states": 55,
+        "max_allowed_total_depth": 141,
+        "survival_mass": 0.0011769674,
+        "survival_log2_mass": -9.730709969
+      },
+      {
+        "length": 88,
+        "barrier": 4.0,
+        "states": 56,
+        "max_allowed_total_depth": 143,
+        "survival_mass": 0.0011108197,
+        "survival_log2_mass": -9.8141596758
+      },
+      {
+        "length": 89,
+        "barrier": 4.0,
+        "states": 57,
+        "max_allowed_total_depth": 145,
+        "survival_mass": 0.0010600538,
+        "survival_log2_mass": -9.881646741
+      },
+      {
+        "length": 90,
+        "barrier": 4.0,
+        "states": 57,
+        "max_allowed_total_depth": 146,
+        "survival_mass": 0.0009761813,
+        "survival_log2_mass": -10.0005631955
+      },
+      {
+        "length": 91,
+        "barrier": 4.0,
+        "states": 58,
+        "max_allowed_total_depth": 148,
+        "survival_mass": 0.0009252718,
+        "survival_log2_mass": -10.0778350887
+      },
+      {
+        "length": 92,
+        "barrier": 4.0,
+        "states": 58,
+        "max_allowed_total_depth": 149,
+        "survival_mass": 0.0008456556,
+        "survival_log2_mass": -10.2076421996
+      },
+      {
+        "length": 93,
+        "barrier": 4.0,
+        "states": 59,
+        "max_allowed_total_depth": 151,
+        "survival_mass": 0.0007990221,
+        "survival_log2_mass": -10.2894769227
+      },
+      {
+        "length": 94,
+        "barrier": 4.0,
+        "states": 59,
+        "max_allowed_total_depth": 152,
+        "survival_mass": 0.0007272658,
+        "survival_log2_mass": -10.4252295705
+      },
+      {
+        "length": 95,
+        "barrier": 4.0,
+        "states": 60,
+        "max_allowed_total_depth": 154,
+        "survival_mass": 0.0006858138,
+        "survival_log2_mass": -10.5098955426
+      },
+      {
+        "length": 96,
+        "barrier": 4.0,
+        "states": 61,
+        "max_allowed_total_depth": 156,
+        "survival_mass": 0.0006541675,
+        "survival_log2_mass": -10.5780523734
+      },
+      {
+        "length": 97,
+        "barrier": 4.0,
+        "states": 61,
+        "max_allowed_total_depth": 157,
+        "survival_mass": 0.0006020517,
+        "survival_log2_mass": -10.6978249679
+      },
+      {
+        "length": 98,
+        "barrier": 4.0,
+        "states": 62,
+        "max_allowed_total_depth": 159,
+        "survival_mass": 0.000570515,
+        "survival_log2_mass": -10.7754474607
+      },
+      {
+        "length": 99,
+        "barrier": 4.0,
+        "states": 62,
+        "max_allowed_total_depth": 160,
+        "survival_mass": 0.0005212861,
+        "survival_log2_mass": -10.9056369061
+      },
+      {
+        "length": 100,
+        "barrier": 4.0,
+        "states": 63,
+        "max_allowed_total_depth": 162,
+        "survival_mass": 0.0004925025,
+        "survival_log2_mass": -10.9875812423
+      },
+      {
+        "length": 101,
+        "barrier": 4.0,
+        "states": 64,
+        "max_allowed_total_depth": 164,
+        "survival_mass": 0.000470381,
+        "survival_log2_mass": -11.053882711
+      },
+      {
+        "length": 102,
+        "barrier": 4.0,
+        "states": 64,
+        "max_allowed_total_depth": 165,
+        "survival_mass": 0.0004337879,
+        "survival_log2_mass": -11.1707224477
+      },
+      {
+        "length": 103,
+        "barrier": 4.0,
+        "states": 65,
+        "max_allowed_total_depth": 167,
+        "survival_mass": 0.000411542,
+        "survival_log2_mass": -11.246672795
+      },
+      {
+        "length": 104,
+        "barrier": 4.0,
+        "states": 65,
+        "max_allowed_total_depth": 168,
+        "survival_mass": 0.0003767078,
+        "survival_log2_mass": -11.3742664444
+      },
+      {
+        "length": 105,
+        "barrier": 4.0,
+        "states": 66,
+        "max_allowed_total_depth": 170,
+        "survival_mass": 0.000356272,
+        "survival_log2_mass": -11.4547331431
+      },
+      {
+        "length": 106,
+        "barrier": 4.0,
+        "states": 67,
+        "max_allowed_total_depth": 172,
+        "survival_mass": 0.0003405293,
+        "survival_log2_mass": -11.5199335607
+      },
+      {
+        "length": 107,
+        "barrier": 4.0,
+        "states": 67,
+        "max_allowed_total_depth": 173,
+        "survival_mass": 0.0003144402,
+        "survival_log2_mass": -11.6349265484
+      },
+      {
+        "length": 108,
+        "barrier": 4.0,
+        "states": 68,
+        "max_allowed_total_depth": 175,
+        "survival_mass": 0.0002985464,
+        "survival_log2_mass": -11.7097573543
+      },
+      {
+        "length": 109,
+        "barrier": 4.0,
+        "states": 68,
+        "max_allowed_total_depth": 176,
+        "survival_mass": 0.0002736193,
+        "survival_log2_mass": -11.8355423983
+      },
+      {
+        "length": 110,
+        "barrier": 4.0,
+        "states": 69,
+        "max_allowed_total_depth": 178,
+        "survival_mass": 0.0002589686,
+        "survival_log2_mass": -11.9149353827
+      },
+      {
+        "length": 111,
+        "barrier": 4.0,
+        "states": 69,
+        "max_allowed_total_depth": 179,
+        "survival_mass": 0.0002363647,
+        "survival_log2_mass": -12.0466975011
+      },
+      {
+        "length": 112,
+        "barrier": 4.0,
+        "states": 70,
+        "max_allowed_total_depth": 181,
+        "survival_mass": 0.0002232647,
+        "survival_log2_mass": -12.128957439
+      },
+      {
+        "length": 113,
+        "barrier": 4.0,
+        "states": 71,
+        "max_allowed_total_depth": 183,
+        "survival_mass": 0.0002132382,
+        "survival_log2_mass": -12.1952462385
+      },
+      {
+        "length": 114,
+        "barrier": 4.0,
+        "states": 71,
+        "max_allowed_total_depth": 184,
+        "survival_mass": 0.0001966911,
+        "survival_log2_mass": -12.311780537
+      },
+      {
+        "length": 115,
+        "barrier": 4.0,
+        "states": 72,
+        "max_allowed_total_depth": 186,
+        "survival_mass": 0.0001866514,
+        "survival_log2_mass": -12.3873656725
+      },
+      {
+        "length": 116,
+        "barrier": 4.0,
+        "states": 72,
+        "max_allowed_total_depth": 187,
+        "survival_mass": 0.0001709461,
+        "survival_log2_mass": -12.514170697
+      },
+      {
+        "length": 117,
+        "barrier": 4.0,
+        "states": 73,
+        "max_allowed_total_depth": 189,
+        "survival_mass": 0.0001617393,
+        "survival_log2_mass": -12.5940422016
+      },
+      {
+        "length": 118,
+        "barrier": 4.0,
+        "states": 74,
+        "max_allowed_total_depth": 191,
+        "survival_mass": 0.0001546486,
+        "survival_log2_mass": -12.6587181906
+      },
+      {
+        "length": 119,
+        "barrier": 4.0,
+        "states": 74,
+        "max_allowed_total_depth": 192,
+        "survival_mass": 0.0001428984,
+        "survival_log2_mass": -12.7727224815
+      },
+      {
+        "length": 120,
+        "barrier": 4.0,
+        "states": 75,
+        "max_allowed_total_depth": 194,
+        "survival_mass": 0.0001357391,
+        "survival_log2_mass": -12.8468760751
+      }
+    ],
+    "8.0": [
+      {
+        "length": 1,
+        "barrier": 8.0,
+        "states": 9,
+        "max_allowed_total_depth": 9,
+        "survival_mass": 0.998046875,
+        "survival_log2_mass": -0.0028205191
+      },
+      {
+        "length": 2,
+        "barrier": 8.0,
+        "states": 10,
+        "max_allowed_total_depth": 11,
+        "survival_mass": 0.9936523438,
+        "survival_log2_mass": -0.0091869208
+      },
+      {
+        "length": 3,
+        "barrier": 8.0,
+        "states": 10,
+        "max_allowed_total_depth": 12,
+        "survival_mass": 0.98046875,
+        "survival_log2_mass": -0.028456446
+      },
+      {
+        "length": 4,
+        "barrier": 8.0,
+        "states": 11,
+        "max_allowed_total_depth": 14,
+        "survival_mass": 0.9671020508,
+        "survival_log2_mass": -0.0482599607
+      },
+      {
+        "length": 5,
+        "barrier": 8.0,
+        "states": 11,
+        "max_allowed_total_depth": 15,
+        "survival_mass": 0.9386291504,
+        "survival_log2_mass": -0.091372829
+      },
+      {
+        "length": 6,
+        "barrier": 8.0,
+        "states": 12,
+        "max_allowed_total_depth": 17,
+        "survival_mass": 0.9162445068,
+        "survival_log2_mass": -0.126195451
+      },
+      {
+        "length": 7,
+        "barrier": 8.0,
+        "states": 13,
+        "max_allowed_total_depth": 19,
+        "survival_mass": 0.8955078125,
+        "survival_log2_mass": -0.1592220764
+      },
+      {
+        "length": 8,
+        "barrier": 8.0,
+        "states": 13,
+        "max_allowed_total_depth": 20,
+        "survival_mass": 0.8562917709,
+        "survival_log2_mass": -0.2238256338
+      },
+      {
+        "length": 9,
+        "barrier": 8.0,
+        "states": 14,
+        "max_allowed_total_depth": 22,
+        "survival_mass": 0.8288602829,
+        "survival_log2_mass": -0.270799161
+      },
+      {
+        "length": 10,
+        "barrier": 8.0,
+        "states": 14,
+        "max_allowed_total_depth": 23,
+        "survival_mass": 0.7816114426,
+        "survival_log2_mass": -0.3554765068
+      },
+      {
+        "length": 11,
+        "barrier": 8.0,
+        "states": 15,
+        "max_allowed_total_depth": 25,
+        "survival_mass": 0.7509576678,
+        "survival_log2_mass": -0.4131965109
+      },
+      {
+        "length": 12,
+        "barrier": 8.0,
+        "states": 16,
+        "max_allowed_total_depth": 27,
+        "survival_mass": 0.7256784365,
+        "survival_log2_mass": -0.4625976939
+      },
+      {
+        "length": 13,
+        "barrier": 8.0,
+        "states": 16,
+        "max_allowed_total_depth": 28,
+        "survival_mass": 0.6815855019,
+        "survival_log2_mass": -0.5530334468
+      },
+      {
+        "length": 14,
+        "barrier": 8.0,
+        "states": 17,
+        "max_allowed_total_depth": 30,
+        "survival_mass": 0.6531712282,
+        "survival_log2_mass": -0.6144668523
+      },
+      {
+        "length": 15,
+        "barrier": 8.0,
+        "states": 17,
+        "max_allowed_total_depth": 31,
+        "survival_mass": 0.6068107765,
+        "survival_log2_mass": -0.7206813879
+      },
+      {
+        "length": 16,
+        "barrier": 8.0,
+        "states": 18,
+        "max_allowed_total_depth": 33,
+        "survival_mass": 0.5783622353,
+        "survival_log2_mass": -0.7899547416
+      },
+      {
+        "length": 17,
+        "barrier": 8.0,
+        "states": 18,
+        "max_allowed_total_depth": 34,
+        "survival_mass": 0.5331384336,
+        "survival_log2_mass": -0.907417906
+      },
+      {
+        "length": 18,
+        "barrier": 8.0,
+        "states": 19,
+        "max_allowed_total_depth": 36,
+        "survival_mass": 0.5060635134,
+        "survival_log2_mass": -0.9826096335
+      },
+      {
+        "length": 19,
+        "barrier": 8.0,
+        "states": 20,
+        "max_allowed_total_depth": 38,
+        "survival_mass": 0.4848734853,
+        "survival_log2_mass": -1.044319731
+      },
+      {
+        "length": 20,
+        "barrier": 8.0,
+        "states": 20,
+        "max_allowed_total_depth": 39,
+        "survival_mass": 0.4493073319,
+        "survival_log2_mass": -1.1542254906
+      },
+      {
+        "length": 21,
+        "barrier": 8.0,
+        "states": 21,
+        "max_allowed_total_depth": 41,
+        "survival_mass": 0.4273213277,
+        "survival_log2_mass": -1.2266067709
+      },
+      {
+        "length": 22,
+        "barrier": 8.0,
+        "states": 21,
+        "max_allowed_total_depth": 42,
+        "survival_mass": 0.3924736388,
+        "survival_log2_mass": -1.3493323389
+      },
+      {
+        "length": 23,
+        "barrier": 8.0,
+        "states": 22,
+        "max_allowed_total_depth": 44,
+        "survival_mass": 0.3717513557,
+        "survival_log2_mass": -1.4275900913
+      },
+      {
+        "length": 24,
+        "barrier": 8.0,
+        "states": 23,
+        "max_allowed_total_depth": 46,
+        "survival_mass": 0.3556356253,
+        "survival_log2_mass": -1.4915282435
+      },
+      {
+        "length": 25,
+        "barrier": 8.0,
+        "states": 23,
+        "max_allowed_total_depth": 47,
+        "survival_mass": 0.3287342616,
+        "survival_log2_mass": -1.6050062689
+      },
+      {
+        "length": 26,
+        "barrier": 8.0,
+        "states": 24,
+        "max_allowed_total_depth": 49,
+        "survival_mass": 0.3122132251,
+        "survival_log2_mass": -1.6793964451
+      },
+      {
+        "length": 27,
+        "barrier": 8.0,
+        "states": 24,
+        "max_allowed_total_depth": 50,
+        "survival_mass": 0.2861563683,
+        "survival_log2_mass": -1.8051243812
+      },
+      {
+        "length": 28,
+        "barrier": 8.0,
+        "states": 25,
+        "max_allowed_total_depth": 52,
+        "survival_mass": 0.2707486314,
+        "survival_log2_mass": -1.8849740494
+      },
+      {
+        "length": 29,
+        "barrier": 8.0,
+        "states": 25,
+        "max_allowed_total_depth": 53,
+        "survival_mass": 0.2468805403,
+        "survival_log2_mass": -2.0181149705
+      },
+      {
+        "length": 30,
+        "barrier": 8.0,
+        "states": 26,
+        "max_allowed_total_depth": 55,
+        "survival_mass": 0.2329897358,
+        "survival_log2_mass": -2.1016616955
+      },
+      {
+        "length": 31,
+        "barrier": 8.0,
+        "states": 27,
+        "max_allowed_total_depth": 57,
+        "survival_mass": 0.222330122,
+        "survival_log2_mass": -2.1692246726
+      },
+      {
+        "length": 32,
+        "barrier": 8.0,
+        "states": 27,
+        "max_allowed_total_depth": 58,
+        "survival_mass": 0.2047069099,
+        "survival_log2_mass": -2.2883682931
+      },
+      {
+        "length": 33,
+        "barrier": 8.0,
+        "states": 28,
+        "max_allowed_total_depth": 60,
+        "survival_mass": 0.193996367,
+        "survival_log2_mass": -2.3658984598
+      },
+      {
+        "length": 34,
+        "barrier": 8.0,
+        "states": 28,
+        "max_allowed_total_depth": 61,
+        "survival_mass": 0.177226657,
+        "survival_log2_mass": -2.4963324765
+      },
+      {
+        "length": 35,
+        "barrier": 8.0,
+        "states": 29,
+        "max_allowed_total_depth": 63,
+        "survival_mass": 0.1673897926,
+        "survival_log2_mass": -2.57871654
+      },
+      {
+        "length": 36,
+        "barrier": 8.0,
+        "states": 30,
+        "max_allowed_total_depth": 65,
+        "survival_mass": 0.1598134145,
+        "survival_log2_mass": -2.645539584
+      },
+      {
+        "length": 37,
+        "barrier": 8.0,
+        "states": 30,
+        "max_allowed_total_depth": 66,
+        "survival_mass": 0.1472613648,
+        "survival_log2_mass": -2.7635491178
+      },
+      {
+        "length": 38,
+        "barrier": 8.0,
+        "states": 31,
+        "max_allowed_total_depth": 68,
+        "survival_mass": 0.1396184315,
+        "survival_log2_mass": -2.8404386861
+      },
+      {
+        "length": 39,
+        "barrier": 8.0,
+        "states": 31,
+        "max_allowed_total_depth": 69,
+        "survival_mass": 0.127638745,
+        "survival_log2_mass": -2.9698617666
+      },
+      {
+        "length": 40,
+        "barrier": 8.0,
+        "states": 32,
+        "max_allowed_total_depth": 71,
+        "survival_mass": 0.1206043038,
+        "survival_log2_mass": -3.0516467032
+      },
+      {
+        "length": 41,
+        "barrier": 8.0,
+        "states": 32,
+        "max_allowed_total_depth": 72,
+        "survival_mass": 0.1097613439,
+        "survival_log2_mass": -3.1875580441
+      },
+      {
+        "length": 42,
+        "barrier": 8.0,
+        "states": 33,
+        "max_allowed_total_depth": 74,
+        "survival_mass": 0.1034858198,
+        "survival_log2_mass": -3.272494999
+      },
+      {
+        "length": 43,
+        "barrier": 8.0,
+        "states": 34,
+        "max_allowed_total_depth": 76,
+        "survival_mass": 0.098688807,
+        "survival_log2_mass": -3.3409697217
+      },
+      {
+        "length": 44,
+        "barrier": 8.0,
+        "states": 34,
+        "max_allowed_total_depth": 77,
+        "survival_mass": 0.0907818315,
+        "survival_log2_mass": -3.4614525951
+      },
+      {
+        "length": 45,
+        "barrier": 8.0,
+        "states": 35,
+        "max_allowed_total_depth": 79,
+        "survival_mass": 0.0859925851,
+        "survival_log2_mass": -3.5396439244
+      },
+      {
+        "length": 46,
+        "barrier": 8.0,
+        "states": 35,
+        "max_allowed_total_depth": 80,
+        "survival_mass": 0.0785120969,
+        "survival_log2_mass": -3.6709412323
+      },
+      {
+        "length": 47,
+        "barrier": 8.0,
+        "states": 36,
+        "max_allowed_total_depth": 82,
+        "survival_mass": 0.07413589,
+        "survival_log2_mass": -3.7536840533
+      },
+      {
+        "length": 48,
+        "barrier": 8.0,
+        "states": 37,
+        "max_allowed_total_depth": 84,
+        "survival_mass": 0.0707715955,
+        "survival_log2_mass": -3.8206857464
+      },
+      {
+        "length": 49,
+        "barrier": 8.0,
+        "states": 37,
+        "max_allowed_total_depth": 85,
+        "survival_mass": 0.0652057116,
+        "survival_log2_mass": -3.9388578495
+      },
+      {
+        "length": 50,
+        "barrier": 8.0,
+        "states": 38,
+        "max_allowed_total_depth": 87,
+        "survival_mass": 0.061821921,
+        "survival_log2_mass": -4.0157377066
+      },
+      {
+        "length": 51,
+        "barrier": 8.0,
+        "states": 38,
+        "max_allowed_total_depth": 88,
+        "survival_mass": 0.0565238185,
+        "survival_log2_mass": -4.144997259
+      },
+      {
+        "length": 52,
+        "barrier": 8.0,
+        "states": 39,
+        "max_allowed_total_depth": 90,
+        "survival_mass": 0.0534163599,
+        "survival_log2_mass": -4.2265745242
+      },
+      {
+        "length": 53,
+        "barrier": 8.0,
+        "states": 40,
+        "max_allowed_total_depth": 92,
+        "survival_mass": 0.0510232319,
+        "survival_log2_mass": -4.2927019057
+      },
+      {
+        "length": 54,
+        "barrier": 8.0,
+        "states": 40,
+        "max_allowed_total_depth": 93,
+        "survival_mass": 0.0470586675,
+        "survival_log2_mass": -4.4093957185
+      },
+      {
+        "length": 55,
+        "barrier": 8.0,
+        "states": 41,
+        "max_allowed_total_depth": 95,
+        "survival_mass": 0.0446446425,
+        "survival_log2_mass": -4.4853691335
+      },
+      {
+        "length": 56,
+        "barrier": 8.0,
+        "states": 41,
+        "max_allowed_total_depth": 96,
+        "survival_mass": 0.0408605329,
+        "survival_log2_mass": -4.6131481686
+      },
+      {
+        "length": 57,
+        "barrier": 8.0,
+        "states": 42,
+        "max_allowed_total_depth": 98,
+        "survival_mass": 0.0386380489,
+        "survival_log2_mass": -4.6938339448
+      },
+      {
+        "length": 58,
+        "barrier": 8.0,
+        "states": 42,
+        "max_allowed_total_depth": 99,
+        "survival_mass": 0.035211362,
+        "survival_log2_mass": -4.8278151555
+      },
+      {
+        "length": 59,
+        "barrier": 8.0,
+        "states": 43,
+        "max_allowed_total_depth": 101,
+        "survival_mass": 0.0332272188,
+        "survival_log2_mass": -4.911490647
+      },
+      {
+        "length": 60,
+        "barrier": 8.0,
+        "states": 44,
+        "max_allowed_total_depth": 103,
+        "survival_mass": 0.0317098278,
+        "survival_log2_mass": -4.9789261464
+      },
+      {
+        "length": 61,
+        "barrier": 8.0,
+        "states": 44,
+        "max_allowed_total_depth": 104,
+        "survival_mass": 0.029207477,
+        "survival_log2_mass": -5.0975184499
+      },
+      {
+        "length": 62,
+        "barrier": 8.0,
+        "states": 45,
+        "max_allowed_total_depth": 106,
+        "survival_mass": 0.0276907414,
+        "survival_log2_mass": -5.1744525097
+      },
+      {
+        "length": 63,
+        "barrier": 8.0,
+        "states": 45,
+        "max_allowed_total_depth": 107,
+        "survival_mass": 0.0253201461,
+        "survival_log2_mass": -5.3035704581
+      },
+      {
+        "length": 64,
+        "barrier": 8.0,
+        "states": 46,
+        "max_allowed_total_depth": 109,
+        "survival_mass": 0.0239320493,
+        "survival_log2_mass": -5.3849122472
+      },
+      {
+        "length": 65,
+        "barrier": 8.0,
+        "states": 47,
+        "max_allowed_total_depth": 111,
+        "survival_mass": 0.0228640567,
+        "survival_log2_mass": -5.4507747878
+      },
+      {
+        "length": 66,
+        "barrier": 8.0,
+        "states": 47,
+        "max_allowed_total_depth": 112,
+        "survival_mass": 0.0210958213,
+        "survival_log2_mass": -5.5668989347
+      },
+      {
+        "length": 67,
+        "barrier": 8.0,
+        "states": 48,
+        "max_allowed_total_depth": 114,
+        "survival_mass": 0.0200197137,
+        "survival_log2_mass": -5.6424348479
+      },
+      {
+        "length": 68,
+        "barrier": 8.0,
+        "states": 48,
+        "max_allowed_total_depth": 115,
+        "survival_mass": 0.0183333032,
+        "survival_log2_mass": -5.7693894437
+      },
+      {
+        "length": 69,
+        "barrier": 8.0,
+        "states": 49,
+        "max_allowed_total_depth": 117,
+        "survival_mass": 0.0173430085,
+        "survival_log2_mass": -5.8495020023
+      },
+      {
+        "length": 70,
+        "barrier": 8.0,
+        "states": 49,
+        "max_allowed_total_depth": 118,
+        "survival_mass": 0.0158161599,
+        "survival_log2_mass": -5.9824568296
+      },
+      {
+        "length": 71,
+        "barrier": 8.0,
+        "states": 50,
+        "max_allowed_total_depth": 120,
+        "survival_mass": 0.0149319779,
+        "survival_log2_mass": -6.0654509102
+      },
+      {
+        "length": 72,
+        "barrier": 8.0,
+        "states": 51,
+        "max_allowed_total_depth": 122,
+        "survival_mass": 0.014255667,
+        "survival_log2_mass": -6.1323206463
+      },
+      {
+        "length": 73,
+        "barrier": 8.0,
+        "states": 51,
+        "max_allowed_total_depth": 123,
+        "survival_mass": 0.0131401015,
+        "survival_log2_mass": -6.2498797722
+      },
+      {
+        "length": 74,
+        "barrier": 8.0,
+        "states": 52,
+        "max_allowed_total_depth": 125,
+        "survival_mass": 0.0124636922,
+        "survival_log2_mass": -6.3261246811
+      },
+      {
+        "length": 75,
+        "barrier": 8.0,
+        "states": 52,
+        "max_allowed_total_depth": 126,
+        "survival_mass": 0.0114061271,
+        "survival_log2_mass": -6.4540471719
+      },
+      {
+        "length": 76,
+        "barrier": 8.0,
+        "states": 53,
+        "max_allowed_total_depth": 128,
+        "survival_mass": 0.0107865686,
+        "survival_log2_mass": -6.5346202051
+      },
+      {
+        "length": 77,
+        "barrier": 8.0,
+        "states": 54,
+        "max_allowed_total_depth": 130,
+        "survival_mass": 0.010309672,
+        "survival_log2_mass": -6.5998577574
+      },
+      {
+        "length": 78,
+        "barrier": 8.0,
+        "states": 54,
+        "max_allowed_total_depth": 131,
+        "survival_mass": 0.0095197586,
+        "survival_log2_mass": -6.7148592937
+      },
+      {
+        "length": 79,
+        "barrier": 8.0,
+        "states": 55,
+        "max_allowed_total_depth": 133,
+        "survival_mass": 0.0090387613,
+        "survival_log2_mass": -6.7896592131
+      },
+      {
+        "length": 80,
+        "barrier": 8.0,
+        "states": 55,
+        "max_allowed_total_depth": 134,
+        "survival_mass": 0.0082845946,
+        "survival_log2_mass": -6.9153531907
+      },
+      {
+        "length": 81,
+        "barrier": 8.0,
+        "states": 56,
+        "max_allowed_total_depth": 136,
+        "survival_mass": 0.00784144,
+        "survival_log2_mass": -6.9946656689
+      },
+      {
+        "length": 82,
+        "barrier": 8.0,
+        "states": 56,
+        "max_allowed_total_depth": 137,
+        "survival_mass": 0.0071577938,
+        "survival_log2_mass": -7.1262693036
+      },
+      {
+        "length": 83,
+        "barrier": 8.0,
+        "states": 57,
+        "max_allowed_total_depth": 139,
+        "survival_mass": 0.0067616109,
+        "survival_log2_mass": -7.2084172936
+      },
+      {
+        "length": 84,
+        "barrier": 8.0,
+        "states": 58,
+        "max_allowed_total_depth": 141,
+        "survival_mass": 0.0064583837,
+        "survival_log2_mass": -7.2746111226
+      },
+      {
+        "length": 85,
+        "barrier": 8.0,
+        "states": 58,
+        "max_allowed_total_depth": 142,
+        "survival_mass": 0.0059579375,
+        "survival_log2_mass": -7.3909712885
+      },
+      {
+        "length": 86,
+        "barrier": 8.0,
+        "states": 59,
+        "max_allowed_total_depth": 144,
+        "survival_mass": 0.0056542798,
+        "survival_log2_mass": -7.4664410054
+      },
+      {
+        "length": 87,
+        "barrier": 8.0,
+        "states": 59,
+        "max_allowed_total_depth": 145,
+        "survival_mass": 0.0051792229,
+        "survival_log2_mass": -7.5930486269
+      },
+      {
+        "length": 88,
+        "barrier": 8.0,
+        "states": 60,
+        "max_allowed_total_depth": 147,
+        "survival_mass": 0.0049007008,
+        "survival_log2_mass": -7.6727962244
+      },
+      {
+        "length": 89,
+        "barrier": 8.0,
+        "states": 61,
+        "max_allowed_total_depth": 149,
+        "survival_mass": 0.0046861733,
+        "survival_log2_mass": -7.7373739766
+      },
+      {
+        "length": 90,
+        "barrier": 8.0,
+        "states": 61,
+        "max_allowed_total_depth": 150,
+        "survival_mass": 0.0043306329,
+        "survival_log2_mass": -7.8512063875
+      },
+      {
+        "length": 91,
+        "barrier": 8.0,
+        "states": 62,
+        "max_allowed_total_depth": 152,
+        "survival_mass": 0.0041139749,
+        "survival_log2_mass": -7.925251294
+      },
+      {
+        "length": 92,
+        "barrier": 8.0,
+        "states": 62,
+        "max_allowed_total_depth": 153,
+        "survival_mass": 0.0037740603,
+        "survival_log2_mass": -8.0496668066
+      },
+      {
+        "length": 93,
+        "barrier": 8.0,
+        "states": 63,
+        "max_allowed_total_depth": 155,
+        "survival_mass": 0.0035741651,
+        "survival_log2_mass": -8.1281780031
+      },
+      {
+        "length": 94,
+        "barrier": 8.0,
+        "states": 63,
+        "max_allowed_total_depth": 156,
+        "survival_mass": 0.0032655886,
+        "survival_log2_mass": -8.2584412353
+      },
+      {
+        "length": 95,
+        "barrier": 8.0,
+        "states": 64,
+        "max_allowed_total_depth": 158,
+        "survival_mass": 0.0030866154,
+        "survival_log2_mass": -8.3397585492
+      },
+      {
+        "length": 96,
+        "barrier": 8.0,
+        "states": 65,
+        "max_allowed_total_depth": 160,
+        "survival_mass": 0.0029495413,
+        "survival_log2_mass": -8.4052936801
+      },
+      {
+        "length": 97,
+        "barrier": 8.0,
+        "states": 65,
+        "max_allowed_total_depth": 161,
+        "survival_mass": 0.0027231785,
+        "survival_log2_mass": -8.5204927344
+      },
+      {
+        "length": 98,
+        "barrier": 8.0,
+        "states": 66,
+        "max_allowed_total_depth": 163,
+        "survival_mass": 0.0025857223,
+        "survival_log2_mass": -8.5952169619
+      },
+      {
+        "length": 99,
+        "barrier": 8.0,
+        "states": 66,
+        "max_allowed_total_depth": 164,
+        "survival_mass": 0.0023705423,
+        "survival_log2_mass": -8.7205671334
+      },
+      {
+        "length": 100,
+        "barrier": 8.0,
+        "states": 67,
+        "max_allowed_total_depth": 166,
+        "survival_mass": 0.0022442823,
+        "survival_log2_mass": -8.7995301289
+      },
+      {
+        "length": 101,
+        "barrier": 8.0,
+        "states": 68,
+        "max_allowed_total_depth": 168,
+        "survival_mass": 0.0021469682,
+        "survival_log2_mass": -8.8634834475
+      },
+      {
+        "length": 102,
+        "barrier": 8.0,
+        "states": 68,
+        "max_allowed_total_depth": 169,
+        "survival_mass": 0.0019855939,
+        "survival_log2_mass": -8.9762136827
+      },
+      {
+        "length": 103,
+        "barrier": 8.0,
+        "states": 69,
+        "max_allowed_total_depth": 171,
+        "survival_mass": 0.0018871831,
+        "survival_log2_mass": -9.049549849
+      },
+      {
+        "length": 104,
+        "barrier": 8.0,
+        "states": 69,
+        "max_allowed_total_depth": 172,
+        "survival_mass": 0.0017326915,
+        "survival_log2_mass": -9.1727695051
+      },
+      {
+        "length": 105,
+        "barrier": 8.0,
+        "states": 70,
+        "max_allowed_total_depth": 174,
+        "survival_mass": 0.001641768,
+        "survival_log2_mass": -9.2505340446
+      },
+      {
+        "length": 106,
+        "barrier": 8.0,
+        "states": 71,
+        "max_allowed_total_depth": 176,
+        "survival_mass": 0.0015715443,
+        "survival_log2_mass": -9.3136013586
+      },
+      {
+        "length": 107,
+        "barrier": 8.0,
+        "states": 71,
+        "max_allowed_total_depth": 177,
+        "survival_mass": 0.001454908,
+        "survival_log2_mass": -9.4248563419
+      },
+      {
+        "length": 108,
+        "barrier": 8.0,
+        "states": 72,
+        "max_allowed_total_depth": 179,
+        "survival_mass": 0.0013836503,
+        "survival_log2_mass": -9.4973048683
+      },
+      {
+        "length": 109,
+        "barrier": 8.0,
+        "states": 72,
+        "max_allowed_total_depth": 180,
+        "survival_mass": 0.0012716349,
+        "survival_log2_mass": -9.6190997412
+      },
+      {
+        "length": 110,
+        "barrier": 8.0,
+        "states": 73,
+        "max_allowed_total_depth": 182,
+        "survival_mass": 0.0012056077,
+        "survival_log2_mass": -9.6960237084
+      },
+      {
+        "length": 111,
+        "barrier": 8.0,
+        "states": 73,
+        "max_allowed_total_depth": 183,
+        "survival_mass": 0.0011034994,
+        "survival_log2_mass": -9.8236983753
+      },
+      {
+        "length": 112,
+        "barrier": 8.0,
+        "states": 74,
+        "max_allowed_total_depth": 185,
+        "survival_mass": 0.0010441496,
+        "survival_log2_mass": -9.9034558731
+      },
+      {
+        "length": 113,
+        "barrier": 8.0,
+        "states": 75,
+        "max_allowed_total_depth": 187,
+        "survival_mass": 0.0009986184,
+        "survival_log2_mass": -9.9677789116
+      },
+      {
+        "length": 114,
+        "barrier": 8.0,
+        "states": 75,
+        "max_allowed_total_depth": 188,
+        "survival_mass": 0.0009233231,
+        "survival_log2_mass": -10.0808767994
+      },
+      {
+        "length": 115,
+        "barrier": 8.0,
+        "states": 76,
+        "max_allowed_total_depth": 190,
+        "survival_mass": 0.0008775218,
+        "survival_log2_mass": -10.1542773635
+      },
+      {
+        "length": 116,
+        "barrier": 8.0,
+        "states": 76,
+        "max_allowed_total_depth": 191,
+        "survival_mass": 0.0008057234,
+        "survival_log2_mass": -10.2774276644
+      },
+      {
+        "length": 117,
+        "barrier": 8.0,
+        "states": 77,
+        "max_allowed_total_depth": 193,
+        "survival_mass": 0.0007635231,
+        "survival_log2_mass": -10.355040661
+      },
+      {
+        "length": 118,
+        "barrier": 8.0,
+        "states": 78,
+        "max_allowed_total_depth": 195,
+        "survival_mass": 0.0007309535,
+        "survival_log2_mass": -10.4179326619
+      },
+      {
+        "length": 119,
+        "barrier": 8.0,
+        "states": 78,
+        "max_allowed_total_depth": 196,
+        "survival_mass": 0.0006768815,
+        "survival_log2_mass": -10.5288091296
+      },
+      {
+        "length": 120,
+        "barrier": 8.0,
+        "states": 79,
+        "max_allowed_total_depth": 198,
+        "survival_mass": 0.000643859,
+        "survival_log2_mass": -10.6009674878
+      }
+    ]
+  },
+  "survival_summaries": [
+    {
+      "barrier": 0.0,
+      "final_length": 120,
+      "final_survival_mass": 9.3061e-06,
+      "final_survival_log2_mass": -16.7133862719,
+      "tail_mean_log2_mass_per_step": -0.1552393259,
+      "final_states": 71
+    },
+    {
+      "barrier": 2.0,
+      "final_length": 120,
+      "final_survival_mass": 4.80751e-05,
+      "final_survival_log2_mass": -14.3443506804,
+      "tail_mean_log2_mass_per_step": -0.128148335,
+      "final_states": 73
+    },
+    {
+      "barrier": 4.0,
+      "final_length": 120,
+      "final_survival_mass": 0.0001357391,
+      "final_survival_log2_mass": -12.8468760751,
+      "tail_mean_log2_mass_per_step": -0.1113171878,
+      "final_states": 75
+    },
+    {
+      "barrier": 8.0,
+      "final_length": 120,
+      "final_survival_mass": 0.000643859,
+      "final_survival_log2_mass": -10.6009674878,
+      "tail_mean_log2_mass_per_step": -0.0867863083,
+      "final_states": 79
+    }
+  ]
+}

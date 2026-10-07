@@ -1,0 +1,11 @@
+# corpus M=3456, d=4096, layer-index=0, width=1024, k=32
+# delta_S target (cyclic out-of-support fraction): S12=0.385139  Sfull=1.127573e-12
+# training vanilla ...
+#   vanilla: FVU(full h)=0.0230  cyclic_err_frac=0.010213
+# training cert_S12 ...
+#   cert_S12: FVU(full h)=0.0703  cyclic_err_frac=0.411357  P1 leak=4.14e-05
+# training cert_Sfull ...
+#   cert_Sfull: FVU(full h)=0.0231  cyclic_err_frac=0.010557  P1 leak=1.61e-06
+# P3 cert_S12: gap=0.401143  delta_S=0.385139  rel_err=0.042  -> PASS
+# P3 cert_Sfull: gap=0.000344  delta_S=0.000000  rel_err=0.000  -> PASS
+# wrote empirical/reports/ccsae_train_months_llama31_8b.json

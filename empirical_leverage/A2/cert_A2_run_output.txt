@@ -1,0 +1,18 @@
+  [OK] A  m-chart nabla^4 phi: ALL 2+2 (iijj) blocks = 0 (N=4 exhaustive + Z/30 sample); diag c_4=+2
+  [OK] B  e-chart nabla^4 Phi: 2+2 (iijj) block NONZERO at N=4,5,6,8,30; N=4 value EXACTLY -3/128
+  [OK] C  char-contract(nabla^4 Phi|_0) == Paper 21 rule (connected - 3 Wick), N=4,6, to mach. prec.
+  [OK] D  Z/30 atlas: 1202 / 120 Wick / 1082 connected / 914 three-prime (Paper 21 sec 5.2) reproduced
+  [OK] E  Legendre sign-opposite (c_4=+2 vs kappa_4 sign -); N=4 diag/distinct coincidence flagged
+
+============================================================================
+  PASS  A  m-chart nabla^4 phi: ALL 2+2 (iijj) blocks = 0 (N=4 exhaustive + Z/30 sample); diag c_4=+2
+  PASS  B  e-chart nabla^4 Phi: 2+2 (iijj) block NONZERO at N=4,5,6,8,30; N=4 value EXACTLY -3/128
+  PASS  C  char-contract(nabla^4 Phi|_0) == Paper 21 rule (connected - 3 Wick), N=4,6, to mach. prec.
+  PASS  D  Z/30 atlas: 1202 / 120 Wick / 1082 connected / 914 three-prime (Paper 21 sec 5.2) reproduced
+  PASS  E  Legendre sign-opposite (c_4=+2 vs kappa_4 sign -); N=4 diag/distinct coincidence flagged
+============================================================================
+CERT GREEN  (5 checks).
+  m-chart nabla^4 phi has NO 2+2 Wick block (Paper III Thm 4.1, diagonal tower).
+  e-chart nabla^4 Phi DOES carry it; on the N=4 frame the block = -3/128.
+  Char-contraction shows it IS Paper 21's selection rule; Z/30 gives 914 three-prime vertices.
+  => Paper 21's 2+2 obstruction is provably an e-chart object (Paper III Prop 7.2). Welded.

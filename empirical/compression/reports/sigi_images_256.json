@@ -1,0 +1,119 @@
+[
+  {
+    "file": "C:\\Users\\leomu\\OneDrive\\Pictures\\133925289798805247.jpg",
+    "original_width": 3840,
+    "original_height": 2160,
+    "width": 256,
+    "height": 256,
+    "raw_rgb_bytes": 196608,
+    "source_jpeg_bytes": 2139258,
+    "png_bytes": 79802,
+    "png_encode_s": 0.03976620000321418,
+    "png_decode_s": 0.0015231500001391396,
+    "gzip_rgb_bytes": 89409,
+    "gzip_rgb_encode_s": 0.010506199992960319,
+    "gzip_rgb_decode_s": 0.0009074499976122752,
+    "sigi_bytes": 75840,
+    "sigi_mode": "ycocg-rice",
+    "sigi_encode_s": 4.010207400016952,
+    "sigi_decode_s": 0.43816280001192354,
+    "hcs2d_bytes": null,
+    "hcs2d_encode_s": null,
+    "hcs2d_decode_s": null,
+    "hcs2d_raw_blocks": null,
+    "hcs2d_song_blocks": null,
+    "hcs_rgb": {
+      "bytes": 196635,
+      "encode_s": 0.9530879000085406,
+      "decode_s": 0.00011609999637585133
+    },
+    "hcs_planar": {
+      "bytes": 196635,
+      "encode_s": 2.3940099999890663,
+      "decode_s": 0.02254579999134876
+    },
+    "hcs_left_residual": {
+      "bytes": 196635,
+      "encode_s": 3.0109522999846376,
+      "decode_s": 0.03720699998666532
+    }
+  },
+  {
+    "file": "C:\\Users\\leomu\\OneDrive\\Pictures\\133893333653186297.jpg",
+    "original_width": 3840,
+    "original_height": 2160,
+    "width": 256,
+    "height": 256,
+    "raw_rgb_bytes": 196608,
+    "source_jpeg_bytes": 2443514,
+    "png_bytes": 158692,
+    "png_encode_s": 0.015274900011718273,
+    "png_decode_s": 0.0023938000085763633,
+    "gzip_rgb_bytes": 168936,
+    "gzip_rgb_encode_s": 0.014460599981248379,
+    "gzip_rgb_decode_s": 0.0013519999920390546,
+    "sigi_bytes": 143223,
+    "sigi_mode": "ycocg-rice",
+    "sigi_encode_s": 6.847721400001319,
+    "sigi_decode_s": 0.5420281000260729,
+    "hcs2d_bytes": null,
+    "hcs2d_encode_s": null,
+    "hcs2d_decode_s": null,
+    "hcs2d_raw_blocks": null,
+    "hcs2d_song_blocks": null,
+    "hcs_rgb": {
+      "bytes": 196635,
+      "encode_s": 0.03496729998732917,
+      "decode_s": 0.00012139999307692051
+    },
+    "hcs_planar": {
+      "bytes": 196635,
+      "encode_s": 0.265973200002918,
+      "decode_s": 0.016326300014043227
+    },
+    "hcs_left_residual": {
+      "bytes": 196635,
+      "encode_s": 0.30226379999658093,
+      "decode_s": 0.03014940000139177
+    }
+  },
+  {
+    "file": "C:\\Users\\leomu\\OneDrive\\Pictures\\133921439458600606.jpg",
+    "original_width": 3840,
+    "original_height": 2160,
+    "width": 256,
+    "height": 256,
+    "raw_rgb_bytes": 196608,
+    "source_jpeg_bytes": 2391046,
+    "png_bytes": 171310,
+    "png_encode_s": 0.011220799991860986,
+    "png_decode_s": 0.0016222999984165654,
+    "gzip_rgb_bytes": 190658,
+    "gzip_rgb_encode_s": 0.009409999998752028,
+    "gzip_rgb_decode_s": 0.001142749999416992,
+    "sigi_bytes": 131845,
+    "sigi_mode": "ycocg-rice",
+    "sigi_encode_s": 6.923925999988569,
+    "sigi_decode_s": 0.3215314999979455,
+    "hcs2d_bytes": null,
+    "hcs2d_encode_s": null,
+    "hcs2d_decode_s": null,
+    "hcs2d_raw_blocks": null,
+    "hcs2d_song_blocks": null,
+    "hcs_rgb": {
+      "bytes": 196635,
+      "encode_s": 0.011079799995059147,
+      "decode_s": 8.13000078778714e-05
+    },
+    "hcs_planar": {
+      "bytes": 196635,
+      "encode_s": 0.009174799983156845,
+      "decode_s": 0.011632700014160946
+    },
+    "hcs_left_residual": {
+      "bytes": 196635,
+      "encode_s": 0.00992079998832196,
+      "decode_s": 0.02261079999152571
+    }
+  }
+]

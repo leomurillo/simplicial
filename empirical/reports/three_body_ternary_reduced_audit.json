@@ -1,0 +1,339 @@
+{
+  "kill_conditions": {
+    "E6": "NOT EVALUATED HERE: future integrator drift of E3_red or L beyond floor",
+    "E7": "evaluated statically: dimensionless connected tensor ratio at numerical floor",
+    "E8": "implementation self-test: rank(Deta)>3 or unreduced Hessian rank>3 for invariant eta"
+  },
+  "parameters": {
+    "outcomes": 6,
+    "delta": 0.15,
+    "epsilon": 0.001,
+    "seeds": 8,
+    "seed0": 2800,
+    "fd_step": 1e-06,
+    "rel_rank_tol": 1e-08,
+    "orth_tol": 1e-10,
+    "connected_ratio_floor": 1e-08,
+    "min_shape_quality": 0.001,
+    "report": "empirical\\reports\\three_body_ternary_reduced_audit.md",
+    "json": "empirical\\reports\\three_body_ternary_reduced_audit.json"
+  },
+  "fisher_gram": [
+    [
+      0.9999999999999997,
+      -1.4307168056890838e-16,
+      -5.034449067540611e-17
+    ],
+    [
+      -5.551115123125783e-17,
+      1.0000000000000004,
+      -2.458083967383028e-17
+    ],
+    [
+      -4.233214614880793e-17,
+      -5.616866057328102e-17,
+      1.0000000000000004
+    ]
+  ],
+  "samples": [
+    {
+      "seed": 2800,
+      "evaluated": true,
+      "rank_Deta": 3,
+      "Deta_singular_values": [
+        0.0009502236077013722,
+        0.0003887890798185498,
+        5.316166376207779e-05,
+        9.361421293028771e-20,
+        0.0,
+        0.0
+      ],
+      "Deta_relative_tolerance": 9.502236077013723e-12,
+      "unreduced_hessian_scaled_rank": 3,
+      "unreduced_hessian_scaled_singular_values": [
+        5.421372661252494,
+        0.9048751085235244,
+        0.016984175394316795,
+        5.602265293759611e-16,
+        9.919146551008244e-17,
+        7.650896937781732e-17,
+        5.401079666208261e-17,
+        1.2889455998329409e-17,
+        2.6703406949869957e-18
+      ],
+      "unreduced_hessian_relative_tolerance": 5.4213726612524944e-08,
+      "connected_tensor_norm": 2.798775609889798e-08,
+      "connected_tensor_scale": 2.798775609889798e-08,
+      "connected_tensor_ratio": 1.0,
+      "shape_quality": 0.10003033743583355,
+      "q": [
+        1.8222993056387617,
+        1.3579354831809995,
+        1.9576357603538577
+      ]
+    },
+    {
+      "seed": 2801,
+      "evaluated": true,
+      "rank_Deta": 3,
+      "Deta_singular_values": [
+        0.0005755279323556001,
+        6.195385625501895e-05,
+        7.317866577082165e-06,
+        1.6800838312204774e-20,
+        0.0,
+        0.0
+      ],
+      "Deta_relative_tolerance": 5.755279323556001e-12,
+      "unreduced_hessian_scaled_rank": 3,
+      "unreduced_hessian_scaled_singular_values": [
+        1.9880835989258276,
+        0.022975426204254468,
+        0.0003219729151438812,
+        9.610202378636515e-17,
+        6.091845686238984e-17,
+        2.5583952042243853e-17,
+        9.523600373802436e-18,
+        6.1381629408766776e-18,
+        2.3449391934943426e-19
+      ],
+      "unreduced_hessian_relative_tolerance": 1.9880835989258277e-08,
+      "connected_tensor_norm": 1.8215306272491094e-08,
+      "connected_tensor_scale": 1.8215306272491094e-08,
+      "connected_tensor_ratio": 1.0,
+      "shape_quality": 0.17871687254118349,
+      "q": [
+        2.1018536378733215,
+        2.482242543104949,
+        2.9720248543501278
+      ]
+    },
+    {
+      "seed": 2802,
+      "evaluated": true,
+      "rank_Deta": 3,
+      "Deta_singular_values": [
+        0.0011544991743762786,
+        0.0002688595617997047,
+        6.965120576734464e-05,
+        6.876213242868221e-20,
+        0.0,
+        0.0
+      ],
+      "Deta_relative_tolerance": 1.1544991743762786e-11,
+      "unreduced_hessian_scaled_rank": 3,
+      "unreduced_hessian_scaled_singular_values": [
+        8.00100453329838,
+        0.4330495763677396,
+        0.029138971496000074,
+        7.404428115531875e-16,
+        1.0122245049414993e-16,
+        7.706588146589327e-17,
+        1.7694104648598648e-17,
+        6.079810065901951e-18,
+        2.2635042846378733e-18
+      ],
+      "unreduced_hessian_relative_tolerance": 8.00100453329838e-08,
+      "connected_tensor_norm": 6.981690724680623e-08,
+      "connected_tensor_scale": 6.98169072468062e-08,
+      "connected_tensor_ratio": 1.0000000000000004,
+      "shape_quality": 0.12523279295840978,
+      "q": [
+        1.5995671658452668,
+        1.133487622037525,
+        1.2626569200047042
+      ]
+    },
+    {
+      "seed": 2803,
+      "evaluated": true,
+      "rank_Deta": 3,
+      "Deta_singular_values": [
+        0.0005816446992016438,
+        0.0001416860455272738,
+        2.1366788659508087e-05,
+        2.2273412051079452e-20,
+        0.0,
+        0.0
+      ],
+      "Deta_relative_tolerance": 5.816446992016439e-12,
+      "unreduced_hessian_scaled_rank": 3,
+      "unreduced_hessian_scaled_singular_values": [
+        2.0308414746767833,
+        0.12008703182916493,
+        0.002746349608265191,
+        9.185459226745336e-17,
+        6.904830765589062e-17,
+        5.184107537559269e-17,
+        3.111272884728171e-17,
+        1.962773996452979e-17,
+        2.3250030231753807e-18
+      ],
+      "unreduced_hessian_relative_tolerance": 2.0308414746767833e-08,
+      "connected_tensor_norm": 1.338139990075455e-08,
+      "connected_tensor_scale": 1.3381399900754548e-08,
+      "connected_tensor_ratio": 1.0000000000000002,
+      "shape_quality": 0.1457667438823086,
+      "q": [
+        2.1628654579688456,
+        2.4020824344946097,
+        3.076936205207053
+      ]
+    },
+    {
+      "seed": 2804,
+      "evaluated": true,
+      "rank_Deta": 3,
+      "Deta_singular_values": [
+        0.00066085765560505,
+        0.0001450794238601633,
+        1.9781556861770823e-05,
+        2.2694961230797445e-20,
+        0.0,
+        0.0
+      ],
+      "Deta_relative_tolerance": 6.6085765560505e-12,
+      "unreduced_hessian_scaled_rank": 3,
+      "unreduced_hessian_scaled_singular_values": [
+        2.6216802423792913,
+        0.1259560131084171,
+        0.0023530111833115624,
+        1.233078803391151e-16,
+        1.0711903052722044e-16,
+        3.9085483422241844e-17,
+        3.543940555266686e-17,
+        2.8617120074711205e-18,
+        2.0280306709122726e-18
+      ],
+      "unreduced_hessian_relative_tolerance": 2.6216802423792913e-08,
+      "connected_tensor_norm": 2.1678448641201818e-08,
+      "connected_tensor_scale": 2.1678448641201818e-08,
+      "connected_tensor_ratio": 1.0,
+      "shape_quality": 0.15339729661932197,
+      "q": [
+        2.0111782572338917,
+        2.1498103214660524,
+        2.6440534527361224
+      ]
+    },
+    {
+      "seed": 2805,
+      "evaluated": true,
+      "rank_Deta": 3,
+      "Deta_singular_values": [
+        0.0008446599987631569,
+        0.0002544507503323408,
+        3.6568990818437096e-05,
+        5.1765163854996886e-20,
+        0.0,
+        0.0
+      ],
+      "Deta_relative_tolerance": 8.44659998763157e-12,
+      "unreduced_hessian_scaled_rank": 3,
+      "unreduced_hessian_scaled_singular_values": [
+        4.283248000150595,
+        0.3875905330485861,
+        0.008037439843929536,
+        1.7171809412423942e-16,
+        9.968540766696105e-17,
+        8.507386163255173e-17,
+        4.545103250607897e-17,
+        1.0449980521317886e-17,
+        2.8325510106817428e-18
+      ],
+      "unreduced_hessian_relative_tolerance": 4.283248000150595e-08,
+      "connected_tensor_norm": 3.442543687789042e-08,
+      "connected_tensor_scale": 3.442543687789042e-08,
+      "connected_tensor_ratio": 1.0,
+      "shape_quality": 0.1313293200210301,
+      "q": [
+        1.8209535643645092,
+        1.6183529113164514,
+        2.0232570161016254
+      ]
+    },
+    {
+      "seed": 2806,
+      "evaluated": true,
+      "rank_Deta": 3,
+      "Deta_singular_values": [
+        0.0006623744741232168,
+        4.227890411115873e-05,
+        2.1335050714978824e-06,
+        4.1091580842949e-20,
+        0.0,
+        0.0
+      ],
+      "Deta_relative_tolerance": 6.623744741232168e-12,
+      "unreduced_hessian_scaled_rank": 3,
+      "unreduced_hessian_scaled_singular_values": [
+        2.6335125962775257,
+        0.010700989867886932,
+        2.7362506765025624e-05,
+        1.1581621959975006e-16,
+        3.804924198903836e-17,
+        3.160073784811802e-17,
+        1.3570790204818032e-17,
+        1.2027969410169655e-17,
+        2.42314949591556e-18
+      ],
+      "unreduced_hessian_relative_tolerance": 2.6335125962775255e-08,
+      "connected_tensor_norm": 3.0314903497530526e-08,
+      "connected_tensor_scale": 3.0314903497530526e-08,
+      "connected_tensor_ratio": 1.0,
+      "shape_quality": 0.18803468410462332,
+      "q": [
+        1.9394493261574184,
+        2.207970211776692,
+        2.511796502010605
+      ]
+    },
+    {
+      "seed": 2807,
+      "evaluated": true,
+      "rank_Deta": 3,
+      "Deta_singular_values": [
+        0.0006158126567141314,
+        7.545355072371572e-05,
+        3.849570573794684e-06,
+        2.2935466932426285e-20,
+        0.0,
+        0.0
+      ],
+      "Deta_relative_tolerance": 6.158126567141314e-12,
+      "unreduced_hessian_scaled_rank": 3,
+      "unreduced_hessian_scaled_singular_values": [
+        2.2760622487418662,
+        0.03411305841349173,
+        8.901313267020776e-05,
+        3.394812251005137e-16,
+        6.77100881315576e-17,
+        2.1258721272090452e-17,
+        1.1948718995571378e-17,
+        4.708363824515973e-18,
+        1.2458249583251577e-18
+      ],
+      "unreduced_hessian_relative_tolerance": 2.2760622487418664e-08,
+      "connected_tensor_norm": 1.829006519818037e-08,
+      "connected_tensor_scale": 1.8290065198180366e-08,
+      "connected_tensor_ratio": 1.0000000000000002,
+      "shape_quality": 0.16420991948311944,
+      "q": [
+        2.0936288878782476,
+        2.381807635811342,
+        2.8829667256212885
+      ]
+    }
+  ],
+  "summary": {
+    "max_rank_Deta": 3,
+    "max_unreduced_hessian_rank": 3,
+    "min_connected_tensor_norm": 1.338139990075455e-08,
+    "min_connected_tensor_ratio": 1.0,
+    "evaluated_samples": 8,
+    "skipped_samples": 0,
+    "E6_status": "NOT_EVALUATED",
+    "static_status": "PASS",
+    "kills": []
+  }
+}

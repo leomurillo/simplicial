@@ -1,0 +1,655 @@
+[
+  {
+    "file": "C:\\Users\\leomu\\Downloads\\que-ver-en-costa-rica-correos-portada.jpg",
+    "width": 512,
+    "height": 512,
+    "tile_count": 256,
+    "raw_rgb_bytes": 786432,
+    "webp_lossless_bytes": 231732,
+    "scheme": "ch-ctx-energy-unitary-split-blend71-apex128",
+    "transforms": [
+      "r-gr-bg",
+      "r-gr-bavg",
+      "g-rg-bavg",
+      "g-bg-ravg",
+      "ycocg",
+      "rgb"
+    ],
+    "tau_bits": 16,
+    "lambdas": [
+      0,
+      8,
+      16,
+      32,
+      64,
+      128,
+      256,
+      512
+    ],
+    "selection_s": 197.42235299997265,
+    "selection_fields": [
+      {
+        "lambda_bits": 0,
+        "unary_bits": 2047520,
+        "boundary_edges": 227,
+        "objective_bits": 2047520,
+        "changed_edges_by_pair": {
+          "r-gr-bavg|r-gr-bg": 71,
+          "g-rg-bavg|r-gr-bavg": 57,
+          "r-gr-bg|ycocg": 9,
+          "g-rg-bavg|r-gr-bg": 67,
+          "g-bg-ravg|r-gr-bg": 12,
+          "g-bg-ravg|r-gr-bavg": 1,
+          "r-gr-bavg|ycocg": 3,
+          "g-bg-ravg|ycocg": 1,
+          "g-rg-bavg|ycocg": 6
+        },
+        "label_counts": {
+          "r-gr-bg": 139,
+          "r-gr-bavg": 54,
+          "g-rg-bavg": 53,
+          "ycocg": 6,
+          "g-bg-ravg": 4
+        },
+        "face_hit_rate": 1.0,
+        "mean_regret_bits": 0.0,
+        "max_regret_bits": 0,
+        "rle_bytes": 262,
+        "rle_runs": 131
+      },
+      {
+        "lambda_bits": 8,
+        "unary_bits": 2047819,
+        "boundary_edges": 160,
+        "objective_bits": 2049099,
+        "changed_edges_by_pair": {
+          "r-gr-bavg|r-gr-bg": 44,
+          "r-gr-bg|ycocg": 7,
+          "g-rg-bavg|r-gr-bg": 63,
+          "g-rg-bavg|r-gr-bavg": 28,
+          "g-bg-ravg|r-gr-bg": 8,
+          "g-bg-ravg|r-gr-bavg": 1,
+          "r-gr-bavg|ycocg": 2,
+          "g-bg-ravg|ycocg": 1,
+          "g-rg-bavg|ycocg": 6
+        },
+        "label_counts": {
+          "r-gr-bg": 149,
+          "r-gr-bavg": 42,
+          "g-rg-bavg": 57,
+          "ycocg": 5,
+          "g-bg-ravg": 3
+        },
+        "face_hit_rate": 0.98046875,
+        "mean_regret_bits": 1.16796875,
+        "max_regret_bits": 32,
+        "rle_bytes": 204,
+        "rle_runs": 102
+      },
+      {
+        "lambda_bits": 16,
+        "unary_bits": 2048075,
+        "boundary_edges": 137,
+        "objective_bits": 2050267,
+        "changed_edges_by_pair": {
+          "r-gr-bavg|r-gr-bg": 41,
+          "r-gr-bg|ycocg": 6,
+          "g-rg-bavg|r-gr-bg": 51,
+          "g-rg-bavg|r-gr-bavg": 24,
+          "g-bg-ravg|r-gr-bg": 8,
+          "g-bg-ravg|g-rg-bavg": 1,
+          "g-rg-bavg|ycocg": 4,
+          "g-bg-ravg|ycocg": 1,
+          "r-gr-bavg|ycocg": 1
+        },
+        "label_counts": {
+          "r-gr-bg": 151,
+          "r-gr-bavg": 44,
+          "g-rg-bavg": 54,
+          "ycocg": 4,
+          "g-bg-ravg": 3
+        },
+        "face_hit_rate": 0.94921875,
+        "mean_regret_bits": 2.16796875,
+        "max_regret_bits": 51,
+        "rle_bytes": 178,
+        "rle_runs": 89
+      },
+      {
+        "lambda_bits": 32,
+        "unary_bits": 2049410,
+        "boundary_edges": 79,
+        "objective_bits": 2051938,
+        "changed_edges_by_pair": {
+          "g-rg-bavg|r-gr-bg": 39,
+          "g-rg-bavg|r-gr-bavg": 9,
+          "r-gr-bavg|r-gr-bg": 27,
+          "g-bg-ravg|r-gr-bg": 4
+        },
+        "label_counts": {
+          "r-gr-bg": 167,
+          "g-rg-bavg": 54,
+          "r-gr-bavg": 34,
+          "g-bg-ravg": 1
+        },
+        "face_hit_rate": 0.8515625,
+        "mean_regret_bits": 7.3828125,
+        "max_regret_bits": 126,
+        "rle_bytes": 116,
+        "rle_runs": 58
+      },
+      {
+        "lambda_bits": 64,
+        "unary_bits": 2050768,
+        "boundary_edges": 51,
+        "objective_bits": 2054032,
+        "changed_edges_by_pair": {
+          "g-rg-bavg|r-gr-bg": 28,
+          "g-rg-bavg|r-gr-bavg": 3,
+          "r-gr-bavg|r-gr-bg": 20
+        },
+        "label_counts": {
+          "r-gr-bg": 183,
+          "g-rg-bavg": 44,
+          "r-gr-bavg": 29
+        },
+        "face_hit_rate": 0.796875,
+        "mean_regret_bits": 12.6875,
+        "max_regret_bits": 219,
+        "rle_bytes": 90,
+        "rle_runs": 45
+      },
+      {
+        "lambda_bits": 128,
+        "unary_bits": 2054770,
+        "boundary_edges": 0,
+        "objective_bits": 2054770,
+        "changed_edges_by_pair": {},
+        "label_counts": {
+          "r-gr-bg": 256
+        },
+        "face_hit_rate": 0.625,
+        "mean_regret_bits": 28.3203125,
+        "max_regret_bits": 362,
+        "rle_bytes": 3,
+        "rle_runs": 1
+      },
+      {
+        "lambda_bits": 256,
+        "unary_bits": 2054770,
+        "boundary_edges": 0,
+        "objective_bits": 2054770,
+        "changed_edges_by_pair": {},
+        "label_counts": {
+          "r-gr-bg": 256
+        },
+        "face_hit_rate": 0.625,
+        "mean_regret_bits": 28.3203125,
+        "max_regret_bits": 362,
+        "rle_bytes": 3,
+        "rle_runs": 1
+      },
+      {
+        "lambda_bits": 512,
+        "unary_bits": 2054770,
+        "boundary_edges": 0,
+        "objective_bits": 2054770,
+        "changed_edges_by_pair": {},
+        "label_counts": {
+          "r-gr-bg": 256
+        },
+        "face_hit_rate": 0.625,
+        "mean_regret_bits": 28.3203125,
+        "max_regret_bits": 362,
+        "rle_bytes": 3,
+        "rle_runs": 1
+      }
+    ],
+    "encoded": [
+      {
+        "rank": 1,
+        "lambda_bits": 8,
+        "bytes": 236184,
+        "delta_vs_webp": 4452,
+        "ratio_vs_webp": 1.0192118481694372,
+        "roundtrip_ok": true,
+        "encode_s": 53.69751740002539,
+        "decode_s": 54.051028099958785,
+        "field": {
+          "lambda_bits": 8,
+          "unary_bits": 2047819,
+          "boundary_edges": 160,
+          "objective_bits": 2049099,
+          "changed_edges_by_pair": {
+            "r-gr-bavg|r-gr-bg": 44,
+            "r-gr-bg|ycocg": 7,
+            "g-rg-bavg|r-gr-bg": 63,
+            "g-rg-bavg|r-gr-bavg": 28,
+            "g-bg-ravg|r-gr-bg": 8,
+            "g-bg-ravg|r-gr-bavg": 1,
+            "r-gr-bavg|ycocg": 2,
+            "g-bg-ravg|ycocg": 1,
+            "g-rg-bavg|ycocg": 6
+          },
+          "label_counts": {
+            "r-gr-bg": 149,
+            "r-gr-bavg": 42,
+            "g-rg-bavg": 57,
+            "ycocg": 5,
+            "g-bg-ravg": 3
+          },
+          "face_hit_rate": 0.98046875,
+          "mean_regret_bits": 1.16796875,
+          "max_regret_bits": 32,
+          "rle_bytes": 204,
+          "rle_runs": 102
+        },
+        "encode_stats": {
+          "codec": "SGF8",
+          "scheme": "ch-ctx-energy-unitary-split-blend71-apex128",
+          "transforms": [
+            "r-gr-bg",
+            "r-gr-bavg",
+            "g-rg-bavg",
+            "g-bg-ravg",
+            "ycocg",
+            "rgb"
+          ],
+          "bytes": 236184,
+          "header_metadata_bytes": 1195,
+          "entropy_bytes": 234989,
+          "command_rle_bytes": 204,
+          "command_rle_runs": 102,
+          "predictor_metadata_bytes": 480,
+          "energy_metadata_bytes": 288,
+          "unitary_metadata_bytes": 192,
+          "max_symbol": 297,
+          "predictors": {
+            "pred-4": 404,
+            "pred-6": 224,
+            "pred-8": 54,
+            "pred-2": 17,
+            "pred-7": 12,
+            "pred-20": 2,
+            "pred-9": 7,
+            "pred-5": 39,
+            "pred-14": 8,
+            "pred-1": 1
+          },
+          "residual_s": 34.963634599989746,
+          "entropy_encode_s": 18.721861900005024
+        },
+        "decode_stats": {
+          "codec": "SGF8",
+          "scheme": "ch-ctx-energy-unitary-split-blend71-apex128",
+          "transforms": [
+            "r-gr-bg",
+            "r-gr-bavg",
+            "g-rg-bavg",
+            "g-bg-ravg",
+            "ycocg",
+            "rgb"
+          ],
+          "width": 512,
+          "height": 512,
+          "max_symbol": 297,
+          "metadata_bytes": 1195,
+          "entropy_bytes": 234989,
+          "command_rle_bytes": 204
+        }
+      },
+      {
+        "rank": 2,
+        "lambda_bits": 16,
+        "bytes": 235825,
+        "delta_vs_webp": 4093,
+        "ratio_vs_webp": 1.017662644779314,
+        "roundtrip_ok": true,
+        "encode_s": 47.59852379997028,
+        "decode_s": 39.5974203000078,
+        "field": {
+          "lambda_bits": 16,
+          "unary_bits": 2048075,
+          "boundary_edges": 137,
+          "objective_bits": 2050267,
+          "changed_edges_by_pair": {
+            "r-gr-bavg|r-gr-bg": 41,
+            "r-gr-bg|ycocg": 6,
+            "g-rg-bavg|r-gr-bg": 51,
+            "g-rg-bavg|r-gr-bavg": 24,
+            "g-bg-ravg|r-gr-bg": 8,
+            "g-bg-ravg|g-rg-bavg": 1,
+            "g-rg-bavg|ycocg": 4,
+            "g-bg-ravg|ycocg": 1,
+            "r-gr-bavg|ycocg": 1
+          },
+          "label_counts": {
+            "r-gr-bg": 151,
+            "r-gr-bavg": 44,
+            "g-rg-bavg": 54,
+            "ycocg": 4,
+            "g-bg-ravg": 3
+          },
+          "face_hit_rate": 0.94921875,
+          "mean_regret_bits": 2.16796875,
+          "max_regret_bits": 51,
+          "rle_bytes": 178,
+          "rle_runs": 89
+        },
+        "encode_stats": {
+          "codec": "SGF8",
+          "scheme": "ch-ctx-energy-unitary-split-blend71-apex128",
+          "transforms": [
+            "r-gr-bg",
+            "r-gr-bavg",
+            "g-rg-bavg",
+            "g-bg-ravg",
+            "ycocg",
+            "rgb"
+          ],
+          "bytes": 235825,
+          "header_metadata_bytes": 1169,
+          "entropy_bytes": 234656,
+          "command_rle_bytes": 178,
+          "command_rle_runs": 89,
+          "predictor_metadata_bytes": 480,
+          "energy_metadata_bytes": 288,
+          "unitary_metadata_bytes": 192,
+          "max_symbol": 297,
+          "predictors": {
+            "pred-4": 404,
+            "pred-6": 226,
+            "pred-8": 56,
+            "pred-7": 13,
+            "pred-20": 2,
+            "pred-9": 7,
+            "pred-5": 38,
+            "pred-2": 14,
+            "pred-14": 7,
+            "pred-1": 1
+          },
+          "residual_s": 32.13782459998038,
+          "entropy_encode_s": 15.458176299987826
+        },
+        "decode_stats": {
+          "codec": "SGF8",
+          "scheme": "ch-ctx-energy-unitary-split-blend71-apex128",
+          "transforms": [
+            "r-gr-bg",
+            "r-gr-bavg",
+            "g-rg-bavg",
+            "g-bg-ravg",
+            "ycocg",
+            "rgb"
+          ],
+          "width": 512,
+          "height": 512,
+          "max_symbol": 297,
+          "metadata_bytes": 1169,
+          "entropy_bytes": 234656,
+          "command_rle_bytes": 178
+        }
+      },
+      {
+        "rank": 3,
+        "lambda_bits": 0,
+        "bytes": 237041,
+        "delta_vs_webp": 5309,
+        "ratio_vs_webp": 1.022910085788756,
+        "roundtrip_ok": true,
+        "encode_s": 52.89315620000707,
+        "decode_s": 52.08599679998588,
+        "field": {
+          "lambda_bits": 0,
+          "unary_bits": 2047520,
+          "boundary_edges": 227,
+          "objective_bits": 2047520,
+          "changed_edges_by_pair": {
+            "r-gr-bavg|r-gr-bg": 71,
+            "g-rg-bavg|r-gr-bavg": 57,
+            "r-gr-bg|ycocg": 9,
+            "g-rg-bavg|r-gr-bg": 67,
+            "g-bg-ravg|r-gr-bg": 12,
+            "g-bg-ravg|r-gr-bavg": 1,
+            "r-gr-bavg|ycocg": 3,
+            "g-bg-ravg|ycocg": 1,
+            "g-rg-bavg|ycocg": 6
+          },
+          "label_counts": {
+            "r-gr-bg": 139,
+            "r-gr-bavg": 54,
+            "g-rg-bavg": 53,
+            "ycocg": 6,
+            "g-bg-ravg": 4
+          },
+          "face_hit_rate": 1.0,
+          "mean_regret_bits": 0.0,
+          "max_regret_bits": 0,
+          "rle_bytes": 262,
+          "rle_runs": 131
+        },
+        "encode_stats": {
+          "codec": "SGF8",
+          "scheme": "ch-ctx-energy-unitary-split-blend71-apex128",
+          "transforms": [
+            "r-gr-bg",
+            "r-gr-bavg",
+            "g-rg-bavg",
+            "g-bg-ravg",
+            "ycocg",
+            "rgb"
+          ],
+          "bytes": 237041,
+          "header_metadata_bytes": 1253,
+          "entropy_bytes": 235788,
+          "command_rle_bytes": 262,
+          "command_rle_runs": 131,
+          "predictor_metadata_bytes": 480,
+          "energy_metadata_bytes": 288,
+          "unitary_metadata_bytes": 192,
+          "max_symbol": 297,
+          "predictors": {
+            "pred-4": 394,
+            "pred-6": 228,
+            "pred-8": 52,
+            "pred-2": 17,
+            "pred-7": 12,
+            "pred-20": 2,
+            "pred-9": 6,
+            "pred-5": 48,
+            "pred-14": 8,
+            "pred-1": 1
+          },
+          "residual_s": 34.02173799998127,
+          "entropy_encode_s": 18.866202200006228
+        },
+        "decode_stats": {
+          "codec": "SGF8",
+          "scheme": "ch-ctx-energy-unitary-split-blend71-apex128",
+          "transforms": [
+            "r-gr-bg",
+            "r-gr-bavg",
+            "g-rg-bavg",
+            "g-bg-ravg",
+            "ycocg",
+            "rgb"
+          ],
+          "width": 512,
+          "height": 512,
+          "max_symbol": 297,
+          "metadata_bytes": 1253,
+          "entropy_bytes": 235788,
+          "command_rle_bytes": 262
+        }
+      },
+      {
+        "rank": 4,
+        "lambda_bits": 32,
+        "bytes": 234883,
+        "delta_vs_webp": 3151,
+        "ratio_vs_webp": 1.0135976041289074,
+        "roundtrip_ok": true,
+        "encode_s": 49.166114400024526,
+        "decode_s": 41.079161199973896,
+        "field": {
+          "lambda_bits": 32,
+          "unary_bits": 2049410,
+          "boundary_edges": 79,
+          "objective_bits": 2051938,
+          "changed_edges_by_pair": {
+            "g-rg-bavg|r-gr-bg": 39,
+            "g-rg-bavg|r-gr-bavg": 9,
+            "r-gr-bavg|r-gr-bg": 27,
+            "g-bg-ravg|r-gr-bg": 4
+          },
+          "label_counts": {
+            "r-gr-bg": 167,
+            "g-rg-bavg": 54,
+            "r-gr-bavg": 34,
+            "g-bg-ravg": 1
+          },
+          "face_hit_rate": 0.8515625,
+          "mean_regret_bits": 7.3828125,
+          "max_regret_bits": 126,
+          "rle_bytes": 116,
+          "rle_runs": 58
+        },
+        "encode_stats": {
+          "codec": "SGF8",
+          "scheme": "ch-ctx-energy-unitary-split-blend71-apex128",
+          "transforms": [
+            "r-gr-bg",
+            "r-gr-bavg",
+            "g-rg-bavg",
+            "g-bg-ravg",
+            "ycocg",
+            "rgb"
+          ],
+          "bytes": 234883,
+          "header_metadata_bytes": 1106,
+          "entropy_bytes": 233777,
+          "command_rle_bytes": 116,
+          "command_rle_runs": 58,
+          "predictor_metadata_bytes": 480,
+          "energy_metadata_bytes": 288,
+          "unitary_metadata_bytes": 192,
+          "max_symbol": 297,
+          "predictors": {
+            "pred-4": 410,
+            "pred-6": 229,
+            "pred-8": 55,
+            "pred-7": 13,
+            "pred-20": 2,
+            "pred-9": 7,
+            "pred-5": 31,
+            "pred-2": 16,
+            "pred-14": 5
+          },
+          "residual_s": 30.663418099982664,
+          "entropy_encode_s": 18.49822559999302
+        },
+        "decode_stats": {
+          "codec": "SGF8",
+          "scheme": "ch-ctx-energy-unitary-split-blend71-apex128",
+          "transforms": [
+            "r-gr-bg",
+            "r-gr-bavg",
+            "g-rg-bavg",
+            "g-bg-ravg",
+            "ycocg",
+            "rgb"
+          ],
+          "width": 512,
+          "height": 512,
+          "max_symbol": 297,
+          "metadata_bytes": 1106,
+          "entropy_bytes": 233777,
+          "command_rle_bytes": 116
+        }
+      },
+      {
+        "rank": 5,
+        "lambda_bits": 64,
+        "bytes": 234597,
+        "delta_vs_webp": 2865,
+        "ratio_vs_webp": 1.012363419812542,
+        "roundtrip_ok": true,
+        "encode_s": 45.21677370002726,
+        "decode_s": 59.01319559995318,
+        "field": {
+          "lambda_bits": 64,
+          "unary_bits": 2050768,
+          "boundary_edges": 51,
+          "objective_bits": 2054032,
+          "changed_edges_by_pair": {
+            "g-rg-bavg|r-gr-bg": 28,
+            "g-rg-bavg|r-gr-bavg": 3,
+            "r-gr-bavg|r-gr-bg": 20
+          },
+          "label_counts": {
+            "r-gr-bg": 183,
+            "g-rg-bavg": 44,
+            "r-gr-bavg": 29
+          },
+          "face_hit_rate": 0.796875,
+          "mean_regret_bits": 12.6875,
+          "max_regret_bits": 219,
+          "rle_bytes": 90,
+          "rle_runs": 45
+        },
+        "encode_stats": {
+          "codec": "SGF8",
+          "scheme": "ch-ctx-energy-unitary-split-blend71-apex128",
+          "transforms": [
+            "r-gr-bg",
+            "r-gr-bavg",
+            "g-rg-bavg",
+            "g-bg-ravg",
+            "ycocg",
+            "rgb"
+          ],
+          "bytes": 234597,
+          "header_metadata_bytes": 1080,
+          "entropy_bytes": 233517,
+          "command_rle_bytes": 90,
+          "command_rle_runs": 45,
+          "predictor_metadata_bytes": 480,
+          "energy_metadata_bytes": 288,
+          "unitary_metadata_bytes": 192,
+          "max_symbol": 253,
+          "predictors": {
+            "pred-4": 413,
+            "pred-6": 231,
+            "pred-8": 52,
+            "pred-7": 12,
+            "pred-20": 3,
+            "pred-9": 8,
+            "pred-5": 30,
+            "pred-2": 15,
+            "pred-14": 4
+          },
+          "residual_s": 27.401558100013062,
+          "entropy_encode_s": 17.81251949997386
+        },
+        "decode_stats": {
+          "codec": "SGF8",
+          "scheme": "ch-ctx-energy-unitary-split-blend71-apex128",
+          "transforms": [
+            "r-gr-bg",
+            "r-gr-bavg",
+            "g-rg-bavg",
+            "g-bg-ravg",
+            "ycocg",
+            "rgb"
+          ],
+          "width": 512,
+          "height": 512,
+          "max_symbol": 253,
+          "metadata_bytes": 1080,
+          "entropy_bytes": 233517,
+          "command_rle_bytes": 90
+        }
+      }
+    ]
+  }
+]

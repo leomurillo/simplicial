@@ -1,0 +1,240 @@
+{
+  "config": {
+    "trials": 18,
+    "steps": 1600,
+    "dt": 0.002,
+    "sample_stride": 3,
+    "train_fraction": 0.6666666666666666,
+    "masses": [
+      1.0,
+      1.25,
+      0.85
+    ],
+    "gravity": 1.0,
+    "softening": 0.15,
+    "alpha": 0.035,
+    "seed": 28030,
+    "pairwise_radial_powers": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ]
+  },
+  "null_alpha": {
+    "sample_count_train": 6396,
+    "sample_count_test": 3198,
+    "component_count_train": 38376,
+    "component_count_test": 19188,
+    "target_residual_rms_train": 0.0,
+    "target_residual_rms_test": 0.0,
+    "finite_difference_noise": {
+      "train_rmse_finite_difference_minus_exact_force": 0.005391475690858053,
+      "test_rmse_finite_difference_minus_exact_force": 0.005754563083213222
+    },
+    "models": {
+      "pairwise_null": {
+        "train_rmse": 0.0,
+        "test_rmse": 0.0,
+        "train_r2_vs_zero": 0.0,
+        "test_r2_vs_zero": 0.0
+      },
+      "ternary_one_coefficient": {
+        "coefficients": [
+          -0.0
+        ],
+        "rank": 1,
+        "train_rmse": 0.0,
+        "test_rmse": 0.0,
+        "train_r2_vs_zero": 0.0,
+        "test_r2_vs_zero": 0.0
+      },
+      "pairwise_only_radial_basis": {
+        "coefficients": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "rank": 18,
+        "train_rmse": 0.0,
+        "test_rmse": 0.0,
+        "train_r2_vs_zero": 0.0,
+        "test_r2_vs_zero": 0.0
+      },
+      "shuffled_ternary_feature": {
+        "coefficients": [
+          0.0
+        ],
+        "rank": 1,
+        "train_rmse": 0.0,
+        "test_rmse": 0.0,
+        "train_r2_vs_zero": 0.0,
+        "test_r2_vs_zero": 0.0
+      },
+      "random_same_rank_feature": {
+        "coefficients": [
+          -0.0
+        ],
+        "rank": 1,
+        "train_rmse": 0.0,
+        "test_rmse": 0.0,
+        "train_r2_vs_zero": 0.0,
+        "test_r2_vs_zero": 0.0
+      }
+    }
+  },
+  "planted_alpha": {
+    "sample_count_train": 6396,
+    "sample_count_test": 3198,
+    "component_count_train": 38376,
+    "component_count_test": 19188,
+    "target_residual_rms_train": 0.14144230843566225,
+    "target_residual_rms_test": 0.15958104166079218,
+    "finite_difference_noise": {
+      "train_rmse_finite_difference_minus_exact_force": 0.005701338045153383,
+      "test_rmse_finite_difference_minus_exact_force": 0.006470644870394158
+    },
+    "models": {
+      "pairwise_null": {
+        "train_rmse": 0.14144230843566225,
+        "test_rmse": 0.15958104166079218,
+        "train_r2_vs_zero": 0.0,
+        "test_r2_vs_zero": 0.0
+      },
+      "ternary_one_coefficient": {
+        "coefficients": [
+          0.03499999999999996
+        ],
+        "rank": 1,
+        "train_rmse": 2.3284003382643135e-16,
+        "test_rmse": 2.47116534445128e-16,
+        "train_r2_vs_zero": 1.0,
+        "test_r2_vs_zero": 1.0
+      },
+      "pairwise_only_radial_basis": {
+        "coefficients": [
+          -0.018416855386267444,
+          -0.03170651333889629,
+          0.1337041012716807,
+          -0.05880074061339798,
+          0.012469796774755395,
+          -0.0008837389477432982,
+          1.736650118785365,
+          -8.520603891142208,
+          14.679749347018912,
+          -10.96089896624649,
+          3.6739533379507407,
+          -0.4541212854002744,
+          0.001585227798745528,
+          -0.10516826895932398,
+          0.24530094635751198,
+          -0.11323875041093426,
+          0.02382959795868134,
+          -0.0017186338163151897
+        ],
+        "rank": 18,
+        "train_rmse": 0.05452828387658359,
+        "test_rmse": 0.08067882840987144,
+        "train_r2_vs_zero": 0.8513773543383172,
+        "test_r2_vs_zero": 0.7444025159084567
+      },
+      "shuffled_ternary_feature": {
+        "coefficients": [
+          0.0012960173733521812
+        ],
+        "rank": 1,
+        "train_rmse": 0.14134530573054532,
+        "test_rmse": 0.1595173411463426,
+        "train_r2_vs_zero": 0.0013711518628822805,
+        "test_r2_vs_zero": 0.0007981875542329986
+      },
+      "random_same_rank_feature": {
+        "coefficients": [
+          0.0003793961512674148
+        ],
+        "rank": 1,
+        "train_rmse": 0.14144180409525003,
+        "test_rmse": 0.15958151902600332,
+        "train_r2_vs_zero": 7.131381248193236e-06,
+        "test_r2_vs_zero": -5.982739806231763e-06
+      }
+    }
+  },
+  "divergence_audit": {
+    "trial": 0,
+    "true_alpha": 0.035,
+    "recovered_alpha": 0.03499999999999996,
+    "position_error_vs_truth": {
+      "pairwise_null": {
+        "final_rms": 0.07968190187906818,
+        "max_rms": 0.19357296955778802,
+        "mean_rms": 0.06463322063182457
+      },
+      "recovered_ternary": {
+        "final_rms": 1.8410813477858123e-15,
+        "max_rms": 1.8410813477858123e-15,
+        "mean_rms": 4.899671119492671e-16
+      },
+      "pairwise_only_radial_basis": {
+        "final_rms": 0.14239000428673768,
+        "max_rms": 0.14239000428673768,
+        "mean_rms": 0.049911130882868776
+      }
+    },
+    "momentum_error_vs_truth": {
+      "pairwise_null": {
+        "final_rms": 0.2013044595520612,
+        "max_rms": 0.786712376594728,
+        "mean_rms": 0.19986345777068457
+      },
+      "recovered_ternary": {
+        "final_rms": 2.680539411266379e-15,
+        "max_rms": 4.471333353936457e-15,
+        "mean_rms": 1.1937805217478942e-15
+      },
+      "pairwise_only_radial_basis": {
+        "final_rms": 0.12046730219892475,
+        "max_rms": 0.36283083824864676,
+        "mean_rms": 0.1101731020714984
+      }
+    },
+    "invariants": {
+      "truth": {
+        "max_total_momentum_norm": 7.806573282576305e-15,
+        "max_angular_momentum_abs_drift": 4.218847493575595e-15,
+        "max_relative_energy_drift": 0.001599776322437006
+      },
+      "pairwise_null": {
+        "max_total_momentum_norm": 6.84384973605918e-15,
+        "max_angular_momentum_abs_drift": 6.661338147750939e-15,
+        "max_relative_energy_drift": 0.001453954466707369
+      },
+      "recovered_ternary": {
+        "max_total_momentum_norm": 8.188600426433445e-15,
+        "max_angular_momentum_abs_drift": 5.995204332975845e-15,
+        "max_relative_energy_drift": 0.001599776322437299
+      },
+      "pairwise_only_radial_basis": {
+        "max_total_momentum_norm": 8.917793449480273e-15,
+        "max_angular_momentum_abs_drift": 3.9968028886505635e-15
+      }
+    }
+  }
+}

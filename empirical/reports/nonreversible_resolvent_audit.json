@@ -1,0 +1,268 @@
+{
+  "claim_tested": "non-reversible generator escape hatch for Green-kernel recovery",
+  "parameters": {
+    "dims": "9,9,9",
+    "models": "local_reversible,local_drift,complete,complete_plus_drift",
+    "diffusion": 1.0,
+    "drift": 0.35,
+    "complete_rate": 1.0,
+    "local_rate": 0.1,
+    "r_min": 0.08,
+    "r_max": 0.45,
+    "report": "empirical\\reports\\nonreversible_resolvent_audit.md",
+    "json": "empirical\\reports\\nonreversible_resolvent_audit.json"
+  },
+  "dims": [
+    9,
+    9,
+    9
+  ],
+  "state_count": 729,
+  "models": [
+    {
+      "model": "local_reversible",
+      "transition_count": 4374,
+      "max_abs_row_sum": 0.0,
+      "max_abs_column_sum": 0.0,
+      "jump_moments": {
+        "symbol": [
+          [
+            0.024691358024691006,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.024691358024691006,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.024691358024691006
+          ]
+        ],
+        "eigenvalues": [
+          0.024691358024691006,
+          0.024691358024691006,
+          0.024691358024691006
+        ],
+        "anisotropy": 0.0,
+        "trace": 0.07407407407407302,
+        "fourth_moment": 0.0009144947416552853,
+        "normalized_fourth_moment": 0.1666666666666805,
+        "unit_symbol_fourth_ratio": 0.004115226337448843
+      },
+      "current": {
+        "mean_abs_edge_flux": 0.0,
+        "relative_abs_flux": 0.0,
+        "max_abs_edge_flux": 0.0,
+        "antisymmetric_frobenius": 0.0
+      },
+      "inverse_r_fit": {
+        "used_points": 256,
+        "r2": 0.9841588577287294,
+        "slope": 0.008647825241192257,
+        "intercept": -0.022208770642880096,
+        "y_min": -0.0009603982559651318,
+        "y_max": 0.061272095581412195
+      },
+      "shell_anisotropy": {
+        "mean_shell_cv": 0.037149300101772025,
+        "max_shell_cv": 0.5898910807967263
+      },
+      "green_min": -0.007186770446722862,
+      "green_max": 0.22771013856266506,
+      "green_source": 0.22771013856266506
+    },
+    {
+      "model": "local_drift",
+      "transition_count": 4374,
+      "max_abs_row_sum": 6.661338147750939e-16,
+      "max_abs_column_sum": 6.661338147750939e-16,
+      "jump_moments": {
+        "symbol": [
+          [
+            0.024691358024691305,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.024691358024691305,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.024691358024691305
+          ]
+        ],
+        "eigenvalues": [
+          0.024691358024691305,
+          0.024691358024691305,
+          0.024691358024691305
+        ],
+        "anisotropy": 0.0,
+        "trace": 0.07407407407407392,
+        "fourth_moment": 0.0009144947416552774,
+        "normalized_fourth_moment": 0.166666666666675,
+        "unit_symbol_fourth_ratio": 0.004115226337448757
+      },
+      "current": {
+        "mean_abs_edge_flux": 0.7000000000000276,
+        "relative_abs_flux": 0.3500000000000138,
+        "max_abs_edge_flux": 0.7000000000000001,
+        "antisymmetric_frobenius": 32.735760263052036
+      },
+      "inverse_r_fit": {
+        "used_points": 256,
+        "r2": 0.5259322440897647,
+        "slope": 0.005984550657236464,
+        "intercept": -0.016977826751571615,
+        "y_min": -0.005925649926719973,
+        "y_max": 0.06383772898552914
+      },
+      "shell_anisotropy": {
+        "mean_shell_cv": 2.654343187043508,
+        "max_shell_cv": 13.112823835072279
+      },
+      "green_min": -0.005925649926719973,
+      "green_max": 0.20556602698517074,
+      "green_source": 0.20556602698517074
+    },
+    {
+      "model": "complete",
+      "transition_count": 530712,
+      "max_abs_row_sum": 3.335656403868903e-15,
+      "max_abs_column_sum": 2.5977484052752686e-16,
+      "jump_moments": {
+        "symbol": [
+          [
+            0.08241758241733166,
+            3.9952823586311237e-19,
+            1.5448425120040345e-20
+          ],
+          [
+            3.9952823586311237e-19,
+            0.08241758241733126,
+            1.5647941083788135e-19
+          ],
+          [
+            1.5448425120040345e-20,
+            1.5647941083788135e-19,
+            0.08241758241733121
+          ]
+        ],
+        "eigenvalues": [
+          0.08241758241733121,
+          0.08241758241733126,
+          0.08241758241733166
+        ],
+        "anisotropy": 2.6941412064319176e-15,
+        "trace": 0.24725274725199414,
+        "fourth_moment": 0.07671957671961373,
+        "normalized_fourth_moment": 1.2549428440868968,
+        "unit_symbol_fourth_ratio": 0.10342935528157206
+      },
+      "current": {
+        "mean_abs_edge_flux": 0.0,
+        "relative_abs_flux": 0.0,
+        "max_abs_edge_flux": 0.0,
+        "antisymmetric_frobenius": 0.0
+      },
+      "inverse_r_fit": {
+        "used_points": 256,
+        "r2": -15.298828125,
+        "slope": 5.1920325294556777e-20,
+        "intercept": -0.0013698604360596971,
+        "y_min": -0.0013698604360596986,
+        "y_max": -0.0013698604360596986
+      },
+      "shell_anisotropy": {
+        "mean_shell_cv": 1.5318756294253828e-17,
+        "max_shell_cv": 3.165876300812458e-16
+      },
+      "green_min": -0.0013698604360596986,
+      "green_max": 0.9972583974514606,
+      "green_source": 0.9972583974514606
+    },
+    {
+      "model": "complete_plus_drift",
+      "transition_count": 535086,
+      "max_abs_row_sum": 3.5021898575626764e-15,
+      "max_abs_column_sum": 3.707971429900425e-16,
+      "jump_moments": {
+        "symbol": [
+          [
+            0.0848867182197977,
+            3.9952823586311237e-19,
+            1.5448425120040345e-20
+          ],
+          [
+            3.9952823586311237e-19,
+            0.08488671821979729,
+            1.5647941083788135e-19
+          ],
+          [
+            1.5448425120040345e-20,
+            1.5647941083788135e-19,
+            0.08488671821979725
+          ]
+        ],
+        "eigenvalues": [
+          0.08488671821979725,
+          0.08488671821979735,
+          0.0848867182197977
+        ],
+        "anisotropy": 2.6157755839976103e-15,
+        "trace": 0.25466015465939223,
+        "fourth_moment": 0.0768110261937619,
+        "normalized_fourth_moment": 1.1844086495768162,
+        "unit_symbol_fourth_ratio": 0.10054056329371798
+      },
+      "current": {
+        "mean_abs_edge_flux": 0.0015659340659340492,
+        "relative_abs_flux": 0.35625000000157875,
+        "max_abs_edge_flux": 0.19,
+        "antisymmetric_frobenius": 8.88542064282835
+      },
+      "inverse_r_fit": {
+        "used_points": 256,
+        "r2": 0.30106519659996345,
+        "slope": 0.0035503820913099188,
+        "intercept": -0.011779066458774865,
+        "y_min": -0.001369860417824105,
+        "y_max": 0.07510851287903804
+      },
+      "shell_anisotropy": {
+        "mean_shell_cv": 0.4608584810674997,
+        "max_shell_cv": 5.009894034121666
+      },
+      "green_min": -0.001369860417824105,
+      "green_max": 0.6245267783500721,
+      "green_source": 0.6245267783500721
+    }
+  ],
+  "summary": {
+    "best_inverse_r_r2": 0.9841588577287294,
+    "models": {
+      "local_reversible": {
+        "r2": 0.9841588577287294,
+        "q4": 0.1666666666666805
+      },
+      "local_drift": {
+        "r2": 0.5259322440897647,
+        "q4": 0.166666666666675
+      },
+      "complete": {
+        "r2": -15.298828125,
+        "q4": 1.2549428440868968
+      },
+      "complete_plus_drift": {
+        "r2": 0.30106519659996345,
+        "q4": 1.1844086495768162
+      }
+    }
+  }
+}

@@ -1,0 +1,94 @@
+[
+  {
+    "file": "C:\\Users\\leomu\\Downloads\\central-valley-san-jose-costa-rica.jpg",
+    "crop_size": 512,
+    "width": 512,
+    "height": 512,
+    "raw_rgb_bytes": 786432,
+    "source_jpeg_bytes": 467355,
+    "webp_lossless_bytes": 307430,
+    "webp_lossless_encode_s": 6.439416300010635,
+    "sigi_best_mode": "g-bg-ravg-ctx-rice",
+    "sigi_bytes": 321726,
+    "sigi_estimate_s": 19.61734379999689,
+    "sigi_modes": {
+      "ycocg-ctx-rice": {
+        "bytes": 322955,
+        "estimate_s": 21.428480900009163
+      },
+      "green16-ctx-rice": {
+        "bytes": 350981,
+        "estimate_s": 20.67512759999954
+      },
+      "g-bg-ravg-ctx-rice": {
+        "bytes": 321726,
+        "estimate_s": 19.61734379999689
+      },
+      "g-bg-ravg-anova-rice": {
+        "bytes": 321726,
+        "estimate_s": 21.664449000003515,
+        "tiles": 768,
+        "anova_tiles": 0,
+        "anova_saved_bytes": 0
+      },
+      "ycocg-ctx-huff": {
+        "bytes": 323134,
+        "estimate_s": 24.272832499991637
+      },
+      "green16-ctx-huff": {
+        "bytes": 354101,
+        "estimate_s": 25.132350800005952
+      },
+      "g-bg-ravg-ctx-huff": {
+        "bytes": 322164,
+        "estimate_s": 22.39385689998744
+      }
+    }
+  },
+  {
+    "file": "C:\\Users\\leomu\\Downloads\\que-ver-en-costa-rica-correos-portada.jpg",
+    "crop_size": 512,
+    "width": 512,
+    "height": 512,
+    "raw_rgb_bytes": 786432,
+    "source_jpeg_bytes": 1634994,
+    "webp_lossless_bytes": 231732,
+    "webp_lossless_encode_s": 8.872898100002203,
+    "sigi_best_mode": "g-bg-ravg-ctx-huff",
+    "sigi_bytes": 266380,
+    "sigi_estimate_s": 20.895681299996795,
+    "sigi_modes": {
+      "ycocg-ctx-rice": {
+        "bytes": 270598,
+        "estimate_s": 16.15805579998414
+      },
+      "green16-ctx-rice": {
+        "bytes": 292599,
+        "estimate_s": 17.764257700007875
+      },
+      "g-bg-ravg-ctx-rice": {
+        "bytes": 270332,
+        "estimate_s": 17.846413099992787
+      },
+      "g-bg-ravg-anova-rice": {
+        "bytes": 270332,
+        "estimate_s": 22.710278499987908,
+        "tiles": 768,
+        "anova_tiles": 0,
+        "anova_saved_bytes": 0
+      },
+      "ycocg-ctx-huff": {
+        "bytes": 266752,
+        "estimate_s": 22.999502399994526
+      },
+      "green16-ctx-huff": {
+        "bytes": 290339,
+        "estimate_s": 23.326352500007488
+      },
+      "g-bg-ravg-ctx-huff": {
+        "bytes": 266380,
+        "estimate_s": 20.895681299996795
+      }
+    }
+  }
+]

@@ -1,0 +1,636 @@
+{
+  "purpose": "Prototype B0 information-investment functional on exact finite rows.",
+  "functional": {
+    "J": "fisher_projection_error + reciprocal_projection_error + closure_leakage + descent_balance_cost + resource_weight * resource_cost",
+    "resource_weight": 0.25,
+    "amplitude": 0.35,
+    "seed": 20260514
+  },
+  "rows": [
+    {
+      "key": "c7",
+      "row": "C_7",
+      "label_count": 7,
+      "active_reciprocal_support": [
+        "1",
+        "6"
+      ],
+      "amplitude": 0.35,
+      "resource_weight": 0.25,
+      "winner": "allowed_reciprocal",
+      "candidates": [
+        {
+          "name": "allowed_reciprocal",
+          "support_size": 6,
+          "support": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6"
+          ],
+          "required_descent_size": 6,
+          "J": 0.25,
+          "fisher_projection_error": 0.0,
+          "reciprocal_projection_error": 0.0,
+          "closure_leakage": 0.0,
+          "descent_balance_cost": 0.0,
+          "resource_cost": 1.0
+        },
+        {
+          "name": "conductor_packet",
+          "support_size": 6,
+          "support": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6"
+          ],
+          "required_descent_size": 6,
+          "J": 0.25,
+          "fisher_projection_error": 0.0,
+          "reciprocal_projection_error": 0.0,
+          "closure_leakage": 0.0,
+          "descent_balance_cost": 0.0,
+          "resource_cost": 1.0
+        },
+        {
+          "name": "descent_closure",
+          "support_size": 6,
+          "support": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6"
+          ],
+          "required_descent_size": 6,
+          "J": 0.25,
+          "fisher_projection_error": 0.0,
+          "reciprocal_projection_error": 0.0,
+          "closure_leakage": 0.0,
+          "descent_balance_cost": 0.0,
+          "resource_cost": 1.0
+        },
+        {
+          "name": "full",
+          "support_size": 6,
+          "support": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6"
+          ],
+          "required_descent_size": 6,
+          "J": 0.25,
+          "fisher_projection_error": 0.0,
+          "reciprocal_projection_error": 0.0,
+          "closure_leakage": 0.0,
+          "descent_balance_cost": 0.0,
+          "resource_cost": 1.0
+        },
+        {
+          "name": "low_index",
+          "support_size": 2,
+          "support": [
+            "1",
+            "6"
+          ],
+          "required_descent_size": 6,
+          "J": 1.2819478817730292,
+          "fisher_projection_error": 0.03194788177302932,
+          "reciprocal_projection_error": 1.2030252012800084e-29,
+          "closure_leakage": 0.5,
+          "descent_balance_cost": 0.6666666666666666,
+          "resource_cost": 0.3333333333333333
+        },
+        {
+          "name": "top_fisher_energy",
+          "support_size": 2,
+          "support": [
+            "1",
+            "6"
+          ],
+          "required_descent_size": 6,
+          "J": 1.2819478817730292,
+          "fisher_projection_error": 0.03194788177302932,
+          "reciprocal_projection_error": 1.2030252012800084e-29,
+          "closure_leakage": 0.5,
+          "descent_balance_cost": 0.6666666666666666,
+          "resource_cost": 0.3333333333333333
+        },
+        {
+          "name": "true_support",
+          "support_size": 2,
+          "support": [
+            "1",
+            "6"
+          ],
+          "required_descent_size": 6,
+          "J": 1.2819478817730292,
+          "fisher_projection_error": 0.03194788177302932,
+          "reciprocal_projection_error": 1.2030252012800084e-29,
+          "closure_leakage": 0.5,
+          "descent_balance_cost": 0.6666666666666666,
+          "resource_cost": 0.3333333333333333
+        },
+        {
+          "name": "zero",
+          "support_size": 0,
+          "support": [],
+          "required_descent_size": 0,
+          "J": 2.0,
+          "fisher_projection_error": 1.0,
+          "reciprocal_projection_error": 1.0,
+          "closure_leakage": 0.0,
+          "descent_balance_cost": 0.0,
+          "resource_cost": 0.0
+        },
+        {
+          "name": "random_same_size",
+          "support_size": 2,
+          "support": [
+            "2",
+            "6"
+          ],
+          "required_descent_size": 6,
+          "J": 2.750346644421361,
+          "fisher_projection_error": 0.5003466444213635,
+          "reciprocal_projection_error": 0.49999999999999784,
+          "closure_leakage": 1.0,
+          "descent_balance_cost": 0.6666666666666666,
+          "resource_cost": 0.3333333333333333
+        }
+      ]
+    },
+    {
+      "key": "c8",
+      "row": "C_8",
+      "label_count": 8,
+      "active_reciprocal_support": [
+        "4"
+      ],
+      "amplitude": 0.35,
+      "resource_weight": 0.25,
+      "winner": "allowed_reciprocal",
+      "candidates": [
+        {
+          "name": "allowed_reciprocal",
+          "support_size": 1,
+          "support": [
+            "4"
+          ],
+          "required_descent_size": 1,
+          "J": 0.03571428571428571,
+          "fisher_projection_error": 8.382654913050665e-31,
+          "reciprocal_projection_error": 2.222991637297208e-30,
+          "closure_leakage": 0.0,
+          "descent_balance_cost": 0.0,
+          "resource_cost": 0.14285714285714285
+        },
+        {
+          "name": "conductor_packet",
+          "support_size": 1,
+          "support": [
+            "4"
+          ],
+          "required_descent_size": 1,
+          "J": 0.03571428571428571,
+          "fisher_projection_error": 8.382654913050665e-31,
+          "reciprocal_projection_error": 2.222991637297208e-30,
+          "closure_leakage": 0.0,
+          "descent_balance_cost": 0.0,
+          "resource_cost": 0.14285714285714285
+        },
+        {
+          "name": "descent_closure",
+          "support_size": 1,
+          "support": [
+            "4"
+          ],
+          "required_descent_size": 1,
+          "J": 0.03571428571428571,
+          "fisher_projection_error": 8.382654913050665e-31,
+          "reciprocal_projection_error": 2.222991637297208e-30,
+          "closure_leakage": 0.0,
+          "descent_balance_cost": 0.0,
+          "resource_cost": 0.14285714285714285
+        },
+        {
+          "name": "top_fisher_energy",
+          "support_size": 1,
+          "support": [
+            "4"
+          ],
+          "required_descent_size": 1,
+          "J": 0.03571428571428571,
+          "fisher_projection_error": 8.382654913050665e-31,
+          "reciprocal_projection_error": 2.222991637297208e-30,
+          "closure_leakage": 0.0,
+          "descent_balance_cost": 0.0,
+          "resource_cost": 0.14285714285714285
+        },
+        {
+          "name": "true_support",
+          "support_size": 1,
+          "support": [
+            "4"
+          ],
+          "required_descent_size": 1,
+          "J": 0.03571428571428571,
+          "fisher_projection_error": 8.382654913050665e-31,
+          "reciprocal_projection_error": 2.222991637297208e-30,
+          "closure_leakage": 0.0,
+          "descent_balance_cost": 0.0,
+          "resource_cost": 0.14285714285714285
+        },
+        {
+          "name": "full",
+          "support_size": 7,
+          "support": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7"
+          ],
+          "required_descent_size": 7,
+          "J": 0.25,
+          "fisher_projection_error": 0.0,
+          "reciprocal_projection_error": 0.0,
+          "closure_leakage": 0.0,
+          "descent_balance_cost": 0.0,
+          "resource_cost": 1.0
+        },
+        {
+          "name": "zero",
+          "support_size": 0,
+          "support": [],
+          "required_descent_size": 0,
+          "J": 2.0,
+          "fisher_projection_error": 1.0,
+          "reciprocal_projection_error": 1.0,
+          "closure_leakage": 0.0,
+          "descent_balance_cost": 0.0,
+          "resource_cost": 0.0
+        },
+        {
+          "name": "random_same_size",
+          "support_size": 1,
+          "support": [
+            "2"
+          ],
+          "required_descent_size": 3,
+          "J": 2.702380952380952,
+          "fisher_projection_error": 1.0,
+          "reciprocal_projection_error": 1.0,
+          "closure_leakage": 0.0,
+          "descent_balance_cost": 0.6666666666666666,
+          "resource_cost": 0.14285714285714285
+        },
+        {
+          "name": "low_index",
+          "support_size": 1,
+          "support": [
+            "1"
+          ],
+          "required_descent_size": 7,
+          "J": 2.892857142857143,
+          "fisher_projection_error": 1.0,
+          "reciprocal_projection_error": 1.0,
+          "closure_leakage": 0.0,
+          "descent_balance_cost": 0.8571428571428571,
+          "resource_cost": 0.14285714285714285
+        }
+      ]
+    },
+    {
+      "key": "c12",
+      "row": "C_12",
+      "label_count": 12,
+      "active_reciprocal_support": [
+        "3",
+        "9"
+      ],
+      "amplitude": 0.35,
+      "resource_weight": 0.25,
+      "winner": "descent_closure",
+      "candidates": [
+        {
+          "name": "descent_closure",
+          "support_size": 3,
+          "support": [
+            "3",
+            "6",
+            "9"
+          ],
+          "required_descent_size": 3,
+          "J": 0.06818181818181818,
+          "fisher_projection_error": 2.8822209200394848e-30,
+          "reciprocal_projection_error": 4.9303806576313215e-29,
+          "closure_leakage": 0.0,
+          "descent_balance_cost": 0.0,
+          "resource_cost": 0.2727272727272727
+        },
+        {
+          "name": "full",
+          "support_size": 11,
+          "support": [
+            "1",
+            "10",
+            "11",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9"
+          ],
+          "required_descent_size": 11,
+          "J": 0.25,
+          "fisher_projection_error": 0.0,
+          "reciprocal_projection_error": 0.0,
+          "closure_leakage": 0.0,
+          "descent_balance_cost": 0.0,
+          "resource_cost": 1.0
+        },
+        {
+          "name": "conductor_packet",
+          "support_size": 2,
+          "support": [
+            "3",
+            "9"
+          ],
+          "required_descent_size": 3,
+          "J": 0.9365028375629083,
+          "fisher_projection_error": 0.05771495877502939,
+          "reciprocal_projection_error": 5.039451137755997e-29,
+          "closure_leakage": 0.5000000000000001,
+          "descent_balance_cost": 0.3333333333333333,
+          "resource_cost": 0.18181818181818182
+        },
+        {
+          "name": "top_fisher_energy",
+          "support_size": 2,
+          "support": [
+            "3",
+            "9"
+          ],
+          "required_descent_size": 3,
+          "J": 0.9365028375629083,
+          "fisher_projection_error": 0.05771495877502939,
+          "reciprocal_projection_error": 5.039451137755997e-29,
+          "closure_leakage": 0.5000000000000001,
+          "descent_balance_cost": 0.3333333333333333,
+          "resource_cost": 0.18181818181818182
+        },
+        {
+          "name": "true_support",
+          "support_size": 2,
+          "support": [
+            "3",
+            "9"
+          ],
+          "required_descent_size": 3,
+          "J": 0.9365028375629083,
+          "fisher_projection_error": 0.05771495877502939,
+          "reciprocal_projection_error": 5.039451137755997e-29,
+          "closure_leakage": 0.5000000000000001,
+          "descent_balance_cost": 0.3333333333333333,
+          "resource_cost": 0.18181818181818182
+        },
+        {
+          "name": "allowed_reciprocal",
+          "support_size": 0,
+          "support": [],
+          "required_descent_size": 0,
+          "J": 2.0,
+          "fisher_projection_error": 1.0,
+          "reciprocal_projection_error": 1.0,
+          "closure_leakage": 0.0,
+          "descent_balance_cost": 0.0,
+          "resource_cost": 0.0
+        },
+        {
+          "name": "zero",
+          "support_size": 0,
+          "support": [],
+          "required_descent_size": 0,
+          "J": 2.0,
+          "fisher_projection_error": 1.0,
+          "reciprocal_projection_error": 1.0,
+          "closure_leakage": 0.0,
+          "descent_balance_cost": 0.0,
+          "resource_cost": 0.0
+        },
+        {
+          "name": "low_index",
+          "support_size": 2,
+          "support": [
+            "1",
+            "11"
+          ],
+          "required_descent_size": 11,
+          "J": 2.8636363636363638,
+          "fisher_projection_error": 1.0,
+          "reciprocal_projection_error": 1.0,
+          "closure_leakage": 0.0,
+          "descent_balance_cost": 0.8181818181818182,
+          "resource_cost": 0.18181818181818182
+        },
+        {
+          "name": "random_same_size",
+          "support_size": 2,
+          "support": [
+            "11",
+            "3"
+          ],
+          "required_descent_size": 11,
+          "J": 2.8924938430238774,
+          "fisher_projection_error": 0.5288574793875146,
+          "reciprocal_projection_error": 0.499999999999999,
+          "closure_leakage": 1.0,
+          "descent_balance_cost": 0.8181818181818182,
+          "resource_cost": 0.18181818181818182
+        }
+      ]
+    },
+    {
+      "key": "f4-u2",
+      "row": "F_4[u]/(u^2)",
+      "label_count": 16,
+      "active_reciprocal_support": [
+        "(w+1)u",
+        "u",
+        "wu"
+      ],
+      "amplitude": 0.35,
+      "resource_weight": 0.25,
+      "winner": "allowed_reciprocal",
+      "candidates": [
+        {
+          "name": "allowed_reciprocal",
+          "support_size": 3,
+          "support": [
+            "(w+1)u",
+            "u",
+            "wu"
+          ],
+          "required_descent_size": 3,
+          "J": 0.05,
+          "fisher_projection_error": 0.0,
+          "reciprocal_projection_error": 0.0,
+          "closure_leakage": 0.0,
+          "descent_balance_cost": 0.0,
+          "resource_cost": 0.2
+        },
+        {
+          "name": "conductor_packet",
+          "support_size": 3,
+          "support": [
+            "(w+1)u",
+            "u",
+            "wu"
+          ],
+          "required_descent_size": 3,
+          "J": 0.05,
+          "fisher_projection_error": 0.0,
+          "reciprocal_projection_error": 0.0,
+          "closure_leakage": 0.0,
+          "descent_balance_cost": 0.0,
+          "resource_cost": 0.2
+        },
+        {
+          "name": "descent_closure",
+          "support_size": 3,
+          "support": [
+            "(w+1)u",
+            "u",
+            "wu"
+          ],
+          "required_descent_size": 3,
+          "J": 0.05,
+          "fisher_projection_error": 0.0,
+          "reciprocal_projection_error": 0.0,
+          "closure_leakage": 0.0,
+          "descent_balance_cost": 0.0,
+          "resource_cost": 0.2
+        },
+        {
+          "name": "top_fisher_energy",
+          "support_size": 3,
+          "support": [
+            "(w+1)u",
+            "u",
+            "wu"
+          ],
+          "required_descent_size": 3,
+          "J": 0.05,
+          "fisher_projection_error": 0.0,
+          "reciprocal_projection_error": 0.0,
+          "closure_leakage": 0.0,
+          "descent_balance_cost": 0.0,
+          "resource_cost": 0.2
+        },
+        {
+          "name": "true_support",
+          "support_size": 3,
+          "support": [
+            "(w+1)u",
+            "u",
+            "wu"
+          ],
+          "required_descent_size": 3,
+          "J": 0.05,
+          "fisher_projection_error": 0.0,
+          "reciprocal_projection_error": 0.0,
+          "closure_leakage": 0.0,
+          "descent_balance_cost": 0.0,
+          "resource_cost": 0.2
+        },
+        {
+          "name": "full",
+          "support_size": 15,
+          "support": [
+            "(w+1)u",
+            "1",
+            "1+(w+1)u",
+            "1+u",
+            "1+wu",
+            "u",
+            "w",
+            "w+(w+1)u",
+            "w+1",
+            "w+1+(w+1)u",
+            "w+1+u",
+            "w+1+wu",
+            "w+u",
+            "w+wu",
+            "wu"
+          ],
+          "required_descent_size": 15,
+          "J": 0.25,
+          "fisher_projection_error": 0.0,
+          "reciprocal_projection_error": 0.0,
+          "closure_leakage": 0.0,
+          "descent_balance_cost": 0.0,
+          "resource_cost": 1.0
+        },
+        {
+          "name": "low_index",
+          "support_size": 3,
+          "support": [
+            "(w+1)u",
+            "1",
+            "1+(w+1)u"
+          ],
+          "required_descent_size": 3,
+          "J": 1.3833333333333333,
+          "fisher_projection_error": 0.6666666666666666,
+          "reciprocal_projection_error": 0.6666666666666666,
+          "closure_leakage": 0.0,
+          "descent_balance_cost": 0.0,
+          "resource_cost": 0.2
+        },
+        {
+          "name": "random_same_size",
+          "support_size": 3,
+          "support": [
+            "(w+1)u",
+            "w+1+(w+1)u",
+            "w+1+u"
+          ],
+          "required_descent_size": 7,
+          "J": 1.9547619047619047,
+          "fisher_projection_error": 0.6666666666666666,
+          "reciprocal_projection_error": 0.6666666666666666,
+          "closure_leakage": 0.0,
+          "descent_balance_cost": 0.5714285714285714,
+          "resource_cost": 0.2
+        },
+        {
+          "name": "zero",
+          "support_size": 0,
+          "support": [],
+          "required_descent_size": 0,
+          "J": 2.0,
+          "fisher_projection_error": 1.0,
+          "reciprocal_projection_error": 1.0,
+          "closure_leakage": 0.0,
+          "descent_balance_cost": 0.0,
+          "resource_cost": 0.0
+        }
+      ]
+    }
+  ]
+}

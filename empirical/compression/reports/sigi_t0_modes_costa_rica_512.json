@@ -1,0 +1,78 @@
+[
+  {
+    "file": "C:\\Users\\leomu\\Downloads\\central-valley-san-jose-costa-rica.jpg",
+    "crop_size": 512,
+    "width": 512,
+    "height": 512,
+    "raw_rgb_bytes": 786432,
+    "source_jpeg_bytes": 467355,
+    "webp_lossless_bytes": 307430,
+    "webp_lossless_encode_s": 5.24928310001269,
+    "sigi_best_mode": "g-bg-ravg-ctx-rice",
+    "sigi_bytes": 321726,
+    "sigi_estimate_s": 20.21428349998314,
+    "sigi_modes": {
+      "ycocg-ctx-rice": {
+        "bytes": 322955,
+        "estimate_s": 22.79709370000637
+      },
+      "green16-ctx-rice": {
+        "bytes": 350981,
+        "estimate_s": 20.43034429999534
+      },
+      "g-bg-ravg-ctx-rice": {
+        "bytes": 321726,
+        "estimate_s": 20.21428349998314
+      },
+      "g-bg-ravg-anova-rice": {
+        "bytes": 321726,
+        "estimate_s": 22.845604200003436,
+        "tiles": 768,
+        "anova_tiles": 0,
+        "anova_saved_bytes": 0
+      },
+      "g-bg-ravg-ctx-huff": {
+        "bytes": 322164,
+        "estimate_s": 21.07336489998852
+      }
+    }
+  },
+  {
+    "file": "C:\\Users\\leomu\\Downloads\\que-ver-en-costa-rica-correos-portada.jpg",
+    "crop_size": 512,
+    "width": 512,
+    "height": 512,
+    "raw_rgb_bytes": 786432,
+    "source_jpeg_bytes": 1634994,
+    "webp_lossless_bytes": 231732,
+    "webp_lossless_encode_s": 11.062448200013023,
+    "sigi_best_mode": "g-bg-ravg-ctx-huff",
+    "sigi_bytes": 266380,
+    "sigi_estimate_s": 18.325547299988102,
+    "sigi_modes": {
+      "ycocg-ctx-rice": {
+        "bytes": 270598,
+        "estimate_s": 21.49595749998116
+      },
+      "green16-ctx-rice": {
+        "bytes": 292599,
+        "estimate_s": 28.21177510000416
+      },
+      "g-bg-ravg-ctx-rice": {
+        "bytes": 270332,
+        "estimate_s": 26.212540499982424
+      },
+      "g-bg-ravg-anova-rice": {
+        "bytes": 270332,
+        "estimate_s": 21.327468500006944,
+        "tiles": 768,
+        "anova_tiles": 0,
+        "anova_saved_bytes": 0
+      },
+      "g-bg-ravg-ctx-huff": {
+        "bytes": 266380,
+        "estimate_s": 18.325547299988102
+      }
+    }
+  }
+]

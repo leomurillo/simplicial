@@ -1,0 +1,175 @@
+==============================================================================
+AUDIT  פ-transfer  --  the conductor-block content of the Helmert-Fourier
+                      transfer matrix is a RAMANUJAN-sum distribution
+==============================================================================
+PRE-CLAIM (before the computation runs).
+T9 leaves the conductor-block structure of U as a forward door (claim 5, §4.4),
+calling it 'Gauss-sum-like content over the divisors of d'. The exterior claim:
+the additive packet sum is precisely the RAMANUJAN sum, so each Helmert rung k
+distributes its Fourier weight over the conductor packets H_d (d|N) as
+   R_k(d) = sum_{c in H_d} |U_{kc}|^2
+          = ( 1/(N k(k+1)) ) * sum_{s,t} (h_k)_s (h_k)_t c_d(s-t),
+with c_d the Ramanujan sum (Hoelder's exact integer formula).
+
+  K1 : R_k(d) equals the exact Ramanujan-sum quadratic form above AND is a
+       COMPLETE distribution over conductors, sum_{d|N} R_k(d) = 1 exactly.
+       (Proof of completeness: sum_{d|N} c_d(n) = N*[N|n], so the double sum
+       telescopes to sum_s (h_k)_s^2 / (k(k+1)) = (k + k^2)/(k(k+1)) = 1.)
+       This identifies T9's 'Gauss-sum-like content' as Ramanujan sums.
+  L1 : R_k(d) != the Ramanujan form, or sum_d R_k(d) != 1.
+  K2 (SHARP, may fail) : the conductor distribution {R_k(d)}_d is the SAME for
+       every Helmert rung k (k-independent).
+  L2 : it depends on k.
+  JOINT-ON-DISJOINT : R_k(d) is k-dependent in general, but the LAST rung
+       k=N-1 is special (T9 claim 3 'last-row uniformity'): its distribution is
+       flat / concentrated in a single packet.
+Check: exact Ramanujan c_d via Hoelder; exact Fraction R_k(d); the completeness
+sum; plus a FLOAT |U_{kc}|^2 cross-check (non-voting witness).
+------------------------------------------------------------------------------
+  N=6:  nontrivial conductors (divisors d|N, d>1): [2, 3, 6]
+        completeness sum_d R_k(d)=1 (all k): True    float |U|^2 witness agrees: True
+        K2 distribution k-independent: False
+        R_1(d):  d=1:0  d=2:1/3  d=3:1/2  d=6:1/6
+        R_5(d):  d=1:0  d=2:1/5  d=3:2/5  d=6:2/5
+        last rung k=5: nonzero only on conductors [2, 3, 6] (of [2, 3, 6])
+------------------------------------------------------------------------------
+  N=12:  nontrivial conductors (divisors d|N, d>1): [2, 3, 4, 6, 12]
+        completeness sum_d R_k(d)=1 (all k): True    float |U|^2 witness agrees: True
+        K2 distribution k-independent: False
+        R_1(d):  d=1:0  d=2:1/6  d=3:1/4  d=4:1/6  d=6:1/12  d=12:1/3
+        R_11(d):  d=1:0  d=2:1/11  d=3:2/11  d=4:2/11  d=6:2/11  d=12:4/11
+        last rung k=11: nonzero only on conductors [2, 3, 4, 6, 12] (of [2, 3, 4, 6, 12])
+------------------------------------------------------------------------------
+  N=30:  nontrivial conductors (divisors d|N, d>1): [2, 3, 5, 6, 10, 15, 30]
+        completeness sum_d R_k(d)=1 (all k): True    float |U|^2 witness agrees: True
+        K2 distribution k-independent: False
+        R_1(d):  d=1:0  d=2:1/15  d=3:1/10  d=5:1/6  d=6:1/30  d=10:1/10  d=15:7/30  d=30:3/10
+        R_29(d):  d=1:0  d=2:1/29  d=3:2/29  d=5:4/29  d=6:2/29  d=10:4/29  d=15:8/29  d=30:8/29
+        last rung k=29: nonzero only on conductors [2, 3, 5, 6, 10, 15, 30] (of [2, 3, 5, 6, 10, 15, 30])
+REALIZED BRANCH  פ-transfer :  printed above; read against K1/K2/joint.
+
+==============================================================================
+AUDIT  פ-Kummer  --  the Kummer-clock degree factors into a finite-prime
+                    gauge part times a real-place dimensional tower
+==============================================================================
+PRE-CLAIM (before the computation runs).
+T10 defines the Kummer clock K_N^{(m)} = Q(zeta_m, p^{1/m}: p<=N prime), the
+m=2 case being T4's multiquadratic radical clock. Its generic degree over Q is
+[K_N^{(m)}:Q] = phi(m) * m^{pi(N)}: the cyclotomic base Q(zeta_m) of degree
+phi(m), times one factor of m for each prime p<=N whose m-th root is adjoined.
+
+  K1 : the degree FACTORS as (phi(m)) x (m^{pi(N)}) -- a FINITE-PRIME / gauge
+       part phi(m) [the zeta_m, fixed by the gauge m] times a REAL-PLACE
+       dimensional tower m^{pi(N)} [the radicals p^{1/m}, growing with N]. The
+       two places of P3 again, now as the two factors of one degree.
+  L1 : the degree does not factor this way.
+  K2 (SHARP) : the real-place factor grows by exactly m at EVERY prime rung N
+       (and by 1 at composite N), i.e. m^{pi(N)} jumps by m iff N is prime --
+       the exact analog of T4's 'K_N grows over K_{N-1} iff N prime', now for
+       all m.
+Check: exact pi(N), phi(m); the factorization and the prime-rung growth ratio.
+------------------------------------------------------------------------------
+  gauge m=2 (cyclotomic base phi(m)=1):
+      N= 2 prime: deg = phi(2)*2^1 =        2   growth      ok
+      N= 3 prime: deg = phi(2)*2^2 =        4   growth x2   ok
+      N= 4      : deg = phi(2)*2^2 =        4   growth x1   ok
+      N= 5 prime: deg = phi(2)*2^3 =        8   growth x2   ok
+      N= 6      : deg = phi(2)*2^3 =        8   growth x1   ok
+      N= 7 prime: deg = phi(2)*2^4 =       16   growth x2   ok
+      N= 8      : deg = phi(2)*2^4 =       16   growth x1   ok
+      N= 9      : deg = phi(2)*2^4 =       16   growth x1   ok
+      N=10      : deg = phi(2)*2^4 =       16   growth x1   ok
+      N=11 prime: deg = phi(2)*2^5 =       32   growth x2   ok
+      N=12      : deg = phi(2)*2^5 =       32   growth x1   ok
+  gauge m=3 (cyclotomic base phi(m)=2):
+      N= 2 prime: deg = phi(3)*3^1 =        6   growth      ok
+      N= 3 prime: deg = phi(3)*3^2 =       18   growth x3   ok
+      N= 4      : deg = phi(3)*3^2 =       18   growth x1   ok
+      N= 5 prime: deg = phi(3)*3^3 =       54   growth x3   ok
+      N= 6      : deg = phi(3)*3^3 =       54   growth x1   ok
+      N= 7 prime: deg = phi(3)*3^4 =      162   growth x3   ok
+      N= 8      : deg = phi(3)*3^4 =      162   growth x1   ok
+      N= 9      : deg = phi(3)*3^4 =      162   growth x1   ok
+      N=10      : deg = phi(3)*3^4 =      162   growth x1   ok
+      N=11 prime: deg = phi(3)*3^5 =      486   growth x3   ok
+      N=12      : deg = phi(3)*3^5 =      486   growth x1   ok
+  gauge m=4 (cyclotomic base phi(m)=2):
+      N= 2 prime: deg = phi(4)*4^1 =        8   growth      ok
+      N= 3 prime: deg = phi(4)*4^2 =       32   growth x4   ok
+      N= 4      : deg = phi(4)*4^2 =       32   growth x1   ok
+      N= 5 prime: deg = phi(4)*4^3 =      128   growth x4   ok
+      N= 6      : deg = phi(4)*4^3 =      128   growth x1   ok
+      N= 7 prime: deg = phi(4)*4^4 =      512   growth x4   ok
+      N= 8      : deg = phi(4)*4^4 =      512   growth x1   ok
+      N= 9      : deg = phi(4)*4^4 =      512   growth x1   ok
+      N=10      : deg = phi(4)*4^4 =      512   growth x1   ok
+      N=11 prime: deg = phi(4)*4^5 =     2048   growth x4   ok
+      N=12      : deg = phi(4)*4^5 =     2048   growth x1   ok
+  gauge m=6 (cyclotomic base phi(m)=2):
+      N= 2 prime: deg = phi(6)*6^1 =       12   growth      ok
+      N= 3 prime: deg = phi(6)*6^2 =       72   growth x6   ok
+      N= 4      : deg = phi(6)*6^2 =       72   growth x1   ok
+      N= 5 prime: deg = phi(6)*6^3 =      432   growth x6   ok
+      N= 6      : deg = phi(6)*6^3 =      432   growth x1   ok
+      N= 7 prime: deg = phi(6)*6^4 =     2592   growth x6   ok
+      N= 8      : deg = phi(6)*6^4 =     2592   growth x1   ok
+      N= 9      : deg = phi(6)*6^4 =     2592   growth x1   ok
+      N=10      : deg = phi(6)*6^4 =     2592   growth x1   ok
+      N=11 prime: deg = phi(6)*6^5 =    15552   growth x6   ok
+      N=12      : deg = phi(6)*6^5 =    15552   growth x1   ok
+------------------------------------------------------------------------------
+REALIZED BRANCH  פ-Kummer :  the degree is phi(m)*m^{pi(N)} -- finite-prime
+  gauge factor phi(m) times real-place radical tower m^{pi(N)} that grows
+  by exactly m at each prime rung. Two places, two factors.
+
+==============================================================================
+AUDIT  פ-overlap  --  the real radicals and the cyclotomic field MEET on the
+                     real quadratic subfields of Q(zeta_N) (conductor criterion)
+==============================================================================
+PRE-CLAIM (CORRECTED criterion -- see the CORRECTION note).
+T9's transfer matrix lives over the compositum K_N . Q(zeta_N): the real
+multiquadratic field K_N=Q(sqrt p: p<=N) (T4) and the cyclotomic field Q(zeta_N).
+Are they independent, or do they overlap -- and by exactly what?
+
+  K : they OVERLAP. The real radical sqrt(p) lies in Q(zeta_N) iff the CONDUCTOR
+      of Q(sqrt p) divides N, with cond = 8 (p=2), p (p=1 mod4), 4p (p=3 mod4)
+      [conductor-discriminant theorem]. So K_N cap Q(zeta_N) = Q( sqrt p :
+      cond(Q(sqrt p)) | N ), the real quadratic subfields of Q(zeta_N) that K_N
+      carries. NOT linearly disjoint.
+  L : the overlap is trivial (linearly disjoint over Q).
+  JOINT-ON-DISJOINT : a parity distinction survives, but NOT 'real only for
+      p=1 mod4'. The p=1 primes enter at p|N; the p=3 primes enter at 4p|N --
+      they need the extra 2-adic factor 4 (the prime 2's ramification, tying to
+      [P4]'s 2-adic anomaly); p=2 enters at 8|N.
+
+CORRECTION (retained, per the method's record).  The FIRST DRAFT of this audit
+tracked the quadratic GAUSS SUM sqrt(p*), p*=(-1)^{(p-1)/2}p -- real iff p=1 mod4
+-- and WRONGLY concluded the real overlap at N=12 is trivial. But the real
+RADICAL sqrt(p) is a DIFFERENT object: for p=3 mod4 it has conductor 4p, not p,
+and sqrt(3)=zeta_12+zeta_12^{-1} IS real in Q(zeta_12). The gate passed the false
+claim because the artifact ENCODED THE WRONG CRITERION -- it certified that prose
+matched computation, not that the computation asked the right question (Murillo
+Montero, error reported 2026-05-30). Corrected here to the conductor criterion.
+Check: for each prime p<=N, sqrt(p) in Q(zeta_N) iff cond(Q(sqrt p)) | N; exact.
+------------------------------------------------------------------------------
+  N= 5: real radicals sqrt(p) in Q(ζ_N): [5]   [sqrt5(cond 5)]   K_N∩Q(ζ_N) degree = 2
+  N= 8: real radicals sqrt(p) in Q(ζ_N): [2]   [sqrt2(cond 8)]   K_N∩Q(ζ_N) degree = 2
+  N=12: real radicals sqrt(p) in Q(ζ_N): [3]   [sqrt3(cond 12)]   K_N∩Q(ζ_N) degree = 2
+  N=15: real radicals sqrt(p) in Q(ζ_N): [5]   [sqrt5(cond 5)]   K_N∩Q(ζ_N) degree = 2
+  N=24: real radicals sqrt(p) in Q(ζ_N): [2, 3]   [sqrt2(cond 8), sqrt3(cond 12)]   K_N∩Q(ζ_N) degree = 4
+  N=30: real radicals sqrt(p) in Q(ζ_N): [5]   [sqrt5(cond 5)]   K_N∩Q(ζ_N) degree = 2
+------------------------------------------------------------------------------
+  spotlight N=12: cond(Q(sqrt 3))=4*3=12 | 12, so sqrt(3)=zeta_12+zeta_12^{-1}
+  is REAL in Q(zeta_12); K_12 ∩ Q(zeta_12) = Q(sqrt 3) = Q(zeta_12)^+ (NOT trivial).
+------------------------------------------------------------------------------
+REALIZED BRANCH  פ-overlap :  K + JOINT-ON-DISJOINT (criterion CORRECTED)
+  K_N and Q(ζ_N) fuse on the real quadratic subfields Q(sqrt p) with
+  cond(Q(sqrt p)) | N -- a CONDUCTOR criterion, not the Gauss-sum one. JOINT:
+  p=1 mod4 enter at p|N, p=3 mod4 at 4p|N (the extra 2-adic factor 4), p=2 at
+  8|N. The first-draft Gauss-sum criterion -- and its false 'N=12 trivial'
+  verdict, certified [P] by the gate -- is the RETAINED methodological failure
+  of this P5 audit: the gate checks prose-vs-computation, not the question.
+
+==============================================================================
+END OF SETTLEMENTS  (deterministic; re-run reproduces this transcript)
+==============================================================================

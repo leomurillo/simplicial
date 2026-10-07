@@ -1,0 +1,1360 @@
+{
+  "timestamp": "2026-06-03T22:55:21.195240+00:00",
+  "finding": "RESOURCE_FITS_BUT_GATE_RECOVERS_EXTERNALIZATION",
+  "config": {
+    "seed": 20260603,
+    "route_trials": 900,
+    "null_trials": 450,
+    "sweep_route_trials": 700,
+    "sweep_null_trials": 350,
+    "main_tool_mix": 0.5,
+    "compress_share": 0.45,
+    "mix_grid": [
+      0.0,
+      0.25,
+      0.5,
+      0.75,
+      1.0
+    ],
+    "effort_noise": 0.045,
+    "external_noise": 0.04,
+    "alpha": 0.05,
+    "ridge": 0.001,
+    "external_threshold": 0.5,
+    "decision_margin": 0.01,
+    "false_admission_margin": 0.05,
+    "detection_floor": 0.85
+  },
+  "main_train_counts": {
+    "tool_world": 450,
+    "compress_world": 195,
+    "bait_world": 255,
+    "no_capacity_world": 450
+  },
+  "main_test_counts": {
+    "tool_world": 444,
+    "compress_world": 216,
+    "bait_world": 240,
+    "no_capacity_world": 450
+  },
+  "main_train_means": {
+    "tool_world": {
+      "scalar": 1.0011552986244192,
+      "memory_load": 0.865027016103683,
+      "capacity_pressure": 0.8734544071960152,
+      "train_tool_value": 0.8823636105321842,
+      "heldout_tool_value": 0.8659569631946833,
+      "train_tool_reliability": 0.859183715543557,
+      "heldout_tool_reliability": 0.8591340155231151,
+      "heldout_compression_value": 0.22321135511784687,
+      "tool_persistence_score": 0.8118862133671839,
+      "target_effort": 0.9586120109344395,
+      "target_externalize": 1.0
+    },
+    "compress_world": {
+      "scalar": 0.998406139296599,
+      "memory_load": 0.5526079405663941,
+      "capacity_pressure": 0.4580855557572981,
+      "train_tool_value": 0.23083346142089461,
+      "heldout_tool_value": 0.21249587052303948,
+      "train_tool_reliability": 0.35873454092821466,
+      "heldout_tool_reliability": 0.32703638994427975,
+      "heldout_compression_value": 0.7716109891241095,
+      "tool_persistence_score": 0.142778176247312,
+      "target_effort": 0.6944847180059671,
+      "target_externalize": 0.0
+    },
+    "bait_world": {
+      "scalar": 0.9999823212546,
+      "memory_load": 0.88102259121032,
+      "capacity_pressure": 0.8736411093600804,
+      "train_tool_value": 0.8858821869159181,
+      "heldout_tool_value": 0.1759306057374599,
+      "train_tool_reliability": 0.8566526847832007,
+      "heldout_tool_reliability": 0.2204062237010171,
+      "heldout_compression_value": 0.21412701450615995,
+      "tool_persistence_score": 0.07451338405423946,
+      "target_effort": 0.9118517118475551,
+      "target_externalize": 0.0
+    },
+    "no_capacity_world": {
+      "scalar": 1.0006461670098017,
+      "memory_load": 0.1921929191318526,
+      "capacity_pressure": 0.12713448163721625,
+      "train_tool_value": 0.06455153497505904,
+      "heldout_tool_value": 0.058857760531152825,
+      "train_tool_reliability": 0.19866768604112645,
+      "heldout_tool_reliability": 0.1842011185623795,
+      "heldout_compression_value": 0.10027020800567078,
+      "tool_persistence_score": -0.002389474337106663,
+      "target_effort": 0.2279409229696807,
+      "target_externalize": 0.0
+    }
+  },
+  "main_test_means": {
+    "tool_world": {
+      "scalar": 0.9989816868843442,
+      "memory_load": 0.8701709464436892,
+      "capacity_pressure": 0.8771544223410499,
+      "train_tool_value": 0.8820934803472527,
+      "heldout_tool_value": 0.8643408179124341,
+      "train_tool_reliability": 0.8579808117362661,
+      "heldout_tool_reliability": 0.8551950180741908,
+      "heldout_compression_value": 0.21770551286363846,
+      "tool_persistence_score": 0.8108305265463768,
+      "target_effort": 0.9598822013575369,
+      "target_externalize": 1.0
+    },
+    "compress_world": {
+      "scalar": 0.9997969100282843,
+      "memory_load": 0.5520523984791658,
+      "capacity_pressure": 0.45478776536400295,
+      "train_tool_value": 0.2288484369851141,
+      "heldout_tool_value": 0.20879273225272213,
+      "train_tool_reliability": 0.35717756139506573,
+      "heldout_tool_reliability": 0.3273742971195567,
+      "heldout_compression_value": 0.7688250257707849,
+      "tool_persistence_score": 0.14337691221332274,
+      "target_effort": 0.6933766736602404,
+      "target_externalize": 0.0
+    },
+    "bait_world": {
+      "scalar": 1.000176741855145,
+      "memory_load": 0.8601981817349861,
+      "capacity_pressure": 0.8690477059305042,
+      "train_tool_value": 0.8811121632661895,
+      "heldout_tool_value": 0.18581030362501966,
+      "train_tool_reliability": 0.8572904490731189,
+      "heldout_tool_reliability": 0.21505533805110247,
+      "heldout_compression_value": 0.21174947583283732,
+      "tool_persistence_score": 0.07698774984363027,
+      "target_effort": 0.9072774709837562,
+      "target_externalize": 0.0
+    },
+    "no_capacity_world": {
+      "scalar": 0.9989253162688765,
+      "memory_load": 0.18480019793924837,
+      "capacity_pressure": 0.12739328318878,
+      "train_tool_value": 0.06435433070732231,
+      "heldout_tool_value": 0.05869298295364566,
+      "train_tool_reliability": 0.19623895464481733,
+      "heldout_tool_reliability": 0.18264081823144698,
+      "heldout_compression_value": 0.09130911678444026,
+      "tool_persistence_score": -0.005321895125521788,
+      "target_effort": 0.22516050741606464,
+      "target_externalize": 0.0
+    }
+  },
+  "main_eval": {
+    "tool_gate": 0.22630315337622717,
+    "models": {
+      "scalar": {
+        "effort": {
+          "name": "scalar",
+          "feature_kind": "scalar",
+          "target_kind": "effort",
+          "coef": [
+            0.6660211987905469,
+            2.9742646166469663e-06
+          ],
+          "mean": [
+            1.0003669249023401
+          ],
+          "sd": [
+            0.019720530158199193
+          ]
+        },
+        "externalize": {
+          "name": "scalar",
+          "feature_kind": "scalar",
+          "target_kind": "externalize",
+          "coef": [
+            0.33885943192828466,
+            0.012461282448673163
+          ],
+          "mean": [
+            1.0003669249023401
+          ],
+          "sd": [
+            0.019720530158199193
+          ]
+        }
+      },
+      "continuous_resource": {
+        "effort": {
+          "name": "continuous_resource",
+          "feature_kind": "continuous_resource",
+          "target_kind": "effort",
+          "coef": [
+            0.666021198790547,
+            0.0016687878017421314,
+            0.1091888091765751,
+            0.09056884642342204,
+            0.0032039674963571982,
+            0.007333926224225758,
+            0.07567247214108433,
+            0.051508320982543945,
+            0.009843246743472497,
+            0.045371358264251774,
+            -0.010131733313096953,
+            -0.003907880093988527,
+            -0.08451632663214362,
+            0.020060312317132317,
+            0.04171025461530832
+          ],
+          "mean": [
+            1.0003669249023386,
+            0.5986431703889411,
+            0.564718641655146,
+            0.2862762866399134,
+            0.2927967893636353,
+            0.5163142949028842,
+            0.5662465191213524,
+            0.439740328479009,
+            0.4638765821723478,
+            0.23145950444703947,
+            0.18228566263169543,
+            0.08986025840385907,
+            0.018268523739563565,
+            0.34087003277230216
+          ],
+          "sd": [
+            0.01972053015819918,
+            0.31789126457946915,
+            0.35159200419835973,
+            0.2283130570529782,
+            0.23035783932002546,
+            0.397070900827323,
+            0.32020325186191717,
+            0.23006711254446965,
+            0.31413773029934317,
+            0.056230178371269486,
+            0.05341594922943188,
+            0.37954540473181103,
+            0.2545693355128549,
+            0.24065136401685264
+          ]
+        },
+        "externalize": {
+          "name": "continuous_resource",
+          "feature_kind": "continuous_resource",
+          "target_kind": "externalize",
+          "coef": [
+            0.33885943192828516,
+            0.006799798480434847,
+            0.0024237286184105693,
+            0.06247971884949673,
+            -0.14581437395022026,
+            -0.13599482621221154,
+            0.23267901183142783,
+            0.18230818341778685,
+            -0.03471502060131197,
+            0.1603264696904192,
+            -0.05306318176505743,
+            -0.012260811333395905,
+            -0.5331824524064018,
+            0.010543856627514727,
+            0.2900891264708556
+          ],
+          "mean": [
+            1.0003669249023386,
+            0.5986431703889411,
+            0.564718641655146,
+            0.2862762866399134,
+            0.2927967893636353,
+            0.5163142949028842,
+            0.5662465191213524,
+            0.439740328479009,
+            0.4638765821723478,
+            0.23145950444703947,
+            0.18228566263169543,
+            0.08986025840385907,
+            0.018268523739563565,
+            0.34087003277230216
+          ],
+          "sd": [
+            0.01972053015819918,
+            0.31789126457946915,
+            0.35159200419835973,
+            0.2283130570529782,
+            0.23035783932002546,
+            0.397070900827323,
+            0.32020325186191717,
+            0.23006711254446965,
+            0.31413773029934317,
+            0.056230178371269486,
+            0.05341594922943188,
+            0.37954540473181103,
+            0.2545693355128549,
+            0.24065136401685264
+          ]
+        }
+      },
+      "external_tool_gate": {
+        "effort": {
+          "name": "external_tool_gate",
+          "feature_kind": "external_tool_gate",
+          "target_kind": "effort",
+          "coef": [
+            0.666021198790547,
+            -0.004020856486353151,
+            0.10323665464199692,
+            0.10390767973871283
+          ],
+          "mean": [
+            1.0003669249023386,
+            0.36592592592592593,
+            0.2795230504595673
+          ],
+          "sd": [
+            0.01972053015819918,
+            0.48168884423575425,
+            0.3837575586385309
+          ]
+        },
+        "externalize": {
+          "name": "external_tool_gate",
+          "feature_kind": "external_tool_gate",
+          "target_kind": "externalize",
+          "coef": [
+            0.3388594319282837,
+            0.0013704211629686999,
+            -0.056847320542139985,
+            0.5034432513308212
+          ],
+          "mean": [
+            1.0003669249023386,
+            0.36592592592592593,
+            0.2795230504595673
+          ],
+          "sd": [
+            0.01972053015819918,
+            0.48168884423575425,
+            0.3837575586385309
+          ]
+        }
+      },
+      "governed_resource_gate": {
+        "effort": {
+          "name": "governed_resource_gate",
+          "feature_kind": "governed_resource_gate",
+          "target_kind": "effort",
+          "coef": [
+            0.6660211987905471,
+            0.0013925973957963657,
+            0.1089083710689265,
+            0.08875943363959132,
+            0.00976087388567587,
+            0.012954784630715263,
+            0.06319783393308111,
+            0.0426749370925131,
+            0.012259583516103872,
+            0.03788021359549454,
+            -0.006794845491926983,
+            -0.0028137361010825155,
+            -0.05748400228057239,
+            0.0190035418956516,
+            0.02705913693768191,
+            0.005073463476463911,
+            0.014960818447461237
+          ],
+          "mean": [
+            1.0003669249023386,
+            0.5986431703889411,
+            0.564718641655146,
+            0.2862762866399134,
+            0.2927967893636353,
+            0.5163142949028842,
+            0.5662465191213524,
+            0.439740328479009,
+            0.4638765821723478,
+            0.23145950444703947,
+            0.18228566263169543,
+            0.08986025840385907,
+            0.018268523739563565,
+            0.34087003277230216,
+            0.36592592592592593,
+            0.2795230504595673
+          ],
+          "sd": [
+            0.01972053015819918,
+            0.31789126457946915,
+            0.35159200419835973,
+            0.2283130570529782,
+            0.23035783932002546,
+            0.397070900827323,
+            0.32020325186191717,
+            0.23006711254446965,
+            0.31413773029934317,
+            0.056230178371269486,
+            0.05341594922943188,
+            0.37954540473181103,
+            0.2545693355128549,
+            0.24065136401685264,
+            0.48168884423575425,
+            0.3837575586385309
+          ]
+        },
+        "externalize": {
+          "name": "governed_resource_gate",
+          "feature_kind": "governed_resource_gate",
+          "target_kind": "externalize",
+          "coef": [
+            0.33885943192828366,
+            -0.0005615289017480038,
+            0.007365201552349495,
+            0.023615247883883757,
+            0.010495793934118241,
+            -0.004206294259276612,
+            -0.05169792905688743,
+            -0.01481056325611831,
+            0.011072375133833304,
+            0.002698740754242472,
+            0.021590606395605234,
+            0.012431405857503408,
+            0.10070225827243401,
+            0.016789633706847232,
+            -0.07138318263124711,
+            -0.05984372937017187,
+            0.5047778088588716
+          ],
+          "mean": [
+            1.0003669249023386,
+            0.5986431703889411,
+            0.564718641655146,
+            0.2862762866399134,
+            0.2927967893636353,
+            0.5163142949028842,
+            0.5662465191213524,
+            0.439740328479009,
+            0.4638765821723478,
+            0.23145950444703947,
+            0.18228566263169543,
+            0.08986025840385907,
+            0.018268523739563565,
+            0.34087003277230216,
+            0.36592592592592593,
+            0.2795230504595673
+          ],
+          "sd": [
+            0.01972053015819918,
+            0.31789126457946915,
+            0.35159200419835973,
+            0.2283130570529782,
+            0.23035783932002546,
+            0.397070900827323,
+            0.32020325186191717,
+            0.23006711254446965,
+            0.31413773029934317,
+            0.056230178371269486,
+            0.05341594922943188,
+            0.37954540473181103,
+            0.2545693355128549,
+            0.24065136401685264,
+            0.48168884423575425,
+            0.3837575586385309
+          ]
+        }
+      },
+      "hybrid_resource_tool": {
+        "effort": {
+          "name": "hybrid_resource_tool",
+          "feature_kind": "hybrid_resource_tool",
+          "target_kind": "effort",
+          "coef": [
+            0.6660211987905469,
+            0.0011935629680278727,
+            0.10755306243766881,
+            0.08763713146909409,
+            0.0030221813434584024,
+            0.011914605383672115,
+            0.05785641308642656,
+            0.037021281213971975,
+            0.0028213653210505817,
+            0.05049175331983904,
+            -0.012454083059003957,
+            -0.0056640729002024465,
+            -0.03759945700992462,
+            0.0016188614680291268,
+            0.017763672204569297,
+            0.02966474041876093,
+            0.023912377675452453,
+            0.009594202502727255,
+            -0.04201477777906209,
+            0.03214455782976135,
+            -0.019105880479529106,
+            -0.006519206014797056,
+            0.03573285836941906
+          ],
+          "mean": [
+            1.0003669249023386,
+            0.5986431703889411,
+            0.564718641655146,
+            0.2862762866399134,
+            0.2927967893636353,
+            0.5163142949028842,
+            0.5662465191213524,
+            0.439740328479009,
+            0.4638765821723478,
+            0.23145950444703947,
+            0.18228566263169543,
+            0.08986025840385907,
+            0.018268523739563565,
+            0.34087003277230216,
+            0.37219675917901573,
+            0.4366492543861972,
+            0.25972832221026304,
+            -0.053548122432309386,
+            0.013788746297949118,
+            0.3045305110115491,
+            0.36592592592592593,
+            0.2795230504595673
+          ],
+          "sd": [
+            0.01972053015819918,
+            0.31789126457946915,
+            0.35159200419835973,
+            0.2283130570529782,
+            0.23035783932002546,
+            0.397070900827323,
+            0.32020325186191717,
+            0.23006711254446965,
+            0.31413773029934317,
+            0.056230178371269486,
+            0.05341594922943188,
+            0.37954540473181103,
+            0.2545693355128549,
+            0.24065136401685264,
+            0.36296996511960844,
+            0.31270699987388334,
+            0.22865461814323076,
+            0.3508866889979828,
+            0.25382570655315095,
+            0.3720633517390451,
+            0.48168884423575425,
+            0.3837575586385309
+          ]
+        },
+        "externalize": {
+          "name": "hybrid_resource_tool",
+          "feature_kind": "hybrid_resource_tool",
+          "target_kind": "externalize",
+          "coef": [
+            0.3388594319282839,
+            -0.001762443993667131,
+            0.003452393408784495,
+            0.011916945215240855,
+            -0.0089918454646782,
+            -0.0112592974590447,
+            -0.05564465397492795,
+            -0.029291260609077142,
+            -0.01670345944665421,
+            0.0316272798668051,
+            -0.021363531068485538,
+            -0.008794170082638102,
+            0.1308252412533642,
+            -0.007627038636387937,
+            -0.08111102225429007,
+            0.2522024478652224,
+            0.21614934172174227,
+            0.007336120659848971,
+            -0.20130350902000135,
+            0.06069661798119536,
+            -0.18149794382732196,
+            -0.09104791383088312,
+            0.46660040314799567
+          ],
+          "mean": [
+            1.0003669249023386,
+            0.5986431703889411,
+            0.564718641655146,
+            0.2862762866399134,
+            0.2927967893636353,
+            0.5163142949028842,
+            0.5662465191213524,
+            0.439740328479009,
+            0.4638765821723478,
+            0.23145950444703947,
+            0.18228566263169543,
+            0.08986025840385907,
+            0.018268523739563565,
+            0.34087003277230216,
+            0.37219675917901573,
+            0.4366492543861972,
+            0.25972832221026304,
+            -0.053548122432309386,
+            0.013788746297949118,
+            0.3045305110115491,
+            0.36592592592592593,
+            0.2795230504595673
+          ],
+          "sd": [
+            0.01972053015819918,
+            0.31789126457946915,
+            0.35159200419835973,
+            0.2283130570529782,
+            0.23035783932002546,
+            0.397070900827323,
+            0.32020325186191717,
+            0.23006711254446965,
+            0.31413773029934317,
+            0.056230178371269486,
+            0.05341594922943188,
+            0.37954540473181103,
+            0.2545693355128549,
+            0.24065136401685264,
+            0.36296996511960844,
+            0.31270699987388334,
+            0.22865461814323076,
+            0.3508866889979828,
+            0.25382570655315095,
+            0.3720633517390451,
+            0.48168884423575425,
+            0.3837575586385309
+          ]
+        }
+      }
+    },
+    "overall": {
+      "scalar": {
+        "effort": {
+          "rmse_observed": 0.32449332127435826,
+          "rmse_clean": 0.32414679348552844,
+          "r2_observed": -0.00014573778812554394
+        },
+        "externalize_regression": {
+          "rmse_observed": 0.4558239994950997,
+          "rmse_clean": 0.4702248017403986,
+          "r2_observed": -0.0013967955887237427
+        },
+        "externalize_classification": {
+          "accuracy": 0.6711111111111111,
+          "externalize_detection": 0.0,
+          "nonexternal_false_admission": 0.0,
+          "bait_false_admission": 0.0,
+          "compress_false_admission": 0.0,
+          "no_capacity_false_admission": 0.0
+        }
+      },
+      "continuous_resource": {
+        "effort": {
+          "rmse_observed": 0.05100478320774822,
+          "rmse_clean": 0.028426648088036376,
+          "r2_observed": 0.9752899527818187
+        },
+        "externalize_regression": {
+          "rmse_observed": 0.31249840788215594,
+          "rmse_clean": 0.32204449890536907,
+          "r2_observed": 0.5293398372590791
+        },
+        "externalize_classification": {
+          "accuracy": 0.8562962962962963,
+          "externalize_detection": 0.9234234234234234,
+          "nonexternal_false_admission": 0.17660044150110377,
+          "bait_false_admission": 0.6666666666666666,
+          "compress_false_admission": 0.0,
+          "no_capacity_false_admission": 0.0
+        }
+      },
+      "external_tool_gate": {
+        "effort": {
+          "rmse_observed": 0.2502551314560743,
+          "rmse_clean": 0.2468746591637815,
+          "r2_observed": 0.40513591904944013
+        },
+        "externalize_regression": {
+          "rmse_observed": 0.09112235204966772,
+          "rmse_clean": 0.09048328648608209,
+          "r2_observed": 0.9599814208546353
+        },
+        "externalize_classification": {
+          "accuracy": 1.0,
+          "externalize_detection": 1.0,
+          "nonexternal_false_admission": 0.0,
+          "bait_false_admission": 0.0,
+          "compress_false_admission": 0.0,
+          "no_capacity_false_admission": 0.0
+        }
+      },
+      "governed_resource_gate": {
+        "effort": {
+          "rmse_observed": 0.049523380886092344,
+          "rmse_clean": 0.0244712197074825,
+          "r2_observed": 0.9767044839966196
+        },
+        "externalize_regression": {
+          "rmse_observed": 0.08419767501626198,
+          "rmse_clean": 0.08393336786226628,
+          "r2_observed": 0.9658325929837158
+        },
+        "externalize_classification": {
+          "accuracy": 1.0,
+          "externalize_detection": 1.0,
+          "nonexternal_false_admission": 0.0,
+          "bait_false_admission": 0.0,
+          "compress_false_admission": 0.0,
+          "no_capacity_false_admission": 0.0
+        }
+      },
+      "hybrid_resource_tool": {
+        "effort": {
+          "rmse_observed": 0.04898640545345769,
+          "rmse_clean": 0.023135481373516436,
+          "r2_observed": 0.9772069255585915
+        },
+        "externalize_regression": {
+          "rmse_observed": 0.07118276252403309,
+          "rmse_clean": 0.07062567177095368,
+          "r2_observed": 0.9755791093192917
+        },
+        "externalize_classification": {
+          "accuracy": 1.0,
+          "externalize_detection": 1.0,
+          "nonexternal_false_admission": 0.0,
+          "bait_false_admission": 0.0,
+          "compress_false_admission": 0.0,
+          "no_capacity_false_admission": 0.0
+        }
+      }
+    },
+    "by_source": {
+      "tool_world": {
+        "scalar": {
+          "effort": {
+            "rmse_observed": 0.2910992701415207,
+            "rmse_clean": 0.2952761165103853,
+            "r2_observed": -51.86948859258917
+          },
+          "externalize": {
+            "accuracy": 0.0,
+            "externalize_detection": 0.0,
+            "nonexternal_false_admission": NaN,
+            "bait_false_admission": NaN,
+            "compress_false_admission": NaN,
+            "no_capacity_false_admission": NaN
+          }
+        },
+        "continuous_resource": {
+          "effort": {
+            "rmse_observed": 0.05272135851380108,
+            "rmse_clean": 0.03637462348695098,
+            "r2_observed": -0.7341875397717803
+          },
+          "externalize": {
+            "accuracy": 0.9234234234234234,
+            "externalize_detection": 0.9234234234234234,
+            "nonexternal_false_admission": NaN,
+            "bait_false_admission": NaN,
+            "compress_false_admission": NaN,
+            "no_capacity_false_admission": NaN
+          }
+        },
+        "external_tool_gate": {
+          "effort": {
+            "rmse_observed": 0.04944763420054847,
+            "rmse_clean": 0.040698424547153216,
+            "r2_observed": -0.5255059714804253
+          },
+          "externalize": {
+            "accuracy": 1.0,
+            "externalize_detection": 1.0,
+            "nonexternal_false_admission": NaN,
+            "bait_false_admission": NaN,
+            "compress_false_admission": NaN,
+            "no_capacity_false_admission": NaN
+          }
+        },
+        "governed_resource_gate": {
+          "effort": {
+            "rmse_observed": 0.04946832188610856,
+            "rmse_clean": 0.02886890785649226,
+            "r2_observed": -0.526782707573711
+          },
+          "externalize": {
+            "accuracy": 1.0,
+            "externalize_detection": 1.0,
+            "nonexternal_false_admission": NaN,
+            "bait_false_admission": NaN,
+            "compress_false_admission": NaN,
+            "no_capacity_false_admission": NaN
+          }
+        },
+        "hybrid_resource_tool": {
+          "effort": {
+            "rmse_observed": 0.04780484048768446,
+            "rmse_clean": 0.02606947565604329,
+            "r2_observed": -0.42582630649851705
+          },
+          "externalize": {
+            "accuracy": 1.0,
+            "externalize_detection": 1.0,
+            "nonexternal_false_admission": NaN,
+            "bait_false_admission": NaN,
+            "compress_false_admission": NaN,
+            "no_capacity_false_admission": NaN
+          }
+        }
+      },
+      "compress_world": {
+        "scalar": {
+          "effort": {
+            "rmse_observed": 0.0815486328474702,
+            "rmse_clean": 0.06662889286893688,
+            "r2_observed": -0.1645537589934878
+          },
+          "externalize": {
+            "accuracy": 1.0,
+            "externalize_detection": NaN,
+            "nonexternal_false_admission": 0.0,
+            "bait_false_admission": NaN,
+            "compress_false_admission": 0.0,
+            "no_capacity_false_admission": NaN
+          }
+        },
+        "continuous_resource": {
+          "effort": {
+            "rmse_observed": 0.05333938069092015,
+            "rmse_clean": 0.027774693381412748,
+            "r2_observed": 0.5017789068514799
+          },
+          "externalize": {
+            "accuracy": 1.0,
+            "externalize_detection": NaN,
+            "nonexternal_false_admission": 0.0,
+            "bait_false_admission": NaN,
+            "compress_false_admission": 0.0,
+            "no_capacity_false_admission": NaN
+          }
+        },
+        "external_tool_gate": {
+          "effort": {
+            "rmse_observed": 0.19137089871238566,
+            "rmse_clean": 0.18078196234618185,
+            "r2_observed": -5.4132469792769715
+          },
+          "externalize": {
+            "accuracy": 1.0,
+            "externalize_detection": NaN,
+            "nonexternal_false_admission": 0.0,
+            "bait_false_admission": NaN,
+            "compress_false_admission": 0.0,
+            "no_capacity_false_admission": NaN
+          }
+        },
+        "governed_resource_gate": {
+          "effort": {
+            "rmse_observed": 0.05519531849815784,
+            "rmse_clean": 0.029467284187348387,
+            "r2_observed": 0.46650462357778777
+          },
+          "externalize": {
+            "accuracy": 1.0,
+            "externalize_detection": NaN,
+            "nonexternal_false_admission": 0.0,
+            "bait_false_admission": NaN,
+            "compress_false_admission": 0.0,
+            "no_capacity_false_admission": NaN
+          }
+        },
+        "hybrid_resource_tool": {
+          "effort": {
+            "rmse_observed": 0.054016125909927784,
+            "rmse_clean": 0.027933385770827192,
+            "r2_observed": 0.48905631208615674
+          },
+          "externalize": {
+            "accuracy": 1.0,
+            "externalize_detection": NaN,
+            "nonexternal_false_admission": 0.0,
+            "bait_false_admission": NaN,
+            "compress_false_admission": 0.0,
+            "no_capacity_false_admission": NaN
+          }
+        }
+      },
+      "bait_world": {
+        "scalar": {
+          "effort": {
+            "rmse_observed": 0.2462463003152892,
+            "rmse_clean": 0.2427049160359706,
+            "r2_observed": -24.22266391294175
+          },
+          "externalize": {
+            "accuracy": 1.0,
+            "externalize_detection": NaN,
+            "nonexternal_false_admission": 0.0,
+            "bait_false_admission": 0.0,
+            "compress_false_admission": NaN,
+            "no_capacity_false_admission": NaN
+          }
+        },
+        "continuous_resource": {
+          "effort": {
+            "rmse_observed": 0.051126507782929785,
+            "rmse_clean": 0.028052643078158697,
+            "r2_observed": -0.08728596662328036
+          },
+          "externalize": {
+            "accuracy": 0.3333333333333333,
+            "externalize_detection": NaN,
+            "nonexternal_false_admission": 0.6666666666666666,
+            "bait_false_admission": 0.6666666666666666,
+            "compress_false_admission": NaN,
+            "no_capacity_false_admission": NaN
+          }
+        },
+        "external_tool_gate": {
+          "effort": {
+            "rmse_observed": 0.3938722960755308,
+            "rmse_clean": 0.3917081032394582,
+            "r2_observed": -63.53010831885132
+          },
+          "externalize": {
+            "accuracy": 1.0,
+            "externalize_detection": NaN,
+            "nonexternal_false_admission": 0.0,
+            "bait_false_admission": 0.0,
+            "compress_false_admission": NaN,
+            "no_capacity_false_admission": NaN
+          }
+        },
+        "governed_resource_gate": {
+          "effort": {
+            "rmse_observed": 0.04820349357973268,
+            "rmse_clean": 0.023037231483662428,
+            "r2_observed": 0.0334850971422892
+          },
+          "externalize": {
+            "accuracy": 1.0,
+            "externalize_detection": NaN,
+            "nonexternal_false_admission": 0.0,
+            "bait_false_admission": 0.0,
+            "compress_false_admission": NaN,
+            "no_capacity_false_admission": NaN
+          }
+        },
+        "hybrid_resource_tool": {
+          "effort": {
+            "rmse_observed": 0.04875227795052357,
+            "rmse_clean": 0.022831250357823078,
+            "r2_observed": 0.011352777923816615
+          },
+          "externalize": {
+            "accuracy": 1.0,
+            "externalize_detection": NaN,
+            "nonexternal_false_admission": 0.0,
+            "bait_false_admission": 0.0,
+            "compress_false_admission": NaN,
+            "no_capacity_false_admission": NaN
+          }
+        }
+      },
+      "no_capacity_world": {
+        "scalar": {
+          "effort": {
+            "rmse_observed": 0.44356156767659133,
+            "rmse_clean": 0.44231287059542085,
+            "r2_observed": -56.13927865693657
+          },
+          "externalize": {
+            "accuracy": 1.0,
+            "externalize_detection": NaN,
+            "nonexternal_false_admission": 0.0,
+            "bait_false_admission": NaN,
+            "compress_false_admission": NaN,
+            "no_capacity_false_admission": 0.0
+          }
+        },
+        "continuous_resource": {
+          "effort": {
+            "rmse_observed": 0.047981758068500274,
+            "rmse_clean": 0.01813163069165469,
+            "r2_observed": 0.33138017860122293
+          },
+          "externalize": {
+            "accuracy": 1.0,
+            "externalize_detection": NaN,
+            "nonexternal_false_admission": 0.0,
+            "bait_false_admission": NaN,
+            "compress_false_admission": NaN,
+            "no_capacity_false_admission": 0.0
+          }
+        },
+        "external_tool_gate": {
+          "effort": {
+            "rmse_observed": 0.291809181654761,
+            "rmse_clean": 0.2892878695487229,
+            "r2_observed": -23.7300411661662
+          },
+          "externalize": {
+            "accuracy": 1.0,
+            "externalize_detection": NaN,
+            "nonexternal_false_admission": 0.0,
+            "bait_false_admission": NaN,
+            "compress_false_admission": NaN,
+            "no_capacity_false_admission": 0.0
+          }
+        },
+        "governed_resource_gate": {
+          "effort": {
+            "rmse_observed": 0.047345929142986104,
+            "rmse_clean": 0.016564378607772122,
+            "r2_observed": 0.3489831616885437
+          },
+          "externalize": {
+            "accuracy": 1.0,
+            "externalize_detection": NaN,
+            "nonexternal_false_admission": 0.0,
+            "bait_false_admission": NaN,
+            "compress_false_admission": NaN,
+            "no_capacity_false_admission": 0.0
+          }
+        },
+        "hybrid_resource_tool": {
+          "effort": {
+            "rmse_observed": 0.04770783100462405,
+            "rmse_clean": 0.016812359519284756,
+            "r2_observed": 0.33899266563661545
+          },
+          "externalize": {
+            "accuracy": 1.0,
+            "externalize_detection": NaN,
+            "nonexternal_false_admission": 0.0,
+            "bait_false_admission": NaN,
+            "compress_false_admission": NaN,
+            "no_capacity_false_admission": 0.0
+          }
+        }
+      }
+    },
+    "effort_winner": "hybrid_resource_tool",
+    "externalize_winner": "hybrid_resource_tool",
+    "prediction_sample": {
+      "scalar": {
+        "effort": [
+          0.6660196781570191,
+          0.6660210248308637,
+          0.6660258979648142,
+          0.6660196705555386,
+          0.6660238391838541,
+          0.6660198700412476,
+          0.6660222000563796,
+          0.6660211720194767
+        ],
+        "externalize": [
+          0.33248843057726557,
+          0.3381305926935082,
+          0.3585475718106161,
+          0.3324565826391535,
+          0.3499218930800689,
+          0.3332923683156767,
+          0.3430544374020206,
+          0.3387472691218946
+        ]
+      },
+      "continuous_resource": {
+        "effort": [
+          0.6599457084965087,
+          0.9011616694776801,
+          0.9750598655203782,
+          0.7410703618513266,
+          0.683277410796078,
+          0.8726554285558166,
+          1.0002937224186434,
+          0.20331268551232723
+        ],
+        "externalize": [
+          -0.09936282668117769,
+          0.5517338297870891,
+          0.6438687013811508,
+          0.007948795291763733,
+          -0.08302067221312925,
+          0.6623434048650418,
+          0.5622069011272397,
+          -0.009103345360978926
+        ]
+      },
+      "external_tool_gate": {
+        "effort": [
+          0.7943673370775697,
+          0.9194771540665575,
+          0.9388686804477955,
+          0.5139763703443238,
+          0.5083408743942257,
+          0.9156894720985302,
+          0.510556782252952,
+          0.5119465674205936
+        ],
+        "externalize": [
+          0.21678646094418066,
+          0.8323974362513238,
+          0.9605157600637311,
+          0.014640395869413125,
+          0.01656113164798434,
+          0.805949770860402,
+          0.01580588782490988,
+          0.015332209887838455
+        ]
+      },
+      "governed_resource_gate": {
+        "effort": [
+          0.6810215773868854,
+          0.9166970311017496,
+          0.990199258361893,
+          0.7386642061350135,
+          0.6845613448777408,
+          0.8814001991211826,
+          0.9784650694119037,
+          0.2045675862143454
+        ],
+        "externalize": [
+          0.1895794331314392,
+          0.8642250638750825,
+          0.9814063187586435,
+          -0.0013569714970783323,
+          -0.010900713618903681,
+          0.805181767768305,
+          0.08984936636254257,
+          0.021271874808271227
+        ]
+      },
+      "hybrid_resource_tool": {
+        "effort": [
+          0.6603926892266299,
+          0.929442630634923,
+          0.9891208188679911,
+          0.720424898960939,
+          0.6848153275711968,
+          0.890286718809276,
+          0.9692977199869882,
+          0.20404866638315247
+        ],
+        "externalize": [
+          0.09067863557760278,
+          0.9068469048655583,
+          0.9825953131574414,
+          0.03316817100629846,
+          -0.001774544622445029,
+          0.8968777189595216,
+          0.04892503913973617,
+          -0.02978095988869331
+        ]
+      }
+    }
+  },
+  "decision_quantities": {
+    "continuous_effort_rmse": 0.05100478320774822,
+    "gate_effort_rmse": 0.2502551314560743,
+    "hybrid_effort_rmse": 0.04898640545345769,
+    "continuous_false_externalize": 0.17660044150110377,
+    "gate_false_externalize": 0.0,
+    "governed_false_externalize": 0.0,
+    "continuous_externalize_detection": 0.9234234234234234,
+    "gate_externalize_detection": 1.0,
+    "governed_externalize_detection": 1.0,
+    "continuous_bait_false": 0.6666666666666666,
+    "gate_bait_false": 0.0
+  },
+  "phase_sweep": [
+    {
+      "tool_mix": 0.0,
+      "counts": {
+        "tool_world": 0,
+        "compress_world": 321,
+        "bait_world": 379,
+        "no_capacity_world": 350
+      },
+      "effort_winner": "hybrid_resource_tool",
+      "externalize_winner": "scalar",
+      "tool_gate": 0.23508320569471314,
+      "effort_rmse": {
+        "scalar": 0.29282289393498434,
+        "continuous_resource": 0.050680820037140854,
+        "external_tool_gate": 0.2911144765017022,
+        "governed_resource_gate": 0.05080495237619571,
+        "hybrid_resource_tool": 0.05056796078532996
+      },
+      "externalize_false_admission": {
+        "scalar": 0.0,
+        "continuous_resource": 0.0,
+        "external_tool_gate": 0.0,
+        "governed_resource_gate": 0.0,
+        "hybrid_resource_tool": 0.0
+      },
+      "externalize_detection": {
+        "scalar": NaN,
+        "continuous_resource": NaN,
+        "external_tool_gate": NaN,
+        "governed_resource_gate": NaN,
+        "hybrid_resource_tool": NaN
+      },
+      "bait_false_admission": {
+        "scalar": 0.0,
+        "continuous_resource": 0.0,
+        "external_tool_gate": 0.0,
+        "governed_resource_gate": 0.0,
+        "hybrid_resource_tool": 0.0
+      }
+    },
+    {
+      "tool_mix": 0.25,
+      "counts": {
+        "tool_world": 175,
+        "compress_world": 233,
+        "bait_world": 292,
+        "no_capacity_world": 350
+      },
+      "effort_winner": "hybrid_resource_tool",
+      "externalize_winner": "hybrid_resource_tool",
+      "tool_gate": 0.24618647246788594,
+      "effort_rmse": {
+        "scalar": 0.30953570412975034,
+        "continuous_resource": 0.052080168225074774,
+        "external_tool_gate": 0.27517079139253536,
+        "governed_resource_gate": 0.05068755003401536,
+        "hybrid_resource_tool": 0.05008018749792958
+      },
+      "externalize_false_admission": {
+        "scalar": 0.0,
+        "continuous_resource": 0.013714285714285714,
+        "external_tool_gate": 0.0,
+        "governed_resource_gate": 0.0,
+        "hybrid_resource_tool": 0.0
+      },
+      "externalize_detection": {
+        "scalar": 0.0,
+        "continuous_resource": 0.21714285714285714,
+        "external_tool_gate": 1.0,
+        "governed_resource_gate": 1.0,
+        "hybrid_resource_tool": 1.0
+      },
+      "bait_false_admission": {
+        "scalar": 0.0,
+        "continuous_resource": 0.0410958904109589,
+        "external_tool_gate": 0.0,
+        "governed_resource_gate": 0.0,
+        "hybrid_resource_tool": 0.0
+      }
+    },
+    {
+      "tool_mix": 0.5,
+      "counts": {
+        "tool_world": 346,
+        "compress_world": 147,
+        "bait_world": 207,
+        "no_capacity_world": 350
+      },
+      "effort_winner": "hybrid_resource_tool",
+      "externalize_winner": "hybrid_resource_tool",
+      "tool_gate": 0.23824093180597156,
+      "effort_rmse": {
+        "scalar": 0.3302913780294593,
+        "continuous_resource": 0.05130084296093605,
+        "external_tool_gate": 0.2604600732242974,
+        "governed_resource_gate": 0.05035585168818967,
+        "hybrid_resource_tool": 0.04927869130682758
+      },
+      "externalize_false_admission": {
+        "scalar": 0.0,
+        "continuous_resource": 0.24005681818181818,
+        "external_tool_gate": 0.0,
+        "governed_resource_gate": 0.0,
+        "hybrid_resource_tool": 0.0
+      },
+      "externalize_detection": {
+        "scalar": 0.0,
+        "continuous_resource": 0.8988439306358381,
+        "external_tool_gate": 1.0,
+        "governed_resource_gate": 1.0,
+        "hybrid_resource_tool": 1.0
+      },
+      "bait_false_admission": {
+        "scalar": 0.0,
+        "continuous_resource": 0.8164251207729468,
+        "external_tool_gate": 0.0,
+        "governed_resource_gate": 0.0,
+        "hybrid_resource_tool": 0.0
+      }
+    },
+    {
+      "tool_mix": 0.75,
+      "counts": {
+        "tool_world": 519,
+        "compress_world": 78,
+        "bait_world": 103,
+        "no_capacity_world": 350
+      },
+      "effort_winner": "hybrid_resource_tool",
+      "externalize_winner": "hybrid_resource_tool",
+      "tool_gate": 0.19397546692273632,
+      "effort_rmse": {
+        "scalar": 0.3342954598279684,
+        "continuous_resource": 0.049490967066089527,
+        "external_tool_gate": 0.20620840737471063,
+        "governed_resource_gate": 0.04846243885067401,
+        "hybrid_resource_tool": 0.04775790612430524
+      },
+      "externalize_false_admission": {
+        "scalar": 0.07909604519774012,
+        "continuous_resource": 0.192090395480226,
+        "external_tool_gate": 0.0,
+        "governed_resource_gate": 0.0,
+        "hybrid_resource_tool": 0.0
+      },
+      "externalize_detection": {
+        "scalar": 0.10404624277456648,
+        "continuous_resource": 1.0,
+        "external_tool_gate": 1.0,
+        "governed_resource_gate": 1.0,
+        "hybrid_resource_tool": 1.0
+      },
+      "bait_false_admission": {
+        "scalar": 0.07766990291262135,
+        "continuous_resource": 0.9902912621359223,
+        "external_tool_gate": 0.0,
+        "governed_resource_gate": 0.0,
+        "hybrid_resource_tool": 0.0
+      }
+    },
+    {
+      "tool_mix": 1.0,
+      "counts": {
+        "tool_world": 700,
+        "compress_world": 0,
+        "bait_world": 0,
+        "no_capacity_world": 350
+      },
+      "effort_winner": "hybrid_resource_tool",
+      "externalize_winner": "hybrid_resource_tool",
+      "tool_gate": 0.11848332489110282,
+      "effort_rmse": {
+        "scalar": 0.3452673098063546,
+        "continuous_resource": 0.046193700290207106,
+        "external_tool_gate": 0.0739261186796424,
+        "governed_resource_gate": 0.045786394273375906,
+        "hybrid_resource_tool": 0.0455255844365362
+      },
+      "externalize_false_admission": {
+        "scalar": 1.0,
+        "continuous_resource": 0.0,
+        "external_tool_gate": 0.0,
+        "governed_resource_gate": 0.0,
+        "hybrid_resource_tool": 0.0
+      },
+      "externalize_detection": {
+        "scalar": 1.0,
+        "continuous_resource": 1.0,
+        "external_tool_gate": 1.0,
+        "governed_resource_gate": 1.0,
+        "hybrid_resource_tool": 1.0
+      },
+      "bait_false_admission": {
+        "scalar": NaN,
+        "continuous_resource": NaN,
+        "external_tool_gate": NaN,
+        "governed_resource_gate": NaN,
+        "hybrid_resource_tool": NaN
+      }
+    }
+  ]
+}

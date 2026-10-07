@@ -1,0 +1,937 @@
+{
+  "ring": "F_2[u]/(u^4)",
+  "row_key": "f2-u4",
+  "labels": 16,
+  "nontrivial_labels": 15,
+  "packets": {
+    "u": 1,
+    "u^2": 2,
+    "u^3": 4,
+    "u^4": 8
+  },
+  "gamma_size": 32,
+  "quotient_shift_count": 83,
+  "quotient_shift_support_distribution": {
+    "1": 29,
+    "2": 26,
+    "4": 20,
+    "8": 8
+  },
+  "carry_record_count": 404,
+  "carry_path_distribution": {
+    "u^2->u->u^2": 4,
+    "u^2->u->u^3": 8,
+    "u^2->u->u^4": 16,
+    "u^3->u->u^2": 8,
+    "u^3->u->u^3": 16,
+    "u^3->u->u^4": 32,
+    "u^3->u^2->u^3": 16,
+    "u^3->u^2->u^4": 32,
+    "u^4->u->u^2": 16,
+    "u^4->u->u^3": 32,
+    "u^4->u->u^4": 64,
+    "u^4->u^2->u^3": 32,
+    "u^4->u^2->u^4": 64,
+    "u^4->u^3->u^4": 64
+  },
+  "fisher_probe": {
+    "alpha": "1",
+    "left_mode": "u^3",
+    "right_mode": "u^2",
+    "order0_support": 14,
+    "left_order1_support": 14,
+    "right_order1_support": 14,
+    "mixed_order2_support": 14
+  },
+  "h3": {
+    "cells": 210,
+    "orbits": 7,
+    "family_orbit_counts": {
+      "122": 1,
+      "133": 1,
+      "144": 1,
+      "233": 1,
+      "244": 2,
+      "344": 1
+    },
+    "orbit_size_distribution": {
+      "6": 1,
+      "12": 1,
+      "24": 4,
+      "96": 1
+    },
+    "orbit_rows": [
+      {
+        "id": 0,
+        "size": 96,
+        "family": "344",
+        "representative": "(1, 1+u, u)"
+      },
+      {
+        "id": 1,
+        "size": 24,
+        "family": "244",
+        "representative": "(1, 1+u^2, u^2)"
+      },
+      {
+        "id": 2,
+        "size": 24,
+        "family": "244",
+        "representative": "(1, 1+u^2+u^3, u^2+u^3)"
+      },
+      {
+        "id": 3,
+        "size": 24,
+        "family": "144",
+        "representative": "(1, 1+u^3, u^3)"
+      },
+      {
+        "id": 4,
+        "size": 24,
+        "family": "233",
+        "representative": "(u, u+u^2, u^2)"
+      },
+      {
+        "id": 5,
+        "size": 12,
+        "family": "133",
+        "representative": "(u, u+u^3, u^3)"
+      },
+      {
+        "id": 6,
+        "size": 6,
+        "family": "122",
+        "representative": "(u^2, u^2+u^3, u^3)"
+      }
+    ],
+    "elapsed_seconds": 0.007
+  },
+  "h4": {
+    "cells": 3165,
+    "orbits": 32,
+    "family_orbit_counts": {
+      "1111": 1,
+      "1122": 1,
+      "1133": 1,
+      "1144": 1,
+      "1233": 1,
+      "1244": 2,
+      "1344": 1,
+      "2222": 2,
+      "2233": 2,
+      "2244": 3,
+      "2344": 1,
+      "3333": 4,
+      "3344": 4,
+      "4444": 8
+    },
+    "orbit_size_distribution": {
+      "1": 1,
+      "2": 1,
+      "4": 1,
+      "6": 1,
+      "8": 1,
+      "12": 2,
+      "24": 6,
+      "48": 6,
+      "96": 6,
+      "192": 5,
+      "384": 1,
+      "768": 1
+    },
+    "orbit_rows": [
+      {
+        "id": 0,
+        "size": 8,
+        "family": "4444",
+        "representative": "(1, 1, 1, 1)"
+      },
+      {
+        "id": 1,
+        "size": 96,
+        "family": "4444",
+        "representative": "(1, 1, 1+u, 1+u)"
+      },
+      {
+        "id": 2,
+        "size": 24,
+        "family": "4444",
+        "representative": "(1, 1, 1+u^2, 1+u^2)"
+      },
+      {
+        "id": 3,
+        "size": 24,
+        "family": "4444",
+        "representative": "(1, 1, 1+u^2+u^3, 1+u^2+u^3)"
+      },
+      {
+        "id": 4,
+        "size": 24,
+        "family": "4444",
+        "representative": "(1, 1, 1+u^3, 1+u^3)"
+      },
+      {
+        "id": 5,
+        "size": 192,
+        "family": "3344",
+        "representative": "(1, 1, u, u)"
+      },
+      {
+        "id": 6,
+        "size": 48,
+        "family": "2244",
+        "representative": "(1, 1, u^2, u^2)"
+      },
+      {
+        "id": 7,
+        "size": 48,
+        "family": "2244",
+        "representative": "(1, 1, u^2+u^3, u^2+u^3)"
+      },
+      {
+        "id": 8,
+        "size": 48,
+        "family": "1144",
+        "representative": "(1, 1, u^3, u^3)"
+      },
+      {
+        "id": 9,
+        "size": 192,
+        "family": "4444",
+        "representative": "(1, 1+u, 1+u+u^2, 1+u^2)"
+      },
+      {
+        "id": 10,
+        "size": 96,
+        "family": "4444",
+        "representative": "(1, 1+u, 1+u+u^3, 1+u^3)"
+      },
+      {
+        "id": 11,
+        "size": 768,
+        "family": "2344",
+        "representative": "(1, 1+u, u+u^2, u^2)"
+      },
+      {
+        "id": 12,
+        "size": 384,
+        "family": "1344",
+        "representative": "(1, 1+u, u+u^3, u^3)"
+      },
+      {
+        "id": 13,
+        "size": 48,
+        "family": "4444",
+        "representative": "(1, 1+u^2, 1+u^2+u^3, 1+u^3)"
+      },
+      {
+        "id": 14,
+        "size": 192,
+        "family": "3344",
+        "representative": "(1, 1+u^2, u, u+u^2)"
+      },
+      {
+        "id": 15,
+        "size": 96,
+        "family": "1244",
+        "representative": "(1, 1+u^2, u^2+u^3, u^3)"
+      },
+      {
+        "id": 16,
+        "size": 192,
+        "family": "3344",
+        "representative": "(1, 1+u^2+u^3, u, u+u^2+u^3)"
+      },
+      {
+        "id": 17,
+        "size": 96,
+        "family": "1244",
+        "representative": "(1, 1+u^2+u^3, u^2, u^3)"
+      },
+      {
+        "id": 18,
+        "size": 192,
+        "family": "3344",
+        "representative": "(1, 1+u^3, u, u+u^3)"
+      },
+      {
+        "id": 19,
+        "size": 96,
+        "family": "2244",
+        "representative": "(1, 1+u^3, u^2, u^2+u^3)"
+      },
+      {
+        "id": 20,
+        "size": 4,
+        "family": "3333",
+        "representative": "(u, u, u, u)"
+      },
+      {
+        "id": 21,
+        "size": 24,
+        "family": "3333",
+        "representative": "(u, u, u+u^2, u+u^2)"
+      },
+      {
+        "id": 22,
+        "size": 12,
+        "family": "3333",
+        "representative": "(u, u, u+u^3, u+u^3)"
+      },
+      {
+        "id": 23,
+        "size": 48,
+        "family": "2233",
+        "representative": "(u, u, u^2, u^2)"
+      },
+      {
+        "id": 24,
+        "size": 24,
+        "family": "1133",
+        "representative": "(u, u, u^3, u^3)"
+      },
+      {
+        "id": 25,
+        "size": 24,
+        "family": "3333",
+        "representative": "(u, u+u^2, u+u^2+u^3, u+u^3)"
+      },
+      {
+        "id": 26,
+        "size": 96,
+        "family": "1233",
+        "representative": "(u, u+u^2, u^2+u^3, u^3)"
+      },
+      {
+        "id": 27,
+        "size": 48,
+        "family": "2233",
+        "representative": "(u, u+u^3, u^2, u^2+u^3)"
+      },
+      {
+        "id": 28,
+        "size": 2,
+        "family": "2222",
+        "representative": "(u^2, u^2, u^2, u^2)"
+      },
+      {
+        "id": 29,
+        "size": 6,
+        "family": "2222",
+        "representative": "(u^2, u^2, u^2+u^3, u^2+u^3)"
+      },
+      {
+        "id": 30,
+        "size": 12,
+        "family": "1122",
+        "representative": "(u^2, u^2, u^3, u^3)"
+      },
+      {
+        "id": 31,
+        "size": 1,
+        "family": "1111",
+        "representative": "(u^3, u^3, u^3, u^3)"
+      }
+    ],
+    "elapsed_seconds": 0.196
+  },
+  "ext_ch": {
+    "full_block_dimensions": {
+      "c1_generators": 1585,
+      "c2_dimension": 37485,
+      "composable_pairs": 1905
+    },
+    "raw_atom_count": 1540,
+    "raw_pair_count": 404,
+    "raw_coefficient_distribution": {
+      "-1": 1540
+    },
+    "raw_path_distribution": {
+      "u^2->u->u^2": 4,
+      "u^2->u->u^3": 8,
+      "u^2->u->u^4": 16,
+      "u^3->u->u^2": 8,
+      "u^3->u->u^3": 48,
+      "u^3->u->u^4": 96,
+      "u^3->u^2->u^3": 32,
+      "u^3->u^2->u^4": 64,
+      "u^4->u->u^2": 16,
+      "u^4->u->u^3": 96,
+      "u^4->u->u^4": 448,
+      "u^4->u^2->u^3": 64,
+      "u^4->u^2->u^4": 384,
+      "u^4->u^3->u^4": 256
+    },
+    "canonical_pair_orbit_count": 33,
+    "pair_orbit_size_distribution": {
+      "2": 2,
+      "4": 4,
+      "8": 20,
+      "32": 7
+    },
+    "pair_orbit_missing_total": 0,
+    "canonical_pair_orbits": [
+      {
+        "id": 1,
+        "representative": {
+          "left_eta": "u^2",
+          "right_eta": "u^2",
+          "source": "u^2",
+          "middle": "u",
+          "target": "u^2"
+        },
+        "size": 2,
+        "atom_count": 2,
+        "coefficients": {
+          "-1": 2
+        },
+        "path": "u^2->u->u^2"
+      },
+      {
+        "id": 2,
+        "representative": {
+          "left_eta": "u^2",
+          "right_eta": "u^2+u^3",
+          "source": "u^2",
+          "middle": "u",
+          "target": "u^2"
+        },
+        "size": 2,
+        "atom_count": 2,
+        "coefficients": {
+          "-1": 2
+        },
+        "path": "u^2->u->u^2"
+      },
+      {
+        "id": 3,
+        "representative": {
+          "left_eta": "u",
+          "right_eta": "u^2",
+          "source": "u^2",
+          "middle": "u",
+          "target": "u^3"
+        },
+        "size": 8,
+        "atom_count": 8,
+        "coefficients": {
+          "-1": 8
+        },
+        "path": "u^2->u->u^3"
+      },
+      {
+        "id": 4,
+        "representative": {
+          "left_eta": "1",
+          "right_eta": "u^2",
+          "source": "u^2",
+          "middle": "u",
+          "target": "u^4"
+        },
+        "size": 8,
+        "atom_count": 8,
+        "coefficients": {
+          "-1": 8
+        },
+        "path": "u^2->u->u^4"
+      },
+      {
+        "id": 5,
+        "representative": {
+          "left_eta": "1",
+          "right_eta": "u^2+u^3",
+          "source": "u^2",
+          "middle": "u",
+          "target": "u^4"
+        },
+        "size": 8,
+        "atom_count": 8,
+        "coefficients": {
+          "-1": 8
+        },
+        "path": "u^2->u->u^4"
+      },
+      {
+        "id": 6,
+        "representative": {
+          "left_eta": "u^2",
+          "right_eta": "u",
+          "source": "u^3",
+          "middle": "u",
+          "target": "u^2"
+        },
+        "size": 8,
+        "atom_count": 8,
+        "coefficients": {
+          "-1": 8
+        },
+        "path": "u^3->u->u^2"
+      },
+      {
+        "id": 7,
+        "representative": {
+          "left_eta": "u",
+          "right_eta": "u",
+          "source": "u^3",
+          "middle": "u",
+          "target": "u^3"
+        },
+        "size": 4,
+        "atom_count": 12,
+        "coefficients": {
+          "-1": 12
+        },
+        "path": "u^3->u->u^3"
+      },
+      {
+        "id": 8,
+        "representative": {
+          "left_eta": "u",
+          "right_eta": "u+u^2",
+          "source": "u^3",
+          "middle": "u",
+          "target": "u^3"
+        },
+        "size": 8,
+        "atom_count": 24,
+        "coefficients": {
+          "-1": 24
+        },
+        "path": "u^3->u->u^3"
+      },
+      {
+        "id": 9,
+        "representative": {
+          "left_eta": "u",
+          "right_eta": "u+u^3",
+          "source": "u^3",
+          "middle": "u",
+          "target": "u^3"
+        },
+        "size": 4,
+        "atom_count": 12,
+        "coefficients": {
+          "-1": 12
+        },
+        "path": "u^3->u->u^3"
+      },
+      {
+        "id": 10,
+        "representative": {
+          "left_eta": "1",
+          "right_eta": "u",
+          "source": "u^3",
+          "middle": "u",
+          "target": "u^4"
+        },
+        "size": 32,
+        "atom_count": 96,
+        "coefficients": {
+          "-1": 96
+        },
+        "path": "u^3->u->u^4"
+      },
+      {
+        "id": 11,
+        "representative": {
+          "left_eta": "u",
+          "right_eta": "u",
+          "source": "u^3",
+          "middle": "u^2",
+          "target": "u^3"
+        },
+        "size": 4,
+        "atom_count": 8,
+        "coefficients": {
+          "-1": 8
+        },
+        "path": "u^3->u^2->u^3"
+      },
+      {
+        "id": 12,
+        "representative": {
+          "left_eta": "u",
+          "right_eta": "u+u^2",
+          "source": "u^3",
+          "middle": "u^2",
+          "target": "u^3"
+        },
+        "size": 8,
+        "atom_count": 16,
+        "coefficients": {
+          "-1": 16
+        },
+        "path": "u^3->u^2->u^3"
+      },
+      {
+        "id": 13,
+        "representative": {
+          "left_eta": "u",
+          "right_eta": "u+u^3",
+          "source": "u^3",
+          "middle": "u^2",
+          "target": "u^3"
+        },
+        "size": 4,
+        "atom_count": 8,
+        "coefficients": {
+          "-1": 8
+        },
+        "path": "u^3->u^2->u^3"
+      },
+      {
+        "id": 14,
+        "representative": {
+          "left_eta": "1",
+          "right_eta": "u",
+          "source": "u^3",
+          "middle": "u^2",
+          "target": "u^4"
+        },
+        "size": 32,
+        "atom_count": 64,
+        "coefficients": {
+          "-1": 64
+        },
+        "path": "u^3->u^2->u^4"
+      },
+      {
+        "id": 15,
+        "representative": {
+          "left_eta": "u^2",
+          "right_eta": "1",
+          "source": "u^4",
+          "middle": "u",
+          "target": "u^2"
+        },
+        "size": 8,
+        "atom_count": 8,
+        "coefficients": {
+          "-1": 8
+        },
+        "path": "u^4->u->u^2"
+      },
+      {
+        "id": 16,
+        "representative": {
+          "left_eta": "u^2",
+          "right_eta": "1+u",
+          "source": "u^4",
+          "middle": "u",
+          "target": "u^2"
+        },
+        "size": 8,
+        "atom_count": 8,
+        "coefficients": {
+          "-1": 8
+        },
+        "path": "u^4->u->u^2"
+      },
+      {
+        "id": 17,
+        "representative": {
+          "left_eta": "u",
+          "right_eta": "1",
+          "source": "u^4",
+          "middle": "u",
+          "target": "u^3"
+        },
+        "size": 32,
+        "atom_count": 96,
+        "coefficients": {
+          "-1": 96
+        },
+        "path": "u^4->u->u^3"
+      },
+      {
+        "id": 18,
+        "representative": {
+          "left_eta": "1",
+          "right_eta": "1",
+          "source": "u^4",
+          "middle": "u",
+          "target": "u^4"
+        },
+        "size": 8,
+        "atom_count": 56,
+        "coefficients": {
+          "-1": 56
+        },
+        "path": "u^4->u->u^4"
+      },
+      {
+        "id": 19,
+        "representative": {
+          "left_eta": "1",
+          "right_eta": "1+u",
+          "source": "u^4",
+          "middle": "u",
+          "target": "u^4"
+        },
+        "size": 32,
+        "atom_count": 224,
+        "coefficients": {
+          "-1": 224
+        },
+        "path": "u^4->u->u^4"
+      },
+      {
+        "id": 20,
+        "representative": {
+          "left_eta": "1",
+          "right_eta": "1+u^2",
+          "source": "u^4",
+          "middle": "u",
+          "target": "u^4"
+        },
+        "size": 8,
+        "atom_count": 56,
+        "coefficients": {
+          "-1": 56
+        },
+        "path": "u^4->u->u^4"
+      },
+      {
+        "id": 21,
+        "representative": {
+          "left_eta": "1",
+          "right_eta": "1+u^2+u^3",
+          "source": "u^4",
+          "middle": "u",
+          "target": "u^4"
+        },
+        "size": 8,
+        "atom_count": 56,
+        "coefficients": {
+          "-1": 56
+        },
+        "path": "u^4->u->u^4"
+      },
+      {
+        "id": 22,
+        "representative": {
+          "left_eta": "1",
+          "right_eta": "1+u^3",
+          "source": "u^4",
+          "middle": "u",
+          "target": "u^4"
+        },
+        "size": 8,
+        "atom_count": 56,
+        "coefficients": {
+          "-1": 56
+        },
+        "path": "u^4->u->u^4"
+      },
+      {
+        "id": 23,
+        "representative": {
+          "left_eta": "u",
+          "right_eta": "1",
+          "source": "u^4",
+          "middle": "u^2",
+          "target": "u^3"
+        },
+        "size": 32,
+        "atom_count": 64,
+        "coefficients": {
+          "-1": 64
+        },
+        "path": "u^4->u^2->u^3"
+      },
+      {
+        "id": 24,
+        "representative": {
+          "left_eta": "1",
+          "right_eta": "1",
+          "source": "u^4",
+          "middle": "u^2",
+          "target": "u^4"
+        },
+        "size": 8,
+        "atom_count": 48,
+        "coefficients": {
+          "-1": 48
+        },
+        "path": "u^4->u^2->u^4"
+      },
+      {
+        "id": 25,
+        "representative": {
+          "left_eta": "1",
+          "right_eta": "1+u",
+          "source": "u^4",
+          "middle": "u^2",
+          "target": "u^4"
+        },
+        "size": 32,
+        "atom_count": 192,
+        "coefficients": {
+          "-1": 192
+        },
+        "path": "u^4->u^2->u^4"
+      },
+      {
+        "id": 26,
+        "representative": {
+          "left_eta": "1",
+          "right_eta": "1+u^2",
+          "source": "u^4",
+          "middle": "u^2",
+          "target": "u^4"
+        },
+        "size": 8,
+        "atom_count": 48,
+        "coefficients": {
+          "-1": 48
+        },
+        "path": "u^4->u^2->u^4"
+      },
+      {
+        "id": 27,
+        "representative": {
+          "left_eta": "1",
+          "right_eta": "1+u^2+u^3",
+          "source": "u^4",
+          "middle": "u^2",
+          "target": "u^4"
+        },
+        "size": 8,
+        "atom_count": 48,
+        "coefficients": {
+          "-1": 48
+        },
+        "path": "u^4->u^2->u^4"
+      },
+      {
+        "id": 28,
+        "representative": {
+          "left_eta": "1",
+          "right_eta": "1+u^3",
+          "source": "u^4",
+          "middle": "u^2",
+          "target": "u^4"
+        },
+        "size": 8,
+        "atom_count": 48,
+        "coefficients": {
+          "-1": 48
+        },
+        "path": "u^4->u^2->u^4"
+      },
+      {
+        "id": 29,
+        "representative": {
+          "left_eta": "1",
+          "right_eta": "1",
+          "source": "u^4",
+          "middle": "u^3",
+          "target": "u^4"
+        },
+        "size": 8,
+        "atom_count": 32,
+        "coefficients": {
+          "-1": 32
+        },
+        "path": "u^4->u^3->u^4"
+      },
+      {
+        "id": 30,
+        "representative": {
+          "left_eta": "1",
+          "right_eta": "1+u",
+          "source": "u^4",
+          "middle": "u^3",
+          "target": "u^4"
+        },
+        "size": 32,
+        "atom_count": 128,
+        "coefficients": {
+          "-1": 128
+        },
+        "path": "u^4->u^3->u^4"
+      },
+      {
+        "id": 31,
+        "representative": {
+          "left_eta": "1",
+          "right_eta": "1+u^2",
+          "source": "u^4",
+          "middle": "u^3",
+          "target": "u^4"
+        },
+        "size": 8,
+        "atom_count": 32,
+        "coefficients": {
+          "-1": 32
+        },
+        "path": "u^4->u^3->u^4"
+      },
+      {
+        "id": 32,
+        "representative": {
+          "left_eta": "1",
+          "right_eta": "1+u^2+u^3",
+          "source": "u^4",
+          "middle": "u^3",
+          "target": "u^4"
+        },
+        "size": 8,
+        "atom_count": 32,
+        "coefficients": {
+          "-1": 32
+        },
+        "path": "u^4->u^3->u^4"
+      },
+      {
+        "id": 33,
+        "representative": {
+          "left_eta": "1",
+          "right_eta": "1+u^3",
+          "source": "u^4",
+          "middle": "u^3",
+          "target": "u^4"
+        },
+        "size": 8,
+        "atom_count": 32,
+        "coefficients": {
+          "-1": 32
+        },
+        "path": "u^4->u^3->u^4"
+      }
+    ],
+    "elapsed_seconds_before_coboundary": 0.037,
+    "support_projection_coboundary": {
+      "mode": "support",
+      "c2_scope": "raw_support",
+      "coefficient_field": "Q",
+      "c1_generators": 225,
+      "c2_dimension": 1540,
+      "coboundary_rank": 196,
+      "residual_dimension": 1344,
+      "raw_support": 1540,
+      "residual_support": 0,
+      "residual_equal_raw": false,
+      "raw_is_coboundary": true,
+      "rational_rank_certified": true,
+      "raw_non_coboundary_over_q_certified": false,
+      "elapsed_seconds": 0.071
+    },
+    "full_block_coboundary": {
+      "mode": "full_block",
+      "c2_scope": "full_block",
+      "coefficient_field": "Q",
+      "c1_generators": 1585,
+      "c2_dimension": 37485,
+      "coboundary_rank": 1584,
+      "residual_dimension": 35901,
+      "raw_support": 1540,
+      "residual_support": 1540,
+      "residual_equal_raw": true,
+      "raw_is_coboundary": false,
+      "rational_rank_certified": true,
+      "raw_non_coboundary_over_q_certified": true,
+      "elapsed_seconds": 1.693
+    }
+  }
+}

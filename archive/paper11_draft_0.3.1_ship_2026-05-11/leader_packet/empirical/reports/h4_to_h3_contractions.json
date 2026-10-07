@@ -1,0 +1,627 @@
+{
+  "ring": "F4[u]/(u^2)",
+  "h4_cells": 3165,
+  "h4_orbits": 18,
+  "h3_cells": 210,
+  "h3_orbits": 5,
+  "candidate_pair_contractions": 18990,
+  "valid_nonzero_contractions": 17640,
+  "invalid_zero_merge_contractions": 1350,
+  "h3_orbits_hit": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "h3_orbits_hit_count": 5,
+  "h4_orbits_with_valid_contractions": 16,
+  "pair_position_counts": {
+    "01": 2940,
+    "02": 2940,
+    "03": 2940,
+    "12": 2940,
+    "13": 2940,
+    "23": 2940
+  },
+  "conductor_word_transitions": {
+    "TTTT->TTT": 72,
+    "TTWW->TTT": 72,
+    "TTWW->TWW": 72,
+    "TTWW->WTW": 432,
+    "TWTW->TTT": 72,
+    "TWTW->TWW": 72,
+    "TWTW->WTW": 324,
+    "TWTW->WWT": 108,
+    "TWWT->TTT": 72,
+    "TWWT->TWW": 72,
+    "TWWT->WTW": 216,
+    "TWWT->WWT": 216,
+    "TWWW->WTW": 864,
+    "TWWW->WWW": 864,
+    "WTTW->TTT": 72,
+    "WTTW->TWW": 72,
+    "WTTW->WTW": 216,
+    "WTTW->WWT": 216,
+    "WTWT->TTT": 72,
+    "WTWT->TWW": 72,
+    "WTWT->WTW": 108,
+    "WTWT->WWT": 324,
+    "WTWW->WTW": 576,
+    "WTWW->WWT": 288,
+    "WTWW->WWW": 864,
+    "WWTT->TTT": 72,
+    "WWTT->TWW": 72,
+    "WWTT->WWT": 432,
+    "WWTW->WTW": 288,
+    "WWTW->WWT": 576,
+    "WWTW->WWW": 864,
+    "WWWT->WWT": 864,
+    "WWWT->WWW": 864,
+    "WWWW->TWW": 2592,
+    "WWWW->WWW": 4608
+  },
+  "family_transitions": {
+    "TTTT->TTT": 72,
+    "TTWW->TTT": 432,
+    "TTWW->TWW": 3024,
+    "TWWW->TWW": 3456,
+    "TWWW->WWW": 3456,
+    "WWWW->TWW": 2592,
+    "WWWW->WWW": 4608
+  },
+  "h4_orbit_rows": [
+    {
+      "id": 0,
+      "size": 3,
+      "family": "TTTT",
+      "representative": "((w+1)u, (w+1)u, (w+1)u, (w+1)u)",
+      "valid_contractions": 0,
+      "h3_images": []
+    },
+    {
+      "id": 1,
+      "size": 144,
+      "family": "TTWW",
+      "representative": "((w+1)u, (w+1)u, 1, 1)",
+      "valid_contractions": 576,
+      "h3_images": [
+        {
+          "h3_orbit": 0,
+          "h3_family": "TWW",
+          "count": 576
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "size": 18,
+      "family": "TTTT",
+      "representative": "((w+1)u, (w+1)u, u, u)",
+      "valid_contractions": 72,
+      "h3_images": [
+        {
+          "h3_orbit": 1,
+          "h3_family": "TTT",
+          "count": 72
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "size": 72,
+      "family": "TTWW",
+      "representative": "((w+1)u, (w+1)u, w+1, w+1)",
+      "valid_contractions": 288,
+      "h3_images": [
+        {
+          "h3_orbit": 2,
+          "h3_family": "TWW",
+          "count": 288
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "size": 144,
+      "family": "TTWW",
+      "representative": "((w+1)u, 1, 1+u, wu)",
+      "valid_contractions": 864,
+      "h3_images": [
+        {
+          "h3_orbit": 0,
+          "h3_family": "TWW",
+          "count": 576
+        },
+        {
+          "h3_orbit": 1,
+          "h3_family": "TTT",
+          "count": 144
+        },
+        {
+          "h3_orbit": 2,
+          "h3_family": "TWW",
+          "count": 144
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "size": 288,
+      "family": "TTWW",
+      "representative": "((w+1)u, 1, 1+wu, u)",
+      "valid_contractions": 1728,
+      "h3_images": [
+        {
+          "h3_orbit": 0,
+          "h3_family": "TWW",
+          "count": 864
+        },
+        {
+          "h3_orbit": 1,
+          "h3_family": "TTT",
+          "count": 288
+        },
+        {
+          "h3_orbit": 2,
+          "h3_family": "TWW",
+          "count": 576
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "size": 288,
+      "family": "TWWW",
+      "representative": "((w+1)u, 1, w, w+1+(w+1)u)",
+      "valid_contractions": 1728,
+      "h3_images": [
+        {
+          "h3_orbit": 0,
+          "h3_family": "TWW",
+          "count": 576
+        },
+        {
+          "h3_orbit": 2,
+          "h3_family": "TWW",
+          "count": 288
+        },
+        {
+          "h3_orbit": 3,
+          "h3_family": "WWW",
+          "count": 288
+        },
+        {
+          "h3_orbit": 4,
+          "h3_family": "WWW",
+          "count": 576
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "size": 576,
+      "family": "TWWW",
+      "representative": "((w+1)u, 1, w+(w+1)u, w+1)",
+      "valid_contractions": 3456,
+      "h3_images": [
+        {
+          "h3_orbit": 0,
+          "h3_family": "TWW",
+          "count": 1152
+        },
+        {
+          "h3_orbit": 2,
+          "h3_family": "TWW",
+          "count": 576
+        },
+        {
+          "h3_orbit": 3,
+          "h3_family": "WWW",
+          "count": 576
+        },
+        {
+          "h3_orbit": 4,
+          "h3_family": "WWW",
+          "count": 1152
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "size": 288,
+      "family": "TWWW",
+      "representative": "((w+1)u, 1, w+1+u, w+wu)",
+      "valid_contractions": 1728,
+      "h3_images": [
+        {
+          "h3_orbit": 0,
+          "h3_family": "TWW",
+          "count": 576
+        },
+        {
+          "h3_orbit": 2,
+          "h3_family": "TWW",
+          "count": 288
+        },
+        {
+          "h3_orbit": 4,
+          "h3_family": "WWW",
+          "count": 864
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "size": 12,
+      "family": "WWWW",
+      "representative": "(1, 1, 1, 1)",
+      "valid_contractions": 0,
+      "h3_images": []
+    },
+    {
+      "id": 10,
+      "size": 72,
+      "family": "WWWW",
+      "representative": "(1, 1, 1+(w+1)u, 1+(w+1)u)",
+      "valid_contractions": 288,
+      "h3_images": [
+        {
+          "h3_orbit": 0,
+          "h3_family": "TWW",
+          "count": 288
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "size": 36,
+      "family": "WWWW",
+      "representative": "(1, 1, 1+u, 1+u)",
+      "valid_contractions": 144,
+      "h3_images": [
+        {
+          "h3_orbit": 2,
+          "h3_family": "TWW",
+          "count": 144
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "size": 72,
+      "family": "WWWW",
+      "representative": "(1, 1, w, w)",
+      "valid_contractions": 288,
+      "h3_images": [
+        {
+          "h3_orbit": 3,
+          "h3_family": "WWW",
+          "count": 288
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "size": 144,
+      "family": "WWWW",
+      "representative": "(1, 1, w+(w+1)u, w+(w+1)u)",
+      "valid_contractions": 576,
+      "h3_images": [
+        {
+          "h3_orbit": 4,
+          "h3_family": "WWW",
+          "count": 576
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "size": 72,
+      "family": "WWWW",
+      "representative": "(1, 1, w+1+(w+1)u, w+1+(w+1)u)",
+      "valid_contractions": 288,
+      "h3_images": [
+        {
+          "h3_orbit": 4,
+          "h3_family": "WWW",
+          "count": 288
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "size": 72,
+      "family": "WWWW",
+      "representative": "(1, 1+(w+1)u, 1+u, 1+wu)",
+      "valid_contractions": 432,
+      "h3_images": [
+        {
+          "h3_orbit": 0,
+          "h3_family": "TWW",
+          "count": 288
+        },
+        {
+          "h3_orbit": 2,
+          "h3_family": "TWW",
+          "count": 144
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "size": 288,
+      "family": "WWWW",
+      "representative": "(1, 1+(w+1)u, w, w+(w+1)u)",
+      "valid_contractions": 1728,
+      "h3_images": [
+        {
+          "h3_orbit": 0,
+          "h3_family": "TWW",
+          "count": 576
+        },
+        {
+          "h3_orbit": 3,
+          "h3_family": "WWW",
+          "count": 288
+        },
+        {
+          "h3_orbit": 4,
+          "h3_family": "WWW",
+          "count": 864
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "size": 576,
+      "family": "WWWW",
+      "representative": "(1, 1+(w+1)u, w+1, w+1+(w+1)u)",
+      "valid_contractions": 3456,
+      "h3_images": [
+        {
+          "h3_orbit": 0,
+          "h3_family": "TWW",
+          "count": 576
+        },
+        {
+          "h3_orbit": 2,
+          "h3_family": "TWW",
+          "count": 576
+        },
+        {
+          "h3_orbit": 3,
+          "h3_family": "WWW",
+          "count": 576
+        },
+        {
+          "h3_orbit": 4,
+          "h3_family": "WWW",
+          "count": 1728
+        }
+      ]
+    }
+  ],
+  "h3_orbit_rows": [
+    {
+      "id": 0,
+      "size": 72,
+      "family": "TWW",
+      "representative": "((w+1)u, 1, 1+(w+1)u)",
+      "preimage_h4_orbits": 10,
+      "valid_contractions_received": 6048,
+      "h4_preimages": [
+        {
+          "h4_orbit": 1,
+          "h4_family": "TTWW",
+          "count": 576
+        },
+        {
+          "h4_orbit": 4,
+          "h4_family": "TTWW",
+          "count": 576
+        },
+        {
+          "h4_orbit": 5,
+          "h4_family": "TTWW",
+          "count": 864
+        },
+        {
+          "h4_orbit": 6,
+          "h4_family": "TWWW",
+          "count": 576
+        },
+        {
+          "h4_orbit": 7,
+          "h4_family": "TWWW",
+          "count": 1152
+        },
+        {
+          "h4_orbit": 8,
+          "h4_family": "TWWW",
+          "count": 576
+        },
+        {
+          "h4_orbit": 10,
+          "h4_family": "WWWW",
+          "count": 288
+        },
+        {
+          "h4_orbit": 15,
+          "h4_family": "WWWW",
+          "count": 288
+        },
+        {
+          "h4_orbit": 16,
+          "h4_family": "WWWW",
+          "count": 576
+        },
+        {
+          "h4_orbit": 17,
+          "h4_family": "WWWW",
+          "count": 576
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "size": 6,
+      "family": "TTT",
+      "representative": "((w+1)u, u, wu)",
+      "preimage_h4_orbits": 3,
+      "valid_contractions_received": 504,
+      "h4_preimages": [
+        {
+          "h4_orbit": 2,
+          "h4_family": "TTTT",
+          "count": 72
+        },
+        {
+          "h4_orbit": 4,
+          "h4_family": "TTWW",
+          "count": 144
+        },
+        {
+          "h4_orbit": 5,
+          "h4_family": "TTWW",
+          "count": 288
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "size": 36,
+      "family": "TWW",
+      "representative": "((w+1)u, w+1, w+1+(w+1)u)",
+      "preimage_h4_orbits": 9,
+      "valid_contractions_received": 3024,
+      "h4_preimages": [
+        {
+          "h4_orbit": 3,
+          "h4_family": "TTWW",
+          "count": 288
+        },
+        {
+          "h4_orbit": 4,
+          "h4_family": "TTWW",
+          "count": 144
+        },
+        {
+          "h4_orbit": 5,
+          "h4_family": "TTWW",
+          "count": 576
+        },
+        {
+          "h4_orbit": 6,
+          "h4_family": "TWWW",
+          "count": 288
+        },
+        {
+          "h4_orbit": 7,
+          "h4_family": "TWWW",
+          "count": 576
+        },
+        {
+          "h4_orbit": 8,
+          "h4_family": "TWWW",
+          "count": 288
+        },
+        {
+          "h4_orbit": 11,
+          "h4_family": "WWWW",
+          "count": 144
+        },
+        {
+          "h4_orbit": 15,
+          "h4_family": "WWWW",
+          "count": 144
+        },
+        {
+          "h4_orbit": 17,
+          "h4_family": "WWWW",
+          "count": 576
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "size": 24,
+      "family": "WWW",
+      "representative": "(1, w, w+1)",
+      "preimage_h4_orbits": 5,
+      "valid_contractions_received": 2016,
+      "h4_preimages": [
+        {
+          "h4_orbit": 6,
+          "h4_family": "TWWW",
+          "count": 288
+        },
+        {
+          "h4_orbit": 7,
+          "h4_family": "TWWW",
+          "count": 576
+        },
+        {
+          "h4_orbit": 12,
+          "h4_family": "WWWW",
+          "count": 288
+        },
+        {
+          "h4_orbit": 16,
+          "h4_family": "WWWW",
+          "count": 288
+        },
+        {
+          "h4_orbit": 17,
+          "h4_family": "WWWW",
+          "count": 576
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "size": 72,
+      "family": "WWW",
+      "representative": "(1, w+(w+1)u, w+1+(w+1)u)",
+      "preimage_h4_orbits": 7,
+      "valid_contractions_received": 6048,
+      "h4_preimages": [
+        {
+          "h4_orbit": 6,
+          "h4_family": "TWWW",
+          "count": 576
+        },
+        {
+          "h4_orbit": 7,
+          "h4_family": "TWWW",
+          "count": 1152
+        },
+        {
+          "h4_orbit": 8,
+          "h4_family": "TWWW",
+          "count": 864
+        },
+        {
+          "h4_orbit": 13,
+          "h4_family": "WWWW",
+          "count": 576
+        },
+        {
+          "h4_orbit": 14,
+          "h4_family": "WWWW",
+          "count": 288
+        },
+        {
+          "h4_orbit": 16,
+          "h4_family": "WWWW",
+          "count": 864
+        },
+        {
+          "h4_orbit": 17,
+          "h4_family": "WWWW",
+          "count": 1728
+        }
+      ]
+    }
+  ]
+}

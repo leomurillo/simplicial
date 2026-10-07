@@ -1,0 +1,164 @@
+==============================================================================
+ audits alpha + eta -- primorial-row generalization on Z/30Z = 2*3*5
+ Single deterministic compute pass for Papers 46, 47, 48 (proposed).
+ Anchored objects: Paper 32 sec 6.1/6.2; v2insert-01/02/03.
+ Discipline: Paper 35 sec 3 (deterministic, exact, three-outcome).
+==============================================================================
+
+------------------------------------------------------------------------------
+ Auditing R = Z/6Z   [REFERENCE (Paper 32 Cor 6.1d anchor)]
+------------------------------------------------------------------------------
+
+  Conductor packets of Z/6Z:
+    H_ 1 (trivial (gauge), dim= 1; phi(1)=1): [0]  [OK]
+    H_ 2 (single-prime (V), dim= 1; phi(2)=1): [3]  [OK]
+    H_ 3 (single-prime (V), dim= 2; phi(3)=2): [2, 4]  [OK]
+    H_ 6 (cross-prime (M), dim= 2; phi(6)=2): [1, 5]  [OK]
+
+  V (single-prime conductor packets, dim 3): [2, 3, 4]
+  M (cross-prime conductor packets,  dim 2): [1, 5]
+  trivial gauge (excluded from dynamics): [0]
+  dim_dynamical = 5 (= V + M + 0 = 3 + 2)
+  V/M dimensional ratio = 3/2 = 1.500000
+
+  Closing unordered multisets {a<=b<=c} from {1,...,5}
+  with a+b+c == 0 (mod 6):  total = 6
+
+  Partition by V/M content (sorted within each multiset):
+      MMV:     2  (33.33%)
+      MVV:     2  (33.33%)
+      VVV:     2  (33.33%)
+
+  Conductor Capacity Bound (Paper 48 C2):
+    pure-V multisets:    2/6  =  Capacity_V = 0.333333
+    pure-M multisets:    0/6
+    cross VM multisets:  4/6
+
+  Pure-V multisets (explicit):
+    (2, 2, 2)  (sum = 6)
+    (4, 4, 4)  (sum = 12)
+
+  Pontryagin character orthogonality (Paper 47 C3):
+    V_proj rank (= dim_V):  3.000000   (expected: 3)
+    M_proj rank (= dim_M):  2.000000   (expected: 2)
+    ||V_proj^2 - V_proj||_F: 1.169478e-15  (projector idempotence)
+    ||V_proj^dagger - V_proj||_F: 8.168144e-17  (projector hermiticity)
+    ||M_proj^2 - M_proj||_F: 1.022667e-15
+    ||M_proj^dagger - M_proj||_F: 9.204132e-17
+    ||V_proj * M_proj||_F: 1.137297e-15  <<< V perp M overlap norm
+
+  ANCHOR VERIFICATION (Z/6 vs Paper 32 Cor 6.1d):
+    dim_V = 3      [OK, matches Paper 32 sec 6.1]
+    dim_M = 2      [OK, matches Paper 32 sec 6.1]
+    total multisets = 6   [OK, matches Paper 32 Lemma 6.1]
+    pure-V multisets = 2  [OK, matches Paper 32 Cor 6.1d.1: {2,2,2} and {4,4,4}]
+
+------------------------------------------------------------------------------
+ Auditing R = Z/30Z   [PRIMORIAL GENERALIZATION (Papers 46/47/48 C5/C3/C2)]
+------------------------------------------------------------------------------
+
+  Conductor packets of Z/30Z:
+    H_ 1 (trivial (gauge), dim= 1; phi(1)=1): [0]  [OK]
+    H_ 2 (single-prime (V), dim= 1; phi(2)=1): [15]  [OK]
+    H_ 3 (single-prime (V), dim= 2; phi(3)=2): [10, 20]  [OK]
+    H_ 5 (single-prime (V), dim= 4; phi(5)=4): [6, 12, 18, 24]  [OK]
+    H_ 6 (cross-prime (M), dim= 2; phi(6)=2): [5, 25]  [OK]
+    H_10 (cross-prime (M), dim= 4; phi(10)=4): [3, 9, 21, 27]  [OK]
+    H_15 (cross-prime (M), dim= 8; phi(15)=8): [2, 4, 8, 14, 16, 22, 26, 28]  [OK]
+    H_30 (cross-prime (M), dim= 8; phi(30)=8): [1, 7, 11, 13, 17, 19, 23, 29]  [OK]
+
+  V (single-prime conductor packets, dim 7): [6, 10, 12, 15, 18, 20, 24]
+  M (cross-prime conductor packets,  dim 22): [1, 2, 3, 4, 5, 7, 8, 9, 11, 13, 14, 16, 17, 19, 21, 22, 23, 25, 26, 27, 28, 29]
+  trivial gauge (excluded from dynamics): [0]
+  dim_dynamical = 29 (= V + M + 0 = 7 + 22)
+  V/M dimensional ratio = 7/22 = 0.318182
+
+  Closing unordered multisets {a<=b<=c} from {1,...,29}
+  with a+b+c == 0 (mod 30):  total = 150
+
+  Partition by V/M content (sorted within each multiset):
+      MMM:    64  (42.67%)
+      MMV:    66  (44.00%)
+      MVV:    14  ( 9.33%)
+      VVV:     6  ( 4.00%)
+
+  Conductor Capacity Bound (Paper 48 C2):
+    pure-V multisets:    6/150  =  Capacity_V = 0.040000
+    pure-M multisets:    64/150
+    cross VM multisets:  80/150
+
+  Pure-V multisets (explicit):
+    (6, 6, 18)  (sum = 30)
+    (6, 12, 12)  (sum = 30)
+    (10, 10, 10)  (sum = 30)
+    (12, 24, 24)  (sum = 60)
+    (18, 18, 24)  (sum = 60)
+    (20, 20, 20)  (sum = 60)
+
+  Pontryagin character orthogonality (Paper 47 C3):
+    V_proj rank (= dim_V):  7.000000   (expected: 7)
+    M_proj rank (= dim_M):  22.000000   (expected: 22)
+    ||V_proj^2 - V_proj||_F: 5.314291e-15  (projector idempotence)
+    ||V_proj^dagger - V_proj||_F: 1.939415e-16  (projector hermiticity)
+    ||M_proj^2 - M_proj||_F: 2.326027e-14
+    ||M_proj^dagger - M_proj||_F: 4.132350e-16
+    ||V_proj * M_proj||_F: 1.224180e-14  <<< V perp M overlap norm
+
+==============================================================================
+ ADJUDICATION OF PRE-REGISTERED BRANCHES
+==============================================================================
+
+Paper 48 C2 -- Conductor Capacity Bound (v2insert-03 sec 1.3):
+  Z/6  Capacity_V = 2/6 = 0.333333  (Paper 32 Cor 6.1d.1 anchor: 2/6)
+  Z/30 Capacity_V = 6/150 = 0.040000
+
+  REALIZED BRANCH: K  --  Capacity_V on Z/30 STRICTLY LESS than on Z/6.
+                          Monotone-decrease on the primorial ladder.
+                          Confirms v2insert-03's structural shape: the
+                          kinematic sector's pure-cubic capacity saturates
+                          relative to total as the row grows.
+
+Paper 47 C3 -- Arithmetic Decoupling Theorem (v2insert-02 sec 1):
+  Z/6  ||V_proj * M_proj||_F = 1.137297e-15
+  Z/30 ||V_proj * M_proj||_F = 1.224180e-14
+
+  REALIZED BRANCH: K  --  V perp M to machine precision on Z/30.
+                          Pontryagin character orthogonality generalizes.
+                          Arithmetic Decoupling Theorem extends to the
+                          next primorial row.
+
+Paper 46 C5 -- Hartle-Hawking signature generalization (v2insert-01 sec 2.3):
+  Z/30 V/M dimensional ratio = 7/22 = 0.318182
+  Z/6  V/M dimensional ratio = 3/2 = 1.500000
+
+  The V/M decomposition exists on Z/30 with the predicted character:
+    - V (kinematic): 3 single-prime axes (H_2, H_3, H_5)
+    - M (gravity-adjacent): 4 cross-prime carry packets
+                             (H_6, H_10, H_15, H_30)
+    - V perp M by Pontryagin (see Paper 47 C3 branch above)
+
+  REALIZED (structurally): K (partial)  --  the hybrid signature pattern's
+                                            ARITHMETIC SUBSTRATE generalizes
+                                            to Z/30.  Full audit kappa
+                                            generalization to Z/30 transformers
+                                            remains deferred (requires GPU + HF
+                                            access; see v2insert-07).
+
+==============================================================================
+ COMPACT SUMMARY
+==============================================================================
+
+  Row     dim_V  dim_M   total   pure_V   capacity_V   ||V_perp_M||
+  ----    -----  -----   -----   ------   ----------   ------------
+  Z/6         3      2       6        2     0.333333       1.14e-15
+  Z/30        7     22     150        6     0.040000       1.22e-14
+
+  All claims at the conductor-arithmetic / Pontryagin level are deterministic,
+  reproduce Paper 32 anchors on Z/6 exactly, and use integer arithmetic for
+  every multiset/packet membership decision.  Floating-point appears only in
+  the Pontryagin overlap-norm REPORT, not in any vanishing decision.
+
+  Full audit kappa generalization to Z/30 transformers requires GPU + HF and
+  is deferred (see v2insert-07).  This audit settles the structural/
+  arithmetic content of Papers 46 C5, 47 C3, 48 C2 jointly.
+

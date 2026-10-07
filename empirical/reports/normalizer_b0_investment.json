@@ -1,0 +1,119 @@
+{
+  "theorem": "For a finite character group G with normalizer action Gamma, the B3 symmetry-complete support of reciprocal support S is <Gamma.S>\\{0}.  It is the unique minimum-resource support that is additively closed, contains S, and is Gamma-invariant.",
+  "reading": "B2 is minimal prediction investment.  B3 is symmetry-complete investment.  The difference is a measurable symmetry premium.",
+  "config": {
+    "rows": [
+      "c7",
+      "c8",
+      "c12",
+      "f4-u2",
+      "f2-u4"
+    ],
+    "max_support_size": null
+  },
+  "rows": [
+    {
+      "key": "c7",
+      "row": "C_7",
+      "label_count": 7,
+      "nonzero_count": 6,
+      "normalizer_action_count": 6,
+      "support_checks": 63,
+      "equal_count": 63,
+      "overbuy_count": 0,
+      "mean_minimal_resource": 1.0,
+      "mean_normalizer_resource": 1.0,
+      "mean_symmetry_premium": 0.0,
+      "first_overbuy": null
+    },
+    {
+      "key": "c8",
+      "row": "C_8",
+      "label_count": 8,
+      "nonzero_count": 7,
+      "normalizer_action_count": 4,
+      "support_checks": 127,
+      "equal_count": 127,
+      "overbuy_count": 0,
+      "mean_minimal_resource": 0.9662542182227221,
+      "mean_normalizer_resource": 0.9662542182227221,
+      "mean_symmetry_premium": 0.0,
+      "first_overbuy": null
+    },
+    {
+      "key": "c12",
+      "row": "C_12",
+      "label_count": 12,
+      "nonzero_count": 11,
+      "normalizer_action_count": 4,
+      "support_checks": 2047,
+      "equal_count": 2047,
+      "overbuy_count": 0,
+      "mean_minimal_resource": 0.9890305102811209,
+      "mean_normalizer_resource": 0.9890305102811209,
+      "mean_symmetry_premium": 0.0,
+      "first_overbuy": null
+    },
+    {
+      "key": "f4-u2",
+      "row": "F_4[u]/(u^2)",
+      "label_count": 16,
+      "nonzero_count": 15,
+      "normalizer_action_count": 24,
+      "support_checks": 32767,
+      "equal_count": 31236,
+      "overbuy_count": 1531,
+      "mean_minimal_resource": 0.9736930448316904,
+      "mean_normalizer_resource": 0.9998290963469345,
+      "mean_symmetry_premium": 0.02613605151524404,
+      "first_overbuy": {
+        "support": [
+          "u"
+        ],
+        "minimal_size": 1,
+        "normalizer_size": 3,
+        "minimal": [
+          "u"
+        ],
+        "normalizer_extra": [
+          "(w+1)u",
+          "wu"
+        ]
+      }
+    },
+    {
+      "key": "f2-u4",
+      "row": "F_2[u]/(u^4)",
+      "label_count": 16,
+      "nonzero_count": 15,
+      "normalizer_action_count": 32,
+      "support_checks": 32767,
+      "equal_count": 31329,
+      "overbuy_count": 1438,
+      "mean_minimal_resource": 0.9736930448316904,
+      "mean_normalizer_resource": 0.9978718426058738,
+      "mean_symmetry_premium": 0.02417879777418337,
+      "first_overbuy": {
+        "support": [
+          "1"
+        ],
+        "minimal_size": 1,
+        "normalizer_size": 15,
+        "minimal": [
+          "1"
+        ],
+        "normalizer_extra": [
+          "1+u",
+          "1+u+u^2",
+          "1+u+u^2+u^3",
+          "1+u+u^3",
+          "1+u^2",
+          "1+u^2+u^3",
+          "1+u^3",
+          "u",
+          "...(+6)"
+        ]
+      }
+    }
+  ]
+}

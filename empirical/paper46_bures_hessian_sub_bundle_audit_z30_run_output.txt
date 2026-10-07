@@ -1,0 +1,99 @@
+C:\Projects\simplicial\empirical\paper46_bures_hessian_sub_bundle_audit_z30.py:20: SyntaxWarning: invalid escape sequence '\ '
+  - V/M conductor-lattice partition of (Z/30)^* \ {0}:
+C:\Projects\simplicial\empirical\paper46_bures_hessian_sub_bundle_audit_z30.py:96: SyntaxWarning: invalid escape sequence '\ '
+  """Partition (Z/N)^* \ {0} into single-prime V_idx and composite M_idx."""
+##############################################################################
+#  Paper 46 (proposed) C5 geometric realization on D(C^30)
+#  Bures-Hessian sub-bundle audit on the next primorial row Z/30
+#  CPU-tractable extension of Paper 32 sec 13.2B audit triad
+##############################################################################
+
+==============================================================================
+ Bures-Hessian sub-bundle audit on D(C^30)
+==============================================================================
+  Conductor lattice on Z/30:
+    V_idx (single-prime conductor, dim_V = 7): [6, 10, 12, 15, 18, 20, 24]
+    M_idx (composite-divisor, dim_M = 22): [1, ..., 29] (full list elided)
+  Pontryagin check: ||P_V . P_M||_F = 1.225e-14  (machine floor = 1e-10)
+  V perp M at machine floor: YES
+  Constructed V-supported H (7 x 7 promoted to N x N)
+  Constructed n_P = 6 V-supported P_a operators
+
+==============================================================================
+ (A) Casimir I_real(rho_*+tX) along V-rays
+==============================================================================
+  timelike  (X = H direction): t=0.1, I_R=0.040000, I_C=0.040000, m^2_simplex=5.778e-34, I_R/t^2=4.000000
+  spacelike (X = P_1 direction): t=0.1, I_R=-0.040000, I_C=-0.040000, m^2_simplex=1.493e-33, I_R/t^2=-4.000000
+  mixed     (X = (H + P_1)/sqrt(2)): t=0.1, I_R=-0.000000, I_C=-0.000000, m^2_simplex=1.493e-33, I_R/t^2=-0.000000
+  All V-ray checks gave I_R/t^2 constant + m^2_simplex == 0: CONFIRMED
+
+==============================================================================
+ (B) Full D(C^30) tangent space: dim = 899
+==============================================================================
+  Building 899-dim traceless Hermitian basis ...
+  Basis size: 899 (expected 899)
+  All basis elements have tr(T^2) = 2 (Gell-Mann normalization)
+  Computing Hessian of I_real on 899-dim tangent (4-5 s estimated) ...
+  Hessian built in 0.18 s
+  Eigendecomposing the 899 x 899 Hessian ...
+  Eigendecomposition in 0.23 s
+  Hessian of I_real signature on 899-dim tangent:
+    (pos, neg, zero) = (1, 6, 892)
+    expected          = (1, 6, 892)  (Lorentzian (1, 6) on V's H+P_a sub-bundle + 0 elsewhere)
+    non-zero eigenvalues: [-4.0000, -4.0000, -4.0000, -4.0000, -4.0000, -4.0000, +4.0000]
+
+  Computing quartic form (m^2_simplex(rho_*+X))^2 ...
+  Quartic form built in 0.09 s
+  Quadratic-in-X form (m^2_simplex) signature on 899-dim r-space:
+    (pos, neg, zero) = (22, 0, 877)
+    expected         = (22, 0, 877)  (positive-semidefinite on M-diagonal sub-bundle)
+
+  HS-orthogonality check: V-Lorentzian vs M-Euclidean sub-bundles
+  Eigendecomposition + overlap in 3.23 s
+  V-Lorentzian sub-bundle dim: 7  (expected 7)
+  M-Euclidean sub-bundle dim:  22  (expected 22)
+  Singular values of (V-Lorentzian)^H (M-Euclidean):
+    ['5.823e-16', '3.480e-16', '1.980e-16', '1.423e-16', '1.134e-16', '9.912e-17', '7.700e-17']
+  Max singular value (overlap): 5.823e-16
+  HS-orthogonal at machine floor: YES
+
+  Total audit wall time: 3.95 s
+
+==============================================================================
+ VERDICT
+==============================================================================
+  (A) Casimir along V-rays exactly quadratic + m^2_simplex == 0: CONFIRMED
+
+  (B) Hessian of I_real signature: (1, 6, 892) (expected (1, 6, 892)): CONFIRMED
+      The V-Lorentzian (1, 6) sub-bundle is 7-dimensional, supported on V-tangent directions.
+
+  (C) Quartic m^2_simplex signature: (22, 0, 877) (expected (22, 0, 877)): CONFIRMED
+      The M-Euclidean (positive-semidefinite) sub-bundle is 22-dimensional, supported on M-diagonal directions.
+
+  (D) V-Lorentzian and M-Euclidean sub-bundles HS-orthogonal at machine precision: CONFIRMED
+      Max overlap singular value: 5.823e-16
+
+  Wall time: 3.95 s
+
+
+==============================================================================
+ STRUCTURAL SETTLEMENT
+==============================================================================
+  The Hartle-Hawking signature pattern of Paper 32 sec 13.2B
+  extends to D(C^30) (the next primorial row):
+
+    V-Lorentzian (1, 6) sub-bundle of dim 7, supported on V-traceless directions,
+    exact along V-rays (quadratic in t, no higher-order corrections).
+
+    M-Euclidean positive-semidefinite sub-bundle of dim 22, supported on M-diagonal directions,
+    from the 4th-order quartic form (m^2_simplex)^2.
+
+    HS-orthogonal at machine precision (max singular value 5.823e-16).
+
+  Flat (29 - 1 - 6 - 22 + ...)
+  = 870 dim of
+  flat tangent directions (zero in both Hessian and 4th-order quartic).
+
+  Paper 46 (proposed) C5 geometric realization extends from D(C^6)
+  to D(C^30) at the [P] tier (deterministic float audit, machine-floor
+  precision).  K-branch realized on the next primorial row.

@@ -1,0 +1,1826 @@
+{
+  "settings": {
+    "max_length": 20,
+    "quotient_pairs": [
+      [
+        1,
+        1
+      ],
+      [
+        2,
+        1
+      ],
+      [
+        3,
+        2
+      ],
+      [
+        4,
+        3
+      ],
+      [
+        5,
+        3
+      ]
+    ],
+    "quotient_pair_args": [
+      "1:1",
+      "2:1",
+      "3:2",
+      "4:3",
+      "5:3"
+    ]
+  },
+  "path_audit": {
+    "seed": 1,
+    "max_length": 20,
+    "selected_rows": [
+      {
+        "length": 1,
+        "support_words": 2,
+        "integer_words": 2,
+        "integer_density": 1.0,
+        "honest_inverse_words": 1,
+        "honest_density": 0.5,
+        "integer_but_not_honest": 1,
+        "distinct_integer_endpoints": 2,
+        "distinct_honest_endpoints": 1,
+        "integer_residue_mod6": {
+          "0": 1,
+          "2": 1
+        },
+        "honest_residue_mod6": {
+          "2": 1
+        },
+        "top_denominator_defects": [
+          {
+            "defect": 0,
+            "count": 2
+          }
+        ],
+        "edge_gates": {
+          "D_support": 1,
+          "D_from_integer": 1,
+          "D_honest": 1,
+          "U_support": 1,
+          "U_from_integer": 1,
+          "U_3adic_pass": 1,
+          "U_parity_fail": 1
+        }
+      },
+      {
+        "length": 2,
+        "support_words": 4,
+        "integer_words": 2,
+        "integer_density": 0.5,
+        "honest_inverse_words": 1,
+        "honest_density": 0.25,
+        "integer_but_not_honest": 1,
+        "distinct_integer_endpoints": 2,
+        "distinct_honest_endpoints": 1,
+        "integer_residue_mod6": {
+          "0": 1,
+          "4": 1
+        },
+        "honest_residue_mod6": {
+          "4": 1
+        },
+        "top_denominator_defects": [
+          {
+            "defect": 0,
+            "count": 2
+          },
+          {
+            "defect": 1,
+            "count": 2
+          }
+        ],
+        "edge_gates": {
+          "D_support": 2,
+          "D_from_integer": 2,
+          "D_honest": 1,
+          "U_support": 2,
+          "U_from_integer": 2,
+          "U_3adic_fail": 2
+        }
+      },
+      {
+        "length": 3,
+        "support_words": 8,
+        "integer_words": 3,
+        "integer_density": 0.375,
+        "honest_inverse_words": 2,
+        "honest_density": 0.25,
+        "integer_but_not_honest": 1,
+        "distinct_integer_endpoints": 3,
+        "distinct_honest_endpoints": 2,
+        "integer_residue_mod6": {
+          "0": 1,
+          "1": 1,
+          "2": 1
+        },
+        "honest_residue_mod6": {
+          "1": 1,
+          "2": 1
+        },
+        "top_denominator_defects": [
+          {
+            "defect": 0,
+            "count": 3
+          },
+          {
+            "defect": 1,
+            "count": 3
+          },
+          {
+            "defect": 2,
+            "count": 2
+          }
+        ],
+        "edge_gates": {
+          "D_support": 4,
+          "D_from_integer": 2,
+          "D_honest": 1,
+          "U_support": 4,
+          "U_from_integer": 2,
+          "U_3adic_pass": 1,
+          "U_honest_pass": 1,
+          "U_from_noninteger": 2,
+          "U_3adic_fail": 1
+        }
+      },
+      {
+        "length": 4,
+        "support_words": 16,
+        "integer_words": 4,
+        "integer_density": 0.25,
+        "honest_inverse_words": 2,
+        "honest_density": 0.125,
+        "integer_but_not_honest": 2,
+        "distinct_integer_endpoints": 3,
+        "distinct_honest_endpoints": 2,
+        "integer_residue_mod6": {
+          "0": 2,
+          "2": 1,
+          "4": 1
+        },
+        "honest_residue_mod6": {
+          "2": 1,
+          "4": 1
+        },
+        "top_denominator_defects": [
+          {
+            "defect": 1,
+            "count": 5
+          },
+          {
+            "defect": 2,
+            "count": 5
+          },
+          {
+            "defect": 0,
+            "count": 4
+          },
+          {
+            "defect": 3,
+            "count": 2
+          }
+        ],
+        "edge_gates": {
+          "D_support": 8,
+          "D_from_integer": 3,
+          "D_honest": 2,
+          "U_support": 8,
+          "U_from_integer": 3,
+          "U_3adic_fail": 2,
+          "U_3adic_pass": 1,
+          "U_parity_fail": 1,
+          "U_from_noninteger": 5
+        }
+      },
+      {
+        "length": 5,
+        "support_words": 32,
+        "integer_words": 5,
+        "integer_density": 0.15625,
+        "honest_inverse_words": 3,
+        "honest_density": 0.09375,
+        "integer_but_not_honest": 2,
+        "distinct_integer_endpoints": 4,
+        "distinct_honest_endpoints": 3,
+        "integer_residue_mod6": {
+          "0": 2,
+          "2": 1,
+          "4": 1,
+          "5": 1
+        },
+        "honest_residue_mod6": {
+          "2": 1,
+          "4": 1,
+          "5": 1
+        },
+        "top_denominator_defects": [
+          {
+            "defect": 2,
+            "count": 10
+          },
+          {
+            "defect": 1,
+            "count": 8
+          },
+          {
+            "defect": 3,
+            "count": 7
+          },
+          {
+            "defect": 0,
+            "count": 5
+          },
+          {
+            "defect": 4,
+            "count": 2
+          }
+        ],
+        "edge_gates": {
+          "D_support": 16,
+          "D_from_integer": 4,
+          "D_honest": 2,
+          "U_support": 16,
+          "U_from_integer": 4,
+          "U_3adic_pass": 1,
+          "U_honest_pass": 1,
+          "U_from_noninteger": 12,
+          "U_3adic_fail": 3
+        }
+      },
+      {
+        "length": 8,
+        "support_words": 256,
+        "integer_words": 10,
+        "integer_density": 0.0390625,
+        "honest_inverse_words": 7,
+        "honest_density": 0.02734375,
+        "integer_but_not_honest": 3,
+        "distinct_integer_endpoints": 8,
+        "distinct_honest_endpoints": 7,
+        "integer_residue_mod6": {
+          "0": 5,
+          "2": 1,
+          "4": 3,
+          "5": 1
+        },
+        "honest_residue_mod6": {
+          "0": 2,
+          "2": 1,
+          "4": 3,
+          "5": 1
+        },
+        "top_denominator_defects": [
+          {
+            "defect": 3,
+            "count": 65
+          },
+          {
+            "defect": 4,
+            "count": 61
+          },
+          {
+            "defect": 2,
+            "count": 45
+          },
+          {
+            "defect": 5,
+            "count": 37
+          },
+          {
+            "defect": 1,
+            "count": 23
+          },
+          {
+            "defect": 6,
+            "count": 13
+          },
+          {
+            "defect": 0,
+            "count": 10
+          },
+          {
+            "defect": 7,
+            "count": 2
+          }
+        ],
+        "edge_gates": {
+          "D_support": 128,
+          "D_from_integer": 9,
+          "D_honest": 6,
+          "U_support": 128,
+          "U_from_integer": 9,
+          "U_3adic_fail": 8,
+          "U_from_noninteger": 119,
+          "U_3adic_pass": 1,
+          "U_honest_pass": 1
+        }
+      },
+      {
+        "length": 10,
+        "support_words": 1024,
+        "integer_words": 18,
+        "integer_density": 0.017578125,
+        "honest_inverse_words": 12,
+        "honest_density": 0.01171875,
+        "integer_but_not_honest": 6,
+        "distinct_integer_endpoints": 15,
+        "distinct_honest_endpoints": 12,
+        "integer_residue_mod6": {
+          "0": 6,
+          "2": 5,
+          "3": 2,
+          "4": 5
+        },
+        "honest_residue_mod6": {
+          "0": 2,
+          "2": 5,
+          "3": 2,
+          "4": 3
+        },
+        "top_denominator_defects": [
+          {
+            "defect": 4,
+            "count": 236
+          },
+          {
+            "defect": 5,
+            "count": 224
+          },
+          {
+            "defect": 3,
+            "count": 178
+          },
+          {
+            "defect": 6,
+            "count": 148
+          },
+          {
+            "defect": 2,
+            "count": 98
+          },
+          {
+            "defect": 7,
+            "count": 65
+          },
+          {
+            "defect": 1,
+            "count": 38
+          },
+          {
+            "defect": 0,
+            "count": 18
+          }
+        ],
+        "edge_gates": {
+          "D_support": 512,
+          "D_from_integer": 13,
+          "D_honest": 10,
+          "U_support": 512,
+          "U_from_integer": 13,
+          "U_3adic_fail": 8,
+          "U_3adic_pass": 5,
+          "U_parity_fail": 3,
+          "U_from_noninteger": 499,
+          "U_honest_pass": 2
+        }
+      },
+      {
+        "length": 12,
+        "support_words": 4096,
+        "integer_words": 29,
+        "integer_density": 0.007080078125,
+        "honest_inverse_words": 20,
+        "honest_density": 0.0048828125,
+        "integer_but_not_honest": 9,
+        "distinct_integer_endpoints": 25,
+        "distinct_honest_endpoints": 20,
+        "integer_residue_mod6": {
+          "0": 10,
+          "1": 3,
+          "2": 6,
+          "4": 8,
+          "5": 2
+        },
+        "honest_residue_mod6": {
+          "0": 4,
+          "1": 3,
+          "2": 5,
+          "4": 6,
+          "5": 2
+        },
+        "top_denominator_defects": [
+          {
+            "defect": 5,
+            "count": 874
+          },
+          {
+            "defect": 6,
+            "count": 832
+          },
+          {
+            "defect": 4,
+            "count": 690
+          },
+          {
+            "defect": 7,
+            "count": 585
+          },
+          {
+            "defect": 3,
+            "count": 412
+          },
+          {
+            "defect": 8,
+            "count": 295
+          },
+          {
+            "defect": 2,
+            "count": 187
+          },
+          {
+            "defect": 9,
+            "count": 101
+          }
+        ],
+        "edge_gates": {
+          "D_support": 2048,
+          "D_from_integer": 23,
+          "D_honest": 15,
+          "U_support": 2048,
+          "U_from_integer": 23,
+          "U_3adic_fail": 17,
+          "U_from_noninteger": 2025,
+          "U_3adic_pass": 6,
+          "U_honest_pass": 5,
+          "U_parity_fail": 1
+        }
+      },
+      {
+        "length": 14,
+        "support_words": 16384,
+        "integer_words": 51,
+        "integer_density": 0.003112792969,
+        "honest_inverse_words": 33,
+        "honest_density": 0.002014160156,
+        "integer_but_not_honest": 18,
+        "distinct_integer_endpoints": 44,
+        "distinct_honest_endpoints": 33,
+        "integer_residue_mod6": {
+          "0": 16,
+          "1": 2,
+          "2": 11,
+          "3": 4,
+          "4": 14,
+          "5": 4
+        },
+        "honest_residue_mod6": {
+          "0": 8,
+          "2": 7,
+          "3": 3,
+          "4": 11,
+          "5": 4
+        },
+        "top_denominator_defects": [
+          {
+            "defect": 6,
+            "count": 3270
+          },
+          {
+            "defect": 7,
+            "count": 3123
+          },
+          {
+            "defect": 5,
+            "count": 2666
+          },
+          {
+            "defect": 8,
+            "count": 2297
+          },
+          {
+            "defect": 4,
+            "count": 1701
+          },
+          {
+            "defect": 9,
+            "count": 1276
+          },
+          {
+            "defect": 3,
+            "count": 854
+          },
+          {
+            "defect": 10,
+            "count": 518
+          }
+        ],
+        "edge_gates": {
+          "D_support": 8192,
+          "D_from_integer": 40,
+          "D_honest": 26,
+          "U_support": 8192,
+          "U_from_integer": 40,
+          "U_3adic_fail": 29,
+          "U_from_noninteger": 8152,
+          "U_3adic_pass": 11,
+          "U_honest_pass": 10,
+          "U_parity_fail": 1
+        }
+      },
+      {
+        "length": 16,
+        "support_words": 65536,
+        "integer_words": 88,
+        "integer_density": 0.001342773438,
+        "honest_inverse_words": 55,
+        "honest_density": 0.000839233398,
+        "integer_but_not_honest": 33,
+        "distinct_integer_endpoints": 76,
+        "distinct_honest_endpoints": 55,
+        "integer_residue_mod6": {
+          "0": 27,
+          "1": 6,
+          "2": 24,
+          "3": 5,
+          "4": 22,
+          "5": 4
+        },
+        "honest_residue_mod6": {
+          "0": 13,
+          "1": 4,
+          "2": 17,
+          "3": 5,
+          "4": 14,
+          "5": 2
+        },
+        "top_denominator_defects": [
+          {
+            "defect": 7,
+            "count": 12329
+          },
+          {
+            "defect": 8,
+            "count": 11813
+          },
+          {
+            "defect": 6,
+            "count": 10303
+          },
+          {
+            "defect": 9,
+            "count": 8993
+          },
+          {
+            "defect": 5,
+            "count": 6922
+          },
+          {
+            "defect": 10,
+            "count": 5367
+          },
+          {
+            "defect": 4,
+            "count": 3750
+          },
+          {
+            "defect": 11,
+            "count": 2457
+          }
+        ],
+        "edge_gates": {
+          "D_support": 32768,
+          "D_from_integer": 67,
+          "D_honest": 44,
+          "U_support": 32768,
+          "U_from_integer": 67,
+          "U_3adic_fail": 46,
+          "U_3adic_pass": 21,
+          "U_parity_fail": 6,
+          "U_from_noninteger": 32701,
+          "U_honest_pass": 15
+        }
+      },
+      {
+        "length": 18,
+        "support_words": 262144,
+        "integer_words": 154,
+        "integer_density": 0.000587463379,
+        "honest_inverse_words": 88,
+        "honest_density": 0.000335693359,
+        "integer_but_not_honest": 66,
+        "distinct_integer_endpoints": 127,
+        "distinct_honest_endpoints": 88,
+        "integer_residue_mod6": {
+          "0": 45,
+          "1": 8,
+          "2": 39,
+          "3": 13,
+          "4": 39,
+          "5": 10
+        },
+        "honest_residue_mod6": {
+          "0": 23,
+          "1": 7,
+          "2": 21,
+          "3": 5,
+          "4": 25,
+          "5": 7
+        },
+        "top_denominator_defects": [
+          {
+            "defect": 8,
+            "count": 46774
+          },
+          {
+            "defect": 9,
+            "count": 44948
+          },
+          {
+            "defect": 7,
+            "count": 39857
+          },
+          {
+            "defect": 10,
+            "count": 35166
+          },
+          {
+            "defect": 6,
+            "count": 27897
+          },
+          {
+            "defect": 11,
+            "count": 22184
+          },
+          {
+            "defect": 5,
+            "count": 16073
+          },
+          {
+            "defect": 12,
+            "count": 11114
+          }
+        ],
+        "edge_gates": {
+          "D_support": 131072,
+          "D_from_integer": 116,
+          "D_honest": 69,
+          "U_support": 131072,
+          "U_from_integer": 116,
+          "U_3adic_fail": 78,
+          "U_from_noninteger": 130956,
+          "U_3adic_pass": 38,
+          "U_honest_pass": 31,
+          "U_parity_fail": 7
+        }
+      },
+      {
+        "length": 20,
+        "support_words": 1048576,
+        "integer_words": 268,
+        "integer_density": 0.000255584717,
+        "honest_inverse_words": 141,
+        "honest_density": 0.000134468079,
+        "integer_but_not_honest": 127,
+        "distinct_integer_endpoints": 215,
+        "distinct_honest_endpoints": 141,
+        "integer_residue_mod6": {
+          "0": 76,
+          "1": 20,
+          "2": 73,
+          "3": 16,
+          "4": 68,
+          "5": 15
+        },
+        "honest_residue_mod6": {
+          "0": 38,
+          "1": 8,
+          "2": 37,
+          "3": 10,
+          "4": 38,
+          "5": 10
+        },
+        "top_denominator_defects": [
+          {
+            "defect": 9,
+            "count": 178353
+          },
+          {
+            "defect": 10,
+            "count": 171836
+          },
+          {
+            "defect": 8,
+            "count": 154385
+          },
+          {
+            "defect": 11,
+            "count": 137464
+          },
+          {
+            "defect": 7,
+            "count": 111724
+          },
+          {
+            "defect": 12,
+            "count": 90648
+          },
+          {
+            "defect": 6,
+            "count": 67701
+          },
+          {
+            "defect": 13,
+            "count": 48732
+          }
+        ],
+        "edge_gates": {
+          "D_support": 524288,
+          "D_from_integer": 201,
+          "D_honest": 113,
+          "U_support": 524288,
+          "U_from_integer": 201,
+          "U_3adic_fail": 134,
+          "U_from_noninteger": 524087,
+          "U_3adic_pass": 67,
+          "U_parity_fail": 16,
+          "U_honest_pass": 51
+        }
+      }
+    ],
+    "final": {
+      "length": 20,
+      "support_words": 1048576,
+      "integer_words": 268,
+      "integer_density": 0.000255584717,
+      "honest_inverse_words": 141,
+      "honest_density": 0.000134468079,
+      "integer_but_not_honest": 127,
+      "distinct_integer_endpoints": 215,
+      "distinct_honest_endpoints": 141,
+      "integer_residue_mod6": {
+        "0": 76,
+        "1": 20,
+        "2": 73,
+        "3": 16,
+        "4": 68,
+        "5": 15
+      },
+      "honest_residue_mod6": {
+        "0": 38,
+        "1": 8,
+        "2": 37,
+        "3": 10,
+        "4": 38,
+        "5": 10
+      },
+      "top_denominator_defects": [
+        {
+          "defect": 9,
+          "count": 178353
+        },
+        {
+          "defect": 10,
+          "count": 171836
+        },
+        {
+          "defect": 8,
+          "count": 154385
+        },
+        {
+          "defect": 11,
+          "count": 137464
+        },
+        {
+          "defect": 7,
+          "count": 111724
+        },
+        {
+          "defect": 12,
+          "count": 90648
+        },
+        {
+          "defect": 6,
+          "count": 67701
+        },
+        {
+          "defect": 13,
+          "count": 48732
+        }
+      ],
+      "edge_gates": {
+        "D_support": 524288,
+        "D_from_integer": 201,
+        "D_honest": 113,
+        "U_support": 524288,
+        "U_from_integer": 201,
+        "U_3adic_fail": 134,
+        "U_from_noninteger": 524087,
+        "U_3adic_pass": 67,
+        "U_parity_fail": 16,
+        "U_honest_pass": 51
+      }
+    },
+    "final_honest_endpoint_sample": [
+      4,
+      5,
+      6,
+      11,
+      14,
+      15,
+      18,
+      19,
+      32,
+      40,
+      42,
+      48,
+      52,
+      53,
+      68,
+      69,
+      70,
+      75,
+      88,
+      90,
+      92,
+      93,
+      112,
+      116,
+      117,
+      120,
+      122,
+      256,
+      320,
+      336,
+      340,
+      341,
+      384,
+      416,
+      424,
+      426,
+      452,
+      453,
+      454,
+      544
+    ],
+    "final_honest_endpoint_tail_sample": [
+      4840,
+      4842,
+      4849,
+      16384,
+      20480,
+      21504,
+      21760,
+      21824,
+      21840,
+      21844,
+      21845,
+      24576,
+      26624,
+      27136,
+      27264,
+      27296,
+      27304,
+      27306,
+      28928,
+      28992,
+      29008,
+      29012,
+      29013,
+      29056,
+      29088,
+      29096,
+      29098,
+      29124,
+      29125,
+      29126,
+      131072,
+      163840,
+      172032,
+      174080,
+      174592,
+      174720,
+      174752,
+      174760,
+      174762,
+      1048576
+    ]
+  },
+  "quotient_audits": [
+    {
+      "two_bits": 1,
+      "three_depth": 1,
+      "modulus": 6,
+      "refined_source_modulus": 18,
+      "vertex_count": 6,
+      "D": {
+        "support_arrows": 6,
+        "target_count": 3,
+        "target_reading": "even residues modulo M"
+      },
+      "U": {
+        "coarse_legal_source_count": 1,
+        "coarse_support_arrows": 1,
+        "full_lift_arrows": 3,
+        "target_count": 3,
+        "target_reading": "odd residues modulo M",
+        "target_width_distribution": {
+          "3": 1
+        },
+        "same_level_closed_as_function": false,
+        "closure_deficit": 0.666666666667,
+        "sample_multivalued_sources": [
+          {
+            "source_residue": 4,
+            "legal_lifts": 3,
+            "target_residues": [
+              1,
+              3,
+              5
+            ]
+          }
+        ],
+        "gauge": {
+          "gauge_group": "Z/3",
+          "section_lifts": [
+            0,
+            1,
+            2
+          ],
+          "target_shift_between_adjacent_sections": 2,
+          "target_orbit_modulus": 2,
+          "gauge_orbit_count": 1,
+          "gauge_reduced_target_count": 1,
+          "gauge_reduced_closure_deficit": 0.0,
+          "section_change_rule": "U_{t+delta}(r) = U_t(r) + delta*M/3 mod M",
+          "sample_section_targets": [
+            {
+              "source_residue": 4,
+              "gauge_0_target": 1,
+              "gauge_1_target": 3,
+              "gauge_2_target": 5,
+              "target_orbit_mod_gauge": 1
+            }
+          ]
+        },
+        "refined_source_legal_count": 3,
+        "refined_target_count": 3,
+        "refined_arrow_is_function_to_coarse_target": true
+      }
+    },
+    {
+      "two_bits": 2,
+      "three_depth": 1,
+      "modulus": 12,
+      "refined_source_modulus": 36,
+      "vertex_count": 12,
+      "D": {
+        "support_arrows": 12,
+        "target_count": 6,
+        "target_reading": "even residues modulo M"
+      },
+      "U": {
+        "coarse_legal_source_count": 2,
+        "coarse_support_arrows": 2,
+        "full_lift_arrows": 6,
+        "target_count": 6,
+        "target_reading": "odd residues modulo M",
+        "target_width_distribution": {
+          "3": 2
+        },
+        "same_level_closed_as_function": false,
+        "closure_deficit": 0.666666666667,
+        "sample_multivalued_sources": [
+          {
+            "source_residue": 4,
+            "legal_lifts": 3,
+            "target_residues": [
+              1,
+              5,
+              9
+            ]
+          },
+          {
+            "source_residue": 10,
+            "legal_lifts": 3,
+            "target_residues": [
+              3,
+              7,
+              11
+            ]
+          }
+        ],
+        "gauge": {
+          "gauge_group": "Z/3",
+          "section_lifts": [
+            0,
+            1,
+            2
+          ],
+          "target_shift_between_adjacent_sections": 4,
+          "target_orbit_modulus": 4,
+          "gauge_orbit_count": 2,
+          "gauge_reduced_target_count": 2,
+          "gauge_reduced_closure_deficit": 0.0,
+          "section_change_rule": "U_{t+delta}(r) = U_t(r) + delta*M/3 mod M",
+          "sample_section_targets": [
+            {
+              "source_residue": 4,
+              "gauge_0_target": 1,
+              "gauge_1_target": 5,
+              "gauge_2_target": 9,
+              "target_orbit_mod_gauge": 1
+            },
+            {
+              "source_residue": 10,
+              "gauge_0_target": 3,
+              "gauge_1_target": 7,
+              "gauge_2_target": 11,
+              "target_orbit_mod_gauge": 3
+            }
+          ]
+        },
+        "refined_source_legal_count": 6,
+        "refined_target_count": 6,
+        "refined_arrow_is_function_to_coarse_target": true
+      }
+    },
+    {
+      "two_bits": 3,
+      "three_depth": 2,
+      "modulus": 72,
+      "refined_source_modulus": 216,
+      "vertex_count": 72,
+      "D": {
+        "support_arrows": 72,
+        "target_count": 36,
+        "target_reading": "even residues modulo M"
+      },
+      "U": {
+        "coarse_legal_source_count": 12,
+        "coarse_support_arrows": 12,
+        "full_lift_arrows": 36,
+        "target_count": 36,
+        "target_reading": "odd residues modulo M",
+        "target_width_distribution": {
+          "3": 12
+        },
+        "same_level_closed_as_function": false,
+        "closure_deficit": 0.666666666667,
+        "sample_multivalued_sources": [
+          {
+            "source_residue": 4,
+            "legal_lifts": 3,
+            "target_residues": [
+              1,
+              25,
+              49
+            ]
+          },
+          {
+            "source_residue": 10,
+            "legal_lifts": 3,
+            "target_residues": [
+              3,
+              27,
+              51
+            ]
+          },
+          {
+            "source_residue": 16,
+            "legal_lifts": 3,
+            "target_residues": [
+              5,
+              29,
+              53
+            ]
+          },
+          {
+            "source_residue": 22,
+            "legal_lifts": 3,
+            "target_residues": [
+              7,
+              31,
+              55
+            ]
+          },
+          {
+            "source_residue": 28,
+            "legal_lifts": 3,
+            "target_residues": [
+              9,
+              33,
+              57
+            ]
+          },
+          {
+            "source_residue": 34,
+            "legal_lifts": 3,
+            "target_residues": [
+              11,
+              35,
+              59
+            ]
+          },
+          {
+            "source_residue": 40,
+            "legal_lifts": 3,
+            "target_residues": [
+              13,
+              37,
+              61
+            ]
+          },
+          {
+            "source_residue": 46,
+            "legal_lifts": 3,
+            "target_residues": [
+              15,
+              39,
+              63
+            ]
+          },
+          {
+            "source_residue": 52,
+            "legal_lifts": 3,
+            "target_residues": [
+              17,
+              41,
+              65
+            ]
+          },
+          {
+            "source_residue": 58,
+            "legal_lifts": 3,
+            "target_residues": [
+              19,
+              43,
+              67
+            ]
+          },
+          {
+            "source_residue": 64,
+            "legal_lifts": 3,
+            "target_residues": [
+              21,
+              45,
+              69
+            ]
+          },
+          {
+            "source_residue": 70,
+            "legal_lifts": 3,
+            "target_residues": [
+              23,
+              47,
+              71
+            ]
+          }
+        ],
+        "gauge": {
+          "gauge_group": "Z/3",
+          "section_lifts": [
+            0,
+            1,
+            2
+          ],
+          "target_shift_between_adjacent_sections": 24,
+          "target_orbit_modulus": 24,
+          "gauge_orbit_count": 12,
+          "gauge_reduced_target_count": 12,
+          "gauge_reduced_closure_deficit": 0.0,
+          "section_change_rule": "U_{t+delta}(r) = U_t(r) + delta*M/3 mod M",
+          "sample_section_targets": [
+            {
+              "source_residue": 4,
+              "gauge_0_target": 1,
+              "gauge_1_target": 25,
+              "gauge_2_target": 49,
+              "target_orbit_mod_gauge": 1
+            },
+            {
+              "source_residue": 10,
+              "gauge_0_target": 3,
+              "gauge_1_target": 27,
+              "gauge_2_target": 51,
+              "target_orbit_mod_gauge": 3
+            },
+            {
+              "source_residue": 16,
+              "gauge_0_target": 5,
+              "gauge_1_target": 29,
+              "gauge_2_target": 53,
+              "target_orbit_mod_gauge": 5
+            },
+            {
+              "source_residue": 22,
+              "gauge_0_target": 7,
+              "gauge_1_target": 31,
+              "gauge_2_target": 55,
+              "target_orbit_mod_gauge": 7
+            },
+            {
+              "source_residue": 28,
+              "gauge_0_target": 9,
+              "gauge_1_target": 33,
+              "gauge_2_target": 57,
+              "target_orbit_mod_gauge": 9
+            },
+            {
+              "source_residue": 34,
+              "gauge_0_target": 11,
+              "gauge_1_target": 35,
+              "gauge_2_target": 59,
+              "target_orbit_mod_gauge": 11
+            },
+            {
+              "source_residue": 40,
+              "gauge_0_target": 13,
+              "gauge_1_target": 37,
+              "gauge_2_target": 61,
+              "target_orbit_mod_gauge": 13
+            },
+            {
+              "source_residue": 46,
+              "gauge_0_target": 15,
+              "gauge_1_target": 39,
+              "gauge_2_target": 63,
+              "target_orbit_mod_gauge": 15
+            },
+            {
+              "source_residue": 52,
+              "gauge_0_target": 17,
+              "gauge_1_target": 41,
+              "gauge_2_target": 65,
+              "target_orbit_mod_gauge": 17
+            },
+            {
+              "source_residue": 58,
+              "gauge_0_target": 19,
+              "gauge_1_target": 43,
+              "gauge_2_target": 67,
+              "target_orbit_mod_gauge": 19
+            },
+            {
+              "source_residue": 64,
+              "gauge_0_target": 21,
+              "gauge_1_target": 45,
+              "gauge_2_target": 69,
+              "target_orbit_mod_gauge": 21
+            },
+            {
+              "source_residue": 70,
+              "gauge_0_target": 23,
+              "gauge_1_target": 47,
+              "gauge_2_target": 71,
+              "target_orbit_mod_gauge": 23
+            }
+          ]
+        },
+        "refined_source_legal_count": 36,
+        "refined_target_count": 36,
+        "refined_arrow_is_function_to_coarse_target": true
+      }
+    },
+    {
+      "two_bits": 4,
+      "three_depth": 3,
+      "modulus": 432,
+      "refined_source_modulus": 1296,
+      "vertex_count": 432,
+      "D": {
+        "support_arrows": 432,
+        "target_count": 216,
+        "target_reading": "even residues modulo M"
+      },
+      "U": {
+        "coarse_legal_source_count": 72,
+        "coarse_support_arrows": 72,
+        "full_lift_arrows": 216,
+        "target_count": 216,
+        "target_reading": "odd residues modulo M",
+        "target_width_distribution": {
+          "3": 72
+        },
+        "same_level_closed_as_function": false,
+        "closure_deficit": 0.666666666667,
+        "sample_multivalued_sources": [
+          {
+            "source_residue": 4,
+            "legal_lifts": 3,
+            "target_residues": [
+              1,
+              145,
+              289
+            ]
+          },
+          {
+            "source_residue": 10,
+            "legal_lifts": 3,
+            "target_residues": [
+              3,
+              147,
+              291
+            ]
+          },
+          {
+            "source_residue": 16,
+            "legal_lifts": 3,
+            "target_residues": [
+              5,
+              149,
+              293
+            ]
+          },
+          {
+            "source_residue": 22,
+            "legal_lifts": 3,
+            "target_residues": [
+              7,
+              151,
+              295
+            ]
+          },
+          {
+            "source_residue": 28,
+            "legal_lifts": 3,
+            "target_residues": [
+              9,
+              153,
+              297
+            ]
+          },
+          {
+            "source_residue": 34,
+            "legal_lifts": 3,
+            "target_residues": [
+              11,
+              155,
+              299
+            ]
+          },
+          {
+            "source_residue": 40,
+            "legal_lifts": 3,
+            "target_residues": [
+              13,
+              157,
+              301
+            ]
+          },
+          {
+            "source_residue": 46,
+            "legal_lifts": 3,
+            "target_residues": [
+              15,
+              159,
+              303
+            ]
+          },
+          {
+            "source_residue": 52,
+            "legal_lifts": 3,
+            "target_residues": [
+              17,
+              161,
+              305
+            ]
+          },
+          {
+            "source_residue": 58,
+            "legal_lifts": 3,
+            "target_residues": [
+              19,
+              163,
+              307
+            ]
+          },
+          {
+            "source_residue": 64,
+            "legal_lifts": 3,
+            "target_residues": [
+              21,
+              165,
+              309
+            ]
+          },
+          {
+            "source_residue": 70,
+            "legal_lifts": 3,
+            "target_residues": [
+              23,
+              167,
+              311
+            ]
+          }
+        ],
+        "gauge": {
+          "gauge_group": "Z/3",
+          "section_lifts": [
+            0,
+            1,
+            2
+          ],
+          "target_shift_between_adjacent_sections": 144,
+          "target_orbit_modulus": 144,
+          "gauge_orbit_count": 72,
+          "gauge_reduced_target_count": 72,
+          "gauge_reduced_closure_deficit": 0.0,
+          "section_change_rule": "U_{t+delta}(r) = U_t(r) + delta*M/3 mod M",
+          "sample_section_targets": [
+            {
+              "source_residue": 4,
+              "gauge_0_target": 1,
+              "gauge_1_target": 145,
+              "gauge_2_target": 289,
+              "target_orbit_mod_gauge": 1
+            },
+            {
+              "source_residue": 10,
+              "gauge_0_target": 3,
+              "gauge_1_target": 147,
+              "gauge_2_target": 291,
+              "target_orbit_mod_gauge": 3
+            },
+            {
+              "source_residue": 16,
+              "gauge_0_target": 5,
+              "gauge_1_target": 149,
+              "gauge_2_target": 293,
+              "target_orbit_mod_gauge": 5
+            },
+            {
+              "source_residue": 22,
+              "gauge_0_target": 7,
+              "gauge_1_target": 151,
+              "gauge_2_target": 295,
+              "target_orbit_mod_gauge": 7
+            },
+            {
+              "source_residue": 28,
+              "gauge_0_target": 9,
+              "gauge_1_target": 153,
+              "gauge_2_target": 297,
+              "target_orbit_mod_gauge": 9
+            },
+            {
+              "source_residue": 34,
+              "gauge_0_target": 11,
+              "gauge_1_target": 155,
+              "gauge_2_target": 299,
+              "target_orbit_mod_gauge": 11
+            },
+            {
+              "source_residue": 40,
+              "gauge_0_target": 13,
+              "gauge_1_target": 157,
+              "gauge_2_target": 301,
+              "target_orbit_mod_gauge": 13
+            },
+            {
+              "source_residue": 46,
+              "gauge_0_target": 15,
+              "gauge_1_target": 159,
+              "gauge_2_target": 303,
+              "target_orbit_mod_gauge": 15
+            },
+            {
+              "source_residue": 52,
+              "gauge_0_target": 17,
+              "gauge_1_target": 161,
+              "gauge_2_target": 305,
+              "target_orbit_mod_gauge": 17
+            },
+            {
+              "source_residue": 58,
+              "gauge_0_target": 19,
+              "gauge_1_target": 163,
+              "gauge_2_target": 307,
+              "target_orbit_mod_gauge": 19
+            },
+            {
+              "source_residue": 64,
+              "gauge_0_target": 21,
+              "gauge_1_target": 165,
+              "gauge_2_target": 309,
+              "target_orbit_mod_gauge": 21
+            },
+            {
+              "source_residue": 70,
+              "gauge_0_target": 23,
+              "gauge_1_target": 167,
+              "gauge_2_target": 311,
+              "target_orbit_mod_gauge": 23
+            }
+          ]
+        },
+        "refined_source_legal_count": 216,
+        "refined_target_count": 216,
+        "refined_arrow_is_function_to_coarse_target": true
+      }
+    },
+    {
+      "two_bits": 5,
+      "three_depth": 3,
+      "modulus": 864,
+      "refined_source_modulus": 2592,
+      "vertex_count": 864,
+      "D": {
+        "support_arrows": 864,
+        "target_count": 432,
+        "target_reading": "even residues modulo M"
+      },
+      "U": {
+        "coarse_legal_source_count": 144,
+        "coarse_support_arrows": 144,
+        "full_lift_arrows": 432,
+        "target_count": 432,
+        "target_reading": "odd residues modulo M",
+        "target_width_distribution": {
+          "3": 144
+        },
+        "same_level_closed_as_function": false,
+        "closure_deficit": 0.666666666667,
+        "sample_multivalued_sources": [
+          {
+            "source_residue": 4,
+            "legal_lifts": 3,
+            "target_residues": [
+              1,
+              289,
+              577
+            ]
+          },
+          {
+            "source_residue": 10,
+            "legal_lifts": 3,
+            "target_residues": [
+              3,
+              291,
+              579
+            ]
+          },
+          {
+            "source_residue": 16,
+            "legal_lifts": 3,
+            "target_residues": [
+              5,
+              293,
+              581
+            ]
+          },
+          {
+            "source_residue": 22,
+            "legal_lifts": 3,
+            "target_residues": [
+              7,
+              295,
+              583
+            ]
+          },
+          {
+            "source_residue": 28,
+            "legal_lifts": 3,
+            "target_residues": [
+              9,
+              297,
+              585
+            ]
+          },
+          {
+            "source_residue": 34,
+            "legal_lifts": 3,
+            "target_residues": [
+              11,
+              299,
+              587
+            ]
+          },
+          {
+            "source_residue": 40,
+            "legal_lifts": 3,
+            "target_residues": [
+              13,
+              301,
+              589
+            ]
+          },
+          {
+            "source_residue": 46,
+            "legal_lifts": 3,
+            "target_residues": [
+              15,
+              303,
+              591
+            ]
+          },
+          {
+            "source_residue": 52,
+            "legal_lifts": 3,
+            "target_residues": [
+              17,
+              305,
+              593
+            ]
+          },
+          {
+            "source_residue": 58,
+            "legal_lifts": 3,
+            "target_residues": [
+              19,
+              307,
+              595
+            ]
+          },
+          {
+            "source_residue": 64,
+            "legal_lifts": 3,
+            "target_residues": [
+              21,
+              309,
+              597
+            ]
+          },
+          {
+            "source_residue": 70,
+            "legal_lifts": 3,
+            "target_residues": [
+              23,
+              311,
+              599
+            ]
+          }
+        ],
+        "gauge": {
+          "gauge_group": "Z/3",
+          "section_lifts": [
+            0,
+            1,
+            2
+          ],
+          "target_shift_between_adjacent_sections": 288,
+          "target_orbit_modulus": 288,
+          "gauge_orbit_count": 144,
+          "gauge_reduced_target_count": 144,
+          "gauge_reduced_closure_deficit": 0.0,
+          "section_change_rule": "U_{t+delta}(r) = U_t(r) + delta*M/3 mod M",
+          "sample_section_targets": [
+            {
+              "source_residue": 4,
+              "gauge_0_target": 1,
+              "gauge_1_target": 289,
+              "gauge_2_target": 577,
+              "target_orbit_mod_gauge": 1
+            },
+            {
+              "source_residue": 10,
+              "gauge_0_target": 3,
+              "gauge_1_target": 291,
+              "gauge_2_target": 579,
+              "target_orbit_mod_gauge": 3
+            },
+            {
+              "source_residue": 16,
+              "gauge_0_target": 5,
+              "gauge_1_target": 293,
+              "gauge_2_target": 581,
+              "target_orbit_mod_gauge": 5
+            },
+            {
+              "source_residue": 22,
+              "gauge_0_target": 7,
+              "gauge_1_target": 295,
+              "gauge_2_target": 583,
+              "target_orbit_mod_gauge": 7
+            },
+            {
+              "source_residue": 28,
+              "gauge_0_target": 9,
+              "gauge_1_target": 297,
+              "gauge_2_target": 585,
+              "target_orbit_mod_gauge": 9
+            },
+            {
+              "source_residue": 34,
+              "gauge_0_target": 11,
+              "gauge_1_target": 299,
+              "gauge_2_target": 587,
+              "target_orbit_mod_gauge": 11
+            },
+            {
+              "source_residue": 40,
+              "gauge_0_target": 13,
+              "gauge_1_target": 301,
+              "gauge_2_target": 589,
+              "target_orbit_mod_gauge": 13
+            },
+            {
+              "source_residue": 46,
+              "gauge_0_target": 15,
+              "gauge_1_target": 303,
+              "gauge_2_target": 591,
+              "target_orbit_mod_gauge": 15
+            },
+            {
+              "source_residue": 52,
+              "gauge_0_target": 17,
+              "gauge_1_target": 305,
+              "gauge_2_target": 593,
+              "target_orbit_mod_gauge": 17
+            },
+            {
+              "source_residue": 58,
+              "gauge_0_target": 19,
+              "gauge_1_target": 307,
+              "gauge_2_target": 595,
+              "target_orbit_mod_gauge": 19
+            },
+            {
+              "source_residue": 64,
+              "gauge_0_target": 21,
+              "gauge_1_target": 309,
+              "gauge_2_target": 597,
+              "target_orbit_mod_gauge": 21
+            },
+            {
+              "source_residue": 70,
+              "gauge_0_target": 23,
+              "gauge_1_target": 311,
+              "gauge_2_target": 599,
+              "target_orbit_mod_gauge": 23
+            }
+          ]
+        },
+        "refined_source_legal_count": 432,
+        "refined_target_count": 432,
+        "refined_arrow_is_function_to_coarse_target": true
+      }
+    }
+  ],
+  "cycles_all_z": [
+    {
+      "cycle": [
+        0
+      ],
+      "length": 1,
+      "verified": true
+    },
+    {
+      "cycle": [
+        1,
+        4,
+        2
+      ],
+      "length": 3,
+      "verified": true
+    },
+    {
+      "cycle": [
+        -1,
+        -2
+      ],
+      "length": 2,
+      "verified": true
+    },
+    {
+      "cycle": [
+        -5,
+        -14,
+        -7,
+        -20,
+        -10
+      ],
+      "length": 5,
+      "verified": true
+    },
+    {
+      "cycle": [
+        -17,
+        -50,
+        -25,
+        -74,
+        -37,
+        -110,
+        -55,
+        -164,
+        -82,
+        -41,
+        -122,
+        -61,
+        -182,
+        -91,
+        -272,
+        -136,
+        -68,
+        -34
+      ],
+      "length": 18,
+      "verified": true
+    }
+  ]
+}

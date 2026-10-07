@@ -1,0 +1,100 @@
+==============================================================================
+ INSERT 12 / item LAMBDA-Q  --  The Lambda-like Q-fixed Scale Audit
+ Cleanest runnable surviving constants candidate (post Y', U1FM).
+ Anchored on Paper 13 Definition 14.6A. No constant asserted.
+ Deterministic, exact rational arithmetic.
+==============================================================================
+
+[Anchor -- Paper 13 Definition 14.6A]
+  Psi(p)_a = 2 * sqrt(p_a) ;  Sigma_R^+ subset sphere of radius r = 2  (SAME for every row R).
+
+[FIRST FINDING -- forced by the definition, before any computation]
+  The carried self-note specified this item as 'the Hellinger-
+  sphere curvature RADIUS is set by Q'. Paper 13 Def 14.6A shows
+  the radius is the FIXED normalization constant 2, INDEPENDENT
+  of Q. The carried item is MIS-SPECIFIED on the anchored
+  definition -- a STATED negative (matched-pair discipline),
+  recorded, not silently corrected. (Same pattern as the Y'
+  packet-ratio mis-promotion: a carried item, on inspection,
+  was not the object the self-note claimed.)
+
+[Enumeration of Q-fixed scale-free candidates]
+  --------------------------------------------------------------------------
+  C1 sphere radius r
+      Z/6 value : 2
+      class     : Q-INDEPENDENT (mis-specified / not Q-fixed)
+      note      : r = 2 by the normalization Psi(p)_a = 2 sqrt(p_a); identical for Z/6 and Z/30
+  --------------------------------------------------------------------------
+  C2 ambient sphere dimension (Q-1)
+      Z/6 value : 5
+      class     : trivial / informationless
+      note      : Q-fixed integer (= 5 for Z/6), but a DIMENSION COUNT, not a curvature/Lambda scale; informationless as a constant
+  --------------------------------------------------------------------------
+  C3 sectional curvature K = 1/r^2
+      Z/6 value : 1/4
+      class     : Q-INDEPENDENT (mis-specified / not Q-fixed)
+      note      : K = 1/4 for an r=2 sphere in EVERY dimension; Q-independent and fixed purely by the normalization 2 => trivial-by-normalization, not a Q-fixed datum
+  --------------------------------------------------------------------------
+  C4 positive-orthant solid-angle fraction (1 / 2^Q)
+      Z/6 value : 1/64
+      class     : NON-TRIVIAL Q-fixed dimensionless
+      note      : Sigma_R^+ is one of 2^Q sign-octants of S^(Q-1); fraction = 1/2^Q = 1/2^6 (EXACT, dimensionless, Q-fixed, no free input, not trivially 1)
+  --------------------------------------------------------------------------
+  C5 cross-row orthant-fraction ratio (Z/6 : Z/30)
+      Z/6 value : 16777216
+      class     : NON-TRIVIAL Q-fixed dimensionless
+      note      : (1/2^6)/(1/2^30) = 2^(30-6) = 2^24 = 16777216; exact, dimensionless, structurally Q-determined relational pure number
+  --------------------------------------------------------------------------
+
+==============================================================================
+ VERDICT
+==============================================================================
+  candidates total                 : 5
+  verdict-relevant (C4, C5)        : 2
+  non-trivial Q-fixed dimensionless: 2
+
+  >>> LAMBDA-Q PARTIAL-POSITIVE (pre-claimed branch A, bounded).
+      The carried 'radius' specification is FALSE (C1: radius
+      is the Q-independent normalization constant 2). BUT a
+      genuine non-trivial Q-fixed dimensionless object EXISTS
+      in the same geometry:
+        C4 positive-orthant solid-angle fraction (1 / 2^Q)  =  1/64
+        C5 cross-row orthant-fraction ratio (Z/6 : Z/30)  =  16777216
+
+      The honest deliverable: the program has a Q-fixed,
+      exactly-rational, scale-free structural datum -- the
+      positive-orthant solid-angle fraction 1/2^Q (and its
+      cross-row ratio) -- determined ENTIRELY by Q = |R| with
+      no free input and no smuggled scale. This is NOT a
+      cosmological constant and NOT a physical Lambda; it is
+      the projection-closure FORM of a Q-fixed pure number
+      (firewall-clean, INSERT 04 sec 1.4). It is the program's
+      first NON-TRIVIAL conductor/Q-fixed pure number to
+      survive a run (Y' closed negative; this one does not).
+
+      STRICT BOUND: 1/2^Q is a combinatorial solid-angle
+      fraction. It is a genuine Q-fixed pure number, but it is
+      a GEOMETRIC-COMBINATORIC datum, not a dynamically
+      derived coupling. No claim that it plays a physical
+      Lambda role is made or implied. Its value (1/64 for
+      Z/6) is structural, not a prediction of any observed
+      constant.
+
+==============================================================================
+ FIREWALL SELF-CHECK (INSERT 04 sec 1.4, binding)
+==============================================================================
+  PASS: every emitted value is an exact dimensionless rational or
+  integer count. The radius r=2 is explicitly a NORMALIZATION
+  constant (the literal '2' in 2*sqrt(p_a)), flagged as such, NOT
+  a physical scale and NOT claimed as one. No length, mass,
+  energy, time, or charge magnitude appears. Firewall upheld in
+  the artifact (INSERT 08 sec 6 Part B style), not only the prose.
+
+==============================================================================
+ Status: deterministic run complete. The carried 'radius'
+ specification is refuted (C1, Q-independent); a genuine
+ non-trivial Q-fixed dimensionless datum (C4 = 1/2^Q = 1/64 for
+ Z/6; C5 cross-row ratio) survives, strictly bounded as a
+ geometric-combinatoric structural number, not a physical Lambda.
+ Both branches were pre-claimed. No constant asserted.
+==============================================================================

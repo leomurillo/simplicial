@@ -1,0 +1,43 @@
+{
+  "probe": "apex_convention_N1",
+  "exact": true,
+  "closed_form_geometric_eq_polynomial_N4": true,
+  "C1_closed_form_matches_anchored_4_1": true,
+  "C2_hermitian_2_3_matches_anchored_4_1": false,
+  "entry_31": {
+    "anchor": "sqrt(3)*I/3",
+    "C1": "sqrt(3)*I/3",
+    "C2": "-sqrt(3)*I/3"
+  },
+  "operative_convention": "C1",
+  "unitary_exact_N_2_4": {
+    "2": true,
+    "4": true
+  },
+  "unitary_50dig_error_N_2_to_12": {
+    "2": 0.0,
+    "3": 4.0091470651382935e-51,
+    "4": 2.6727647100921956e-51,
+    "5": 5.345529420184391e-51,
+    "6": 1.0691058840368783e-50,
+    "7": 5.345529420184391e-51,
+    "8": 3.7740856708589815e-51,
+    "9": 1.6036588260553174e-50,
+    "10": 1.202744119541488e-50,
+    "11": 1.0691058840368783e-50,
+    "12": 2.405488239082976e-50
+  },
+  "det_U4_operative": "I",
+  "PASS": true
+}
+
+=== CONVENTION VERDICT ===
+Operative convention = C1 (closed form (2.1), omega^{+cj}).
+The literal section-2.3 prose <e_k, chi~_c> = sum u_j conj(v_j)
+yields C2, the COMPLEX CONJUGATE, which does NOT match (4.1).
+Fix for Draft 2: define (U_N)_{kc} = <chi~_c, e_k>  (conjugate-
+linear in the character), equivalently pair the REAL h_k
+bilinearly with chi_c(j) = omega^{cj}. Downstream (det U_4 = i,
+all of (4.1)) is on the C1 object and is unaffected.
+det U_4 (operative) = I  (expected i)
+PASS = True

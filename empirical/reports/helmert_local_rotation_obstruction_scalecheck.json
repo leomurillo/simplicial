@@ -1,0 +1,241 @@
+{
+  "purpose": "Local cross-packet rotation diagnostic: detect first-order descent of the unpriced one-point objective against second-order packet impurity near the conductor flag.",
+  "config": {
+    "rows": [
+      "f2-u2"
+    ],
+    "amplitudes": [
+      0.35
+    ],
+    "thetas": [
+      1e-06,
+      3e-06,
+      1e-05,
+      3e-05,
+      0.0001
+    ],
+    "epsilon": 1e-07,
+    "skip_lowest": true,
+    "ledger_weights": {
+      "block": 1.0,
+      "mix": 1.0,
+      "fisher_projection": 1.0,
+      "reciprocal_projection": 1.0,
+      "closure": 1.0,
+      "resource": 0.1,
+      "depth": 0.1
+    }
+  },
+  "results": [
+    {
+      "row_key": "f2-u2",
+      "row": "F_2[u]/(u^2)",
+      "target_packet": "u^2",
+      "target_depth": 2,
+      "packet_sizes": {
+        "u": 1,
+        "u^2": 2
+      },
+      "active_prefix_dimension": 3,
+      "total_dimension": 3,
+      "amplitude_fraction": 0.35,
+      "actual_amplitude": 0.16624999999999998,
+      "probability_min": 0.166875,
+      "probability_max": 0.333125,
+      "base_J": 0.33974823251944836,
+      "base_J0": 0.33974823251944836,
+      "base_block_coupling": 0.13974823251944835,
+      "base_mix_impurity": 0.0,
+      "cross_pair_count": 2,
+      "singular_pair_count": 2,
+      "max_lambda_on_grid": 17424.985850079596,
+      "best_pair": [
+        0,
+        1
+      ],
+      "best_theta": 1e-06,
+      "best_d_J0_at_zero": -0.046466286374169385,
+      "best_impurity_quadratic_coefficient": 2.666666666666631,
+      "best_singular_constant_abs_dJ0_over_c": 0.017424857390313752,
+      "max_first_order_required_price_mu_star": 0.023233159562874306,
+      "pairs": [
+        {
+          "pair": [
+            0,
+            1
+          ],
+          "d_J0_at_zero": -0.046466286374169385,
+          "one_sided_descent_rate": 0.04646631912574861,
+          "d_impurity_at_zero": 0.0,
+          "impurity_quadratic_coefficient": 2.666666666666631,
+          "singular_constant_abs_dJ0_over_c": 0.017424857390313752,
+          "singular_direction": true,
+          "first_order_packet_norm_nu": 2.0,
+          "first_order_required_price_mu_star": 0.023233159562874306,
+          "max_lambda_on_grid": 17424.985850079596,
+          "best_theta": 1e-06,
+          "samples": [
+            {
+              "theta": -1e-06,
+              "J0": 0.33974827898539406,
+              "J0_improvement": -4.646594570223428e-08,
+              "mix_impurity": 2.6666666666631112e-12,
+              "lambda": 0.0
+            },
+            {
+              "theta": 1e-06,
+              "J0": 0.3397481860528194,
+              "J0_improvement": 4.6466628933483634e-08,
+              "mix_impurity": 2.6666666666631112e-12,
+              "lambda": 17424.985850079596
+            },
+            {
+              "theta": -3e-06,
+              "J0": 0.33974837191523544,
+              "J0_improvement": -1.3939578707988787e-07,
+              "mix_impurity": 2.3999999999712003e-11,
+              "lambda": 0.0
+            },
+            {
+              "theta": 3e-06,
+              "J0": 0.33974809311751164,
+              "J0_improvement": 1.3940193671624357e-07,
+              "mix_impurity": 2.3999999999712003e-11,
+              "lambda": 5808.414029913182
+            },
+            {
+              "theta": -1e-05,
+              "J0": 0.3397486971481569,
+              "J0_improvement": -4.6462870856300853e-07,
+              "mix_impurity": 2.666666666311111e-10,
+              "lambda": 0.0
+            },
+            {
+              "theta": 1e-05,
+              "J0": 0.3397477678224107,
+              "J0_improvement": 4.646970376831483e-07,
+              "mix_impurity": 2.666666666311111e-10,
+              "lambda": 1742.6138915441547
+            },
+            {
+              "theta": -3e-05,
+              "J0": 0.3397496262005859,
+              "J0_improvement": -1.3936811375514502e-06,
+              "mix_impurity": 2.39999999712e-09,
+              "lambda": 0.0
+            },
+            {
+              "theta": 3e-05,
+              "J0": 0.33974683822334906,
+              "J0_improvement": 1.3942960992996412e-06,
+              "mix_impurity": 2.39999999712e-09,
+              "lambda": 580.9567087386653
+            },
+            {
+              "theta": -0.0001,
+              "J0": 0.3397528757316931,
+              "J0_improvement": -4.643212244748174e-06,
+              "mix_impurity": 2.6666666311111118e-08,
+              "lambda": 0.0
+            },
+            {
+              "theta": 0.0001,
+              "J0": 0.33974358247429254,
+              "J0_improvement": 4.650045155818461e-06,
+              "mix_impurity": 2.6666666311111118e-08,
+              "lambda": 174.37669566821484
+            }
+          ]
+        },
+        {
+          "pair": [
+            0,
+            2
+          ],
+          "d_J0_at_zero": -0.046466286374169385,
+          "one_sided_descent_rate": 0.04646631912574861,
+          "d_impurity_at_zero": 0.0,
+          "impurity_quadratic_coefficient": 2.666666666666631,
+          "singular_constant_abs_dJ0_over_c": 0.017424857390313752,
+          "singular_direction": true,
+          "first_order_packet_norm_nu": 2.0,
+          "first_order_required_price_mu_star": 0.023233159562874306,
+          "max_lambda_on_grid": 17424.985850079596,
+          "best_theta": 1e-06,
+          "samples": [
+            {
+              "theta": -1e-06,
+              "J0": 0.33974827898539406,
+              "J0_improvement": -4.646594570223428e-08,
+              "mix_impurity": 2.6666666666631112e-12,
+              "lambda": 0.0
+            },
+            {
+              "theta": 1e-06,
+              "J0": 0.3397481860528194,
+              "J0_improvement": 4.6466628933483634e-08,
+              "mix_impurity": 2.6666666666631112e-12,
+              "lambda": 17424.985850079596
+            },
+            {
+              "theta": -3e-06,
+              "J0": 0.33974837191523544,
+              "J0_improvement": -1.3939578707988787e-07,
+              "mix_impurity": 2.3999999999712003e-11,
+              "lambda": 0.0
+            },
+            {
+              "theta": 3e-06,
+              "J0": 0.33974809311751164,
+              "J0_improvement": 1.3940193671624357e-07,
+              "mix_impurity": 2.3999999999712003e-11,
+              "lambda": 5808.414029913182
+            },
+            {
+              "theta": -1e-05,
+              "J0": 0.3397486971481569,
+              "J0_improvement": -4.6462870856300853e-07,
+              "mix_impurity": 2.666666666311111e-10,
+              "lambda": 0.0
+            },
+            {
+              "theta": 1e-05,
+              "J0": 0.3397477678224107,
+              "J0_improvement": 4.646970376831483e-07,
+              "mix_impurity": 2.666666666311111e-10,
+              "lambda": 1742.6138915441547
+            },
+            {
+              "theta": -3e-05,
+              "J0": 0.3397496262005859,
+              "J0_improvement": -1.3936811375514502e-06,
+              "mix_impurity": 2.39999999712e-09,
+              "lambda": 0.0
+            },
+            {
+              "theta": 3e-05,
+              "J0": 0.33974683822334906,
+              "J0_improvement": 1.3942960992996412e-06,
+              "mix_impurity": 2.39999999712e-09,
+              "lambda": 580.9567087386653
+            },
+            {
+              "theta": -0.0001,
+              "J0": 0.3397528757316931,
+              "J0_improvement": -4.643212244748174e-06,
+              "mix_impurity": 2.6666666311111118e-08,
+              "lambda": 0.0
+            },
+            {
+              "theta": 0.0001,
+              "J0": 0.33974358247429254,
+              "J0_improvement": 4.650045155818461e-06,
+              "mix_impurity": 2.6666666311111118e-08,
+              "lambda": 174.37669566821484
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

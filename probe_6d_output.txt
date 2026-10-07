@@ -1,0 +1,238 @@
+==============================================================================
+ Paper 25 Diophantine Frame Layer Audit — Step (6d)
+ Three-gap carry grammar on one-generator cyclic faces
+==============================================================================
+
+==============================================================================
+ (a) Standard Diophantine sequences {k · log(p)/log(q) mod 1}
+==============================================================================
+
+  α = log(2)/log(3) = 0.630930, K = 50:
+    # points: 50
+    # gaps: 49
+    distinct gap sizes (rel tol 1e-09): 3
+    ✓ THREE-GAP STRUCTURE (3 ≤ 3)
+    gap values: ['1.233468e-02', '2.276866e-02', '3.510335e-02']
+    circle wrap-around gap: 3.510335e-02
+
+  α = log(2)/log(3) = 0.630930, K = 200:
+    # points: 200
+    # gaps: 199
+    distinct gap sizes (rel tol 1e-09): 3
+    ✓ THREE-GAP STRUCTURE (3 ≤ 3)
+    gap values: ['1.900700e-03', '8.533282e-03', '1.043398e-02']
+    circle wrap-around gap: 1.043398e-02
+
+  α = log(2)/log(3) = 0.630930, K = 1000:
+    # points: 1000
+    # gaps: 999
+    distinct gap sizes (rel tol 1e-09): 3
+    ✓ THREE-GAP STRUCTURE (3 ≤ 3)
+    gap values: ['9.304822e-04', '9.702178e-04', '1.900700e-03']
+    circle wrap-around gap: 1.900700e-03
+
+  α = log(2)/log(5) = 0.430677, K = 50:
+    # points: 50
+    # gaps: 49
+    distinct gap sizes (rel tol 1e-09): 2
+    ✓ THREE-GAP STRUCTURE (2 ≤ 3)
+    gap values: ['1.473591e-02', '5.023144e-02']
+    circle wrap-around gap: 6.496735e-02
+
+  α = log(2)/log(5) = 0.430677, K = 200:
+    # points: 200
+    # gaps: 199
+    distinct gap sizes (rel tol 1e-09): 3
+    ✓ THREE-GAP STRUCTURE (3 ≤ 3)
+    gap values: ['2.688456e-03', '6.023725e-03', '8.712181e-03']
+    circle wrap-around gap: 8.712181e-03
+
+  α = log(2)/log(5) = 0.430677, K = 1000:
+    # points: 1000
+    # gaps: 999
+    distinct gap sizes (rel tol 1e-09): 3
+    ✓ THREE-GAP STRUCTURE (3 ≤ 3)
+    gap values: ['6.468131e-04', '1.394830e-03', '2.041643e-03']
+    circle wrap-around gap: 2.041643e-03
+
+  α = log(2)/log(7) = 0.356207, K = 50:
+    # points: 50
+    # gaps: 49
+    distinct gap sizes (rel tol 1e-09): 3
+    ✓ THREE-GAP STRUCTURE (3 ≤ 3)
+    gap values: ['1.309938e-02', '2.932342e-02', '4.242280e-02']
+    circle wrap-around gap: 4.242280e-02
+
+  α = log(2)/log(7) = 0.356207, K = 200:
+    # points: 200
+    # gaps: 199
+    distinct gap sizes (rel tol 1e-09): 3
+    ✓ THREE-GAP STRUCTURE (3 ≤ 3)
+    gap values: ['3.124659e-03', '6.850063e-03', '9.974722e-03']
+    circle wrap-around gap: 9.974722e-03
+
+  α = log(2)/log(7) = 0.356207, K = 1000:
+    # points: 1000
+    # gaps: 999
+    distinct gap sizes (rel tol 1e-09): 3
+    ✓ THREE-GAP STRUCTURE (3 ≤ 3)
+    gap values: ['6.007449e-04', '1.322424e-03', '1.923169e-03']
+    circle wrap-around gap: 1.923169e-03
+
+  α = log(2)/log(11) = 0.289065, K = 50:
+    # points: 50
+    # gaps: 49
+    distinct gap sizes (rel tol 1e-09): 3
+    ✓ THREE-GAP STRUCTURE (3 ≤ 3)
+    gap values: ['7.917184e-03', '1.553660e-02', '2.345378e-02']
+    circle wrap-around gap: 2.345378e-02
+
+  α = log(2)/log(11) = 0.289065, K = 200:
+    # points: 200
+    # gaps: 199
+    distinct gap sizes (rel tol 1e-09): 3
+    ✓ THREE-GAP STRUCTURE (3 ≤ 3)
+    gap values: ['2.977687e-04', '7.619416e-03', '7.917184e-03']
+    circle wrap-around gap: 7.917184e-03
+
+  α = log(2)/log(11) = 0.289065, K = 1000:
+    # points: 1000
+    # gaps: 999
+    distinct gap sizes (rel tol 1e-09): 3
+    ✓ THREE-GAP STRUCTURE (3 ≤ 3)
+    gap values: ['2.977687e-04', '5.535035e-03', '5.832803e-03']
+    circle wrap-around gap: 5.832803e-03
+
+  α = log(2)/log(13) = 0.270238, K = 50:
+    # points: 50
+    # gaps: 49
+    distinct gap sizes (rel tol 1e-09): 3
+    ✓ THREE-GAP STRUCTURE (3 ≤ 3)
+    gap values: ['1.188286e-03', '2.619202e-02', '2.738030e-02']
+    circle wrap-around gap: 2.738030e-02
+
+  α = log(2)/log(13) = 0.270238, K = 200:
+    # points: 200
+    # gaps: 199
+    distinct gap sizes (rel tol 1e-09): 3
+    ✓ THREE-GAP STRUCTURE (3 ≤ 3)
+    gap values: ['1.188286e-03', '2.143887e-02', '2.262716e-02']
+    circle wrap-around gap: 2.262716e-02
+
+  α = log(2)/log(13) = 0.270238, K = 1000:
+    # points: 1000
+    # gaps: 999
+    distinct gap sizes (rel tol 1e-09): 4
+    ✗ violation: 4 > 3
+    gap values: ['4.971895e-05', '4.971895e-05', '1.138567e-03', '1.188286e-03']
+    circle wrap-around gap: 1.188286e-03
+
+  α = log(3)/log(5) = 0.682606, K = 50:
+    # points: 50
+    # gaps: 49
+    distinct gap sizes (rel tol 1e-09): 3
+    ✓ THREE-GAP STRUCTURE (3 ≤ 3)
+    gap values: ['1.314603e-02', '1.733628e-02', '3.048230e-02']
+    circle wrap-around gap: 3.048230e-02
+
+  α = log(3)/log(5) = 0.682606, K = 200:
+    # points: 200
+    # gaps: 199
+    distinct gap sizes (rel tol 1e-09): 3
+    ✓ THREE-GAP STRUCTURE (3 ≤ 3)
+    gap values: ['4.190253e-03', '4.765521e-03', '8.955773e-03']
+    circle wrap-around gap: 8.955773e-03
+
+  α = log(3)/log(5) = 0.682606, K = 1000:
+    # points: 1000
+    # gaps: 999
+    distinct gap sizes (rel tol 1e-09): 3
+    ✓ THREE-GAP STRUCTURE (3 ≤ 3)
+    gap values: ['5.752682e-04', '1.889180e-03', '2.464448e-03']
+    circle wrap-around gap: 2.464448e-03
+
+  α = log(3)/log(7) = 0.564575, K = 50:
+    # points: 50
+    # gaps: 49
+    distinct gap sizes (rel tol 1e-09): 3
+    ✓ THREE-GAP STRUCTURE (3 ≤ 3)
+    gap values: ['1.477422e-02', '1.842633e-02', '3.320054e-02']
+    circle wrap-around gap: 3.320054e-02
+
+  α = log(3)/log(7) = 0.564575, K = 200:
+    # points: 200
+    # gaps: 199
+    distinct gap sizes (rel tol 1e-09): 3
+    ✓ THREE-GAP STRUCTURE (3 ≤ 3)
+    gap values: ['3.652111e-03', '7.469994e-03', '1.112211e-02']
+    circle wrap-around gap: 1.112211e-02
+
+  α = log(3)/log(7) = 0.564575, K = 1000:
+    # points: 1000
+    # gaps: 999
+    distinct gap sizes (rel tol 1e-09): 3
+    ✓ THREE-GAP STRUCTURE (3 ≤ 3)
+    gap values: ['1.657715e-04', '3.154797e-03', '3.320568e-03']
+    circle wrap-around gap: 3.320568e-03
+
+  α = log(3)/log(11) = 0.458157, K = 50:
+    # points: 50
+    # gaps: 49
+    distinct gap sizes (rel tol 1e-09): 3
+    ✓ THREE-GAP STRUCTURE (3 ≤ 3)
+    gap values: ['4.234160e-03', '3.549185e-02', '3.972601e-02']
+    circle wrap-around gap: 3.972601e-02
+
+  α = log(3)/log(11) = 0.458157, K = 200:
+    # points: 200
+    # gaps: 199
+    distinct gap sizes (rel tol 1e-09): 3
+    ✓ THREE-GAP STRUCTURE (3 ≤ 3)
+    gap values: ['4.234160e-03', '1.008689e-02', '1.432105e-02']
+    circle wrap-around gap: 1.432105e-02
+
+  α = log(3)/log(11) = 0.458157, K = 1000:
+    # points: 1000
+    # gaps: 999
+    distinct gap sizes (rel tol 1e-09): 3
+    ✓ THREE-GAP STRUCTURE (3 ≤ 3)
+    gap values: ['6.215439e-04', '9.970241e-04', '1.618568e-03']
+    circle wrap-around gap: 1.618568e-03
+
+  α = log(3)/log(13) = 0.428317, K = 50:
+    # points: 50
+    # gaps: 49
+    distinct gap sizes (rel tol 1e-09): 3
+    ✓ THREE-GAP STRUCTURE (3 ≤ 3)
+    gap values: ['1.778613e-03', '1.309150e-01', '1.326936e-01']
+    circle wrap-around gap: 1.326936e-01
+
+  α = log(3)/log(13) = 0.428317, K = 200:
+    # points: 200
+    # gaps: 199
+    distinct gap sizes (rel tol 1e-09): 2
+    ✓ THREE-GAP STRUCTURE (2 ≤ 3)
+    gap values: ['1.778613e-03', '9.356416e-02']
+    circle wrap-around gap: 9.534277e-02
+
+  α = log(3)/log(13) = 0.428317, K = 1000:
+    # points: 1000
+    # gaps: 999
+    distinct gap sizes (rel tol 1e-09): 3
+    ✓ THREE-GAP STRUCTURE (3 ≤ 3)
+    gap values: ['7.023173e-04', '1.076296e-03', '1.778613e-03']
+    circle wrap-around gap: 1.778613e-03
+
+  α = log(5)/log(7) = 0.827087, K = 50:
+    # points: 50
+    # gaps: 49
+    distinct gap sizes (rel tol 1e-09): 3
+    ✓ THREE-GAP STRUCTURE (3 ≤ 3)
+    gap values: ['1.446321e-02', '2.301193e-02', '3.747515e-02']
+    circle wrap-around gap: 3.747515e-02
+
+  α = log(5)/log(7) = 0.827087, K = 200:
+    # points: 200
+    # gaps: 199
+    distinct gap sizes (rel tol 1e-09): 3
+    ✓ THREE-GAP STRUCTURE (3 ≤ 3)

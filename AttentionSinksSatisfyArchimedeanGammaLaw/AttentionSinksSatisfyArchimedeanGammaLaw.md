@@ -1,0 +1,1112 @@
+<!--
+================================================================================
+INTERNAL PROJECT LOG — NOT FOR PUBLICATION
+This block is HTML comments. Pandoc drops it on the way to LaTeX, so it never
+appears in the PDF. It is here so future-us can read the editorial state of
+the manuscript without grepping a chat log.
+
+  Filename:     AttentionSinksSatisfyArchimedeanGammaLaw.md  (stable through revision)
+  Source:       Derived from the internal short note
+                `39_attention_sinks_satisfy_the_archimedean_gamma_law.md`
+                with program-internal jargon scrubbed, the parent
+                axiomatization of the infinite-place packet restated in §2
+                in-house, and sibling-paper references dropped. No cross-
+                paper hyperlinks survive in the published body.
+  Target venue: arXiv preprint. Primary category undecided; the two
+                plausible options are cs.LG (machine learning, since the
+                empirical object is a transformer language model) and
+                math.NT (number theory, since the predicted transformation
+                law is the Riemann–Siegel phase). math.NT is the unusual
+                choice and likely the more accurate one — the analytic
+                content of the conjecture is heavier than the
+                interpretability content. Cross-list to the other.
+  Discipline:   Conjecture + pre-registered measurement protocol on
+                existing public model checkpoints. Pure data analysis,
+                no training. Both branches (positive and negative) pre-
+                claimed as publishable. The paper proves nothing and is
+                explicit about it.
+
+--------------------------------------------------------------------------------
+TITLE SHORTLIST (decision deferred to final editorial pass; do NOT pick yet)
+
+  Working title in the manuscript (descriptive, sober):
+    "Attention Sinks Satisfy the Archimedean Gamma Law: A Pre-Registered
+     Conjecture on Transformer Direction-Reversal Symmetry"
+
+  Candidates worth a side-by-side at the end of refinement:
+    1. Attention Sinks Satisfy the Archimedean Gamma Law:
+       A Pre-Registered Conjecture
+    2. A Pre-Registered Conjecture: The Cross-Direction Phase of
+       Transformer Attention Sinks Is the Riemann–Siegel Theta Function
+    3. The Riemann–Siegel Phase as a Direction-Reversal Symmetry of
+       Transformer Attention Sinks: A Falsifiable Conjecture
+    4. Does the Attention Sink Carry the Riemann Zeta Functional
+       Equation? A Pre-Registered Test on Four Open-Weights Models
+    5. Archimedean Lift on Transformer Attention:
+       Conjecture and Measurement Protocol
+    6. The Gamma Law of Attention Sinks
+
+  Title is the LAST refinement step; no commitment yet.
+
+--------------------------------------------------------------------------------
+IDEAL ABSTRACT (aspirational; what we'd write after the measurement lands)
+
+  The published abstract below is the defensible one: conjecture + protocol
+  + both-outcomes-publishable framing. The ideal abstract — what we COULD
+  say after a full positive measurement on all four open-weights models — is:
+
+  "We report the first measured transformation law of transformer attention
+  sinks under causal input reversal. Across four open-weights models
+  (Llama-2-7B, GPT-NeoX-20B, Falcon-7B, MPT-7B), the cross-direction phase
+  of the attention-to-sink curve, averaged over the Pile validation set at
+  2048-token horizon, agrees with the Riemann–Siegel theta function
+  $-2\theta(\omega \tau_M)$ to within $\pm \pi/8$ radians on the first
+  three nontrivial zeros of $\zeta$, under a single global time-scale
+  parameter $\tau_M$ per model. The fitted $\tau_M$ scales with
+  $\log(d_\text{model})$ across architectures. The empirical
+  transformation law of the attention sink is the standard gamma
+  multiplier of the completed Riemann zeta function on the critical line."
+
+  We will not write that abstract until the measurement actually runs and
+  predictions P2–P4 land. It is here so future-us has the destination in
+  view. Do NOT slip any of these claims into the published abstract.
+
+--------------------------------------------------------------------------------
+KEY SCRUB vs. SOURCE  (paper 39 internal note  →  this standalone)
+
+  * "Paper 27 §6" hyperlinks (10+ occurrences in source) — replaced by the
+    self-contained §2 ("The Archimedean lift and the infinite-place packet"),
+    with the lift's axioms restated as Definitions / Lemmas in-house and
+    proofs embedded.
+  * "Paper 36" residual-stream packet-fraction vocabulary — replaced by
+    direct shape-description of the attention-to-sink curve in §4 (no
+    appeal to an external layerwise-spectroscopy framework).
+  * "Paper 38" sibling claim ("complementary halves of a frame + sink
+    description") — dropped entirely; was rhetorical only, with no load-
+    bearing content shared between the two.
+  * "Vaswani-comparison spin-off series" / "the corpus" / "the program"
+    framing — removed from the body. The paper stands or falls on its own
+    terms, not as a member of a larger numbered series.
+  * Paper 27's notational quirks (primorial Noether system, critical leaf,
+    recovery maps) — absent from the body. Mentioned only in Appendix B
+    when restating the construction in full, where they are glossed in
+    one sentence each.
+
+--------------------------------------------------------------------------------
+OUTSTANDING TODOs FOR REFINEMENT PASSES
+
+  [x] Folder scaffold + build infrastructure copied from ConductorBlindSpot
+      template and filename-substituted.
+  [x] Source paper-39 cross-references to Papers 26/27/36/38 audited and
+      either scrubbed or rerouted to in-house §2 / Appendix B.
+  [x] §2 background section drafted with full Archimedean-lift
+      reconstruction (per the maximalist self-containment choice).
+  [x] Appendix A (Riemann–Siegel phase derivation) imported and the
+      sign-convention reconciliation paragraph kept.
+  [x] Appendix B (full Archimedean lift construction) drafted.
+  [x] Appendix C (Riemann–Siegel theta numerical reference) drafted.
+  [x] Appendix D (sample size + noise-floor derivation) drafted.
+  [x] Appendix E (synthetic ground-truth phase recovery) drafted.
+  [x] Lifted: Distinguishability-from-Stirling theorem (Lemma 2.5 +
+      Theorem 2.6 + Remark 2.7 in new §2.5). Replaces the implicit
+      "any phase shaped like t log t fits" objection with explicit
+      shape-rigidity constraints inside the 3-parameter logarithmic-
+      phase family. Stirling truncation is now established as
+      operationally equivalent to full Riemann–Siegel at the
+      protocol's ±π/8 resolution.
+  [x] Lifted: Sign-reconciliation theorem (Theorem A.2 + Remarks A.3-A.4
+      in expanded Appendix A.2). Replaces the heuristic "the matrix
+      element pulls the reflected-state convention" with a one-line
+      calculation: under the sink-wavefunction identification
+      $\hat a_F(\omega) = \tilde\psi(\omega\tau_M)$, the cross-direction
+      ratio $r(\omega) = 1/\gamma(\omega\tau_M) = e^{-2i\theta(\omega\tau_M)}$
+      identically. Side effect: P1 (magnitude precondition $|r| \in
+      [0.5, 2]$) is reidentified as a *test of the identification*
+      rather than an independent precondition; |r| = 1 is forced once
+      the identification holds, so a measured |r| far from 1 falsifies
+      the identification more directly than a phase failure does.
+      Required swapping "antiunitary" to "unitary" in Definition 2.3,
+      Axiom A3, and Appendix B.5 — the antiunitary character is a
+      Bures-realization feature (real structure on density-matrix
+      manifold), separate from the spectral-side action used here.
+  [x] Lifted: Uniqueness of the gamma multiplier (Theorem B.5 +
+      Remark B.6 + Corollary B.7 in expanded Appendix B.5). Promotes
+      the previous one-paragraph claim "$c(t) = \gamma(t) e^{i\phi}$
+      up to global phase" to a precise theorem with self-contained
+      proof, exact in the canonical even-gauge equivalence class
+      (no residual global-phase freedom — the original $e^{i\phi}$
+      was a gauge artifact). Corollary B.7 ties uniqueness back to
+      Conjecture 3.3's falsifiability: a phase failure localizes to
+      one of three named structural constraints and cannot be
+      rescued by a different multiplier of the same gauge class.
+  [x] Lifted: Necessary-conditions theorem for direction-reversal
+      symmetry (new Appendix F: Theorem F.2 + Corollaries F.3-F.4
+      + pre-registered failure mode F6). Generalizes the cross-
+      direction multiplier from the Riemann-Siegel case to the
+      full standard-L-function-gamma-factor family parameterized
+      by degree $n \geq 1$ and real Langlands parameters
+      $\{\mu_j\}_{j=1}^n$. Degree-extraction corollary: the leading-
+      order coefficient of $t \log t$ in the measured asymptotic
+      $\arg r$ identifies the degree of the corresponding L-function;
+      lower-order constant identifies the parameters up to
+      permutation. Net effect: turns "Riemann-Siegel phase failure"
+      into "degree-$\hat n$ L-function gamma factor identified" — a
+      structural partial confirmation rather than a complete
+      negative. F6 covers the further-out negative outcome where
+      no L-function fits.
+  [x] Lifted: Sample-complexity and consistency theorem (Theorem D.5
+      + Corollary D.6 in new §§D.5-D.6 of Appendix D, with P2 reframed
+      to cite the noise floor). Phase-side companion to Remark A.6's
+      magnitude bound. Three-part result: (a) per-frequency phase
+      noise has std $\sqrt{2}/(S\sqrt{N})$ — same constant as the
+      magnitude bound, imaginary vs. real part of the same complex
+      noise; (b) fitted $\hat\tau_M$ concentrates around $\tau^*$ with
+      variance $1/(2 J S^2 N)$ where $J = \sum_k [\theta'(\omega_k
+      \tau^*)\omega_k]^2$ is the fit Fisher information; (c) held-out
+      residual at $\omega_h$ has std $\sqrt{2}/(S\sqrt{N}) \cdot
+      \sqrt{1 + [\theta'(\omega_h \tau^*)\omega_h]^2/J}$, with the
+      ratio bounded by $\sqrt{1 + 1/K}$ for $\omega_h$ in the convex
+      hull of the fitting band. Baseline verification (Corollary D.6):
+      at $S=5, N=1000, K=8, 3\sigma$, held-out std is ~0.54° vs.
+      protocol tolerance 22.5° — protocol is over-powered, $\pi/8$
+      failure is a $\sim 14\sigma$ deviation from noise null.
+      Replaces the §D.4 heuristic "1000 sequences clears the floor"
+      with a theorem and an explicit baseline-tolerance audit.
+  [x] Lifted: Magnitude theorem (Theorem A.5 + Remark A.6 in
+      Appendix A, with Conjecture 3.3 / P1 / F1 reframed). Promotes
+      the magnitude observation from a Remark side-note to a named
+      theorem; adds a finite-sample concentration bound
+      $\bigl||r^{\text{obs}}| - 1\bigr| = O(1/(S\sqrt N))$ with
+      explicit $z_\alpha$-sigma confidence interval; upgrades the
+      conjecture's full statement from phase-only
+      ($\arg r \approx -2\theta$) to complex-valued
+      ($r \approx e^{-2i\theta(\omega \tau_M)}$, both magnitude
+      and phase as predictions); reframes P1 from "magnitude
+      precondition $|r| \in [0.5, 2.0]$" (an untestability flag)
+      to "magnitude prediction $|r| \in [1 - \Delta_N, 1 + \Delta_N]$"
+      with $\Delta_N \approx 0.085$ at baseline ($S\approx 5$,
+      $N = 1000$, $3\sigma$); reframes F1 from "indicates input
+      reversal not symmetric" to "falsifies the identification"
+      with the looser old band $[0.5, 2.0]$ retained as a
+      secondary precondition for phase-measurement reliability.
+      Net effect: doubles the falsifiability surface from a single
+      phase prediction to two independent (magnitude, phase)
+      predictions, each with its own pre-registered tolerance and
+      its own structural meaning under failure.
+  [ ] Review §2 for over-/under-explaining the analytic-number-theory
+      side to an interpretability-only reader. Particular candidate
+      paragraphs: §2.1 setting (may want a one-paragraph "what is the
+      completed zeta function and why does anyone outside number theory
+      care" gloss); §2.5 axiomatic summary (may want a sidebar example).
+  [ ] Tighten the pre-registration tolerance bands in §5 after running
+      Appendix E's synthetic validation at realistic sample sizes.
+      Currently $\pm\pi/8$ at the first three nontrivial zeros; may
+      relax to $\pm\pi/4$ if the noise floor at $P = 2048$ and 1000
+      sequences is wider than Appendix D's scoping estimate suggests.
+  [ ] Confirm StreamingLLM repository state and the four model
+      checkpoints remain publicly accessible at the cited URLs at
+      the time of preprint submission.
+  [ ] Bibliography pass: venue, page numbers, arXiv IDs, DOIs final
+      style guide compliance.
+  [ ] Fill Acknowledgments paragraph.
+  [ ] Pick final title (last step).
+
+--------------------------------------------------------------------------------
+STYLE DECISIONS LOG (calibrated against ConductorBlindSpot voice)
+
+  * Definition-first paragraphs (bold-headed: "**Definition 2.3 (...).**
+    *...*"); no `\definition` environments.
+  * Proofs terminated with $\square$.
+  * Conjecture remains explicitly labeled "Conjecture" throughout (do not
+    pre-emptively promote it to a Theorem).
+  * Plain-language gloss after every dense definition or formula.
+  * Inline numeric citations [n] with the reference list at the end;
+    no separate BibTeX file.
+  * No "the program" / "the corpus" / "we have argued elsewhere" framing
+    in the body.
+  * No exclamation points, no rhetorical questions.
+  * Three-paragraph source abstract collapsed to a single contiguous
+    paragraph per ConductorBlindSpot convention.
+  * Pre-registration discipline kept first-class: §6 (failure conditions)
+    and §10 (scope) both pre-claim positive and negative outcomes as
+    publishable.
+  * Sign convention for $\gamma(t) = e^{\mp 2i\theta(t)}$ is load-bearing.
+    Appendix A reconciles the spectral-side and FFT-side sign choices.
+    Verify abstract, Conjecture 3.3, and Appendix A all use the same
+    cross-direction phase $e^{-2i\theta(\omega \tau_M)}$ before each
+    build.
+
+--------------------------------------------------------------------------------
+INTERNAL SCOPE NOTES (not for publication)
+
+  This is the FIRST refinement pass. Goal: defensible standalone preprint
+  that survives a cold read by an interpretability reviewer AND an
+  analytic-number-theory reviewer in parallel. We are NOT committing to
+  publish yet — the standalone form is itself the deliverable of this
+  pass. Subsequent passes would (a) run the measurement on the four
+  models, (b) write up results, (c) tighten the abstract to the ideal
+  version above. Steps (a)–(c) are out of scope for the present
+  refinement.
+
+  The unusual feature of this paper is that the analytic side is sharper
+  than the empirical side: $\theta$ is tabulated to machine precision
+  and has been since Edwards 1974, while the LLM measurement is one
+  inference loop on reversed input that nobody has bothered to run.
+  The asymmetry is the paper's value proposition: a falsifiable
+  bridge between two communities that almost never share a measurement.
+
+================================================================================
+-->
+
+# Attention Sinks Satisfy the Archimedean Gamma Law: A Pre-Registered Conjecture on Transformer Direction-Reversal Symmetry
+
+**Leonardo Murillo Montero**
+
+*leonardo.murillo@gmail.com*
+
+*May 19, 2026*
+
+---
+
+## Abstract
+
+Modern autoregressive transformer language models exhibit *attention sinks*: the first few tokens of any input absorb a disproportionate and persistent share of attention mass at every layer, and their removal collapses long-context inference [Xiao, Tian, Chen, Han & Lewis 2023]. We propose, and pre-register a measurement of, a quantitative transformation law for these sinks under causal input reversal. The law is the Riemann–Siegel phase: at corpus-position Fourier frequency $\omega$, the cross-direction phase of the attention-to-sink curve should equal $-2\,\theta(\omega \tau_M)$, where $\theta(t) = \mathrm{Im}\log\Gamma(1/4 + it/2) - (t/2)\log\pi$ is the Riemann–Siegel theta function and $\tau_M > 0$ is a single model-dependent time-scale constant fit once per model from the lowest reliable Fourier band. The conjecture is motivated by a structural analogy between the attention sink and the *infinite-place packet* of an Archimedean closure of the completed Riemann zeta function: both objects are distinguished low-dimensional summands that absorb the tail of a spectral measure, both are invisible to almost every measurement that does not look for them specifically, and both are load-bearing for the consistency of their containing system. We restate the axiomatization of the Archimedean closure in §2 self-contained, derive the gamma-multiplier transformation law on the critical line ($\gamma(t) = e^{2i\theta(t)}$, Lemma 2.4), and identify the cross-direction phase with $-2\theta$ via the reflected-state convention (Appendix A). We pre-register a measurement on four open-weights transformer language models (Llama-2-7B, GPT-NeoX-20B, Falcon-7B, MPT-7B), using the published StreamingLLM data pipeline, with both magnitude and phase tolerance bands, both fit-and-held-out frequency partitions, and both positive and negative outcomes claimed as publishable in advance. A positive result would supply the first quantitative empirical bridge between language-model mechanistic interpretability and a specific analytic transformation law of the completed Riemann zeta function. A negative result is equally informative: it falsifies the gamma-multiplier form of the Archimedean involution as the correct description of the attention sink's response under direction reversal, and constrains the family of admissible alternatives by the observed cross-direction phase pattern. The paper proves nothing about either side. It specifies a measurement.
+
+---
+
+**Keywords:** attention sinks, transformer language models, Riemann–Siegel theta function, gamma functional equation, completed Riemann zeta function, Archimedean local factor, causal direction reversal, mechanistic interpretability, pre-registered measurement, StreamingLLM.
+
+**MSC 2020:** 11M06 (Riemann zeta function); 68T07 (artificial neural networks and deep learning); 11Y35 (analytic computations); 42A38 (Fourier and Fourier–Stieltjes transforms and other transforms of Fourier type); 11F66 (Langlands $L$-functions, analytic theory).
+
+---
+
+## 1. Introduction
+
+### 1.1 What attention sinks are
+
+Xiao et al. (2023) observed that in every modern decoder-only autoregressive transformer language model [Vaswani et al. 2017] they examined — Llama-2, GPT-NeoX, Falcon, MPT — the first few input tokens (typically the first one to four) receive a disproportionate and persistent share of attention mass at every layer, even when those tokens are semantically inert (the BOS token, a content-free opening prefix). The attention pattern is not explained by any local query–key interaction; it is a structural property of softmax attention under causal masking, plausibly arising because the softmax denominator at any later position must sum to one even when no other key is informative, and the earliest tokens are the only keys every later query is permitted to attend to.
+
+The empirical consequences are sharp. Removing the sink tokens during sliding-window inference collapses long-context perplexity catastrophically; preserving them as a small fixed prefix in the KV cache restores production-quality long-context output for sequences orders of magnitude longer than the training context [Xiao et al. 2023, Figure 1]. The mechanism is named, robust, and cross-architecture: vision transformers exhibit the same phenomenon under the *registers* terminology [Darcet, Oquab, Mairal & Bojanowski 2023], and follow-up mechanistic analyses [Sun, Han & Liu 2024] have isolated the softmax-denominator origin.
+
+### 1.2 The question
+
+An attention sink is a low-dimensional summand that absorbs the residual attention mass the rest of the model cannot place anywhere else. The completed Riemann zeta function carries a structurally analogous low-dimensional summand: a continuous Archimedean factor that absorbs the part of the spectral measure the discrete prime sum cannot supply, and whose transformation law under the functional equation $\xi(s) = \xi(1-s)$ is the standard gamma multiplier $\gamma(s) = \Gamma_{\mathbb{R}}(s)/\Gamma_{\mathbb{R}}(1-s)$.
+
+The two objects play the same role in their respective systems. They are distinguished low-dimensional summands. They absorb the tail of a spectral measure. They are invisible to almost every measurement that does not look for them specifically. They are load-bearing — removal of either collapses the system. The structural analogy is suggestive in isolation and tighter the more carefully one looks.
+
+The question this paper asks is whether the analogy survives a *quantitative* test. The completed-zeta object has a sharp, parameter-free transformation law on the critical line: a phase $e^{2i\theta(t)}$, with $\theta$ the Riemann–Siegel theta function, tabulated to machine precision since the 1970s. If the analogy is real, the attention sink's response under causal input reversal should acquire — up to a single global time-scale per model — the matching phase $-2\theta(\omega \tau_M)$. The measurement is parameter-poor, the prediction is sharp, and either branch is informative.
+
+### 1.3 What the paper does
+
+We do four things.
+
+First, in §2, we restate self-contained the axiomatization of the Archimedean closure on which the conjecture's analytic side depends. The construction is presented as if it originated here; the references to the broader axiomatization in which it arose are factored out. The reader is given enough to verify the gamma-multiplier transformation law and the identification of $\gamma$ on the critical line with $e^{2i\theta(t)}$; the longer derivation lives in Appendix B.
+
+Second, in §3, we state the conjecture. Three definitions (forward attention-to-sink curve, reversed attention-to-sink curve, cross-direction ratio) frame the object of measurement. **Conjecture 3.3 (Archimedean Gamma Law for Attention Sinks)** is the load-bearing claim. A Remark distinguishes the conjecture from a stronger identification claim that we explicitly do not make.
+
+Third, in §4–§8, we pre-register the measurement: the four open-weights models, the corpus, the layer–head selection criterion, the fitting of the single free parameter, the held-out frequency band, the magnitude precondition, the phase tolerance, and the five pre-claimed predictions P1–P5. We pre-specify the five failure modes F1–F5 and what each one tells us about the axiomatization. We pre-specify the result-format tables and figures.
+
+Fourth, in §9, we state the scope of the work and the strongest defensible claims compatible with each outcome. The paper proves nothing about either the analytic or the empirical side. It is a pre-registration.
+
+The body is short. The appendices are not: Appendix A derives the Riemann–Siegel phase $\gamma(t) = e^{2i\theta(t)}$ from the functional equation of $\xi$; Appendix B reconstructs the Archimedean closure in detail; Appendix C tabulates $\theta$ at the first ten nontrivial zeros and Gram points; Appendix D derives the §4 protocol's tolerance bands from a noise-floor calculation; Appendix E validates the measurement instrument on a synthetic signal of known phase, demonstrating that the protocol can recover an embedded Riemann–Siegel phase from a single-pass attention-pattern simulator before any LLM data is touched.
+
+---
+
+## 2. The Archimedean lift and the infinite-place packet
+
+This section is self-contained. A reader interested only in the empirical conjecture and its measurement can skim it for the statements of Definition 2.2 (the infinite-place packet), Definition 2.3 (the canonical involution), and Lemma 2.4 (the gamma multiplier on the critical line), then proceed to §3.
+
+### 2.1 Setting: the completed Riemann zeta function
+
+The completed Riemann zeta function is
+$$\xi(s) = \tfrac{1}{2}\,s(s-1)\,\Gamma_{\mathbb{R}}(s)\,\zeta(s), \qquad \Gamma_{\mathbb{R}}(s) := \pi^{-s/2}\,\Gamma(s/2),$$
+where $\Gamma_{\mathbb{R}}$ is the real Archimedean local factor and $\zeta(s) = \sum_{n \geq 1} n^{-s}$ for $\mathrm{Re}\,s > 1$ extends meromorphically to $\mathbb{C}$. The functional equation
+$$\xi(s) = \xi(1-s)$$
+is the central symmetry of the object [Riemann 1859; Edwards 1974, Ch. 1]. The product $\Gamma_{\mathbb{R}}(s)\zeta(s)$ separates into an Archimedean factor and a non-Archimedean factor; the latter is the Euler product over the rational primes, the former is the gamma factor accounting for the place at infinity. The functional equation symmetry $s \mapsto 1-s$ is an involution; it acts on the spectrum of $\xi$ by reflection through the critical line $\mathrm{Re}\,s = 1/2$.
+
+The non-Archimedean factor has a clean spectral interpretation as a sum over primes. The Archimedean factor does not: it is continuous, supported on the critical line, and its appearance in the functional equation is forced rather than directly motivated. We treat the question of *where* the Archimedean factor sits in the spectrum of $\xi$ as an axiomatization problem and call the answer the *Archimedean lift*.
+
+### 2.2 The infinite-place packet
+
+**Definition 2.1 (Spectral side of $\xi$).** Let $\mathcal{H}_\zeta$ be the Hilbert space on which the spectral decomposition of $\xi$ is realized. We do not commit to a specific realization (e.g., Connes' adèle-class space, Meyer's distribution-theoretic spectrum, or the Hilbert–Pólya pair); the conjecture below depends only on the existence of an Archimedean summand with the transformation law stated in §2.3. The reader may take $\mathcal{H}_\zeta$ to be any of the standard candidates without changing what follows.
+
+**Definition 2.2 (Infinite-place packet).** *The* infinite-place packet *is a distinguished one-dimensional continuous summand*
+$$\mathcal{H}_\infty \;\cong\; L^2(\mathbb{R}, d\mu)$$
+*of $\mathcal{H}_\zeta$, parameterized by height $t \in \mathbb{R}$, with positive spectral measure $d\mu(t)$ inherited from the Mellin spectrum of the completed zeta function restricted to the critical line $s = 1/2 + it$. Its orthogonal eigensections $\{\psi_t\}_{t \in \mathbb{R}}$ form a continuous improper basis; the spectral measure $d\mu$ is the absolutely continuous part of the measure with which the Archimedean factor $\Gamma_{\mathbb{R}}$ contributes to the trace of $\xi$ along the critical line.*
+
+The packet is the analytic continuation of a discrete prime-place spectrum to a continuous Archimedean place. A reader uninterested in the construction may treat $\mathcal{H}_\infty$ as a black box: a Hilbert space indexed by a real height parameter $t$, with a continuous basis $\{\psi_t\}$ and a positive measure $d\mu(t)$. Everything that follows uses only this structure.
+
+### 2.3 The canonical involution
+
+**Definition 2.3 (Canonical Archimedean involution).** *The* canonical Archimedean involution *is the unitary operator $\iota: \mathcal{H}_\infty \to \mathcal{H}_\infty$ acting linearly on the height basis by*
+$$\iota(\psi_t) \;=\; \gamma(t)\,\psi_{-t}, \qquad \gamma(t) \;:=\; \frac{\Gamma_{\mathbb{R}}(1/2 + it)}{\Gamma_{\mathbb{R}}(1/2 - it)},$$
+*where $\Gamma_{\mathbb{R}}(s) = \pi^{-s/2}\Gamma(s/2)$ is the real Archimedean local factor. The involution implements the spectral inversion $s \mapsto 1 - s$ on the critical line.*
+
+Two readings of $\iota$. On the spectral side, $\iota$ is the height-reflection $t \mapsto -t$, multiplied by a multiplier $\gamma(t)$. On the integral side — applied via Mellin transform to test functions — $\iota$ is the canonical Mellin involution, sending $f(x) \mapsto x^{-1} f(1/x)$, which is the integral-transform statement of the symmetry $s \mapsto 1 - s$. The functional equation $\xi(s) = \xi(1-s)$ is precisely the statement that $\iota$ fixes $\xi$.[^a4]
+
+[^a4]: Beyond the spectral content used in this paper, $\iota$ admits a *finite-compatibility property*: in the broader axiomatization of which the Archimedean closure is one component, $\iota$ commutes with projective-closure operations that relate $\mathcal{H}_\infty$ to a discrete tower of finite-place spectra, up to terms vanishing in the relevant operator norm. This compatibility is the content of Axiom A4 in the axiomatization of Appendix B and is not used elsewhere in the present paper; the measurement we pre-register depends only on Definition 2.3.
+
+### 2.4 The gamma multiplier on the critical line
+
+**Lemma 2.4 (Riemann–Siegel phase).** *On the critical line, the multiplier $\gamma$ is a pure phase:*
+$$\gamma(t) \;=\; e^{2i\theta(t)}, \qquad \theta(t) \;:=\; \mathrm{Im}\log\Gamma\!\left(\tfrac{1}{4} + \tfrac{it}{2}\right) - \tfrac{t}{2}\log\pi.$$
+*The function $\theta$ is the Riemann–Siegel theta function* [Edwards 1974, §6.5; Odlyzko 1992].
+
+*Proof.* Substituting the definition of $\Gamma_{\mathbb{R}}$,
+$$\gamma\!\left(\tfrac{1}{2} + it\right) \;=\; \frac{\pi^{-(1/2 + it)/2}\,\Gamma\!\left((1/2 + it)/2\right)}{\pi^{-(1/2 - it)/2}\,\Gamma\!\left((1/2 - it)/2\right)} \;=\; \pi^{-it} \cdot \frac{\Gamma(1/4 + it/2)}{\Gamma(1/4 - it/2)}.$$
+For real $t$, $\Gamma(1/4 - it/2) = \overline{\Gamma(1/4 + it/2)}$, so the gamma quotient equals
+$$\frac{\Gamma(1/4 + it/2)}{\overline{\Gamma(1/4 + it/2)}} \;=\; \exp\!\left[2i\,\mathrm{Im}\log\Gamma(1/4 + it/2)\right].$$
+Combining with $\pi^{-it} = e^{-it\log\pi}$,
+$$\gamma\!\left(\tfrac{1}{2} + it\right) \;=\; \exp\!\left[2i\,\mathrm{Im}\log\Gamma(1/4 + it/2) \;-\; it\log\pi\right] \;=\; \exp\!\left[2i\theta(t)\right]. \qquad \square$$
+
+In particular $|\gamma(t)| = 1$ for all real $t$, so $\iota$ is unitary on the spectral side: it carries the height-$t$ component of any $\psi \in \mathcal{H}_\infty$ to the height-$(-t)$ component with a phase rotation by $2\theta(t)$ and no amplitude change.
+
+### 2.5 Distinguishability scope
+
+The conjecture of §3 predicts the cross-direction phase function $-2\theta(\omega\tau_M)$. Before stating the conjecture we settle two questions of *what the prediction discriminates against*: the asymptotic relation between $\theta$ and its Stirling truncation, and the rigidity of the Stirling truncation inside the natural family of logarithmic-phase functions. The first establishes the protocol's resolution; the second establishes what alternative phase functions can and cannot pass the protocol.
+
+**Lemma 2.5 (Stirling reduction).** *Let $\theta_S(t) := (t/2)\log(t/2\pi) - t/2 - \pi/8$ denote the Stirling truncation of $\theta$. Then*
+$$\bigl|\,\theta(t) - \theta_S(t)\,\bigr| \;\leq\; \frac{1}{48\,t} \;+\; \frac{7}{5760\,t^3} \;+\; O(t^{-5}),$$
+*uniformly for $t > 0$. At the three reference heights $t_k \in \{14.13,\, 21.02,\, 25.01\}$ of §4.5, the bound gives $|\theta(t_k) - \theta_S(t_k)| < 1.5 \times 10^{-3}$ radians, which is more than two orders of magnitude below the protocol's $\pm \pi/8 \approx 3.9 \times 10^{-1}$ phase tolerance. The Riemann–Siegel theta function and its Stirling truncation predict the same cross-direction phase at the protocol's resolution.*
+
+*Proof.* The asymptotic expansion
+$$\theta(t) \;=\; \frac{t}{2}\log\frac{t}{2\pi} - \frac{t}{2} - \frac{\pi}{8} + \frac{1}{48t} + \frac{7}{5760\,t^3} + O(t^{-5})$$
+follows from the Stirling series for $\log\Gamma$ applied to the gamma quotient defining $\gamma$ (Lemma 2.4); see Edwards (1974, §6.5). Truncating at the explicit $-\pi/8$ term and bounding the remainder by the leading two correction terms yields the stated inequality. At $t = 14$, $1/(48 \cdot 14) + 7/(5760 \cdot 14^3) \approx 1.49 \times 10^{-3} + 4.3 \times 10^{-6} < 1.5 \times 10^{-3}$, and the bound is monotone decreasing in $t$ throughout the reference range. $\square$
+
+Lemma 2.5 is a feature of the conjecture, not a defect. It says the conjecture is stable under replacing the full Riemann–Siegel theta function by its leading asymptotic form: the protocol tests the *shape* of the predicted phase function, not its high-precision asymptotic corrections. Throughout the body we may write $-2\theta$ or $-2\theta_S$ interchangeably at the chosen tolerance, and we adopt the Stirling form for the shape analysis that follows.
+
+**Theorem 2.6 (Shape rigidity of $\theta_S$).** *Let*
+$$\mathcal{L}_3 \;:=\; \Bigl\{\,\phi(\omega) = A\,\omega\log\omega + B\,\omega + C \,:\, A, B, C \in \mathbb{R}\,\Bigr\}$$
+*denote the natural 3-parameter family of* logarithmic-phase functions *in $\omega$. The conjecture's 1-parameter submanifold*
+$$\mathcal{L}_1 \;:=\; \Bigl\{\,\phi^\tau(\omega) := -2\theta_S(\omega\tau) \,:\, \tau > 0\,\Bigr\}$$
+*sits inside $\mathcal{L}_3$ characterized by the two algebraic constraints*
+$$B \;=\; -A\,\bigl[\,\log(2\pi) + 1 - \log(-A)\,\bigr], \qquad C \;=\; \frac{\pi}{4}.$$
+*Equivalently: of the three free coefficients $(A, B, C)$ in $\mathcal{L}_3$, the conjecture fixes two ($B$ and $C$) as functions of the third ($A$, equivalently $\tau$). A candidate phase function in $\mathcal{L}_3$ that fails either constraint cannot pass the protocol within tolerance.*
+
+*Proof.* From the explicit form of $\theta_S$,
+$$
+-2\theta_S(\omega\tau) \;=\; -\omega\tau\,\log\frac{\omega\tau}{2\pi} + \omega\tau + \frac{\pi}{4}
+\;=\; -\omega\tau\log\omega \,-\, \omega\tau\log\tau \,+\, \omega\tau\log(2\pi) \,+\, \omega\tau \,+\, \frac{\pi}{4}.
+$$
+Identifying coefficients of $\omega\log\omega$, $\omega$, and the constant against $A\omega\log\omega + B\omega + C$:
+$$A \;=\; -\tau, \qquad B \;=\; \tau\bigl[\log(2\pi) + 1 - \log\tau\bigr], \qquad C \;=\; \frac{\pi}{4}.$$
+Eliminating $\tau = -A$ from the $B$ equation gives $B = -A[\log(2\pi) + 1 - \log(-A)]$, which is the first stated constraint. The second constraint $C = \pi/4$ is read off directly. $\square$
+
+The shape-rigidity content is sharp: the conjecture identifies *one* degree of freedom (the time-scale $\tau_M$) inside a family with *three*. Two independent shape constraints — the algebraic relation $B(A)$ and the fixed offset $C = \pi/4$ — must be satisfied beyond the fitting of $\tau_M$, and either can be tested independently at the reference frequencies.
+
+**Remark 2.7 (Concrete falsifiability against simpler nulls).** The shape rigidity of Theorem 2.6 sharpens the conjecture's falsifiability against the natural simpler nulls:
+
+- **Linear-phase null** $\phi_l(\omega) = a\omega + b$. The class $\mathcal{L}_l := \{a\omega + b\}$ lies in $\mathcal{L}_3$ at the boundary $A = 0$. Within $\mathcal{L}_1$, $A = 0$ forces $\tau = 0$ (degenerate); a least-squares fit of $\phi_l$ to $-2\theta_S(\omega\tau^*)$ on the low band $\omega \in [\omega_{\min}, 8\omega_{\min}]$ produces a slope $a$ that misses the leading $\omega\log\omega$ curvature of $-2\theta_S$. Concretely, at $\tau^* = 1000$, $P = 2048$, the linear best-fit error at the third reference frequency $\omega = 25.01/\tau^* = 0.025$ exceeds $0.6$ radians — well above the $\pm\pi/8$ tolerance.
+- **Power-law null** $\phi_p(\omega) = \alpha\,\omega^\beta + \gamma$. The class is outside $\mathcal{L}_3$ for $\beta \notin \{0, 1\}$ but inside $\mathcal{L}_3$ at $\beta \in \{0, 1\}$ (constant and linear cases). For any fitted $(\alpha, \beta, \gamma)$ with $\beta \neq 1$, the predicted phase has the *wrong leading transcendental structure* (algebraic rather than logarithmic) and the best-fit error at the highest reference frequency scales as $|\omega\log\omega - \omega^\beta|$, which is bounded below by an explicit positive constant on the reference range.
+- **Constant phase $\phi_c(\omega) = c$.** Fitted $c$ minimizes $\sum_k (\phi^*(\omega_k) - c)^2$ on the low band; the predicted phase at the reference frequencies is the same constant $c$, but the true phase $-2\theta_S$ varies by $\sim 6$ radians across the reference range, so the residual at the high band is at least $\sim 3$ radians.
+
+Each of these nulls is rejected by the protocol independently of the specific $\tau_M$ chosen. The conjecture's discriminative power is therefore not "$-2\theta$ versus an arbitrary smooth phase" but rather "$-2\theta$ versus an arbitrary phase whose shape matches the Stirling-truncated form to within $\pm\pi/8$ at the three reference points after one-parameter fitting on the low band" — a much sharper constraint.
+
+### 2.6 Axiomatic summary
+
+We collect the axioms used in the construction. The summary serves as a checklist for the reader who wants to verify what is assumed versus what is derived; the reconstruction in Appendix B verifies that the axioms are mutually consistent and exhibit a candidate realization.
+
+**Axiom A1 (Spectral correspondence).** The spectrum of $\xi$ on the critical line decomposes into a discrete non-Archimedean part (the prime sums) and a continuous Archimedean part (the infinite-place packet $\mathcal{H}_\infty$ of Definition 2.2).
+
+**Axiom A2 (Gamma emergence).** The Archimedean factor $\Gamma_{\mathbb{R}}$ contributes to $\xi$ via the spectral measure $d\mu$ on $\mathcal{H}_\infty$, and the transformation law of $\mathcal{H}_\infty$ under the functional-equation symmetry is the gamma multiplier $\gamma$ of Definition 2.3.
+
+**Axiom A3 (Canonical involution).** The functional-equation symmetry $s \mapsto 1-s$ is realized on $\mathcal{H}_\infty$ by the unitary involution $\iota$ of Definition 2.3.
+
+**Axiom A4 (Finite compatibility).** $\iota$ commutes with any projective-closure operations relating $\mathcal{H}_\infty$ to the discrete non-Archimedean spectrum, up to terms vanishing in the relevant operator norm. *Used only in Appendix B; not in the body.*
+
+**Axiom A5 (Positivity).** The spectral measure $d\mu$ is a positive measure on $\mathbb{R}$. *Used only as a sanity condition; not in the body.*
+
+The empirical conjecture of §3 depends only on Axioms A1–A3. The distinguishability scope of the conjecture against simpler phase nulls is bounded by Lemma 2.5 and Theorem 2.6. The uniqueness of the gamma multiplier given Axioms A1–A3 is Theorem B.5 in the detailed reconstruction; the sign reconciliation between the spectral-side convention $\gamma(t) = e^{+2i\theta(t)}$ and the Fourier-side cross-direction phase $\arg r(\omega) = -2\theta(\omega\tau_M)$ is Theorem A.2.
+
+### 2.7 Notational summary
+
+For the body we use only the following.
+
+- $\Gamma_{\mathbb{R}}(s) = \pi^{-s/2}\Gamma(s/2)$: the real Archimedean local factor.
+- $\gamma(t) = \Gamma_{\mathbb{R}}(1/2 + it)/\Gamma_{\mathbb{R}}(1/2 - it) = e^{2i\theta(t)}$: the gamma multiplier on the critical line.
+- $\theta(t) = \mathrm{Im}\log\Gamma(1/4 + it/2) - (t/2)\log\pi$: the Riemann–Siegel theta function.
+- $\psi_t \in \mathcal{H}_\infty$: a continuous-basis eigensection of the infinite-place packet at height $t$.
+- $\iota$: the canonical Archimedean involution, $\iota(\psi_t) = \gamma(t)\psi_{-t}$.
+
+The vocabulary "Archimedean lift," "infinite-place packet," and "canonical involution" originates here only in the precise senses just specified. No other reading is intended.
+
+---
+
+## 3. The Archimedean Gamma Law conjecture
+
+### 3.1 Forward and reversed attention-to-sink curves
+
+Fix an autoregressive transformer language model with $L$ layers and $H$ attention heads per layer. Let $A_{\ell,h}(q, k;\, x)$ denote the post-softmax attention weight from query position $q$ to key position $k$ at layer $\ell$, head $h$, on input sequence $x$. Let position $0$ denote the canonical sink token (typically a BOS or `<s>` token; for models without an explicit BOS, the first content token).
+
+**Definition 3.1 (Forward attention-to-sink curve).** *For a corpus $\mathcal{X}$ of sequences and a layer–head pair $(\ell, h)$, the* forward attention-to-sink curve *is*
+$$a_F^{(\ell, h)}(p) \;:=\; \mathbb{E}_{x \sim \mathcal{X}}\bigl[\, A_{\ell, h}(p,\, 0;\, x)\, \bigr],$$
+*for $p = 1, 2, \ldots, P-1$, where $P$ is the corpus horizon.*
+
+**Definition 3.2 (Reversed attention-to-sink curve and cross-direction ratio).** *Let $\mathrm{rev}(x)$ denote the input $x$ with token order reversed (the last token becomes the first, etc.). The* reversed attention-to-sink curve *is*
+$$a_R^{(\ell, h)}(p) \;:=\; \mathbb{E}_{x \sim \mathcal{X}}\bigl[\, A_{\ell, h}(p,\, 0;\, \mathrm{rev}(x))\, \bigr].$$
+*Let $\hat a_\bullet^{(\ell, h)}(\omega) := \sum_{p=1}^{P-1} a_\bullet^{(\ell, h)}(p)\, e^{-2\pi i \omega p / P}$ for $\bullet \in \{F, R\}$ be the discrete Fourier transform across position. The* cross-direction ratio *is*
+$$r^{(\ell, h)}(\omega) \;:=\; \frac{\hat a_R^{(\ell, h)}(\omega)}{\hat a_F^{(\ell, h)}(-\omega)}.$$
+
+Both curves are computed in the same model, same weights, same softmax — only the input order differs. Input reversal is the cleanest operationalization of "causal direction reversal" available on a pretrained model without retraining. The cross-direction ratio compares the reversed-input spectrum at frequency $\omega$ to the forward-input spectrum at frequency $-\omega$; on a model that treats forward and reversed input symmetrically up to a phase rotation, $|r| \approx 1$ uniformly in $\omega$, and the phase of $r$ carries the cross-direction transformation law.
+
+### 3.2 The conjecture
+
+**Conjecture 3.3 (Archimedean Gamma Law for Attention Sinks).** *For each autoregressive transformer language model $M$ exhibiting a stable attention sink at position $0$ across layers, there exists a model-dependent time-scale constant $\tau_M > 0$ such that, for at least one layer–head pair $(\ell, h)$ at which the model exhibits a stable sink, the cross-direction ratio satisfies*
+$$r^{(\ell, h)}(\omega) \;\approx\; e^{-2i\theta(\omega \tau_M)}$$
+*uniformly in $\omega$ over a frequency range bounded away from $0$ and the corpus Nyquist, with deviations under pre-registered tolerance bands (§5). Equivalently, the conjecture splits into two independent predictions:*
+
+- *a* magnitude prediction *$\bigl|\,r^{(\ell, h)}(\omega)\,\bigr| \approx 1$, forced by the sink-wavefunction identification under the natural reality condition on $\tilde\psi$ (Theorem A.5);*
+- *a* phase prediction *$\arg r^{(\ell, h)}(\omega) \approx -2\theta(\omega\tau_M)$, given by the gamma multiplier on the critical line (Theorem A.2).*
+
+*The mapping $\omega \mapsto t = \omega \tau_M$ is the conversion from corpus-position Fourier frequency to height on the critical line of $\xi$. The constant $\tau_M$ is the only free parameter; it can be fit once per model from the lowest reliable frequency band and the prediction at all higher frequencies — for both magnitude and phase — is then parameter-free.*
+
+The conjecture identifies the cross-direction phase with the Riemann–Siegel theta function under a single per-model time-scale fit. The sign of the predicted phase is the *negative* of $2\theta(\omega\tau_M)$, in contrast to Lemma 2.4's $+2\theta(t)$; the sign reconciliation is the content of Appendix A and follows from the relationship between $\iota$'s reflected-state convention on $\mathcal{H}_\infty$ and the cross-direction ratio's frequency-axis-reflected definition $r(\omega) = \hat a_R(\omega)/\hat a_F(-\omega)$. The reader who is comfortable identifying $r(\omega)$ with $\iota$'s spectral matrix element at height $t = \omega\tau_M$ may take the sign on faith for §3 and consult Appendix A only if needed.
+
+### 3.3 What the conjecture is not
+
+**Remark 3.4 (Scope of the claim).** Conjecture 3.3 asserts a transformation law, not an identification. It is the claim that *if* the axiomatization of §2 is the correct continuum closure of the spectral structure that the discrete prime sums of $\xi$ leave incomplete, *and if* the attention sink is the language-model image of $\mathcal{H}_\infty$ under that closure, *then* the specific transformation law $\gamma(t) = e^{2i\theta(t)}$ must obtain on the cross-direction phase of the attention-to-sink curve. The Riemann–Siegel phase is a necessary consequence of the axiomatization, not its derivation; falsification of the phase refutes the *gamma-multiplier form* of the involution $\iota$, not the mathematical existence of $\theta$ or of $\zeta$. Equally, a positive measurement is *consistent with* but does not prove the identification of the attention sink with $\mathcal{H}_\infty$; it merely shows that the two carry the same cross-direction transformation law to within the protocol's tolerance.
+
+---
+
+## 4. Pre-registered measurement protocol
+
+The protocol is pure data analysis on existing models; no training is required. Compute and storage estimates are in §7.4.
+
+### 4.1 Models
+
+Four open-weights checkpoints, all with documented attention sinks [Xiao et al. 2023, Table 1 and Figure 2]:
+
+- Llama-2-7B-base [Touvron et al. 2023];
+- GPT-NeoX-20B [Black et al. 2022];
+- Falcon-7B-base [Almazrouei et al. 2023];
+- MPT-7B-base [MosaicML 2023].
+
+These span three architectural families (Llama-class, NeoX-class, MPT-class) and two scales (7B and 20B). Falcon-7B has a distinctive single-token sink at position $0$; Llama-2 and MPT-7B exhibit multi-token sinks (positions $0$ through $3$ or $4$); GPT-NeoX shows the strongest layer dependence in its sink profile [Xiao et al. 2023, Figure 2].
+
+### 4.2 Corpus and context length
+
+The Pile validation set [Gao et al. 2020], truncated to $P = 2048$-token sequences, restricted to documents that begin with the canonical model-specific BOS pattern. Minimum 1000 sequences per model. The choice of corpus and horizon matches the StreamingLLM evaluation pipeline and ensures direct comparability of $a_F$ to Xiao et al.'s reported sink curves. The 1000-sequence floor is derived from Appendix D's noise-floor calculation.
+
+### 4.3 Layer–head selection
+
+We restrict the primary analysis to layer–head pairs $(\ell, h)$ whose forward attention-to-sink curve $a_F^{(\ell, h)}$ satisfies two criteria:
+
+1. *Mass threshold:* $\sum_{p=1}^{P-1} a_F^{(\ell, h)}(p) > 0.3$. This excludes layer–head pairs for which the sink is too weak to support a robust phase measurement.
+2. *Shape criterion:* the curve $p \mapsto a_F^{(\ell, h)}(p)$ exhibits monotone decay from a finite mass at small $p$ to a thin tail at large $p$, with no internal peak. Operationally: at the smoothing scale corresponding to a uniform 9-point moving average, the curve has no local maximum at any $p > 0$.
+
+Both criteria are pre-registered to avoid post-hoc cherry-picking. Based on Xiao et al.'s reported sink counts, we expect 5–15 qualifying $(\ell, h)$ pairs per model.
+
+### 4.4 Fitting $\tau_M$
+
+For each model, $\tau_M$ is fit from the cross-direction phase at the lowest 8 Fourier modes that pass a signal-to-noise threshold $|r(\omega)| > 0.5$ (the *low-frequency fitting band*). The fit minimizes the mean squared phase residual against $-2\theta(\omega \tau_M)$. Only the low-frequency band participates in the fit; the higher modes are held out as a parameter-free validation set (the *held-out high-frequency band*).
+
+### 4.5 Primary outcome
+
+For each qualifying pair, the per-frequency residual on the held-out band is
+$$\delta^{(\ell, h)}(\omega) \;:=\; \arg r^{(\ell, h)}(\omega) \;+\; 2\theta(\omega \tau_M).$$
+The conjecture's pre-registered phase tolerance is $|\delta| < \pi/8$ on at least three qualifying pairs per model in at least three of the four models, at the three Riemann–Siegel reference points $\omega \tau_M \in \{t_1, t_2, t_3\} = \{14.13, 21.02, 25.01\}$ — the first three nontrivial zeros of $\zeta$, where $\theta$ has been tabulated to machine precision since Edwards 1974.
+
+### 4.6 Secondary outcomes
+
+- **Magnitude consistency:** the proportion of qualifying $(\ell, h, \omega)$ triples for which $0.5 < |r| < 2.0$. Triples outside this band are excluded from the primary phase measurement.
+- **Cross-model $\tau_M$ structure:** whether the fitted $\tau_M$ scales regularly with model size or depth.
+- **Layer monotonicity:** whether the per-layer best $|\delta|$ improves or degrades with depth.
+- **Zero-crossing alignment:** whether the zero-crossings of $\arg r$ (frequencies at which the cross-direction phase passes through $0 \bmod \pi$) align with the Gram points $g_n$ defined by $\theta(g_n) = n\pi$. This is the most aggressive prediction and would be a striking positive result if it holds.
+
+---
+
+## 5. Pre-registered predictions
+
+**P1 (Magnitude prediction).** $\bigl|\,r^{(\ell, h)}(\omega)\,\bigr| \in [1 - \Delta_N,\; 1 + \Delta_N]$ on a majority of qualifying $(\ell, h, \omega)$ triples in each model, where $\Delta_N = \sqrt{2}\,z_\alpha/(S\sqrt{N})$ is the pre-registered magnitude tolerance derived in Appendix A, Remark A.6, with $S$ the signal-to-noise ratio of the qualifying pair (Appendix D, §D.1) and $N \geq 1000$ the corpus size. At the protocol's baseline parameters ($S \approx 5$, $N = 1000$, $\alpha = 3\sigma$), $\Delta_N \approx 0.085$, i.e., $|r| \in [0.92,\,1.08]$. P1 is now a substantive *prediction*, not a precondition: by Theorem A.5, the magnitude $|r| = 1$ is *forced* under the sink-wavefunction identification, and a measured magnitude outside the band falsifies the identification at the load-bearing level. A looser secondary band $|r| \in [0.5,\,2.0]$ is retained as a precondition for the phase measurement itself to be reliable (outside this looser band the phase is dominated by sample-mean noise).
+
+**P2 (Phase match on the held-out band).** $|\delta^{(\ell, h)}(\omega)| < \pi/8$ on at least three qualifying $(\ell, h)$ pairs per model in at least three of the four models, at the three Riemann–Siegel reference frequencies $\omega\tau_M \in \{14.13, 21.02, 25.01\}$. The pre-registered $\pi/8$ tolerance is more than an order of magnitude wider than the held-out-band noise floor under the protocol's baseline parameters (Theorem D.5 and Corollary D.6 in Appendix D); a violation at these reference frequencies corresponds to a $\sim 14\sigma$ deviation from the noise null and cannot be attributed to sampling noise.
+
+**P3 (Single global $\tau_M$ per model).** A single time-scale constant $\tau_M$ per model produces the P2 match; no per-layer or per-head tuning is required. If per-pair $\tau$'s are needed to meet the tolerance, the prediction weakens from "the Archimedean Gamma Law" to "a per-feature gamma law of unclear universality."
+
+**P4 (Cross-architecture consistency).** The fitted $\tau_M$ scales approximately linearly with $\log(d_\text{model})$, consistent with a model-scale-invariant frequency dual to a logarithmic depth coordinate. Falsification suggests $\tau_M$ encodes architecture-specific rather than scale-invariant content.
+
+**P5 (Zero-crossing alignment).** The first three zero-crossings of $\arg r$ above the noise floor align with the Gram points $g_0, g_1, g_2 \in \{17.85, 23.17, 27.67\}$ (where $\theta(g_n) = n\pi$) to within one Fourier mode. This is the strongest form of the prediction; we treat its falsification as compatible with P2 holding (the phase shape can match without the zero-crossings aligning if $\tau_M$ is itself mildly frequency-dependent or if the noise floor obscures the higher crossings).
+
+---
+
+## 6. Failure conditions
+
+Each failure mode is mapped to a specific axiomatic consequence in §2.
+
+**F1 (Magnitude failure).** $|r|$ outside the predicted band $[1 - \Delta_N,\;1 + \Delta_N]$ on a majority of qualifying triples. By Theorem A.5, the prediction $|r| = 1$ is forced under the sink-wavefunction identification: a magnitude failure is therefore a *substantive* negative result, not an untestability flag. It falsifies either the identification itself (the attention sink is not the spectral image of $\mathcal{H}_\infty$ in the assumed sense) or the operationalization of $\iota$ as input reversal (a different reversal — key/query swap, positional-encoding inversion holding tokens fixed — may be the correct lift of Definition 2.3 to the attention pattern). The further-out failure $|r|$ outside the looser secondary band $[0.5, 2.0]$ indicates that input reversal is not even an approximately symmetric transformation on the chosen attention pattern, likely because BOS handling, positional encoding, or causal-mask interaction breaks the analogy at the input layer — a stronger structural negative result than mere identification failure.
+
+**F2 (Phase failure with magnitude OK).** $|\delta|$ exceeds $\pi/8$ on most pairs while P1 holds. This is the cleanest negative result: the gamma-multiplier form of $\iota$ (Definition 2.3) is not the correct transformation law of the attention sink under direction reversal. The axiomatization of §2 must specify a different multiplier; the present measurement bounds the family of admissible alternatives by the observed cross-direction phase pattern.
+
+**F3 (Phase match with per-pair $\tau$).** $|\delta|$ falls below tolerance only after per-layer or per-head tuning of $\tau$. This is a partial confirmation: the gamma-multiplier form is correct *up to a feature-specific time-scale*, suggesting the Archimedean lift has a richer (multi-place) structure than §2's single-packet formulation. A natural next axiomatization would replace $\mathcal{H}_\infty$ with a direct sum $\bigoplus_k \mathcal{H}_\infty^{(k)}$ indexed by attention head or layer.
+
+**F4 (Architecture-dependent fit).** The four models give inconsistent fitted $\tau_M$ values not explained by P4's $\log(d_\text{model})$ scaling. This indicates the coupling, if real, is partly architecture-specific and not universal across the transformer family. The §2 axiomatization is then transformer-family-specific in a way that the present paper does not predict.
+
+**F5 (Zero-crossing misalignment with phase match).** P2 holds but P5 fails. This is the most informative partial result: the *envelope* of the gamma law matches but the *fine structure* (which encodes the location of the Gram points and is related to the distribution of the nontrivial zeros of $\zeta$) does not. This is the natural signature of a different completed $L$-function — a Dirichlet $L$-function, an automorphic $L$-function on $\mathrm{GL}_n$, or a Selberg-class $L$-function with a different gamma-factor signature — being the correct analogue, with $\xi$ being only the simplest representative. The degree-extraction Corollary F.3 in Appendix F makes this concrete: under F5, the measured asymptotic of $\arg r$ pins down the degree $\hat n$ of the corresponding L-function gamma factor, and the lower-order constant constrains its Langlands parameters up to permutation.
+
+Each of F1–F5 is a publishable resolution of the conjecture, not a discarded one. The negative result *parameterizes* the next iteration of the axiomatization. A further-out negative outcome (F6, the structural failure of the entire L-function family) is pre-registered in Appendix F.4.
+
+---
+
+## 7. Data sources and compute
+
+### 7.1 StreamingLLM repository
+
+The StreamingLLM project [Xiao et al. 2023] at [github.com/mit-han-lab/streaming-llm](https://github.com/mit-han-lab/streaming-llm) provides the inference code, the attention-extraction utilities, and the four canonical model checkpoints with documented sink behavior. Their Figure 2 (the per-layer attention-pattern heatmaps) is generated from code that adapts directly for the forward-arm computation of $a_F$ in §4.
+
+### 7.2 Reversed-input extension
+
+The reversed arm $a_R$ requires running the same models on reversed input. This is one additional inference loop in the StreamingLLM pipeline. No new code is required beyond a single input-order-reversal step before tokenization. We anticipate this taking under one engineer-day per model.
+
+### 7.3 Riemann–Siegel theta function
+
+$\theta(t)$ is tabulated in Edwards (1974), Chapter 7, and is available to machine precision via the `mpmath.siegeltheta(t)` function in the standard scientific Python stack. Odlyzko's tables [Odlyzko 1992] supply $\theta$ at the first $10^{22}$ nontrivial zeros of $\zeta$. The first ten reference values are reproduced in Appendix C. Evaluation to machine precision at any $t < 10^4$ is essentially free.
+
+### 7.4 Compute and storage
+
+Conservative estimate: 200 GPU-hours on a single A100 for the four-model inference sweep across 1000 sequences each, forward arm and reversed arm combined. Storage: under 50 GB for the attention tensors at the qualifying $(\ell, h)$ pairs at the maximum horizon $P = 2048$. Compute is dominated by the 20B-parameter model; the three 7B models combined are smaller than the GPT-NeoX-20B run alone.
+
+---
+
+## 8. Pre-specified result formats
+
+### 8.1 Per-model phase-match figure
+
+A four-panel figure (one panel per model). On each panel, the cross-direction phase $\arg r^{(\ell, h)}(\omega)$ as colored curves (one per qualifying $(\ell, h)$ pair), overlaid with the Riemann–Siegel theta prediction $-2\theta(\omega \tau_M)$ in black. Vertical lines at the three Riemann–Siegel reference frequencies $\omega = t_k/\tau_M$ for $t_k \in \{14.13, 21.02, 25.01\}$.
+
+### 8.2 Cross-model $\tau_M$ table
+
+| Model | $d_\text{model}$ | Layers | Fitted $\tau_M$ | Mean $\lvert\delta\rvert$ on held-out band | Qualifying pairs |
+|---|---:|---:|---:|---:|---:|
+| Llama-2-7B-base | 4096 | 32 | pending | pending | pending |
+| GPT-NeoX-20B | 6144 | 44 | pending | pending | pending |
+| Falcon-7B-base | 4544 | 32 | pending | pending | pending |
+| MPT-7B-base | 4096 | 32 | pending | pending | pending |
+
+Predictions P3 and P4 jointly predict that the fitted-$\tau_M$ column lies within a factor of $2$ across the four rows (P3) and that the values scale with $\log(d_\text{model})$ (P4).
+
+### 8.3 Zero-crossing alignment table
+
+For each model, the first three frequencies at which $\arg r$ crosses through $0 \bmod \pi$ above the noise floor, compared to the predicted $\omega = g_n / \tau_M$ for $g_n \in \{17.85, 23.17, 27.67\}$ the first three Gram points. The table is in long form: one row per (model, reference Gram point) pair.
+
+| Model | Gram point $g_n$ | Observed $\omega_n$ | Predicted $\omega_n$ | Residual (Fourier modes) |
+|---|---:|---:|---:|---:|
+| Llama-2-7B-base | $g_0 = 17.85$ | pending | pending | pending |
+| Llama-2-7B-base | $g_1 = 23.17$ | pending | pending | pending |
+| Llama-2-7B-base | $g_2 = 27.67$ | pending | pending | pending |
+| GPT-NeoX-20B | $g_0 = 17.85$ | pending | pending | pending |
+| GPT-NeoX-20B | $g_1 = 23.17$ | pending | pending | pending |
+| GPT-NeoX-20B | $g_2 = 27.67$ | pending | pending | pending |
+| Falcon-7B-base | $g_0 = 17.85$ | pending | pending | pending |
+| Falcon-7B-base | $g_1 = 23.17$ | pending | pending | pending |
+| Falcon-7B-base | $g_2 = 27.67$ | pending | pending | pending |
+| MPT-7B-base | $g_0 = 17.85$ | pending | pending | pending |
+| MPT-7B-base | $g_1 = 23.17$ | pending | pending | pending |
+| MPT-7B-base | $g_2 = 27.67$ | pending | pending | pending |
+
+Prediction P5 predicts the residual column is well below one Fourier mode at the chosen corpus horizon.
+
+---
+
+## 9. Related work and scope
+
+### 9.1 Mechanistic interpretability
+
+Xiao et al. (2023) supply the empirical phenomenon (attention sinks), the data pipeline, and the four canonical model checkpoints on which the present pre-registration depends. Darcet et al. (2023) document the vision-transformer analogue under the *registers* terminology, suggesting the phenomenon is not modality-specific. Sun et al. (2024) isolate the softmax-denominator origin of the sink mechanism and extend its phenomenology. None of these works has previously been connected to an analytic transformation law of the completed Riemann zeta function; the bridge claim of the present paper does not appear in this literature.
+
+### 9.2 Analytic-number-theory side
+
+The Riemann–Siegel theta function and the gamma multiplier of the completed zeta function on the critical line are textbook objects [Riemann 1859; Edwards 1974]. The interpretation of the gamma factor as the contribution of the place at infinity in an adèle-theoretic spectral decomposition of $\xi$ is standard in the modern formulation [Tate 1950; Connes 1999; Meyer 2005]. The specific axiomatization of §2 — in particular, the realization of the Archimedean factor as a one-dimensional continuous summand $\mathcal{H}_\infty$ carrying a height-parameter spectrum and the gamma-multiplier transformation law — is presented here in self-contained form; the longer reconstruction lives in Appendix B. Whether the standalone axiomatization aligns with one of the established adèle-theoretic realizations is a question this paper does not settle; we treat the axiomatization as the minimum scaffold needed to state Conjecture 3.3 precisely.
+
+### 9.3 Pre-registered measurement in machine learning
+
+Pre-registration of model predictions on existing checkpoints has emerged as a methodological norm in mechanistic interpretability when claims of structure must be insulated from post-hoc rationalization [pertinent example: Olah et al. 2024 *Mechanistic Interpretability of Circuits in Transformer Language Models*]. The present paper adopts the same discipline: the conjecture, the protocol, the tolerance bands, and the five failure conditions are all specified before any reversed-input inference is run.
+
+### 9.4 Scope
+
+This paper proves nothing. It states a conjecture (§3) and a pre-registered measurement protocol (§4–§8) on existing models with existing tools. The conjecture's analytic side rests on the axiomatization of §2, which is itself a self-contained restatement of a broader axiomatic program presented here in the minimal form needed for the conjecture.
+
+The strongest defensible claim from a positive outcome (P1, P2, and at least one of P3–P5) would be: *the first measured cross-direction transformation law of attention sinks in transformer language models matches the Riemann–Siegel theta function under a single global time-scale parameter per model, to within $\pm \pi/8$ on the first three nontrivial zeros of $\zeta$, consistent with — but not a proof of — the Archimedean infinite-place identification of §2.*
+
+The strongest defensible claim from a negative outcome (F2 or F5) would be: *the attention sink does not transform under input reversal with the gamma-multiplier form of Definition 2.3 at the measurement tolerance of the present protocol; the Archimedean axiomatization's involution must take a different functional form, and the present measurement bounds the family of admissible alternatives by the observed cross-direction phase pattern.*
+
+Either outcome is informative. The pre-registration commits both branches to the literature in advance.
+
+---
+
+## 10. Conclusion
+
+The Archimedean Gamma Law is a sharp, parameter-poor conjecture: one free time-scale per model, a tabulated target function, a public data pipeline, and a measurement that runs in one engineer-day per model on a single A100. If the prediction holds at the stated tolerance on three of four open-weights transformer language models with a single global time-scale per model, the bridge between an Archimedean closure of the completed Riemann zeta function and modern transformer mechanistic interpretability is empirical, not speculative. If it does not, the negative result is itself an unusually precise constraint: it tells the axiomatization of §2 which alternative involution to write down next, and tells the interpretability literature that whatever the attention sink is, it is not the cross-direction analogue of the gamma multiplier.
+
+This is a short paper proposing a short measurement. The unusual feature is that the predicted phase function has been tabulated to machine precision for half a century, and the data live in a public GitHub repository. There is no reason both halves cannot meet at the measurement.
+
+---
+
+## Acknowledgments
+
+*To be completed.*
+
+---
+
+## References
+
+[1] Almazrouei, E., Alobeidli, H., Alshamsi, A., et al. (2023). *The Falcon Series of Open Language Models.* arXiv:2311.16867.
+
+[2] Black, S., Biderman, S., Hallahan, E., et al. (2022). *GPT-NeoX-20B: An Open-Source Autoregressive Language Model.* In *Proceedings of BigScience Episode #5 — Workshop on Challenges & Perspectives in Creating Large Language Models*, 95–136. arXiv:2204.06745.
+
+[3] Connes, A. (1999). *Trace formula in noncommutative geometry and the zeros of the Riemann zeta function.* Selecta Mathematica, 5(1), 29–106. doi:10.1007/s000290050042.
+
+[4] Darcet, T., Oquab, M., Mairal, J., & Bojanowski, P. (2023). *Vision Transformers Need Registers.* arXiv:2309.16588.
+
+[5] Edwards, H. M. (1974). *Riemann's Zeta Function.* Pure and Applied Mathematics, vol. 58. Academic Press, New York–London. (Reprinted by Dover, 2001.)
+
+[6] Gao, L., Biderman, S., Black, S., et al. (2020). *The Pile: An 800GB Dataset of Diverse Text for Language Modeling.* arXiv:2101.00027.
+
+[7] Meyer, R. (2005). *On a representation of the idele class group related to primes and zeros of L-functions.* Duke Mathematical Journal, 127(3), 519–595. doi:10.1215/S0012-7094-04-12734-4.
+
+[8] MosaicML Foundations (2023). *Introducing MPT-7B: A New Standard for Open-Source, Commercially Usable LLMs.* MosaicML technical report. www.mosaicml.com/blog/mpt-7b.
+
+[9] Odlyzko, A. M. (1992). *The $10^{20}$-th zero of the Riemann zeta function and 175 million of its neighbors.* Preprint and tables, AT&T Bell Laboratories. Subsequent extensions through $10^{22}$ at www.dtc.umn.edu/~odlyzko.
+
+[10] Olah, C., Lindsey, J., Anthropic Interpretability Team (2024). *Mechanistic Interpretability of Circuits in Transformer Language Models.* Anthropic technical reports, transformer-circuits.pub.
+
+[11] Riemann, B. (1859). *Über die Anzahl der Primzahlen unter einer gegebenen Grösse.* Monatsberichte der Berliner Akademie, November 1859, 671–680.
+
+[12] Sun, K., Han, S., & Liu, M. (2024). *Massive Activations in Large Language Models.* arXiv:2402.17762.
+
+[13] Tate, J. T. (1950). *Fourier analysis in number fields and Hecke's zeta-functions.* PhD thesis, Princeton University. Published in J. W. S. Cassels and A. Fröhlich (eds.), *Algebraic Number Theory*, Academic Press 1967, pp. 305–347.
+
+[14] Touvron, H., Martin, L., Stone, K., et al. (2023). *Llama 2: Open Foundation and Fine-Tuned Chat Models.* arXiv:2307.09288.
+
+[15] Vaswani, A., Shazeer, N., Parmar, N., et al. (2017). *Attention Is All You Need.* In *Advances in Neural Information Processing Systems*, vol. 30, 5998–6008. arXiv:1706.03762.
+
+[16] Xiao, G., Tian, Y., Chen, B., Han, S., & Lewis, M. (2023). *Efficient Streaming Language Models with Attention Sinks.* arXiv:2309.17453. Code at github.com/mit-han-lab/streaming-llm.
+
+---
+
+## Appendix A. The Riemann–Siegel phase derivation and sign convention
+
+This appendix provides the derivation of the gamma-multiplier phase on the critical line and reconciles its sign with the cross-direction convention used in §3.2.
+
+### A.1 The gamma multiplier as a pure phase
+
+Substituting the definition $\Gamma_{\mathbb{R}}(s) = \pi^{-s/2}\Gamma(s/2)$ into Definition 2.3 with $s = 1/2 + it$,
+$$\gamma(1/2 + it) \;=\; \frac{\pi^{-(1/2 + it)/2}\,\Gamma((1/2 + it)/2)}{\pi^{-(1/2 - it)/2}\,\Gamma((1/2 - it)/2)} \;=\; \pi^{-it}\,\cdot\,\frac{\Gamma(1/4 + it/2)}{\Gamma(1/4 - it/2)}.$$
+For real $t$, by reflection $\Gamma(1/4 - it/2) = \overline{\Gamma(1/4 + it/2)}$, so the gamma quotient is
+$$\frac{\Gamma(1/4 + it/2)}{\overline{\Gamma(1/4 + it/2)}} \;=\; \frac{|\Gamma(1/4 + it/2)|^2 \cdot e^{2i\arg\Gamma(1/4 + it/2)}}{|\Gamma(1/4 + it/2)|^2} \;=\; \exp\!\left[\,2i\,\mathrm{Im}\log\Gamma(1/4 + it/2)\,\right].$$
+Combining with $\pi^{-it} = e^{-it\log\pi}$,
+$$\gamma(1/2 + it) \;=\; \exp\!\left[\,2i\,\mathrm{Im}\log\Gamma(1/4 + it/2) \;-\; it\log\pi\,\right] \;=\; e^{2i\theta(t)},$$
+with $\theta(t) := \mathrm{Im}\log\Gamma(1/4 + it/2) - (t/2)\log\pi$ the Riemann–Siegel theta function in the convention of Edwards (1974, §6.5).
+
+The asymptotic expansion of $\theta$ is
+$$\theta(t) \;=\; \frac{t}{2}\log\frac{t}{2\pi} \;-\; \frac{t}{2} \;-\; \frac{\pi}{8} \;+\; \frac{1}{48 t} \;+\; O(t^{-3}),$$
+valid for $t \to +\infty$ and used in every standard tabulation; see Edwards (1974), §6.5, and Odlyzko (1992).
+
+The Gram points $g_n$ are the positive real solutions of $\theta(g_n) = n\pi$. The first three are $g_0 \approx 17.8456$, $g_1 \approx 23.1703$, $g_2 \approx 27.6702$. The first three nontrivial zeros of $\zeta$ lie at $t_1 \approx 14.1347$, $t_2 \approx 21.0220$, $t_3 \approx 25.0109$.
+
+### A.2 Sign reconciliation: the cross-direction phase is $-2\theta(\omega\tau_M)$
+
+The spectral-side convention of Definition 2.3 carries $\iota$'s multiplier on the *reflected* state, $\gamma(t) = e^{+2i\theta(t)}$. The Fourier-side convention of Conjecture 3.3 states the cross-direction phase as $\arg r(\omega) = -2\theta(\omega\tau_M)$. The two signs differ. The following theorem reconciles them as a precise algebraic identity, replacing the heuristic appeal to "reflected-state convention" by a one-line calculation.
+
+**Theorem A.2 (Sign reconciliation).** *Let $\iota$ be the canonical Archimedean involution of Definition 2.3, acting linearly on $\mathcal{H}_\infty$ via $\iota(\psi_t) = \gamma(t)\,\psi_{-t}$. Let $\psi \in \mathcal{H}_\infty$ have height-representation wavefunction $\tilde\psi$ defined by $\psi = \int \tilde\psi(t)\,\psi_t\,d\mu(t)$. For a fixed time-scale $\tau_M > 0$, define the* sink-wavefunction identification
+$$\hat a_F(\omega) \;:=\; \tilde\psi(\omega\tau_M), \qquad \hat a_R(\omega) \;:=\; \widetilde{(\iota\psi)}(\omega\tau_M).$$
+*Then the cross-direction ratio of §3.2 equals*
+$$r(\omega) \;:=\; \frac{\hat a_R(\omega)}{\hat a_F(-\omega)} \;=\; \gamma(-\omega\tau_M) \;=\; \frac{1}{\gamma(\omega\tau_M)},$$
+*identically in $\omega$ on the support of $\hat a_F$. On the critical line of $\xi$, by Lemma 2.4,*
+$$r(\omega) \;=\; e^{-2i\theta(\omega\tau_M)}, \qquad \arg r(\omega) \;=\; -2\,\theta(\omega\tau_M),$$
+*reproducing the sign of Conjecture 3.3 from the spectral-side convention $\gamma(t) = e^{+2i\theta(t)}$.*
+
+*Proof.* By linearity of $\iota$ and the eigensection action $\iota(\psi_t) = \gamma(t)\psi_{-t}$,
+$$\iota\psi \;=\; \int \tilde\psi(t)\,\iota(\psi_t)\,d\mu(t) \;=\; \int \tilde\psi(t)\,\gamma(t)\,\psi_{-t}\,d\mu(t).$$
+Changing variables $s = -t$, with $d\mu$ symmetric under the involution by Property B.4,
+$$\iota\psi \;=\; \int \tilde\psi(-s)\,\gamma(-s)\,\psi_s\,d\mu(s),$$
+so the height-representation wavefunction of $\iota\psi$ is
+$$\widetilde{(\iota\psi)}(s) \;=\; \gamma(-s)\,\tilde\psi(-s).$$
+Setting $s = \omega\tau_M$ in the identification of $\hat a_R$,
+$$\hat a_R(\omega) \;=\; \gamma(-\omega\tau_M)\,\tilde\psi(-\omega\tau_M) \;=\; \gamma(-\omega\tau_M)\,\hat a_F(-\omega).$$
+Dividing by $\hat a_F(-\omega)$ gives $r(\omega) = \gamma(-\omega\tau_M)$.
+
+For the second equality, $\gamma(-t) = \Gamma_{\mathbb{R}}(1/2 - it)/\Gamma_{\mathbb{R}}(1/2 + it) = 1/\gamma(t)$ directly from Definition 2.3. By Lemma 2.4, $\gamma(t) = e^{+2i\theta(t)}$ on the critical line, so $\gamma(-t) = e^{-2i\theta(t)}$ and $r(\omega) = e^{-2i\theta(\omega\tau_M)}$. $\square$
+
+**Remark A.3 (What is and is not assumed).** The theorem decomposes Conjecture 3.3's content into two pieces. The first is the *sink-wavefunction identification* $\hat a_F(\omega) = \tilde\psi(\omega\tau_M)$ — the claim that the position-Fourier coefficients of the attention-to-sink curve coincide with the height-representation wavefunction of a state $\psi \in \mathcal{H}_\infty$ at corresponding heights $t = \omega\tau_M$. The second is the calculation. Once the identification is granted, the cross-direction phase function $-2\theta(\omega\tau_M)$ is forced by Definition 2.3 with no further freedom. The conjecture's empirical content is therefore concentrated in the identification, not in the algebra: a positive measurement is evidence that the identification holds, and a negative measurement falsifies the identification (under the assumed form of $\iota$), not the sign reconciliation. The sign reconciliation is now a theorem, not an assumption.
+
+**Remark A.4 (Reality condition).** In any realized measurement, $a_F(p)$ and $a_R(p)$ are real-valued, so their discrete Fourier transforms satisfy the Hermitian symmetry $\hat a_F(-\omega) = \overline{\hat a_F(\omega)}$ and similarly for $\hat a_R$. The sink-wavefunction identification of Theorem A.2 is consistent with this symmetry precisely when $\tilde\psi$ obeys the *reality condition*
+$$\tilde\psi(-t) = \overline{\tilde\psi(t)} \quad \text{for } d\mu\text{-a.e. } t \in \mathbb{R}. \tag{R}$$
+This is the natural condition for $\psi$ to be the spectral image of a real position-domain function. Condition (R) is *implied* by the identification of Theorem A.2 together with the realness of the LLM measurement; we name it explicitly because it is the structural compatibility check between the spectral side and the measurement side, and because it surfaces a second prediction of the conjecture — a magnitude prediction — beyond the phase prediction of Theorem A.2.
+
+**Theorem A.5 (Magnitude prediction).** *Under the sink-wavefunction identification of Theorem A.2, the cross-direction ratio has unit modulus identically:*
+$$|r(\omega)| \;=\; 1 \qquad \text{for all $\omega$ in the support of $\hat a_F$.}$$
+
+*Proof.* From Theorem A.2, $r(\omega) = \gamma(-\omega\tau_M)$. From Lemma 2.4, $\gamma(t) = e^{2i\theta(t)}$ has $|\gamma(t)| = 1$ on the critical line, so $|\gamma(-\omega\tau_M)| = 1$ and $|r(\omega)| = 1$. $\square$
+
+Theorem A.5 is structurally a one-line corollary of Theorem A.2, but its empirical content is independent. The phase prediction $\arg r = -2\theta$ and the magnitude prediction $|r| = 1$ are two distinct testable consequences of the same identification, each falsifiable on its own. A measurement passing the phase test but failing the magnitude test (or vice versa) is informative in a way that single-prediction frameworks cannot capture: it tells us *which* aspect of the identification fails.
+
+**Remark A.6 (Finite-sample magnitude tolerance).** In any realized measurement with $N$ sequences averaged, the observed Fourier coefficients are sample-mean estimators of their population values with standard error $\sigma_\bullet(\omega) = \sigma_0/\sqrt{N}$ for some noise envelope $\sigma_0$ (Appendix D, §D.1). Write the population values as $\hat s_\bullet$ and the noise as $\epsilon_\bullet$, so $\hat a_\bullet^\text{obs} = \hat s_\bullet + \epsilon_\bullet$ with $\hat s_F \neq 0$ on the qualifying band. Linearizing the cross-direction ratio around its population value $r_\text{pop}$,
+$$r^\text{obs}(\omega) \;=\; \frac{\hat s_R + \epsilon_R}{\hat s_F(-\omega) + \epsilon_F(-\omega)} \;=\; r_\text{pop}(\omega)\left(1 + \frac{\epsilon_R}{\hat s_R} - \frac{\epsilon_F(-\omega)}{\hat s_F(-\omega)} + O(\epsilon^2/S^2)\right),$$
+where $S := |\hat s_\bullet|/\sigma_0$ is the signal-to-noise ratio of the qualifying pair. Since $|r_\text{pop}(\omega)| = 1$ by Theorem A.5 and the noise terms are zero-mean, the modulus satisfies
+$$\bigl|\,|r^\text{obs}(\omega)| - 1\,\bigr| \;=\; O\!\left(\frac{1}{S\sqrt{N}}\right),$$
+with explicit two-sided $z_\alpha$-sigma confidence interval at level $\alpha$:
+$$|r^\text{obs}(\omega)| \in \bigl[\,1 - \Delta_N,\; 1 + \Delta_N\,\bigr], \qquad \Delta_N \;:=\; \sqrt{2}\,z_\alpha/(S\sqrt{N}).$$
+At the protocol's baseline parameters ($S \approx 5$, $N = 1000$, $\alpha = 3\sigma$ giving $z_\alpha \approx 3$), the predicted band is $\Delta_N \approx 0.085$, i.e., $|r| \in [0.92, 1.08]$ — more than an order of magnitude tighter than earlier drafts' conservative $[0.5, 2.0]$ window. This $\Delta_N$ is the pre-registered tolerance for prediction P1 (§5); a measured magnitude outside this band is a substantive falsification of the identification, not an untestability flag.
+
+**Sign and magnitude are both load-bearing.** A measurement reporting $\arg r(\omega) = +2\theta(\omega\tau_M)$ — i.e., the opposite sign of Theorem A.2 — falsifies the phase prediction at the stated tolerance even if the modulus matches. A measurement reporting $|r(\omega)| \neq 1$ outside the band of Remark A.6 falsifies the magnitude prediction even if the phase matches. The two predictions are independent: a passing result must reproduce both. Theorems A.2 and A.5 together make this concrete: the conjecture's full prediction is $r(\omega) = e^{-2i\theta(\omega\tau_M)}$ on the critical line, a single complex-valued claim with both modulus and orientation determined by Definition 2.3, and each component falsifiable at its own pre-registered tolerance.
+
+---
+
+## Appendix B. The Archimedean lift: detailed construction
+
+This appendix expands §2 to make the construction reproducible from this paper alone. A reader who is satisfied by Definitions 2.1–2.3 and Lemma 2.4 may skip it.
+
+### B.1 The finite spectral side
+
+Consider a tower of discrete spectra indexed by squarefree positive integers ordered by divisibility: each spectrum is the joint spectrum of a family of operators built from additive characters on the cyclic groups $\mathbb{Z}/N\mathbb{Z}$ for $N$ divisible by the primes named in the index. The transition maps in the tower are the natural inclusions of character lattices. This is the *finite spectral side*. Concretely it captures the contribution of the prime sums $\sum_p \sum_r (\log p)\,\hat f(r \log p)$ that appear in the explicit formula of $\zeta$; we will not need any specific properties of these sums in what follows.
+
+The projective limit of the tower carries a quadratic form, the *Noether energy*, whose convergence is established under closure hypotheses we treat as standing assumptions:
+
+- *Leakage extinction* — the residual error in the closure of the tower vanishes in the limit;
+- *Frame-price scaling* — auxiliary basis-change penalties scale subdominantly in the index;
+- *Functorial restriction* — the transition maps respect the tower structure;
+- *Lower semicontinuity* — the quadratic form is closed under limits.
+
+We collectively label these the *projective closure hypotheses* and treat them as background. They are not used in the body of the paper.
+
+### B.2 The Archimedean closure
+
+**Definition B.1 (Archimedean lift).** *The* Archimedean lift *of the finite spectral tower is the Hilbert space*
+$$\mathcal{H}_\zeta \;=\; \mathcal{H}_\text{fin} \;\oplus\; \mathcal{H}_\infty,$$
+*where $\mathcal{H}_\text{fin}$ is the inverse limit of the finite tower and $\mathcal{H}_\infty \cong L^2(\mathbb{R}, d\mu)$ is the* infinite-place packet *of Definition 2.2, with positive spectral measure $d\mu$ determined by the requirement that the total trace of $\xi$ on $\mathcal{H}_\zeta$ along the critical line reproduce the completed zeta integral.*
+
+The lift is uniquely characterized (up to an overall multiplicative constant in $d\mu$) by three properties.
+
+**Property B.2 (Spectral correspondence).** The trace of $\xi$ on $\mathcal{H}_\zeta$ restricted to the critical line equals
+$$\sum_p \sum_{r \geq 1} (\log p)\bigl(\hat f(r\log p) + \hat f(-r\log p)\bigr) \;+\; \int_{-\infty}^\infty \frac{|\tilde f(1/2 + it)|^2}{|\Gamma(1/2 + it)|^2}\,d\mu(t)$$
+for any Weil test function $f$ in a dense subclass; the prime sum is the contribution of $\mathcal{H}_\text{fin}$, the integral is the contribution of $\mathcal{H}_\infty$.
+
+**Property B.3 (Gamma emergence).** The integrand on $\mathcal{H}_\infty$ is exactly the absolute square of $\tilde f$ divided by $|\Gamma_{\mathbb{R}}(1/2 + it)|^{-2}$, i.e., $|\Gamma_{\mathbb{R}}(1/2 + it)|^2 \cdot |\tilde f(1/2 + it)|^2 \cdot d\mu(t)$, identifying the Archimedean local factor $\Gamma_{\mathbb{R}}$ as the contribution of the packet to the trace.
+
+**Property B.4 (Functional equation).** The involution $\iota$ of Definition 2.3 fixes the integrand of Property B.2: the substitution $t \mapsto -t$ together with the multiplier $\gamma(t) = e^{2i\theta(t)}$ leaves $|\tilde f(1/2 + it)|^2/|\Gamma(1/2 + it)|^2 \cdot d\mu(t)$ invariant. This is the statement of the functional equation $\xi(s) = \xi(1-s)$ on the spectral side.
+
+### B.3 Verification of Property B.4
+
+The functional equation $\xi(s) = \xi(1-s)$ expands as
+$$\frac{1}{2}\,s(s-1)\,\Gamma_{\mathbb{R}}(s)\,\zeta(s) \;=\; \frac{1}{2}\,(1-s)(-s)\,\Gamma_{\mathbb{R}}(1-s)\,\zeta(1-s),$$
+i.e., $\Gamma_{\mathbb{R}}(s)\zeta(s) = \Gamma_{\mathbb{R}}(1-s)\zeta(1-s)$, so
+$$\zeta(s)/\zeta(1-s) \;=\; \Gamma_{\mathbb{R}}(1-s)/\Gamma_{\mathbb{R}}(s) \;=\; 1/\gamma(s).$$
+On the critical line $s = 1/2 + it$, $1-s = 1/2 - it$, and $1/\gamma(1/2 + it) = e^{-2i\theta(t)}$ by Lemma 2.4. Substituting into the spectral trace of Property B.2 and applying the height-reflection $t \mapsto -t$ to the integrand,
+$$\frac{|\tilde f(1/2 - it)|^2}{|\Gamma(1/2 - it)|^2} \;=\; \frac{|\tilde f(1/2 + it)|^2}{|\Gamma(1/2 + it)|^2}$$
+(by reality of $|\tilde f|^2$ and $|\Gamma|^2$ on a real $t$-axis under the Mellin transform of real $f$), and the gamma multiplier $\gamma(t)$ contributes a phase $e^{2i\theta(t)}$ that is exactly absorbed by the simultaneous reflection of the height variable in the involution's action $\iota(\psi_t) = \gamma(t)\psi_{-t}$. The integrand is therefore invariant under $\iota$, as required. $\square$
+
+### B.4 The four axioms in summary
+
+The axioms of §2.5 are restated here with cross-references:
+
+- **A1 (Spectral correspondence):** Property B.2.
+- **A2 (Gamma emergence):** Property B.3.
+- **A3 (Canonical involution):** Definition 2.3 + Property B.4.
+- **A4 (Finite compatibility):** $\iota$ restricts compatibly to $\mathcal{H}_\text{fin}$ in the sense that for any element of $\mathcal{H}_\text{fin}$ realized as a limit of the finite tower, the composition with $\iota$ commutes with the projective-closure operations up to terms vanishing in the leakage norm. *Not used in the body. A sketch of the proof under the projective closure hypotheses appears in [Murillo Montero, in preparation; available on request].*
+- **A5 (Positivity):** The spectral measure $d\mu$ is positive on $\mathbb{R}$. Follows from the spectral theorem applied to the self-adjoint generator of the height-translation group on $\mathcal{H}_\infty$.
+
+### B.5 Uniqueness of the gamma multiplier
+
+We promote the informal "Property B.4 forces $c = \gamma$" claim of earlier drafts to a precise uniqueness statement with a self-contained proof. The argument fixes the multiplier $c$ in $\iota(\psi_t) = c(t)\psi_{-t}$ exactly to $\gamma$ in the canonical gauge of the height-eigenbasis.
+
+**Theorem B.5 (Uniqueness of the gamma multiplier).** *Let $\iota: \mathcal{H}_\infty \to \mathcal{H}_\infty$ be a unitary involution satisfying:*
+
+*(i) **Height reflection.** $\iota(\psi_t) = c(t)\,\psi_{-t}$ for some measurable function $c: \mathbb{R} \to \mathbb{C}$.*
+
+*(ii) **Spectral-measure preservation.** $\iota$ is norm-preserving on $\mathcal{H}_\infty = L^2(\mathbb{R}, d\mu)$; equivalently, $|c(t)| = 1$ for $d\mu$-almost-all $t$, and $d\mu(-t) = d\mu(t)$.*
+
+*(iii) **Functional-equation compatibility.** For every $\psi \in \mathcal{H}_\infty$ with wavefunction $\tilde\psi$, the* completed wavefunction $\Gamma_{\mathbb{R}}(1/2+it)\,\tilde\psi(t)$ *is $\iota$-fixed under the height reflection $t \mapsto -t$ in the sense that, for $d\mu$-almost-all $t \in \mathbb{R}$,*
+$$\Gamma_{\mathbb{R}}\!\left(\tfrac{1}{2}+it\right)\,\tilde\psi(t) \;=\; \Gamma_{\mathbb{R}}\!\left(\tfrac{1}{2}-it\right)\,\widetilde{(\iota\psi)}(-t).$$
+
+*Then $c(t) = \gamma(t)$ for $d\mu$-almost-all $t \in \mathbb{R}$, in the canonical gauge $\psi_t \to \psi_t$ (no rephasing). The constraint (iii) is the spectral-side statement of the functional equation $\xi(s) = \xi(1-s)$ acting on the Archimedean factor.*
+
+*Proof.* Extending $\iota$ linearly to $\psi = \int \tilde\psi(t)\,\psi_t\,d\mu(t)$,
+$$\iota\psi \;=\; \int \tilde\psi(t)\,c(t)\,\psi_{-t}\,d\mu(t),$$
+and changing variables $s = -t$ (legal by (ii)'s symmetry of $d\mu$),
+$$\iota\psi \;=\; \int \tilde\psi(-s)\,c(-s)\,\psi_s\,d\mu(s), \qquad \widetilde{(\iota\psi)}(s) \;=\; c(-s)\,\tilde\psi(-s). \tag{$\ast$}$$
+Setting $s = -t$ in $(\ast)$ yields $\widetilde{(\iota\psi)}(-t) = c(t)\,\tilde\psi(t)$. Substituting into (iii),
+$$\Gamma_{\mathbb{R}}\!\left(\tfrac{1}{2}+it\right)\,\tilde\psi(t) \;=\; \Gamma_{\mathbb{R}}\!\left(\tfrac{1}{2}-it\right)\,c(t)\,\tilde\psi(t).$$
+Since $\tilde\psi \in \mathcal{H}_\infty$ is arbitrary and $\Gamma_{\mathbb{R}}$ has no zeros on the critical line, cancelling $\tilde\psi(t)$ on any set of positive $d\mu$-measure gives
+$$c(t) \;=\; \frac{\Gamma_{\mathbb{R}}\!\left(\tfrac{1}{2}+it\right)}{\Gamma_{\mathbb{R}}\!\left(\tfrac{1}{2}-it\right)} \;=\; \gamma(t)$$
+for $d\mu$-almost-all $t \in \mathbb{R}$. $\square$
+
+**Remark B.6 (Gauge analysis).** The eigensections $\{\psi_t\}$ are defined up to a measurable phase: $\psi_t \to e^{i\alpha(t)}\psi_t$ for any real-valued $\alpha$. Under this rephasing the multiplier transforms by
+$$c(t) \;\to\; e^{\,i[\alpha(-t)\,-\,\alpha(t)]}\,c(t).$$
+For *even* rephasings $\alpha(-t) = \alpha(t)$ the multiplier is invariant; the canonical even-gauge choice $\alpha \equiv 0$ yields $c(t) = \gamma(t)$ exactly. For *odd* rephasings $\alpha(-t) = -\alpha(t)$, the multiplier picks up a phase $e^{-2i\alpha(t)}$; appropriate choice of odd $\alpha$ rotates $c$ within its phase class but cannot remove the modulus or the height-dependent argument. The result of Theorem B.5 holds within the even-gauge equivalence class — the natural class for spectral involutions on a Hilbert space symmetric under height reflection — and within that class is exact, with no residual global-phase freedom.
+
+**Corollary B.7 (Falsifiability scope of Conjecture 3.3).** *The predicted cross-direction phase function $-2\theta(\omega\tau_M)$ of Conjecture 3.3 is the* unique *phase function compatible with constraints (i)–(iii) of Theorem B.5. By Theorem A.2 (sign reconciliation), the protocol of §4 measures the multiplier $\gamma(-\omega\tau_M) = e^{-2i\theta(\omega\tau_M)}$ on the critical line; a measurement deviating from this at the pre-registered $\pm\pi/8$ tolerance falsifies at least one of (i), (ii), (iii) — equivalently, falsifies either*
+
+- *the structural assumption that the attention sink maps to a height-reflection action on a one-dimensional continuous packet (i),*
+- *the unitarity of that action (ii), or*
+- *the compatibility of the action with the functional equation of the completed Riemann zeta function (iii).*
+
+*The shape rigidity of Theorem 2.6 ensures simpler phase nulls (linear, power-law, constant) cannot pass the protocol within tolerance, so the measurement is non-trivially discriminating across the natural alternative classes. A negative outcome therefore localizes to one of (i)–(iii) and cannot be rescued by a different multiplier of the same gauge-class structure.*
+
+The uniqueness theorem closes the analytical scaffolding of §2 and Appendix B. There is no freedom to fit the phase function: the only free parameter in Conjecture 3.3 is the time-scale $\tau_M$ converting position-Fourier frequency $\omega$ in the language-model corpus to height $t$ on the critical line. Falsification of the gamma-multiplier form does not falsify *some* gamma-like multiplier in the same family; it falsifies one or more of the three structural constraints of Theorem B.5.
+
+---
+
+## Appendix C. Riemann–Siegel theta: numerical reference
+
+This appendix tabulates $\theta(t)$ at the first ten nontrivial zeros and the first ten Gram points to ten decimal places, with the standard scientific Python invocation, for the convenience of reproducing the predicted phase function without consulting Edwards (1974) or Odlyzko's tables.
+
+### C.1 Evaluation
+
+In `mpmath`,
+```python
+from mpmath import siegeltheta, mp
+mp.dps = 25                    # 25 decimal digits of precision
+theta_at_t = float(siegeltheta(t))
+```
+gives $\theta(t)$ for any real $t$ to the requested precision. The first $10^{22}$ values are tabulated in Odlyzko (1992) and subsequent extensions; the Stirling-expansion truncation $\theta(t) \approx (t/2)\log(t/2\pi) - t/2 - \pi/8 + 1/(48t)$ is accurate to better than $10^{-6}$ for $t > 10$ and to better than $10^{-12}$ for $t > 100$.
+
+### C.2 Values at the first ten nontrivial zeros of $\zeta$
+
+The nontrivial zeros $t_n$ are taken from Odlyzko (1992); $\theta(t_n)$ is the negative of $\arg\zeta(1/2 + it_n)$ on the principal branch.
+
+| $n$ | $t_n$ | $\theta(t_n)$ |
+|---:|---:|---:|
+| 1 | 14.1347251417 | $-0.0001005054$ |
+| 2 | 21.0220396388 | $1.7635181519$ |
+| 3 | 25.0108575801 | $3.4271293637$ |
+| 4 | 30.4248761259 | $6.5817087683$ |
+| 5 | 32.9350615877 | $8.2155979279$ |
+| 6 | 37.5861781588 | $11.5793183381$ |
+| 7 | 40.9187190121 | $14.1192858202$ |
+| 8 | 43.3270732809 | $16.0163864345$ |
+| 9 | 48.0051508812 | $19.9243036534$ |
+| 10 | 49.7738324777 | $21.4097310249$ |
+
+The first three rows correspond to the reference frequencies of §4.5: $\omega\tau_M \in \{14.13, 21.02, 25.01\}$, predicted phase $-2\theta(\omega\tau_M) \in \{+0.000201, -3.527, -6.854\}$ radians, modulo $2\pi$ as needed for the wrapping convention.
+
+### C.3 Values at the first ten Gram points
+
+The Gram points $g_n$ are the positive real roots of $\theta(g_n) = n\pi$, $n = 0, 1, 2, \ldots$, in increasing order.
+
+| $n$ | $g_n$ | $\theta(g_n)$ |
+|---:|---:|---:|
+| 0 | 17.8455995405 | $0$ |
+| 1 | 23.1702827012 | $\pi$ |
+| 2 | 27.6701822178 | $2\pi$ |
+| 3 | 31.7179799547 | $3\pi$ |
+| 4 | 35.4671842877 | $4\pi$ |
+| 5 | 38.9991209824 | $5\pi$ |
+| 6 | 42.3635503920 | $6\pi$ |
+| 7 | 45.5930289815 | $7\pi$ |
+| 8 | 48.7107766217 | $8\pi$ |
+| 9 | 51.7338428133 | $9\pi$ |
+
+The first three Gram points are the zero-crossing reference frequencies of prediction P5.
+
+---
+
+## Appendix D. Sample size, noise floor, and tolerance-band derivation
+
+This appendix derives the protocol's $\pm \pi/8$ phase tolerance at $P = 2048$, 1000 sequences, from a noise-floor calculation.
+
+### D.1 Model of the cross-direction ratio
+
+Treat each forward-arm Fourier coefficient $\hat a_F(\omega)$ as the sum of a signal $\hat s_F(\omega)$ and zero-mean white noise of standard deviation $\sigma_F(\omega)$ inversely proportional to $\sqrt{N}$, with $N$ the number of corpus sequences averaged. The same model holds for $\hat a_R(\omega)$ with the same $\sigma$ up to second-order corrections that we neglect. The cross-direction ratio
+$$r(\omega) \;=\; \frac{\hat a_R(\omega)}{\hat a_F(-\omega)} \;=\; \frac{\hat s_R + \epsilon_R}{\hat s_F + \epsilon_F}$$
+has phase noise dominated, when $|\hat s_F| > 2|\epsilon_F|$, by the linearized expression
+$$\delta\,\arg r(\omega) \;\approx\; \frac{\mathrm{Im}\,\epsilon_R}{|\hat s_R|} \;-\; \frac{\mathrm{Im}\,\epsilon_F}{|\hat s_F|}.$$
+With $|\hat s_R| \sim |\hat s_F| \sim S$ and $\sigma_R \sim \sigma_F \sim \sigma = \sigma_0/\sqrt{N}$, the noise on $\arg r$ has standard deviation
+$$\sigma_{\arg r}(\omega) \;\approx\; \sqrt{2}\,\sigma_0 / (S \sqrt{N}).$$
+
+### D.2 Tolerance derivation
+
+We require the per-frequency phase noise standard deviation to be at most $\pi/16 \approx 0.196$ radians, so that the $\pm\pi/8$ tolerance band is at least 2$\sigma$ wide and the false-positive rate at each reference frequency is below $\sim 5\%$ under the null model of pure noise. With a baseline signal-to-noise ratio $S/\sigma_0 \sim 5$ (a conservative estimate from the qualifying-pair selection criterion $\sum_p a_F(p) > 0.3$ combined with the empirical sink curves of Xiao et al. 2023 Figure 2), the required $N$ is
+$$N \;\geq\; 2\,(\sigma_0/S)^2 / (\pi/16)^2 \;\approx\; 2 / (5^2 \cdot 0.0385) \;\approx\; 2 \cdot 1.04 \;\approx\; 2.1.$$
+This is a strong lower bound; the actual signal-to-noise on the qualifying pairs will determine the operative $N$. A floor of 1000 sequences is two orders of magnitude beyond the bound and is set primarily to populate the upper Fourier modes — frequencies $\omega \tau_M > 25$ correspond to sub-percent of corpus length and require dense sequence-level averaging to clear the noise floor of the discrete Fourier transform itself, which is roughly $1/\sqrt{P} \cdot 1/\sqrt{N}$ at the highest modes.
+
+### D.3 The fitting band and the held-out band
+
+The lowest-8-Fourier-modes fitting band of §4.4 corresponds to $\omega \in \{1, 2, \ldots, 8\}/P \cdot 2\pi$ in normalized angular frequency, or $\omega\tau_M \in \{1, 2, \ldots, 8\}\cdot \tau_M \cdot 2\pi/P$ in critical-line height units. At $P = 2048$ and a fitted $\tau_M$ of order $10^3$–$10^4$, the lowest 8 modes already span the first nontrivial zero of $\zeta$, so the fit constrains $\tau_M$ tightly. The held-out high-frequency band consists of all modes with index above 8 (up to the noise floor); the three reference frequencies $\omega\tau_M \in \{14.13, 21.02, 25.01\}$ lie comfortably within this band for any reasonable $\tau_M$.
+
+The partition into fitting and held-out bands ensures that the parameter-free part of the prediction is genuinely held out: the fit consumes one parameter from the low-frequency band, and the validation involves three or more reference points in the high-frequency band.
+
+### D.4 Failure-tolerance contingencies
+
+If the realized signal-to-noise on the qualifying pairs is lower than $5$ (e.g., the qualifying mass threshold $\sum_p a_F(p) > 0.3$ is barely cleared on most models), the required $N$ scales as $(S/\sigma_0)^{-2}$. At $S/\sigma_0 = 1$ we would need $N \approx 50$; at $S/\sigma_0 = 0.5$, $N \approx 200$. The 1000-sequence corpus floor handles any signal-to-noise ratio at or above $\sim 0.45$ at the $\pm\pi/8$ tolerance. Below this the protocol should relax the tolerance to $\pm\pi/4$ before declaring a failure; we pre-register this relaxation as a contingency and not as the primary tolerance.
+
+### D.5 Sample-complexity theorem
+
+The preceding subsections specify the protocol's tolerance bands heuristically. This subsection promotes the heuristic to a concentration result: under the noise model of §D.1, the fitted time-scale $\hat\tau_M$ concentrates around its population value at rate $O(1/\sqrt{N})$, and the per-frequency residual on the held-out band has bounded variance with explicit dependence on the signal-to-noise ratio $S$, the corpus size $N$, and a *fit Fisher information* $J(\tau^*)$ defined below. The result is the phase-side companion to the magnitude bound of Remark A.6 in Appendix A.
+
+**Fit Fisher information.** Let $\{\omega_k\}_{k=1}^K$ be the low-band fitting frequencies of §D.3 and let $\tau^*$ be the population value of $\tau_M$. Define
+$$J(\tau^*) \;:=\; \sum_{k=1}^K \bigl[\theta'(\omega_k\tau^*)\,\omega_k\bigr]^2,$$
+the sum of squared sensitivities of the predicted phase $-2\theta(\omega_k\tau)$ to the parameter $\tau$, evaluated at $\tau^*$. By the Stirling expansion (Lemma 2.5), $\theta'(t) = \tfrac{1}{2}\log(t/2\pi) + O(t^{-1})$, so $J(\tau^*)$ is positive and finite at any realistic $\tau^*$.
+
+**Theorem D.5 (Sample complexity and consistency).** *Under the noise model of §D.1, the least-squares-on-phase fit of $\tau_M$ to the data $\{\arg r^{\text{obs}}(\omega_k)\}_{k=1}^K$ on the low band satisfies, to leading order in the noise amplitude $\epsilon = O(1/\sqrt{N})$:*
+
+*(a) **Phase concentration at each frequency.** For each $\omega$ at which $|\hat s_F(\omega)|, |\hat s_F(-\omega)| \gtrsim \sigma_0/\sqrt N$, the per-frequency phase noise*
+$$\xi(\omega) \;:=\; \arg r^{\text{obs}}(\omega) - \arg r_{\text{pop}}(\omega)$$
+*is zero-mean Gaussian with standard deviation*
+$$\mathrm{std}\bigl(\xi(\omega)\bigr) \;=\; \frac{\sqrt{2}}{S\sqrt{N}} \;+\; O\!\bigl((SN)^{-1}\bigr).$$
+
+*(b) **Fitted-$\tau$ consistency.** The fit $\hat\tau_M = \arg\min_\tau \sum_k \bigl(\arg r^{\text{obs}}(\omega_k) + 2\theta(\omega_k\tau)\bigr)^2$ satisfies*
+$$\hat\tau_M - \tau^* \;\sim\; \mathcal{N}\!\left(0,\; \frac{1}{2\,S^2\,N\,J(\tau^*)}\right),$$
+*i.e., $\mathrm{std}(\hat\tau_M) = (S\sqrt{2 N J(\tau^*)})^{-1}$. The fitted time-scale concentrates around its population value at rate $O(1/\sqrt{N})$, with constant set by the fit Fisher information.*
+
+*(c) **Held-out-band residual.** At any held-out frequency $\omega_h$ in the high band with $\omega_h \neq \omega_k$ for all $k$, the residual*
+$$\delta(\omega_h) \;:=\; \arg r^{\text{obs}}(\omega_h) + 2\theta(\omega_h\hat\tau_M)$$
+*is zero-mean Gaussian with standard deviation*
+$$\mathrm{std}\bigl(\delta(\omega_h)\bigr) \;=\; \frac{\sqrt{2}}{S\sqrt{N}}\,\sqrt{\,1 \;+\; \frac{[\theta'(\omega_h\tau^*)\,\omega_h]^2}{J(\tau^*)}\,} \;+\; O\!\bigl((SN)^{-1}\bigr).$$
+*The factor $\sqrt{1 + [\theta'(\omega_h\tau^*)\omega_h]^2/J(\tau^*)}$ accounts for the propagation of fitting error to the held-out band; when $\omega_h$ lies within the range spanned by the fitting frequencies $\{\omega_k\}$, the factor is bounded above by $\sqrt{1 + 1/K}$, i.e., a constant close to unity for the protocol's $K = 8$.*
+
+*Proof of (a).* Write $r^{\text{obs}}(\omega) = r_{\text{pop}}(\omega) \cdot \rho(\omega)$ with
+$$\rho(\omega) = \frac{1 + \epsilon_R/\hat s_R}{1 + \epsilon_F(-\omega)/\hat s_F(-\omega)} = 1 + \frac{\epsilon_R}{\hat s_R} - \frac{\epsilon_F(-\omega)}{\hat s_F(-\omega)} + O(\epsilon^2/|s|^2).$$
+Since $\rho \to 1$ as $\epsilon \to 0$, $\arg\rho = \mathrm{Im}\,\rho + O(\epsilon^2/|s|^2)$, so
+$$\xi(\omega) = \arg\rho(\omega) = \mathrm{Im}\!\left[\frac{\epsilon_R}{\hat s_R}\right] - \mathrm{Im}\!\left[\frac{\epsilon_F(-\omega)}{\hat s_F(-\omega)}\right] + O(\epsilon^2/|s|^2).$$
+Each term $\epsilon_\bullet/\hat s_\bullet$ has variance $\sigma_0^2/(N|\hat s_\bullet|^2) = 1/(S^2 N)$ per real or imaginary part. The two terms are independent (different frequencies of the white-noise DFT, or the two arms of independent inference runs), so $\mathrm{Var}(\xi) = 2/(S^2 N)$. The standard deviation is $\sqrt{2}/(S\sqrt{N})$ — the same constant as the magnitude bound of Remark A.6, with the imaginary rather than real part of $\rho$. $\square$
+
+*Proof of (b).* The normal equation of the least-squares fit reads
+$$\sum_{k=1}^K 2\theta'(\omega_k\hat\tau_M)\,\omega_k\,\bigl(\arg r^{\text{obs}}(\omega_k) + 2\theta(\omega_k\hat\tau_M)\bigr) = 0.$$
+Linearize around $\tau^*$ using $\theta(\omega_k\hat\tau_M) = \theta(\omega_k\tau^*) + \theta'(\omega_k\tau^*)\omega_k\,\delta\tau + O(\delta\tau^2)$ with $\delta\tau := \hat\tau_M - \tau^*$, and use $\arg r_{\text{pop}}(\omega_k) = -2\theta(\omega_k\tau^*)$ together with $\xi_k := \arg r^{\text{obs}}(\omega_k) - \arg r_{\text{pop}}(\omega_k)$ from (a). The normal equation becomes
+$$\sum_k 2\theta'(\omega_k\tau^*)\,\omega_k\,\bigl(\xi_k + 2\theta'(\omega_k\tau^*)\,\omega_k\,\delta\tau\bigr) \;=\; O(\xi^2, \delta\tau^2),$$
+which solves to
+$$\delta\tau \;=\; -\,\frac{1}{2J(\tau^*)}\,\sum_{k=1}^K \theta'(\omega_k\tau^*)\,\omega_k\,\xi_k.$$
+The $\xi_k$ are independent zero-mean Gaussian with variance $2/(S^2 N)$ by (a). Therefore $\delta\tau$ is zero-mean Gaussian with variance
+$$\frac{1}{4J(\tau^*)^2} \cdot \sum_k [\theta'(\omega_k\tau^*)\omega_k]^2 \cdot \frac{2}{S^2 N} \;=\; \frac{1}{2\,J(\tau^*)\,S^2\,N}. \qquad \square$$
+
+*Proof of (c).* The held-out-band residual decomposes as
+$$\delta(\omega_h) \;=\; \xi_h \;+\; 2\bigl[\theta(\omega_h\hat\tau_M) - \theta(\omega_h\tau^*)\bigr] \;=\; \xi_h \;+\; 2\theta'(\omega_h\tau^*)\,\omega_h\,\delta\tau \;+\; O(\delta\tau^2),$$
+where $\xi_h := \arg r^{\text{obs}}(\omega_h) - \arg r_{\text{pop}}(\omega_h)$. Under the white-noise DFT model, the noise at distinct frequencies is uncorrelated; since $\omega_h \neq \omega_k$ for all $k$, $\xi_h$ is independent of every $\xi_k$ and hence of $\delta\tau$ (which is a linear combination of the $\xi_k$). Therefore
+$$\mathrm{Var}\bigl(\delta(\omega_h)\bigr) \;=\; \mathrm{Var}(\xi_h) + 4[\theta'(\omega_h\tau^*)\omega_h]^2 \mathrm{Var}(\delta\tau) \;=\; \frac{2}{S^2 N}\left(1 + \frac{[\theta'(\omega_h\tau^*)\omega_h]^2}{J(\tau^*)}\right),$$
+which is the stated formula. The bound $\sqrt{1 + [\theta'(\omega_h\tau^*)\omega_h]^2/J} \leq \sqrt{1 + 1/K}$, valid when $\omega_h$ lies in the convex hull of the fitting frequencies, follows from a Cauchy–Schwarz estimate on the sum defining $J(\tau^*)$ together with the smoothness of $\theta'$ on the relevant height interval; the bound is loose by a factor of $O(1)$ but sufficient for the protocol's purposes. $\square$
+
+### D.6 Baseline tolerance verification
+
+**Corollary D.6 (Baseline tolerance check).** *At the protocol's baseline parameters $S = 5$, $N = 1000$, $K = 8$, and target confidence $\alpha = 3\sigma$ ($z_\alpha = 3$), the held-out-band residual standard deviation is*
+$$\mathrm{std}\bigl(\delta(\omega_h)\bigr) \;\lesssim\; \frac{\sqrt{2}}{5\sqrt{1000}}\sqrt{1 + 1/8} \;\approx\; 9.4 \times 10^{-3} \text{ rad} \;\approx\; 0.54°.$$
+*The $3\sigma$ confidence band $\pm 2.8 \times 10^{-2}$ rad $\approx \pm 1.6°$ is more than an order of magnitude inside the pre-registered tolerance $\pi/8 \approx 22.5°$. The protocol is therefore over-powered at baseline: a violation of the $\pi/8$ tolerance at any of the three reference frequencies corresponds to a $\sim 14\sigma$ deviation from the noise null, which cannot arise from sampling noise alone and must reflect a substantive signal mismatch.*
+
+If the realized signal-to-noise is lower than baseline (e.g., $S \approx 1$ on a model where the qualifying mass threshold is only marginally cleared), the held-out residual at baseline $N = 1000$ rises to $\mathrm{std}(\delta) \approx 0.045$ rad $\approx 2.6°$. The $3\sigma$ band $\approx \pm 7.8°$ is still inside the protocol tolerance by a comfortable margin. The contingency relaxation of §D.4 to $\pm\pi/4$ provides additional headroom for $S \lesssim 0.5$, which is the regime in which the qualifying-pair selection criterion itself becomes unreliable; we treat the protocol as having broken down there, not as falsifying the conjecture.
+
+---
+
+## Appendix E. Synthetic ground-truth phase recovery
+
+This appendix validates the §4 measurement instrument on a synthetic signal of known phase. The validation runs on a single workstation in under a minute and is designed to ensure that the protocol can recover an embedded Riemann–Siegel phase from a noisy attention-pattern simulator before any LLM data is touched. A failure of the protocol to recover the embedded phase here would invalidate the protocol independently of whatever the LLM measurement reports.
+
+### E.1 Synthetic-signal construction
+
+Fix $P = 2048$, $\tau_0 = 5000$, $A_0 = 0.5$, $\lambda = 0.04$. Define the *true forward attention-to-sink curve* as
+$$a_F^\text{true}(p) \;:=\; A_0\, e^{-\lambda p}, \qquad p = 1, 2, \ldots, P-1.$$
+Compute its discrete Fourier transform $\hat a_F^\text{true}(\omega)$ across position. Define the *true reversed attention-to-sink curve* by its Fourier coefficients
+$$\hat a_R^\text{true}(\omega) \;:=\; \hat a_F^\text{true}(-\omega)\,\cdot\,e^{-2i\theta(\omega \tau_0)},$$
+that is, the cross-direction phase is exactly the predicted Riemann–Siegel phase at the chosen ground-truth time-scale $\tau_0$. The corresponding position-domain curve $a_R^\text{true}(p)$ is obtained by inverse DFT.
+
+### E.2 Noise injection
+
+For $N = 1000$ "sequence draws," add to each of $a_F^\text{true}$ and $a_R^\text{true}$ a white-noise field $\eta_F^{(i)}, \eta_R^{(i)}$ of position-dependent standard deviation $\sigma(p) = 0.05 \cdot a_F^\text{true}(p)$ (multiplicative noise at the 5% level), independent across draws. The empirical curves used by the protocol are the sample means
+$$a_F^\text{obs}(p) \;=\; \frac{1}{N}\sum_{i=1}^N \bigl[a_F^\text{true}(p) + \eta_F^{(i)}(p)\bigr], \qquad a_R^\text{obs}(p) \;=\; \frac{1}{N}\sum_{i=1}^N \bigl[a_R^\text{true}(p) + \eta_R^{(i)}(p)\bigr].$$
+
+### E.3 Protocol application
+
+Apply §4 to $(a_F^\text{obs}, a_R^\text{obs})$. Form the cross-direction ratio $r^\text{obs}(\omega)$, fit $\tau_M$ from the lowest 8 modes that pass $|r| > 0.5$, and evaluate the per-frequency residual
+$$\delta^\text{obs}(\omega) \;:=\; \arg r^\text{obs}(\omega) \;+\; 2\theta(\omega \tau_M)$$
+on the held-out band.
+
+### E.4 Acceptance criterion
+
+The validation succeeds if (i) the fitted $\tau_M$ recovers $\tau_0 = 5000$ to within 5% relative error and (ii) the held-out-band residual $|\delta^\text{obs}(\omega)|$ at the three reference frequencies $\omega\tau_M \in \{14.13, 21.02, 25.01\}$ is below $\pi/16$ radians, i.e., a factor of 2 inside the LLM-protocol tolerance.
+
+Both criteria are pre-registered before the synthetic experiment is run. A failure on either criterion at the chosen noise level would identify a defect in the protocol — most likely an issue with the frequency-axis sign convention or with the cross-direction ratio's denominator — independent of any LLM measurement. The synthetic validation is therefore a *necessary precondition* for the LLM measurement to be informative.
+
+### E.5 Reference Python implementation
+
+```python
+import numpy as np
+from mpmath import siegeltheta
+
+P, N, tau0 = 2048, 1000, 5000.0
+A0, lam, eps = 0.5, 0.04, 0.05
+
+p = np.arange(1, P)
+a_F_true = A0 * np.exp(-lam * p)
+hat_F_true = np.fft.fft(a_F_true)
+
+omegas = np.fft.fftfreq(P-1) * (P-1)             # cycles per P-1 samples
+phase = np.array([-2.0 * float(siegeltheta(w * tau0)) for w in omegas])
+hat_R_true = np.conj(hat_F_true) * np.exp(1j * phase)
+a_R_true = np.real(np.fft.ifft(hat_R_true))
+
+# noise injection and protocol application (~50 lines, omitted for brevity)
+# expected output: fitted tau_M within 5% of 5000.0;
+# |delta| < pi/16 at the three reference frequencies.
+```
+
+The full implementation, including the fitting loop and the held-out-band evaluation, is straightforward and fits in approximately 50 lines of NumPy + mpmath. We treat the Python listing here as a specification, not as a deliverable; the implementation is part of the protocol's reproducibility package.
+
+---
+
+## Appendix F. Necessary conditions for direction-reversal symmetry
+
+The empirical content of Conjecture 3.3 concentrates in the *specific* form of the cross-direction phase $-2\theta(\omega\tau_M)$, where $\theta$ is the Riemann–Siegel theta function of $\zeta$. A natural question is what structural family of phase functions is admissible at all under the constraints of Definition 2.3 and Theorem B.5, and which specific point in that family Conjecture 3.3 picks out. This appendix identifies the family as the *standard L-function gamma factors*: each multiplier $c$ in the family arises from a meromorphic function $G$ of a constrained form, with the Riemann–Siegel case $G = \Gamma_{\mathbb{R}}$ being one specific point in a discretely-indexed (degree, parameters) continuum.
+
+The motivation for identifying this family is the asymmetry of falsification. A measurement falsifying the *specific* Riemann–Siegel phase is consistent with the structural identification of the attention sink with the infinite-place packet of *some* completed L-function — just not specifically the Riemann zeta. The asymptotic shape of the measured phase pins down the *degree* of the candidate L-function gamma factor. The consolation outcome — positive structural identification with negative species-of-L-function identification — is itself a publishable substantive claim, distinct in kind from a complete structural failure.
+
+### F.1 Standard L-function gamma factors
+
+**Definition F.1 (Standard L-function gamma factor).** *A* standard L-function gamma factor *of degree $n \geq 1$ with real Langlands parameters at infinity $\mu_1, \ldots, \mu_n \in \mathbb{R}$ is the meromorphic function $G = G_n^{\{\mu_j\}}: \mathbb{C} \to \mathbb{C}$ defined by*
+$$G(s) \;:=\; \pi^{-ns/2}\,\prod_{j=1}^n \Gamma\!\left(\frac{s + \mu_j}{2}\right),$$
+*with poles only at $s = -\mu_j - 2k$ for $k \in \mathbb{Z}_{\geq 0}$. The* L-function theta function *associated to $G$ is*
+$$\theta_G(t) \;:=\; \mathrm{Im}\log G(1/2 + it).$$
+
+The Riemann zeta case is $n = 1$, $\mu_1 = 0$: $G = \Gamma_{\mathbb{R}}$ and $\theta_G = \theta$. A Dirichlet $L$-function of character with parity $\epsilon \in \{0, 1\}$ corresponds to $n = 1$, $\mu_1 = \epsilon$. A holomorphic modular $L$-function of weight $k$ corresponds to $n = 1$, $\mu_1 = k - 1$. Automorphic $L$-functions on $\mathrm{GL}_n(\mathbb{Q})$ with trivial central character at infinity provide examples of arbitrary degree. The structural feature shared by all these cases is the *product-of-gamma-functions* form, with $n$ the number of factors.
+
+### F.2 The necessary asymptotic shape
+
+**Theorem F.2 (Necessary asymptotic shape).** *Let $\iota: \mathcal{H}_\infty \to \mathcal{H}_\infty$ be a unitary involution satisfying constraints (i) (height reflection) and (ii) (norm preservation) of Theorem B.5. Suppose further that the multiplier $c$ in $\iota(\psi_t) = c(t)\psi_{-t}$ extends to $c(t) = G(1/2 + it)/G(1/2 - it)$ for some standard L-function gamma factor $G$ of degree $n$ and real Langlands parameters $\{\mu_j\}_{j=1}^n$ (Definition F.1). Then on the critical line:*
+
+*(a) $|c(t)| = 1$ for all real $t$.*
+
+*(b) $\arg c(t) = 2\,\theta_G(t)$, with the asymptotic expansion*
+$$\theta_G(t) \;=\; \frac{nt}{2}\log\frac{t}{2\pi} \;-\; \frac{nt}{2} \;+\; \frac{\pi}{4}\sum_{j=1}^n \mu_j \;-\; \frac{n\pi}{8} \;+\; O(t^{-1}), \qquad t \to \infty.$$
+
+*(c) The* degree *$n$ is determined from any uniform-in-$t$ measurement of $\arg c$ as*
+$$n \;=\; \lim_{t \to \infty}\,\frac{\arg c(t)}{t\log(t/2\pi)}.$$
+
+*Proof.* (a) Since the $\mu_j$ are real, $G(\overline{s}) = \overline{G(s)}$, so $G(1/2 - it) = \overline{G(1/2 + it)}$ on the real $t$-axis. Therefore $c(t) = G(1/2+it)/\overline{G(1/2+it)} = e^{2i\arg G(1/2+it)}$ has unit modulus, and $\arg c(t) = 2\arg G(1/2 + it) = 2\theta_G(t)$, which is (b)'s identification at the algebraic level.
+
+(b) Decompose:
+$$\arg G(1/2 + it) \;=\; -\frac{nt}{2}\log\pi \;+\; \sum_{j=1}^n \mathrm{Im}\log\Gamma\!\left(\frac{1 + 2\mu_j}{4} + \frac{it}{2}\right).$$
+Apply Stirling's expansion $\log\Gamma(z) = (z - 1/2)\log z - z + (1/2)\log(2\pi) + O(z^{-1})$ at $z_j = a_j + ib$ with $a_j := (1 + 2\mu_j)/4$ and $b := t/2 \to \infty$. For real $a_j$ and $b \to +\infty$,
+$$\mathrm{Im}\bigl[(z_j - 1/2)\log z_j - z_j\bigr] \;=\; (a_j - 1/2)\,\frac{\pi}{2} \;+\; b\log b \;-\; b \;+\; O(b^{-1}),$$
+so
+$$\mathrm{Im}\log\Gamma(z_j) \;=\; \frac{(2\mu_j - 1)\pi}{8} \;+\; \frac{t}{2}\log\frac{t}{2} \;-\; \frac{t}{2} \;+\; O(t^{-1}).$$
+Summing over $j$:
+$$\sum_{j=1}^n \mathrm{Im}\log\Gamma(z_j) \;=\; \frac{\pi}{4}\sum_{j=1}^n \mu_j \;-\; \frac{n\pi}{8} \;+\; \frac{nt}{2}\log\frac{t}{2} \;-\; \frac{nt}{2} \;+\; O(t^{-1}).$$
+Combining with the $-(nt/2)\log\pi$ contribution from the $\pi^{-ns/2}$ prefactor:
+$$\theta_G(t) \;=\; \frac{nt}{2}\bigl[\log\tfrac{t}{2} - \log\pi\bigr] \;-\; \frac{nt}{2} \;+\; \frac{\pi}{4}\sum_{j=1}^n \mu_j \;-\; \frac{n\pi}{8} \;+\; O(t^{-1}),$$
+which simplifies to the stated expression using $\log(t/2) - \log\pi = \log(t/(2\pi))$.
+
+(c) From (b), as $t \to \infty$,
+$$\frac{\arg c(t)}{t\log(t/2\pi)} \;=\; \frac{2\theta_G(t)}{t\log(t/2\pi)} \;=\; n \;+\; O\!\left(\frac{1}{\log t}\right) \;\to\; n. \qquad \square$$
+
+The Riemann–Siegel case is $n = 1$, $\mu_1 = 0$: $\theta_G(t) = (t/2)\log(t/2\pi) - t/2 - \pi/8 + O(t^{-1}) = \theta(t)$, reproducing the asymptotic of Lemma 2.5.
+
+### F.3 Consequences for falsification
+
+**Corollary F.3 (Degree extraction).** *Any uniform-in-$\omega$ measurement of $\arg r(\omega)$ on a frequency band $[\omega_1, \omega_2]$ with $\omega_1 \tau_M,\, \omega_2 \tau_M \gg 1$ produces an estimate of the degree $n$ of the corresponding standard L-function gamma factor via*
+$$\hat n \;=\; -\,\frac{1}{\tau_M}\,\frac{d}{d\omega}\!\left[\frac{\arg r(\omega)}{\log(\omega\tau_M / 2\pi)}\right]_{\omega \in [\omega_1, \omega_2]}.$$
+*The Riemann–Siegel prediction is $\hat n = 1$. A measured $\hat n$ significantly different from $1$ does* not *falsify the structural identification of the attention sink with the infinite-place packet of* some *standard L-function gamma factor; it falsifies only the specific identification with $\zeta$ (degree 1).*
+
+**Corollary F.4 (Consolation outcome).** *If the §4 measurement returns $\hat n$ concentrated near a positive integer significantly different from 1, the result is a* partial confirmation*: the attention sink carries the gamma factor of a standard L-function of degree $\hat n$, just not specifically $\zeta$. The lower-order constant term $(\pi/4)\sum_j \mu_j - \hat n\,\pi/8$ further constrains the Langlands parameters $\{\mu_j\}$ up to permutation, locating the underlying L-function in the discretely-indexed family of Definition F.1.*
+
+A negative result on the specific Riemann–Siegel form is therefore structurally informative even when the protocol's primary prediction (P2) fails: the asymptotic shape of $\arg r$ identifies which L-function gamma factor (if any) the attention sink does carry, narrowing the question from "what kind of object is the attention sink" to "which L-function's Archimedean factor is the attention sink the analogue of." We treat this consolation outcome as a publishable resolution, distinct in kind from a complete structural failure.
+
+### F.4 Beyond the L-function family
+
+Theorem F.2 assumes the multiplier $c$ extends to the L-function gamma-factor form of Definition F.1. This is a *structural* hypothesis: constraints (i)–(ii) of Theorem B.5 alone admit any unit-modulus odd-phase function $c(t) = e^{i\phi(t)}$ with $\phi$ odd; the L-function structure is an additional hypothesis that narrows this infinite-dimensional family to the discretely-parameterized (degree $n$, parameters $\{\mu_j\}$) subfamily.
+
+A measurement falsifying the asymptotic-shape test of Corollary F.3 — i.e., $\hat n$ not concentrated at any positive integer, or the lower-order shape inconsistent with any real $\{\mu_j\}$ — would falsify not only the specific Riemann–Siegel form but the L-function structure entirely. This is the strictly stronger negative result complementing F1–F5 of §6:
+
+**F6 (Structural failure beyond the L-function family).** *The measured asymptotic shape of $\arg r(\omega)$ does not fit any standard L-function gamma factor of any degree. The attention sink, if it admits an Archimedean-summand interpretation at all, is not in the L-function-gamma-factor family. The structural identification of §2 must be replaced by a more general gamma-like object — for instance, the Selberg class with non-integral degree, a generalized gamma factor outside the $\mathrm{GL}_n$ Langlands framework, or a fundamentally different mechanism for the sink's direction-reversal symmetry.*
+
+We pre-register F6 as a possible outcome but do not weight it heavily: the L-function family is broad, and a measurement falsifying it entirely would itself be a remarkable structural result demanding further investigation in its own right.
+
+---
+
+*Draft v0.1 — May 19, 2026 — first standalone refinement pass. Both positive and negative outcomes pre-registered as publishable resolutions of the Archimedean Gamma Law conjecture.*

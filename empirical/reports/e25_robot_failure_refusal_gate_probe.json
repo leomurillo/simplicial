@@ -1,0 +1,604 @@
+{
+  "timestamp": "2026-06-04T18:04:03.517513+00:00",
+  "dataset": {
+    "name": "UCI Robot Execution Failures",
+    "page": "https://archive.ics.uci.edu/dataset/138/robot+execution+failures",
+    "kdd_page": "https://kdd.ics.uci.edu/databases/robotfailure/robotfailure.html",
+    "base_url": "https://kdd.ics.uci.edu/databases/robotfailure/",
+    "files": {
+      "lp1": {
+        "path": "C:\\Projects\\simplicial\\empirical\\data\\robot_execution_failures\\lp1.data",
+        "bytes": 27345,
+        "instances": 88,
+        "labels": {
+          "normal": 21,
+          "collision": 17,
+          "obstruction": 34,
+          "fr_collision": 16
+        },
+        "safe": 21,
+        "failure": 67
+      },
+      "lp2": {
+        "path": "C:\\Projects\\simplicial\\empirical\\data\\robot_execution_failures\\lp2.data",
+        "bytes": 14606,
+        "instances": 47,
+        "labels": {
+          "normal": 20,
+          "back_col": 7,
+          "front_col": 6,
+          "right_col": 5,
+          "left_col": 9
+        },
+        "safe": 20,
+        "failure": 27
+      },
+      "lp3": {
+        "path": "C:\\Projects\\simplicial\\empirical\\data\\robot_execution_failures\\lp3.data",
+        "bytes": 14512,
+        "instances": 47,
+        "labels": {
+          "ok": 20,
+          "moved": 15,
+          "slightly_moved": 9,
+          "lost": 3
+        },
+        "safe": 20,
+        "failure": 27
+      },
+      "lp4": {
+        "path": "C:\\Projects\\simplicial\\empirical\\data\\robot_execution_failures\\lp4.data",
+        "bytes": 33619,
+        "instances": 117,
+        "labels": {
+          "normal": 24,
+          "collision": 72,
+          "obstruction": 21
+        },
+        "safe": 24,
+        "failure": 93
+      },
+      "lp5": {
+        "path": "C:\\Projects\\simplicial\\empirical\\data\\robot_execution_failures\\lp5.data",
+        "bytes": 49158,
+        "instances": 164,
+        "labels": {
+          "normal": 44,
+          "collision_in_tool": 26,
+          "collision_in_part": 47,
+          "bottom_obstruction": 21,
+          "bottom_collision": 26
+        },
+        "safe": 44,
+        "failure": 120
+      }
+    },
+    "instances": 463,
+    "safe": 129,
+    "failure": 334,
+    "labels": {
+      "normal": 109,
+      "collision": 89,
+      "obstruction": 55,
+      "fr_collision": 16,
+      "back_col": 7,
+      "front_col": 6,
+      "right_col": 5,
+      "left_col": 9,
+      "ok": 20,
+      "moved": 15,
+      "slightly_moved": 9,
+      "lost": 3,
+      "collision_in_tool": 26,
+      "collision_in_part": 47,
+      "bottom_obstruction": 21,
+      "bottom_collision": 26
+    }
+  },
+  "config": {
+    "seed": 20260603,
+    "prefix_lengths": [
+      3,
+      6,
+      9,
+      12,
+      15
+    ],
+    "stability_history": 7,
+    "train_fraction": 0.6,
+    "calibration_fraction": 0.2,
+    "alpha": 0.05,
+    "hidden": [
+      72,
+      36
+    ],
+    "epochs": 70,
+    "patience": 10,
+    "batch_size": 384,
+    "lr": 0.0025,
+    "unsafe_continue_penalty": 1.0,
+    "false_refusal_penalty": 0.25,
+    "refusal_cost": 0.08
+  },
+  "audit": {
+    "split_instances": {
+      "train": {
+        "instances": 277,
+        "safe": 77,
+        "failure": 200,
+        "problems": {
+          "lp1": 53,
+          "lp2": 28,
+          "lp3": 28,
+          "lp4": 70,
+          "lp5": 98
+        },
+        "labels": {
+          "normal": 65,
+          "obstruction": 27,
+          "fr_collision": 11,
+          "collision": 58,
+          "left_col": 5,
+          "front_col": 5,
+          "back_col": 4,
+          "right_col": 2,
+          "ok": 12,
+          "slightly_moved": 7,
+          "lost": 2,
+          "moved": 7,
+          "collision_in_tool": 13,
+          "collision_in_part": 28,
+          "bottom_obstruction": 12,
+          "bottom_collision": 19
+        }
+      },
+      "calibration": {
+        "instances": 94,
+        "safe": 26,
+        "failure": 68,
+        "problems": {
+          "lp1": 18,
+          "lp2": 10,
+          "lp3": 10,
+          "lp4": 23,
+          "lp5": 33
+        },
+        "labels": {
+          "normal": 22,
+          "fr_collision": 3,
+          "obstruction": 14,
+          "collision": 15,
+          "left_col": 2,
+          "right_col": 2,
+          "back_col": 2,
+          "ok": 4,
+          "slightly_moved": 1,
+          "moved": 5,
+          "bottom_obstruction": 5,
+          "collision_in_part": 9,
+          "collision_in_tool": 6,
+          "bottom_collision": 4
+        }
+      },
+      "test": {
+        "instances": 92,
+        "safe": 26,
+        "failure": 66,
+        "problems": {
+          "lp1": 17,
+          "lp2": 9,
+          "lp3": 9,
+          "lp4": 24,
+          "lp5": 33
+        },
+        "labels": {
+          "normal": 22,
+          "obstruction": 14,
+          "fr_collision": 2,
+          "collision": 16,
+          "front_col": 1,
+          "left_col": 2,
+          "back_col": 1,
+          "right_col": 1,
+          "ok": 4,
+          "moved": 3,
+          "slightly_moved": 1,
+          "lost": 1,
+          "collision_in_part": 10,
+          "bottom_obstruction": 4,
+          "bottom_collision": 3,
+          "collision_in_tool": 7
+        }
+      }
+    },
+    "prefix_counts": {
+      "train": 1385,
+      "calibration": 470,
+      "test": 460
+    },
+    "probe_accuracy": {
+      "train": 0.9270758122743682,
+      "calibration": 0.9,
+      "test": 0.8978260869565218
+    },
+    "majority_accuracy": {
+      "train": 0.7220216606498195,
+      "calibration": 0.723404255319149,
+      "test": 0.717391304347826
+    },
+    "probe_model": {
+      "raw_feature_count": 55,
+      "expanded_feature_count": 111
+    }
+  },
+  "gate_threshold": 0.0006723904355087711,
+  "train_summary": {
+    "episodes": 1385,
+    "packets": 2770,
+    "optimal_actions": {
+      "continue": 385,
+      "refuse_recover": 1000
+    },
+    "labels": {
+      "normal": 325,
+      "obstruction": 135,
+      "fr_collision": 55,
+      "collision": 290,
+      "left_col": 25,
+      "front_col": 25,
+      "back_col": 20,
+      "right_col": 10,
+      "ok": 60,
+      "slightly_moved": 35,
+      "lost": 10,
+      "moved": 35,
+      "collision_in_tool": 65,
+      "collision_in_part": 140,
+      "bottom_obstruction": 60,
+      "bottom_collision": 95
+    },
+    "mean_gate_score": 0.0940205738112595,
+    "mean_utility": 0.07536101083032494,
+    "mean_unsafe_continue": 0.36101083032490977,
+    "mean_false_refusal": 0.13898916967509026
+  },
+  "calibration_summary": {
+    "episodes": 470,
+    "packets": 940,
+    "optimal_actions": {
+      "continue": 130,
+      "refuse_recover": 340
+    },
+    "labels": {
+      "normal": 110,
+      "fr_collision": 15,
+      "obstruction": 70,
+      "collision": 75,
+      "left_col": 10,
+      "right_col": 10,
+      "back_col": 10,
+      "ok": 20,
+      "slightly_moved": 5,
+      "moved": 25,
+      "bottom_obstruction": 25,
+      "collision_in_part": 45,
+      "collision_in_tool": 30,
+      "bottom_collision": 20
+    },
+    "mean_gate_score": 0.10705326488795527,
+    "mean_utility": 0.0747872340425532,
+    "mean_unsafe_continue": 0.3617021276595745,
+    "mean_false_refusal": 0.13829787234042554
+  },
+  "test_summary": {
+    "episodes": 460,
+    "packets": 920,
+    "optimal_actions": {
+      "continue": 130,
+      "refuse_recover": 330
+    },
+    "labels": {
+      "normal": 110,
+      "obstruction": 70,
+      "fr_collision": 10,
+      "collision": 80,
+      "front_col": 5,
+      "left_col": 10,
+      "back_col": 5,
+      "right_col": 5,
+      "ok": 20,
+      "moved": 15,
+      "slightly_moved": 5,
+      "lost": 5,
+      "collision_in_part": 50,
+      "bottom_obstruction": 20,
+      "bottom_collision": 15,
+      "collision_in_tool": 35
+    },
+    "mean_gate_score": 0.07863198899642494,
+    "mean_utility": 0.0772826086956522,
+    "mean_unsafe_continue": 0.358695652173913,
+    "mean_false_refusal": 0.14130434782608695
+  },
+  "overall": {
+    "scalar_mlp": {
+      "value": {
+        "rmse_observed": 0.49206157127255445,
+        "r2_observed": 0.6997347885555723
+      },
+      "select_regression": {
+        "rmse_observed": 0.2803887132881318,
+        "r2_observed": 0.676273955753316
+      },
+      "row_selection": {
+        "row_accuracy": 0.9065217391304348,
+        "optimal_detection": 0.9021739130434783,
+        "nonoptimal_false_admission": 0.0891304347826087
+      },
+      "policy": {
+        "action_accuracy": 0.908695652173913,
+        "mean_regret": 0.15491304347826085,
+        "p90_regret": 0.0,
+        "unsafe_continue": 0.06086956521739131,
+        "false_refusal": 0.030434782608695653,
+        "chosen_actions": {
+          "continue": 144,
+          "refuse_recover": 316
+        },
+        "optimal_actions": {
+          "continue": 130,
+          "refuse_recover": 330
+        }
+      },
+      "model": {
+        "feature_kind": "scalar",
+        "basis_kind": "trained_mlp",
+        "feature_count": 4,
+        "hidden": [
+          72,
+          36
+        ],
+        "value_history": [
+          {
+            "epoch": 1.0,
+            "train_mse_scaled": 0.6472687135645978,
+            "val_mse_scaled": 1.1015137852495713
+          },
+          {
+            "epoch": 10.0,
+            "train_mse_scaled": 0.16024913576761013,
+            "val_mse_scaled": 0.4006180114663515
+          },
+          {
+            "epoch": 20.0,
+            "train_mse_scaled": 0.15357636800338983,
+            "val_mse_scaled": 0.3246130535976273
+          },
+          {
+            "epoch": 30.0,
+            "train_mse_scaled": 0.1501298807191749,
+            "val_mse_scaled": 0.34210776964037154
+          }
+        ],
+        "select_history": [
+          {
+            "epoch": 1.0,
+            "train_mse_scaled": 0.31077786385162365,
+            "val_mse_scaled": 0.7438052590275547
+          },
+          {
+            "epoch": 10.0,
+            "train_mse_scaled": 0.1861529908460407,
+            "val_mse_scaled": 0.35484174409949726
+          },
+          {
+            "epoch": 20.0,
+            "train_mse_scaled": 0.18216217763655126,
+            "val_mse_scaled": 0.36230348068067386
+          }
+        ]
+      }
+    },
+    "continuous_mlp": {
+      "value": {
+        "rmse_observed": 0.4006502274632771,
+        "r2_observed": 0.8009340837845158
+      },
+      "select_regression": {
+        "rmse_observed": 0.22230170495894536,
+        "r2_observed": 0.7965104214574729
+      },
+      "row_selection": {
+        "row_accuracy": 0.9423913043478261,
+        "optimal_detection": 0.9456521739130435,
+        "nonoptimal_false_admission": 0.06086956521739131
+      },
+      "policy": {
+        "action_accuracy": 0.9478260869565217,
+        "mean_regret": 0.07978260869565218,
+        "p90_regret": 0.0,
+        "unsafe_continue": 0.021739130434782608,
+        "false_refusal": 0.030434782608695653,
+        "chosen_actions": {
+          "continue": 126,
+          "refuse_recover": 334
+        },
+        "optimal_actions": {
+          "continue": 130,
+          "refuse_recover": 330
+        }
+      },
+      "model": {
+        "feature_kind": "continuous",
+        "basis_kind": "trained_mlp",
+        "feature_count": 64,
+        "hidden": [
+          72,
+          36
+        ],
+        "value_history": [
+          {
+            "epoch": 1.0,
+            "train_mse_scaled": 0.5444031132857756,
+            "val_mse_scaled": 0.8448969545932891
+          },
+          {
+            "epoch": 10.0,
+            "train_mse_scaled": 0.07928924516104746,
+            "val_mse_scaled": 0.3010669430939905
+          },
+          {
+            "epoch": 20.0,
+            "train_mse_scaled": 0.05706212715846889,
+            "val_mse_scaled": 0.2736687905632811
+          }
+        ],
+        "select_history": [
+          {
+            "epoch": 1.0,
+            "train_mse_scaled": 0.4402428589068435,
+            "val_mse_scaled": 1.2578807588312546
+          },
+          {
+            "epoch": 10.0,
+            "train_mse_scaled": 0.09365403498682878,
+            "val_mse_scaled": 0.43278228203260155
+          },
+          {
+            "epoch": 20.0,
+            "train_mse_scaled": 0.07157067304924175,
+            "val_mse_scaled": 0.37870056104350086
+          },
+          {
+            "epoch": 30.0,
+            "train_mse_scaled": 0.05810191255330898,
+            "val_mse_scaled": 0.3564868924709538
+          },
+          {
+            "epoch": 40.0,
+            "train_mse_scaled": 0.05352108750110238,
+            "val_mse_scaled": 0.31688889430510553
+          },
+          {
+            "epoch": 50.0,
+            "train_mse_scaled": 0.0421481262553871,
+            "val_mse_scaled": 0.33730430868191175
+          }
+        ]
+      }
+    },
+    "hybrid_mlp": {
+      "value": {
+        "rmse_observed": 0.4324655546276791,
+        "r2_observed": 0.7680634653582152
+      },
+      "select_regression": {
+        "rmse_observed": 0.30079491644132555,
+        "r2_observed": 0.6274388464521145
+      },
+      "row_selection": {
+        "row_accuracy": 0.9358695652173913,
+        "optimal_detection": 0.9369565217391305,
+        "nonoptimal_false_admission": 0.06521739130434782
+      },
+      "policy": {
+        "action_accuracy": 0.9456521739130435,
+        "mean_regret": 0.08104347826086956,
+        "p90_regret": 0.0,
+        "unsafe_continue": 0.01956521739130435,
+        "false_refusal": 0.034782608695652174,
+        "chosen_actions": {
+          "continue": 123,
+          "refuse_recover": 337
+        },
+        "optimal_actions": {
+          "continue": 130,
+          "refuse_recover": 330
+        }
+      },
+      "model": {
+        "feature_kind": "hybrid",
+        "basis_kind": "trained_mlp",
+        "feature_count": 69,
+        "hidden": [
+          72,
+          36
+        ],
+        "value_history": [
+          {
+            "epoch": 1.0,
+            "train_mse_scaled": 0.5310605605880517,
+            "val_mse_scaled": 2.784777696501861
+          },
+          {
+            "epoch": 10.0,
+            "train_mse_scaled": 0.07899550339065474,
+            "val_mse_scaled": 0.5519770219620609
+          },
+          {
+            "epoch": 20.0,
+            "train_mse_scaled": 0.05521940546994641,
+            "val_mse_scaled": 0.4575120816340046
+          },
+          {
+            "epoch": 30.0,
+            "train_mse_scaled": 0.04365079374354366,
+            "val_mse_scaled": 0.44003467540505675
+          },
+          {
+            "epoch": 40.0,
+            "train_mse_scaled": 0.03693236828151971,
+            "val_mse_scaled": 0.4256619129612889
+          },
+          {
+            "epoch": 50.0,
+            "train_mse_scaled": 0.029477098805008067,
+            "val_mse_scaled": 0.38717879735238064
+          },
+          {
+            "epoch": 60.0,
+            "train_mse_scaled": 0.02410134390985624,
+            "val_mse_scaled": 0.37916071947256963
+          },
+          {
+            "epoch": 70.0,
+            "train_mse_scaled": 0.020077740288494995,
+            "val_mse_scaled": 0.364236977821683
+          }
+        ],
+        "select_history": [
+          {
+            "epoch": 1.0,
+            "train_mse_scaled": 0.44131199921051295,
+            "val_mse_scaled": 2.858302979380374
+          },
+          {
+            "epoch": 10.0,
+            "train_mse_scaled": 0.10190231765999813,
+            "val_mse_scaled": 0.522582296573504
+          },
+          {
+            "epoch": 20.0,
+            "train_mse_scaled": 0.07339721248129488,
+            "val_mse_scaled": 0.5284378932470426
+          }
+        ]
+      }
+    }
+  },
+  "decision_quantities": {
+    "scalar_accuracy": 0.908695652173913,
+    "continuous_accuracy": 0.9478260869565217,
+    "hybrid_accuracy": 0.9456521739130435,
+    "scalar_regret": 0.15491304347826085,
+    "continuous_regret": 0.07978260869565218,
+    "hybrid_regret": 0.08104347826086956,
+    "continuous_unsafe_continue": 0.021739130434782608,
+    "hybrid_unsafe_continue": 0.01956521739130435,
+    "continuous_false_refusal": 0.030434782608695653,
+    "hybrid_false_refusal": 0.034782608695652174,
+    "continuous_select_rmse": 0.22230170495894536,
+    "hybrid_select_rmse": 0.30079491644132555
+  },
+  "finding": "ROBOT_FAILURE_MLP_ABSORBS_GATE_WITH_SAFETY_HINT"
+}

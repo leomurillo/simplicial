@@ -1,0 +1,138 @@
+==============================================================================
+ Audit chi: Bures-Hessian sub-bundle audit on D(C^10) + D(C^12)
+ Squarefree non-primorial + non-squarefree extensions of audit mu
+==============================================================================
+
+==============================================================================
+ chi_10: D(C^10), Z/10 = 2*5 (squarefree non-primorial)
+==============================================================================
+
+  [chi_10 (strict V/M)]
+    V_idx (dim 5): [2, 4, 5, 6, 8]
+    M_idx (dim 4): [1, 3, 7, 9]
+    Tangent dim: 99
+    ||P_V . P_M||_F = 1.856e-15  (machine floor)
+    Hessian I_real signature: (1, 4, 94) [expected (1, 4, 94)]
+    m^2_simplex quad signature: (4, 0, 95) [expected (4, 0, 95)]
+    V-Lor (dim 5) perp M-Eucl (dim 4): max overlap singular value = 3.196e-16  [HS-orthogonal]
+
+==============================================================================
+ chi_12 (strict): D(C^12), Z/12 = 2^2 * 3, strict V/M
+==============================================================================
+
+  [chi_12 (strict V/M, H_4 in M)]
+    V_idx (dim 3): [4, 6, 8]
+    M_idx (dim 8): [1, 2, 3, 5, 7, 9, 10, 11]
+    Tangent dim: 143
+    ||P_V . P_M||_F = 3.124e-15  (machine floor)
+    Hessian I_real signature: (1, 2, 140) [expected (1, 2, 140)]
+    m^2_simplex quad signature: (8, 0, 135) [expected (8, 0, 135)]
+    V-Lor (dim 3) perp M-Eucl (dim 8): max overlap singular value = 3.696e-16  [HS-orthogonal]
+
+==============================================================================
+ chi_12 (inclusive): D(C^12), Z/12, V = H_2 + H_3 + H_4 (prime-power in V)
+==============================================================================
+
+  [chi_12 (inclusive V/M, H_4 in V)]
+    V_idx (dim 5): [3, 4, 6, 8, 9]
+    M_idx (dim 6): [1, 2, 5, 7, 10, 11]
+    Tangent dim: 143
+    ||P_V . P_M||_F = 3.814e-15  (machine floor)
+    Hessian I_real signature: (1, 4, 138) [expected (1, 4, 138)]
+    m^2_simplex quad signature: (6, 0, 137) [expected (6, 0, 137)]
+    V-Lor (dim 5) perp M-Eucl (dim 6): max overlap singular value = 2.829e-16  [HS-orthogonal]
+
+==============================================================================
+ chi_12 (trichotomy): D(C^12), Z/12, V/W/M with W = H_4 separate
+==============================================================================
+
+  [chi_12 (V/W/M trichotomy)]
+    V_idx (dim 3): [4, 6, 8]
+    M_idx (dim 6): [1, 2, 5, 7, 10, 11]
+    W_idx (dim 2): [3, 9]
+    Tangent dim: 143
+    ||P_V . P_M||_F = 2.940e-15  (machine floor)
+    Hessian I_real signature: (1, 2, 140) [expected (1, 2, 140)]
+    m^2_simplex quad signature: (6, 0, 137) [expected (6, 0, 137)]
+    V-Lor (dim 3) perp M-Eucl (dim 6): max overlap singular value = 3.500e-16  [HS-orthogonal]
+    W-quad signature: pos_q = 2, dim_W = 2
+    V-Lor perp W-Eucl: max overlap = 1.048e-16  [orthogonal]
+    W-Eucl perp M-Eucl: max overlap = 4.472e-01  [OVERLAP]
+
+==============================================================================
+ SUMMARY
+==============================================================================
+  Audit                                     Hess sig         Quartic sig         V perp M?
+  ----------------------------------------  ----------------  ----------------  ---------------
+  chi_10 (strict V/M)                       (1, 4, 94)        (4, 0, 95)        3.196e-16
+  chi_12 (strict V/M, H_4 in M)             (1, 2, 140)       (8, 0, 135)       3.696e-16
+  chi_12 (inclusive V/M, H_4 in V)          (1, 4, 138)       (6, 0, 137)       2.829e-16
+  chi_12 (V/W/M trichotomy)                 (1, 2, 140)       (6, 0, 137)       3.500e-16
+
+==============================================================================
+ Z/12 ADJUDICATION (P9 of v2insert-05)
+==============================================================================
+  The three candidate decompositions on Z/12:
+
+  (a) Strict V/M (H_4 in M, dim_V = 3):
+      Hess sig (1, 2, 140) matches expected (1, 2, 140): True
+      Quartic sig (8, 0, 135) matches expected (8, 0, 135): True
+      V perp M: max sv = 3.696e-16 (orthogonal)
+
+  (b) Inclusive (H_4 in V, dim_V = 5):
+      Hess sig (1, 4, 138) matches expected (1, 4, 138): True
+      Quartic sig (6, 0, 137) matches expected (6, 0, 137): True
+      V perp M: max sv = 2.829e-16 (orthogonal)
+
+  (c) Trichotomy V/W/M (V dim 3, W = H_4 dim 2, M dim 6):
+      Hess sig (1, 2, 140) matches expected (1, 2, 140): True
+      Quartic sig (6, 0, 137) (only M part) matches (6, 0, 137): True
+      V perp M: max sv = 3.500e-16
+      V perp W: max sv = 1.048e-16
+      W perp M: max sv = 4.472e-01
+
+  Adjudication (KEY FINDING):
+
+  At the HILBERT-SUBSPACE level on C^12, Pontryagin character orthogonality
+  on (Z/12)^* makes EVERY conductor packet H_d HS-orthogonal to every other.
+  So ||P_V . P_W||_F, ||P_V . P_M||_F, ||P_W . P_M||_F all at machine floor.
+  The binary V/M (either strict or inclusive) and the trichotomy V/W/M all
+  produce clean Hilbert-subspace decompositions.
+
+  At the TANGENT-SUB-BUNDLE level on T_{rho_*} D(C^12), the picture splits:
+
+  (i) The V-Lorentzian sub-bundle (eigenspace of Hessian of V-supported I_real)
+      IS HS-orthogonal to BOTH the W-Euclidean quad eigenspace AND the M-
+      Euclidean quad eigenspace, at machine precision.  V is clean.
+
+  (ii) The W-Euclidean and M-Euclidean tangent sub-bundles SHARE tangent
+       directions: max overlap singular value = 4.47e-01, NOT at machine
+       floor.  The 4th-order quartic forms (m^2_W)^2 and (m^2_M)^2 do NOT
+       have HS-orthogonal eigenspaces in T_{rho_*} D(C^12).
+
+  Structural reason: off-diagonal-in-standard-basis tangent vectors have
+  character-basis-diagonal entries spread across MULTIPLE k indices.  So
+  a single tangent direction can have non-trivial diag_char content at BOTH
+  W-indices ({3, 9}) AND M-indices ({1, 2, 5, 7, 10, 11}) simultaneously.
+  The W-quad and M-quad eigenspaces are therefore not independent.
+
+  CONSEQUENCE (P9 of v2insert-05, joint-on-disjoint REALIZED at tangent tier):
+  The trichotomy V/W/M is CLEAN AT THE HILBERT-SUBSPACE LEVEL but JOINT-ON-
+  DISJOINT AT THE TANGENT-SUB-BUNDLE LEVEL.  The prime-power H_4 cannot be
+  cleanly separated from the cross-prime carry M at the Bures-Hessian sub-
+  bundle tier; their 4th-order quartic forms have overlapping eigenspaces.
+
+  For the V/M BINARY decomposition (where H_4 is folded into either V or M):
+  K-branch is CLEAN.  Strict V/M (H_4 in M) and Inclusive V/M (H_4 in V) both
+  produce HS-orthogonal V-Lor and M-Eucl tangent sub-bundles at machine floor.
+
+  Implication for Paper 36 / Paper 37 (months task on Z/12):
+  If audit kappa un-defers and measures real-transformer V/M propagation, the
+  INCLUSIVE V/M decomposition (H_4 in V) is the natural choice; the strict
+  V/M is equally valid but separates the prime-power into M.  The trichotomy
+  V/W/M is NOT a clean tangent-level structural choice because of the W-M
+  tangent-overlap; use the BINARY V/M and treat H_4 by convention.
+
+  Total wall time: 0.61 s
+
+  All four audit configurations produce predictions at machine precision: YES

@@ -1,0 +1,501 @@
+{
+  "purpose": "Compact certificate summaries for proof extraction from exact finite local-row computations.",
+  "certificates": [
+    {
+      "row_key": "f4-u2",
+      "ring": "F_4[u]/(u^2)",
+      "sources": [
+        {
+          "path": "empirical\\reports\\local_adjacency_constructor_f4_u2.json",
+          "sha256": "a8df9feb2ed2eeb4cfa5566732c04ddbbe7f3b017655bd48e4ceff0bb2f7c4e3",
+          "bytes": 72140
+        },
+        {
+          "path": "empirical\\reports\\ext_ch_cocycle_f4_u2.json",
+          "sha256": "bfaae575f1be6626309cfc02b39ae0bd39c14760511ec5f94ee653e4d59087e2",
+          "bytes": 33507
+        }
+      ],
+      "constructor": {
+        "ring": "F_4[u]/(u^2)",
+        "label_count": 16,
+        "nontrivial_label_count": 15,
+        "packets": {
+          "u": 3,
+          "u^2": 12
+        },
+        "gamma_size": 24,
+        "quotient_shift_count": 44,
+        "quotient_shift_support_distribution": {
+          "2": 3,
+          "3": 25,
+          "8": 12,
+          "12": 4
+        },
+        "carry_record_count": 369,
+        "carry_path_distribution": {
+          "u->u->u": 9,
+          "u->u->u^2": 36,
+          "u^2->u->u": 36,
+          "u^2->u->u^2": 144,
+          "u^2->u^2->u^2": 144
+        },
+        "associativity_failures": 0
+      },
+      "h3": {
+        "cells": 210,
+        "orbits": 5,
+        "family_orbit_counts": {
+          "TTT": 1,
+          "TWW": 2,
+          "WWW": 2
+        },
+        "orbit_size_distribution": {
+          "6": 1,
+          "24": 1,
+          "36": 1,
+          "72": 2
+        },
+        "signature_collisions": 0
+      },
+      "h4": {
+        "cells": 3165,
+        "orbits": 18,
+        "family_orbit_counts": {
+          "TTTT": 2,
+          "TTWW": 4,
+          "TWWW": 3,
+          "WWWW": 9
+        },
+        "orbit_size_distribution": {
+          "3": 1,
+          "12": 1,
+          "18": 1,
+          "36": 1,
+          "72": 5,
+          "144": 3,
+          "288": 4,
+          "576": 2
+        },
+        "signature_collisions": 1
+      },
+      "tower_contraction": {
+        "source_arity": 4,
+        "target_arity": 3,
+        "source_cells": 3165,
+        "target_cells": 210,
+        "source_orbits": 18,
+        "target_orbits": 5,
+        "candidate_pair_contractions": 18990,
+        "valid_nonzero_contractions": 17640,
+        "invalid_zero_merge_contractions": 1350,
+        "target_orbits_hit_count": 5,
+        "source_orbits_with_valid_contractions": 16
+      },
+      "ext_ch": {
+        "raw_atom_count": 1569,
+        "raw_pair_count": 369,
+        "raw_coefficient_distribution": {
+          "-1": 1569
+        },
+        "raw_path_distribution": {
+          "u->u->u": 9,
+          "u->u->u^2": 36,
+          "u^2->u->u": 36,
+          "u^2->u->u^2": 912,
+          "u^2->u^2->u^2": 576
+        },
+        "atom_orbit_count": 71,
+        "atom_orbit_size_distribution": {
+          "3": 1,
+          "6": 1,
+          "12": 8,
+          "24": 61
+        },
+        "atom_orbit_missing_total": 0,
+        "pair_orbit_count": 20,
+        "pair_orbit_size_distribution": {
+          "3": 1,
+          "6": 1,
+          "12": 6,
+          "24": 12
+        },
+        "pair_orbit_missing_total": 0,
+        "full_block_coboundary": {
+          "mode": "full_block",
+          "c2_scope": "full_block",
+          "coefficient_field": "Q",
+          "c1_generators": 3204,
+          "c2_dimension": 76320,
+          "coboundary_rank": 3204,
+          "residual_dimension": 73116,
+          "raw_support": 1569,
+          "residual_support": 1569,
+          "residual_equal_raw": true,
+          "raw_is_coboundary": false,
+          "rational_rank_certified": true,
+          "raw_non_coboundary_over_q_certified": true
+        }
+      },
+      "proof_extraction_status": "finite lemma ready after independent certificate check"
+    },
+    {
+      "row_key": "f2-u5",
+      "ring": "F_2[u]/(u^5)",
+      "sources": [
+        {
+          "path": "empirical\\reports\\next_local_row_f2_u5.json",
+          "sha256": "0e43c00f4aba542302979dc1c9f03ff7761929644db64aa3f04dee52c0a3ae03",
+          "bytes": 46240
+        }
+      ],
+      "constructor": {
+        "ring": "F_2[u]/(u^5)",
+        "label_count": 32,
+        "nontrivial_label_count": 31,
+        "packets": {
+          "u": 1,
+          "u^2": 2,
+          "u^3": 4,
+          "u^4": 8,
+          "u^5": 16
+        },
+        "gamma_size": 128,
+        "quotient_shift_count": 227,
+        "quotient_shift_support_distribution": {
+          "1": 61,
+          "2": 58,
+          "4": 52,
+          "8": 40,
+          "16": 16
+        },
+        "carry_record_count": 2516,
+        "carry_path_distribution": {
+          "u^2->u->u^2": 4,
+          "u^2->u->u^3": 8,
+          "u^2->u->u^4": 16,
+          "u^2->u->u^5": 32,
+          "u^3->u->u^2": 8,
+          "u^3->u->u^3": 16,
+          "u^3->u->u^4": 32,
+          "u^3->u->u^5": 64,
+          "u^3->u^2->u^3": 16,
+          "u^3->u^2->u^4": 32,
+          "u^3->u^2->u^5": 64,
+          "u^4->u->u^2": 16,
+          "u^4->u->u^3": 32,
+          "u^4->u->u^4": 64,
+          "u^4->u->u^5": 128,
+          "u^4->u^2->u^3": 32,
+          "u^4->u^2->u^4": 64,
+          "u^4->u^2->u^5": 128,
+          "u^4->u^3->u^4": 64,
+          "u^4->u^3->u^5": 128,
+          "u^5->u->u^2": 32,
+          "u^5->u->u^3": 64,
+          "u^5->u->u^4": 128,
+          "u^5->u->u^5": 256,
+          "u^5->u^2->u^3": 64,
+          "u^5->u^2->u^4": 128,
+          "u^5->u^2->u^5": 256,
+          "u^5->u^3->u^4": 128,
+          "u^5->u^3->u^5": 256,
+          "u^5->u^4->u^5": 256
+        }
+      },
+      "h3": {
+        "cells": 930,
+        "orbits": 12,
+        "family_orbit_counts": {
+          "122": 1,
+          "133": 1,
+          "144": 1,
+          "155": 1,
+          "233": 1,
+          "244": 2,
+          "255": 1,
+          "344": 1,
+          "355": 2,
+          "455": 1
+        },
+        "orbit_size_distribution": {
+          "6": 1,
+          "12": 1,
+          "24": 4,
+          "48": 1,
+          "96": 4,
+          "384": 1
+        },
+        "signature_collisions": null
+      },
+      "h4": {
+        "cells": 28861,
+        "orbits": 72,
+        "family_orbit_counts": {
+          "1111": 1,
+          "1122": 1,
+          "1133": 1,
+          "1144": 1,
+          "1155": 1,
+          "1233": 1,
+          "1244": 2,
+          "1255": 1,
+          "1344": 1,
+          "1355": 2,
+          "1455": 1,
+          "2222": 2,
+          "2233": 2,
+          "2244": 3,
+          "2255": 2,
+          "2344": 1,
+          "2355": 2,
+          "2455": 2,
+          "3333": 4,
+          "3344": 4,
+          "3355": 7,
+          "3455": 2,
+          "4444": 8,
+          "4455": 6,
+          "5555": 14
+        },
+        "orbit_size_distribution": {
+          "1": 1,
+          "2": 1,
+          "4": 1,
+          "6": 1,
+          "8": 1,
+          "12": 2,
+          "16": 1,
+          "24": 6,
+          "48": 7,
+          "96": 15,
+          "192": 10,
+          "384": 11,
+          "768": 7,
+          "1536": 6,
+          "3072": 2
+        },
+        "signature_collisions": null
+      },
+      "ext_ch": {
+        "full_block_dimensions": {
+          "c1_generators": 13361,
+          "c2_dimension": 741741,
+          "composable_pairs": 11985
+        },
+        "raw_atom_count": 19140,
+        "raw_pair_count": 2516,
+        "raw_coefficient_distribution": {
+          "-1": 19140
+        },
+        "raw_path_distribution": {
+          "u^2->u->u^2": 4,
+          "u^2->u->u^3": 8,
+          "u^2->u->u^4": 16,
+          "u^2->u->u^5": 32,
+          "u^3->u->u^2": 8,
+          "u^3->u->u^3": 48,
+          "u^3->u->u^4": 96,
+          "u^3->u->u^5": 192,
+          "u^3->u^2->u^3": 32,
+          "u^3->u^2->u^4": 64,
+          "u^3->u^2->u^5": 128,
+          "u^4->u->u^2": 16,
+          "u^4->u->u^3": 96,
+          "u^4->u->u^4": 448,
+          "u^4->u->u^5": 896,
+          "u^4->u^2->u^3": 64,
+          "u^4->u^2->u^4": 384,
+          "u^4->u^2->u^5": 768,
+          "u^4->u^3->u^4": 256,
+          "u^4->u^3->u^5": 512,
+          "u^5->u->u^2": 32,
+          "u^5->u->u^3": 192,
+          "u^5->u->u^4": 896,
+          "u^5->u->u^5": 3840,
+          "u^5->u^2->u^3": 128,
+          "u^5->u^2->u^4": 768,
+          "u^5->u^2->u^5": 3584,
+          "u^5->u^3->u^4": 512,
+          "u^5->u^3->u^5": 3072,
+          "u^5->u^4->u^5": 2048
+        },
+        "pair_orbit_count": 81,
+        "pair_orbit_size_distribution": {
+          "2": 2,
+          "4": 4,
+          "8": 20,
+          "16": 24,
+          "32": 21,
+          "128": 10
+        },
+        "pair_orbit_missing_total": 0,
+        "support_projection_coboundary": {
+          "mode": "support",
+          "c2_scope": "raw_support",
+          "coefficient_field": "Q",
+          "c1_generators": 961,
+          "c2_dimension": 19140,
+          "coboundary_rank": 900,
+          "residual_dimension": 18240,
+          "raw_support": 19140,
+          "residual_support": 0,
+          "residual_equal_raw": false,
+          "raw_is_coboundary": true,
+          "rational_rank_certified": true,
+          "raw_non_coboundary_over_q_certified": false
+        },
+        "full_block_coboundary": {
+          "mode": "full_block",
+          "c2_scope": "full_block",
+          "coefficient_field": "Q",
+          "c1_generators": 13361,
+          "c2_dimension": 741741,
+          "coboundary_rank": 13360,
+          "residual_dimension": 728381,
+          "raw_support": 19140,
+          "residual_support": 19140,
+          "residual_equal_raw": true,
+          "raw_is_coboundary": false,
+          "rational_rank_certified": true,
+          "raw_non_coboundary_over_q_certified": true
+        }
+      },
+      "proof_extraction_status": "finite lemma ready after independent certificate check"
+    },
+    {
+      "row_key": "f8-u2",
+      "ring": "F_8[u]/(u^2)",
+      "sources": [
+        {
+          "path": "empirical\\reports\\next_local_row_f8_u2.json",
+          "sha256": "3174d98891395c5b6bb2aa62fbe05859b42bbe6bf76befd8af96feb6ea555607",
+          "bytes": 35670
+        }
+      ],
+      "constructor": {
+        "ring": "F_8[u]/(u^2)",
+        "label_count": 64,
+        "nontrivial_label_count": 63,
+        "packets": {
+          "u": 7,
+          "u^2": 56
+        },
+        "gamma_size": 168,
+        "quotient_shift_count": 184,
+        "quotient_shift_support_distribution": {
+          "6": 7,
+          "7": 113,
+          "48": 56,
+          "56": 8
+        },
+        "carry_record_count": 7105,
+        "carry_path_distribution": {
+          "u->u->u": 49,
+          "u->u->u^2": 392,
+          "u^2->u->u": 392,
+          "u^2->u->u^2": 3136,
+          "u^2->u^2->u^2": 3136
+        }
+      },
+      "h3": {
+        "cells": 3906,
+        "orbits": 8,
+        "family_orbit_counts": {
+          "111": 1,
+          "122": 3,
+          "222": 4
+        },
+        "orbit_size_distribution": {
+          "42": 1,
+          "168": 1,
+          "336": 2,
+          "504": 2,
+          "1008": 2
+        },
+        "signature_collisions": null
+      },
+      "h4": {
+        "cells": 246141,
+        "orbits": 86,
+        "family_orbit_counts": {
+          "1111": 3,
+          "1122": 10,
+          "1222": 20,
+          "2222": 53
+        },
+        "orbit_size_distribution": {
+          "7": 1,
+          "56": 1,
+          "126": 1,
+          "168": 2,
+          "336": 2,
+          "504": 2,
+          "1008": 12,
+          "1344": 6,
+          "2016": 7,
+          "4032": 52
+        },
+        "signature_collisions": null
+      },
+      "ext_ch": {
+        "full_block_dimensions": {
+          "c1_generators": 245000,
+          "c2_dimension": 25997440,
+          "composable_pairs": 18496
+        },
+        "raw_atom_count": 158081,
+        "raw_pair_count": 7105,
+        "raw_coefficient_distribution": {
+          "-1": 158081
+        },
+        "raw_path_distribution": {
+          "u->u->u": 49,
+          "u->u->u^2": 392,
+          "u^2->u->u": 392,
+          "u^2->u->u^2": 132160,
+          "u^2->u^2->u^2": 25088
+        },
+        "pair_orbit_count": 49,
+        "pair_orbit_size_distribution": {
+          "7": 1,
+          "21": 2,
+          "56": 6,
+          "168": 40
+        },
+        "pair_orbit_missing_total": 0,
+        "support_projection_coboundary": {
+          "mode": "support",
+          "c2_scope": "raw_support",
+          "coefficient_field": "Q",
+          "c1_generators": 3969,
+          "c2_dimension": 158081,
+          "coboundary_rank": 3969,
+          "residual_dimension": 154112,
+          "raw_support": 158081,
+          "residual_support": 0,
+          "residual_equal_raw": false,
+          "raw_is_coboundary": true,
+          "rational_rank_certified": true,
+          "raw_non_coboundary_over_q_certified": false
+        },
+        "full_block_coboundary": {
+          "mode": "full_block",
+          "c2_scope": "full_block",
+          "coefficient_field": "F_1000003",
+          "c1_generators": 245000,
+          "c2_dimension": 25997440,
+          "coboundary_rank": 245000,
+          "residual_dimension": 25752440,
+          "raw_support": 158081,
+          "residual_support": 158081,
+          "residual_equal_raw": true,
+          "raw_is_coboundary": false,
+          "rational_rank_certified": true,
+          "raw_non_coboundary_over_q_certified": true
+        }
+      },
+      "proof_extraction_status": "finite lemma ready after independent certificate check"
+    }
+  ]
+}

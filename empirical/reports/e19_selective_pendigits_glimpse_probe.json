@@ -1,0 +1,516 @@
+{
+  "timestamp": "2026-06-04T04:29:56.624627+00:00",
+  "dataset": {
+    "name": "UCI Pen-Based Recognition of Handwritten Digits",
+    "url": "https://archive.ics.uci.edu/dataset/81/pen+based+recognition+of+handwritten+digits",
+    "raw_files": {
+      "pendigits.tra": "https://archive.ics.uci.edu/ml/machine-learning-databases/pendigits/pendigits.tra",
+      "pendigits.tes": "https://archive.ics.uci.edu/ml/machine-learning-databases/pendigits/pendigits.tes"
+    },
+    "features": 16,
+    "points": 8,
+    "classes": 10
+  },
+  "config": {
+    "seed": 20260603,
+    "calibration_fraction": 0.25,
+    "early_points": 2,
+    "actions": [
+      "commit",
+      "p3",
+      "p4",
+      "p5",
+      "p6",
+      "p7",
+      "p8"
+    ],
+    "base_cost": 0.01,
+    "distance_cost": 0.003,
+    "base_cost_grid": [
+      0.0,
+      0.005,
+      0.01,
+      0.02,
+      0.04
+    ],
+    "alpha": 0.05,
+    "classifier_ridge": 0.01,
+    "ridge": 0.005,
+    "row_threshold": 0.5,
+    "train_n": 5620,
+    "calibration_n": 1874,
+    "test_n": 3498
+  },
+  "main": {
+    "gate_threshold": 0.002774669058831965,
+    "overall": {
+      "scalar": {
+        "value": {
+          "rmse_observed": 0.01575543427286926,
+          "r2_observed": 0.36704777126177
+        },
+        "select_regression": {
+          "rmse_observed": 0.29311107259638275,
+          "r2_observed": 0.27609050902315546
+        },
+        "row_selection": {
+          "row_accuracy": 0.8724168912848158,
+          "optimal_detection": 0.2998856489422527,
+          "nonoptimal_false_admission": 0.03216123499142367
+        },
+        "policy": {
+          "action_accuracy": 0.5228702115494568,
+          "mean_regret": 0.003449450658254035,
+          "p90_regret": 0.011488053458378542,
+          "false_commit": 0.47712978845054316,
+          "false_sample": 0.0,
+          "wrong_sample": 0.0,
+          "chosen_actions": {
+            "commit": 3498,
+            "p3": 0,
+            "p4": 0,
+            "p5": 0,
+            "p6": 0,
+            "p7": 0,
+            "p8": 0
+          },
+          "optimal_actions": {
+            "commit": 1829,
+            "p3": 576,
+            "p4": 157,
+            "p5": 418,
+            "p6": 183,
+            "p7": 81,
+            "p8": 254
+          }
+        }
+      },
+      "continuous_action_value": {
+        "value": {
+          "rmse_observed": 0.017487251483998607,
+          "r2_observed": 0.22025376188507118
+        },
+        "select_regression": {
+          "rmse_observed": 0.23616907923917646,
+          "r2_observed": 0.5300345906126923
+        },
+        "row_selection": {
+          "row_accuracy": 0.9344931797761986,
+          "optimal_detection": 0.7321326472269869,
+          "nonoptimal_false_admission": 0.03178006479893272
+        },
+        "policy": {
+          "action_accuracy": 0.8218982275586049,
+          "mean_regret": 0.0010524431189674046,
+          "p90_regret": 0.0019084575150170313,
+          "false_commit": 0.0686106346483705,
+          "false_sample": 0.07318467695826186,
+          "wrong_sample": 0.03630646083476272,
+          "chosen_actions": {
+            "commit": 1813,
+            "p3": 624,
+            "p4": 123,
+            "p5": 397,
+            "p6": 165,
+            "p7": 86,
+            "p8": 290
+          },
+          "optimal_actions": {
+            "commit": 1829,
+            "p3": 576,
+            "p4": 157,
+            "p5": 418,
+            "p6": 183,
+            "p7": 81,
+            "p8": 254
+          }
+        }
+      },
+      "conformal_action_gate": {
+        "value": {
+          "rmse_observed": 0.017610281888671146,
+          "r2_observed": 0.20924346004577743
+        },
+        "select_regression": {
+          "rmse_observed": 0.2981794394870503,
+          "r2_observed": 0.2508389162644721
+        },
+        "row_selection": {
+          "row_accuracy": 0.8584497263742547,
+          "optimal_detection": 0.010577472841623786,
+          "nonoptimal_false_admission": 0.000238231370306842
+        },
+        "policy": {
+          "action_accuracy": 0.5228702115494568,
+          "mean_regret": 0.003449450658254035,
+          "p90_regret": 0.011488053458378542,
+          "false_commit": 0.47712978845054316,
+          "false_sample": 0.0,
+          "wrong_sample": 0.0,
+          "chosen_actions": {
+            "commit": 3498,
+            "p3": 0,
+            "p4": 0,
+            "p5": 0,
+            "p6": 0,
+            "p7": 0,
+            "p8": 0
+          },
+          "optimal_actions": {
+            "commit": 1829,
+            "p3": 576,
+            "p4": 157,
+            "p5": 418,
+            "p6": 183,
+            "p7": 81,
+            "p8": 254
+          }
+        }
+      },
+      "governed_action": {
+        "value": {
+          "rmse_observed": 0.01689760180929464,
+          "r2_observed": 0.27195148495784827
+        },
+        "select_regression": {
+          "rmse_observed": 0.2517634073151334,
+          "r2_observed": 0.4659215724126239
+        },
+        "row_selection": {
+          "row_accuracy": 0.9355550110267091,
+          "optimal_detection": 0.7355631789594054,
+          "nonoptimal_false_admission": 0.031113016962073567
+        },
+        "policy": {
+          "action_accuracy": 0.8264722698684963,
+          "mean_regret": 0.0010369388969612245,
+          "p90_regret": 0.001857219933079926,
+          "false_commit": 0.06403659233847914,
+          "false_sample": 0.06975414522584333,
+          "wrong_sample": 0.039736992567181245,
+          "chosen_actions": {
+            "commit": 1809,
+            "p3": 603,
+            "p4": 141,
+            "p5": 399,
+            "p6": 178,
+            "p7": 85,
+            "p8": 283
+          },
+          "optimal_actions": {
+            "commit": 1829,
+            "p3": 576,
+            "p4": 157,
+            "p5": 418,
+            "p6": 183,
+            "p7": 81,
+            "p8": 254
+          }
+        }
+      },
+      "hybrid_full": {
+        "value": {
+          "rmse_observed": 0.016400771126919497,
+          "r2_observed": 0.3141348866193422
+        },
+        "select_regression": {
+          "rmse_observed": 0.2382622164783096,
+          "r2_observed": 0.5216671843672348
+        },
+        "row_selection": {
+          "row_accuracy": 0.9357183696806338,
+          "optimal_detection": 0.7375643224699828,
+          "nonoptimal_false_admission": 0.03125595578425767
+        },
+        "policy": {
+          "action_accuracy": 0.8290451686678102,
+          "mean_regret": 0.001036926780427729,
+          "p90_regret": 0.0018147742210699175,
+          "false_commit": 0.06260720411663807,
+          "false_sample": 0.06946826758147513,
+          "wrong_sample": 0.03887935963407661,
+          "chosen_actions": {
+            "commit": 1805,
+            "p3": 614,
+            "p4": 140,
+            "p5": 400,
+            "p6": 176,
+            "p7": 83,
+            "p8": 280
+          },
+          "optimal_actions": {
+            "commit": 1829,
+            "p3": 576,
+            "p4": 157,
+            "p5": 418,
+            "p6": 183,
+            "p7": 81,
+            "p8": 254
+          }
+        }
+      }
+    },
+    "models": {
+      "scalar": {
+        "value": {
+          "feature_kind": "scalar",
+          "feature_count": 9,
+          "expanded_count": 55
+        },
+        "select": {
+          "feature_kind": "scalar",
+          "feature_count": 9,
+          "expanded_count": 55
+        }
+      },
+      "continuous_action_value": {
+        "value": {
+          "feature_kind": "continuous",
+          "feature_count": 88,
+          "expanded_count": 4005
+        },
+        "select": {
+          "feature_kind": "continuous",
+          "feature_count": 88,
+          "expanded_count": 4005
+        }
+      },
+      "conformal_action_gate": {
+        "value": {
+          "feature_kind": "gate",
+          "feature_count": 15,
+          "expanded_count": 136
+        },
+        "select": {
+          "feature_kind": "gate",
+          "feature_count": 15,
+          "expanded_count": 136
+        }
+      },
+      "governed_action": {
+        "value": {
+          "feature_kind": "governed",
+          "feature_count": 96,
+          "expanded_count": 4753
+        },
+        "select": {
+          "feature_kind": "governed",
+          "feature_count": 96,
+          "expanded_count": 4753
+        }
+      },
+      "hybrid_full": {
+        "value": {
+          "feature_kind": "hybrid",
+          "feature_count": 99,
+          "expanded_count": 5050
+        },
+        "select": {
+          "feature_kind": "hybrid",
+          "feature_count": 99,
+          "expanded_count": 5050
+        }
+      }
+    },
+    "train_summary": {
+      "episodes": 5620,
+      "packets": 39340,
+      "optimal_actions": {
+        "commit": 2818,
+        "p3": 1018,
+        "p4": 327,
+        "p5": 578,
+        "p6": 348,
+        "p7": 125,
+        "p8": 406
+      },
+      "mean_utility_by_action": {
+        "commit": 0.1169703238295126,
+        "p3": 0.11147905610131431,
+        "p4": 0.10782877436902771,
+        "p5": 0.10868927733563202,
+        "p6": 0.1038410148368225,
+        "p7": 0.09897387302024768,
+        "p8": 0.10215039559163575
+      },
+      "mean_gate_score": 0.001070946687334645,
+      "mean_utility": 0.1071332450120275
+    },
+    "calibration_summary": {
+      "episodes": 1874,
+      "packets": 13118,
+      "optimal_actions": {
+        "commit": 933,
+        "p3": 341,
+        "p4": 107,
+        "p5": 195,
+        "p6": 122,
+        "p7": 55,
+        "p8": 121
+      },
+      "mean_utility_by_action": {
+        "commit": 0.11653602419959794,
+        "p3": 0.11080402749723835,
+        "p4": 0.10733831048036957,
+        "p5": 0.10811596747262636,
+        "p6": 0.10317516422701997,
+        "p7": 0.09888572384132684,
+        "p8": 0.1016061518855889
+      },
+      "mean_gate_score": 0.0010294313398361424,
+      "mean_utility": 0.106637338514824
+    },
+    "test_summary": {
+      "episodes": 3498,
+      "packets": 24486,
+      "optimal_actions": {
+        "commit": 1829,
+        "p3": 576,
+        "p4": 157,
+        "p5": 418,
+        "p6": 183,
+        "p7": 81,
+        "p8": 254
+      },
+      "mean_utility_by_action": {
+        "commit": 0.11565071337885928,
+        "p3": 0.10894742062022647,
+        "p4": 0.10563392668702026,
+        "p5": 0.10713174588588938,
+        "p6": 0.10195152385591177,
+        "p7": 0.09727445524220997,
+        "p8": 0.1002203161013786
+      },
+      "mean_gate_score": 0.0009575436653461537,
+      "mean_utility": 0.10525858596735654
+    }
+  },
+  "decision_quantities": {
+    "continuous_value_rmse": 0.017487251483998607,
+    "gate_value_rmse": 0.017610281888671146,
+    "governed_value_rmse": 0.01689760180929464,
+    "hybrid_value_rmse": 0.016400771126919497,
+    "continuous_action_accuracy": 0.8218982275586049,
+    "gate_action_accuracy": 0.5228702115494568,
+    "governed_action_accuracy": 0.8264722698684963,
+    "hybrid_action_accuracy": 0.8290451686678102,
+    "continuous_regret": 0.0010524431189674046,
+    "gate_regret": 0.003449450658254035,
+    "governed_regret": 0.0010369388969612245,
+    "hybrid_regret": 0.001036926780427729,
+    "continuous_false_commit": 0.0686106346483705,
+    "gate_false_commit": 0.47712978845054316,
+    "hybrid_false_commit": 0.06260720411663807,
+    "continuous_wrong_sample": 0.03630646083476272,
+    "gate_wrong_sample": 0.0,
+    "hybrid_wrong_sample": 0.03887935963407661
+  },
+  "cost_sweep": [
+    {
+      "base_cost": 0.0,
+      "optimal_actions": {
+        "commit": 509,
+        "p3": 894,
+        "p4": 401,
+        "p5": 750,
+        "p6": 417,
+        "p7": 121,
+        "p8": 406
+      },
+      "continuous_accuracy": 0.7547169811320755,
+      "gate_accuracy": 0.3210405946255003,
+      "hybrid_accuracy": 0.758147512864494,
+      "continuous_regret": 0.0017333816115665663,
+      "gate_regret": 0.005817568630043629,
+      "hybrid_regret": 0.001713931744838529,
+      "continuous_false_commit": 0.04030874785591767,
+      "gate_false_commit": 0.0,
+      "hybrid_false_commit": 0.04602630074328187
+    },
+    {
+      "base_cost": 0.005,
+      "optimal_actions": {
+        "commit": 1022,
+        "p3": 772,
+        "p4": 247,
+        "p5": 602,
+        "p6": 369,
+        "p7": 102,
+        "p8": 384
+      },
+      "continuous_accuracy": 0.7770154373927959,
+      "gate_accuracy": 0.39479702687249857,
+      "hybrid_accuracy": 0.7827329902801601,
+      "continuous_regret": 0.0015842614661133291,
+      "gate_regret": 0.005104290157704218,
+      "hybrid_regret": 0.0015440104973246489,
+      "continuous_false_commit": 0.053744997141223556,
+      "gate_false_commit": 0.5720411663807891,
+      "hybrid_false_commit": 0.05889079473985134
+    },
+    {
+      "base_cost": 0.01,
+      "optimal_actions": {
+        "commit": 1829,
+        "p3": 576,
+        "p4": 157,
+        "p5": 418,
+        "p6": 183,
+        "p7": 81,
+        "p8": 254
+      },
+      "continuous_accuracy": 0.8218982275586049,
+      "gate_accuracy": 0.5228702115494568,
+      "hybrid_accuracy": 0.8290451686678102,
+      "continuous_regret": 0.0010524431189674046,
+      "gate_regret": 0.003449450658254035,
+      "hybrid_regret": 0.001036926780427729,
+      "continuous_false_commit": 0.0686106346483705,
+      "gate_false_commit": 0.47712978845054316,
+      "hybrid_false_commit": 0.06260720411663807
+    },
+    {
+      "base_cost": 0.02,
+      "optimal_actions": {
+        "commit": 3061,
+        "p3": 145,
+        "p4": 105,
+        "p5": 74,
+        "p6": 32,
+        "p7": 20,
+        "p8": 61
+      },
+      "continuous_accuracy": 0.9116638078902229,
+      "gate_accuracy": 0.875071469411092,
+      "hybrid_accuracy": 0.9139508290451687,
+      "continuous_regret": 0.000414690087669131,
+      "gate_regret": 0.0006358148696316801,
+      "hybrid_regret": 0.0004179389635741382,
+      "continuous_false_commit": 0.07918810748999429,
+      "gate_false_commit": 0.12492853058890795,
+      "hybrid_false_commit": 0.07432818753573471
+    },
+    {
+      "base_cost": 0.04,
+      "optimal_actions": {
+        "commit": 3496,
+        "p3": 0,
+        "p4": 2,
+        "p5": 0,
+        "p6": 0,
+        "p7": 0,
+        "p8": 0
+      },
+      "continuous_accuracy": 0.998570611778159,
+      "gate_accuracy": 0.9994282447112636,
+      "hybrid_accuracy": 0.9982847341337907,
+      "continuous_regret": 3.2779047393782e-05,
+      "gate_regret": 1.7814369852217289e-06,
+      "hybrid_regret": 4.1596431153778566e-05,
+      "continuous_false_commit": 0.0005717552887364208,
+      "gate_false_commit": 0.0005717552887364208,
+      "hybrid_false_commit": 0.0005717552887364208
+    }
+  ],
+  "finding": "SELECTIVE_SAMPLING_CONTINUOUS_ACTION_VALUE_ABSORBS_GATE"
+}

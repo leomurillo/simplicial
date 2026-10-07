@@ -1,0 +1,1659 @@
+{
+  "settings": {
+    "max_length": 8,
+    "max_total_depth": 21,
+    "max_carry": 8,
+    "example_limit": 8,
+    "height_threshold": 1.584962500721
+  },
+  "results": {
+    "totals": {
+      "words": 359083,
+      "contracting_words": 358130,
+      "transition_words": 355243,
+      "recurrence_failures": 0,
+      "delta_formula_failures": 0,
+      "negative_q_words": 0,
+      "zero_q_words": 8,
+      "positive_q_words": 358122,
+      "trivial_zero_words": 8
+    },
+    "global_min_q": {
+      "word": [
+        2
+      ],
+      "signature": "(2)",
+      "m": 1,
+      "S": 2,
+      "q": 0
+    },
+    "append_stats": {
+      "1": {
+        "transitions": 119545,
+        "delta_negative": 59424,
+        "delta_zero": 0,
+        "delta_positive": 60121,
+        "min_delta": -1092,
+        "min_delta_example": {
+          "parent": [
+            3,
+            2,
+            1,
+            2,
+            1,
+            2,
+            1
+          ],
+          "parent_signature": "(3 2 1 2 1 2 1)",
+          "carry": 1,
+          "child": [
+            3,
+            2,
+            1,
+            2,
+            1,
+            2,
+            1,
+            1
+          ],
+          "child_signature": "(3 2 1 2 1 2 1^2)",
+          "parent_q": 1903,
+          "child_q": 811,
+          "delta_q": -1092,
+          "parent_m": 7,
+          "parent_S": 12,
+          "child_m": 8,
+          "child_S": 13,
+          "lift_t": 0,
+          "parent_image_mod_gate": 3,
+          "next_gate_residue": 3
+        },
+        "min_child_q": 1,
+        "min_child_q_example": {
+          "parent": [
+            1,
+            3
+          ],
+          "parent_signature": "(1 3)",
+          "carry": 1,
+          "child": [
+            1,
+            3,
+            1
+          ],
+          "child_signature": "(1 3 1)",
+          "parent_q": 4,
+          "child_q": 1,
+          "delta_q": -3,
+          "parent_m": 2,
+          "parent_S": 4,
+          "child_m": 3,
+          "child_S": 5,
+          "lift_t": 0,
+          "parent_image_mod_gate": 3,
+          "next_gate_residue": 3
+        },
+        "max_child_q": 2094248,
+        "preserving_examples": [],
+        "recurrence_failures": 0
+      },
+      "2": {
+        "transitions": 84403,
+        "delta_negative": 0,
+        "delta_zero": 241,
+        "delta_positive": 84162,
+        "min_delta": 0,
+        "min_delta_example": {
+          "parent": [
+            2
+          ],
+          "parent_signature": "(2)",
+          "carry": 2,
+          "child": [
+            2,
+            2
+          ],
+          "child_signature": "(2^2)",
+          "parent_q": 0,
+          "child_q": 0,
+          "delta_q": 0,
+          "parent_m": 1,
+          "parent_S": 2,
+          "child_m": 2,
+          "child_S": 4,
+          "lift_t": 0,
+          "parent_image_mod_gate": 1,
+          "next_gate_residue": 1
+        },
+        "min_child_q": 0,
+        "min_child_q_example": {
+          "parent": [
+            2
+          ],
+          "parent_signature": "(2)",
+          "carry": 2,
+          "child": [
+            2,
+            2
+          ],
+          "child_signature": "(2^2)",
+          "parent_q": 0,
+          "child_q": 0,
+          "delta_q": 0,
+          "parent_m": 1,
+          "parent_S": 2,
+          "child_m": 2,
+          "child_S": 4,
+          "lift_t": 0,
+          "parent_image_mod_gate": 1,
+          "next_gate_residue": 1
+        },
+        "max_child_q": 2092447,
+        "preserving_examples": [
+          {
+            "parent": [
+              2
+            ],
+            "parent_signature": "(2)",
+            "carry": 2,
+            "child": [
+              2,
+              2
+            ],
+            "child_signature": "(2^2)",
+            "parent_q": 0,
+            "child_q": 0,
+            "delta_q": 0,
+            "parent_m": 1,
+            "parent_S": 2,
+            "child_m": 2,
+            "child_S": 4,
+            "lift_t": 0,
+            "parent_image_mod_gate": 1,
+            "next_gate_residue": 1
+          },
+          {
+            "parent": [
+              4
+            ],
+            "parent_signature": "(4)",
+            "carry": 2,
+            "child": [
+              4,
+              2
+            ],
+            "child_signature": "(4 2)",
+            "parent_q": 2,
+            "child_q": 2,
+            "delta_q": 0,
+            "parent_m": 1,
+            "parent_S": 4,
+            "child_m": 2,
+            "child_S": 6,
+            "lift_t": 0,
+            "parent_image_mod_gate": 1,
+            "next_gate_residue": 1
+          },
+          {
+            "parent": [
+              6
+            ],
+            "parent_signature": "(6)",
+            "carry": 2,
+            "child": [
+              6,
+              2
+            ],
+            "child_signature": "(6 2)",
+            "parent_q": 10,
+            "child_q": 10,
+            "delta_q": 0,
+            "parent_m": 1,
+            "parent_S": 6,
+            "child_m": 2,
+            "child_S": 8,
+            "lift_t": 0,
+            "parent_image_mod_gate": 1,
+            "next_gate_residue": 1
+          },
+          {
+            "parent": [
+              8
+            ],
+            "parent_signature": "(8)",
+            "carry": 2,
+            "child": [
+              8,
+              2
+            ],
+            "child_signature": "(8 2)",
+            "parent_q": 42,
+            "child_q": 42,
+            "delta_q": 0,
+            "parent_m": 1,
+            "parent_S": 8,
+            "child_m": 2,
+            "child_S": 10,
+            "lift_t": 0,
+            "parent_image_mod_gate": 1,
+            "next_gate_residue": 1
+          },
+          {
+            "parent": [
+              2,
+              2
+            ],
+            "parent_signature": "(2^2)",
+            "carry": 2,
+            "child": [
+              2,
+              2,
+              2
+            ],
+            "child_signature": "(2^3)",
+            "parent_q": 0,
+            "child_q": 0,
+            "delta_q": 0,
+            "parent_m": 2,
+            "parent_S": 4,
+            "child_m": 3,
+            "child_S": 6,
+            "lift_t": 0,
+            "parent_image_mod_gate": 1,
+            "next_gate_residue": 1
+          },
+          {
+            "parent": [
+              1,
+              4
+            ],
+            "parent_signature": "(1 4)",
+            "carry": 2,
+            "child": [
+              1,
+              4,
+              2
+            ],
+            "child_signature": "(1 4 2)",
+            "parent_q": 1,
+            "child_q": 1,
+            "delta_q": 0,
+            "parent_m": 2,
+            "parent_S": 5,
+            "child_m": 3,
+            "child_S": 7,
+            "lift_t": 0,
+            "parent_image_mod_gate": 1,
+            "next_gate_residue": 1
+          },
+          {
+            "parent": [
+              4,
+              2
+            ],
+            "parent_signature": "(4 2)",
+            "carry": 2,
+            "child": [
+              4,
+              2,
+              2
+            ],
+            "child_signature": "(4 2^2)",
+            "parent_q": 2,
+            "child_q": 2,
+            "delta_q": 0,
+            "parent_m": 2,
+            "parent_S": 6,
+            "child_m": 3,
+            "child_S": 8,
+            "lift_t": 0,
+            "parent_image_mod_gate": 1,
+            "next_gate_residue": 1
+          },
+          {
+            "parent": [
+              3,
+              4
+            ],
+            "parent_signature": "(3 4)",
+            "carry": 2,
+            "child": [
+              3,
+              4,
+              2
+            ],
+            "child_signature": "(3 4 2)",
+            "parent_q": 6,
+            "child_q": 6,
+            "delta_q": 0,
+            "parent_m": 2,
+            "parent_S": 7,
+            "child_m": 3,
+            "child_S": 9,
+            "lift_t": 0,
+            "parent_image_mod_gate": 1,
+            "next_gate_residue": 1
+          }
+        ],
+        "recurrence_failures": 0
+      },
+      "3": {
+        "transitions": 57886,
+        "delta_negative": 0,
+        "delta_zero": 0,
+        "delta_positive": 57886,
+        "min_delta": 4,
+        "min_delta_example": {
+          "parent": [
+            3,
+            2
+          ],
+          "parent_signature": "(3 2)",
+          "carry": 3,
+          "child": [
+            3,
+            2,
+            3
+          ],
+          "child_signature": "(3 2 3)",
+          "parent_q": 16,
+          "child_q": 20,
+          "delta_q": 4,
+          "parent_m": 2,
+          "parent_S": 5,
+          "child_m": 3,
+          "child_S": 8,
+          "lift_t": 0,
+          "parent_image_mod_gate": 13,
+          "next_gate_residue": 13
+        },
+        "min_child_q": 6,
+        "min_child_q_example": {
+          "parent": [
+            2
+          ],
+          "parent_signature": "(2)",
+          "carry": 3,
+          "child": [
+            2,
+            3
+          ],
+          "child_signature": "(2 3)",
+          "parent_q": 0,
+          "child_q": 6,
+          "delta_q": 6,
+          "parent_m": 1,
+          "parent_S": 2,
+          "child_m": 2,
+          "child_S": 5,
+          "lift_t": 2,
+          "parent_image_mod_gate": 1,
+          "next_gate_residue": 13
+        },
+        "max_child_q": 2091545,
+        "preserving_examples": [],
+        "recurrence_failures": 0
+      },
+      "4": {
+        "transitions": 38544,
+        "delta_negative": 0,
+        "delta_zero": 0,
+        "delta_positive": 38544,
+        "min_delta": 2,
+        "min_delta_example": {
+          "parent": [
+            3
+          ],
+          "parent_signature": "(3)",
+          "carry": 4,
+          "child": [
+            3,
+            4
+          ],
+          "child_signature": "(3 4)",
+          "parent_q": 4,
+          "child_q": 6,
+          "delta_q": 2,
+          "parent_m": 1,
+          "parent_S": 3,
+          "child_m": 2,
+          "child_S": 7,
+          "lift_t": 0,
+          "parent_image_mod_gate": 5,
+          "next_gate_residue": 5
+        },
+        "min_child_q": 3,
+        "min_child_q_example": {
+          "parent": [
+            1,
+            1,
+            2,
+            3
+          ],
+          "parent_signature": "(1^2 2 3)",
+          "carry": 4,
+          "child": [
+            1,
+            1,
+            2,
+            3,
+            4
+          ],
+          "child_signature": "(1^2 2 3 4)",
+          "parent_q": 1,
+          "child_q": 3,
+          "delta_q": 2,
+          "parent_m": 4,
+          "parent_S": 7,
+          "child_m": 5,
+          "child_S": 11,
+          "lift_t": 0,
+          "parent_image_mod_gate": 5,
+          "next_gate_residue": 5
+        },
+        "max_child_q": 2089664,
+        "preserving_examples": [],
+        "recurrence_failures": 0
+      },
+      "5": {
+        "transitions": 24858,
+        "delta_negative": 0,
+        "delta_zero": 0,
+        "delta_positive": 24858,
+        "min_delta": 24,
+        "min_delta_example": {
+          "parent": [
+            3,
+            1,
+            1
+          ],
+          "parent_signature": "(3 1^2)",
+          "carry": 5,
+          "child": [
+            3,
+            1,
+            1,
+            5
+          ],
+          "child_signature": "(3 1^2 5)",
+          "parent_q": 4,
+          "child_q": 28,
+          "delta_q": 24,
+          "parent_m": 3,
+          "parent_S": 5,
+          "child_m": 4,
+          "child_S": 10,
+          "lift_t": 0,
+          "parent_image_mod_gate": 53,
+          "next_gate_residue": 53
+        },
+        "min_child_q": 28,
+        "min_child_q_example": {
+          "parent": [
+            3,
+            1,
+            1
+          ],
+          "parent_signature": "(3 1^2)",
+          "carry": 5,
+          "child": [
+            3,
+            1,
+            1,
+            5
+          ],
+          "child_signature": "(3 1^2 5)",
+          "parent_q": 4,
+          "child_q": 28,
+          "delta_q": 24,
+          "parent_m": 3,
+          "parent_S": 5,
+          "child_m": 4,
+          "child_S": 10,
+          "lift_t": 0,
+          "parent_image_mod_gate": 53,
+          "next_gate_residue": 53
+        },
+        "max_child_q": 2094934,
+        "preserving_examples": [],
+        "recurrence_failures": 0
+      },
+      "6": {
+        "transitions": 15477,
+        "delta_negative": 0,
+        "delta_zero": 0,
+        "delta_positive": 15477,
+        "min_delta": 71,
+        "min_delta_example": {
+          "parent": [
+            2,
+            1,
+            4,
+            3
+          ],
+          "parent_signature": "(2 1 4 3)",
+          "carry": 6,
+          "child": [
+            2,
+            1,
+            4,
+            3,
+            6
+          ],
+          "child_signature": "(2 1 4 3 6)",
+          "parent_q": 866,
+          "child_q": 937,
+          "delta_q": 71,
+          "parent_m": 4,
+          "parent_S": 10,
+          "child_m": 5,
+          "child_S": 16,
+          "lift_t": 0,
+          "parent_image_mod_gate": 21,
+          "next_gate_residue": 21
+        },
+        "min_child_q": 178,
+        "min_child_q_example": {
+          "parent": [
+            2
+          ],
+          "parent_signature": "(2)",
+          "carry": 6,
+          "child": [
+            2,
+            6
+          ],
+          "child_signature": "(2 6)",
+          "parent_q": 0,
+          "child_q": 178,
+          "delta_q": 178,
+          "parent_m": 1,
+          "parent_S": 2,
+          "child_m": 2,
+          "child_S": 8,
+          "lift_t": 46,
+          "parent_image_mod_gate": 1,
+          "next_gate_residue": 21
+        },
+        "max_child_q": 2092554,
+        "preserving_examples": [],
+        "recurrence_failures": 0
+      },
+      "7": {
+        "transitions": 9257,
+        "delta_negative": 0,
+        "delta_zero": 0,
+        "delta_positive": 9257,
+        "min_delta": 229,
+        "min_delta_example": {
+          "parent": [
+            1,
+            2,
+            1,
+            1,
+            4
+          ],
+          "parent_signature": "(1 2 1^2 4)",
+          "carry": 7,
+          "child": [
+            1,
+            2,
+            1,
+            1,
+            4,
+            7
+          ],
+          "child_signature": "(1 2 1^2 4 7)",
+          "parent_q": 259,
+          "child_q": 488,
+          "delta_q": 229,
+          "parent_m": 5,
+          "parent_S": 9,
+          "child_m": 6,
+          "child_S": 16,
+          "lift_t": 0,
+          "parent_image_mod_gate": 213,
+          "next_gate_residue": 213
+        },
+        "min_child_q": 272,
+        "min_child_q_example": {
+          "parent": [
+            1,
+            2,
+            2
+          ],
+          "parent_signature": "(1 2^2)",
+          "carry": 7,
+          "child": [
+            1,
+            2,
+            2,
+            7
+          ],
+          "child_signature": "(1 2^2 7)",
+          "parent_q": 3,
+          "child_q": 272,
+          "delta_q": 269,
+          "parent_m": 3,
+          "parent_S": 5,
+          "child_m": 4,
+          "child_S": 12,
+          "lift_t": 8,
+          "parent_image_mod_gate": 37,
+          "next_gate_residue": 213
+        },
+        "max_child_q": 2094973,
+        "preserving_examples": [],
+        "recurrence_failures": 0
+      },
+      "8": {
+        "transitions": 5273,
+        "delta_negative": 0,
+        "delta_zero": 0,
+        "delta_positive": 5273,
+        "min_delta": 42,
+        "min_delta_example": {
+          "parent": [
+            1,
+            2,
+            3,
+            2
+          ],
+          "parent_signature": "(1 2 3 2)",
+          "carry": 8,
+          "child": [
+            1,
+            2,
+            3,
+            2,
+            8
+          ],
+          "child_signature": "(1 2 3 2 8)",
+          "parent_q": 91,
+          "child_q": 133,
+          "delta_q": 42,
+          "parent_m": 4,
+          "parent_S": 8,
+          "child_m": 5,
+          "child_S": 16,
+          "lift_t": 0,
+          "parent_image_mod_gate": 85,
+          "next_gate_residue": 85
+        },
+        "min_child_q": 56,
+        "min_child_q_example": {
+          "parent": [
+            2
+          ],
+          "parent_signature": "(2)",
+          "carry": 8,
+          "child": [
+            2,
+            8
+          ],
+          "child_signature": "(2 8)",
+          "parent_q": 0,
+          "child_q": 56,
+          "delta_q": 56,
+          "parent_m": 1,
+          "parent_S": 2,
+          "child_m": 2,
+          "child_S": 10,
+          "lift_t": 14,
+          "parent_image_mod_gate": 1,
+          "next_gate_residue": 85
+        },
+        "max_child_q": 2092566,
+        "preserving_examples": [],
+        "recurrence_failures": 0
+      }
+    },
+    "boundary_stats": {
+      "1": {
+        "contracting_children": 119545,
+        "parent_contracting": 119545,
+        "parent_noncontracting": 0,
+        "min_child_q": null,
+        "min_child_q_example": null,
+        "examples": []
+      },
+      "2": {
+        "contracting_children": 84625,
+        "parent_contracting": 84403,
+        "parent_noncontracting": 222,
+        "min_child_q": 2,
+        "min_child_q_example": {
+          "child": [
+            1,
+            2,
+            2,
+            1,
+            2
+          ],
+          "child_signature": "(1 2^2 1 2)",
+          "carry": 2,
+          "child_q": 2,
+          "child_m": 5,
+          "child_S": 8,
+          "height": 0.075187496394
+        },
+        "examples": [
+          {
+            "child": [
+              1,
+              2,
+              2
+            ],
+            "child_signature": "(1 2^2)",
+            "carry": 2,
+            "child_q": 3,
+            "child_m": 3,
+            "child_S": 5,
+            "height": 0.245112497837
+          },
+          {
+            "child": [
+              2,
+              1,
+              2
+            ],
+            "child_signature": "(2 1 2)",
+            "carry": 2,
+            "child_q": 4,
+            "child_m": 3,
+            "child_S": 5,
+            "height": 0.245112497837
+          },
+          {
+            "child": [
+              1,
+              1,
+              1,
+              3,
+              2
+            ],
+            "child_signature": "(1^3 3 2)",
+            "carry": 2,
+            "child_q": 8,
+            "child_m": 5,
+            "child_S": 8,
+            "height": 0.075187496394
+          },
+          {
+            "child": [
+              1,
+              1,
+              2,
+              2,
+              2
+            ],
+            "child_signature": "(1^2 2^3)",
+            "carry": 2,
+            "child_q": 11,
+            "child_m": 5,
+            "child_S": 8,
+            "height": 0.075187496394
+          },
+          {
+            "child": [
+              1,
+              1,
+              3,
+              1,
+              2
+            ],
+            "child_signature": "(1^2 3 1 2)",
+            "carry": 2,
+            "child_q": 4,
+            "child_m": 5,
+            "child_S": 8,
+            "height": 0.075187496394
+          },
+          {
+            "child": [
+              1,
+              2,
+              1,
+              2,
+              2
+            ],
+            "child_signature": "(1 2 1 2^2)",
+            "carry": 2,
+            "child_q": 9,
+            "child_m": 5,
+            "child_S": 8,
+            "height": 0.075187496394
+          },
+          {
+            "child": [
+              1,
+              2,
+              2,
+              1,
+              2
+            ],
+            "child_signature": "(1 2^2 1 2)",
+            "carry": 2,
+            "child_q": 2,
+            "child_m": 5,
+            "child_S": 8,
+            "height": 0.075187496394
+          },
+          {
+            "child": [
+              1,
+              3,
+              1,
+              1,
+              2
+            ],
+            "child_signature": "(1 3 1^2 2)",
+            "carry": 2,
+            "child_q": 11,
+            "child_m": 5,
+            "child_S": 8,
+            "height": 0.075187496394
+          }
+        ]
+      },
+      "3": {
+        "contracting_children": 58272,
+        "parent_contracting": 57886,
+        "parent_noncontracting": 386,
+        "min_child_q": 1,
+        "min_child_q_example": {
+          "child": [
+            1,
+            1,
+            2,
+            3
+          ],
+          "child_signature": "(1^2 2 3)",
+          "carry": 3,
+          "child_q": 1,
+          "child_m": 4,
+          "child_S": 7,
+          "height": 0.660149997115
+        },
+        "examples": [
+          {
+            "child": [
+              1,
+              3
+            ],
+            "child_signature": "(1 3)",
+            "carry": 3,
+            "child_q": 4,
+            "child_m": 2,
+            "child_S": 4,
+            "height": 0.830074998558
+          },
+          {
+            "child": [
+              1,
+              1,
+              3
+            ],
+            "child_signature": "(1^2 3)",
+            "carry": 3,
+            "child_q": 4,
+            "child_m": 3,
+            "child_S": 5,
+            "height": 0.245112497837
+          },
+          {
+            "child": [
+              1,
+              2,
+              3
+            ],
+            "child_signature": "(1 2 3)",
+            "carry": 3,
+            "child_q": 3,
+            "child_m": 3,
+            "child_S": 6,
+            "height": 1.245112497837
+          },
+          {
+            "child": [
+              2,
+              1,
+              3
+            ],
+            "child_signature": "(2 1 3)",
+            "carry": 3,
+            "child_q": 7,
+            "child_m": 3,
+            "child_S": 6,
+            "height": 1.245112497837
+          },
+          {
+            "child": [
+              1,
+              1,
+              2,
+              3
+            ],
+            "child_signature": "(1^2 2 3)",
+            "carry": 3,
+            "child_q": 1,
+            "child_m": 4,
+            "child_S": 7,
+            "height": 0.660149997115
+          },
+          {
+            "child": [
+              1,
+              2,
+              1,
+              3
+            ],
+            "child_signature": "(1 2 1 3)",
+            "carry": 3,
+            "child_q": 34,
+            "child_m": 4,
+            "child_S": 7,
+            "height": 0.660149997115
+          },
+          {
+            "child": [
+              2,
+              1,
+              1,
+              3
+            ],
+            "child_signature": "(2 1^2 3)",
+            "carry": 3,
+            "child_q": 13,
+            "child_m": 4,
+            "child_S": 7,
+            "height": 0.660149997115
+          },
+          {
+            "child": [
+              1,
+              1,
+              1,
+              2,
+              3
+            ],
+            "child_signature": "(1^3 2 3)",
+            "carry": 3,
+            "child_q": 4,
+            "child_m": 5,
+            "child_S": 8,
+            "height": 0.075187496394
+          }
+        ]
+      },
+      "4": {
+        "contracting_children": 38986,
+        "parent_contracting": 38544,
+        "parent_noncontracting": 442,
+        "min_child_q": 1,
+        "min_child_q_example": {
+          "child": [
+            1,
+            4
+          ],
+          "child_signature": "(1 4)",
+          "carry": 4,
+          "child_q": 1,
+          "child_m": 2,
+          "child_S": 5,
+          "height": 1.830074998558
+        },
+        "examples": [
+          {
+            "child": [
+              1,
+              4
+            ],
+            "child_signature": "(1 4)",
+            "carry": 4,
+            "child_q": 1,
+            "child_m": 2,
+            "child_S": 5,
+            "height": 1.830074998558
+          },
+          {
+            "child": [
+              1,
+              1,
+              4
+            ],
+            "child_signature": "(1^2 4)",
+            "carry": 4,
+            "child_q": 25,
+            "child_m": 3,
+            "child_S": 6,
+            "height": 1.245112497837
+          },
+          {
+            "child": [
+              1,
+              2,
+              4
+            ],
+            "child_signature": "(1 2 4)",
+            "carry": 4,
+            "child_q": 80,
+            "child_m": 3,
+            "child_S": 7,
+            "height": 2.245112497837
+          },
+          {
+            "child": [
+              2,
+              1,
+              4
+            ],
+            "child_signature": "(2 1 4)",
+            "carry": 4,
+            "child_q": 35,
+            "child_m": 3,
+            "child_S": 7,
+            "height": 2.245112497837
+          },
+          {
+            "child": [
+              1,
+              1,
+              1,
+              4
+            ],
+            "child_signature": "(1^3 4)",
+            "carry": 4,
+            "child_q": 26,
+            "child_m": 4,
+            "child_S": 7,
+            "height": 0.660149997115
+          },
+          {
+            "child": [
+              1,
+              1,
+              2,
+              4
+            ],
+            "child_signature": "(1^2 2 4)",
+            "carry": 4,
+            "child_q": 46,
+            "child_m": 4,
+            "child_S": 8,
+            "height": 1.660149997115
+          },
+          {
+            "child": [
+              1,
+              2,
+              1,
+              4
+            ],
+            "child_signature": "(1 2 1 4)",
+            "carry": 4,
+            "child_q": 20,
+            "child_m": 4,
+            "child_S": 8,
+            "height": 1.660149997115
+          },
+          {
+            "child": [
+              2,
+              1,
+              1,
+              4
+            ],
+            "child_signature": "(2 1^2 4)",
+            "carry": 4,
+            "child_q": 156,
+            "child_m": 4,
+            "child_S": 8,
+            "height": 1.660149997115
+          }
+        ]
+      },
+      "5": {
+        "contracting_children": 25314,
+        "parent_contracting": 24858,
+        "parent_noncontracting": 456,
+        "min_child_q": 5,
+        "min_child_q_example": {
+          "child": [
+            1,
+            1,
+            1,
+            5
+          ],
+          "child_signature": "(1^3 5)",
+          "carry": 5,
+          "child_q": 5,
+          "child_m": 4,
+          "child_S": 8,
+          "height": 1.660149997115
+        },
+        "examples": [
+          {
+            "child": [
+              1,
+              5
+            ],
+            "child_signature": "(1 5)",
+            "carry": 5,
+            "child_q": 15,
+            "child_m": 2,
+            "child_S": 6,
+            "height": 2.830074998558
+          },
+          {
+            "child": [
+              1,
+              1,
+              5
+            ],
+            "child_signature": "(1^2 5)",
+            "carry": 5,
+            "child_q": 9,
+            "child_m": 3,
+            "child_S": 7,
+            "height": 2.245112497837
+          },
+          {
+            "child": [
+              1,
+              2,
+              5
+            ],
+            "child_signature": "(1 2 5)",
+            "carry": 5,
+            "child_q": 148,
+            "child_m": 3,
+            "child_S": 8,
+            "height": 3.245112497837
+          },
+          {
+            "child": [
+              2,
+              1,
+              5
+            ],
+            "child_signature": "(2 1 5)",
+            "carry": 5,
+            "child_q": 97,
+            "child_m": 3,
+            "child_S": 8,
+            "height": 3.245112497837
+          },
+          {
+            "child": [
+              1,
+              1,
+              1,
+              5
+            ],
+            "child_signature": "(1^3 5)",
+            "carry": 5,
+            "child_q": 5,
+            "child_m": 4,
+            "child_S": 8,
+            "height": 1.660149997115
+          },
+          {
+            "child": [
+              1,
+              1,
+              2,
+              5
+            ],
+            "child_signature": "(1^2 2 5)",
+            "carry": 5,
+            "child_q": 380,
+            "child_m": 4,
+            "child_S": 9,
+            "height": 2.660149997115
+          },
+          {
+            "child": [
+              1,
+              2,
+              1,
+              5
+            ],
+            "child_signature": "(1 2 1 5)",
+            "carry": 5,
+            "child_q": 348,
+            "child_m": 4,
+            "child_S": 9,
+            "height": 2.660149997115
+          },
+          {
+            "child": [
+              2,
+              1,
+              1,
+              5
+            ],
+            "child_signature": "(2 1^2 5)",
+            "carry": 5,
+            "child_q": 300,
+            "child_m": 4,
+            "child_S": 9,
+            "height": 2.660149997115
+          }
+        ]
+      },
+      "6": {
+        "contracting_children": 15935,
+        "parent_contracting": 15477,
+        "parent_noncontracting": 458,
+        "min_child_q": 25,
+        "min_child_q_example": {
+          "child": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            6
+          ],
+          "child_signature": "(1^7 6)",
+          "carry": 6,
+          "child_q": 25,
+          "child_m": 8,
+          "child_S": 13,
+          "height": 0.320299994231
+        },
+        "examples": [
+          {
+            "child": [
+              1,
+              6
+            ],
+            "child_signature": "(1 6)",
+            "carry": 6,
+            "child_q": 46,
+            "child_m": 2,
+            "child_S": 7,
+            "height": 3.830074998558
+          },
+          {
+            "child": [
+              1,
+              1,
+              6
+            ],
+            "child_signature": "(1^2 6)",
+            "carry": 6,
+            "child_q": 182,
+            "child_m": 3,
+            "child_S": 8,
+            "height": 3.245112497837
+          },
+          {
+            "child": [
+              1,
+              2,
+              6
+            ],
+            "child_signature": "(1 2 6)",
+            "carry": 6,
+            "child_q": 278,
+            "child_m": 3,
+            "child_S": 9,
+            "height": 4.245112497837
+          },
+          {
+            "child": [
+              2,
+              1,
+              6
+            ],
+            "child_signature": "(2 1 6)",
+            "carry": 6,
+            "child_q": 224,
+            "child_m": 3,
+            "child_S": 9,
+            "height": 4.245112497837
+          },
+          {
+            "child": [
+              1,
+              1,
+              1,
+              6
+            ],
+            "child_signature": "(1^3 6)",
+            "carry": 6,
+            "child_q": 114,
+            "child_m": 4,
+            "child_S": 9,
+            "height": 2.660149997115
+          },
+          {
+            "child": [
+              1,
+              1,
+              2,
+              6
+            ],
+            "child_signature": "(1^2 2 6)",
+            "carry": 6,
+            "child_q": 180,
+            "child_m": 4,
+            "child_S": 10,
+            "height": 3.660149997115
+          },
+          {
+            "child": [
+              1,
+              2,
+              1,
+              6
+            ],
+            "child_signature": "(1 2 1 6)",
+            "carry": 6,
+            "child_q": 145,
+            "child_m": 4,
+            "child_S": 10,
+            "height": 3.660149997115
+          },
+          {
+            "child": [
+              2,
+              1,
+              1,
+              6
+            ],
+            "child_signature": "(2 1^2 6)",
+            "carry": 6,
+            "child_q": 564,
+            "child_m": 4,
+            "child_S": 10,
+            "height": 3.660149997115
+          }
+        ]
+      },
+      "7": {
+        "contracting_children": 9715,
+        "parent_contracting": 9257,
+        "parent_noncontracting": 458,
+        "min_child_q": 233,
+        "min_child_q_example": {
+          "child": [
+            1,
+            7
+          ],
+          "child_signature": "(1 7)",
+          "carry": 7,
+          "child_q": 233,
+          "child_m": 2,
+          "child_S": 8,
+          "height": 4.830074998558
+        },
+        "examples": [
+          {
+            "child": [
+              1,
+              7
+            ],
+            "child_signature": "(1 7)",
+            "carry": 7,
+            "child_q": 233,
+            "child_m": 2,
+            "child_S": 8,
+            "height": 4.830074998558
+          },
+          {
+            "child": [
+              1,
+              1,
+              7
+            ],
+            "child_signature": "(1^2 7)",
+            "carry": 7,
+            "child_q": 314,
+            "child_m": 3,
+            "child_S": 9,
+            "height": 4.245112497837
+          },
+          {
+            "child": [
+              1,
+              2,
+              7
+            ],
+            "child_signature": "(1 2 7)",
+            "carry": 7,
+            "child_q": 535,
+            "child_m": 3,
+            "child_S": 10,
+            "height": 5.245112497837
+          },
+          {
+            "child": [
+              2,
+              1,
+              7
+            ],
+            "child_signature": "(2 1 7)",
+            "carry": 7,
+            "child_q": 978,
+            "child_m": 3,
+            "child_S": 10,
+            "height": 5.245112497837
+          },
+          {
+            "child": [
+              1,
+              1,
+              1,
+              7
+            ],
+            "child_signature": "(1^3 7)",
+            "carry": 7,
+            "child_q": 832,
+            "child_m": 4,
+            "child_S": 10,
+            "height": 3.660149997115
+          },
+          {
+            "child": [
+              1,
+              1,
+              2,
+              7
+            ],
+            "child_signature": "(1^2 2 7)",
+            "carry": 7,
+            "child_q": 1663,
+            "child_m": 4,
+            "child_S": 11,
+            "height": 4.660149997115
+          },
+          {
+            "child": [
+              1,
+              2,
+              1,
+              7
+            ],
+            "child_signature": "(1 2 1 7)",
+            "carry": 7,
+            "child_q": 643,
+            "child_m": 4,
+            "child_S": 11,
+            "height": 4.660149997115
+          },
+          {
+            "child": [
+              2,
+              1,
+              1,
+              7
+            ],
+            "child_signature": "(2 1^2 7)",
+            "carry": 7,
+            "child_q": 1080,
+            "child_m": 4,
+            "child_S": 11,
+            "height": 4.660149997115
+          }
+        ]
+      },
+      "8": {
+        "contracting_children": 5731,
+        "parent_contracting": 5273,
+        "parent_noncontracting": 458,
+        "min_child_q": 37,
+        "min_child_q_example": {
+          "child": [
+            1,
+            2,
+            8
+          ],
+          "child_signature": "(1 2 8)",
+          "carry": 8,
+          "child_q": 37,
+          "child_m": 3,
+          "child_S": 11,
+          "height": 6.245112497837
+        },
+        "examples": [
+          {
+            "child": [
+              1,
+              8
+            ],
+            "child_signature": "(1 8)",
+            "carry": 8,
+            "child_q": 363,
+            "child_m": 2,
+            "child_S": 9,
+            "height": 5.830074998558
+          },
+          {
+            "child": [
+              1,
+              1,
+              8
+            ],
+            "child_signature": "(1^2 8)",
+            "carry": 8,
+            "child_q": 572,
+            "child_m": 3,
+            "child_S": 10,
+            "height": 5.245112497837
+          },
+          {
+            "child": [
+              1,
+              2,
+              8
+            ],
+            "child_signature": "(1 2 8)",
+            "carry": 8,
+            "child_q": 37,
+            "child_m": 3,
+            "child_S": 11,
+            "height": 6.245112497837
+          },
+          {
+            "child": [
+              2,
+              1,
+              8
+            ],
+            "child_signature": "(2 1 8)",
+            "carry": 8,
+            "child_q": 486,
+            "child_m": 3,
+            "child_S": 11,
+            "height": 6.245112497837
+          },
+          {
+            "child": [
+              1,
+              1,
+              1,
+              8
+            ],
+            "child_signature": "(1^3 8)",
+            "carry": 8,
+            "child_q": 376,
+            "child_m": 4,
+            "child_S": 11,
+            "height": 4.660149997115
+          },
+          {
+            "child": [
+              1,
+              1,
+              2,
+              8
+            ],
+            "child_signature": "(1^2 2 8)",
+            "carry": 8,
+            "child_q": 2701,
+            "child_m": 4,
+            "child_S": 12,
+            "height": 5.660149997115
+          },
+          {
+            "child": [
+              1,
+              2,
+              1,
+              8
+            ],
+            "child_signature": "(1 2 1 8)",
+            "carry": 8,
+            "child_q": 1660,
+            "child_m": 4,
+            "child_S": 12,
+            "height": 5.660149997115
+          },
+          {
+            "child": [
+              2,
+              1,
+              1,
+              8
+            ],
+            "child_signature": "(2 1^2 8)",
+            "carry": 8,
+            "child_q": 2106,
+            "child_m": 4,
+            "child_S": 12,
+            "height": 5.660149997115
+          }
+        ]
+      }
+    },
+    "candidate_reductions": {
+      "monotone_appended_carries": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "strict_positive_appended_carries": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "dangerous_appended_carries": [
+        1
+      ],
+      "minimal_negative_counterexample_filter": "If suffix monotonicity for s>=2 is proved, a minimal negative q counterexample must end in carry 1 or have a noncontracting prefix."
+    },
+    "first_recurrence_failures": []
+  }
+}

@@ -1,0 +1,210 @@
+{
+  "config": {
+    "rows": [
+      6,
+      10,
+      15,
+      30,
+      210
+    ],
+    "min_face_omega": 2,
+    "prefix_fractions": [
+      "1/3",
+      "1/2",
+      "2/3",
+      "1"
+    ],
+    "max_generators_per_face": 0,
+    "seed_modes": [
+      "plain_count",
+      "mobius",
+      "oriented_boundary"
+    ],
+    "orders": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "tolerance": 1e-08,
+    "claim_hygiene": "the convolutional coefficient layer is zeta-diagonal-safe; the actual leakage norm still needs a diagonal or corrected compression proof"
+  },
+  "summary": {
+    "records": 16560,
+    "all": {
+      "records": 16560,
+      "support_ok": 16560,
+      "jump_lift_ok": 16560,
+      "jump_count_ok": 16560,
+      "zero_current": 6048,
+      "max_output_count": 196,
+      "max_support_gap_count": 3,
+      "max_jump_class_count": 3
+    },
+    "by_order": {
+      "1": {
+        "records": 4140,
+        "support_ok": 4140,
+        "jump_lift_ok": 4140,
+        "jump_count_ok": 4140,
+        "zero_current": 1380,
+        "max_output_count": 196,
+        "max_support_gap_count": 3,
+        "max_jump_class_count": 3
+      },
+      "2": {
+        "records": 4140,
+        "support_ok": 4140,
+        "jump_lift_ok": 4140,
+        "jump_count_ok": 4140,
+        "zero_current": 1644,
+        "max_output_count": 196,
+        "max_support_gap_count": 3,
+        "max_jump_class_count": 3
+      },
+      "3": {
+        "records": 4140,
+        "support_ok": 4140,
+        "jump_lift_ok": 4140,
+        "jump_count_ok": 4140,
+        "zero_current": 1380,
+        "max_output_count": 196,
+        "max_support_gap_count": 3,
+        "max_jump_class_count": 3
+      },
+      "4": {
+        "records": 4140,
+        "support_ok": 4140,
+        "jump_lift_ok": 4140,
+        "jump_count_ok": 4140,
+        "zero_current": 1644,
+        "max_output_count": 196,
+        "max_support_gap_count": 3,
+        "max_jump_class_count": 3
+      }
+    },
+    "by_seed_order": {
+      "mobius:k1": {
+        "records": 1380,
+        "support_ok": 1380,
+        "jump_lift_ok": 1380,
+        "jump_count_ok": 1380,
+        "zero_current": 0,
+        "max_output_count": 196,
+        "max_support_gap_count": 3,
+        "max_jump_class_count": 3
+      },
+      "mobius:k2": {
+        "records": 1380,
+        "support_ok": 1380,
+        "jump_lift_ok": 1380,
+        "jump_count_ok": 1380,
+        "zero_current": 132,
+        "max_output_count": 196,
+        "max_support_gap_count": 3,
+        "max_jump_class_count": 3
+      },
+      "mobius:k3": {
+        "records": 1380,
+        "support_ok": 1380,
+        "jump_lift_ok": 1380,
+        "jump_count_ok": 1380,
+        "zero_current": 0,
+        "max_output_count": 196,
+        "max_support_gap_count": 3,
+        "max_jump_class_count": 3
+      },
+      "mobius:k4": {
+        "records": 1380,
+        "support_ok": 1380,
+        "jump_lift_ok": 1380,
+        "jump_count_ok": 1380,
+        "zero_current": 132,
+        "max_output_count": 196,
+        "max_support_gap_count": 3,
+        "max_jump_class_count": 3
+      },
+      "oriented_boundary:k1": {
+        "records": 1380,
+        "support_ok": 1380,
+        "jump_lift_ok": 1380,
+        "jump_count_ok": 1380,
+        "zero_current": 1380,
+        "max_output_count": 0,
+        "max_support_gap_count": 0,
+        "max_jump_class_count": 0
+      },
+      "oriented_boundary:k2": {
+        "records": 1380,
+        "support_ok": 1380,
+        "jump_lift_ok": 1380,
+        "jump_count_ok": 1380,
+        "zero_current": 1380,
+        "max_output_count": 0,
+        "max_support_gap_count": 0,
+        "max_jump_class_count": 0
+      },
+      "oriented_boundary:k3": {
+        "records": 1380,
+        "support_ok": 1380,
+        "jump_lift_ok": 1380,
+        "jump_count_ok": 1380,
+        "zero_current": 1380,
+        "max_output_count": 0,
+        "max_support_gap_count": 0,
+        "max_jump_class_count": 0
+      },
+      "oriented_boundary:k4": {
+        "records": 1380,
+        "support_ok": 1380,
+        "jump_lift_ok": 1380,
+        "jump_count_ok": 1380,
+        "zero_current": 1380,
+        "max_output_count": 0,
+        "max_support_gap_count": 0,
+        "max_jump_class_count": 0
+      },
+      "plain_count:k1": {
+        "records": 1380,
+        "support_ok": 1380,
+        "jump_lift_ok": 1380,
+        "jump_count_ok": 1380,
+        "zero_current": 0,
+        "max_output_count": 196,
+        "max_support_gap_count": 3,
+        "max_jump_class_count": 3
+      },
+      "plain_count:k2": {
+        "records": 1380,
+        "support_ok": 1380,
+        "jump_lift_ok": 1380,
+        "jump_count_ok": 1380,
+        "zero_current": 132,
+        "max_output_count": 196,
+        "max_support_gap_count": 3,
+        "max_jump_class_count": 3
+      },
+      "plain_count:k3": {
+        "records": 1380,
+        "support_ok": 1380,
+        "jump_lift_ok": 1380,
+        "jump_count_ok": 1380,
+        "zero_current": 0,
+        "max_output_count": 196,
+        "max_support_gap_count": 3,
+        "max_jump_class_count": 3
+      },
+      "plain_count:k4": {
+        "records": 1380,
+        "support_ok": 1380,
+        "jump_lift_ok": 1380,
+        "jump_count_ok": 1380,
+        "zero_current": 132,
+        "max_output_count": 196,
+        "max_support_gap_count": 3,
+        "max_jump_class_count": 3
+      }
+    }
+  },
+  "first_failures": []
+}

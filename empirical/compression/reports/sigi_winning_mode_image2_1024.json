@@ -1,0 +1,17 @@
+{
+  "file": "C:\\Users\\leomu\\OneDrive\\Pictures\\133893333653186297.jpg",
+  "width": 1024,
+  "height": 1024,
+  "raw_rgb_bytes": 3145728,
+  "png_bytes": 2286473,
+  "webp_lossless_bytes": 1872748,
+  "gzip_rgb_bytes": 2607759,
+  "sigi_bytes": 1835857,
+  "sigi_mode": "g-bg-ravg-ctx-rice",
+  "sigi_encode_s": 187.20660420000786,
+  "sigi_decode_s": 7.147762000007788,
+  "webp_encode_s": 10.42729990000953,
+  "png_encode_s": 0.18149019998963922,
+  "gzip_encode_s": 0.11239709999063052,
+  "roundtrip": true
+}

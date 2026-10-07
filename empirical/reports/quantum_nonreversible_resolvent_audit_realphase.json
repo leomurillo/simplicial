@@ -1,0 +1,162 @@
+{
+  "claim_tested": "non-reversible coherent sector contribution to projected Green kernel",
+  "parameters": {
+    "row": 30,
+    "dimension": 3,
+    "xi_mode": "largest_primes",
+    "quotient_basis": "residue",
+    "target_h_scale": 8.0,
+    "target_mesh_denominator": "distinct",
+    "max_target_pairs": 2000000,
+    "dissipator": "mean_field",
+    "dissipation_rate": 1.0,
+    "dephase_gamma": 2.0,
+    "h_strength": 1.0,
+    "phase": "real",
+    "r_min_quantile": 0.1,
+    "r_max_quantile": 0.8,
+    "report": "empirical\\reports\\quantum_nonreversible_resolvent_audit_realphase.md",
+    "json": "empirical\\reports\\quantum_nonreversible_resolvent_audit_realphase.json"
+  },
+  "row": 30,
+  "primes": [
+    2,
+    3,
+    5
+  ],
+  "state_count": 30,
+  "operator_dimension": 900,
+  "xi_labels": [
+    "p5:res",
+    "p3:res",
+    "p2:res"
+  ],
+  "source_index": 7,
+  "target_radius": 2.5746383589483464,
+  "target_pair_count": 281,
+  "dissipator": "mean_field",
+  "diagonal_gamma_moments": {
+    "eigenvalues": [
+      2.0689655172413643,
+      2.0689655172413723,
+      2.0689655172413914
+    ],
+    "trace": 6.206896551724127,
+    "anisotropy": 6.5466151018730106e-15,
+    "fourth_moment": 52.13793103448301,
+    "normalized_fourth_moment": 1.3533333333333446,
+    "unit_symbol_fourth_ratio": 2.8000000000000185
+  },
+  "hamiltonian_support_moments": {
+    "eigenvalues": [
+      1.1032028469750912,
+      1.3238434163701023,
+      1.5516014234875406
+    ],
+    "trace": 3.9786476868327343,
+    "anisotropy": 0.16890080428954204,
+    "fourth_moment": 19.683274021352265,
+    "normalized_fourth_moment": 1.2434444014196069,
+    "unit_symbol_fourth_ratio": 1.6490757304710777
+  },
+  "block_norms": {
+    "L_PP": 5.570860145311541,
+    "L_PQ": 7.745966692414834,
+    "L_QP": 7.745966692414834,
+    "L_QQ": 97.5192288730791,
+    "schur_correction": 1.8487578292923772,
+    "schur_over_LPP": 0.3318621866406572
+  },
+  "kernels": {
+    "diagonal_only": {
+      "name": "diagonal_only",
+      "inverse_r_fit": {
+        "used_points": 23,
+        "r_min": 1.2247448713915892,
+        "r_max": 2.449489742783178,
+        "r2": -0.005992010652463353,
+        "slope": -7.92547573013218e-18,
+        "intercept": -0.0322222222222222,
+        "value_min": -0.032222222222222235,
+        "value_max": -0.03222222222222146
+      },
+      "shell_anisotropy": {
+        "mean_shell_cv": 2.6109191647018362e-15,
+        "max_shell_cv": 1.0443676658807345e-14
+      },
+      "source_value_real": 0.9344444444444445,
+      "max_abs_imag": 0.0,
+      "real_min": -0.032222222222222235,
+      "real_max": 0.9344444444444445
+    },
+    "projected_full": {
+      "name": "projected_full",
+      "inverse_r_fit": {
+        "used_points": 23,
+        "r_min": 1.2247448713915892,
+        "r_max": 2.449489742783178,
+        "r2": 0.1412867793819076,
+        "slope": 0.0016556510872619567,
+        "intercept": -0.02561285323000903,
+        "value_min": -0.025556712520288852,
+        "value_max": -0.023718160551170053
+      },
+      "shell_anisotropy": {
+        "mean_shell_cv": 0.011121611431728809,
+        "max_shell_cv": 0.031655030661795744
+      },
+      "source_value_real": 0.6973519524981032,
+      "max_abs_imag": 1.428677759461874e-17,
+      "real_min": -0.025556712520288852,
+      "real_max": 0.6973519524981032
+    },
+    "schur": {
+      "name": "schur",
+      "inverse_r_fit": {
+        "used_points": 23,
+        "r_min": 1.2247448713915892,
+        "r_max": 2.449489742783178,
+        "r2": 0.14128677938188705,
+        "slope": 0.0016556510872618834,
+        "intercept": -0.02561285323000898,
+        "value_min": -0.025556712520288842,
+        "value_max": -0.023718160551170046
+      },
+      "shell_anisotropy": {
+        "mean_shell_cv": 0.01112161143172982,
+        "max_shell_cv": 0.03165503066179808
+      },
+      "source_value_real": 0.6973519524981031,
+      "max_abs_imag": 7.197982029905718e-18,
+      "real_min": -0.025556712520288842,
+      "real_max": 0.6973519524981031
+    },
+    "projected_minus_diagonal": {
+      "name": "projected_minus_diagonal",
+      "inverse_r_fit": {
+        "used_points": 23,
+        "r_min": 1.2247448713915892,
+        "r_max": 2.449489742783178,
+        "r2": 0.14128677938191325,
+        "slope": 0.0016556510872619726,
+        "intercept": 0.0066093689922131745,
+        "value_min": 0.006665509701933383,
+        "value_max": 0.008504061671052183
+      },
+      "shell_anisotropy": {
+        "mean_shell_cv": 0.035899866753959744,
+        "max_shell_cv": 0.09646882324243719
+      },
+      "source_value_real": -0.2370924919463413,
+      "max_abs_imag": 1.428677759461874e-17,
+      "real_min": -0.2370924919463413,
+      "real_max": 0.01079125061705859
+    }
+  },
+  "consistency": {
+    "max_abs_projected_full_minus_schur": 2.290305511237992e-16,
+    "relative_projected_full_minus_schur": 4.142691538463819e-16,
+    "max_abs_projected_full_minus_diagonal": 0.2370924919463413,
+    "relative_projected_full_minus_diagonal": 0.25384714024326405
+  }
+}

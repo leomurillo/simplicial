@@ -33,19 +33,32 @@ command -v pandoc  >/dev/null || { echo "pandoc not found on PATH"  >&2; exit 1;
 command -v latexmk >/dev/null || { echo "latexmk not found on PATH" >&2; exit 1; }
 command -v xelatex >/dev/null || { echo "xelatex not found on PATH" >&2; exit 1; }
 
-[[ "$CLEAN" -eq 1 ]] && rm -rf "$BUILD_DIR"
+# Preserve build/utils (shared maintenance scripts); wipe the rest.
+[[ "$CLEAN" -eq 1 && -d "$BUILD_DIR" ]] && find "$BUILD_DIR" -mindepth 1 -maxdepth 1 ! -name utils -exec rm -rf {} + || true
 mkdir -p "$BUILD_DIR"
 
 # --- Parse title / author / date --------------------------------------------
 TITLE="$(grep -m1 -E '^# '       "$SRC" | sed 's/^# //')"
 AUTHOR_RAW="$(grep -m1 -E '^\*\*[^*]+\*\*$' "$SRC")"
 AUTHOR="${AUTHOR_RAW#\*\*}"; AUTHOR="${AUTHOR%\*\*}"
+AUTHOR_META="$AUTHOR"
 DATE_RAW="$(grep -m1 -E '^\*[A-Z][a-z]+ [0-9]{1,2}, [0-9]{4}\*$' "$SRC")"
 DATE="${DATE_RAW#\*}"; DATE="${DATE%\*}"
 
 [[ -n "$TITLE"  ]] || { echo "Could not parse title from $SOURCE"  >&2; exit 1; }
 [[ -n "$AUTHOR" ]] || { echo "Could not parse author from $SOURCE" >&2; exit 1; }
 [[ -n "$DATE"   ]] || { echo "Could not parse date from $SOURCE"   >&2; exit 1; }
+
+# Optional affiliation: first single-italic line that is not an email and not
+# a date. If present, append it to the author on a new line via raw LaTeX.
+AFFIL_RAW="$(grep -E '^\*[^*@]+\*$' "$SRC" | grep -vE '[0-9]{4}\*$' | head -n1 || true)"
+if [[ -n "$AFFIL_RAW" ]]; then
+    AFFIL="${AFFIL_RAW#\*}"; AFFIL="${AFFIL%\*}"
+    # \newline (not \\) so pandoc's metadata-as-markdown parser does not
+    # render the line break as \textbackslash{}.
+    AUTHOR="$AUTHOR\\newline\\textit{$AFFIL}"
+    AUTHOR_META="$AUTHOR_META ($AFFIL)"
+fi
 
 # --- Strip the title block; extract abstract --------------------------------
 # Find line number of the FIRST '---' rule (terminator of title block)
@@ -73,9 +86,10 @@ BODY_STRIPPED="$(awk '
 PREPPED="$BUILD_DIR/paper.md"
 {
     printf -- '---\n'
-    printf 'title: "%s"\n'  "${TITLE//\"/\\\"}"
-    printf 'author: "%s"\n' "${AUTHOR//\"/\\\"}"
-    printf 'date: "%s"\n'   "${DATE//\"/\\\"}"
+    printf 'title: "%s"\n'       "${TITLE//\"/\\\"}"
+    printf 'author: "%s"\n'      "${AUTHOR//\"/\\\"}"
+    printf 'author-meta: "%s"\n' "${AUTHOR_META//\"/\\\"}"
+    printf 'date: "%s"\n'        "${DATE//\"/\\\"}"
     printf 'abstract: |\n'
     printf '%s\n' "$ABSTRACT" | sed 's/^/  /'
     printf -- '---\n\n'
@@ -85,10 +99,11 @@ PREPPED="$BUILD_DIR/paper.md"
 # --- Pandoc: markdown -> standalone .tex -----------------------------------
 TEX="$BUILD_DIR/paper.tex"
 pandoc "$PREPPED" \
-    --from=markdown+tex_math_dollars+pipe_tables+smart+implicit_figures+autolink_bare_uris \
+    --from=markdown+tex_math_dollars+tex_math_single_backslash+pipe_tables+smart+implicit_figures+autolink_bare_uris \
     --to=latex \
     --output="$TEX" \
     --standalone \
+    --wrap=preserve \
     --pdf-engine=xelatex \
     --top-level-division=section \
     --table-of-contents --toc-depth=3 \

@@ -1,0 +1,25 @@
+# Paper 11 Draft 0.3.1 Ship Manifest
+
+Ship tag: `paper11-draft-0.3.1`
+
+Repository HEAD at tag creation: `7f1d0207ddbd0e4eb45db935c1bd9a48ea29fa1a`
+
+Note: the leader-packet files are presently untracked by git in this working
+tree.  The git tag marks the repository HEAD; the frozen packet contents are
+the archived file copies below, identified by SHA-256.
+
+## Leader Packet
+
+```text
+B522C36AE471092F1E8F62FBE206705545F60CCA7DB584B454420E4E282AE592  11.quotient_character_adjacency_algebras.md
+18C51B12B21F4D715F7C56B7FA9B341D3AA2EDAB917DC1BD3DF5652C21989F00  empirical/reports/f16_atlas.json
+21C97408FE144D24EB7E1F849CD5046F57788B4BEC536602D90B301863D21998  empirical/reports/f2_u4_atlas.json
+E45CF074B1308CD8A7EDD00D5417129BC28ECB3E7C0F68C64FDA01AA97658E93  empirical/reports/f4_u2_ext_ch.md
+F219138B3C56A79B05FBA965A8E31FE4A93C0E9B2ACF91E0C319113292133024  empirical/reports/f4_u2_ext_orbits.json
+23514FBCCA9D894D349C57C4065D0A2972BF7D6E7DBD1236FFC4C0E2C6B301A4  empirical/reports/h3_f4_u2.md
+F0BD72E627DC99EC55CA031F5EF7B768C1E888F3705BFA07A035D63B84B98A90  empirical/reports/h4_f4_u2_audit.md
+B53391E212A9F01BBA3E587085D7F8FE7EF4DC816D8300233D5FDE4DE4ED5182  empirical/reports/h4_f4_u2_curvature_lift.md
+F4002C725169220D92D2C724543BE5DE1E9210060FD4CA77102C2E1EF9213368  empirical/reports/h4_R4_covariant_full_mixed_lift_table.md
+4B888EC33C55EC81C33A68464271A8529DA086578EDA21DE0246F048316537A9  empirical/reports/h4_R4_covariant_target_cell.md
+E93CC5F24E5CD52F1539710D211C0D16F1C648DF701B00FE70AB5066D046AFE7  empirical/reports/h4_to_h3_contractions.json
+```

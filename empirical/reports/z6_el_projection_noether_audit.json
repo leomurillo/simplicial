@@ -1,0 +1,56 @@
+{
+  "claim_tested": "EL-defined Z6 copula projection conserves autonomous Jacobi energy numerically",
+  "parameters": {
+    "sigma": [
+      0.2,
+      0.35,
+      -0.15
+    ],
+    "sigmadot": [
+      0.18,
+      -0.09,
+      0.06
+    ],
+    "steps": 24,
+    "dt": 0.002,
+    "kappa": 0.8,
+    "phi_coeffs": [
+      1.0,
+      0.0
+    ],
+    "fd_step": 1e-06,
+    "variation_step": 2e-05,
+    "lstsq_rcond": 1e-10,
+    "energy_tol": 1e-05,
+    "ternary_floor": 1e-10,
+    "report": "empirical\\reports\\z6_el_projection_noether_audit.md",
+    "json": "empirical\\reports\\z6_el_projection_noether_audit.json"
+  },
+  "summary": {
+    "status": "PASS",
+    "initial_energy": 0.016417620680845513,
+    "max_relative_energy_drift": 3.61372935048232e-10,
+    "max_ternary_acceleration_norm": 0.02679039851115651,
+    "kills": []
+  },
+  "samples": [
+    {
+      "step": 0,
+      "energy": 0.016417620680845513,
+      "relative_energy_drift": 0.0,
+      "ternary_acceleration_norm": 0.02607304012141694
+    },
+    {
+      "step": 12,
+      "energy": 0.01641762050763143,
+      "relative_energy_drift": 1.7321408196657728e-10,
+      "ternary_acceleration_norm": 0.026427018599722633
+    },
+    {
+      "step": 24,
+      "energy": 0.016417620397491225,
+      "relative_energy_drift": 2.833542879498996e-10,
+      "ternary_acceleration_norm": 0.02679039851115651
+    }
+  ]
+}

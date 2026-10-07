@@ -1,0 +1,1898 @@
+{
+  "purpose": "Squarefree/primorial information-investment frame testbed: compare CRT conductor frames against Haar mixed frames on Z/nZ conductor lattice prefixes and record packet-price budgets.",
+  "config": {
+    "rows": [
+      6,
+      10,
+      15,
+      30
+    ],
+    "samples": 300,
+    "seed": 20260516,
+    "amplitude_fraction": 0.35,
+    "min_target_omega": 2,
+    "weights": {
+      "block": 1.0,
+      "fisher_projection": 1.0,
+      "reciprocal_projection": 1.0,
+      "closure": 1.0,
+      "resource": 0.1,
+      "depth": 0.1,
+      "packet_commutator": 1.0,
+      "first_order_packet": 0.0
+    }
+  },
+  "results": [
+    {
+      "row": "Z/6Z",
+      "n": 6,
+      "target_conductor": 6,
+      "target_prime_support": [
+        2,
+        3
+      ],
+      "conductor_order": [
+        2,
+        3,
+        6
+      ],
+      "packet_sizes": {
+        "2": 1,
+        "3": 2,
+        "6": 2
+      },
+      "dimension": 5,
+      "active_dimension": 5,
+      "active_conductors": [
+        2,
+        3,
+        6
+      ],
+      "samples": 300,
+      "seed": 20260738,
+      "amplitude_fraction": 0.35,
+      "actual_amplitude": 0.0702655177472247,
+      "probability_min": 0.11124999999999999,
+      "probability_max": 0.2220833333333333,
+      "weights": {
+        "block": 1.0,
+        "fisher_projection": 1.0,
+        "reciprocal_projection": 1.0,
+        "closure": 1.0,
+        "resource": 0.1,
+        "depth": 0.1,
+        "packet_commutator": 1.0,
+        "first_order_packet": 0.0
+      },
+      "conductor_terms": {
+        "block_coupling": 0.29085650294993226,
+        "fisher_projection_error": 0.0,
+        "reciprocal_projection_error": 0.0,
+        "closure_leakage": 0.0,
+        "resource_cost": 1.0,
+        "depth_cost": 1.0,
+        "packet_commutator_impurity": 0.0,
+        "first_order_packet_cost": 0.0
+      },
+      "conductor_structural_value": 0.4908565029499322,
+      "conductor_full_value": 0.4908565029499322,
+      "random_structural_value": {
+        "min": 0.21734709091800725,
+        "p05": 0.28859399851239315,
+        "median": 0.37007247142681826,
+        "mean": 0.36834230194783163,
+        "p95": 0.4500820736345964,
+        "max": 0.47797540638635805
+      },
+      "random_full_value": {
+        "min": 0.6658070097892268,
+        "p05": 0.8480887425059276,
+        "median": 1.103970562739121,
+        "mean": 1.1077681168073092,
+        "p95": 1.3585299897274479,
+        "max": 1.509756124247659
+      },
+      "random_term_summaries": {
+        "block_coupling": {
+          "min": 0.017347090918007232,
+          "p05": 0.08859399851239265,
+          "median": 0.17007247142681825,
+          "mean": 0.1683423019478315,
+          "p95": 0.2500820736345964,
+          "max": 0.27797540638635804
+        },
+        "fisher_projection_error": {
+          "min": 0.0,
+          "p05": 0.0,
+          "median": 0.0,
+          "mean": 8.918791631155424e-17,
+          "p95": 3.3306690738754696e-16,
+          "max": 7.771561172376096e-16
+        },
+        "reciprocal_projection_error": {
+          "min": 0.0,
+          "p05": 0.0,
+          "median": 0.0,
+          "mean": 8.363680118842846e-17,
+          "p95": 3.3306690738754696e-16,
+          "max": 7.771561172376096e-16
+        },
+        "closure_leakage": {
+          "min": 0.0,
+          "p05": 0.0,
+          "median": 0.0,
+          "mean": 0.0,
+          "p95": 0.0,
+          "max": 0.0
+        },
+        "resource_cost": {
+          "min": 1.0,
+          "p05": 1.0,
+          "median": 1.0,
+          "mean": 1.0,
+          "p95": 1.0,
+          "max": 1.0
+        },
+        "depth_cost": {
+          "min": 1.0,
+          "p05": 1.0,
+          "median": 1.0,
+          "mean": 1.0,
+          "p95": 1.0,
+          "max": 1.0
+        },
+        "packet_commutator_impurity": {
+          "min": 0.25737018259983674,
+          "p05": 0.44298449079959484,
+          "median": 0.7464685442929138,
+          "mean": 0.7394258148594778,
+          "p95": 1.00106677598684,
+          "max": 1.0729598874817041
+        },
+        "first_order_packet_cost": {
+          "min": 2.4689283919692175,
+          "p05": 3.4412662600177497,
+          "median": 4.1685816208322235,
+          "mean": 4.124279134658961,
+          "p95": 4.750834413436842,
+          "max": 4.966278908537439
+        }
+      },
+      "random_better_structural_count": 300,
+      "random_better_full_count": 0,
+      "break_even_packet_commutator": {
+        "min": 0.02539994257038656,
+        "p05": 0.059267652924857944,
+        "median": 0.16678420438315514,
+        "mean": 0.16998536418548937,
+        "p95": 0.2936386721431453,
+        "max": 0.4570348235358498
+      },
+      "positive_break_even_packet_commutator": {
+        "min": 0.02539994257038656,
+        "p05": 0.059267652924857944,
+        "median": 0.16678420438315514,
+        "mean": 0.16998536418548937,
+        "p95": 0.2936386721431453,
+        "max": 0.4570348235358498
+      },
+      "break_even_first_order_packet": {
+        "min": 0.003316121451504089,
+        "p05": 0.009571511122348303,
+        "median": 0.030353197825312234,
+        "mean": 0.029846945865215566,
+        "p95": 0.050537005155829984,
+        "max": 0.07304119251097146
+      },
+      "positive_break_even_first_order_packet": {
+        "min": 0.003316121451504089,
+        "p05": 0.009571511122348303,
+        "median": 0.030353197825312234,
+        "mean": 0.029846945865215566,
+        "p95": 0.050537005155829984,
+        "max": 0.07304119251097146
+      },
+      "best_mixed_by_structural_value": [
+        {
+          "sample": 14,
+          "full_value": 1.121372306594918,
+          "structural_value": 0.21734709091800725,
+          "structural_gain_vs_conductor": 0.27350941203192497,
+          "break_even_packet_commutator": 0.3025462202701152,
+          "break_even_first_order_packet": 0.06281103533598513,
+          "terms": {
+            "block_coupling": 0.017347090918007232,
+            "fisher_projection_error": 0.0,
+            "reciprocal_projection_error": 0.0,
+            "closure_leakage": 0.0,
+            "resource_cost": 1.0,
+            "depth_cost": 1.0,
+            "packet_commutator_impurity": 0.9040252156769106,
+            "first_order_packet_cost": 4.354480236934233
+          }
+        },
+        {
+          "sample": 221,
+          "full_value": 1.3000917770319913,
+          "structural_value": 0.23588684716406866,
+          "structural_gain_vs_conductor": 0.25496965578586356,
+          "break_even_packet_commutator": 0.23958698990194266,
+          "break_even_first_order_packet": 0.05835947762775029,
+          "terms": {
+            "block_coupling": 0.03588684716406865,
+            "fisher_projection_error": 0.0,
+            "reciprocal_projection_error": 0.0,
+            "closure_leakage": 0.0,
+            "resource_cost": 1.0,
+            "depth_cost": 1.0,
+            "packet_commutator_impurity": 1.0642049298679226,
+            "first_order_packet_cost": 4.36895027423316
+          }
+        },
+        {
+          "sample": 130,
+          "full_value": 0.9189478443708293,
+          "structural_value": 0.24061631551673787,
+          "structural_gain_vs_conductor": 0.2502401874331943,
+          "break_even_packet_commutator": 0.36890543456814723,
+          "break_even_first_order_packet": 0.06466309748267754,
+          "terms": {
+            "block_coupling": 0.04061631551673696,
+            "fisher_projection_error": 4.440892098500626e-16,
+            "reciprocal_projection_error": 4.440892098500626e-16,
+            "closure_leakage": 0.0,
+            "resource_cost": 1.0,
+            "depth_cost": 1.0,
+            "packet_commutator_impurity": 0.6783315288540914,
+            "first_order_packet_cost": 3.8699072140834367
+          }
+        },
+        {
+          "sample": 9,
+          "full_value": 1.1017537813441995,
+          "structural_value": 0.2466026066440705,
+          "structural_gain_vs_conductor": 0.24425389630586172,
+          "break_even_packet_commutator": 0.28562656935075,
+          "break_even_first_order_packet": 0.07304119251097146,
+          "terms": {
+            "block_coupling": 0.046602606644070496,
+            "fisher_projection_error": 0.0,
+            "reciprocal_projection_error": 0.0,
+            "closure_leakage": 0.0,
+            "resource_cost": 1.0,
+            "depth_cost": 1.0,
+            "packet_commutator_impurity": 0.855151174700129,
+            "first_order_packet_cost": 3.344056797391041
+          }
+        },
+        {
+          "sample": 81,
+          "full_value": 1.129398884397439,
+          "structural_value": 0.25866751369544805,
+          "structural_gain_vs_conductor": 0.23218898925448417,
+          "break_even_packet_commutator": 0.2666597266012036,
+          "break_even_first_order_packet": 0.05057265680803795,
+          "terms": {
+            "block_coupling": 0.058667513695448,
+            "fisher_projection_error": 0.0,
+            "reciprocal_projection_error": 0.0,
+            "closure_leakage": 0.0,
+            "resource_cost": 1.0,
+            "depth_cost": 1.0,
+            "packet_commutator_impurity": 0.870731370701991,
+            "first_order_packet_cost": 4.591196189985027
+          }
+        }
+      ]
+    },
+    {
+      "row": "Z/10Z",
+      "n": 10,
+      "target_conductor": 10,
+      "target_prime_support": [
+        2,
+        5
+      ],
+      "conductor_order": [
+        2,
+        5,
+        10
+      ],
+      "packet_sizes": {
+        "2": 1,
+        "5": 4,
+        "10": 4
+      },
+      "dimension": 9,
+      "active_dimension": 9,
+      "active_conductors": [
+        2,
+        5,
+        10
+      ],
+      "samples": 300,
+      "seed": 20261895,
+      "amplitude_fraction": 0.35,
+      "actual_amplitude": 0.03646642000245668,
+      "probability_min": 0.06675,
+      "probability_max": 0.13325,
+      "weights": {
+        "block": 1.0,
+        "fisher_projection": 1.0,
+        "reciprocal_projection": 1.0,
+        "closure": 1.0,
+        "resource": 0.1,
+        "depth": 0.1,
+        "packet_commutator": 1.0,
+        "first_order_packet": 0.0
+      },
+      "conductor_terms": {
+        "block_coupling": 0.5246988350961143,
+        "fisher_projection_error": 0.0,
+        "reciprocal_projection_error": 0.0,
+        "closure_leakage": 0.0,
+        "resource_cost": 1.0,
+        "depth_cost": 1.0,
+        "packet_commutator_impurity": 0.0,
+        "first_order_packet_cost": 0.0
+      },
+      "conductor_structural_value": 0.7246988350961142,
+      "conductor_full_value": 0.7246988350961142,
+      "random_structural_value": {
+        "min": 0.3760289090184771,
+        "p05": 0.4094026682898914,
+        "median": 0.498633208922604,
+        "mean": 0.5002857178612856,
+        "p95": 0.5872997265671313,
+        "max": 0.6421151422542537
+      },
+      "random_full_value": {
+        "min": 0.8429517904088849,
+        "p05": 0.9811866579872,
+        "median": 1.1537389273188572,
+        "mean": 1.1545966357204436,
+        "p95": 1.3226904137441302,
+        "max": 1.5884089726458195
+      },
+      "random_term_summaries": {
+        "block_coupling": {
+          "min": 0.17602890901847687,
+          "p05": 0.20940266828989068,
+          "median": 0.29863320892260353,
+          "mean": 0.30028571786128533,
+          "p95": 0.3872997265671308,
+          "max": 0.44211514225425275
+        },
+        "fisher_projection_error": {
+          "min": 0.0,
+          "p05": 0.0,
+          "median": 0.0,
+          "mean": 8.548717289613706e-17,
+          "p95": 3.3306690738754696e-16,
+          "max": 8.881784197001252e-16
+        },
+        "reciprocal_projection_error": {
+          "min": 0.0,
+          "p05": 0.0,
+          "median": 2.220446049250313e-16,
+          "mean": 1.7171449447535754e-16,
+          "p95": 4.440892098500626e-16,
+          "max": 6.661338147750939e-16
+        },
+        "closure_leakage": {
+          "min": 0.0,
+          "p05": 0.0,
+          "median": 0.0,
+          "mean": 0.0,
+          "p95": 0.0,
+          "max": 0.0
+        },
+        "resource_cost": {
+          "min": 1.0,
+          "p05": 1.0,
+          "median": 1.0,
+          "mean": 1.0,
+          "p95": 1.0,
+          "max": 1.0
+        },
+        "depth_cost": {
+          "min": 1.0,
+          "p05": 1.0,
+          "median": 1.0,
+          "mean": 1.0,
+          "p95": 1.0,
+          "max": 1.0
+        },
+        "packet_commutator_impurity": {
+          "min": 0.3903134491054617,
+          "p05": 0.49508143911670355,
+          "median": 0.6565138833232205,
+          "mean": 0.6543109178591581,
+          "p95": 0.8077580168581747,
+          "max": 0.9501320018083912
+        },
+        "first_order_packet_cost": {
+          "min": 4.235321328489498,
+          "p05": 4.704791587153041,
+          "median": 5.2648274279403555,
+          "mean": 5.231081222636315,
+          "p95": 5.6737769820275865,
+          "max": 5.8374451271720265
+        }
+      },
+      "random_better_structural_count": 300,
+      "random_better_full_count": 0,
+      "break_even_packet_commutator": {
+        "min": 0.09095774491775746,
+        "p05": 0.21133043711361585,
+        "median": 0.3429396465338016,
+        "mean": 0.34985882384567646,
+        "p95": 0.525555285911406,
+        "max": 0.7162220439434307
+      },
+      "positive_break_even_packet_commutator": {
+        "min": 0.09095774491775746,
+        "p05": 0.21133043711361585,
+        "median": 0.3429396465338016,
+        "mean": 0.34985882384567646,
+        "p95": 0.525555285911406,
+        "max": 0.7162220439434307
+      },
+      "break_even_first_order_packet": {
+        "min": 0.014366068204408576,
+        "p05": 0.02639344893789313,
+        "median": 0.042996139281676074,
+        "mean": 0.043017955755654376,
+        "p95": 0.059803685566964665,
+        "max": 0.07084901619607735
+      },
+      "positive_break_even_first_order_packet": {
+        "min": 0.014366068204408576,
+        "p05": 0.02639344893789313,
+        "median": 0.042996139281676074,
+        "mean": 0.043017955755654376,
+        "p95": 0.059803685566964665,
+        "max": 0.07084901619607735
+      },
+      "best_mixed_by_structural_value": [
+        {
+          "sample": 122,
+          "full_value": 0.954079464128954,
+          "structural_value": 0.3760289090184771,
+          "structural_gain_vs_conductor": 0.34866992607763714,
+          "break_even_packet_commutator": 0.6031824085196137,
+          "break_even_first_order_packet": 0.06781576895065075,
+          "terms": {
+            "block_coupling": 0.17602890901847687,
+            "fisher_projection_error": 0.0,
+            "reciprocal_projection_error": 2.220446049250313e-16,
+            "closure_leakage": 0.0,
+            "resource_cost": 1.0,
+            "depth_cost": 1.0,
+            "packet_commutator_impurity": 0.5780505551104769,
+            "first_order_packet_cost": 5.141428482973669
+          }
+        },
+        {
+          "sample": 247,
+          "full_value": 1.1430242947185676,
+          "structural_value": 0.3791674880835503,
+          "structural_gain_vs_conductor": 0.34553134701256394,
+          "break_even_packet_commutator": 0.4523509432804782,
+          "break_even_first_order_packet": 0.06561167658396314,
+          "terms": {
+            "block_coupling": 0.17916748808355032,
+            "fisher_projection_error": 0.0,
+            "reciprocal_projection_error": 0.0,
+            "closure_leakage": 0.0,
+            "resource_cost": 1.0,
+            "depth_cost": 1.0,
+            "packet_commutator_impurity": 0.7638568066350173,
+            "first_order_packet_cost": 5.266308757868551
+          }
+        },
+        {
+          "sample": 80,
+          "full_value": 0.9461178694382181,
+          "structural_value": 0.38229687537925217,
+          "structural_gain_vs_conductor": 0.34240195971686205,
+          "break_even_packet_commutator": 0.6072884183540224,
+          "break_even_first_order_packet": 0.06153930954592274,
+          "terms": {
+            "block_coupling": 0.18229687537925215,
+            "fisher_projection_error": 0.0,
+            "reciprocal_projection_error": 0.0,
+            "closure_leakage": 0.0,
+            "resource_cost": 1.0,
+            "depth_cost": 1.0,
+            "packet_commutator_impurity": 0.5638209940589659,
+            "first_order_packet_cost": 5.563955173422119
+          }
+        },
+        {
+          "sample": 299,
+          "full_value": 1.1156578631676064,
+          "structural_value": 0.3911438089522937,
+          "structural_gain_vs_conductor": 0.3335550261438205,
+          "break_even_packet_commutator": 0.46038448005688215,
+          "break_even_first_order_packet": 0.060118484622700724,
+          "terms": {
+            "block_coupling": 0.1911438089522936,
+            "fisher_projection_error": 1.1102230246251565e-16,
+            "reciprocal_projection_error": 0.0,
+            "closure_leakage": 0.0,
+            "resource_cost": 1.0,
+            "depth_cost": 1.0,
+            "packet_commutator_impurity": 0.7245140542153128,
+            "first_order_packet_cost": 5.548293977088541
+          }
+        },
+        {
+          "sample": 44,
+          "full_value": 1.0463865014264533,
+          "structural_value": 0.39408102283182633,
+          "structural_gain_vs_conductor": 0.3306178122642879,
+          "break_even_packet_commutator": 0.5068450643348793,
+          "break_even_first_order_packet": 0.05978731883943732,
+          "terms": {
+            "block_coupling": 0.19408102283182638,
+            "fisher_projection_error": 0.0,
+            "reciprocal_projection_error": 0.0,
+            "closure_leakage": 0.0,
+            "resource_cost": 1.0,
+            "depth_cost": 1.0,
+            "packet_commutator_impurity": 0.6523054785946268,
+            "first_order_packet_cost": 5.529898625362065
+          }
+        }
+      ]
+    },
+    {
+      "row": "Z/15Z",
+      "n": 15,
+      "target_conductor": 15,
+      "target_prime_support": [
+        3,
+        5
+      ],
+      "conductor_order": [
+        3,
+        5,
+        15
+      ],
+      "packet_sizes": {
+        "3": 2,
+        "5": 4,
+        "15": 8
+      },
+      "dimension": 14,
+      "active_dimension": 14,
+      "active_conductors": [
+        3,
+        5,
+        15
+      ],
+      "samples": 300,
+      "seed": 20263089,
+      "amplitude_fraction": 0.35,
+      "actual_amplitude": 0.016266101379713203,
+      "probability_min": 0.044500000000000005,
+      "probability_max": 0.09042482839555954,
+      "weights": {
+        "block": 1.0,
+        "fisher_projection": 1.0,
+        "reciprocal_projection": 1.0,
+        "closure": 1.0,
+        "resource": 0.1,
+        "depth": 0.1,
+        "packet_commutator": 1.0,
+        "first_order_packet": 0.0
+      },
+      "conductor_terms": {
+        "block_coupling": 0.39025685720232767,
+        "fisher_projection_error": 0.0,
+        "reciprocal_projection_error": 0.0,
+        "closure_leakage": 0.0,
+        "resource_cost": 1.0,
+        "depth_cost": 1.0,
+        "packet_commutator_impurity": 0.0,
+        "first_order_packet_cost": 0.0
+      },
+      "conductor_structural_value": 0.5902568572023277,
+      "conductor_full_value": 0.5902568572023277,
+      "random_structural_value": {
+        "min": 0.37659821628134027,
+        "p05": 0.41757988307788557,
+        "median": 0.4786795654938494,
+        "mean": 0.4785708387712313,
+        "p95": 0.5427144764407623,
+        "max": 0.5729758756982147
+      },
+      "random_full_value": {
+        "min": 0.858287281456054,
+        "p05": 0.9917105121842689,
+        "median": 1.0963443340372057,
+        "mean": 1.0940381697379007,
+        "p95": 1.2034436079590138,
+        "max": 1.2564018604452412
+      },
+      "random_term_summaries": {
+        "block_coupling": {
+          "min": 0.1765982162813403,
+          "p05": 0.21757988307788556,
+          "median": 0.2786795654938494,
+          "mean": 0.2785708387712311,
+          "p95": 0.34271447644076236,
+          "max": 0.37297587569821383
+        },
+        "fisher_projection_error": {
+          "min": 0.0,
+          "p05": 0.0,
+          "median": 0.0,
+          "mean": 1.0140036958243096e-16,
+          "p95": 4.440892098500626e-16,
+          "max": 6.661338147750939e-16
+        },
+        "reciprocal_projection_error": {
+          "min": 0.0,
+          "p05": 0.0,
+          "median": 0.0,
+          "mean": 3.182639337258782e-17,
+          "p95": 2.220446049250313e-16,
+          "max": 6.661338147750939e-16
+        },
+        "closure_leakage": {
+          "min": 0.0,
+          "p05": 0.0,
+          "median": 0.0,
+          "mean": 0.0,
+          "p95": 0.0,
+          "max": 0.0
+        },
+        "resource_cost": {
+          "min": 1.0,
+          "p05": 1.0,
+          "median": 1.0,
+          "mean": 1.0,
+          "p95": 1.0,
+          "max": 1.0
+        },
+        "depth_cost": {
+          "min": 1.0,
+          "p05": 1.0,
+          "median": 1.0,
+          "mean": 1.0,
+          "p95": 1.0,
+          "max": 1.0
+        },
+        "packet_commutator_impurity": {
+          "min": 0.4260802491083399,
+          "p05": 0.530430358845703,
+          "median": 0.6165102331319569,
+          "mean": 0.6154673309666695,
+          "p95": 0.7039858786465993,
+          "max": 0.7317164922239504
+        },
+        "first_order_packet_cost": {
+          "min": 5.781388798823639,
+          "p05": 6.200960238028197,
+          "median": 6.646520143176401,
+          "mean": 6.6258196177271,
+          "p95": 6.998387442608774,
+          "max": 7.289640791650302
+        }
+      },
+      "random_better_structural_count": 300,
+      "random_better_full_count": 0,
+      "break_even_packet_commutator": {
+        "min": 0.027954170927140753,
+        "p05": 0.07563208455437834,
+        "median": 0.17584135553545227,
+        "mean": 0.1828176075843723,
+        "p95": 0.28234128547367765,
+        "max": 0.37233664691222007
+      },
+      "positive_break_even_packet_commutator": {
+        "min": 0.027954170927140753,
+        "p05": 0.07563208455437834,
+        "median": 0.17584135553545227,
+        "mean": 0.1828176075843723,
+        "p95": 0.28234128547367765,
+        "max": 0.37233664691222007
+      },
+      "break_even_first_order_packet": {
+        "min": 0.0025478850431134717,
+        "p05": 0.007201299857170778,
+        "median": 0.016606433807040084,
+        "mean": 0.01687436795765085,
+        "p95": 0.026001552425872543,
+        "max": 0.03269402660762515
+      },
+      "positive_break_even_first_order_packet": {
+        "min": 0.0025478850431134717,
+        "p05": 0.007201299857170778,
+        "median": 0.016606433807040084,
+        "mean": 0.01687436795765085,
+        "p95": 0.026001552425872543,
+        "max": 0.03269402660762515
+      },
+      "best_mixed_by_structural_value": [
+        {
+          "sample": 297,
+          "full_value": 0.9678038644122098,
+          "structural_value": 0.37659821628134027,
+          "structural_gain_vs_conductor": 0.2136586409209874,
+          "break_even_packet_commutator": 0.3613947897765886,
+          "break_even_first_order_packet": 0.03269402660762515,
+          "terms": {
+            "block_coupling": 0.1765982162813403,
+            "fisher_projection_error": 0.0,
+            "reciprocal_projection_error": 0.0,
+            "closure_leakage": 0.0,
+            "resource_cost": 1.0,
+            "depth_cost": 1.0,
+            "packet_commutator_impurity": 0.5912056481308695,
+            "first_order_packet_cost": 6.535097174942541
+          }
+        },
+        {
+          "sample": 38,
+          "full_value": 0.9844638381628708,
+          "structural_value": 0.38445273170491956,
+          "structural_gain_vs_conductor": 0.20580412549740812,
+          "break_even_packet_commutator": 0.3430005266274698,
+          "break_even_first_order_packet": 0.03060416606782004,
+          "terms": {
+            "block_coupling": 0.18445273170491933,
+            "fisher_projection_error": 2.220446049250313e-16,
+            "reciprocal_projection_error": 0.0,
+            "closure_leakage": 0.0,
+            "resource_cost": 1.0,
+            "depth_cost": 1.0,
+            "packet_commutator_impurity": 0.6000111064579512,
+            "first_order_packet_cost": 6.724709473910776
+          }
+        },
+        {
+          "sample": 176,
+          "full_value": 1.0095830753460104,
+          "structural_value": 0.3981384201490016,
+          "structural_gain_vs_conductor": 0.1921184370533261,
+          "break_even_packet_commutator": 0.31420413183826934,
+          "break_even_first_order_packet": 0.029057734475112375,
+          "terms": {
+            "block_coupling": 0.19813842014900157,
+            "fisher_projection_error": 0.0,
+            "reciprocal_projection_error": 0.0,
+            "closure_leakage": 0.0,
+            "resource_cost": 1.0,
+            "depth_cost": 1.0,
+            "packet_commutator_impurity": 0.6114446551970089,
+            "first_order_packet_cost": 6.611611005595546
+          }
+        },
+        {
+          "sample": 225,
+          "full_value": 1.084094430372754,
+          "structural_value": 0.40349786836114554,
+          "structural_gain_vs_conductor": 0.18675898884118214,
+          "break_even_packet_commutator": 0.27440483726392484,
+          "break_even_first_order_packet": 0.026896232695357077,
+          "terms": {
+            "block_coupling": 0.2034978683611453,
+            "fisher_projection_error": 2.220446049250313e-16,
+            "reciprocal_projection_error": 0.0,
+            "closure_leakage": 0.0,
+            "resource_cost": 1.0,
+            "depth_cost": 1.0,
+            "packet_commutator_impurity": 0.6805965620116085,
+            "first_order_packet_cost": 6.943685792598796
+          }
+        },
+        {
+          "sample": 189,
+          "full_value": 0.9414018116655293,
+          "structural_value": 0.40359693795487506,
+          "structural_gain_vs_conductor": 0.18665991924745262,
+          "break_even_packet_commutator": 0.34707740366792955,
+          "break_even_first_order_packet": 0.028157354997977193,
+          "terms": {
+            "block_coupling": 0.20359693795487457,
+            "fisher_projection_error": 2.220446049250313e-16,
+            "reciprocal_projection_error": 2.220446049250313e-16,
+            "closure_leakage": 0.0,
+            "resource_cost": 1.0,
+            "depth_cost": 1.0,
+            "packet_commutator_impurity": 0.5378048737106542,
+            "first_order_packet_cost": 6.629170931036035
+          }
+        }
+      ]
+    },
+    {
+      "row": "Z/30Z",
+      "n": 30,
+      "target_conductor": 6,
+      "target_prime_support": [
+        2,
+        3
+      ],
+      "conductor_order": [
+        2,
+        3,
+        5,
+        6,
+        10,
+        15,
+        30
+      ],
+      "packet_sizes": {
+        "2": 1,
+        "3": 2,
+        "5": 4,
+        "6": 2,
+        "10": 4,
+        "15": 8,
+        "30": 8
+      },
+      "dimension": 29,
+      "active_dimension": 5,
+      "active_conductors": [
+        2,
+        3,
+        6
+      ],
+      "samples": 300,
+      "seed": 20263765,
+      "amplitude_fraction": 0.35,
+      "actual_amplitude": 0.03142369483140244,
+      "probability_min": 0.022250000000000002,
+      "probability_max": 0.04441666666666666,
+      "weights": {
+        "block": 1.0,
+        "fisher_projection": 1.0,
+        "reciprocal_projection": 1.0,
+        "closure": 1.0,
+        "resource": 0.1,
+        "depth": 0.1,
+        "packet_commutator": 1.0,
+        "first_order_packet": 0.0
+      },
+      "conductor_terms": {
+        "block_coupling": 2.0450211383928556,
+        "fisher_projection_error": 0.0,
+        "reciprocal_projection_error": 0.0,
+        "closure_leakage": 0.0,
+        "resource_cost": 0.1724137931034483,
+        "depth_cost": 0.6666666666666666,
+        "packet_commutator_impurity": 0.0,
+        "first_order_packet_cost": 0.0
+      },
+      "conductor_structural_value": 2.1289291843698672,
+      "conductor_full_value": 2.1289291843698672,
+      "random_structural_value": {
+        "min": 3.2940687437859126,
+        "p05": 3.8082892339116303,
+        "median": 4.141829962337618,
+        "mean": 4.131371505048676,
+        "p95": 4.40705145784868,
+        "max": 4.537001017578446
+      },
+      "random_full_value": {
+        "min": 4.52088691523559,
+        "p05": 5.0357156060961294,
+        "median": 5.3678332801440884,
+        "mean": 5.366173119130808,
+        "p95": 5.658860777046484,
+        "max": 5.778649730629846
+      },
+      "random_term_summaries": {
+        "block_coupling": {
+          "min": 1.4369503027984498,
+          "p05": 1.497340255694498,
+          "median": 1.6002698136060975,
+          "mean": 1.596626841584792,
+          "p95": 1.6841277321210006,
+          "max": 1.7462161390169706
+        },
+        "fisher_projection_error": {
+          "min": 0.4383405938418271,
+          "p05": 0.6710063508595385,
+          "median": 0.8490288933237478,
+          "mean": 0.8344679646996243,
+          "p95": 0.9653591792187438,
+          "max": 0.9887152507939145
+        },
+        "reciprocal_projection_error": {
+          "min": 0.46965684486269743,
+          "p05": 0.6668230340586399,
+          "median": 0.839286716292636,
+          "mean": 0.8322065451949493,
+          "p95": 0.9637123102724126,
+          "max": 0.9874099208880459
+        },
+        "closure_leakage": {
+          "min": 0.6265404238543529,
+          "p05": 0.7091590842241882,
+          "median": 0.7872474278483439,
+          "mean": 0.784162107592299,
+          "p95": 0.8470506501501384,
+          "max": 0.8951247518385691
+        },
+        "resource_cost": {
+          "min": 0.1724137931034483,
+          "p05": 0.1724137931034483,
+          "median": 0.1724137931034483,
+          "mean": 0.17241379310344832,
+          "p95": 0.1724137931034483,
+          "max": 0.1724137931034483
+        },
+        "depth_cost": {
+          "min": 0.6666666666666666,
+          "p05": 0.6666666666666666,
+          "median": 0.6666666666666666,
+          "mean": 0.6666666666666666,
+          "p95": 0.6666666666666666,
+          "max": 0.6666666666666666
+        },
+        "packet_commutator_impurity": {
+          "min": 1.166730586472352,
+          "p05": 1.197094180032493,
+          "median": 1.2357875511270078,
+          "mean": 1.2348016140821325,
+          "p95": 1.2679080206663278,
+          "max": 1.2814954275489274
+        },
+        "first_order_packet_cost": {
+          "min": 26.830076537081393,
+          "p05": 27.28708636718333,
+          "median": 27.884968952239923,
+          "mean": 27.844038044453875,
+          "p95": 28.332913185311494,
+          "max": 28.856043915277994
+        }
+      },
+      "random_better_structural_count": 0,
+      "random_better_full_count": 0,
+      "break_even_packet_commutator": {
+        "min": 0.0,
+        "p05": 0.0,
+        "median": 0.0,
+        "mean": 0.0,
+        "p95": 0.0,
+        "max": 0.0
+      },
+      "positive_break_even_packet_commutator": {
+        "min": 0.0,
+        "p05": 0.0,
+        "median": 0.0,
+        "mean": 0.0,
+        "p95": 0.0,
+        "max": 0.0
+      },
+      "break_even_first_order_packet": {
+        "min": 0.0,
+        "p05": 0.0,
+        "median": 0.0,
+        "mean": 0.0,
+        "p95": 0.0,
+        "max": 0.0
+      },
+      "positive_break_even_first_order_packet": {
+        "min": 0.0,
+        "p05": 0.0,
+        "median": 0.0,
+        "mean": 0.0,
+        "p95": 0.0,
+        "max": 0.0
+      },
+      "best_mixed_by_structural_value": [
+        {
+          "sample": 65,
+          "full_value": 4.52088691523559,
+          "structural_value": 3.2940687437859126,
+          "structural_gain_vs_conductor": -1.1651395594160454,
+          "break_even_packet_commutator": 0.0,
+          "break_even_first_order_packet": 0.0,
+          "terms": {
+            "block_coupling": 1.5275137384794915,
+            "fisher_projection_error": 0.4383405938418271,
+            "reciprocal_projection_error": 0.46965684486269743,
+            "closure_leakage": 0.7746495206248852,
+            "resource_cost": 0.1724137931034483,
+            "depth_cost": 0.6666666666666666,
+            "packet_commutator_impurity": 1.2268181714496775,
+            "first_order_packet_cost": 27.47817565991728
+          }
+        },
+        {
+          "sample": 107,
+          "full_value": 4.788101960502166,
+          "structural_value": 3.5738466484297637,
+          "structural_gain_vs_conductor": -1.4449174640598965,
+          "break_even_packet_commutator": 0.0,
+          "break_even_first_order_packet": 0.0,
+          "terms": {
+            "block_coupling": 1.6766525601029847,
+            "fisher_projection_error": 0.4838063809872425,
+            "reciprocal_projection_error": 0.522175050961933,
+            "closure_leakage": 0.8073046104005919,
+            "resource_cost": 0.1724137931034483,
+            "depth_cost": 0.6666666666666666,
+            "packet_commutator_impurity": 1.2142553120724022,
+            "first_order_packet_cost": 28.10566663016856
+          }
+        },
+        {
+          "sample": 205,
+          "full_value": 4.840388661828288,
+          "structural_value": 3.620279224429969,
+          "structural_gain_vs_conductor": -1.4913500400601016,
+          "break_even_packet_commutator": 0.0,
+          "break_even_first_order_packet": 0.0,
+          "terms": {
+            "block_coupling": 1.6136206816924947,
+            "fisher_projection_error": 0.591961789750195,
+            "reciprocal_projection_error": 0.5994096421509718,
+            "closure_leakage": 0.7313790648592953,
+            "resource_cost": 0.1724137931034483,
+            "depth_cost": 0.6666666666666666,
+            "packet_commutator_impurity": 1.2201094373983195,
+            "first_order_packet_cost": 27.834894438016253
+          }
+        },
+        {
+          "sample": 189,
+          "full_value": 4.841607722800987,
+          "structural_value": 3.6231611371290855,
+          "structural_gain_vs_conductor": -1.4942319527592183,
+          "break_even_packet_commutator": 0.0,
+          "break_even_first_order_packet": 0.0,
+          "terms": {
+            "block_coupling": 1.5466849694138562,
+            "fisher_projection_error": 0.5924766904657017,
+            "reciprocal_projection_error": 0.604090500431314,
+            "closure_leakage": 0.7960009308412024,
+            "resource_cost": 0.1724137931034483,
+            "depth_cost": 0.6666666666666666,
+            "packet_commutator_impurity": 1.2184465856719018,
+            "first_order_packet_cost": 28.01356004310712
+          }
+        },
+        {
+          "sample": 222,
+          "full_value": 4.888529946969686,
+          "structural_value": 3.640449803327063,
+          "structural_gain_vs_conductor": -1.5115206189571957,
+          "break_even_packet_commutator": 0.0,
+          "break_even_first_order_packet": 0.0,
+          "terms": {
+            "block_coupling": 1.6320432857225384,
+            "fisher_projection_error": 0.5706839544902234,
+            "reciprocal_projection_error": 0.543016876392652,
+            "closure_leakage": 0.8107976407446373,
+            "resource_cost": 0.1724137931034483,
+            "depth_cost": 0.6666666666666666,
+            "packet_commutator_impurity": 1.2480801436426232,
+            "first_order_packet_cost": 27.667968827312837
+          }
+        }
+      ]
+    },
+    {
+      "row": "Z/30Z",
+      "n": 30,
+      "target_conductor": 10,
+      "target_prime_support": [
+        2,
+        5
+      ],
+      "conductor_order": [
+        2,
+        3,
+        5,
+        6,
+        10,
+        15,
+        30
+      ],
+      "packet_sizes": {
+        "2": 1,
+        "3": 2,
+        "5": 4,
+        "6": 2,
+        "10": 4,
+        "15": 8,
+        "30": 8
+      },
+      "dimension": 29,
+      "active_dimension": 9,
+      "active_conductors": [
+        2,
+        5,
+        10
+      ],
+      "samples": 300,
+      "seed": 20263913,
+      "amplitude_fraction": 0.35,
+      "actual_amplitude": 0.021053897404800296,
+      "probability_min": 0.022250000000000002,
+      "probability_max": 0.04441666666666665,
+      "weights": {
+        "block": 1.0,
+        "fisher_projection": 1.0,
+        "reciprocal_projection": 1.0,
+        "closure": 1.0,
+        "resource": 0.1,
+        "depth": 0.1,
+        "packet_commutator": 1.0,
+        "first_order_packet": 0.0
+      },
+      "conductor_terms": {
+        "block_coupling": 1.8446437048370692,
+        "fisher_projection_error": 0.0,
+        "reciprocal_projection_error": 0.0,
+        "closure_leakage": 0.0,
+        "resource_cost": 0.3103448275862069,
+        "depth_cost": 0.6666666666666666,
+        "packet_commutator_impurity": 0.0,
+        "first_order_packet_cost": 0.0
+      },
+      "conductor_structural_value": 1.9423448542623565,
+      "conductor_full_value": 1.9423448542623565,
+      "random_structural_value": {
+        "min": 2.9007191261325294,
+        "p05": 3.202613016062235,
+        "median": 3.6021224472152715,
+        "mean": 3.59330634748792,
+        "p95": 3.948140975497066,
+        "max": 4.132201157025368
+      },
+      "random_full_value": {
+        "min": 4.14484624238065,
+        "p05": 4.427566207331448,
+        "median": 4.836660749885589,
+        "mean": 4.828944681429463,
+        "p95": 5.1767596819505295,
+        "max": 5.3746492355338065
+      },
+      "random_term_summaries": {
+        "block_coupling": {
+          "min": 1.3449294692520066,
+          "p05": 1.3835345062949524,
+          "median": 1.4681641591906538,
+          "mean": 1.4661463089651159,
+          "p95": 1.5484327795281327,
+          "max": 1.6043583276005604
+        },
+        "fisher_projection_error": {
+          "min": 0.33650461005702104,
+          "p05": 0.48955267189558077,
+          "median": 0.6977374574670245,
+          "mean": 0.6893462060375959,
+          "p95": 0.8579280573731574,
+          "max": 0.9363770896194092
+        },
+        "reciprocal_projection_error": {
+          "min": 0.338498760846508,
+          "p05": 0.49196450487821364,
+          "median": 0.7020371100513966,
+          "mean": 0.6908667136535714,
+          "p95": 0.8713855506856446,
+          "max": 0.9505148385570612
+        },
+        "closure_leakage": {
+          "min": 0.5532081580779755,
+          "p05": 0.5982677002253306,
+          "median": 0.6518046047773806,
+          "mean": 0.649245969406349,
+          "p95": 0.6928343696007487,
+          "max": 0.7289989574262634
+        },
+        "resource_cost": {
+          "min": 0.3103448275862069,
+          "p05": 0.3103448275862069,
+          "median": 0.3103448275862069,
+          "mean": 0.3103448275862069,
+          "p95": 0.3103448275862069,
+          "max": 0.3103448275862069
+        },
+        "depth_cost": {
+          "min": 0.6666666666666666,
+          "p05": 0.6666666666666666,
+          "median": 0.6666666666666666,
+          "mean": 0.6666666666666666,
+          "p95": 0.6666666666666666,
+          "max": 0.6666666666666666
+        },
+        "packet_commutator_impurity": {
+          "min": 1.1745567725814614,
+          "p05": 1.196430648997965,
+          "median": 1.2358125368574653,
+          "mean": 1.2356383339415435,
+          "p95": 1.27092974390832,
+          "max": 1.287007351154037
+        },
+        "first_order_packet_cost": {
+          "min": 26.69114868878254,
+          "p05": 27.32090598876132,
+          "median": 27.813072661743618,
+          "mean": 27.83067313893127,
+          "p95": 28.35111009174062,
+          "max": 28.654569870627295
+        }
+      },
+      "random_better_structural_count": 0,
+      "random_better_full_count": 0,
+      "break_even_packet_commutator": {
+        "min": 0.0,
+        "p05": 0.0,
+        "median": 0.0,
+        "mean": 0.0,
+        "p95": 0.0,
+        "max": 0.0
+      },
+      "positive_break_even_packet_commutator": {
+        "min": 0.0,
+        "p05": 0.0,
+        "median": 0.0,
+        "mean": 0.0,
+        "p95": 0.0,
+        "max": 0.0
+      },
+      "break_even_first_order_packet": {
+        "min": 0.0,
+        "p05": 0.0,
+        "median": 0.0,
+        "mean": 0.0,
+        "p95": 0.0,
+        "max": 0.0
+      },
+      "positive_break_even_first_order_packet": {
+        "min": 0.0,
+        "p05": 0.0,
+        "median": 0.0,
+        "mean": 0.0,
+        "p95": 0.0,
+        "max": 0.0
+      },
+      "best_mixed_by_structural_value": [
+        {
+          "sample": 37,
+          "full_value": 4.14484624238065,
+          "structural_value": 2.9007191261325294,
+          "structural_gain_vs_conductor": -0.9583742718701729,
+          "break_even_packet_commutator": 0.0,
+          "break_even_first_order_packet": 0.0,
+          "terms": {
+            "block_coupling": 1.492120155804539,
+            "fisher_projection_error": 0.33650461005702104,
+            "reciprocal_projection_error": 0.338498760846508,
+            "closure_leakage": 0.6358944499991741,
+            "resource_cost": 0.3103448275862069,
+            "depth_cost": 0.6666666666666666,
+            "packet_commutator_impurity": 1.2441271162481211,
+            "first_order_packet_cost": 27.635694350249274
+          }
+        },
+        {
+          "sample": 104,
+          "full_value": 4.174185204435653,
+          "structural_value": 2.9396023039656765,
+          "structural_gain_vs_conductor": -0.99725744970332,
+          "break_even_packet_commutator": 0.0,
+          "break_even_first_order_packet": 0.0,
+          "terms": {
+            "block_coupling": 1.3527755810902904,
+            "fisher_projection_error": 0.3991126918611676,
+            "reciprocal_projection_error": 0.4227561195089088,
+            "closure_leakage": 0.6672567620800222,
+            "resource_cost": 0.3103448275862069,
+            "depth_cost": 0.6666666666666666,
+            "packet_commutator_impurity": 1.2345829004699764,
+            "first_order_packet_cost": 27.365412775162188
+          }
+        },
+        {
+          "sample": 173,
+          "full_value": 4.249714271704083,
+          "structural_value": 3.015032443176462,
+          "structural_gain_vs_conductor": -1.0726875889141054,
+          "break_even_packet_commutator": 0.0,
+          "break_even_first_order_packet": 0.0,
+          "terms": {
+            "block_coupling": 1.424284398961269,
+            "fisher_projection_error": 0.4340220445352001,
+            "reciprocal_projection_error": 0.43991863146090326,
+            "closure_leakage": 0.6191062187938022,
+            "resource_cost": 0.3103448275862069,
+            "depth_cost": 0.6666666666666666,
+            "packet_commutator_impurity": 1.2346818285276213,
+            "first_order_packet_cost": 27.39946151640843
+          }
+        },
+        {
+          "sample": 260,
+          "full_value": 4.319912984771335,
+          "structural_value": 3.05889902292396,
+          "structural_gain_vs_conductor": -1.1165541686616034,
+          "break_even_packet_commutator": 0.0,
+          "break_even_first_order_packet": 0.0,
+          "terms": {
+            "block_coupling": 1.4024518062425178,
+            "fisher_projection_error": 0.4769218698415483,
+            "reciprocal_projection_error": 0.4832499275262908,
+            "closure_leakage": 0.5985742698883155,
+            "resource_cost": 0.3103448275862069,
+            "depth_cost": 0.6666666666666666,
+            "packet_commutator_impurity": 1.2610139618473755,
+            "first_order_packet_cost": 27.776812418369502
+          }
+        },
+        {
+          "sample": 291,
+          "full_value": 4.293370987195607,
+          "structural_value": 3.0600844820615545,
+          "structural_gain_vs_conductor": -1.117739627799198,
+          "break_even_packet_commutator": 0.0,
+          "break_even_first_order_packet": 0.0,
+          "terms": {
+            "block_coupling": 1.4431006036184681,
+            "fisher_projection_error": 0.3694811110724677,
+            "reciprocal_projection_error": 0.48257523770057187,
+            "closure_leakage": 0.6672263802447589,
+            "resource_cost": 0.3103448275862069,
+            "depth_cost": 0.6666666666666666,
+            "packet_commutator_impurity": 1.2332865051340531,
+            "first_order_packet_cost": 27.374400422422784
+          }
+        }
+      ]
+    },
+    {
+      "row": "Z/30Z",
+      "n": 30,
+      "target_conductor": 15,
+      "target_prime_support": [
+        3,
+        5
+      ],
+      "conductor_order": [
+        2,
+        3,
+        5,
+        6,
+        10,
+        15,
+        30
+      ],
+      "packet_sizes": {
+        "2": 1,
+        "3": 2,
+        "5": 4,
+        "6": 2,
+        "10": 4,
+        "15": 8,
+        "30": 8
+      },
+      "dimension": 29,
+      "active_dimension": 14,
+      "active_conductors": [
+        3,
+        5,
+        15
+      ],
+      "samples": 300,
+      "seed": 20264098,
+      "amplitude_fraction": 0.35,
+      "actual_amplitude": 0.011501870589063051,
+      "probability_min": 0.02225,
+      "probability_max": 0.04521241419777976,
+      "weights": {
+        "block": 1.0,
+        "fisher_projection": 1.0,
+        "reciprocal_projection": 1.0,
+        "closure": 1.0,
+        "resource": 0.1,
+        "depth": 0.1,
+        "packet_commutator": 1.0,
+        "first_order_packet": 0.0
+      },
+      "conductor_terms": {
+        "block_coupling": 0.8597554059644879,
+        "fisher_projection_error": 0.0,
+        "reciprocal_projection_error": 0.0,
+        "closure_leakage": 0.0,
+        "resource_cost": 0.4827586206896552,
+        "depth_cost": 0.6666666666666666,
+        "packet_commutator_impurity": 0.0,
+        "first_order_packet_cost": 0.0
+      },
+      "conductor_structural_value": 0.97469793470012,
+      "conductor_full_value": 0.97469793470012,
+      "random_structural_value": {
+        "min": 1.8349451037652122,
+        "p05": 2.1004441090539467,
+        "median": 2.5435923770958837,
+        "mean": 2.543356481803747,
+        "p95": 2.952043522541148,
+        "max": 3.208659675280493
+      },
+      "random_full_value": {
+        "min": 3.050825801560185,
+        "p05": 3.335448028493062,
+        "median": 3.787055707271673,
+        "mean": 3.7828890893776306,
+        "p95": 4.189526940661375,
+        "max": 4.431888202976521
+      },
+      "random_term_summaries": {
+        "block_coupling": {
+          "min": 0.7282316436764739,
+          "p05": 0.8013641238194074,
+          "median": 0.8587688067083228,
+          "mean": 0.8567292171615729,
+          "p95": 0.907700304617622,
+          "max": 0.924438833781846
+        },
+        "fisher_projection_error": {
+          "min": 0.1827025960208366,
+          "p05": 0.31912967229478423,
+          "median": 0.5438659648045754,
+          "mean": 0.5442047693705735,
+          "p95": 0.7427821369542709,
+          "max": 0.8942032728546118
+        },
+        "reciprocal_projection_error": {
+          "min": 0.18990586160658107,
+          "p05": 0.3358650438217009,
+          "median": 0.5410970031327088,
+          "mean": 0.541718741034456,
+          "p95": 0.7491497069887149,
+          "max": 0.8818558509066708
+        },
+        "closure_leakage": {
+          "min": 0.41966579694272577,
+          "p05": 0.45554610932442186,
+          "median": 0.4873998503854218,
+          "mean": 0.4857612255015122,
+          "p95": 0.5165194106931158,
+          "max": 0.5287362649146483
+        },
+        "resource_cost": {
+          "min": 0.4827586206896552,
+          "p05": 0.4827586206896552,
+          "median": 0.4827586206896552,
+          "mean": 0.48275862068965525,
+          "p95": 0.4827586206896552,
+          "max": 0.4827586206896552
+        },
+        "depth_cost": {
+          "min": 0.6666666666666666,
+          "p05": 0.6666666666666666,
+          "median": 0.6666666666666666,
+          "mean": 0.6666666666666666,
+          "p95": 0.6666666666666666,
+          "max": 0.6666666666666666
+        },
+        "packet_commutator_impurity": {
+          "min": 1.1795207667941774,
+          "p05": 1.2072827958458936,
+          "median": 1.2395813568265142,
+          "mean": 1.2395326075738837,
+          "p95": 1.2690929154951247,
+          "max": 1.3032551829533954
+        },
+        "first_order_packet_cost": {
+          "min": 26.268601849738744,
+          "p05": 27.285944429932446,
+          "median": 27.89348531958165,
+          "mean": 27.85477797307156,
+          "p95": 28.362641506298154,
+          "max": 28.719624595458612
+        }
+      },
+      "random_better_structural_count": 0,
+      "random_better_full_count": 0,
+      "break_even_packet_commutator": {
+        "min": 0.0,
+        "p05": 0.0,
+        "median": 0.0,
+        "mean": 0.0,
+        "p95": 0.0,
+        "max": 0.0
+      },
+      "positive_break_even_packet_commutator": {
+        "min": 0.0,
+        "p05": 0.0,
+        "median": 0.0,
+        "mean": 0.0,
+        "p95": 0.0,
+        "max": 0.0
+      },
+      "break_even_first_order_packet": {
+        "min": 0.0,
+        "p05": 0.0,
+        "median": 0.0,
+        "mean": 0.0,
+        "p95": 0.0,
+        "max": 0.0
+      },
+      "positive_break_even_first_order_packet": {
+        "min": 0.0,
+        "p05": 0.0,
+        "median": 0.0,
+        "mean": 0.0,
+        "p95": 0.0,
+        "max": 0.0
+      },
+      "best_mixed_by_structural_value": [
+        {
+          "sample": 242,
+          "full_value": 3.050825801560185,
+          "structural_value": 1.8349451037652122,
+          "structural_gain_vs_conductor": -0.8602471690650922,
+          "break_even_packet_commutator": 0.0,
+          "break_even_first_order_packet": 0.0,
+          "terms": {
+            "block_coupling": 0.8405392387706204,
+            "fisher_projection_error": 0.1827025960208366,
+            "reciprocal_projection_error": 0.18990586160658107,
+            "closure_leakage": 0.5068548786315419,
+            "resource_cost": 0.4827586206896552,
+            "depth_cost": 0.6666666666666666,
+            "packet_commutator_impurity": 1.2158806977949725,
+            "first_order_packet_cost": 27.72083098122753
+          }
+        },
+        {
+          "sample": 17,
+          "full_value": 3.141921483402366,
+          "structural_value": 1.9046373529760188,
+          "structural_gain_vs_conductor": -0.9299394182758988,
+          "break_even_packet_commutator": 0.0,
+          "break_even_first_order_packet": 0.0,
+          "terms": {
+            "block_coupling": 0.8703231295447155,
+            "fisher_projection_error": 0.24024929804356399,
+            "reciprocal_projection_error": 0.2130723534478054,
+            "closure_leakage": 0.46605004320430177,
+            "resource_cost": 0.4827586206896552,
+            "depth_cost": 0.6666666666666666,
+            "packet_commutator_impurity": 1.2372841304263473,
+            "first_order_packet_cost": 27.972212183495373
+          }
+        },
+        {
+          "sample": 211,
+          "full_value": 3.136039204734563,
+          "structural_value": 1.913962254074307,
+          "structural_gain_vs_conductor": -0.9392643193741871,
+          "break_even_packet_commutator": 0.0,
+          "break_even_first_order_packet": 0.0,
+          "terms": {
+            "block_coupling": 0.8735453334957277,
+            "fisher_projection_error": 0.23616036080301062,
+            "reciprocal_projection_error": 0.23083771339573955,
+            "closure_leakage": 0.45847631764419683,
+            "resource_cost": 0.4827586206896552,
+            "depth_cost": 0.6666666666666666,
+            "packet_commutator_impurity": 1.2220769506602556,
+            "first_order_packet_cost": 28.599759589496866
+          }
+        },
+        {
+          "sample": 190,
+          "full_value": 3.1410581849475925,
+          "structural_value": 1.91589834106854,
+          "structural_gain_vs_conductor": -0.94120040636842,
+          "break_even_packet_commutator": 0.0,
+          "break_even_first_order_packet": 0.0,
+          "terms": {
+            "block_coupling": 0.7936716293207352,
+            "fisher_projection_error": 0.2660388680821991,
+            "reciprocal_projection_error": 0.26684928790378615,
+            "closure_leakage": 0.4743960270261872,
+            "resource_cost": 0.4827586206896552,
+            "depth_cost": 0.6666666666666666,
+            "packet_commutator_impurity": 1.2251598438790523,
+            "first_order_packet_cost": 27.90398399049171
+          }
+        },
+        {
+          "sample": 106,
+          "full_value": 3.1549497494551133,
+          "structural_value": 1.9220477103674445,
+          "structural_gain_vs_conductor": -0.9473497756673245,
+          "break_even_packet_commutator": 0.0,
+          "break_even_first_order_packet": 0.0,
+          "terms": {
+            "block_coupling": 0.8586861065299348,
+            "fisher_projection_error": 0.20843845626124669,
+            "reciprocal_projection_error": 0.2398482408072493,
+            "closure_leakage": 0.5001323780333816,
+            "resource_cost": 0.4827586206896552,
+            "depth_cost": 0.6666666666666666,
+            "packet_commutator_impurity": 1.232902039087669,
+            "first_order_packet_cost": 27.63596878167099
+          }
+        }
+      ]
+    },
+    {
+      "row": "Z/30Z",
+      "n": 30,
+      "target_conductor": 30,
+      "target_prime_support": [
+        2,
+        3,
+        5
+      ],
+      "conductor_order": [
+        2,
+        3,
+        5,
+        6,
+        10,
+        15,
+        30
+      ],
+      "packet_sizes": {
+        "2": 1,
+        "3": 2,
+        "5": 4,
+        "6": 2,
+        "10": 4,
+        "15": 8,
+        "30": 8
+      },
+      "dimension": 29,
+      "active_dimension": 29,
+      "active_conductors": [
+        2,
+        3,
+        5,
+        6,
+        10,
+        15,
+        30
+      ],
+      "samples": 300,
+      "seed": 20264653,
+      "amplitude_fraction": 0.35,
+      "actual_amplitude": 0.010731391355116394,
+      "probability_min": 0.022250000000000002,
+      "probability_max": 0.044416666666666674,
+      "weights": {
+        "block": 1.0,
+        "fisher_projection": 1.0,
+        "reciprocal_projection": 1.0,
+        "closure": 1.0,
+        "resource": 0.1,
+        "depth": 0.1,
+        "packet_commutator": 1.0,
+        "first_order_packet": 0.0
+      },
+      "conductor_terms": {
+        "block_coupling": 0.9274456408367542,
+        "fisher_projection_error": 0.0,
+        "reciprocal_projection_error": 0.0,
+        "closure_leakage": 0.0,
+        "resource_cost": 1.0,
+        "depth_cost": 1.0,
+        "packet_commutator_impurity": 0.0,
+        "first_order_packet_cost": 0.0
+      },
+      "conductor_structural_value": 1.1274456408367544,
+      "conductor_full_value": 1.1274456408367544,
+      "random_structural_value": {
+        "min": 0.8371501947043919,
+        "p05": 0.8860670688738725,
+        "median": 0.931586300528846,
+        "mean": 0.9293294067696621,
+        "p95": 0.9739015956635855,
+        "max": 0.9978583663325457
+      },
+      "random_full_value": {
+        "min": 2.054818294508506,
+        "p05": 2.105279629258471,
+        "median": 2.1697409885947665,
+        "mean": 2.168392663561906,
+        "p95": 2.2216320058344667,
+        "max": 2.2882107325293597
+      },
+      "random_term_summaries": {
+        "block_coupling": {
+          "min": 0.6371501947043915,
+          "p05": 0.6860670688738726,
+          "median": 0.7315863005288457,
+          "mean": 0.729329406769662,
+          "p95": 0.7739015956635855,
+          "max": 0.7978583663325457
+        },
+        "fisher_projection_error": {
+          "min": 0.0,
+          "p05": 0.0,
+          "median": 0.0,
+          "mean": 7.105427357601002e-17,
+          "p95": 2.220446049250313e-16,
+          "max": 5.551115123125783e-16
+        },
+        "reciprocal_projection_error": {
+          "min": 0.0,
+          "p05": 0.0,
+          "median": 0.0,
+          "mean": 9.473903143468003e-17,
+          "p95": 3.3306690738754696e-16,
+          "max": 7.771561172376096e-16
+        },
+        "closure_leakage": {
+          "min": 0.0,
+          "p05": 0.0,
+          "median": 0.0,
+          "mean": 0.0,
+          "p95": 0.0,
+          "max": 0.0
+        },
+        "resource_cost": {
+          "min": 1.0,
+          "p05": 1.0,
+          "median": 1.0,
+          "mean": 1.0,
+          "p95": 1.0,
+          "max": 1.0
+        },
+        "depth_cost": {
+          "min": 1.0,
+          "p05": 1.0,
+          "median": 1.0,
+          "mean": 1.0,
+          "p95": 1.0,
+          "max": 1.0
+        },
+        "packet_commutator_impurity": {
+          "min": 1.1759862329068564,
+          "p05": 1.2007880162705926,
+          "median": 1.2401991906481693,
+          "mean": 1.2390632567922444,
+          "p95": 1.2717964480107118,
+          "max": 1.311384111438266
+        },
+        "first_order_packet_cost": {
+          "min": 27.038085147479546,
+          "p05": 27.42320823503423,
+          "median": 27.91324841414059,
+          "mean": 27.909443307540837,
+          "p95": 28.39354155340426,
+          "max": 28.577325013379966
+        }
+      },
+      "random_better_structural_count": 300,
+      "random_better_full_count": 0,
+      "break_even_packet_commutator": {
+        "min": 0.10563771944479534,
+        "p05": 0.12304365903353894,
+        "median": 0.15841531497756262,
+        "mean": 0.15996427471199398,
+        "p95": 0.19775847443190706,
+        "max": 0.23521061257882148
+      },
+      "positive_break_even_packet_commutator": {
+        "min": 0.10563771944479534,
+        "p05": 0.12304365903353894,
+        "median": 0.15841531497756262,
+        "mean": 0.15996427471199398,
+        "p95": 0.19775847443190706,
+        "max": 0.23521061257882148
+      },
+      "break_even_first_order_packet": {
+        "min": 0.0046145216842720365,
+        "p05": 0.005528197306408084,
+        "median": 0.00701285135436488,
+        "mean": 0.007099102151070382,
+        "p95": 0.008697515870179388,
+        "max": 0.010409221553082883
+      },
+      "positive_break_even_first_order_packet": {
+        "min": 0.0046145216842720365,
+        "p05": 0.005528197306408084,
+        "median": 0.00701285135436488,
+        "mean": 0.007099102151070382,
+        "p95": 0.008697515870179388,
+        "max": 0.010409221553082883
+      },
+      "best_mixed_by_structural_value": [
+        {
+          "sample": 64,
+          "full_value": 2.0809995876563896,
+          "structural_value": 0.8371501947043919,
+          "structural_gain_vs_conductor": 0.29029544613236247,
+          "break_even_packet_commutator": 0.23338472308404745,
+          "break_even_first_order_packet": 0.010409221553082883,
+          "terms": {
+            "block_coupling": 0.6371501947043915,
+            "fisher_projection_error": 2.220446049250313e-16,
+            "reciprocal_projection_error": 2.220446049250313e-16,
+            "closure_leakage": 0.0,
+            "resource_cost": 1.0,
+            "depth_cost": 1.0,
+            "packet_commutator_impurity": 1.2438493929519976,
+            "first_order_packet_cost": 27.888295455329807
+          }
+        },
+        {
+          "sample": 101,
+          "full_value": 2.054818294508506,
+          "structural_value": 0.8422326220022575,
+          "structural_gain_vs_conductor": 0.2852130188344969,
+          "break_even_packet_commutator": 0.23521061257882148,
+          "break_even_first_order_packet": 0.010257027845911993,
+          "terms": {
+            "block_coupling": 0.6422326220022573,
+            "fisher_projection_error": 0.0,
+            "reciprocal_projection_error": 2.220446049250313e-16,
+            "closure_leakage": 0.0,
+            "resource_cost": 1.0,
+            "depth_cost": 1.0,
+            "packet_commutator_impurity": 1.2125856725062485,
+            "first_order_packet_cost": 27.806594962903453
+          }
+        },
+        {
+          "sample": 124,
+          "full_value": 2.0941082903933674,
+          "structural_value": 0.8505912020434563,
+          "structural_gain_vs_conductor": 0.2768544387932981,
+          "break_even_packet_commutator": 0.2226382261949218,
+          "break_even_first_order_packet": 0.009829435626667809,
+          "terms": {
+            "block_coupling": 0.6505912020434563,
+            "fisher_projection_error": 0.0,
+            "reciprocal_projection_error": 0.0,
+            "closure_leakage": 0.0,
+            "resource_cost": 1.0,
+            "depth_cost": 1.0,
+            "packet_commutator_impurity": 1.2435170883499111,
+            "first_order_packet_cost": 28.165852985717358
+          }
+        },
+        {
+          "sample": 32,
+          "full_value": 2.060268552677547,
+          "structural_value": 0.8634463454492862,
+          "structural_gain_vs_conductor": 0.26399929538746814,
+          "break_even_packet_commutator": 0.22058355350780814,
+          "break_even_first_order_packet": 0.009481461148562508,
+          "terms": {
+            "block_coupling": 0.6634463454492863,
+            "fisher_projection_error": 0.0,
+            "reciprocal_projection_error": 0.0,
+            "closure_leakage": 0.0,
+            "resource_cost": 1.0,
+            "depth_cost": 1.0,
+            "packet_commutator_impurity": 1.1968222072282608,
+            "first_order_packet_cost": 27.84373539594088
+          }
+        },
+        {
+          "sample": 104,
+          "full_value": 2.1266207184767767,
+          "structural_value": 0.8679268545871679,
+          "structural_gain_vs_conductor": 0.25951878624958646,
+          "break_even_packet_commutator": 0.2061810212116415,
+          "break_even_first_order_packet": 0.009423103252895366,
+          "terms": {
+            "block_coupling": 0.6679268545871678,
+            "fisher_projection_error": 0.0,
+            "reciprocal_projection_error": 1.1102230246251565e-16,
+            "closure_leakage": 0.0,
+            "resource_cost": 1.0,
+            "depth_cost": 1.0,
+            "packet_commutator_impurity": 1.258693863889609,
+            "first_order_packet_cost": 27.54069219923342
+          }
+        }
+      ]
+    }
+  ]
+}

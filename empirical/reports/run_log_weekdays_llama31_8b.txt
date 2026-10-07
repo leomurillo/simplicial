@@ -1,0 +1,50 @@
+/home/leomu/simplicial/empirical/layerwise_packet_spectroscopy.py:3: SyntaxWarning: invalid escape sequence '\l'
+  """
+`torch_dtype` is deprecated! Use `dtype` instead!
+# layerwise_packet_spectroscopy version audit_kappa_driver_v0.2_2026_06_12
+# model-tag=llama31_8b  task=weekdays  layers=all
+# transformers available: True
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00, 113.22it/s]
+# wrote empirical/reports/layerwise_packet_spectroscopy_weekdays_llama31_8b.json
+# weekdays on llama31_8b (layerwise lens, N=7, 33 layers):
+#  ell, f_7
+#    0, 1.0000
+#    1, 1.0000
+#    2, 1.0000
+#    3, 1.0000
+#    4, 1.0000
+#    5, 1.0000
+#    6, 1.0000
+#    7, 1.0000
+#    8, 1.0000
+#    9, 1.0000
+#   10, 1.0000
+#   11, 1.0000
+#   12, 1.0000
+#   13, 1.0000
+#   14, 1.0000
+#   15, 1.0000
+#   16, 1.0000
+#   17, 1.0000
+#   18, 1.0000
+#   19, 1.0000
+#   20, 1.0000
+#   21, 1.0000
+#   22, 1.0000
+#   23, 1.0000
+#   24, 1.0000
+#   25, 1.0000
+#   26, 1.0000
+#   27, 1.0000
+#   28, 1.0000
+#   29, 1.0000
+#   30, 1.0000
+#   31, 1.0000
+#   32, 1.0000
+# forward 20/49
+# forward 40/49
+# forward 49/49
+# wrote /home/leomu/simplicial/empirical/data/residual_streams_weekdays_llama31_8b.safetensors  shape=(49, 33, 4096) dtype=BF16
+# wrote /home/leomu/simplicial/empirical/data/W_U_VR_weekdays_llama31_8b.npz  shape=(7, 4096)
+# wrote /home/leomu/simplicial/empirical/data/capture_manifest_weekdays_llama31_8b.json
+# invoking lens scorer: /home/leomu/venv/bin/python /home/leomu/simplicial/empirical/native_logit_lens_packet_score_layerwise.py --mode layerwise --N 7 --token-ids 7159,7742,8079,7950,6740,7884,7418 --residual-streams /home/leomu/simplicial/empirical/data/residual_streams_weekdays_llama31_8b.safetensors --unembedding-VR /home/leomu/simplicial/empirical/data/W_U_VR_weekdays_llama31_8b.npz --task weekdays --model-tag llama31_8b --output empirical/reports/layerwise_packet_spectroscopy_weekdays_llama31_8b.json

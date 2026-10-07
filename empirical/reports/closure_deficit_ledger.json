@@ -1,0 +1,57 @@
+{
+  "definition": {
+    "closure_deficit": "residual_support / raw_support in a specified coboundary model",
+    "zero": "the raw carry is section-trivial in that model",
+    "one": "all raw support survives in that model"
+  },
+  "rows": [
+    {
+      "row": "F_4[u]/(u^2)",
+      "source": "reports\\ext_ch_cocycle_f4_u2.json",
+      "raw_atoms": 1569,
+      "raw_pairs": 369,
+      "pair_orbits": 20,
+      "full_block_deficit": 1.0,
+      "support_projection_deficit": null,
+      "full_block_residual_dimension": 73116,
+      "support_projection_residual_dimension": null,
+      "full_block_field": "Q",
+      "support_projection_field": "n/a",
+      "full_block_display": "1.000",
+      "support_projection_display": "n/a",
+      "reading": "full-block residual survives"
+    },
+    {
+      "row": "F_2[u]/(u^5)",
+      "source": "reports\\next_local_row_f2_u5.json",
+      "raw_atoms": 19140,
+      "raw_pairs": 2516,
+      "pair_orbits": 81,
+      "full_block_deficit": 1.0,
+      "support_projection_deficit": 0.0,
+      "full_block_residual_dimension": 728381,
+      "support_projection_residual_dimension": 18240,
+      "full_block_field": "Q",
+      "support_projection_field": "Q",
+      "full_block_display": "1.000",
+      "support_projection_display": "0.000",
+      "reading": "full-block survives; support projection closes"
+    },
+    {
+      "row": "F_8[u]/(u^2)",
+      "source": "reports\\next_local_row_f8_u2.json",
+      "raw_atoms": 158081,
+      "raw_pairs": 7105,
+      "pair_orbits": 49,
+      "full_block_deficit": 1.0,
+      "support_projection_deficit": 0.0,
+      "full_block_residual_dimension": 25752440,
+      "support_projection_residual_dimension": 154112,
+      "full_block_field": "F_1000003",
+      "support_projection_field": "Q",
+      "full_block_display": "1.000",
+      "support_projection_display": "0.000",
+      "reading": "full-block survives; support projection closes"
+    }
+  ]
+}

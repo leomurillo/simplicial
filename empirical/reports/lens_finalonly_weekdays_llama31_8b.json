@@ -1,0 +1,22 @@
+{
+  "mode": "final_only",
+  "key": "dists",
+  "input": "weekdays/baseline/full_output_dists.safetensors",
+  "N": 7,
+  "n_examples": 49,
+  "token_ids": [
+    7159,
+    7742,
+    8079,
+    7950,
+    6740,
+    7884,
+    7418
+  ],
+  "f_d_final": {
+    "7": 1.0
+  },
+  "script_version": "audit_kappa_lens_v0.1_2026_05_20",
+  "task": "weekdays",
+  "model_tag": "llama31_8b"
+}

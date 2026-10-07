@@ -1,0 +1,4 @@
+# wrote C:\Projects\simplicial\empirical\reports\label_smoothing_substitution_months_width16.md
+# wrote C:\Projects\simplicial\empirical\reports\label_smoothing_substitution_months_width32.md
+# wrote C:\Projects\simplicial\empirical\reports\label_smoothing_substitution_months_width64.md
+# wrote C:\Projects\simplicial\empirical\reports\label_smoothing_substitution_VM_audit_lambda.md

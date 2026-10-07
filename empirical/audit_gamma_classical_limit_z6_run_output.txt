@@ -1,0 +1,100 @@
+==============================================================================
+ Audit gamma: classical-limit identification on D(C^6)
+ V-Lorentzian Casimir -> Galilean parabolic in slow-momentum expansion
+==============================================================================
+
+  V-supported operators:
+    H = lambda_3 (timelike Cartan)
+    P_1, P_2, P_3 = lambda_1, lambda_2, lambda_8
+  All promoted from C^3 to C^6 via V_iso = char_basis[:, [3, 2, 4]]
+
+==============================================================================
+ (A) Verify I_real = E^2 - |p|^2 along V-rays with E, p_a parameterization
+==============================================================================
+
+     c_E     c_p     E = tr(H X)    |p| = |tr P_1 X|        I_real     E^2 - p^2    match?
+   1.000   0.000        2.000000            0.000000      4.000000      4.000000       YES
+   1.000   0.050        2.000000            0.100000      3.990000      3.990000       YES
+   1.000   0.100        2.000000            0.200000      3.960000      3.960000       YES
+   1.000   0.200        2.000000            0.400000      3.840000      3.840000       YES
+   1.000   0.300        2.000000            0.600000      3.640000      3.640000       YES
+   1.000   0.500        2.000000            1.000000      3.000000      3.000000       YES
+   1.000   0.700        2.000000            1.400000      2.040000      2.040000       YES
+   1.000   0.990        2.000000            1.980000      0.079600      0.079600       YES
+
+  I_real = E^2 - |p|^2 exactly on V-rays: CONFIRMED
+
+==============================================================================
+ (B) Slow-momentum expansion: T_exact ~ p^2 / (2E_0)?
+==============================================================================
+
+  Set c_E = 1 (timelike); sweep c_p (spatial momentum component).
+  At c_p = 0:   E_0 = tr(H * c_E*H_iso) = c_E * tr(H * H_iso) = 'rest energy'
+  General:      E = E_0, p = c_p * tr(P_1 * P_1_iso) = (kinematic factor) * c_p
+
+  E_0 (rest energy) = tr(H * X_0) = 2.000000
+  I_real_0 (rest invariant) = E_0^2 = 4.000000
+
+     c_p           p        I_real    sqrt(I_real)       T_exact      T_galilean      rel diff    O(p^4) term?
+  ------  ----------  ------------  --------------  ------------  --------------  ------------  --------------
+  0.0010    0.002000      3.999996        1.999999      0.000001        0.000001     2.504e-07       2.500e-13
+  0.0100    0.020000      3.999600        1.999900      0.000100        0.000100     2.500e-05       2.500e-09
+  0.0200    0.040000      3.998400        1.999600      0.000400        0.000400     1.000e-04       4.000e-08
+  0.0500    0.100000      3.990000        1.997498      0.002502        0.002500     6.254e-04       1.563e-06
+  0.1000    0.200000      3.960000        1.989975      0.010025        0.010000     2.506e-03       2.500e-05
+  0.2000    0.400000      3.840000        1.959592      0.040408        0.040000     1.010e-02       4.000e-04
+  0.3000    0.600000      3.640000        1.907878      0.092122        0.090000     2.303e-02       2.025e-03
+
+  In the small-momentum limit (c_p < 0.05), T_galilean approximates
+  T_exact to relative error O(p^2 / E^2), as predicted by the slow-
+  momentum expansion of the Lorentzian invariant.  Paper 32 Lemma 9.2
+  Galilean parabolic dispersion is RECOVERED in the c_p -> 0 limit.
+
+==============================================================================
+ (C) Asymptote behavior: c_p -> c_E (null/speed-of-light limit)
+==============================================================================
+
+  At c_p = c_E (light-like direction):  E = p (in normalized units),
+  I_real -> 0, sqrt(I_real) -> 0, T_exact -> E_0.  The hyperboloid
+  asymptote of Paper 32 sec 9 (speed limit) is structurally realized:
+
+  H kinematic factor:  tr(H * H_iso) = 2.000000
+  P_1 kinematic factor: tr(P_1 * P_1_iso) = 2.000000
+
+  Null asymptote: c_p_null = c_E * H_norm / P1_norm = 1.000000
+  At c_p = c_p_null: p = E, I_real = 0, T_exact = E_0 = sqrt(I_real_0).
+
+       c_p           E           p        I_real    (I_real_0 - I_real)/I_real_0
+    0.5000    2.000000    1.000000  3.000000e+00                        0.250000
+    0.9000    2.000000    1.800000  7.600000e-01                        0.810000
+    0.9900    2.000000    1.980000  7.960000e-02                        0.980100
+    1.0000    2.000000    2.000000  0.000000e+00                        1.000000
+    1.0100    2.000000    2.020000  -8.040000e-02                        1.020100
+    1.1000    2.000000    2.200000  -8.400000e-01                        1.210000
+
+  Null asymptote (Paper 32 sec 9 hyperboloid speed limit) realized at c_p = c_p_null: YES
+
+==============================================================================
+ VERDICT
+==============================================================================
+
+  (A) I_real exactly = E^2 - |p|^2 on V-rays:  CONFIRMED
+  (B) Slow-momentum expansion -> Galilean parabolic:  CONFIRMED
+      T_exact(p) = E_0 - sqrt(E_0^2 - p^2) ~ p^2 / (2 E_0) for small p
+      This recovers Paper 32 Lemma 9.2 classical Galilean dispersion.
+  (C) Null asymptote / speed-of-light hyperboloid:  CONFIRMED
+      At c_p = E_0/P1_norm * c_E, I_real -> 0 (the speed limit).
+
+ STRUCTURAL SETTLEMENT
+
+  The V-Lorentzian Casimir of Paper 32 sec 13.2B (the 4-dim V H+P_a
+  sub-bundle, (1, 3) signature) is the categorical-simplex realization
+  of the special-relativistic dispersion invariant E^2 - p^2.  Its
+  slow-momentum limit recovers the Galilean parabolic dispersion
+  T(p) ~ p^2/(2m) of Paper 32 Lemma 9.2.  Its null asymptote at
+  p = E recovers the hyperboloid speed-limit of Paper 32 sec 9.
+
+  Paper 46 (proposed) C4 (classical-limit identification) settles at
+  K-branch: the V-Lorentzian sub-bundle's classical limit is EXACTLY
+  the Newtonian Galilean dispersion of Paper 32 Lemma 9.2.  Audit gamma
+  promotes C4 from [A] to [P].

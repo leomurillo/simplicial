@@ -1,0 +1,3 @@
+# wrote empirical/reports/lens_finalonly_weekdays_llama31_8b.json
+# weekdays on llama31_8b (final layer lens, N=7, n_examples=49):
+#   f_7_final = 1.0

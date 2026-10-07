@@ -1,0 +1,1003 @@
+{
+  "certificate_pass": true,
+  "coordinate_summary": {
+    "action_rows": [
+      {
+        "action_index": 0,
+        "moved_coordinates": 0
+      },
+      {
+        "action_index": 1,
+        "moved_coordinates": 24
+      },
+      {
+        "action_index": 2,
+        "moved_coordinates": 24
+      },
+      {
+        "action_index": 3,
+        "moved_coordinates": 24
+      },
+      {
+        "action_index": 4,
+        "moved_coordinates": 24
+      },
+      {
+        "action_index": 5,
+        "moved_coordinates": 24
+      },
+      {
+        "action_index": 6,
+        "moved_coordinates": 24
+      },
+      {
+        "action_index": 7,
+        "moved_coordinates": 24
+      },
+      {
+        "action_index": 8,
+        "moved_coordinates": 24
+      },
+      {
+        "action_index": 9,
+        "moved_coordinates": 24
+      },
+      {
+        "action_index": 10,
+        "moved_coordinates": 24
+      },
+      {
+        "action_index": 11,
+        "moved_coordinates": 24
+      },
+      {
+        "action_index": 12,
+        "moved_coordinates": 24
+      },
+      {
+        "action_index": 13,
+        "moved_coordinates": 24
+      },
+      {
+        "action_index": 14,
+        "moved_coordinates": 24
+      },
+      {
+        "action_index": 15,
+        "moved_coordinates": 24
+      },
+      {
+        "action_index": 16,
+        "moved_coordinates": 24
+      },
+      {
+        "action_index": 17,
+        "moved_coordinates": 24
+      },
+      {
+        "action_index": 18,
+        "moved_coordinates": 24
+      },
+      {
+        "action_index": 19,
+        "moved_coordinates": 24
+      },
+      {
+        "action_index": 20,
+        "moved_coordinates": 24
+      },
+      {
+        "action_index": 21,
+        "moved_coordinates": 24
+      },
+      {
+        "action_index": 22,
+        "moved_coordinates": 24
+      },
+      {
+        "action_index": 23,
+        "moved_coordinates": 24
+      }
+    ],
+    "coordinates": [
+      {
+        "id": "PE:u",
+        "kind": "packet_energy",
+        "label": "E_u",
+        "moving": false
+      },
+      {
+        "id": "PE:u^2",
+        "kind": "packet_energy",
+        "label": "E_u^2",
+        "moving": false
+      },
+      {
+        "id": "VIS:h4_visible",
+        "kind": "residual_visibility_bucket",
+        "label": "H4_visible_incidence",
+        "moving": false
+      },
+      {
+        "id": "VIS:remaining_invisible",
+        "kind": "residual_visibility_bucket",
+        "label": "remaining_invisible_after_H3_contraction",
+        "moving": false
+      },
+      {
+        "id": "M:0",
+        "kind": "moving_carry_pair_coordinate",
+        "label": "1+(w+1)u|(w+1)u|u->u->u^2",
+        "left_eta": "1+(w+1)u",
+        "moving": true,
+        "path": "u->u->u^2",
+        "right_eta": "(w+1)u"
+      },
+      {
+        "id": "M:1",
+        "kind": "moving_carry_pair_coordinate",
+        "label": "1+(w+1)u|wu|u->u->u^2",
+        "left_eta": "1+(w+1)u",
+        "moving": true,
+        "path": "u->u->u^2",
+        "right_eta": "wu"
+      },
+      {
+        "id": "M:2",
+        "kind": "moving_carry_pair_coordinate",
+        "label": "1+u|(w+1)u|u->u->u^2",
+        "left_eta": "1+u",
+        "moving": true,
+        "path": "u->u->u^2",
+        "right_eta": "(w+1)u"
+      },
+      {
+        "id": "M:3",
+        "kind": "moving_carry_pair_coordinate",
+        "label": "1+u|wu|u->u->u^2",
+        "left_eta": "1+u",
+        "moving": true,
+        "path": "u->u->u^2",
+        "right_eta": "wu"
+      },
+      {
+        "id": "M:4",
+        "kind": "moving_carry_pair_coordinate",
+        "label": "1+wu|(w+1)u|u->u->u^2",
+        "left_eta": "1+wu",
+        "moving": true,
+        "path": "u->u->u^2",
+        "right_eta": "(w+1)u"
+      },
+      {
+        "id": "M:5",
+        "kind": "moving_carry_pair_coordinate",
+        "label": "1+wu|wu|u->u->u^2",
+        "left_eta": "1+wu",
+        "moving": true,
+        "path": "u->u->u^2",
+        "right_eta": "wu"
+      },
+      {
+        "id": "M:6",
+        "kind": "moving_carry_pair_coordinate",
+        "label": "1|(w+1)u|u->u->u^2",
+        "left_eta": "1",
+        "moving": true,
+        "path": "u->u->u^2",
+        "right_eta": "(w+1)u"
+      },
+      {
+        "id": "M:7",
+        "kind": "moving_carry_pair_coordinate",
+        "label": "1|wu|u->u->u^2",
+        "left_eta": "1",
+        "moving": true,
+        "path": "u->u->u^2",
+        "right_eta": "wu"
+      },
+      {
+        "id": "M:8",
+        "kind": "moving_carry_pair_coordinate",
+        "label": "w+(w+1)u|(w+1)u|u->u->u^2",
+        "left_eta": "w+(w+1)u",
+        "moving": true,
+        "path": "u->u->u^2",
+        "right_eta": "(w+1)u"
+      },
+      {
+        "id": "M:9",
+        "kind": "moving_carry_pair_coordinate",
+        "label": "w+(w+1)u|u|u->u->u^2",
+        "left_eta": "w+(w+1)u",
+        "moving": true,
+        "path": "u->u->u^2",
+        "right_eta": "u"
+      },
+      {
+        "id": "M:10",
+        "kind": "moving_carry_pair_coordinate",
+        "label": "w+1+(w+1)u|u|u->u->u^2",
+        "left_eta": "w+1+(w+1)u",
+        "moving": true,
+        "path": "u->u->u^2",
+        "right_eta": "u"
+      },
+      {
+        "id": "M:11",
+        "kind": "moving_carry_pair_coordinate",
+        "label": "w+1+(w+1)u|wu|u->u->u^2",
+        "left_eta": "w+1+(w+1)u",
+        "moving": true,
+        "path": "u->u->u^2",
+        "right_eta": "wu"
+      },
+      {
+        "id": "M:12",
+        "kind": "moving_carry_pair_coordinate",
+        "label": "w+1+u|u|u->u->u^2",
+        "left_eta": "w+1+u",
+        "moving": true,
+        "path": "u->u->u^2",
+        "right_eta": "u"
+      },
+      {
+        "id": "M:13",
+        "kind": "moving_carry_pair_coordinate",
+        "label": "w+1+u|wu|u->u->u^2",
+        "left_eta": "w+1+u",
+        "moving": true,
+        "path": "u->u->u^2",
+        "right_eta": "wu"
+      },
+      {
+        "id": "M:14",
+        "kind": "moving_carry_pair_coordinate",
+        "label": "w+1+wu|u|u->u->u^2",
+        "left_eta": "w+1+wu",
+        "moving": true,
+        "path": "u->u->u^2",
+        "right_eta": "u"
+      },
+      {
+        "id": "M:15",
+        "kind": "moving_carry_pair_coordinate",
+        "label": "w+1+wu|wu|u->u->u^2",
+        "left_eta": "w+1+wu",
+        "moving": true,
+        "path": "u->u->u^2",
+        "right_eta": "wu"
+      },
+      {
+        "id": "M:16",
+        "kind": "moving_carry_pair_coordinate",
+        "label": "w+1|u|u->u->u^2",
+        "left_eta": "w+1",
+        "moving": true,
+        "path": "u->u->u^2",
+        "right_eta": "u"
+      },
+      {
+        "id": "M:17",
+        "kind": "moving_carry_pair_coordinate",
+        "label": "w+1|wu|u->u->u^2",
+        "left_eta": "w+1",
+        "moving": true,
+        "path": "u->u->u^2",
+        "right_eta": "wu"
+      },
+      {
+        "id": "M:18",
+        "kind": "moving_carry_pair_coordinate",
+        "label": "w+u|(w+1)u|u->u->u^2",
+        "left_eta": "w+u",
+        "moving": true,
+        "path": "u->u->u^2",
+        "right_eta": "(w+1)u"
+      },
+      {
+        "id": "M:19",
+        "kind": "moving_carry_pair_coordinate",
+        "label": "w+u|u|u->u->u^2",
+        "left_eta": "w+u",
+        "moving": true,
+        "path": "u->u->u^2",
+        "right_eta": "u"
+      },
+      {
+        "id": "M:20",
+        "kind": "moving_carry_pair_coordinate",
+        "label": "w+wu|(w+1)u|u->u->u^2",
+        "left_eta": "w+wu",
+        "moving": true,
+        "path": "u->u->u^2",
+        "right_eta": "(w+1)u"
+      },
+      {
+        "id": "M:21",
+        "kind": "moving_carry_pair_coordinate",
+        "label": "w+wu|u|u->u->u^2",
+        "left_eta": "w+wu",
+        "moving": true,
+        "path": "u->u->u^2",
+        "right_eta": "u"
+      },
+      {
+        "id": "M:22",
+        "kind": "moving_carry_pair_coordinate",
+        "label": "w|(w+1)u|u->u->u^2",
+        "left_eta": "w",
+        "moving": true,
+        "path": "u->u->u^2",
+        "right_eta": "(w+1)u"
+      },
+      {
+        "id": "M:23",
+        "kind": "moving_carry_pair_coordinate",
+        "label": "w|u|u->u->u^2",
+        "left_eta": "w",
+        "moving": true,
+        "path": "u->u->u^2",
+        "right_eta": "u"
+      }
+    ]
+  },
+  "count_checks": [
+    {
+      "expected": 28,
+      "name": "coordinate count",
+      "note": "",
+      "observed": 28,
+      "pass": true
+    },
+    {
+      "expected": 24,
+      "name": "selected moving orbit size",
+      "note": "",
+      "observed": 24,
+      "pass": true
+    },
+    {
+      "expected": 40116600,
+      "name": "tuple support count",
+      "note": "",
+      "observed": 40116600,
+      "pass": true
+    },
+    {
+      "expected": 40116600,
+      "name": "support partition by fixed-coordinate count",
+      "note": "",
+      "observed": 40116600,
+      "pass": true
+    },
+    {
+      "expected": {
+        "10": 82016,
+        "11": 104006,
+        "12": 113032,
+        "13": 104006,
+        "14": 82016
+      },
+      "name": "moving orbit Burnside check",
+      "note": "",
+      "observed": {
+        "10": 82016,
+        "11": 104006,
+        "12": 113032,
+        "13": 104006,
+        "14": 82016
+      },
+      "pass": true
+    },
+    {
+      "expected": 1674272,
+      "name": "full tuple Burnside check",
+      "note": "",
+      "observed": 1674272,
+      "pass": true
+    },
+    {
+      "expected": 40116600,
+      "name": "orbit-stabilizer total",
+      "note": "",
+      "observed": 40116600,
+      "pass": true
+    },
+    {
+      "expected": true,
+      "name": "orbit-stabilizer divisibility",
+      "note": "",
+      "observed": true,
+      "pass": true
+    },
+    {
+      "expected": true,
+      "name": "nontrivial determinant character appears",
+      "note": "",
+      "observed": true,
+      "pass": true
+    },
+    {
+      "expected": [
+        1569,
+        0
+      ],
+      "name": "support/full residual inherited separately",
+      "note": "",
+      "observed": [
+        1569,
+        0
+      ],
+      "pass": true
+    }
+  ],
+  "next_layer": {
+    "needed": true,
+    "recommended": "split selected K_CH commutator representatives or add another carry-pair size-24 orbit, while retaining full/support/H4/H3 residual fields as separate costs"
+  },
+  "residual_visibility_inherited": {
+    "full_filtered_residual": 1569,
+    "h3_contraction_visible_from_h4_invisible": 1470,
+    "h4_visible_atoms": 72,
+    "remaining_invisible_atoms": 27,
+    "support_projection_residual": 0
+  },
+  "ring": "F_4[u]/(u^2)",
+  "row_key": "f4-u2",
+  "schema": "fc1_noether_moving_tuple_census_f4_u2_size24.v1",
+  "scope": {
+    "coordinate_count": 28,
+    "fixed_coordinates": 4,
+    "hamiltonian_tuple_size": 14,
+    "moving_coordinates": 24,
+    "not_claimed": [
+      "all carry-pair orbits split simultaneously",
+      "all K_CH commutator orbit coordinates split",
+      "full 637-coordinate tuple census",
+      "coefficient-stratified Hamiltonian tuples",
+      "support residual 0 as full filtered closure",
+      "K_CH as a standalone Ext_CH detector"
+    ],
+    "selected_pair_orbit": {
+      "path": "u->u->u^2",
+      "representative": {
+        "left_eta": "1",
+        "middle": "u",
+        "right_eta": "(w+1)u",
+        "source": "u",
+        "target": "u^2"
+      },
+      "size": 24,
+      "source_index": 2
+    }
+  },
+  "selection_memo": {
+    "picked": "split one full size-24 carry-pair orbit",
+    "ranking": [
+      {
+        "candidate": "split one full size-24 carry-pair orbit",
+        "rank": 1,
+        "reason": "maximal FC1 dependency leverage among ready tasks: exact moving-coordinate tuple stabilizers/determinant characters without treating K_CH as an Ext detector or claiming FC3"
+      },
+      {
+        "candidate": "split selected K_CH commutator representatives",
+        "rank": 2,
+        "reason": "useful next FC1 layer, but higher overclaim risk because K_CH must remain only a Fisher-jet shadow of [kappa]"
+      },
+      {
+        "candidate": "draft bounded FC3 information-investment theorem",
+        "rank": 3,
+        "reason": "central but premature until the FC1 tuple atlas has more non-aggregate stabilizer/determinant data"
+      }
+    ]
+  },
+  "sources": {
+    "base_census": "empirical/reports/fc1_noether_atlas_census_f4_u2.json",
+    "ext_cocycle": "empirical/reports/ext_ch_cocycle_f4_u2.json"
+  },
+  "status": "full size-24 carry-pair moving-coordinate tuple census",
+  "tuple_census": {
+    "by_fixed_coordinate_count": [
+      {
+        "determinant_character_distribution": {
+          "sign-nontrivial": 594,
+          "trivial": 81422
+        },
+        "fixed_coordinate_count": 0,
+        "fixed_subset_choices": 1,
+        "moving_coordinate_count": 14,
+        "moving_orbit_count": 82016,
+        "orbit_size_distribution": {
+          "12": 594,
+          "24": 81422
+        },
+        "stabilizer_order_distribution": {
+          "1": 81422,
+          "2": 594
+        },
+        "support_count": 1961256,
+        "tuple_orbit_count": 82016
+      },
+      {
+        "determinant_character_distribution": {
+          "trivial": 416024
+        },
+        "fixed_coordinate_count": 1,
+        "fixed_subset_choices": 4,
+        "moving_coordinate_count": 13,
+        "moving_orbit_count": 104006,
+        "orbit_size_distribution": {
+          "24": 416024
+        },
+        "stabilizer_order_distribution": {
+          "1": 416024
+        },
+        "support_count": 9984576,
+        "tuple_orbit_count": 416024
+      },
+      {
+        "determinant_character_distribution": {
+          "sign-nontrivial": 60,
+          "trivial": 678132
+        },
+        "fixed_coordinate_count": 2,
+        "fixed_subset_choices": 6,
+        "moving_coordinate_count": 12,
+        "moving_orbit_count": 113032,
+        "orbit_size_distribution": {
+          "2": 18,
+          "4": 24,
+          "6": 126,
+          "8": 36,
+          "12": 3996,
+          "24": 673992
+        },
+        "stabilizer_order_distribution": {
+          "1": 673992,
+          "2": 3996,
+          "3": 36,
+          "4": 126,
+          "6": 24,
+          "12": 18
+        },
+        "support_count": 16224936,
+        "tuple_orbit_count": 678192
+      },
+      {
+        "determinant_character_distribution": {
+          "trivial": 416024
+        },
+        "fixed_coordinate_count": 3,
+        "fixed_subset_choices": 4,
+        "moving_coordinate_count": 11,
+        "moving_orbit_count": 104006,
+        "orbit_size_distribution": {
+          "24": 416024
+        },
+        "stabilizer_order_distribution": {
+          "1": 416024
+        },
+        "support_count": 9984576,
+        "tuple_orbit_count": 416024
+      },
+      {
+        "determinant_character_distribution": {
+          "sign-nontrivial": 594,
+          "trivial": 81422
+        },
+        "fixed_coordinate_count": 4,
+        "fixed_subset_choices": 1,
+        "moving_coordinate_count": 10,
+        "moving_orbit_count": 82016,
+        "orbit_size_distribution": {
+          "12": 594,
+          "24": 81422
+        },
+        "stabilizer_order_distribution": {
+          "1": 81422,
+          "2": 594
+        },
+        "support_count": 1961256,
+        "tuple_orbit_count": 82016
+      }
+    ],
+    "determinant_character_distribution": {
+      "sign-nontrivial": 1248,
+      "trivial": 1673024
+    },
+    "normalizer_orbit_count": 1674272,
+    "orbit_size_distribution": {
+      "2": 18,
+      "4": 24,
+      "6": 126,
+      "8": 36,
+      "12": 5184,
+      "24": 1668884
+    },
+    "sample_orbits": [
+      {
+        "determinant_character": "trivial",
+        "determinant_distribution": {
+          "1": 1
+        },
+        "fixed_coordinate_count": 0,
+        "fixed_ids": [],
+        "moving_coordinate_count": 14,
+        "moving_count": 14,
+        "moving_ids_sample": [
+          "M:0",
+          "M:1",
+          "M:2",
+          "M:3",
+          "M:4",
+          "M:5",
+          "M:6",
+          "M:7",
+          "M:8",
+          "M:9"
+        ],
+        "stabilizer_action_indices": [
+          0
+        ],
+        "stabilizer_order": 1
+      },
+      {
+        "determinant_character": "sign-nontrivial",
+        "determinant_distribution": {
+          "-1": 1,
+          "1": 1
+        },
+        "fixed_coordinate_count": 0,
+        "fixed_ids": [],
+        "moving_coordinate_count": 14,
+        "moving_count": 14,
+        "moving_ids_sample": [
+          "M:4",
+          "M:5",
+          "M:6",
+          "M:8",
+          "M:9",
+          "M:10",
+          "M:11",
+          "M:12",
+          "M:13",
+          "M:14"
+        ],
+        "stabilizer_action_indices": [
+          0,
+          23
+        ],
+        "stabilizer_order": 2
+      },
+      {
+        "determinant_character": "trivial",
+        "determinant_distribution": {
+          "1": 1
+        },
+        "fixed_coordinate_count": 1,
+        "fixed_ids": [
+          "PE:u"
+        ],
+        "moving_coordinate_count": 13,
+        "moving_count": 13,
+        "moving_ids_sample": [
+          "M:0",
+          "M:1",
+          "M:2",
+          "M:3",
+          "M:4",
+          "M:5",
+          "M:6",
+          "M:7",
+          "M:8",
+          "M:9"
+        ],
+        "stabilizer_action_indices": [
+          0
+        ],
+        "stabilizer_order": 1
+      },
+      {
+        "determinant_character": "trivial",
+        "determinant_distribution": {
+          "1": 1
+        },
+        "fixed_coordinate_count": 2,
+        "fixed_ids": [
+          "PE:u",
+          "PE:u^2"
+        ],
+        "moving_coordinate_count": 12,
+        "moving_count": 12,
+        "moving_ids_sample": [
+          "M:0",
+          "M:1",
+          "M:2",
+          "M:3",
+          "M:4",
+          "M:5",
+          "M:6",
+          "M:7",
+          "M:8",
+          "M:9"
+        ],
+        "stabilizer_action_indices": [
+          0
+        ],
+        "stabilizer_order": 1
+      },
+      {
+        "determinant_character": "trivial",
+        "determinant_distribution": {
+          "1": 2
+        },
+        "fixed_coordinate_count": 2,
+        "fixed_ids": [
+          "PE:u",
+          "PE:u^2"
+        ],
+        "moving_coordinate_count": 12,
+        "moving_count": 12,
+        "moving_ids_sample": [
+          "M:0",
+          "M:1",
+          "M:2",
+          "M:3",
+          "M:4",
+          "M:5",
+          "M:6",
+          "M:7",
+          "M:8",
+          "M:9"
+        ],
+        "stabilizer_action_indices": [
+          0,
+          3
+        ],
+        "stabilizer_order": 2
+      },
+      {
+        "determinant_character": "trivial",
+        "determinant_distribution": {
+          "1": 3
+        },
+        "fixed_coordinate_count": 2,
+        "fixed_ids": [
+          "PE:u",
+          "PE:u^2"
+        ],
+        "moving_coordinate_count": 12,
+        "moving_count": 12,
+        "moving_ids_sample": [
+          "M:1",
+          "M:3",
+          "M:4",
+          "M:5",
+          "M:8",
+          "M:9",
+          "M:10",
+          "M:12",
+          "M:13",
+          "M:14"
+        ],
+        "stabilizer_action_indices": [
+          0,
+          8,
+          16
+        ],
+        "stabilizer_order": 3
+      },
+      {
+        "determinant_character": "sign-nontrivial",
+        "determinant_distribution": {
+          "-1": 2,
+          "1": 2
+        },
+        "fixed_coordinate_count": 2,
+        "fixed_ids": [
+          "PE:u",
+          "PE:u^2"
+        ],
+        "moving_coordinate_count": 12,
+        "moving_count": 12,
+        "moving_ids_sample": [
+          "M:0",
+          "M:1",
+          "M:2",
+          "M:3",
+          "M:4",
+          "M:5",
+          "M:6",
+          "M:7",
+          "M:8",
+          "M:11"
+        ],
+        "stabilizer_action_indices": [
+          0,
+          2,
+          5,
+          7
+        ],
+        "stabilizer_order": 4
+      },
+      {
+        "determinant_character": "trivial",
+        "determinant_distribution": {
+          "1": 6
+        },
+        "fixed_coordinate_count": 2,
+        "fixed_ids": [
+          "PE:u",
+          "PE:u^2"
+        ],
+        "moving_coordinate_count": 12,
+        "moving_count": 12,
+        "moving_ids_sample": [
+          "M:2",
+          "M:3",
+          "M:4",
+          "M:5",
+          "M:8",
+          "M:9",
+          "M:10",
+          "M:11",
+          "M:12",
+          "M:13"
+        ],
+        "stabilizer_action_indices": [
+          0,
+          6,
+          8,
+          10,
+          16,
+          20
+        ],
+        "stabilizer_order": 6
+      },
+      {
+        "determinant_character": "trivial",
+        "determinant_distribution": {
+          "1": 12
+        },
+        "fixed_coordinate_count": 2,
+        "fixed_ids": [
+          "PE:u",
+          "PE:u^2"
+        ],
+        "moving_coordinate_count": 12,
+        "moving_count": 12,
+        "moving_ids_sample": [
+          "M:0",
+          "M:1",
+          "M:4",
+          "M:5",
+          "M:8",
+          "M:9",
+          "M:12",
+          "M:13",
+          "M:14",
+          "M:15"
+        ],
+        "stabilizer_action_indices": [
+          0,
+          1,
+          2,
+          3,
+          8,
+          9,
+          12,
+          13,
+          16,
+          17,
+          22,
+          23
+        ],
+        "stabilizer_order": 12
+      },
+      {
+        "determinant_character": "trivial",
+        "determinant_distribution": {
+          "1": 1
+        },
+        "fixed_coordinate_count": 3,
+        "fixed_ids": [
+          "PE:u",
+          "PE:u^2",
+          "VIS:h4_visible"
+        ],
+        "moving_coordinate_count": 11,
+        "moving_count": 11,
+        "moving_ids_sample": [
+          "M:0",
+          "M:1",
+          "M:2",
+          "M:3",
+          "M:4",
+          "M:5",
+          "M:6",
+          "M:7",
+          "M:8",
+          "M:9"
+        ],
+        "stabilizer_action_indices": [
+          0
+        ],
+        "stabilizer_order": 1
+      },
+      {
+        "determinant_character": "trivial",
+        "determinant_distribution": {
+          "1": 1
+        },
+        "fixed_coordinate_count": 4,
+        "fixed_ids": [
+          "PE:u",
+          "PE:u^2",
+          "VIS:h4_visible",
+          "VIS:remaining_invisible"
+        ],
+        "moving_coordinate_count": 10,
+        "moving_count": 10,
+        "moving_ids_sample": [
+          "M:0",
+          "M:1",
+          "M:2",
+          "M:3",
+          "M:4",
+          "M:5",
+          "M:6",
+          "M:7",
+          "M:8",
+          "M:9"
+        ],
+        "stabilizer_action_indices": [
+          0
+        ],
+        "stabilizer_order": 1
+      },
+      {
+        "determinant_character": "sign-nontrivial",
+        "determinant_distribution": {
+          "-1": 1,
+          "1": 1
+        },
+        "fixed_coordinate_count": 4,
+        "fixed_ids": [
+          "PE:u",
+          "PE:u^2",
+          "VIS:h4_visible",
+          "VIS:remaining_invisible"
+        ],
+        "moving_coordinate_count": 10,
+        "moving_count": 10,
+        "moving_ids_sample": [
+          "M:0",
+          "M:1",
+          "M:2",
+          "M:3",
+          "M:4",
+          "M:5",
+          "M:6",
+          "M:7",
+          "M:8",
+          "M:13"
+        ],
+        "stabilizer_action_indices": [
+          0,
+          3
+        ],
+        "stabilizer_order": 2
+      }
+    ],
+    "stabilizer_order_distribution": {
+      "1": 1668884,
+      "2": 5184,
+      "3": 36,
+      "4": 126,
+      "6": 24,
+      "12": 18
+    },
+    "support_count": 40116600
+  }
+}

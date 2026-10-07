@@ -1,0 +1,49 @@
+============================================================================
+ INSERT 11 / item U1FM  --  The u(1) Face-or-Mode Micro-Audit
+ Critical-path decider for the surviving constants program.
+ Independent recomputation of the Paper 16 sec 3 commutant decider.
+ Deterministic, exact rational arithmetic. No constant asserted.
+============================================================================
+
+  H_gen total dimension : 15  (Q6 + u^c3 + d^c3 + L2 + e^c1; Paper 16: 15-dim package)
+
+[Commutant dimensions]
+  with prime-reciprocal Y, gauge-only          dim End_G = 5
+  without Y (su2 (+) su3 only)                  dim End_G = 5
+  without Y, + CRT conductor-block projectors   dim End_G = 5
+
+[Anchor expectation -- Paper 16 Thm 1 / Cor 1, Appendix A]
+  expected:  with-Y = 5 ;  without-Y = 7 ;  conductor-without-Y = 7
+
+============================================================================
+ VERDICT
+============================================================================
+  >>> ANCHOR FAILED (pre-claimed branch B).
+      The independent recomputation did NOT reproduce the
+      Paper 16 Thm 1 / Cor 1 commutant pattern (5 / 7 / 7).
+      The decider's own anchor is therefore not reproduced by
+      this artifact; the face-or-mode verdict is VOID pending
+      reconciliation of the generation-package construction
+      with Paper 16 Appendix A `jf_moduli.py`. This negative
+      branch was pre-claimed (matched-pair discipline); it is
+      a STATED outcome (the audit's construction, not the
+      program, is what must be reconciled), not a refutation
+      of Paper 16, whose own Appendix A is the authority.
+      observed: with-Y=5, without-Y=5, conductor=5
+
+============================================================================
+ FIREWALL SELF-CHECK (INSERT 04 sec 1.4 inherited)
+============================================================================
+  PASS: this audit emits only commutant DIMENSIONS (pure integers
+  counting linear independent intertwiners) and a face/mode label.
+  No mass, length, energy, charge magnitude, no value of c, hbar,
+  G, or alpha is computed or implied. Y enters only as a set of
+  rational eigenvalues distinguishing irreducibles -- a structural
+  label, not a measured quantity (INSERT 04 sec 1.3 target-3 rule).
+
+============================================================================
+ Status: deterministic run complete. Exact rational arithmetic;
+ no seeds, no tolerances. Both branches pre-claimed; the realized
+ branch is a STATED result. The decider re-derives Paper 16 sec 3
+ from first principles rather than citing it.
+============================================================================

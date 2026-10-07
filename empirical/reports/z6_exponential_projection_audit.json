@@ -1,0 +1,122 @@
+{
+  "claim_tested": "Z6 exponential projection sector purity, interior spillover, and dyadic-boundary vanishing",
+  "parameters": {
+    "beta": 0.3,
+    "u": [
+      1.1,
+      0.8,
+      0.55
+    ],
+    "velocity": [
+      0.4,
+      -0.2,
+      0.15
+    ],
+    "fd_step": 1e-06,
+    "tangent_mixed_tol": 1e-08,
+    "spillover_floor": 1e-12,
+    "boundary_mixed_tol": 1e-08,
+    "report": "empirical\\reports\\z6_exponential_projection_audit.md",
+    "json": "empirical\\reports\\z6_exponential_projection_audit.json"
+  },
+  "interior": {
+    "u": [
+      1.1,
+      0.8,
+      0.55
+    ],
+    "eta": [
+      0.22452875271860198,
+      0.20520382909958243,
+      0.19037651581681514,
+      0.11604798547436618,
+      0.1269767213818473,
+      0.1368661955087869
+    ],
+    "tangent_sector": [
+      {
+        "base_norm": 0.1047637157476485,
+        "mixed_norm": 0.14253667917929744,
+        "base_ratio": 0.5922338874367138,
+        "mixed_ratio": 0.8057661090984145,
+        "total_norm": 0.1768958480256562
+      },
+      {
+        "base_norm": 0.09972263814235525,
+        "mixed_norm": 0.14103300393149754,
+        "base_ratio": 0.5773396346517911,
+        "mixed_ratio": 0.8165041005776618,
+        "total_norm": 0.17272785749847339
+      },
+      {
+        "base_norm": 0.09705929309637323,
+        "mixed_norm": 0.13974314004091243,
+        "base_ratio": 0.5704570535472633,
+        "mixed_ratio": 0.8213274316971123,
+        "total_norm": 0.17014303266622982
+      }
+    ],
+    "k_ch_sector": {
+      "base_norm": 0.006502494600261745,
+      "mixed_norm": 0.002847085901417774,
+      "base_ratio": 0.9160411849002464,
+      "mixed_ratio": 0.40108421505533304,
+      "total_norm": 0.0070984740723964755
+    }
+  },
+  "dyadic_boundary": {
+    "u": [
+      1.1,
+      0.0,
+      0.0
+    ],
+    "eta": [
+      0.22765838739938138,
+      0.16366901781625504,
+      0.16366901781625504,
+      0.11766554133559852,
+      0.16366901781625504,
+      0.16366901781625504
+    ],
+    "tangent_sector": [
+      {
+        "base_norm": 0.10997097807348469,
+        "mixed_norm": 0.14137560746628666,
+        "base_ratio": 0.613982956579054,
+        "mixed_ratio": 0.7893192820591954,
+        "total_norm": 0.17911079924142043
+      },
+      {
+        "base_norm": 0.09820141069760702,
+        "mixed_norm": 0.1388777668527262,
+        "base_ratio": 0.5773502691896257,
+        "mixed_ratio": 0.8164965809277261,
+        "total_norm": 0.17008983270319322
+      },
+      {
+        "base_norm": 0.09820141069760702,
+        "mixed_norm": 0.1388777668527262,
+        "base_ratio": 0.5773502691896257,
+        "mixed_ratio": 0.8164965809277261,
+        "total_norm": 0.17008983270319322
+      }
+    ],
+    "k_ch_sector": {
+      "base_norm": 0.006181198264213113,
+      "mixed_norm": 0.003044262169067418,
+      "base_ratio": 0.8971010346832083,
+      "mixed_ratio": 0.4418254560008027,
+      "total_norm": 0.006890191879441838
+    }
+  },
+  "summary": {
+    "status": "KILL",
+    "max_tangent_mixed_ratio": 0.8213274316971123,
+    "interior_k_ch_mixed_ratio": 0.40108421505533304,
+    "boundary_k_ch_mixed_ratio": 0.4418254560008027,
+    "kills": [
+      "D eta has mixed-sector leakage; base map is not V2+V3 sector-pure",
+      "dyadic-boundary K_CH mixed spillover does not vanish"
+    ]
+  }
+}

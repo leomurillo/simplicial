@@ -15,9 +15,136 @@
 \usepackage{mathtools}
 \usepackage{amsthm}
 
+% ---- Fix \overbrace/\underbrace under XeLaTeX + unicode-math ----------------
+% unicode-math breaks amsmath's \over/\underbrace: their \up/\downbracefill use
+% cmex math-chars that remap to stray glyphs (z, {, }) padded by \hrule leaders
+% (black bars). Route them to mathtools' rule-based \over/\underbracket, which
+% render correctly and accept the identical \underbrace{...}_{label} /
+% \overbrace{...}^{label} syntax. Square corners instead of curly (cosmetic).
+% Deferred to \AtBeginDocument so it runs after pandoc loads unicode-math.
+% unicode-math overwrites \over/\underbracket with a no-optional-argument form,
+% so pass no [thickness][height] optionals (they would leak as literal text).
+\AtBeginDocument{%
+  \renewcommand{\underbrace}[1]{\underbracket{#1}}%
+  \renewcommand{\overbrace}[1]{\overbracket{#1}}%
+}
+
 % ---- Typography -------------------------------------------------------------
 \usepackage{microtype}
 \usepackage{booktabs}
+
+% ---- Text-mode fallbacks for math glyphs used in prose (P∞ series) ----------
+% Latin Modern Roman (text) lacks U+221E ∞, U+2192 →, U+2032 ′, U+2033 ″,
+% U+2713 ✓ and Greek letters; the P∞-series manuscripts use these in prose and
+% in paper/hypothesis NAMES ("P∞-E", "(H0′)", "E.7″", ledger arrows), not just
+% in math. In math mode unicode-math covers them; in text mode XeLaTeX emits
+% "Missing character" and renders nothing — log-visible, page-silent (the
+% canonical render defect). Map the specific codepoints to math-mode
+% equivalents. Backward-compatible: papers not using these glyphs are
+% untouched, and the active definitions work in both text and math mode.
+% NB (learned on the P∞-E build): ½ needs NO mapping (LM Roman covers U+00BD;
+% mapping it to \tfrac breaks inside \emph). ′ and ″ MUST be hooked
+% \AtBeginDocument: unicode-math math-activates U+2032 with its prime-scanner
+% (\__um_scanprime_collect:N) in its own begin-document hook, which runs
+% before ours only if ours is registered later — i.e. exactly when this file
+% is included AFTER unicode-math in pandoc's template, which it is.
+\usepackage{newunicodechar}
+\newunicodechar{∞}{\ensuremath{\infty}}
+\newunicodechar{→}{\ensuremath{\rightarrow}}
+\newunicodechar{λ}{\ensuremath{\lambda}}
+\newunicodechar{✓}{\ensuremath{\checkmark}}
+% Added on the Paper-32 (ל/T-series) standalone build, 2026-06-14: operators,
+% relations, and blackboard letters the ל-series uses in prose/tables (conductor
+% packets A_2 ⊕ A_3, V ⊥ M, ⇒/↔ in claim lists, ℂ/ℝ/… rungs). Same rationale as
+% the block above: math mode is covered by unicode-math, text mode is not.
+\newunicodechar{⇒}{\ensuremath{\Rightarrow}}
+\newunicodechar{⇔}{\ensuremath{\Leftrightarrow}}
+\newunicodechar{↔}{\ensuremath{\leftrightarrow}}
+\newunicodechar{↦}{\ensuremath{\mapsto}}
+\newunicodechar{⊕}{\ensuremath{\oplus}}
+\newunicodechar{⊗}{\ensuremath{\otimes}}
+\newunicodechar{⊥}{\ensuremath{\perp}}
+\newunicodechar{∝}{\ensuremath{\propto}}
+\newunicodechar{≅}{\ensuremath{\cong}}
+\newunicodechar{≡}{\ensuremath{\equiv}}
+\newunicodechar{⊆}{\ensuremath{\subseteq}}
+\newunicodechar{∂}{\ensuremath{\partial}}
+\newunicodechar{∇}{\ensuremath{\nabla}}
+\newunicodechar{ℂ}{\ensuremath{\mathbb{C}}}
+\newunicodechar{ℝ}{\ensuremath{\mathbb{R}}}
+\newunicodechar{ℚ}{\ensuremath{\mathbb{Q}}}
+\newunicodechar{ℤ}{\ensuremath{\mathbb{Z}}}
+\newunicodechar{ℕ}{\ensuremath{\mathbb{N}}}
+\newunicodechar{ℍ}{\ensuremath{\mathbb{H}}}
+\AtBeginDocument{%
+  \newunicodechar{′}{\ensuremath{{}^{\prime}}}%
+  \newunicodechar{″}{\ensuremath{{}^{\prime\prime}}}%
+}
+
+% ---- Title-page vertical compression ---------------------------------------
+% Pull the title up so the abstract + sharing box fit on page 1.
+\usepackage{titling}
+\setlength{\droptitle}{-3em}
+% build.ps1 appends the affiliation to the author as `\newline\textit{...}`
+% (pandoc's YAML metadata parser eats a literal `\\`). titling's default
+% \preauthor wraps the author in a one-column tabular, whose cells silently
+% IGNORE \newline — the affiliation rendered glued to the name ("MonteroITCR")
+% on every title page (caught on the P∞-E build, 2026-06-12). Remap \newline
+% to the tabular row terminator inside the author block; each row is then
+% centered by the tabular. Backward-compatible: single-line authors unchanged.
+\preauthor{\begin{center}\large \lineskip .5em \begin{tabular}[t]{c}\renewcommand{\newline}{\tabularnewline}}
+\postauthor{\end{tabular}\par\end{center}}
+
+% ---- Force the table of contents onto its own page -------------------------
+% Decouples page 1 layout from word-count fluctuations: title + abstract
+% stay on page 1, Contents starts at the top of page 2.
+\let\origtableofcontents\tableofcontents
+\renewcommand{\tableofcontents}{\clearpage\origtableofcontents}
+
+% ---- Figures ----------------------------------------------------------------
+\usepackage{tikz}
+\usepackage{float}   % enables the [H] float specifier (lock figure in place)
+
+% ---- Callout / banner boxes ------------------------------------------------
+\usepackage{mdframed}
+
+% ---- Hebrew letter support (for the trilogy labels ל1, ל2, ל3) -----------
+% Latin Modern Roman lacks Hebrew glyphs, so xelatex would otherwise emit
+% "missing character" warnings and leave the slots blank. We define a
+% \heb{...} command that switches to a system font with Hebrew coverage
+% (Times New Roman, which ships with Windows) just for the wrapped text.
+%
+% \heb is declared *robust* at preamble time so packages that
+% protected-edef the title argument (titling, hyperref) do not try to
+% expand \heb when its real definition is not yet in place. \hebrewfont
+% is a no-op stub at preamble time; the real fontspec-based font family
+% is installed inside \AtBeginDocument{}, since fontspec is loaded by
+% pandoc only after the header-includes.
+%
+% Accessibility: the glyph ל (Hebrew lamed) confuses PDF-to-text pipelines
+% (pdftotext, Zenodo's OCR, screen readers, search indexers), which often
+% drop it or replace it with a placeholder. We wrap the glyph in an
+% accsupp ActualText annotation so the *extracted* text reads "L" while
+% the *rendered* glyph remains ל. This makes "ל5" extract as "L5" — the
+% intended Latin transliteration of the labels — without changing the
+% printed paper at all.
+\usepackage{accsupp}
+\providecommand{\hebrewfont}{}
+% Optional first argument is the ActualText used by PDF text extraction; it
+% defaults to "L" for the ל (lamed / interior) series. The פ (pe / exterior)
+% series passes [P], so \heb[P]{פ} renders the glyph פ but extracts as "P".
+% The default keeps every existing \heb{ל} call extracting as "L" unchanged.
+\DeclareRobustCommand{\heb}[2][L]{%
+  \ifmmode
+    \text{\BeginAccSupp{ActualText=#1}{\hebrewfont #2}\EndAccSupp{}}%
+  \else
+    \BeginAccSupp{ActualText=#1}{\hebrewfont #2}\EndAccSupp{}%
+  \fi
+}
+\AtBeginDocument{%
+  \newfontfamily\HebrewSysFont{Times New Roman}[Scale=MatchLowercase]%
+  \renewcommand{\hebrewfont}{\HebrewSysFont}%
+}
 % Let LaTeX stretch lines a bit further when it can't find a clean break;
 % keeps overfull hboxes out of display math and URL-heavy lines.
 \setlength{\emergencystretch}{3em}
@@ -34,17 +161,10 @@
   {\normalfont\normalsize\bfseries}{\thesubsubsection}{0.5em}{}
 
 % ---- Hyperref polish (hyperref is loaded later by pandoc; defer) ------------
-% Colors are defined here so they're available wherever pandoc finally calls
-% \hypersetup via its own template variables; the deferred \hypersetup below
-% just adds PDF metadata on top of what pandoc's -V flags already set.
-\AtBeginDocument{%
-  \hypersetup{%
-    pdftitle={Intrinsic Vector Calculus on Simplicial (Quadray) Coordinates},%
-    pdfauthor={Leonardo Murillo Montero},%
-    pdfsubject={Simplicial vector calculus; cross product; rotation; zero-sum hyperplane},%
-    pdfkeywords={simplicial coordinates, Quadray coordinates, barycentric coordinates, gauge direction, zero-sum hyperplane, cross product, Hodge dual, wedge product, Rodrigues formula, Lie algebra, rotation}%
-  }%
-}
+% PDF metadata (pdftitle / pdfauthor / pdfsubject / pdfkeywords) is set by
+% pandoc's default LaTeX template from the YAML front matter (title, author,
+% subject, keywords) — we intentionally do not override it here so the same
+% preamble can serve any paper in the repo.
 
 % ---- Theorem-like environments (available if source ever migrates) ---------
 % The markdown source uses `**Theorem 4.1 (title).**` bold-header paragraphs

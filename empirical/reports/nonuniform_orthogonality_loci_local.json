@@ -1,0 +1,1477 @@
+{
+  "criterion": "A reciprocal mode eta is allowed iff translation chi -> eta+chi preserves conductor labels for every nontrivial chi whose image is nontrivial.",
+  "rows": [
+    {
+      "key": "f4-u2",
+      "ring": "F_4[u]/(u^2)",
+      "label_count": 16,
+      "packets": {
+        "u": 3,
+        "u^2": 12
+      },
+      "allowed_reciprocal_modes": [
+        "0",
+        "u",
+        "wu",
+        "(w+1)u"
+      ],
+      "allowed_count": 4,
+      "allowed_normalizer_orbits": [
+        {
+          "representative": "(w+1)u",
+          "size": 3,
+          "members": [
+            "(w+1)u",
+            "u",
+            "wu"
+          ]
+        },
+        {
+          "representative": "0",
+          "size": 1,
+          "members": [
+            "0"
+          ]
+        }
+      ],
+      "allowed_normalizer_orbit_count": 2,
+      "allowed_normalizer_stability_failures": [],
+      "disallowed_count": 12,
+      "disallowed_witnesses": {
+        "1": {
+          "eta": "1",
+          "source": "u",
+          "target": "1+u",
+          "source_conductor": "u",
+          "target_conductor": "u^2"
+        },
+        "1+u": {
+          "eta": "1+u",
+          "source": "u",
+          "target": "1",
+          "source_conductor": "u",
+          "target_conductor": "u^2"
+        },
+        "1+wu": {
+          "eta": "1+wu",
+          "source": "u",
+          "target": "1+(w+1)u",
+          "source_conductor": "u",
+          "target_conductor": "u^2"
+        },
+        "1+(w+1)u": {
+          "eta": "1+(w+1)u",
+          "source": "u",
+          "target": "1+wu",
+          "source_conductor": "u",
+          "target_conductor": "u^2"
+        },
+        "w": {
+          "eta": "w",
+          "source": "u",
+          "target": "w+u",
+          "source_conductor": "u",
+          "target_conductor": "u^2"
+        },
+        "w+u": {
+          "eta": "w+u",
+          "source": "u",
+          "target": "w",
+          "source_conductor": "u",
+          "target_conductor": "u^2"
+        },
+        "w+wu": {
+          "eta": "w+wu",
+          "source": "u",
+          "target": "w+(w+1)u",
+          "source_conductor": "u",
+          "target_conductor": "u^2"
+        },
+        "w+(w+1)u": {
+          "eta": "w+(w+1)u",
+          "source": "u",
+          "target": "w+wu",
+          "source_conductor": "u",
+          "target_conductor": "u^2"
+        },
+        "w+1": {
+          "eta": "w+1",
+          "source": "u",
+          "target": "w+1+u",
+          "source_conductor": "u",
+          "target_conductor": "u^2"
+        },
+        "w+1+u": {
+          "eta": "w+1+u",
+          "source": "u",
+          "target": "w+1",
+          "source_conductor": "u",
+          "target_conductor": "u^2"
+        },
+        "w+1+wu": {
+          "eta": "w+1+wu",
+          "source": "u",
+          "target": "w+1+(w+1)u",
+          "source_conductor": "u",
+          "target_conductor": "u^2"
+        },
+        "w+1+(w+1)u": {
+          "eta": "w+1+(w+1)u",
+          "source": "u",
+          "target": "w+1+wu",
+          "source_conductor": "u",
+          "target_conductor": "u^2"
+        }
+      },
+      "reading": "structured locus: nonconstant reciprocal modes remain"
+    },
+    {
+      "key": "f16",
+      "ring": "F_16",
+      "label_count": 16,
+      "packets": {
+        "field": 15
+      },
+      "allowed_reciprocal_modes": [
+        "0",
+        "1",
+        "a",
+        "1+a",
+        "a^2",
+        "1+a^2",
+        "a+a^2",
+        "1+a+a^2",
+        "a^3",
+        "1+a^3",
+        "a+a^3",
+        "1+a+a^3",
+        "a^2+a^3",
+        "1+a^2+a^3",
+        "a+a^2+a^3",
+        "1+a+a^2+a^3"
+      ],
+      "allowed_count": 16,
+      "allowed_normalizer_orbits": [
+        {
+          "representative": "0",
+          "size": 1,
+          "members": [
+            "0"
+          ]
+        },
+        {
+          "representative": "1",
+          "size": 15,
+          "members": [
+            "1",
+            "1+a",
+            "1+a+a^2",
+            "1+a+a^2+a^3",
+            "1+a+a^3",
+            "1+a^2",
+            "1+a^2+a^3",
+            "1+a^3",
+            "a",
+            "a+a^2",
+            "a+a^2+a^3",
+            "a+a^3",
+            "a^2",
+            "a^2+a^3",
+            "a^3"
+          ]
+        }
+      ],
+      "allowed_normalizer_orbit_count": 2,
+      "allowed_normalizer_stability_failures": [],
+      "disallowed_count": 0,
+      "disallowed_witnesses": {},
+      "reading": "single-packet: block orthogonality is vacuous"
+    },
+    {
+      "key": "f2-u4",
+      "ring": "F_2[u]/(u^4)",
+      "label_count": 16,
+      "packets": {
+        "u": 1,
+        "u^2": 2,
+        "u^3": 4,
+        "u^4": 8
+      },
+      "allowed_reciprocal_modes": [
+        "0",
+        "u^3"
+      ],
+      "allowed_count": 2,
+      "allowed_normalizer_orbits": [
+        {
+          "representative": "0",
+          "size": 1,
+          "members": [
+            "0"
+          ]
+        },
+        {
+          "representative": "u^3",
+          "size": 1,
+          "members": [
+            "u^3"
+          ]
+        }
+      ],
+      "allowed_normalizer_orbit_count": 2,
+      "allowed_normalizer_stability_failures": [],
+      "disallowed_count": 14,
+      "disallowed_witnesses": {
+        "1": {
+          "eta": "1",
+          "source": "u",
+          "target": "1+u",
+          "source_conductor": "u^3",
+          "target_conductor": "u^4"
+        },
+        "u": {
+          "eta": "u",
+          "source": "u^2",
+          "target": "u+u^2",
+          "source_conductor": "u^2",
+          "target_conductor": "u^3"
+        },
+        "1+u": {
+          "eta": "1+u",
+          "source": "1",
+          "target": "u",
+          "source_conductor": "u^4",
+          "target_conductor": "u^3"
+        },
+        "u^2": {
+          "eta": "u^2",
+          "source": "u^3",
+          "target": "u^2+u^3",
+          "source_conductor": "u",
+          "target_conductor": "u^2"
+        },
+        "1+u^2": {
+          "eta": "1+u^2",
+          "source": "1",
+          "target": "u^2",
+          "source_conductor": "u^4",
+          "target_conductor": "u^2"
+        },
+        "u+u^2": {
+          "eta": "u+u^2",
+          "source": "u",
+          "target": "u^2",
+          "source_conductor": "u^3",
+          "target_conductor": "u^2"
+        },
+        "1+u+u^2": {
+          "eta": "1+u+u^2",
+          "source": "1",
+          "target": "u+u^2",
+          "source_conductor": "u^4",
+          "target_conductor": "u^3"
+        },
+        "1+u^3": {
+          "eta": "1+u^3",
+          "source": "1",
+          "target": "u^3",
+          "source_conductor": "u^4",
+          "target_conductor": "u"
+        },
+        "u+u^3": {
+          "eta": "u+u^3",
+          "source": "u",
+          "target": "u^3",
+          "source_conductor": "u^3",
+          "target_conductor": "u"
+        },
+        "1+u+u^3": {
+          "eta": "1+u+u^3",
+          "source": "1",
+          "target": "u+u^3",
+          "source_conductor": "u^4",
+          "target_conductor": "u^3"
+        },
+        "u^2+u^3": {
+          "eta": "u^2+u^3",
+          "source": "u^2",
+          "target": "u^3",
+          "source_conductor": "u^2",
+          "target_conductor": "u"
+        },
+        "1+u^2+u^3": {
+          "eta": "1+u^2+u^3",
+          "source": "1",
+          "target": "u^2+u^3",
+          "source_conductor": "u^4",
+          "target_conductor": "u^2"
+        },
+        "u+u^2+u^3": {
+          "eta": "u+u^2+u^3",
+          "source": "u",
+          "target": "u^2+u^3",
+          "source_conductor": "u^3",
+          "target_conductor": "u^2"
+        },
+        "1+u+u^2+u^3": {
+          "eta": "1+u+u^2+u^3",
+          "source": "1",
+          "target": "u+u^2+u^3",
+          "source_conductor": "u^4",
+          "target_conductor": "u^3"
+        }
+      },
+      "reading": "structured locus: nonconstant reciprocal modes remain"
+    },
+    {
+      "key": "f2-u5",
+      "ring": "F_2[u]/(u^5)",
+      "label_count": 32,
+      "packets": {
+        "u": 1,
+        "u^2": 2,
+        "u^3": 4,
+        "u^4": 8,
+        "u^5": 16
+      },
+      "allowed_reciprocal_modes": [
+        "0",
+        "u^4"
+      ],
+      "allowed_count": 2,
+      "allowed_normalizer_orbits": [
+        {
+          "representative": "0",
+          "size": 1,
+          "members": [
+            "0"
+          ]
+        },
+        {
+          "representative": "u^4",
+          "size": 1,
+          "members": [
+            "u^4"
+          ]
+        }
+      ],
+      "allowed_normalizer_orbit_count": 2,
+      "allowed_normalizer_stability_failures": [],
+      "disallowed_count": 30,
+      "disallowed_witnesses": {
+        "u^3": {
+          "eta": "u^3",
+          "source": "u^4",
+          "target": "u^3+u^4",
+          "source_conductor": "u",
+          "target_conductor": "u^2"
+        },
+        "u^3+u^4": {
+          "eta": "u^3+u^4",
+          "source": "u^4",
+          "target": "u^3",
+          "source_conductor": "u",
+          "target_conductor": "u^2"
+        },
+        "u^2": {
+          "eta": "u^2",
+          "source": "u^4",
+          "target": "u^2+u^4",
+          "source_conductor": "u",
+          "target_conductor": "u^3"
+        },
+        "u^2+u^4": {
+          "eta": "u^2+u^4",
+          "source": "u^4",
+          "target": "u^2",
+          "source_conductor": "u",
+          "target_conductor": "u^3"
+        },
+        "u^2+u^3": {
+          "eta": "u^2+u^3",
+          "source": "u^4",
+          "target": "u^2+u^3+u^4",
+          "source_conductor": "u",
+          "target_conductor": "u^3"
+        },
+        "u^2+u^3+u^4": {
+          "eta": "u^2+u^3+u^4",
+          "source": "u^4",
+          "target": "u^2+u^3",
+          "source_conductor": "u",
+          "target_conductor": "u^3"
+        },
+        "u": {
+          "eta": "u",
+          "source": "u^4",
+          "target": "u+u^4",
+          "source_conductor": "u",
+          "target_conductor": "u^4"
+        },
+        "u+u^4": {
+          "eta": "u+u^4",
+          "source": "u^4",
+          "target": "u",
+          "source_conductor": "u",
+          "target_conductor": "u^4"
+        },
+        "u+u^3": {
+          "eta": "u+u^3",
+          "source": "u^4",
+          "target": "u+u^3+u^4",
+          "source_conductor": "u",
+          "target_conductor": "u^4"
+        },
+        "u+u^3+u^4": {
+          "eta": "u+u^3+u^4",
+          "source": "u^4",
+          "target": "u+u^3",
+          "source_conductor": "u",
+          "target_conductor": "u^4"
+        },
+        "u+u^2": {
+          "eta": "u+u^2",
+          "source": "u^4",
+          "target": "u+u^2+u^4",
+          "source_conductor": "u",
+          "target_conductor": "u^4"
+        },
+        "u+u^2+u^4": {
+          "eta": "u+u^2+u^4",
+          "source": "u^4",
+          "target": "u+u^2",
+          "source_conductor": "u",
+          "target_conductor": "u^4"
+        },
+        "u+u^2+u^3": {
+          "eta": "u+u^2+u^3",
+          "source": "u^4",
+          "target": "u+u^2+u^3+u^4",
+          "source_conductor": "u",
+          "target_conductor": "u^4"
+        },
+        "u+u^2+u^3+u^4": {
+          "eta": "u+u^2+u^3+u^4",
+          "source": "u^4",
+          "target": "u+u^2+u^3",
+          "source_conductor": "u",
+          "target_conductor": "u^4"
+        },
+        "1": {
+          "eta": "1",
+          "source": "u^4",
+          "target": "1+u^4",
+          "source_conductor": "u",
+          "target_conductor": "u^5"
+        },
+        "1+u^4": {
+          "eta": "1+u^4",
+          "source": "u^4",
+          "target": "1",
+          "source_conductor": "u",
+          "target_conductor": "u^5"
+        },
+        "1+u^3": {
+          "eta": "1+u^3",
+          "source": "u^4",
+          "target": "1+u^3+u^4",
+          "source_conductor": "u",
+          "target_conductor": "u^5"
+        },
+        "1+u^3+u^4": {
+          "eta": "1+u^3+u^4",
+          "source": "u^4",
+          "target": "1+u^3",
+          "source_conductor": "u",
+          "target_conductor": "u^5"
+        },
+        "1+u^2": {
+          "eta": "1+u^2",
+          "source": "u^4",
+          "target": "1+u^2+u^4",
+          "source_conductor": "u",
+          "target_conductor": "u^5"
+        },
+        "1+u^2+u^4": {
+          "eta": "1+u^2+u^4",
+          "source": "u^4",
+          "target": "1+u^2",
+          "source_conductor": "u",
+          "target_conductor": "u^5"
+        },
+        "1+u^2+u^3": {
+          "eta": "1+u^2+u^3",
+          "source": "u^4",
+          "target": "1+u^2+u^3+u^4",
+          "source_conductor": "u",
+          "target_conductor": "u^5"
+        },
+        "1+u^2+u^3+u^4": {
+          "eta": "1+u^2+u^3+u^4",
+          "source": "u^4",
+          "target": "1+u^2+u^3",
+          "source_conductor": "u",
+          "target_conductor": "u^5"
+        },
+        "1+u": {
+          "eta": "1+u",
+          "source": "u^4",
+          "target": "1+u+u^4",
+          "source_conductor": "u",
+          "target_conductor": "u^5"
+        },
+        "1+u+u^4": {
+          "eta": "1+u+u^4",
+          "source": "u^4",
+          "target": "1+u",
+          "source_conductor": "u",
+          "target_conductor": "u^5"
+        },
+        "1+u+u^3": {
+          "eta": "1+u+u^3",
+          "source": "u^4",
+          "target": "1+u+u^3+u^4",
+          "source_conductor": "u",
+          "target_conductor": "u^5"
+        },
+        "1+u+u^3+u^4": {
+          "eta": "1+u+u^3+u^4",
+          "source": "u^4",
+          "target": "1+u+u^3",
+          "source_conductor": "u",
+          "target_conductor": "u^5"
+        },
+        "1+u+u^2": {
+          "eta": "1+u+u^2",
+          "source": "u^4",
+          "target": "1+u+u^2+u^4",
+          "source_conductor": "u",
+          "target_conductor": "u^5"
+        },
+        "1+u+u^2+u^4": {
+          "eta": "1+u+u^2+u^4",
+          "source": "u^4",
+          "target": "1+u+u^2",
+          "source_conductor": "u",
+          "target_conductor": "u^5"
+        },
+        "1+u+u^2+u^3": {
+          "eta": "1+u+u^2+u^3",
+          "source": "u^4",
+          "target": "1+u+u^2+u^3+u^4",
+          "source_conductor": "u",
+          "target_conductor": "u^5"
+        },
+        "1+u+u^2+u^3+u^4": {
+          "eta": "1+u+u^2+u^3+u^4",
+          "source": "u^4",
+          "target": "1+u+u^2+u^3",
+          "source_conductor": "u",
+          "target_conductor": "u^5"
+        }
+      },
+      "reading": "structured locus: nonconstant reciprocal modes remain"
+    },
+    {
+      "key": "f4-u3",
+      "ring": "F_4[u]/(u^3)",
+      "label_count": 64,
+      "packets": {
+        "u": 3,
+        "u^2": 12,
+        "u^3": 48
+      },
+      "allowed_reciprocal_modes": [
+        "0",
+        "u^2",
+        "w*u^2",
+        "(1+w)*u^2"
+      ],
+      "allowed_count": 4,
+      "allowed_normalizer_orbits": [
+        {
+          "representative": "(1+w)*u^2",
+          "size": 3,
+          "members": [
+            "(1+w)*u^2",
+            "u^2",
+            "w*u^2"
+          ]
+        },
+        {
+          "representative": "0",
+          "size": 1,
+          "members": [
+            "0"
+          ]
+        }
+      ],
+      "allowed_normalizer_orbit_count": 2,
+      "allowed_normalizer_stability_failures": [],
+      "disallowed_count": 60,
+      "disallowed_witnesses": {
+        "u": {
+          "eta": "u",
+          "source": "u^2",
+          "target": "u+u^2",
+          "source_conductor": "u",
+          "target_conductor": "u^2"
+        },
+        "u+u^2": {
+          "eta": "u+u^2",
+          "source": "u^2",
+          "target": "u",
+          "source_conductor": "u",
+          "target_conductor": "u^2"
+        },
+        "u+w*u^2": {
+          "eta": "u+w*u^2",
+          "source": "u^2",
+          "target": "u+(1+w)*u^2",
+          "source_conductor": "u",
+          "target_conductor": "u^2"
+        },
+        "u+(1+w)*u^2": {
+          "eta": "u+(1+w)*u^2",
+          "source": "u^2",
+          "target": "u+w*u^2",
+          "source_conductor": "u",
+          "target_conductor": "u^2"
+        },
+        "w*u": {
+          "eta": "w*u",
+          "source": "u^2",
+          "target": "w*u+u^2",
+          "source_conductor": "u",
+          "target_conductor": "u^2"
+        },
+        "w*u+u^2": {
+          "eta": "w*u+u^2",
+          "source": "u^2",
+          "target": "w*u",
+          "source_conductor": "u",
+          "target_conductor": "u^2"
+        },
+        "w*u+w*u^2": {
+          "eta": "w*u+w*u^2",
+          "source": "u^2",
+          "target": "w*u+(1+w)*u^2",
+          "source_conductor": "u",
+          "target_conductor": "u^2"
+        },
+        "w*u+(1+w)*u^2": {
+          "eta": "w*u+(1+w)*u^2",
+          "source": "u^2",
+          "target": "w*u+w*u^2",
+          "source_conductor": "u",
+          "target_conductor": "u^2"
+        },
+        "(1+w)*u": {
+          "eta": "(1+w)*u",
+          "source": "u^2",
+          "target": "(1+w)*u+u^2",
+          "source_conductor": "u",
+          "target_conductor": "u^2"
+        },
+        "(1+w)*u+u^2": {
+          "eta": "(1+w)*u+u^2",
+          "source": "u^2",
+          "target": "(1+w)*u",
+          "source_conductor": "u",
+          "target_conductor": "u^2"
+        },
+        "(1+w)*u+w*u^2": {
+          "eta": "(1+w)*u+w*u^2",
+          "source": "u^2",
+          "target": "(1+w)*u+(1+w)*u^2",
+          "source_conductor": "u",
+          "target_conductor": "u^2"
+        },
+        "(1+w)*u+(1+w)*u^2": {
+          "eta": "(1+w)*u+(1+w)*u^2",
+          "source": "u^2",
+          "target": "(1+w)*u+w*u^2",
+          "source_conductor": "u",
+          "target_conductor": "u^2"
+        },
+        "1": {
+          "eta": "1",
+          "source": "u^2",
+          "target": "1+u^2",
+          "source_conductor": "u",
+          "target_conductor": "u^3"
+        },
+        "1+u^2": {
+          "eta": "1+u^2",
+          "source": "u^2",
+          "target": "1",
+          "source_conductor": "u",
+          "target_conductor": "u^3"
+        },
+        "1+w*u^2": {
+          "eta": "1+w*u^2",
+          "source": "u^2",
+          "target": "1+(1+w)*u^2",
+          "source_conductor": "u",
+          "target_conductor": "u^3"
+        },
+        "1+(1+w)*u^2": {
+          "eta": "1+(1+w)*u^2",
+          "source": "u^2",
+          "target": "1+w*u^2",
+          "source_conductor": "u",
+          "target_conductor": "u^3"
+        },
+        "1+u": {
+          "eta": "1+u",
+          "source": "u^2",
+          "target": "1+u+u^2",
+          "source_conductor": "u",
+          "target_conductor": "u^3"
+        },
+        "1+u+u^2": {
+          "eta": "1+u+u^2",
+          "source": "u^2",
+          "target": "1+u",
+          "source_conductor": "u",
+          "target_conductor": "u^3"
+        },
+        "1+u+w*u^2": {
+          "eta": "1+u+w*u^2",
+          "source": "u^2",
+          "target": "1+u+(1+w)*u^2",
+          "source_conductor": "u",
+          "target_conductor": "u^3"
+        },
+        "1+u+(1+w)*u^2": {
+          "eta": "1+u+(1+w)*u^2",
+          "source": "u^2",
+          "target": "1+u+w*u^2",
+          "source_conductor": "u",
+          "target_conductor": "u^3"
+        },
+        "1+w*u": {
+          "eta": "1+w*u",
+          "source": "u^2",
+          "target": "1+w*u+u^2",
+          "source_conductor": "u",
+          "target_conductor": "u^3"
+        },
+        "1+w*u+u^2": {
+          "eta": "1+w*u+u^2",
+          "source": "u^2",
+          "target": "1+w*u",
+          "source_conductor": "u",
+          "target_conductor": "u^3"
+        },
+        "1+w*u+w*u^2": {
+          "eta": "1+w*u+w*u^2",
+          "source": "u^2",
+          "target": "1+w*u+(1+w)*u^2",
+          "source_conductor": "u",
+          "target_conductor": "u^3"
+        },
+        "1+w*u+(1+w)*u^2": {
+          "eta": "1+w*u+(1+w)*u^2",
+          "source": "u^2",
+          "target": "1+w*u+w*u^2",
+          "source_conductor": "u",
+          "target_conductor": "u^3"
+        },
+        "1+(1+w)*u": {
+          "eta": "1+(1+w)*u",
+          "source": "u^2",
+          "target": "1+(1+w)*u+u^2",
+          "source_conductor": "u",
+          "target_conductor": "u^3"
+        },
+        "1+(1+w)*u+u^2": {
+          "eta": "1+(1+w)*u+u^2",
+          "source": "u^2",
+          "target": "1+(1+w)*u",
+          "source_conductor": "u",
+          "target_conductor": "u^3"
+        },
+        "1+(1+w)*u+w*u^2": {
+          "eta": "1+(1+w)*u+w*u^2",
+          "source": "u^2",
+          "target": "1+(1+w)*u+(1+w)*u^2",
+          "source_conductor": "u",
+          "target_conductor": "u^3"
+        },
+        "1+(1+w)*u+(1+w)*u^2": {
+          "eta": "1+(1+w)*u+(1+w)*u^2",
+          "source": "u^2",
+          "target": "1+(1+w)*u+w*u^2",
+          "source_conductor": "u",
+          "target_conductor": "u^3"
+        },
+        "w": {
+          "eta": "w",
+          "source": "u^2",
+          "target": "w+u^2",
+          "source_conductor": "u",
+          "target_conductor": "u^3"
+        },
+        "w+u^2": {
+          "eta": "w+u^2",
+          "source": "u^2",
+          "target": "w",
+          "source_conductor": "u",
+          "target_conductor": "u^3"
+        },
+        "w+w*u^2": {
+          "eta": "w+w*u^2",
+          "source": "u^2",
+          "target": "w+(1+w)*u^2",
+          "source_conductor": "u",
+          "target_conductor": "u^3"
+        },
+        "w+(1+w)*u^2": {
+          "eta": "w+(1+w)*u^2",
+          "source": "u^2",
+          "target": "w+w*u^2",
+          "source_conductor": "u",
+          "target_conductor": "u^3"
+        },
+        "w+u": {
+          "eta": "w+u",
+          "source": "u^2",
+          "target": "w+u+u^2",
+          "source_conductor": "u",
+          "target_conductor": "u^3"
+        },
+        "w+u+u^2": {
+          "eta": "w+u+u^2",
+          "source": "u^2",
+          "target": "w+u",
+          "source_conductor": "u",
+          "target_conductor": "u^3"
+        },
+        "w+u+w*u^2": {
+          "eta": "w+u+w*u^2",
+          "source": "u^2",
+          "target": "w+u+(1+w)*u^2",
+          "source_conductor": "u",
+          "target_conductor": "u^3"
+        },
+        "w+u+(1+w)*u^2": {
+          "eta": "w+u+(1+w)*u^2",
+          "source": "u^2",
+          "target": "w+u+w*u^2",
+          "source_conductor": "u",
+          "target_conductor": "u^3"
+        },
+        "w+w*u": {
+          "eta": "w+w*u",
+          "source": "u^2",
+          "target": "w+w*u+u^2",
+          "source_conductor": "u",
+          "target_conductor": "u^3"
+        },
+        "w+w*u+u^2": {
+          "eta": "w+w*u+u^2",
+          "source": "u^2",
+          "target": "w+w*u",
+          "source_conductor": "u",
+          "target_conductor": "u^3"
+        },
+        "w+w*u+w*u^2": {
+          "eta": "w+w*u+w*u^2",
+          "source": "u^2",
+          "target": "w+w*u+(1+w)*u^2",
+          "source_conductor": "u",
+          "target_conductor": "u^3"
+        },
+        "w+w*u+(1+w)*u^2": {
+          "eta": "w+w*u+(1+w)*u^2",
+          "source": "u^2",
+          "target": "w+w*u+w*u^2",
+          "source_conductor": "u",
+          "target_conductor": "u^3"
+        },
+        "w+(1+w)*u": {
+          "eta": "w+(1+w)*u",
+          "source": "u^2",
+          "target": "w+(1+w)*u+u^2",
+          "source_conductor": "u",
+          "target_conductor": "u^3"
+        },
+        "w+(1+w)*u+u^2": {
+          "eta": "w+(1+w)*u+u^2",
+          "source": "u^2",
+          "target": "w+(1+w)*u",
+          "source_conductor": "u",
+          "target_conductor": "u^3"
+        },
+        "w+(1+w)*u+w*u^2": {
+          "eta": "w+(1+w)*u+w*u^2",
+          "source": "u^2",
+          "target": "w+(1+w)*u+(1+w)*u^2",
+          "source_conductor": "u",
+          "target_conductor": "u^3"
+        },
+        "w+(1+w)*u+(1+w)*u^2": {
+          "eta": "w+(1+w)*u+(1+w)*u^2",
+          "source": "u^2",
+          "target": "w+(1+w)*u+w*u^2",
+          "source_conductor": "u",
+          "target_conductor": "u^3"
+        },
+        "1+w": {
+          "eta": "1+w",
+          "source": "u^2",
+          "target": "1+w+u^2",
+          "source_conductor": "u",
+          "target_conductor": "u^3"
+        },
+        "1+w+u^2": {
+          "eta": "1+w+u^2",
+          "source": "u^2",
+          "target": "1+w",
+          "source_conductor": "u",
+          "target_conductor": "u^3"
+        },
+        "1+w+w*u^2": {
+          "eta": "1+w+w*u^2",
+          "source": "u^2",
+          "target": "1+w+(1+w)*u^2",
+          "source_conductor": "u",
+          "target_conductor": "u^3"
+        },
+        "1+w+(1+w)*u^2": {
+          "eta": "1+w+(1+w)*u^2",
+          "source": "u^2",
+          "target": "1+w+w*u^2",
+          "source_conductor": "u",
+          "target_conductor": "u^3"
+        },
+        "1+w+u": {
+          "eta": "1+w+u",
+          "source": "u^2",
+          "target": "1+w+u+u^2",
+          "source_conductor": "u",
+          "target_conductor": "u^3"
+        },
+        "1+w+u+u^2": {
+          "eta": "1+w+u+u^2",
+          "source": "u^2",
+          "target": "1+w+u",
+          "source_conductor": "u",
+          "target_conductor": "u^3"
+        },
+        "1+w+u+w*u^2": {
+          "eta": "1+w+u+w*u^2",
+          "source": "u^2",
+          "target": "1+w+u+(1+w)*u^2",
+          "source_conductor": "u",
+          "target_conductor": "u^3"
+        },
+        "1+w+u+(1+w)*u^2": {
+          "eta": "1+w+u+(1+w)*u^2",
+          "source": "u^2",
+          "target": "1+w+u+w*u^2",
+          "source_conductor": "u",
+          "target_conductor": "u^3"
+        },
+        "1+w+w*u": {
+          "eta": "1+w+w*u",
+          "source": "u^2",
+          "target": "1+w+w*u+u^2",
+          "source_conductor": "u",
+          "target_conductor": "u^3"
+        },
+        "1+w+w*u+u^2": {
+          "eta": "1+w+w*u+u^2",
+          "source": "u^2",
+          "target": "1+w+w*u",
+          "source_conductor": "u",
+          "target_conductor": "u^3"
+        },
+        "1+w+w*u+w*u^2": {
+          "eta": "1+w+w*u+w*u^2",
+          "source": "u^2",
+          "target": "1+w+w*u+(1+w)*u^2",
+          "source_conductor": "u",
+          "target_conductor": "u^3"
+        },
+        "1+w+w*u+(1+w)*u^2": {
+          "eta": "1+w+w*u+(1+w)*u^2",
+          "source": "u^2",
+          "target": "1+w+w*u+w*u^2",
+          "source_conductor": "u",
+          "target_conductor": "u^3"
+        },
+        "1+w+(1+w)*u": {
+          "eta": "1+w+(1+w)*u",
+          "source": "u^2",
+          "target": "1+w+(1+w)*u+u^2",
+          "source_conductor": "u",
+          "target_conductor": "u^3"
+        },
+        "1+w+(1+w)*u+u^2": {
+          "eta": "1+w+(1+w)*u+u^2",
+          "source": "u^2",
+          "target": "1+w+(1+w)*u",
+          "source_conductor": "u",
+          "target_conductor": "u^3"
+        },
+        "1+w+(1+w)*u+w*u^2": {
+          "eta": "1+w+(1+w)*u+w*u^2",
+          "source": "u^2",
+          "target": "1+w+(1+w)*u+(1+w)*u^2",
+          "source_conductor": "u",
+          "target_conductor": "u^3"
+        },
+        "1+w+(1+w)*u+(1+w)*u^2": {
+          "eta": "1+w+(1+w)*u+(1+w)*u^2",
+          "source": "u^2",
+          "target": "1+w+(1+w)*u+w*u^2",
+          "source_conductor": "u",
+          "target_conductor": "u^3"
+        }
+      },
+      "reading": "structured locus: nonconstant reciprocal modes remain"
+    },
+    {
+      "key": "f8-u2",
+      "ring": "F_8[u]/(u^2)",
+      "label_count": 64,
+      "packets": {
+        "u": 7,
+        "u^2": 56
+      },
+      "allowed_reciprocal_modes": [
+        "0",
+        "u",
+        "b*u",
+        "(1+b)*u",
+        "b^2*u",
+        "(1+b^2)*u",
+        "(b+b^2)*u",
+        "(1+b+b^2)*u"
+      ],
+      "allowed_count": 8,
+      "allowed_normalizer_orbits": [
+        {
+          "representative": "(1+b)*u",
+          "size": 7,
+          "members": [
+            "(1+b)*u",
+            "(1+b+b^2)*u",
+            "(1+b^2)*u",
+            "(b+b^2)*u",
+            "b*u",
+            "b^2*u",
+            "u"
+          ]
+        },
+        {
+          "representative": "0",
+          "size": 1,
+          "members": [
+            "0"
+          ]
+        }
+      ],
+      "allowed_normalizer_orbit_count": 2,
+      "allowed_normalizer_stability_failures": [],
+      "disallowed_count": 56,
+      "disallowed_witnesses": {
+        "1": {
+          "eta": "1",
+          "source": "u",
+          "target": "1+u",
+          "source_conductor": "u",
+          "target_conductor": "u^2"
+        },
+        "1+u": {
+          "eta": "1+u",
+          "source": "u",
+          "target": "1",
+          "source_conductor": "u",
+          "target_conductor": "u^2"
+        },
+        "1+b*u": {
+          "eta": "1+b*u",
+          "source": "u",
+          "target": "1+(1+b)*u",
+          "source_conductor": "u",
+          "target_conductor": "u^2"
+        },
+        "1+(1+b)*u": {
+          "eta": "1+(1+b)*u",
+          "source": "u",
+          "target": "1+b*u",
+          "source_conductor": "u",
+          "target_conductor": "u^2"
+        },
+        "1+b^2*u": {
+          "eta": "1+b^2*u",
+          "source": "u",
+          "target": "1+(1+b^2)*u",
+          "source_conductor": "u",
+          "target_conductor": "u^2"
+        },
+        "1+(1+b^2)*u": {
+          "eta": "1+(1+b^2)*u",
+          "source": "u",
+          "target": "1+b^2*u",
+          "source_conductor": "u",
+          "target_conductor": "u^2"
+        },
+        "1+(b+b^2)*u": {
+          "eta": "1+(b+b^2)*u",
+          "source": "u",
+          "target": "1+(1+b+b^2)*u",
+          "source_conductor": "u",
+          "target_conductor": "u^2"
+        },
+        "1+(1+b+b^2)*u": {
+          "eta": "1+(1+b+b^2)*u",
+          "source": "u",
+          "target": "1+(b+b^2)*u",
+          "source_conductor": "u",
+          "target_conductor": "u^2"
+        },
+        "b": {
+          "eta": "b",
+          "source": "u",
+          "target": "b+u",
+          "source_conductor": "u",
+          "target_conductor": "u^2"
+        },
+        "b+u": {
+          "eta": "b+u",
+          "source": "u",
+          "target": "b",
+          "source_conductor": "u",
+          "target_conductor": "u^2"
+        },
+        "b+b*u": {
+          "eta": "b+b*u",
+          "source": "u",
+          "target": "b+(1+b)*u",
+          "source_conductor": "u",
+          "target_conductor": "u^2"
+        },
+        "b+(1+b)*u": {
+          "eta": "b+(1+b)*u",
+          "source": "u",
+          "target": "b+b*u",
+          "source_conductor": "u",
+          "target_conductor": "u^2"
+        },
+        "b+b^2*u": {
+          "eta": "b+b^2*u",
+          "source": "u",
+          "target": "b+(1+b^2)*u",
+          "source_conductor": "u",
+          "target_conductor": "u^2"
+        },
+        "b+(1+b^2)*u": {
+          "eta": "b+(1+b^2)*u",
+          "source": "u",
+          "target": "b+b^2*u",
+          "source_conductor": "u",
+          "target_conductor": "u^2"
+        },
+        "b+(b+b^2)*u": {
+          "eta": "b+(b+b^2)*u",
+          "source": "u",
+          "target": "b+(1+b+b^2)*u",
+          "source_conductor": "u",
+          "target_conductor": "u^2"
+        },
+        "b+(1+b+b^2)*u": {
+          "eta": "b+(1+b+b^2)*u",
+          "source": "u",
+          "target": "b+(b+b^2)*u",
+          "source_conductor": "u",
+          "target_conductor": "u^2"
+        },
+        "1+b": {
+          "eta": "1+b",
+          "source": "u",
+          "target": "1+b+u",
+          "source_conductor": "u",
+          "target_conductor": "u^2"
+        },
+        "1+b+u": {
+          "eta": "1+b+u",
+          "source": "u",
+          "target": "1+b",
+          "source_conductor": "u",
+          "target_conductor": "u^2"
+        },
+        "1+b+b*u": {
+          "eta": "1+b+b*u",
+          "source": "u",
+          "target": "1+b+(1+b)*u",
+          "source_conductor": "u",
+          "target_conductor": "u^2"
+        },
+        "1+b+(1+b)*u": {
+          "eta": "1+b+(1+b)*u",
+          "source": "u",
+          "target": "1+b+b*u",
+          "source_conductor": "u",
+          "target_conductor": "u^2"
+        },
+        "1+b+b^2*u": {
+          "eta": "1+b+b^2*u",
+          "source": "u",
+          "target": "1+b+(1+b^2)*u",
+          "source_conductor": "u",
+          "target_conductor": "u^2"
+        },
+        "1+b+(1+b^2)*u": {
+          "eta": "1+b+(1+b^2)*u",
+          "source": "u",
+          "target": "1+b+b^2*u",
+          "source_conductor": "u",
+          "target_conductor": "u^2"
+        },
+        "1+b+(b+b^2)*u": {
+          "eta": "1+b+(b+b^2)*u",
+          "source": "u",
+          "target": "1+b+(1+b+b^2)*u",
+          "source_conductor": "u",
+          "target_conductor": "u^2"
+        },
+        "1+b+(1+b+b^2)*u": {
+          "eta": "1+b+(1+b+b^2)*u",
+          "source": "u",
+          "target": "1+b+(b+b^2)*u",
+          "source_conductor": "u",
+          "target_conductor": "u^2"
+        },
+        "b^2": {
+          "eta": "b^2",
+          "source": "u",
+          "target": "b^2+u",
+          "source_conductor": "u",
+          "target_conductor": "u^2"
+        },
+        "b^2+u": {
+          "eta": "b^2+u",
+          "source": "u",
+          "target": "b^2",
+          "source_conductor": "u",
+          "target_conductor": "u^2"
+        },
+        "b^2+b*u": {
+          "eta": "b^2+b*u",
+          "source": "u",
+          "target": "b^2+(1+b)*u",
+          "source_conductor": "u",
+          "target_conductor": "u^2"
+        },
+        "b^2+(1+b)*u": {
+          "eta": "b^2+(1+b)*u",
+          "source": "u",
+          "target": "b^2+b*u",
+          "source_conductor": "u",
+          "target_conductor": "u^2"
+        },
+        "b^2+b^2*u": {
+          "eta": "b^2+b^2*u",
+          "source": "u",
+          "target": "b^2+(1+b^2)*u",
+          "source_conductor": "u",
+          "target_conductor": "u^2"
+        },
+        "b^2+(1+b^2)*u": {
+          "eta": "b^2+(1+b^2)*u",
+          "source": "u",
+          "target": "b^2+b^2*u",
+          "source_conductor": "u",
+          "target_conductor": "u^2"
+        },
+        "b^2+(b+b^2)*u": {
+          "eta": "b^2+(b+b^2)*u",
+          "source": "u",
+          "target": "b^2+(1+b+b^2)*u",
+          "source_conductor": "u",
+          "target_conductor": "u^2"
+        },
+        "b^2+(1+b+b^2)*u": {
+          "eta": "b^2+(1+b+b^2)*u",
+          "source": "u",
+          "target": "b^2+(b+b^2)*u",
+          "source_conductor": "u",
+          "target_conductor": "u^2"
+        },
+        "1+b^2": {
+          "eta": "1+b^2",
+          "source": "u",
+          "target": "1+b^2+u",
+          "source_conductor": "u",
+          "target_conductor": "u^2"
+        },
+        "1+b^2+u": {
+          "eta": "1+b^2+u",
+          "source": "u",
+          "target": "1+b^2",
+          "source_conductor": "u",
+          "target_conductor": "u^2"
+        },
+        "1+b^2+b*u": {
+          "eta": "1+b^2+b*u",
+          "source": "u",
+          "target": "1+b^2+(1+b)*u",
+          "source_conductor": "u",
+          "target_conductor": "u^2"
+        },
+        "1+b^2+(1+b)*u": {
+          "eta": "1+b^2+(1+b)*u",
+          "source": "u",
+          "target": "1+b^2+b*u",
+          "source_conductor": "u",
+          "target_conductor": "u^2"
+        },
+        "1+b^2+b^2*u": {
+          "eta": "1+b^2+b^2*u",
+          "source": "u",
+          "target": "1+b^2+(1+b^2)*u",
+          "source_conductor": "u",
+          "target_conductor": "u^2"
+        },
+        "1+b^2+(1+b^2)*u": {
+          "eta": "1+b^2+(1+b^2)*u",
+          "source": "u",
+          "target": "1+b^2+b^2*u",
+          "source_conductor": "u",
+          "target_conductor": "u^2"
+        },
+        "1+b^2+(b+b^2)*u": {
+          "eta": "1+b^2+(b+b^2)*u",
+          "source": "u",
+          "target": "1+b^2+(1+b+b^2)*u",
+          "source_conductor": "u",
+          "target_conductor": "u^2"
+        },
+        "1+b^2+(1+b+b^2)*u": {
+          "eta": "1+b^2+(1+b+b^2)*u",
+          "source": "u",
+          "target": "1+b^2+(b+b^2)*u",
+          "source_conductor": "u",
+          "target_conductor": "u^2"
+        },
+        "b+b^2": {
+          "eta": "b+b^2",
+          "source": "u",
+          "target": "b+b^2+u",
+          "source_conductor": "u",
+          "target_conductor": "u^2"
+        },
+        "b+b^2+u": {
+          "eta": "b+b^2+u",
+          "source": "u",
+          "target": "b+b^2",
+          "source_conductor": "u",
+          "target_conductor": "u^2"
+        },
+        "b+b^2+b*u": {
+          "eta": "b+b^2+b*u",
+          "source": "u",
+          "target": "b+b^2+(1+b)*u",
+          "source_conductor": "u",
+          "target_conductor": "u^2"
+        },
+        "b+b^2+(1+b)*u": {
+          "eta": "b+b^2+(1+b)*u",
+          "source": "u",
+          "target": "b+b^2+b*u",
+          "source_conductor": "u",
+          "target_conductor": "u^2"
+        },
+        "b+b^2+b^2*u": {
+          "eta": "b+b^2+b^2*u",
+          "source": "u",
+          "target": "b+b^2+(1+b^2)*u",
+          "source_conductor": "u",
+          "target_conductor": "u^2"
+        },
+        "b+b^2+(1+b^2)*u": {
+          "eta": "b+b^2+(1+b^2)*u",
+          "source": "u",
+          "target": "b+b^2+b^2*u",
+          "source_conductor": "u",
+          "target_conductor": "u^2"
+        },
+        "b+b^2+(b+b^2)*u": {
+          "eta": "b+b^2+(b+b^2)*u",
+          "source": "u",
+          "target": "b+b^2+(1+b+b^2)*u",
+          "source_conductor": "u",
+          "target_conductor": "u^2"
+        },
+        "b+b^2+(1+b+b^2)*u": {
+          "eta": "b+b^2+(1+b+b^2)*u",
+          "source": "u",
+          "target": "b+b^2+(b+b^2)*u",
+          "source_conductor": "u",
+          "target_conductor": "u^2"
+        },
+        "1+b+b^2": {
+          "eta": "1+b+b^2",
+          "source": "u",
+          "target": "1+b+b^2+u",
+          "source_conductor": "u",
+          "target_conductor": "u^2"
+        },
+        "1+b+b^2+u": {
+          "eta": "1+b+b^2+u",
+          "source": "u",
+          "target": "1+b+b^2",
+          "source_conductor": "u",
+          "target_conductor": "u^2"
+        },
+        "1+b+b^2+b*u": {
+          "eta": "1+b+b^2+b*u",
+          "source": "u",
+          "target": "1+b+b^2+(1+b)*u",
+          "source_conductor": "u",
+          "target_conductor": "u^2"
+        },
+        "1+b+b^2+(1+b)*u": {
+          "eta": "1+b+b^2+(1+b)*u",
+          "source": "u",
+          "target": "1+b+b^2+b*u",
+          "source_conductor": "u",
+          "target_conductor": "u^2"
+        },
+        "1+b+b^2+b^2*u": {
+          "eta": "1+b+b^2+b^2*u",
+          "source": "u",
+          "target": "1+b+b^2+(1+b^2)*u",
+          "source_conductor": "u",
+          "target_conductor": "u^2"
+        },
+        "1+b+b^2+(1+b^2)*u": {
+          "eta": "1+b+b^2+(1+b^2)*u",
+          "source": "u",
+          "target": "1+b+b^2+b^2*u",
+          "source_conductor": "u",
+          "target_conductor": "u^2"
+        },
+        "1+b+b^2+(b+b^2)*u": {
+          "eta": "1+b+b^2+(b+b^2)*u",
+          "source": "u",
+          "target": "1+b+b^2+(1+b+b^2)*u",
+          "source_conductor": "u",
+          "target_conductor": "u^2"
+        },
+        "1+b+b^2+(1+b+b^2)*u": {
+          "eta": "1+b+b^2+(1+b+b^2)*u",
+          "source": "u",
+          "target": "1+b+b^2+(b+b^2)*u",
+          "source_conductor": "u",
+          "target_conductor": "u^2"
+        }
+      },
+      "reading": "structured locus: nonconstant reciprocal modes remain"
+    }
+  ]
+}

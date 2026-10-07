@@ -1,0 +1,5676 @@
+{
+  "certificate_pass": true,
+  "count_checks": [
+    {
+      "expected": 20,
+      "name": "canonical carry-pair orbit count",
+      "note": "",
+      "observed": 20,
+      "pass": true
+    },
+    {
+      "expected": 369,
+      "name": "carry-pair orbit-size sum",
+      "note": "",
+      "observed": 369,
+      "pass": true
+    },
+    {
+      "expected": 18,
+      "name": "tuple-capable one-split chart count",
+      "note": "",
+      "observed": 18,
+      "pass": true
+    },
+    {
+      "expected": 2,
+      "name": "too-small chart count",
+      "note": "",
+      "observed": 2,
+      "pass": true
+    },
+    {
+      "expected": true,
+      "name": "all size-24 regular profiles verified",
+      "note": "",
+      "observed": true,
+      "pass": true
+    },
+    {
+      "expected": [
+        120,
+        120,
+        120,
+        120,
+        120,
+        120
+      ],
+      "name": "size-12 direct support counts",
+      "note": "",
+      "observed": [
+        120,
+        120,
+        120,
+        120,
+        120,
+        120
+      ],
+      "pass": true
+    },
+    {
+      "expected": [
+        1569,
+        0
+      ],
+      "name": "support/full residual inherited separately",
+      "note": "",
+      "observed": [
+        1569,
+        0
+      ],
+      "pass": true
+    }
+  ],
+  "delivery_statement": "This finishes the bounded carry-pair one-split atlas layer for F4[u]/(u^2).  It complements the analytic FC1 theorem with exact finite charts; it does not claim the simultaneous 637-coordinate atlas.",
+  "orbit_charts": [
+    {
+      "coordinate_count": 7,
+      "normalizer_orbit_count": 0,
+      "path": "u->u->u",
+      "reason": "moving orbit plus four fixed macro/residual coordinates has only 7 coordinates, below tuple size 14",
+      "representative": {
+        "left_eta": "(w+1)u",
+        "middle": "u",
+        "right_eta": "(w+1)u",
+        "source": "u",
+        "target": "u"
+      },
+      "size": 3,
+      "source_index": 0,
+      "status": "requires_companion_coordinates",
+      "support_count": 0,
+      "tuple_label": {
+        "closure_defect_label": "filtered_carry_pair_path:u->u->u",
+        "full_filtered_residual": 1569,
+        "h3_contraction_visible_from_h4_invisible": 1470,
+        "h4_visible_atoms": 72,
+        "hygiene": [
+          "support residual 0 is not full filtered closure",
+          "K_CH is a Fisher-shadow channel, not a standalone Ext_CH detector",
+          "quotient sufficiency is relative to the declared finite skeleton"
+        ],
+        "kappa_source": "FC2 filtered section class [kappa]",
+        "remaining_invisible_atoms": 27,
+        "support_projection_residual": 0
+      }
+    },
+    {
+      "coordinate_count": 10,
+      "normalizer_orbit_count": 0,
+      "path": "u->u->u",
+      "reason": "moving orbit plus four fixed macro/residual coordinates has only 10 coordinates, below tuple size 14",
+      "representative": {
+        "left_eta": "(w+1)u",
+        "middle": "u",
+        "right_eta": "u",
+        "source": "u",
+        "target": "u"
+      },
+      "size": 6,
+      "source_index": 1,
+      "status": "requires_companion_coordinates",
+      "support_count": 0,
+      "tuple_label": {
+        "closure_defect_label": "filtered_carry_pair_path:u->u->u",
+        "full_filtered_residual": 1569,
+        "h3_contraction_visible_from_h4_invisible": 1470,
+        "h4_visible_atoms": 72,
+        "hygiene": [
+          "support residual 0 is not full filtered closure",
+          "K_CH is a Fisher-shadow channel, not a standalone Ext_CH detector",
+          "quotient sufficiency is relative to the declared finite skeleton"
+        ],
+        "kappa_source": "FC2 filtered section class [kappa]",
+        "remaining_invisible_atoms": 27,
+        "support_projection_residual": 0
+      }
+    },
+    {
+      "by_fixed_coordinate_count": [
+        {
+          "determinant_character_distribution": {
+            "sign-nontrivial": 594,
+            "trivial": 81422
+          },
+          "fixed_coordinate_count": 0,
+          "fixed_subset_choices": 1,
+          "moving_coordinate_count": 14,
+          "moving_orbit_count": 82016,
+          "orbit_size_distribution": {
+            "12": 594,
+            "24": 81422
+          },
+          "stabilizer_order_distribution": {
+            "1": 81422,
+            "2": 594
+          },
+          "support_count": 1961256,
+          "tuple_orbit_count": 82016
+        },
+        {
+          "determinant_character_distribution": {
+            "trivial": 416024
+          },
+          "fixed_coordinate_count": 1,
+          "fixed_subset_choices": 4,
+          "moving_coordinate_count": 13,
+          "moving_orbit_count": 104006,
+          "orbit_size_distribution": {
+            "24": 416024
+          },
+          "stabilizer_order_distribution": {
+            "1": 416024
+          },
+          "support_count": 9984576,
+          "tuple_orbit_count": 416024
+        },
+        {
+          "determinant_character_distribution": {
+            "sign-nontrivial": 60,
+            "trivial": 678132
+          },
+          "fixed_coordinate_count": 2,
+          "fixed_subset_choices": 6,
+          "moving_coordinate_count": 12,
+          "moving_orbit_count": 113032,
+          "orbit_size_distribution": {
+            "12": 3996,
+            "2": 18,
+            "24": 673992,
+            "4": 24,
+            "6": 126,
+            "8": 36
+          },
+          "stabilizer_order_distribution": {
+            "1": 673992,
+            "12": 18,
+            "2": 3996,
+            "3": 36,
+            "4": 126,
+            "6": 24
+          },
+          "support_count": 16224936,
+          "tuple_orbit_count": 678192
+        },
+        {
+          "determinant_character_distribution": {
+            "trivial": 416024
+          },
+          "fixed_coordinate_count": 3,
+          "fixed_subset_choices": 4,
+          "moving_coordinate_count": 11,
+          "moving_orbit_count": 104006,
+          "orbit_size_distribution": {
+            "24": 416024
+          },
+          "stabilizer_order_distribution": {
+            "1": 416024
+          },
+          "support_count": 9984576,
+          "tuple_orbit_count": 416024
+        },
+        {
+          "determinant_character_distribution": {
+            "sign-nontrivial": 594,
+            "trivial": 81422
+          },
+          "fixed_coordinate_count": 4,
+          "fixed_subset_choices": 1,
+          "moving_coordinate_count": 10,
+          "moving_orbit_count": 82016,
+          "orbit_size_distribution": {
+            "12": 594,
+            "24": 81422
+          },
+          "stabilizer_order_distribution": {
+            "1": 81422,
+            "2": 594
+          },
+          "support_count": 1961256,
+          "tuple_orbit_count": 82016
+        }
+      ],
+      "coordinate_count": 28,
+      "cycle_profile": {
+        "1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1": 1,
+        "2,2,2,2,2,2,2,2,2,2,2,2": 9,
+        "3,3,3,3,3,3,3,3": 2,
+        "4,4,4,4,4,4": 6,
+        "6,6,6,6": 6
+      },
+      "determinant_character_distribution": {
+        "sign-nontrivial": 1248,
+        "trivial": 1673024
+      },
+      "normalizer_orbit_count": 1674272,
+      "orbit_size_distribution": {
+        "12": 5184,
+        "2": 18,
+        "24": 1668884,
+        "4": 24,
+        "6": 126,
+        "8": 36
+      },
+      "path": "u->u->u^2",
+      "profile_source": "empirical/reports/fc1_noether_moving_tuple_census_f4_u2_size24.json",
+      "regular_profile_verified": true,
+      "representative": {
+        "left_eta": "1",
+        "middle": "u",
+        "right_eta": "(w+1)u",
+        "source": "u",
+        "target": "u^2"
+      },
+      "size": 24,
+      "source_index": 2,
+      "stabilizer_order_distribution": {
+        "1": 1668884,
+        "12": 18,
+        "2": 5184,
+        "3": 36,
+        "4": 126,
+        "6": 24
+      },
+      "status": "enumerated_by_regular_size24_profile",
+      "support_count": 40116600,
+      "tuple_label": {
+        "closure_defect_label": "filtered_carry_pair_path:u->u->u^2",
+        "full_filtered_residual": 1569,
+        "h3_contraction_visible_from_h4_invisible": 1470,
+        "h4_visible_atoms": 72,
+        "hygiene": [
+          "support residual 0 is not full filtered closure",
+          "K_CH is a Fisher-shadow channel, not a standalone Ext_CH detector",
+          "quotient sufficiency is relative to the declared finite skeleton"
+        ],
+        "kappa_source": "FC2 filtered section class [kappa]",
+        "remaining_invisible_atoms": 27,
+        "support_projection_residual": 0
+      }
+    },
+    {
+      "coordinate_count": 16,
+      "determinant_character_distribution": {
+        "sign-nontrivial": 12,
+        "trivial": 3
+      },
+      "fixed_coverage_distribution": {
+        "PE:u,PE:u^2": 1,
+        "PE:u,PE:u^2,VIS:h4_visible": 1,
+        "PE:u,PE:u^2,VIS:h4_visible,VIS:remaining_invisible": 5,
+        "PE:u,PE:u^2,VIS:remaining_invisible": 1,
+        "PE:u,VIS:h4_visible": 1,
+        "PE:u,VIS:h4_visible,VIS:remaining_invisible": 1,
+        "PE:u,VIS:remaining_invisible": 1,
+        "PE:u^2,VIS:h4_visible": 1,
+        "PE:u^2,VIS:h4_visible,VIS:remaining_invisible": 1,
+        "PE:u^2,VIS:remaining_invisible": 1,
+        "VIS:h4_visible,VIS:remaining_invisible": 1
+      },
+      "normalizer_orbit_count": 15,
+      "orbit_size_distribution": {
+        "1": 6,
+        "12": 7,
+        "24": 1,
+        "6": 1
+      },
+      "path": "u->u->u^2",
+      "representative": {
+        "left_eta": "1",
+        "middle": "u",
+        "right_eta": "u",
+        "source": "u",
+        "target": "u^2"
+      },
+      "sample_orbits": [
+        {
+          "determinant_character": "sign-nontrivial",
+          "orbit_size": 6,
+          "stabilizer_order": 4,
+          "support_summary": {
+            "fixed_ids": [
+              "PE:u",
+              "PE:u^2",
+              "VIS:h4_visible",
+              "VIS:remaining_invisible"
+            ],
+            "kind_counts": {
+              "moving_carry_pair_coordinate": 10,
+              "packet_energy": 2,
+              "residual_visibility_bucket": 2
+            },
+            "moving_count": 10,
+            "moving_ids_sample": [
+              "M:0",
+              "M:1",
+              "M:2",
+              "M:3",
+              "M:4",
+              "M:5",
+              "M:6",
+              "M:7"
+            ],
+            "support_ids": [
+              "PE:u",
+              "PE:u^2",
+              "VIS:h4_visible",
+              "VIS:remaining_invisible",
+              "M:0",
+              "M:1",
+              "M:2",
+              "M:3",
+              "M:4",
+              "M:5",
+              "M:6",
+              "M:7",
+              "M:8",
+              "M:9"
+            ]
+          }
+        },
+        {
+          "determinant_character": "sign-nontrivial",
+          "orbit_size": 12,
+          "stabilizer_order": 2,
+          "support_summary": {
+            "fixed_ids": [
+              "PE:u",
+              "PE:u^2",
+              "VIS:h4_visible",
+              "VIS:remaining_invisible"
+            ],
+            "kind_counts": {
+              "moving_carry_pair_coordinate": 10,
+              "packet_energy": 2,
+              "residual_visibility_bucket": 2
+            },
+            "moving_count": 10,
+            "moving_ids_sample": [
+              "M:0",
+              "M:1",
+              "M:2",
+              "M:3",
+              "M:4",
+              "M:5",
+              "M:6",
+              "M:7"
+            ],
+            "support_ids": [
+              "PE:u",
+              "PE:u^2",
+              "VIS:h4_visible",
+              "VIS:remaining_invisible",
+              "M:0",
+              "M:1",
+              "M:2",
+              "M:3",
+              "M:4",
+              "M:5",
+              "M:6",
+              "M:7",
+              "M:8",
+              "M:10"
+            ]
+          }
+        },
+        {
+          "determinant_character": "trivial",
+          "orbit_size": 12,
+          "stabilizer_order": 2,
+          "support_summary": {
+            "fixed_ids": [
+              "PE:u",
+              "PE:u^2",
+              "VIS:h4_visible",
+              "VIS:remaining_invisible"
+            ],
+            "kind_counts": {
+              "moving_carry_pair_coordinate": 10,
+              "packet_energy": 2,
+              "residual_visibility_bucket": 2
+            },
+            "moving_count": 10,
+            "moving_ids_sample": [
+              "M:0",
+              "M:1",
+              "M:2",
+              "M:3",
+              "M:4",
+              "M:5",
+              "M:6",
+              "M:7"
+            ],
+            "support_ids": [
+              "PE:u",
+              "PE:u^2",
+              "VIS:h4_visible",
+              "VIS:remaining_invisible",
+              "M:0",
+              "M:1",
+              "M:2",
+              "M:3",
+              "M:4",
+              "M:5",
+              "M:6",
+              "M:7",
+              "M:9",
+              "M:10"
+            ]
+          }
+        },
+        {
+          "determinant_character": "trivial",
+          "orbit_size": 24,
+          "stabilizer_order": 1,
+          "support_summary": {
+            "fixed_ids": [
+              "PE:u",
+              "PE:u^2",
+              "VIS:h4_visible",
+              "VIS:remaining_invisible"
+            ],
+            "kind_counts": {
+              "moving_carry_pair_coordinate": 10,
+              "packet_energy": 2,
+              "residual_visibility_bucket": 2
+            },
+            "moving_count": 10,
+            "moving_ids_sample": [
+              "M:0",
+              "M:1",
+              "M:2",
+              "M:3",
+              "M:4",
+              "M:5",
+              "M:6",
+              "M:8"
+            ],
+            "support_ids": [
+              "PE:u",
+              "PE:u^2",
+              "VIS:h4_visible",
+              "VIS:remaining_invisible",
+              "M:0",
+              "M:1",
+              "M:2",
+              "M:3",
+              "M:4",
+              "M:5",
+              "M:6",
+              "M:8",
+              "M:9",
+              "M:10"
+            ]
+          }
+        },
+        {
+          "determinant_character": "trivial",
+          "orbit_size": 12,
+          "stabilizer_order": 2,
+          "support_summary": {
+            "fixed_ids": [
+              "PE:u",
+              "PE:u^2",
+              "VIS:h4_visible",
+              "VIS:remaining_invisible"
+            ],
+            "kind_counts": {
+              "moving_carry_pair_coordinate": 10,
+              "packet_energy": 2,
+              "residual_visibility_bucket": 2
+            },
+            "moving_count": 10,
+            "moving_ids_sample": [
+              "M:0",
+              "M:1",
+              "M:2",
+              "M:3",
+              "M:4",
+              "M:6",
+              "M:7",
+              "M:8"
+            ],
+            "support_ids": [
+              "PE:u",
+              "PE:u^2",
+              "VIS:h4_visible",
+              "VIS:remaining_invisible",
+              "M:0",
+              "M:1",
+              "M:2",
+              "M:3",
+              "M:4",
+              "M:6",
+              "M:7",
+              "M:8",
+              "M:9",
+              "M:10"
+            ]
+          }
+        },
+        {
+          "determinant_character": "sign-nontrivial",
+          "orbit_size": 12,
+          "stabilizer_order": 2,
+          "support_summary": {
+            "fixed_ids": [
+              "PE:u",
+              "PE:u^2",
+              "VIS:h4_visible"
+            ],
+            "kind_counts": {
+              "moving_carry_pair_coordinate": 11,
+              "packet_energy": 2,
+              "residual_visibility_bucket": 1
+            },
+            "moving_count": 11,
+            "moving_ids_sample": [
+              "M:0",
+              "M:1",
+              "M:2",
+              "M:3",
+              "M:4",
+              "M:5",
+              "M:6",
+              "M:7"
+            ],
+            "support_ids": [
+              "PE:u",
+              "PE:u^2",
+              "VIS:h4_visible",
+              "M:0",
+              "M:1",
+              "M:2",
+              "M:3",
+              "M:4",
+              "M:5",
+              "M:6",
+              "M:7",
+              "M:8",
+              "M:9",
+              "M:10"
+            ]
+          }
+        },
+        {
+          "determinant_character": "sign-nontrivial",
+          "orbit_size": 12,
+          "stabilizer_order": 2,
+          "support_summary": {
+            "fixed_ids": [
+              "PE:u",
+              "PE:u^2",
+              "VIS:remaining_invisible"
+            ],
+            "kind_counts": {
+              "moving_carry_pair_coordinate": 11,
+              "packet_energy": 2,
+              "residual_visibility_bucket": 1
+            },
+            "moving_count": 11,
+            "moving_ids_sample": [
+              "M:0",
+              "M:1",
+              "M:2",
+              "M:3",
+              "M:4",
+              "M:5",
+              "M:6",
+              "M:7"
+            ],
+            "support_ids": [
+              "PE:u",
+              "PE:u^2",
+              "VIS:remaining_invisible",
+              "M:0",
+              "M:1",
+              "M:2",
+              "M:3",
+              "M:4",
+              "M:5",
+              "M:6",
+              "M:7",
+              "M:8",
+              "M:9",
+              "M:10"
+            ]
+          }
+        },
+        {
+          "determinant_character": "sign-nontrivial",
+          "orbit_size": 12,
+          "stabilizer_order": 2,
+          "support_summary": {
+            "fixed_ids": [
+              "PE:u",
+              "VIS:h4_visible",
+              "VIS:remaining_invisible"
+            ],
+            "kind_counts": {
+              "moving_carry_pair_coordinate": 11,
+              "packet_energy": 1,
+              "residual_visibility_bucket": 2
+            },
+            "moving_count": 11,
+            "moving_ids_sample": [
+              "M:0",
+              "M:1",
+              "M:2",
+              "M:3",
+              "M:4",
+              "M:5",
+              "M:6",
+              "M:7"
+            ],
+            "support_ids": [
+              "PE:u",
+              "VIS:h4_visible",
+              "VIS:remaining_invisible",
+              "M:0",
+              "M:1",
+              "M:2",
+              "M:3",
+              "M:4",
+              "M:5",
+              "M:6",
+              "M:7",
+              "M:8",
+              "M:9",
+              "M:10"
+            ]
+          }
+        },
+        {
+          "determinant_character": "sign-nontrivial",
+          "orbit_size": 12,
+          "stabilizer_order": 2,
+          "support_summary": {
+            "fixed_ids": [
+              "PE:u^2",
+              "VIS:h4_visible",
+              "VIS:remaining_invisible"
+            ],
+            "kind_counts": {
+              "moving_carry_pair_coordinate": 11,
+              "packet_energy": 1,
+              "residual_visibility_bucket": 2
+            },
+            "moving_count": 11,
+            "moving_ids_sample": [
+              "M:0",
+              "M:1",
+              "M:2",
+              "M:3",
+              "M:4",
+              "M:5",
+              "M:6",
+              "M:7"
+            ],
+            "support_ids": [
+              "PE:u^2",
+              "VIS:h4_visible",
+              "VIS:remaining_invisible",
+              "M:0",
+              "M:1",
+              "M:2",
+              "M:3",
+              "M:4",
+              "M:5",
+              "M:6",
+              "M:7",
+              "M:8",
+              "M:9",
+              "M:10"
+            ]
+          }
+        },
+        {
+          "determinant_character": "sign-nontrivial",
+          "orbit_size": 1,
+          "stabilizer_order": 24,
+          "support_summary": {
+            "fixed_ids": [
+              "PE:u",
+              "PE:u^2"
+            ],
+            "kind_counts": {
+              "moving_carry_pair_coordinate": 12,
+              "packet_energy": 2
+            },
+            "moving_count": 12,
+            "moving_ids_sample": [
+              "M:0",
+              "M:1",
+              "M:2",
+              "M:3",
+              "M:4",
+              "M:5",
+              "M:6",
+              "M:7"
+            ],
+            "support_ids": [
+              "PE:u",
+              "PE:u^2",
+              "M:0",
+              "M:1",
+              "M:2",
+              "M:3",
+              "M:4",
+              "M:5",
+              "M:6",
+              "M:7",
+              "M:8",
+              "M:9",
+              "M:10",
+              "M:11"
+            ]
+          }
+        },
+        {
+          "determinant_character": "sign-nontrivial",
+          "orbit_size": 1,
+          "stabilizer_order": 24,
+          "support_summary": {
+            "fixed_ids": [
+              "PE:u",
+              "VIS:h4_visible"
+            ],
+            "kind_counts": {
+              "moving_carry_pair_coordinate": 12,
+              "packet_energy": 1,
+              "residual_visibility_bucket": 1
+            },
+            "moving_count": 12,
+            "moving_ids_sample": [
+              "M:0",
+              "M:1",
+              "M:2",
+              "M:3",
+              "M:4",
+              "M:5",
+              "M:6",
+              "M:7"
+            ],
+            "support_ids": [
+              "PE:u",
+              "VIS:h4_visible",
+              "M:0",
+              "M:1",
+              "M:2",
+              "M:3",
+              "M:4",
+              "M:5",
+              "M:6",
+              "M:7",
+              "M:8",
+              "M:9",
+              "M:10",
+              "M:11"
+            ]
+          }
+        },
+        {
+          "determinant_character": "sign-nontrivial",
+          "orbit_size": 1,
+          "stabilizer_order": 24,
+          "support_summary": {
+            "fixed_ids": [
+              "PE:u^2",
+              "VIS:h4_visible"
+            ],
+            "kind_counts": {
+              "moving_carry_pair_coordinate": 12,
+              "packet_energy": 1,
+              "residual_visibility_bucket": 1
+            },
+            "moving_count": 12,
+            "moving_ids_sample": [
+              "M:0",
+              "M:1",
+              "M:2",
+              "M:3",
+              "M:4",
+              "M:5",
+              "M:6",
+              "M:7"
+            ],
+            "support_ids": [
+              "PE:u^2",
+              "VIS:h4_visible",
+              "M:0",
+              "M:1",
+              "M:2",
+              "M:3",
+              "M:4",
+              "M:5",
+              "M:6",
+              "M:7",
+              "M:8",
+              "M:9",
+              "M:10",
+              "M:11"
+            ]
+          }
+        }
+      ],
+      "size": 12,
+      "source_index": 3,
+      "stabilizer_order_distribution": {
+        "1": 1,
+        "2": 7,
+        "24": 6,
+        "4": 1
+      },
+      "status": "enumerated",
+      "support_count": 120,
+      "tuple_label": {
+        "closure_defect_label": "filtered_carry_pair_path:u->u->u^2",
+        "full_filtered_residual": 1569,
+        "h3_contraction_visible_from_h4_invisible": 1470,
+        "h4_visible_atoms": 72,
+        "hygiene": [
+          "support residual 0 is not full filtered closure",
+          "K_CH is a Fisher-shadow channel, not a standalone Ext_CH detector",
+          "quotient sufficiency is relative to the declared finite skeleton"
+        ],
+        "kappa_source": "FC2 filtered section class [kappa]",
+        "remaining_invisible_atoms": 27,
+        "support_projection_residual": 0
+      }
+    },
+    {
+      "by_fixed_coordinate_count": [
+        {
+          "determinant_character_distribution": {
+            "sign-nontrivial": 594,
+            "trivial": 81422
+          },
+          "fixed_coordinate_count": 0,
+          "fixed_subset_choices": 1,
+          "moving_coordinate_count": 14,
+          "moving_orbit_count": 82016,
+          "orbit_size_distribution": {
+            "12": 594,
+            "24": 81422
+          },
+          "stabilizer_order_distribution": {
+            "1": 81422,
+            "2": 594
+          },
+          "support_count": 1961256,
+          "tuple_orbit_count": 82016
+        },
+        {
+          "determinant_character_distribution": {
+            "trivial": 416024
+          },
+          "fixed_coordinate_count": 1,
+          "fixed_subset_choices": 4,
+          "moving_coordinate_count": 13,
+          "moving_orbit_count": 104006,
+          "orbit_size_distribution": {
+            "24": 416024
+          },
+          "stabilizer_order_distribution": {
+            "1": 416024
+          },
+          "support_count": 9984576,
+          "tuple_orbit_count": 416024
+        },
+        {
+          "determinant_character_distribution": {
+            "sign-nontrivial": 60,
+            "trivial": 678132
+          },
+          "fixed_coordinate_count": 2,
+          "fixed_subset_choices": 6,
+          "moving_coordinate_count": 12,
+          "moving_orbit_count": 113032,
+          "orbit_size_distribution": {
+            "12": 3996,
+            "2": 18,
+            "24": 673992,
+            "4": 24,
+            "6": 126,
+            "8": 36
+          },
+          "stabilizer_order_distribution": {
+            "1": 673992,
+            "12": 18,
+            "2": 3996,
+            "3": 36,
+            "4": 126,
+            "6": 24
+          },
+          "support_count": 16224936,
+          "tuple_orbit_count": 678192
+        },
+        {
+          "determinant_character_distribution": {
+            "trivial": 416024
+          },
+          "fixed_coordinate_count": 3,
+          "fixed_subset_choices": 4,
+          "moving_coordinate_count": 11,
+          "moving_orbit_count": 104006,
+          "orbit_size_distribution": {
+            "24": 416024
+          },
+          "stabilizer_order_distribution": {
+            "1": 416024
+          },
+          "support_count": 9984576,
+          "tuple_orbit_count": 416024
+        },
+        {
+          "determinant_character_distribution": {
+            "sign-nontrivial": 594,
+            "trivial": 81422
+          },
+          "fixed_coordinate_count": 4,
+          "fixed_subset_choices": 1,
+          "moving_coordinate_count": 10,
+          "moving_orbit_count": 82016,
+          "orbit_size_distribution": {
+            "12": 594,
+            "24": 81422
+          },
+          "stabilizer_order_distribution": {
+            "1": 81422,
+            "2": 594
+          },
+          "support_count": 1961256,
+          "tuple_orbit_count": 82016
+        }
+      ],
+      "coordinate_count": 28,
+      "cycle_profile": {
+        "1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1": 1,
+        "2,2,2,2,2,2,2,2,2,2,2,2": 9,
+        "3,3,3,3,3,3,3,3": 2,
+        "4,4,4,4,4,4": 6,
+        "6,6,6,6": 6
+      },
+      "determinant_character_distribution": {
+        "sign-nontrivial": 1248,
+        "trivial": 1673024
+      },
+      "normalizer_orbit_count": 1674272,
+      "orbit_size_distribution": {
+        "12": 5184,
+        "2": 18,
+        "24": 1668884,
+        "4": 24,
+        "6": 126,
+        "8": 36
+      },
+      "path": "u^2->u->u",
+      "profile_source": "empirical/reports/fc1_noether_moving_tuple_census_f4_u2_size24.json",
+      "regular_profile_verified": true,
+      "representative": {
+        "left_eta": "(w+1)u",
+        "middle": "u",
+        "right_eta": "1",
+        "source": "u^2",
+        "target": "u"
+      },
+      "size": 24,
+      "source_index": 4,
+      "stabilizer_order_distribution": {
+        "1": 1668884,
+        "12": 18,
+        "2": 5184,
+        "3": 36,
+        "4": 126,
+        "6": 24
+      },
+      "status": "enumerated_by_regular_size24_profile",
+      "support_count": 40116600,
+      "tuple_label": {
+        "closure_defect_label": "filtered_carry_pair_path:u^2->u->u",
+        "full_filtered_residual": 1569,
+        "h3_contraction_visible_from_h4_invisible": 1470,
+        "h4_visible_atoms": 72,
+        "hygiene": [
+          "support residual 0 is not full filtered closure",
+          "K_CH is a Fisher-shadow channel, not a standalone Ext_CH detector",
+          "quotient sufficiency is relative to the declared finite skeleton"
+        ],
+        "kappa_source": "FC2 filtered section class [kappa]",
+        "remaining_invisible_atoms": 27,
+        "support_projection_residual": 0
+      }
+    },
+    {
+      "coordinate_count": 16,
+      "determinant_character_distribution": {
+        "sign-nontrivial": 12,
+        "trivial": 3
+      },
+      "fixed_coverage_distribution": {
+        "PE:u,PE:u^2": 1,
+        "PE:u,PE:u^2,VIS:h4_visible": 1,
+        "PE:u,PE:u^2,VIS:h4_visible,VIS:remaining_invisible": 5,
+        "PE:u,PE:u^2,VIS:remaining_invisible": 1,
+        "PE:u,VIS:h4_visible": 1,
+        "PE:u,VIS:h4_visible,VIS:remaining_invisible": 1,
+        "PE:u,VIS:remaining_invisible": 1,
+        "PE:u^2,VIS:h4_visible": 1,
+        "PE:u^2,VIS:h4_visible,VIS:remaining_invisible": 1,
+        "PE:u^2,VIS:remaining_invisible": 1,
+        "VIS:h4_visible,VIS:remaining_invisible": 1
+      },
+      "normalizer_orbit_count": 15,
+      "orbit_size_distribution": {
+        "1": 6,
+        "12": 7,
+        "24": 1,
+        "6": 1
+      },
+      "path": "u^2->u->u",
+      "representative": {
+        "left_eta": "(w+1)u",
+        "middle": "u",
+        "right_eta": "w+1",
+        "source": "u^2",
+        "target": "u"
+      },
+      "sample_orbits": [
+        {
+          "determinant_character": "sign-nontrivial",
+          "orbit_size": 6,
+          "stabilizer_order": 4,
+          "support_summary": {
+            "fixed_ids": [
+              "PE:u",
+              "PE:u^2",
+              "VIS:h4_visible",
+              "VIS:remaining_invisible"
+            ],
+            "kind_counts": {
+              "moving_carry_pair_coordinate": 10,
+              "packet_energy": 2,
+              "residual_visibility_bucket": 2
+            },
+            "moving_count": 10,
+            "moving_ids_sample": [
+              "M:0",
+              "M:1",
+              "M:2",
+              "M:3",
+              "M:4",
+              "M:5",
+              "M:6",
+              "M:7"
+            ],
+            "support_ids": [
+              "PE:u",
+              "PE:u^2",
+              "VIS:h4_visible",
+              "VIS:remaining_invisible",
+              "M:0",
+              "M:1",
+              "M:2",
+              "M:3",
+              "M:4",
+              "M:5",
+              "M:6",
+              "M:7",
+              "M:8",
+              "M:9"
+            ]
+          }
+        },
+        {
+          "determinant_character": "sign-nontrivial",
+          "orbit_size": 12,
+          "stabilizer_order": 2,
+          "support_summary": {
+            "fixed_ids": [
+              "PE:u",
+              "PE:u^2",
+              "VIS:h4_visible",
+              "VIS:remaining_invisible"
+            ],
+            "kind_counts": {
+              "moving_carry_pair_coordinate": 10,
+              "packet_energy": 2,
+              "residual_visibility_bucket": 2
+            },
+            "moving_count": 10,
+            "moving_ids_sample": [
+              "M:0",
+              "M:1",
+              "M:2",
+              "M:3",
+              "M:4",
+              "M:5",
+              "M:6",
+              "M:7"
+            ],
+            "support_ids": [
+              "PE:u",
+              "PE:u^2",
+              "VIS:h4_visible",
+              "VIS:remaining_invisible",
+              "M:0",
+              "M:1",
+              "M:2",
+              "M:3",
+              "M:4",
+              "M:5",
+              "M:6",
+              "M:7",
+              "M:8",
+              "M:10"
+            ]
+          }
+        },
+        {
+          "determinant_character": "trivial",
+          "orbit_size": 12,
+          "stabilizer_order": 2,
+          "support_summary": {
+            "fixed_ids": [
+              "PE:u",
+              "PE:u^2",
+              "VIS:h4_visible",
+              "VIS:remaining_invisible"
+            ],
+            "kind_counts": {
+              "moving_carry_pair_coordinate": 10,
+              "packet_energy": 2,
+              "residual_visibility_bucket": 2
+            },
+            "moving_count": 10,
+            "moving_ids_sample": [
+              "M:0",
+              "M:1",
+              "M:2",
+              "M:3",
+              "M:4",
+              "M:5",
+              "M:6",
+              "M:8"
+            ],
+            "support_ids": [
+              "PE:u",
+              "PE:u^2",
+              "VIS:h4_visible",
+              "VIS:remaining_invisible",
+              "M:0",
+              "M:1",
+              "M:2",
+              "M:3",
+              "M:4",
+              "M:5",
+              "M:6",
+              "M:8",
+              "M:9",
+              "M:10"
+            ]
+          }
+        },
+        {
+          "determinant_character": "trivial",
+          "orbit_size": 24,
+          "stabilizer_order": 1,
+          "support_summary": {
+            "fixed_ids": [
+              "PE:u",
+              "PE:u^2",
+              "VIS:h4_visible",
+              "VIS:remaining_invisible"
+            ],
+            "kind_counts": {
+              "moving_carry_pair_coordinate": 10,
+              "packet_energy": 2,
+              "residual_visibility_bucket": 2
+            },
+            "moving_count": 10,
+            "moving_ids_sample": [
+              "M:0",
+              "M:1",
+              "M:2",
+              "M:3",
+              "M:4",
+              "M:5",
+              "M:7",
+              "M:8"
+            ],
+            "support_ids": [
+              "PE:u",
+              "PE:u^2",
+              "VIS:h4_visible",
+              "VIS:remaining_invisible",
+              "M:0",
+              "M:1",
+              "M:2",
+              "M:3",
+              "M:4",
+              "M:5",
+              "M:7",
+              "M:8",
+              "M:9",
+              "M:10"
+            ]
+          }
+        },
+        {
+          "determinant_character": "trivial",
+          "orbit_size": 12,
+          "stabilizer_order": 2,
+          "support_summary": {
+            "fixed_ids": [
+              "PE:u",
+              "PE:u^2",
+              "VIS:h4_visible",
+              "VIS:remaining_invisible"
+            ],
+            "kind_counts": {
+              "moving_carry_pair_coordinate": 10,
+              "packet_energy": 2,
+              "residual_visibility_bucket": 2
+            },
+            "moving_count": 10,
+            "moving_ids_sample": [
+              "M:0",
+              "M:1",
+              "M:2",
+              "M:3",
+              "M:4",
+              "M:6",
+              "M:7",
+              "M:8"
+            ],
+            "support_ids": [
+              "PE:u",
+              "PE:u^2",
+              "VIS:h4_visible",
+              "VIS:remaining_invisible",
+              "M:0",
+              "M:1",
+              "M:2",
+              "M:3",
+              "M:4",
+              "M:6",
+              "M:7",
+              "M:8",
+              "M:9",
+              "M:10"
+            ]
+          }
+        },
+        {
+          "determinant_character": "sign-nontrivial",
+          "orbit_size": 12,
+          "stabilizer_order": 2,
+          "support_summary": {
+            "fixed_ids": [
+              "PE:u",
+              "PE:u^2",
+              "VIS:h4_visible"
+            ],
+            "kind_counts": {
+              "moving_carry_pair_coordinate": 11,
+              "packet_energy": 2,
+              "residual_visibility_bucket": 1
+            },
+            "moving_count": 11,
+            "moving_ids_sample": [
+              "M:0",
+              "M:1",
+              "M:2",
+              "M:3",
+              "M:4",
+              "M:5",
+              "M:6",
+              "M:7"
+            ],
+            "support_ids": [
+              "PE:u",
+              "PE:u^2",
+              "VIS:h4_visible",
+              "M:0",
+              "M:1",
+              "M:2",
+              "M:3",
+              "M:4",
+              "M:5",
+              "M:6",
+              "M:7",
+              "M:8",
+              "M:9",
+              "M:10"
+            ]
+          }
+        },
+        {
+          "determinant_character": "sign-nontrivial",
+          "orbit_size": 12,
+          "stabilizer_order": 2,
+          "support_summary": {
+            "fixed_ids": [
+              "PE:u",
+              "PE:u^2",
+              "VIS:remaining_invisible"
+            ],
+            "kind_counts": {
+              "moving_carry_pair_coordinate": 11,
+              "packet_energy": 2,
+              "residual_visibility_bucket": 1
+            },
+            "moving_count": 11,
+            "moving_ids_sample": [
+              "M:0",
+              "M:1",
+              "M:2",
+              "M:3",
+              "M:4",
+              "M:5",
+              "M:6",
+              "M:7"
+            ],
+            "support_ids": [
+              "PE:u",
+              "PE:u^2",
+              "VIS:remaining_invisible",
+              "M:0",
+              "M:1",
+              "M:2",
+              "M:3",
+              "M:4",
+              "M:5",
+              "M:6",
+              "M:7",
+              "M:8",
+              "M:9",
+              "M:10"
+            ]
+          }
+        },
+        {
+          "determinant_character": "sign-nontrivial",
+          "orbit_size": 12,
+          "stabilizer_order": 2,
+          "support_summary": {
+            "fixed_ids": [
+              "PE:u",
+              "VIS:h4_visible",
+              "VIS:remaining_invisible"
+            ],
+            "kind_counts": {
+              "moving_carry_pair_coordinate": 11,
+              "packet_energy": 1,
+              "residual_visibility_bucket": 2
+            },
+            "moving_count": 11,
+            "moving_ids_sample": [
+              "M:0",
+              "M:1",
+              "M:2",
+              "M:3",
+              "M:4",
+              "M:5",
+              "M:6",
+              "M:7"
+            ],
+            "support_ids": [
+              "PE:u",
+              "VIS:h4_visible",
+              "VIS:remaining_invisible",
+              "M:0",
+              "M:1",
+              "M:2",
+              "M:3",
+              "M:4",
+              "M:5",
+              "M:6",
+              "M:7",
+              "M:8",
+              "M:9",
+              "M:10"
+            ]
+          }
+        },
+        {
+          "determinant_character": "sign-nontrivial",
+          "orbit_size": 12,
+          "stabilizer_order": 2,
+          "support_summary": {
+            "fixed_ids": [
+              "PE:u^2",
+              "VIS:h4_visible",
+              "VIS:remaining_invisible"
+            ],
+            "kind_counts": {
+              "moving_carry_pair_coordinate": 11,
+              "packet_energy": 1,
+              "residual_visibility_bucket": 2
+            },
+            "moving_count": 11,
+            "moving_ids_sample": [
+              "M:0",
+              "M:1",
+              "M:2",
+              "M:3",
+              "M:4",
+              "M:5",
+              "M:6",
+              "M:7"
+            ],
+            "support_ids": [
+              "PE:u^2",
+              "VIS:h4_visible",
+              "VIS:remaining_invisible",
+              "M:0",
+              "M:1",
+              "M:2",
+              "M:3",
+              "M:4",
+              "M:5",
+              "M:6",
+              "M:7",
+              "M:8",
+              "M:9",
+              "M:10"
+            ]
+          }
+        },
+        {
+          "determinant_character": "sign-nontrivial",
+          "orbit_size": 1,
+          "stabilizer_order": 24,
+          "support_summary": {
+            "fixed_ids": [
+              "PE:u",
+              "PE:u^2"
+            ],
+            "kind_counts": {
+              "moving_carry_pair_coordinate": 12,
+              "packet_energy": 2
+            },
+            "moving_count": 12,
+            "moving_ids_sample": [
+              "M:0",
+              "M:1",
+              "M:2",
+              "M:3",
+              "M:4",
+              "M:5",
+              "M:6",
+              "M:7"
+            ],
+            "support_ids": [
+              "PE:u",
+              "PE:u^2",
+              "M:0",
+              "M:1",
+              "M:2",
+              "M:3",
+              "M:4",
+              "M:5",
+              "M:6",
+              "M:7",
+              "M:8",
+              "M:9",
+              "M:10",
+              "M:11"
+            ]
+          }
+        },
+        {
+          "determinant_character": "sign-nontrivial",
+          "orbit_size": 1,
+          "stabilizer_order": 24,
+          "support_summary": {
+            "fixed_ids": [
+              "PE:u",
+              "VIS:h4_visible"
+            ],
+            "kind_counts": {
+              "moving_carry_pair_coordinate": 12,
+              "packet_energy": 1,
+              "residual_visibility_bucket": 1
+            },
+            "moving_count": 12,
+            "moving_ids_sample": [
+              "M:0",
+              "M:1",
+              "M:2",
+              "M:3",
+              "M:4",
+              "M:5",
+              "M:6",
+              "M:7"
+            ],
+            "support_ids": [
+              "PE:u",
+              "VIS:h4_visible",
+              "M:0",
+              "M:1",
+              "M:2",
+              "M:3",
+              "M:4",
+              "M:5",
+              "M:6",
+              "M:7",
+              "M:8",
+              "M:9",
+              "M:10",
+              "M:11"
+            ]
+          }
+        },
+        {
+          "determinant_character": "sign-nontrivial",
+          "orbit_size": 1,
+          "stabilizer_order": 24,
+          "support_summary": {
+            "fixed_ids": [
+              "PE:u^2",
+              "VIS:h4_visible"
+            ],
+            "kind_counts": {
+              "moving_carry_pair_coordinate": 12,
+              "packet_energy": 1,
+              "residual_visibility_bucket": 1
+            },
+            "moving_count": 12,
+            "moving_ids_sample": [
+              "M:0",
+              "M:1",
+              "M:2",
+              "M:3",
+              "M:4",
+              "M:5",
+              "M:6",
+              "M:7"
+            ],
+            "support_ids": [
+              "PE:u^2",
+              "VIS:h4_visible",
+              "M:0",
+              "M:1",
+              "M:2",
+              "M:3",
+              "M:4",
+              "M:5",
+              "M:6",
+              "M:7",
+              "M:8",
+              "M:9",
+              "M:10",
+              "M:11"
+            ]
+          }
+        }
+      ],
+      "size": 12,
+      "source_index": 5,
+      "stabilizer_order_distribution": {
+        "1": 1,
+        "2": 7,
+        "24": 6,
+        "4": 1
+      },
+      "status": "enumerated",
+      "support_count": 120,
+      "tuple_label": {
+        "closure_defect_label": "filtered_carry_pair_path:u^2->u->u",
+        "full_filtered_residual": 1569,
+        "h3_contraction_visible_from_h4_invisible": 1470,
+        "h4_visible_atoms": 72,
+        "hygiene": [
+          "support residual 0 is not full filtered closure",
+          "K_CH is a Fisher-shadow channel, not a standalone Ext_CH detector",
+          "quotient sufficiency is relative to the declared finite skeleton"
+        ],
+        "kappa_source": "FC2 filtered section class [kappa]",
+        "remaining_invisible_atoms": 27,
+        "support_projection_residual": 0
+      }
+    },
+    {
+      "coordinate_count": 16,
+      "determinant_character_distribution": {
+        "sign-nontrivial": 12,
+        "trivial": 3
+      },
+      "fixed_coverage_distribution": {
+        "PE:u,PE:u^2": 1,
+        "PE:u,PE:u^2,VIS:h4_visible": 1,
+        "PE:u,PE:u^2,VIS:h4_visible,VIS:remaining_invisible": 5,
+        "PE:u,PE:u^2,VIS:remaining_invisible": 1,
+        "PE:u,VIS:h4_visible": 1,
+        "PE:u,VIS:h4_visible,VIS:remaining_invisible": 1,
+        "PE:u,VIS:remaining_invisible": 1,
+        "PE:u^2,VIS:h4_visible": 1,
+        "PE:u^2,VIS:h4_visible,VIS:remaining_invisible": 1,
+        "PE:u^2,VIS:remaining_invisible": 1,
+        "VIS:h4_visible,VIS:remaining_invisible": 1
+      },
+      "normalizer_orbit_count": 15,
+      "orbit_size_distribution": {
+        "1": 6,
+        "12": 7,
+        "24": 1,
+        "6": 1
+      },
+      "path": "u^2->u->u^2",
+      "representative": {
+        "left_eta": "1",
+        "middle": "u",
+        "right_eta": "1",
+        "source": "u^2",
+        "target": "u^2"
+      },
+      "sample_orbits": [
+        {
+          "determinant_character": "sign-nontrivial",
+          "orbit_size": 6,
+          "stabilizer_order": 4,
+          "support_summary": {
+            "fixed_ids": [
+              "PE:u",
+              "PE:u^2",
+              "VIS:h4_visible",
+              "VIS:remaining_invisible"
+            ],
+            "kind_counts": {
+              "moving_carry_pair_coordinate": 10,
+              "packet_energy": 2,
+              "residual_visibility_bucket": 2
+            },
+            "moving_count": 10,
+            "moving_ids_sample": [
+              "M:0",
+              "M:1",
+              "M:2",
+              "M:3",
+              "M:4",
+              "M:5",
+              "M:6",
+              "M:7"
+            ],
+            "support_ids": [
+              "PE:u",
+              "PE:u^2",
+              "VIS:h4_visible",
+              "VIS:remaining_invisible",
+              "M:0",
+              "M:1",
+              "M:2",
+              "M:3",
+              "M:4",
+              "M:5",
+              "M:6",
+              "M:7",
+              "M:8",
+              "M:9"
+            ]
+          }
+        },
+        {
+          "determinant_character": "sign-nontrivial",
+          "orbit_size": 12,
+          "stabilizer_order": 2,
+          "support_summary": {
+            "fixed_ids": [
+              "PE:u",
+              "PE:u^2",
+              "VIS:h4_visible",
+              "VIS:remaining_invisible"
+            ],
+            "kind_counts": {
+              "moving_carry_pair_coordinate": 10,
+              "packet_energy": 2,
+              "residual_visibility_bucket": 2
+            },
+            "moving_count": 10,
+            "moving_ids_sample": [
+              "M:0",
+              "M:1",
+              "M:2",
+              "M:3",
+              "M:4",
+              "M:5",
+              "M:6",
+              "M:7"
+            ],
+            "support_ids": [
+              "PE:u",
+              "PE:u^2",
+              "VIS:h4_visible",
+              "VIS:remaining_invisible",
+              "M:0",
+              "M:1",
+              "M:2",
+              "M:3",
+              "M:4",
+              "M:5",
+              "M:6",
+              "M:7",
+              "M:8",
+              "M:10"
+            ]
+          }
+        },
+        {
+          "determinant_character": "trivial",
+          "orbit_size": 12,
+          "stabilizer_order": 2,
+          "support_summary": {
+            "fixed_ids": [
+              "PE:u",
+              "PE:u^2",
+              "VIS:h4_visible",
+              "VIS:remaining_invisible"
+            ],
+            "kind_counts": {
+              "moving_carry_pair_coordinate": 10,
+              "packet_energy": 2,
+              "residual_visibility_bucket": 2
+            },
+            "moving_count": 10,
+            "moving_ids_sample": [
+              "M:0",
+              "M:1",
+              "M:2",
+              "M:3",
+              "M:4",
+              "M:5",
+              "M:6",
+              "M:7"
+            ],
+            "support_ids": [
+              "PE:u",
+              "PE:u^2",
+              "VIS:h4_visible",
+              "VIS:remaining_invisible",
+              "M:0",
+              "M:1",
+              "M:2",
+              "M:3",
+              "M:4",
+              "M:5",
+              "M:6",
+              "M:7",
+              "M:9",
+              "M:10"
+            ]
+          }
+        },
+        {
+          "determinant_character": "trivial",
+          "orbit_size": 24,
+          "stabilizer_order": 1,
+          "support_summary": {
+            "fixed_ids": [
+              "PE:u",
+              "PE:u^2",
+              "VIS:h4_visible",
+              "VIS:remaining_invisible"
+            ],
+            "kind_counts": {
+              "moving_carry_pair_coordinate": 10,
+              "packet_energy": 2,
+              "residual_visibility_bucket": 2
+            },
+            "moving_count": 10,
+            "moving_ids_sample": [
+              "M:0",
+              "M:1",
+              "M:2",
+              "M:3",
+              "M:4",
+              "M:5",
+              "M:6",
+              "M:8"
+            ],
+            "support_ids": [
+              "PE:u",
+              "PE:u^2",
+              "VIS:h4_visible",
+              "VIS:remaining_invisible",
+              "M:0",
+              "M:1",
+              "M:2",
+              "M:3",
+              "M:4",
+              "M:5",
+              "M:6",
+              "M:8",
+              "M:9",
+              "M:10"
+            ]
+          }
+        },
+        {
+          "determinant_character": "trivial",
+          "orbit_size": 12,
+          "stabilizer_order": 2,
+          "support_summary": {
+            "fixed_ids": [
+              "PE:u",
+              "PE:u^2",
+              "VIS:h4_visible",
+              "VIS:remaining_invisible"
+            ],
+            "kind_counts": {
+              "moving_carry_pair_coordinate": 10,
+              "packet_energy": 2,
+              "residual_visibility_bucket": 2
+            },
+            "moving_count": 10,
+            "moving_ids_sample": [
+              "M:0",
+              "M:1",
+              "M:2",
+              "M:3",
+              "M:4",
+              "M:6",
+              "M:7",
+              "M:8"
+            ],
+            "support_ids": [
+              "PE:u",
+              "PE:u^2",
+              "VIS:h4_visible",
+              "VIS:remaining_invisible",
+              "M:0",
+              "M:1",
+              "M:2",
+              "M:3",
+              "M:4",
+              "M:6",
+              "M:7",
+              "M:8",
+              "M:9",
+              "M:10"
+            ]
+          }
+        },
+        {
+          "determinant_character": "sign-nontrivial",
+          "orbit_size": 12,
+          "stabilizer_order": 2,
+          "support_summary": {
+            "fixed_ids": [
+              "PE:u",
+              "PE:u^2",
+              "VIS:h4_visible"
+            ],
+            "kind_counts": {
+              "moving_carry_pair_coordinate": 11,
+              "packet_energy": 2,
+              "residual_visibility_bucket": 1
+            },
+            "moving_count": 11,
+            "moving_ids_sample": [
+              "M:0",
+              "M:1",
+              "M:2",
+              "M:3",
+              "M:4",
+              "M:5",
+              "M:6",
+              "M:7"
+            ],
+            "support_ids": [
+              "PE:u",
+              "PE:u^2",
+              "VIS:h4_visible",
+              "M:0",
+              "M:1",
+              "M:2",
+              "M:3",
+              "M:4",
+              "M:5",
+              "M:6",
+              "M:7",
+              "M:8",
+              "M:9",
+              "M:10"
+            ]
+          }
+        },
+        {
+          "determinant_character": "sign-nontrivial",
+          "orbit_size": 12,
+          "stabilizer_order": 2,
+          "support_summary": {
+            "fixed_ids": [
+              "PE:u",
+              "PE:u^2",
+              "VIS:remaining_invisible"
+            ],
+            "kind_counts": {
+              "moving_carry_pair_coordinate": 11,
+              "packet_energy": 2,
+              "residual_visibility_bucket": 1
+            },
+            "moving_count": 11,
+            "moving_ids_sample": [
+              "M:0",
+              "M:1",
+              "M:2",
+              "M:3",
+              "M:4",
+              "M:5",
+              "M:6",
+              "M:7"
+            ],
+            "support_ids": [
+              "PE:u",
+              "PE:u^2",
+              "VIS:remaining_invisible",
+              "M:0",
+              "M:1",
+              "M:2",
+              "M:3",
+              "M:4",
+              "M:5",
+              "M:6",
+              "M:7",
+              "M:8",
+              "M:9",
+              "M:10"
+            ]
+          }
+        },
+        {
+          "determinant_character": "sign-nontrivial",
+          "orbit_size": 12,
+          "stabilizer_order": 2,
+          "support_summary": {
+            "fixed_ids": [
+              "PE:u",
+              "VIS:h4_visible",
+              "VIS:remaining_invisible"
+            ],
+            "kind_counts": {
+              "moving_carry_pair_coordinate": 11,
+              "packet_energy": 1,
+              "residual_visibility_bucket": 2
+            },
+            "moving_count": 11,
+            "moving_ids_sample": [
+              "M:0",
+              "M:1",
+              "M:2",
+              "M:3",
+              "M:4",
+              "M:5",
+              "M:6",
+              "M:7"
+            ],
+            "support_ids": [
+              "PE:u",
+              "VIS:h4_visible",
+              "VIS:remaining_invisible",
+              "M:0",
+              "M:1",
+              "M:2",
+              "M:3",
+              "M:4",
+              "M:5",
+              "M:6",
+              "M:7",
+              "M:8",
+              "M:9",
+              "M:10"
+            ]
+          }
+        },
+        {
+          "determinant_character": "sign-nontrivial",
+          "orbit_size": 12,
+          "stabilizer_order": 2,
+          "support_summary": {
+            "fixed_ids": [
+              "PE:u^2",
+              "VIS:h4_visible",
+              "VIS:remaining_invisible"
+            ],
+            "kind_counts": {
+              "moving_carry_pair_coordinate": 11,
+              "packet_energy": 1,
+              "residual_visibility_bucket": 2
+            },
+            "moving_count": 11,
+            "moving_ids_sample": [
+              "M:0",
+              "M:1",
+              "M:2",
+              "M:3",
+              "M:4",
+              "M:5",
+              "M:6",
+              "M:7"
+            ],
+            "support_ids": [
+              "PE:u^2",
+              "VIS:h4_visible",
+              "VIS:remaining_invisible",
+              "M:0",
+              "M:1",
+              "M:2",
+              "M:3",
+              "M:4",
+              "M:5",
+              "M:6",
+              "M:7",
+              "M:8",
+              "M:9",
+              "M:10"
+            ]
+          }
+        },
+        {
+          "determinant_character": "sign-nontrivial",
+          "orbit_size": 1,
+          "stabilizer_order": 24,
+          "support_summary": {
+            "fixed_ids": [
+              "PE:u",
+              "PE:u^2"
+            ],
+            "kind_counts": {
+              "moving_carry_pair_coordinate": 12,
+              "packet_energy": 2
+            },
+            "moving_count": 12,
+            "moving_ids_sample": [
+              "M:0",
+              "M:1",
+              "M:2",
+              "M:3",
+              "M:4",
+              "M:5",
+              "M:6",
+              "M:7"
+            ],
+            "support_ids": [
+              "PE:u",
+              "PE:u^2",
+              "M:0",
+              "M:1",
+              "M:2",
+              "M:3",
+              "M:4",
+              "M:5",
+              "M:6",
+              "M:7",
+              "M:8",
+              "M:9",
+              "M:10",
+              "M:11"
+            ]
+          }
+        },
+        {
+          "determinant_character": "sign-nontrivial",
+          "orbit_size": 1,
+          "stabilizer_order": 24,
+          "support_summary": {
+            "fixed_ids": [
+              "PE:u",
+              "VIS:h4_visible"
+            ],
+            "kind_counts": {
+              "moving_carry_pair_coordinate": 12,
+              "packet_energy": 1,
+              "residual_visibility_bucket": 1
+            },
+            "moving_count": 12,
+            "moving_ids_sample": [
+              "M:0",
+              "M:1",
+              "M:2",
+              "M:3",
+              "M:4",
+              "M:5",
+              "M:6",
+              "M:7"
+            ],
+            "support_ids": [
+              "PE:u",
+              "VIS:h4_visible",
+              "M:0",
+              "M:1",
+              "M:2",
+              "M:3",
+              "M:4",
+              "M:5",
+              "M:6",
+              "M:7",
+              "M:8",
+              "M:9",
+              "M:10",
+              "M:11"
+            ]
+          }
+        },
+        {
+          "determinant_character": "sign-nontrivial",
+          "orbit_size": 1,
+          "stabilizer_order": 24,
+          "support_summary": {
+            "fixed_ids": [
+              "PE:u^2",
+              "VIS:h4_visible"
+            ],
+            "kind_counts": {
+              "moving_carry_pair_coordinate": 12,
+              "packet_energy": 1,
+              "residual_visibility_bucket": 1
+            },
+            "moving_count": 12,
+            "moving_ids_sample": [
+              "M:0",
+              "M:1",
+              "M:2",
+              "M:3",
+              "M:4",
+              "M:5",
+              "M:6",
+              "M:7"
+            ],
+            "support_ids": [
+              "PE:u^2",
+              "VIS:h4_visible",
+              "M:0",
+              "M:1",
+              "M:2",
+              "M:3",
+              "M:4",
+              "M:5",
+              "M:6",
+              "M:7",
+              "M:8",
+              "M:9",
+              "M:10",
+              "M:11"
+            ]
+          }
+        }
+      ],
+      "size": 12,
+      "source_index": 6,
+      "stabilizer_order_distribution": {
+        "1": 1,
+        "2": 7,
+        "24": 6,
+        "4": 1
+      },
+      "status": "enumerated",
+      "support_count": 120,
+      "tuple_label": {
+        "closure_defect_label": "filtered_carry_pair_path:u^2->u->u^2",
+        "full_filtered_residual": 1569,
+        "h3_contraction_visible_from_h4_invisible": 1470,
+        "h4_visible_atoms": 72,
+        "hygiene": [
+          "support residual 0 is not full filtered closure",
+          "K_CH is a Fisher-shadow channel, not a standalone Ext_CH detector",
+          "quotient sufficiency is relative to the declared finite skeleton"
+        ],
+        "kappa_source": "FC2 filtered section class [kappa]",
+        "remaining_invisible_atoms": 27,
+        "support_projection_residual": 0
+      }
+    },
+    {
+      "by_fixed_coordinate_count": [
+        {
+          "determinant_character_distribution": {
+            "sign-nontrivial": 594,
+            "trivial": 81422
+          },
+          "fixed_coordinate_count": 0,
+          "fixed_subset_choices": 1,
+          "moving_coordinate_count": 14,
+          "moving_orbit_count": 82016,
+          "orbit_size_distribution": {
+            "12": 594,
+            "24": 81422
+          },
+          "stabilizer_order_distribution": {
+            "1": 81422,
+            "2": 594
+          },
+          "support_count": 1961256,
+          "tuple_orbit_count": 82016
+        },
+        {
+          "determinant_character_distribution": {
+            "trivial": 416024
+          },
+          "fixed_coordinate_count": 1,
+          "fixed_subset_choices": 4,
+          "moving_coordinate_count": 13,
+          "moving_orbit_count": 104006,
+          "orbit_size_distribution": {
+            "24": 416024
+          },
+          "stabilizer_order_distribution": {
+            "1": 416024
+          },
+          "support_count": 9984576,
+          "tuple_orbit_count": 416024
+        },
+        {
+          "determinant_character_distribution": {
+            "sign-nontrivial": 60,
+            "trivial": 678132
+          },
+          "fixed_coordinate_count": 2,
+          "fixed_subset_choices": 6,
+          "moving_coordinate_count": 12,
+          "moving_orbit_count": 113032,
+          "orbit_size_distribution": {
+            "12": 3996,
+            "2": 18,
+            "24": 673992,
+            "4": 24,
+            "6": 126,
+            "8": 36
+          },
+          "stabilizer_order_distribution": {
+            "1": 673992,
+            "12": 18,
+            "2": 3996,
+            "3": 36,
+            "4": 126,
+            "6": 24
+          },
+          "support_count": 16224936,
+          "tuple_orbit_count": 678192
+        },
+        {
+          "determinant_character_distribution": {
+            "trivial": 416024
+          },
+          "fixed_coordinate_count": 3,
+          "fixed_subset_choices": 4,
+          "moving_coordinate_count": 11,
+          "moving_orbit_count": 104006,
+          "orbit_size_distribution": {
+            "24": 416024
+          },
+          "stabilizer_order_distribution": {
+            "1": 416024
+          },
+          "support_count": 9984576,
+          "tuple_orbit_count": 416024
+        },
+        {
+          "determinant_character_distribution": {
+            "sign-nontrivial": 594,
+            "trivial": 81422
+          },
+          "fixed_coordinate_count": 4,
+          "fixed_subset_choices": 1,
+          "moving_coordinate_count": 10,
+          "moving_orbit_count": 82016,
+          "orbit_size_distribution": {
+            "12": 594,
+            "24": 81422
+          },
+          "stabilizer_order_distribution": {
+            "1": 81422,
+            "2": 594
+          },
+          "support_count": 1961256,
+          "tuple_orbit_count": 82016
+        }
+      ],
+      "coordinate_count": 28,
+      "cycle_profile": {
+        "1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1": 1,
+        "2,2,2,2,2,2,2,2,2,2,2,2": 9,
+        "3,3,3,3,3,3,3,3": 2,
+        "4,4,4,4,4,4": 6,
+        "6,6,6,6": 6
+      },
+      "determinant_character_distribution": {
+        "sign-nontrivial": 1248,
+        "trivial": 1673024
+      },
+      "normalizer_orbit_count": 1674272,
+      "orbit_size_distribution": {
+        "12": 5184,
+        "2": 18,
+        "24": 1668884,
+        "4": 24,
+        "6": 126,
+        "8": 36
+      },
+      "path": "u^2->u->u^2",
+      "profile_source": "empirical/reports/fc1_noether_moving_tuple_census_f4_u2_size24.json",
+      "regular_profile_verified": true,
+      "representative": {
+        "left_eta": "1",
+        "middle": "u",
+        "right_eta": "1+(w+1)u",
+        "source": "u^2",
+        "target": "u^2"
+      },
+      "size": 24,
+      "source_index": 7,
+      "stabilizer_order_distribution": {
+        "1": 1668884,
+        "12": 18,
+        "2": 5184,
+        "3": 36,
+        "4": 126,
+        "6": 24
+      },
+      "status": "enumerated_by_regular_size24_profile",
+      "support_count": 40116600,
+      "tuple_label": {
+        "closure_defect_label": "filtered_carry_pair_path:u^2->u->u^2",
+        "full_filtered_residual": 1569,
+        "h3_contraction_visible_from_h4_invisible": 1470,
+        "h4_visible_atoms": 72,
+        "hygiene": [
+          "support residual 0 is not full filtered closure",
+          "K_CH is a Fisher-shadow channel, not a standalone Ext_CH detector",
+          "quotient sufficiency is relative to the declared finite skeleton"
+        ],
+        "kappa_source": "FC2 filtered section class [kappa]",
+        "remaining_invisible_atoms": 27,
+        "support_projection_residual": 0
+      }
+    },
+    {
+      "coordinate_count": 16,
+      "determinant_character_distribution": {
+        "sign-nontrivial": 12,
+        "trivial": 3
+      },
+      "fixed_coverage_distribution": {
+        "PE:u,PE:u^2": 1,
+        "PE:u,PE:u^2,VIS:h4_visible": 1,
+        "PE:u,PE:u^2,VIS:h4_visible,VIS:remaining_invisible": 5,
+        "PE:u,PE:u^2,VIS:remaining_invisible": 1,
+        "PE:u,VIS:h4_visible": 1,
+        "PE:u,VIS:h4_visible,VIS:remaining_invisible": 1,
+        "PE:u,VIS:remaining_invisible": 1,
+        "PE:u^2,VIS:h4_visible": 1,
+        "PE:u^2,VIS:h4_visible,VIS:remaining_invisible": 1,
+        "PE:u^2,VIS:remaining_invisible": 1,
+        "VIS:h4_visible,VIS:remaining_invisible": 1
+      },
+      "normalizer_orbit_count": 15,
+      "orbit_size_distribution": {
+        "1": 6,
+        "12": 7,
+        "24": 1,
+        "6": 1
+      },
+      "path": "u^2->u->u^2",
+      "representative": {
+        "left_eta": "1",
+        "middle": "u",
+        "right_eta": "1+u",
+        "source": "u^2",
+        "target": "u^2"
+      },
+      "sample_orbits": [
+        {
+          "determinant_character": "sign-nontrivial",
+          "orbit_size": 6,
+          "stabilizer_order": 4,
+          "support_summary": {
+            "fixed_ids": [
+              "PE:u",
+              "PE:u^2",
+              "VIS:h4_visible",
+              "VIS:remaining_invisible"
+            ],
+            "kind_counts": {
+              "moving_carry_pair_coordinate": 10,
+              "packet_energy": 2,
+              "residual_visibility_bucket": 2
+            },
+            "moving_count": 10,
+            "moving_ids_sample": [
+              "M:0",
+              "M:1",
+              "M:2",
+              "M:3",
+              "M:4",
+              "M:5",
+              "M:6",
+              "M:7"
+            ],
+            "support_ids": [
+              "PE:u",
+              "PE:u^2",
+              "VIS:h4_visible",
+              "VIS:remaining_invisible",
+              "M:0",
+              "M:1",
+              "M:2",
+              "M:3",
+              "M:4",
+              "M:5",
+              "M:6",
+              "M:7",
+              "M:8",
+              "M:9"
+            ]
+          }
+        },
+        {
+          "determinant_character": "sign-nontrivial",
+          "orbit_size": 12,
+          "stabilizer_order": 2,
+          "support_summary": {
+            "fixed_ids": [
+              "PE:u",
+              "PE:u^2",
+              "VIS:h4_visible",
+              "VIS:remaining_invisible"
+            ],
+            "kind_counts": {
+              "moving_carry_pair_coordinate": 10,
+              "packet_energy": 2,
+              "residual_visibility_bucket": 2
+            },
+            "moving_count": 10,
+            "moving_ids_sample": [
+              "M:0",
+              "M:1",
+              "M:2",
+              "M:3",
+              "M:4",
+              "M:5",
+              "M:6",
+              "M:7"
+            ],
+            "support_ids": [
+              "PE:u",
+              "PE:u^2",
+              "VIS:h4_visible",
+              "VIS:remaining_invisible",
+              "M:0",
+              "M:1",
+              "M:2",
+              "M:3",
+              "M:4",
+              "M:5",
+              "M:6",
+              "M:7",
+              "M:8",
+              "M:10"
+            ]
+          }
+        },
+        {
+          "determinant_character": "trivial",
+          "orbit_size": 12,
+          "stabilizer_order": 2,
+          "support_summary": {
+            "fixed_ids": [
+              "PE:u",
+              "PE:u^2",
+              "VIS:h4_visible",
+              "VIS:remaining_invisible"
+            ],
+            "kind_counts": {
+              "moving_carry_pair_coordinate": 10,
+              "packet_energy": 2,
+              "residual_visibility_bucket": 2
+            },
+            "moving_count": 10,
+            "moving_ids_sample": [
+              "M:0",
+              "M:1",
+              "M:2",
+              "M:3",
+              "M:4",
+              "M:5",
+              "M:6",
+              "M:7"
+            ],
+            "support_ids": [
+              "PE:u",
+              "PE:u^2",
+              "VIS:h4_visible",
+              "VIS:remaining_invisible",
+              "M:0",
+              "M:1",
+              "M:2",
+              "M:3",
+              "M:4",
+              "M:5",
+              "M:6",
+              "M:7",
+              "M:9",
+              "M:10"
+            ]
+          }
+        },
+        {
+          "determinant_character": "trivial",
+          "orbit_size": 24,
+          "stabilizer_order": 1,
+          "support_summary": {
+            "fixed_ids": [
+              "PE:u",
+              "PE:u^2",
+              "VIS:h4_visible",
+              "VIS:remaining_invisible"
+            ],
+            "kind_counts": {
+              "moving_carry_pair_coordinate": 10,
+              "packet_energy": 2,
+              "residual_visibility_bucket": 2
+            },
+            "moving_count": 10,
+            "moving_ids_sample": [
+              "M:0",
+              "M:1",
+              "M:2",
+              "M:3",
+              "M:4",
+              "M:5",
+              "M:6",
+              "M:8"
+            ],
+            "support_ids": [
+              "PE:u",
+              "PE:u^2",
+              "VIS:h4_visible",
+              "VIS:remaining_invisible",
+              "M:0",
+              "M:1",
+              "M:2",
+              "M:3",
+              "M:4",
+              "M:5",
+              "M:6",
+              "M:8",
+              "M:9",
+              "M:10"
+            ]
+          }
+        },
+        {
+          "determinant_character": "trivial",
+          "orbit_size": 12,
+          "stabilizer_order": 2,
+          "support_summary": {
+            "fixed_ids": [
+              "PE:u",
+              "PE:u^2",
+              "VIS:h4_visible",
+              "VIS:remaining_invisible"
+            ],
+            "kind_counts": {
+              "moving_carry_pair_coordinate": 10,
+              "packet_energy": 2,
+              "residual_visibility_bucket": 2
+            },
+            "moving_count": 10,
+            "moving_ids_sample": [
+              "M:0",
+              "M:1",
+              "M:2",
+              "M:3",
+              "M:4",
+              "M:6",
+              "M:7",
+              "M:8"
+            ],
+            "support_ids": [
+              "PE:u",
+              "PE:u^2",
+              "VIS:h4_visible",
+              "VIS:remaining_invisible",
+              "M:0",
+              "M:1",
+              "M:2",
+              "M:3",
+              "M:4",
+              "M:6",
+              "M:7",
+              "M:8",
+              "M:9",
+              "M:10"
+            ]
+          }
+        },
+        {
+          "determinant_character": "sign-nontrivial",
+          "orbit_size": 12,
+          "stabilizer_order": 2,
+          "support_summary": {
+            "fixed_ids": [
+              "PE:u",
+              "PE:u^2",
+              "VIS:h4_visible"
+            ],
+            "kind_counts": {
+              "moving_carry_pair_coordinate": 11,
+              "packet_energy": 2,
+              "residual_visibility_bucket": 1
+            },
+            "moving_count": 11,
+            "moving_ids_sample": [
+              "M:0",
+              "M:1",
+              "M:2",
+              "M:3",
+              "M:4",
+              "M:5",
+              "M:6",
+              "M:7"
+            ],
+            "support_ids": [
+              "PE:u",
+              "PE:u^2",
+              "VIS:h4_visible",
+              "M:0",
+              "M:1",
+              "M:2",
+              "M:3",
+              "M:4",
+              "M:5",
+              "M:6",
+              "M:7",
+              "M:8",
+              "M:9",
+              "M:10"
+            ]
+          }
+        },
+        {
+          "determinant_character": "sign-nontrivial",
+          "orbit_size": 12,
+          "stabilizer_order": 2,
+          "support_summary": {
+            "fixed_ids": [
+              "PE:u",
+              "PE:u^2",
+              "VIS:remaining_invisible"
+            ],
+            "kind_counts": {
+              "moving_carry_pair_coordinate": 11,
+              "packet_energy": 2,
+              "residual_visibility_bucket": 1
+            },
+            "moving_count": 11,
+            "moving_ids_sample": [
+              "M:0",
+              "M:1",
+              "M:2",
+              "M:3",
+              "M:4",
+              "M:5",
+              "M:6",
+              "M:7"
+            ],
+            "support_ids": [
+              "PE:u",
+              "PE:u^2",
+              "VIS:remaining_invisible",
+              "M:0",
+              "M:1",
+              "M:2",
+              "M:3",
+              "M:4",
+              "M:5",
+              "M:6",
+              "M:7",
+              "M:8",
+              "M:9",
+              "M:10"
+            ]
+          }
+        },
+        {
+          "determinant_character": "sign-nontrivial",
+          "orbit_size": 12,
+          "stabilizer_order": 2,
+          "support_summary": {
+            "fixed_ids": [
+              "PE:u",
+              "VIS:h4_visible",
+              "VIS:remaining_invisible"
+            ],
+            "kind_counts": {
+              "moving_carry_pair_coordinate": 11,
+              "packet_energy": 1,
+              "residual_visibility_bucket": 2
+            },
+            "moving_count": 11,
+            "moving_ids_sample": [
+              "M:0",
+              "M:1",
+              "M:2",
+              "M:3",
+              "M:4",
+              "M:5",
+              "M:6",
+              "M:7"
+            ],
+            "support_ids": [
+              "PE:u",
+              "VIS:h4_visible",
+              "VIS:remaining_invisible",
+              "M:0",
+              "M:1",
+              "M:2",
+              "M:3",
+              "M:4",
+              "M:5",
+              "M:6",
+              "M:7",
+              "M:8",
+              "M:9",
+              "M:10"
+            ]
+          }
+        },
+        {
+          "determinant_character": "sign-nontrivial",
+          "orbit_size": 12,
+          "stabilizer_order": 2,
+          "support_summary": {
+            "fixed_ids": [
+              "PE:u^2",
+              "VIS:h4_visible",
+              "VIS:remaining_invisible"
+            ],
+            "kind_counts": {
+              "moving_carry_pair_coordinate": 11,
+              "packet_energy": 1,
+              "residual_visibility_bucket": 2
+            },
+            "moving_count": 11,
+            "moving_ids_sample": [
+              "M:0",
+              "M:1",
+              "M:2",
+              "M:3",
+              "M:4",
+              "M:5",
+              "M:6",
+              "M:7"
+            ],
+            "support_ids": [
+              "PE:u^2",
+              "VIS:h4_visible",
+              "VIS:remaining_invisible",
+              "M:0",
+              "M:1",
+              "M:2",
+              "M:3",
+              "M:4",
+              "M:5",
+              "M:6",
+              "M:7",
+              "M:8",
+              "M:9",
+              "M:10"
+            ]
+          }
+        },
+        {
+          "determinant_character": "sign-nontrivial",
+          "orbit_size": 1,
+          "stabilizer_order": 24,
+          "support_summary": {
+            "fixed_ids": [
+              "PE:u",
+              "PE:u^2"
+            ],
+            "kind_counts": {
+              "moving_carry_pair_coordinate": 12,
+              "packet_energy": 2
+            },
+            "moving_count": 12,
+            "moving_ids_sample": [
+              "M:0",
+              "M:1",
+              "M:2",
+              "M:3",
+              "M:4",
+              "M:5",
+              "M:6",
+              "M:7"
+            ],
+            "support_ids": [
+              "PE:u",
+              "PE:u^2",
+              "M:0",
+              "M:1",
+              "M:2",
+              "M:3",
+              "M:4",
+              "M:5",
+              "M:6",
+              "M:7",
+              "M:8",
+              "M:9",
+              "M:10",
+              "M:11"
+            ]
+          }
+        },
+        {
+          "determinant_character": "sign-nontrivial",
+          "orbit_size": 1,
+          "stabilizer_order": 24,
+          "support_summary": {
+            "fixed_ids": [
+              "PE:u",
+              "VIS:h4_visible"
+            ],
+            "kind_counts": {
+              "moving_carry_pair_coordinate": 12,
+              "packet_energy": 1,
+              "residual_visibility_bucket": 1
+            },
+            "moving_count": 12,
+            "moving_ids_sample": [
+              "M:0",
+              "M:1",
+              "M:2",
+              "M:3",
+              "M:4",
+              "M:5",
+              "M:6",
+              "M:7"
+            ],
+            "support_ids": [
+              "PE:u",
+              "VIS:h4_visible",
+              "M:0",
+              "M:1",
+              "M:2",
+              "M:3",
+              "M:4",
+              "M:5",
+              "M:6",
+              "M:7",
+              "M:8",
+              "M:9",
+              "M:10",
+              "M:11"
+            ]
+          }
+        },
+        {
+          "determinant_character": "sign-nontrivial",
+          "orbit_size": 1,
+          "stabilizer_order": 24,
+          "support_summary": {
+            "fixed_ids": [
+              "PE:u^2",
+              "VIS:h4_visible"
+            ],
+            "kind_counts": {
+              "moving_carry_pair_coordinate": 12,
+              "packet_energy": 1,
+              "residual_visibility_bucket": 1
+            },
+            "moving_count": 12,
+            "moving_ids_sample": [
+              "M:0",
+              "M:1",
+              "M:2",
+              "M:3",
+              "M:4",
+              "M:5",
+              "M:6",
+              "M:7"
+            ],
+            "support_ids": [
+              "PE:u^2",
+              "VIS:h4_visible",
+              "M:0",
+              "M:1",
+              "M:2",
+              "M:3",
+              "M:4",
+              "M:5",
+              "M:6",
+              "M:7",
+              "M:8",
+              "M:9",
+              "M:10",
+              "M:11"
+            ]
+          }
+        }
+      ],
+      "size": 12,
+      "source_index": 8,
+      "stabilizer_order_distribution": {
+        "1": 1,
+        "2": 7,
+        "24": 6,
+        "4": 1
+      },
+      "status": "enumerated",
+      "support_count": 120,
+      "tuple_label": {
+        "closure_defect_label": "filtered_carry_pair_path:u^2->u->u^2",
+        "full_filtered_residual": 1569,
+        "h3_contraction_visible_from_h4_invisible": 1470,
+        "h4_visible_atoms": 72,
+        "hygiene": [
+          "support residual 0 is not full filtered closure",
+          "K_CH is a Fisher-shadow channel, not a standalone Ext_CH detector",
+          "quotient sufficiency is relative to the declared finite skeleton"
+        ],
+        "kappa_source": "FC2 filtered section class [kappa]",
+        "remaining_invisible_atoms": 27,
+        "support_projection_residual": 0
+      }
+    },
+    {
+      "by_fixed_coordinate_count": [
+        {
+          "determinant_character_distribution": {
+            "sign-nontrivial": 594,
+            "trivial": 81422
+          },
+          "fixed_coordinate_count": 0,
+          "fixed_subset_choices": 1,
+          "moving_coordinate_count": 14,
+          "moving_orbit_count": 82016,
+          "orbit_size_distribution": {
+            "12": 594,
+            "24": 81422
+          },
+          "stabilizer_order_distribution": {
+            "1": 81422,
+            "2": 594
+          },
+          "support_count": 1961256,
+          "tuple_orbit_count": 82016
+        },
+        {
+          "determinant_character_distribution": {
+            "trivial": 416024
+          },
+          "fixed_coordinate_count": 1,
+          "fixed_subset_choices": 4,
+          "moving_coordinate_count": 13,
+          "moving_orbit_count": 104006,
+          "orbit_size_distribution": {
+            "24": 416024
+          },
+          "stabilizer_order_distribution": {
+            "1": 416024
+          },
+          "support_count": 9984576,
+          "tuple_orbit_count": 416024
+        },
+        {
+          "determinant_character_distribution": {
+            "sign-nontrivial": 60,
+            "trivial": 678132
+          },
+          "fixed_coordinate_count": 2,
+          "fixed_subset_choices": 6,
+          "moving_coordinate_count": 12,
+          "moving_orbit_count": 113032,
+          "orbit_size_distribution": {
+            "12": 3996,
+            "2": 18,
+            "24": 673992,
+            "4": 24,
+            "6": 126,
+            "8": 36
+          },
+          "stabilizer_order_distribution": {
+            "1": 673992,
+            "12": 18,
+            "2": 3996,
+            "3": 36,
+            "4": 126,
+            "6": 24
+          },
+          "support_count": 16224936,
+          "tuple_orbit_count": 678192
+        },
+        {
+          "determinant_character_distribution": {
+            "trivial": 416024
+          },
+          "fixed_coordinate_count": 3,
+          "fixed_subset_choices": 4,
+          "moving_coordinate_count": 11,
+          "moving_orbit_count": 104006,
+          "orbit_size_distribution": {
+            "24": 416024
+          },
+          "stabilizer_order_distribution": {
+            "1": 416024
+          },
+          "support_count": 9984576,
+          "tuple_orbit_count": 416024
+        },
+        {
+          "determinant_character_distribution": {
+            "sign-nontrivial": 594,
+            "trivial": 81422
+          },
+          "fixed_coordinate_count": 4,
+          "fixed_subset_choices": 1,
+          "moving_coordinate_count": 10,
+          "moving_orbit_count": 82016,
+          "orbit_size_distribution": {
+            "12": 594,
+            "24": 81422
+          },
+          "stabilizer_order_distribution": {
+            "1": 81422,
+            "2": 594
+          },
+          "support_count": 1961256,
+          "tuple_orbit_count": 82016
+        }
+      ],
+      "coordinate_count": 28,
+      "cycle_profile": {
+        "1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1": 1,
+        "2,2,2,2,2,2,2,2,2,2,2,2": 9,
+        "3,3,3,3,3,3,3,3": 2,
+        "4,4,4,4,4,4": 6,
+        "6,6,6,6": 6
+      },
+      "determinant_character_distribution": {
+        "sign-nontrivial": 1248,
+        "trivial": 1673024
+      },
+      "normalizer_orbit_count": 1674272,
+      "orbit_size_distribution": {
+        "12": 5184,
+        "2": 18,
+        "24": 1668884,
+        "4": 24,
+        "6": 126,
+        "8": 36
+      },
+      "path": "u^2->u->u^2",
+      "profile_source": "empirical/reports/fc1_noether_moving_tuple_census_f4_u2_size24.json",
+      "regular_profile_verified": true,
+      "representative": {
+        "left_eta": "1",
+        "middle": "u",
+        "right_eta": "w",
+        "source": "u^2",
+        "target": "u^2"
+      },
+      "size": 24,
+      "source_index": 9,
+      "stabilizer_order_distribution": {
+        "1": 1668884,
+        "12": 18,
+        "2": 5184,
+        "3": 36,
+        "4": 126,
+        "6": 24
+      },
+      "status": "enumerated_by_regular_size24_profile",
+      "support_count": 40116600,
+      "tuple_label": {
+        "closure_defect_label": "filtered_carry_pair_path:u^2->u->u^2",
+        "full_filtered_residual": 1569,
+        "h3_contraction_visible_from_h4_invisible": 1470,
+        "h4_visible_atoms": 72,
+        "hygiene": [
+          "support residual 0 is not full filtered closure",
+          "K_CH is a Fisher-shadow channel, not a standalone Ext_CH detector",
+          "quotient sufficiency is relative to the declared finite skeleton"
+        ],
+        "kappa_source": "FC2 filtered section class [kappa]",
+        "remaining_invisible_atoms": 27,
+        "support_projection_residual": 0
+      }
+    },
+    {
+      "by_fixed_coordinate_count": [
+        {
+          "determinant_character_distribution": {
+            "sign-nontrivial": 594,
+            "trivial": 81422
+          },
+          "fixed_coordinate_count": 0,
+          "fixed_subset_choices": 1,
+          "moving_coordinate_count": 14,
+          "moving_orbit_count": 82016,
+          "orbit_size_distribution": {
+            "12": 594,
+            "24": 81422
+          },
+          "stabilizer_order_distribution": {
+            "1": 81422,
+            "2": 594
+          },
+          "support_count": 1961256,
+          "tuple_orbit_count": 82016
+        },
+        {
+          "determinant_character_distribution": {
+            "trivial": 416024
+          },
+          "fixed_coordinate_count": 1,
+          "fixed_subset_choices": 4,
+          "moving_coordinate_count": 13,
+          "moving_orbit_count": 104006,
+          "orbit_size_distribution": {
+            "24": 416024
+          },
+          "stabilizer_order_distribution": {
+            "1": 416024
+          },
+          "support_count": 9984576,
+          "tuple_orbit_count": 416024
+        },
+        {
+          "determinant_character_distribution": {
+            "sign-nontrivial": 60,
+            "trivial": 678132
+          },
+          "fixed_coordinate_count": 2,
+          "fixed_subset_choices": 6,
+          "moving_coordinate_count": 12,
+          "moving_orbit_count": 113032,
+          "orbit_size_distribution": {
+            "12": 3996,
+            "2": 18,
+            "24": 673992,
+            "4": 24,
+            "6": 126,
+            "8": 36
+          },
+          "stabilizer_order_distribution": {
+            "1": 673992,
+            "12": 18,
+            "2": 3996,
+            "3": 36,
+            "4": 126,
+            "6": 24
+          },
+          "support_count": 16224936,
+          "tuple_orbit_count": 678192
+        },
+        {
+          "determinant_character_distribution": {
+            "trivial": 416024
+          },
+          "fixed_coordinate_count": 3,
+          "fixed_subset_choices": 4,
+          "moving_coordinate_count": 11,
+          "moving_orbit_count": 104006,
+          "orbit_size_distribution": {
+            "24": 416024
+          },
+          "stabilizer_order_distribution": {
+            "1": 416024
+          },
+          "support_count": 9984576,
+          "tuple_orbit_count": 416024
+        },
+        {
+          "determinant_character_distribution": {
+            "sign-nontrivial": 594,
+            "trivial": 81422
+          },
+          "fixed_coordinate_count": 4,
+          "fixed_subset_choices": 1,
+          "moving_coordinate_count": 10,
+          "moving_orbit_count": 82016,
+          "orbit_size_distribution": {
+            "12": 594,
+            "24": 81422
+          },
+          "stabilizer_order_distribution": {
+            "1": 81422,
+            "2": 594
+          },
+          "support_count": 1961256,
+          "tuple_orbit_count": 82016
+        }
+      ],
+      "coordinate_count": 28,
+      "cycle_profile": {
+        "1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1": 1,
+        "2,2,2,2,2,2,2,2,2,2,2,2": 9,
+        "3,3,3,3,3,3,3,3": 2,
+        "4,4,4,4,4,4": 6,
+        "6,6,6,6": 6
+      },
+      "determinant_character_distribution": {
+        "sign-nontrivial": 1248,
+        "trivial": 1673024
+      },
+      "normalizer_orbit_count": 1674272,
+      "orbit_size_distribution": {
+        "12": 5184,
+        "2": 18,
+        "24": 1668884,
+        "4": 24,
+        "6": 126,
+        "8": 36
+      },
+      "path": "u^2->u->u^2",
+      "profile_source": "empirical/reports/fc1_noether_moving_tuple_census_f4_u2_size24.json",
+      "regular_profile_verified": true,
+      "representative": {
+        "left_eta": "1",
+        "middle": "u",
+        "right_eta": "w+(w+1)u",
+        "source": "u^2",
+        "target": "u^2"
+      },
+      "size": 24,
+      "source_index": 10,
+      "stabilizer_order_distribution": {
+        "1": 1668884,
+        "12": 18,
+        "2": 5184,
+        "3": 36,
+        "4": 126,
+        "6": 24
+      },
+      "status": "enumerated_by_regular_size24_profile",
+      "support_count": 40116600,
+      "tuple_label": {
+        "closure_defect_label": "filtered_carry_pair_path:u^2->u->u^2",
+        "full_filtered_residual": 1569,
+        "h3_contraction_visible_from_h4_invisible": 1470,
+        "h4_visible_atoms": 72,
+        "hygiene": [
+          "support residual 0 is not full filtered closure",
+          "K_CH is a Fisher-shadow channel, not a standalone Ext_CH detector",
+          "quotient sufficiency is relative to the declared finite skeleton"
+        ],
+        "kappa_source": "FC2 filtered section class [kappa]",
+        "remaining_invisible_atoms": 27,
+        "support_projection_residual": 0
+      }
+    },
+    {
+      "by_fixed_coordinate_count": [
+        {
+          "determinant_character_distribution": {
+            "sign-nontrivial": 594,
+            "trivial": 81422
+          },
+          "fixed_coordinate_count": 0,
+          "fixed_subset_choices": 1,
+          "moving_coordinate_count": 14,
+          "moving_orbit_count": 82016,
+          "orbit_size_distribution": {
+            "12": 594,
+            "24": 81422
+          },
+          "stabilizer_order_distribution": {
+            "1": 81422,
+            "2": 594
+          },
+          "support_count": 1961256,
+          "tuple_orbit_count": 82016
+        },
+        {
+          "determinant_character_distribution": {
+            "trivial": 416024
+          },
+          "fixed_coordinate_count": 1,
+          "fixed_subset_choices": 4,
+          "moving_coordinate_count": 13,
+          "moving_orbit_count": 104006,
+          "orbit_size_distribution": {
+            "24": 416024
+          },
+          "stabilizer_order_distribution": {
+            "1": 416024
+          },
+          "support_count": 9984576,
+          "tuple_orbit_count": 416024
+        },
+        {
+          "determinant_character_distribution": {
+            "sign-nontrivial": 60,
+            "trivial": 678132
+          },
+          "fixed_coordinate_count": 2,
+          "fixed_subset_choices": 6,
+          "moving_coordinate_count": 12,
+          "moving_orbit_count": 113032,
+          "orbit_size_distribution": {
+            "12": 3996,
+            "2": 18,
+            "24": 673992,
+            "4": 24,
+            "6": 126,
+            "8": 36
+          },
+          "stabilizer_order_distribution": {
+            "1": 673992,
+            "12": 18,
+            "2": 3996,
+            "3": 36,
+            "4": 126,
+            "6": 24
+          },
+          "support_count": 16224936,
+          "tuple_orbit_count": 678192
+        },
+        {
+          "determinant_character_distribution": {
+            "trivial": 416024
+          },
+          "fixed_coordinate_count": 3,
+          "fixed_subset_choices": 4,
+          "moving_coordinate_count": 11,
+          "moving_orbit_count": 104006,
+          "orbit_size_distribution": {
+            "24": 416024
+          },
+          "stabilizer_order_distribution": {
+            "1": 416024
+          },
+          "support_count": 9984576,
+          "tuple_orbit_count": 416024
+        },
+        {
+          "determinant_character_distribution": {
+            "sign-nontrivial": 594,
+            "trivial": 81422
+          },
+          "fixed_coordinate_count": 4,
+          "fixed_subset_choices": 1,
+          "moving_coordinate_count": 10,
+          "moving_orbit_count": 82016,
+          "orbit_size_distribution": {
+            "12": 594,
+            "24": 81422
+          },
+          "stabilizer_order_distribution": {
+            "1": 81422,
+            "2": 594
+          },
+          "support_count": 1961256,
+          "tuple_orbit_count": 82016
+        }
+      ],
+      "coordinate_count": 28,
+      "cycle_profile": {
+        "1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1": 1,
+        "2,2,2,2,2,2,2,2,2,2,2,2": 9,
+        "3,3,3,3,3,3,3,3": 2,
+        "4,4,4,4,4,4": 6,
+        "6,6,6,6": 6
+      },
+      "determinant_character_distribution": {
+        "sign-nontrivial": 1248,
+        "trivial": 1673024
+      },
+      "normalizer_orbit_count": 1674272,
+      "orbit_size_distribution": {
+        "12": 5184,
+        "2": 18,
+        "24": 1668884,
+        "4": 24,
+        "6": 126,
+        "8": 36
+      },
+      "path": "u^2->u->u^2",
+      "profile_source": "empirical/reports/fc1_noether_moving_tuple_census_f4_u2_size24.json",
+      "regular_profile_verified": true,
+      "representative": {
+        "left_eta": "1",
+        "middle": "u",
+        "right_eta": "w+1+(w+1)u",
+        "source": "u^2",
+        "target": "u^2"
+      },
+      "size": 24,
+      "source_index": 11,
+      "stabilizer_order_distribution": {
+        "1": 1668884,
+        "12": 18,
+        "2": 5184,
+        "3": 36,
+        "4": 126,
+        "6": 24
+      },
+      "status": "enumerated_by_regular_size24_profile",
+      "support_count": 40116600,
+      "tuple_label": {
+        "closure_defect_label": "filtered_carry_pair_path:u^2->u->u^2",
+        "full_filtered_residual": 1569,
+        "h3_contraction_visible_from_h4_invisible": 1470,
+        "h4_visible_atoms": 72,
+        "hygiene": [
+          "support residual 0 is not full filtered closure",
+          "K_CH is a Fisher-shadow channel, not a standalone Ext_CH detector",
+          "quotient sufficiency is relative to the declared finite skeleton"
+        ],
+        "kappa_source": "FC2 filtered section class [kappa]",
+        "remaining_invisible_atoms": 27,
+        "support_projection_residual": 0
+      }
+    },
+    {
+      "by_fixed_coordinate_count": [
+        {
+          "determinant_character_distribution": {
+            "sign-nontrivial": 594,
+            "trivial": 81422
+          },
+          "fixed_coordinate_count": 0,
+          "fixed_subset_choices": 1,
+          "moving_coordinate_count": 14,
+          "moving_orbit_count": 82016,
+          "orbit_size_distribution": {
+            "12": 594,
+            "24": 81422
+          },
+          "stabilizer_order_distribution": {
+            "1": 81422,
+            "2": 594
+          },
+          "support_count": 1961256,
+          "tuple_orbit_count": 82016
+        },
+        {
+          "determinant_character_distribution": {
+            "trivial": 416024
+          },
+          "fixed_coordinate_count": 1,
+          "fixed_subset_choices": 4,
+          "moving_coordinate_count": 13,
+          "moving_orbit_count": 104006,
+          "orbit_size_distribution": {
+            "24": 416024
+          },
+          "stabilizer_order_distribution": {
+            "1": 416024
+          },
+          "support_count": 9984576,
+          "tuple_orbit_count": 416024
+        },
+        {
+          "determinant_character_distribution": {
+            "sign-nontrivial": 60,
+            "trivial": 678132
+          },
+          "fixed_coordinate_count": 2,
+          "fixed_subset_choices": 6,
+          "moving_coordinate_count": 12,
+          "moving_orbit_count": 113032,
+          "orbit_size_distribution": {
+            "12": 3996,
+            "2": 18,
+            "24": 673992,
+            "4": 24,
+            "6": 126,
+            "8": 36
+          },
+          "stabilizer_order_distribution": {
+            "1": 673992,
+            "12": 18,
+            "2": 3996,
+            "3": 36,
+            "4": 126,
+            "6": 24
+          },
+          "support_count": 16224936,
+          "tuple_orbit_count": 678192
+        },
+        {
+          "determinant_character_distribution": {
+            "trivial": 416024
+          },
+          "fixed_coordinate_count": 3,
+          "fixed_subset_choices": 4,
+          "moving_coordinate_count": 11,
+          "moving_orbit_count": 104006,
+          "orbit_size_distribution": {
+            "24": 416024
+          },
+          "stabilizer_order_distribution": {
+            "1": 416024
+          },
+          "support_count": 9984576,
+          "tuple_orbit_count": 416024
+        },
+        {
+          "determinant_character_distribution": {
+            "sign-nontrivial": 594,
+            "trivial": 81422
+          },
+          "fixed_coordinate_count": 4,
+          "fixed_subset_choices": 1,
+          "moving_coordinate_count": 10,
+          "moving_orbit_count": 82016,
+          "orbit_size_distribution": {
+            "12": 594,
+            "24": 81422
+          },
+          "stabilizer_order_distribution": {
+            "1": 81422,
+            "2": 594
+          },
+          "support_count": 1961256,
+          "tuple_orbit_count": 82016
+        }
+      ],
+      "coordinate_count": 28,
+      "cycle_profile": {
+        "1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1": 1,
+        "2,2,2,2,2,2,2,2,2,2,2,2": 9,
+        "3,3,3,3,3,3,3,3": 2,
+        "4,4,4,4,4,4": 6,
+        "6,6,6,6": 6
+      },
+      "determinant_character_distribution": {
+        "sign-nontrivial": 1248,
+        "trivial": 1673024
+      },
+      "normalizer_orbit_count": 1674272,
+      "orbit_size_distribution": {
+        "12": 5184,
+        "2": 18,
+        "24": 1668884,
+        "4": 24,
+        "6": 126,
+        "8": 36
+      },
+      "path": "u^2->u->u^2",
+      "profile_source": "empirical/reports/fc1_noether_moving_tuple_census_f4_u2_size24.json",
+      "regular_profile_verified": true,
+      "representative": {
+        "left_eta": "1",
+        "middle": "u",
+        "right_eta": "w+1+u",
+        "source": "u^2",
+        "target": "u^2"
+      },
+      "size": 24,
+      "source_index": 12,
+      "stabilizer_order_distribution": {
+        "1": 1668884,
+        "12": 18,
+        "2": 5184,
+        "3": 36,
+        "4": 126,
+        "6": 24
+      },
+      "status": "enumerated_by_regular_size24_profile",
+      "support_count": 40116600,
+      "tuple_label": {
+        "closure_defect_label": "filtered_carry_pair_path:u^2->u->u^2",
+        "full_filtered_residual": 1569,
+        "h3_contraction_visible_from_h4_invisible": 1470,
+        "h4_visible_atoms": 72,
+        "hygiene": [
+          "support residual 0 is not full filtered closure",
+          "K_CH is a Fisher-shadow channel, not a standalone Ext_CH detector",
+          "quotient sufficiency is relative to the declared finite skeleton"
+        ],
+        "kappa_source": "FC2 filtered section class [kappa]",
+        "remaining_invisible_atoms": 27,
+        "support_projection_residual": 0
+      }
+    },
+    {
+      "coordinate_count": 16,
+      "determinant_character_distribution": {
+        "sign-nontrivial": 12,
+        "trivial": 3
+      },
+      "fixed_coverage_distribution": {
+        "PE:u,PE:u^2": 1,
+        "PE:u,PE:u^2,VIS:h4_visible": 1,
+        "PE:u,PE:u^2,VIS:h4_visible,VIS:remaining_invisible": 5,
+        "PE:u,PE:u^2,VIS:remaining_invisible": 1,
+        "PE:u,VIS:h4_visible": 1,
+        "PE:u,VIS:h4_visible,VIS:remaining_invisible": 1,
+        "PE:u,VIS:remaining_invisible": 1,
+        "PE:u^2,VIS:h4_visible": 1,
+        "PE:u^2,VIS:h4_visible,VIS:remaining_invisible": 1,
+        "PE:u^2,VIS:remaining_invisible": 1,
+        "VIS:h4_visible,VIS:remaining_invisible": 1
+      },
+      "normalizer_orbit_count": 15,
+      "orbit_size_distribution": {
+        "1": 6,
+        "12": 7,
+        "24": 1,
+        "6": 1
+      },
+      "path": "u^2->u^2->u^2",
+      "representative": {
+        "left_eta": "1",
+        "middle": "u^2",
+        "right_eta": "1",
+        "source": "u^2",
+        "target": "u^2"
+      },
+      "sample_orbits": [
+        {
+          "determinant_character": "sign-nontrivial",
+          "orbit_size": 6,
+          "stabilizer_order": 4,
+          "support_summary": {
+            "fixed_ids": [
+              "PE:u",
+              "PE:u^2",
+              "VIS:h4_visible",
+              "VIS:remaining_invisible"
+            ],
+            "kind_counts": {
+              "moving_carry_pair_coordinate": 10,
+              "packet_energy": 2,
+              "residual_visibility_bucket": 2
+            },
+            "moving_count": 10,
+            "moving_ids_sample": [
+              "M:0",
+              "M:1",
+              "M:2",
+              "M:3",
+              "M:4",
+              "M:5",
+              "M:6",
+              "M:7"
+            ],
+            "support_ids": [
+              "PE:u",
+              "PE:u^2",
+              "VIS:h4_visible",
+              "VIS:remaining_invisible",
+              "M:0",
+              "M:1",
+              "M:2",
+              "M:3",
+              "M:4",
+              "M:5",
+              "M:6",
+              "M:7",
+              "M:8",
+              "M:9"
+            ]
+          }
+        },
+        {
+          "determinant_character": "sign-nontrivial",
+          "orbit_size": 12,
+          "stabilizer_order": 2,
+          "support_summary": {
+            "fixed_ids": [
+              "PE:u",
+              "PE:u^2",
+              "VIS:h4_visible",
+              "VIS:remaining_invisible"
+            ],
+            "kind_counts": {
+              "moving_carry_pair_coordinate": 10,
+              "packet_energy": 2,
+              "residual_visibility_bucket": 2
+            },
+            "moving_count": 10,
+            "moving_ids_sample": [
+              "M:0",
+              "M:1",
+              "M:2",
+              "M:3",
+              "M:4",
+              "M:5",
+              "M:6",
+              "M:7"
+            ],
+            "support_ids": [
+              "PE:u",
+              "PE:u^2",
+              "VIS:h4_visible",
+              "VIS:remaining_invisible",
+              "M:0",
+              "M:1",
+              "M:2",
+              "M:3",
+              "M:4",
+              "M:5",
+              "M:6",
+              "M:7",
+              "M:8",
+              "M:10"
+            ]
+          }
+        },
+        {
+          "determinant_character": "trivial",
+          "orbit_size": 12,
+          "stabilizer_order": 2,
+          "support_summary": {
+            "fixed_ids": [
+              "PE:u",
+              "PE:u^2",
+              "VIS:h4_visible",
+              "VIS:remaining_invisible"
+            ],
+            "kind_counts": {
+              "moving_carry_pair_coordinate": 10,
+              "packet_energy": 2,
+              "residual_visibility_bucket": 2
+            },
+            "moving_count": 10,
+            "moving_ids_sample": [
+              "M:0",
+              "M:1",
+              "M:2",
+              "M:3",
+              "M:4",
+              "M:5",
+              "M:6",
+              "M:7"
+            ],
+            "support_ids": [
+              "PE:u",
+              "PE:u^2",
+              "VIS:h4_visible",
+              "VIS:remaining_invisible",
+              "M:0",
+              "M:1",
+              "M:2",
+              "M:3",
+              "M:4",
+              "M:5",
+              "M:6",
+              "M:7",
+              "M:9",
+              "M:10"
+            ]
+          }
+        },
+        {
+          "determinant_character": "trivial",
+          "orbit_size": 24,
+          "stabilizer_order": 1,
+          "support_summary": {
+            "fixed_ids": [
+              "PE:u",
+              "PE:u^2",
+              "VIS:h4_visible",
+              "VIS:remaining_invisible"
+            ],
+            "kind_counts": {
+              "moving_carry_pair_coordinate": 10,
+              "packet_energy": 2,
+              "residual_visibility_bucket": 2
+            },
+            "moving_count": 10,
+            "moving_ids_sample": [
+              "M:0",
+              "M:1",
+              "M:2",
+              "M:3",
+              "M:4",
+              "M:5",
+              "M:6",
+              "M:8"
+            ],
+            "support_ids": [
+              "PE:u",
+              "PE:u^2",
+              "VIS:h4_visible",
+              "VIS:remaining_invisible",
+              "M:0",
+              "M:1",
+              "M:2",
+              "M:3",
+              "M:4",
+              "M:5",
+              "M:6",
+              "M:8",
+              "M:9",
+              "M:10"
+            ]
+          }
+        },
+        {
+          "determinant_character": "trivial",
+          "orbit_size": 12,
+          "stabilizer_order": 2,
+          "support_summary": {
+            "fixed_ids": [
+              "PE:u",
+              "PE:u^2",
+              "VIS:h4_visible",
+              "VIS:remaining_invisible"
+            ],
+            "kind_counts": {
+              "moving_carry_pair_coordinate": 10,
+              "packet_energy": 2,
+              "residual_visibility_bucket": 2
+            },
+            "moving_count": 10,
+            "moving_ids_sample": [
+              "M:0",
+              "M:1",
+              "M:2",
+              "M:3",
+              "M:4",
+              "M:6",
+              "M:7",
+              "M:8"
+            ],
+            "support_ids": [
+              "PE:u",
+              "PE:u^2",
+              "VIS:h4_visible",
+              "VIS:remaining_invisible",
+              "M:0",
+              "M:1",
+              "M:2",
+              "M:3",
+              "M:4",
+              "M:6",
+              "M:7",
+              "M:8",
+              "M:9",
+              "M:10"
+            ]
+          }
+        },
+        {
+          "determinant_character": "sign-nontrivial",
+          "orbit_size": 12,
+          "stabilizer_order": 2,
+          "support_summary": {
+            "fixed_ids": [
+              "PE:u",
+              "PE:u^2",
+              "VIS:h4_visible"
+            ],
+            "kind_counts": {
+              "moving_carry_pair_coordinate": 11,
+              "packet_energy": 2,
+              "residual_visibility_bucket": 1
+            },
+            "moving_count": 11,
+            "moving_ids_sample": [
+              "M:0",
+              "M:1",
+              "M:2",
+              "M:3",
+              "M:4",
+              "M:5",
+              "M:6",
+              "M:7"
+            ],
+            "support_ids": [
+              "PE:u",
+              "PE:u^2",
+              "VIS:h4_visible",
+              "M:0",
+              "M:1",
+              "M:2",
+              "M:3",
+              "M:4",
+              "M:5",
+              "M:6",
+              "M:7",
+              "M:8",
+              "M:9",
+              "M:10"
+            ]
+          }
+        },
+        {
+          "determinant_character": "sign-nontrivial",
+          "orbit_size": 12,
+          "stabilizer_order": 2,
+          "support_summary": {
+            "fixed_ids": [
+              "PE:u",
+              "PE:u^2",
+              "VIS:remaining_invisible"
+            ],
+            "kind_counts": {
+              "moving_carry_pair_coordinate": 11,
+              "packet_energy": 2,
+              "residual_visibility_bucket": 1
+            },
+            "moving_count": 11,
+            "moving_ids_sample": [
+              "M:0",
+              "M:1",
+              "M:2",
+              "M:3",
+              "M:4",
+              "M:5",
+              "M:6",
+              "M:7"
+            ],
+            "support_ids": [
+              "PE:u",
+              "PE:u^2",
+              "VIS:remaining_invisible",
+              "M:0",
+              "M:1",
+              "M:2",
+              "M:3",
+              "M:4",
+              "M:5",
+              "M:6",
+              "M:7",
+              "M:8",
+              "M:9",
+              "M:10"
+            ]
+          }
+        },
+        {
+          "determinant_character": "sign-nontrivial",
+          "orbit_size": 12,
+          "stabilizer_order": 2,
+          "support_summary": {
+            "fixed_ids": [
+              "PE:u",
+              "VIS:h4_visible",
+              "VIS:remaining_invisible"
+            ],
+            "kind_counts": {
+              "moving_carry_pair_coordinate": 11,
+              "packet_energy": 1,
+              "residual_visibility_bucket": 2
+            },
+            "moving_count": 11,
+            "moving_ids_sample": [
+              "M:0",
+              "M:1",
+              "M:2",
+              "M:3",
+              "M:4",
+              "M:5",
+              "M:6",
+              "M:7"
+            ],
+            "support_ids": [
+              "PE:u",
+              "VIS:h4_visible",
+              "VIS:remaining_invisible",
+              "M:0",
+              "M:1",
+              "M:2",
+              "M:3",
+              "M:4",
+              "M:5",
+              "M:6",
+              "M:7",
+              "M:8",
+              "M:9",
+              "M:10"
+            ]
+          }
+        },
+        {
+          "determinant_character": "sign-nontrivial",
+          "orbit_size": 12,
+          "stabilizer_order": 2,
+          "support_summary": {
+            "fixed_ids": [
+              "PE:u^2",
+              "VIS:h4_visible",
+              "VIS:remaining_invisible"
+            ],
+            "kind_counts": {
+              "moving_carry_pair_coordinate": 11,
+              "packet_energy": 1,
+              "residual_visibility_bucket": 2
+            },
+            "moving_count": 11,
+            "moving_ids_sample": [
+              "M:0",
+              "M:1",
+              "M:2",
+              "M:3",
+              "M:4",
+              "M:5",
+              "M:6",
+              "M:7"
+            ],
+            "support_ids": [
+              "PE:u^2",
+              "VIS:h4_visible",
+              "VIS:remaining_invisible",
+              "M:0",
+              "M:1",
+              "M:2",
+              "M:3",
+              "M:4",
+              "M:5",
+              "M:6",
+              "M:7",
+              "M:8",
+              "M:9",
+              "M:10"
+            ]
+          }
+        },
+        {
+          "determinant_character": "sign-nontrivial",
+          "orbit_size": 1,
+          "stabilizer_order": 24,
+          "support_summary": {
+            "fixed_ids": [
+              "PE:u",
+              "PE:u^2"
+            ],
+            "kind_counts": {
+              "moving_carry_pair_coordinate": 12,
+              "packet_energy": 2
+            },
+            "moving_count": 12,
+            "moving_ids_sample": [
+              "M:0",
+              "M:1",
+              "M:2",
+              "M:3",
+              "M:4",
+              "M:5",
+              "M:6",
+              "M:7"
+            ],
+            "support_ids": [
+              "PE:u",
+              "PE:u^2",
+              "M:0",
+              "M:1",
+              "M:2",
+              "M:3",
+              "M:4",
+              "M:5",
+              "M:6",
+              "M:7",
+              "M:8",
+              "M:9",
+              "M:10",
+              "M:11"
+            ]
+          }
+        },
+        {
+          "determinant_character": "sign-nontrivial",
+          "orbit_size": 1,
+          "stabilizer_order": 24,
+          "support_summary": {
+            "fixed_ids": [
+              "PE:u",
+              "VIS:h4_visible"
+            ],
+            "kind_counts": {
+              "moving_carry_pair_coordinate": 12,
+              "packet_energy": 1,
+              "residual_visibility_bucket": 1
+            },
+            "moving_count": 12,
+            "moving_ids_sample": [
+              "M:0",
+              "M:1",
+              "M:2",
+              "M:3",
+              "M:4",
+              "M:5",
+              "M:6",
+              "M:7"
+            ],
+            "support_ids": [
+              "PE:u",
+              "VIS:h4_visible",
+              "M:0",
+              "M:1",
+              "M:2",
+              "M:3",
+              "M:4",
+              "M:5",
+              "M:6",
+              "M:7",
+              "M:8",
+              "M:9",
+              "M:10",
+              "M:11"
+            ]
+          }
+        },
+        {
+          "determinant_character": "sign-nontrivial",
+          "orbit_size": 1,
+          "stabilizer_order": 24,
+          "support_summary": {
+            "fixed_ids": [
+              "PE:u^2",
+              "VIS:h4_visible"
+            ],
+            "kind_counts": {
+              "moving_carry_pair_coordinate": 12,
+              "packet_energy": 1,
+              "residual_visibility_bucket": 1
+            },
+            "moving_count": 12,
+            "moving_ids_sample": [
+              "M:0",
+              "M:1",
+              "M:2",
+              "M:3",
+              "M:4",
+              "M:5",
+              "M:6",
+              "M:7"
+            ],
+            "support_ids": [
+              "PE:u^2",
+              "VIS:h4_visible",
+              "M:0",
+              "M:1",
+              "M:2",
+              "M:3",
+              "M:4",
+              "M:5",
+              "M:6",
+              "M:7",
+              "M:8",
+              "M:9",
+              "M:10",
+              "M:11"
+            ]
+          }
+        }
+      ],
+      "size": 12,
+      "source_index": 13,
+      "stabilizer_order_distribution": {
+        "1": 1,
+        "2": 7,
+        "24": 6,
+        "4": 1
+      },
+      "status": "enumerated",
+      "support_count": 120,
+      "tuple_label": {
+        "closure_defect_label": "filtered_carry_pair_path:u^2->u^2->u^2",
+        "full_filtered_residual": 1569,
+        "h3_contraction_visible_from_h4_invisible": 1470,
+        "h4_visible_atoms": 72,
+        "hygiene": [
+          "support residual 0 is not full filtered closure",
+          "K_CH is a Fisher-shadow channel, not a standalone Ext_CH detector",
+          "quotient sufficiency is relative to the declared finite skeleton"
+        ],
+        "kappa_source": "FC2 filtered section class [kappa]",
+        "remaining_invisible_atoms": 27,
+        "support_projection_residual": 0
+      }
+    },
+    {
+      "by_fixed_coordinate_count": [
+        {
+          "determinant_character_distribution": {
+            "sign-nontrivial": 594,
+            "trivial": 81422
+          },
+          "fixed_coordinate_count": 0,
+          "fixed_subset_choices": 1,
+          "moving_coordinate_count": 14,
+          "moving_orbit_count": 82016,
+          "orbit_size_distribution": {
+            "12": 594,
+            "24": 81422
+          },
+          "stabilizer_order_distribution": {
+            "1": 81422,
+            "2": 594
+          },
+          "support_count": 1961256,
+          "tuple_orbit_count": 82016
+        },
+        {
+          "determinant_character_distribution": {
+            "trivial": 416024
+          },
+          "fixed_coordinate_count": 1,
+          "fixed_subset_choices": 4,
+          "moving_coordinate_count": 13,
+          "moving_orbit_count": 104006,
+          "orbit_size_distribution": {
+            "24": 416024
+          },
+          "stabilizer_order_distribution": {
+            "1": 416024
+          },
+          "support_count": 9984576,
+          "tuple_orbit_count": 416024
+        },
+        {
+          "determinant_character_distribution": {
+            "sign-nontrivial": 60,
+            "trivial": 678132
+          },
+          "fixed_coordinate_count": 2,
+          "fixed_subset_choices": 6,
+          "moving_coordinate_count": 12,
+          "moving_orbit_count": 113032,
+          "orbit_size_distribution": {
+            "12": 3996,
+            "2": 18,
+            "24": 673992,
+            "4": 24,
+            "6": 126,
+            "8": 36
+          },
+          "stabilizer_order_distribution": {
+            "1": 673992,
+            "12": 18,
+            "2": 3996,
+            "3": 36,
+            "4": 126,
+            "6": 24
+          },
+          "support_count": 16224936,
+          "tuple_orbit_count": 678192
+        },
+        {
+          "determinant_character_distribution": {
+            "trivial": 416024
+          },
+          "fixed_coordinate_count": 3,
+          "fixed_subset_choices": 4,
+          "moving_coordinate_count": 11,
+          "moving_orbit_count": 104006,
+          "orbit_size_distribution": {
+            "24": 416024
+          },
+          "stabilizer_order_distribution": {
+            "1": 416024
+          },
+          "support_count": 9984576,
+          "tuple_orbit_count": 416024
+        },
+        {
+          "determinant_character_distribution": {
+            "sign-nontrivial": 594,
+            "trivial": 81422
+          },
+          "fixed_coordinate_count": 4,
+          "fixed_subset_choices": 1,
+          "moving_coordinate_count": 10,
+          "moving_orbit_count": 82016,
+          "orbit_size_distribution": {
+            "12": 594,
+            "24": 81422
+          },
+          "stabilizer_order_distribution": {
+            "1": 81422,
+            "2": 594
+          },
+          "support_count": 1961256,
+          "tuple_orbit_count": 82016
+        }
+      ],
+      "coordinate_count": 28,
+      "cycle_profile": {
+        "1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1": 1,
+        "2,2,2,2,2,2,2,2,2,2,2,2": 9,
+        "3,3,3,3,3,3,3,3": 2,
+        "4,4,4,4,4,4": 6,
+        "6,6,6,6": 6
+      },
+      "determinant_character_distribution": {
+        "sign-nontrivial": 1248,
+        "trivial": 1673024
+      },
+      "normalizer_orbit_count": 1674272,
+      "orbit_size_distribution": {
+        "12": 5184,
+        "2": 18,
+        "24": 1668884,
+        "4": 24,
+        "6": 126,
+        "8": 36
+      },
+      "path": "u^2->u^2->u^2",
+      "profile_source": "empirical/reports/fc1_noether_moving_tuple_census_f4_u2_size24.json",
+      "regular_profile_verified": true,
+      "representative": {
+        "left_eta": "1",
+        "middle": "u^2",
+        "right_eta": "1+(w+1)u",
+        "source": "u^2",
+        "target": "u^2"
+      },
+      "size": 24,
+      "source_index": 14,
+      "stabilizer_order_distribution": {
+        "1": 1668884,
+        "12": 18,
+        "2": 5184,
+        "3": 36,
+        "4": 126,
+        "6": 24
+      },
+      "status": "enumerated_by_regular_size24_profile",
+      "support_count": 40116600,
+      "tuple_label": {
+        "closure_defect_label": "filtered_carry_pair_path:u^2->u^2->u^2",
+        "full_filtered_residual": 1569,
+        "h3_contraction_visible_from_h4_invisible": 1470,
+        "h4_visible_atoms": 72,
+        "hygiene": [
+          "support residual 0 is not full filtered closure",
+          "K_CH is a Fisher-shadow channel, not a standalone Ext_CH detector",
+          "quotient sufficiency is relative to the declared finite skeleton"
+        ],
+        "kappa_source": "FC2 filtered section class [kappa]",
+        "remaining_invisible_atoms": 27,
+        "support_projection_residual": 0
+      }
+    },
+    {
+      "coordinate_count": 16,
+      "determinant_character_distribution": {
+        "sign-nontrivial": 12,
+        "trivial": 3
+      },
+      "fixed_coverage_distribution": {
+        "PE:u,PE:u^2": 1,
+        "PE:u,PE:u^2,VIS:h4_visible": 1,
+        "PE:u,PE:u^2,VIS:h4_visible,VIS:remaining_invisible": 5,
+        "PE:u,PE:u^2,VIS:remaining_invisible": 1,
+        "PE:u,VIS:h4_visible": 1,
+        "PE:u,VIS:h4_visible,VIS:remaining_invisible": 1,
+        "PE:u,VIS:remaining_invisible": 1,
+        "PE:u^2,VIS:h4_visible": 1,
+        "PE:u^2,VIS:h4_visible,VIS:remaining_invisible": 1,
+        "PE:u^2,VIS:remaining_invisible": 1,
+        "VIS:h4_visible,VIS:remaining_invisible": 1
+      },
+      "normalizer_orbit_count": 15,
+      "orbit_size_distribution": {
+        "1": 6,
+        "12": 7,
+        "24": 1,
+        "6": 1
+      },
+      "path": "u^2->u^2->u^2",
+      "representative": {
+        "left_eta": "1",
+        "middle": "u^2",
+        "right_eta": "1+u",
+        "source": "u^2",
+        "target": "u^2"
+      },
+      "sample_orbits": [
+        {
+          "determinant_character": "sign-nontrivial",
+          "orbit_size": 6,
+          "stabilizer_order": 4,
+          "support_summary": {
+            "fixed_ids": [
+              "PE:u",
+              "PE:u^2",
+              "VIS:h4_visible",
+              "VIS:remaining_invisible"
+            ],
+            "kind_counts": {
+              "moving_carry_pair_coordinate": 10,
+              "packet_energy": 2,
+              "residual_visibility_bucket": 2
+            },
+            "moving_count": 10,
+            "moving_ids_sample": [
+              "M:0",
+              "M:1",
+              "M:2",
+              "M:3",
+              "M:4",
+              "M:5",
+              "M:6",
+              "M:7"
+            ],
+            "support_ids": [
+              "PE:u",
+              "PE:u^2",
+              "VIS:h4_visible",
+              "VIS:remaining_invisible",
+              "M:0",
+              "M:1",
+              "M:2",
+              "M:3",
+              "M:4",
+              "M:5",
+              "M:6",
+              "M:7",
+              "M:8",
+              "M:9"
+            ]
+          }
+        },
+        {
+          "determinant_character": "sign-nontrivial",
+          "orbit_size": 12,
+          "stabilizer_order": 2,
+          "support_summary": {
+            "fixed_ids": [
+              "PE:u",
+              "PE:u^2",
+              "VIS:h4_visible",
+              "VIS:remaining_invisible"
+            ],
+            "kind_counts": {
+              "moving_carry_pair_coordinate": 10,
+              "packet_energy": 2,
+              "residual_visibility_bucket": 2
+            },
+            "moving_count": 10,
+            "moving_ids_sample": [
+              "M:0",
+              "M:1",
+              "M:2",
+              "M:3",
+              "M:4",
+              "M:5",
+              "M:6",
+              "M:7"
+            ],
+            "support_ids": [
+              "PE:u",
+              "PE:u^2",
+              "VIS:h4_visible",
+              "VIS:remaining_invisible",
+              "M:0",
+              "M:1",
+              "M:2",
+              "M:3",
+              "M:4",
+              "M:5",
+              "M:6",
+              "M:7",
+              "M:8",
+              "M:10"
+            ]
+          }
+        },
+        {
+          "determinant_character": "trivial",
+          "orbit_size": 12,
+          "stabilizer_order": 2,
+          "support_summary": {
+            "fixed_ids": [
+              "PE:u",
+              "PE:u^2",
+              "VIS:h4_visible",
+              "VIS:remaining_invisible"
+            ],
+            "kind_counts": {
+              "moving_carry_pair_coordinate": 10,
+              "packet_energy": 2,
+              "residual_visibility_bucket": 2
+            },
+            "moving_count": 10,
+            "moving_ids_sample": [
+              "M:0",
+              "M:1",
+              "M:2",
+              "M:3",
+              "M:4",
+              "M:5",
+              "M:6",
+              "M:7"
+            ],
+            "support_ids": [
+              "PE:u",
+              "PE:u^2",
+              "VIS:h4_visible",
+              "VIS:remaining_invisible",
+              "M:0",
+              "M:1",
+              "M:2",
+              "M:3",
+              "M:4",
+              "M:5",
+              "M:6",
+              "M:7",
+              "M:9",
+              "M:10"
+            ]
+          }
+        },
+        {
+          "determinant_character": "trivial",
+          "orbit_size": 24,
+          "stabilizer_order": 1,
+          "support_summary": {
+            "fixed_ids": [
+              "PE:u",
+              "PE:u^2",
+              "VIS:h4_visible",
+              "VIS:remaining_invisible"
+            ],
+            "kind_counts": {
+              "moving_carry_pair_coordinate": 10,
+              "packet_energy": 2,
+              "residual_visibility_bucket": 2
+            },
+            "moving_count": 10,
+            "moving_ids_sample": [
+              "M:0",
+              "M:1",
+              "M:2",
+              "M:3",
+              "M:4",
+              "M:5",
+              "M:6",
+              "M:8"
+            ],
+            "support_ids": [
+              "PE:u",
+              "PE:u^2",
+              "VIS:h4_visible",
+              "VIS:remaining_invisible",
+              "M:0",
+              "M:1",
+              "M:2",
+              "M:3",
+              "M:4",
+              "M:5",
+              "M:6",
+              "M:8",
+              "M:9",
+              "M:10"
+            ]
+          }
+        },
+        {
+          "determinant_character": "trivial",
+          "orbit_size": 12,
+          "stabilizer_order": 2,
+          "support_summary": {
+            "fixed_ids": [
+              "PE:u",
+              "PE:u^2",
+              "VIS:h4_visible",
+              "VIS:remaining_invisible"
+            ],
+            "kind_counts": {
+              "moving_carry_pair_coordinate": 10,
+              "packet_energy": 2,
+              "residual_visibility_bucket": 2
+            },
+            "moving_count": 10,
+            "moving_ids_sample": [
+              "M:0",
+              "M:1",
+              "M:2",
+              "M:3",
+              "M:4",
+              "M:6",
+              "M:7",
+              "M:8"
+            ],
+            "support_ids": [
+              "PE:u",
+              "PE:u^2",
+              "VIS:h4_visible",
+              "VIS:remaining_invisible",
+              "M:0",
+              "M:1",
+              "M:2",
+              "M:3",
+              "M:4",
+              "M:6",
+              "M:7",
+              "M:8",
+              "M:9",
+              "M:10"
+            ]
+          }
+        },
+        {
+          "determinant_character": "sign-nontrivial",
+          "orbit_size": 12,
+          "stabilizer_order": 2,
+          "support_summary": {
+            "fixed_ids": [
+              "PE:u",
+              "PE:u^2",
+              "VIS:h4_visible"
+            ],
+            "kind_counts": {
+              "moving_carry_pair_coordinate": 11,
+              "packet_energy": 2,
+              "residual_visibility_bucket": 1
+            },
+            "moving_count": 11,
+            "moving_ids_sample": [
+              "M:0",
+              "M:1",
+              "M:2",
+              "M:3",
+              "M:4",
+              "M:5",
+              "M:6",
+              "M:7"
+            ],
+            "support_ids": [
+              "PE:u",
+              "PE:u^2",
+              "VIS:h4_visible",
+              "M:0",
+              "M:1",
+              "M:2",
+              "M:3",
+              "M:4",
+              "M:5",
+              "M:6",
+              "M:7",
+              "M:8",
+              "M:9",
+              "M:10"
+            ]
+          }
+        },
+        {
+          "determinant_character": "sign-nontrivial",
+          "orbit_size": 12,
+          "stabilizer_order": 2,
+          "support_summary": {
+            "fixed_ids": [
+              "PE:u",
+              "PE:u^2",
+              "VIS:remaining_invisible"
+            ],
+            "kind_counts": {
+              "moving_carry_pair_coordinate": 11,
+              "packet_energy": 2,
+              "residual_visibility_bucket": 1
+            },
+            "moving_count": 11,
+            "moving_ids_sample": [
+              "M:0",
+              "M:1",
+              "M:2",
+              "M:3",
+              "M:4",
+              "M:5",
+              "M:6",
+              "M:7"
+            ],
+            "support_ids": [
+              "PE:u",
+              "PE:u^2",
+              "VIS:remaining_invisible",
+              "M:0",
+              "M:1",
+              "M:2",
+              "M:3",
+              "M:4",
+              "M:5",
+              "M:6",
+              "M:7",
+              "M:8",
+              "M:9",
+              "M:10"
+            ]
+          }
+        },
+        {
+          "determinant_character": "sign-nontrivial",
+          "orbit_size": 12,
+          "stabilizer_order": 2,
+          "support_summary": {
+            "fixed_ids": [
+              "PE:u",
+              "VIS:h4_visible",
+              "VIS:remaining_invisible"
+            ],
+            "kind_counts": {
+              "moving_carry_pair_coordinate": 11,
+              "packet_energy": 1,
+              "residual_visibility_bucket": 2
+            },
+            "moving_count": 11,
+            "moving_ids_sample": [
+              "M:0",
+              "M:1",
+              "M:2",
+              "M:3",
+              "M:4",
+              "M:5",
+              "M:6",
+              "M:7"
+            ],
+            "support_ids": [
+              "PE:u",
+              "VIS:h4_visible",
+              "VIS:remaining_invisible",
+              "M:0",
+              "M:1",
+              "M:2",
+              "M:3",
+              "M:4",
+              "M:5",
+              "M:6",
+              "M:7",
+              "M:8",
+              "M:9",
+              "M:10"
+            ]
+          }
+        },
+        {
+          "determinant_character": "sign-nontrivial",
+          "orbit_size": 12,
+          "stabilizer_order": 2,
+          "support_summary": {
+            "fixed_ids": [
+              "PE:u^2",
+              "VIS:h4_visible",
+              "VIS:remaining_invisible"
+            ],
+            "kind_counts": {
+              "moving_carry_pair_coordinate": 11,
+              "packet_energy": 1,
+              "residual_visibility_bucket": 2
+            },
+            "moving_count": 11,
+            "moving_ids_sample": [
+              "M:0",
+              "M:1",
+              "M:2",
+              "M:3",
+              "M:4",
+              "M:5",
+              "M:6",
+              "M:7"
+            ],
+            "support_ids": [
+              "PE:u^2",
+              "VIS:h4_visible",
+              "VIS:remaining_invisible",
+              "M:0",
+              "M:1",
+              "M:2",
+              "M:3",
+              "M:4",
+              "M:5",
+              "M:6",
+              "M:7",
+              "M:8",
+              "M:9",
+              "M:10"
+            ]
+          }
+        },
+        {
+          "determinant_character": "sign-nontrivial",
+          "orbit_size": 1,
+          "stabilizer_order": 24,
+          "support_summary": {
+            "fixed_ids": [
+              "PE:u",
+              "PE:u^2"
+            ],
+            "kind_counts": {
+              "moving_carry_pair_coordinate": 12,
+              "packet_energy": 2
+            },
+            "moving_count": 12,
+            "moving_ids_sample": [
+              "M:0",
+              "M:1",
+              "M:2",
+              "M:3",
+              "M:4",
+              "M:5",
+              "M:6",
+              "M:7"
+            ],
+            "support_ids": [
+              "PE:u",
+              "PE:u^2",
+              "M:0",
+              "M:1",
+              "M:2",
+              "M:3",
+              "M:4",
+              "M:5",
+              "M:6",
+              "M:7",
+              "M:8",
+              "M:9",
+              "M:10",
+              "M:11"
+            ]
+          }
+        },
+        {
+          "determinant_character": "sign-nontrivial",
+          "orbit_size": 1,
+          "stabilizer_order": 24,
+          "support_summary": {
+            "fixed_ids": [
+              "PE:u",
+              "VIS:h4_visible"
+            ],
+            "kind_counts": {
+              "moving_carry_pair_coordinate": 12,
+              "packet_energy": 1,
+              "residual_visibility_bucket": 1
+            },
+            "moving_count": 12,
+            "moving_ids_sample": [
+              "M:0",
+              "M:1",
+              "M:2",
+              "M:3",
+              "M:4",
+              "M:5",
+              "M:6",
+              "M:7"
+            ],
+            "support_ids": [
+              "PE:u",
+              "VIS:h4_visible",
+              "M:0",
+              "M:1",
+              "M:2",
+              "M:3",
+              "M:4",
+              "M:5",
+              "M:6",
+              "M:7",
+              "M:8",
+              "M:9",
+              "M:10",
+              "M:11"
+            ]
+          }
+        },
+        {
+          "determinant_character": "sign-nontrivial",
+          "orbit_size": 1,
+          "stabilizer_order": 24,
+          "support_summary": {
+            "fixed_ids": [
+              "PE:u^2",
+              "VIS:h4_visible"
+            ],
+            "kind_counts": {
+              "moving_carry_pair_coordinate": 12,
+              "packet_energy": 1,
+              "residual_visibility_bucket": 1
+            },
+            "moving_count": 12,
+            "moving_ids_sample": [
+              "M:0",
+              "M:1",
+              "M:2",
+              "M:3",
+              "M:4",
+              "M:5",
+              "M:6",
+              "M:7"
+            ],
+            "support_ids": [
+              "PE:u^2",
+              "VIS:h4_visible",
+              "M:0",
+              "M:1",
+              "M:2",
+              "M:3",
+              "M:4",
+              "M:5",
+              "M:6",
+              "M:7",
+              "M:8",
+              "M:9",
+              "M:10",
+              "M:11"
+            ]
+          }
+        }
+      ],
+      "size": 12,
+      "source_index": 15,
+      "stabilizer_order_distribution": {
+        "1": 1,
+        "2": 7,
+        "24": 6,
+        "4": 1
+      },
+      "status": "enumerated",
+      "support_count": 120,
+      "tuple_label": {
+        "closure_defect_label": "filtered_carry_pair_path:u^2->u^2->u^2",
+        "full_filtered_residual": 1569,
+        "h3_contraction_visible_from_h4_invisible": 1470,
+        "h4_visible_atoms": 72,
+        "hygiene": [
+          "support residual 0 is not full filtered closure",
+          "K_CH is a Fisher-shadow channel, not a standalone Ext_CH detector",
+          "quotient sufficiency is relative to the declared finite skeleton"
+        ],
+        "kappa_source": "FC2 filtered section class [kappa]",
+        "remaining_invisible_atoms": 27,
+        "support_projection_residual": 0
+      }
+    },
+    {
+      "by_fixed_coordinate_count": [
+        {
+          "determinant_character_distribution": {
+            "sign-nontrivial": 594,
+            "trivial": 81422
+          },
+          "fixed_coordinate_count": 0,
+          "fixed_subset_choices": 1,
+          "moving_coordinate_count": 14,
+          "moving_orbit_count": 82016,
+          "orbit_size_distribution": {
+            "12": 594,
+            "24": 81422
+          },
+          "stabilizer_order_distribution": {
+            "1": 81422,
+            "2": 594
+          },
+          "support_count": 1961256,
+          "tuple_orbit_count": 82016
+        },
+        {
+          "determinant_character_distribution": {
+            "trivial": 416024
+          },
+          "fixed_coordinate_count": 1,
+          "fixed_subset_choices": 4,
+          "moving_coordinate_count": 13,
+          "moving_orbit_count": 104006,
+          "orbit_size_distribution": {
+            "24": 416024
+          },
+          "stabilizer_order_distribution": {
+            "1": 416024
+          },
+          "support_count": 9984576,
+          "tuple_orbit_count": 416024
+        },
+        {
+          "determinant_character_distribution": {
+            "sign-nontrivial": 60,
+            "trivial": 678132
+          },
+          "fixed_coordinate_count": 2,
+          "fixed_subset_choices": 6,
+          "moving_coordinate_count": 12,
+          "moving_orbit_count": 113032,
+          "orbit_size_distribution": {
+            "12": 3996,
+            "2": 18,
+            "24": 673992,
+            "4": 24,
+            "6": 126,
+            "8": 36
+          },
+          "stabilizer_order_distribution": {
+            "1": 673992,
+            "12": 18,
+            "2": 3996,
+            "3": 36,
+            "4": 126,
+            "6": 24
+          },
+          "support_count": 16224936,
+          "tuple_orbit_count": 678192
+        },
+        {
+          "determinant_character_distribution": {
+            "trivial": 416024
+          },
+          "fixed_coordinate_count": 3,
+          "fixed_subset_choices": 4,
+          "moving_coordinate_count": 11,
+          "moving_orbit_count": 104006,
+          "orbit_size_distribution": {
+            "24": 416024
+          },
+          "stabilizer_order_distribution": {
+            "1": 416024
+          },
+          "support_count": 9984576,
+          "tuple_orbit_count": 416024
+        },
+        {
+          "determinant_character_distribution": {
+            "sign-nontrivial": 594,
+            "trivial": 81422
+          },
+          "fixed_coordinate_count": 4,
+          "fixed_subset_choices": 1,
+          "moving_coordinate_count": 10,
+          "moving_orbit_count": 82016,
+          "orbit_size_distribution": {
+            "12": 594,
+            "24": 81422
+          },
+          "stabilizer_order_distribution": {
+            "1": 81422,
+            "2": 594
+          },
+          "support_count": 1961256,
+          "tuple_orbit_count": 82016
+        }
+      ],
+      "coordinate_count": 28,
+      "cycle_profile": {
+        "1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1": 1,
+        "2,2,2,2,2,2,2,2,2,2,2,2": 9,
+        "3,3,3,3,3,3,3,3": 2,
+        "4,4,4,4,4,4": 6,
+        "6,6,6,6": 6
+      },
+      "determinant_character_distribution": {
+        "sign-nontrivial": 1248,
+        "trivial": 1673024
+      },
+      "normalizer_orbit_count": 1674272,
+      "orbit_size_distribution": {
+        "12": 5184,
+        "2": 18,
+        "24": 1668884,
+        "4": 24,
+        "6": 126,
+        "8": 36
+      },
+      "path": "u^2->u^2->u^2",
+      "profile_source": "empirical/reports/fc1_noether_moving_tuple_census_f4_u2_size24.json",
+      "regular_profile_verified": true,
+      "representative": {
+        "left_eta": "1",
+        "middle": "u^2",
+        "right_eta": "w",
+        "source": "u^2",
+        "target": "u^2"
+      },
+      "size": 24,
+      "source_index": 16,
+      "stabilizer_order_distribution": {
+        "1": 1668884,
+        "12": 18,
+        "2": 5184,
+        "3": 36,
+        "4": 126,
+        "6": 24
+      },
+      "status": "enumerated_by_regular_size24_profile",
+      "support_count": 40116600,
+      "tuple_label": {
+        "closure_defect_label": "filtered_carry_pair_path:u^2->u^2->u^2",
+        "full_filtered_residual": 1569,
+        "h3_contraction_visible_from_h4_invisible": 1470,
+        "h4_visible_atoms": 72,
+        "hygiene": [
+          "support residual 0 is not full filtered closure",
+          "K_CH is a Fisher-shadow channel, not a standalone Ext_CH detector",
+          "quotient sufficiency is relative to the declared finite skeleton"
+        ],
+        "kappa_source": "FC2 filtered section class [kappa]",
+        "remaining_invisible_atoms": 27,
+        "support_projection_residual": 0
+      }
+    },
+    {
+      "by_fixed_coordinate_count": [
+        {
+          "determinant_character_distribution": {
+            "sign-nontrivial": 594,
+            "trivial": 81422
+          },
+          "fixed_coordinate_count": 0,
+          "fixed_subset_choices": 1,
+          "moving_coordinate_count": 14,
+          "moving_orbit_count": 82016,
+          "orbit_size_distribution": {
+            "12": 594,
+            "24": 81422
+          },
+          "stabilizer_order_distribution": {
+            "1": 81422,
+            "2": 594
+          },
+          "support_count": 1961256,
+          "tuple_orbit_count": 82016
+        },
+        {
+          "determinant_character_distribution": {
+            "trivial": 416024
+          },
+          "fixed_coordinate_count": 1,
+          "fixed_subset_choices": 4,
+          "moving_coordinate_count": 13,
+          "moving_orbit_count": 104006,
+          "orbit_size_distribution": {
+            "24": 416024
+          },
+          "stabilizer_order_distribution": {
+            "1": 416024
+          },
+          "support_count": 9984576,
+          "tuple_orbit_count": 416024
+        },
+        {
+          "determinant_character_distribution": {
+            "sign-nontrivial": 60,
+            "trivial": 678132
+          },
+          "fixed_coordinate_count": 2,
+          "fixed_subset_choices": 6,
+          "moving_coordinate_count": 12,
+          "moving_orbit_count": 113032,
+          "orbit_size_distribution": {
+            "12": 3996,
+            "2": 18,
+            "24": 673992,
+            "4": 24,
+            "6": 126,
+            "8": 36
+          },
+          "stabilizer_order_distribution": {
+            "1": 673992,
+            "12": 18,
+            "2": 3996,
+            "3": 36,
+            "4": 126,
+            "6": 24
+          },
+          "support_count": 16224936,
+          "tuple_orbit_count": 678192
+        },
+        {
+          "determinant_character_distribution": {
+            "trivial": 416024
+          },
+          "fixed_coordinate_count": 3,
+          "fixed_subset_choices": 4,
+          "moving_coordinate_count": 11,
+          "moving_orbit_count": 104006,
+          "orbit_size_distribution": {
+            "24": 416024
+          },
+          "stabilizer_order_distribution": {
+            "1": 416024
+          },
+          "support_count": 9984576,
+          "tuple_orbit_count": 416024
+        },
+        {
+          "determinant_character_distribution": {
+            "sign-nontrivial": 594,
+            "trivial": 81422
+          },
+          "fixed_coordinate_count": 4,
+          "fixed_subset_choices": 1,
+          "moving_coordinate_count": 10,
+          "moving_orbit_count": 82016,
+          "orbit_size_distribution": {
+            "12": 594,
+            "24": 81422
+          },
+          "stabilizer_order_distribution": {
+            "1": 81422,
+            "2": 594
+          },
+          "support_count": 1961256,
+          "tuple_orbit_count": 82016
+        }
+      ],
+      "coordinate_count": 28,
+      "cycle_profile": {
+        "1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1": 1,
+        "2,2,2,2,2,2,2,2,2,2,2,2": 9,
+        "3,3,3,3,3,3,3,3": 2,
+        "4,4,4,4,4,4": 6,
+        "6,6,6,6": 6
+      },
+      "determinant_character_distribution": {
+        "sign-nontrivial": 1248,
+        "trivial": 1673024
+      },
+      "normalizer_orbit_count": 1674272,
+      "orbit_size_distribution": {
+        "12": 5184,
+        "2": 18,
+        "24": 1668884,
+        "4": 24,
+        "6": 126,
+        "8": 36
+      },
+      "path": "u^2->u^2->u^2",
+      "profile_source": "empirical/reports/fc1_noether_moving_tuple_census_f4_u2_size24.json",
+      "regular_profile_verified": true,
+      "representative": {
+        "left_eta": "1",
+        "middle": "u^2",
+        "right_eta": "w+(w+1)u",
+        "source": "u^2",
+        "target": "u^2"
+      },
+      "size": 24,
+      "source_index": 17,
+      "stabilizer_order_distribution": {
+        "1": 1668884,
+        "12": 18,
+        "2": 5184,
+        "3": 36,
+        "4": 126,
+        "6": 24
+      },
+      "status": "enumerated_by_regular_size24_profile",
+      "support_count": 40116600,
+      "tuple_label": {
+        "closure_defect_label": "filtered_carry_pair_path:u^2->u^2->u^2",
+        "full_filtered_residual": 1569,
+        "h3_contraction_visible_from_h4_invisible": 1470,
+        "h4_visible_atoms": 72,
+        "hygiene": [
+          "support residual 0 is not full filtered closure",
+          "K_CH is a Fisher-shadow channel, not a standalone Ext_CH detector",
+          "quotient sufficiency is relative to the declared finite skeleton"
+        ],
+        "kappa_source": "FC2 filtered section class [kappa]",
+        "remaining_invisible_atoms": 27,
+        "support_projection_residual": 0
+      }
+    },
+    {
+      "by_fixed_coordinate_count": [
+        {
+          "determinant_character_distribution": {
+            "sign-nontrivial": 594,
+            "trivial": 81422
+          },
+          "fixed_coordinate_count": 0,
+          "fixed_subset_choices": 1,
+          "moving_coordinate_count": 14,
+          "moving_orbit_count": 82016,
+          "orbit_size_distribution": {
+            "12": 594,
+            "24": 81422
+          },
+          "stabilizer_order_distribution": {
+            "1": 81422,
+            "2": 594
+          },
+          "support_count": 1961256,
+          "tuple_orbit_count": 82016
+        },
+        {
+          "determinant_character_distribution": {
+            "trivial": 416024
+          },
+          "fixed_coordinate_count": 1,
+          "fixed_subset_choices": 4,
+          "moving_coordinate_count": 13,
+          "moving_orbit_count": 104006,
+          "orbit_size_distribution": {
+            "24": 416024
+          },
+          "stabilizer_order_distribution": {
+            "1": 416024
+          },
+          "support_count": 9984576,
+          "tuple_orbit_count": 416024
+        },
+        {
+          "determinant_character_distribution": {
+            "sign-nontrivial": 60,
+            "trivial": 678132
+          },
+          "fixed_coordinate_count": 2,
+          "fixed_subset_choices": 6,
+          "moving_coordinate_count": 12,
+          "moving_orbit_count": 113032,
+          "orbit_size_distribution": {
+            "12": 3996,
+            "2": 18,
+            "24": 673992,
+            "4": 24,
+            "6": 126,
+            "8": 36
+          },
+          "stabilizer_order_distribution": {
+            "1": 673992,
+            "12": 18,
+            "2": 3996,
+            "3": 36,
+            "4": 126,
+            "6": 24
+          },
+          "support_count": 16224936,
+          "tuple_orbit_count": 678192
+        },
+        {
+          "determinant_character_distribution": {
+            "trivial": 416024
+          },
+          "fixed_coordinate_count": 3,
+          "fixed_subset_choices": 4,
+          "moving_coordinate_count": 11,
+          "moving_orbit_count": 104006,
+          "orbit_size_distribution": {
+            "24": 416024
+          },
+          "stabilizer_order_distribution": {
+            "1": 416024
+          },
+          "support_count": 9984576,
+          "tuple_orbit_count": 416024
+        },
+        {
+          "determinant_character_distribution": {
+            "sign-nontrivial": 594,
+            "trivial": 81422
+          },
+          "fixed_coordinate_count": 4,
+          "fixed_subset_choices": 1,
+          "moving_coordinate_count": 10,
+          "moving_orbit_count": 82016,
+          "orbit_size_distribution": {
+            "12": 594,
+            "24": 81422
+          },
+          "stabilizer_order_distribution": {
+            "1": 81422,
+            "2": 594
+          },
+          "support_count": 1961256,
+          "tuple_orbit_count": 82016
+        }
+      ],
+      "coordinate_count": 28,
+      "cycle_profile": {
+        "1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1": 1,
+        "2,2,2,2,2,2,2,2,2,2,2,2": 9,
+        "3,3,3,3,3,3,3,3": 2,
+        "4,4,4,4,4,4": 6,
+        "6,6,6,6": 6
+      },
+      "determinant_character_distribution": {
+        "sign-nontrivial": 1248,
+        "trivial": 1673024
+      },
+      "normalizer_orbit_count": 1674272,
+      "orbit_size_distribution": {
+        "12": 5184,
+        "2": 18,
+        "24": 1668884,
+        "4": 24,
+        "6": 126,
+        "8": 36
+      },
+      "path": "u^2->u^2->u^2",
+      "profile_source": "empirical/reports/fc1_noether_moving_tuple_census_f4_u2_size24.json",
+      "regular_profile_verified": true,
+      "representative": {
+        "left_eta": "1",
+        "middle": "u^2",
+        "right_eta": "w+1+(w+1)u",
+        "source": "u^2",
+        "target": "u^2"
+      },
+      "size": 24,
+      "source_index": 18,
+      "stabilizer_order_distribution": {
+        "1": 1668884,
+        "12": 18,
+        "2": 5184,
+        "3": 36,
+        "4": 126,
+        "6": 24
+      },
+      "status": "enumerated_by_regular_size24_profile",
+      "support_count": 40116600,
+      "tuple_label": {
+        "closure_defect_label": "filtered_carry_pair_path:u^2->u^2->u^2",
+        "full_filtered_residual": 1569,
+        "h3_contraction_visible_from_h4_invisible": 1470,
+        "h4_visible_atoms": 72,
+        "hygiene": [
+          "support residual 0 is not full filtered closure",
+          "K_CH is a Fisher-shadow channel, not a standalone Ext_CH detector",
+          "quotient sufficiency is relative to the declared finite skeleton"
+        ],
+        "kappa_source": "FC2 filtered section class [kappa]",
+        "remaining_invisible_atoms": 27,
+        "support_projection_residual": 0
+      }
+    },
+    {
+      "by_fixed_coordinate_count": [
+        {
+          "determinant_character_distribution": {
+            "sign-nontrivial": 594,
+            "trivial": 81422
+          },
+          "fixed_coordinate_count": 0,
+          "fixed_subset_choices": 1,
+          "moving_coordinate_count": 14,
+          "moving_orbit_count": 82016,
+          "orbit_size_distribution": {
+            "12": 594,
+            "24": 81422
+          },
+          "stabilizer_order_distribution": {
+            "1": 81422,
+            "2": 594
+          },
+          "support_count": 1961256,
+          "tuple_orbit_count": 82016
+        },
+        {
+          "determinant_character_distribution": {
+            "trivial": 416024
+          },
+          "fixed_coordinate_count": 1,
+          "fixed_subset_choices": 4,
+          "moving_coordinate_count": 13,
+          "moving_orbit_count": 104006,
+          "orbit_size_distribution": {
+            "24": 416024
+          },
+          "stabilizer_order_distribution": {
+            "1": 416024
+          },
+          "support_count": 9984576,
+          "tuple_orbit_count": 416024
+        },
+        {
+          "determinant_character_distribution": {
+            "sign-nontrivial": 60,
+            "trivial": 678132
+          },
+          "fixed_coordinate_count": 2,
+          "fixed_subset_choices": 6,
+          "moving_coordinate_count": 12,
+          "moving_orbit_count": 113032,
+          "orbit_size_distribution": {
+            "12": 3996,
+            "2": 18,
+            "24": 673992,
+            "4": 24,
+            "6": 126,
+            "8": 36
+          },
+          "stabilizer_order_distribution": {
+            "1": 673992,
+            "12": 18,
+            "2": 3996,
+            "3": 36,
+            "4": 126,
+            "6": 24
+          },
+          "support_count": 16224936,
+          "tuple_orbit_count": 678192
+        },
+        {
+          "determinant_character_distribution": {
+            "trivial": 416024
+          },
+          "fixed_coordinate_count": 3,
+          "fixed_subset_choices": 4,
+          "moving_coordinate_count": 11,
+          "moving_orbit_count": 104006,
+          "orbit_size_distribution": {
+            "24": 416024
+          },
+          "stabilizer_order_distribution": {
+            "1": 416024
+          },
+          "support_count": 9984576,
+          "tuple_orbit_count": 416024
+        },
+        {
+          "determinant_character_distribution": {
+            "sign-nontrivial": 594,
+            "trivial": 81422
+          },
+          "fixed_coordinate_count": 4,
+          "fixed_subset_choices": 1,
+          "moving_coordinate_count": 10,
+          "moving_orbit_count": 82016,
+          "orbit_size_distribution": {
+            "12": 594,
+            "24": 81422
+          },
+          "stabilizer_order_distribution": {
+            "1": 81422,
+            "2": 594
+          },
+          "support_count": 1961256,
+          "tuple_orbit_count": 82016
+        }
+      ],
+      "coordinate_count": 28,
+      "cycle_profile": {
+        "1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1": 1,
+        "2,2,2,2,2,2,2,2,2,2,2,2": 9,
+        "3,3,3,3,3,3,3,3": 2,
+        "4,4,4,4,4,4": 6,
+        "6,6,6,6": 6
+      },
+      "determinant_character_distribution": {
+        "sign-nontrivial": 1248,
+        "trivial": 1673024
+      },
+      "normalizer_orbit_count": 1674272,
+      "orbit_size_distribution": {
+        "12": 5184,
+        "2": 18,
+        "24": 1668884,
+        "4": 24,
+        "6": 126,
+        "8": 36
+      },
+      "path": "u^2->u^2->u^2",
+      "profile_source": "empirical/reports/fc1_noether_moving_tuple_census_f4_u2_size24.json",
+      "regular_profile_verified": true,
+      "representative": {
+        "left_eta": "1",
+        "middle": "u^2",
+        "right_eta": "w+1+u",
+        "source": "u^2",
+        "target": "u^2"
+      },
+      "size": 24,
+      "source_index": 19,
+      "stabilizer_order_distribution": {
+        "1": 1668884,
+        "12": 18,
+        "2": 5184,
+        "3": 36,
+        "4": 126,
+        "6": 24
+      },
+      "status": "enumerated_by_regular_size24_profile",
+      "support_count": 40116600,
+      "tuple_label": {
+        "closure_defect_label": "filtered_carry_pair_path:u^2->u^2->u^2",
+        "full_filtered_residual": 1569,
+        "h3_contraction_visible_from_h4_invisible": 1470,
+        "h4_visible_atoms": 72,
+        "hygiene": [
+          "support residual 0 is not full filtered closure",
+          "K_CH is a Fisher-shadow channel, not a standalone Ext_CH detector",
+          "quotient sufficiency is relative to the declared finite skeleton"
+        ],
+        "kappa_source": "FC2 filtered section class [kappa]",
+        "remaining_invisible_atoms": 27,
+        "support_projection_residual": 0
+      }
+    }
+  ],
+  "ring": "F_4[u]/(u^2)",
+  "row_key": "f4-u2",
+  "schema": "fc1_noether_carry_pair_atlas_f4_u2.v1",
+  "scope": {
+    "canonical_carry_pair_orbits": 20,
+    "fixed_coordinates": 4,
+    "hamiltonian_tuple_size": 14,
+    "not_claimed": [
+      "simultaneous split of all carry-pair orbits",
+      "all K_CH commutator orbit coordinates split",
+      "full 637-coordinate tuple census",
+      "arbitrary smooth invariant functions",
+      "all Fisher-volume-preserving currents"
+    ],
+    "requires_companion_coordinates": 2,
+    "tuple_capable_one_split_charts": 18
+  },
+  "sources": {
+    "base_census": "empirical/reports/fc1_noether_atlas_census_f4_u2.json",
+    "ext_cocycle": "empirical/reports/ext_ch_cocycle_f4_u2.json",
+    "size24_profile": "empirical/reports/fc1_noether_moving_tuple_census_f4_u2_size24.json"
+  },
+  "status": "bounded one-split carry-pair Noether atlas certificate",
+  "summary": {
+    "chart_orbit_count_total_not_simultaneous": 20091354,
+    "chart_support_count_total_not_simultaneous": 481399920,
+    "determinant_character_distribution_across_charts_not_simultaneous": {
+      "sign-nontrivial": 15048,
+      "trivial": 20076306
+    },
+    "full_filtered_residual": 1569,
+    "h3_contraction_visible_from_h4_invisible": 1470,
+    "h4_visible_atoms": 72,
+    "remaining_invisible_atoms": 27,
+    "status_distribution": {
+      "enumerated": 6,
+      "enumerated_by_regular_size24_profile": 12,
+      "requires_companion_coordinates": 2
+    },
+    "support_projection_residual": 0
+  }
+}

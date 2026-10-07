@@ -1,0 +1,34 @@
+{
+  "claim_tested": "Paper 28 T*1' corrected Z6 canonical bridge certificate",
+  "selection_principle": {
+    "row": "Z6 = Z2 x Z3, the minimal CRT row with dyadic and ternary sectors",
+    "eta_base": "maximum-entropy/product dyadic base, pure in e-coordinates",
+    "ternary_gate": "scale-free Heron shape gate times a normalized V2xV3 copula contrast",
+    "physical_projection": "Pi_EL, the Euler-Lagrange projection of the pulled-back cubic Fisher action",
+    "residual_policy": "finite-row metric mismatch is typed projection overflow, not silently erased"
+  },
+  "input_reports": {
+    "area_json": "empirical\\reports\\z6_area_gated_copula_audit.json",
+    "noether_json": "empirical\\reports\\z6_el_projection_noether_audit.json",
+    "shortcut_json": "empirical\\reports\\z6_copula_variational_consistency_audit.json",
+    "metric_json": "empirical\\reports\\z6_gaussian_base_metric_audit.json"
+  },
+  "summary": {
+    "status": "PASS_FINITE_ROW_CANONICAL_BRIDGE",
+    "required_failures": [],
+    "control_notes": [
+      "direct algebraic K_CH force shortcut remains falsified as expected",
+      "global finite-row metric homothety remains falsified and is recorded as typed overflow"
+    ],
+    "max_base_e_tangent_mixed_ratio": 1.3597396312841195e-10,
+    "interior_theta": 0.7455576559546312,
+    "boundary_theta": 0.0,
+    "interior_copula_k_ch_mixed_ratio": 0.8774517431143314,
+    "max_relative_energy_drift": 3.61372935048232e-10,
+    "max_ternary_acceleration_norm": 0.02679039851115651,
+    "shortcut_status": "KILL",
+    "shortcut_max_relative_residual": 1.8494691878824712,
+    "metric_status": "KILL",
+    "metric_mean_relative_residual": 0.4843783691771888
+  }
+}

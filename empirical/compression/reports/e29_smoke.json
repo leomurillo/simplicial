@@ -1,0 +1,178 @@
+[
+  {
+    "file": "C:\\Users\\leomu\\Downloads\\que-ver-en-costa-rica-correos-portada.jpg",
+    "width": 64,
+    "height": 64,
+    "raw_rgb_bytes": 12288,
+    "webp_lossless_bytes": 6032,
+    "transform": "r-gr-bg",
+    "scheme": "ch-ctx-energy-unitary-split-blend71-apex128",
+    "conductor_modulus": 30,
+    "rows": [
+      {
+        "model": "baseline",
+        "mix": "0/1",
+        "rung_mode": "tile",
+        "bytes": 5899,
+        "delta_vs_webp": -133,
+        "roundtrip_ok": true,
+        "encode_s": 0.5421889999997802,
+        "decode_s": 0.4060918999603018,
+        "encode_stats": {
+          "codec": "SR29",
+          "model": "baseline",
+          "transform": "r-gr-bg",
+          "scheme": "ch-ctx-energy-unitary-split-blend71-apex128",
+          "conductor_modulus": 30,
+          "mix": "0/1",
+          "rung_mode": "tile",
+          "bytes": 5899,
+          "header_metadata_bytes": 39,
+          "entropy_bytes": 5860,
+          "predictor_metadata_bytes": 8,
+          "energy_metadata_bytes": 5,
+          "unitary_metadata_bytes": 3,
+          "max_symbol": 241,
+          "predictors": {
+            "pred-4": 10,
+            "pred-6": 2
+          },
+          "residual_s": 0.3603785999584943,
+          "entropy_encode_s": 0.18154590000631288
+        },
+        "decode_stats": {
+          "codec": "SR29",
+          "model": "baseline",
+          "transform": "r-gr-bg",
+          "scheme": "ch-ctx-energy-unitary-split-blend71-apex128",
+          "metadata_bytes": 39,
+          "entropy_bytes": 5860,
+          "max_symbol": 241
+        }
+      },
+      {
+        "model": "soft-ramanujan",
+        "mix": "1/2",
+        "rung_mode": "tile",
+        "bytes": 5903,
+        "delta_vs_webp": -129,
+        "roundtrip_ok": true,
+        "encode_s": 0.8805252999882214,
+        "decode_s": 1.4299669999745674,
+        "encode_stats": {
+          "codec": "SR29",
+          "model": "soft-ramanujan",
+          "transform": "r-gr-bg",
+          "scheme": "ch-ctx-energy-unitary-split-blend71-apex128",
+          "conductor_modulus": 30,
+          "mix": "1/2",
+          "rung_mode": "tile",
+          "bytes": 5903,
+          "header_metadata_bytes": 39,
+          "entropy_bytes": 5864,
+          "predictor_metadata_bytes": 8,
+          "energy_metadata_bytes": 5,
+          "unitary_metadata_bytes": 3,
+          "max_symbol": 241,
+          "predictors": {
+            "pred-4": 10,
+            "pred-6": 2
+          },
+          "residual_s": 0.2541426000534557,
+          "entropy_encode_s": 0.6261950000189245
+        },
+        "decode_stats": {
+          "codec": "SR29",
+          "model": "soft-ramanujan",
+          "transform": "r-gr-bg",
+          "scheme": "ch-ctx-energy-unitary-split-blend71-apex128",
+          "metadata_bytes": 39,
+          "entropy_bytes": 5864,
+          "max_symbol": 241
+        }
+      },
+      {
+        "model": "shuffled-ramanujan",
+        "mix": "1/2",
+        "rung_mode": "tile",
+        "bytes": 5958,
+        "delta_vs_webp": -74,
+        "roundtrip_ok": true,
+        "encode_s": 1.6341063000145368,
+        "decode_s": 1.507239099999424,
+        "encode_stats": {
+          "codec": "SR29",
+          "model": "shuffled-ramanujan",
+          "transform": "r-gr-bg",
+          "scheme": "ch-ctx-energy-unitary-split-blend71-apex128",
+          "conductor_modulus": 30,
+          "mix": "1/2",
+          "rung_mode": "tile",
+          "bytes": 5958,
+          "header_metadata_bytes": 39,
+          "entropy_bytes": 5919,
+          "predictor_metadata_bytes": 8,
+          "energy_metadata_bytes": 5,
+          "unitary_metadata_bytes": 3,
+          "max_symbol": 241,
+          "predictors": {
+            "pred-4": 10,
+            "pred-6": 2
+          },
+          "residual_s": 0.9478513000067323,
+          "entropy_encode_s": 0.6861050000297837
+        },
+        "decode_stats": {
+          "codec": "SR29",
+          "model": "shuffled-ramanujan",
+          "transform": "r-gr-bg",
+          "scheme": "ch-ctx-energy-unitary-split-blend71-apex128",
+          "metadata_bytes": 39,
+          "entropy_bytes": 5919,
+          "max_symbol": 241
+        }
+      },
+      {
+        "model": "hard-rung-context",
+        "mix": "0/1",
+        "rung_mode": "tile",
+        "bytes": 5983,
+        "delta_vs_webp": -49,
+        "roundtrip_ok": true,
+        "encode_s": 0.4748797999927774,
+        "decode_s": 0.5164375000167638,
+        "encode_stats": {
+          "codec": "SR29",
+          "model": "hard-rung-context",
+          "transform": "r-gr-bg",
+          "scheme": "ch-ctx-energy-unitary-split-blend71-apex128",
+          "conductor_modulus": 30,
+          "mix": "0/1",
+          "rung_mode": "tile",
+          "bytes": 5983,
+          "header_metadata_bytes": 39,
+          "entropy_bytes": 5944,
+          "predictor_metadata_bytes": 8,
+          "energy_metadata_bytes": 5,
+          "unitary_metadata_bytes": 3,
+          "max_symbol": 241,
+          "predictors": {
+            "pred-4": 10,
+            "pred-6": 2
+          },
+          "residual_s": 0.22503489995142445,
+          "entropy_encode_s": 0.2497655000188388
+        },
+        "decode_stats": {
+          "codec": "SR29",
+          "model": "hard-rung-context",
+          "transform": "r-gr-bg",
+          "scheme": "ch-ctx-energy-unitary-split-blend71-apex128",
+          "metadata_bytes": 39,
+          "entropy_bytes": 5944,
+          "max_symbol": 241
+        }
+      }
+    ]
+  }
+]

@@ -1,0 +1,1489 @@
+{
+  "ring": "F_8[u]/(u^2)",
+  "row_key": "f8-u2",
+  "labels": 64,
+  "nontrivial_labels": 63,
+  "packets": {
+    "u": 7,
+    "u^2": 56
+  },
+  "gamma_size": 168,
+  "quotient_shift_count": 184,
+  "quotient_shift_support_distribution": {
+    "6": 7,
+    "7": 113,
+    "48": 56,
+    "56": 8
+  },
+  "carry_record_count": 7105,
+  "carry_path_distribution": {
+    "u->u->u": 49,
+    "u->u->u^2": 392,
+    "u^2->u->u": 392,
+    "u^2->u->u^2": 3136,
+    "u^2->u^2->u^2": 3136
+  },
+  "fisher_probe": {
+    "alpha": "u",
+    "left_mode": "(1+b)*u",
+    "right_mode": "1",
+    "order0_support": 62,
+    "left_order1_support": 62,
+    "right_order1_support": 62,
+    "mixed_order2_support": 62
+  },
+  "h3": {
+    "cells": 3906,
+    "orbits": 8,
+    "family_orbit_counts": {
+      "111": 1,
+      "122": 3,
+      "222": 4
+    },
+    "orbit_size_distribution": {
+      "42": 1,
+      "168": 1,
+      "336": 2,
+      "504": 2,
+      "1008": 2
+    },
+    "orbit_rows": [
+      {
+        "id": 0,
+        "size": 42,
+        "family": "111",
+        "representative": "((1+b)*u, (1+b+b^2)*u, b^2*u)"
+      },
+      {
+        "id": 1,
+        "size": 504,
+        "family": "122",
+        "representative": "((1+b)*u, 1, 1+(1+b)*u)"
+      },
+      {
+        "id": 2,
+        "size": 168,
+        "family": "122",
+        "representative": "((1+b)*u, 1+b, 1+b+(1+b)*u)"
+      },
+      {
+        "id": 3,
+        "size": 504,
+        "family": "122",
+        "representative": "((1+b)*u, 1+b^2, 1+b^2+(1+b)*u)"
+      },
+      {
+        "id": 4,
+        "size": 336,
+        "family": "222",
+        "representative": "(1, 1+b, b)"
+      },
+      {
+        "id": 5,
+        "size": 1008,
+        "family": "222",
+        "representative": "(1, 1+b+(1+b)*u, b+(1+b)*u)"
+      },
+      {
+        "id": 6,
+        "size": 336,
+        "family": "222",
+        "representative": "(1, 1+b+(1+b+b^2)*u, b+(1+b+b^2)*u)"
+      },
+      {
+        "id": 7,
+        "size": 1008,
+        "family": "222",
+        "representative": "(1, 1+b+(1+b^2)*u, b+(1+b^2)*u)"
+      }
+    ],
+    "elapsed_seconds": 0.142
+  },
+  "h4": {
+    "cells": 246141,
+    "orbits": 86,
+    "family_orbit_counts": {
+      "1111": 3,
+      "1122": 10,
+      "1222": 20,
+      "2222": 53
+    },
+    "orbit_size_distribution": {
+      "7": 1,
+      "56": 1,
+      "126": 1,
+      "168": 2,
+      "336": 2,
+      "504": 2,
+      "1008": 12,
+      "1344": 6,
+      "2016": 7,
+      "4032": 52
+    },
+    "orbit_rows": [
+      {
+        "id": 0,
+        "size": 7,
+        "family": "1111",
+        "representative": "((1+b)*u, (1+b)*u, (1+b)*u, (1+b)*u)"
+      },
+      {
+        "id": 1,
+        "size": 126,
+        "family": "1111",
+        "representative": "((1+b)*u, (1+b)*u, (1+b+b^2)*u, (1+b+b^2)*u)"
+      },
+      {
+        "id": 2,
+        "size": 1008,
+        "family": "1122",
+        "representative": "((1+b)*u, (1+b)*u, 1, 1)"
+      },
+      {
+        "id": 3,
+        "size": 336,
+        "family": "1122",
+        "representative": "((1+b)*u, (1+b)*u, 1+b, 1+b)"
+      },
+      {
+        "id": 4,
+        "size": 1008,
+        "family": "1122",
+        "representative": "((1+b)*u, (1+b)*u, 1+b^2, 1+b^2)"
+      },
+      {
+        "id": 5,
+        "size": 168,
+        "family": "1111",
+        "representative": "((1+b)*u, (1+b+b^2)*u, (1+b^2)*u, u)"
+      },
+      {
+        "id": 6,
+        "size": 2016,
+        "family": "1122",
+        "representative": "((1+b)*u, (1+b+b^2)*u, 1, 1+b^2*u)"
+      },
+      {
+        "id": 7,
+        "size": 2016,
+        "family": "1122",
+        "representative": "((1+b)*u, (1+b+b^2)*u, 1+b, 1+b+b^2*u)"
+      },
+      {
+        "id": 8,
+        "size": 2016,
+        "family": "1122",
+        "representative": "((1+b)*u, (1+b+b^2)*u, 1+b+b^2, 1+b+b^2+b^2*u)"
+      },
+      {
+        "id": 9,
+        "size": 2016,
+        "family": "1122",
+        "representative": "((1+b)*u, (1+b+b^2)*u, 1+b^2, 1+b^2+b^2*u)"
+      },
+      {
+        "id": 10,
+        "size": 2016,
+        "family": "1122",
+        "representative": "((1+b)*u, (1+b+b^2)*u, b, b+b^2*u)"
+      },
+      {
+        "id": 11,
+        "size": 2016,
+        "family": "1122",
+        "representative": "((1+b)*u, (1+b+b^2)*u, b+b^2, b+b^2+b^2*u)"
+      },
+      {
+        "id": 12,
+        "size": 2016,
+        "family": "1122",
+        "representative": "((1+b)*u, (1+b+b^2)*u, b^2, b^2+b^2*u)"
+      },
+      {
+        "id": 13,
+        "size": 4032,
+        "family": "1222",
+        "representative": "((1+b)*u, 1, 1+b, b+(1+b)*u)"
+      },
+      {
+        "id": 14,
+        "size": 4032,
+        "family": "1222",
+        "representative": "((1+b)*u, 1, 1+b+(1+b)*u, b)"
+      },
+      {
+        "id": 15,
+        "size": 4032,
+        "family": "1222",
+        "representative": "((1+b)*u, 1, 1+b+(1+b+b^2)*u, b+b^2*u)"
+      },
+      {
+        "id": 16,
+        "size": 4032,
+        "family": "1222",
+        "representative": "((1+b)*u, 1, 1+b+(1+b^2)*u, b+(b+b^2)*u)"
+      },
+      {
+        "id": 17,
+        "size": 4032,
+        "family": "1222",
+        "representative": "((1+b)*u, 1, 1+b+(b+b^2)*u, b+(1+b^2)*u)"
+      },
+      {
+        "id": 18,
+        "size": 4032,
+        "family": "1222",
+        "representative": "((1+b)*u, 1, 1+b+b*u, b+u)"
+      },
+      {
+        "id": 19,
+        "size": 4032,
+        "family": "1222",
+        "representative": "((1+b)*u, 1, 1+b+b^2, b+b^2+(1+b)*u)"
+      },
+      {
+        "id": 20,
+        "size": 4032,
+        "family": "1222",
+        "representative": "((1+b)*u, 1, 1+b+b^2*u, b+(1+b+b^2)*u)"
+      },
+      {
+        "id": 21,
+        "size": 4032,
+        "family": "1222",
+        "representative": "((1+b)*u, 1, 1+b+b^2+(1+b+b^2)*u, b+b^2+b^2*u)"
+      },
+      {
+        "id": 22,
+        "size": 1344,
+        "family": "1222",
+        "representative": "((1+b)*u, 1, 1+b+b^2+b^2*u, b+b^2+(1+b+b^2)*u)"
+      },
+      {
+        "id": 23,
+        "size": 1344,
+        "family": "1222",
+        "representative": "((1+b)*u, 1, 1+b+b^2+u, b+b^2+b*u)"
+      },
+      {
+        "id": 24,
+        "size": 4032,
+        "family": "1222",
+        "representative": "((1+b)*u, 1, 1+b+u, b+b*u)"
+      },
+      {
+        "id": 25,
+        "size": 4032,
+        "family": "1222",
+        "representative": "((1+b)*u, 1, 1+b^2, b^2+(1+b)*u)"
+      },
+      {
+        "id": 26,
+        "size": 4032,
+        "family": "1222",
+        "representative": "((1+b)*u, 1, 1+b^2+(1+b)*u, b^2)"
+      },
+      {
+        "id": 27,
+        "size": 4032,
+        "family": "1222",
+        "representative": "((1+b)*u, 1, 1+b^2+(1+b+b^2)*u, b^2+b^2*u)"
+      },
+      {
+        "id": 28,
+        "size": 4032,
+        "family": "1222",
+        "representative": "((1+b)*u, 1, 1+b^2+(1+b^2)*u, b^2+(b+b^2)*u)"
+      },
+      {
+        "id": 29,
+        "size": 4032,
+        "family": "1222",
+        "representative": "((1+b)*u, 1, 1+b^2+(b+b^2)*u, b^2+(1+b^2)*u)"
+      },
+      {
+        "id": 30,
+        "size": 4032,
+        "family": "1222",
+        "representative": "((1+b)*u, 1, 1+b^2+b*u, b^2+u)"
+      },
+      {
+        "id": 31,
+        "size": 4032,
+        "family": "1222",
+        "representative": "((1+b)*u, 1, 1+b^2+b^2*u, b^2+(1+b+b^2)*u)"
+      },
+      {
+        "id": 32,
+        "size": 4032,
+        "family": "1222",
+        "representative": "((1+b)*u, 1, 1+b^2+u, b^2+b*u)"
+      },
+      {
+        "id": 33,
+        "size": 56,
+        "family": "2222",
+        "representative": "(1, 1, 1, 1)"
+      },
+      {
+        "id": 34,
+        "size": 504,
+        "family": "2222",
+        "representative": "(1, 1, 1+(1+b)*u, 1+(1+b)*u)"
+      },
+      {
+        "id": 35,
+        "size": 504,
+        "family": "2222",
+        "representative": "(1, 1, 1+(b+b^2)*u, 1+(b+b^2)*u)"
+      },
+      {
+        "id": 36,
+        "size": 1008,
+        "family": "2222",
+        "representative": "(1, 1, 1+b, 1+b)"
+      },
+      {
+        "id": 37,
+        "size": 1008,
+        "family": "2222",
+        "representative": "(1, 1, 1+b+(1+b)*u, 1+b+(1+b)*u)"
+      },
+      {
+        "id": 38,
+        "size": 1008,
+        "family": "2222",
+        "representative": "(1, 1, 1+b+(1+b+b^2)*u, 1+b+(1+b+b^2)*u)"
+      },
+      {
+        "id": 39,
+        "size": 1008,
+        "family": "2222",
+        "representative": "(1, 1, 1+b+(1+b^2)*u, 1+b+(1+b^2)*u)"
+      },
+      {
+        "id": 40,
+        "size": 1008,
+        "family": "2222",
+        "representative": "(1, 1, 1+b+(b+b^2)*u, 1+b+(b+b^2)*u)"
+      },
+      {
+        "id": 41,
+        "size": 1008,
+        "family": "2222",
+        "representative": "(1, 1, 1+b+b*u, 1+b+b*u)"
+      },
+      {
+        "id": 42,
+        "size": 1008,
+        "family": "2222",
+        "representative": "(1, 1, 1+b+b^2*u, 1+b+b^2*u)"
+      },
+      {
+        "id": 43,
+        "size": 1008,
+        "family": "2222",
+        "representative": "(1, 1, 1+b+b^2+u, 1+b+b^2+u)"
+      },
+      {
+        "id": 44,
+        "size": 168,
+        "family": "2222",
+        "representative": "(1, 1, 1+u, 1+u)"
+      },
+      {
+        "id": 45,
+        "size": 1008,
+        "family": "2222",
+        "representative": "(1, 1+(1+b)*u, 1+(1+b+b^2)*u, 1+b^2*u)"
+      },
+      {
+        "id": 46,
+        "size": 4032,
+        "family": "2222",
+        "representative": "(1, 1+(1+b)*u, 1+b, 1+b+(1+b)*u)"
+      },
+      {
+        "id": 47,
+        "size": 1008,
+        "family": "2222",
+        "representative": "(1, 1+(1+b)*u, 1+b*u, 1+u)"
+      },
+      {
+        "id": 48,
+        "size": 4032,
+        "family": "2222",
+        "representative": "(1, 1+(1+b)*u, 1+b+(1+b+b^2)*u, 1+b+b^2*u)"
+      },
+      {
+        "id": 49,
+        "size": 4032,
+        "family": "2222",
+        "representative": "(1, 1+(1+b)*u, 1+b+b^2, 1+b+b^2+(1+b)*u)"
+      },
+      {
+        "id": 50,
+        "size": 4032,
+        "family": "2222",
+        "representative": "(1, 1+(1+b)*u, 1+b+b^2+(1+b+b^2)*u, 1+b+b^2+b^2*u)"
+      },
+      {
+        "id": 51,
+        "size": 4032,
+        "family": "2222",
+        "representative": "(1, 1+(1+b)*u, 1+b^2, 1+b^2+(1+b)*u)"
+      },
+      {
+        "id": 52,
+        "size": 4032,
+        "family": "2222",
+        "representative": "(1, 1+(1+b)*u, 1+b^2+(1+b^2)*u, 1+b^2+(b+b^2)*u)"
+      },
+      {
+        "id": 53,
+        "size": 4032,
+        "family": "2222",
+        "representative": "(1, 1+(1+b)*u, b, b+(1+b)*u)"
+      },
+      {
+        "id": 54,
+        "size": 4032,
+        "family": "2222",
+        "representative": "(1, 1+(1+b)*u, b+(1+b+b^2)*u, b+b^2*u)"
+      },
+      {
+        "id": 55,
+        "size": 4032,
+        "family": "2222",
+        "representative": "(1, 1+(1+b)*u, b^2, b^2+(1+b)*u)"
+      },
+      {
+        "id": 56,
+        "size": 4032,
+        "family": "2222",
+        "representative": "(1, 1+(1+b)*u, b^2+(1+b^2)*u, b^2+(b+b^2)*u)"
+      },
+      {
+        "id": 57,
+        "size": 4032,
+        "family": "2222",
+        "representative": "(1, 1+(b+b^2)*u, 1+b, 1+b+(b+b^2)*u)"
+      },
+      {
+        "id": 58,
+        "size": 336,
+        "family": "2222",
+        "representative": "(1, 1+(b+b^2)*u, 1+b*u, 1+b^2*u)"
+      },
+      {
+        "id": 59,
+        "size": 4032,
+        "family": "2222",
+        "representative": "(1, 1+(b+b^2)*u, 1+b+(1+b)*u, 1+b+(1+b^2)*u)"
+      },
+      {
+        "id": 60,
+        "size": 4032,
+        "family": "2222",
+        "representative": "(1, 1+(b+b^2)*u, b+b^2, b+b^2+(b+b^2)*u)"
+      },
+      {
+        "id": 61,
+        "size": 4032,
+        "family": "2222",
+        "representative": "(1, 1+(b+b^2)*u, b+b^2+(1+b)*u, b+b^2+(1+b^2)*u)"
+      },
+      {
+        "id": 62,
+        "size": 1344,
+        "family": "2222",
+        "representative": "(1, 1+b, 1+b+b^2, 1+b^2)"
+      },
+      {
+        "id": 63,
+        "size": 4032,
+        "family": "2222",
+        "representative": "(1, 1+b, 1+b+b^2+(1+b)*u, 1+b^2+(1+b)*u)"
+      },
+      {
+        "id": 64,
+        "size": 4032,
+        "family": "2222",
+        "representative": "(1, 1+b, 1+b+b^2+(1+b+b^2)*u, 1+b^2+(1+b+b^2)*u)"
+      },
+      {
+        "id": 65,
+        "size": 4032,
+        "family": "2222",
+        "representative": "(1, 1+b, 1+b+b^2+(1+b^2)*u, 1+b^2+(1+b^2)*u)"
+      },
+      {
+        "id": 66,
+        "size": 4032,
+        "family": "2222",
+        "representative": "(1, 1+b, 1+b+b^2+(b+b^2)*u, 1+b^2+(b+b^2)*u)"
+      },
+      {
+        "id": 67,
+        "size": 4032,
+        "family": "2222",
+        "representative": "(1, 1+b, 1+b+b^2+b*u, 1+b^2+b*u)"
+      },
+      {
+        "id": 68,
+        "size": 4032,
+        "family": "2222",
+        "representative": "(1, 1+b, 1+b+b^2+b^2*u, 1+b^2+b^2*u)"
+      },
+      {
+        "id": 69,
+        "size": 4032,
+        "family": "2222",
+        "representative": "(1, 1+b, 1+b+b^2+u, 1+b^2+u)"
+      },
+      {
+        "id": 70,
+        "size": 4032,
+        "family": "2222",
+        "representative": "(1, 1+b, b+b^2+(1+b)*u, b^2+(1+b)*u)"
+      },
+      {
+        "id": 71,
+        "size": 4032,
+        "family": "2222",
+        "representative": "(1, 1+b, b+b^2+(1+b+b^2)*u, b^2+(1+b+b^2)*u)"
+      },
+      {
+        "id": 72,
+        "size": 4032,
+        "family": "2222",
+        "representative": "(1, 1+b, b+b^2+(1+b^2)*u, b^2+(1+b^2)*u)"
+      },
+      {
+        "id": 73,
+        "size": 4032,
+        "family": "2222",
+        "representative": "(1, 1+b, b+b^2+(b+b^2)*u, b^2+(b+b^2)*u)"
+      },
+      {
+        "id": 74,
+        "size": 4032,
+        "family": "2222",
+        "representative": "(1, 1+b, b+b^2+b*u, b^2+b*u)"
+      },
+      {
+        "id": 75,
+        "size": 4032,
+        "family": "2222",
+        "representative": "(1, 1+b, b+b^2+b^2*u, b^2+b^2*u)"
+      },
+      {
+        "id": 76,
+        "size": 4032,
+        "family": "2222",
+        "representative": "(1, 1+b, b+b^2+u, b^2+u)"
+      },
+      {
+        "id": 77,
+        "size": 4032,
+        "family": "2222",
+        "representative": "(1, 1+b+(1+b)*u, 1+b+b^2+(1+b^2)*u, 1+b^2+(b+b^2)*u)"
+      },
+      {
+        "id": 78,
+        "size": 4032,
+        "family": "2222",
+        "representative": "(1, 1+b+(1+b)*u, 1+b+b^2+b*u, 1+b^2+u)"
+      },
+      {
+        "id": 79,
+        "size": 4032,
+        "family": "2222",
+        "representative": "(1, 1+b+(1+b)*u, 1+b+b^2+b^2*u, 1+b^2+(1+b+b^2)*u)"
+      },
+      {
+        "id": 80,
+        "size": 4032,
+        "family": "2222",
+        "representative": "(1, 1+b+(1+b)*u, b+b^2+b^2*u, b^2+(1+b+b^2)*u)"
+      },
+      {
+        "id": 81,
+        "size": 4032,
+        "family": "2222",
+        "representative": "(1, 1+b+(1+b)*u, b+b^2+u, b^2+b*u)"
+      },
+      {
+        "id": 82,
+        "size": 4032,
+        "family": "2222",
+        "representative": "(1, 1+b+(1+b+b^2)*u, 1+b+b^2+(1+b)*u, 1+b^2+b^2*u)"
+      },
+      {
+        "id": 83,
+        "size": 1344,
+        "family": "2222",
+        "representative": "(1, 1+b+(1+b+b^2)*u, b+b^2+b^2*u, b^2+(1+b)*u)"
+      },
+      {
+        "id": 84,
+        "size": 1344,
+        "family": "2222",
+        "representative": "(1, 1+b+(b+b^2)*u, 1+b+b^2+b^2*u, 1+b^2+b*u)"
+      },
+      {
+        "id": 85,
+        "size": 1344,
+        "family": "2222",
+        "representative": "(1, 1+b+(b+b^2)*u, b+b^2+(1+b)*u, b^2+(1+b^2)*u)"
+      }
+    ],
+    "elapsed_seconds": 101.136
+  },
+  "ext_ch": {
+    "full_block_dimensions": {
+      "c1_generators": 245000,
+      "c2_dimension": 25997440,
+      "composable_pairs": 18496
+    },
+    "raw_atom_count": 158081,
+    "raw_pair_count": 7105,
+    "raw_coefficient_distribution": {
+      "-1": 158081
+    },
+    "raw_path_distribution": {
+      "u->u->u": 49,
+      "u->u->u^2": 392,
+      "u^2->u->u": 392,
+      "u^2->u->u^2": 132160,
+      "u^2->u^2->u^2": 25088
+    },
+    "canonical_pair_orbit_count": 49,
+    "pair_orbit_size_distribution": {
+      "7": 1,
+      "21": 2,
+      "56": 6,
+      "168": 40
+    },
+    "pair_orbit_missing_total": 0,
+    "canonical_pair_orbits": [
+      {
+        "id": 1,
+        "representative": {
+          "left_eta": "(1+b)*u",
+          "right_eta": "(1+b)*u",
+          "source": "u",
+          "middle": "u",
+          "target": "u"
+        },
+        "size": 7,
+        "atom_count": 7,
+        "coefficients": {
+          "-1": 7
+        },
+        "path": "u->u->u"
+      },
+      {
+        "id": 2,
+        "representative": {
+          "left_eta": "(1+b)*u",
+          "right_eta": "(1+b+b^2)*u",
+          "source": "u",
+          "middle": "u",
+          "target": "u"
+        },
+        "size": 21,
+        "atom_count": 21,
+        "coefficients": {
+          "-1": 21
+        },
+        "path": "u->u->u"
+      },
+      {
+        "id": 3,
+        "representative": {
+          "left_eta": "(1+b)*u",
+          "right_eta": "(1+b^2)*u",
+          "source": "u",
+          "middle": "u",
+          "target": "u"
+        },
+        "size": 21,
+        "atom_count": 21,
+        "coefficients": {
+          "-1": 21
+        },
+        "path": "u->u->u"
+      },
+      {
+        "id": 4,
+        "representative": {
+          "left_eta": "1",
+          "right_eta": "(1+b)*u",
+          "source": "u",
+          "middle": "u",
+          "target": "u^2"
+        },
+        "size": 168,
+        "atom_count": 168,
+        "coefficients": {
+          "-1": 168
+        },
+        "path": "u->u->u^2"
+      },
+      {
+        "id": 5,
+        "representative": {
+          "left_eta": "1",
+          "right_eta": "(b+b^2)*u",
+          "source": "u",
+          "middle": "u",
+          "target": "u^2"
+        },
+        "size": 168,
+        "atom_count": 168,
+        "coefficients": {
+          "-1": 168
+        },
+        "path": "u->u->u^2"
+      },
+      {
+        "id": 6,
+        "representative": {
+          "left_eta": "1",
+          "right_eta": "u",
+          "source": "u",
+          "middle": "u",
+          "target": "u^2"
+        },
+        "size": 56,
+        "atom_count": 56,
+        "coefficients": {
+          "-1": 56
+        },
+        "path": "u->u->u^2"
+      },
+      {
+        "id": 7,
+        "representative": {
+          "left_eta": "(1+b)*u",
+          "right_eta": "1",
+          "source": "u^2",
+          "middle": "u",
+          "target": "u"
+        },
+        "size": 168,
+        "atom_count": 168,
+        "coefficients": {
+          "-1": 168
+        },
+        "path": "u^2->u->u"
+      },
+      {
+        "id": 8,
+        "representative": {
+          "left_eta": "(1+b)*u",
+          "right_eta": "1+b",
+          "source": "u^2",
+          "middle": "u",
+          "target": "u"
+        },
+        "size": 56,
+        "atom_count": 56,
+        "coefficients": {
+          "-1": 56
+        },
+        "path": "u^2->u->u"
+      },
+      {
+        "id": 9,
+        "representative": {
+          "left_eta": "(1+b)*u",
+          "right_eta": "1+b^2",
+          "source": "u^2",
+          "middle": "u",
+          "target": "u"
+        },
+        "size": 168,
+        "atom_count": 168,
+        "coefficients": {
+          "-1": 168
+        },
+        "path": "u^2->u->u"
+      },
+      {
+        "id": 10,
+        "representative": {
+          "left_eta": "1",
+          "right_eta": "1",
+          "source": "u^2",
+          "middle": "u",
+          "target": "u^2"
+        },
+        "size": 56,
+        "atom_count": 2744,
+        "coefficients": {
+          "-1": 2744
+        },
+        "path": "u^2->u->u^2"
+      },
+      {
+        "id": 11,
+        "representative": {
+          "left_eta": "1",
+          "right_eta": "1+(1+b)*u",
+          "source": "u^2",
+          "middle": "u",
+          "target": "u^2"
+        },
+        "size": 168,
+        "atom_count": 8232,
+        "coefficients": {
+          "-1": 8232
+        },
+        "path": "u^2->u->u^2"
+      },
+      {
+        "id": 12,
+        "representative": {
+          "left_eta": "1",
+          "right_eta": "1+(b+b^2)*u",
+          "source": "u^2",
+          "middle": "u",
+          "target": "u^2"
+        },
+        "size": 168,
+        "atom_count": 8232,
+        "coefficients": {
+          "-1": 8232
+        },
+        "path": "u^2->u->u^2"
+      },
+      {
+        "id": 13,
+        "representative": {
+          "left_eta": "1",
+          "right_eta": "1+b",
+          "source": "u^2",
+          "middle": "u",
+          "target": "u^2"
+        },
+        "size": 168,
+        "atom_count": 6888,
+        "coefficients": {
+          "-1": 6888
+        },
+        "path": "u^2->u->u^2"
+      },
+      {
+        "id": 14,
+        "representative": {
+          "left_eta": "1",
+          "right_eta": "1+b+(1+b)*u",
+          "source": "u^2",
+          "middle": "u",
+          "target": "u^2"
+        },
+        "size": 168,
+        "atom_count": 6888,
+        "coefficients": {
+          "-1": 6888
+        },
+        "path": "u^2->u->u^2"
+      },
+      {
+        "id": 15,
+        "representative": {
+          "left_eta": "1",
+          "right_eta": "1+b+(1+b+b^2)*u",
+          "source": "u^2",
+          "middle": "u",
+          "target": "u^2"
+        },
+        "size": 168,
+        "atom_count": 6888,
+        "coefficients": {
+          "-1": 6888
+        },
+        "path": "u^2->u->u^2"
+      },
+      {
+        "id": 16,
+        "representative": {
+          "left_eta": "1",
+          "right_eta": "1+b+(1+b^2)*u",
+          "source": "u^2",
+          "middle": "u",
+          "target": "u^2"
+        },
+        "size": 168,
+        "atom_count": 6888,
+        "coefficients": {
+          "-1": 6888
+        },
+        "path": "u^2->u->u^2"
+      },
+      {
+        "id": 17,
+        "representative": {
+          "left_eta": "1",
+          "right_eta": "1+b+(b+b^2)*u",
+          "source": "u^2",
+          "middle": "u",
+          "target": "u^2"
+        },
+        "size": 168,
+        "atom_count": 6888,
+        "coefficients": {
+          "-1": 6888
+        },
+        "path": "u^2->u->u^2"
+      },
+      {
+        "id": 18,
+        "representative": {
+          "left_eta": "1",
+          "right_eta": "1+b+b*u",
+          "source": "u^2",
+          "middle": "u",
+          "target": "u^2"
+        },
+        "size": 168,
+        "atom_count": 6888,
+        "coefficients": {
+          "-1": 6888
+        },
+        "path": "u^2->u->u^2"
+      },
+      {
+        "id": 19,
+        "representative": {
+          "left_eta": "1",
+          "right_eta": "1+b+b^2*u",
+          "source": "u^2",
+          "middle": "u",
+          "target": "u^2"
+        },
+        "size": 168,
+        "atom_count": 6888,
+        "coefficients": {
+          "-1": 6888
+        },
+        "path": "u^2->u->u^2"
+      },
+      {
+        "id": 20,
+        "representative": {
+          "left_eta": "1",
+          "right_eta": "1+b+b^2+u",
+          "source": "u^2",
+          "middle": "u",
+          "target": "u^2"
+        },
+        "size": 168,
+        "atom_count": 6888,
+        "coefficients": {
+          "-1": 6888
+        },
+        "path": "u^2->u->u^2"
+      },
+      {
+        "id": 21,
+        "representative": {
+          "left_eta": "1",
+          "right_eta": "1+u",
+          "source": "u^2",
+          "middle": "u",
+          "target": "u^2"
+        },
+        "size": 56,
+        "atom_count": 2744,
+        "coefficients": {
+          "-1": 2744
+        },
+        "path": "u^2->u->u^2"
+      },
+      {
+        "id": 22,
+        "representative": {
+          "left_eta": "1",
+          "right_eta": "b",
+          "source": "u^2",
+          "middle": "u",
+          "target": "u^2"
+        },
+        "size": 168,
+        "atom_count": 6888,
+        "coefficients": {
+          "-1": 6888
+        },
+        "path": "u^2->u->u^2"
+      },
+      {
+        "id": 23,
+        "representative": {
+          "left_eta": "1",
+          "right_eta": "b+(1+b)*u",
+          "source": "u^2",
+          "middle": "u",
+          "target": "u^2"
+        },
+        "size": 168,
+        "atom_count": 6888,
+        "coefficients": {
+          "-1": 6888
+        },
+        "path": "u^2->u->u^2"
+      },
+      {
+        "id": 24,
+        "representative": {
+          "left_eta": "1",
+          "right_eta": "b+(1+b+b^2)*u",
+          "source": "u^2",
+          "middle": "u",
+          "target": "u^2"
+        },
+        "size": 168,
+        "atom_count": 6888,
+        "coefficients": {
+          "-1": 6888
+        },
+        "path": "u^2->u->u^2"
+      },
+      {
+        "id": 25,
+        "representative": {
+          "left_eta": "1",
+          "right_eta": "b+(1+b^2)*u",
+          "source": "u^2",
+          "middle": "u",
+          "target": "u^2"
+        },
+        "size": 168,
+        "atom_count": 6888,
+        "coefficients": {
+          "-1": 6888
+        },
+        "path": "u^2->u->u^2"
+      },
+      {
+        "id": 26,
+        "representative": {
+          "left_eta": "1",
+          "right_eta": "b+(b+b^2)*u",
+          "source": "u^2",
+          "middle": "u",
+          "target": "u^2"
+        },
+        "size": 168,
+        "atom_count": 6888,
+        "coefficients": {
+          "-1": 6888
+        },
+        "path": "u^2->u->u^2"
+      },
+      {
+        "id": 27,
+        "representative": {
+          "left_eta": "1",
+          "right_eta": "b+b*u",
+          "source": "u^2",
+          "middle": "u",
+          "target": "u^2"
+        },
+        "size": 168,
+        "atom_count": 6888,
+        "coefficients": {
+          "-1": 6888
+        },
+        "path": "u^2->u->u^2"
+      },
+      {
+        "id": 28,
+        "representative": {
+          "left_eta": "1",
+          "right_eta": "b+b^2*u",
+          "source": "u^2",
+          "middle": "u",
+          "target": "u^2"
+        },
+        "size": 168,
+        "atom_count": 6888,
+        "coefficients": {
+          "-1": 6888
+        },
+        "path": "u^2->u->u^2"
+      },
+      {
+        "id": 29,
+        "representative": {
+          "left_eta": "1",
+          "right_eta": "b+b^2+u",
+          "source": "u^2",
+          "middle": "u",
+          "target": "u^2"
+        },
+        "size": 168,
+        "atom_count": 6888,
+        "coefficients": {
+          "-1": 6888
+        },
+        "path": "u^2->u->u^2"
+      },
+      {
+        "id": 30,
+        "representative": {
+          "left_eta": "1",
+          "right_eta": "1",
+          "source": "u^2",
+          "middle": "u^2",
+          "target": "u^2"
+        },
+        "size": 56,
+        "atom_count": 448,
+        "coefficients": {
+          "-1": 448
+        },
+        "path": "u^2->u^2->u^2"
+      },
+      {
+        "id": 31,
+        "representative": {
+          "left_eta": "1",
+          "right_eta": "1+(1+b)*u",
+          "source": "u^2",
+          "middle": "u^2",
+          "target": "u^2"
+        },
+        "size": 168,
+        "atom_count": 1344,
+        "coefficients": {
+          "-1": 1344
+        },
+        "path": "u^2->u^2->u^2"
+      },
+      {
+        "id": 32,
+        "representative": {
+          "left_eta": "1",
+          "right_eta": "1+(b+b^2)*u",
+          "source": "u^2",
+          "middle": "u^2",
+          "target": "u^2"
+        },
+        "size": 168,
+        "atom_count": 1344,
+        "coefficients": {
+          "-1": 1344
+        },
+        "path": "u^2->u^2->u^2"
+      },
+      {
+        "id": 33,
+        "representative": {
+          "left_eta": "1",
+          "right_eta": "1+b",
+          "source": "u^2",
+          "middle": "u^2",
+          "target": "u^2"
+        },
+        "size": 168,
+        "atom_count": 1344,
+        "coefficients": {
+          "-1": 1344
+        },
+        "path": "u^2->u^2->u^2"
+      },
+      {
+        "id": 34,
+        "representative": {
+          "left_eta": "1",
+          "right_eta": "1+b+(1+b)*u",
+          "source": "u^2",
+          "middle": "u^2",
+          "target": "u^2"
+        },
+        "size": 168,
+        "atom_count": 1344,
+        "coefficients": {
+          "-1": 1344
+        },
+        "path": "u^2->u^2->u^2"
+      },
+      {
+        "id": 35,
+        "representative": {
+          "left_eta": "1",
+          "right_eta": "1+b+(1+b+b^2)*u",
+          "source": "u^2",
+          "middle": "u^2",
+          "target": "u^2"
+        },
+        "size": 168,
+        "atom_count": 1344,
+        "coefficients": {
+          "-1": 1344
+        },
+        "path": "u^2->u^2->u^2"
+      },
+      {
+        "id": 36,
+        "representative": {
+          "left_eta": "1",
+          "right_eta": "1+b+(1+b^2)*u",
+          "source": "u^2",
+          "middle": "u^2",
+          "target": "u^2"
+        },
+        "size": 168,
+        "atom_count": 1344,
+        "coefficients": {
+          "-1": 1344
+        },
+        "path": "u^2->u^2->u^2"
+      },
+      {
+        "id": 37,
+        "representative": {
+          "left_eta": "1",
+          "right_eta": "1+b+(b+b^2)*u",
+          "source": "u^2",
+          "middle": "u^2",
+          "target": "u^2"
+        },
+        "size": 168,
+        "atom_count": 1344,
+        "coefficients": {
+          "-1": 1344
+        },
+        "path": "u^2->u^2->u^2"
+      },
+      {
+        "id": 38,
+        "representative": {
+          "left_eta": "1",
+          "right_eta": "1+b+b*u",
+          "source": "u^2",
+          "middle": "u^2",
+          "target": "u^2"
+        },
+        "size": 168,
+        "atom_count": 1344,
+        "coefficients": {
+          "-1": 1344
+        },
+        "path": "u^2->u^2->u^2"
+      },
+      {
+        "id": 39,
+        "representative": {
+          "left_eta": "1",
+          "right_eta": "1+b+b^2*u",
+          "source": "u^2",
+          "middle": "u^2",
+          "target": "u^2"
+        },
+        "size": 168,
+        "atom_count": 1344,
+        "coefficients": {
+          "-1": 1344
+        },
+        "path": "u^2->u^2->u^2"
+      },
+      {
+        "id": 40,
+        "representative": {
+          "left_eta": "1",
+          "right_eta": "1+b+b^2+u",
+          "source": "u^2",
+          "middle": "u^2",
+          "target": "u^2"
+        },
+        "size": 168,
+        "atom_count": 1344,
+        "coefficients": {
+          "-1": 1344
+        },
+        "path": "u^2->u^2->u^2"
+      },
+      {
+        "id": 41,
+        "representative": {
+          "left_eta": "1",
+          "right_eta": "1+u",
+          "source": "u^2",
+          "middle": "u^2",
+          "target": "u^2"
+        },
+        "size": 56,
+        "atom_count": 448,
+        "coefficients": {
+          "-1": 448
+        },
+        "path": "u^2->u^2->u^2"
+      },
+      {
+        "id": 42,
+        "representative": {
+          "left_eta": "1",
+          "right_eta": "b",
+          "source": "u^2",
+          "middle": "u^2",
+          "target": "u^2"
+        },
+        "size": 168,
+        "atom_count": 1344,
+        "coefficients": {
+          "-1": 1344
+        },
+        "path": "u^2->u^2->u^2"
+      },
+      {
+        "id": 43,
+        "representative": {
+          "left_eta": "1",
+          "right_eta": "b+(1+b)*u",
+          "source": "u^2",
+          "middle": "u^2",
+          "target": "u^2"
+        },
+        "size": 168,
+        "atom_count": 1344,
+        "coefficients": {
+          "-1": 1344
+        },
+        "path": "u^2->u^2->u^2"
+      },
+      {
+        "id": 44,
+        "representative": {
+          "left_eta": "1",
+          "right_eta": "b+(1+b+b^2)*u",
+          "source": "u^2",
+          "middle": "u^2",
+          "target": "u^2"
+        },
+        "size": 168,
+        "atom_count": 1344,
+        "coefficients": {
+          "-1": 1344
+        },
+        "path": "u^2->u^2->u^2"
+      },
+      {
+        "id": 45,
+        "representative": {
+          "left_eta": "1",
+          "right_eta": "b+(1+b^2)*u",
+          "source": "u^2",
+          "middle": "u^2",
+          "target": "u^2"
+        },
+        "size": 168,
+        "atom_count": 1344,
+        "coefficients": {
+          "-1": 1344
+        },
+        "path": "u^2->u^2->u^2"
+      },
+      {
+        "id": 46,
+        "representative": {
+          "left_eta": "1",
+          "right_eta": "b+(b+b^2)*u",
+          "source": "u^2",
+          "middle": "u^2",
+          "target": "u^2"
+        },
+        "size": 168,
+        "atom_count": 1344,
+        "coefficients": {
+          "-1": 1344
+        },
+        "path": "u^2->u^2->u^2"
+      },
+      {
+        "id": 47,
+        "representative": {
+          "left_eta": "1",
+          "right_eta": "b+b*u",
+          "source": "u^2",
+          "middle": "u^2",
+          "target": "u^2"
+        },
+        "size": 168,
+        "atom_count": 1344,
+        "coefficients": {
+          "-1": 1344
+        },
+        "path": "u^2->u^2->u^2"
+      },
+      {
+        "id": 48,
+        "representative": {
+          "left_eta": "1",
+          "right_eta": "b+b^2*u",
+          "source": "u^2",
+          "middle": "u^2",
+          "target": "u^2"
+        },
+        "size": 168,
+        "atom_count": 1344,
+        "coefficients": {
+          "-1": 1344
+        },
+        "path": "u^2->u^2->u^2"
+      },
+      {
+        "id": 49,
+        "representative": {
+          "left_eta": "1",
+          "right_eta": "b+b^2+u",
+          "source": "u^2",
+          "middle": "u^2",
+          "target": "u^2"
+        },
+        "size": 168,
+        "atom_count": 1344,
+        "coefficients": {
+          "-1": 1344
+        },
+        "path": "u^2->u^2->u^2"
+      }
+    ],
+    "elapsed_seconds_before_coboundary": 3.69,
+    "support_projection_coboundary": {
+      "mode": "support",
+      "c2_scope": "raw_support",
+      "coefficient_field": "Q",
+      "c1_generators": 3969,
+      "c2_dimension": 158081,
+      "coboundary_rank": 3969,
+      "residual_dimension": 154112,
+      "raw_support": 158081,
+      "residual_support": 0,
+      "residual_equal_raw": false,
+      "raw_is_coboundary": true,
+      "rational_rank_certified": true,
+      "raw_non_coboundary_over_q_certified": false,
+      "elapsed_seconds": 17.88
+    },
+    "full_block_coboundary": {
+      "mode": "full_block",
+      "c2_scope": "full_block",
+      "coefficient_field": "F_1000003",
+      "c1_generators": 245000,
+      "c2_dimension": 25997440,
+      "coboundary_rank": 245000,
+      "residual_dimension": 25752440,
+      "raw_support": 158081,
+      "residual_support": 158081,
+      "residual_equal_raw": true,
+      "raw_is_coboundary": false,
+      "rational_rank_certified": true,
+      "raw_non_coboundary_over_q_certified": true,
+      "elapsed_seconds": 527.172
+    }
+  }
+}

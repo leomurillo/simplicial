@@ -1,0 +1,70 @@
+{
+  "config": {
+    "acts": "empirical/data/ccsae_corpus_months_llama31_8b.safetensors",
+    "wu": "empirical/data/ccsae_corpus_months_llama31_8b_WU.npz",
+    "layer_index": 0,
+    "N": 12,
+    "width": 1024,
+    "k": 32,
+    "steps": 4000,
+    "batch": 256,
+    "lr": 0.001,
+    "seed": 0,
+    "out": "empirical/reports/ccsae_train_months_llama31_8b.json"
+  },
+  "M": 3456,
+  "d": 4096,
+  "delta_S_target": {
+    "cert_S12": 0.3851388399834358,
+    "cert_Sfull": 1.1275731934775525e-12
+  },
+  "vanilla_cyclic_err": 0.010213115140336388,
+  "results": {
+    "vanilla": {
+      "name": "vanilla",
+      "support": null,
+      "final_loss": 19.137840270996094,
+      "fvu_full_h": 0.022999091691198965,
+      "cyclic_recon_err_frac": 0.010213115140336388,
+      "p1_max_forbidden_leak": null
+    },
+    "cert_S12": {
+      "name": "cert_S12",
+      "support": [
+        12
+      ],
+      "final_loss": 55.22532653808594,
+      "fvu_full_h": 0.07025623808953056,
+      "cyclic_recon_err_frac": 0.4113566039701413,
+      "p1_max_forbidden_leak": 4.144790000282228e-05
+    },
+    "cert_Sfull": {
+      "name": "cert_Sfull",
+      "support": [
+        2,
+        3,
+        4,
+        6,
+        12
+      ],
+      "final_loss": 18.126405715942383,
+      "fvu_full_h": 0.023074773558647014,
+      "cyclic_recon_err_frac": 0.010556860007539366,
+      "p1_max_forbidden_leak": 1.6147265569088631e-06
+    }
+  },
+  "P3": {
+    "cert_S12": {
+      "measured_gap": 0.4011434888298049,
+      "delta_S_target": 0.3851388399834358,
+      "rel_err": 0.041555530590104674,
+      "within_10pct": true
+    },
+    "cert_Sfull": {
+      "measured_gap": 0.0003437448672029778,
+      "delta_S_target": 1.1275731934775525e-12,
+      "rel_err": 0.0003437448672029778,
+      "within_10pct": true
+    }
+  }
+}

@@ -1,0 +1,408 @@
+{
+  "config": {
+    "contexts": 64,
+    "steps": 2500,
+    "batch_size": 128,
+    "signal_scale": 2.4,
+    "adam_lr": 0.08,
+    "natural_lr": 0.003,
+    "closed_lr": 0.08,
+    "max_natural_rms": 4.0,
+    "adam_beta1": 0.9,
+    "adam_beta2": 0.999,
+    "adam_eps": 1e-08,
+    "closed_gradient_projection": 1.0,
+    "closed_update_projection": 1.0
+  },
+  "closed_generators": [
+    "1",
+    "u",
+    "wu"
+  ],
+  "closed_modes": [
+    "u",
+    "wu",
+    "(w+1)u",
+    "1",
+    "1+u",
+    "1+wu",
+    "1+(w+1)u"
+  ],
+  "leakage_modes": [
+    "w",
+    "w+u",
+    "w+wu",
+    "w+(w+1)u",
+    "w+1",
+    "w+1+u",
+    "w+1+wu",
+    "w+1+(w+1)u"
+  ],
+  "seed_results": [
+    {
+      "seed": 3107,
+      "target_entropy": 2.054672506807,
+      "target_logit_leakage": 0.0,
+      "target_probability_leakage": 0.0,
+      "target_packet_energy": {
+        "u": 0.484738601832,
+        "u^2": 0.515261398168
+      },
+      "method_results": [
+        {
+          "seed": 3107,
+          "method": "adam",
+          "gradient_projection": 0.0,
+          "update_projection": 0.0,
+          "final_true_ce": 2.093259091033,
+          "final_true_kl": 0.038586584226,
+          "final_logit_leakage": 0.042270757008,
+          "final_probability_leakage": 0.045689203281,
+          "cumulative_update_leakage": 0.526612845516,
+          "cumulative_kch_carry_leakage": 0.553430213196,
+          "final_closed_logit_energy": 2773.116999023036,
+          "final_leak_logit_energy": 122.395505492902
+        },
+        {
+          "seed": 3107,
+          "method": "natural_gradient",
+          "gradient_projection": 0.0,
+          "update_projection": 0.0,
+          "final_true_ce": 2.113926632207,
+          "final_true_kl": 0.0592541254,
+          "final_logit_leakage": 0.003548736149,
+          "final_probability_leakage": 0.002829995545,
+          "cumulative_update_leakage": 0.524382227552,
+          "cumulative_kch_carry_leakage": 0.503728757671,
+          "final_closed_logit_energy": 5487.431353813298,
+          "final_leak_logit_energy": 19.542798244543
+        },
+        {
+          "seed": 3107,
+          "method": "conductor_closed",
+          "gradient_projection": 1.0,
+          "update_projection": 1.0,
+          "final_true_ce": 2.080424706015,
+          "final_true_kl": 0.025752199208,
+          "final_logit_leakage": 0.0,
+          "final_probability_leakage": 0.0,
+          "cumulative_update_leakage": 0.0,
+          "cumulative_kch_carry_leakage": 0.0,
+          "final_closed_logit_energy": 2698.772813629276,
+          "final_leak_logit_energy": 0.0
+        }
+      ]
+    },
+    {
+      "seed": 3108,
+      "target_entropy": 2.060886355535,
+      "target_logit_leakage": 0.0,
+      "target_probability_leakage": 0.0,
+      "target_packet_energy": {
+        "u": 0.535864481421,
+        "u^2": 0.464135518579
+      },
+      "method_results": [
+        {
+          "seed": 3108,
+          "method": "adam",
+          "gradient_projection": 0.0,
+          "update_projection": 0.0,
+          "final_true_ce": 2.096111484038,
+          "final_true_kl": 0.035225128504,
+          "final_logit_leakage": 0.037247075547,
+          "final_probability_leakage": 0.049928862109,
+          "cumulative_update_leakage": 0.528193400406,
+          "cumulative_kch_carry_leakage": 0.543076955963,
+          "final_closed_logit_energy": 2917.918943369354,
+          "final_leak_logit_energy": 112.888722082014
+        },
+        {
+          "seed": 3108,
+          "method": "natural_gradient",
+          "gradient_projection": 0.0,
+          "update_projection": 0.0,
+          "final_true_ce": 2.116480169893,
+          "final_true_kl": 0.055593814358,
+          "final_logit_leakage": 0.003432765879,
+          "final_probability_leakage": 0.0029575916,
+          "cumulative_update_leakage": 0.524197610159,
+          "cumulative_kch_carry_leakage": 0.502951293533,
+          "final_closed_logit_energy": 5583.086928475971,
+          "final_leak_logit_energy": 19.231447362862
+        },
+        {
+          "seed": 3108,
+          "method": "conductor_closed",
+          "gradient_projection": 1.0,
+          "update_projection": 1.0,
+          "final_true_ce": 2.081981609674,
+          "final_true_kl": 0.02109525414,
+          "final_logit_leakage": 0.0,
+          "final_probability_leakage": 0.0,
+          "cumulative_update_leakage": 0.0,
+          "cumulative_kch_carry_leakage": 0.0,
+          "final_closed_logit_energy": 2842.3495169182,
+          "final_leak_logit_energy": 0.0
+        }
+      ]
+    },
+    {
+      "seed": 3109,
+      "target_entropy": 1.995874708897,
+      "target_logit_leakage": 0.0,
+      "target_probability_leakage": 0.0,
+      "target_packet_energy": {
+        "u": 0.550818596671,
+        "u^2": 0.449181403329
+      },
+      "method_results": [
+        {
+          "seed": 3109,
+          "method": "adam",
+          "gradient_projection": 0.0,
+          "update_projection": 0.0,
+          "final_true_ce": 2.031467642909,
+          "final_true_kl": 0.035592934011,
+          "final_logit_leakage": 0.038326404535,
+          "final_probability_leakage": 0.043920312596,
+          "cumulative_update_leakage": 0.530160706593,
+          "cumulative_kch_carry_leakage": 0.56537439484,
+          "final_closed_logit_energy": 3150.470766530357,
+          "final_leak_logit_energy": 125.558419865469
+        },
+        {
+          "seed": 3109,
+          "method": "natural_gradient",
+          "gradient_projection": 0.0,
+          "update_projection": 0.0,
+          "final_true_ce": 2.053818250048,
+          "final_true_kl": 0.057943541151,
+          "final_logit_leakage": 0.003602808408,
+          "final_probability_leakage": 0.002994200203,
+          "cumulative_update_leakage": 0.524191337473,
+          "cumulative_kch_carry_leakage": 0.505422631254,
+          "final_closed_logit_energy": 5726.135596394264,
+          "final_leak_logit_energy": 20.704764770791
+        },
+        {
+          "seed": 3109,
+          "method": "conductor_closed",
+          "gradient_projection": 1.0,
+          "update_projection": 1.0,
+          "final_true_ce": 2.017935209134,
+          "final_true_kl": 0.022060500236,
+          "final_logit_leakage": 0.0,
+          "final_probability_leakage": 0.0,
+          "cumulative_update_leakage": 0.0,
+          "cumulative_kch_carry_leakage": 0.0,
+          "final_closed_logit_energy": 3078.668198935041,
+          "final_leak_logit_energy": 0.0
+        }
+      ]
+    },
+    {
+      "seed": 3110,
+      "target_entropy": 2.016234060022,
+      "target_logit_leakage": 0.0,
+      "target_probability_leakage": 0.0,
+      "target_packet_energy": {
+        "u": 0.491701911286,
+        "u^2": 0.508298088714
+      },
+      "method_results": [
+        {
+          "seed": 3110,
+          "method": "adam",
+          "gradient_projection": 0.0,
+          "update_projection": 0.0,
+          "final_true_ce": 2.049358571653,
+          "final_true_kl": 0.033124511631,
+          "final_logit_leakage": 0.037157842104,
+          "final_probability_leakage": 0.037868694962,
+          "cumulative_update_leakage": 0.528074649128,
+          "cumulative_kch_carry_leakage": 0.563649260955,
+          "final_closed_logit_energy": 3186.361176656712,
+          "final_leak_logit_energy": 122.967512916055
+        },
+        {
+          "seed": 3110,
+          "method": "natural_gradient",
+          "gradient_projection": 0.0,
+          "update_projection": 0.0,
+          "final_true_ce": 2.076852449136,
+          "final_true_kl": 0.060618389115,
+          "final_logit_leakage": 0.003455885667,
+          "final_probability_leakage": 0.002756302481,
+          "cumulative_update_leakage": 0.523546207424,
+          "cumulative_kch_carry_leakage": 0.508648337705,
+          "final_closed_logit_energy": 5925.571859231261,
+          "final_leak_logit_energy": 20.549114246666
+        },
+        {
+          "seed": 3110,
+          "method": "conductor_closed",
+          "gradient_projection": 1.0,
+          "update_projection": 1.0,
+          "final_true_ce": 2.038612344892,
+          "final_true_kl": 0.02237828487,
+          "final_logit_leakage": 0.0,
+          "final_probability_leakage": 0.0,
+          "cumulative_update_leakage": 0.0,
+          "cumulative_kch_carry_leakage": 0.0,
+          "final_closed_logit_energy": 3110.630811172773,
+          "final_leak_logit_energy": 0.0
+        }
+      ]
+    },
+    {
+      "seed": 3111,
+      "target_entropy": 1.983770518587,
+      "target_logit_leakage": 0.0,
+      "target_probability_leakage": 0.0,
+      "target_packet_energy": {
+        "u": 0.496205982792,
+        "u^2": 0.503794017208
+      },
+      "method_results": [
+        {
+          "seed": 3111,
+          "method": "adam",
+          "gradient_projection": 0.0,
+          "update_projection": 0.0,
+          "final_true_ce": 2.023333152233,
+          "final_true_kl": 0.039562633646,
+          "final_logit_leakage": 0.03857463372,
+          "final_probability_leakage": 0.049897548697,
+          "cumulative_update_leakage": 0.529275369417,
+          "cumulative_kch_carry_leakage": 0.555528176253,
+          "final_closed_logit_energy": 3150.990668152273,
+          "final_leak_logit_energy": 126.425113317353
+        },
+        {
+          "seed": 3111,
+          "method": "natural_gradient",
+          "gradient_projection": 0.0,
+          "update_projection": 0.0,
+          "final_true_ce": 2.040575006936,
+          "final_true_kl": 0.056804488349,
+          "final_logit_leakage": 0.003848508214,
+          "final_probability_leakage": 0.002531682785,
+          "cumulative_update_leakage": 0.524049448494,
+          "cumulative_kch_carry_leakage": 0.501631038711,
+          "final_closed_logit_energy": 5743.420334869468,
+          "final_leak_logit_energy": 22.188994866176
+        },
+        {
+          "seed": 3111,
+          "method": "conductor_closed",
+          "gradient_projection": 1.0,
+          "update_projection": 1.0,
+          "final_true_ce": 2.005434388859,
+          "final_true_kl": 0.021663870272,
+          "final_logit_leakage": 0.0,
+          "final_probability_leakage": 0.0,
+          "cumulative_update_leakage": 0.0,
+          "cumulative_kch_carry_leakage": 0.0,
+          "final_closed_logit_energy": 3086.677457751661,
+          "final_leak_logit_energy": 0.0
+        }
+      ]
+    },
+    {
+      "seed": 3112,
+      "target_entropy": 1.992474662178,
+      "target_logit_leakage": 0.0,
+      "target_probability_leakage": 0.0,
+      "target_packet_energy": {
+        "u": 0.54753885035,
+        "u^2": 0.45246114965
+      },
+      "method_results": [
+        {
+          "seed": 3112,
+          "method": "adam",
+          "gradient_projection": 0.0,
+          "update_projection": 0.0,
+          "final_true_ce": 2.027320198966,
+          "final_true_kl": 0.034845536787,
+          "final_logit_leakage": 0.042392428404,
+          "final_probability_leakage": 0.036253173996,
+          "cumulative_update_leakage": 0.526844517228,
+          "cumulative_kch_carry_leakage": 0.561812418539,
+          "final_closed_logit_energy": 3428.522293893227,
+          "final_leak_logit_energy": 151.777607224718
+        },
+        {
+          "seed": 3112,
+          "method": "natural_gradient",
+          "gradient_projection": 0.0,
+          "update_projection": 0.0,
+          "final_true_ce": 2.049578039259,
+          "final_true_kl": 0.057103377081,
+          "final_logit_leakage": 0.003594139478,
+          "final_probability_leakage": 0.002763509299,
+          "cumulative_update_leakage": 0.523350130538,
+          "cumulative_kch_carry_leakage": 0.501732776999,
+          "final_closed_logit_energy": 6125.228332498808,
+          "final_leak_logit_energy": 22.094335080939
+        },
+        {
+          "seed": 3112,
+          "method": "conductor_closed",
+          "gradient_projection": 1.0,
+          "update_projection": 1.0,
+          "final_true_ce": 2.017711227758,
+          "final_true_kl": 0.02523656558,
+          "final_logit_leakage": 0.0,
+          "final_probability_leakage": 0.0,
+          "cumulative_update_leakage": 0.0,
+          "cumulative_kch_carry_leakage": 0.0,
+          "final_closed_logit_energy": 3254.988024973882,
+          "final_leak_logit_energy": 0.0
+        }
+      ]
+    }
+  ],
+  "summary": [
+    {
+      "method": "adam",
+      "gradient_projection": 0.0,
+      "update_projection": 0.0,
+      "final_true_kl_mean": 0.036156221468,
+      "final_true_kl_std": 0.002221249378,
+      "final_logit_leakage_mean": 0.03932819022,
+      "final_logit_leakage_std": 0.002185601601,
+      "final_probability_leakage_mean": 0.043926299273,
+      "final_probability_leakage_std": 0.005328631284,
+      "cumulative_update_leakage_mean": 0.528193581381,
+      "cumulative_kch_carry_leakage_mean": 0.557145236624
+    },
+    {
+      "method": "natural_gradient",
+      "gradient_projection": 0.0,
+      "update_projection": 0.0,
+      "final_true_kl_mean": 0.057886289242,
+      "final_true_kl_std": 0.001652135435,
+      "final_logit_leakage_mean": 0.003580473966,
+      "final_logit_leakage_std": 0.000135938187,
+      "final_probability_leakage_mean": 0.002805546985,
+      "final_probability_leakage_std": 0.000151931521,
+      "cumulative_update_leakage_mean": 0.52395282694,
+      "cumulative_kch_carry_leakage_mean": 0.504019139312
+    },
+    {
+      "method": "conductor_closed",
+      "gradient_projection": 1.0,
+      "update_projection": 1.0,
+      "final_true_kl_mean": 0.023031112385,
+      "final_true_kl_std": 0.001791345265,
+      "final_logit_leakage_mean": 0.0,
+      "final_logit_leakage_std": 0.0,
+      "final_probability_leakage_mean": 0.0,
+      "final_probability_leakage_std": 0.0,
+      "cumulative_update_leakage_mean": 0.0,
+      "cumulative_kch_carry_leakage_mean": 0.0
+    }
+  ]
+}

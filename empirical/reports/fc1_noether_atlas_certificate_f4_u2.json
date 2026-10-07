@@ -1,0 +1,162 @@
+{
+  "analytic_status": {
+    "certificate_role": "exact finite demonstration/computer-assisted certificate, not empirical neural evidence",
+    "fc1_a": "proved at centroid finite-sufficient quadratic jet scope",
+    "fc1_b1": "proved for fixed finite-jet exact decomposable currents",
+    "fc1_c": "proved for fixed finite-jet off-centroid closure defects"
+  },
+  "bounded_atlas_scope": {
+    "delivered_layers": [
+      "orbit skeleton base certificate",
+      "aggregate 24-coordinate tuple baseline",
+      "selected size-12 moving carry-pair chart",
+      "full size-24 moving carry-pair chart",
+      "all canonical carry-pair one-split charts assessed"
+    ],
+    "not_claimed": [
+      "simultaneous C(637,14) tuple enumeration",
+      "all K_CH commutator coordinates split",
+      "arbitrary smooth invariant functions",
+      "all Fisher-volume-preserving currents",
+      "global sufficiency beyond the declared finite skeleton"
+    ],
+    "row": "F4[u]/(u^2)",
+    "seed_coordinates": 637,
+    "tuple_size": 14
+  },
+  "certificate_pass": true,
+  "count_checks": [
+    {
+      "expected": {
+        "aggregate_tuple": true,
+        "base": true,
+        "carry_pair_atlas": true,
+        "selected_size12": true,
+        "size24": true
+      },
+      "name": "component certificates pass",
+      "note": "",
+      "observed": {
+        "aggregate_tuple": true,
+        "base": true,
+        "carry_pair_atlas": true,
+        "selected_size12": true,
+        "size24": true
+      },
+      "pass": true
+    },
+    {
+      "expected": 637,
+      "name": "seed coordinate count",
+      "note": "",
+      "observed": 637,
+      "pass": true
+    },
+    {
+      "expected": 1961256,
+      "name": "aggregate tuple support count",
+      "note": "",
+      "observed": 1961256,
+      "pass": true
+    },
+    {
+      "expected": 15,
+      "name": "selected size-12 moving chart orbits",
+      "note": "",
+      "observed": 15,
+      "pass": true
+    },
+    {
+      "expected": [
+        40116600,
+        1674272
+      ],
+      "name": "size-24 moving chart support/orbits",
+      "note": "",
+      "observed": [
+        40116600,
+        1674272
+      ],
+      "pass": true
+    },
+    {
+      "expected": [
+        20,
+        18,
+        2
+      ],
+      "name": "carry-pair atlas assessed/capable/companion",
+      "note": "",
+      "observed": [
+        20,
+        18,
+        2
+      ],
+      "pass": true
+    },
+    {
+      "expected": [
+        1569,
+        0
+      ],
+      "name": "support/full residual kept separate",
+      "note": "",
+      "observed": [
+        1569,
+        0
+      ],
+      "pass": true
+    },
+    {
+      "expected": 1569,
+      "name": "residual visibility partition",
+      "note": "",
+      "observed": 1569,
+      "pass": true
+    }
+  ],
+  "delivered_layer_summary": {
+    "aggregate_determinants": "trivial baseline",
+    "aggregate_tuple_supports": 1961256,
+    "base_carry_pair_orbits": 20,
+    "base_k_ch_commutator_orbits": 592,
+    "base_seed_coordinates": 637,
+    "carry_pair_chart_orbits_not_simultaneous": 20091354,
+    "carry_pair_charts": {
+      "enumerated": 6,
+      "enumerated_by_regular_size24_profile": 12,
+      "requires_companion_coordinates": 2
+    },
+    "selected_size12_orbits": 15,
+    "selected_size12_sign_nontrivial": 12,
+    "size24_orbits": 1674272,
+    "size24_sign_nontrivial": 1248,
+    "size24_supports": 40116600
+  },
+  "ring": "F_4[u]/(u^2)",
+  "row_key": "f4-u2",
+  "schema": "fc1_noether_atlas_certificate_f4_u2.v1",
+  "sources": {
+    "aggregate_tuple": "empirical/reports/fc1_noether_tuple_census_f4_u2_small.json",
+    "base_census": "empirical/reports/fc1_noether_atlas_census_f4_u2.json",
+    "carry_pair_atlas": "empirical/reports/fc1_noether_carry_pair_atlas_f4_u2.json",
+    "fc1_census_target": "knowledge_base/fc1_noether_atlas_census_target.md",
+    "fc1_theorem_note": "knowledge_base/fc1_natural_macrovariable_theorem.md",
+    "selected_size12": "empirical/reports/fc1_noether_moving_tuple_census_f4_u2_selected.json",
+    "size24": "empirical/reports/fc1_noether_moving_tuple_census_f4_u2_size24.json"
+  },
+  "status": "bounded FC1 Noether-atlas certificate delivered",
+  "tuple_level_residual_label": {
+    "full_filtered_residual": 1569,
+    "h3_contraction_visible_from_h4_invisible": 1470,
+    "h4_visible_atoms": 72,
+    "interpretation": [
+      "support residual 0 is not full filtered closure",
+      "K_CH/H4/H3 are visibility channels modulo kernels",
+      "tuple labels are relative to the declared finite skeleton"
+    ],
+    "kappa_source": "FC2 filtered section class [kappa]",
+    "remaining_invisible_atoms": 27,
+    "support_projection_residual": 0
+  }
+}

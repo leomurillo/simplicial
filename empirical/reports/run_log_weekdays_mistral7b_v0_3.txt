@@ -1,0 +1,50 @@
+/home/leomu/simplicial/empirical/layerwise_packet_spectroscopy.py:3: SyntaxWarning: invalid escape sequence '\l'
+  """
+`torch_dtype` is deprecated! Use `dtype` instead!
+# layerwise_packet_spectroscopy version audit_kappa_driver_v0.2_2026_06_12
+# model-tag=mistral7b_v0_3  task=weekdays  layers=all
+# transformers available: True
+Loading checkpoint shards:   0%|          | 0/3 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 3/3 [00:00<00:00, 86.20it/s]
+# wrote empirical/reports/layerwise_packet_spectroscopy_weekdays_mistral7b_v0_3.json
+# weekdays on mistral7b_v0_3 (layerwise lens, N=7, 33 layers):
+#  ell, f_7
+#    0, 1.0000
+#    1, 1.0000
+#    2, 1.0000
+#    3, 1.0000
+#    4, 1.0000
+#    5, 1.0000
+#    6, 1.0000
+#    7, 1.0000
+#    8, 1.0000
+#    9, 1.0000
+#   10, 1.0000
+#   11, 1.0000
+#   12, 1.0000
+#   13, 1.0000
+#   14, 1.0000
+#   15, 1.0000
+#   16, 1.0000
+#   17, 1.0000
+#   18, 1.0000
+#   19, 1.0000
+#   20, 1.0000
+#   21, 1.0000
+#   22, 1.0000
+#   23, 1.0000
+#   24, 1.0000
+#   25, 1.0000
+#   26, 1.0000
+#   27, 1.0000
+#   28, 1.0000
+#   29, 1.0000
+#   30, 1.0000
+#   31, 1.0000
+#   32, 1.0000
+# forward 20/49
+# forward 40/49
+# forward 49/49
+# wrote /home/leomu/simplicial/empirical/data/residual_streams_weekdays_mistral7b_v0_3.safetensors  shape=(49, 33, 4096) dtype=BF16
+# wrote /home/leomu/simplicial/empirical/data/W_U_VR_weekdays_mistral7b_v0_3.npz  shape=(7, 4096)
+# wrote /home/leomu/simplicial/empirical/data/capture_manifest_weekdays_mistral7b_v0_3.json
+# invoking lens scorer: /home/leomu/venv/bin/python /home/leomu/simplicial/empirical/native_logit_lens_packet_score_layerwise.py --mode layerwise --N 7 --token-ids 10030,11955,12231,11751,8853,9281,8497 --residual-streams /home/leomu/simplicial/empirical/data/residual_streams_weekdays_mistral7b_v0_3.safetensors --unembedding-VR /home/leomu/simplicial/empirical/data/W_U_VR_weekdays_mistral7b_v0_3.npz --task weekdays --model-tag mistral7b_v0_3 --output empirical/reports/layerwise_packet_spectroscopy_weekdays_mistral7b_v0_3.json

@@ -1,0 +1,133 @@
+{
+  "claim": "FC2 finite-row theorem certificate",
+  "ring": "F_4[u]/(u^2)",
+  "cohomological_object": "filtered quotient-character adjacency extension class [kappa] in the section-change/Hochschild 2-cohomology model",
+  "not_the_object": "the signed all-pair boundary on closed nontrivial hypercells; that boundary fails d^2=0 over Z",
+  "binary_ext_ch": {
+    "raw_atom_count": 1569,
+    "raw_pair_count": 369,
+    "atom_orbit_count": 71,
+    "pair_orbit_count": 20,
+    "raw_coefficient_distribution": {
+      "-1": 1569
+    },
+    "raw_path_distribution": {
+      "u->u->u": 9,
+      "u->u->u^2": 36,
+      "u^2->u->u": 36,
+      "u^2->u->u^2": 912,
+      "u^2->u^2->u^2": 576
+    },
+    "coboundary_field": "Q",
+    "c1_generators": 3204,
+    "c2_dimension": 76320,
+    "coboundary_rank": 3204,
+    "raw_support": 1569,
+    "residual_support": 1569,
+    "raw_is_coboundary": false,
+    "raw_non_coboundary_over_q_certified": true
+  },
+  "arity4_curvature_shadow": {
+    "closed_nontrivial_4_cells": 3165,
+    "gamma_x_s4_orbits": 18,
+    "family_orbit_counts": {
+      "TTTT": 2,
+      "TTWW": 4,
+      "TWWW": 3,
+      "WWWW": 9
+    },
+    "arity_2_commutator_orbits": 592,
+    "lifted_arity_2_commutator_orbits": 592,
+    "h2_to_h4_multiplicity": {
+      "1": 592
+    },
+    "mixed_h4_orbits_hit": 7,
+    "mixed_h4_orbits_total": 7,
+    "pure_h4_orbits_hit": 0,
+    "pure_h4_orbits_total": 11,
+    "entry_hits_by_family": {
+      "TTWW": 6048,
+      "TWWW": 8064
+    },
+    "mixed_orbit_image_table": [
+      {
+        "h4_orbit": 2,
+        "family": "TTWW",
+        "size": 72,
+        "h2_commutator_orbits": 32,
+        "entry_hits": 672,
+        "representative": "(u, u, 1, 1)"
+      },
+      {
+        "h4_orbit": 3,
+        "family": "TTWW",
+        "size": 144,
+        "h2_commutator_orbits": 56,
+        "entry_hits": 1344,
+        "representative": "(u, u, w, w)"
+      },
+      {
+        "h4_orbit": 5,
+        "family": "TTWW",
+        "size": 144,
+        "h2_commutator_orbits": 56,
+        "entry_hits": 1344,
+        "representative": "(u, wu, w+1, w+1+(w+1)u)"
+      },
+      {
+        "h4_orbit": 4,
+        "family": "TTWW",
+        "size": 288,
+        "h2_commutator_orbits": 112,
+        "entry_hits": 2688,
+        "representative": "(u, wu, 1, 1+(w+1)u)"
+      },
+      {
+        "h4_orbit": 7,
+        "family": "TWWW",
+        "size": 288,
+        "h2_commutator_orbits": 84,
+        "entry_hits": 2016,
+        "representative": "(u, 1, w+wu, w+1+(w+1)u)"
+      },
+      {
+        "h4_orbit": 8,
+        "family": "TWWW",
+        "size": 288,
+        "h2_commutator_orbits": 84,
+        "entry_hits": 2016,
+        "representative": "(u, 1, w+(w+1)u, w+1+wu)"
+      },
+      {
+        "h4_orbit": 6,
+        "family": "TWWW",
+        "size": 576,
+        "h2_commutator_orbits": 168,
+        "entry_hits": 4032,
+        "representative": "(u, 1, w, w+1+u)"
+      }
+    ]
+  },
+  "naive_hypercell_complex_obstruction": {
+    "ring": "(Z/2)^2",
+    "cell": [
+      1,
+      2,
+      1,
+      2
+    ],
+    "d4_cell": {
+      "(1, 2, 3)": -3,
+      "(2, 1, 3)": -1
+    },
+    "d3_d4_cell_over_Z": {
+      "(3, 3)": 4,
+      "(2, 2)": -2,
+      "(1, 1)": 2
+    },
+    "d_squared_zero_over_Z": false,
+    "d_squared_zero_mod_2_on_witness": true,
+    "interpretation": "The nontrivial closed-cell all-pair boundary cannot be the FC2 cohomology over Q/Z.  FC2 must use the filtered adjacency extension class, with hypercell boundaries as support shadows."
+  },
+  "fc2_status": "Solved for the first mixed local row: the binary Ext_CH class is the cohomological source, K_CH is its cubic Fisher shadow, and the arity-4 curvature support is its input-side Fisher-jet lift."
+}

@@ -1,0 +1,946 @@
+{
+  "settings": {
+    "max_length": 12,
+    "max_total_depth": 25,
+    "max_carry": 8,
+    "height_threshold": 1.584962500721
+  },
+  "results": {
+    "totals": {
+      "words": 15710500,
+      "contracting_words": 15641778,
+      "negative_q_words": 0,
+      "zero_q_words": 12,
+      "trivial_zero_words": 12,
+      "positive_q_words": 15641766
+    },
+    "append_one_by_run": {
+      "1": {
+        "count": 3909061,
+        "negative_q": 0,
+        "zero_q": 0,
+        "positive_q": 3909061,
+        "min_q": 1,
+        "min_q_example": {
+          "word": [
+            1,
+            3,
+            1
+          ],
+          "signature": "(1 3 1)",
+          "m": 3,
+          "S": 5,
+          "height": 0.245112497837,
+          "q": 1,
+          "first_n": 19,
+          "image": 17,
+          "anchor": [
+            1,
+            3
+          ],
+          "anchor_signature": "(1 3)",
+          "anchor_q": 4,
+          "drop_from_anchor": 3
+        },
+        "max_drop": 88572,
+        "max_drop_example": {
+          "word": [
+            1,
+            1,
+            2,
+            1,
+            2,
+            2,
+            1,
+            4,
+            3,
+            1,
+            3,
+            1
+          ],
+          "signature": "(1^2 2 1 2^2 1 4 3 1 3 1)",
+          "m": 12,
+          "S": 22,
+          "height": 2.980449991346,
+          "q": 1831392,
+          "first_n": 4194215,
+          "image": 531431,
+          "anchor": [
+            1,
+            1,
+            2,
+            1,
+            2,
+            2,
+            1,
+            4,
+            3,
+            1,
+            3
+          ],
+          "anchor_signature": "(1^2 2 1 2^2 1 4 3 1 3)",
+          "anchor_q": 1919964,
+          "drop_from_anchor": 88572
+        }
+      },
+      "2": {
+        "count": 1609560,
+        "negative_q": 0,
+        "zero_q": 0,
+        "positive_q": 1609560,
+        "min_q": 2,
+        "min_q_example": {
+          "word": [
+            2,
+            2,
+            2,
+            1,
+            1
+          ],
+          "signature": "(2^3 1^2)",
+          "m": 5,
+          "S": 8,
+          "height": 0.075187496394,
+          "q": 2,
+          "first_n": 129,
+          "image": 125,
+          "anchor": [
+            2,
+            2,
+            2
+          ],
+          "anchor_signature": "(2^3)",
+          "anchor_q": 0,
+          "drop_from_anchor": -2
+        },
+        "max_drop": 73805,
+        "max_drop_example": {
+          "word": [
+            1,
+            2,
+            1,
+            1,
+            1,
+            4,
+            2,
+            1,
+            2,
+            4,
+            1,
+            1
+          ],
+          "signature": "(1 2 1^3 4 2 1 2 4 1^2)",
+          "m": 12,
+          "S": 21,
+          "height": 1.980449991346,
+          "q": 391389,
+          "first_n": 1048475,
+          "image": 265697,
+          "anchor": [
+            1,
+            2,
+            1,
+            1,
+            1,
+            4,
+            2,
+            1,
+            2,
+            4
+          ],
+          "anchor_signature": "(1 2 1^3 4 2 1 2 4)",
+          "anchor_q": 465194,
+          "drop_from_anchor": 73805
+        }
+      },
+      "3": {
+        "count": 632621,
+        "negative_q": 0,
+        "zero_q": 0,
+        "positive_q": 632621,
+        "min_q": 1,
+        "min_q_example": {
+          "word": [
+            3,
+            2,
+            1,
+            1,
+            1
+          ],
+          "signature": "(3 2 1^3)",
+          "m": 5,
+          "S": 8,
+          "height": 0.075187496394,
+          "q": 1,
+          "first_n": 109,
+          "image": 107,
+          "anchor": [
+            3,
+            2
+          ],
+          "anchor_signature": "(3 2)",
+          "anchor_q": 16,
+          "drop_from_anchor": 15
+        },
+        "max_drop": 46740,
+        "max_drop_example": {
+          "word": [
+            2,
+            1,
+            2,
+            2,
+            1,
+            4,
+            3,
+            1,
+            3,
+            1,
+            1,
+            1
+          ],
+          "signature": "(2 1 2^2 1 4 3 1 3 1^3)",
+          "m": 12,
+          "S": 22,
+          "height": 2.980449991346,
+          "q": 457769,
+          "first_n": 1048377,
+          "image": 132839,
+          "anchor": [
+            2,
+            1,
+            2,
+            2,
+            1,
+            4,
+            3,
+            1,
+            3
+          ],
+          "anchor_signature": "(2 1 2^2 1 4 3 1 3)",
+          "anchor_q": 504509,
+          "drop_from_anchor": 46740
+        }
+      },
+      "4": {
+        "count": 234717,
+        "negative_q": 0,
+        "zero_q": 0,
+        "positive_q": 234717,
+        "min_q": 2,
+        "min_q_example": {
+          "word": [
+            4,
+            1,
+            1,
+            1,
+            1
+          ],
+          "signature": "(4 1^4)",
+          "m": 5,
+          "S": 8,
+          "height": 0.075187496394,
+          "q": 2,
+          "first_n": 165,
+          "image": 161,
+          "anchor": [
+            4
+          ],
+          "anchor_signature": "(4)",
+          "anchor_q": 2,
+          "drop_from_anchor": 0
+        },
+        "max_drop": 26585,
+        "max_drop_example": {
+          "word": [
+            3,
+            1,
+            2,
+            1,
+            2,
+            2,
+            1,
+            4,
+            1,
+            1,
+            1,
+            1
+          ],
+          "signature": "(3 1 2 1 2^2 1 4 1^4)",
+          "m": 12,
+          "S": 20,
+          "height": 0.980449991346,
+          "q": 32230,
+          "first_n": 130717,
+          "image": 66257,
+          "anchor": [
+            3,
+            1,
+            2,
+            1,
+            2,
+            2,
+            1,
+            4
+          ],
+          "anchor_signature": "(3 1 2 1 2^2 1 4)",
+          "anchor_q": 58815,
+          "drop_from_anchor": 26585
+        }
+      },
+      "5": {
+        "count": 80980,
+        "negative_q": 0,
+        "zero_q": 0,
+        "positive_q": 80980,
+        "min_q": 48,
+        "min_q_example": {
+          "word": [
+            1,
+            2,
+            2,
+            4,
+            2,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "signature": "(1 2^2 4 2 1^5)",
+          "m": 10,
+          "S": 16,
+          "height": 0.150374992788,
+          "q": 48,
+          "first_n": 1067,
+          "image": 971,
+          "anchor": [
+            1,
+            2,
+            2,
+            4,
+            2
+          ],
+          "anchor_signature": "(1 2^2 4 2)",
+          "anchor_q": 470,
+          "drop_from_anchor": 422
+        },
+        "max_drop": 14348,
+        "max_drop_example": {
+          "word": [
+            2,
+            2,
+            1,
+            2,
+            1,
+            5,
+            2,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "signature": "(2^2 1 2 1 5 2 1^5)",
+          "m": 12,
+          "S": 20,
+          "height": 0.980449991346,
+          "q": 16069,
+          "first_n": 65185,
+          "image": 33047,
+          "anchor": [
+            2,
+            2,
+            1,
+            2,
+            1,
+            5,
+            2
+          ],
+          "anchor_signature": "(2^2 1 2 1 5 2)",
+          "anchor_q": 30417,
+          "drop_from_anchor": 14348
+        }
+      },
+      "6": {
+        "count": 25431,
+        "negative_q": 0,
+        "zero_q": 0,
+        "positive_q": 25431,
+        "min_q": 72,
+        "min_q_example": {
+          "word": [
+            2,
+            2,
+            4,
+            2,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "signature": "(2^2 4 2 1^6)",
+          "m": 10,
+          "S": 16,
+          "height": 0.150374992788,
+          "q": 72,
+          "first_n": 1601,
+          "image": 1457,
+          "anchor": [
+            2,
+            2,
+            4,
+            2
+          ],
+          "anchor_signature": "(2^2 4 2)",
+          "anchor_q": 737,
+          "drop_from_anchor": 665
+        },
+        "max_drop": 6650,
+        "max_drop_example": {
+          "word": [
+            1,
+            4,
+            1,
+            3,
+            1,
+            4,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "signature": "(1 4 1 3 1 4 1^6)",
+          "m": 12,
+          "S": 20,
+          "height": 0.980449991346,
+          "q": 7080,
+          "first_n": 28739,
+          "image": 14579,
+          "anchor": [
+            1,
+            4,
+            1,
+            3,
+            1,
+            4
+          ],
+          "anchor_signature": "(1 4 1 3 1 4)",
+          "anchor_q": 13730,
+          "drop_from_anchor": 6650
+        }
+      },
+      "7": {
+        "count": 7037,
+        "negative_q": 0,
+        "zero_q": 0,
+        "positive_q": 7037,
+        "min_q": 471,
+        "min_q_example": {
+          "word": [
+            2,
+            1,
+            6,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "signature": "(2 1 6 1^7)",
+          "m": 10,
+          "S": 16,
+          "height": 0.150374992788,
+          "q": 471,
+          "first_n": 9689,
+          "image": 8747,
+          "anchor": [
+            2,
+            1,
+            6
+          ],
+          "anchor_signature": "(2 1 6)",
+          "anchor_q": 224,
+          "drop_from_anchor": -247
+        },
+        "max_drop": -247,
+        "max_drop_example": {
+          "word": [
+            2,
+            1,
+            6,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "signature": "(2 1 6 1^7)",
+          "m": 10,
+          "S": 16,
+          "height": 0.150374992788,
+          "q": 471,
+          "first_n": 9689,
+          "image": 8747,
+          "anchor": [
+            2,
+            1,
+            6
+          ],
+          "anchor_signature": "(2 1 6)",
+          "anchor_q": 224,
+          "drop_from_anchor": -247
+        }
+      },
+      "8": {
+        "count": 1625,
+        "negative_q": 0,
+        "zero_q": 0,
+        "positive_q": 1625,
+        "min_q": 706,
+        "min_q_example": {
+          "word": [
+            4,
+            4,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "signature": "(4^2 1^8)",
+          "m": 10,
+          "S": 16,
+          "height": 0.150374992788,
+          "q": 706,
+          "first_n": 14533,
+          "image": 13121,
+          "anchor": [
+            4,
+            4
+          ],
+          "anchor_signature": "(4^2)",
+          "anchor_q": 95,
+          "drop_from_anchor": -611
+        },
+        "max_drop": -611,
+        "max_drop_example": {
+          "word": [
+            4,
+            4,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "signature": "(4^2 1^8)",
+          "m": 10,
+          "S": 16,
+          "height": 0.150374992788,
+          "q": 706,
+          "first_n": 14533,
+          "image": 13121,
+          "anchor": [
+            4,
+            4
+          ],
+          "anchor_signature": "(4^2)",
+          "anchor_q": 95,
+          "drop_from_anchor": -611
+        }
+      },
+      "9": {
+        "count": 282,
+        "negative_q": 0,
+        "zero_q": 0,
+        "positive_q": 282,
+        "min_q": 6466,
+        "min_q_example": {
+          "word": [
+            7,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "signature": "(7 1^9)",
+          "m": 10,
+          "S": 16,
+          "height": 0.150374992788,
+          "q": 6466,
+          "first_n": 131029,
+          "image": 118097,
+          "anchor": [
+            7
+          ],
+          "anchor_signature": "(7)",
+          "anchor_q": 104,
+          "drop_from_anchor": -6362
+        },
+        "max_drop": -6362,
+        "max_drop_example": {
+          "word": [
+            7,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "signature": "(7 1^9)",
+          "m": 10,
+          "S": 16,
+          "height": 0.150374992788,
+          "q": 6466,
+          "first_n": 131029,
+          "image": 118097,
+          "anchor": [
+            7
+          ],
+          "anchor_signature": "(7)",
+          "anchor_q": 104,
+          "drop_from_anchor": -6362
+        }
+      },
+      "10": {
+        "count": 28,
+        "negative_q": 0,
+        "zero_q": 0,
+        "positive_q": 28,
+        "min_q": 28290,
+        "min_q_example": {
+          "word": [
+            8,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "signature": "(8 1^10)",
+          "m": 11,
+          "S": 18,
+          "height": 0.565412492067,
+          "q": 28290,
+          "first_n": 174677,
+          "image": 118097,
+          "anchor": [
+            8
+          ],
+          "anchor_signature": "(8)",
+          "anchor_q": 42,
+          "drop_from_anchor": -28248
+        },
+        "max_drop": -28248,
+        "max_drop_example": {
+          "word": [
+            8,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "signature": "(8 1^10)",
+          "m": 11,
+          "S": 18,
+          "height": 0.565412492067,
+          "q": 28290,
+          "first_n": 174677,
+          "image": 118097,
+          "anchor": [
+            8
+          ],
+          "anchor_signature": "(8)",
+          "anchor_q": 42,
+          "drop_from_anchor": -28248
+        }
+      }
+    },
+    "boundary_by_final": {
+      "2": {
+        "count": 1509,
+        "negative_q": 0,
+        "zero_q": 0,
+        "positive_q": 1509,
+        "min_q": 2,
+        "min_q_example": {
+          "word": [
+            1,
+            2,
+            2,
+            1,
+            2
+          ],
+          "signature": "(1 2^2 1 2)",
+          "m": 5,
+          "S": 8,
+          "height": 0.075187496394,
+          "q": 2,
+          "first_n": 107,
+          "image": 103,
+          "prefix": [
+            1,
+            2,
+            2,
+            1
+          ],
+          "prefix_signature": "(1 2^2 1)"
+        },
+        "max_drop": null,
+        "max_drop_example": null
+      },
+      "3": {
+        "count": 12508,
+        "negative_q": 0,
+        "zero_q": 0,
+        "positive_q": 12508,
+        "min_q": 1,
+        "min_q_example": {
+          "word": [
+            1,
+            1,
+            2,
+            3
+          ],
+          "signature": "(1^2 2 3)",
+          "m": 4,
+          "S": 7,
+          "height": 0.660149997115,
+          "q": 1,
+          "first_n": 7,
+          "image": 5,
+          "prefix": [
+            1,
+            1,
+            2
+          ],
+          "prefix_signature": "(1^2 2)"
+        },
+        "max_drop": null,
+        "max_drop_example": null
+      },
+      "4": {
+        "count": 16567,
+        "negative_q": 0,
+        "zero_q": 0,
+        "positive_q": 16567,
+        "min_q": 1,
+        "min_q_example": {
+          "word": [
+            1,
+            4
+          ],
+          "signature": "(1 4)",
+          "m": 2,
+          "S": 5,
+          "height": 1.830074998558,
+          "q": 1,
+          "first_n": 3,
+          "image": 1,
+          "prefix": [
+            1
+          ],
+          "prefix_signature": "(1)"
+        },
+        "max_drop": null,
+        "max_drop_example": null
+      },
+      "5": {
+        "count": 17883,
+        "negative_q": 0,
+        "zero_q": 0,
+        "positive_q": 17883,
+        "min_q": 5,
+        "min_q_example": {
+          "word": [
+            1,
+            1,
+            1,
+            5
+          ],
+          "signature": "(1^3 5)",
+          "m": 4,
+          "S": 8,
+          "height": 1.660149997115,
+          "q": 5,
+          "first_n": 15,
+          "image": 5,
+          "prefix": [
+            1,
+            1,
+            1
+          ],
+          "prefix_signature": "(1^3)"
+        },
+        "max_drop": null,
+        "max_drop_example": null
+      },
+      "6": {
+        "count": 18243,
+        "negative_q": 0,
+        "zero_q": 0,
+        "positive_q": 18243,
+        "min_q": 25,
+        "min_q_example": {
+          "word": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            6
+          ],
+          "signature": "(1^7 6)",
+          "m": 8,
+          "S": 13,
+          "height": 0.320299994231,
+          "q": 25,
+          "first_n": 255,
+          "image": 205,
+          "prefix": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "prefix_signature": "(1^7)"
+        },
+        "max_drop": null,
+        "max_drop_example": null
+      },
+      "7": {
+        "count": 18321,
+        "negative_q": 0,
+        "zero_q": 0,
+        "positive_q": 18321,
+        "min_q": 169,
+        "min_q_example": {
+          "word": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            2,
+            2,
+            7
+          ],
+          "signature": "(1^8 2^2 7)",
+          "m": 11,
+          "S": 19,
+          "height": 1.565412492067,
+          "q": 169,
+          "first_n": 511,
+          "image": 173,
+          "prefix": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            2,
+            2
+          ],
+          "prefix_signature": "(1^8 2^2)"
+        },
+        "max_drop": null,
+        "max_drop_example": null
+      },
+      "8": {
+        "count": 18333,
+        "negative_q": 0,
+        "zero_q": 0,
+        "positive_q": 18333,
+        "min_q": 37,
+        "min_q_example": {
+          "word": [
+            1,
+            2,
+            8
+          ],
+          "signature": "(1 2 8)",
+          "m": 3,
+          "S": 11,
+          "height": 6.245112497837,
+          "q": 37,
+          "first_n": 75,
+          "image": 1,
+          "prefix": [
+            1,
+            2
+          ],
+          "prefix_signature": "(1 2)"
+        },
+        "max_drop": null,
+        "max_drop_example": null
+      }
+    },
+    "irreducible_stats": {
+      "count": 6604713,
+      "negative_q": 0,
+      "zero_q": 1,
+      "positive_q": 6604712,
+      "min_q": 0,
+      "min_q_example": {
+        "word": [
+          2
+        ],
+        "signature": "(2)",
+        "m": 1,
+        "S": 2,
+        "height": 0.415037499279,
+        "q": 0,
+        "first_n": 1,
+        "image": 1,
+        "reason": "root"
+      },
+      "max_drop": null,
+      "max_drop_example": null
+    }
+  }
+}

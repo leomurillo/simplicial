@@ -1,0 +1,344 @@
+{
+  "timestamp": "2026-06-04T03:10:29.149677+00:00",
+  "dataset": {
+    "name": "UCI Pen-Based Recognition of Handwritten Digits",
+    "url": "https://archive.ics.uci.edu/dataset/81/pen+based+recognition+of+handwritten+digits",
+    "raw_files": {
+      "pendigits.tra": "https://archive.ics.uci.edu/ml/machine-learning-databases/pendigits/pendigits.tra",
+      "pendigits.tes": "https://archive.ics.uci.edu/ml/machine-learning-databases/pendigits/pendigits.tes"
+    },
+    "features": 16,
+    "points": 8,
+    "classes": 10
+  },
+  "config": {
+    "seed": 20260603,
+    "calibration_fraction": 0.25,
+    "early_points": 2,
+    "gate_points": [
+      4,
+      5,
+      6
+    ],
+    "full_points": 8,
+    "observation_cost": 0.025,
+    "cost_grid": [
+      0.0,
+      0.01,
+      0.025,
+      0.05,
+      0.1
+    ],
+    "alpha": 0.05,
+    "bait_quantile": 0.7,
+    "classifier_ridge": 0.01,
+    "ridge": 0.005,
+    "sampling_noise": 0.015,
+    "commit_noise": 0.02,
+    "commit_threshold": 0.5,
+    "train_n": 5620,
+    "calibration_n": 1874,
+    "test_n": 3498
+  },
+  "main": {
+    "gate_threshold": 0.021347706804580084,
+    "bait_threshold": 0.023525132946537707,
+    "overall": {
+      "scalar": {
+        "sampling": {
+          "rmse_observed": 0.0853582722044675,
+          "r2_observed": 0.03265511868687687
+        },
+        "commit_regression": {
+          "rmse_observed": 0.454557524413271,
+          "r2_observed": 0.02610268362980739
+        },
+        "commit_classification": {
+          "accuracy": 0.6875357347055461,
+          "commit_detection": 0.04673721340388007,
+          "false_commit": 0.005076142131979695,
+          "request_detection": 0.9949238578680203,
+          "bait_false_commit": 0.017094017094017096,
+          "bait_count": 702,
+          "commit_count": 1134,
+          "request_count": 2364
+        }
+      },
+      "continuous_sampling": {
+        "sampling": {
+          "rmse_observed": 0.07702834325071402,
+          "r2_observed": 0.21224490514931582
+        },
+        "commit_regression": {
+          "rmse_observed": 0.40885878131078496,
+          "r2_observed": 0.21207999644883313
+        },
+        "commit_classification": {
+          "accuracy": 0.7478559176672385,
+          "commit_detection": 0.37566137566137564,
+          "false_commit": 0.07360406091370558,
+          "request_detection": 0.9263959390862944,
+          "bait_false_commit": 0.07834757834757834,
+          "bait_count": 702,
+          "commit_count": 1134,
+          "request_count": 2364
+        }
+      },
+      "temporal_commit_gate": {
+        "sampling": {
+          "rmse_observed": 0.08247461240837885,
+          "r2_observed": 0.09691074901229768
+        },
+        "commit_regression": {
+          "rmse_observed": 0.4384250730601753,
+          "r2_observed": 0.09400409890045014
+        },
+        "commit_classification": {
+          "accuracy": 0.7035448827901658,
+          "commit_detection": 0.17989417989417988,
+          "false_commit": 0.04526226734348562,
+          "request_detection": 0.9547377326565144,
+          "bait_false_commit": 0.05413105413105413,
+          "bait_count": 702,
+          "commit_count": 1134,
+          "request_count": 2364
+        }
+      },
+      "governed_sampling": {
+        "sampling": {
+          "rmse_observed": 0.07694759493536645,
+          "r2_observed": 0.21389563663880073
+        },
+        "commit_regression": {
+          "rmse_observed": 0.40834064390182107,
+          "r2_observed": 0.21407575715780114
+        },
+        "commit_classification": {
+          "accuracy": 0.747284162378502,
+          "commit_detection": 0.3783068783068783,
+          "false_commit": 0.07571912013536379,
+          "request_detection": 0.9242808798646363,
+          "bait_false_commit": 0.08547008547008547,
+          "bait_count": 702,
+          "commit_count": 1134,
+          "request_count": 2364
+        }
+      },
+      "hybrid_full": {
+        "sampling": {
+          "rmse_observed": 0.046009405482936534,
+          "r2_observed": 0.7189501553061752
+        },
+        "commit_regression": {
+          "rmse_observed": 0.29302511055299374,
+          "r2_observed": 0.5952888740917527
+        },
+        "commit_classification": {
+          "accuracy": 0.8779302458547742,
+          "commit_detection": 0.7310405643738977,
+          "false_commit": 0.051607445008460234,
+          "request_detection": 0.9483925549915397,
+          "bait_false_commit": 0.0584045584045584,
+          "bait_count": 702,
+          "commit_count": 1134,
+          "request_count": 2364
+        }
+      }
+    },
+    "models": {
+      "scalar": {
+        "sampling": {
+          "feature_kind": "scalar",
+          "feature_count": 1,
+          "expanded_count": 3
+        },
+        "commit": {
+          "feature_kind": "scalar",
+          "feature_count": 1,
+          "expanded_count": 3
+        }
+      },
+      "continuous_sampling": {
+        "sampling": {
+          "feature_kind": "continuous",
+          "feature_count": 39,
+          "expanded_count": 820
+        },
+        "commit": {
+          "feature_kind": "continuous",
+          "feature_count": 39,
+          "expanded_count": 820
+        }
+      },
+      "temporal_commit_gate": {
+        "sampling": {
+          "feature_kind": "gate",
+          "feature_count": 21,
+          "expanded_count": 253
+        },
+        "commit": {
+          "feature_kind": "gate",
+          "feature_count": 21,
+          "expanded_count": 253
+        }
+      },
+      "governed_sampling": {
+        "sampling": {
+          "feature_kind": "governed",
+          "feature_count": 50,
+          "expanded_count": 1326
+        },
+        "commit": {
+          "feature_kind": "governed",
+          "feature_count": 50,
+          "expanded_count": 1326
+        }
+      },
+      "hybrid_full": {
+        "sampling": {
+          "feature_kind": "hybrid",
+          "feature_count": 54,
+          "expanded_count": 1540
+        },
+        "commit": {
+          "feature_kind": "hybrid",
+          "feature_count": 54,
+          "expanded_count": 1540
+        }
+      }
+    },
+    "train_summary": {
+      "n": 5620.0,
+      "early_accuracy": 0.4766903914590747,
+      "full_accuracy": 0.8788256227758007,
+      "commit_rate": 0.2695729537366548,
+      "request_rate": 0.7304270462633452,
+      "mean_sampling": 0.5548762172344234,
+      "mean_request_gain": 0.013719054308605854,
+      "mean_gate_score": 0.010497082104613604,
+      "mean_gate_same_fraction": 0.5690391459074733
+    },
+    "calibration_summary": {
+      "n": 1874.0,
+      "early_accuracy": 0.47491995731056563,
+      "full_accuracy": 0.8783351120597652,
+      "commit_rate": 0.28014941302027746,
+      "request_rate": 0.7198505869797225,
+      "mean_sampling": 0.5534555505524745,
+      "mean_request_gain": 0.013363887638118648,
+      "mean_gate_score": 0.010310100293934003,
+      "mean_gate_same_fraction": 0.5647456421202419
+    },
+    "test_summary": {
+      "n": 3498.0,
+      "early_accuracy": 0.45683247570040025,
+      "full_accuracy": 0.8201829616923957,
+      "commit_rate": 0.3241852487135506,
+      "request_rate": 0.6758147512864494,
+      "mean_sampling": 0.54226565602441,
+      "mean_request_gain": 0.010566414006102495,
+      "mean_gate_score": 0.00984514205843648,
+      "mean_gate_same_fraction": 0.5470745187726319
+    }
+  },
+  "decision_quantities": {
+    "continuous_sampling_rmse": 0.07702834325071402,
+    "gate_sampling_rmse": 0.08247461240837885,
+    "governed_sampling_rmse": 0.07694759493536645,
+    "hybrid_sampling_rmse": 0.046009405482936534,
+    "continuous_commit_rmse": 0.40885878131078496,
+    "gate_commit_rmse": 0.4384250730601753,
+    "governed_commit_rmse": 0.40834064390182107,
+    "hybrid_commit_rmse": 0.29302511055299374,
+    "continuous_false_commit": 0.07360406091370558,
+    "gate_false_commit": 0.04526226734348562,
+    "governed_false_commit": 0.07571912013536379,
+    "hybrid_false_commit": 0.051607445008460234,
+    "continuous_commit_detection": 0.37566137566137564,
+    "gate_commit_detection": 0.17989417989417988,
+    "governed_commit_detection": 0.3783068783068783,
+    "hybrid_commit_detection": 0.7310405643738977,
+    "continuous_request_detection": 0.9263959390862944,
+    "gate_request_detection": 0.9547377326565144,
+    "continuous_bait_false_commit": 0.07834757834757834,
+    "gate_bait_false_commit": 0.05413105413105413
+  },
+  "cost_sweep": [
+    {
+      "observation_cost": 0.0,
+      "commit_rate": 0.04345340194396798,
+      "request_rate": 0.956546598056032,
+      "sampling_winner": "hybrid_full",
+      "commit_winner": "hybrid_full",
+      "continuous_sampling_rmse": 0.0775979104739986,
+      "gate_sampling_rmse": 0.08260956841395642,
+      "continuous_false_commit": 0.0017931858936043037,
+      "gate_false_commit": 0.0,
+      "continuous_commit_detection": 0.03289473684210526,
+      "gate_commit_detection": 0.0,
+      "continuous_bait_false_commit": 0.0030303030303030303,
+      "gate_bait_false_commit": 0.0
+    },
+    {
+      "observation_cost": 0.01,
+      "commit_rate": 0.1432246998284734,
+      "request_rate": 0.8567753001715266,
+      "sampling_winner": "hybrid_full",
+      "commit_winner": "hybrid_full",
+      "continuous_sampling_rmse": 0.07737891416827317,
+      "gate_sampling_rmse": 0.08253154076511968,
+      "continuous_false_commit": 0.013013013013013013,
+      "gate_false_commit": 0.0,
+      "continuous_commit_detection": 0.06187624750499002,
+      "gate_commit_detection": 0.0,
+      "continuous_bait_false_commit": 0.014364640883977901,
+      "gate_bait_false_commit": 0.0
+    },
+    {
+      "observation_cost": 0.025,
+      "commit_rate": 0.3241852487135506,
+      "request_rate": 0.6758147512864494,
+      "sampling_winner": "hybrid_full",
+      "commit_winner": "hybrid_full",
+      "continuous_sampling_rmse": 0.07702834325071402,
+      "gate_sampling_rmse": 0.08247461240837885,
+      "continuous_false_commit": 0.07360406091370558,
+      "gate_false_commit": 0.04526226734348562,
+      "continuous_commit_detection": 0.37566137566137564,
+      "gate_commit_detection": 0.17989417989417988,
+      "continuous_bait_false_commit": 0.07834757834757834,
+      "gate_bait_false_commit": 0.05413105413105413
+    },
+    {
+      "observation_cost": 0.05,
+      "commit_rate": 0.7272727272727273,
+      "request_rate": 0.2727272727272727,
+      "sampling_winner": "hybrid_full",
+      "commit_winner": "hybrid_full",
+      "continuous_sampling_rmse": 0.07641529625559032,
+      "gate_sampling_rmse": 0.08203929578367496,
+      "continuous_false_commit": 0.48218029350104824,
+      "gate_false_commit": 0.710691823899371,
+      "continuous_commit_detection": 0.8400157232704403,
+      "gate_commit_detection": 0.9033018867924528,
+      "continuous_bait_false_commit": 0.5618374558303887,
+      "gate_bait_false_commit": 0.5759717314487632
+    },
+    {
+      "observation_cost": 0.1,
+      "commit_rate": 0.9997141223556318,
+      "request_rate": 0.0002858776443682104,
+      "sampling_winner": "hybrid_full",
+      "commit_winner": "scalar",
+      "continuous_sampling_rmse": 0.07525033408311366,
+      "gate_sampling_rmse": 0.08295434823195309,
+      "continuous_false_commit": 1.0,
+      "gate_false_commit": 1.0,
+      "continuous_commit_detection": 1.0,
+      "gate_commit_detection": 1.0,
+      "continuous_bait_false_commit": NaN,
+      "gate_bait_false_commit": NaN
+    }
+  ],
+  "finding": "ACTIVE_HYBRID_SAMPLING_GATE_NEEDED"
+}

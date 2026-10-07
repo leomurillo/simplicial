@@ -1,0 +1,484 @@
+{
+  "timestamp": "2026-06-04T04:47:02.795545+00:00",
+  "dataset": {
+    "name": "Synthetic closed-loop motor-sensing field",
+    "source": "E20 simulator",
+    "classes": 4,
+    "actions": [
+      "commit",
+      "hold",
+      "aim_0",
+      "aim_1",
+      "aim_2",
+      "aim_3"
+    ]
+  },
+  "config": {
+    "seed": 20260603,
+    "train_n": 5200,
+    "calibration_n": 1800,
+    "test_n": 3000,
+    "aim_cost": 0.04,
+    "hold_cost": 0.018,
+    "alpha": 0.05,
+    "ridge": 0.012,
+    "random_hidden": 384,
+    "utility_noise": 0.012,
+    "select_noise": 0.02
+  },
+  "gate_threshold": 0.8029215268310155,
+  "train_summary": {
+    "episodes": 5200,
+    "packets": 31200,
+    "optimal_actions": {
+      "commit": 1232,
+      "hold": 548,
+      "aim_0": 918,
+      "aim_1": 861,
+      "aim_2": 839,
+      "aim_3": 802
+    },
+    "mean_utility": 0.32409545897431286,
+    "mean_gate_score": 0.25272794517554237,
+    "mean_unsafe": 0.5928205128205128,
+    "mean_utility_by_action": {
+      "commit": 0.5837968562230418,
+      "hold": 0.678602560012643,
+      "aim_0": 0.18858496467863017,
+      "aim_1": 0.17277475432613545,
+      "aim_2": 0.1655634437702659,
+      "aim_3": 0.15525017483516104
+    },
+    "unsafe_by_action": {
+      "commit": 0.3701923076923077,
+      "hold": 0.24346153846153845,
+      "aim_0": 0.7161538461538461,
+      "aim_1": 0.7355769230769231,
+      "aim_2": 0.740576923076923,
+      "aim_3": 0.7509615384615385
+    }
+  },
+  "calibration_summary": {
+    "episodes": 1800,
+    "packets": 10800,
+    "optimal_actions": {
+      "commit": 416,
+      "hold": 185,
+      "aim_0": 297,
+      "aim_1": 282,
+      "aim_2": 293,
+      "aim_3": 327
+    },
+    "mean_utility": 0.3216278704531856,
+    "mean_gate_score": 0.25335349112220756,
+    "mean_unsafe": 0.5971296296296297,
+    "mean_utility_by_action": {
+      "commit": 0.5740607457636432,
+      "hold": 0.6677989386349044,
+      "aim_0": 0.1746512380584327,
+      "aim_1": 0.15196827501666285,
+      "aim_2": 0.16582615965565176,
+      "aim_3": 0.19546186558981876
+    },
+    "unsafe_by_action": {
+      "commit": 0.3877777777777778,
+      "hold": 0.2588888888888889,
+      "aim_0": 0.73,
+      "aim_1": 0.7527777777777778,
+      "aim_2": 0.74,
+      "aim_3": 0.7133333333333334
+    }
+  },
+  "test_summary": {
+    "episodes": 3000,
+    "packets": 18000,
+    "optimal_actions": {
+      "commit": 709,
+      "hold": 322,
+      "aim_0": 499,
+      "aim_1": 518,
+      "aim_2": 457,
+      "aim_3": 495
+    },
+    "mean_utility": 0.3251601392992081,
+    "mean_gate_score": 0.25386794881539204,
+    "mean_unsafe": 0.5914444444444444,
+    "mean_utility_by_action": {
+      "commit": 0.5906241942017166,
+      "hold": 0.6790646334369159,
+      "aim_0": 0.16488244640585317,
+      "aim_1": 0.17942855418675588,
+      "aim_2": 0.1623888121927983,
+      "aim_3": 0.17457219537120874
+    },
+    "unsafe_by_action": {
+      "commit": 0.36333333333333334,
+      "hold": 0.242,
+      "aim_0": 0.744,
+      "aim_1": 0.724,
+      "aim_2": 0.7456666666666667,
+      "aim_3": 0.7296666666666667
+    }
+  },
+  "overall": {
+    "scalar_lite": {
+      "value": {
+        "rmse_observed": 0.3623692689112477,
+        "r2_observed": 0.4357914575867783
+      },
+      "select_regression": {
+        "rmse_observed": 0.33564131285447774,
+        "r2_observed": 0.16352947303685572
+      },
+      "row_selection": {
+        "row_accuracy": 0.8333333333333334,
+        "optimal_detection": 0.0,
+        "nonoptimal_false_admission": 0.0
+      },
+      "policy": {
+        "action_accuracy": 0.542,
+        "mean_regret": 0.36249223371851425,
+        "p90_regret": 1.0957799136133952,
+        "false_commit": 0.14966666666666667,
+        "missed_control": 0.10166666666666667,
+        "wrong_control": 0.24766666666666667,
+        "unsafe_choice": 0.3596666666666667,
+        "unnecessary_unsafe": 0.35833333333333334,
+        "chosen_actions": {
+          "commit": 1153,
+          "hold": 2,
+          "aim_0": 596,
+          "aim_1": 486,
+          "aim_2": 418,
+          "aim_3": 345
+        },
+        "optimal_actions": {
+          "commit": 709,
+          "hold": 322,
+          "aim_0": 499,
+          "aim_1": 518,
+          "aim_2": 457,
+          "aim_3": 495
+        }
+      },
+      "model": {
+        "feature_kind": "scalar",
+        "basis_kind": "lite",
+        "feature_count": 8,
+        "expanded_count": 17
+      }
+    },
+    "gate_lite": {
+      "value": {
+        "rmse_observed": 0.4172544513019647,
+        "r2_observed": 0.25193575970868165
+      },
+      "select_regression": {
+        "rmse_observed": 0.34018061081506995,
+        "r2_observed": 0.14075120033930888
+      },
+      "row_selection": {
+        "row_accuracy": 0.8567777777777777,
+        "optimal_detection": 0.22366666666666668,
+        "nonoptimal_false_admission": 0.0166
+      },
+      "policy": {
+        "action_accuracy": 0.374,
+        "mean_regret": 0.5767051255384521,
+        "p90_regret": 1.1238855488281283,
+        "false_commit": 0.083,
+        "missed_control": 0.058,
+        "wrong_control": 0.448,
+        "unsafe_choice": 0.5693333333333334,
+        "unnecessary_unsafe": 0.568,
+        "chosen_actions": {
+          "commit": 920,
+          "hold": 0,
+          "aim_0": 2080,
+          "aim_1": 0,
+          "aim_2": 0,
+          "aim_3": 0
+        },
+        "optimal_actions": {
+          "commit": 709,
+          "hold": 322,
+          "aim_0": 499,
+          "aim_1": 518,
+          "aim_2": 457,
+          "aim_3": 495
+        }
+      },
+      "model": {
+        "feature_kind": "gate",
+        "basis_kind": "lite",
+        "feature_count": 13,
+        "expanded_count": 27
+      }
+    },
+    "continuous_lite": {
+      "value": {
+        "rmse_observed": 0.30764257297838127,
+        "r2_observed": 0.5933415437966647
+      },
+      "select_regression": {
+        "rmse_observed": 0.3191791874067506,
+        "r2_observed": 0.24356964168081674
+      },
+      "row_selection": {
+        "row_accuracy": 0.8371666666666666,
+        "optimal_detection": 0.049,
+        "nonoptimal_false_admission": 0.0052
+      },
+      "policy": {
+        "action_accuracy": 0.6363333333333333,
+        "mean_regret": 0.2570422973314362,
+        "p90_regret": 1.0218327521128023,
+        "false_commit": 0.057,
+        "missed_control": 0.04466666666666667,
+        "wrong_control": 0.15033333333333335,
+        "unsafe_choice": 0.2613333333333333,
+        "unnecessary_unsafe": 0.26,
+        "chosen_actions": {
+          "commit": 690,
+          "hold": 8,
+          "aim_0": 663,
+          "aim_1": 612,
+          "aim_2": 532,
+          "aim_3": 495
+        },
+        "optimal_actions": {
+          "commit": 709,
+          "hold": 322,
+          "aim_0": 499,
+          "aim_1": 518,
+          "aim_2": 457,
+          "aim_3": 495
+        }
+      },
+      "model": {
+        "feature_kind": "continuous",
+        "basis_kind": "lite",
+        "feature_count": 43,
+        "expanded_count": 87
+      }
+    },
+    "continuous_pairwise": {
+      "value": {
+        "rmse_observed": 0.264403177858725,
+        "r2_observed": 0.6996205076479423
+      },
+      "select_regression": {
+        "rmse_observed": 0.266090594418367,
+        "r2_observed": 0.4742747111822597
+      },
+      "row_selection": {
+        "row_accuracy": 0.9049444444444444,
+        "optimal_detection": 0.64,
+        "nonoptimal_false_admission": 0.04206666666666667
+      },
+      "policy": {
+        "action_accuracy": 0.763,
+        "mean_regret": 0.14826290695786845,
+        "p90_regret": 0.9469802551008417,
+        "false_commit": 0.08733333333333333,
+        "missed_control": 0.05266666666666667,
+        "wrong_control": 0.103,
+        "unsafe_choice": 0.15633333333333332,
+        "unnecessary_unsafe": 0.155,
+        "chosen_actions": {
+          "commit": 953,
+          "hold": 101,
+          "aim_0": 522,
+          "aim_1": 509,
+          "aim_2": 476,
+          "aim_3": 439
+        },
+        "optimal_actions": {
+          "commit": 709,
+          "hold": 322,
+          "aim_0": 499,
+          "aim_1": 518,
+          "aim_2": 457,
+          "aim_3": 495
+        }
+      },
+      "model": {
+        "feature_kind": "continuous",
+        "basis_kind": "pairwise",
+        "feature_count": 43,
+        "expanded_count": 990
+      }
+    },
+    "continuous_random_absorber": {
+      "value": {
+        "rmse_observed": 0.2729594938474071,
+        "r2_observed": 0.6798648611147613
+      },
+      "select_regression": {
+        "rmse_observed": 0.27727247991999016,
+        "r2_observed": 0.429161371007895
+      },
+      "row_selection": {
+        "row_accuracy": 0.8948888888888888,
+        "optimal_detection": 0.556,
+        "nonoptimal_false_admission": 0.037333333333333336
+      },
+      "policy": {
+        "action_accuracy": 0.728,
+        "mean_regret": 0.1658145058890798,
+        "p90_regret": 0.9733314594487055,
+        "false_commit": 0.097,
+        "missed_control": 0.053,
+        "wrong_control": 0.12066666666666667,
+        "unsafe_choice": 0.17333333333333334,
+        "unnecessary_unsafe": 0.172,
+        "chosen_actions": {
+          "commit": 982,
+          "hold": 47,
+          "aim_0": 499,
+          "aim_1": 545,
+          "aim_2": 460,
+          "aim_3": 467
+        },
+        "optimal_actions": {
+          "commit": 709,
+          "hold": 322,
+          "aim_0": 499,
+          "aim_1": 518,
+          "aim_2": 457,
+          "aim_3": 495
+        }
+      },
+      "model": {
+        "feature_kind": "continuous",
+        "basis_kind": "random",
+        "feature_count": 43,
+        "expanded_count": 471
+      }
+    },
+    "hybrid_lite": {
+      "value": {
+        "rmse_observed": 0.29925825445208487,
+        "r2_observed": 0.6152051822191176
+      },
+      "select_regression": {
+        "rmse_observed": 0.29314084877793917,
+        "r2_observed": 0.36195324701606
+      },
+      "row_selection": {
+        "row_accuracy": 0.8713333333333333,
+        "optimal_detection": 0.3566666666666667,
+        "nonoptimal_false_admission": 0.025733333333333334
+      },
+      "policy": {
+        "action_accuracy": 0.7226666666666667,
+        "mean_regret": 0.1665814615839948,
+        "p90_regret": 0.9517298514616238,
+        "false_commit": 0.08333333333333333,
+        "missed_control": 0.06066666666666667,
+        "wrong_control": 0.11033333333333334,
+        "unsafe_choice": 0.17633333333333334,
+        "unnecessary_unsafe": 0.175,
+        "chosen_actions": {
+          "commit": 921,
+          "hold": 49,
+          "aim_0": 548,
+          "aim_1": 533,
+          "aim_2": 483,
+          "aim_3": 466
+        },
+        "optimal_actions": {
+          "commit": 709,
+          "hold": 322,
+          "aim_0": 499,
+          "aim_1": 518,
+          "aim_2": 457,
+          "aim_3": 495
+        }
+      },
+      "model": {
+        "feature_kind": "hybrid",
+        "basis_kind": "lite",
+        "feature_count": 54,
+        "expanded_count": 109
+      }
+    },
+    "hybrid_random_absorber": {
+      "value": {
+        "rmse_observed": 0.2664103488461077,
+        "r2_observed": 0.6950426393935862
+      },
+      "select_regression": {
+        "rmse_observed": 0.2607687803095509,
+        "r2_observed": 0.495093441218011
+      },
+      "row_selection": {
+        "row_accuracy": 0.9043333333333333,
+        "optimal_detection": 0.6066666666666667,
+        "nonoptimal_false_admission": 0.03613333333333334
+      },
+      "policy": {
+        "action_accuracy": 0.7843333333333333,
+        "mean_regret": 0.14610426568898344,
+        "p90_regret": 0.9609937735644354,
+        "false_commit": 0.04666666666666667,
+        "missed_control": 0.029,
+        "wrong_control": 0.11333333333333333,
+        "unsafe_choice": 0.153,
+        "unnecessary_unsafe": 0.15166666666666667,
+        "chosen_actions": {
+          "commit": 811,
+          "hold": 162,
+          "aim_0": 528,
+          "aim_1": 515,
+          "aim_2": 494,
+          "aim_3": 490
+        },
+        "optimal_actions": {
+          "commit": 709,
+          "hold": 322,
+          "aim_0": 499,
+          "aim_1": 518,
+          "aim_2": 457,
+          "aim_3": 495
+        }
+      },
+      "model": {
+        "feature_kind": "hybrid",
+        "basis_kind": "random",
+        "feature_count": 54,
+        "expanded_count": 493
+      }
+    }
+  },
+  "decision_quantities": {
+    "continuous_lite_regret": 0.2570422973314362,
+    "continuous_pairwise_regret": 0.14826290695786845,
+    "continuous_random_regret": 0.1658145058890798,
+    "hybrid_lite_regret": 0.1665814615839948,
+    "hybrid_random_regret": 0.14610426568898344,
+    "best_strong_continuous_regret": 0.14826290695786845,
+    "best_hybrid_regret": 0.14610426568898344,
+    "continuous_lite_accuracy": 0.6363333333333333,
+    "continuous_pairwise_accuracy": 0.763,
+    "continuous_random_accuracy": 0.728,
+    "hybrid_lite_accuracy": 0.7226666666666667,
+    "hybrid_random_accuracy": 0.7843333333333333,
+    "best_strong_continuous_accuracy": 0.763,
+    "best_hybrid_accuracy": 0.7843333333333333,
+    "continuous_lite_unnecessary_unsafe": 0.26,
+    "continuous_pairwise_unnecessary_unsafe": 0.155,
+    "continuous_random_unnecessary_unsafe": 0.172,
+    "hybrid_lite_unnecessary_unsafe": 0.175,
+    "hybrid_random_unnecessary_unsafe": 0.15166666666666667,
+    "best_strong_continuous_unnecessary_unsafe": 0.155,
+    "best_hybrid_unnecessary_unsafe": 0.15166666666666667,
+    "best_strong_continuous_model": 0.0,
+    "best_hybrid_model": 1.0
+  },
+  "strong_names": {
+    "best_strong_continuous": "continuous_pairwise",
+    "best_hybrid": "hybrid_random_absorber"
+  },
+  "finding": "E20_CAPACITY_CONFOUND_WITH_HYBRID_EDGE"
+}

@@ -1,0 +1,744 @@
+{
+  "purpose": "Closed-form F_2[u]/(u^k) top-packet first-order frame-price decay and comparison against the finite-difference mu* atlas.",
+  "config": {
+    "amplitudes": [
+      0.1,
+      0.35,
+      0.5
+    ],
+    "k_min": 2,
+    "k_max": 16,
+    "ledger_weights": {
+      "block": 1.0,
+      "mix": 1.0,
+      "fisher_projection": 1.0,
+      "reciprocal_projection": 1.0,
+      "closure": 1.0,
+      "resource": 0.1,
+      "depth": 0.1
+    }
+  },
+  "formula": "mu_top(k,alpha)=8(2^(k-1)-1)/4^k * rho^3/(1-rho^2)^2, rho=0.95 alpha",
+  "rows": [
+    {
+      "alpha": 0.1,
+      "rho": 0.095,
+      "k": 2,
+      "dim_H": 3,
+      "formula_mu_top": 0.00043653133484387684,
+      "atlas_mu_top": 0.0004365428019070805,
+      "abs_error_vs_atlas": 1.1467063203661736e-08,
+      "ratio_to_previous_k": null,
+      "scaled_2k_mu": 0.0017461253393755074,
+      "asymptotic_scaled_limit": 0.0034922506787510147,
+      "best_plane": [
+        1,
+        2
+      ]
+    },
+    {
+      "alpha": 0.1,
+      "rho": 0.095,
+      "k": 3,
+      "dim_H": 7,
+      "formula_mu_top": 0.00032739850113290764,
+      "atlas_mu_top": 0.000327402507882546,
+      "abs_error_vs_atlas": 4.0067496383461645e-09,
+      "ratio_to_previous_k": 0.75,
+      "scaled_2k_mu": 0.002619188009063261,
+      "asymptotic_scaled_limit": 0.0034922506787510147,
+      "best_plane": [
+        1,
+        3
+      ]
+    },
+    {
+      "alpha": 0.1,
+      "rho": 0.095,
+      "k": 4,
+      "dim_H": 15,
+      "formula_mu_top": 0.0001909824589941961,
+      "atlas_mu_top": 0.00019098402026518357,
+      "abs_error_vs_atlas": 1.5612709874663743e-09,
+      "ratio_to_previous_k": 0.5833333333333333,
+      "scaled_2k_mu": 0.0030557193439071377,
+      "asymptotic_scaled_limit": 0.0034922506787510147,
+      "best_plane": [
+        1,
+        4
+      ]
+    },
+    {
+      "alpha": 0.1,
+      "rho": 0.095,
+      "k": 5,
+      "dim_H": 31,
+      "formula_mu_top": 0.00010231203160403363,
+      "atlas_mu_top": 0.00010231271385663376,
+      "abs_error_vs_atlas": 6.822526001315716e-10,
+      "ratio_to_previous_k": 0.5357142857142857,
+      "scaled_2k_mu": 0.0032739850113290762,
+      "asymptotic_scaled_limit": 0.0034922506787510147,
+      "best_plane": [
+        1,
+        5
+      ]
+    },
+    {
+      "alpha": 0.1,
+      "rho": 0.095,
+      "k": 6,
+      "dim_H": 63,
+      "formula_mu_top": 5.286121632875071e-05,
+      "atlas_mu_top": null,
+      "abs_error_vs_atlas": null,
+      "ratio_to_previous_k": 0.5166666666666667,
+      "scaled_2k_mu": 0.0033831178450400455,
+      "asymptotic_scaled_limit": 0.0034922506787510147,
+      "best_plane": [
+        1,
+        6
+      ]
+    },
+    {
+      "alpha": 0.1,
+      "rho": 0.095,
+      "k": 7,
+      "dim_H": 127,
+      "formula_mu_top": 2.685690829605883e-05,
+      "atlas_mu_top": null,
+      "abs_error_vs_atlas": null,
+      "ratio_to_previous_k": 0.5080645161290323,
+      "scaled_2k_mu": 0.0034376842618955303,
+      "asymptotic_scaled_limit": 0.0034922506787510147,
+      "best_plane": [
+        1,
+        7
+      ]
+    },
+    {
+      "alpha": 0.1,
+      "rho": 0.095,
+      "k": 8,
+      "dim_H": 255,
+      "formula_mu_top": 1.3535029180950284e-05,
+      "atlas_mu_top": null,
+      "abs_error_vs_atlas": null,
+      "ratio_to_previous_k": 0.503968253968254,
+      "scaled_2k_mu": 0.0034649674703232727,
+      "asymptotic_scaled_limit": 0.0034922506787510147,
+      "best_plane": [
+        1,
+        8
+      ]
+    },
+    {
+      "alpha": 0.1,
+      "rho": 0.095,
+      "k": 9,
+      "dim_H": 511,
+      "formula_mu_top": 6.794158348705359e-06,
+      "atlas_mu_top": null,
+      "abs_error_vs_atlas": null,
+      "ratio_to_previous_k": 0.5019685039370079,
+      "scaled_2k_mu": 0.003478609074537144,
+      "asymptotic_scaled_limit": 0.0034922506787510147,
+      "best_plane": [
+        1,
+        9
+      ]
+    },
+    {
+      "alpha": 0.1,
+      "rho": 0.095,
+      "k": 10,
+      "dim_H": 1023,
+      "formula_mu_top": 3.4037401139102337e-06,
+      "atlas_mu_top": null,
+      "abs_error_vs_atlas": null,
+      "ratio_to_previous_k": 0.5009803921568627,
+      "scaled_2k_mu": 0.0034854298766440793,
+      "asymptotic_scaled_limit": 0.0034922506787510147,
+      "best_plane": [
+        1,
+        10
+      ]
+    },
+    {
+      "alpha": 0.1,
+      "rho": 0.095,
+      "k": 11,
+      "dim_H": 2047,
+      "formula_mu_top": 1.7035352918445053e-06,
+      "atlas_mu_top": null,
+      "abs_error_vs_atlas": null,
+      "ratio_to_previous_k": 0.5004892367906066,
+      "scaled_2k_mu": 0.003488840277697547,
+      "asymptotic_scaled_limit": 0.0034922506787510147,
+      "best_plane": [
+        1,
+        11
+      ]
+    },
+    {
+      "alpha": 0.1,
+      "rho": 0.095,
+      "k": 12,
+      "dim_H": 4095,
+      "formula_mu_top": 8.521839546445998e-07,
+      "atlas_mu_top": null,
+      "abs_error_vs_atlas": null,
+      "ratio_to_previous_k": 0.5002443792766373,
+      "scaled_2k_mu": 0.0034905454782242808,
+      "asymptotic_scaled_limit": 0.0034922506787510147,
+      "best_plane": [
+        1,
+        12
+      ]
+    },
+    {
+      "alpha": 0.1,
+      "rho": 0.095,
+      "k": 13,
+      "dim_H": 8191,
+      "formula_mu_top": 4.261960545028867e-07,
+      "atlas_mu_top": null,
+      "abs_error_vs_atlas": null,
+      "ratio_to_previous_k": 0.5001221299462628,
+      "scaled_2k_mu": 0.003491398078487648,
+      "asymptotic_scaled_limit": 0.0034922506787510147,
+      "best_plane": [
+        1,
+        13
+      ]
+    },
+    {
+      "alpha": 0.1,
+      "rho": 0.095,
+      "k": 14,
+      "dim_H": 16383,
+      "formula_mu_top": 2.1312404654659005e-07,
+      "atlas_mu_top": null,
+      "abs_error_vs_atlas": null,
+      "ratio_to_previous_k": 0.5000610500610501,
+      "scaled_2k_mu": 0.0034918243786193313,
+      "asymptotic_scaled_limit": 0.0034922506787510147,
+      "best_plane": [
+        1,
+        14
+      ]
+    },
+    {
+      "alpha": 0.1,
+      "rho": 0.095,
+      "k": 15,
+      "dim_H": 32767,
+      "formula_mu_top": 1.0656852809708169e-07,
+      "atlas_mu_top": null,
+      "abs_error_vs_atlas": null,
+      "ratio_to_previous_k": 0.50003052130387,
+      "scaled_2k_mu": 0.003492037528685173,
+      "asymptotic_scaled_limit": 0.0034922506787510147,
+      "best_plane": [
+        1,
+        15
+      ]
+    },
+    {
+      "alpha": 0.1,
+      "rho": 0.095,
+      "k": 16,
+      "dim_H": 65535,
+      "formula_mu_top": 5.328589025448752e-08,
+      "atlas_mu_top": null,
+      "abs_error_vs_atlas": null,
+      "ratio_to_previous_k": 0.5000152597204419,
+      "scaled_2k_mu": 0.003492144103718094,
+      "asymptotic_scaled_limit": 0.0034922506787510147,
+      "best_plane": [
+        1,
+        16
+      ]
+    },
+    {
+      "alpha": 0.35,
+      "rho": 0.33249999999999996,
+      "k": 2,
+      "dim_H": 3,
+      "formula_mu_top": 0.023233143656358268,
+      "atlas_mu_top": 0.023233314466741817,
+      "abs_error_vs_atlas": 1.7081038354918587e-07,
+      "ratio_to_previous_k": null,
+      "scaled_2k_mu": 0.09293257462543307,
+      "asymptotic_scaled_limit": 0.18586514925086614,
+      "best_plane": [
+        1,
+        2
+      ]
+    },
+    {
+      "alpha": 0.35,
+      "rho": 0.33249999999999996,
+      "k": 3,
+      "dim_H": 7,
+      "formula_mu_top": 0.0174248577422687,
+      "atlas_mu_top": 0.01742491601008922,
+      "abs_error_vs_atlas": 5.826782051993051e-08,
+      "ratio_to_previous_k": 0.75,
+      "scaled_2k_mu": 0.1393988619381496,
+      "asymptotic_scaled_limit": 0.18586514925086614,
+      "best_plane": [
+        1,
+        3
+      ]
+    },
+    {
+      "alpha": 0.35,
+      "rho": 0.33249999999999996,
+      "k": 4,
+      "dim_H": 15,
+      "formula_mu_top": 0.010164500349656743,
+      "atlas_mu_top": 0.010164522667999165,
+      "abs_error_vs_atlas": 2.2318342422431026e-08,
+      "ratio_to_previous_k": 0.5833333333333334,
+      "scaled_2k_mu": 0.16263200559450788,
+      "asymptotic_scaled_limit": 0.18586514925086614,
+      "best_plane": [
+        1,
+        4
+      ]
+    },
+    {
+      "alpha": 0.35,
+      "rho": 0.33249999999999996,
+      "k": 5,
+      "dim_H": 31,
+      "formula_mu_top": 0.005445268044458968,
+      "atlas_mu_top": 0.00544527747892154,
+      "abs_error_vs_atlas": 9.434462571421276e-09,
+      "ratio_to_previous_k": 0.5357142857142856,
+      "scaled_2k_mu": 0.17424857742268698,
+      "asymptotic_scaled_limit": 0.18586514925086614,
+      "best_plane": [
+        1,
+        5
+      ]
+    },
+    {
+      "alpha": 0.35,
+      "rho": 0.33249999999999996,
+      "k": 6,
+      "dim_H": 63,
+      "formula_mu_top": 0.002813388489637134,
+      "atlas_mu_top": null,
+      "abs_error_vs_atlas": null,
+      "ratio_to_previous_k": 0.5166666666666667,
+      "scaled_2k_mu": 0.18005686333677656,
+      "asymptotic_scaled_limit": 0.18586514925086614,
+      "best_plane": [
+        1,
+        6
+      ]
+    },
+    {
+      "alpha": 0.35,
+      "rho": 0.33249999999999996,
+      "k": 7,
+      "dim_H": 127,
+      "formula_mu_top": 0.0014293828616704794,
+      "atlas_mu_top": null,
+      "abs_error_vs_atlas": null,
+      "ratio_to_previous_k": 0.5080645161290324,
+      "scaled_2k_mu": 0.18296100629382137,
+      "asymptotic_scaled_limit": 0.18586514925086614,
+      "best_plane": [
+        1,
+        7
+      ]
+    },
+    {
+      "alpha": 0.35,
+      "rho": 0.33249999999999996,
+      "k": 8,
+      "dim_H": 255,
+      "formula_mu_top": 0.0007203635850482177,
+      "atlas_mu_top": null,
+      "abs_error_vs_atlas": null,
+      "ratio_to_previous_k": 0.5039682539682538,
+      "scaled_2k_mu": 0.18441307777234373,
+      "asymptotic_scaled_limit": 0.18586514925086614,
+      "best_plane": [
+        1,
+        8
+      ]
+    },
+    {
+      "alpha": 0.35,
+      "rho": 0.33249999999999996,
+      "k": 9,
+      "dim_H": 511,
+      "formula_mu_top": 0.0003615998310773534,
+      "atlas_mu_top": null,
+      "abs_error_vs_atlas": null,
+      "ratio_to_previous_k": 0.501968503937008,
+      "scaled_2k_mu": 0.18513911351160495,
+      "asymptotic_scaled_limit": 0.18586514925086614,
+      "best_plane": [
+        1,
+        9
+      ]
+    },
+    {
+      "alpha": 0.35,
+      "rho": 0.33249999999999996,
+      "k": 10,
+      "dim_H": 1023,
+      "formula_mu_top": 0.00018115442517698785,
+      "atlas_mu_top": null,
+      "abs_error_vs_atlas": null,
+      "ratio_to_previous_k": 0.5009803921568627,
+      "scaled_2k_mu": 0.18550213138123556,
+      "asymptotic_scaled_limit": 0.18586514925086614,
+      "best_plane": [
+        1,
+        10
+      ]
+    },
+    {
+      "alpha": 0.35,
+      "rho": 0.33249999999999996,
+      "k": 11,
+      "dim_H": 2047,
+      "formula_mu_top": 9.06658399980717e-05,
+      "atlas_mu_top": null,
+      "abs_error_vs_atlas": null,
+      "ratio_to_previous_k": 0.5004892367906066,
+      "scaled_2k_mu": 0.18568364031605084,
+      "asymptotic_scaled_limit": 0.18586514925086614,
+      "best_plane": [
+        1,
+        11
+      ]
+    },
+    {
+      "alpha": 0.35,
+      "rho": 0.33249999999999996,
+      "k": 12,
+      "dim_H": 4095,
+      "formula_mu_top": 4.53550768514303e-05,
+      "atlas_mu_top": null,
+      "abs_error_vs_atlas": null,
+      "ratio_to_previous_k": 0.5002443792766373,
+      "scaled_2k_mu": 0.1857743947834585,
+      "asymptotic_scaled_limit": 0.18586514925086614,
+      "best_plane": [
+        1,
+        12
+      ]
+    },
+    {
+      "alpha": 0.35,
+      "rho": 0.33249999999999996,
+      "k": 13,
+      "dim_H": 8191,
+      "formula_mu_top": 2.268307763881376e-05,
+      "atlas_mu_top": null,
+      "abs_error_vs_atlas": null,
+      "ratio_to_previous_k": 0.5001221299462628,
+      "scaled_2k_mu": 0.18581977201716232,
+      "asymptotic_scaled_limit": 0.18586514925086614,
+      "best_plane": [
+        1,
+        13
+      ]
+    },
+    {
+      "alpha": 0.35,
+      "rho": 0.33249999999999996,
+      "k": 14,
+      "dim_H": 16383,
+      "formula_mu_top": 1.1342923622681532e-05,
+      "atlas_mu_top": null,
+      "abs_error_vs_atlas": null,
+      "ratio_to_previous_k": 0.5000610500610501,
+      "scaled_2k_mu": 0.18584246063401422,
+      "asymptotic_scaled_limit": 0.18586514925086614,
+      "best_plane": [
+        1,
+        14
+      ]
+    },
+    {
+      "alpha": 0.35,
+      "rho": 0.33249999999999996,
+      "k": 15,
+      "dim_H": 32767,
+      "formula_mu_top": 5.671808012159429e-06,
+      "atlas_mu_top": null,
+      "abs_error_vs_atlas": null,
+      "ratio_to_previous_k": 0.50003052130387,
+      "scaled_2k_mu": 0.18585380494244017,
+      "asymptotic_scaled_limit": 0.18586514925086614,
+      "best_plane": [
+        1,
+        15
+      ]
+    },
+    {
+      "alpha": 0.35,
+      "rho": 0.33249999999999996,
+      "k": 16,
+      "dim_H": 65535,
+      "formula_mu_top": 2.8359905562843804e-06,
+      "atlas_mu_top": null,
+      "abs_error_vs_atlas": null,
+      "ratio_to_previous_k": 0.5000152597204419,
+      "scaled_2k_mu": 0.18585947709665315,
+      "asymptotic_scaled_limit": 0.18586514925086614,
+      "best_plane": [
+        1,
+        16
+      ]
+    },
+    {
+      "alpha": 0.5,
+      "rho": 0.475,
+      "k": 2,
+      "dim_H": 3,
+      "formula_mu_top": 0.08936103408135253,
+      "atlas_mu_top": 0.08936148321314619,
+      "abs_error_vs_atlas": 4.491317936589079e-07,
+      "ratio_to_previous_k": null,
+      "scaled_2k_mu": 0.3574441363254101,
+      "asymptotic_scaled_limit": 0.7148882726508202,
+      "best_plane": [
+        1,
+        2
+      ]
+    },
+    {
+      "alpha": 0.5,
+      "rho": 0.475,
+      "k": 3,
+      "dim_H": 7,
+      "formula_mu_top": 0.0670207755610144,
+      "atlas_mu_top": 0.06702092431032369,
+      "abs_error_vs_atlas": 1.4874930928665542e-07,
+      "ratio_to_previous_k": 0.7500000000000001,
+      "scaled_2k_mu": 0.5361662044881153,
+      "asymptotic_scaled_limit": 0.7148882726508202,
+      "best_plane": [
+        1,
+        3
+      ]
+    },
+    {
+      "alpha": 0.5,
+      "rho": 0.475,
+      "k": 4,
+      "dim_H": 15,
+      "formula_mu_top": 0.03909545241059173,
+      "atlas_mu_top": 0.039095507775588345,
+      "abs_error_vs_atlas": 5.536499661507044e-08,
+      "ratio_to_previous_k": 0.5833333333333333,
+      "scaled_2k_mu": 0.6255272385694677,
+      "asymptotic_scaled_limit": 0.7148882726508202,
+      "best_plane": [
+        1,
+        4
+      ]
+    },
+    {
+      "alpha": 0.5,
+      "rho": 0.475,
+      "k": 5,
+      "dim_H": 31,
+      "formula_mu_top": 0.020943992362817,
+      "atlas_mu_top": 0.02094401529983969,
+      "abs_error_vs_atlas": 2.2937022690905362e-08,
+      "ratio_to_previous_k": 0.5357142857142858,
+      "scaled_2k_mu": 0.670207755610144,
+      "asymptotic_scaled_limit": 0.7148882726508202,
+      "best_plane": [
+        1,
+        5
+      ]
+    },
+    {
+      "alpha": 0.5,
+      "rho": 0.475,
+      "k": 6,
+      "dim_H": 63,
+      "formula_mu_top": 0.010821062720788782,
+      "atlas_mu_top": null,
+      "abs_error_vs_atlas": null,
+      "ratio_to_previous_k": 0.5166666666666666,
+      "scaled_2k_mu": 0.6925480141304821,
+      "asymptotic_scaled_limit": 0.7148882726508202,
+      "best_plane": [
+        1,
+        6
+      ]
+    },
+    {
+      "alpha": 0.5,
+      "rho": 0.475,
+      "k": 7,
+      "dim_H": 127,
+      "formula_mu_top": 0.0054977979952394625,
+      "atlas_mu_top": null,
+      "abs_error_vs_atlas": null,
+      "ratio_to_previous_k": 0.5080645161290324,
+      "scaled_2k_mu": 0.7037181433906512,
+      "asymptotic_scaled_limit": 0.7148882726508202,
+      "best_plane": [
+        1,
+        7
+      ]
+    },
+    {
+      "alpha": 0.5,
+      "rho": 0.475,
+      "k": 8,
+      "dim_H": 255,
+      "formula_mu_top": 0.0027707156563309986,
+      "atlas_mu_top": null,
+      "abs_error_vs_atlas": null,
+      "ratio_to_previous_k": 0.503968253968254,
+      "scaled_2k_mu": 0.7093032080207357,
+      "asymptotic_scaled_limit": 0.7148882726508202,
+      "best_plane": [
+        1,
+        8
+      ]
+    },
+    {
+      "alpha": 0.5,
+      "rho": 0.475,
+      "k": 9,
+      "dim_H": 511,
+      "formula_mu_top": 0.0013908119928433165,
+      "atlas_mu_top": null,
+      "abs_error_vs_atlas": null,
+      "ratio_to_previous_k": 0.501968503937008,
+      "scaled_2k_mu": 0.712095740335778,
+      "asymptotic_scaled_limit": 0.7148882726508202,
+      "best_plane": [
+        1,
+        9
+      ]
+    },
+    {
+      "alpha": 0.5,
+      "rho": 0.475,
+      "k": 10,
+      "dim_H": 1023,
+      "formula_mu_top": 0.0006967695375911124,
+      "atlas_mu_top": null,
+      "abs_error_vs_atlas": null,
+      "ratio_to_previous_k": 0.5009803921568627,
+      "scaled_2k_mu": 0.7134920064932991,
+      "asymptotic_scaled_limit": 0.7148882726508202,
+      "best_plane": [
+        1,
+        10
+      ]
+    },
+    {
+      "alpha": 0.5,
+      "rho": 0.475,
+      "k": 11,
+      "dim_H": 2047,
+      "formula_mu_top": 0.00034872565408791977,
+      "atlas_mu_top": null,
+      "abs_error_vs_atlas": null,
+      "ratio_to_previous_k": 0.5004892367906066,
+      "scaled_2k_mu": 0.7141901395720597,
+      "asymptotic_scaled_limit": 0.7148882726508202,
+      "best_plane": [
+        1,
+        11
+      ]
+    },
+    {
+      "alpha": 0.5,
+      "rho": 0.475,
+      "k": 12,
+      "dim_H": 4095,
+      "formula_mu_top": 0.00017444804836705077,
+      "atlas_mu_top": null,
+      "abs_error_vs_atlas": null,
+      "ratio_to_previous_k": 0.5002443792766373,
+      "scaled_2k_mu": 0.71453920611144,
+      "asymptotic_scaled_limit": 0.7148882726508202,
+      "best_plane": [
+        1,
+        12
+      ]
+    },
+    {
+      "alpha": 0.5,
+      "rho": 0.475,
+      "k": 13,
+      "dim_H": 8191,
+      "formula_mu_top": 8.724532951429811e-05,
+      "atlas_mu_top": null,
+      "abs_error_vs_atlas": null,
+      "ratio_to_previous_k": 0.5001221299462628,
+      "scaled_2k_mu": 0.7147137393811301,
+      "asymptotic_scaled_limit": 0.7148882726508202,
+      "best_plane": [
+        1,
+        13
+      ]
+    },
+    {
+      "alpha": 0.5,
+      "rho": 0.475,
+      "k": 14,
+      "dim_H": 16383,
+      "formula_mu_top": 4.3627991089842235e-05,
+      "atlas_mu_top": null,
+      "abs_error_vs_atlas": null,
+      "ratio_to_previous_k": 0.5000610500610501,
+      "scaled_2k_mu": 0.7148010060159752,
+      "asymptotic_scaled_limit": 0.7148882726508202,
+      "best_plane": [
+        1,
+        14
+      ]
+    },
+    {
+      "alpha": 0.5,
+      "rho": 0.475,
+      "k": 15,
+      "dim_H": 32767,
+      "formula_mu_top": 2.1815327128094412e-05,
+      "atlas_mu_top": null,
+      "abs_error_vs_atlas": null,
+      "ratio_to_previous_k": 0.50003052130387,
+      "scaled_2k_mu": 0.7148446393333977,
+      "asymptotic_scaled_limit": 0.7148882726508202,
+      "best_plane": [
+        1,
+        15
+      ]
+    },
+    {
+      "alpha": 0.5,
+      "rho": 0.475,
+      "k": 16,
+      "dim_H": 65535,
+      "formula_mu_top": 1.090799645984053e-05,
+      "atlas_mu_top": null,
+      "abs_error_vs_atlas": null,
+      "ratio_to_previous_k": 0.5000152597204419,
+      "scaled_2k_mu": 0.714866455992109,
+      "asymptotic_scaled_limit": 0.7148882726508202,
+      "best_plane": [
+        1,
+        16
+      ]
+    }
+  ]
+}

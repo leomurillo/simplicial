@@ -1,0 +1,442 @@
+{
+  "aggregate": {
+    "fractions_of_total_full": {
+      "h3_contraction_visible": 0.9603943396748913,
+      "h4_visible": 0.036819805599401845,
+      "remaining_hidden": 0.0027858547257068483,
+      "support_projection": 0.0,
+      "support_underpricing_gap": 1.0
+    },
+    "row_count": 5,
+    "total_full_filtered_residual": 180555,
+    "total_h3_contraction_visible_atoms": 173404,
+    "total_h4_visible_atoms": 6648,
+    "total_remaining_hidden_atoms": 503,
+    "total_support_projection_residual": 0,
+    "total_support_underpricing_gap_atoms": 180555,
+    "visibility_partition_sum": 180555
+  },
+  "certificate_pass": true,
+  "checks": [
+    {
+      "expected": "all true",
+      "name": "all_row_checks_pass",
+      "observed": {
+        "f16-field": true,
+        "f2-u4-control": true,
+        "f2-u5": true,
+        "f4-u2": true,
+        "f8-u2": true
+      },
+      "pass": true
+    },
+    {
+      "expected": 0,
+      "name": "all_support_projection_residuals_zero",
+      "observed": {
+        "f16-field": 0,
+        "f2-u4-control": 0,
+        "f2-u5": 0,
+        "f4-u2": 0,
+        "f8-u2": 0
+      },
+      "pass": true
+    },
+    {
+      "expected": 180555,
+      "name": "aggregate_visibility_partition",
+      "observed": 180555,
+      "pass": true
+    }
+  ],
+  "interpretation": [
+    "Support projection residual 0 is not full filtered closure.",
+    "Every current row has positive full filtered residual erased by support projection.",
+    "H4 and H3 are visibility projections of [kappa] shadows modulo kernels.",
+    "Normalizer premium fields are included only where B3/B4 audits exist.",
+    "PSL carry frontier fields are included only where per-row carry-vs-depth certificates match the row."
+  ],
+  "rows": [
+    {
+      "carry_record_count": 369,
+      "checks": {
+        "atom_shadow_full_equals_raw": true,
+        "classification_full_equals_h3_raw": true,
+        "h4_visible_consistent": true,
+        "psl_dagger_holds_when_present": true,
+        "support_projection_erases_full": true,
+        "visibility_partition_sums_to_full": true,
+        "visible_shadow_exact_or_empty": true
+      },
+      "filtered_carry": {
+        "fractions_of_full": {
+          "h3_contraction_visible": 0.9369024856596558,
+          "h4_visible": 0.045889101338432124,
+          "remaining_hidden": 0.017208413001912046,
+          "support_projection": 0.0,
+          "support_underpricing_gap": 1.0
+        },
+        "full_filtered_residual": 1569,
+        "h3_contraction_visible_atoms": 1470,
+        "h4_invisible_atoms": 1497,
+        "h4_visible_atoms": 72,
+        "remaining_hidden_atoms": 27,
+        "support_projection_residual": 0,
+        "support_underpricing_gap_atoms": 1569,
+        "visibility_partition_sum": 1569
+      },
+      "gamma_size": 24,
+      "label_count": 16,
+      "normalizer_symmetry_premium": {
+        "audit_key": "f4-u2",
+        "mean_symmetry_premium_all_supports": 0.02613605151524404,
+        "normalizer_beats_minimal_rate": 0.8125,
+        "overbuy_count": 1531,
+        "support_checks": 32767,
+        "transfer_break_even_margin": 1.3306682751172347,
+        "transfer_mean_net_gain": 1.3306682751172347,
+        "transfer_mean_premium": 0.16770833333333335,
+        "transfer_mean_structural_gain": 1.498376608450568
+      },
+      "packets": {
+        "u": 3,
+        "u^2": 12
+      },
+      "psl_depth_or_boundary_carry": {
+        "binding_test": {
+          "d_star": 2,
+          "depth": 0,
+          "depth_savings": 2,
+          "lambda_crit": 55.40625,
+          "missed_boundaries": [
+            [
+              "u",
+              "u^2"
+            ]
+          ],
+          "target_packet": "u^2",
+          "total_carry_squared": 110.8125
+        },
+        "d_max": 2,
+        "dagger_holds": true,
+        "n_max_carry_order": 4,
+        "row_lambda_psl_crit": 55.40625
+      },
+      "ring": "F_4[u]/(u^2)",
+      "row_key": "f4-u2",
+      "row_role": "certified mixed row",
+      "visible_fisher_shadow": {
+        "commutator_entries": 14112,
+        "commutator_orbits": 592,
+        "lifted_commutator_orbits": 592,
+        "mixed_h4_orbits_hit": 7,
+        "mixed_h4_orbits_total": 7,
+        "pure_h4_orbits_hit": 0,
+        "pure_h4_orbits_total": 11,
+        "status": "exact"
+      }
+    },
+    {
+      "carry_record_count": 2516,
+      "checks": {
+        "atom_shadow_full_equals_raw": true,
+        "classification_full_equals_h3_raw": true,
+        "h4_visible_consistent": true,
+        "psl_dagger_holds_when_present": true,
+        "support_projection_erases_full": true,
+        "visibility_partition_sums_to_full": true,
+        "visible_shadow_exact_or_empty": true
+      },
+      "filtered_carry": {
+        "fractions_of_full": {
+          "h3_contraction_visible": 0.7114942528735633,
+          "h4_visible": 0.28338557993730407,
+          "remaining_hidden": 0.005120167189132706,
+          "support_projection": 0.0,
+          "support_underpricing_gap": 1.0
+        },
+        "full_filtered_residual": 19140,
+        "h3_contraction_visible_atoms": 13618,
+        "h4_invisible_atoms": 13716,
+        "h4_visible_atoms": 5424,
+        "remaining_hidden_atoms": 98,
+        "support_projection_residual": 0,
+        "support_underpricing_gap_atoms": 19140,
+        "visibility_partition_sum": 19140
+      },
+      "gamma_size": 128,
+      "label_count": 32,
+      "normalizer_symmetry_premium": null,
+      "packets": {
+        "u": 1,
+        "u^2": 2,
+        "u^3": 4,
+        "u^4": 8,
+        "u^5": 16
+      },
+      "psl_depth_or_boundary_carry": {
+        "binding_test": {
+          "d_star": 2,
+          "depth": 0,
+          "depth_savings": 2,
+          "lambda_crit": 2.000030517578125,
+          "missed_boundaries": [
+            [
+              "u",
+              "u^2"
+            ],
+            [
+              "u^2",
+              "u^3"
+            ],
+            [
+              "u^3",
+              "u^4"
+            ],
+            [
+              "u^4",
+              "u^5"
+            ]
+          ],
+          "target_packet": "u^2",
+          "total_carry_squared": 4.00006103515625
+        },
+        "d_max": 5,
+        "dagger_holds": true,
+        "n_max_carry_order": 4,
+        "row_lambda_psl_crit": 2.000030517578125
+      },
+      "ring": "F_2[u]/(u^5)",
+      "row_key": "f2-u5",
+      "row_role": "certified atlas row",
+      "visible_fisher_shadow": {
+        "commutator_entries": 558000,
+        "commutator_orbits": 6656,
+        "lifted_commutator_orbits": 6656,
+        "mixed_h4_orbits_hit": 43,
+        "mixed_h4_orbits_total": 43,
+        "pure_h4_orbits_hit": 0,
+        "pure_h4_orbits_total": 29,
+        "status": "exact"
+      }
+    },
+    {
+      "carry_record_count": 7105,
+      "checks": {
+        "atom_shadow_full_equals_raw": true,
+        "classification_full_equals_h3_raw": true,
+        "h4_visible_consistent": true,
+        "psl_dagger_holds_when_present": true,
+        "support_projection_erases_full": true,
+        "visibility_partition_sums_to_full": true,
+        "visible_shadow_exact_or_empty": true
+      },
+      "filtered_carry": {
+        "fractions_of_full": {
+          "h3_contraction_visible": 0.9942877385644069,
+          "h4_visible": 0.004959482796794049,
+          "remaining_hidden": 0.0007527786387990967,
+          "support_projection": 0.0,
+          "support_underpricing_gap": 1.0
+        },
+        "full_filtered_residual": 158081,
+        "h3_contraction_visible_atoms": 157178,
+        "h4_invisible_atoms": 157297,
+        "h4_visible_atoms": 784,
+        "remaining_hidden_atoms": 119,
+        "support_projection_residual": 0,
+        "support_underpricing_gap_atoms": 158081,
+        "visibility_partition_sum": 158081
+      },
+      "gamma_size": 168,
+      "label_count": 64,
+      "normalizer_symmetry_premium": null,
+      "packets": {
+        "u": 7,
+        "u^2": 56
+      },
+      "psl_depth_or_boundary_carry": {
+        "binding_test": {
+          "d_star": 2,
+          "depth": 0,
+          "depth_savings": 2,
+          "lambda_crit": 924.03759765625,
+          "missed_boundaries": [
+            [
+              "u",
+              "u^2"
+            ]
+          ],
+          "target_packet": "u^2",
+          "total_carry_squared": 1848.0751953125
+        },
+        "d_max": 2,
+        "dagger_holds": true,
+        "n_max_carry_order": 4,
+        "row_lambda_psl_crit": 924.03759765625
+      },
+      "ring": "F_8[u]/(u^2)",
+      "row_key": "f8-u2",
+      "row_role": "certified atlas row",
+      "visible_fisher_shadow": {
+        "commutator_entries": 3013696,
+        "commutator_orbits": 17944,
+        "lifted_commutator_orbits": 17944,
+        "mixed_h4_orbits_hit": 30,
+        "mixed_h4_orbits_total": 30,
+        "pure_h4_orbits_hit": 0,
+        "pure_h4_orbits_total": 56,
+        "status": "exact"
+      }
+    },
+    {
+      "carry_record_count": 225,
+      "checks": {
+        "atom_shadow_full_equals_raw": true,
+        "classification_full_equals_h3_raw": true,
+        "h4_visible_consistent": true,
+        "psl_dagger_holds_when_present": true,
+        "support_projection_erases_full": true,
+        "visibility_partition_sums_to_full": true,
+        "visible_shadow_exact_or_empty": true
+      },
+      "filtered_carry": {
+        "fractions_of_full": {
+          "h3_contraction_visible": 0.0,
+          "h4_visible": 0.0,
+          "remaining_hidden": 1.0,
+          "support_projection": 0.0,
+          "support_underpricing_gap": 1.0
+        },
+        "full_filtered_residual": 225,
+        "h3_contraction_visible_atoms": 0,
+        "h4_invisible_atoms": 225,
+        "h4_visible_atoms": 0,
+        "remaining_hidden_atoms": 225,
+        "support_projection_residual": 0,
+        "support_underpricing_gap_atoms": 225,
+        "visibility_partition_sum": 225
+      },
+      "gamma_size": 60,
+      "label_count": 16,
+      "normalizer_symmetry_premium": null,
+      "packets": {
+        "field": 15
+      },
+      "psl_depth_or_boundary_carry": null,
+      "ring": "F_16",
+      "row_key": "f16-field",
+      "row_role": "computable control",
+      "visible_fisher_shadow": {
+        "commutator_entries": 0,
+        "commutator_orbits": 0,
+        "lifted_commutator_orbits": 0,
+        "mixed_h4_orbits_hit": 0,
+        "mixed_h4_orbits_total": 0,
+        "pure_h4_orbits_hit": 0,
+        "pure_h4_orbits_total": 0,
+        "status": "empty"
+      }
+    },
+    {
+      "carry_record_count": 404,
+      "checks": {
+        "atom_shadow_full_equals_raw": true,
+        "classification_full_equals_h3_raw": true,
+        "h4_visible_consistent": true,
+        "psl_dagger_holds_when_present": true,
+        "support_projection_erases_full": true,
+        "visibility_partition_sums_to_full": true,
+        "visible_shadow_exact_or_empty": true
+      },
+      "filtered_carry": {
+        "fractions_of_full": {
+          "h3_contraction_visible": 0.7389610389610389,
+          "h4_visible": 0.23896103896103896,
+          "remaining_hidden": 0.02207792207792208,
+          "support_projection": 0.0,
+          "support_underpricing_gap": 1.0
+        },
+        "full_filtered_residual": 1540,
+        "h3_contraction_visible_atoms": 1138,
+        "h4_invisible_atoms": 1172,
+        "h4_visible_atoms": 368,
+        "remaining_hidden_atoms": 34,
+        "support_projection_residual": 0,
+        "support_underpricing_gap_atoms": 1540,
+        "visibility_partition_sum": 1540
+      },
+      "gamma_size": 32,
+      "label_count": 16,
+      "normalizer_symmetry_premium": {
+        "audit_key": "f2-u4",
+        "mean_symmetry_premium_all_supports": 0.02417879777418337,
+        "normalizer_beats_minimal_rate": 0.798828125,
+        "overbuy_count": 1438,
+        "support_checks": 32767,
+        "transfer_break_even_margin": 1.2301617623463188,
+        "transfer_mean_net_gain": 1.2301617623463188,
+        "transfer_mean_premium": 0.16822916666666668,
+        "transfer_mean_structural_gain": 1.3983909290129855
+      },
+      "packets": {
+        "u": 1,
+        "u^2": 2,
+        "u^3": 4,
+        "u^4": 8
+      },
+      "psl_depth_or_boundary_carry": {
+        "binding_test": {
+          "d_star": 2,
+          "depth": 0,
+          "depth_savings": 2,
+          "lambda_crit": 2.00048828125,
+          "missed_boundaries": [
+            [
+              "u",
+              "u^2"
+            ],
+            [
+              "u^2",
+              "u^3"
+            ],
+            [
+              "u^3",
+              "u^4"
+            ]
+          ],
+          "target_packet": "u^2",
+          "total_carry_squared": 4.0009765625
+        },
+        "d_max": 4,
+        "dagger_holds": true,
+        "n_max_carry_order": 4,
+        "row_lambda_psl_crit": 2.00048828125
+      },
+      "ring": "F_2[u]/(u^4)",
+      "row_key": "f2-u4-control",
+      "row_role": "computable control",
+      "visible_fisher_shadow": {
+        "commutator_entries": 27440,
+        "commutator_orbits": 1148,
+        "lifted_commutator_orbits": 1148,
+        "mixed_h4_orbits_hit": 17,
+        "mixed_h4_orbits_total": 17,
+        "pure_h4_orbits_hit": 0,
+        "pure_h4_orbits_total": 15,
+        "status": "exact"
+      }
+    }
+  ],
+  "schema": "fc3_local_split_ledger.v1",
+  "sources": {
+    "fc2_atom_shadow_map": "empirical/reports/fc2_atom_shadow_map.json",
+    "fc2_h4_contraction_shadow": "empirical/reports/fc2_h4_contraction_shadow.json",
+    "fc2_row_classification": "empirical/reports/fc2_row_classification.json",
+    "fc2_visible_fisher_kernel": "empirical/reports/fc2_visible_fisher_kernel.json",
+    "normalizer_b0_investment": "empirical/reports/normalizer_b0_investment.json",
+    "normalizer_transfer_audit": "empirical/reports/normalizer_transfer_audit.json",
+    "per_row_carry_vs_depth": "empirical/reports/per_row_carry_vs_depth.json"
+  },
+  "status": "FC3 local split-cost ledger across current exact FC2 rows"
+}

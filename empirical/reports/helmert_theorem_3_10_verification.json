@@ -1,0 +1,318 @@
+{
+  "purpose": "Numerical check of Theorem 3.10 (paper 25): for q=2 and k>=s, the within-prefix Fisher Gram is identical across F_2[u]/(u^k) and cross-prefix Fisher entries are zero, hence mu* is invariant.",
+  "config": {
+    "amplitudes": [
+      0.1,
+      0.35,
+      0.5
+    ],
+    "ledger_weights": {
+      "block": 1.0,
+      "mix": 1.0,
+      "fisher_projection": 1.0,
+      "reciprocal_projection": 1.0,
+      "closure": 1.0,
+      "resource": 0.1,
+      "depth": 0.1
+    }
+  },
+  "results": [
+    {
+      "packet_index_s": 2,
+      "target_packet": "u^2",
+      "amplitude_fraction": 0.1,
+      "reference_row": "F_2[u]/(u^2)",
+      "reference_total_dim": 3,
+      "reference_mu_star": 0.0004365428019070805,
+      "max_within_prefix_block_diff": 2.220446049250313e-16,
+      "max_cross_prefix_block_entry": 3.334836140831826e-17,
+      "max_mu_diff_vs_reference": 6.938893903907228e-12,
+      "embedded_rows": [
+        {
+          "k": 3,
+          "row": "F_2[u]/(u^3)",
+          "total_dim": 7,
+          "prefix_dim": 3,
+          "within_prefix_block_diff": 2.220446049250313e-16,
+          "cross_prefix_block_max_abs": 3.334836140831826e-17,
+          "embedded_mu_star": 0.0004365428088459744,
+          "mu_diff_vs_reference": 6.938893903907228e-12
+        },
+        {
+          "k": 4,
+          "row": "F_2[u]/(u^4)",
+          "total_dim": 15,
+          "prefix_dim": 3,
+          "within_prefix_block_diff": 5.551115123125783e-17,
+          "cross_prefix_block_max_abs": 0.0,
+          "embedded_mu_star": 0.0004365428019070805,
+          "mu_diff_vs_reference": 0.0
+        },
+        {
+          "k": 5,
+          "row": "F_2[u]/(u^5)",
+          "total_dim": 31,
+          "prefix_dim": 3,
+          "within_prefix_block_diff": 5.551115123125783e-17,
+          "cross_prefix_block_max_abs": 2.221487815989402e-17,
+          "embedded_mu_star": 0.00043654280537652745,
+          "mu_diff_vs_reference": 3.469446951953614e-12
+        }
+      ]
+    },
+    {
+      "packet_index_s": 2,
+      "target_packet": "u^2",
+      "amplitude_fraction": 0.35,
+      "reference_row": "F_2[u]/(u^2)",
+      "reference_total_dim": 3,
+      "reference_mu_star": 0.023233314466741817,
+      "max_within_prefix_block_diff": 2.220446049250313e-16,
+      "max_cross_prefix_block_entry": 9.507326415091992e-17,
+      "max_mu_diff_vs_reference": 1.3877787807814457e-11,
+      "embedded_rows": [
+        {
+          "k": 3,
+          "row": "F_2[u]/(u^3)",
+          "total_dim": 7,
+          "prefix_dim": 3,
+          "within_prefix_block_diff": 2.220446049250313e-16,
+          "cross_prefix_block_max_abs": 4.7226149216132716e-17,
+          "embedded_mu_star": 0.023233314466741817,
+          "mu_diff_vs_reference": 0.0
+        },
+        {
+          "k": 4,
+          "row": "F_2[u]/(u^4)",
+          "total_dim": 15,
+          "prefix_dim": 3,
+          "within_prefix_block_diff": 2.7755575615628914e-17,
+          "cross_prefix_block_max_abs": 0.0,
+          "embedded_mu_star": 0.023233314480619605,
+          "mu_diff_vs_reference": 1.3877787807814457e-11
+        },
+        {
+          "k": 5,
+          "row": "F_2[u]/(u^5)",
+          "total_dim": 31,
+          "prefix_dim": 3,
+          "within_prefix_block_diff": 2.220446049250313e-16,
+          "cross_prefix_block_max_abs": 9.507326415091992e-17,
+          "embedded_mu_star": 0.023233314466741817,
+          "mu_diff_vs_reference": 0.0
+        }
+      ]
+    },
+    {
+      "packet_index_s": 2,
+      "target_packet": "u^2",
+      "amplitude_fraction": 0.5,
+      "reference_row": "F_2[u]/(u^2)",
+      "reference_total_dim": 3,
+      "reference_mu_star": 0.08936148321314619,
+      "max_within_prefix_block_diff": 4.440892098500626e-16,
+      "max_cross_prefix_block_entry": 4.717406087917826e-17,
+      "max_mu_diff_vs_reference": 5.551115123125783e-11,
+      "embedded_rows": [
+        {
+          "k": 3,
+          "row": "F_2[u]/(u^3)",
+          "total_dim": 7,
+          "prefix_dim": 3,
+          "within_prefix_block_diff": 2.220446049250313e-16,
+          "cross_prefix_block_max_abs": 1.9470573600503802e-17,
+          "embedded_mu_star": 0.08936148326865734,
+          "mu_diff_vs_reference": 5.551115123125783e-11
+        },
+        {
+          "k": 4,
+          "row": "F_2[u]/(u^4)",
+          "total_dim": 15,
+          "prefix_dim": 3,
+          "within_prefix_block_diff": 1.1102230246251565e-16,
+          "cross_prefix_block_max_abs": 0.0,
+          "embedded_mu_star": 0.08936148321314619,
+          "mu_diff_vs_reference": 0.0
+        },
+        {
+          "k": 5,
+          "row": "F_2[u]/(u^5)",
+          "total_dim": 31,
+          "prefix_dim": 3,
+          "within_prefix_block_diff": 4.440892098500626e-16,
+          "cross_prefix_block_max_abs": 4.717406087917826e-17,
+          "embedded_mu_star": 0.08936148324090176,
+          "mu_diff_vs_reference": 2.7755575615628914e-11
+        }
+      ]
+    },
+    {
+      "packet_index_s": 3,
+      "target_packet": "u^3",
+      "amplitude_fraction": 0.1,
+      "reference_row": "F_2[u]/(u^3)",
+      "reference_total_dim": 7,
+      "reference_mu_star": 0.000327402507882546,
+      "max_within_prefix_block_diff": 2.220446049250313e-16,
+      "max_cross_prefix_block_entry": 3.609266596770848e-17,
+      "max_mu_diff_vs_reference": 0.0,
+      "embedded_rows": [
+        {
+          "k": 4,
+          "row": "F_2[u]/(u^4)",
+          "total_dim": 15,
+          "prefix_dim": 7,
+          "within_prefix_block_diff": 2.220446049250313e-16,
+          "cross_prefix_block_max_abs": 0.0,
+          "embedded_mu_star": 0.000327402507882546,
+          "mu_diff_vs_reference": 0.0
+        },
+        {
+          "k": 5,
+          "row": "F_2[u]/(u^5)",
+          "total_dim": 31,
+          "prefix_dim": 7,
+          "within_prefix_block_diff": 2.7755575615628914e-17,
+          "cross_prefix_block_max_abs": 3.609266596770848e-17,
+          "embedded_mu_star": 0.000327402507882546,
+          "mu_diff_vs_reference": 0.0
+        }
+      ]
+    },
+    {
+      "packet_index_s": 3,
+      "target_packet": "u^3",
+      "amplitude_fraction": 0.35,
+      "reference_row": "F_2[u]/(u^3)",
+      "reference_total_dim": 7,
+      "reference_mu_star": 0.01742491601008922,
+      "max_within_prefix_block_diff": 2.220446049250313e-16,
+      "max_cross_prefix_block_entry": 7.772602939115185e-17,
+      "max_mu_diff_vs_reference": 5.551115123125783e-11,
+      "embedded_rows": [
+        {
+          "k": 4,
+          "row": "F_2[u]/(u^4)",
+          "total_dim": 15,
+          "prefix_dim": 7,
+          "within_prefix_block_diff": 2.220446049250313e-16,
+          "cross_prefix_block_max_abs": 0.0,
+          "embedded_mu_star": 0.01742491601008922,
+          "mu_diff_vs_reference": 0.0
+        },
+        {
+          "k": 5,
+          "row": "F_2[u]/(u^5)",
+          "total_dim": 31,
+          "prefix_dim": 7,
+          "within_prefix_block_diff": 5.551115123125783e-17,
+          "cross_prefix_block_max_abs": 7.772602939115185e-17,
+          "embedded_mu_star": 0.01742491595457807,
+          "mu_diff_vs_reference": 5.551115123125783e-11
+        }
+      ]
+    },
+    {
+      "packet_index_s": 3,
+      "target_packet": "u^3",
+      "amplitude_fraction": 0.5,
+      "reference_row": "F_2[u]/(u^3)",
+      "reference_total_dim": 7,
+      "reference_mu_star": 0.06702092431032369,
+      "max_within_prefix_block_diff": 2.220446049250313e-16,
+      "max_cross_prefix_block_entry": 1.941848526354935e-17,
+      "max_mu_diff_vs_reference": 5.551115123125783e-11,
+      "embedded_rows": [
+        {
+          "k": 4,
+          "row": "F_2[u]/(u^4)",
+          "total_dim": 15,
+          "prefix_dim": 7,
+          "within_prefix_block_diff": 2.220446049250313e-16,
+          "cross_prefix_block_max_abs": 0.0,
+          "embedded_mu_star": 0.06702092425481254,
+          "mu_diff_vs_reference": 5.551115123125783e-11
+        },
+        {
+          "k": 5,
+          "row": "F_2[u]/(u^5)",
+          "total_dim": 31,
+          "prefix_dim": 7,
+          "within_prefix_block_diff": 5.551115123125783e-17,
+          "cross_prefix_block_max_abs": 1.941848526354935e-17,
+          "embedded_mu_star": 0.06702092436583484,
+          "mu_diff_vs_reference": 5.551115123125783e-11
+        }
+      ]
+    },
+    {
+      "packet_index_s": 4,
+      "target_packet": "u^4",
+      "amplitude_fraction": 0.1,
+      "reference_row": "F_2[u]/(u^4)",
+      "reference_total_dim": 15,
+      "reference_mu_star": 0.00019098402026518357,
+      "max_within_prefix_block_diff": 2.220446049250313e-16,
+      "max_cross_prefix_block_entry": 3.609266596770848e-17,
+      "max_mu_diff_vs_reference": 1.3877787807814457e-11,
+      "embedded_rows": [
+        {
+          "k": 5,
+          "row": "F_2[u]/(u^5)",
+          "total_dim": 31,
+          "prefix_dim": 15,
+          "within_prefix_block_diff": 2.220446049250313e-16,
+          "cross_prefix_block_max_abs": 3.609266596770848e-17,
+          "embedded_mu_star": 0.00019098403414297138,
+          "mu_diff_vs_reference": 1.3877787807814457e-11
+        }
+      ]
+    },
+    {
+      "packet_index_s": 4,
+      "target_packet": "u^4",
+      "amplitude_fraction": 0.35,
+      "reference_row": "F_2[u]/(u^4)",
+      "reference_total_dim": 15,
+      "reference_mu_star": 0.010164522667999165,
+      "max_within_prefix_block_diff": 2.220446049250313e-16,
+      "max_cross_prefix_block_entry": 9.16038171989663e-17,
+      "max_mu_diff_vs_reference": 5.551115123125783e-11,
+      "embedded_rows": [
+        {
+          "k": 5,
+          "row": "F_2[u]/(u^5)",
+          "total_dim": 31,
+          "prefix_dim": 15,
+          "within_prefix_block_diff": 2.220446049250313e-16,
+          "cross_prefix_block_max_abs": 9.16038171989663e-17,
+          "embedded_mu_star": 0.010164522723510316,
+          "mu_diff_vs_reference": 5.551115123125783e-11
+        }
+      ]
+    },
+    {
+      "packet_index_s": 4,
+      "target_packet": "u^4",
+      "amplitude_fraction": 0.5,
+      "reference_row": "F_2[u]/(u^4)",
+      "reference_total_dim": 15,
+      "reference_mu_star": 0.039095507775588345,
+      "max_within_prefix_block_diff": 4.163336342344337e-17,
+      "max_cross_prefix_block_entry": 1.247959135964212e-17,
+      "max_mu_diff_vs_reference": 5.551115123125783e-11,
+      "embedded_rows": [
+        {
+          "k": 5,
+          "row": "F_2[u]/(u^5)",
+          "total_dim": 31,
+          "prefix_dim": 15,
+          "within_prefix_block_diff": 4.163336342344337e-17,
+          "cross_prefix_block_max_abs": 1.247959135964212e-17,
+          "embedded_mu_star": 0.039095507720077194,
+          "mu_diff_vs_reference": 5.551115123125783e-11
+        }
+      ]
+    }
+  ]
+}

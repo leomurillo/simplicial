@@ -1,0 +1,128 @@
+==============================================================================
+AUDIT  פ0-involution  --  the functional-equation involution IS the Fourier
+                         square: iota = F^2 = parity, exact (Paper 27 §4)
+==============================================================================
+PRE-CLAIM (before the computation runs).
+Paper 27 constructs the canonical involution iota (implementing s<->1-s) via Bures
+geometry (§4.2) and verifies its properties. The exterior claim: iota is nothing
+but F^2, the square of the finite Fourier transform.
+
+  K : (F^2)_{jl} = (1/N) sum_k omega^{k(j+l)} = [ l ≡ -j (mod N) ], i.e. F^2 = the
+      parity permutation x -> -x = iota, EXACTLY (character orthogonality), and
+      F^4 = I (so F has order 4, eigenvalues in {1,i,-1,-i}). The FE-symmetric
+      (+1) eigenspace of iota has dimension = #orbits of x->-x = floor(N/2)+1 --
+      the finite critical-line sector.
+  L : iota is not F^2 / requires the Bures construction essentially.
+Check: exact orthogonality sum (integer N or 0); exact orbit count; float witness
+||F^2 - parity||.
+------------------------------------------------------------------------------
+  N= 6: orthogonality sum_k omega^{kt}=N*[t=0] exact: True   FE-symmetric dim=4 (=floor(N/2)+1=4: True), odd dim=2
+        witness ||F^2 - parity||=2.29e-15   ||F^4 - I||=4.57e-15
+  N=12: orthogonality sum_k omega^{kt}=N*[t=0] exact: True   FE-symmetric dim=7 (=floor(N/2)+1=7: True), odd dim=5
+        witness ||F^2 - parity||=6.76e-15   ||F^4 - I||=1.35e-14
+  N=30: orthogonality sum_k omega^{kt}=N*[t=0] exact: True   FE-symmetric dim=16 (=floor(N/2)+1=16: True), odd dim=14
+        witness ||F^2 - parity||=2.14e-14   ||F^4 - I||=4.28e-14
+------------------------------------------------------------------------------
+REALIZED BRANCH  פ0-involution :  K  [P]
+  iota = F^2 = parity, exact by orthogonality; F^4=I; the FE-symmetric
+  (critical-line) sector has dimension floor(N/2)+1. Paper 27 §4's Bures
+  construction reduces to one identity: the involution is the Fourier square.
+
+==============================================================================
+AUDIT  פ0-rootnumber  --  the Fourier trace is the Gauss sum = P4's sqrt(N)
+                         root-number scale (with the odd-conductor refinement)
+==============================================================================
+PRE-CLAIM (before the computation runs).
+tr(F) = (1/sqrt N) sum_k omega^{k^2} = g / sqrt N, with g the quadratic Gauss sum.
+
+  K : for ODD N, |g|^2 = N, so |tr F| = 1 -- the sqrt(N) Gauss-sum scale of P4's
+      פbridge (the local root number / epsilon-factor). Proof: (k,m) -> (k-m,k+m)
+      is a bijection of (Z/N)^2 when 2 is invertible, and k^2-m^2=(k-m)(k+m), so
+      |g|^2 = sum_{a,b} omega^{ab} = sum_a N*[a≡0] = N.
+  L (NAIVE, to be falsified) : |g|^2 = N for ALL N (always the sqrt(N) scale).
+  JOINT-ON-DISJOINT : Gauss's mod-4 trichotomy -- |g|^2=N (N odd), g=0 (N≡2 mod4),
+      |g|^2=2N (N≡0 mod4). The naive L is FALSE: g vanishes for N≡2 mod4. Proof
+      of g=0: for N=2M (M odd), (k+M)^2 ≡ k^2 + M (mod N) and omega^{M}=omega^{N/2}
+      =-1, so omega^{k^2}+omega^{(k+M)^2}=omega^{k^2}(1-1)=0, pairing k<->k+N/2.
+Check: exact bijection count (=N^2) for odd N; exact integer identity
+(k+N/2)^2 ≡ k^2 + N/2 (mod N) for N≡2 mod4; float witness |g|^2.
+------------------------------------------------------------------------------
+  N= 3 (mod4=3): |g|^2(witness)=  3.00   odd: bijection True => |g|^2 = N  (|tr F|=1, the sqrt(N)=P4 scale)
+  N= 5 (mod4=1): |g|^2(witness)=  5.00   odd: bijection True => |g|^2 = N  (|tr F|=1, the sqrt(N)=P4 scale)
+  N= 7 (mod4=3): |g|^2(witness)=  7.00   odd: bijection True => |g|^2 = N  (|tr F|=1, the sqrt(N)=P4 scale)
+  N=11 (mod4=3): |g|^2(witness)= 11.00   odd: bijection True => |g|^2 = N  (|tr F|=1, the sqrt(N)=P4 scale)
+  N=13 (mod4=1): |g|^2(witness)= 13.00   odd: bijection True => |g|^2 = N  (|tr F|=1, the sqrt(N)=P4 scale)
+  N= 6 (mod4=2): |g|^2(witness)=  0.00   N≡2 mod4: (k+N/2)^2≡k^2+N/2 exact True, omega^{N/2}=-1 => g=0
+  N=30 (mod4=2): |g|^2(witness)=  0.00   N≡2 mod4: (k+N/2)^2≡k^2+N/2 exact True, omega^{N/2}=-1 => g=0
+  N=12 (mod4=0): |g|^2(witness)= 24.00   N≡0 mod4: (k+N/2)^2≡k^2 exact True => doubling => |g|^2=2N
+  N= 8 (mod4=0): |g|^2(witness)= 16.00   N≡0 mod4: (k+N/2)^2≡k^2 exact True => doubling => |g|^2=2N
+------------------------------------------------------------------------------
+REALIZED BRANCH  פ0-rootnumber :  K + JOINT-ON-DISJOINT, with naive L falsified  [P]
+  tr(F)=g/sqrt N exactly. For ODD N, |g|^2=N (bijection) -> the sqrt(N)
+  root-number scale of P4. The naive 'always sqrt(N)' is FALSE: g=0 for
+  N≡2 mod4 (exact pairing). The reflection operator's trace IS P4's Gauss sum.
+
+==============================================================================
+AUDIT  פ0-positivity  --  finite positivity is FREE (Plancherel); RH is the
+                         positivity SURVIVING the limit (Paper 27 A5 sharpened)
+==============================================================================
+PRE-CLAIM (before the computation runs).
+Paper 27 A5 states positivity of the limiting Weil form requires BOTH finite
+closure AND the archimedean involution ('joint'). The exterior claim sharpens it.
+
+  K : the finite half is FREE -- F is unitary, F*F = I exactly (character
+      orthogonality), so every finite recovered Noether energy is a norm, >=0
+      unconditionally. Hence A5 is not 'joint': finite positivity is automatic,
+      and ALL the content is whether positivity is CLOSED UNDER THE PROJECTIVE
+      LIMIT once the archimedean Gamma-kernel 1/|Gamma(1/2+it)|^2 is adjoined --
+      the kernel P6 (פmoment) proved is not finitely generable (catch C3).
+  L : the finite Gram fails to be PSD (some finite recovered energy < 0).
+Check: exact (F*F)_{jl} = (1/N) sum_k omega^{k(l-j)} = [l≡j] (orthogonality);
+float witness for the Gram min-eigenvalue.
+------------------------------------------------------------------------------
+  N=12: F*F = I exact (orthogonality): True   finite Gram = identity (witness): True  => finite energy >=0 FREE
+  N=30: F*F = I exact (orthogonality): True   finite Gram = identity (witness): True  => finite energy >=0 FREE
+------------------------------------------------------------------------------
+REALIZED BRANCH  פ0-positivity :  K  [P] finite / [C] limit
+  Finite positivity is automatic (Plancherel/unitarity). Paper 27 A5 is
+  therefore NOT 'joint': RH = positivity surviving the projective limit with
+  the archimedean term adjoined -- the very term P6 proved un-generable from
+  the finite primes (C3). (Distinct from P6's Hankel/moment positivity -- C6.)
+
+==============================================================================
+AUDIT  פ0-functionfield  --  where infinity is absent, Paper 27's A1-A5 are
+                            all THEOREMS and RH holds (Weil; P4 reused)
+==============================================================================
+PRE-CLAIM (before the computation runs).
+Over a function field there is NO archimedean place. Paper 27's roadmap should
+then be unconditionally complete.
+
+  K : the Fermat cubic C: x^3+y^3+z^3=0 over F_q has trace a=q+1-#C with a^2<=4q
+      (Weil) -- this IS Axiom A5's positivity, automatic; the involution iota is
+      the Frobenius functional equation T->1/(qT); A2's infinite-place packet is
+      EMPTY. So A1-A5 are all theorems and RH (|alpha|=sqrt q) holds. The
+      number-field gap is EXACTLY the one archimedean term (C3 = P6).
+  L : a^2 > 4q for some q (Weil fails -- impossible).
+Check: exact integer projective point count; exact a^2 <= 4q.
+------------------------------------------------------------------------------
+   q : #C   a=q+1-#C   a^2 <= 4q (A5 positivity, automatic)   regime
+   5:    6   a=  0      a^2=0   <= 4q=20  : True    supersingular
+   7:    9   a= -1      a^2=1   <= 4q=28  : True    ordinary
+  11:   12   a=  0      a^2=0   <= 4q=44  : True    supersingular
+  13:    9   a=  5      a^2=25  <= 4q=52  : True    ordinary
+  17:   18   a=  0      a^2=0   <= 4q=68  : True    supersingular
+  19:   27   a= -7      a^2=49  <= 4q=76  : True    ordinary
+  23:   24   a=  0      a^2=0   <= 4q=92  : True    supersingular
+  31:   36   a= -4      a^2=16  <= 4q=124 : True    ordinary
+  37:   27   a= 11      a^2=121 <= 4q=148 : True    ordinary
+  43:   36   a=  8      a^2=64  <= 4q=172 : True    ordinary
+------------------------------------------------------------------------------
+REALIZED BRANCH  פ0-functionfield :  K  [P] (validates the framework)
+  a^2<=4q for all tested q: True. No place at infinity => A2 empty,
+  iota = T->1/(qT), A5 positivity automatic => RH a THEOREM (Weil). The
+  number-field gap is exactly the archimedean term P3/P6 named terminal.
+  *** P4 = Paper 27 done, minus infinity. ***
+
+==============================================================================
+END OF SETTLEMENTS  (deterministic; re-run reproduces this transcript)
+==============================================================================

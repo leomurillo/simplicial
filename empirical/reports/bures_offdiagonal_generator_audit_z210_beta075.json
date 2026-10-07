@@ -1,0 +1,290 @@
+{
+  "claim_tested": "off-diagonal Bures generator diagonal-shadow identity check",
+  "parameters": {
+    "row": 210,
+    "dimension": 3,
+    "xi_mode": "largest_primes",
+    "quotient_basis": "residue",
+    "target_h_scale": 8.0,
+    "target_mesh_denominator": "distinct",
+    "max_target_pairs": 2000000,
+    "explicit_max_states": 256,
+    "explicit_max_pairs": 20000,
+    "phase": "four_phase",
+    "beta": 0.75,
+    "rho_mode": "norm2",
+    "report": "empirical\\reports\\bures_offdiagonal_generator_audit_z210_beta075.md",
+    "json": "empirical\\reports\\bures_offdiagonal_generator_audit_z210_beta075.json"
+  },
+  "row": 210,
+  "primes": [
+    2,
+    3,
+    5,
+    7
+  ],
+  "state_count": 210,
+  "xi_labels": [
+    "p7:res",
+    "p5:res",
+    "p3:res"
+  ],
+  "target_radius": 1.6957437327173224,
+  "target_pair_count": 5841,
+  "classical_shadow": {
+    "edge_count": 5841,
+    "symbol": [
+      [
+        30.83809523809524,
+        -4.070817756958907e-16,
+        1.7129155237073845e-16
+      ],
+      [
+        -4.070817756958907e-16,
+        27.27619047619048,
+        2.114710523095536e-17
+      ],
+      [
+        1.7129155237073845e-16,
+        2.114710523095536e-17,
+        33.94285714285715
+      ]
+    ],
+    "eigenvalues": [
+      27.276190476190486,
+      30.83809523809524,
+      33.94285714285716
+    ],
+    "trace": 92.05714285714286,
+    "anisotropy": 0.10889856876166774,
+    "fourth_moment": 184.8047619047619,
+    "normalized_fourth_moment": 0.021807113005802875
+  },
+  "explicit_bures": {
+    "derivation_second": [
+      [
+        1359960.0,
+        -3.730349362740526e-13,
+        -2.424727085781342e-12
+      ],
+      [
+        -3.730349362740526e-13,
+        1202880.0000000002,
+        6.994405055138486e-12
+      ],
+      [
+        -2.424727085781342e-12,
+        6.994405055138486e-12,
+        1496880.0000000002
+      ]
+    ],
+    "derivation_eigenvalues": [
+      1202880.0000000002,
+      1359960.0,
+      1496880.0000000002
+    ],
+    "lindblad_quadratic": [
+      [
+        679980.0,
+        1.2683187833317788e-11,
+        7.460698725481052e-13
+      ],
+      [
+        -2.9842794901924208e-12,
+        601440.0,
+        7.460698725481052e-12
+      ],
+      [
+        0.0,
+        -1.7905676941154525e-11,
+        748440.0
+      ]
+    ],
+    "lindblad_eigenvalues": [
+      601439.9999999999,
+      679980.0,
+      748439.9999999999
+    ],
+    "hamiltonian_symmetric_form": [
+      [
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0
+      ]
+    ],
+    "max_abs_hamiltonian_symmetric_form": 0.0,
+    "max_abs_lindblad_minus_half_derivation": 1.1641532182693481e-10,
+    "normalization": "Bures at rho=I/N uses <X,Y>_B = N Tr(X^*Y)",
+    "state_count": 210
+  },
+  "thermal_bures": {
+    "rho_min": 0.0003624967548675533,
+    "rho_max": 0.027051981157485677,
+    "rho_condition": 74.62682298320092,
+    "derivation_image": {
+      "second": [
+        [
+          1840807.1782717067,
+          5.9117155615240335e-12,
+          -1.3642420526593924e-12
+        ],
+        [
+          5.9117155615240335e-12,
+          1620743.03653165,
+          0.0
+        ],
+        [
+          -1.3642420526593924e-12,
+          0.0,
+          1811061.6725371494
+        ]
+      ],
+      "eigenvalues": [
+        1620743.03653165,
+        1811061.6725371494,
+        1840807.1782717067
+      ],
+      "trace": 5272611.887340507,
+      "anisotropy": 0.06357386953364132,
+      "entry_fourth": 10274598.34637559,
+      "unit_symbol_fourth_ratio": 0.6495577881773552
+    },
+    "dissipative_image": {
+      "second": [
+        [
+          105708097.62214598,
+          3869356.854281669,
+          3449872.8941024775
+        ],
+        [
+          3869356.854281669,
+          92202634.52851033,
+          6187180.351880706
+        ],
+        [
+          3449872.8941024775,
+          6187180.351880706,
+          125350481.03534758
+        ]
+      ],
+      "eigenvalues": [
+        90398029.55153976,
+        105611577.67653042,
+        127251605.95793363
+      ],
+      "trace": 323261213.1860039,
+      "anisotropy": 0.16932523833604024,
+      "entry_fourth": 100180998384.91026,
+      "unit_symbol_fourth_ratio": 103.30242159021029
+    },
+    "full_generator_image": {
+      "second": [
+        [
+          107599611.69505985,
+          3880055.2677740594,
+          3512481.3597284625
+        ],
+        [
+          3880055.2677740594,
+          93703248.56953713,
+          6365475.013372415
+        ],
+        [
+          3512481.3597284625,
+          6365475.013372415,
+          127041561.35854438
+        ]
+      ],
+      "eigenvalues": [
+        91866977.48300426,
+        107444639.22114488,
+        129032804.91899219
+      ],
+      "trace": 328344421.6231414,
+      "anisotropy": 0.16824746059891113,
+      "entry_fourth": 100636055468.45587,
+      "unit_symbol_fourth_ratio": 102.16513396813677
+    },
+    "sld_image_cross_second": [
+      [
+        50706.89464215934,
+        10698.41349239042,
+        62608.46562598506
+      ],
+      [
+        10698.41349239042,
+        -120128.99550485611,
+        178294.66149170883
+      ],
+      [
+        62608.46562598506,
+        178294.66149170883,
+        -119981.34934034944
+      ]
+    ],
+    "max_abs_sld_image_cross_second": 178294.66149170883,
+    "max_abs_gamma_hamiltonian": 1.1102230246251565e-16,
+    "max_abs_gamma_cross": 1.7763568394002505e-15,
+    "max_abs_gamma_full_minus_dissipative": 1.7763568394002505e-15,
+    "gamma_note": "Carre-du-champ is linear in the generator, so the residual cross term is algebraically zero; Hamiltonian derivations cancel by Leibniz.",
+    "image_norm_note": "The SLD norm of (Hamiltonian + dissipative)(X) can have cross terms but is not the Markov Dirichlet form.",
+    "scope_note": "All Gamma evaluations are restricted to diagonal coordinate observables; this is not a non-symmetric resolvent audit."
+  },
+  "edge_formula": {
+    "symbol": [
+      [
+        1359960.0,
+        -1.3073986337985843e-12,
+        2.8421709430404007e-13
+      ],
+      [
+        -1.3073986337985843e-12,
+        1202880.0000000002,
+        1.2505552149377763e-12
+      ],
+      [
+        2.8421709430404007e-13,
+        1.2505552149377763e-12,
+        1496880.0000000002
+      ]
+    ],
+    "eigenvalues": [
+      1202879.9999999998,
+      1359960.0,
+      1496880.0
+    ],
+    "anisotropy": 0.10889856876166779,
+    "trace": 4059720.0,
+    "fourth_moment": 8149890.0,
+    "normalized_fourth_moment": 4.944923584082286e-07,
+    "unit_symbol_fourth_ratio": 0.6691668390923512,
+    "edge_weight_sum": 5841.0
+  },
+  "summary": {
+    "status": "EXPLICIT_BUILT",
+    "target_pair_count": 5841,
+    "classical_anisotropy": 0.10889856876166774,
+    "classical_q4": 0.021807113005802875,
+    "classical_unit_symbol_fourth_ratio": 0.6691668390923512,
+    "bures_derivation_q4": 4.944923584082286e-07,
+    "bures_unit_symbol_fourth_ratio": 0.6691668390923512,
+    "max_abs_derivation_minus_edge_formula": 5.74384984020071e-12,
+    "max_abs_hamiltonian_symmetric_form": 0.0,
+    "max_abs_lindblad_minus_half_derivation": 1.1641532182693481e-10,
+    "rho_condition": 74.62682298320092,
+    "thermal_max_abs_gamma_hamiltonian": 1.1102230246251565e-16,
+    "thermal_max_abs_gamma_cross": 1.7763568394002505e-15,
+    "thermal_full_image_unit_symbol_fourth_ratio": 102.16513396813677,
+    "thermal_max_abs_sld_image_cross_second": 178294.66149170883
+  }
+}

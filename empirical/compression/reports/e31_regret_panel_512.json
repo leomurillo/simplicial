@@ -1,0 +1,530 @@
+[
+  {
+    "file": "C:\\Users\\leomu\\Downloads\\que-ver-en-costa-rica-correos-portada.jpg",
+    "width": 512,
+    "height": 512,
+    "raw_rgb_bytes": 786432,
+    "webp_lossless_bytes": 231732,
+    "transform": "r-gr-bg",
+    "scheme": "ch-ctx-energy-unitary-split-blend71-apex128",
+    "rows": [
+      {
+        "model": "E30 hard-moment-context",
+        "bytes": 229866,
+        "delta_vs_webp": -1866,
+        "roundtrip_ok": true,
+        "reference": true
+      },
+      {
+        "model": "regret-global-t512-w2048",
+        "bytes": 229933,
+        "delta_vs_webp": -1799,
+        "roundtrip_ok": true,
+        "reference": false,
+        "encode_s": 36.20940689998679,
+        "decode_s": 64.11139059998095,
+        "encode_stats": {
+          "codec": "SM31",
+          "model": "regret-global-t512-w2048",
+          "mode": "regret-global",
+          "threshold_bits": 512.0,
+          "warmup": 2048,
+          "transform": "r-gr-bg",
+          "scheme": "ch-ctx-energy-unitary-split-blend71-apex128",
+          "bytes": 229933,
+          "header_metadata_bytes": 989,
+          "entropy_bytes": 228944,
+          "predictor_metadata_bytes": 480,
+          "energy_metadata_bytes": 288,
+          "unitary_metadata_bytes": 192,
+          "max_symbol": 253,
+          "predictors": {
+            "pred-4": 403,
+            "pred-6": 237,
+            "pred-8": 57,
+            "pred-5": 29,
+            "pred-7": 12,
+            "pred-20": 3,
+            "pred-9": 8,
+            "pred-2": 15,
+            "pred-14": 4
+          },
+          "residual_s": 4.00003045797348e-07,
+          "entropy_encode_s": 36.204296299954876,
+          "moment_class_counts": {
+            "0": 15,
+            "1": 452044,
+            "2": 334373
+          },
+          "selected_counts": {
+            "baseline": 40138,
+            "hard": 746294
+          },
+          "selected_by_class": {
+            "0:baseline": 5,
+            "1:baseline": 17009,
+            "2:baseline": 23124,
+            "2:hard": 311249,
+            "1:hard": 435035,
+            "0:hard": 10
+          },
+          "gate_activations": 746294,
+          "gate_scores": {
+            "keys": 1,
+            "min_bits": 36790.628137089145,
+            "max_bits": 36790.628137089145,
+            "sum_bits": 36790.628137089145
+          },
+          "baseline_expert_loss_bits": 1867824.8114413735,
+          "hard_expert_loss_bits": 1831034.183304332,
+          "chosen_loss_bits": 1831547.878667815,
+          "hard_expert_advantage_bits": 36790.62813704158,
+          "chosen_vs_baseline_bits": 36276.932773558656,
+          "chosen_vs_hard_bits": -513.695363482926,
+          "shared_residual_build_s": 31.502656400029082
+        },
+        "decode_stats": {
+          "codec": "SM31",
+          "model": "regret-global-t512-w2048",
+          "mode": "regret-global",
+          "threshold_bits": 512.0,
+          "warmup": 2048,
+          "metadata_bytes": 989,
+          "entropy_bytes": 228944,
+          "max_symbol": 253
+        }
+      },
+      {
+        "model": "E30 baseline",
+        "bytes": 234465,
+        "delta_vs_webp": 2733,
+        "roundtrip_ok": true,
+        "reference": true
+      }
+    ]
+  },
+  {
+    "file": "C:\\Users\\leomu\\Downloads\\central-valley-san-jose-costa-rica.jpg",
+    "width": 512,
+    "height": 512,
+    "raw_rgb_bytes": 786432,
+    "webp_lossless_bytes": 307430,
+    "transform": "r-gr-bg",
+    "scheme": "ch-ctx-energy-unitary-split-blend71-apex128",
+    "rows": [
+      {
+        "model": "E30 hard-moment-context",
+        "bytes": 298588,
+        "delta_vs_webp": -8842,
+        "roundtrip_ok": true,
+        "reference": true
+      },
+      {
+        "model": "regret-global-t512-w2048",
+        "bytes": 298655,
+        "delta_vs_webp": -8775,
+        "roundtrip_ok": true,
+        "reference": false,
+        "encode_s": 42.72390009998344,
+        "decode_s": 82.02688419999322,
+        "encode_stats": {
+          "codec": "SM31",
+          "model": "regret-global-t512-w2048",
+          "mode": "regret-global",
+          "threshold_bits": 512.0,
+          "warmup": 2048,
+          "transform": "r-gr-bg",
+          "scheme": "ch-ctx-energy-unitary-split-blend71-apex128",
+          "bytes": 298655,
+          "header_metadata_bytes": 989,
+          "entropy_bytes": 297666,
+          "predictor_metadata_bytes": 480,
+          "energy_metadata_bytes": 288,
+          "unitary_metadata_bytes": 192,
+          "max_symbol": 222,
+          "predictors": {
+            "pred-4": 527,
+            "pred-5": 37,
+            "pred-14": 19,
+            "pred-6": 54,
+            "pred-7": 49,
+            "pred-9": 20,
+            "pred-20": 34,
+            "pred-25": 2,
+            "pred-3": 26
+          },
+          "residual_s": 3.00002284348011e-07,
+          "entropy_encode_s": 42.71697439998388,
+          "moment_class_counts": {
+            "0": 15,
+            "1": 350253,
+            "2": 436164
+          },
+          "selected_counts": {
+            "baseline": 604942,
+            "hard": 181490
+          },
+          "selected_by_class": {
+            "0:baseline": 15,
+            "1:baseline": 284411,
+            "2:baseline": 320516,
+            "2:hard": 115648,
+            "1:hard": 65842
+          },
+          "gate_activations": 181490,
+          "gate_scores": {
+            "keys": 1,
+            "min_bits": 1783.0038996583482,
+            "max_bits": 1783.0038996583482,
+            "sum_bits": 1783.0038996583482
+          },
+          "baseline_expert_loss_bits": 2382592.092950011,
+          "hard_expert_loss_bits": 2380809.0890502087,
+          "chosen_loss_bits": 2381323.7545661624,
+          "hard_expert_advantage_bits": 1783.0038998024538,
+          "chosen_vs_baseline_bits": 1268.338383848779,
+          "chosen_vs_hard_bits": -514.6655159536749,
+          "shared_residual_build_s": 36.57090910000261
+        },
+        "decode_stats": {
+          "codec": "SM31",
+          "model": "regret-global-t512-w2048",
+          "mode": "regret-global",
+          "threshold_bits": 512.0,
+          "warmup": 2048,
+          "metadata_bytes": 989,
+          "entropy_bytes": 297666,
+          "max_symbol": 222
+        }
+      },
+      {
+        "model": "E30 baseline",
+        "bytes": 298811,
+        "delta_vs_webp": -8619,
+        "roundtrip_ok": true,
+        "reference": true
+      }
+    ]
+  },
+  {
+    "file": "C:\\Users\\leomu\\OneDrive\\Pictures\\133925289798805247.jpg",
+    "width": 512,
+    "height": 512,
+    "raw_rgb_bytes": 786432,
+    "webp_lossless_bytes": 306272,
+    "transform": "r-gr-bg",
+    "scheme": "ch-ctx-energy-unitary-split-blend71-apex128",
+    "rows": [
+      {
+        "model": "E30 baseline",
+        "bytes": 286705,
+        "delta_vs_webp": -19567,
+        "roundtrip_ok": true,
+        "reference": true
+      },
+      {
+        "model": "regret-global-t512-w2048",
+        "bytes": 286708,
+        "delta_vs_webp": -19564,
+        "roundtrip_ok": true,
+        "reference": false,
+        "encode_s": 28.712458900001366,
+        "decode_s": 38.079141499998514,
+        "encode_stats": {
+          "codec": "SM31",
+          "model": "regret-global-t512-w2048",
+          "mode": "regret-global",
+          "threshold_bits": 512.0,
+          "warmup": 2048,
+          "transform": "r-gr-bg",
+          "scheme": "ch-ctx-energy-unitary-split-blend71-apex128",
+          "bytes": 286708,
+          "header_metadata_bytes": 989,
+          "entropy_bytes": 285719,
+          "predictor_metadata_bytes": 480,
+          "energy_metadata_bytes": 288,
+          "unitary_metadata_bytes": 192,
+          "max_symbol": 251,
+          "predictors": {
+            "pred-21": 16,
+            "pred-4": 467,
+            "pred-18": 7,
+            "pred-20": 40,
+            "pred-3": 156,
+            "pred-16": 5,
+            "pred-10": 1,
+            "pred-9": 4,
+            "pred-12": 1,
+            "pred-1": 2,
+            "pred-5": 48,
+            "pred-2": 1,
+            "pred-14": 19,
+            "pred-7": 1
+          },
+          "residual_s": 3.00002284348011e-07,
+          "entropy_encode_s": 28.70830549998209,
+          "moment_class_counts": {
+            "0": 15,
+            "1": 365839,
+            "2": 420578
+          },
+          "selected_counts": {
+            "baseline": 786432
+          },
+          "selected_by_class": {
+            "0:baseline": 15,
+            "2:baseline": 420578,
+            "1:baseline": 365839
+          },
+          "gate_activations": 0,
+          "gate_scores": {
+            "keys": 1,
+            "min_bits": -6159.584362294722,
+            "max_bits": -6159.584362294722,
+            "sum_bits": -6159.584362294722
+          },
+          "baseline_expert_loss_bits": 2285749.228221659,
+          "hard_expert_loss_bits": 2291908.812583762,
+          "chosen_loss_bits": 2285749.228221659,
+          "hard_expert_advantage_bits": -6159.584362103138,
+          "chosen_vs_baseline_bits": 0.0,
+          "chosen_vs_hard_bits": 6159.584362103138,
+          "shared_residual_build_s": 26.562731600017287
+        },
+        "decode_stats": {
+          "codec": "SM31",
+          "model": "regret-global-t512-w2048",
+          "mode": "regret-global",
+          "threshold_bits": 512.0,
+          "warmup": 2048,
+          "metadata_bytes": 989,
+          "entropy_bytes": 285719,
+          "max_symbol": 251
+        }
+      },
+      {
+        "model": "E30 hard-moment-context",
+        "bytes": 287475,
+        "delta_vs_webp": -18797,
+        "roundtrip_ok": true,
+        "reference": true
+      }
+    ]
+  },
+  {
+    "file": "C:\\Users\\leomu\\OneDrive\\Pictures\\133893333653186297.jpg",
+    "width": 512,
+    "height": 512,
+    "raw_rgb_bytes": 786432,
+    "webp_lossless_bytes": 489474,
+    "transform": "r-gr-bg",
+    "scheme": "ch-ctx-energy-unitary-split-blend71-apex128",
+    "rows": [
+      {
+        "model": "E30 baseline",
+        "bytes": 481109,
+        "delta_vs_webp": -8365,
+        "roundtrip_ok": true,
+        "reference": true
+      },
+      {
+        "model": "regret-global-t512-w2048",
+        "bytes": 481112,
+        "delta_vs_webp": -8362,
+        "roundtrip_ok": true,
+        "reference": false,
+        "encode_s": 15.35453020001296,
+        "decode_s": 50.405556199955754,
+        "encode_stats": {
+          "codec": "SM31",
+          "model": "regret-global-t512-w2048",
+          "mode": "regret-global",
+          "threshold_bits": 512.0,
+          "warmup": 2048,
+          "transform": "r-gr-bg",
+          "scheme": "ch-ctx-energy-unitary-split-blend71-apex128",
+          "bytes": 481112,
+          "header_metadata_bytes": 989,
+          "entropy_bytes": 480123,
+          "predictor_metadata_bytes": 480,
+          "energy_metadata_bytes": 288,
+          "unitary_metadata_bytes": 192,
+          "max_symbol": 277,
+          "predictors": {
+            "pred-4": 460,
+            "pred-14": 4,
+            "pred-3": 150,
+            "pred-18": 23,
+            "pred-10": 5,
+            "pred-12": 9,
+            "pred-21": 47,
+            "pred-9": 6,
+            "pred-8": 3,
+            "pred-20": 38,
+            "pred-6": 3,
+            "pred-7": 8,
+            "pred-13": 1,
+            "pred-5": 9,
+            "pred-1": 1,
+            "pred-25": 1
+          },
+          "residual_s": 3.00002284348011e-07,
+          "entropy_encode_s": 15.353100000007544,
+          "moment_class_counts": {
+            "0": 15,
+            "1": 220624,
+            "2": 565793
+          },
+          "selected_counts": {
+            "baseline": 786432
+          },
+          "selected_by_class": {
+            "0:baseline": 15,
+            "1:baseline": 220624,
+            "2:baseline": 565793
+          },
+          "gate_activations": 0,
+          "gate_scores": {
+            "keys": 1,
+            "min_bits": -11180.160137115841,
+            "max_bits": -11180.160137115841,
+            "sum_bits": -11180.160137115841
+          },
+          "baseline_expert_loss_bits": 3840981.621655402,
+          "hard_expert_loss_bits": 3852161.7817926267,
+          "chosen_loss_bits": 3840981.621655402,
+          "hard_expert_advantage_bits": -11180.160137224942,
+          "chosen_vs_baseline_bits": 0.0,
+          "chosen_vs_hard_bits": 11180.160137224942,
+          "shared_residual_build_s": 9.966214799962472
+        },
+        "decode_stats": {
+          "codec": "SM31",
+          "model": "regret-global-t512-w2048",
+          "mode": "regret-global",
+          "threshold_bits": 512.0,
+          "warmup": 2048,
+          "metadata_bytes": 989,
+          "entropy_bytes": 480123,
+          "max_symbol": 277
+        }
+      },
+      {
+        "model": "E30 hard-moment-context",
+        "bytes": 482507,
+        "delta_vs_webp": -6967,
+        "roundtrip_ok": true,
+        "reference": true
+      }
+    ]
+  },
+  {
+    "file": "C:\\Users\\leomu\\OneDrive\\Pictures\\133921439458600606.jpg",
+    "width": 512,
+    "height": 512,
+    "raw_rgb_bytes": 786432,
+    "webp_lossless_bytes": 505660,
+    "transform": "r-gr-bg",
+    "scheme": "ch-ctx-energy-unitary-split-blend71-apex128",
+    "rows": [
+      {
+        "model": "E30 baseline",
+        "bytes": 486804,
+        "delta_vs_webp": -18856,
+        "roundtrip_ok": true,
+        "reference": true
+      },
+      {
+        "model": "regret-global-t512-w2048",
+        "bytes": 486807,
+        "delta_vs_webp": -18853,
+        "roundtrip_ok": true,
+        "reference": false,
+        "encode_s": 37.27762359997723,
+        "decode_s": 66.34107880003285,
+        "encode_stats": {
+          "codec": "SM31",
+          "model": "regret-global-t512-w2048",
+          "mode": "regret-global",
+          "threshold_bits": 512.0,
+          "warmup": 2048,
+          "transform": "r-gr-bg",
+          "scheme": "ch-ctx-energy-unitary-split-blend71-apex128",
+          "bytes": 486807,
+          "header_metadata_bytes": 989,
+          "entropy_bytes": 485818,
+          "predictor_metadata_bytes": 480,
+          "energy_metadata_bytes": 288,
+          "unitary_metadata_bytes": 192,
+          "max_symbol": 218,
+          "predictors": {
+            "pred-20": 14,
+            "pred-9": 2,
+            "pred-12": 24,
+            "pred-4": 402,
+            "pred-18": 141,
+            "pred-21": 17,
+            "pred-3": 11,
+            "pred-17": 46,
+            "pred-10": 29,
+            "pred-26": 11,
+            "pred-25": 1,
+            "pred-16": 6,
+            "pred-2": 1,
+            "pred-13": 6,
+            "pred-8": 42,
+            "pred-7": 2,
+            "pred-5": 1,
+            "pred-6": 12
+          },
+          "residual_s": 4.00003045797348e-07,
+          "entropy_encode_s": 37.27542030002223,
+          "moment_class_counts": {
+            "0": 15,
+            "1": 162228,
+            "2": 624189
+          },
+          "selected_counts": {
+            "baseline": 786432
+          },
+          "selected_by_class": {
+            "0:baseline": 15,
+            "2:baseline": 624189,
+            "1:baseline": 162228
+          },
+          "gate_activations": 0,
+          "gate_scores": {
+            "keys": 1,
+            "min_bits": -8182.471054043683,
+            "max_bits": -8182.471054043683,
+            "sum_bits": -8182.471054043683
+          },
+          "baseline_expert_loss_bits": 3886540.8748484924,
+          "hard_expert_loss_bits": 3894723.3459028755,
+          "chosen_loss_bits": 3886540.8748484924,
+          "hard_expert_advantage_bits": -8182.471054383088,
+          "chosen_vs_baseline_bits": 0.0,
+          "chosen_vs_hard_bits": 8182.471054383088,
+          "shared_residual_build_s": 38.221643599972595
+        },
+        "decode_stats": {
+          "codec": "SM31",
+          "model": "regret-global-t512-w2048",
+          "mode": "regret-global",
+          "threshold_bits": 512.0,
+          "warmup": 2048,
+          "metadata_bytes": 989,
+          "entropy_bytes": 485818,
+          "max_symbol": 218
+        }
+      },
+      {
+        "model": "E30 hard-moment-context",
+        "bytes": 487827,
+        "delta_vs_webp": -17833,
+        "roundtrip_ok": true,
+        "reference": true
+      }
+    ]
+  }
+]

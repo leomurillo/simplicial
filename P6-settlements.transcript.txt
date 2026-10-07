@@ -1,0 +1,158 @@
+==============================================================================
+AUDIT  פ-moment  --  the real place is barred from the WHOLE finite-prime
+                    divisor family, not just the primorial
+==============================================================================
+PRE-CLAIM (before the computation runs).
+T33 sec9A.4 proves the primorial (P_n) is not a moment sequence: its Hankel
+determinant D_3=-787680<0, so no Gamma-style exact Mellin interpolation exists
+(the real place is not a finite packet). The exterior question: is this the
+primorial alone, or the whole divisor family?
+
+  K1 : EVERY genuinely-multiplicative primorial invariant -- prod(p-1)=phi,
+       prod(p+1)=sigma, prod(p^k-1)=J_k, prod(p^k+1)=S_k, prod p^k -- is NON-moment
+       (some Hankel D_N<0). The ONLY moment member is the divisor COUNT
+       d(P_n)=2^n, which forgets prime magnitudes (point mass at 2). The real
+       place is barred from the entire family.
+  L1 : some genuinely-multiplicative member is a moment sequence.
+  K2 (PROVED via factorization) : the first-failure index N*(k) depends only on
+       the leading growth p^k -- N*(prod(p^k-1)) = N*(prod(p^k+1)) = N*(prod p^k)
+       -- because D_N = (prod_{i<=N} b_i) * det[b_{i+j}/b_i], so sign(D_N) is set
+       by the dominant entries, and the totient corrections (1 -/+ p^{-k}) -> 1
+       are moment-irrelevant.
+  K3 (SHARP, may fail) : N*(k) is STRICTLY monotone increasing in k.
+  L3 : N*(k) is not strictly monotone (plateaus / jumps).
+  JOINT : the depth N*(k) is non-decreasing and unbounded (the obstruction
+       recedes with k), but its exact law is irregular.
+Check: exact integer Hankel determinants; the factorization cross-check; N*(k)
+for prod(p^k +/- 1) and prod p^k.
+------------------------------------------------------------------------------
+    sequence                first D_N<0      verdict        D_0..D_3
+    P_n = prod p                 3        NON-moment (N*=3)    [1, 2, 24, -787680]
+    phi(P_n)=prod(p-1)           3        NON-moment (N*=3)    [1, 1, 8, -17408]
+    sigma(P_n)=prod(p+1)         3        NON-moment (N*=3)    [1, 3, 0, -8957952]
+    J_2 = prod(p^2-1)            3        NON-moment (N*=3)    [1, 15, 152064, -10897456103424]
+    J_3 = prod(p^3-1)            4        NON-moment (N*=4)    [1, 133, 568688120, 1680199877127662205952]
+    d(P_n) = 2^n              None        MOMENT               [1, 0, 0, 0]
+    n! (factorial control)    None        MOMENT               [1, 1, 4, 144]
+------------------------------------------------------------------------------
+    factorization cross-check  D_N = (prod_{i<=N} b_i) * det[b_{i+j}/b_i]:
+      N=0:  D_N=         1   (prod b_i)*det W=         1   equal: True
+      N=1:  D_N=         2   (prod b_i)*det W=         2   equal: True
+      N=2:  D_N=        24   (prod b_i)*det W=        24   equal: True
+      N=3:  D_N=   -787680   (prod b_i)*det W=   -787680   equal: True
+------------------------------------------------------------------------------
+    growth-rate invariance  N*(prod(p^k-1)) = N*(prod(p^k+1)) = N*(prod p^k):
+      k=1:  N*(p^k-1)=3  N*(p^k+1)=3  N*(p^k)=3   equal: True
+      k=2:  N*(p^k-1)=3  N*(p^k+1)=3  N*(p^k)=3   equal: True
+      k=3:  N*(p^k-1)=4  N*(p^k+1)=4  N*(p^k)=4   equal: True
+      k=4:  N*(p^k-1)=4  N*(p^k+1)=4  N*(p^k)=4   equal: True
+      k=5:  N*(p^k-1)=5  N*(p^k+1)=5  N*(p^k)=5   equal: True
+      k=6:  N*(p^k-1)=9  N*(p^k+1)=9  N*(p^k)=9   equal: True
+      k=7:  N*(p^k-1)=9  N*(p^k+1)=9  N*(p^k)=9   equal: True
+      k=8:  N*(p^k-1)=9  N*(p^k+1)=9  N*(p^k)=9   equal: True
+    depth sequence N*(k), k=1..8: [3, 3, 4, 4, 5, 9, 9, 9]
+    strictly monotone: False    non-decreasing: True
+------------------------------------------------------------------------------
+REALIZED BRANCH  פ-moment :  K1 + K2(proved) + JOINT, with K3 FALSIFIED
+  K1 [P]: every genuinely-multiplicative primorial invariant is NON-moment;
+     only d(P_n)=2^n (forgetting prime sizes) is a moment sequence. The real
+     place is barred from the whole finite-prime divisor family.
+  K2 [P, proved]: the factorization D_N=(prod b_i)det[b_{i+j}/b_i] holds
+     exactly, and N* depends only on the leading growth p^k (totient +/-1
+     moment-irrelevant): N*(p^k-1)=N*(p^k+1)=N*(p^k) for all tested k.
+  K3 FALSIFIED: N*(k) is NOT strictly monotone (plateaus + a jump). It is
+     non-decreasing and unbounded -- the obstruction recedes with k,
+     mirroring T33 sec8.5's Euler-product convergence depth -- but the exact
+     law is irregular. Retained as a pre-registered sharp claim that failed.
+
+==============================================================================
+AUDIT  פ-fixedpoint  --  log(2pi) is the unique fixed point of the prime
+                        ladder: the boundary is the fixed point of its shift
+==============================================================================
+PRE-CLAIM (before the computation runs).
+T33 sec10: the starting-prime family is the translation orbit Pri_p(z)=pri(z+Li(p))
+of one master curve, and its emitted constants fall into three classes under the
+ladder shift p -> next prime. The exterior reading: the boundary (archimedean
+place) is the FIXED POINT of the shift.
+
+  K : exactly one emitted constant is invariant under the starting-prime shift --
+      log(2pi) = -zeta'(0)/zeta(0), the archimedean constant -- while every
+      finite-prime constant MOVES: the zeta(k) family telescopes toward 1, the
+      Mertens/log-p family accumulates. The boundary is the shift's fixed point.
+  L : more than one constant is fixed, or log(2pi) also shifts.
+  JOINT : the left floor pri(-inf)=e/(2pi) (the 'prime 1' / unit threshold) and
+      the ground state pri(0)=e^2/(2pi) differ by exactly a factor e.
+Check: exact rationals R_2^{(p)}*pi^2 = 6 / prod_{q<=p}(1-q^-2) (telescoping);
+the boundary slope log p (shifting); structural invariance of log(2pi).
+------------------------------------------------------------------------------
+    zeta(2) family  R_2^{(p)} * pi^2 = 6 / prod_{q<=p}(1 - 1/q^2)  (telescopes -> pi^2):
+      p= 2:  R_2^(p)*pi^2 = 8  = 8.0000   (-> pi^2 = 9.8696)
+      p= 3:  R_2^(p)*pi^2 = 9  = 9.0000   (-> pi^2 = 9.8696)
+      p= 5:  R_2^(p)*pi^2 = 75/8  = 9.3750   (-> pi^2 = 9.8696)
+      p= 7:  R_2^(p)*pi^2 = 1225/128  = 9.5703   (-> pi^2 = 9.8696)
+      p=11:  R_2^(p)*pi^2 = 29645/3072  = 9.6501   (-> pi^2 = 9.8696)
+    => the zeta(2) constant MOVES with each captured prime (telescopes to pi^2).
+------------------------------------------------------------------------------
+    boundary slope (digamma at 0) = (Li_p^-1)'(0) = log p  -- SHIFTS:
+      start 2 -> log 2 = 0.6931;  start 3 -> log 3 = 1.0986;  start 5 -> log 5 = 1.6094
+    archimedean constant  log(2pi) = -zeta'(0)/zeta(0) = 1.8379  -- does NOT depend on p
+      (truncating the Euler product leaves the archimedean coupling unchanged).
+------------------------------------------------------------------------------
+    JOINT -- the left floor and the factor e:
+      pri(-inf) = e/(2pi) = 0.43261   (the 'prime 1' / multiplicative-unit threshold)
+      pri(0)    = e^2/(2pi) = 1.17588
+      pri(0)/pri(-inf) = e = 2.71828  (exactly one prime-step from the floor)
+------------------------------------------------------------------------------
+REALIZED BRANCH  פ-fixedpoint :  K + JOINT
+  log(2pi) is the UNIQUE shift-invariant emitted constant -- the archimedean
+  boundary is the fixed point of the prime ladder's translation, while every
+  finite-prime constant (zeta(k) telescoping, log p / Mertens accumulating)
+  moves. JOINT: the master curve has a finite left floor e/(2pi), one factor
+  of e below the ground state.
+
+==============================================================================
+AUDIT  פ-barcode  --  destiny is written at sqrt(q): the RH scale is the
+                     boundary of certainty in the sieve
+==============================================================================
+PRE-CLAIM (before the computation runs).
+T33 sec9A: in the Eratosthenes sieve filtration, each prime q has birth
+b(q)=pi(sqrt q) (the stage at which the sieving primes reach sqrt q and can no
+longer mask it) and death d(q)=pi(q) (its own recruitment). The exterior reading:
+the sqrt-scale -- the Riemann-hypothesis scale -- is the boundary of certainty.
+
+  K : the certified-but-unrecruited primes at stage n are exactly the window
+      {q : p_n < q < p_{n+1}^2} = {q : b(q) <= n < d(q)} (T33 Prop 9A.2), i.e. a
+      prime changes NO primality verdict below its square (the sieve horizon).
+      Death rate is identically 1; birth rate ~ p_n; both faces meet at sqrt.
+  L : the certification scale is not sqrt(q) (some prime changes a verdict below
+      its square).
+  JOINT : the integrated birth measure equals the prime-power leakage
+      psi(x)-vartheta(x) = sum_{k>=2} vartheta(x^{1/k}) ~ sqrt(x), the same
+      sqrt-scale quantity whose size RH governs (T33 Obs 9A.3) -- the barcode and
+      the zeros are two faces of one sqrt-scale object.
+Check: exact b(q)=pi(floor sqrt q), d(q)=pi(q); the window identity; the horizon.
+------------------------------------------------------------------------------
+    prime q : birth b(q)=pi(sqrt q)   death d(q)=pi(q)   lifetime   horizon q < p_{b+1}^2 ?
+      q=  5:   b=1              d= 3            ell= 2
+      q=  7:   b=1              d= 4            ell= 3
+      q= 11:   b=2              d= 5            ell= 3
+      q= 23:   b=2              d= 9            ell= 7
+      q= 47:   b=3              d=15            ell=12
+      q=113:   b=4              d=30            ell=26
+------------------------------------------------------------------------------
+    window identity  {q : p_n < q < p_{n+1}^2} == {q : b(q) <= n < d(q)}:
+      n=1: window (2,3^2)=[3, 5, 7]   ==  open-bars=[3, 5, 7]   : True
+      n=2: window (3,5^2)=[5, 7, 11, 13, 17, 19, 23]   ==  open-bars=[5, 7, 11, 13, 17, 19, 23]   : True
+      n=3: window (5,7^2)=[7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47]   ==  open-bars=[7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47]   : True
+      n=4: window (7,11^2)=[11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89, 97, 101, 103, 107, 109, 113]   ==  open-bars=[11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89, 97, 101, 103, 107, 109, 113]   : True
+------------------------------------------------------------------------------
+REALIZED BRANCH  פ-barcode :  K + JOINT  (window identity holds: True)
+  A prime changes no primality verdict below its square: the sqrt-scale is
+  the sieve's boundary of certainty. The integrated birth measure is
+  psi-vartheta ~ sqrt(x), the SAME sqrt-scale quantity RH governs (Cor 4.2):
+  the barcode's births and the Riemann zeros are two faces of one sqrt-scale
+  object. Honest: this is RH's SCALE, not an attack on RH (T33 sec11.3).
+
+==============================================================================
+END OF SETTLEMENTS  (deterministic; re-run reproduces this transcript)
+==============================================================================

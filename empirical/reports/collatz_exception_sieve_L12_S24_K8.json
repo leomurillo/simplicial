@@ -1,0 +1,4399 @@
+{
+  "settings": {
+    "max_length": 12,
+    "max_total_depth": 24,
+    "max_carry": 8,
+    "top_limit": 12,
+    "max_exception_reps": 128,
+    "max_tail_steps": 10000
+  },
+  "totals": {
+    "words": 9227405,
+    "primitive_words": 9224763,
+    "categories": {
+      "contracting-all-decrease": 9158671,
+      "expanding": 68722,
+      "trivial-cycle-exception": 12
+    },
+    "primitive_categories": {
+      "contracting-all-decrease": 9156192,
+      "expanding": 68570,
+      "trivial-cycle-exception": 1
+    },
+    "finite_exception_representatives": 12,
+    "primitive_finite_exception_representatives": 1,
+    "unknown_exception_representatives": 0,
+    "primitive_unknown_exception_representatives": 0
+  },
+  "pair_stats": {
+    "1,1": {
+      "words": 1,
+      "primitive_words": 1,
+      "categories": {
+        "expanding": 1
+      },
+      "primitive_categories": {
+        "expanding": 1
+      },
+      "finite_exception_representatives": 0,
+      "primitive_finite_exception_representatives": 0,
+      "unknown_exception_representatives": 0,
+      "primitive_unknown_exception_representatives": 0
+    },
+    "1,2": {
+      "words": 1,
+      "primitive_words": 1,
+      "categories": {
+        "trivial-cycle-exception": 1
+      },
+      "primitive_categories": {
+        "trivial-cycle-exception": 1
+      },
+      "finite_exception_representatives": 1,
+      "primitive_finite_exception_representatives": 1,
+      "unknown_exception_representatives": 0,
+      "primitive_unknown_exception_representatives": 0
+    },
+    "1,3": {
+      "words": 1,
+      "primitive_words": 1,
+      "categories": {
+        "contracting-all-decrease": 1
+      },
+      "primitive_categories": {
+        "contracting-all-decrease": 1
+      },
+      "finite_exception_representatives": 0,
+      "primitive_finite_exception_representatives": 0,
+      "unknown_exception_representatives": 0,
+      "primitive_unknown_exception_representatives": 0
+    },
+    "1,4": {
+      "words": 1,
+      "primitive_words": 1,
+      "categories": {
+        "contracting-all-decrease": 1
+      },
+      "primitive_categories": {
+        "contracting-all-decrease": 1
+      },
+      "finite_exception_representatives": 0,
+      "primitive_finite_exception_representatives": 0,
+      "unknown_exception_representatives": 0,
+      "primitive_unknown_exception_representatives": 0
+    },
+    "1,5": {
+      "words": 1,
+      "primitive_words": 1,
+      "categories": {
+        "contracting-all-decrease": 1
+      },
+      "primitive_categories": {
+        "contracting-all-decrease": 1
+      },
+      "finite_exception_representatives": 0,
+      "primitive_finite_exception_representatives": 0,
+      "unknown_exception_representatives": 0,
+      "primitive_unknown_exception_representatives": 0
+    },
+    "1,6": {
+      "words": 1,
+      "primitive_words": 1,
+      "categories": {
+        "contracting-all-decrease": 1
+      },
+      "primitive_categories": {
+        "contracting-all-decrease": 1
+      },
+      "finite_exception_representatives": 0,
+      "primitive_finite_exception_representatives": 0,
+      "unknown_exception_representatives": 0,
+      "primitive_unknown_exception_representatives": 0
+    },
+    "1,7": {
+      "words": 1,
+      "primitive_words": 1,
+      "categories": {
+        "contracting-all-decrease": 1
+      },
+      "primitive_categories": {
+        "contracting-all-decrease": 1
+      },
+      "finite_exception_representatives": 0,
+      "primitive_finite_exception_representatives": 0,
+      "unknown_exception_representatives": 0,
+      "primitive_unknown_exception_representatives": 0
+    },
+    "1,8": {
+      "words": 1,
+      "primitive_words": 1,
+      "categories": {
+        "contracting-all-decrease": 1
+      },
+      "primitive_categories": {
+        "contracting-all-decrease": 1
+      },
+      "finite_exception_representatives": 0,
+      "primitive_finite_exception_representatives": 0,
+      "unknown_exception_representatives": 0,
+      "primitive_unknown_exception_representatives": 0
+    },
+    "2,2": {
+      "words": 1,
+      "primitive_words": 0,
+      "categories": {
+        "expanding": 1
+      },
+      "primitive_categories": {},
+      "finite_exception_representatives": 0,
+      "primitive_finite_exception_representatives": 0,
+      "unknown_exception_representatives": 0,
+      "primitive_unknown_exception_representatives": 0
+    },
+    "2,3": {
+      "words": 2,
+      "primitive_words": 2,
+      "categories": {
+        "expanding": 2
+      },
+      "primitive_categories": {
+        "expanding": 2
+      },
+      "finite_exception_representatives": 0,
+      "primitive_finite_exception_representatives": 0,
+      "unknown_exception_representatives": 0,
+      "primitive_unknown_exception_representatives": 0
+    },
+    "2,4": {
+      "words": 3,
+      "primitive_words": 2,
+      "categories": {
+        "contracting-all-decrease": 2,
+        "trivial-cycle-exception": 1
+      },
+      "primitive_categories": {
+        "contracting-all-decrease": 2
+      },
+      "finite_exception_representatives": 1,
+      "primitive_finite_exception_representatives": 0,
+      "unknown_exception_representatives": 0,
+      "primitive_unknown_exception_representatives": 0
+    },
+    "2,5": {
+      "words": 4,
+      "primitive_words": 4,
+      "categories": {
+        "contracting-all-decrease": 4
+      },
+      "primitive_categories": {
+        "contracting-all-decrease": 4
+      },
+      "finite_exception_representatives": 0,
+      "primitive_finite_exception_representatives": 0,
+      "unknown_exception_representatives": 0,
+      "primitive_unknown_exception_representatives": 0
+    },
+    "2,6": {
+      "words": 5,
+      "primitive_words": 4,
+      "categories": {
+        "contracting-all-decrease": 5
+      },
+      "primitive_categories": {
+        "contracting-all-decrease": 4
+      },
+      "finite_exception_representatives": 0,
+      "primitive_finite_exception_representatives": 0,
+      "unknown_exception_representatives": 0,
+      "primitive_unknown_exception_representatives": 0
+    },
+    "2,7": {
+      "words": 6,
+      "primitive_words": 6,
+      "categories": {
+        "contracting-all-decrease": 6
+      },
+      "primitive_categories": {
+        "contracting-all-decrease": 6
+      },
+      "finite_exception_representatives": 0,
+      "primitive_finite_exception_representatives": 0,
+      "unknown_exception_representatives": 0,
+      "primitive_unknown_exception_representatives": 0
+    },
+    "2,8": {
+      "words": 7,
+      "primitive_words": 6,
+      "categories": {
+        "contracting-all-decrease": 7
+      },
+      "primitive_categories": {
+        "contracting-all-decrease": 6
+      },
+      "finite_exception_representatives": 0,
+      "primitive_finite_exception_representatives": 0,
+      "unknown_exception_representatives": 0,
+      "primitive_unknown_exception_representatives": 0
+    },
+    "2,9": {
+      "words": 8,
+      "primitive_words": 8,
+      "categories": {
+        "contracting-all-decrease": 8
+      },
+      "primitive_categories": {
+        "contracting-all-decrease": 8
+      },
+      "finite_exception_representatives": 0,
+      "primitive_finite_exception_representatives": 0,
+      "unknown_exception_representatives": 0,
+      "primitive_unknown_exception_representatives": 0
+    },
+    "2,10": {
+      "words": 7,
+      "primitive_words": 6,
+      "categories": {
+        "contracting-all-decrease": 7
+      },
+      "primitive_categories": {
+        "contracting-all-decrease": 6
+      },
+      "finite_exception_representatives": 0,
+      "primitive_finite_exception_representatives": 0,
+      "unknown_exception_representatives": 0,
+      "primitive_unknown_exception_representatives": 0
+    },
+    "2,11": {
+      "words": 6,
+      "primitive_words": 6,
+      "categories": {
+        "contracting-all-decrease": 6
+      },
+      "primitive_categories": {
+        "contracting-all-decrease": 6
+      },
+      "finite_exception_representatives": 0,
+      "primitive_finite_exception_representatives": 0,
+      "unknown_exception_representatives": 0,
+      "primitive_unknown_exception_representatives": 0
+    },
+    "2,12": {
+      "words": 5,
+      "primitive_words": 4,
+      "categories": {
+        "contracting-all-decrease": 5
+      },
+      "primitive_categories": {
+        "contracting-all-decrease": 4
+      },
+      "finite_exception_representatives": 0,
+      "primitive_finite_exception_representatives": 0,
+      "unknown_exception_representatives": 0,
+      "primitive_unknown_exception_representatives": 0
+    },
+    "2,13": {
+      "words": 4,
+      "primitive_words": 4,
+      "categories": {
+        "contracting-all-decrease": 4
+      },
+      "primitive_categories": {
+        "contracting-all-decrease": 4
+      },
+      "finite_exception_representatives": 0,
+      "primitive_finite_exception_representatives": 0,
+      "unknown_exception_representatives": 0,
+      "primitive_unknown_exception_representatives": 0
+    },
+    "2,14": {
+      "words": 3,
+      "primitive_words": 2,
+      "categories": {
+        "contracting-all-decrease": 3
+      },
+      "primitive_categories": {
+        "contracting-all-decrease": 2
+      },
+      "finite_exception_representatives": 0,
+      "primitive_finite_exception_representatives": 0,
+      "unknown_exception_representatives": 0,
+      "primitive_unknown_exception_representatives": 0
+    },
+    "2,15": {
+      "words": 2,
+      "primitive_words": 2,
+      "categories": {
+        "contracting-all-decrease": 2
+      },
+      "primitive_categories": {
+        "contracting-all-decrease": 2
+      },
+      "finite_exception_representatives": 0,
+      "primitive_finite_exception_representatives": 0,
+      "unknown_exception_representatives": 0,
+      "primitive_unknown_exception_representatives": 0
+    },
+    "2,16": {
+      "words": 1,
+      "primitive_words": 0,
+      "categories": {
+        "contracting-all-decrease": 1
+      },
+      "primitive_categories": {},
+      "finite_exception_representatives": 0,
+      "primitive_finite_exception_representatives": 0,
+      "unknown_exception_representatives": 0,
+      "primitive_unknown_exception_representatives": 0
+    },
+    "3,3": {
+      "words": 1,
+      "primitive_words": 0,
+      "categories": {
+        "expanding": 1
+      },
+      "primitive_categories": {},
+      "finite_exception_representatives": 0,
+      "primitive_finite_exception_representatives": 0,
+      "unknown_exception_representatives": 0,
+      "primitive_unknown_exception_representatives": 0
+    },
+    "3,4": {
+      "words": 3,
+      "primitive_words": 3,
+      "categories": {
+        "expanding": 3
+      },
+      "primitive_categories": {
+        "expanding": 3
+      },
+      "finite_exception_representatives": 0,
+      "primitive_finite_exception_representatives": 0,
+      "unknown_exception_representatives": 0,
+      "primitive_unknown_exception_representatives": 0
+    },
+    "3,5": {
+      "words": 6,
+      "primitive_words": 6,
+      "categories": {
+        "contracting-all-decrease": 6
+      },
+      "primitive_categories": {
+        "contracting-all-decrease": 6
+      },
+      "finite_exception_representatives": 0,
+      "primitive_finite_exception_representatives": 0,
+      "unknown_exception_representatives": 0,
+      "primitive_unknown_exception_representatives": 0
+    },
+    "3,6": {
+      "words": 10,
+      "primitive_words": 9,
+      "categories": {
+        "contracting-all-decrease": 9,
+        "trivial-cycle-exception": 1
+      },
+      "primitive_categories": {
+        "contracting-all-decrease": 9
+      },
+      "finite_exception_representatives": 1,
+      "primitive_finite_exception_representatives": 0,
+      "unknown_exception_representatives": 0,
+      "primitive_unknown_exception_representatives": 0
+    },
+    "3,7": {
+      "words": 15,
+      "primitive_words": 15,
+      "categories": {
+        "contracting-all-decrease": 15
+      },
+      "primitive_categories": {
+        "contracting-all-decrease": 15
+      },
+      "finite_exception_representatives": 0,
+      "primitive_finite_exception_representatives": 0,
+      "unknown_exception_representatives": 0,
+      "primitive_unknown_exception_representatives": 0
+    },
+    "3,8": {
+      "words": 21,
+      "primitive_words": 21,
+      "categories": {
+        "contracting-all-decrease": 21
+      },
+      "primitive_categories": {
+        "contracting-all-decrease": 21
+      },
+      "finite_exception_representatives": 0,
+      "primitive_finite_exception_representatives": 0,
+      "unknown_exception_representatives": 0,
+      "primitive_unknown_exception_representatives": 0
+    },
+    "3,9": {
+      "words": 28,
+      "primitive_words": 27,
+      "categories": {
+        "contracting-all-decrease": 28
+      },
+      "primitive_categories": {
+        "contracting-all-decrease": 27
+      },
+      "finite_exception_representatives": 0,
+      "primitive_finite_exception_representatives": 0,
+      "unknown_exception_representatives": 0,
+      "primitive_unknown_exception_representatives": 0
+    },
+    "3,10": {
+      "words": 36,
+      "primitive_words": 36,
+      "categories": {
+        "contracting-all-decrease": 36
+      },
+      "primitive_categories": {
+        "contracting-all-decrease": 36
+      },
+      "finite_exception_representatives": 0,
+      "primitive_finite_exception_representatives": 0,
+      "unknown_exception_representatives": 0,
+      "primitive_unknown_exception_representatives": 0
+    },
+    "3,11": {
+      "words": 42,
+      "primitive_words": 42,
+      "categories": {
+        "contracting-all-decrease": 42
+      },
+      "primitive_categories": {
+        "contracting-all-decrease": 42
+      },
+      "finite_exception_representatives": 0,
+      "primitive_finite_exception_representatives": 0,
+      "unknown_exception_representatives": 0,
+      "primitive_unknown_exception_representatives": 0
+    },
+    "3,12": {
+      "words": 46,
+      "primitive_words": 45,
+      "categories": {
+        "contracting-all-decrease": 46
+      },
+      "primitive_categories": {
+        "contracting-all-decrease": 45
+      },
+      "finite_exception_representatives": 0,
+      "primitive_finite_exception_representatives": 0,
+      "unknown_exception_representatives": 0,
+      "primitive_unknown_exception_representatives": 0
+    },
+    "3,13": {
+      "words": 48,
+      "primitive_words": 48,
+      "categories": {
+        "contracting-all-decrease": 48
+      },
+      "primitive_categories": {
+        "contracting-all-decrease": 48
+      },
+      "finite_exception_representatives": 0,
+      "primitive_finite_exception_representatives": 0,
+      "unknown_exception_representatives": 0,
+      "primitive_unknown_exception_representatives": 0
+    },
+    "3,14": {
+      "words": 48,
+      "primitive_words": 48,
+      "categories": {
+        "contracting-all-decrease": 48
+      },
+      "primitive_categories": {
+        "contracting-all-decrease": 48
+      },
+      "finite_exception_representatives": 0,
+      "primitive_finite_exception_representatives": 0,
+      "unknown_exception_representatives": 0,
+      "primitive_unknown_exception_representatives": 0
+    },
+    "3,15": {
+      "words": 46,
+      "primitive_words": 45,
+      "categories": {
+        "contracting-all-decrease": 46
+      },
+      "primitive_categories": {
+        "contracting-all-decrease": 45
+      },
+      "finite_exception_representatives": 0,
+      "primitive_finite_exception_representatives": 0,
+      "unknown_exception_representatives": 0,
+      "primitive_unknown_exception_representatives": 0
+    },
+    "3,16": {
+      "words": 42,
+      "primitive_words": 42,
+      "categories": {
+        "contracting-all-decrease": 42
+      },
+      "primitive_categories": {
+        "contracting-all-decrease": 42
+      },
+      "finite_exception_representatives": 0,
+      "primitive_finite_exception_representatives": 0,
+      "unknown_exception_representatives": 0,
+      "primitive_unknown_exception_representatives": 0
+    },
+    "3,17": {
+      "words": 36,
+      "primitive_words": 36,
+      "categories": {
+        "contracting-all-decrease": 36
+      },
+      "primitive_categories": {
+        "contracting-all-decrease": 36
+      },
+      "finite_exception_representatives": 0,
+      "primitive_finite_exception_representatives": 0,
+      "unknown_exception_representatives": 0,
+      "primitive_unknown_exception_representatives": 0
+    },
+    "3,18": {
+      "words": 28,
+      "primitive_words": 27,
+      "categories": {
+        "contracting-all-decrease": 28
+      },
+      "primitive_categories": {
+        "contracting-all-decrease": 27
+      },
+      "finite_exception_representatives": 0,
+      "primitive_finite_exception_representatives": 0,
+      "unknown_exception_representatives": 0,
+      "primitive_unknown_exception_representatives": 0
+    },
+    "3,19": {
+      "words": 21,
+      "primitive_words": 21,
+      "categories": {
+        "contracting-all-decrease": 21
+      },
+      "primitive_categories": {
+        "contracting-all-decrease": 21
+      },
+      "finite_exception_representatives": 0,
+      "primitive_finite_exception_representatives": 0,
+      "unknown_exception_representatives": 0,
+      "primitive_unknown_exception_representatives": 0
+    },
+    "3,20": {
+      "words": 15,
+      "primitive_words": 15,
+      "categories": {
+        "contracting-all-decrease": 15
+      },
+      "primitive_categories": {
+        "contracting-all-decrease": 15
+      },
+      "finite_exception_representatives": 0,
+      "primitive_finite_exception_representatives": 0,
+      "unknown_exception_representatives": 0,
+      "primitive_unknown_exception_representatives": 0
+    },
+    "3,21": {
+      "words": 10,
+      "primitive_words": 9,
+      "categories": {
+        "contracting-all-decrease": 10
+      },
+      "primitive_categories": {
+        "contracting-all-decrease": 9
+      },
+      "finite_exception_representatives": 0,
+      "primitive_finite_exception_representatives": 0,
+      "unknown_exception_representatives": 0,
+      "primitive_unknown_exception_representatives": 0
+    },
+    "3,22": {
+      "words": 6,
+      "primitive_words": 6,
+      "categories": {
+        "contracting-all-decrease": 6
+      },
+      "primitive_categories": {
+        "contracting-all-decrease": 6
+      },
+      "finite_exception_representatives": 0,
+      "primitive_finite_exception_representatives": 0,
+      "unknown_exception_representatives": 0,
+      "primitive_unknown_exception_representatives": 0
+    },
+    "3,23": {
+      "words": 3,
+      "primitive_words": 3,
+      "categories": {
+        "contracting-all-decrease": 3
+      },
+      "primitive_categories": {
+        "contracting-all-decrease": 3
+      },
+      "finite_exception_representatives": 0,
+      "primitive_finite_exception_representatives": 0,
+      "unknown_exception_representatives": 0,
+      "primitive_unknown_exception_representatives": 0
+    },
+    "3,24": {
+      "words": 1,
+      "primitive_words": 0,
+      "categories": {
+        "contracting-all-decrease": 1
+      },
+      "primitive_categories": {},
+      "finite_exception_representatives": 0,
+      "primitive_finite_exception_representatives": 0,
+      "unknown_exception_representatives": 0,
+      "primitive_unknown_exception_representatives": 0
+    },
+    "4,4": {
+      "words": 1,
+      "primitive_words": 0,
+      "categories": {
+        "expanding": 1
+      },
+      "primitive_categories": {},
+      "finite_exception_representatives": 0,
+      "primitive_finite_exception_representatives": 0,
+      "unknown_exception_representatives": 0,
+      "primitive_unknown_exception_representatives": 0
+    },
+    "4,5": {
+      "words": 4,
+      "primitive_words": 4,
+      "categories": {
+        "expanding": 4
+      },
+      "primitive_categories": {
+        "expanding": 4
+      },
+      "finite_exception_representatives": 0,
+      "primitive_finite_exception_representatives": 0,
+      "unknown_exception_representatives": 0,
+      "primitive_unknown_exception_representatives": 0
+    },
+    "4,6": {
+      "words": 10,
+      "primitive_words": 8,
+      "categories": {
+        "expanding": 10
+      },
+      "primitive_categories": {
+        "expanding": 8
+      },
+      "finite_exception_representatives": 0,
+      "primitive_finite_exception_representatives": 0,
+      "unknown_exception_representatives": 0,
+      "primitive_unknown_exception_representatives": 0
+    },
+    "4,7": {
+      "words": 20,
+      "primitive_words": 20,
+      "categories": {
+        "contracting-all-decrease": 20
+      },
+      "primitive_categories": {
+        "contracting-all-decrease": 20
+      },
+      "finite_exception_representatives": 0,
+      "primitive_finite_exception_representatives": 0,
+      "unknown_exception_representatives": 0,
+      "primitive_unknown_exception_representatives": 0
+    },
+    "4,8": {
+      "words": 35,
+      "primitive_words": 32,
+      "categories": {
+        "contracting-all-decrease": 34,
+        "trivial-cycle-exception": 1
+      },
+      "primitive_categories": {
+        "contracting-all-decrease": 32
+      },
+      "finite_exception_representatives": 1,
+      "primitive_finite_exception_representatives": 0,
+      "unknown_exception_representatives": 0,
+      "primitive_unknown_exception_representatives": 0
+    },
+    "4,9": {
+      "words": 56,
+      "primitive_words": 56,
+      "categories": {
+        "contracting-all-decrease": 56
+      },
+      "primitive_categories": {
+        "contracting-all-decrease": 56
+      },
+      "finite_exception_representatives": 0,
+      "primitive_finite_exception_representatives": 0,
+      "unknown_exception_representatives": 0,
+      "primitive_unknown_exception_representatives": 0
+    },
+    "4,10": {
+      "words": 84,
+      "primitive_words": 80,
+      "categories": {
+        "contracting-all-decrease": 84
+      },
+      "primitive_categories": {
+        "contracting-all-decrease": 80
+      },
+      "finite_exception_representatives": 0,
+      "primitive_finite_exception_representatives": 0,
+      "unknown_exception_representatives": 0,
+      "primitive_unknown_exception_representatives": 0
+    },
+    "4,11": {
+      "words": 120,
+      "primitive_words": 120,
+      "categories": {
+        "contracting-all-decrease": 120
+      },
+      "primitive_categories": {
+        "contracting-all-decrease": 120
+      },
+      "finite_exception_representatives": 0,
+      "primitive_finite_exception_representatives": 0,
+      "unknown_exception_representatives": 0,
+      "primitive_unknown_exception_representatives": 0
+    },
+    "4,12": {
+      "words": 161,
+      "primitive_words": 156,
+      "categories": {
+        "contracting-all-decrease": 161
+      },
+      "primitive_categories": {
+        "contracting-all-decrease": 156
+      },
+      "finite_exception_representatives": 0,
+      "primitive_finite_exception_representatives": 0,
+      "unknown_exception_representatives": 0,
+      "primitive_unknown_exception_representatives": 0
+    },
+    "4,13": {
+      "words": 204,
+      "primitive_words": 204,
+      "categories": {
+        "contracting-all-decrease": 204
+      },
+      "primitive_categories": {
+        "contracting-all-decrease": 204
+      },
+      "finite_exception_representatives": 0,
+      "primitive_finite_exception_representatives": 0,
+      "unknown_exception_representatives": 0,
+      "primitive_unknown_exception_representatives": 0
+    },
+    "4,14": {
+      "words": 246,
+      "primitive_words": 240,
+      "categories": {
+        "contracting-all-decrease": 246
+      },
+      "primitive_categories": {
+        "contracting-all-decrease": 240
+      },
+      "finite_exception_representatives": 0,
+      "primitive_finite_exception_representatives": 0,
+      "unknown_exception_representatives": 0,
+      "primitive_unknown_exception_representatives": 0
+    },
+    "4,15": {
+      "words": 284,
+      "primitive_words": 284,
+      "categories": {
+        "contracting-all-decrease": 284
+      },
+      "primitive_categories": {
+        "contracting-all-decrease": 284
+      },
+      "finite_exception_representatives": 0,
+      "primitive_finite_exception_representatives": 0,
+      "unknown_exception_representatives": 0,
+      "primitive_unknown_exception_representatives": 0
+    },
+    "4,16": {
+      "words": 315,
+      "primitive_words": 308,
+      "categories": {
+        "contracting-all-decrease": 315
+      },
+      "primitive_categories": {
+        "contracting-all-decrease": 308
+      },
+      "finite_exception_representatives": 0,
+      "primitive_finite_exception_representatives": 0,
+      "unknown_exception_representatives": 0,
+      "primitive_unknown_exception_representatives": 0
+    },
+    "4,17": {
+      "words": 336,
+      "primitive_words": 336,
+      "categories": {
+        "contracting-all-decrease": 336
+      },
+      "primitive_categories": {
+        "contracting-all-decrease": 336
+      },
+      "finite_exception_representatives": 0,
+      "primitive_finite_exception_representatives": 0,
+      "unknown_exception_representatives": 0,
+      "primitive_unknown_exception_representatives": 0
+    },
+    "4,18": {
+      "words": 344,
+      "primitive_words": 336,
+      "categories": {
+        "contracting-all-decrease": 344
+      },
+      "primitive_categories": {
+        "contracting-all-decrease": 336
+      },
+      "finite_exception_representatives": 0,
+      "primitive_finite_exception_representatives": 0,
+      "unknown_exception_representatives": 0,
+      "primitive_unknown_exception_representatives": 0
+    },
+    "4,19": {
+      "words": 336,
+      "primitive_words": 336,
+      "categories": {
+        "contracting-all-decrease": 336
+      },
+      "primitive_categories": {
+        "contracting-all-decrease": 336
+      },
+      "finite_exception_representatives": 0,
+      "primitive_finite_exception_representatives": 0,
+      "unknown_exception_representatives": 0,
+      "primitive_unknown_exception_representatives": 0
+    },
+    "4,20": {
+      "words": 315,
+      "primitive_words": 308,
+      "categories": {
+        "contracting-all-decrease": 315
+      },
+      "primitive_categories": {
+        "contracting-all-decrease": 308
+      },
+      "finite_exception_representatives": 0,
+      "primitive_finite_exception_representatives": 0,
+      "unknown_exception_representatives": 0,
+      "primitive_unknown_exception_representatives": 0
+    },
+    "4,21": {
+      "words": 284,
+      "primitive_words": 284,
+      "categories": {
+        "contracting-all-decrease": 284
+      },
+      "primitive_categories": {
+        "contracting-all-decrease": 284
+      },
+      "finite_exception_representatives": 0,
+      "primitive_finite_exception_representatives": 0,
+      "unknown_exception_representatives": 0,
+      "primitive_unknown_exception_representatives": 0
+    },
+    "4,22": {
+      "words": 246,
+      "primitive_words": 240,
+      "categories": {
+        "contracting-all-decrease": 246
+      },
+      "primitive_categories": {
+        "contracting-all-decrease": 240
+      },
+      "finite_exception_representatives": 0,
+      "primitive_finite_exception_representatives": 0,
+      "unknown_exception_representatives": 0,
+      "primitive_unknown_exception_representatives": 0
+    },
+    "4,23": {
+      "words": 204,
+      "primitive_words": 204,
+      "categories": {
+        "contracting-all-decrease": 204
+      },
+      "primitive_categories": {
+        "contracting-all-decrease": 204
+      },
+      "finite_exception_representatives": 0,
+      "primitive_finite_exception_representatives": 0,
+      "unknown_exception_representatives": 0,
+      "primitive_unknown_exception_representatives": 0
+    },
+    "4,24": {
+      "words": 161,
+      "primitive_words": 156,
+      "categories": {
+        "contracting-all-decrease": 161
+      },
+      "primitive_categories": {
+        "contracting-all-decrease": 156
+      },
+      "finite_exception_representatives": 0,
+      "primitive_finite_exception_representatives": 0,
+      "unknown_exception_representatives": 0,
+      "primitive_unknown_exception_representatives": 0
+    },
+    "5,5": {
+      "words": 1,
+      "primitive_words": 0,
+      "categories": {
+        "expanding": 1
+      },
+      "primitive_categories": {},
+      "finite_exception_representatives": 0,
+      "primitive_finite_exception_representatives": 0,
+      "unknown_exception_representatives": 0,
+      "primitive_unknown_exception_representatives": 0
+    },
+    "5,6": {
+      "words": 5,
+      "primitive_words": 5,
+      "categories": {
+        "expanding": 5
+      },
+      "primitive_categories": {
+        "expanding": 5
+      },
+      "finite_exception_representatives": 0,
+      "primitive_finite_exception_representatives": 0,
+      "unknown_exception_representatives": 0,
+      "primitive_unknown_exception_representatives": 0
+    },
+    "5,7": {
+      "words": 15,
+      "primitive_words": 15,
+      "categories": {
+        "expanding": 15
+      },
+      "primitive_categories": {
+        "expanding": 15
+      },
+      "finite_exception_representatives": 0,
+      "primitive_finite_exception_representatives": 0,
+      "unknown_exception_representatives": 0,
+      "primitive_unknown_exception_representatives": 0
+    },
+    "5,8": {
+      "words": 35,
+      "primitive_words": 35,
+      "categories": {
+        "contracting-all-decrease": 35
+      },
+      "primitive_categories": {
+        "contracting-all-decrease": 35
+      },
+      "finite_exception_representatives": 0,
+      "primitive_finite_exception_representatives": 0,
+      "unknown_exception_representatives": 0,
+      "primitive_unknown_exception_representatives": 0
+    },
+    "5,9": {
+      "words": 70,
+      "primitive_words": 70,
+      "categories": {
+        "contracting-all-decrease": 70
+      },
+      "primitive_categories": {
+        "contracting-all-decrease": 70
+      },
+      "finite_exception_representatives": 0,
+      "primitive_finite_exception_representatives": 0,
+      "unknown_exception_representatives": 0,
+      "primitive_unknown_exception_representatives": 0
+    },
+    "5,10": {
+      "words": 126,
+      "primitive_words": 125,
+      "categories": {
+        "contracting-all-decrease": 125,
+        "trivial-cycle-exception": 1
+      },
+      "primitive_categories": {
+        "contracting-all-decrease": 125
+      },
+      "finite_exception_representatives": 1,
+      "primitive_finite_exception_representatives": 0,
+      "unknown_exception_representatives": 0,
+      "primitive_unknown_exception_representatives": 0
+    },
+    "5,11": {
+      "words": 210,
+      "primitive_words": 210,
+      "categories": {
+        "contracting-all-decrease": 210
+      },
+      "primitive_categories": {
+        "contracting-all-decrease": 210
+      },
+      "finite_exception_representatives": 0,
+      "primitive_finite_exception_representatives": 0,
+      "unknown_exception_representatives": 0,
+      "primitive_unknown_exception_representatives": 0
+    },
+    "5,12": {
+      "words": 330,
+      "primitive_words": 330,
+      "categories": {
+        "contracting-all-decrease": 330
+      },
+      "primitive_categories": {
+        "contracting-all-decrease": 330
+      },
+      "finite_exception_representatives": 0,
+      "primitive_finite_exception_representatives": 0,
+      "unknown_exception_representatives": 0,
+      "primitive_unknown_exception_representatives": 0
+    },
+    "5,13": {
+      "words": 490,
+      "primitive_words": 490,
+      "categories": {
+        "contracting-all-decrease": 490
+      },
+      "primitive_categories": {
+        "contracting-all-decrease": 490
+      },
+      "finite_exception_representatives": 0,
+      "primitive_finite_exception_representatives": 0,
+      "unknown_exception_representatives": 0,
+      "primitive_unknown_exception_representatives": 0
+    },
+    "5,14": {
+      "words": 690,
+      "primitive_words": 690,
+      "categories": {
+        "contracting-all-decrease": 690
+      },
+      "primitive_categories": {
+        "contracting-all-decrease": 690
+      },
+      "finite_exception_representatives": 0,
+      "primitive_finite_exception_representatives": 0,
+      "unknown_exception_representatives": 0,
+      "primitive_unknown_exception_representatives": 0
+    },
+    "5,15": {
+      "words": 926,
+      "primitive_words": 925,
+      "categories": {
+        "contracting-all-decrease": 926
+      },
+      "primitive_categories": {
+        "contracting-all-decrease": 925
+      },
+      "finite_exception_representatives": 0,
+      "primitive_finite_exception_representatives": 0,
+      "unknown_exception_representatives": 0,
+      "primitive_unknown_exception_representatives": 0
+    },
+    "5,16": {
+      "words": 1190,
+      "primitive_words": 1190,
+      "categories": {
+        "contracting-all-decrease": 1190
+      },
+      "primitive_categories": {
+        "contracting-all-decrease": 1190
+      },
+      "finite_exception_representatives": 0,
+      "primitive_finite_exception_representatives": 0,
+      "unknown_exception_representatives": 0,
+      "primitive_unknown_exception_representatives": 0
+    },
+    "5,17": {
+      "words": 1470,
+      "primitive_words": 1470,
+      "categories": {
+        "contracting-all-decrease": 1470
+      },
+      "primitive_categories": {
+        "contracting-all-decrease": 1470
+      },
+      "finite_exception_representatives": 0,
+      "primitive_finite_exception_representatives": 0,
+      "unknown_exception_representatives": 0,
+      "primitive_unknown_exception_representatives": 0
+    },
+    "5,18": {
+      "words": 1750,
+      "primitive_words": 1750,
+      "categories": {
+        "contracting-all-decrease": 1750
+      },
+      "primitive_categories": {
+        "contracting-all-decrease": 1750
+      },
+      "finite_exception_representatives": 0,
+      "primitive_finite_exception_representatives": 0,
+      "unknown_exception_representatives": 0,
+      "primitive_unknown_exception_representatives": 0
+    },
+    "5,19": {
+      "words": 2010,
+      "primitive_words": 2010,
+      "categories": {
+        "contracting-all-decrease": 2010
+      },
+      "primitive_categories": {
+        "contracting-all-decrease": 2010
+      },
+      "finite_exception_representatives": 0,
+      "primitive_finite_exception_representatives": 0,
+      "unknown_exception_representatives": 0,
+      "primitive_unknown_exception_representatives": 0
+    },
+    "5,20": {
+      "words": 2226,
+      "primitive_words": 2225,
+      "categories": {
+        "contracting-all-decrease": 2226
+      },
+      "primitive_categories": {
+        "contracting-all-decrease": 2225
+      },
+      "finite_exception_representatives": 0,
+      "primitive_finite_exception_representatives": 0,
+      "unknown_exception_representatives": 0,
+      "primitive_unknown_exception_representatives": 0
+    },
+    "5,21": {
+      "words": 2380,
+      "primitive_words": 2380,
+      "categories": {
+        "contracting-all-decrease": 2380
+      },
+      "primitive_categories": {
+        "contracting-all-decrease": 2380
+      },
+      "finite_exception_representatives": 0,
+      "primitive_finite_exception_representatives": 0,
+      "unknown_exception_representatives": 0,
+      "primitive_unknown_exception_representatives": 0
+    },
+    "5,22": {
+      "words": 2460,
+      "primitive_words": 2460,
+      "categories": {
+        "contracting-all-decrease": 2460
+      },
+      "primitive_categories": {
+        "contracting-all-decrease": 2460
+      },
+      "finite_exception_representatives": 0,
+      "primitive_finite_exception_representatives": 0,
+      "unknown_exception_representatives": 0,
+      "primitive_unknown_exception_representatives": 0
+    },
+    "5,23": {
+      "words": 2460,
+      "primitive_words": 2460,
+      "categories": {
+        "contracting-all-decrease": 2460
+      },
+      "primitive_categories": {
+        "contracting-all-decrease": 2460
+      },
+      "finite_exception_representatives": 0,
+      "primitive_finite_exception_representatives": 0,
+      "unknown_exception_representatives": 0,
+      "primitive_unknown_exception_representatives": 0
+    },
+    "5,24": {
+      "words": 2380,
+      "primitive_words": 2380,
+      "categories": {
+        "contracting-all-decrease": 2380
+      },
+      "primitive_categories": {
+        "contracting-all-decrease": 2380
+      },
+      "finite_exception_representatives": 0,
+      "primitive_finite_exception_representatives": 0,
+      "unknown_exception_representatives": 0,
+      "primitive_unknown_exception_representatives": 0
+    },
+    "6,6": {
+      "words": 1,
+      "primitive_words": 0,
+      "categories": {
+        "expanding": 1
+      },
+      "primitive_categories": {},
+      "finite_exception_representatives": 0,
+      "primitive_finite_exception_representatives": 0,
+      "unknown_exception_representatives": 0,
+      "primitive_unknown_exception_representatives": 0
+    },
+    "6,7": {
+      "words": 6,
+      "primitive_words": 6,
+      "categories": {
+        "expanding": 6
+      },
+      "primitive_categories": {
+        "expanding": 6
+      },
+      "finite_exception_representatives": 0,
+      "primitive_finite_exception_representatives": 0,
+      "unknown_exception_representatives": 0,
+      "primitive_unknown_exception_representatives": 0
+    },
+    "6,8": {
+      "words": 21,
+      "primitive_words": 18,
+      "categories": {
+        "expanding": 21
+      },
+      "primitive_categories": {
+        "expanding": 18
+      },
+      "finite_exception_representatives": 0,
+      "primitive_finite_exception_representatives": 0,
+      "unknown_exception_representatives": 0,
+      "primitive_unknown_exception_representatives": 0
+    },
+    "6,9": {
+      "words": 56,
+      "primitive_words": 54,
+      "categories": {
+        "expanding": 56
+      },
+      "primitive_categories": {
+        "expanding": 54
+      },
+      "finite_exception_representatives": 0,
+      "primitive_finite_exception_representatives": 0,
+      "unknown_exception_representatives": 0,
+      "primitive_unknown_exception_representatives": 0
+    },
+    "6,10": {
+      "words": 126,
+      "primitive_words": 120,
+      "categories": {
+        "contracting-all-decrease": 126
+      },
+      "primitive_categories": {
+        "contracting-all-decrease": 120
+      },
+      "finite_exception_representatives": 0,
+      "primitive_finite_exception_representatives": 0,
+      "unknown_exception_representatives": 0,
+      "primitive_unknown_exception_representatives": 0
+    },
+    "6,11": {
+      "words": 252,
+      "primitive_words": 252,
+      "categories": {
+        "contracting-all-decrease": 252
+      },
+      "primitive_categories": {
+        "contracting-all-decrease": 252
+      },
+      "finite_exception_representatives": 0,
+      "primitive_finite_exception_representatives": 0,
+      "unknown_exception_representatives": 0,
+      "primitive_unknown_exception_representatives": 0
+    },
+    "6,12": {
+      "words": 462,
+      "primitive_words": 450,
+      "categories": {
+        "contracting-all-decrease": 461,
+        "trivial-cycle-exception": 1
+      },
+      "primitive_categories": {
+        "contracting-all-decrease": 450
+      },
+      "finite_exception_representatives": 1,
+      "primitive_finite_exception_representatives": 0,
+      "unknown_exception_representatives": 0,
+      "primitive_unknown_exception_representatives": 0
+    },
+    "6,13": {
+      "words": 792,
+      "primitive_words": 792,
+      "categories": {
+        "contracting-all-decrease": 792
+      },
+      "primitive_categories": {
+        "contracting-all-decrease": 792
+      },
+      "finite_exception_representatives": 0,
+      "primitive_finite_exception_representatives": 0,
+      "unknown_exception_representatives": 0,
+      "primitive_unknown_exception_representatives": 0
+    },
+    "6,14": {
+      "words": 1281,
+      "primitive_words": 1266,
+      "categories": {
+        "contracting-all-decrease": 1281
+      },
+      "primitive_categories": {
+        "contracting-all-decrease": 1266
+      },
+      "finite_exception_representatives": 0,
+      "primitive_finite_exception_representatives": 0,
+      "unknown_exception_representatives": 0,
+      "primitive_unknown_exception_representatives": 0
+    },
+    "6,15": {
+      "words": 1966,
+      "primitive_words": 1962,
+      "categories": {
+        "contracting-all-decrease": 1966
+      },
+      "primitive_categories": {
+        "contracting-all-decrease": 1962
+      },
+      "finite_exception_representatives": 0,
+      "primitive_finite_exception_representatives": 0,
+      "unknown_exception_representatives": 0,
+      "primitive_unknown_exception_representatives": 0
+    },
+    "6,16": {
+      "words": 2877,
+      "primitive_words": 2856,
+      "categories": {
+        "contracting-all-decrease": 2877
+      },
+      "primitive_categories": {
+        "contracting-all-decrease": 2856
+      },
+      "finite_exception_representatives": 0,
+      "primitive_finite_exception_representatives": 0,
+      "unknown_exception_representatives": 0,
+      "primitive_unknown_exception_representatives": 0
+    },
+    "6,17": {
+      "words": 4032,
+      "primitive_words": 4032,
+      "categories": {
+        "contracting-all-decrease": 4032
+      },
+      "primitive_categories": {
+        "contracting-all-decrease": 4032
+      },
+      "finite_exception_representatives": 0,
+      "primitive_finite_exception_representatives": 0,
+      "unknown_exception_representatives": 0,
+      "primitive_unknown_exception_representatives": 0
+    },
+    "6,18": {
+      "words": 5432,
+      "primitive_words": 5400,
+      "categories": {
+        "contracting-all-decrease": 5432
+      },
+      "primitive_categories": {
+        "contracting-all-decrease": 5400
+      },
+      "finite_exception_representatives": 0,
+      "primitive_finite_exception_representatives": 0,
+      "unknown_exception_representatives": 0,
+      "primitive_unknown_exception_representatives": 0
+    },
+    "6,19": {
+      "words": 7056,
+      "primitive_words": 7056,
+      "categories": {
+        "contracting-all-decrease": 7056
+      },
+      "primitive_categories": {
+        "contracting-all-decrease": 7056
+      },
+      "finite_exception_representatives": 0,
+      "primitive_finite_exception_representatives": 0,
+      "unknown_exception_representatives": 0,
+      "primitive_unknown_exception_representatives": 0
+    },
+    "6,20": {
+      "words": 8856,
+      "primitive_words": 8820,
+      "categories": {
+        "contracting-all-decrease": 8856
+      },
+      "primitive_categories": {
+        "contracting-all-decrease": 8820
+      },
+      "finite_exception_representatives": 0,
+      "primitive_finite_exception_representatives": 0,
+      "unknown_exception_representatives": 0,
+      "primitive_unknown_exception_representatives": 0
+    },
+    "6,21": {
+      "words": 10752,
+      "primitive_words": 10746,
+      "categories": {
+        "contracting-all-decrease": 10752
+      },
+      "primitive_categories": {
+        "contracting-all-decrease": 10746
+      },
+      "finite_exception_representatives": 0,
+      "primitive_finite_exception_representatives": 0,
+      "unknown_exception_representatives": 0,
+      "primitive_unknown_exception_representatives": 0
+    },
+    "6,22": {
+      "words": 12642,
+      "primitive_words": 12600,
+      "categories": {
+        "contracting-all-decrease": 12642
+      },
+      "primitive_categories": {
+        "contracting-all-decrease": 12600
+      },
+      "finite_exception_representatives": 0,
+      "primitive_finite_exception_representatives": 0,
+      "unknown_exception_representatives": 0,
+      "primitive_unknown_exception_representatives": 0
+    },
+    "6,23": {
+      "words": 14412,
+      "primitive_words": 14412,
+      "categories": {
+        "contracting-all-decrease": 14412
+      },
+      "primitive_categories": {
+        "contracting-all-decrease": 14412
+      },
+      "finite_exception_representatives": 0,
+      "primitive_finite_exception_representatives": 0,
+      "unknown_exception_representatives": 0,
+      "primitive_unknown_exception_representatives": 0
+    },
+    "6,24": {
+      "words": 15946,
+      "primitive_words": 15894,
+      "categories": {
+        "contracting-all-decrease": 15946
+      },
+      "primitive_categories": {
+        "contracting-all-decrease": 15894
+      },
+      "finite_exception_representatives": 0,
+      "primitive_finite_exception_representatives": 0,
+      "unknown_exception_representatives": 0,
+      "primitive_unknown_exception_representatives": 0
+    },
+    "7,7": {
+      "words": 1,
+      "primitive_words": 0,
+      "categories": {
+        "expanding": 1
+      },
+      "primitive_categories": {},
+      "finite_exception_representatives": 0,
+      "primitive_finite_exception_representatives": 0,
+      "unknown_exception_representatives": 0,
+      "primitive_unknown_exception_representatives": 0
+    },
+    "7,8": {
+      "words": 7,
+      "primitive_words": 7,
+      "categories": {
+        "expanding": 7
+      },
+      "primitive_categories": {
+        "expanding": 7
+      },
+      "finite_exception_representatives": 0,
+      "primitive_finite_exception_representatives": 0,
+      "unknown_exception_representatives": 0,
+      "primitive_unknown_exception_representatives": 0
+    },
+    "7,9": {
+      "words": 28,
+      "primitive_words": 28,
+      "categories": {
+        "expanding": 28
+      },
+      "primitive_categories": {
+        "expanding": 28
+      },
+      "finite_exception_representatives": 0,
+      "primitive_finite_exception_representatives": 0,
+      "unknown_exception_representatives": 0,
+      "primitive_unknown_exception_representatives": 0
+    },
+    "7,10": {
+      "words": 84,
+      "primitive_words": 84,
+      "categories": {
+        "expanding": 84
+      },
+      "primitive_categories": {
+        "expanding": 84
+      },
+      "finite_exception_representatives": 0,
+      "primitive_finite_exception_representatives": 0,
+      "unknown_exception_representatives": 0,
+      "primitive_unknown_exception_representatives": 0
+    },
+    "7,11": {
+      "words": 210,
+      "primitive_words": 210,
+      "categories": {
+        "expanding": 210
+      },
+      "primitive_categories": {
+        "expanding": 210
+      },
+      "finite_exception_representatives": 0,
+      "primitive_finite_exception_representatives": 0,
+      "unknown_exception_representatives": 0,
+      "primitive_unknown_exception_representatives": 0
+    },
+    "7,12": {
+      "words": 462,
+      "primitive_words": 462,
+      "categories": {
+        "contracting-all-decrease": 462
+      },
+      "primitive_categories": {
+        "contracting-all-decrease": 462
+      },
+      "finite_exception_representatives": 0,
+      "primitive_finite_exception_representatives": 0,
+      "unknown_exception_representatives": 0,
+      "primitive_unknown_exception_representatives": 0
+    },
+    "7,13": {
+      "words": 924,
+      "primitive_words": 924,
+      "categories": {
+        "contracting-all-decrease": 924
+      },
+      "primitive_categories": {
+        "contracting-all-decrease": 924
+      },
+      "finite_exception_representatives": 0,
+      "primitive_finite_exception_representatives": 0,
+      "unknown_exception_representatives": 0,
+      "primitive_unknown_exception_representatives": 0
+    },
+    "7,14": {
+      "words": 1716,
+      "primitive_words": 1715,
+      "categories": {
+        "contracting-all-decrease": 1715,
+        "trivial-cycle-exception": 1
+      },
+      "primitive_categories": {
+        "contracting-all-decrease": 1715
+      },
+      "finite_exception_representatives": 1,
+      "primitive_finite_exception_representatives": 0,
+      "unknown_exception_representatives": 0,
+      "primitive_unknown_exception_representatives": 0
+    },
+    "7,15": {
+      "words": 2996,
+      "primitive_words": 2996,
+      "categories": {
+        "contracting-all-decrease": 2996
+      },
+      "primitive_categories": {
+        "contracting-all-decrease": 2996
+      },
+      "finite_exception_representatives": 0,
+      "primitive_finite_exception_representatives": 0,
+      "unknown_exception_representatives": 0,
+      "primitive_unknown_exception_representatives": 0
+    },
+    "7,16": {
+      "words": 4956,
+      "primitive_words": 4956,
+      "categories": {
+        "contracting-all-decrease": 4956
+      },
+      "primitive_categories": {
+        "contracting-all-decrease": 4956
+      },
+      "finite_exception_representatives": 0,
+      "primitive_finite_exception_representatives": 0,
+      "unknown_exception_representatives": 0,
+      "primitive_unknown_exception_representatives": 0
+    },
+    "7,17": {
+      "words": 7812,
+      "primitive_words": 7812,
+      "categories": {
+        "contracting-all-decrease": 7812
+      },
+      "primitive_categories": {
+        "contracting-all-decrease": 7812
+      },
+      "finite_exception_representatives": 0,
+      "primitive_finite_exception_representatives": 0,
+      "unknown_exception_representatives": 0,
+      "primitive_unknown_exception_representatives": 0
+    },
+    "7,18": {
+      "words": 11788,
+      "primitive_words": 11788,
+      "categories": {
+        "contracting-all-decrease": 11788
+      },
+      "primitive_categories": {
+        "contracting-all-decrease": 11788
+      },
+      "finite_exception_representatives": 0,
+      "primitive_finite_exception_representatives": 0,
+      "unknown_exception_representatives": 0,
+      "primitive_unknown_exception_representatives": 0
+    },
+    "7,19": {
+      "words": 17094,
+      "primitive_words": 17094,
+      "categories": {
+        "contracting-all-decrease": 17094
+      },
+      "primitive_categories": {
+        "contracting-all-decrease": 17094
+      },
+      "finite_exception_representatives": 0,
+      "primitive_finite_exception_representatives": 0,
+      "unknown_exception_representatives": 0,
+      "primitive_unknown_exception_representatives": 0
+    },
+    "7,20": {
+      "words": 23898,
+      "primitive_words": 23898,
+      "categories": {
+        "contracting-all-decrease": 23898
+      },
+      "primitive_categories": {
+        "contracting-all-decrease": 23898
+      },
+      "finite_exception_representatives": 0,
+      "primitive_finite_exception_representatives": 0,
+      "unknown_exception_representatives": 0,
+      "primitive_unknown_exception_representatives": 0
+    },
+    "7,21": {
+      "words": 32292,
+      "primitive_words": 32291,
+      "categories": {
+        "contracting-all-decrease": 32292
+      },
+      "primitive_categories": {
+        "contracting-all-decrease": 32291
+      },
+      "finite_exception_representatives": 0,
+      "primitive_finite_exception_representatives": 0,
+      "unknown_exception_representatives": 0,
+      "primitive_unknown_exception_representatives": 0
+    },
+    "7,22": {
+      "words": 42252,
+      "primitive_words": 42252,
+      "categories": {
+        "contracting-all-decrease": 42252
+      },
+      "primitive_categories": {
+        "contracting-all-decrease": 42252
+      },
+      "finite_exception_representatives": 0,
+      "primitive_finite_exception_representatives": 0,
+      "unknown_exception_representatives": 0,
+      "primitive_unknown_exception_representatives": 0
+    },
+    "7,23": {
+      "words": 53613,
+      "primitive_words": 53613,
+      "categories": {
+        "contracting-all-decrease": 53613
+      },
+      "primitive_categories": {
+        "contracting-all-decrease": 53613
+      },
+      "finite_exception_representatives": 0,
+      "primitive_finite_exception_representatives": 0,
+      "unknown_exception_representatives": 0,
+      "primitive_unknown_exception_representatives": 0
+    },
+    "7,24": {
+      "words": 66059,
+      "primitive_words": 66059,
+      "categories": {
+        "contracting-all-decrease": 66059
+      },
+      "primitive_categories": {
+        "contracting-all-decrease": 66059
+      },
+      "finite_exception_representatives": 0,
+      "primitive_finite_exception_representatives": 0,
+      "unknown_exception_representatives": 0,
+      "primitive_unknown_exception_representatives": 0
+    },
+    "8,8": {
+      "words": 1,
+      "primitive_words": 0,
+      "categories": {
+        "expanding": 1
+      },
+      "primitive_categories": {},
+      "finite_exception_representatives": 0,
+      "primitive_finite_exception_representatives": 0,
+      "unknown_exception_representatives": 0,
+      "primitive_unknown_exception_representatives": 0
+    },
+    "8,9": {
+      "words": 8,
+      "primitive_words": 8,
+      "categories": {
+        "expanding": 8
+      },
+      "primitive_categories": {
+        "expanding": 8
+      },
+      "finite_exception_representatives": 0,
+      "primitive_finite_exception_representatives": 0,
+      "unknown_exception_representatives": 0,
+      "primitive_unknown_exception_representatives": 0
+    },
+    "8,10": {
+      "words": 36,
+      "primitive_words": 32,
+      "categories": {
+        "expanding": 36
+      },
+      "primitive_categories": {
+        "expanding": 32
+      },
+      "finite_exception_representatives": 0,
+      "primitive_finite_exception_representatives": 0,
+      "unknown_exception_representatives": 0,
+      "primitive_unknown_exception_representatives": 0
+    },
+    "8,11": {
+      "words": 120,
+      "primitive_words": 120,
+      "categories": {
+        "expanding": 120
+      },
+      "primitive_categories": {
+        "expanding": 120
+      },
+      "finite_exception_representatives": 0,
+      "primitive_finite_exception_representatives": 0,
+      "unknown_exception_representatives": 0,
+      "primitive_unknown_exception_representatives": 0
+    },
+    "8,12": {
+      "words": 330,
+      "primitive_words": 320,
+      "categories": {
+        "expanding": 330
+      },
+      "primitive_categories": {
+        "expanding": 320
+      },
+      "finite_exception_representatives": 0,
+      "primitive_finite_exception_representatives": 0,
+      "unknown_exception_representatives": 0,
+      "primitive_unknown_exception_representatives": 0
+    },
+    "8,13": {
+      "words": 792,
+      "primitive_words": 792,
+      "categories": {
+        "contracting-all-decrease": 792
+      },
+      "primitive_categories": {
+        "contracting-all-decrease": 792
+      },
+      "finite_exception_representatives": 0,
+      "primitive_finite_exception_representatives": 0,
+      "unknown_exception_representatives": 0,
+      "primitive_unknown_exception_representatives": 0
+    },
+    "8,14": {
+      "words": 1716,
+      "primitive_words": 1696,
+      "categories": {
+        "contracting-all-decrease": 1716
+      },
+      "primitive_categories": {
+        "contracting-all-decrease": 1696
+      },
+      "finite_exception_representatives": 0,
+      "primitive_finite_exception_representatives": 0,
+      "unknown_exception_representatives": 0,
+      "primitive_unknown_exception_representatives": 0
+    },
+    "8,15": {
+      "words": 3432,
+      "primitive_words": 3432,
+      "categories": {
+        "contracting-all-decrease": 3432
+      },
+      "primitive_categories": {
+        "contracting-all-decrease": 3432
+      },
+      "finite_exception_representatives": 0,
+      "primitive_finite_exception_representatives": 0,
+      "unknown_exception_representatives": 0,
+      "primitive_unknown_exception_representatives": 0
+    },
+    "8,16": {
+      "words": 6427,
+      "primitive_words": 6392,
+      "categories": {
+        "contracting-all-decrease": 6426,
+        "trivial-cycle-exception": 1
+      },
+      "primitive_categories": {
+        "contracting-all-decrease": 6392
+      },
+      "finite_exception_representatives": 1,
+      "primitive_finite_exception_representatives": 0,
+      "unknown_exception_representatives": 0,
+      "primitive_unknown_exception_representatives": 0
+    },
+    "8,17": {
+      "words": 11376,
+      "primitive_words": 11376,
+      "categories": {
+        "contracting-all-decrease": 11376
+      },
+      "primitive_categories": {
+        "contracting-all-decrease": 11376
+      },
+      "finite_exception_representatives": 0,
+      "primitive_finite_exception_representatives": 0,
+      "unknown_exception_representatives": 0,
+      "primitive_unknown_exception_representatives": 0
+    },
+    "8,18": {
+      "words": 19160,
+      "primitive_words": 19104,
+      "categories": {
+        "contracting-all-decrease": 19160
+      },
+      "primitive_categories": {
+        "contracting-all-decrease": 19104
+      },
+      "finite_exception_representatives": 0,
+      "primitive_finite_exception_representatives": 0,
+      "unknown_exception_representatives": 0,
+      "primitive_unknown_exception_representatives": 0
+    },
+    "8,19": {
+      "words": 30864,
+      "primitive_words": 30864,
+      "categories": {
+        "contracting-all-decrease": 30864
+      },
+      "primitive_categories": {
+        "contracting-all-decrease": 30864
+      },
+      "finite_exception_representatives": 0,
+      "primitive_finite_exception_representatives": 0,
+      "unknown_exception_representatives": 0,
+      "primitive_unknown_exception_representatives": 0
+    },
+    "8,20": {
+      "words": 47748,
+      "primitive_words": 47664,
+      "categories": {
+        "contracting-all-decrease": 47748
+      },
+      "primitive_categories": {
+        "contracting-all-decrease": 47664
+      },
+      "finite_exception_representatives": 0,
+      "primitive_finite_exception_representatives": 0,
+      "unknown_exception_representatives": 0,
+      "primitive_unknown_exception_representatives": 0
+    },
+    "8,21": {
+      "words": 71184,
+      "primitive_words": 71184,
+      "categories": {
+        "contracting-all-decrease": 71184
+      },
+      "primitive_categories": {
+        "contracting-all-decrease": 71184
+      },
+      "finite_exception_representatives": 0,
+      "primitive_finite_exception_representatives": 0,
+      "unknown_exception_representatives": 0,
+      "primitive_unknown_exception_representatives": 0
+    },
+    "8,22": {
+      "words": 102552,
+      "primitive_words": 102432,
+      "categories": {
+        "contracting-all-decrease": 102552
+      },
+      "primitive_categories": {
+        "contracting-all-decrease": 102432
+      },
+      "finite_exception_representatives": 0,
+      "primitive_finite_exception_representatives": 0,
+      "unknown_exception_representatives": 0,
+      "primitive_unknown_exception_representatives": 0
+    },
+    "8,23": {
+      "words": 143088,
+      "primitive_words": 143088,
+      "categories": {
+        "contracting-all-decrease": 143088
+      },
+      "primitive_categories": {
+        "contracting-all-decrease": 143088
+      },
+      "finite_exception_representatives": 0,
+      "primitive_finite_exception_representatives": 0,
+      "unknown_exception_representatives": 0,
+      "primitive_unknown_exception_representatives": 0
+    },
+    "8,24": {
+      "words": 193705,
+      "primitive_words": 193544,
+      "categories": {
+        "contracting-all-decrease": 193705
+      },
+      "primitive_categories": {
+        "contracting-all-decrease": 193544
+      },
+      "finite_exception_representatives": 0,
+      "primitive_finite_exception_representatives": 0,
+      "unknown_exception_representatives": 0,
+      "primitive_unknown_exception_representatives": 0
+    },
+    "9,9": {
+      "words": 1,
+      "primitive_words": 0,
+      "categories": {
+        "expanding": 1
+      },
+      "primitive_categories": {},
+      "finite_exception_representatives": 0,
+      "primitive_finite_exception_representatives": 0,
+      "unknown_exception_representatives": 0,
+      "primitive_unknown_exception_representatives": 0
+    },
+    "9,10": {
+      "words": 9,
+      "primitive_words": 9,
+      "categories": {
+        "expanding": 9
+      },
+      "primitive_categories": {
+        "expanding": 9
+      },
+      "finite_exception_representatives": 0,
+      "primitive_finite_exception_representatives": 0,
+      "unknown_exception_representatives": 0,
+      "primitive_unknown_exception_representatives": 0
+    },
+    "9,11": {
+      "words": 45,
+      "primitive_words": 45,
+      "categories": {
+        "expanding": 45
+      },
+      "primitive_categories": {
+        "expanding": 45
+      },
+      "finite_exception_representatives": 0,
+      "primitive_finite_exception_representatives": 0,
+      "unknown_exception_representatives": 0,
+      "primitive_unknown_exception_representatives": 0
+    },
+    "9,12": {
+      "words": 165,
+      "primitive_words": 162,
+      "categories": {
+        "expanding": 165
+      },
+      "primitive_categories": {
+        "expanding": 162
+      },
+      "finite_exception_representatives": 0,
+      "primitive_finite_exception_representatives": 0,
+      "unknown_exception_representatives": 0,
+      "primitive_unknown_exception_representatives": 0
+    },
+    "9,13": {
+      "words": 495,
+      "primitive_words": 495,
+      "categories": {
+        "expanding": 495
+      },
+      "primitive_categories": {
+        "expanding": 495
+      },
+      "finite_exception_representatives": 0,
+      "primitive_finite_exception_representatives": 0,
+      "unknown_exception_representatives": 0,
+      "primitive_unknown_exception_representatives": 0
+    },
+    "9,14": {
+      "words": 1287,
+      "primitive_words": 1287,
+      "categories": {
+        "expanding": 1287
+      },
+      "primitive_categories": {
+        "expanding": 1287
+      },
+      "finite_exception_representatives": 0,
+      "primitive_finite_exception_representatives": 0,
+      "unknown_exception_representatives": 0,
+      "primitive_unknown_exception_representatives": 0
+    },
+    "9,15": {
+      "words": 3003,
+      "primitive_words": 2997,
+      "categories": {
+        "contracting-all-decrease": 3003
+      },
+      "primitive_categories": {
+        "contracting-all-decrease": 2997
+      },
+      "finite_exception_representatives": 0,
+      "primitive_finite_exception_representatives": 0,
+      "unknown_exception_representatives": 0,
+      "primitive_unknown_exception_representatives": 0
+    },
+    "9,16": {
+      "words": 6435,
+      "primitive_words": 6435,
+      "categories": {
+        "contracting-all-decrease": 6435
+      },
+      "primitive_categories": {
+        "contracting-all-decrease": 6435
+      },
+      "finite_exception_representatives": 0,
+      "primitive_finite_exception_representatives": 0,
+      "unknown_exception_representatives": 0,
+      "primitive_unknown_exception_representatives": 0
+    },
+    "9,17": {
+      "words": 12861,
+      "primitive_words": 12861,
+      "categories": {
+        "contracting-all-decrease": 12861
+      },
+      "primitive_categories": {
+        "contracting-all-decrease": 12861
+      },
+      "finite_exception_representatives": 0,
+      "primitive_finite_exception_representatives": 0,
+      "unknown_exception_representatives": 0,
+      "primitive_unknown_exception_representatives": 0
+    },
+    "9,18": {
+      "words": 24229,
+      "primitive_words": 24219,
+      "categories": {
+        "contracting-all-decrease": 24228,
+        "trivial-cycle-exception": 1
+      },
+      "primitive_categories": {
+        "contracting-all-decrease": 24219
+      },
+      "finite_exception_representatives": 1,
+      "primitive_finite_exception_representatives": 0,
+      "unknown_exception_representatives": 0,
+      "primitive_unknown_exception_representatives": 0
+    },
+    "9,19": {
+      "words": 43353,
+      "primitive_words": 43353,
+      "categories": {
+        "contracting-all-decrease": 43353
+      },
+      "primitive_categories": {
+        "contracting-all-decrease": 43353
+      },
+      "finite_exception_representatives": 0,
+      "primitive_finite_exception_representatives": 0,
+      "unknown_exception_representatives": 0,
+      "primitive_unknown_exception_representatives": 0
+    },
+    "9,20": {
+      "words": 74097,
+      "primitive_words": 74097,
+      "categories": {
+        "contracting-all-decrease": 74097
+      },
+      "primitive_categories": {
+        "contracting-all-decrease": 74097
+      },
+      "finite_exception_representatives": 0,
+      "primitive_finite_exception_representatives": 0,
+      "unknown_exception_representatives": 0,
+      "primitive_unknown_exception_representatives": 0
+    },
+    "9,21": {
+      "words": 121515,
+      "primitive_words": 121500,
+      "categories": {
+        "contracting-all-decrease": 121515
+      },
+      "primitive_categories": {
+        "contracting-all-decrease": 121500
+      },
+      "finite_exception_representatives": 0,
+      "primitive_finite_exception_representatives": 0,
+      "unknown_exception_representatives": 0,
+      "primitive_unknown_exception_representatives": 0
+    },
+    "9,22": {
+      "words": 191907,
+      "primitive_words": 191907,
+      "categories": {
+        "contracting-all-decrease": 191907
+      },
+      "primitive_categories": {
+        "contracting-all-decrease": 191907
+      },
+      "finite_exception_representatives": 0,
+      "primitive_finite_exception_representatives": 0,
+      "unknown_exception_representatives": 0,
+      "primitive_unknown_exception_representatives": 0
+    },
+    "9,23": {
+      "words": 292743,
+      "primitive_words": 292743,
+      "categories": {
+        "contracting-all-decrease": 292743
+      },
+      "primitive_categories": {
+        "contracting-all-decrease": 292743
+      },
+      "finite_exception_representatives": 0,
+      "primitive_finite_exception_representatives": 0,
+      "unknown_exception_representatives": 0,
+      "primitive_unknown_exception_representatives": 0
+    },
+    "9,24": {
+      "words": 432399,
+      "primitive_words": 432378,
+      "categories": {
+        "contracting-all-decrease": 432399
+      },
+      "primitive_categories": {
+        "contracting-all-decrease": 432378
+      },
+      "finite_exception_representatives": 0,
+      "primitive_finite_exception_representatives": 0,
+      "unknown_exception_representatives": 0,
+      "primitive_unknown_exception_representatives": 0
+    },
+    "10,10": {
+      "words": 1,
+      "primitive_words": 0,
+      "categories": {
+        "expanding": 1
+      },
+      "primitive_categories": {},
+      "finite_exception_representatives": 0,
+      "primitive_finite_exception_representatives": 0,
+      "unknown_exception_representatives": 0,
+      "primitive_unknown_exception_representatives": 0
+    },
+    "10,11": {
+      "words": 10,
+      "primitive_words": 10,
+      "categories": {
+        "expanding": 10
+      },
+      "primitive_categories": {
+        "expanding": 10
+      },
+      "finite_exception_representatives": 0,
+      "primitive_finite_exception_representatives": 0,
+      "unknown_exception_representatives": 0,
+      "primitive_unknown_exception_representatives": 0
+    },
+    "10,12": {
+      "words": 55,
+      "primitive_words": 50,
+      "categories": {
+        "expanding": 55
+      },
+      "primitive_categories": {
+        "expanding": 50
+      },
+      "finite_exception_representatives": 0,
+      "primitive_finite_exception_representatives": 0,
+      "unknown_exception_representatives": 0,
+      "primitive_unknown_exception_representatives": 0
+    },
+    "10,13": {
+      "words": 220,
+      "primitive_words": 220,
+      "categories": {
+        "expanding": 220
+      },
+      "primitive_categories": {
+        "expanding": 220
+      },
+      "finite_exception_representatives": 0,
+      "primitive_finite_exception_representatives": 0,
+      "unknown_exception_representatives": 0,
+      "primitive_unknown_exception_representatives": 0
+    },
+    "10,14": {
+      "words": 715,
+      "primitive_words": 700,
+      "categories": {
+        "expanding": 715
+      },
+      "primitive_categories": {
+        "expanding": 700
+      },
+      "finite_exception_representatives": 0,
+      "primitive_finite_exception_representatives": 0,
+      "unknown_exception_representatives": 0,
+      "primitive_unknown_exception_representatives": 0
+    },
+    "10,15": {
+      "words": 2002,
+      "primitive_words": 2000,
+      "categories": {
+        "expanding": 2002
+      },
+      "primitive_categories": {
+        "expanding": 2000
+      },
+      "finite_exception_representatives": 0,
+      "primitive_finite_exception_representatives": 0,
+      "unknown_exception_representatives": 0,
+      "primitive_unknown_exception_representatives": 0
+    },
+    "10,16": {
+      "words": 5005,
+      "primitive_words": 4970,
+      "categories": {
+        "contracting-all-decrease": 5005
+      },
+      "primitive_categories": {
+        "contracting-all-decrease": 4970
+      },
+      "finite_exception_representatives": 0,
+      "primitive_finite_exception_representatives": 0,
+      "unknown_exception_representatives": 0,
+      "primitive_unknown_exception_representatives": 0
+    },
+    "10,17": {
+      "words": 11440,
+      "primitive_words": 11440,
+      "categories": {
+        "contracting-all-decrease": 11440
+      },
+      "primitive_categories": {
+        "contracting-all-decrease": 11440
+      },
+      "finite_exception_representatives": 0,
+      "primitive_finite_exception_representatives": 0,
+      "unknown_exception_representatives": 0,
+      "primitive_unknown_exception_representatives": 0
+    },
+    "10,18": {
+      "words": 24300,
+      "primitive_words": 24230,
+      "categories": {
+        "contracting-all-decrease": 24300
+      },
+      "primitive_categories": {
+        "contracting-all-decrease": 24230
+      },
+      "finite_exception_representatives": 0,
+      "primitive_finite_exception_representatives": 0,
+      "unknown_exception_representatives": 0,
+      "primitive_unknown_exception_representatives": 0
+    },
+    "10,19": {
+      "words": 48520,
+      "primitive_words": 48520,
+      "categories": {
+        "contracting-all-decrease": 48520
+      },
+      "primitive_categories": {
+        "contracting-all-decrease": 48520
+      },
+      "finite_exception_representatives": 0,
+      "primitive_finite_exception_representatives": 0,
+      "unknown_exception_representatives": 0,
+      "primitive_unknown_exception_representatives": 0
+    },
+    "10,20": {
+      "words": 91828,
+      "primitive_words": 91700,
+      "categories": {
+        "contracting-all-decrease": 91827,
+        "trivial-cycle-exception": 1
+      },
+      "primitive_categories": {
+        "contracting-all-decrease": 91700
+      },
+      "finite_exception_representatives": 1,
+      "primitive_finite_exception_representatives": 0,
+      "unknown_exception_representatives": 0,
+      "primitive_unknown_exception_representatives": 0
+    },
+    "10,21": {
+      "words": 165760,
+      "primitive_words": 165760,
+      "categories": {
+        "contracting-all-decrease": 165760
+      },
+      "primitive_categories": {
+        "contracting-all-decrease": 165760
+      },
+      "finite_exception_representatives": 0,
+      "primitive_finite_exception_representatives": 0,
+      "unknown_exception_representatives": 0,
+      "primitive_unknown_exception_representatives": 0
+    },
+    "10,22": {
+      "words": 286780,
+      "primitive_words": 286570,
+      "categories": {
+        "contracting-all-decrease": 286780
+      },
+      "primitive_categories": {
+        "contracting-all-decrease": 286570
+      },
+      "finite_exception_representatives": 0,
+      "primitive_finite_exception_representatives": 0,
+      "unknown_exception_representatives": 0,
+      "primitive_unknown_exception_representatives": 0
+    },
+    "10,23": {
+      "words": 477400,
+      "primitive_words": 477400,
+      "categories": {
+        "contracting-all-decrease": 477400
+      },
+      "primitive_categories": {
+        "contracting-all-decrease": 477400
+      },
+      "finite_exception_representatives": 0,
+      "primitive_finite_exception_representatives": 0,
+      "unknown_exception_representatives": 0,
+      "primitive_unknown_exception_representatives": 0
+    },
+    "10,24": {
+      "words": 767140,
+      "primitive_words": 766810,
+      "categories": {
+        "contracting-all-decrease": 767140
+      },
+      "primitive_categories": {
+        "contracting-all-decrease": 766810
+      },
+      "finite_exception_representatives": 0,
+      "primitive_finite_exception_representatives": 0,
+      "unknown_exception_representatives": 0,
+      "primitive_unknown_exception_representatives": 0
+    },
+    "11,11": {
+      "words": 1,
+      "primitive_words": 0,
+      "categories": {
+        "expanding": 1
+      },
+      "primitive_categories": {},
+      "finite_exception_representatives": 0,
+      "primitive_finite_exception_representatives": 0,
+      "unknown_exception_representatives": 0,
+      "primitive_unknown_exception_representatives": 0
+    },
+    "11,12": {
+      "words": 11,
+      "primitive_words": 11,
+      "categories": {
+        "expanding": 11
+      },
+      "primitive_categories": {
+        "expanding": 11
+      },
+      "finite_exception_representatives": 0,
+      "primitive_finite_exception_representatives": 0,
+      "unknown_exception_representatives": 0,
+      "primitive_unknown_exception_representatives": 0
+    },
+    "11,13": {
+      "words": 66,
+      "primitive_words": 66,
+      "categories": {
+        "expanding": 66
+      },
+      "primitive_categories": {
+        "expanding": 66
+      },
+      "finite_exception_representatives": 0,
+      "primitive_finite_exception_representatives": 0,
+      "unknown_exception_representatives": 0,
+      "primitive_unknown_exception_representatives": 0
+    },
+    "11,14": {
+      "words": 286,
+      "primitive_words": 286,
+      "categories": {
+        "expanding": 286
+      },
+      "primitive_categories": {
+        "expanding": 286
+      },
+      "finite_exception_representatives": 0,
+      "primitive_finite_exception_representatives": 0,
+      "unknown_exception_representatives": 0,
+      "primitive_unknown_exception_representatives": 0
+    },
+    "11,15": {
+      "words": 1001,
+      "primitive_words": 1001,
+      "categories": {
+        "expanding": 1001
+      },
+      "primitive_categories": {
+        "expanding": 1001
+      },
+      "finite_exception_representatives": 0,
+      "primitive_finite_exception_representatives": 0,
+      "unknown_exception_representatives": 0,
+      "primitive_unknown_exception_representatives": 0
+    },
+    "11,16": {
+      "words": 3003,
+      "primitive_words": 3003,
+      "categories": {
+        "expanding": 3003
+      },
+      "primitive_categories": {
+        "expanding": 3003
+      },
+      "finite_exception_representatives": 0,
+      "primitive_finite_exception_representatives": 0,
+      "unknown_exception_representatives": 0,
+      "primitive_unknown_exception_representatives": 0
+    },
+    "11,17": {
+      "words": 8008,
+      "primitive_words": 8008,
+      "categories": {
+        "expanding": 8008
+      },
+      "primitive_categories": {
+        "expanding": 8008
+      },
+      "finite_exception_representatives": 0,
+      "primitive_finite_exception_representatives": 0,
+      "unknown_exception_representatives": 0,
+      "primitive_unknown_exception_representatives": 0
+    },
+    "11,18": {
+      "words": 19448,
+      "primitive_words": 19448,
+      "categories": {
+        "contracting-all-decrease": 19448
+      },
+      "primitive_categories": {
+        "contracting-all-decrease": 19448
+      },
+      "finite_exception_representatives": 0,
+      "primitive_finite_exception_representatives": 0,
+      "unknown_exception_representatives": 0,
+      "primitive_unknown_exception_representatives": 0
+    },
+    "11,19": {
+      "words": 43747,
+      "primitive_words": 43747,
+      "categories": {
+        "contracting-all-decrease": 43747
+      },
+      "primitive_categories": {
+        "contracting-all-decrease": 43747
+      },
+      "finite_exception_representatives": 0,
+      "primitive_finite_exception_representatives": 0,
+      "unknown_exception_representatives": 0,
+      "primitive_unknown_exception_representatives": 0
+    },
+    "11,20": {
+      "words": 92257,
+      "primitive_words": 92257,
+      "categories": {
+        "contracting-all-decrease": 92257
+      },
+      "primitive_categories": {
+        "contracting-all-decrease": 92257
+      },
+      "finite_exception_representatives": 0,
+      "primitive_finite_exception_representatives": 0,
+      "unknown_exception_representatives": 0,
+      "primitive_unknown_exception_representatives": 0
+    },
+    "11,21": {
+      "words": 184030,
+      "primitive_words": 184030,
+      "categories": {
+        "contracting-all-decrease": 184030
+      },
+      "primitive_categories": {
+        "contracting-all-decrease": 184030
+      },
+      "finite_exception_representatives": 0,
+      "primitive_finite_exception_representatives": 0,
+      "unknown_exception_representatives": 0,
+      "primitive_unknown_exception_representatives": 0
+    },
+    "11,22": {
+      "words": 349570,
+      "primitive_words": 349569,
+      "categories": {
+        "contracting-all-decrease": 349569,
+        "trivial-cycle-exception": 1
+      },
+      "primitive_categories": {
+        "contracting-all-decrease": 349569
+      },
+      "finite_exception_representatives": 1,
+      "primitive_finite_exception_representatives": 0,
+      "unknown_exception_representatives": 0,
+      "primitive_unknown_exception_representatives": 0
+    },
+    "11,23": {
+      "words": 635635,
+      "primitive_words": 635635,
+      "categories": {
+        "contracting-all-decrease": 635635
+      },
+      "primitive_categories": {
+        "contracting-all-decrease": 635635
+      },
+      "finite_exception_representatives": 0,
+      "primitive_finite_exception_representatives": 0,
+      "unknown_exception_representatives": 0,
+      "primitive_unknown_exception_representatives": 0
+    },
+    "11,24": {
+      "words": 1111033,
+      "primitive_words": 1111033,
+      "categories": {
+        "contracting-all-decrease": 1111033
+      },
+      "primitive_categories": {
+        "contracting-all-decrease": 1111033
+      },
+      "finite_exception_representatives": 0,
+      "primitive_finite_exception_representatives": 0,
+      "unknown_exception_representatives": 0,
+      "primitive_unknown_exception_representatives": 0
+    },
+    "12,12": {
+      "words": 1,
+      "primitive_words": 0,
+      "categories": {
+        "expanding": 1
+      },
+      "primitive_categories": {},
+      "finite_exception_representatives": 0,
+      "primitive_finite_exception_representatives": 0,
+      "unknown_exception_representatives": 0,
+      "primitive_unknown_exception_representatives": 0
+    },
+    "12,13": {
+      "words": 12,
+      "primitive_words": 12,
+      "categories": {
+        "expanding": 12
+      },
+      "primitive_categories": {
+        "expanding": 12
+      },
+      "finite_exception_representatives": 0,
+      "primitive_finite_exception_representatives": 0,
+      "unknown_exception_representatives": 0,
+      "primitive_unknown_exception_representatives": 0
+    },
+    "12,14": {
+      "words": 78,
+      "primitive_words": 72,
+      "categories": {
+        "expanding": 78
+      },
+      "primitive_categories": {
+        "expanding": 72
+      },
+      "finite_exception_representatives": 0,
+      "primitive_finite_exception_representatives": 0,
+      "unknown_exception_representatives": 0,
+      "primitive_unknown_exception_representatives": 0
+    },
+    "12,15": {
+      "words": 364,
+      "primitive_words": 360,
+      "categories": {
+        "expanding": 364
+      },
+      "primitive_categories": {
+        "expanding": 360
+      },
+      "finite_exception_representatives": 0,
+      "primitive_finite_exception_representatives": 0,
+      "unknown_exception_representatives": 0,
+      "primitive_unknown_exception_representatives": 0
+    },
+    "12,16": {
+      "words": 1365,
+      "primitive_words": 1344,
+      "categories": {
+        "expanding": 1365
+      },
+      "primitive_categories": {
+        "expanding": 1344
+      },
+      "finite_exception_representatives": 0,
+      "primitive_finite_exception_representatives": 0,
+      "unknown_exception_representatives": 0,
+      "primitive_unknown_exception_representatives": 0
+    },
+    "12,17": {
+      "words": 4368,
+      "primitive_words": 4368,
+      "categories": {
+        "expanding": 4368
+      },
+      "primitive_categories": {
+        "expanding": 4368
+      },
+      "finite_exception_representatives": 0,
+      "primitive_finite_exception_representatives": 0,
+      "unknown_exception_representatives": 0,
+      "primitive_unknown_exception_representatives": 0
+    },
+    "12,18": {
+      "words": 12376,
+      "primitive_words": 12312,
+      "categories": {
+        "expanding": 12376
+      },
+      "primitive_categories": {
+        "expanding": 12312
+      },
+      "finite_exception_representatives": 0,
+      "primitive_finite_exception_representatives": 0,
+      "unknown_exception_representatives": 0,
+      "primitive_unknown_exception_representatives": 0
+    },
+    "12,19": {
+      "words": 31824,
+      "primitive_words": 31824,
+      "categories": {
+        "expanding": 31824
+      },
+      "primitive_categories": {
+        "expanding": 31824
+      },
+      "finite_exception_representatives": 0,
+      "primitive_finite_exception_representatives": 0,
+      "unknown_exception_representatives": 0,
+      "primitive_unknown_exception_representatives": 0
+    },
+    "12,20": {
+      "words": 75570,
+      "primitive_words": 75444,
+      "categories": {
+        "contracting-all-decrease": 75570
+      },
+      "primitive_categories": {
+        "contracting-all-decrease": 75444
+      },
+      "finite_exception_representatives": 0,
+      "primitive_finite_exception_representatives": 0,
+      "unknown_exception_representatives": 0,
+      "primitive_unknown_exception_representatives": 0
+    },
+    "12,21": {
+      "words": 167816,
+      "primitive_words": 167796,
+      "categories": {
+        "contracting-all-decrease": 167816
+      },
+      "primitive_categories": {
+        "contracting-all-decrease": 167796
+      },
+      "finite_exception_representatives": 0,
+      "primitive_finite_exception_representatives": 0,
+      "unknown_exception_representatives": 0,
+      "primitive_unknown_exception_representatives": 0
+    },
+    "12,22": {
+      "words": 351780,
+      "primitive_words": 351528,
+      "categories": {
+        "contracting-all-decrease": 351780
+      },
+      "primitive_categories": {
+        "contracting-all-decrease": 351528
+      },
+      "finite_exception_representatives": 0,
+      "primitive_finite_exception_representatives": 0,
+      "unknown_exception_representatives": 0,
+      "primitive_unknown_exception_representatives": 0
+    },
+    "12,23": {
+      "words": 701064,
+      "primitive_words": 701064,
+      "categories": {
+        "contracting-all-decrease": 701064
+      },
+      "primitive_categories": {
+        "contracting-all-decrease": 701064
+      },
+      "finite_exception_representatives": 0,
+      "primitive_finite_exception_representatives": 0,
+      "unknown_exception_representatives": 0,
+      "primitive_unknown_exception_representatives": 0
+    },
+    "12,24": {
+      "words": 1335698,
+      "primitive_words": 1335204,
+      "categories": {
+        "contracting-all-decrease": 1335697,
+        "trivial-cycle-exception": 1
+      },
+      "primitive_categories": {
+        "contracting-all-decrease": 1335204
+      },
+      "finite_exception_representatives": 1,
+      "primitive_finite_exception_representatives": 0,
+      "unknown_exception_representatives": 0,
+      "primitive_unknown_exception_representatives": 0
+    }
+  },
+  "records": {
+    "unknown_exceptions": [],
+    "largest_exception_count": [
+      {
+        "score": 1.0,
+        "classification": {
+          "word": [
+            2
+          ],
+          "signature": "(2)",
+          "length": 1,
+          "total_depth": 2,
+          "height": 0.4150374993,
+          "primitive": true,
+          "period": 1,
+          "category": "trivial-cycle-exception",
+          "intercept_log2": -2.0,
+          "first_n_log2": 0.0,
+          "cap_log2": 0.0,
+          "margin_log2": "-inf",
+          "margin_sign": 0,
+          "exception_count": 1,
+          "exception_status": "trivial-cycle",
+          "certified_exception_count": 1,
+          "unknown_exception_count": 0,
+          "first_exception_image_log2": 0.0,
+          "max_exception_image_log2": 0.0,
+          "max_tail_value_log2": 0.0,
+          "max_tail_steps_used": 0
+        }
+      },
+      {
+        "score": 1.0,
+        "classification": {
+          "word": [
+            2,
+            2
+          ],
+          "signature": "(2^2)",
+          "length": 2,
+          "total_depth": 4,
+          "height": 0.8300749986,
+          "primitive": false,
+          "period": 1,
+          "category": "trivial-cycle-exception",
+          "intercept_log2": -1.1926450779,
+          "first_n_log2": 0.0,
+          "cap_log2": 0.0,
+          "margin_log2": "-inf",
+          "margin_sign": 0,
+          "exception_count": 1,
+          "exception_status": "trivial-cycle",
+          "certified_exception_count": 1,
+          "unknown_exception_count": 0,
+          "first_exception_image_log2": 0.0,
+          "max_exception_image_log2": 0.0,
+          "max_tail_value_log2": 0.0,
+          "max_tail_steps_used": 0
+        }
+      },
+      {
+        "score": 1.0,
+        "classification": {
+          "word": [
+            2,
+            2,
+            2
+          ],
+          "signature": "(2^3)",
+          "length": 3,
+          "total_depth": 6,
+          "height": 1.2451124978,
+          "primitive": false,
+          "period": 1,
+          "category": "trivial-cycle-exception",
+          "intercept_log2": -0.7905466344,
+          "first_n_log2": 0.0,
+          "cap_log2": 0.0,
+          "margin_log2": "-inf",
+          "margin_sign": 0,
+          "exception_count": 1,
+          "exception_status": "trivial-cycle",
+          "certified_exception_count": 1,
+          "unknown_exception_count": 0,
+          "first_exception_image_log2": 0.0,
+          "max_exception_image_log2": 0.0,
+          "max_tail_value_log2": 0.0,
+          "max_tail_steps_used": 0
+        }
+      },
+      {
+        "score": 1.0,
+        "classification": {
+          "word": [
+            2,
+            2,
+            2,
+            2
+          ],
+          "signature": "(2^4)",
+          "length": 4,
+          "total_depth": 8,
+          "height": 1.6601499971,
+          "primitive": false,
+          "period": 1,
+          "category": "trivial-cycle-exception",
+          "intercept_log2": -0.5487888882,
+          "first_n_log2": 0.0,
+          "cap_log2": 0.0,
+          "margin_log2": "-inf",
+          "margin_sign": 0,
+          "exception_count": 1,
+          "exception_status": "trivial-cycle",
+          "certified_exception_count": 1,
+          "unknown_exception_count": 0,
+          "first_exception_image_log2": 0.0,
+          "max_exception_image_log2": 0.0,
+          "max_tail_value_log2": 0.0,
+          "max_tail_steps_used": 0
+        }
+      },
+      {
+        "score": 1.0,
+        "classification": {
+          "word": [
+            2,
+            2,
+            2,
+            2,
+            2
+          ],
+          "signature": "(2^5)",
+          "length": 5,
+          "total_depth": 10,
+          "height": 2.0751874964,
+          "primitive": false,
+          "period": 1,
+          "category": "trivial-cycle-exception",
+          "intercept_log2": -0.3908212619,
+          "first_n_log2": 0.0,
+          "cap_log2": 0.0,
+          "margin_log2": "-inf",
+          "margin_sign": 0,
+          "exception_count": 1,
+          "exception_status": "trivial-cycle",
+          "certified_exception_count": 1,
+          "unknown_exception_count": 0,
+          "first_exception_image_log2": 0.0,
+          "max_exception_image_log2": 0.0,
+          "max_tail_value_log2": 0.0,
+          "max_tail_steps_used": 0
+        }
+      },
+      {
+        "score": 1.0,
+        "classification": {
+          "word": [
+            2,
+            2,
+            2,
+            2,
+            2,
+            2
+          ],
+          "signature": "(2^6)",
+          "length": 6,
+          "total_depth": 12,
+          "height": 2.4902249957,
+          "primitive": false,
+          "period": 1,
+          "category": "trivial-cycle-exception",
+          "intercept_log2": -0.2827519942,
+          "first_n_log2": 0.0,
+          "cap_log2": 0.0,
+          "margin_log2": "-inf",
+          "margin_sign": 0,
+          "exception_count": 1,
+          "exception_status": "trivial-cycle",
+          "certified_exception_count": 1,
+          "unknown_exception_count": 0,
+          "first_exception_image_log2": 0.0,
+          "max_exception_image_log2": 0.0,
+          "max_tail_value_log2": 0.0,
+          "max_tail_steps_used": 0
+        }
+      },
+      {
+        "score": 1.0,
+        "classification": {
+          "word": [
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2
+          ],
+          "signature": "(2^7)",
+          "length": 7,
+          "total_depth": 14,
+          "height": 2.905262495,
+          "primitive": false,
+          "period": 1,
+          "category": "trivial-cycle-exception",
+          "intercept_log2": -0.2067015176,
+          "first_n_log2": 0.0,
+          "cap_log2": 0.0,
+          "margin_log2": "-inf",
+          "margin_sign": 0,
+          "exception_count": 1,
+          "exception_status": "trivial-cycle",
+          "certified_exception_count": 1,
+          "unknown_exception_count": 0,
+          "first_exception_image_log2": 0.0,
+          "max_exception_image_log2": 0.0,
+          "max_tail_value_log2": 0.0,
+          "max_tail_steps_used": 0
+        }
+      },
+      {
+        "score": 1.0,
+        "classification": {
+          "word": [
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2
+          ],
+          "signature": "(2^8)",
+          "length": 8,
+          "total_depth": 16,
+          "height": 3.3202999942,
+          "primitive": false,
+          "period": 1,
+          "category": "trivial-cycle-exception",
+          "intercept_log2": -0.152184107,
+          "first_n_log2": 0.0,
+          "cap_log2": 0.0,
+          "margin_log2": "-inf",
+          "margin_sign": 0,
+          "exception_count": 1,
+          "exception_status": "trivial-cycle",
+          "certified_exception_count": 1,
+          "unknown_exception_count": 0,
+          "first_exception_image_log2": 0.0,
+          "max_exception_image_log2": 0.0,
+          "max_tail_value_log2": 0.0,
+          "max_tail_steps_used": 0
+        }
+      },
+      {
+        "score": 1.0,
+        "classification": {
+          "word": [
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2
+          ],
+          "signature": "(2^9)",
+          "length": 9,
+          "total_depth": 18,
+          "height": 3.7353374935,
+          "primitive": false,
+          "period": 1,
+          "category": "trivial-cycle-exception",
+          "intercept_log2": -0.112606818,
+          "first_n_log2": 0.0,
+          "cap_log2": 0.0,
+          "margin_log2": "-inf",
+          "margin_sign": 0,
+          "exception_count": 1,
+          "exception_status": "trivial-cycle",
+          "certified_exception_count": 1,
+          "unknown_exception_count": 0,
+          "first_exception_image_log2": 0.0,
+          "max_exception_image_log2": 0.0,
+          "max_tail_value_log2": 0.0,
+          "max_tail_steps_used": 0
+        }
+      },
+      {
+        "score": 1.0,
+        "classification": {
+          "word": [
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2
+          ],
+          "signature": "(2^10)",
+          "length": 10,
+          "total_depth": 20,
+          "height": 4.1503749928,
+          "primitive": false,
+          "period": 1,
+          "category": "trivial-cycle-exception",
+          "intercept_log2": -0.0836204527,
+          "first_n_log2": 0.0,
+          "cap_log2": 0.0,
+          "margin_log2": "-inf",
+          "margin_sign": 0,
+          "exception_count": 1,
+          "exception_status": "trivial-cycle",
+          "certified_exception_count": 1,
+          "unknown_exception_count": 0,
+          "first_exception_image_log2": 0.0,
+          "max_exception_image_log2": 0.0,
+          "max_tail_value_log2": 0.0,
+          "max_tail_steps_used": 0
+        }
+      },
+      {
+        "score": 1.0,
+        "classification": {
+          "word": [
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2
+          ],
+          "signature": "(2^11)",
+          "length": 11,
+          "total_depth": 22,
+          "height": 4.5654124921,
+          "primitive": false,
+          "period": 1,
+          "category": "trivial-cycle-exception",
+          "intercept_log2": -0.0622565843,
+          "first_n_log2": 0.0,
+          "cap_log2": 0.0,
+          "margin_log2": "-inf",
+          "margin_sign": 0,
+          "exception_count": 1,
+          "exception_status": "trivial-cycle",
+          "certified_exception_count": 1,
+          "unknown_exception_count": 0,
+          "first_exception_image_log2": 0.0,
+          "max_exception_image_log2": 0.0,
+          "max_tail_value_log2": 0.0,
+          "max_tail_steps_used": 0
+        }
+      },
+      {
+        "score": 1.0,
+        "classification": {
+          "word": [
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2
+          ],
+          "signature": "(2^12)",
+          "length": 12,
+          "total_depth": 24,
+          "height": 4.9804499913,
+          "primitive": false,
+          "period": 1,
+          "category": "trivial-cycle-exception",
+          "intercept_log2": -0.0464387671,
+          "first_n_log2": 0.0,
+          "cap_log2": 0.0,
+          "margin_log2": "-inf",
+          "margin_sign": 0,
+          "exception_count": 1,
+          "exception_status": "trivial-cycle",
+          "certified_exception_count": 1,
+          "unknown_exception_count": 0,
+          "first_exception_image_log2": 0.0,
+          "max_exception_image_log2": 0.0,
+          "max_tail_value_log2": 0.0,
+          "max_tail_steps_used": 0
+        }
+      }
+    ],
+    "closest_all_decrease_margin": [
+      {
+        "score": 6.0,
+        "classification": {
+          "word": [
+            4
+          ],
+          "signature": "(4)",
+          "length": 1,
+          "total_depth": 4,
+          "height": 2.4150374993,
+          "primitive": true,
+          "period": 1,
+          "category": "contracting-all-decrease",
+          "intercept_log2": -4.0,
+          "first_n_log2": 2.3219280949,
+          "cap_log2": "-inf",
+          "margin_log2": 6.0,
+          "margin_sign": 1,
+          "exception_count": 0,
+          "exception_status": null,
+          "certified_exception_count": 0,
+          "unknown_exception_count": 0,
+          "first_exception_image_log2": "-inf",
+          "max_exception_image_log2": "-inf",
+          "max_tail_value_log2": "-inf",
+          "max_tail_steps_used": null
+        }
+      },
+      {
+        "score": 6.0,
+        "classification": {
+          "word": [
+            1,
+            4
+          ],
+          "signature": "(1 4)",
+          "length": 2,
+          "total_depth": 5,
+          "height": 1.8300749986,
+          "primitive": true,
+          "period": 2,
+          "category": "contracting-all-decrease",
+          "intercept_log2": -2.6780719051,
+          "first_n_log2": 1.5849625007,
+          "cap_log2": "-inf",
+          "margin_log2": 6.0,
+          "margin_sign": 1,
+          "exception_count": 0,
+          "exception_status": null,
+          "certified_exception_count": 0,
+          "unknown_exception_count": 0,
+          "first_exception_image_log2": "-inf",
+          "max_exception_image_log2": "-inf",
+          "max_tail_value_log2": "-inf",
+          "max_tail_steps_used": null
+        }
+      },
+      {
+        "score": 6.0,
+        "classification": {
+          "word": [
+            1,
+            3,
+            1
+          ],
+          "signature": "(1 3 1)",
+          "length": 3,
+          "total_depth": 5,
+          "height": 0.2451124978,
+          "primitive": true,
+          "period": 3,
+          "category": "contracting-all-decrease",
+          "intercept_log2": -0.0458036896,
+          "first_n_log2": 4.2479275134,
+          "cap_log2": 2.5849625007,
+          "margin_log2": 6.0,
+          "margin_sign": 1,
+          "exception_count": 0,
+          "exception_status": null,
+          "certified_exception_count": 0,
+          "unknown_exception_count": 0,
+          "first_exception_image_log2": "-inf",
+          "max_exception_image_log2": "-inf",
+          "max_tail_value_log2": "-inf",
+          "max_tail_steps_used": null
+        }
+      },
+      {
+        "score": 6.0,
+        "classification": {
+          "word": [
+            3
+          ],
+          "signature": "(3)",
+          "length": 1,
+          "total_depth": 3,
+          "height": 1.4150374993,
+          "primitive": true,
+          "period": 1,
+          "category": "contracting-all-decrease",
+          "intercept_log2": -3.0,
+          "first_n_log2": 3.7004397181,
+          "cap_log2": "-inf",
+          "margin_log2": 6.0,
+          "margin_sign": 1,
+          "exception_count": 0,
+          "exception_status": null,
+          "certified_exception_count": 0,
+          "unknown_exception_count": 0,
+          "first_exception_image_log2": "-inf",
+          "max_exception_image_log2": "-inf",
+          "max_tail_value_log2": "-inf",
+          "max_tail_steps_used": null
+        }
+      },
+      {
+        "score": 7.0,
+        "classification": {
+          "word": [
+            1,
+            3
+          ],
+          "signature": "(1 3)",
+          "length": 2,
+          "total_depth": 4,
+          "height": 0.8300749986,
+          "primitive": true,
+          "period": 2,
+          "category": "contracting-all-decrease",
+          "intercept_log2": -1.6780719051,
+          "first_n_log2": 4.2479275134,
+          "cap_log2": "-inf",
+          "margin_log2": 7.0,
+          "margin_sign": 1,
+          "exception_count": 0,
+          "exception_status": null,
+          "certified_exception_count": 0,
+          "unknown_exception_count": 0,
+          "first_exception_image_log2": "-inf",
+          "max_exception_image_log2": "-inf",
+          "max_tail_value_log2": "-inf",
+          "max_tail_steps_used": null
+        }
+      },
+      {
+        "score": 7.0,
+        "classification": {
+          "word": [
+            2,
+            2,
+            1
+          ],
+          "signature": "(2^2 1)",
+          "length": 3,
+          "total_depth": 5,
+          "height": 0.2451124978,
+          "primitive": true,
+          "period": 3,
+          "category": "contracting-all-decrease",
+          "intercept_log2": 0.2094533656,
+          "first_n_log2": 5.0443941194,
+          "cap_log2": 2.8073549221,
+          "margin_log2": 7.0,
+          "margin_sign": 1,
+          "exception_count": 0,
+          "exception_status": null,
+          "certified_exception_count": 0,
+          "unknown_exception_count": 0,
+          "first_exception_image_log2": "-inf",
+          "max_exception_image_log2": "-inf",
+          "max_tail_value_log2": "-inf",
+          "max_tail_steps_used": null
+        }
+      },
+      {
+        "score": 7.5849625007,
+        "classification": {
+          "word": [
+            3,
+            1
+          ],
+          "signature": "(3 1)",
+          "length": 2,
+          "total_depth": 4,
+          "height": 0.8300749986,
+          "primitive": true,
+          "period": 2,
+          "category": "contracting-all-decrease",
+          "intercept_log2": -0.5405683814,
+          "first_n_log2": 4.8579809951,
+          "cap_log2": 0.0,
+          "margin_log2": 7.5849625007,
+          "margin_sign": 1,
+          "exception_count": 0,
+          "exception_status": null,
+          "certified_exception_count": 0,
+          "unknown_exception_count": 0,
+          "first_exception_image_log2": "-inf",
+          "max_exception_image_log2": "-inf",
+          "max_tail_value_log2": "-inf",
+          "max_tail_steps_used": null
+        }
+      },
+      {
+        "score": 7.5849625007,
+        "classification": {
+          "word": [
+            1,
+            2,
+            2
+          ],
+          "signature": "(1 2^2)",
+          "length": 3,
+          "total_depth": 5,
+          "height": 0.2451124978,
+          "primitive": true,
+          "period": 3,
+          "category": "contracting-all-decrease",
+          "intercept_log2": -0.4764380439,
+          "first_n_log2": 5.4262647547,
+          "cap_log2": 2.0,
+          "margin_log2": 7.5849625007,
+          "margin_sign": 1,
+          "exception_count": 0,
+          "exception_status": null,
+          "certified_exception_count": 0,
+          "unknown_exception_count": 0,
+          "first_exception_image_log2": "-inf",
+          "max_exception_image_log2": "-inf",
+          "max_tail_value_log2": "-inf",
+          "max_tail_steps_used": null
+        }
+      },
+      {
+        "score": 8.0,
+        "classification": {
+          "word": [
+            4,
+            2
+          ],
+          "signature": "(4 2)",
+          "length": 2,
+          "total_depth": 6,
+          "height": 2.8300749986,
+          "primitive": true,
+          "period": 2,
+          "category": "contracting-all-decrease",
+          "intercept_log2": -1.7520724866,
+          "first_n_log2": 2.3219280949,
+          "cap_log2": "-inf",
+          "margin_log2": 8.0,
+          "margin_sign": 1,
+          "exception_count": 0,
+          "exception_status": null,
+          "certified_exception_count": 0,
+          "unknown_exception_count": 0,
+          "first_exception_image_log2": "-inf",
+          "max_exception_image_log2": "-inf",
+          "max_tail_value_log2": "-inf",
+          "max_tail_steps_used": null
+        }
+      },
+      {
+        "score": 8.0,
+        "classification": {
+          "word": [
+            1,
+            1,
+            3
+          ],
+          "signature": "(1^2 3)",
+          "length": 3,
+          "total_depth": 5,
+          "height": 0.2451124978,
+          "primitive": true,
+          "period": 3,
+          "category": "contracting-all-decrease",
+          "intercept_log2": -0.7520724866,
+          "first_n_log2": 5.7813597135,
+          "cap_log2": 1.5849625007,
+          "margin_log2": 8.0,
+          "margin_sign": 1,
+          "exception_count": 0,
+          "exception_status": null,
+          "certified_exception_count": 0,
+          "unknown_exception_count": 0,
+          "first_exception_image_log2": "-inf",
+          "max_exception_image_log2": "-inf",
+          "max_tail_value_log2": "-inf",
+          "max_tail_steps_used": null
+        }
+      },
+      {
+        "score": 8.0,
+        "classification": {
+          "word": [
+            2,
+            1,
+            2
+          ],
+          "signature": "(2 1 2)",
+          "length": 3,
+          "total_depth": 5,
+          "height": 0.2451124978,
+          "primitive": true,
+          "period": 3,
+          "category": "contracting-all-decrease",
+          "intercept_log2": -0.1420190049,
+          "first_n_log2": 5.8328900142,
+          "cap_log2": 2.3219280949,
+          "margin_log2": 8.0,
+          "margin_sign": 1,
+          "exception_count": 0,
+          "exception_status": null,
+          "certified_exception_count": 0,
+          "unknown_exception_count": 0,
+          "first_exception_image_log2": "-inf",
+          "max_exception_image_log2": "-inf",
+          "max_tail_value_log2": "-inf",
+          "max_tail_steps_used": null
+        }
+      },
+      {
+        "score": 8.0,
+        "classification": {
+          "word": [
+            3,
+            1,
+            1
+          ],
+          "signature": "(3 1^2)",
+          "length": 3,
+          "total_depth": 5,
+          "height": 0.2451124978,
+          "primitive": true,
+          "period": 3,
+          "category": "contracting-all-decrease",
+          "intercept_log2": 0.6147098441,
+          "first_n_log2": 5.9307373376,
+          "cap_log2": 3.1699250014,
+          "margin_log2": 8.0,
+          "margin_sign": 1,
+          "exception_count": 0,
+          "exception_status": null,
+          "certified_exception_count": 0,
+          "unknown_exception_count": 0,
+          "first_exception_image_log2": "-inf",
+          "max_exception_image_log2": "-inf",
+          "max_tail_value_log2": "-inf",
+          "max_tail_steps_used": null
+        }
+      }
+    ],
+    "largest_contracting_cap": [
+      {
+        "score": 8.5736471875,
+        "classification": {
+          "word": [
+            7,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "signature": "(7 1^9)",
+          "length": 10,
+          "total_depth": 16,
+          "height": 0.1503749928,
+          "primitive": true,
+          "period": 10,
+          "category": "contracting-all-decrease",
+          "intercept_log2": 5.2381638797,
+          "first_n_log2": 16.9995266261,
+          "cap_log2": 8.5736471875,
+          "margin_log2": 29.6586577921,
+          "margin_sign": 1,
+          "exception_count": 0,
+          "exception_status": null,
+          "certified_exception_count": 0,
+          "unknown_exception_count": 0,
+          "first_exception_image_log2": "-inf",
+          "max_exception_image_log2": "-inf",
+          "max_tail_value_log2": "-inf",
+          "max_tail_steps_used": null
+        }
+      },
+      {
+        "score": 8.3037807482,
+        "classification": {
+          "word": [
+            6,
+            2,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "signature": "(6 2 1^8)",
+          "length": 10,
+          "total_depth": 16,
+          "height": 0.1503749928,
+          "primitive": true,
+          "period": 10,
+          "category": "contracting-all-decrease",
+          "intercept_log2": 4.9697708384,
+          "first_n_log2": 16.6369219419,
+          "cap_log2": 8.3037807482,
+          "margin_log2": 29.2957689344,
+          "margin_sign": 1,
+          "exception_count": 0,
+          "exception_status": null,
+          "certified_exception_count": 0,
+          "unknown_exception_count": 0,
+          "first_exception_image_log2": "-inf",
+          "max_exception_image_log2": "-inf",
+          "max_tail_value_log2": "-inf",
+          "max_tail_steps_used": null
+        }
+      },
+      {
+        "score": 8.1497471195,
+        "classification": {
+          "word": [
+            5,
+            3,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "signature": "(5 3 1^8)",
+          "length": 10,
+          "total_depth": 16,
+          "height": 0.1503749928,
+          "primitive": true,
+          "period": 10,
+          "category": "contracting-all-decrease",
+          "intercept_log2": 4.8141842317,
+          "first_n_log2": 16.4145035663,
+          "cap_log2": 8.1497471195,
+          "margin_log2": 29.0731373831,
+          "margin_sign": 1,
+          "exception_count": 0,
+          "exception_status": null,
+          "certified_exception_count": 0,
+          "unknown_exception_count": 0,
+          "first_exception_image_log2": "-inf",
+          "max_exception_image_log2": "-inf",
+          "max_tail_value_log2": "-inf",
+          "max_tail_steps_used": null
+        }
+      },
+      {
+        "score": 8.0927571409,
+        "classification": {
+          "word": [
+            6,
+            1,
+            2,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "signature": "(6 1 2 1^7)",
+          "length": 10,
+          "total_depth": 16,
+          "height": 0.1503749928,
+          "primitive": true,
+          "period": 10,
+          "category": "contracting-all-decrease",
+          "intercept_log2": 4.7583557997,
+          "first_n_log2": 15.2439549343,
+          "cap_log2": 8.0927571409,
+          "margin_log2": 27.8970891283,
+          "margin_sign": 1,
+          "exception_count": 0,
+          "exception_status": null,
+          "certified_exception_count": 0,
+          "unknown_exception_count": 0,
+          "first_exception_image_log2": "-inf",
+          "max_exception_image_log2": "-inf",
+          "max_tail_value_log2": "-inf",
+          "max_tail_steps_used": null
+        }
+      },
+      {
+        "score": 8.0660891905,
+        "classification": {
+          "word": [
+            4,
+            4,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "signature": "(4^2 1^8)",
+          "length": 10,
+          "total_depth": 16,
+          "height": 0.1503749928,
+          "primitive": true,
+          "period": 10,
+          "category": "contracting-all-decrease",
+          "intercept_log2": 4.729609957,
+          "first_n_log2": 13.8270449241,
+          "cap_log2": 8.0660891905,
+          "margin_log2": 26.4635243733,
+          "margin_sign": 1,
+          "exception_count": 0,
+          "exception_status": null,
+          "certified_exception_count": 0,
+          "unknown_exception_count": 0,
+          "first_exception_image_log2": "-inf",
+          "max_exception_image_log2": "-inf",
+          "max_tail_value_log2": "-inf",
+          "max_tail_steps_used": null
+        }
+      },
+      {
+        "score": 8.0168082877,
+        "classification": {
+          "word": [
+            3,
+            5,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "signature": "(3 5 1^8)",
+          "length": 10,
+          "total_depth": 16,
+          "height": 0.1503749928,
+          "primitive": true,
+          "period": 10,
+          "category": "contracting-all-decrease",
+          "intercept_log2": 4.6853878681,
+          "first_n_log2": 15.4140575534,
+          "cap_log2": 8.0168082877,
+          "margin_log2": 28.068778278,
+          "margin_sign": 1,
+          "exception_count": 0,
+          "exception_status": null,
+          "certified_exception_count": 0,
+          "unknown_exception_count": 0,
+          "first_exception_image_log2": "-inf",
+          "max_exception_image_log2": "-inf",
+          "max_tail_value_log2": "-inf",
+          "max_tail_steps_used": null
+        }
+      },
+      {
+        "score": 7.9943534369,
+        "classification": {
+          "word": [
+            2,
+            6,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "signature": "(2 6 1^8)",
+          "length": 10,
+          "total_depth": 16,
+          "height": 0.1503749928,
+          "primitive": true,
+          "period": 10,
+          "category": "contracting-all-decrease",
+          "intercept_log2": 4.6627578945,
+          "first_n_log2": 15.829351114,
+          "cap_log2": 7.9943534369,
+          "margin_log2": 28.4863322528,
+          "margin_sign": 1,
+          "exception_count": 0,
+          "exception_status": null,
+          "certified_exception_count": 0,
+          "unknown_exception_count": 0,
+          "first_exception_image_log2": "-inf",
+          "max_exception_image_log2": "-inf",
+          "max_tail_value_log2": "-inf",
+          "max_tail_steps_used": null
+        }
+      },
+      {
+        "score": 7.9829935747,
+        "classification": {
+          "word": [
+            1,
+            7,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "signature": "(1 7 1^8)",
+          "length": 10,
+          "total_depth": 16,
+          "height": 0.1503749928,
+          "primitive": true,
+          "period": 10,
+          "category": "contracting-all-decrease",
+          "intercept_log2": 4.6513083862,
+          "first_n_log2": 16.9996807649,
+          "cap_log2": 7.9829935747,
+          "margin_log2": 29.6602187885,
+          "margin_sign": 1,
+          "exception_count": 0,
+          "exception_status": null,
+          "certified_exception_count": 0,
+          "unknown_exception_count": 0,
+          "first_exception_image_log2": "-inf",
+          "max_exception_image_log2": "-inf",
+          "max_tail_value_log2": "-inf",
+          "max_tail_steps_used": null
+        }
+      },
+      {
+        "score": 7.9307373376,
+        "classification": {
+          "word": [
+            6,
+            1,
+            1,
+            2,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "signature": "(6 1^2 2 1^6)",
+          "length": 10,
+          "total_depth": 16,
+          "height": 0.1503749928,
+          "primitive": true,
+          "period": 10,
+          "category": "contracting-all-decrease",
+          "intercept_log2": 4.5979679648,
+          "first_n_log2": 16.3601097774,
+          "cap_log2": 7.9307373376,
+          "margin_log2": 29.0192432166,
+          "margin_sign": 1,
+          "exception_count": 0,
+          "exception_status": null,
+          "certified_exception_count": 0,
+          "unknown_exception_count": 0,
+          "first_exception_image_log2": "-inf",
+          "max_exception_image_log2": "-inf",
+          "max_tail_value_log2": "-inf",
+          "max_tail_steps_used": null
+        }
+      },
+      {
+        "score": 7.9128893362,
+        "classification": {
+          "word": [
+            5,
+            2,
+            2,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "signature": "(5 2^2 1^7)",
+          "length": 10,
+          "total_depth": 16,
+          "height": 0.1503749928,
+          "primitive": true,
+          "period": 10,
+          "category": "contracting-all-decrease",
+          "intercept_log2": 4.5766052085,
+          "first_n_log2": 14.5653996333,
+          "cap_log2": 7.9128893362,
+          "margin_log2": 27.2143191208,
+          "margin_sign": 1,
+          "exception_count": 0,
+          "exception_status": null,
+          "certified_exception_count": 0,
+          "unknown_exception_count": 0,
+          "first_exception_image_log2": "-inf",
+          "max_exception_image_log2": "-inf",
+          "max_tail_value_log2": "-inf",
+          "max_tail_steps_used": null
+        }
+      },
+      {
+        "score": 7.8137811912,
+        "classification": {
+          "word": [
+            6,
+            1,
+            1,
+            1,
+            2,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "signature": "(6 1^3 2 1^5)",
+          "length": 10,
+          "total_depth": 16,
+          "height": 0.1503749928,
+          "primitive": true,
+          "period": 10,
+          "category": "contracting-all-decrease",
+          "intercept_log2": 4.4801935952,
+          "first_n_log2": 16.8027813936,
+          "cap_log2": 7.8137811912,
+          "margin_log2": 29.463268916,
+          "margin_sign": 1,
+          "exception_count": 0,
+          "exception_status": null,
+          "certified_exception_count": 0,
+          "unknown_exception_count": 0,
+          "first_exception_image_log2": "-inf",
+          "max_exception_image_log2": "-inf",
+          "max_tail_value_log2": "-inf",
+          "max_tail_steps_used": null
+        }
+      },
+      {
+        "score": 7.8073549221,
+        "classification": {
+          "word": [
+            4,
+            3,
+            2,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "signature": "(4 3 2 1^7)",
+          "length": 10,
+          "total_depth": 16,
+          "height": 0.1503749928,
+          "primitive": true,
+          "period": 10,
+          "category": "contracting-all-decrease",
+          "intercept_log2": 4.476353641,
+          "first_n_log2": 16.332123986,
+          "cap_log2": 7.8073549221,
+          "margin_log2": 28.9915218461,
+          "margin_sign": 1,
+          "exception_count": 0,
+          "exception_status": null,
+          "certified_exception_count": 0,
+          "unknown_exception_count": 0,
+          "first_exception_image_log2": "-inf",
+          "max_exception_image_log2": "-inf",
+          "max_tail_value_log2": "-inf",
+          "max_tail_steps_used": null
+        }
+      }
+    ],
+    "largest_tail_value": [
+      {
+        "score": 0.0,
+        "classification": {
+          "word": [
+            2
+          ],
+          "signature": "(2)",
+          "length": 1,
+          "total_depth": 2,
+          "height": 0.4150374993,
+          "primitive": true,
+          "period": 1,
+          "category": "trivial-cycle-exception",
+          "intercept_log2": -2.0,
+          "first_n_log2": 0.0,
+          "cap_log2": 0.0,
+          "margin_log2": "-inf",
+          "margin_sign": 0,
+          "exception_count": 1,
+          "exception_status": "trivial-cycle",
+          "certified_exception_count": 1,
+          "unknown_exception_count": 0,
+          "first_exception_image_log2": 0.0,
+          "max_exception_image_log2": 0.0,
+          "max_tail_value_log2": 0.0,
+          "max_tail_steps_used": 0
+        }
+      },
+      {
+        "score": 0.0,
+        "classification": {
+          "word": [
+            2,
+            2
+          ],
+          "signature": "(2^2)",
+          "length": 2,
+          "total_depth": 4,
+          "height": 0.8300749986,
+          "primitive": false,
+          "period": 1,
+          "category": "trivial-cycle-exception",
+          "intercept_log2": -1.1926450779,
+          "first_n_log2": 0.0,
+          "cap_log2": 0.0,
+          "margin_log2": "-inf",
+          "margin_sign": 0,
+          "exception_count": 1,
+          "exception_status": "trivial-cycle",
+          "certified_exception_count": 1,
+          "unknown_exception_count": 0,
+          "first_exception_image_log2": 0.0,
+          "max_exception_image_log2": 0.0,
+          "max_tail_value_log2": 0.0,
+          "max_tail_steps_used": 0
+        }
+      },
+      {
+        "score": 0.0,
+        "classification": {
+          "word": [
+            2,
+            2,
+            2
+          ],
+          "signature": "(2^3)",
+          "length": 3,
+          "total_depth": 6,
+          "height": 1.2451124978,
+          "primitive": false,
+          "period": 1,
+          "category": "trivial-cycle-exception",
+          "intercept_log2": -0.7905466344,
+          "first_n_log2": 0.0,
+          "cap_log2": 0.0,
+          "margin_log2": "-inf",
+          "margin_sign": 0,
+          "exception_count": 1,
+          "exception_status": "trivial-cycle",
+          "certified_exception_count": 1,
+          "unknown_exception_count": 0,
+          "first_exception_image_log2": 0.0,
+          "max_exception_image_log2": 0.0,
+          "max_tail_value_log2": 0.0,
+          "max_tail_steps_used": 0
+        }
+      },
+      {
+        "score": 0.0,
+        "classification": {
+          "word": [
+            2,
+            2,
+            2,
+            2
+          ],
+          "signature": "(2^4)",
+          "length": 4,
+          "total_depth": 8,
+          "height": 1.6601499971,
+          "primitive": false,
+          "period": 1,
+          "category": "trivial-cycle-exception",
+          "intercept_log2": -0.5487888882,
+          "first_n_log2": 0.0,
+          "cap_log2": 0.0,
+          "margin_log2": "-inf",
+          "margin_sign": 0,
+          "exception_count": 1,
+          "exception_status": "trivial-cycle",
+          "certified_exception_count": 1,
+          "unknown_exception_count": 0,
+          "first_exception_image_log2": 0.0,
+          "max_exception_image_log2": 0.0,
+          "max_tail_value_log2": 0.0,
+          "max_tail_steps_used": 0
+        }
+      },
+      {
+        "score": 0.0,
+        "classification": {
+          "word": [
+            2,
+            2,
+            2,
+            2,
+            2
+          ],
+          "signature": "(2^5)",
+          "length": 5,
+          "total_depth": 10,
+          "height": 2.0751874964,
+          "primitive": false,
+          "period": 1,
+          "category": "trivial-cycle-exception",
+          "intercept_log2": -0.3908212619,
+          "first_n_log2": 0.0,
+          "cap_log2": 0.0,
+          "margin_log2": "-inf",
+          "margin_sign": 0,
+          "exception_count": 1,
+          "exception_status": "trivial-cycle",
+          "certified_exception_count": 1,
+          "unknown_exception_count": 0,
+          "first_exception_image_log2": 0.0,
+          "max_exception_image_log2": 0.0,
+          "max_tail_value_log2": 0.0,
+          "max_tail_steps_used": 0
+        }
+      },
+      {
+        "score": 0.0,
+        "classification": {
+          "word": [
+            2,
+            2,
+            2,
+            2,
+            2,
+            2
+          ],
+          "signature": "(2^6)",
+          "length": 6,
+          "total_depth": 12,
+          "height": 2.4902249957,
+          "primitive": false,
+          "period": 1,
+          "category": "trivial-cycle-exception",
+          "intercept_log2": -0.2827519942,
+          "first_n_log2": 0.0,
+          "cap_log2": 0.0,
+          "margin_log2": "-inf",
+          "margin_sign": 0,
+          "exception_count": 1,
+          "exception_status": "trivial-cycle",
+          "certified_exception_count": 1,
+          "unknown_exception_count": 0,
+          "first_exception_image_log2": 0.0,
+          "max_exception_image_log2": 0.0,
+          "max_tail_value_log2": 0.0,
+          "max_tail_steps_used": 0
+        }
+      },
+      {
+        "score": 0.0,
+        "classification": {
+          "word": [
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2
+          ],
+          "signature": "(2^7)",
+          "length": 7,
+          "total_depth": 14,
+          "height": 2.905262495,
+          "primitive": false,
+          "period": 1,
+          "category": "trivial-cycle-exception",
+          "intercept_log2": -0.2067015176,
+          "first_n_log2": 0.0,
+          "cap_log2": 0.0,
+          "margin_log2": "-inf",
+          "margin_sign": 0,
+          "exception_count": 1,
+          "exception_status": "trivial-cycle",
+          "certified_exception_count": 1,
+          "unknown_exception_count": 0,
+          "first_exception_image_log2": 0.0,
+          "max_exception_image_log2": 0.0,
+          "max_tail_value_log2": 0.0,
+          "max_tail_steps_used": 0
+        }
+      },
+      {
+        "score": 0.0,
+        "classification": {
+          "word": [
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2
+          ],
+          "signature": "(2^8)",
+          "length": 8,
+          "total_depth": 16,
+          "height": 3.3202999942,
+          "primitive": false,
+          "period": 1,
+          "category": "trivial-cycle-exception",
+          "intercept_log2": -0.152184107,
+          "first_n_log2": 0.0,
+          "cap_log2": 0.0,
+          "margin_log2": "-inf",
+          "margin_sign": 0,
+          "exception_count": 1,
+          "exception_status": "trivial-cycle",
+          "certified_exception_count": 1,
+          "unknown_exception_count": 0,
+          "first_exception_image_log2": 0.0,
+          "max_exception_image_log2": 0.0,
+          "max_tail_value_log2": 0.0,
+          "max_tail_steps_used": 0
+        }
+      },
+      {
+        "score": 0.0,
+        "classification": {
+          "word": [
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2
+          ],
+          "signature": "(2^9)",
+          "length": 9,
+          "total_depth": 18,
+          "height": 3.7353374935,
+          "primitive": false,
+          "period": 1,
+          "category": "trivial-cycle-exception",
+          "intercept_log2": -0.112606818,
+          "first_n_log2": 0.0,
+          "cap_log2": 0.0,
+          "margin_log2": "-inf",
+          "margin_sign": 0,
+          "exception_count": 1,
+          "exception_status": "trivial-cycle",
+          "certified_exception_count": 1,
+          "unknown_exception_count": 0,
+          "first_exception_image_log2": 0.0,
+          "max_exception_image_log2": 0.0,
+          "max_tail_value_log2": 0.0,
+          "max_tail_steps_used": 0
+        }
+      },
+      {
+        "score": 0.0,
+        "classification": {
+          "word": [
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2
+          ],
+          "signature": "(2^10)",
+          "length": 10,
+          "total_depth": 20,
+          "height": 4.1503749928,
+          "primitive": false,
+          "period": 1,
+          "category": "trivial-cycle-exception",
+          "intercept_log2": -0.0836204527,
+          "first_n_log2": 0.0,
+          "cap_log2": 0.0,
+          "margin_log2": "-inf",
+          "margin_sign": 0,
+          "exception_count": 1,
+          "exception_status": "trivial-cycle",
+          "certified_exception_count": 1,
+          "unknown_exception_count": 0,
+          "first_exception_image_log2": 0.0,
+          "max_exception_image_log2": 0.0,
+          "max_tail_value_log2": 0.0,
+          "max_tail_steps_used": 0
+        }
+      },
+      {
+        "score": 0.0,
+        "classification": {
+          "word": [
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2
+          ],
+          "signature": "(2^11)",
+          "length": 11,
+          "total_depth": 22,
+          "height": 4.5654124921,
+          "primitive": false,
+          "period": 1,
+          "category": "trivial-cycle-exception",
+          "intercept_log2": -0.0622565843,
+          "first_n_log2": 0.0,
+          "cap_log2": 0.0,
+          "margin_log2": "-inf",
+          "margin_sign": 0,
+          "exception_count": 1,
+          "exception_status": "trivial-cycle",
+          "certified_exception_count": 1,
+          "unknown_exception_count": 0,
+          "first_exception_image_log2": 0.0,
+          "max_exception_image_log2": 0.0,
+          "max_tail_value_log2": 0.0,
+          "max_tail_steps_used": 0
+        }
+      },
+      {
+        "score": 0.0,
+        "classification": {
+          "word": [
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2
+          ],
+          "signature": "(2^12)",
+          "length": 12,
+          "total_depth": 24,
+          "height": 4.9804499913,
+          "primitive": false,
+          "period": 1,
+          "category": "trivial-cycle-exception",
+          "intercept_log2": -0.0464387671,
+          "first_n_log2": 0.0,
+          "cap_log2": 0.0,
+          "margin_log2": "-inf",
+          "margin_sign": 0,
+          "exception_count": 1,
+          "exception_status": "trivial-cycle",
+          "certified_exception_count": 1,
+          "unknown_exception_count": 0,
+          "first_exception_image_log2": 0.0,
+          "max_exception_image_log2": 0.0,
+          "max_tail_value_log2": 0.0,
+          "max_tail_steps_used": 0
+        }
+      }
+    ],
+    "primitive_unknown_exceptions": []
+  }
+}

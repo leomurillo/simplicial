@@ -1,0 +1,33 @@
+{
+  "kill_conditions": {
+    "E6_L": "angular momentum relative drift > 1e-08",
+    "E6_P": "linear momentum relative drift > 1e-10",
+    "E6_E3_red": "BLOCKED until a concrete reduced Lagrangian/energy functional is supplied"
+  },
+  "parameters": {
+    "masses": [
+      1.0,
+      1.25,
+      0.85
+    ],
+    "delta": 0.15,
+    "epsilon": 0.001,
+    "seed": 2863,
+    "steps": 400,
+    "dt": 0.002,
+    "fd_step": 1e-06,
+    "min_shape_quality": 0.001,
+    "angular_tol": 1e-08,
+    "momentum_tol": 1e-10,
+    "report": "empirical\\reports\\three_body_ternary_e6_dynamics_audit.md",
+    "json": "empirical\\reports\\three_body_ternary_e6_dynamics_audit.json"
+  },
+  "summary": {
+    "status": "PASS",
+    "E3_red_status": "BLOCKED_NOT_EVALUATED",
+    "max_angular_momentum_relative_drift": 8.010741897413915e-16,
+    "max_linear_momentum_relative_drift": 5.77722822261946e-16,
+    "min_shape_quality": 0.17480376399861036,
+    "kills": []
+  }
+}

@@ -1,0 +1,46 @@
+[
+  {
+    "file": "C:\\Users\\leomu\\Downloads\\central-valley-san-jose-costa-rica.jpg",
+    "crop_size": 512,
+    "width": 512,
+    "height": 512,
+    "raw_rgb_bytes": 786432,
+    "source_jpeg_bytes": 467355,
+    "webp_lossless_bytes": 307430,
+    "webp_lossless_encode_s": 5.201124000013806,
+    "sigi_best_mode": "g-bg-ravg-anova-rice",
+    "sigi_bytes": 321726,
+    "sigi_estimate_s": 19.228256400005193,
+    "sigi_modes": {
+      "g-bg-ravg-anova-rice": {
+        "bytes": 321726,
+        "estimate_s": 19.228256400005193,
+        "tiles": 768,
+        "anova_tiles": 0,
+        "anova_saved_bytes": 0
+      }
+    }
+  },
+  {
+    "file": "C:\\Users\\leomu\\Downloads\\que-ver-en-costa-rica-correos-portada.jpg",
+    "crop_size": 512,
+    "width": 512,
+    "height": 512,
+    "raw_rgb_bytes": 786432,
+    "source_jpeg_bytes": 1634994,
+    "webp_lossless_bytes": 231732,
+    "webp_lossless_encode_s": 9.656205900013447,
+    "sigi_best_mode": "g-bg-ravg-anova-rice",
+    "sigi_bytes": 270332,
+    "sigi_estimate_s": 21.013755399995716,
+    "sigi_modes": {
+      "g-bg-ravg-anova-rice": {
+        "bytes": 270332,
+        "estimate_s": 21.013755399995716,
+        "tiles": 768,
+        "anova_tiles": 0,
+        "anova_saved_bytes": 0
+      }
+    }
+  }
+]

@@ -1,0 +1,30 @@
+====================================================================================================
+CONNES STEP (a): SIMPLE + ISOLATED + EVEN for the finite Weil operator A_lambda  (dps=60)
+====================================================================================================
+
+[1] Per-X table.  A_lambda := L_eta*I - Q ; eta = spectral MINIMUM of A_lambda.
+    eps_1 = gap to next cluster member = Connes isolation/simplicity margin.
+
+       X   N         a     eta-eigenvalue (Q-sign)  eps_1 (isolation) resolved?  even-def  nodes
+      13  40   1.28247    -2.903450222259509836359           1.41e-40       yes       0.0      1
+      30  44    1.7006    -3.850059364723162484208          1.287e-52       yes       0.0      3
+      60  48   2.04717    -4.634682394258163729166           1.75e-52       yes       0.0      4
+     120  52   2.39375    -5.419305423793164974125          6.085e-53       yes       0.0      4
+     210  56   2.67355    -6.052774688647997109813          2.064e-52       yes       0.0      3
+
+  READING [1]:
+   * EVEN:  defect ~ machine zero at every X  =>  EVENNESS is [P] (cosine/even sector).
+   * SIMPLE+ISOLATED at FIXED X:  eps_1(X) > 0 strictly at every X  =>  [P] per finite X.
+   * eps_1 is a genuine spectral invariant where 'resolved=yes' (X=13: 1.41e-40, stable
+     across dps=50..70).  For larger X the TRUE splitting falls below the dps floor
+     ('FLOOR'): the value shown is then a resolution-limited UPPER readout, not the true
+     eps_1 -- simplicity still holds (the matrix is a fixed exact object, splitting >0 by
+     the prolate mechanism) but VERIFYING it numerically needs dps growing with X.  This
+     is the same precision lesson that sank the float64 probes, now at the dps=50 scale.
+   * NODES: eta has a small NONZERO node count => NOT nodeless (Fact 6.2 vanishing-moment)
+            => Perron-Frobenius 'nodeless ground state' route does NOT reach eta.
+
+[2] EVEN-BEATS-ODD: build the ODD (sine) sector separately; compare distinguished vals.
+    (odd-sector arch block uses O(N^2) quadratures => run at X in {13,30}, modest N.)
+       X   N       even distinguished      odd distinguished  even is ground?
+      13  26     -2.90345022225950984     -3.711150754938969             EVEN

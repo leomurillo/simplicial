@@ -1,0 +1,182 @@
+{
+  "claim_tested": "quadratic local sector-pure power series can solve Jacobi-Fisher conformal matching numerically",
+  "parameters": {
+    "masses": [
+      1.0,
+      1.25,
+      0.85
+    ],
+    "epsilon": 0.001,
+    "perimeter0": 3.0,
+    "degree": 2,
+    "samples": 12,
+    "radius": 0.08,
+    "seed": 6606,
+    "fd_step": 1e-06,
+    "iterations": 80,
+    "learning_rate": 0.01,
+    "grad_step": 1e-05,
+    "regularization": 1e-08,
+    "target_residual": 0.01,
+    "report_every": 10,
+    "report": "empirical\\reports\\z6_jacobi_fisher_local_fit.md",
+    "json": "empirical\\reports\\z6_jacobi_fisher_local_fit.json"
+  },
+  "powers": [
+    [
+      0,
+      0,
+      1
+    ],
+    [
+      0,
+      1,
+      0
+    ],
+    [
+      1,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      2
+    ],
+    [
+      0,
+      1,
+      1
+    ],
+    [
+      0,
+      2,
+      0
+    ],
+    [
+      1,
+      0,
+      1
+    ],
+    [
+      1,
+      1,
+      0
+    ],
+    [
+      2,
+      0,
+      0
+    ]
+  ],
+  "history": [
+    {
+      "iteration": 0,
+      "loss": 0.0716892398514242,
+      "max_relative_residual": 0.3407121524858927,
+      "mean_relative_residual": 0.26185274955955196,
+      "step_size": 0.0105
+    },
+    {
+      "iteration": 10,
+      "loss": 0.040674403126402435,
+      "max_relative_residual": 0.2718389977671058,
+      "mean_relative_residual": 0.19492355373639472,
+      "step_size": 0.017103393581163143
+    },
+    {
+      "iteration": 20,
+      "loss": 0.01913297929223366,
+      "max_relative_residual": 0.19957349383311235,
+      "mean_relative_residual": 0.13225500406525928,
+      "step_size": 0.02785962590401643
+    },
+    {
+      "iteration": 30,
+      "loss": 0.010031789970262212,
+      "max_relative_residual": 0.1439050868250627,
+      "mean_relative_residual": 0.09381085694259912,
+      "step_size": 0.045380394939082
+    },
+    {
+      "iteration": 40,
+      "loss": 0.007916756292787144,
+      "max_relative_residual": 0.13941691070727544,
+      "mean_relative_residual": 0.08103884713557949,
+      "step_size": 0.0739198814773089
+    },
+    {
+      "iteration": 50,
+      "loss": 0.007575853171900948,
+      "max_relative_residual": 0.145007911088841,
+      "mean_relative_residual": 0.07872151568288213,
+      "step_size": 0.12040769775041382
+    },
+    {
+      "iteration": 60,
+      "loss": 0.007340824445093302,
+      "max_relative_residual": 0.14392692989669467,
+      "mean_relative_residual": 0.07741908676377159,
+      "step_size": 0.19613145188829137
+    },
+    {
+      "iteration": 70,
+      "loss": 0.006980272235699214,
+      "max_relative_residual": 0.14058669083345665,
+      "mean_relative_residual": 0.07545384561165781,
+      "step_size": 0.3194774681228963
+    },
+    {
+      "iteration": 79,
+      "loss": 0.006494694650131759,
+      "max_relative_residual": 0.13588177875066085,
+      "mean_relative_residual": 0.07273065601117452,
+      "step_size": 0.495614410668426
+    }
+  ],
+  "coefficients": [
+    [
+      0.04108508492591923,
+      0.02185761133071351,
+      1.0095920974697115,
+      0.010233161322995109,
+      0.007619275989382733,
+      0.015775174029972385,
+      0.021714665932737964,
+      0.02216021203816278,
+      -0.0013417271449770848
+    ],
+    [
+      -0.13541376740990504,
+      0.8925692896263,
+      0.021817209766897053,
+      0.031093234127782365,
+      0.051149548872035815,
+      0.013623755527455438,
+      -0.006964928618461214,
+      0.016619039720476226,
+      -0.003946259630260627
+    ],
+    [
+      1.063021101867222,
+      -0.13539275318521254,
+      0.0410547411554157,
+      -0.06332443830486406,
+      -0.010390983298050148,
+      0.07030233154671191,
+      -0.004883676764663588,
+      -0.011642315314231828,
+      0.00524853436529661
+    ]
+  ],
+  "summary": {
+    "status": "KILL",
+    "naive_max_relative_residual": 0.34683154498844826,
+    "fit_max_relative_residual": 0.13588177875066085,
+    "fit_mean_relative_residual": 0.07273065601117452,
+    "improvement_factor": 2.5524507272227734,
+    "kills": [
+      "local polynomial fit did not meet target residual"
+    ]
+  }
+}

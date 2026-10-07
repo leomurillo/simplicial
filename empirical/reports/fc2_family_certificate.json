@@ -1,0 +1,82 @@
+{
+  "claim": "FC2 filtered curvature-carry family theorem finite-atlas certificate",
+  "theorem_scope": "All finite local conductor-filtered quotient-character adjacency rows satisfying the section-extension hypotheses; visible support is computed after quotienting by the Fisher-jet kernel.",
+  "formal_source": "filtered section class [kappa] in the section-change complex",
+  "formal_shadows": [
+    "K_CH cubic Fisher commutator shadow",
+    "higher arity hyper-adjacency/Fisher-jet support shadows"
+  ],
+  "first_mixed_row_shadow": {
+    "ring": "F_4[u]/(u^2)",
+    "commutator_orbits": 592,
+    "lifted_commutator_orbits": 592,
+    "mixed_h4_orbits_hit": 7,
+    "mixed_h4_orbits_total": 7,
+    "pure_h4_orbits_hit": 0,
+    "pure_h4_orbits_total": 11
+  },
+  "certified_rows": [
+    {
+      "row_key": "f4-u2",
+      "ring": "F_4[u]/(u^2)",
+      "packets": {
+        "u": 3,
+        "u^2": 12
+      },
+      "h3_cells": 210,
+      "h3_orbits": 5,
+      "h4_cells": 3165,
+      "h4_orbits": 18,
+      "raw_atoms": 1569,
+      "raw_pairs": 369,
+      "pair_orbits": 20,
+      "full_residual": 1569,
+      "full_non_coboundary": true,
+      "support_residual": null,
+      "support_is_coboundary": null
+    },
+    {
+      "row_key": "f2-u5",
+      "ring": "F_2[u]/(u^5)",
+      "packets": {
+        "u": 1,
+        "u^2": 2,
+        "u^3": 4,
+        "u^4": 8,
+        "u^5": 16
+      },
+      "h3_cells": 930,
+      "h3_orbits": 12,
+      "h4_cells": 28861,
+      "h4_orbits": 72,
+      "raw_atoms": 19140,
+      "raw_pairs": 2516,
+      "pair_orbits": 81,
+      "full_residual": 19140,
+      "full_non_coboundary": true,
+      "support_residual": 0,
+      "support_is_coboundary": true
+    },
+    {
+      "row_key": "f8-u2",
+      "ring": "F_8[u]/(u^2)",
+      "packets": {
+        "u": 7,
+        "u^2": 56
+      },
+      "h3_cells": 3906,
+      "h3_orbits": 8,
+      "h4_cells": 246141,
+      "h4_orbits": 86,
+      "raw_atoms": 158081,
+      "raw_pairs": 7105,
+      "pair_orbits": 49,
+      "full_residual": 158081,
+      "full_non_coboundary": true,
+      "support_residual": 0,
+      "support_is_coboundary": true
+    }
+  ],
+  "all_certified_rows_have_full_nonzero_residual": true,
+  "support_projection_can_hide_full_carry": true
+}

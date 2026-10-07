@@ -1,0 +1,103 @@
+{
+  "claim_tested": "area-gated copula IG force equals Euler-Lagrange acceleration of pullback cubic Lagrangian",
+  "parameters": {
+    "sigma": [
+      0.2,
+      0.35,
+      -0.15
+    ],
+    "sigmadot": [
+      0.25,
+      -0.12,
+      0.08
+    ],
+    "samples": 3,
+    "radius": 0.03,
+    "velocity_radius": 0.02,
+    "kappa": 0.8,
+    "phi_coeffs": [
+      1.0,
+      0.0
+    ],
+    "fd_step": 1e-06,
+    "variation_step": 2e-05,
+    "lstsq_rcond": 1e-10,
+    "consistency_tol": 0.001,
+    "seed": 6686,
+    "report": "empirical\\reports\\z6_copula_variational_consistency_audit.md",
+    "json": "empirical\\reports\\z6_copula_variational_consistency_audit.json"
+  },
+  "samples": [
+    {
+      "index": 0,
+      "sigma": [
+        0.21708426806400194,
+        0.3244148895658484,
+        -0.14562572221313644
+      ],
+      "sigmadot": [
+        0.24011862134181625,
+        -0.12241104679686426,
+        0.07159496393072079
+      ],
+      "theta": 0.6564742398195235,
+      "relative_acceleration_residual": 1.8494691878824712,
+      "frozen_theta_relative_acceleration_residual": 1.446453826262864,
+      "el_acceleration_norm": 0.048788246995324955,
+      "ig_acceleration_norm": 0.056617726725504545,
+      "frozen_el_acceleration_norm": 0.024408740477991474,
+      "frozen_ig_acceleration_norm": 0.05122409465881137
+    },
+    {
+      "index": 1,
+      "sigma": [
+        0.21291567375516113,
+        0.37349494752100915,
+        -0.16487231229602534
+      ],
+      "sigmadot": [
+        0.23407467997098222,
+        -0.12907654299678903,
+        0.0684680372255811
+      ],
+      "theta": 0.6200237408719026,
+      "relative_acceleration_residual": 1.7156953399032298,
+      "frozen_theta_relative_acceleration_residual": 1.4150955329910087,
+      "el_acceleration_norm": 0.04478168019328013,
+      "ig_acceleration_norm": 0.06156946462550604,
+      "frozen_el_acceleration_norm": 0.0222556562489972,
+      "frozen_ig_acceleration_norm": 0.049201852210615
+    },
+    {
+      "index": 2,
+      "sigma": [
+        0.21377449835855156,
+        0.3290154016986068,
+        -0.17709184708714842
+      ],
+      "sigmadot": [
+        0.2437209669905008,
+        -0.1213202042054816,
+        0.07790561842026893
+      ],
+      "theta": 0.6476629906816239,
+      "relative_acceleration_residual": 1.7359140571673188,
+      "frozen_theta_relative_acceleration_residual": 1.433934602893312,
+      "el_acceleration_norm": 0.05006450194426535,
+      "ig_acceleration_norm": 0.06629011757407094,
+      "frozen_el_acceleration_norm": 0.025445707201862185,
+      "frozen_ig_acceleration_norm": 0.05480965077716031
+    }
+  ],
+  "summary": {
+    "status": "KILL",
+    "max_relative_acceleration_residual": 1.8494691878824712,
+    "max_frozen_theta_relative_acceleration_residual": 1.446453826262864,
+    "mean_relative_acceleration_residual": 1.76702619498434,
+    "mean_frozen_theta_relative_acceleration_residual": 1.4318279873823947,
+    "area_gate_gradient_explains_failure": false,
+    "kills": [
+      "copula IG acceleration is not Euler-Lagrange for L_copula"
+    ]
+  }
+}

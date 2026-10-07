@@ -1,0 +1,169 @@
+{
+  "theorem": "Paper45 Thm 4.1 + 4.2 structural certificate",
+  "cells": [
+    {
+      "task": "months",
+      "model": "llama31_8b",
+      "support_name": "S_full_period",
+      "support_S": [
+        12
+      ],
+      "thm41_max_forbidden_leakage": 3.1136056441545156e-15,
+      "packet_fractions": {
+        "2": 0.05108325101748539,
+        "3": 0.06602801732536602,
+        "4": 0.059103392550400216,
+        "6": 0.1668505584160301,
+        "12": 0.6569347806907182
+      },
+      "gap_fraction_spectral": 0.34306521930928174,
+      "gap_fraction_direct": 0.34306521930928163,
+      "gap_identity_abs_err": 1.1102230246251565e-16,
+      "paper45_s4.2_stated_gap": 0.3426,
+      "paper45_s4.2_abs_err": 0.00046521930928172806
+    },
+    {
+      "task": "months",
+      "model": "llama31_8b",
+      "support_name": "S_coarse",
+      "support_S": [
+        2,
+        6
+      ],
+      "thm41_max_forbidden_leakage": 3.046247016926498e-15,
+      "packet_fractions": {
+        "2": 0.05108325101748539,
+        "3": 0.06602801732536602,
+        "4": 0.059103392550400216,
+        "6": 0.1668505584160301,
+        "12": 0.6569347806907182
+      },
+      "gap_fraction_spectral": 0.7820661905664844,
+      "gap_fraction_direct": 0.7820661905664844,
+      "gap_identity_abs_err": 0.0,
+      "paper45_s4.2_stated_gap": 0.7829,
+      "paper45_s4.2_abs_err": 0.000833809433515631
+    },
+    {
+      "task": "months",
+      "model": "llama31_8b",
+      "support_name": "S_all",
+      "support_S": [
+        2,
+        3,
+        4,
+        6,
+        12
+      ],
+      "thm41_max_forbidden_leakage": 4.087711025166632e-15,
+      "packet_fractions": {
+        "2": 0.05108325101748539,
+        "3": 0.06602801732536602,
+        "4": 0.059103392550400216,
+        "6": 0.1668505584160301,
+        "12": 0.6569347806907182
+      },
+      "gap_fraction_spectral": 0.0,
+      "gap_fraction_direct": 2.7015827133607514e-30,
+      "gap_identity_abs_err": 2.7015827133607514e-30,
+      "paper45_s4.2_stated_gap": 0.0,
+      "paper45_s4.2_abs_err": 0.0
+    },
+    {
+      "task": "months",
+      "model": "mistral7b_v0_3",
+      "support_name": "S_full_period",
+      "support_S": [
+        12
+      ],
+      "thm41_max_forbidden_leakage": 1.0924055434939884e-15,
+      "packet_fractions": {
+        "2": 0.02311020487450454,
+        "3": 0.032662083226769174,
+        "4": 0.019122644314093492,
+        "6": 0.13987596615896444,
+        "12": 0.7852291014256684
+      },
+      "gap_fraction_spectral": 0.21477089857433165,
+      "gap_fraction_direct": 0.21477089857433174,
+      "gap_identity_abs_err": 8.326672684688674e-17
+    },
+    {
+      "task": "months",
+      "model": "mistral7b_v0_3",
+      "support_name": "S_coarse",
+      "support_S": [
+        2,
+        6
+      ],
+      "thm41_max_forbidden_leakage": 8.492331016006486e-16,
+      "packet_fractions": {
+        "2": 0.02311020487450454,
+        "3": 0.032662083226769174,
+        "4": 0.019122644314093492,
+        "6": 0.13987596615896444,
+        "12": 0.7852291014256684
+      },
+      "gap_fraction_spectral": 0.8370138289665311,
+      "gap_fraction_direct": 0.837013828966531,
+      "gap_identity_abs_err": 1.1102230246251565e-16
+    },
+    {
+      "task": "months",
+      "model": "mistral7b_v0_3",
+      "support_name": "S_all",
+      "support_S": [
+        2,
+        3,
+        4,
+        6,
+        12
+      ],
+      "thm41_max_forbidden_leakage": 9.084651267253063e-16,
+      "packet_fractions": {
+        "2": 0.02311020487450454,
+        "3": 0.032662083226769174,
+        "4": 0.019122644314093492,
+        "6": 0.13987596615896444,
+        "12": 0.7852291014256684
+      },
+      "gap_fraction_spectral": 0.0,
+      "gap_fraction_direct": 2.7231891931034012e-30,
+      "gap_identity_abs_err": 2.7231891931034012e-30
+    },
+    {
+      "task": "weekdays",
+      "model": "llama31_8b",
+      "support_name": "S_all",
+      "support_S": [
+        7
+      ],
+      "thm41_max_forbidden_leakage": 1.798705501632837e-15,
+      "packet_fractions": {
+        "7": 1.0
+      },
+      "gap_fraction_spectral": 0.0,
+      "gap_fraction_direct": 1.5797889999673276e-30,
+      "gap_identity_abs_err": 1.5797889999673276e-30
+    },
+    {
+      "task": "weekdays",
+      "model": "mistral7b_v0_3",
+      "support_name": "S_all",
+      "support_S": [
+        7
+      ],
+      "thm41_max_forbidden_leakage": 6.366588406914838e-16,
+      "packet_fractions": {
+        "7": 1.0
+      },
+      "gap_fraction_spectral": 0.0,
+      "gap_fraction_direct": 1.0865339492853257e-30,
+      "gap_identity_abs_err": 1.0865339492853257e-30
+    }
+  ],
+  "worst_thm41_leakage": 4.087711025166632e-15,
+  "worst_thm42_identity_err": 1.1102230246251565e-16,
+  "thm41_pass": true,
+  "thm42_pass": true
+}

@@ -1,0 +1,1244 @@
+{
+  "rows": [
+    {
+      "ring": "F_4[u]/(u^2)",
+      "row_key": "ext_ch_cocycle_f4_u2",
+      "source": "C:\\Projects\\simplicial\\empirical\\reports\\ext_ch_cocycle_f4_u2.json",
+      "packets": [
+        "u",
+        "u^2"
+      ],
+      "raw_atom_count": 1569,
+      "raw_pair_count": 369,
+      "pair_orbit_count": 20,
+      "full_block_residual_weight": 1.0,
+      "support_projection_residual_weight": null,
+      "min_active_mass_fraction": 0.01,
+      "best_regular_leaf": "u^2",
+      "best_proper_regular_leaf": "u^2",
+      "leaves": [
+        {
+          "leaf": "u+u^2",
+          "packets": [
+            "u",
+            "u^2"
+          ],
+          "active_orbits": 20,
+          "leaking_orbits": 0,
+          "active_atom_mass": 1569,
+          "internal_atom_mass": 1569,
+          "leaking_atom_mass": 0,
+          "active_mass_fraction": 1.0,
+          "support_leakage_fraction": 0.0,
+          "balanced_leakage": 0.0,
+          "orbit_balanced_leakage": 0.0,
+          "is_regular_by_active_mass": true,
+          "is_full_leaf": true,
+          "generated_targets": {
+            "u": 45,
+            "u^2": 1524
+          }
+        },
+        {
+          "leaf": "u^2",
+          "packets": [
+            "u^2"
+          ],
+          "active_orbits": 7,
+          "leaking_orbits": 0,
+          "active_atom_mass": 576,
+          "internal_atom_mass": 576,
+          "leaking_atom_mass": 0,
+          "active_mass_fraction": 0.367112810707,
+          "support_leakage_fraction": 0.0,
+          "balanced_leakage": 0.0,
+          "orbit_balanced_leakage": 0.0,
+          "is_regular_by_active_mass": true,
+          "is_full_leaf": false,
+          "generated_targets": {
+            "u^2": 576
+          }
+        },
+        {
+          "leaf": "u",
+          "packets": [
+            "u"
+          ],
+          "active_orbits": 4,
+          "leaking_orbits": 2,
+          "active_atom_mass": 45,
+          "internal_atom_mass": 9,
+          "leaking_atom_mass": 36,
+          "active_mass_fraction": 0.028680688337,
+          "support_leakage_fraction": 0.8,
+          "balanced_leakage": 0.8,
+          "orbit_balanced_leakage": 0.5,
+          "is_regular_by_active_mass": true,
+          "is_full_leaf": false,
+          "generated_targets": {
+            "u": 9,
+            "u^2": 36
+          }
+        }
+      ]
+    },
+    {
+      "ring": "F_2[u]/(u^2)",
+      "row_key": "f2-u2",
+      "source": "C:\\Projects\\simplicial\\empirical\\reports\\next_local_row_f2_u2.json",
+      "packets": [
+        "u",
+        "u^2"
+      ],
+      "raw_atom_count": 4,
+      "raw_pair_count": 4,
+      "pair_orbit_count": 2,
+      "full_block_residual_weight": 1.0,
+      "support_projection_residual_weight": 0.0,
+      "min_active_mass_fraction": 0.01,
+      "best_regular_leaf": "u+u^2",
+      "best_proper_regular_leaf": null,
+      "leaves": [
+        {
+          "leaf": "u+u^2",
+          "packets": [
+            "u",
+            "u^2"
+          ],
+          "active_orbits": 2,
+          "leaking_orbits": 0,
+          "active_atom_mass": 4,
+          "internal_atom_mass": 4,
+          "leaking_atom_mass": 0,
+          "active_mass_fraction": 1.0,
+          "support_leakage_fraction": 0.0,
+          "balanced_leakage": 0.0,
+          "orbit_balanced_leakage": 0.0,
+          "is_regular_by_active_mass": true,
+          "is_full_leaf": true,
+          "generated_targets": {
+            "u^2": 4
+          }
+        }
+      ]
+    },
+    {
+      "ring": "F_2[u]/(u^3)",
+      "row_key": "f2-u3",
+      "source": "C:\\Projects\\simplicial\\empirical\\reports\\next_local_row_f2_u3.json",
+      "packets": [
+        "u",
+        "u^2",
+        "u^3"
+      ],
+      "raw_atom_count": 100,
+      "raw_pair_count": 52,
+      "pair_orbit_count": 10,
+      "full_block_residual_weight": 1.0,
+      "support_projection_residual_weight": 0.0,
+      "min_active_mass_fraction": 0.01,
+      "best_regular_leaf": "u^2+u^3",
+      "best_proper_regular_leaf": "u^2+u^3",
+      "leaves": [
+        {
+          "leaf": "u+u^2+u^3",
+          "packets": [
+            "u",
+            "u^2",
+            "u^3"
+          ],
+          "active_orbits": 10,
+          "leaking_orbits": 0,
+          "active_atom_mass": 100,
+          "internal_atom_mass": 100,
+          "leaking_atom_mass": 0,
+          "active_mass_fraction": 1.0,
+          "support_leakage_fraction": 0.0,
+          "balanced_leakage": 0.0,
+          "orbit_balanced_leakage": 0.0,
+          "is_regular_by_active_mass": true,
+          "is_full_leaf": true,
+          "generated_targets": {
+            "u^2": 12,
+            "u^3": 88
+          }
+        },
+        {
+          "leaf": "u^2+u^3",
+          "packets": [
+            "u^2",
+            "u^3"
+          ],
+          "active_orbits": 3,
+          "leaking_orbits": 0,
+          "active_atom_mass": 32,
+          "internal_atom_mass": 32,
+          "leaking_atom_mass": 0,
+          "active_mass_fraction": 0.32,
+          "support_leakage_fraction": 0.0,
+          "balanced_leakage": 0.0,
+          "orbit_balanced_leakage": 0.0,
+          "is_regular_by_active_mass": true,
+          "is_full_leaf": false,
+          "generated_targets": {
+            "u^3": 32
+          }
+        },
+        {
+          "leaf": "u+u^3",
+          "packets": [
+            "u",
+            "u^3"
+          ],
+          "active_orbits": 4,
+          "leaking_orbits": 1,
+          "active_atom_mass": 56,
+          "internal_atom_mass": 48,
+          "leaking_atom_mass": 8,
+          "active_mass_fraction": 0.56,
+          "support_leakage_fraction": 0.142857142857,
+          "balanced_leakage": 0.142857142857,
+          "orbit_balanced_leakage": 0.25,
+          "is_regular_by_active_mass": true,
+          "is_full_leaf": false,
+          "generated_targets": {
+            "u^2": 8,
+            "u^3": 48
+          }
+        },
+        {
+          "leaf": "u+u^2",
+          "packets": [
+            "u",
+            "u^2"
+          ],
+          "active_orbits": 3,
+          "leaking_orbits": 1,
+          "active_atom_mass": 12,
+          "internal_atom_mass": 4,
+          "leaking_atom_mass": 8,
+          "active_mass_fraction": 0.12,
+          "support_leakage_fraction": 0.666666666667,
+          "balanced_leakage": 0.666666666667,
+          "orbit_balanced_leakage": 0.333333333333,
+          "is_regular_by_active_mass": true,
+          "is_full_leaf": false,
+          "generated_targets": {
+            "u^2": 4,
+            "u^3": 8
+          }
+        }
+      ]
+    },
+    {
+      "ring": "F_2[u]/(u^4)",
+      "row_key": "f2-u4",
+      "source": "C:\\Projects\\simplicial\\empirical\\reports\\next_local_row_f2_u4.json",
+      "packets": [
+        "u",
+        "u^2",
+        "u^3",
+        "u^4"
+      ],
+      "raw_atom_count": 1540,
+      "raw_pair_count": 404,
+      "pair_orbit_count": 33,
+      "full_block_residual_weight": 1.0,
+      "support_projection_residual_weight": 0.0,
+      "min_active_mass_fraction": 0.01,
+      "best_regular_leaf": "u^3+u^4",
+      "best_proper_regular_leaf": "u^3+u^4",
+      "leaves": [
+        {
+          "leaf": "u+u^2+u^3+u^4",
+          "packets": [
+            "u",
+            "u^2",
+            "u^3",
+            "u^4"
+          ],
+          "active_orbits": 33,
+          "leaking_orbits": 0,
+          "active_atom_mass": 1540,
+          "internal_atom_mass": 1540,
+          "leaking_atom_mass": 0,
+          "active_mass_fraction": 1.0,
+          "support_leakage_fraction": 0.0,
+          "balanced_leakage": 0.0,
+          "orbit_balanced_leakage": 0.0,
+          "is_regular_by_active_mass": true,
+          "is_full_leaf": true,
+          "generated_targets": {
+            "u^2": 28,
+            "u^3": 248,
+            "u^4": 1264
+          }
+        },
+        {
+          "leaf": "u^2+u^3+u^4",
+          "packets": [
+            "u^2",
+            "u^3",
+            "u^4"
+          ],
+          "active_orbits": 15,
+          "leaking_orbits": 0,
+          "active_atom_mass": 800,
+          "internal_atom_mass": 800,
+          "leaking_atom_mass": 0,
+          "active_mass_fraction": 0.519480519481,
+          "support_leakage_fraction": 0.0,
+          "balanced_leakage": 0.0,
+          "orbit_balanced_leakage": 0.0,
+          "is_regular_by_active_mass": true,
+          "is_full_leaf": false,
+          "generated_targets": {
+            "u^3": 96,
+            "u^4": 704
+          }
+        },
+        {
+          "leaf": "u^3+u^4",
+          "packets": [
+            "u^3",
+            "u^4"
+          ],
+          "active_orbits": 5,
+          "leaking_orbits": 0,
+          "active_atom_mass": 256,
+          "internal_atom_mass": 256,
+          "leaking_atom_mass": 0,
+          "active_mass_fraction": 0.166233766234,
+          "support_leakage_fraction": 0.0,
+          "balanced_leakage": 0.0,
+          "orbit_balanced_leakage": 0.0,
+          "is_regular_by_active_mass": true,
+          "is_full_leaf": false,
+          "generated_targets": {
+            "u^4": 256
+          }
+        },
+        {
+          "leaf": "u+u^3+u^4",
+          "packets": [
+            "u",
+            "u^3",
+            "u^4"
+          ],
+          "active_orbits": 18,
+          "leaking_orbits": 3,
+          "active_atom_mass": 968,
+          "internal_atom_mass": 944,
+          "leaking_atom_mass": 24,
+          "active_mass_fraction": 0.628571428571,
+          "support_leakage_fraction": 0.02479338843,
+          "balanced_leakage": 0.02479338843,
+          "orbit_balanced_leakage": 0.166666666667,
+          "is_regular_by_active_mass": true,
+          "is_full_leaf": false,
+          "generated_targets": {
+            "u^2": 24,
+            "u^3": 144,
+            "u^4": 800
+          }
+        },
+        {
+          "leaf": "u^2+u^4",
+          "packets": [
+            "u^2",
+            "u^4"
+          ],
+          "active_orbits": 6,
+          "leaking_orbits": 1,
+          "active_atom_mass": 448,
+          "internal_atom_mass": 384,
+          "leaking_atom_mass": 64,
+          "active_mass_fraction": 0.290909090909,
+          "support_leakage_fraction": 0.142857142857,
+          "balanced_leakage": 0.142857142857,
+          "orbit_balanced_leakage": 0.166666666667,
+          "is_regular_by_active_mass": true,
+          "is_full_leaf": false,
+          "generated_targets": {
+            "u^3": 64,
+            "u^4": 384
+          }
+        },
+        {
+          "leaf": "u+u^2+u^4",
+          "packets": [
+            "u",
+            "u^2",
+            "u^4"
+          ],
+          "active_orbits": 19,
+          "leaking_orbits": 3,
+          "active_atom_mass": 1036,
+          "internal_atom_mass": 868,
+          "leaking_atom_mass": 168,
+          "active_mass_fraction": 0.672727272727,
+          "support_leakage_fraction": 0.162162162162,
+          "balanced_leakage": 0.162162162162,
+          "orbit_balanced_leakage": 0.157894736842,
+          "is_regular_by_active_mass": true,
+          "is_full_leaf": false,
+          "generated_targets": {
+            "u^2": 20,
+            "u^3": 168,
+            "u^4": 848
+          }
+        },
+        {
+          "leaf": "u+u^4",
+          "packets": [
+            "u",
+            "u^4"
+          ],
+          "active_orbits": 8,
+          "leaking_orbits": 3,
+          "active_atom_mass": 560,
+          "internal_atom_mass": 448,
+          "leaking_atom_mass": 112,
+          "active_mass_fraction": 0.363636363636,
+          "support_leakage_fraction": 0.2,
+          "balanced_leakage": 0.2,
+          "orbit_balanced_leakage": 0.375,
+          "is_regular_by_active_mass": true,
+          "is_full_leaf": false,
+          "generated_targets": {
+            "u^2": 16,
+            "u^3": 96,
+            "u^4": 448
+          }
+        },
+        {
+          "leaf": "u+u^2+u^3",
+          "packets": [
+            "u",
+            "u^2",
+            "u^3"
+          ],
+          "active_orbits": 14,
+          "leaking_orbits": 4,
+          "active_atom_mass": 276,
+          "internal_atom_mass": 100,
+          "leaking_atom_mass": 176,
+          "active_mass_fraction": 0.179220779221,
+          "support_leakage_fraction": 0.63768115942,
+          "balanced_leakage": 0.63768115942,
+          "orbit_balanced_leakage": 0.285714285714,
+          "is_regular_by_active_mass": true,
+          "is_full_leaf": false,
+          "generated_targets": {
+            "u^2": 12,
+            "u^3": 88,
+            "u^4": 176
+          }
+        },
+        {
+          "leaf": "u^2+u^3",
+          "packets": [
+            "u^2",
+            "u^3"
+          ],
+          "active_orbits": 4,
+          "leaking_orbits": 1,
+          "active_atom_mass": 96,
+          "internal_atom_mass": 32,
+          "leaking_atom_mass": 64,
+          "active_mass_fraction": 0.062337662338,
+          "support_leakage_fraction": 0.666666666667,
+          "balanced_leakage": 0.666666666667,
+          "orbit_balanced_leakage": 0.25,
+          "is_regular_by_active_mass": true,
+          "is_full_leaf": false,
+          "generated_targets": {
+            "u^3": 32,
+            "u^4": 64
+          }
+        },
+        {
+          "leaf": "u+u^3",
+          "packets": [
+            "u",
+            "u^3"
+          ],
+          "active_orbits": 5,
+          "leaking_orbits": 2,
+          "active_atom_mass": 152,
+          "internal_atom_mass": 48,
+          "leaking_atom_mass": 104,
+          "active_mass_fraction": 0.098701298701,
+          "support_leakage_fraction": 0.684210526316,
+          "balanced_leakage": 0.684210526316,
+          "orbit_balanced_leakage": 0.4,
+          "is_regular_by_active_mass": true,
+          "is_full_leaf": false,
+          "generated_targets": {
+            "u^2": 8,
+            "u^3": 48,
+            "u^4": 96
+          }
+        },
+        {
+          "leaf": "u+u^2",
+          "packets": [
+            "u",
+            "u^2"
+          ],
+          "active_orbits": 5,
+          "leaking_orbits": 3,
+          "active_atom_mass": 28,
+          "internal_atom_mass": 4,
+          "leaking_atom_mass": 24,
+          "active_mass_fraction": 0.018181818182,
+          "support_leakage_fraction": 0.857142857143,
+          "balanced_leakage": 0.857142857143,
+          "orbit_balanced_leakage": 0.6,
+          "is_regular_by_active_mass": true,
+          "is_full_leaf": false,
+          "generated_targets": {
+            "u^2": 4,
+            "u^3": 8,
+            "u^4": 16
+          }
+        }
+      ]
+    },
+    {
+      "ring": "F_2[u]/(u^5)",
+      "row_key": "f2-u5",
+      "source": "C:\\Projects\\simplicial\\empirical\\reports\\next_local_row_f2_u5.json",
+      "packets": [
+        "u",
+        "u^2",
+        "u^3",
+        "u^4",
+        "u^5"
+      ],
+      "raw_atom_count": 19140,
+      "raw_pair_count": 2516,
+      "pair_orbit_count": 81,
+      "full_block_residual_weight": 1.0,
+      "support_projection_residual_weight": 0.0,
+      "min_active_mass_fraction": 0.01,
+      "best_regular_leaf": "u^4+u^5",
+      "best_proper_regular_leaf": "u^4+u^5",
+      "leaves": [
+        {
+          "leaf": "u+u^2+u^3+u^4+u^5",
+          "packets": [
+            "u",
+            "u^2",
+            "u^3",
+            "u^4",
+            "u^5"
+          ],
+          "active_orbits": 81,
+          "leaking_orbits": 0,
+          "active_atom_mass": 19140,
+          "internal_atom_mass": 19140,
+          "leaking_atom_mass": 0,
+          "active_mass_fraction": 1.0,
+          "support_leakage_fraction": 0.0,
+          "balanced_leakage": 0.0,
+          "orbit_balanced_leakage": 0.0,
+          "is_regular_by_active_mass": true,
+          "is_full_leaf": true,
+          "generated_targets": {
+            "u^2": 60,
+            "u^3": 568,
+            "u^4": 3440,
+            "u^5": 15072
+          }
+        },
+        {
+          "leaf": "u^2+u^3+u^4+u^5",
+          "packets": [
+            "u^2",
+            "u^3",
+            "u^4",
+            "u^5"
+          ],
+          "active_orbits": 46,
+          "leaking_orbits": 0,
+          "active_atom_mass": 12320,
+          "internal_atom_mass": 12320,
+          "leaking_atom_mass": 0,
+          "active_mass_fraction": 0.64367816092,
+          "support_leakage_fraction": 0.0,
+          "balanced_leakage": 0.0,
+          "orbit_balanced_leakage": 0.0,
+          "is_regular_by_active_mass": true,
+          "is_full_leaf": false,
+          "generated_targets": {
+            "u^3": 224,
+            "u^4": 1984,
+            "u^5": 10112
+          }
+        },
+        {
+          "leaf": "u^3+u^4+u^5",
+          "packets": [
+            "u^3",
+            "u^4",
+            "u^5"
+          ],
+          "active_orbits": 21,
+          "leaking_orbits": 0,
+          "active_atom_mass": 6400,
+          "internal_atom_mass": 6400,
+          "leaking_atom_mass": 0,
+          "active_mass_fraction": 0.334378265413,
+          "support_leakage_fraction": 0.0,
+          "balanced_leakage": 0.0,
+          "orbit_balanced_leakage": 0.0,
+          "is_regular_by_active_mass": true,
+          "is_full_leaf": false,
+          "generated_targets": {
+            "u^4": 768,
+            "u^5": 5632
+          }
+        },
+        {
+          "leaf": "u^4+u^5",
+          "packets": [
+            "u^4",
+            "u^5"
+          ],
+          "active_orbits": 7,
+          "leaking_orbits": 0,
+          "active_atom_mass": 2048,
+          "internal_atom_mass": 2048,
+          "leaking_atom_mass": 0,
+          "active_mass_fraction": 0.107001044932,
+          "support_leakage_fraction": 0.0,
+          "balanced_leakage": 0.0,
+          "orbit_balanced_leakage": 0.0,
+          "is_regular_by_active_mass": true,
+          "is_full_leaf": false,
+          "generated_targets": {
+            "u^5": 2048
+          }
+        },
+        {
+          "leaf": "u+u^3+u^4+u^5",
+          "packets": [
+            "u",
+            "u^3",
+            "u^4",
+            "u^5"
+          ],
+          "active_orbits": 50,
+          "leaking_orbits": 4,
+          "active_atom_mass": 13160,
+          "internal_atom_mass": 13104,
+          "leaking_atom_mass": 56,
+          "active_mass_fraction": 0.687565308255,
+          "support_leakage_fraction": 0.004255319149,
+          "balanced_leakage": 0.004255319149,
+          "orbit_balanced_leakage": 0.08,
+          "is_regular_by_active_mass": true,
+          "is_full_leaf": false,
+          "generated_targets": {
+            "u^2": 56,
+            "u^3": 336,
+            "u^4": 2208,
+            "u^5": 10560
+          }
+        },
+        {
+          "leaf": "u^2+u^4+u^5",
+          "packets": [
+            "u^2",
+            "u^4",
+            "u^5"
+          ],
+          "active_orbits": 25,
+          "leaking_orbits": 4,
+          "active_atom_mass": 7744,
+          "internal_atom_mass": 7552,
+          "leaking_atom_mass": 192,
+          "active_mass_fraction": 0.404597701149,
+          "support_leakage_fraction": 0.02479338843,
+          "balanced_leakage": 0.02479338843,
+          "orbit_balanced_leakage": 0.16,
+          "is_regular_by_active_mass": true,
+          "is_full_leaf": false,
+          "generated_targets": {
+            "u^3": 192,
+            "u^4": 1152,
+            "u^5": 6400
+          }
+        },
+        {
+          "leaf": "u+u^2+u^4+u^5",
+          "packets": [
+            "u",
+            "u^2",
+            "u^4",
+            "u^5"
+          ],
+          "active_orbits": 52,
+          "leaking_orbits": 9,
+          "active_atom_mass": 14220,
+          "internal_atom_mass": 13732,
+          "leaking_atom_mass": 488,
+          "active_mass_fraction": 0.742946708464,
+          "support_leakage_fraction": 0.034317862166,
+          "balanced_leakage": 0.034317862166,
+          "orbit_balanced_leakage": 0.173076923077,
+          "is_regular_by_active_mass": true,
+          "is_full_leaf": false,
+          "generated_targets": {
+            "u^2": 52,
+            "u^3": 488,
+            "u^4": 2512,
+            "u^5": 11168
+          }
+        },
+        {
+          "leaf": "u+u^4+u^5",
+          "packets": [
+            "u",
+            "u^4",
+            "u^5"
+          ],
+          "active_orbits": 28,
+          "leaking_orbits": 7,
+          "active_atom_mass": 8464,
+          "internal_atom_mass": 8128,
+          "leaking_atom_mass": 336,
+          "active_mass_fraction": 0.442215256008,
+          "support_leakage_fraction": 0.039697542533,
+          "balanced_leakage": 0.039697542533,
+          "orbit_balanced_leakage": 0.25,
+          "is_regular_by_active_mass": true,
+          "is_full_leaf": false,
+          "generated_targets": {
+            "u^2": 48,
+            "u^3": 288,
+            "u^4": 1344,
+            "u^5": 6784
+          }
+        },
+        {
+          "leaf": "u^3+u^5",
+          "packets": [
+            "u^3",
+            "u^5"
+          ],
+          "active_orbits": 8,
+          "leaking_orbits": 1,
+          "active_atom_mass": 3584,
+          "internal_atom_mass": 3072,
+          "leaking_atom_mass": 512,
+          "active_mass_fraction": 0.187251828631,
+          "support_leakage_fraction": 0.142857142857,
+          "balanced_leakage": 0.142857142857,
+          "orbit_balanced_leakage": 0.125,
+          "is_regular_by_active_mass": true,
+          "is_full_leaf": false,
+          "generated_targets": {
+            "u^4": 512,
+            "u^5": 3072
+          }
+        },
+        {
+          "leaf": "u^2+u^3+u^5",
+          "packets": [
+            "u^2",
+            "u^3",
+            "u^5"
+          ],
+          "active_orbits": 26,
+          "leaking_orbits": 3,
+          "active_atom_mass": 8288,
+          "internal_atom_mass": 6944,
+          "leaking_atom_mass": 1344,
+          "active_mass_fraction": 0.43301985371,
+          "support_leakage_fraction": 0.162162162162,
+          "balanced_leakage": 0.162162162162,
+          "orbit_balanced_leakage": 0.115384615385,
+          "is_regular_by_active_mass": true,
+          "is_full_leaf": false,
+          "generated_targets": {
+            "u^3": 160,
+            "u^4": 1344,
+            "u^5": 6784
+          }
+        },
+        {
+          "leaf": "u+u^2+u^3+u^5",
+          "packets": [
+            "u",
+            "u^2",
+            "u^3",
+            "u^5"
+          ],
+          "active_orbits": 52,
+          "leaking_orbits": 7,
+          "active_atom_mass": 13652,
+          "internal_atom_mass": 11300,
+          "leaking_atom_mass": 2352,
+          "active_mass_fraction": 0.713270637409,
+          "support_leakage_fraction": 0.172282449458,
+          "balanced_leakage": 0.172282449458,
+          "orbit_balanced_leakage": 0.134615384615,
+          "is_regular_by_active_mass": true,
+          "is_full_leaf": false,
+          "generated_targets": {
+            "u^2": 44,
+            "u^3": 408,
+            "u^4": 2352,
+            "u^5": 10848
+          }
+        },
+        {
+          "leaf": "u+u^3+u^5",
+          "packets": [
+            "u",
+            "u^3",
+            "u^5"
+          ],
+          "active_orbits": 28,
+          "leaking_orbits": 5,
+          "active_atom_mass": 8888,
+          "internal_atom_mass": 7344,
+          "leaking_atom_mass": 1544,
+          "active_mass_fraction": 0.464367816092,
+          "support_leakage_fraction": 0.173717371737,
+          "balanced_leakage": 0.173717371737,
+          "orbit_balanced_leakage": 0.178571428571,
+          "is_regular_by_active_mass": true,
+          "is_full_leaf": false,
+          "generated_targets": {
+            "u^2": 40,
+            "u^3": 240,
+            "u^4": 1504,
+            "u^5": 7104
+          }
+        },
+        {
+          "leaf": "u^2+u^5",
+          "packets": [
+            "u^2",
+            "u^5"
+          ],
+          "active_orbits": 11,
+          "leaking_orbits": 4,
+          "active_atom_mass": 4480,
+          "internal_atom_mass": 3584,
+          "leaking_atom_mass": 896,
+          "active_mass_fraction": 0.234064785789,
+          "support_leakage_fraction": 0.2,
+          "balanced_leakage": 0.2,
+          "orbit_balanced_leakage": 0.363636363636,
+          "is_regular_by_active_mass": true,
+          "is_full_leaf": false,
+          "generated_targets": {
+            "u^3": 128,
+            "u^4": 768,
+            "u^5": 3584
+          }
+        },
+        {
+          "leaf": "u+u^2+u^5",
+          "packets": [
+            "u",
+            "u^2",
+            "u^5"
+          ],
+          "active_orbits": 29,
+          "leaking_orbits": 11,
+          "active_atom_mass": 9500,
+          "internal_atom_mass": 7492,
+          "leaking_atom_mass": 2008,
+          "active_mass_fraction": 0.496342737722,
+          "support_leakage_fraction": 0.211368421053,
+          "balanced_leakage": 0.211368421053,
+          "orbit_balanced_leakage": 0.379310344828,
+          "is_regular_by_active_mass": true,
+          "is_full_leaf": false,
+          "generated_targets": {
+            "u^2": 36,
+            "u^3": 328,
+            "u^4": 1680,
+            "u^5": 7456
+          }
+        },
+        {
+          "leaf": "u+u^5",
+          "packets": [
+            "u",
+            "u^5"
+          ],
+          "active_orbits": 12,
+          "leaking_orbits": 5,
+          "active_atom_mass": 4960,
+          "internal_atom_mass": 3840,
+          "leaking_atom_mass": 1120,
+          "active_mass_fraction": 0.259143155695,
+          "support_leakage_fraction": 0.225806451613,
+          "balanced_leakage": 0.225806451613,
+          "orbit_balanced_leakage": 0.416666666667,
+          "is_regular_by_active_mass": true,
+          "is_full_leaf": false,
+          "generated_targets": {
+            "u^2": 32,
+            "u^3": 192,
+            "u^4": 896,
+            "u^5": 3840
+          }
+        },
+        {
+          "leaf": "u+u^2+u^3+u^4",
+          "packets": [
+            "u",
+            "u^2",
+            "u^3",
+            "u^4"
+          ],
+          "active_orbits": 43,
+          "leaking_orbits": 10,
+          "active_atom_mass": 4068,
+          "internal_atom_mass": 1540,
+          "leaking_atom_mass": 2528,
+          "active_mass_fraction": 0.212539184953,
+          "support_leakage_fraction": 0.621435594887,
+          "balanced_leakage": 0.621435594887,
+          "orbit_balanced_leakage": 0.232558139535,
+          "is_regular_by_active_mass": true,
+          "is_full_leaf": false,
+          "generated_targets": {
+            "u^2": 28,
+            "u^3": 248,
+            "u^4": 1264,
+            "u^5": 2528
+          }
+        },
+        {
+          "leaf": "u+u^3+u^4",
+          "packets": [
+            "u",
+            "u^3",
+            "u^4"
+          ],
+          "active_orbits": 23,
+          "leaking_orbits": 8,
+          "active_atom_mass": 2568,
+          "internal_atom_mass": 944,
+          "leaking_atom_mass": 1624,
+          "active_mass_fraction": 0.134169278997,
+          "support_leakage_fraction": 0.632398753894,
+          "balanced_leakage": 0.632398753894,
+          "orbit_balanced_leakage": 0.347826086957,
+          "is_regular_by_active_mass": true,
+          "is_full_leaf": false,
+          "generated_targets": {
+            "u^2": 24,
+            "u^3": 144,
+            "u^4": 800,
+            "u^5": 1600
+          }
+        },
+        {
+          "leaf": "u^2+u^3+u^4",
+          "packets": [
+            "u^2",
+            "u^3",
+            "u^4"
+          ],
+          "active_orbits": 20,
+          "leaking_orbits": 5,
+          "active_atom_mass": 2208,
+          "internal_atom_mass": 800,
+          "leaking_atom_mass": 1408,
+          "active_mass_fraction": 0.115360501567,
+          "support_leakage_fraction": 0.63768115942,
+          "balanced_leakage": 0.63768115942,
+          "orbit_balanced_leakage": 0.25,
+          "is_regular_by_active_mass": true,
+          "is_full_leaf": false,
+          "generated_targets": {
+            "u^3": 96,
+            "u^4": 704,
+            "u^5": 1408
+          }
+        },
+        {
+          "leaf": "u^3+u^4",
+          "packets": [
+            "u^3",
+            "u^4"
+          ],
+          "active_orbits": 6,
+          "leaking_orbits": 1,
+          "active_atom_mass": 768,
+          "internal_atom_mass": 256,
+          "leaking_atom_mass": 512,
+          "active_mass_fraction": 0.04012539185,
+          "support_leakage_fraction": 0.666666666667,
+          "balanced_leakage": 0.666666666667,
+          "orbit_balanced_leakage": 0.166666666667,
+          "is_regular_by_active_mass": true,
+          "is_full_leaf": false,
+          "generated_targets": {
+            "u^4": 256,
+            "u^5": 512
+          }
+        },
+        {
+          "leaf": "u+u^2+u^4",
+          "packets": [
+            "u",
+            "u^2",
+            "u^4"
+          ],
+          "active_orbits": 22,
+          "leaking_orbits": 6,
+          "active_atom_mass": 2732,
+          "internal_atom_mass": 868,
+          "leaking_atom_mass": 1864,
+          "active_mass_fraction": 0.142737722048,
+          "support_leakage_fraction": 0.682284040996,
+          "balanced_leakage": 0.682284040996,
+          "orbit_balanced_leakage": 0.272727272727,
+          "is_regular_by_active_mass": true,
+          "is_full_leaf": false,
+          "generated_targets": {
+            "u^2": 20,
+            "u^3": 168,
+            "u^4": 848,
+            "u^5": 1696
+          }
+        },
+        {
+          "leaf": "u^2+u^4",
+          "packets": [
+            "u^2",
+            "u^4"
+          ],
+          "active_orbits": 7,
+          "leaking_orbits": 2,
+          "active_atom_mass": 1216,
+          "internal_atom_mass": 384,
+          "leaking_atom_mass": 832,
+          "active_mass_fraction": 0.063531870428,
+          "support_leakage_fraction": 0.684210526316,
+          "balanced_leakage": 0.684210526316,
+          "orbit_balanced_leakage": 0.285714285714,
+          "is_regular_by_active_mass": true,
+          "is_full_leaf": false,
+          "generated_targets": {
+            "u^3": 64,
+            "u^4": 384,
+            "u^5": 768
+          }
+        },
+        {
+          "leaf": "u+u^4",
+          "packets": [
+            "u",
+            "u^4"
+          ],
+          "active_orbits": 9,
+          "leaking_orbits": 4,
+          "active_atom_mass": 1456,
+          "internal_atom_mass": 448,
+          "leaking_atom_mass": 1008,
+          "active_mass_fraction": 0.076071055381,
+          "support_leakage_fraction": 0.692307692308,
+          "balanced_leakage": 0.692307692308,
+          "orbit_balanced_leakage": 0.444444444444,
+          "is_regular_by_active_mass": true,
+          "is_full_leaf": false,
+          "generated_targets": {
+            "u^2": 16,
+            "u^3": 96,
+            "u^4": 448,
+            "u^5": 896
+          }
+        },
+        {
+          "leaf": "u+u^2+u^3",
+          "packets": [
+            "u",
+            "u^2",
+            "u^3"
+          ],
+          "active_orbits": 21,
+          "leaking_orbits": 11,
+          "active_atom_mass": 628,
+          "internal_atom_mass": 100,
+          "leaking_atom_mass": 528,
+          "active_mass_fraction": 0.032810867294,
+          "support_leakage_fraction": 0.84076433121,
+          "balanced_leakage": 0.84076433121,
+          "orbit_balanced_leakage": 0.52380952381,
+          "is_regular_by_active_mass": true,
+          "is_full_leaf": false,
+          "generated_targets": {
+            "u^2": 12,
+            "u^3": 88,
+            "u^4": 176,
+            "u^5": 352
+          }
+        },
+        {
+          "leaf": "u^2+u^3",
+          "packets": [
+            "u^2",
+            "u^3"
+          ],
+          "active_orbits": 7,
+          "leaking_orbits": 4,
+          "active_atom_mass": 224,
+          "internal_atom_mass": 32,
+          "leaking_atom_mass": 192,
+          "active_mass_fraction": 0.011703239289,
+          "support_leakage_fraction": 0.857142857143,
+          "balanced_leakage": 0.857142857143,
+          "orbit_balanced_leakage": 0.571428571429,
+          "is_regular_by_active_mass": true,
+          "is_full_leaf": false,
+          "generated_targets": {
+            "u^3": 32,
+            "u^4": 64,
+            "u^5": 128
+          }
+        },
+        {
+          "leaf": "u+u^3",
+          "packets": [
+            "u",
+            "u^3"
+          ],
+          "active_orbits": 8,
+          "leaking_orbits": 5,
+          "active_atom_mass": 344,
+          "internal_atom_mass": 48,
+          "leaking_atom_mass": 296,
+          "active_mass_fraction": 0.017972831766,
+          "support_leakage_fraction": 0.860465116279,
+          "balanced_leakage": 0.860465116279,
+          "orbit_balanced_leakage": 0.625,
+          "is_regular_by_active_mass": true,
+          "is_full_leaf": false,
+          "generated_targets": {
+            "u^2": 8,
+            "u^3": 48,
+            "u^4": 96,
+            "u^5": 192
+          }
+        },
+        {
+          "leaf": "u+u^2",
+          "packets": [
+            "u",
+            "u^2"
+          ],
+          "active_orbits": 6,
+          "leaking_orbits": 4,
+          "active_atom_mass": 60,
+          "internal_atom_mass": 4,
+          "leaking_atom_mass": 56,
+          "active_mass_fraction": 0.003134796238,
+          "support_leakage_fraction": 0.933333333333,
+          "balanced_leakage": 0.933333333333,
+          "orbit_balanced_leakage": 0.666666666667,
+          "is_regular_by_active_mass": false,
+          "is_full_leaf": false,
+          "generated_targets": {
+            "u^2": 4,
+            "u^3": 8,
+            "u^4": 16,
+            "u^5": 32
+          }
+        }
+      ]
+    },
+    {
+      "ring": "F_8[u]/(u^2)",
+      "row_key": "f8-u2",
+      "source": "C:\\Projects\\simplicial\\empirical\\reports\\next_local_row_f8_u2.json",
+      "packets": [
+        "u",
+        "u^2"
+      ],
+      "raw_atom_count": 158081,
+      "raw_pair_count": 7105,
+      "pair_orbit_count": 49,
+      "full_block_residual_weight": 1.0,
+      "support_projection_residual_weight": 0.0,
+      "min_active_mass_fraction": 0.01,
+      "best_regular_leaf": "u^2",
+      "best_proper_regular_leaf": "u^2",
+      "leaves": [
+        {
+          "leaf": "u+u^2",
+          "packets": [
+            "u",
+            "u^2"
+          ],
+          "active_orbits": 49,
+          "leaking_orbits": 0,
+          "active_atom_mass": 158081,
+          "internal_atom_mass": 158081,
+          "leaking_atom_mass": 0,
+          "active_mass_fraction": 1.0,
+          "support_leakage_fraction": 0.0,
+          "balanced_leakage": 0.0,
+          "orbit_balanced_leakage": 0.0,
+          "is_regular_by_active_mass": true,
+          "is_full_leaf": true,
+          "generated_targets": {
+            "u": 441,
+            "u^2": 157640
+          }
+        },
+        {
+          "leaf": "u^2",
+          "packets": [
+            "u^2"
+          ],
+          "active_orbits": 20,
+          "leaking_orbits": 0,
+          "active_atom_mass": 25088,
+          "internal_atom_mass": 25088,
+          "leaking_atom_mass": 0,
+          "active_mass_fraction": 0.158703449497,
+          "support_leakage_fraction": 0.0,
+          "balanced_leakage": 0.0,
+          "orbit_balanced_leakage": 0.0,
+          "is_regular_by_active_mass": true,
+          "is_full_leaf": false,
+          "generated_targets": {
+            "u^2": 25088
+          }
+        },
+        {
+          "leaf": "u",
+          "packets": [
+            "u"
+          ],
+          "active_orbits": 6,
+          "leaking_orbits": 3,
+          "active_atom_mass": 441,
+          "internal_atom_mass": 49,
+          "leaking_atom_mass": 392,
+          "active_mass_fraction": 0.002789709073,
+          "support_leakage_fraction": 0.888888888889,
+          "balanced_leakage": 0.888888888889,
+          "orbit_balanced_leakage": 0.5,
+          "is_regular_by_active_mass": false,
+          "is_full_leaf": false,
+          "generated_targets": {
+            "u": 49,
+            "u^2": 392
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,81 @@
+{
+  "N": 30,
+  "phi_N": 8,
+  "characters": [
+    {
+      "name": "chi_3  (Legendre mod 3)",
+      "conductor": 3,
+      "L_half_re": 0.48086755769682865,
+      "L_half_im": 0.0,
+      "L_half_abs": 0.48086755769682865,
+      "LpL_re": 0.5659892384838813,
+      "LpL_im": 0.0,
+      "LpL_abs_sq": 0.3203438180795639
+    },
+    {
+      "name": "chi_5  (Legendre mod 5)",
+      "conductor": 5,
+      "L_half_re": 0.23175094750401576,
+      "L_half_im": 0.0,
+      "L_half_abs": 0.23175094750401576,
+      "LpL_re": 1.8813727533957827,
+      "LpL_im": 0.0,
+      "LpL_abs_sq": 3.5395634372200284
+    },
+    {
+      "name": "chi_5  (quartic_a mod 5)",
+      "conductor": 5,
+      "L_half_re": 0.7637478801172869,
+      "L_half_im": 0.2169647675188607,
+      "L_half_abs": 0.793967590477195,
+      "LpL_re": 0.31057642660088597,
+      "LpL_im": -0.09073075652311154,
+      "LpL_abs_sq": 0.10468978693943166
+    },
+    {
+      "name": "chi_5  (quartic_b mod 5, conj)",
+      "conductor": 5,
+      "L_half_re": 0.7637478801172869,
+      "L_half_im": -0.2169647675188607,
+      "L_half_abs": 0.793967590477195,
+      "LpL_re": 0.31057642660088597,
+      "LpL_im": 0.09073075652311154,
+      "LpL_abs_sq": 0.10468978693943166
+    },
+    {
+      "name": "chi_15 (Legendre mod 15)",
+      "conductor": 15,
+      "L_half_re": 1.8470293430675109,
+      "L_half_im": 0.0,
+      "L_half_abs": 1.8470293430675109,
+      "LpL_re": -0.23872971773316887,
+      "LpL_im": 0.0,
+      "LpL_abs_sq": 0.05699187812895848
+    },
+    {
+      "name": "chi_15 (Legendre x quartic_a mod 15)",
+      "conductor": 15,
+      "L_half_re": 0.481886161298576,
+      "L_half_im": -0.26866913139953563,
+      "L_half_abs": 0.5517221897096927,
+      "LpL_re": 1.3320666090617277,
+      "LpL_im": 0.21014675160997195,
+      "LpL_abs_sq": 1.8185631081894331
+    },
+    {
+      "name": "chi_15 (Legendre x quartic_b mod 15)",
+      "conductor": 15,
+      "L_half_re": 0.481886161298576,
+      "L_half_im": 0.26866913139953563,
+      "L_half_abs": 0.5517221897096927,
+      "LpL_re": 1.3320666090617277,
+      "LpL_im": -0.21014675160997195,
+      "LpL_abs_sq": 1.8185631081894331
+    }
+  ],
+  "sum_LpL_sq": 7.76340492368628,
+  "C_central": 0.970425615460785,
+  "ell1_joint_nontriv": 1.7402948776621914,
+  "C_spectral": 0.21753685970777392,
+  "predicted_cesaro_mean": 1.187962475168559
+}

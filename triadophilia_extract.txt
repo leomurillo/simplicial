@@ -1,0 +1,816 @@
+===PAGE 2===
+TRIADOPHILIA: A SPECIAL CORNER IN THE LANDSCAPE 431
+1 Introduction and summary
+1.1 Survey of constructions of Calabi–Yau manifolds
+Until the interest in Calabi–Yau manifolds that derived from string theory,
+very few of these were known explicitly; the manifolds had, at that time,
+only recently been shown to exist. Owing to the interest from string theory,
+increasingly large classes of Calabi–Yau manifolds were constructed. Since,
+however, it seems to be impossible to construct classes of manifolds with
+desired properties, one must perforce construct large classes of manifolds
+that are then searched for cases that are phenomenologically interesting.
+Tian and Yau [1] were nevertheless able, at a very early stage, to ﬁnd two
+manifolds with Euler number χ = −6 leading to a model with three gener-
+ations of particles. Both of these have Hodge numbers ( h
+11,h21)=( 6 ,9).
+Motivated by these examples, Schimmrigk [2] found a third manifold with
+χ = −6, and with the same Hodge numbers. This same manifold was redis-
+covered, shortly afterwards, by Gepner [3] in the process of constructing
+rational conformal ﬁeld theories. We can denote the three families of mani-
+folds, families because they have parameters, in the following way:
+M
+′′= N′′/A, M ′= ˆN′/A × B and M = ˆN/A × B × C, (1.1)
+where
+N′′= P3
+P3
+[
+130
+103
+]
+−18
+,N ′= P2
+P3
+[
+30
+13
+]
+−54
+,N = P2
+P2
+[
+3
+3
+]
+−162
+. (1.2)
+The notation denotes that N′′, for example, is realized in the product
+P3 × P3 by three equations whose degrees, in the variables of the two projec-
+tive spaces, are given by the columns of the matrix. The subscripts appended
+to the matrix are the Euler numbers of the manifolds and the notation
+in (1.1) indicates that the manifolds are quotiented by certain groups A, B
+and C. Each of these groups is abstractly a Z
+3. The group A acts freely
+but B and C each leave ﬁxed a certain curve, in fact a torus, within the
+manifold and the hats indicate that these ﬁxed tori are resolved. It was
+suspected, on the basis of the identity of the Hodge numbers together with
+the fact that they fall into a sequence, that the manifolds in fact belong to
+the same irreducible family, and this was shown to be the case in [4].
+Despite the ease with which these early examples had been found, further
+examples of manifolds with χ = ±6 proved much more elusive. The class
+of all Calabi–Yau manifolds that can be realised as a complete intersection
+of polynomials in a product of projective spaces, known as the Complete
+Intersection Calabi–Yau manifolds or CICYs, generalizing the construction
+of the manifolds of (1.2), was constructed in [5–7]. This class, consisting
+===PAGE 4===
+TRIADOPHILIA: A SPECIAL CORNER IN THE LANDSCAPE 433
+960 480 0 480 960
+100
+200
+300
+400
+500
+960 480 0 480 960
+100
+200
+300
+400
+500
+Figure 2: A plot of the 264 distinct pairs of Hodge Numbers for the CICY’s.
+scale. This is something of a cautionary tale showing what can happen when
+a seemingly large class of manifolds turns out to be rather special.
+The Kreuzer–Skarke list, vast though it is, does not exhaust all possibili-
+ties. An obvious extension is to include the possibility of higher codimension
+corresponding to the case of more than one polynomial in a toric variety of
+higher dimension; these one might term toric CICY’s. A correspondence
+with lattice polyhedra that generalizes the construction of Batyrev for the
+case of a single polynomial has been given by Batyrev and Borisov [15]. Two
+simple examples of such manifolds will appear later and it is worth writing
+one of them here to explain the notation and to give an idea of the immense
+number of possible members of this class. Consider the manifold that is
+denoted by
+P
+(
+1111110
+1100001
+)[
+33
+30
+]
+.
+The ﬁrst matrix is the weight matrix and the second one is the degree matrix.
+Each column of the weight matrix corresponds to a coordinate, so in this
+case we have coordinates (z
+1,z2,...,z 7) and the two rows of the ﬁrst matrix
+indicate that there are two independent scalings with the columns of the
+matrix corresponding to the weights of each coordinate. Under a scaling the
+coordinates transform as
+(z
+1,z2,z3,z4,z5,z6,z7) → (λμz1, λμz2,λ z3,λ z4,λ z5,λ z6,μ z7),
+===PAGE 5===
+434 P. CANDELAS ET AL.
+with λ, μ nonzero complex numbers. The second matrix indicates that there
+are two polynomials p1 and p2 and that under a scaling p1 → λ3μ3p1 and
+p2 → λ3p2. The fact that the manifold has vanishing ﬁrst Chern class is
+ensured by the condition that the row sum of each row of the weight matrix
+is equal to the row sum of the corresponding row of the degree matrix.
+The dimension count, in this case, is that we have seven coordinates that
+are identiﬁed under two scalings and subject to two polynomial constraints
+yielding a manifold of dimension 7 − 2 − 2 = 3. The question of when a
+conﬁguration of this type gives rise to a nonsingular manifold is answered by
+the Batyrev–Borisov procedure. The Kreuzer–Skarke list corresponds to the
+special case that the degree matrix has only one column, the hypersurfaces
+in weighted P
+4 correspond to the case that the weight matrix has only one
+row, and the CICY’s to the very special case that all the entries of the weight
+matrix are either 1 or 0 and moreover that each column of the weight matrix
+contain precisely one 1. The number of possible conﬁgurations would seem
+to be immense and the scale of the enterprise of examining this class would
+seem to preclude any complete listing, though several hundred new pairs of
+Hodge numbers have been found by studying the interesting region along
+the edges of the plots where one of the Hodge numbers is small [16, 17].
+Batyrev and Kreuzer [18] have also found many new pairs of Hodge num-
+bers by examining reﬂexive polyhedra for hypersurfaces in toric varieties
+that admit conifold singularities, blowing down the P
+1’s and smoothing the
+resulting manifolds.
+Even this of course is not everything, since there are Calabi–Yau manifolds
+that are not covered by these constructions; we are, moreover, also interested
+in heterotic vacua corresponding to vector bundles V on the Calabi–Yau
+manifold for which c
+1(V)=0 . I f V = T , the tangent bundle, then the num-
+ber of generations is
+⏐⏐1
+2c3(T )
+⏐⏐=
+⏐⏐1
+2χ
+⏐⏐so three generations corresponds toχ =
+±6 as is the case for N = 2 compactiﬁcations. For general heterotic vacua,
+however, there is much greater freedom. The restrictions on V are that it
+be stable, have c1(V) = 0 and have c2(V) satisfy a certain condition. The
+number of generations of particles is then
+⏐⏐1
+2c3(V)
+⏐⏐. There are presumably
+a great many of these heterotic vacua; while toric geometry has aﬀorded
+us a considerable degree of control over Calabi–Yau manifolds, it is not yet
+known how to extend this degree of control to bundles over these manifolds.
+Special cases can, however, be studied and the group at the University
+of Pennsylvania [19–22] has developed a small number of three-generation
+heterotic models based on quotients of a special
+2 CICY, the split bicubic
+2The split bicubic is special in so far as it has (h11,h21) = (19, 19) the value forh11 being
+the largest for any CICY. All the CICY’s have Euler numbers in the range−200 ≤ χ ≤ 0
+and the split bicubic, together with a manifold with Hodge numbers (15,15), are the only
+two CICY’s which have χ = 0 and can possibly be self-mirror.
+===PAGE 6===
+TRIADOPHILIA: A SPECIAL CORNER IN THE LANDSCAPE 435
+family
+X19,19 =
+P1
+P2
+P2
+⎡
+⎣
+11
+30
+03
+⎤
+⎦
+19, 19
+0
+(1.3)
+where we append superscripts to record the values of (h11,h 21). One special
+feature of the split bicubic is that it is a bi-elliptic ﬁbration. To see this,
+consider the form of the equations [23] for this space
+t
+1
+( 3∑
+j=1
+ξ3
+j − 3aξ1ξ2ξ3
+)
++3 ct2
+3∑
+j=1
+ξ2
+j ξj−1 =0
+3ct1
+3∑
+j=1
+η2
+j ηj−1 + t2
+( 3∑
+j=1
+η3
+j − 3bη1η2η3
+)
+=0 ,
+(1.4)
+where we have chosen coordinatest for the P1 and ξ and η for the two P2’s.
+These are particularly symmetric polynomials of the given degrees of a form
+to which we will return later; the most general polynomials would contain 19
+parameters. However this simple choice is suﬃcient to illustrate the following
+point. Consider the equations for ﬁxed ( t
+1,t2) ∈ P1; each equation is then
+a cubic in a P2, generically an elliptic curve (i.e., a 2-torus). Thus the split
+bicubic is a ﬁbration over P1 with ﬁbre E1(t)×E2(t), where for generic t,
+both Ei(t) are elliptic curves, which degenerate for certain special values oft.
+Holomorphic vector bundles on elliptic curves were classiﬁed by Atiyah
+[24] and the extension to spaces that are ﬁbred by elliptic curves was consid-
+ered by Donagi [25] and by Friedman, Morgan and Witten [26, 27]. Further
+work investigated the problem of constructing stable SU( n) bundles, for
+n =3 ,4,5, on the large class of Calabi–Yau 3-folds that are elliptically ﬁbred,
+that is for which there is a map to a P
+1 for which the generic ﬁbre is an
+elliptic curve [21, 28]. An explicit construction of a heterotic model whose
+low energy eﬀective theory has the particle content of the minimum super-
+symmeteric standard model (MSSM) nevertheless proved elusive until such
+a model based on a stable SU(4) vector bundle, corresponding to a gauge
+group SO(10) in spacetime, was presented in [20]. The manifold of this model
+is a Z
+3×Z3 quotient of the split bicubic. A breaking of the SO(10) symme-
+try via the Hosotani mechanism, that takes advantage of the fundamental
+group Z
+3×Z3, yields the particle spectrum of the MSSM, without exotics,
+and with no anti-generations. A version with SU(5) vector bundle, and
+hence also SU(5) in spacetime, was also found [22].
+Returning to ﬁgure 1 and the Kreuzer–Skarke list, it is apparent that the
+central part of the plot is very dense with essentially every site occupied.
+The main point that we wish to make here is that the tip of the diagram
+where (h
+11,h21) are both small is thinly populated and this remains true
+===PAGE 12===
+TRIADOPHILIA: A SPECIAL CORNER IN THE LANDSCAPE 441
+quadrics (1.5) and a further two groups of order 64 that preserve another
+two-parameter family of quadrics. This second family of quadrics also have
+the property that they are ﬁxed point free but not transverse and have
+64 nodes that can be simultaneously resolved to give a Calabi–Yau mani-
+fold which, in this case, have (h
+11,h 21) = (10,10). For the family (1.5) the
+groups lift to the resolutions and remain ﬁxed point free. Taking the quo-
+tient by the group does not aﬀect the Picard group or the number of param-
+eters, since the locus p
+α = 0 is invariant. Thus these quotients also have
+(h11,h 21)=( 2 ,2) and have fundamental groups of order 64, which are the
+largest known. It follows that it is possible to take the quotient by any sub-
+group of the relevant group of order 64 and this yields further manifolds with
+the same Hodge numbers. The groups of order 64 have the property that all
+the subgroups of order 32 preserve 3-parameter families of quadrics that are
+ﬁxed point free and transverse. Quotients by these groups yield manifolds
+with (h
+11,h 21)=( 1 ,3). Taking quotients by smaller subgroups yields man-
+ifolds with (h11,h 21)=( 1 ,2n + 1) forn =2 ,..., 5. For the second family of
+quadrics only a two-dimensional subspace of the ten-dimensional family of
+resolutions admit a group action and it is conjectured that the quotients of
+the manifolds of the subspace have ( h
+11,h 21)=( 2 ,2). The Gross-Popescu
+manifolds merit further study but we shall mention just one further fact:
+which is that the manifold with ( h
+11,h 21)=( 6 ,6) is the resolution of a
+conifold of P5[3,3] that is symmetric under Z6×Z6. This symmetry lifts to
+the resolution where it is ﬁxed point free. Taking quotients by subgroups
+yields nonsimply connected manifolds with the same Hodge numbers.
+We have made the observation that in order to ﬁnd manifolds with low
+values ofh
+11 + h12 it is good to seek manifolds with a nontrivial fundamental
+group. The fundamental group, however, cannot be quite the right attribute
+since it is not respected by mirror symmetry. In ﬁgure 3, for example,
+P
+4[5]/Z5 has fundamental group Z5 while its mirror has trivial fundamental
+group. The attribute that we are after, for a manifold Y , is torsion in the
+integer cohomology ringH•(Y, Z); for a clear discussion see [29]. The torsion
+is a ﬁnite component of the cohomology ring that is absent if we work over
+C or R. For the case that H
+1(Y, Z) ∼= 0 the cohomology groups take the
+general form
+H0(Y, Z) ∼= Z H6(Y, Z) ∼= Z
+H1(Y, Z) ∼= 0 H5(Y, Z) ∼= A(Y )∗
+H2(Y, Z) ∼= A(Y ) ⊕ Zh11
+H4(Y, Z) ∼= B(Y )∗ ⊕ Zh11
+H3(Y, Z) ∼= B(Y ) ⊕ Z2h21+2
+where A(Y ) and B(Y ) are ﬁnite groups and A(Y )∗ and B(Y )∗ are the
+corresponding dual groups. The group B(Y ) is the torsion of H3(Y, Z) and
+is known as the Brauer group. The group A(Y ) is closely related to the
+===PAGE 16===
+TRIADOPHILIA: A SPECIAL CORNER IN THE LANDSCAPE 445
+• The bicubic N2,83 admit further free quotients
+N2,29 = P2
+P2
+[
+3
+3
+]
+/A
+and N2,11 = P2
+P2
+[
+3
+3
+]
+/A×D
+that are studied in §2.2.
+• In the split bicubic sequence, we have the family
+X19,19 =
+P1
+P2
+P2
+⎡
+⎣
+11
+30
+03
+⎤
+⎦
+as well as free quotients
+X
+7,7 = X19,19/A and X3,3 = X19,19/A×D,
+where the actions of the groups A and D are explained in §2.3.
+2 Relations between three-generation manifolds
+In this section, we ﬁrst explain the relation between the three equivalent pre-
+sentations of the Tian–Yau manifold. Then we will examine the various coni-
+fold transitions between the bicubic and the split bicubic and their quotients.
+2.1 Three families of three-generation manifolds
+Consider the three families of manifolds N
+′′, N′and N from §1.3 as well as
+resolutions of certain quotients M′′, M′ and M. The groups A, B and C
+are all abstractly isomorphic to Z3. The group A acts freely, while B and
+C have ﬁxed curves that are tori. The upshot is that the Euler numbers
+χ =2 (h11−h21) of the (resolved) quotient manifolds are obtained from that
+of the covering manifold by dividing by the orders of the groups, with the
+result that M, M
+′ and M′′all have χ = −6. We will see also that the
+three manifolds also all have Hodge numbers (h11,h 21)=( 6 ,9). As stated
+previously, these families of manifolds have been shown to belong to the
+same irreducible component of the moduli space in [4], but it is useful to
+review some aspects of this correspondence in order to establish conventions
+and notation. A detailed study of the Tian–Yau manifold (M
+′′)6,9, and of a
+three-generation model based on this manifold, is to be found in [41].
+We begin by discussing the Tian–Yau manifold. The covering space
+(N′′)14,23 is described by three equations of the indicated bidegrees. One
+===PAGE 24===
+TRIADOPHILIA: A SPECIAL CORNER IN THE LANDSCAPE 453
+only hold if
+F0 = det
+⏐⏐
+⏐
+⏐
+U(ξ) W(ξ)
+Z(η) V (η)
+⏐⏐
+⏐
+⏐= U(ξ)V (η) − W(ξ)Z(η)=0 . (2.10)
+This is, a bicubic equation in theξ and η coordinates. In fact it is a singular
+limit of the manifold N
+2,83. The limit is singular owing to the fact that
+all the derivatives of F0 vanish precisely at the points where U, V , W, Z
+are all zero and this happens, in this case, in 34 points. We have seen that
+ap o i n t(t, ξ, η) that satisﬁes (2.9) must be such that ( ξ,η ) satisfy (2.10).
+Conversely suppose that ( ξ,η ) satisfy (2.10) and that for these values the
+cubics U, V , W, Z are not all zero. The equations (2.9) will then determine
+a unique ratio t1/t2 hence a unique point t ∈ P1. If, however, all four of the
+cubics vanish then the equations (2.9) are satisﬁed for all values of t ∈ P1.
+For suitable cubics the split manifold deﬁned by (2.9) is smooth while the
+conifold deﬁned by F
+0 = 0 is singular at a certain number of nodes. The
+split manifold projects down onto the conifold such that a unique point
+projects to every nonsingular point of the conifold but an entire P
+1 of the
+split manifold projects down onto each node. Alternatively we pass from
+the conifold to the split manifold by blowing up each node to a P
+1.
+The ﬁrst three rows of table 2 are simply conifold transitions between
+N2,83 and X19,19 as well as their quotients. The relation between the extreme
+ends of the last row is less obvious and corresponds to the relation
+P3
+P3
+[
+130
+103
+] 6,9
+/A
+↭
+P1
+P3
+P3
+⎡
+⎣
+1100
+1030
+0103
+⎤
+⎦
+7,7
+/A
+∼=
+P1
+P2
+P2
+⎡
+⎣
+11
+30
+03
+⎤
+⎦
+7,7
+/A
+(2.11)
+which we explain in the following. The relation is true whether or not we
+take the A-quotient, so we shall ﬁrst explain the relation before taking the
+quotient. The isomorphism between the second and third families in the
+above relation may be surprising; it is this that we will now explain.
+2.4.1 Three avatars of the split bicubic
+Consider the family of complete intersection Calabi–Yau manifolds
+t
+ξ
+η
+x
+y
+P
+1
+P2
+P2
+P3
+P3
+˜G0 ˜H0 G1 G2 G3 H1 H2 H3
+⎡
+⎢⎢
+⎢
+⎢⎣
+11 000 000
+00 111 000
+00 000 111
+10 111 000
+01 000 111
+⎤
+⎥⎥
+⎥
+⎥⎦
+= X, (2.12)
+where we have indicated the coordinates of the projective spaces and have
+also named the polynomials whose degrees correspond to the columns of the
+===PAGE 26===
+TRIADOPHILIA: A SPECIAL CORNER IN THE LANDSCAPE 455
+and Gj = 0 can be written
+˜G(t, ξ)αβxβ = 0 where ˜G(ξ)jβ = Gjkβξk.
+Thus we have a set of four equations for the four coordinates xβ, which
+cannot all be zero. It follows that
+F1 = det(˜G(t, ξ)αβ)=0 .
+Since ˜G(t, ξ)0β is independent of ξ and the ˜G(t, ξ)jβ are independent of t we
+see that F1 has bidegree (1,3) in t and ξ. Analogous considerations apply
+also to the matrix ˜H(t, η)αβ and to
+F2 = det( ˜H(t, η)αβ).
+One checks, analogously to the previous case, that the matrices ˜G(t, ξ)αβ
+and ˜H(t, η)αβ always have rank 3. We have now shown that indeed the
+manifold
+⎡
+⎣
+F1 F2
+t P1 11
+ξ P2 30
+η P2 03
+⎤
+⎦ = X.
+2.4.2 The conifold transition between M and X7,7
+We have now seen three equivalent representations of X19,19. Next, we
+proceed to show the relation proposed in (2.11). This is seen easily since
+the determinants G and H become the cubics of the covering space of the
+Tian–Yau manifold
+[ FG H
+x P
+3 130
+y P3 103
+]
+On making the conifold transition it is possible to approach the conifold from
+the Tian–Yau side by singularizing the bilinear equation F while leaving G
+and H ﬁxed. The coordinates t can be chosen such that the equations ˜G0
+and ˜H0 take the form
+˜G0 = t1
+( ∑
+j
+xj − 3ax0
+)
++3 ct2x0
+˜H0 =3 ct1y0 + t2
+( ∑
+j
+yj − 3by0
+)
+.
+Again we have two equations in the coordinates (t1,t2), which cannot both
+be zero, so the determinant must vanish
+F0 =
+( ∑
+j
+xj − 3ax0
+)( ∑
+j
+yj − 3by0
+)
+− 9c2x0y0 = 0 (2.14)
+===PAGE 31===
+460 P. CANDELAS ET AL.
+can be made so as to enforce (3.7). This constraint also prevents therj from
+being the derivatives ∂r
+∂xj of a quintic r; such a deformation would represent
+a deformation of Q, rather than that of TQ on a ﬁxed Q.
+This construction can be used to estimate the dimension of
+H1(Q,EndQ)= H1(Q,TQ⊗T ∗
+Q), the space of ﬁrst order deformations ofTQ.
+Having come this far we cannot resist completing the calculation. Eachrj is
+a homogeneous polynomial of degree 4 in ﬁve variables. In these, there are
+a total of 5
+(4+5−1
+4
+)
+= 350 parameters. The constraint (3.7), which, being of
+degree 5 in ﬁve variables, imposes
+(5+5−1
+5
+)
+= 126 conditions. We conclude
+that the number of deformations to TQ is at least 350 − 126 = 224. In this
+case, in fact h1(Q,TQ⊗T ∗
+Q) = 224; for a recent discussion of the deformation
+of the tangent bundle for the quintic, see [46, 47]. The quintic is some-
+what exceptional; it can happen that the tangent bundle of a manifold has
+deformations that are not accounted for in this way.
+We now take a more abstract approach, in order to consider deformations
+of bundles other than the tangent bundle, in particular, the direct sum of
+the tangent bundle and trivial bundles. The adjunction formula [48] states
+that for a projective variety Y embedded in P
+n, the tangent bundle TY and
+the normal bundle NY ﬁt into the short-exact sequence
+0 →T Y →T Pn|Y →N Y → 0, (3.8)
+where TPn|Y is the tangent bundle of Pn restricted to Y . Next, the Euler
+sequence on Pn, restricted to Y , reads
+0 →O Y →O Y (1)⊕n+1 →T Pn|Y → 0,
+and thus, composing the right-hand maps in the two sequences, there is a
+third sequence [49]
+0 →F→O Y (1)⊕n+1 f
+−→ NY → 0,
+where F is deﬁned byF = ker(f), in order to make the sequence exact. The
+map f is the analogue of (3.7). For the quintic Q,w eg e t
+0 →F→O Q(1)⊕5 f
+−→ OQ(5) → 0,f =
+( ∂p
+∂xj
+)
+, (3.9)
+with f now explicitly written as a speciﬁc 5 × 1 matrix of degree 4 homo-
+geneous polynomials, the partial derivatives ofp, mapping from OQ(1)⊕5 to
+OQ(5).
+===PAGE 33===
+462 P. CANDELAS ET AL.
+where the indices a, b=0 ,..., 3 run through the two P3’s. We will also,
+as previously, have need of indices j, k that run over the range 1 ,2,3, and
+which are understood to take values modulo 3.
+The analogue to (3.6), requiring V to be tangent to M, is the condition
+V (pα)= mαβpβ, (3.11)
+where nowmαβ is, in general, a matrix of polynomials but which in this case,
+owing to the degrees of the polynomials, is a diagonal matrix of constants.
+The Euler relations now read
+x
+a ∂pα
+∂xa = degx(pα)pα,y b ∂pα
+∂yb = degy(pα)pα,
+where here degx(pα) denotes the degree ofpα as a function ofx and similarly
+for degy(pα). We also identify
+(Xa + ρxa,Y b + σyb) ≃ (Xa,Y b). (3.12)
+the tangent bundleTM is now deformed by requiring thatV = X + Y satisfy
+Xa
+( ∂pα
+∂xa + rαa
+)
++ Y b
+( ∂pα
+∂yb + sαb
+)
+= mαβpβ, (3.13)
+where the quantities rαa and sαb are matrices of polynomials of the same
+degrees as ∂pα
+∂xa and ∂pα
+∂yb , respectively, while mαβ is a matrix of constants. In
+order to maintain the identiﬁcation (3.12), we write
+Rαa = ∂pα
+∂xa + rαa and Sαb = ∂pα
+∂yb + sαb
+and require
+xaRαa = nαβpβ,y bSαb =˜nαβpβ (3.14)
+for some constant matrices nαβ,˜nαβ.
+Note ﬁrst that, since the second deﬁning equation,p2 = G, has zero degree
+in ya and similarly, p3 = H has zero degree in xa, the quantities S2b and
+R3a both vanish. A little thought then shows that the most general form
+for r2a that is invariant under A and satisﬁes (3.14) has the form
+r2adxa =
+∑
+j
+(
+κx0 + λxj +
+∑
+±
+μ±xj±1
+)
+(xjdx0 − x0dxj)
++
+∑
+j
+∑
+±
+ν±(x2
+j±1 − xjxj∓1)dxj.
+and contains six parameters. A similar expression holds for s3b.
+===PAGE 34===
+TRIADOPHILIA: A SPECIAL CORNER IN THE LANDSCAPE 463
+A problem, however, arises in relation to the deformation corresponding
+to p1 = F. This polynomial is bilinear so the conditions (3.14), applied to
+this case, force the relations
+R1a = u ∂F
+∂xa and S1b = v ∂F
+∂yb
+for some constants u and v. Our previous observation concerning trans-
+gression of deformation of tangent bundles, as in (3.3), was that once the
+tangent bundle has been deformed suﬃciently generally, then the analogues
+of our quantities R
+αa and Sαb are all nonzero at the conifold and prevent
+the bundle from becoming singular. Here this fails since at the conifold (as
+in (2.14)) F is necessarily of the formF
+0 = UV − WZ , for some polynomials
+U, V, W, Z, that vanish at the nodes. Thus all the derivatives of F vanish
+at the nodes and hence also the quantities R1a and S1b. So in this case,
+the deformation does not help to avoid the singularity associated with the
+tangent bundle at the conifold point.
+We can however save the situation by abandoning the identiﬁcation in
+(3.12). Our bundle is then no longer a deformation of the tangent bundle
+of M, but a deformation of T
+M ⊕O⊕O . Alternatively we could abandon
+just one of the identiﬁcations of (3.12), in which case the bundle becomes a
+deformation of T
+M ⊕O .
+We can also study deformations in the language of intertwined short exact
+sequences. As we have seen, the key equation is F; we take MF as the
+(5-dimensional) hypersurface given by the vanishing of F in the ambient
+space P3 × P3 (we can impose the other equations later). In complete anal-
+ogy with (3.10), we have
+00
+↑↑
+0 →T MF →T P3×P3 |MF −→ O MF (1,1) → 0
+↑↑ ϕ
+0 →F→ O MF (1,0)⊕4 ⊕O MF (0,1)⊕4 f
+−→ O MF (1,1) → 0
+↑↑
+O⊕2
+MF = O⊕2
+MF
+↑↑
+00 ( 3 .15)
+The important facts to notice are the following. The map f is now given
+by an 8 × 1 matrix with four entries of bidegree (1,0) and four entries of
+bidegree (0,1), corresponding to the operators ∂
+∂xa and ∂
+∂ya . The kernel
+of the map ϕ now is actually O⊕2
+MF , two copies of the trivial bundle on
+MF . Therefore the bundle F, which is the kernel of f, and hence whose
+===PAGE 39===
+468 P. CANDELAS ET AL.
+sums of line-bundles, over the bicubic. Such bundles V are deﬁned by the
+short-exact sequence
+0 →V→B
+f
+−→ C →0,
+with
+B =
+rB⨁
+i=1
+OX(bi
+1,b i
+2
+), C =
+rC⨁
+j=1
+OX(cj
+1,cj
+2
+). (3.20)
+where O(a, b) is the line bundle of bidegree (a, b) on the bicubic. In terms of
+the hyperplane classes, this line bundle is to be thought of as O(aH1,b H2).
+The bi
+s and cj
+s are integers such that for s =1 ,2 and all i, j, cj
+s ≥ bi
+s ≥ 0i n
+order that f be a well-deﬁned polynomial map. In particular, V has the
+following topological properties (r, s, t=1 ,2):
+rk(V)= rB − rC,
+[c1(V)]s =
+rB∑
+i=1
+bi
+s −
+rC∑
+j=1
+cj
+s ,
+[c2(V)]r = 1
+2
+k∑
+s,t=1
+ytop
+rst
+( rC∑
+j=1
+cj
+s cj
+t −
+rB∑
+i=1
+bi
+sbi
+t
+)
+, (3.21)
+c3(V)= 1
+3
+k∑
+r,s,t=1
+ytop
+rst
+( rB∑
+i=1
+bi
+rbi
+s
+bi
+t
+−
+rC∑
+j=1
+cj
+r cj
+s cj
+t
+)
+,
+where ytop
+rst is the intersection form on the bicubic. Finally, we must descend
+this bundle onto the A×D quotient X3,3. This can be done by ﬁnding an
+A×D-equivariant map.
+It is now a matter of solving for non-negative integer values for bi
+s and
+cj
+s such that ﬁrst of all c1(V)=0a n d c3(V)= −54. Then, in the ( H1,H2)
+basis, we can form the integer 2-vector c2(V) · (H1,H2). This should then
+be compared, with c2(˜V) expressed in the (τ1,τ2) basis. Examining (3.17),
+we see that in this basis
+c2(˜V)=( τ2
+1 +4 τ2
+2 +4 τ1τ2) · (τ1,τ2) = (24,15).
+After performing a computer scan for possible solutions, we ﬁnd the following
+rank 4 candidate monad bundles with all the above requisite properties.
+===PAGE 43===
+472 P. CANDELAS ET AL.
+A heterotic standard model, Phys. Lett. B 618 (2005), 252, arXiv:hep-
+th/0501070.
+[22] V. Bouchard and R. Donagi, An SU(5) heterotic standard model, Phys.
+Lett. B 633, (2006), 783, arXiv:hep-th/0512149.
+[23] V. Braun, M. Kreuzer, B.A. Ovrut and E. Scheidegger, World-
+sheet instantons, torsion curves, and non-perturbative superpotentials,
+arXiv:hep-th/0703134.
+[24] M. Atiyah, Vector bundles over an elliptic curve, Proc. London Math.
+Soc. 7 (1957), 414.
+[25] R. Donagi, Principal bundles on elliptic ﬁbrations , Asian J. Math. 1
+(1997), 214, arXiv:alg-geom/9702002.
+[26] R. Friedman, J.W. Morgan and E. Witten, Principal G-bundles over
+elliptic curves, Math. Res. Lett. 5 (1998), 97, arXiv:alg-geom/9707004.
+[27] R. Friedman, J.W. Morgan and E. Witten, Vector bundles over ellip-
+tic ﬁbrations, J. Algbraic Geom. 8 (1999), 279–401, arXiv:alg-geom/
+9709029.
+[28] B. Andreas, G. Curio and A. Klemm,Towards the standard model spec-
+trum from elliptic Calabi–Yau,I n t .J .M o d .P h y s .A19 (2004), 1987,
+arXiv:hep-th/9903052.
+[29] V. Batyrev and M. Kreuzer, Integral cohomology and mirror symmetry
+for Calabi–Yau 3-folds, Mirror symmetry V, 255, AMS/IP Stud. Adv.
+Math., 38, AMS, Providence, RI, 2006, arXiv:math.ag/0505432.
+[30] M. Kreuzer and E. Riegler, work in progress.
+[31] E. A. Rødland, “The Pfaﬃan CalabiYau, its Mirror, and their Link
+to the Grassmannian G(2,7),” Compositio. Math. 122 (2000) 135,
+ArXiv:math.AG/9801092.
+[32] V. Bouchard and R. Donagi,On a class of non-simply connected Calabi–
+Yau threefolds, Preprint, arXiv:0704.3096.
+[33] A. Strominger and E. Witten, “New Manifolds For Superstring Com-
+pactiﬁcation,” Commun. Math. Phys. 101 (1985) 341.
+[34] M. Gross and S. Popescu, Calabi-Yau threefolds and moduli of abelian
+surfaces I, Compositio Math.127 (2001), 169, arXiv:math.ag/0001089.
+[35] L. Borisov and Z. Hua, “On Calabi-Yau Threefolds with Large Non-
+abelian Fundamental Group,” arXiv:math.AG/0609728.
+[36] Z. Hua, “Classiﬁcation of Free Actions on Complete Intersections of
+Four Quadrics,” arXiv:math.AG/0707.4339.
+[37] A. Beauville, A Calabi–Yau threefold with non-abelian fundamen-
+tal group, New trends in algebraic geometry, 13, LMS Lect. Note
+Ser. 264, Cambridge University Press, Cambridge, 1999, arXiv:alg-
+geom/9502003.
+[38] H.J. Park, Finding the mirror of the Beauville manifold , Preprint,
+arXiv:hep-th/0312056.

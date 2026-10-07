@@ -1,0 +1,138 @@
+{
+  "certificate_pass": true,
+  "checks": [
+    {
+      "expected": true,
+      "name": "fc1_certificate_pass",
+      "observed": true,
+      "pass": true
+    },
+    {
+      "expected": 1569,
+      "name": "residual_visibility_partition",
+      "observed": 1569,
+      "pass": true
+    },
+    {
+      "expected": [
+        1569,
+        0
+      ],
+      "name": "support_projection_erases_full_residual",
+      "observed": [
+        1569,
+        0
+      ],
+      "pass": true
+    },
+    {
+      "expected": "> 0",
+      "name": "support_only_underpricing_gap_positive",
+      "observed": 1569,
+      "pass": true
+    },
+    {
+      "expected": "all near 0",
+      "name": "generated_subgroup_zero_structural_frontier",
+      "observed": {
+        "balance": 0.0,
+        "closure": 0.0,
+        "fisher": 0.0,
+        "reciprocal": 0.0
+      },
+      "pass": true
+    },
+    {
+      "expected": "> 0",
+      "name": "normalizer_transfer_break_even",
+      "observed": 1.3306682751172347,
+      "pass": true
+    },
+    {
+      "expected": true,
+      "name": "psl_dagger_holds",
+      "observed": true,
+      "pass": true
+    }
+  ],
+  "interpretation": [
+    "Generated-subgroup descent is the zero-structural baseline.",
+    "Normalizer saturation is a transfer policy, not a free default.",
+    "Support residual 0 is not full filtered closure.",
+    "H4 and H3 entries are visibility channels modulo kernels, not standalone Ext_CH detectors.",
+    "This is an exact finite bookkeeping certificate, not learned-model evidence."
+  ],
+  "ledger": {
+    "filtered_carry": {
+      "fractions_of_full": {
+        "h3_contraction_visible": 0.9369024856596558,
+        "h4_visible": 0.045889101338432124,
+        "remaining_hidden": 0.017208413001912046,
+        "support_projection": 0.0,
+        "support_underpricing_gap": 1.0
+      },
+      "full_filtered_residual": 1569,
+      "h3_contraction_visible_atoms": 1470,
+      "h4_visible_atoms": 72,
+      "remaining_hidden_atoms": 27,
+      "source": "FC2 filtered section class [kappa]",
+      "support_projection_residual": 0,
+      "support_underpricing_gap_atoms": 1569,
+      "visibility_partition_sum": 1569
+    },
+    "generated_subgroup_descent": {
+      "mean_J": 0.09305555555555556,
+      "mean_resource_cost": 0.37222222222222223,
+      "mean_support_size": 5.583333333333333,
+      "policy": "D_G(S) = <S> \\ {0}",
+      "zero_structural_cost": true
+    },
+    "normalizer_symmetry_premium": {
+      "all_support_checks": 32767,
+      "all_support_mean_symmetry_premium": 0.02613605151524404,
+      "all_support_overbuy_count": 1531,
+      "frontier_mean_J": 0.15416666666666667,
+      "frontier_mean_resource_cost": 0.6166666666666667,
+      "normalizer_beats_minimal_rate": 0.8125,
+      "policy": "D_G^Gamma(S) = <Gamma.S> \\ {0}",
+      "transfer_break_even_margin": 1.3306682751172347,
+      "transfer_mean_net_gain": 1.3306682751172347,
+      "transfer_mean_premium": 0.16770833333333335,
+      "transfer_mean_structural_gain": 1.498376608450568
+    },
+    "psl_depth_or_boundary_carry": {
+      "binding_depth": 0,
+      "binding_depth_savings": 2,
+      "binding_lambda_crit": 55.40625,
+      "binding_target_packet": "u^2",
+      "binding_total_carry_squared": 110.8125,
+      "d_max": 2,
+      "row_lambda_psl_crit": 55.40625
+    },
+    "resource_skeleton": {
+      "aggregate_tuple_supports": 1961256,
+      "carry_pair_chart_orbits_not_simultaneous": 20091354,
+      "seed_coordinates": 637,
+      "size24_orbits": 1674272,
+      "size24_sign_nontrivial": 1248,
+      "tuple_size": 14
+    }
+  },
+  "ring": "F_4[u]/(u^2)",
+  "row_key": "f4-u2",
+  "schema": "fc3_bounded_cost_ledger_f4_u2.v1",
+  "sources": {
+    "fc1_atlas_certificate": "empirical/reports/fc1_noether_atlas_certificate_f4_u2.json",
+    "information_investment_frontier": "empirical/reports/information_investment_frontier.json",
+    "normalizer_b0_investment": "empirical/reports/normalizer_b0_investment.json",
+    "normalizer_transfer_audit": "empirical/reports/normalizer_transfer_audit.json",
+    "per_row_carry_vs_depth": "empirical/reports/per_row_carry_vs_depth.json"
+  },
+  "status": "first bounded FC3 split-cost ledger for the certified local row",
+  "unit_weight_carry_scalarizations": {
+    "full_filtered_atoms": 1569,
+    "support_only_atoms": 0,
+    "support_only_underprices_full_by_atoms": 1569,
+    "visible_partition_atoms": 1569
+  }
+}

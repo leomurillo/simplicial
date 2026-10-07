@@ -1,0 +1,177 @@
+{
+  "ring": "F_2[u]/(u^2)",
+  "row_key": "f2-u2",
+  "labels": 4,
+  "nontrivial_labels": 3,
+  "packets": {
+    "u": 1,
+    "u^2": 2
+  },
+  "gamma_size": 2,
+  "quotient_shift_count": 7,
+  "quotient_shift_support_distribution": {
+    "1": 5,
+    "2": 2
+  },
+  "carry_record_count": 4,
+  "carry_path_distribution": {
+    "u^2->u->u^2": 4
+  },
+  "fisher_probe": {
+    "alpha": "u",
+    "left_mode": "u",
+    "right_mode": "1",
+    "order0_support": 2,
+    "left_order1_support": 3,
+    "right_order1_support": 2,
+    "mixed_order2_support": 2
+  },
+  "h3": {
+    "cells": 6,
+    "orbits": 1,
+    "family_orbit_counts": {
+      "122": 1
+    },
+    "orbit_size_distribution": {
+      "6": 1
+    },
+    "orbit_rows": [
+      {
+        "id": 0,
+        "size": 6,
+        "family": "122",
+        "representative": "(1, 1+u, u)"
+      }
+    ],
+    "elapsed_seconds": 0.0
+  },
+  "h4": {
+    "cells": 21,
+    "orbits": 4,
+    "family_orbit_counts": {
+      "1111": 1,
+      "1122": 1,
+      "2222": 2
+    },
+    "orbit_size_distribution": {
+      "1": 1,
+      "2": 1,
+      "6": 1,
+      "12": 1
+    },
+    "orbit_rows": [
+      {
+        "id": 0,
+        "size": 2,
+        "family": "2222",
+        "representative": "(1, 1, 1, 1)"
+      },
+      {
+        "id": 1,
+        "size": 6,
+        "family": "2222",
+        "representative": "(1, 1, 1+u, 1+u)"
+      },
+      {
+        "id": 2,
+        "size": 12,
+        "family": "1122",
+        "representative": "(1, 1, u, u)"
+      },
+      {
+        "id": 3,
+        "size": 1,
+        "family": "1111",
+        "representative": "(u, u, u, u)"
+      }
+    ],
+    "elapsed_seconds": 0.001
+  },
+  "ext_ch": {
+    "full_block_dimensions": {
+      "c1_generators": 17,
+      "c2_dimension": 61,
+      "composable_pairs": 25
+    },
+    "raw_atom_count": 4,
+    "raw_pair_count": 4,
+    "raw_coefficient_distribution": {
+      "-1": 4
+    },
+    "raw_path_distribution": {
+      "u^2->u->u^2": 4
+    },
+    "canonical_pair_orbit_count": 2,
+    "pair_orbit_size_distribution": {
+      "2": 2
+    },
+    "pair_orbit_missing_total": 0,
+    "canonical_pair_orbits": [
+      {
+        "id": 1,
+        "representative": {
+          "left_eta": "1",
+          "right_eta": "1",
+          "source": "u^2",
+          "middle": "u",
+          "target": "u^2"
+        },
+        "size": 2,
+        "atom_count": 2,
+        "coefficients": {
+          "-1": 2
+        },
+        "path": "u^2->u->u^2"
+      },
+      {
+        "id": 2,
+        "representative": {
+          "left_eta": "1",
+          "right_eta": "1+u",
+          "source": "u^2",
+          "middle": "u",
+          "target": "u^2"
+        },
+        "size": 2,
+        "atom_count": 2,
+        "coefficients": {
+          "-1": 2
+        },
+        "path": "u^2->u->u^2"
+      }
+    ],
+    "elapsed_seconds_before_coboundary": 0.0,
+    "support_projection_coboundary": {
+      "mode": "support",
+      "c2_scope": "raw_support",
+      "coefficient_field": "Q",
+      "c1_generators": 9,
+      "c2_dimension": 4,
+      "coboundary_rank": 4,
+      "residual_dimension": 0,
+      "raw_support": 4,
+      "residual_support": 0,
+      "residual_equal_raw": false,
+      "raw_is_coboundary": true,
+      "rational_rank_certified": true,
+      "raw_non_coboundary_over_q_certified": false,
+      "elapsed_seconds": 0.002
+    },
+    "full_block_coboundary": {
+      "mode": "full_block",
+      "c2_scope": "full_block",
+      "coefficient_field": "Q",
+      "c1_generators": 17,
+      "c2_dimension": 61,
+      "coboundary_rank": 16,
+      "residual_dimension": 45,
+      "raw_support": 4,
+      "residual_support": 4,
+      "residual_equal_raw": true,
+      "raw_is_coboundary": false,
+      "rational_rank_certified": true,
+      "raw_non_coboundary_over_q_certified": true,
+      "elapsed_seconds": 0.002
+    }
+  }
+}

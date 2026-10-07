@@ -1,0 +1,1041 @@
+{
+  "purpose": "Held-out frontier audit for B0: compare descent/conductor supports against learned aggregate low-rank supports on exact finite tasks.",
+  "config": {
+    "rows": [
+      "c7",
+      "c8",
+      "c12",
+      "f4-u2"
+    ],
+    "train_tasks": 48,
+    "test_tasks": 48,
+    "amplitude_min": 0.15,
+    "amplitude_max": 0.45,
+    "resource_weight": 0.25,
+    "seed": 20260514
+  },
+  "rows": [
+    {
+      "key": "c7",
+      "row": "C_7",
+      "label_count": 7,
+      "train_tasks": 48,
+      "test_tasks": 48,
+      "learned_energy_ranking_prefix": [
+        "5",
+        "2",
+        "1",
+        "6",
+        "3",
+        "4"
+      ],
+      "policies": {
+        "allowed_reciprocal": {
+          "count": 48.0,
+          "mean_J": 0.25,
+          "mean_fisher_projection_error": 0.0,
+          "mean_reciprocal_projection_error": 0.0,
+          "mean_closure_leakage": 0.0,
+          "mean_descent_balance_cost": 0.0,
+          "mean_resource_cost": 1.0,
+          "mean_support_size": 6.0,
+          "wins": 48
+        },
+        "conductor_packet": {
+          "count": 48.0,
+          "mean_J": 0.25,
+          "mean_fisher_projection_error": 0.0,
+          "mean_reciprocal_projection_error": 0.0,
+          "mean_closure_leakage": 0.0,
+          "mean_descent_balance_cost": 0.0,
+          "mean_resource_cost": 1.0,
+          "mean_support_size": 6.0,
+          "wins": 0
+        },
+        "descent_closure": {
+          "count": 48.0,
+          "mean_J": 0.25,
+          "mean_fisher_projection_error": 0.0,
+          "mean_reciprocal_projection_error": 0.0,
+          "mean_closure_leakage": 0.0,
+          "mean_descent_balance_cost": 0.0,
+          "mean_resource_cost": 1.0,
+          "mean_support_size": 6.0,
+          "wins": 0
+        },
+        "full": {
+          "count": 48.0,
+          "mean_J": 0.25,
+          "mean_fisher_projection_error": 0.0,
+          "mean_reciprocal_projection_error": 0.0,
+          "mean_closure_leakage": 0.0,
+          "mean_descent_balance_cost": 0.0,
+          "mean_resource_cost": 1.0,
+          "mean_support_size": 6.0,
+          "wins": 0
+        },
+        "learned_top_descent_k": {
+          "count": 48.0,
+          "mean_J": 0.25,
+          "mean_fisher_projection_error": 0.0,
+          "mean_reciprocal_projection_error": 0.0,
+          "mean_closure_leakage": 0.0,
+          "mean_descent_balance_cost": 0.0,
+          "mean_resource_cost": 1.0,
+          "mean_support_size": 6.0,
+          "wins": 0
+        },
+        "normalizer_saturation": {
+          "count": 48.0,
+          "mean_J": 0.25,
+          "mean_fisher_projection_error": 0.0,
+          "mean_reciprocal_projection_error": 0.0,
+          "mean_closure_leakage": 0.0,
+          "mean_descent_balance_cost": 0.0,
+          "mean_resource_cost": 1.0,
+          "mean_support_size": 6.0,
+          "wins": 0
+        },
+        "random_descent_k": {
+          "count": 48.0,
+          "mean_J": 0.25,
+          "mean_fisher_projection_error": 0.0,
+          "mean_reciprocal_projection_error": 0.0,
+          "mean_closure_leakage": 0.0,
+          "mean_descent_balance_cost": 0.0,
+          "mean_resource_cost": 1.0,
+          "mean_support_size": 6.0,
+          "wins": 0
+        },
+        "raw_support": {
+          "count": 48.0,
+          "mean_J": 1.2787506547118077,
+          "mean_fisher_projection_error": 0.02875065471180771,
+          "mean_reciprocal_projection_error": 1.7625072846385314e-29,
+          "mean_closure_leakage": 0.5,
+          "mean_descent_balance_cost": 0.6666666666666666,
+          "mean_resource_cost": 0.3333333333333333,
+          "mean_support_size": 2.0,
+          "wins": 0
+        },
+        "learned_top_raw_k": {
+          "count": 48.0,
+          "mean_J": 2.1859691400838046,
+          "mean_fisher_projection_error": 0.6234691400838045,
+          "mean_reciprocal_projection_error": 0.625,
+          "mean_closure_leakage": 0.1875,
+          "mean_descent_balance_cost": 0.6666666666666666,
+          "mean_resource_cost": 0.3333333333333333,
+          "mean_support_size": 2.0,
+          "wins": 0
+        },
+        "random_raw_k": {
+          "count": 48.0,
+          "mean_J": 2.4503279232907387,
+          "mean_fisher_projection_error": 0.6482445899574051,
+          "mean_reciprocal_projection_error": 0.6458333333333336,
+          "mean_closure_leakage": 0.40625,
+          "mean_descent_balance_cost": 0.6666666666666666,
+          "mean_resource_cost": 0.3333333333333333,
+          "mean_support_size": 2.0,
+          "wins": 0
+        }
+      },
+      "winner_by_mean_J": "allowed_reciprocal",
+      "examples": [
+        {
+          "active_support": [
+            "1",
+            "6"
+          ],
+          "descent_closure": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6"
+          ],
+          "winner": "allowed_reciprocal",
+          "winner_J": 0.25,
+          "learned_top_descent_k": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6"
+          ]
+        },
+        {
+          "active_support": [
+            "3",
+            "4"
+          ],
+          "descent_closure": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6"
+          ],
+          "winner": "allowed_reciprocal",
+          "winner_J": 0.25,
+          "learned_top_descent_k": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6"
+          ]
+        },
+        {
+          "active_support": [
+            "2",
+            "5"
+          ],
+          "descent_closure": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6"
+          ],
+          "winner": "allowed_reciprocal",
+          "winner_J": 0.25,
+          "learned_top_descent_k": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6"
+          ]
+        },
+        {
+          "active_support": [
+            "2",
+            "5"
+          ],
+          "descent_closure": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6"
+          ],
+          "winner": "allowed_reciprocal",
+          "winner_J": 0.25,
+          "learned_top_descent_k": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6"
+          ]
+        },
+        {
+          "active_support": [
+            "1",
+            "6"
+          ],
+          "descent_closure": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6"
+          ],
+          "winner": "allowed_reciprocal",
+          "winner_J": 0.25,
+          "learned_top_descent_k": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "c8",
+      "row": "C_8",
+      "label_count": 8,
+      "train_tasks": 48,
+      "test_tasks": 48,
+      "learned_energy_ranking_prefix": [
+        "4",
+        "2",
+        "6",
+        "3",
+        "5",
+        "7",
+        "1"
+      ],
+      "policies": {
+        "descent_closure": {
+          "count": 48.0,
+          "mean_J": 0.1755952380952381,
+          "mean_fisher_projection_error": 2.9462275006208346e-31,
+          "mean_reciprocal_projection_error": 2.3065097297713207e-30,
+          "mean_closure_leakage": 0.0,
+          "mean_descent_balance_cost": 0.0,
+          "mean_resource_cost": 0.7023809523809524,
+          "mean_support_size": 4.916666666666667,
+          "wins": 38
+        },
+        "learned_top_descent_k": {
+          "count": 48.0,
+          "mean_J": 0.1755952380952381,
+          "mean_fisher_projection_error": 2.9462275006208346e-31,
+          "mean_reciprocal_projection_error": 2.3065097297713207e-30,
+          "mean_closure_leakage": 0.0,
+          "mean_descent_balance_cost": 0.0,
+          "mean_resource_cost": 0.7023809523809524,
+          "mean_support_size": 4.916666666666667,
+          "wins": 0
+        },
+        "normalizer_saturation": {
+          "count": 48.0,
+          "mean_J": 0.1755952380952381,
+          "mean_fisher_projection_error": 2.9462275006208346e-31,
+          "mean_reciprocal_projection_error": 2.3065097297713207e-30,
+          "mean_closure_leakage": 0.0,
+          "mean_descent_balance_cost": 0.0,
+          "mean_resource_cost": 0.7023809523809524,
+          "mean_support_size": 4.916666666666667,
+          "wins": 0
+        },
+        "full": {
+          "count": 48.0,
+          "mean_J": 0.25,
+          "mean_fisher_projection_error": 0.0,
+          "mean_reciprocal_projection_error": 0.0,
+          "mean_closure_leakage": 0.0,
+          "mean_descent_balance_cost": 0.0,
+          "mean_resource_cost": 1.0,
+          "mean_support_size": 7.0,
+          "wins": 0
+        },
+        "conductor_packet": {
+          "count": 48.0,
+          "mean_J": 0.8404995297290644,
+          "mean_fisher_projection_error": 0.01956699004652471,
+          "mean_reciprocal_projection_error": 5.907176310106582e-30,
+          "mean_closure_leakage": 0.3958333333333333,
+          "mean_descent_balance_cost": 0.3194444444444444,
+          "mean_resource_cost": 0.4226190476190476,
+          "mean_support_size": 2.9583333333333335,
+          "wins": 0
+        },
+        "random_descent_k": {
+          "count": 48.0,
+          "mean_J": 0.9612924140916485,
+          "mean_fisher_projection_error": 0.23014162044085476,
+          "mean_reciprocal_projection_error": 0.22916666666666677,
+          "mean_closure_leakage": 0.10416666666666667,
+          "mean_descent_balance_cost": 0.2222222222222222,
+          "mean_resource_cost": 0.7023809523809524,
+          "mean_support_size": 4.916666666666667,
+          "wins": 0
+        },
+        "raw_support": {
+          "count": 48.0,
+          "mean_J": 0.9657706998390369,
+          "mean_fisher_projection_error": 0.019838160156497083,
+          "mean_reciprocal_projection_error": 9.964664147154531e-30,
+          "mean_closure_leakage": 0.3958333333333333,
+          "mean_descent_balance_cost": 0.4861111111111111,
+          "mean_resource_cost": 0.25595238095238093,
+          "mean_support_size": 1.7916666666666667,
+          "wins": 0
+        },
+        "allowed_reciprocal": {
+          "count": 48.0,
+          "mean_J": 1.6094514685208265,
+          "mean_fisher_projection_error": 0.7820705161398743,
+          "mean_reciprocal_projection_error": 0.7916666666666666,
+          "mean_closure_leakage": 0.0,
+          "mean_descent_balance_cost": 0.0,
+          "mean_resource_cost": 0.14285714285714285,
+          "mean_support_size": 1.0,
+          "wins": 10
+        },
+        "learned_top_raw_k": {
+          "count": 48.0,
+          "mean_J": 1.6930848772659595,
+          "mean_fisher_projection_error": 0.6777078931389755,
+          "mean_reciprocal_projection_error": 0.6874999999999997,
+          "mean_closure_leakage": 0.0,
+          "mean_descent_balance_cost": 0.2638888888888889,
+          "mean_resource_cost": 0.25595238095238093,
+          "mean_support_size": 1.7916666666666667,
+          "wins": 0
+        },
+        "random_raw_k": {
+          "count": 48.0,
+          "mean_J": 2.510668406837025,
+          "mean_fisher_projection_error": 0.7388430100116277,
+          "mean_reciprocal_projection_error": 0.7395833333333334,
+          "mean_closure_leakage": 0.3333333333333333,
+          "mean_descent_balance_cost": 0.6349206349206349,
+          "mean_resource_cost": 0.25595238095238093,
+          "mean_support_size": 1.7916666666666667,
+          "wins": 0
+        }
+      },
+      "winner_by_mean_J": "descent_closure",
+      "examples": [
+        {
+          "active_support": [
+            "1",
+            "7"
+          ],
+          "descent_closure": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7"
+          ],
+          "winner": "descent_closure",
+          "winner_J": 0.25,
+          "learned_top_descent_k": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7"
+          ]
+        },
+        {
+          "active_support": [
+            "3",
+            "5"
+          ],
+          "descent_closure": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7"
+          ],
+          "winner": "descent_closure",
+          "winner_J": 0.25,
+          "learned_top_descent_k": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7"
+          ]
+        },
+        {
+          "active_support": [
+            "1",
+            "7"
+          ],
+          "descent_closure": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7"
+          ],
+          "winner": "descent_closure",
+          "winner_J": 0.25,
+          "learned_top_descent_k": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7"
+          ]
+        },
+        {
+          "active_support": [
+            "4"
+          ],
+          "descent_closure": [
+            "4"
+          ],
+          "winner": "allowed_reciprocal",
+          "winner_J": 0.03571428571428571,
+          "learned_top_descent_k": [
+            "4"
+          ]
+        },
+        {
+          "active_support": [
+            "3",
+            "5"
+          ],
+          "descent_closure": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7"
+          ],
+          "winner": "descent_closure",
+          "winner_J": 0.25,
+          "learned_top_descent_k": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "c12",
+      "row": "C_12",
+      "label_count": 12,
+      "train_tasks": 48,
+      "test_tasks": 48,
+      "learned_energy_ranking_prefix": [
+        "2",
+        "10",
+        "6",
+        "11",
+        "1",
+        "3",
+        "9",
+        "7"
+      ],
+      "policies": {
+        "descent_closure": {
+          "count": 48.0,
+          "mean_J": 0.13210227272727273,
+          "mean_fisher_projection_error": 1.5290494341726267e-30,
+          "mean_reciprocal_projection_error": 5.81602811435972e-29,
+          "mean_closure_leakage": 0.0,
+          "mean_descent_balance_cost": 0.0,
+          "mean_resource_cost": 0.5284090909090909,
+          "mean_support_size": 5.8125,
+          "wins": 37
+        },
+        "normalizer_saturation": {
+          "count": 48.0,
+          "mean_J": 0.13210227272727273,
+          "mean_fisher_projection_error": 1.5290494341726267e-30,
+          "mean_reciprocal_projection_error": 5.81602811435972e-29,
+          "mean_closure_leakage": 0.0,
+          "mean_descent_balance_cost": 0.0,
+          "mean_resource_cost": 0.5284090909090909,
+          "mean_support_size": 5.8125,
+          "wins": 0
+        },
+        "full": {
+          "count": 48.0,
+          "mean_J": 0.25,
+          "mean_fisher_projection_error": 0.0,
+          "mean_reciprocal_projection_error": 0.0,
+          "mean_closure_leakage": 0.0,
+          "mean_descent_balance_cost": 0.0,
+          "mean_resource_cost": 1.0,
+          "mean_support_size": 11.0,
+          "wins": 0
+        },
+        "conductor_packet": {
+          "count": 48.0,
+          "mean_J": 0.8846138960819325,
+          "mean_fisher_projection_error": 0.02141945163748821,
+          "mean_reciprocal_projection_error": 7.169869093826695e-29,
+          "mean_closure_leakage": 0.3854166666666667,
+          "mean_descent_balance_cost": 0.41906565656565653,
+          "mean_resource_cost": 0.23484848484848486,
+          "mean_support_size": 2.5833333333333335,
+          "wins": 11
+        },
+        "raw_support": {
+          "count": 48.0,
+          "mean_J": 0.9300685849377074,
+          "mean_fisher_projection_error": 0.021419595038717404,
+          "mean_reciprocal_projection_error": 8.735413561631044e-29,
+          "mean_closure_leakage": 0.3854166666666667,
+          "mean_descent_balance_cost": 0.47967171717171714,
+          "mean_resource_cost": 0.17424242424242423,
+          "mean_support_size": 1.9166666666666667,
+          "wins": 0
+        },
+        "learned_top_descent_k": {
+          "count": 48.0,
+          "mean_J": 1.4839063597365403,
+          "mean_fisher_projection_error": 0.43722075367593427,
+          "mean_reciprocal_projection_error": 0.4375,
+          "mean_closure_leakage": 0.11458333333333333,
+          "mean_descent_balance_cost": 0.3625,
+          "mean_resource_cost": 0.5284090909090909,
+          "mean_support_size": 5.8125,
+          "wins": 0
+        },
+        "random_descent_k": {
+          "count": 48.0,
+          "mean_J": 1.7136729586812833,
+          "mean_fisher_projection_error": 0.46840780716613134,
+          "mean_reciprocal_projection_error": 0.46875000000000017,
+          "mean_closure_leakage": 0.21354166666666682,
+          "mean_descent_balance_cost": 0.43087121212121215,
+          "mean_resource_cost": 0.5284090909090909,
+          "mean_support_size": 5.8125,
+          "wins": 0
+        },
+        "allowed_reciprocal": {
+          "count": 48.0,
+          "mean_J": 2.0,
+          "mean_fisher_projection_error": 1.0,
+          "mean_reciprocal_projection_error": 1.0,
+          "mean_closure_leakage": 0.0,
+          "mean_descent_balance_cost": 0.0,
+          "mean_resource_cost": 0.0,
+          "mean_support_size": 0.0,
+          "wins": 0
+        },
+        "learned_top_raw_k": {
+          "count": 48.0,
+          "mean_J": 2.317385780352774,
+          "mean_fisher_projection_error": 0.7717418409588349,
+          "mean_reciprocal_projection_error": 0.7708333333333334,
+          "mean_closure_leakage": 0.11458333333333333,
+          "mean_descent_balance_cost": 0.6166666666666666,
+          "mean_resource_cost": 0.17424242424242423,
+          "mean_support_size": 1.9166666666666667,
+          "wins": 0
+        },
+        "random_raw_k": {
+          "count": 48.0,
+          "mean_J": 2.680991947576452,
+          "mean_fisher_projection_error": 0.8234161900006947,
+          "mean_reciprocal_projection_error": 0.8229166666666664,
+          "mean_closure_leakage": 0.28125,
+          "mean_descent_balance_cost": 0.7098484848484848,
+          "mean_resource_cost": 0.17424242424242423,
+          "mean_support_size": 1.9166666666666667,
+          "wins": 0
+        }
+      },
+      "winner_by_mean_J": "descent_closure",
+      "examples": [
+        {
+          "active_support": [
+            "10",
+            "2"
+          ],
+          "descent_closure": [
+            "10",
+            "2",
+            "4",
+            "6",
+            "8"
+          ],
+          "winner": "descent_closure",
+          "winner_J": 0.11363636363636363,
+          "learned_top_descent_k": [
+            "1",
+            "10",
+            "11",
+            "2",
+            "6"
+          ]
+        },
+        {
+          "active_support": [
+            "4",
+            "8"
+          ],
+          "descent_closure": [
+            "4",
+            "8"
+          ],
+          "winner": "conductor_packet",
+          "winner_J": 0.045454545454545456,
+          "learned_top_descent_k": [
+            "10",
+            "2"
+          ]
+        },
+        {
+          "active_support": [
+            "3",
+            "9"
+          ],
+          "descent_closure": [
+            "3",
+            "6",
+            "9"
+          ],
+          "winner": "descent_closure",
+          "winner_J": 0.06818181818181818,
+          "learned_top_descent_k": [
+            "10",
+            "2",
+            "6"
+          ]
+        },
+        {
+          "active_support": [
+            "1",
+            "11"
+          ],
+          "descent_closure": [
+            "1",
+            "10",
+            "11",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9"
+          ],
+          "winner": "descent_closure",
+          "winner_J": 0.25,
+          "learned_top_descent_k": [
+            "1",
+            "10",
+            "11",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9"
+          ]
+        },
+        {
+          "active_support": [
+            "1",
+            "11"
+          ],
+          "descent_closure": [
+            "1",
+            "10",
+            "11",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9"
+          ],
+          "winner": "descent_closure",
+          "winner_J": 0.25,
+          "learned_top_descent_k": [
+            "1",
+            "10",
+            "11",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "f4-u2",
+      "row": "F_4[u]/(u^2)",
+      "label_count": 16,
+      "train_tasks": 48,
+      "test_tasks": 48,
+      "learned_energy_ranking_prefix": [
+        "u",
+        "(w+1)u",
+        "wu",
+        "1+u",
+        "1+wu",
+        "w+1+u",
+        "w+1+(w+1)u",
+        "w+1"
+      ],
+      "policies": {
+        "descent_closure": {
+          "count": 48.0,
+          "mean_J": 0.09305555555555556,
+          "mean_fisher_projection_error": 0.0,
+          "mean_reciprocal_projection_error": 0.0,
+          "mean_closure_leakage": 0.0,
+          "mean_descent_balance_cost": 0.0,
+          "mean_resource_cost": 0.37222222222222223,
+          "mean_support_size": 5.583333333333333,
+          "wins": 25
+        },
+        "normalizer_saturation": {
+          "count": 48.0,
+          "mean_J": 0.15416666666666667,
+          "mean_fisher_projection_error": 0.0,
+          "mean_reciprocal_projection_error": 0.0,
+          "mean_closure_leakage": 0.0,
+          "mean_descent_balance_cost": 0.0,
+          "mean_resource_cost": 0.6166666666666667,
+          "mean_support_size": 9.25,
+          "wins": 0
+        },
+        "full": {
+          "count": 48.0,
+          "mean_J": 0.25,
+          "mean_fisher_projection_error": 0.0,
+          "mean_reciprocal_projection_error": 0.0,
+          "mean_closure_leakage": 0.0,
+          "mean_descent_balance_cost": 0.0,
+          "mean_resource_cost": 1.0,
+          "mean_support_size": 15.0,
+          "wins": 0
+        },
+        "conductor_packet": {
+          "count": 48.0,
+          "mean_J": 0.3257799100783097,
+          "mean_fisher_projection_error": 0.007261391559791185,
+          "mean_reciprocal_projection_error": 9.923375043131865e-33,
+          "mean_closure_leakage": 0.0862268518518518,
+          "mean_descent_balance_cost": 0.10416666666666667,
+          "mean_resource_cost": 0.5125000000000001,
+          "mean_support_size": 7.6875,
+          "wins": 0
+        },
+        "raw_support": {
+          "count": 48.0,
+          "mean_J": 0.4321484508349807,
+          "mean_fisher_projection_error": 0.015580990517520432,
+          "mean_reciprocal_projection_error": 2.32296503084801e-32,
+          "mean_closure_leakage": 0.1927083333333333,
+          "mean_descent_balance_cost": 0.1505952380952381,
+          "mean_resource_cost": 0.29305555555555557,
+          "mean_support_size": 4.395833333333333,
+          "wins": 0
+        },
+        "learned_top_descent_k": {
+          "count": 48.0,
+          "mean_J": 0.7664367814409282,
+          "mean_fisher_projection_error": 0.30115900366315046,
+          "mean_reciprocal_projection_error": 0.3055555555555555,
+          "mean_closure_leakage": 0.0,
+          "mean_descent_balance_cost": 0.06666666666666667,
+          "mean_resource_cost": 0.37222222222222223,
+          "mean_support_size": 5.583333333333333,
+          "wins": 0
+        },
+        "learned_top_raw_k": {
+          "count": 48.0,
+          "mean_J": 0.9366691312627324,
+          "mean_fisher_projection_error": 0.3762524645960658,
+          "mean_reciprocal_projection_error": 0.3802083333333333,
+          "mean_closure_leakage": 0.027777777777777776,
+          "mean_descent_balance_cost": 0.07916666666666666,
+          "mean_resource_cost": 0.29305555555555557,
+          "mean_support_size": 4.395833333333333,
+          "wins": 0
+        },
+        "allowed_reciprocal": {
+          "count": 48.0,
+          "mean_J": 1.0844052751068753,
+          "mean_fisher_projection_error": 0.5135719417735422,
+          "mean_reciprocal_projection_error": 0.5208333333333334,
+          "mean_closure_leakage": 0.0,
+          "mean_descent_balance_cost": 0.0,
+          "mean_resource_cost": 0.20000000000000004,
+          "mean_support_size": 3.0,
+          "wins": 23
+        },
+        "random_descent_k": {
+          "count": 48.0,
+          "mean_J": 1.6486348906930308,
+          "mean_fisher_projection_error": 0.5737340970422373,
+          "mean_reciprocal_projection_error": 0.5729166666666666,
+          "mean_closure_leakage": 0.020833333333333332,
+          "mean_descent_balance_cost": 0.38809523809523805,
+          "mean_resource_cost": 0.37222222222222223,
+          "mean_support_size": 5.583333333333333,
+          "wins": 0
+        },
+        "random_raw_k": {
+          "count": 48.0,
+          "mean_J": 1.9379670275955467,
+          "mean_fisher_projection_error": 0.691927932945341,
+          "mean_reciprocal_projection_error": 0.6927083333333334,
+          "mean_closure_leakage": 0.06756687242798354,
+          "mean_descent_balance_cost": 0.41250000000000003,
+          "mean_resource_cost": 0.29305555555555557,
+          "mean_support_size": 4.395833333333333,
+          "wins": 0
+        }
+      },
+      "winner_by_mean_J": "descent_closure",
+      "examples": [
+        {
+          "active_support": [
+            "(w+1)u",
+            "u",
+            "wu"
+          ],
+          "descent_closure": [
+            "(w+1)u",
+            "u",
+            "wu"
+          ],
+          "winner": "allowed_reciprocal",
+          "winner_J": 0.05,
+          "learned_top_descent_k": [
+            "(w+1)u",
+            "u",
+            "wu"
+          ]
+        },
+        {
+          "active_support": [
+            "1",
+            "1+(w+1)u",
+            "1+u",
+            "1+wu",
+            "w",
+            "w+(w+1)u",
+            "w+1",
+            "w+1+(w+1)u",
+            "w+1+u",
+            "w+1+wu",
+            "w+u",
+            "w+wu"
+          ],
+          "descent_closure": [
+            "(w+1)u",
+            "1",
+            "1+(w+1)u",
+            "1+u",
+            "1+wu",
+            "u",
+            "w",
+            "w+(w+1)u",
+            "w+1",
+            "w+1+(w+1)u",
+            "w+1+u",
+            "w+1+wu",
+            "w+u",
+            "w+wu",
+            "wu"
+          ],
+          "winner": "descent_closure",
+          "winner_J": 0.25,
+          "learned_top_descent_k": [
+            "(w+1)u",
+            "1",
+            "1+(w+1)u",
+            "1+u",
+            "1+wu",
+            "u",
+            "w",
+            "w+(w+1)u",
+            "w+1",
+            "w+1+(w+1)u",
+            "w+1+u",
+            "w+1+wu",
+            "w+u",
+            "w+wu",
+            "wu"
+          ]
+        },
+        {
+          "active_support": [
+            "(w+1)u",
+            "u",
+            "wu"
+          ],
+          "descent_closure": [
+            "(w+1)u",
+            "u",
+            "wu"
+          ],
+          "winner": "allowed_reciprocal",
+          "winner_J": 0.05,
+          "learned_top_descent_k": [
+            "(w+1)u",
+            "u",
+            "wu"
+          ]
+        },
+        {
+          "active_support": [
+            "1+u",
+            "w",
+            "w+u"
+          ],
+          "descent_closure": [
+            "1",
+            "1+u",
+            "u",
+            "w",
+            "w+1",
+            "w+1+u",
+            "w+u"
+          ],
+          "winner": "descent_closure",
+          "winner_J": 0.11666666666666667,
+          "learned_top_descent_k": [
+            "(w+1)u",
+            "1+u",
+            "1+wu",
+            "u",
+            "w+1+(w+1)u",
+            "w+1+u",
+            "wu"
+          ]
+        },
+        {
+          "active_support": [
+            "(w+1)u",
+            "u",
+            "wu"
+          ],
+          "descent_closure": [
+            "(w+1)u",
+            "u",
+            "wu"
+          ],
+          "winner": "allowed_reciprocal",
+          "winner_J": 0.05,
+          "learned_top_descent_k": [
+            "(w+1)u",
+            "u",
+            "wu"
+          ]
+        }
+      ]
+    }
+  ]
+}

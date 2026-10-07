@@ -1,0 +1,123 @@
+[
+  {
+    "file": "C:\\Users\\leomu\\Downloads\\Neckertal_20150527-6384 (1).jpg",
+    "width": 1024,
+    "height": 1024,
+    "raw_rgb_bytes": 3145728,
+    "webp_lossless_bytes": 1210060,
+    "transform": "r-gr-bg",
+    "scheme": "ch-ctx-energy-unitary-split-blend71-apex128",
+    "rows": [
+      {
+        "model": "baseline",
+        "mix": "0/1",
+        "bytes": 1173635,
+        "delta_vs_webp": -36425,
+        "roundtrip_ok": true,
+        "encode_s": 52.67570889997296,
+        "decode_s": 166.86405800003558,
+        "encode_stats": {
+          "codec": "SM30",
+          "model": "baseline",
+          "transform": "r-gr-bg",
+          "scheme": "ch-ctx-energy-unitary-split-blend71-apex128",
+          "mix": "0/1",
+          "bytes": 1173635,
+          "header_metadata_bytes": 3865,
+          "entropy_bytes": 1169770,
+          "predictor_metadata_bytes": 1920,
+          "energy_metadata_bytes": 1152,
+          "unitary_metadata_bytes": 768,
+          "max_symbol": 90,
+          "moment_class_counts": {
+            "0": 15,
+            "1": 1042966,
+            "2": 2102747
+          },
+          "predictors": {
+            "pred-4": 2349,
+            "pred-1": 119,
+            "pred-7": 288,
+            "pred-20": 47,
+            "pred-3": 25,
+            "pred-9": 18,
+            "pred-12": 3,
+            "pred-18": 2,
+            "pred-8": 25,
+            "pred-6": 126,
+            "pred-5": 46,
+            "pred-14": 22,
+            "pred-2": 2
+          },
+          "residual_s": 4.00003045797348e-07,
+          "entropy_encode_s": 52.663828500022646,
+          "shared_residual_build_s": 51.56466839998029
+        },
+        "decode_stats": {
+          "codec": "SM30",
+          "model": "baseline",
+          "transform": "r-gr-bg",
+          "scheme": "ch-ctx-energy-unitary-split-blend71-apex128",
+          "metadata_bytes": 3865,
+          "entropy_bytes": 1169770,
+          "max_symbol": 90
+        }
+      },
+      {
+        "model": "hard-moment-context",
+        "mix": "0/1",
+        "bytes": 1173956,
+        "delta_vs_webp": -36104,
+        "roundtrip_ok": true,
+        "encode_s": 121.7639821000048,
+        "decode_s": 248.71624409995275,
+        "encode_stats": {
+          "codec": "SM30",
+          "model": "hard-moment-context",
+          "transform": "r-gr-bg",
+          "scheme": "ch-ctx-energy-unitary-split-blend71-apex128",
+          "mix": "0/1",
+          "bytes": 1173956,
+          "header_metadata_bytes": 3865,
+          "entropy_bytes": 1170091,
+          "predictor_metadata_bytes": 1920,
+          "energy_metadata_bytes": 1152,
+          "unitary_metadata_bytes": 768,
+          "max_symbol": 90,
+          "moment_class_counts": {
+            "0": 15,
+            "1": 1042966,
+            "2": 2102747
+          },
+          "predictors": {
+            "pred-4": 2349,
+            "pred-1": 119,
+            "pred-7": 288,
+            "pred-20": 47,
+            "pred-3": 25,
+            "pred-9": 18,
+            "pred-12": 3,
+            "pred-18": 2,
+            "pred-8": 25,
+            "pred-6": 126,
+            "pred-5": 46,
+            "pred-14": 22,
+            "pred-2": 2
+          },
+          "residual_s": 5.00003807246685e-07,
+          "entropy_encode_s": 121.74267239996698,
+          "shared_residual_build_s": 51.56466839998029
+        },
+        "decode_stats": {
+          "codec": "SM30",
+          "model": "hard-moment-context",
+          "transform": "r-gr-bg",
+          "scheme": "ch-ctx-energy-unitary-split-blend71-apex128",
+          "metadata_bytes": 3865,
+          "entropy_bytes": 1170091,
+          "max_symbol": 90
+        }
+      }
+    ]
+  }
+]

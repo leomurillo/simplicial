@@ -1,0 +1,666 @@
+{
+  "claim_tested": "E5 parameter-fixed physical discriminator for the Z6 canonical bridge",
+  "pre_registration": {
+    "model": "a_candidate = a_Newton + lambda_E5 * (a_EL(eta_copula)-a_EL(eta_base))",
+    "cartesian_lift": "mass-metric minimum-norm inverse of D sigma",
+    "participation_lift": "mass",
+    "shape_participation_power": 1.0,
+    "kappa": 0.8,
+    "phi_coeffs": [
+      1.0,
+      0.0
+    ],
+    "lambda_fixing": "lambda_E5 fixed once by weak-field tolerance, then held fixed",
+    "lambda_source": "ephemeris",
+    "weak_field_tol": 1e-10,
+    "boundary_tol": 1e-08,
+    "controlled_signal_floor": 1e-12,
+    "sign_zero_tol": 1e-14,
+    "ephemeris_metric": "final RMS position/velocity deviation relative to initial RMS scale after N orbits",
+    "ephemeris_position_tol": 1e-10,
+    "ephemeris_velocity_tol": 1e-10,
+    "ephemeris_orbits": 2,
+    "ephemeris_steps_per_orbit": 10
+  },
+  "parameters": {
+    "kappa": 0.8,
+    "phi_coeffs": [
+      1.0,
+      0.0
+    ],
+    "solar_masses": [
+      1.0,
+      3e-06,
+      0.00095
+    ],
+    "controlled_masses": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "g_const": 1.0,
+    "weak_field_tol": 1e-10,
+    "boundary_tol": 1e-08,
+    "controlled_signal_floor": 1e-12,
+    "ephemeris_position_tol": 1e-10,
+    "ephemeris_velocity_tol": 1e-10,
+    "ephemeris_sign_signal_floor": 1e-12,
+    "ephemeris_orbits": 2,
+    "ephemeris_steps_per_orbit": 10,
+    "ephemeris_ratio_stride": 5,
+    "lambda_source": "ephemeris",
+    "participation_lift": "mass",
+    "shape_participation_power": 1.0,
+    "controlled_shape_velocity": [
+      0.04,
+      -0.02,
+      0.015
+    ],
+    "cartesian_fd_rel": 1e-06,
+    "cartesian_fd_abs": 1e-09,
+    "moon_phase_degrees": 90.0,
+    "skip_ephemeris": false,
+    "include_synthetic_equilateral": true,
+    "lambda_floor": 1e-14,
+    "sign_zero_tol": 1e-14,
+    "numeric_slack": 1e-06,
+    "boundary_radius": 100.0,
+    "fd_step": 1e-06,
+    "variation_step": 2e-05,
+    "lstsq_rcond": 1e-10,
+    "report": "empirical\\reports\\z6_e5_physical_discriminator_mass.md",
+    "json": "empirical\\reports\\z6_e5_physical_discriminator_mass.json"
+  },
+  "lambda_fixing": {
+    "source": "ephemeris",
+    "weak_unscaled_ratios": [
+      2.1571555787302977e-11,
+      3.4215604266215685e-10,
+      7.728828375202861e-10
+    ],
+    "max_weak_unscaled_ratio": 7.728828375202861e-10,
+    "ephemeris_weak_unscaled_ratios": [
+      {
+        "case": "earth_moon_sun_quadrature",
+        "newtonian_mass_metric_norm": 0.06892649484887994,
+        "e5_mass_metric_norm": 1.843535613929724e-15,
+        "relative_correction_norm": 2.674640017560216e-14,
+        "relative_signed_projection": -2.6609320495149962e-14
+      },
+      {
+        "case": "jupiter_io_europa",
+        "newtonian_mass_metric_norm": 1.046639623296514,
+        "e5_mass_metric_norm": 4.488777880030284e-08,
+        "relative_correction_norm": 4.2887520977777935e-08,
+        "relative_signed_projection": -3.8299755446347516e-08
+      }
+    ],
+    "max_ephemeris_weak_unscaled_ratio": 4.2887520977777935e-08,
+    "lambda_E5": 0.0023316805849378603
+  },
+  "weak_field": [
+    {
+      "sigma": [
+        2.34660197841082,
+        -1.023126224661818,
+        -0.7554219296856349
+      ],
+      "sides": [
+        1.0000000000000002,
+        4.25,
+        5.200000000000002
+      ],
+      "sigmadot": [
+        0.0001,
+        -0.0002,
+        0.0001
+      ],
+      "newtonian_acceleration": [
+        -0.012948489291247957,
+        -0.8571197463520904,
+        -0.3158311903895201
+      ],
+      "ternary_acceleration_unscaled": [
+        9.632397985342177e-17,
+        3.960885684762741e-15,
+        1.661383768658342e-14
+      ],
+      "ternary_acceleration_scaled": [
+        2.2459675368816917e-19,
+        9.235520250319585e-18,
+        3.87381627751155e-17
+      ],
+      "participation_factor": 7.673041860502602e-08,
+      "newtonian_metric_norm": 0.0020728745300123783,
+      "scaled_ternary_metric_norm": 1.0426139712624215e-16,
+      "relative_correction_norm": 5.029797781615829e-14,
+      "signed_metric_projection": 4.389933269021912e-21,
+      "relative_signed_projection": 1.0216729335211895e-15
+    },
+    {
+      "sigma": [
+        2.954910279033736,
+        -1.525624826651595,
+        -0.9616382330162688
+      ],
+      "sides": [
+        1.0000000000000004,
+        8.65,
+        9.550000000000006
+      ],
+      "sigmadot": [
+        0.0001,
+        -0.0002,
+        0.0001
+      ],
+      "newtonian_acceleration": [
+        -0.0068979663610620095,
+        -0.7789527299257208,
+        -0.36589895405008094
+      ],
+      "ternary_acceleration_unscaled": [
+        -5.1832578806007713e-14,
+        1.8302049830522567e-13,
+        5.5913426225560105e-15
+      ],
+      "ternary_acceleration_scaled": [
+        -1.2085701766922982e-16,
+        4.267453425439473e-16,
+        1.3037225036749389e-17
+      ],
+      "participation_factor": 7.673041860502602e-08,
+      "newtonian_metric_norm": 0.001763541188229473,
+      "scaled_ternary_metric_norm": 1.406950694000168e-15,
+      "relative_correction_norm": 7.977986016945213e-13,
+      "signed_metric_projection": -2.1232938546437022e-20,
+      "relative_signed_projection": -6.827141250424704e-15
+    },
+    {
+      "sigma": [
+        3.4111477125153233,
+        -1.8761253853024793,
+        -1.13335748035434
+      ],
+      "sides": [
+        1.0,
+        14.199999999999992,
+        15.10000000000001
+      ],
+      "sigmadot": [
+        0.0001,
+        -0.0002,
+        0.0001
+      ],
+      "newtonian_acceleration": [
+        -0.003746282269600612,
+        -0.7527316305223402,
+        -0.3831432150798494
+      ],
+      "ternary_acceleration_unscaled": [
+        -4.356323731673574e-14,
+        1.411643657943601e-13,
+        1.5913717898026256e-15
+      ],
+      "ternary_acceleration_scaled": [
+        -1.0157555466847322e-16,
+        3.2915021100777567e-16,
+        3.7105707057005954e-18
+      ],
+      "participation_factor": 7.673041860502602e-08,
+      "newtonian_metric_norm": 0.0017394000641684022,
+      "scaled_ternary_metric_norm": 3.134600523714149e-15,
+      "relative_correction_norm": 1.802115906677734e-12,
+      "signed_metric_projection": -2.0967877649578294e-19,
+      "relative_signed_projection": -6.930355459701935e-14
+    }
+  ],
+  "dyadic_boundary": [
+    {
+      "sigma": [
+        5.303304908059076,
+        -3.2563470670302936,
+        -1.8800528557247886
+      ],
+      "sides": [
+        1.0,
+        99.99999999999996,
+        100.00000000000004
+      ],
+      "sigmadot": [
+        0.0002,
+        -0.0001,
+        5e-05
+      ],
+      "newtonian_acceleration": [
+        -0.009829684556073255,
+        -1.414285827420562,
+        -0.8165383628581813
+      ],
+      "ternary_acceleration_unscaled": [
+        -9.107453497925491e-08,
+        2.602312330089308e-07,
+        -8.071345380796032e-11
+      ],
+      "ternary_acceleration_scaled": [
+        -2.1235672499337273e-10,
+        6.067761136013645e-10,
+        -1.8819799318729989e-13
+      ],
+      "participation_factor": 1.0,
+      "newtonian_metric_norm": 1.4142693474772035,
+      "scaled_ternary_metric_norm": 3.50514971139624e-06,
+      "relative_correction_norm": 2.4784173662879585e-06,
+      "signed_metric_projection": 1.4093953747129628e-09,
+      "relative_signed_projection": 7.046420956000582e-10
+    },
+    {
+      "sigma": [
+        5.993961427306569,
+        -3.746476138764567,
+        -2.1630290072282325
+      ],
+      "sides": [
+        1.0000000000000013,
+        200.0000000000001,
+        200.0000000000001
+      ],
+      "sigmadot": [
+        0.0002,
+        -0.0001,
+        5e-05
+      ],
+      "newtonian_acceleration": [
+        -0.004302284453195408,
+        -1.413728784415419,
+        -0.8162167538071433
+      ],
+      "ternary_acceleration_unscaled": [
+        -9.273464121984253e-08,
+        2.631707615229182e-07,
+        -1.581932830497175e-11
+      ],
+      "ternary_acceleration_scaled": [
+        -2.1622756248348504e-10,
+        6.136301551663002e-10,
+        -3.688562067546058e-14
+      ],
+      "participation_factor": 1.0,
+      "newtonian_metric_norm": 1.4178099917490712,
+      "scaled_ternary_metric_norm": 1.417270149493721e-05,
+      "relative_correction_norm": 9.996192421703248e-06,
+      "signed_metric_projection": 2.9193125583582002e-08,
+      "relative_signed_projection": 1.4522605170905783e-08
+    }
+  ],
+  "controlled": [
+    {
+      "sigma": [
+        1.0986122886681098,
+        0.0,
+        0.0
+      ],
+      "sides": [
+        1.0000000000000002,
+        1.0000000000000002,
+        1.0000000000000002
+      ],
+      "sigmadot": [
+        0.04,
+        -0.02,
+        0.015
+      ],
+      "newtonian_acceleration": [
+        -3.0010392965028734,
+        0.0015267442855890806,
+        -0.002093762107481516
+      ],
+      "ternary_acceleration_unscaled": [
+        -0.0023547456531705507,
+        0.005005730279593595,
+        -0.001754258768376422
+      ],
+      "ternary_acceleration_scaled": [
+        -5.490514721964594e-06,
+        1.1671764106363952e-05,
+        -4.090371111180306e-06
+      ],
+      "participation_factor": 1.0,
+      "newtonian_metric_norm": 3.001040779235925,
+      "scaled_ternary_metric_norm": 1.3811380919284309e-05,
+      "relative_correction_norm": 4.602197016063451e-06,
+      "signed_metric_projection": 1.6510949282889132e-05,
+      "relative_signed_projection": 1.8332776747797688e-06
+    },
+    {
+      "sigma": [
+        1.1019400787607843,
+        -0.027733232233657645,
+        0.04088162786463341
+      ],
+      "sides": [
+        0.9999999999999999,
+        1.04,
+        0.9699999999999999
+      ],
+      "sigmadot": [
+        0.04,
+        -0.02,
+        0.015
+      ],
+      "newtonian_acceleration": [
+        -2.972961988275581,
+        -0.0566956718883333,
+        0.08867578431124247
+      ],
+      "ternary_acceleration_unscaled": [
+        -0.002436372313574706,
+        0.004946582861401112,
+        -0.0021349137764594675
+      ],
+      "ternary_acceleration_scaled": [
+        -5.680842021242279e-06,
+        1.153385121971534e-05,
+        -4.977937003086907e-06
+      ],
+      "participation_factor": 1.0,
+      "newtonian_metric_norm": 2.9848879163991304,
+      "scaled_ternary_metric_norm": 1.4941007358740768e-05,
+      "relative_correction_norm": 5.005550552385599e-06,
+      "signed_metric_projection": 1.6001692663326996e-05,
+      "relative_signed_projection": 1.7960146263837088e-06
+    },
+    {
+      "sigma": [
+        1.095273387402595,
+        0.02886550914683251,
+        -0.04080017044275919
+      ],
+      "sides": [
+        1.0,
+        0.9600000000000001,
+        1.03
+      ],
+      "sigmadot": [
+        0.04,
+        -0.02,
+        0.015
+      ],
+      "newtonian_acceleration": [
+        -3.033243470888137,
+        0.0875550476746273,
+        -0.08629751693919442
+      ],
+      "ternary_acceleration_unscaled": [
+        -0.0009111033069947314,
+        0.001481308431317248,
+        0.000619976852689717
+      ],
+      "ternary_acceleration_scaled": [
+        -2.1244018917922944e-06,
+        3.453938109607185e-06,
+        1.445587990527493e-06
+      ],
+      "participation_factor": 1.0,
+      "newtonian_metric_norm": 3.0254641176912456,
+      "scaled_ternary_metric_norm": 3.6981865353777458e-06,
+      "relative_correction_norm": 1.2223534609955512e-06,
+      "signed_metric_projection": 6.48544189948777e-06,
+      "relative_signed_projection": 7.085256219382609e-07
+    },
+    {
+      "sigma": [
+        1.1019400787607843,
+        0.021109232681651675,
+        0.003981356309578768
+      ],
+      "sides": [
+        1.02,
+        0.99,
+        1.0
+      ],
+      "sigmadot": [
+        0.04,
+        -0.02,
+        0.015
+      ],
+      "newtonian_acceleration": [
+        -2.9719189551377094,
+        0.08651467757855345,
+        0.02672129261589585
+      ],
+      "ternary_acceleration_unscaled": [
+        -0.0020008666891180482,
+        0.004227786297025174,
+        -0.0014981909493960654
+      ],
+      "ternary_acceleration_scaled": [
+        -4.665382012065451e-06,
+        9.857847226039928e-06,
+        -3.493302749236426e-06
+      ],
+      "participation_factor": 1.0,
+      "newtonian_metric_norm": 2.9823895906432525,
+      "scaled_ternary_metric_norm": 1.1471173132240616e-05,
+      "relative_correction_norm": 3.846302699093874e-06,
+      "signed_metric_projection": 1.437082487065703e-05,
+      "relative_signed_projection": 1.6156710645793973e-06
+    }
+  ],
+  "ephemeris": [
+    {
+      "name": "earth_moon_sun_quadrature",
+      "family": "known_perturbed_three_body",
+      "period": 0.0748013279639999,
+      "orbits": 2,
+      "duration": 0.1496026559279998,
+      "steps": 20,
+      "dt": 0.00748013279639999,
+      "weak_field_calibrator": true,
+      "near_equilateral_sign": false,
+      "initial_sides": [
+        1.0,
+        0.0025695552897999907,
+        1.0000033013017444
+      ],
+      "position_scale": 1.0000033013017444,
+      "velocity_scale": 5.131696966145056,
+      "final_relative_position_deviation": 8.90485440718448e-16,
+      "final_relative_velocity_deviation": 1.5348730884064704e-14,
+      "max_relative_position_deviation": 8.90485440718448e-16,
+      "max_relative_velocity_deviation": 1.5348730884064704e-14,
+      "sampled_relative_correction_norms": [
+        6.236406200643016e-17,
+        5.567076971864633e-17,
+        5.173610322881927e-17,
+        4.152082385877395e-17,
+        3.8553930963613354e-17
+      ],
+      "max_sampled_relative_correction_norm": 6.236406200643016e-17,
+      "sampled_relative_signed_projections": [
+        -6.204443597693027e-17,
+        -5.5377595480809176e-17,
+        -5.1418595083576435e-17,
+        -4.123332690172469e-17,
+        -3.8242698532827783e-17
+      ]
+    },
+    {
+      "name": "jupiter_io_europa",
+      "family": "known_perturbed_three_body",
+      "period": 0.004843550900660493,
+      "orbits": 2,
+      "duration": 0.009687101801320985,
+      "steps": 20,
+      "dt": 0.00048435509006604924,
+      "weak_field_calibrator": true,
+      "near_equilateral_sign": false,
+      "initial_sides": [
+        0.0028188903894606036,
+        0.00605936288193847,
+        0.0044855852350042845
+      ],
+      "position_scale": 0.00605936288193847,
+      "velocity_scale": 2.694064144492995,
+      "final_relative_position_deviation": 1.364257412209939e-09,
+      "final_relative_velocity_deviation": 3.726243967537848e-09,
+      "max_relative_position_deviation": 1.4762497780954268e-09,
+      "max_relative_velocity_deviation": 3.726243967537848e-09,
+      "sampled_relative_correction_norms": [
+        1.0000000000000003e-10,
+        4.534067156010147e-12,
+        1.0148857244103239e-10,
+        1.7855769240491183e-12,
+        9.125991791674774e-11
+      ],
+      "max_sampled_relative_correction_norm": 1.0148857244103239e-10,
+      "sampled_relative_signed_projections": [
+        -8.930279618211657e-11,
+        -8.23027487721401e-13,
+        -9.277565906996327e-11,
+        -1.198235695901648e-13,
+        -8.121098056871781e-11
+      ]
+    },
+    {
+      "name": "synthetic_lagrange_equilateral",
+      "family": "synthetic_near_equilateral",
+      "period": 3.6275987284684357,
+      "orbits": 2,
+      "duration": 7.255197456936871,
+      "steps": 20,
+      "dt": 0.3627598728468436,
+      "weak_field_calibrator": false,
+      "near_equilateral_sign": true,
+      "initial_sides": [
+        1.0,
+        0.9999999999999999,
+        0.9999999999999999
+      ],
+      "position_scale": 1.0,
+      "velocity_scale": 0.9999999999999998,
+      "final_relative_position_deviation": 0.00037898403142580864,
+      "final_relative_velocity_deviation": 0.0004947096018922828,
+      "max_relative_position_deviation": 0.00037898403142580864,
+      "max_relative_velocity_deviation": 0.0004947096018922828,
+      "sampled_relative_correction_norms": [
+        1.935889367458383e-23,
+        1.5733845008758474e-09,
+        4.3579553449032275e-11,
+        2.017851722603548e-09,
+        2.0344927869231726e-08
+      ],
+      "max_sampled_relative_correction_norm": 2.0344927869231726e-08,
+      "sampled_relative_signed_projections": [
+        7.61194070396318e-24,
+        -1.0584404670817164e-11,
+        1.035266594285029e-11,
+        -5.389928234181066e-10,
+        1.076559429846982e-08
+      ]
+    }
+  ],
+  "near_equilateral_cartesian_sign_scan": [
+    {
+      "sides": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "declared_shape_velocity": [
+        0.04,
+        -0.02,
+        0.015
+      ],
+      "relative_correction_norm": 3.8314546844445415e-06,
+      "relative_signed_projection": 1.8301802784261417e-06
+    },
+    {
+      "sides": [
+        1.0,
+        1.04,
+        0.97
+      ],
+      "declared_shape_velocity": [
+        0.04,
+        -0.02,
+        0.015
+      ],
+      "relative_correction_norm": 4.089616979638692e-06,
+      "relative_signed_projection": 1.7887042417710384e-06
+    },
+    {
+      "sides": [
+        1.0,
+        0.96,
+        1.03
+      ],
+      "declared_shape_velocity": [
+        0.04,
+        -0.02,
+        0.015
+      ],
+      "relative_correction_norm": 1.2186138967946921e-06,
+      "relative_signed_projection": 7.073332558924883e-07
+    },
+    {
+      "sides": [
+        1.02,
+        0.99,
+        1.0
+      ],
+      "declared_shape_velocity": [
+        0.04,
+        -0.02,
+        0.015
+      ],
+      "relative_correction_norm": 3.244106365438164e-06,
+      "relative_signed_projection": 1.6132369819242324e-06
+    }
+  ],
+  "summary": {
+    "status": "KILL",
+    "lambda_E5": 0.0023316805849378603,
+    "lambda_source": "ephemeris",
+    "weak_field_max_relative_correction": 1.802115906677734e-12,
+    "dyadic_boundary_max_relative_correction": 9.996192421703248e-06,
+    "controlled_relative_signed_projections": [
+      1.8332776747797688e-06,
+      1.7960146263837088e-06,
+      7.085256219382609e-07,
+      1.6156710645793973e-06
+    ],
+    "controlled_signs": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "controlled_sign_definite": true,
+    "controlled_min_abs_signal": 7.085256219382609e-07,
+    "controlled_max_abs_signal": 1.8332776747797688e-06,
+    "ephemeris_final_position_max": 0.00037898403142580864,
+    "ephemeris_final_velocity_max": 0.0004947096018922828,
+    "ephemeris_weak_field_max_sampled_correction": 1.0148857244103239e-10,
+    "near_equilateral_cartesian_signed_projections": [
+      1.8301802784261417e-06,
+      1.7887042417710384e-06,
+      7.073332558924883e-07,
+      1.6132369819242324e-06
+    ],
+    "near_equilateral_cartesian_signs": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "near_equilateral_cartesian_sign_definite": true,
+    "near_equilateral_cartesian_min_abs_signal": 7.073332558924883e-07,
+    "near_equilateral_cartesian_max_abs_signal": 1.8301802784261417e-06,
+    "kills": [
+      "dyadic-boundary correction does not recover Newtonian shadow within tolerance",
+      "ephemeris weak-field acceleration correction exceeds 1e-10 cap",
+      "finite-row rigidity prevents ephemeris recovery: final position residual exceeds tolerance",
+      "finite-row rigidity prevents ephemeris recovery: final velocity residual exceeds tolerance"
+    ]
+  }
+}

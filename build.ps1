@@ -44,7 +44,11 @@ if (-not (Test-Path $preamble)) { throw "Preamble not found: $preamble" }
 $pdfName  = [System.IO.Path]::ChangeExtension($Source, '.pdf')
 $finalPdf = Join-Path $root $pdfName
 
-if ($Clean -and (Test-Path $buildDir)) { Remove-Item $buildDir -Recurse -Force }
+if ($Clean -and (Test-Path $buildDir)) {
+    # Preserve build/utils (shared maintenance scripts); wipe the rest.
+    Get-ChildItem -LiteralPath $buildDir -Force |
+        Where-Object { $_.Name -ne 'utils' } | Remove-Item -Recurse -Force
+}
 New-Item -ItemType Directory -Force -Path $buildDir | Out-Null
 
 # --- Locate tools ------------------------------------------------------------
@@ -83,14 +87,50 @@ $lines = Get-Content $srcPath -Encoding utf8
 $title  = ($lines | Where-Object { $_ -match '^# \S' } | Select-Object -First 1) -replace '^#\s+',''
 if (-not $title) { throw "Could not parse title (H1) from $Source" }
 
+# Derive a clean PDF-metadata version of the title by stripping any raw LaTeX
+# commands the displayed title carries (e.g. \heb{ל} for the font-switched
+# Hebrew letter): pandoc's default title-meta extraction drops the command
+# *and* its argument, which would erase the letter from the metadata too.
+# We collapse \heb{X} -> X so the metadata keeps the literal character.
+$titleMeta = $title -replace '\\heb(?:\[[^\]]*\])?\{([^}]*)\}', '$1'
+
 $authorLine = ($lines | Where-Object { $_ -match '^\*\*[^*]+\*\*$' } | Select-Object -First 1)
 if (-not $authorLine) { throw "Could not parse author (**...**) from $Source" }
 $author = $authorLine -replace '^\*\*|\*\*$',''
+$authorMeta = $author
 
-# Date: take the date field we wrote during authoring (matches "*Month DD, YYYY*")
-$dateLine = ($lines | Where-Object { $_ -match '^\*[A-Z][a-z]+\s+\d{1,2},\s+\d{4}\*$' } | Select-Object -First 1)
+# Optional affiliation: the first single-italic line that is neither an
+# email (`@`) nor a date (`Month DD, YYYY`). If present, append it to the
+# author on a new line on the title page via raw LaTeX (`\\ \textit{...}`).
+# Pandoc's default markdown variant has raw_tex enabled, so the commands
+# survive into the output .tex untouched.
+$affiliationLine = ($lines | Where-Object {
+    $_ -match '^\*[^*@]+\*$' -and $_ -notmatch '\d{4}\*$'
+} | Select-Object -First 1)
+if ($affiliationLine) {
+    $affiliation = $affiliationLine -replace '^\*|\*$',''
+    # \newline (not \\) so pandoc's metadata-as-markdown parser, which
+    # treats `\\` as the markdown escape for a literal backslash, doesn't
+    # render the line break as `\textbackslash{}`.
+    $author      = "$author\newline\textit{$affiliation}"
+    $authorMeta  = "$authorMeta ($affiliation)"
+}
+
+# Date: take the date field we wrote during authoring.
+# Accepts the plain form "*Month DD, YYYY*" OR an enriched preprint form
+# such as "*Preprint, version 1.0 — May 21, 2026*" — any italic line that
+# ends with "Month DD, YYYY".
+$dateLine = ($lines | Where-Object { $_ -match '^\*[^*]*[A-Z][a-z]+\s+\d{1,2},\s+\d{4}\*$' } | Select-Object -First 1)
 if (-not $dateLine) { throw "Could not parse date (*Month DD, YYYY*) from $Source" }
 $date = $dateLine -replace '^\*|\*$',''
+
+# If the date line carries a "Preprint, version X" prefix, surface the whole
+# date string (version + date) as the PDF subject so it lands in the document
+# metadata alongside the title-page rendering of the date.
+$subject = $null
+if ($date -match '^Preprint') {
+    $subject = $date
+}
 
 # Find the first `---` horizontal rule that closes the title block.
 $hrIdx = $null
@@ -128,14 +168,24 @@ if ($null -ne $absStart) {
     $body = ($keep -join "`n").TrimStart("`r","`n")
 }
 
-# YAML front matter for pandoc
-function Esc-Yaml([string]$s) { return $s -replace '"','\"' }
+# YAML front matter for pandoc.
+# Backslashes (raw LaTeX commands like \heb{...}) and double-quotes both need
+# escaping inside YAML's double-quoted scalars; .Replace() is used so that
+# regex metacharacters in the input have no effect.
+function Esc-Yaml([string]$s) {
+    return $s.Replace('\','\\').Replace('"','\"')
+}
+
+$subjectLine = if ($subject) { 'subject: "{0}"' -f (Esc-Yaml $subject) } else { '' }
 
 $yaml = @"
 ---
 title: "$(Esc-Yaml $title)"
+title-meta: "$(Esc-Yaml $titleMeta)"
 author: "$(Esc-Yaml $author)"
+author-meta: "$(Esc-Yaml $authorMeta)"
 date: "$(Esc-Yaml $date)"
+$subjectLine
 abstract: |
 $(
     if ($abstract) {
@@ -155,10 +205,11 @@ $texFile = Join-Path $buildDir 'paper.tex'
 
 $pandocArgs = @(
     $preppedMd,
-    '--from=markdown+tex_math_dollars+pipe_tables+smart+implicit_figures+autolink_bare_uris',
+    '--from=markdown+tex_math_dollars+tex_math_single_backslash+pipe_tables+smart+implicit_figures+autolink_bare_uris',
     '--to=latex',
     "--output=$texFile",
     '--standalone',
+    '--wrap=preserve',
     '--pdf-engine=xelatex',
     '--top-level-division=section',
     '--table-of-contents',
@@ -167,7 +218,7 @@ $pandocArgs = @(
     '-V', 'documentclass=article',
     '-V', 'classoption=11pt',
     '-V', 'papersize=letter',
-    '-V', 'geometry:margin=1in',
+    '-V', 'geometry:margin=0.7in',
     '-V', 'colorlinks=true',
     '-V', 'mainfont=Latin Modern Roman',
     '-V', 'mathfont=Latin Modern Math',
