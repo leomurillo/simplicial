@@ -1,0 +1,50 @@
+G1  one quotient, one metric
+  [OK ] N=3: ||sum c_i v_i||^2 = c^T(NI-J)c/(N-1)
+  [OK ] N=3: gauge invariant (c -> c + k1)
+  [OK ] N=3: = sum c_i^2 - 2/(N-1) sum_(i<j) c_i c_j  (genesis form)
+  [OK ] N=4: ||sum c_i v_i||^2 = c^T(NI-J)c/(N-1)
+  [OK ] N=4: gauge invariant (c -> c + k1)
+  [OK ] N=4: = sum c_i^2 - 2/(N-1) sum_(i<j) c_i c_j  (genesis form)
+  [OK ] N=5: ||sum c_i v_i||^2 = c^T(NI-J)c/(N-1)
+  [OK ] N=5: gauge invariant (c -> c + k1)
+  [OK ] N=5: = sum c_i^2 - 2/(N-1) sum_(i<j) c_i c_j  (genesis form)
+  [OK ] N=6: ||sum c_i v_i||^2 = c^T(NI-J)c/(N-1)
+  [OK ] N=6: gauge invariant (c -> c + k1)
+  [OK ] N=6: = sum c_i^2 - 2/(N-1) sum_(i<j) c_i c_j  (genesis form)
+  [OK ] N=3 genesis circle r^2 = l^2+n^2+m^2-ln-lm-nm
+  [OK ] N=4 two-zero point (l,0,0,p): r^2 = l^2 + p^2 - (2/3) l p (same single formula)
+  [OK ] genesis p.15 two-zero formula is refuted: at (0,0,0,p) it gives 4p^2/3, true value p^2
+G2  linear gauges are points of the simplex
+  [OK ] w.1=1 => pi_w = I - 1 w^T is idempotent
+  [OK ] pi_w kills the gauge line: pi_w 1 = 0
+  [OK ] image of pi_w = ker w^T (w^T pi_w = 0)
+  [OK ] w = barycentre 1/N  -> zero-sum projector I - J/N (orthogonal)
+  [OK ] w = vertex e_argmin -> std form: pi(c) = c - min(c) 1 (nonnegative, one zero)
+G3  the temperature bridge F_tau
+  [OK ] equivariance F_tau(c + k1) = F_tau(c) + k
+  [OK ] grad F_tau = Gibbs state p_i = e^{-c_i/tau}/Z (sums to 1)
+  [OK ] tau = 1 section: c_i - F_1(c) = -log(N p_i)
+  [OK ] cumulant expansion F = k1 - k2/(2tau) + k3/(6tau^2) + O(tau^-3)  (eps = 1/tau)
+  [OK ] leading correction is the metric: k2/2 = (N-1)/(2N^2) ||x||^2
+  [OK ] sandwich min(c) <= F_tau(c) <= min(c) + tau log N  (2000 random cases, N=2..7)
+G4  std-form regions: the normal fan of the simplex
+  [OK ] N=3: N regions, every pair shares a codim-1 wall (dim N-2 in the (N-1)-dim quotient)
+  [OK ] N=4: N regions, every pair shares a codim-1 wall (dim N-2 in the (N-1)-dim quotient)
+  [OK ] N=5: N regions, every pair shares a codim-1 wall (dim N-2 in the (N-1)-dim quotient)
+  [OK ] d=2: Cartesian has 2^d=4 orthants, only 4 of 6 pairs adjacent; simplex fan: 3 regions, all 3 pairs adjacent
+  [OK ] d=3: Cartesian has 2^d=8 orthants, only 12 of 28 pairs adjacent; simplex fan: 4 regions, all 6 pairs adjacent
+  [OK ] d=4: Cartesian has 2^d=16 orthants, only 32 of 120 pairs adjacent; simplex fan: 5 regions, all 10 pairs adjacent
+G5  tropical ball = Voronoi cell of A_{N-1}; vertices = std-form 0/1 vectors
+  [OK ] N=3: the 6 0/1 std-form vectors are vertices of {x in H : max x - min x <= 1}
+  [OK ] N=3: Voronoi cell of A_2 (brute force) == range ball, 3000/3000 random points
+  [OK ] N=4: the 14 0/1 std-form vectors are vertices of {x in H : max x - min x <= 1}
+  [OK ] N=4: Voronoi cell of A_3 (brute force) == range ball, 3000/3000 random points
+  [OK ] N=5: the 30 0/1 std-form vectors are vertices of {x in H : max x - min x <= 1}
+  [OK ] N=5: Voronoi cell of A_4 (brute force) == range ball, 3000/3000 random points
+G6  integer std form = SU(N) weights and Young diagrams
+  [OK ] N=3: std form is constant on gauge classes and N-ality (sum mod N) is well defined on it
+  [OK ] N=3: dominant std forms = partitions with <= N-1 rows (last row 0)
+  [OK ] massaction = number of height-N columns removed: (7,4,2) -> (5,2,0), det^2
+  [OK ] Weyl dims from std forms: (0,0,0)->1, (1,0,0)->3, (1,1,0)->3bar, (2,1,0)->8, (3,0,0)->10
+
+TOTAL 42/42

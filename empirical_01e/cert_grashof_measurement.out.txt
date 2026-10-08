@@ -1,0 +1,19 @@
+M1  loop separation near the Grashof wall
+      margins [0.2, 0.1, 0.05, 0.025, 0.0125] -> min separation [1.215 0.876 0.626 0.445 0.315] rad
+  [OK ] separation ~ margin^(1/2) (fitted exponent 0.494); still 0.32 rad at 1.25% margin
+M2  synthetic Brillouin zone: vortex-line counting
+      [111] strain t'=0.7/1.3/3.3 -> {0.7: [2, 2, 2, 2, 2], 1.3: [1, 1, 1, 1, 1], 3.3: [0, 0, 0, 0, 0]}
+  [OK ] [111] strain: tension t'=0.7 -> 2 loops, compression 1.3 -> 1 loop, t'=3.3 -> 0 (every repeat)
+      success at margin +0.02 / -0.02 (64^3, 10 repeats): {0.48: np.float64(1.0), 0.52: np.float64(0.9)}
+  [OK ] success >= 0.9 at |margin| = 2%
+M3  failure mode: intensity threshold
+  [OK ] margin +0.10 (2 loops): dark-spot threshold counts 1, vortex counting counts 2
+M4  real lattice: (111) surface zero-mode map
+      t'=0.8: drumhead fraction 0.865, non-drumhead pockets 2, drumhead regions 1
+      t'=0.9: drumhead fraction 0.823, non-drumhead pockets 2, drumhead regions 1
+      t'=1.1: drumhead fraction 0.673, non-drumhead pockets 1, drumhead regions 1
+      t'=1.2: drumhead fraction 0.623, non-drumhead pockets 1, drumhead regions 1
+  [OK ] (111) surface: 2 non-drumhead pockets under tension (2 loops), 1 under compression (1 loop)
+  [OK ] drumhead fraction varies smoothly (monotone, no jump > 0.1 across t'=1): not a sharp signature
+
+TOTAL 6/6

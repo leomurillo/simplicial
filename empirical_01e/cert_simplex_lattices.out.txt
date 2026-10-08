@@ -1,0 +1,60 @@
+L1  the lattice D_N and its closed walks
+  [OK ] N=3: closed 2n-walks [1, 3, 15, 93, 639] = sum multinomial^2 = [1, 3, 15, 93, 639]
+  [OK ] N=3: BZ moments <|f|^2n> over T^N/U(1) = closed walks [1, 3, 15, 93, 639]
+  [OK ] N=4: closed 2n-walks [1, 4, 28, 256, 2716] = sum multinomial^2 = [1, 4, 28, 256, 2716]
+  [OK ] N=4: BZ moments <|f|^2n> over T^N/U(1) = closed walks [1, 4, 28, 256, 2716]
+  [OK ] N=3: unit bonds, second-neighbour (Bravais) distance |v_i - v_j| = sqrt(3)
+  [OK ] N=4: unit bonds, second-neighbour (Bravais) distance |v_i - v_j| = 2*sqrt(6)/3
+L2  the Brillouin zone is T^N / U(1)
+  [OK ] N=3: for k in H, theta_j = k.v_j = sqrt(N/(N-1)) k_j and sum theta = 0
+  [OK ] N=4: for k in H, theta_j = k.v_j = sqrt(N/(N-1)) k_j and sum theta = 0
+  [OK ] theta_i - theta_j = k.(v_i - v_j): k reciprocal <=> theta in 2piZ^N + R1 (definition chase, all N)
+L3  spectrum and gauge
+  [OK ] |f|^2 = sum t_j^2 + 2 sum_(i<j) t_i t_j cos(theta_i - theta_j)  (XY energy of d0 theta on K_N)
+  [OK ] f(theta + a 1) = e^{ia} f(theta): the frame gauge is the Bloch sublattice phase
+  [OK ] Bloch Hamiltonian [[0, f*],[f, 0]] has eigenvalues +-|f|
+L4  N=3 Dirac points are the nontrivial characters of Z/3
+  [OK ] gauge theta_1 = 0: f = 0 exactly at (theta_2, theta_3) in [(2*pi/3, 4*pi/3), (4*pi/3, 2*pi/3)]  (2pi/3 multiples, no sqrt3)
+  [OK ] f at theta_j = 2pi a j/3: a=0 (Gamma) -> 3, a=1 (K) -> 0, a=2 (K') -> 0  (zero/positive/negative sequence)
+  [OK ] |Gamma K| = |theta_K| / sqrt(3/2) = 4 pi / (3 sqrt3)  (bond length 1)
+L5  the Dirac cone is the genesis circle
+  [OK ] f(K + eps phi) = i eps sum_j w^j phi_j + O(eps^2)
+  [OK ] |sum w^j phi_j|^2 = phi1^2+phi2^2+phi3^2 - phi1phi2 - phi1phi3 - phi2phi3  (any representative)
+  [OK ] sum_j w^j (q.v_j) = (3/2)(q_x + i q_y): the cone is the Wirtinger/complex coordinate (Paper 04)
+  [OK ] hence E = +-(3/2)|q|: v_F = 3ta/2 = (N/(N-1)) t a, the tight-frame constant
+L6  N=4 nodal set: three circles meeting at the three X points
+  [OK ] every closed equilateral quadrilateral splits into two antipodal pairs (3000 random nodal points)
+  [OK ] each matching circle lies in the nodal set
+  [OK ] circles meet pairwise in exactly one point: ['[(0, 0, pi, pi)]', '[(0, pi, 0, pi)]', '[(0, pi, pi, 0)]']
+  [OK ] crossing point (0,0,pi,pi) has |k| = pi/sqrt(4/3) = pi sqrt3/2 = |Gamma X| (cubic constant 4/sqrt3)
+  [OK ] circle 12|34 in the first BZ: |k| ranges over [2.7207, 3.0418] = [|GX|=2.7207, |GW|=3.0418] (runs X -> W -> X on the BZ boundary)
+L7  anisotropic N=3: Dirac points exist iff the hoppings form a triangle
+  [OK ] |t1 + t2 e^{i x}|^2 = t1^2 + t2^2 + 2 t1 t2 cos x  (so |.| = t3 <=> cos x = (t3^2 - t1^2 - t2^2)/(2 t1 t2))
+  [OK ] Dirac points exist <=> strict triangle inequality (4000 random hoppings); two solutions +-x = K, K' = the two orientations
+L8  anisotropic N=4: number of nodal loops
+  [OK ] four-bar count == independent voxel count of the nodal set (gapped: grid min|f| = t_max - rest) (56/56 random anisotropic diamonds; histogram {1: 23, 0: 1, 2: 32})
+  [OK ] loops = 0 if a hopping exceeds the sum of the others; else 2 if Grashof (s+l < p+q), 1 if not (56/56)
+  [OK ] proof step: pairing {l,s}|{p,q} with s <= p,q <= l gives |p-q| <= l-s always, so loops = 2 <=> p+q >= l+s (Grashof)
+      [111] strain t'<1      t=[0.7, 1, 1, 1]: loops = 2 (voxel 2)
+      [111] strain 1<t'<3    t=[1.6, 1, 1, 1]: loops = 1 (voxel 1)
+      t'>3                   t=[3.5, 1, 1, 1]: loops = 0 (voxel gapped)
+L9  tropical phase diagram: gapless region shrinks to the std-form walls
+  [OK ] walls (min attained twice) are always gapless
+  [OK ] gapless => delta(c) = (2nd smallest - smallest) <= tau log(N-1)  (20000 random cases, N=3..6)
+  [OK ] sharpness, N=3..8: c = (0, d, ..., d) is on the gapless boundary exactly at d = tau log(N-1)
+  [OK ] Kitaev's linear chart: on the simplex sum t = 1, gapless <=> max t_i <= 1/2 (the medial triangle)
+L10 Mahler measure = quantum massaction; the arithmetic constants
+  [OK ] m(1+x+y) = 0.32306594721945051409 = 3sqrt3/(4pi) L(chi_-3,2) = 0.32306594721945051409
+  [OK ] m(1+x+y+z) = 0.426278398818 = 7 zeta(3)/(2pi^2) = 0.426278398818
+  [OK ] R(c) - (-min c) = [('gapped', 0.0), ('boundary', 0.0), ('gapless', 0.0810072155), ('isotropic', 0.3230659472)]: 0 on closed gapped sectors, > 0 inside the gapless phase
+  [OK ] sandwich -R_tau <= massaction <= F_tau, each within tau log N (40 random N=3 cases)
+L11 line graphs: kagome and pyrochlore
+  [OK ] N=3 (kagome): explicit H = B^dag B - 2; bands = 1 flat at -2, N-2 +- |f|
+  [OK ] N=3: at Gamma the flat-band space is the zero-sum hyperplane H (dim 2 = N-1): the ice rule
+  [OK ] N=3: flat projector -> I - J/N - phi phi^T/|phi|^2 as theta = eps phi -> 0 (direction-dependent: pinch point)
+  [OK ] N=4 (pyrochlore): explicit H = B^dag B - 2; bands = 2 flat at -2, N-2 +- |f|
+  [OK ] N=4: at Gamma the flat-band space is the zero-sum hyperplane H (dim 3 = N-1): the ice rule
+  [OK ] N=4: flat projector -> I - J/N - phi phi^T/|phi|^2 as theta = eps phi -> 0 (direction-dependent: pinch point)
+  [OK ] N=4: transverse projector = -Kt(phi)^2 / (phi^T M phi): the pinch point is Paper 01's cross-product square
+
+TOTAL 44/44

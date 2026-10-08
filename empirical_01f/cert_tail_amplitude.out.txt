@@ -1,0 +1,19 @@
+A1  worm sampler vs exact enumeration (L=2)
+  [OK ] worm R(tail,head) = exact L=2 values within 2% (max rel dev 0.0115)
+A2  core weight and Coulomb slope from saved worm runs
+      L8: free Coulomb slope K = 0.482; R_inf (K=1/2) = 0.3812
+      L10: free Coulomb slope K = 0.509; R_inf (K=1/2) = 0.3832
+  [OK ] Madelung-corrected R_inf agrees between L=8 and L=10 within 1%
+  [OK ] free Coulomb slope of the monopole pair weight gives K = 0.50 +- 0.02 (both sizes)
+A3  pinch-point stiffness
+      shells K_q = [0.4973 0.5063 0.4975 0.5017 0.5043]; K(q->0) = 0.4947 +- 0.0030
+  [OK ] two independent stiffness measurements agree (pinch point vs monopole Coulomb slope, within 0.02)
+A4  predicted amplitude
+      nu = 1.2380 (Pauling 4/3); C_pred = 0.01398; C from 2-term series fit = 0.01399
+  [OK ] C_pred agrees with the series fit within 2%
+A5  extrapolation with C fixed
+      back-predicted a18 5.3094e-05 (actual 5.3088e-05), a16 7.0532e-05 (actual 7.0336e-05); S = 0.205210; Kolafa 0.205215
+  [OK ] back-predictions of a18 and a16 within 1%
+  [OK ] S within 1e-5 of Kolafa's Monte Carlo value
+
+TOTAL 7/7

@@ -1,0 +1,48 @@
+T1  the tetrahedron
+  [OK ] |m|^2 = |sum sigma_j v_j|^2 = sigma^T (M/3) sigma for all 16 states (moment = synthesis)
+  [OK ] NN energy sum_(i<j) sigma_i sigma_j = (3/2)(4 - |m|^2) = 2 q^2 - 2,  q = (sum sigma)/2
+  [OK ] levels: q=0 -> 6 states |m|^2=16/3; |q|=1 -> 8 states |m|^2=4; |q|=2 -> 2 states m=0
+  [OK ] 6 ice states = 3 perfect matchings of K4 x 2 orientations; moments = (4/sqrt3) x the 6 cubic directions
+  [OK ] synthesis kills exactly the gauge line: sum_j v_j = 0 (charge invisible to the moment)
+  [OK ] Pauling: |{+-1}^4 cap H| / 16 = 3/8, S_P = ln2 + (1/2)ln(3/8) = (1/2)ln(3/2) per spin
+  [OK ] std form of the spins: n = (sigma + 1)/2 in {0,1}^4 with sum n = 2 + q
+T2  lattice operators: divergence, hexagon curl, photon
+  [OK ] real-space cluster (L=4): 256 hexagons = 4 per primitive cell; curl . grad = 0
+  [OK ] spectrum of curl^T curl = {16 - |f(k)|^2 twice, 0, 0} at every allowed k (photon omega^2/UK)
+  [OK ] Bloch curl row of the hexagon missing direction l = (unit phase) x row l of Kt(e^{i theta}) (4 types, 200 random k; dev 3e-14)
+  [OK ] frame: Kt(u) kills the gradients {1, u}; Kt(u)^dag Kt(u) = 4(|u_H|^2 (I-J/4) - u_H u_H^dag); 4|u_H|^2 = 16 - |f|^2
+  [OK ] hence curl^dag curl = Kt(u)^dag Kt(u) (same kernel {1,u}, same constant 16-|f|^2 on its complement)
+  [OK ] Benton-Sikora-Shannon Eq.(68): zeta(k)^2 = 16 - |f(k)|^2 (300 random k)
+  [OK ] h_nm = (1/sqrt8) unit(e_n x e_m) = +-(e_k - e_l)/2: the cross product is the opposite-edge Hodge dual (01b Thm 10.1)
+  [OK ] long wavelength: 16 - |f|^2 = a0^2 |k|^2 (1 + O(k^2)) -> c = sqrt(UK) a0 (Benton Eq. 70)
+  [OK ] photon band top omega = 4 sqrt(UK) exactly on the diamond nodal set f = 0 (e.g. X point)
+T3  the classical Coulomb phase
+  [OK ] flat-band projector P = I - B^dag(BB^dag)^-1 B = I - J/4 - u_H u_H^dag/|u_H|^2 = Kt(u)^dag Kt(u)/(16 - |f|^2)
+  [OK ] B^dag B (soft-spin constraint) has spectrum {0, 0, 4 - |f|, 4 + |f|}
+  [OK ] synthesis of the pinch-point limit: S T S^T = (4/3)(I - k k^T/|k|^2), Henley's dipolar form
+  [OK ] longitudinal (monopole) mode: 4 - |f| = theta^T M theta / 8 (1 + O(theta^2))
+T4  the neutron structure factor
+  [OK ] polarization factor v_j.v_k - (Q.v_j)(Q.v_k)/Q^2 = (4/3) T(phi): the same transverse projector
+  [OK ] frame S(Q) == real-space null-space projector, 189 wavevectors (max err 8.9e-16)
+      MC: 2048 spins, 1750 measurements, 792 wavevectors in (hhl), 41s
+  [OK ] Monte Carlo stayed in the ice manifold (divergence 0 everywhere)
+  [OK ] exact ice MC vs frame large-N, NO fitted constant (kappa = 2): corr 0.9948 >= 0.99, mean dev 0.019 <= 0.03, means ratio 0.9989
+T5  kagome ice
+  [OK ] apical spin pinned out => kagome triangle states = the 3 frame vertices e_j (std-form 0/1, one 1): a dimer
+  [OK ] in-plane field: dimer energies c_j = -2 mu h_perp . v_j are a zero-sum frame vector (sum_j<=3 v_j = -v_4)
+  [OK ] Kasteleyn torus formula (even L) = brute-force permanent, L = 2, 4
+  [OK ] t=[1, 1, 1]: log Z / L^2 at L=64 = 0.323276 -> R(t) = 0.323066
+  [OK ] t=[1.2, 0.9, 0.7]: log Z / L^2 at L=64 = 0.273318 -> R(t) = 0.273103
+  [OK ] kagome-ice entropy per pyrochlore spin = m(1+x+y)/4 = (3sqrt3/16pi) L(chi_-3,2) = 0.0807664868049 (0.0808)
+  [OK ] dimer densities rho = grad_(log t) R = [0.535441 0.26772  0.196839] = (angle opposite t_j)/pi = [0.535441 0.26772  0.196839]; sum = 1
+  [OK ] rho_k = 1 - (theta_(k+2) - theta_(k+1))/pi at the graphene Dirac point (counter-clockwise closing triangle)
+  [OK ] frozen sector (t_1 >= t_2 + t_3): rho = vertex e_1 (std-form gauge), entropy 0
+  [OK ] symmetric tilt (c = 0, delta, delta): Kasteleyn transition e^0 = 2 e^{-delta/T} at T_K = delta/ln 2 (01e sharpness)
+T6  [100] field: the three-dimensional Kasteleyn transition
+  [OK ] |h.v_j| = h/sqrt3 for all j; saturated state (1, 1, -1, -1) is an ice state = oriented matching {12|34}
+  [OK ] a string enters on an 'in' bond and leaves by one of the 2 'out' bonds: entropy ln 2 per step, cost 2 mu h/sqrt3 -> T_K = 2 mu h/(sqrt3 ln 2)
+T7  control: square ice
+  [OK ] square-ice bond star {+-x, +-y} has a 2-dimensional synthesis kernel: no single gauge line (cross-polytope frame)
+      wrote empirical_01f/fig_spin_ice.png
+
+TOTAL 37/37

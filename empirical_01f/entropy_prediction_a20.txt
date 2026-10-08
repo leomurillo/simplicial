@@ -1,0 +1,1 @@
+PRE-REGISTERED before order-20 result: a20 (2-term DH) = 4.1220e-05; (1-term DH) = 4.0795e-05

@@ -1,0 +1,24 @@
+D1  exact decomposition (open cluster, L = 3, 108 spins)
+  [OK ] E_dip = U(site charges) + nn remainder + residual + const, exactly (5 random configurations; err 2.5e-12)
+  [OK ] nearest-neighbour dipolar coupling = (5/3) D (den Hertog-Gingras)
+D2  the nearest-neighbour remainder is an on-site charge term
+  [OK ] all nn pairs share one coefficient c' = 2.42199544 D  ->  per tetrahedron c'(2q^2 - 2): pure gauge
+  [OK ] any nn coupling K: K sum_(i<j) sigma_i sigma_j = K(2q^2 - 2) for all 16 states: exchange J never touches the ice sector
+D3  the residual is short-ranged (r^-5)
+  [OK ] shell maxima of |delta| decay with log-log slope -4.70 (multipole theory: -5)
+D4  the residual on the ice sector selects the X point
+      Rc=6: ice-sector band [-0.13962, 0.03819] D, argmin k = [1. 0. 0.] (2pi/a0)
+      Rc=8: ice-sector band [-0.13976, 0.03811] D, argmin k = [1. 0. 0.] (2pi/a0)
+  [OK ] argmin of the ice-sector residual is an X point (k = 2pi/a0 * unit cubic vector), at both cutoffs
+  [OK ] converged in the cutoff: min -0.1398 D, width 0.1779 D (Rc 6 vs 8 agree to 1e-3)
+  [OK ] at X the minimum is doubly degenerate (-0.13976, -0.13976)
+  [OK ] scale: ice-sector width / nn coupling = 0.107; / on-site monopole cost 2c' = 0.037
+D5  the ordered state
+  [OK ] at X, u = [0.+1.j 0.-1.j 0.+1.j 0.-1.j] and f = 0: X lies on the diamond nodal network (crossing of two matching circles)
+      matching {12|34}: flat True, ice on all tetrahedra True, zero moment True, residual energy -0.13976
+      matching {14|23}: flat True, ice on all tetrahedra True, zero moment True, residual energy -0.13976
+      matching {13|24}: flat False, ice on all tetrahedra False, zero moment True, residual energy 0.08837
+  [OK ] the X ground states (energy = band minimum) are the staggered ice states of matchings {12|34} and {14|23}, zero net moment
+  [OK ] the third matching {13|24} is not in the flat space and violates the ice rule on down tetrahedra
+
+TOTAL 12/12
