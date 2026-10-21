@@ -1,0 +1,29 @@
+[
+  {
+    "x": 1000,
+    "B": 4,
+    "groups": 61,
+    "envelope_minus_window": "0.01002294992313861914541193",
+    "weighted_width": "0.02593338129592418323222061",
+    "proved_bound": "0.3790509259259259259259259",
+    "mobius_identity_residual": "3.9827e-59"
+  },
+  {
+    "x": 10000,
+    "B": 5,
+    "groups": 198,
+    "envelope_minus_window": "0.024477422272073168581888",
+    "weighted_width": "0.05237100267325952735300151",
+    "proved_bound": "1.865740740740740740740741",
+    "mobius_identity_residual": "7.6468e-57"
+  },
+  {
+    "x": 100000,
+    "B": 7,
+    "groups": 630,
+    "envelope_minus_window": "0.02750106668759620411157999",
+    "weighted_width": "0.05096330360212069028844925",
+    "proved_bound": "6.758651873447791815138754",
+    "mobius_identity_residual": "9.1762e-56"
+  }
+]

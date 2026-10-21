@@ -1,0 +1,40 @@
+{
+  "rows": [
+    {
+      "name": "Q1 Wikipedia examples",
+      "pass": true,
+      "detail": "151/47; 5/7 twice"
+    },
+    {
+      "name": "Q2 denominator law",
+      "pass": true,
+      "detail": "3-part stripped one per odd step; 3-free part frozen"
+    },
+    {
+      "name": "Q3 one rational cycle per primitive necklace",
+      "pass": true,
+      "detail": "K<=16 counts and realizations; 31042 cycles with K<=18"
+    },
+    {
+      "name": "Q4 charge-1 cycles",
+      "pass": true,
+      "detail": "[(-136, -91, -82, -68, -61, -55, -41, -37, -34, -25, -17), (-10, -7, -5), (-1,), (0,), (1, 2)]"
+    },
+    {
+      "name": "Q5 fibers are cousin worlds",
+      "pass": true,
+      "detail": "d*T(a/d) = T_d(a)"
+    },
+    {
+      "name": "Q6 every small charge carries a cycle",
+      "pass": true,
+      "detail": "absent for K<=18: [41, 53]; primitive cycle lengths found: 41 -> 20, 53 -> 29"
+    },
+    {
+      "name": "Q7 the 3-coordinate is attracted to 0",
+      "pass": true,
+      "detail": "v3 = 0 after max(-j,0)+1 odd steps"
+    }
+  ],
+  "elapsed_s": 37.7793181000161
+}

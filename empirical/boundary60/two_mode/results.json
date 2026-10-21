@@ -1,0 +1,390 @@
+{
+  "status": "prospective exact Gaussian ratio test; no measured calibration",
+  "checks": [
+    {
+      "name": "unchanged record model",
+      "passed": true,
+      "detail": [
+        0.9999999999999991,
+        1.6405331213854175
+      ]
+    },
+    {
+      "name": "two-mode dense versus adjoint",
+      "passed": true,
+      "detail": 5.773159728050814e-15
+    },
+    {
+      "name": "nominal modes independent under both models",
+      "passed": true,
+      "detail": [
+        [
+          [
+            0.999999999999999,
+            6.69494841509799e-17
+          ],
+          [
+            7.497258022737263e-17,
+            1.0000000000000024
+          ]
+        ],
+        [
+          [
+            1.640533121385417,
+            1.406752318799942e-16
+          ],
+          [
+            1.3688052427629493e-16,
+            1.0080424581534468
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "nominal exact budget",
+      "passed": true,
+      "detail": {
+        "reference_index": 335,
+        "reference_eigenvalue": 1.0080424581534408,
+        "reference_plant_fraction": 0.9005675148219004,
+        "signal_plant_fraction": 0.9977090815626395,
+        "contrast": 1.6274444673596242,
+        "N": 147,
+        "power": 0.9012368275766842
+      }
+    },
+    {
+      "name": "correlated ratio law versus Wishart draws",
+      "passed": true,
+      "detail": [
+        {
+          "rho": 0.7,
+          "predicted": 0.21477049347518634,
+          "observed": 0.2147,
+          "standard_errors": -0.06648274422275569
+        },
+        {
+          "rho": -0.5,
+          "predicted": 0.867491346331266,
+          "observed": 0.8672066666666667,
+          "standard_errors": -0.3251976351372144
+        },
+        {
+          "rho": 0.0,
+          "predicted": 0.8332807422198213,
+          "observed": 0.8307333333333333,
+          "standard_errors": -2.647010916661157
+        }
+      ]
+    },
+    {
+      "name": "independent reduction and common scale invariance",
+      "passed": true,
+      "detail": 3.3306690738754696e-16
+    },
+    {
+      "name": "correlation-safe envelope inequality",
+      "passed": true,
+      "detail": {
+        "ratio": 1.4724497561825172,
+        "N": 231
+      }
+    },
+    {
+      "name": "commuting coupling-angle identity",
+      "passed": true,
+      "detail": 6.245004513516506e-16
+    }
+  ],
+  "nominal": {
+    "N": 147,
+    "power": 0.9012368275766842,
+    "size": 0.050000000000000155,
+    "covariance": [
+      [
+        [
+          0.999999999999999,
+          6.69494841509799e-17
+        ],
+        [
+          7.497258022737263e-17,
+          1.0000000000000024
+        ]
+      ],
+      [
+        [
+          1.640533121385417,
+          1.406752318799942e-16
+        ],
+        [
+          1.3688052427629493e-16,
+          1.0080424581534468
+        ]
+      ]
+    ],
+    "contrast": 1.6274444673596242,
+    "reference_eigenvalue": 1.0080424581534408,
+    "reference_plant_fraction": 0.9005675148219004,
+    "threshold": 1.3140930995571225
+  },
+  "raw_component_mismatch": {
+    "size": [
+      0.010779566658680781,
+      0.18727395844377015
+    ],
+    "power": [
+      0.7439580494237897,
+      0.9765987053129916
+    ],
+    "r0": [
+      0.8967017191993583,
+      1.1341096457746789
+    ],
+    "r1": [
+      1.465028253646351,
+      1.8285546675213473
+    ],
+    "rho0": [
+      -0.00010572146331589934,
+      0.00010106563045452943
+    ],
+    "rho1": [
+      -7.430364403113915e-05,
+      7.090125160899004e-05
+    ]
+  },
+  "calibration": [
+    {
+      "label": "tight",
+      "samples": 69,
+      "r0max": 1.0772023719482435,
+      "r1min": 1.507922463564889,
+      "first_order_log_ratio_box": [
+        0.07452885412065739,
+        0.07606112274304395
+      ],
+      "rounded_ratio_envelope": 0.1,
+      "N": 420,
+      "N_99pct_coverage": 467,
+      "direct_sampled_envelope_N": 305
+    },
+    {
+      "label": "loose",
+      "samples": 69,
+      "r0max": 1.4010097747545915,
+      "r1min": 1.158810306950683,
+      "first_order_log_ratio_box": [
+        0.3342436749044606,
+        0.3417295267576167
+      ],
+      "rounded_ratio_envelope": 0.43,
+      "N": null,
+      "N_99pct_coverage": null,
+      "direct_sampled_envelope_N": null
+    }
+  ],
+  "ratio_envelopes": [
+    {
+      "ratio_uncertainty": 0,
+      "contrast": 1.6274444673596242,
+      "N": 147
+    },
+    {
+      "ratio_uncertainty": 0.02,
+      "contrast": 1.5636231156984624,
+      "N": 174
+    },
+    {
+      "ratio_uncertainty": 0.03,
+      "contrast": 1.5326418770279955,
+      "N": 190
+    },
+    {
+      "ratio_uncertainty": 0.05,
+      "contrast": 1.4724497561825172,
+      "N": 231
+    },
+    {
+      "ratio_uncertainty": 0.1,
+      "contrast": 1.3315454732942378,
+      "N": 420
+    },
+    {
+      "ratio_uncertainty": 0.15,
+      "contrast": 1.2028937367440702,
+      "N": 1006
+    },
+    {
+      "ratio_uncertainty": 0.2,
+      "contrast": 1.0849629782397496,
+      "N": 5154
+    },
+    {
+      "ratio_uncertainty": 0.25,
+      "contrast": 0.9764666804157744,
+      "N": null
+    }
+  ],
+  "scale_sweeps": [
+    {
+      "parameter": "hardware_gain",
+      "factor": 0.5,
+      "size": 0.03081382366010928,
+      "power": 0.8565126440139462,
+      "ratios": [
+        0.9633331866740306,
+        1.5680098328149457
+      ]
+    },
+    {
+      "parameter": "hardware_gain",
+      "factor": 1.0,
+      "size": 0.050000000000000155,
+      "power": 0.9012368275766842,
+      "ratios": [
+        0.9999999999999966,
+        1.6274444673596187
+      ]
+    },
+    {
+      "parameter": "hardware_gain",
+      "factor": 2.0,
+      "size": 0.05620884881934069,
+      "power": 0.9108328636970342,
+      "ratios": [
+        1.0096114769534639,
+        1.643018269180894
+      ]
+    },
+    {
+      "parameter": "temperature",
+      "factor": 0.5,
+      "size": 0.013930691065123709,
+      "power": 0.7675128740056714,
+      "ratios": [
+        0.9116438998753003,
+        1.4833961253161894
+      ]
+    },
+    {
+      "parameter": "temperature",
+      "factor": 1.0,
+      "size": 0.050000000000000155,
+      "power": 0.9012368275766842,
+      "ratios": [
+        0.9999999999999966,
+        1.6274444673596187
+      ]
+    },
+    {
+      "parameter": "temperature",
+      "factor": 2.0,
+      "size": 0.0892543855888481,
+      "power": 0.9439010781167901,
+      "ratios": [
+        1.0511118736814946,
+        1.710678092220653
+      ]
+    }
+  ],
+  "bandwidth": [
+    {
+      "fc_Hz": 1.0,
+      "reference_eigenvalue": 1.1931640104064227,
+      "contrast": 1.373019566815935,
+      "N": 343
+    },
+    {
+      "fc_Hz": 3.0,
+      "reference_eigenvalue": 1.0798902441809797,
+      "contrast": 1.5182915908597512,
+      "N": 199
+    },
+    {
+      "fc_Hz": 10.0,
+      "reference_eigenvalue": 1.0285626204520084,
+      "contrast": 1.5946263675203587,
+      "N": 160
+    },
+    {
+      "fc_Hz": 30.0,
+      "reference_eigenvalue": 1.0126156843077825,
+      "contrast": 1.6199863259300062,
+      "N": 150
+    },
+    {
+      "fc_Hz": 100.0,
+      "reference_eigenvalue": 1.0080424581534408,
+      "contrast": 1.6274444673596284,
+      "N": 147
+    },
+    {
+      "fc_Hz": 300.0,
+      "reference_eigenvalue": 1.0078153698336907,
+      "contrast": 1.627754131558966,
+      "N": 147
+    }
+  ],
+  "log_sensitivities": [
+    {
+      "parameter": "R0",
+      "null": 1.7746789477737475,
+      "thermal": 1.3953507097042017
+    },
+    {
+      "parameter": "fc",
+      "null": -1.4370400147200826,
+      "thermal": -1.4371624044295928
+    },
+    {
+      "parameter": "Cc0",
+      "null": 1.202727950541725,
+      "thermal": 1.2037476428777838
+    },
+    {
+      "parameter": "Cp0",
+      "null": 0.2151613169201638,
+      "thermal": 0.2154742068327664
+    },
+    {
+      "parameter": "R1",
+      "null": -0.03560336985269574,
+      "thermal": 0.1977203563560681
+    },
+    {
+      "parameter": "Cp1",
+      "null": 0.09257840540195587,
+      "thermal": 0.1888884426703985
+    },
+    {
+      "parameter": "Cc1",
+      "null": 0.11725802402237018,
+      "thermal": -0.16311288068421304
+    },
+    {
+      "parameter": "Cp2",
+      "null": 0.03399027172245452,
+      "thermal": 0.10644895508366004
+    },
+    {
+      "parameter": "T",
+      "null": 0.09714156685580666,
+      "thermal": 0.09724273625694169
+    },
+    {
+      "parameter": "input_noise_PSD",
+      "null": -0.08444943017423032,
+      "thermal": -0.08460507528479377
+    },
+    {
+      "parameter": "Cc2",
+      "null": 0.07327368071804288,
+      "thermal": 0.027884700679325913
+    },
+    {
+      "parameter": "R2",
+      "null": -0.010121890011514156,
+      "thermal": 0.06729931317395188
+    }
+  ]
+}

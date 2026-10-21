@@ -1,5 +1,7 @@
 # Collatz Margin Theorem Candidate
 
+> **Correction, 2026-10-19: the universal nonnegative-margin candidate below is false.** The exact 17-step word `(4,1,1,1,1,2,2,1,2,1,1,2,1,1,1,2,3)` has least positive representative 165, endpoint 167, S=27, positive D=5077565, and q=-1. The finite census below remains historical evidence within its stated window. See [the counterexample and corrected first-crossing target](../../Collatz-First-Contraction-Boundary-Attack-2026-10-19.md). Do not use the universal candidate as a lemma.
+
 ## Theorem Split
 
 Candidate:

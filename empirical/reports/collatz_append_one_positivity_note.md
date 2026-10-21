@@ -1,5 +1,7 @@
 # Collatz Append-One Positivity Note
 
+> **Correction, 2026-10-19:** the recurrences below remain valid, but their proposed universal positivity target is false. A contracting 16-step anchor at representative 231 ends at 155 with q=38; appending exponent 1 with zero lift sends it to 233 with q=-1, and the child is still contracting. See [the exact word and audit](../../Collatz-First-Contraction-Boundary-Attack-2026-10-19.md).
+
 ## Setup
 
 For a contracting carry word `w=(s_1,...,s_m)`, write

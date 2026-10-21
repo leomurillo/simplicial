@@ -1,4 +1,4 @@
-# Height-Bounded GRH at Primorial $N = 210$: Empirical-Anchored Unconditional Theorem
+# Height-Bounded GRH at Primorial $N = 210$: Detection Sensitivity of the Hankel Test
 
 **Leonardo Murillo Montero**
 
@@ -6,23 +6,29 @@
 
 ---
 
-> *The empirical positive-semidefiniteness of the joint Hankel and shifted-Hankel matrices at primorial $N = 210$ through rung $n = 14$, combined with ArchStruct's quantitative arch lower bound, supplies an unconditional explicit-height zero-localization theorem for every Dirichlet L-function of conductor dividing 210.*
+> **Correction notice (2026-10-08).**  Earlier drafts called Theorems B and C an "unconditional" zero-localization theorem.  **They are withdrawn as theorems.**  Each of the three defects below was checked on 2026-10-08.
+>
+> 1. *The rejection test is circular.*  The "empirical" matrices $H_n,J_n$ are built from the LMFDB zero list: $\mu_k=\sum_\rho2\gamma_\rho^{-2(k+1)}$ over 1195 listed zeros, all on the critical line, $|\gamma|\le88.8$ (`probe_arch_prime_N210_joint.py`).  So they are moment matrices of a positive measure, and they are PSD *by construction*: $v^{\mathsf T}H_nv=\sum_\rho2\gamma_\rho^{-2}\bigl(\sum_iv_i\gamma_\rho^{-2i}\bigr)^2\ge0$ (identity re-verified to $10^{-300}$).  A hypothetical off-line zero is exactly what the list leaves out, so the "empirical margin" cannot see it.  The premise of §4.1, that the measured matrix "already includes any hypothetical off-line contributions", is false.
+> 2. *Even the conditional form is incomplete.*  Suppose the true cumulants were computed independently of any zero list.  The argument would still need an upper bound on the on-line projection $\langle v_-,H^{\mathrm{on\text{-}line}}v_-\rangle$, and §5.2 concedes that none is available.
+> 3. *Numerical labels.*  The PSD margins are floating-point numerics at dps 300.  The abstract's "$\sim0.84$" was the prime-part pivot of $J_{14}$, not the total margin.  The §1.3 table's $J$ column and its $n=8$ entry were wrong; the recomputed values are in §1.3.
+>
+> What survives: Theorem A, the exact closed form of the rank-2 off-line perturbation, and the sensitivity function $\beta(\gamma_0,\delta;n)$.  Read the would-be "rejection map" as a statement about *how strongly* a hypothetical off-line 4-tuple would perturb a Hankel test on the true cumulants.  Certified knowledge about these zeros comes from rigorous zero verification (Platt 2016, §4.4a).  At all heights it also comes from the strip $\delta\le3/8$ ([A], OpenAI 2026, §4.4).
 
 ---
 
 ## Abstract
 
-**Situation.** ArchStruct (Theorem 1, Corollary 2) supplies the unconditional closed-form arch atomic measure $\sigma_N^{\mathrm{arch}}$ on $(-\infty, 0)$ at every primorial $N \ge 30$ with $H_n^{\mathrm{arch,joint}}(N) \succeq 0$, $J_n^{\mathrm{arch,joint}}(N) \preceq 0$. Pass-5 Theorem 16.2 gives the equivalence Apex Lemma$_{HJ}$ at primorial $N$ $\iff$ GRH at primorial $N$; Pass-5 Lemma 16.4 supplies the *constructive sensitivity direction*: off-line zero $\Rightarrow$ finite negative Hankel witness, with the construction following Mergelyan polynomial approximation. The joint primorial probe `probe_arch_prime_N210_joint.py` at mpmath dps=300 over the full LMFDB anchor (48 L-functions of conductor dividing 210) has verified $H_n^{\mathrm{total,joint}}(210), J_n^{\mathrm{total,joint}}(210) \succeq 0$ for every rung $n \in \{0, 1, 2, 3, 5, 8, 10, 14\}$ with minimum LDL diagonal $\sim 0.84$ at $n = 14$.
+**Situation.** ArchStruct (Theorem 1, Corollary 2) supplies the unconditional closed-form arch atomic measure $\sigma_N^{\mathrm{arch}}$ on $(-\infty, 0)$ at every primorial $N \ge 30$ with $H_n^{\mathrm{arch,joint}}(N) \succeq 0$, $J_n^{\mathrm{arch,joint}}(N) \preceq 0$. Pass-5 Theorem 16.2 gives RH $\iff$ the folded-$\Xi$ Hankel gates, for $\zeta$.  A primorial-$N$ version has not been proved (`GRH-Apex-Integration-AdversarialAudit-Draft1.md`, F1); Pass-5 Lemma 16.4 supplies the *constructive sensitivity direction*: off-line zero $\Rightarrow$ finite negative Hankel witness, with the construction following Mergelyan polynomial approximation. The joint primorial probe `probe_arch_prime_N210_joint.py` at mpmath dps=300 over the full LMFDB anchor (48 L-functions of conductor dividing 210) computed $H_n^{\mathrm{total,joint}}(210), J_n^{\mathrm{total,joint}}(210)$ from the LMFDB zero list.  They are PSD at every rung $n \in \{0, 1, 2, 3, 5, 8, 10, 14\}$, as they must be (correction notice, item 1).  At $n=14$ the minimum LDL pivots are $1.3\times10^{-5}$ ($H$) and $1.8\times10^{-6}$ ($J$), and the minimum eigenvalues are $3.3\times10^{-15}$ and $3.8\times10^{-16}$.  (Earlier drafts quoted $\sim0.84$; that is the prime-part pivot of $J_{14}$.)
 
-**Action.** We convert the empirical finite-rung PSD data into an *unconditional zero-localization theorem* by quantifying Pass-5 Lemma 16.4's Mergelyan degree bound and the off-line-zero rank-2 Hankel perturbation kernel. The key technical inputs:
+**Action (as originally planned).** We attempt to turn the finite-rung PSD data into a zero-localization statement by quantifying Pass-5 Lemma 16.4's Mergelyan degree bound and the off-line-zero rank-2 Hankel perturbation kernel. The key technical inputs:
 
 1. **Off-line zero perturbation kernel (§3).** A hypothetical off-line zero of $L(\chi, s)$ at $\rho_0 = 1/2 + \delta + i\gamma_0$ with $\delta > 0$ contributes (via FE 4-tuple) to the joint cumulant $\mu_k^{\mathrm{total,joint}}(210)$ a complex 4-atom whose Hankel perturbation $\Delta H_n^{(\gamma_0, \delta)}$ is rank-2 with signed eigenvalues $\pm \beta(\gamma_0, \delta; n)$, with $\beta$ explicit in $\gamma_0, \delta, n$.
 
 2. **Mergelyan-Christoffel detection threshold (§4).** A polynomial $q$ of degree $n$ exists with $q^T \Delta H_n^{(\gamma_0, \delta)} q < -\eta\|q\|^2$ for $\eta > 0$ explicit in $(\gamma_0, \delta, n, K_{\mathrm{supp}})$, where $K_{\mathrm{supp}}$ is the support of the on-line zero atomic measure (bounded by $1/\gamma_{\min}(210)^2 \approx 50.3$).
 
-3. **Off-line rejection via empirical margin (§5).** If $\eta > \epsilon_{\mathrm{emp}}(n) := \lambda_{\min}(H_n^{\mathrm{total,joint}}(210)) - 0$, then the hypothesized off-line zero would force $\lambda_{\min}(H_n^{\mathrm{total,joint}}(210))$ to be more negative than the empirical floor — contradicting the verified PSD margin. The off-line zero with parameters $(\gamma_0, \delta)$ is thereby ruled out at empirical rung $n$.
+3. **Off-line rejection via empirical margin (§5).** If $\eta > \epsilon_{\mathrm{emp}}(n) := \lambda_{\min}(H_n^{\mathrm{total,joint}}(210)) - 0$, then the hypothesized off-line zero would force $\lambda_{\min}(H_n^{\mathrm{total,joint}}(210))$ to be more negative than the empirical floor — contradicting the verified PSD margin. The off-line zero with parameters $(\gamma_0, \delta)$ was claimed to be ruled out at empirical rung $n$.  *(Withdrawn: the margin is computed from on-line zeros only and cannot rule anything out.)*
 
-4. **Solving for the explicit $(T_*, \delta_*)$ region (§6).** The detection-margin inequality $\eta(\gamma_0, \delta; n) > \epsilon_{\mathrm{emp}}(n)$ defines a region $\mathcal R_n \subset \{(\gamma_0, \delta) : \gamma_0 > 0, 0 < \delta < 1/2\}$ in parameter space such that no off-line zero with $(\gamma_0, \delta) \in \mathcal R_n$ exists. The complement $\mathcal R_n^c$ is the residual unconstrained region.
+4. **Solving for the explicit $(T_*, \delta_*)$ region (§6).** The detection-margin inequality $\eta(\gamma_0, \delta; n) > \epsilon_{\mathrm{emp}}(n)$ defines a region $\mathcal R_n \subset \{(\gamma_0, \delta) : \gamma_0 > 0, 0 < \delta < 1/2\}$ in parameter space such that no off-line zero with $(\gamma_0, \delta) \in \mathcal R_n$ was claimed to exist.  *(Withdrawn, as above.)* The complement $\mathcal R_n^c$ is the residual unconstrained region.
 
 **Result.** Three core claims.
 
@@ -32,15 +38,15 @@ where $r = 1/(\gamma_0^2 + \delta^2)$, $\theta = \arctan(2\gamma_0\delta/(\gamma
 $$\beta(\gamma_0, \delta; n) = 4r\cdot G(r, \theta; n),\qquad G(r, \theta; n) := \sqrt{\|\vec c\|^2\|\vec s\|^2 - \langle\vec c, \vec s\rangle^2 + ...}.$$
 (The full expression is computed explicitly in §3.4.)
 
-2. **Theorem B (Empirical-anchored off-line rejection).** Let $\epsilon_{\mathrm{emp}}(n)$ be the minimum LDL diagonal of $H_n^{\mathrm{total,joint}}(210)$ measured at rung $n$. If $\beta(\gamma_0, \delta; n) > \epsilon_{\mathrm{emp}}(n)$ for some $n \le n_{\max}^{\mathrm{probe}}$, then no L-function $L(\chi, s)$ with $\chi$ of conductor dividing 210 has a non-trivial zero at $\rho_0 = 1/2 + \delta + i\gamma_0$.
+2. **Criterion B (Empirical-anchored off-line rejection).** Let $\epsilon_{\mathrm{emp}}(n)$ be the minimum LDL diagonal of $H_n^{\mathrm{total,joint}}(210)$ measured at rung $n$. If $\beta(\gamma_0, \delta; n) > \epsilon_{\mathrm{emp}}(n)$ for some $n \le n_{\max}^{\mathrm{probe}}$, then no L-function $L(\chi, s)$ with $\chi$ of conductor dividing 210 has a non-trivial zero at $\rho_0 = 1/2 + \delta + i\gamma_0$.
 
-3. **Theorem C (Explicit height-bounded GRH region at $n = 14$).** Define
+3. **Target C (Explicit height-bounded GRH region at $n = 14$).** Define
 $$\mathcal R_{14} := \{(\gamma_0, \delta) : 0 < \gamma_0 \le T_*(14), \delta_*(14) \le \delta < 1/2, \beta(\gamma_0, \delta; 14) > \epsilon_{\mathrm{emp}}(14)\}.$$
 For every $(\gamma_0, \delta) \in \mathcal R_{14}$, no non-trivial zero of any $L(\chi, s)$ of conductor dividing 210 has imaginary part $\gamma_0$ and real-part shift $\delta$. Equivalently:
 $$\text{For every }\chi\text{ of conductor }f\mid 210\text{, every non-trivial zero }\rho = 1/2 + \delta + i\gamma\text{ of }L(\chi, s)\text{ with }|\gamma| \le T_*(14)\text{ satisfies }\delta < \delta_*(14).$$
-Both $T_*(14)$ and $\delta_*(14)$ are explicit constants determined by the empirical $\epsilon_{\mathrm{emp}}(14) \sim 0.84$ and the closed-form $\beta$. The probe `probe_height_bounded_GRH_N210.py` (to be implemented per this paper) computes the (T_*, $\delta_*$) frontier exactly.
+Both $T_*(14)$ and $\delta_*(14)$ would be explicit constants determined by $\epsilon_{\mathrm{emp}}(14)$ (measured: $\lambda_{\min}(H_{14})=3.3\times10^{-15}$) and the closed-form $\beta$. The probe `probe_height_bounded_GRH_N210.py` (to be implemented per this paper) computes the (T_*, $\delta_*$) frontier exactly.
 
-**Harvest.** ArchStruct delivered the unconditional arch positivity. The joint primorial probe delivered the empirical finite-rung PSD margin. Pass-5 Lemma 16.4 delivered the Mergelyan-Christoffel detection mechanism. Together, this paper delivers the unconditional height-bounded GRH theorem at primorial $N = 210$: a *new theorem* of the form "no zero of any $L(\chi, s)$, $\chi$ mod $f \mid 210$, with $|\gamma| \le T_*$ has $|\sigma - 1/2| \ge \delta_*$." This is *not* full GRH at $N = 210$, but it is genuinely unconditional, deliverable from existing program inputs without [A3'] / (GBP) / Polymath-8-scale specialist work.
+**Harvest (corrected 2026-10-08).** The deliverables are the closed form of Theorem A and the sensitivity function $\beta$.  The claimed "unconditional height-bounded GRH theorem" is withdrawn.  The Hankel data are built from on-line zeros and are PSD by construction, so they reject no off-line configuration.  Zero-localization for $f\mid210$ is already known far beyond this range by rigorous verification (Platt 2016).  At all heights the strip $\delta\le3/8$ holds at tier [A] (OpenAI 2026).
 
 **Keywords:** Generalized Riemann Hypothesis, primorial modulus, Hankel positivity, Mergelyan polynomial approximation, off-line zero, FE cluster, arch atomic measure, joint Dirichlet L-function product, empirical anchor.
 
@@ -67,19 +73,19 @@ $H_n^{\bullet}(210) := (\mu_{i+j}^{\bullet}(210))_{0\le i,j\le n}$, $J_n^{\bulle
 
 ### 1.3 Empirical anchor
 
-From the probe at dps=300:
+Recomputed 2026-10-08 at dps 300 from the 1195 listed zeros (`zero_data_N210.py`; minimum $|\gamma|=0.14097$, maximum $88.81$).  Earlier drafts had the $J$ column and the $n=8$ entry wrong.
 
 | $n$ | $\lambda_{\min}(H_n^{\mathrm{total,joint}}(210))$ | $\lambda_{\min}(J_n^{\mathrm{total,joint}}(210))$ |
 |---|---|---|
-| 0 | 159.8 | 90.6 |
-| 1 | 55.82 | 8.32 |
-| 2 | 29.72 | 2.05 |
-| 5 | 0.143 | 7.4e-3 |
-| 8 | 1.2e-4 | 4.9e-6 |
-| 10 | 5.8e-8 | 1.1e-9 |
-| 14 | 3.3e-15 | 4.2e-17 |
+| 0 | 160.0 | 5150 |
+| 1 | 55.8 | 74.0 |
+| 2 | 29.7 | 11.5 |
+| 5 | 0.143 | 0.0463 |
+| 8 | 8.0e-5 | 1.7e-5 |
+| 10 | 5.8e-8 | 7.1e-9 |
+| 14 | 3.3e-15 | 3.8e-16 |
 
-Define $\epsilon_{\mathrm{emp}}^H(n) := \lambda_{\min}(H_n^{\mathrm{total,joint}}(210))$ and $\epsilon_{\mathrm{emp}}^J(n) := \lambda_{\min}(J_n^{\mathrm{total,joint}}(210))$. At $n = 14$: $\epsilon_{\mathrm{emp}}^H \sim 3 \times 10^{-15}$, $\epsilon_{\mathrm{emp}}^J \sim 4 \times 10^{-17}$ (well above the dps=300 numerical floor $10^{-300}$).
+Define $\epsilon_{\mathrm{emp}}^H(n) := \lambda_{\min}(H_n^{\mathrm{total,joint}}(210))$ and $\epsilon_{\mathrm{emp}}^J(n) := \lambda_{\min}(J_n^{\mathrm{total,joint}}(210))$.  At $n = 14$: $\epsilon_{\mathrm{emp}}^H \approx 3.3 \times 10^{-15}$ and $\epsilon_{\mathrm{emp}}^J \approx 3.8 \times 10^{-16}$.  The minimum LDL pivots are larger ($1.3\times10^{-5}$ and $1.8\times10^{-6}$), since a pivot only bounds $\lambda_{\min}$ from above.  These numbers are eigenvalues of moment matrices of a positive measure, the listed zeros, so they are positive by construction.  Their size reflects conditioning ($\lambda_{\max}/\lambda_{\min}\approx10^{64}$ for $H_{14}$), not arithmetic.
 
 ### 1.4 Off-line zero parameter space
 
@@ -220,9 +226,9 @@ $\beta \sim (n+1)\cdot\theta \cdot$ constants. Linear growth in $n$.
 
 ### 3.6 The detection condition
 
-The empirical rung $n = 14$ rules out an off-line zero with parameters $(\gamma_0, \delta)$ iff $\beta(\gamma_0, \delta; 14) > \epsilon_{\mathrm{emp}}^H(14) \approx 3 \times 10^{-15}$.
+A Hankel test at rung $14$ on the *true* cumulants would register an off-line zero with parameters $(\gamma_0, \delta)$ if $\beta(\gamma_0, \delta; 14) > \epsilon_{\mathrm{emp}}^H(14) \approx 3 \times 10^{-15}$.
 
-This is the **detection inequality** at the empirical anchor.
+This is the **detection inequality**.  It is a sensitivity statement, and the current data cannot apply it (correction notice, item 1).
 
 ---
 
@@ -273,13 +279,13 @@ $$D(\gamma_0, \delta; \epsilon_{\mathrm{emp}}(14)) \approx \frac{\gamma_0^3}{2\d
 
 ### 4.3 The rejection inequality
 
-An off-line zero at $(\gamma_0, \delta)$ is *empirically rejected at rung $n_{\mathrm{emp}}$* iff
+*(Would-be detection; not applicable to the current data.)*  An off-line zero at $(\gamma_0, \delta)$ would be *flagged at rung $n_{\mathrm{emp}}$* iff
 $$D(\gamma_0, \delta; \epsilon_{\mathrm{emp}}(n_{\mathrm{emp}})) \le n_{\mathrm{emp}}.\qquad(4.2)$$
 
 Combining (4.1) and (4.2) with $n_{\mathrm{emp}} = 14$:
 $$\frac{\gamma_0^3}{2\delta}\cdot 38 \le 14 \quad\Longleftrightarrow\quad \delta \ge \frac{38\gamma_0^3}{28} = \frac{19\gamma_0^3}{14} \approx 1.36\gamma_0^3.\qquad(4.3)$$
 
-This is the **empirical rejection condition at $n = 14$**: off-line zeros with $\delta \ge 1.36\gamma_0^3$ are ruled out.
+This is the would-be detection condition at $n = 14$ for $\delta \ge 1.36\gamma_0^3$.  Nothing is ruled out by it.
 
 ### 4.4 The Vinogradov-Korobov upper bound
 
@@ -287,26 +293,41 @@ Classical unconditional zero-free region for Dirichlet L-functions (Heath-Brown 
 $$L(\chi, \sigma + it) \ne 0 \quad\text{for}\quad \sigma > 1 - \frac{c_{\mathrm{VK}}(N)}{(\log(N(|t|+2)))^{2/3}(\log\log(N(|t|+2)))^{1/3}},$$
 with $c_{\mathrm{VK}}(N)$ explicit. At $N = 210$ and $|t| \le T_*$: $\delta < 1/2 - (1 - c_{\mathrm{VK}}/(\log(210 T_*))^{2/3}) = -1/2 + c_{\mathrm{VK}}/(\log(210 T_*))^{2/3}$.
 
-For $T_* = O(1)$ this gives $\delta < 1/2$ (vacuous since $\delta \in (0, 1/2)$ already). For very large $T_*$, the Vinogradov-Korobov gives $\delta < $ small. But for our purposes, the VK bound is *not* the binding constraint; we're combining with the empirical-rejection lower bound on $\delta$.
+For $T_* = O(1)$ this gives $\delta < 1/2$ (vacuous since $\delta \in (0, 1/2)$ already). For very large $T_*$, the Vinogradov-Korobov region gives $\delta < 1/2 - o(1)$, approaching the edge of the strip. But for our purposes, the VK bound is *not* the binding constraint; we're combining with the empirical-rejection lower bound on $\delta$.
+
+**Uniform strip at all heights ([A], OpenAI 2026).**  OpenAI, *The Quasi-Riemann Hypothesis: A Zero-Free Half-Plane $\operatorname{Re}(s)>7/8$* (30 Sep 2026, `github.com/openai/math`, family 003, Theorem 1.1) states that every Dirichlet $L$-function is zero-free in $\operatorname{Re}s>7/8$.  The result is model-generated.  OpenAI reports that the core statement is Lean-formalized; we have not refereed it.  With the functional equation, every nontrivial zero of every $L(\chi,s)$ with $f\mid 210$ satisfies
+$$|\beta - \tfrac12| = \delta \le \tfrac38\qquad\text{at every height }\gamma.$$
+This bound is independent of $T_*$, $N$ and $\chi$.  It replaces the vacuous small-height VK bound and the large-height VK bound by the single constant $3/8$.  The bound for $\delta$ here is therefore $\delta\le3/8$, not $\delta<1/2$.
+
+### 4.4a What the strip adds, and what was already known
+
+- *Inside $|\gamma|\le T_*$.*  The strip removes the band $3/8<\delta<1/2$ from the empirical rejection region.  The content specific to Target C becomes $\delta\in[1.36\gamma_0^3,\,3/8]$ (see §4.5).
+- *Beyond $T_*$.*  Target C says nothing at $|\gamma|>T_*$.  The strip gives $\delta\le3/8$ there, uniformly and with no height loss.  That is everything this paper's method can currently say above $T_*$, and it comes from 003, not from the Hankel data.
+- *Classical numerical verification.*  Rigorous interval-arithmetic computations already verify GRH, with $\delta=0$ exactly, for every primitive character of conductor $q\le 400{,}000$ up to height of order $10^8/q$ (Platt, *Numerical computations concerning the GRH*, Math. Comp. 85 (2016)).  For $f\mid210$ that is height $\gtrsim 4\times10^5$.  So both Target C's region ($|\gamma|\lesssim0.72$) and the strip are strictly contained in what is already known for $f\mid210$.  The value of Target C is methodological: it tests the Hankel/Mergelyan detection mechanism against a known answer.  It adds no knowledge about these zeros.
 
 ### 4.5 The compatible $(T_*, \delta_*)$ region
 
 Combining (4.3) (empirical lower bound on $\delta$ to be rejected) with the natural upper bound $\delta < 1/2$ (zero in critical strip):
 $$\delta \in [1.36\gamma_0^3,\, 1/2].$$
-This is non-empty iff $1.36\gamma_0^3 \le 1/2$, i.e., $\gamma_0 \le (1/(2 \cdot 1.36))^{1/3} \approx 0.66$.
+This is non-empty iff $1.36\gamma_0^3 \le 1/2$, i.e., $\gamma_0 \le (7/19)^{1/3} \approx 0.717$.  (Earlier drafts printed $\approx 0.66$, which was an arithmetic slip: $(1/(2\cdot 19/14))^{1/3}=0.7169$.)
 
-So at empirical rung $n = 14$, the rejection region is
-$$\mathcal R_{14}^{\mathrm{rough}} = \{(\gamma_0, \delta) : 0 < \gamma_0 \le 0.66,\,\,1.36\gamma_0^3 \le \delta < 1/2\}.$$
+So at rung $n = 14$, the would-be detection region is
+$$\mathcal R_{14}^{\mathrm{rough}} = \{(\gamma_0, \delta) : 0 < \gamma_0 \le 0.717,\,\,1.36\gamma_0^3 \le \delta < 1/2\}.$$
+
+With the uniform strip of §4.4 ($\delta\le3/8$, [A] on OpenAI 2026), only the band below $3/8$ would be new:
+$$\mathcal R_{14}^{\mathrm{rough},\,\mathrm{new}} = \{(\gamma_0, \delta) : 0 < \gamma_0 \le (21/76)^{1/3}\approx 0.651,\,\,1.36\gamma_0^3 \le \delta \le 3/8\}.$$
 
 **Sharper analysis** using the exact $\beta(\gamma_0, \delta; n)$ from §3.4 (rather than the Mergelyan asymptotic) extends $T_*(14)$ upward. The probe `probe_height_bounded_GRH_N210.py` (to be implemented per §7) computes the exact rejection frontier numerically.
 
 ---
 
-## 5. Theorem B — Empirical-anchored off-line rejection
+## 5. Criterion B — Empirical-anchored off-line rejection (withdrawn as a theorem)
 
 ### 5.1 Statement
 
-**Theorem B.** *Let $\epsilon_{\mathrm{emp}}^H(n) := \lambda_{\min}(H_n^{\mathrm{total,joint}}(210)) > 0$ be measured empirically at mpmath dps=300 via* `probe_arch_prime_N210_joint.py`. *If for some $n \le 14$ the rank-2 perturbation $\Delta H_n^{(\gamma_0, \delta)}$ from a hypothetical off-line FE 4-tuple satisfies*
+> *Withdrawn as a theorem (2026-10-08).*  Its hypothesis, a margin "measured empirically", is a property of the matrix of listed on-line zeros, which is PSD by construction.  The proof below also concedes a missing bound.  The statement is kept as a record of the attempted criterion.
+
+**Criterion B.** *Let $\epsilon_{\mathrm{emp}}^H(n) := \lambda_{\min}(H_n^{\mathrm{total,joint}}(210)) > 0$ be measured empirically at mpmath dps=300 via* `probe_arch_prime_N210_joint.py`. *If for some $n \le 14$ the rank-2 perturbation $\Delta H_n^{(\gamma_0, \delta)}$ from a hypothetical off-line FE 4-tuple satisfies*
 $$\beta(\gamma_0, \delta; n) > \epsilon_{\mathrm{emp}}^H(n) + \langle\vec v_-, H_n^{\mathrm{arch,joint}}(210)\vec v_-\rangle,$$
 *where $\vec v_-$ is the unit negative-eigenvector of $\Delta H_n^{(\gamma_0, \delta)}$, then no L-function $L(\chi, s)$ with $\chi$ of conductor dividing 210 has a non-trivial zero at $1/2 + \delta + i\gamma_0$.*
 
@@ -323,12 +344,12 @@ $$\langle\vec v_-, H_n^{\mathrm{total,joint}}(210)\vec v_-\rangle = \langle\vec 
 Since $H_n^{\mathrm{on-line}} \succeq 0$, $\langle\vec v_-, H_n^{\mathrm{on-line}}\vec v_-\rangle \ge 0$. Therefore:
 $$\langle\vec v_-, H_n^{\mathrm{total,joint}}(210)\vec v_-\rangle \le \langle\vec v_-, H_n^{\mathrm{arch}}\vec v_-\rangle + \langle\vec v_-, H_n^{\mathrm{on-line}}\vec v_-\rangle - \beta.$$
 
-The LHS is $\ge \epsilon_{\mathrm{emp}}^H(n)$ by the empirical PSD margin (smallest eigenvalue lower bound).
+The LHS is $\ge \epsilon_{\mathrm{emp}}^H(n)$ by the empirical PSD margin (smallest eigenvalue lower bound).  *(This step is the error.  The empirical margin belongs to the matrix of listed zeros, not to $H^{\mathrm{total}}$ including the hypothetical zero.)*
 
 Setting $\alpha := \langle\vec v_-, H_n^{\mathrm{arch}}\vec v_-\rangle$ (computable from ArchStruct, $\ge 0$) and $\gamma := \langle\vec v_-, H_n^{\mathrm{on-line}}\vec v_-\rangle$ (unknown, $\ge 0$):
 $$\epsilon_{\mathrm{emp}}^H(n) \le \alpha + \gamma - \beta\quad\Longrightarrow\quad \gamma \ge \epsilon_{\mathrm{emp}}^H(n) - \alpha + \beta.$$
 
-The on-line eigenvalue projection $\gamma$ is bounded above by the on-line total trace, which is bounded by the explicit formula (independent of GRH): $\mathrm{tr}(H_n^{\mathrm{on-line}}) = \sum_k \mu_k^{\mathrm{on-line}}(210) \le \mu_0^{\mathrm{on-line}}(210) \cdot $ (poly factor) — actually let me think. $H_n^{\mathrm{on-line}}_{ii} = \mu_{2i}^{\mathrm{on-line}}(210)$.
+The on-line eigenvalue projection $\gamma$ is bounded above by the on-line total trace, which is bounded by the explicit formula (independent of GRH): $\mathrm{tr}(H_n^{\mathrm{on-line}}) = \sum_k \mu_k^{\mathrm{on-line}}(210) \le \mu_0^{\mathrm{on-line}}(210) \cdot $ (poly factor); but see the next paragraph. $H_n^{\mathrm{on-line}}_{ii} = \mu_{2i}^{\mathrm{on-line}}(210)$.
 
 But there's no explicit upper bound on $\gamma$ without further input — different on-line configurations produce different $\gamma$.
 
@@ -338,11 +359,11 @@ But there's no explicit upper bound on $\gamma$ without further input — differ
 
 The refined off-line rejection: $\beta(\gamma_0, \delta; n)$ must be compatible with the *spectral* structure of the on-line part, not just the trace. The full compatibility is a generalized moment problem.
 
-For the present paper, we state the rough form of Theorem B and indicate the sharpening via the joint $H + J$ Stieltjes condition. The exact rejection frontier is computed numerically by the probe.
+For the present paper, we state the rough form of Criterion B and indicate the sharpening via the joint $H + J$ Stieltjes condition. The exact rejection frontier is computed numerically by the probe.
 
 ### 5.3 The robust form
 
-**Theorem B (robust form).** *Suppose at empirical rung $n_{\mathrm{emp}} = 14$ the joint Hankel and shifted-Hankel matrices satisfy*
+**Criterion B (robust form).** *Suppose at empirical rung $n_{\mathrm{emp}} = 14$ the joint Hankel and shifted-Hankel matrices satisfy*
 $$H_{14}^{\mathrm{total,joint}}(210), J_{14}^{\mathrm{total,joint}}(210) \succeq \epsilon_{\mathrm{emp}}\cdot I_{15}, \qquad \epsilon_{\mathrm{emp}} \sim 10^{-15}.$$
 *Then no L-function $L(\chi, s)$ of conductor $f | 210$ has a non-trivial zero $\rho = 1/2 + \delta + i\gamma_0$ with $\beta(\gamma_0, \delta; 14) > \epsilon_{\mathrm{emp}}$, where $\beta$ is the closed-form expression of $(3.3)$.*
 
@@ -350,7 +371,7 @@ The exact $(\gamma_0, \delta)$ region satisfying $\beta > \epsilon_{\mathrm{emp}
 
 ---
 
-## 6. Theorem C — Explicit height-bounded GRH region
+## 6. Target C — Explicit height-bounded GRH region (not established)
 
 ### 6.1 The rejection frontier at $n = 14$
 
@@ -373,7 +394,7 @@ The frontier is roughly: $\delta_*(\gamma_0) \sim \max(10^{-15}\gamma_0^5, 0)$ f
 
 ### 6.2 The height-bounded GRH theorem (qualitative)
 
-**Theorem C.** *There exist explicit positive constants $T_*$ and $\delta_*(\cdot)$ such that, for every primitive Dirichlet character $\chi$ of conductor $f | 210$ and every non-trivial zero $\rho = \beta + i\gamma$ of $L(\chi, s)$:*
+**Target C.** *There exist explicit positive constants $T_*$ and $\delta_*(\cdot)$ such that, for every primitive Dirichlet character $\chi$ of conductor $f | 210$ and every non-trivial zero $\rho = \beta + i\gamma$ of $L(\chi, s)$:*
 
 - *If $|\gamma| \le T_*$ and $|\beta - 1/2| > \delta_*(|\gamma|)$, this would force $\lambda_{\min}(H_{14}^{\mathrm{total,joint}}(210)) < \epsilon_{\mathrm{emp}}^H(14) \sim 10^{-15}$, contradicting the empirical anchor.*
 
@@ -381,7 +402,7 @@ The frontier is roughly: $\delta_*(\gamma_0) \sim \max(10^{-15}\gamma_0^5, 0)$ f
 
 *The numerical values of $T_*$ and $\delta_*(\gamma)$ are computed by* `probe_height_bounded_GRH_N210.py`. *Heuristic estimate:* $T_* \approx O(1)$, $\delta_*(\gamma) \approx 10^{-15}\cdot\gamma^5$ *for $\gamma \in (0.1, 1)$.*
 
-This theorem is the **unconditional partial GRH at primorial $N = 210$ delivered by the program's current data**.
+*(Withdrawn 2026-10-08.)*  This was presented as an unconditional partial GRH at $N=210$.  It is not; see the correction notice.  The statement is kept as the target the detection mechanism would have to reach.
 
 ### 6.3 Scaling with extended empirical anchor
 
@@ -452,7 +473,7 @@ for gamma, delta in delta_star.items():
 # Output: explicit table for paper inclusion.
 ```
 
-The probe outputs the explicit $(T_*, \delta_*(\cdot))$ values that make Theorem C concrete.
+The probe outputs the explicit $(T_*, \delta_*(\cdot))$ values that make Target C concrete.
 
 ---
 
@@ -460,35 +481,38 @@ The probe outputs the explicit $(T_*, \delta_*(\cdot))$ values that make Theorem
 
 ### 8.1 What this delivers
 
-- A **new unconditional theorem** of the form "no off-line zeros of $L(\chi, s)$ for $\chi$ mod $f | 210$ with $|\gamma| \le T_*$ have $|\sigma - 1/2| > \delta_*(\gamma)$" — explicit constants computed.
-- A **computer-verified partial GRH** at the level supported by current empirical data ($n_{\mathrm{emp}} = 14$).
-- A **scaling mechanism**: extending the empirical anchor extends $T_*$ at known polynomial rate.
+- **Theorem A** [P, exact algebra]: the closed form of the rank-2 off-line perturbation $\Delta H_n^{(\gamma_0,\delta)}$ and its eigenvalues $\pm\beta$.
+- **The sensitivity map** $\beta(\gamma_0,\delta;n)$ [numerics]: how strongly a Hankel test on the *true* cumulants would register a hypothetical off-line 4-tuple.
+- **A diagnosis.**  A finite-rung Hankel test built from a zero list is PSD by construction.  It cannot reject zeros the list omits.
+
+Withdrawn 2026-10-08: the "new unconditional theorem", the "computer-verified partial GRH", and the scaling claim that extending $n$ on these matrices extends $T_*$.
 
 ### 8.2 What this does not deliver
 
 - **Not full GRH at $N = 210$.** Off-line zeros with very small $\delta$ (close to the critical line) escape the empirical detection.
+- **Not new knowledge about these zeros.** Platt's rigorous verification (2016) already places every zero of $L(\chi,s)$, $f\mid210$, on the critical line up to height $\gtrsim4\times10^5$. The uniform strip $\delta\le3/8$ at all heights is OpenAI 2026 ([A], §4.4). Target C is a calibration of the detection mechanism against known ground truth (§4.4a).
 - **Not GRH at higher primorials** without re-running the probe at $N = 2310, 30030, \ldots$
 - **Not RH for $\zeta$** directly. The joint product at $N = 210$ includes only Dirichlet L-functions of conductor $f | 210$, plus $\xi$ (which is the trivial-character L-function). RH for $\zeta$ at heights $|\gamma| \le T_*$ is included.
 
 ### 8.3 What this does for the program
 
-- **Confirms the structural framework delivers an unconditional theorem** with current materials, *not* a structural reformulation.
-- **Provides a clean publishable deliverable** at the level of "computer-verified partial GRH up to height $T_*$ at primorial $N = 210$."
-- **Sets up the scaling pathway**: each empirical extension to higher $n$ extends $T_*$ at known rate.
-- **Identifies the residual barrier** (off-line zeros with $\delta < \delta_*$ at height $\gamma > T_*$) cleanly. The next pursuit at the *structural* level (closing the residual) goes through [A3'] / cubic-shift bypass as discussed.
+- It shows where the finite Hankel route needs independent input.  The true cumulants $\mu_k$ must come from the arithmetic side, not from a zero list.  That means primes plus the archimedean term via the explicit formula, or the Taylor coefficients of $\log\Lambda(\chi,\cdot)$ at $s=1/2$.
+- Given that input plus certified completeness of the low zeros, the test reduces to classical zero verification, which already settles $f\mid210$ far beyond this range.  So the route offers calibration of the detector, not new zero-localization.
+- It is a worked instance of the program's own rule: numerics are not theorems, and a positivity check must be run on an object that could have failed.
 
 ### 8.4 Relationship to classical GRH literature
 
 The theorem is *complementary* to classical zero-density estimates:
 - Classical (Heath-Brown 1992): bounds the *number* of off-line zeros in a region; does not exclude individual zeros.
-- This paper: *excludes individual off-line zeros* in a region; does not bound the count outside.
+- This paper, as first drafted, aimed to *exclude individual off-line zeros* in a region.  That exclusion is withdrawn (correction notice).
 
-For the joint primorial product structure, the simplicial framework provides the *explicit-formula-free* zero-localization route: no need to invoke zero-density estimates from $L'(\chi)/L(\chi)$ Dirichlet series. The empirical anchor + ArchStruct quantitative bound is sufficient.
+The "explicit-formula-free" framing of earlier drafts was the source of the error.  Without the explicit formula, or another zero-free evaluation of $\mu_k$, the cumulants can only be built from a zero list.  A zero list already presupposes where the zeros are.
 
 ### 8.5 Path to extension
 
 Three concrete next steps:
 
+0. **Make the cumulants zero-free first.**  Compute $\mu_k$ from the arithmetic side (explicit formula, or derivatives of $\log\Lambda(\chi,s)$ at $s=1/2$), independently of `zero_data_N210.py`.  Only then is a PSD check a test.  Extending $n$ on the zero-list matrices adds nothing.
 1. **Run `probe_height_bounded_GRH_N210.py`** to compute the explicit $(T_*, \delta_*)$ numerical values.
 2. **Extend the empirical probe to $n_{\mathrm{emp}} = 30, 60$** at $N = 210$ (computational: $\sim$ days at dps=400).
 3. **Replicate at $N = 2310$** with appropriate LMFDB zero data (computational: $\sim$ weeks of zero computation + analysis).
@@ -504,6 +528,8 @@ The sequence delivers progressively stronger height-bounded GRH theorems.
 - Joint primorial probe: `probe_arch_prime_N210_joint.py` + `zero_data_N210.py`. Empirical anchor at $n \le 14$.
 - §17 audit: `PassFive-Section17-Audit-Draft1.md`. Mergelyan-Christoffel construction.
 - Cubic-shift bypass: `Unconditional-Positivity-CubicShiftBypass-Draft1.md`. Structural framing of why this is the right next-step deliverable.
+- OpenAI (2026). The Quasi-Riemann Hypothesis: A Zero-Free Half-Plane $\operatorname{Re}(s)>7/8$. 30 September 2026, `github.com/openai/math`, family 003 (model-generated; Lean formalization reported by OpenAI). Tier [A].
+- Platt, D. J. (2016). Numerical computations concerning the GRH. *Math. Comp.* 85, 3009–3027.
 - Heath-Brown, D. R. (1992). Zero-free regions for Dirichlet L-functions. *Proc. London Math. Soc.* 64, 265–338.
 - Iwaniec, H. and Kowalski, E. (2004). *Analytic Number Theory*. AMS Colloquium 53.
 - Mergelyan, S. N. (1952). Uniform approximations of functions of a complex variable. *Uspekhi Mat. Nauk* 7.
@@ -516,6 +542,6 @@ The sequence delivers progressively stronger height-bounded GRH theorems.
 
 ---
 
-*The simplicial framework + empirical anchor delivers a genuine unconditional partial-GRH theorem at primorial $N = 210$. The constants are explicit. The scaling pathway is clear. The deliverable is real.*
+*Correction, 2026-10-08.  The closing line of May 25 read: "The simplicial framework + empirical anchor delivers a genuine unconditional partial-GRH theorem at primorial $N = 210$."  It does not.  The empirical anchor is PSD by construction, because it is built from on-line zeros, so it carries no information about off-line ones.  What is real is Theorem A, the sensitivity function $\beta$, and the diagnosis of §8.3.  The next step that could make the route a test is to compute the cumulants from the arithmetic side, independently of any zero list.*
 
-— Director, May 25, 2026
+— Director, May 25, 2026; corrected October 8, 2026

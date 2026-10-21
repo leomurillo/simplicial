@@ -1,0 +1,30 @@
+{
+  "rows": [
+    {
+      "name": "B1 binary tree = inverse tree of T_1",
+      "pass": true,
+      "detail": "unique parents; depth = ceil(log2 n)"
+    },
+    {
+      "name": "B2 two perfect 2-adic transversals",
+      "pass": true,
+      "detail": "positive integral preimages by depth: {8: 14, 12: 50, 16: 157}"
+    },
+    {
+      "name": "B3 parity charge",
+      "pass": true,
+      "detail": "Q(n)=a/3 for n<=20000: True; Q(-1)=-1, Q(0)=0, den Q(-5)=7, den Q(-17)=2047"
+    },
+    {
+      "name": "B4 coverage equation roots",
+      "pass": true,
+      "detail": "a=3 roots 1,2: True; convex: True; slope=\u00bdln(a/4): True; a=4 double: True; a=5: 0.650919; a=7: 0.373501"
+    },
+    {
+      "name": "B5 empirical coverage of the tree of 1",
+      "pass": true,
+      "detail": "a=5 exponent 0.577 [81, 256, 982, 4324]; a=7 exponent 0.289 [40, 82, 164, 291]; a=3 all n<=1e6 reach 1: True"
+    }
+  ],
+  "elapsed_s": 534.8872023000149
+}

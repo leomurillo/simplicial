@@ -1,0 +1,106 @@
+{
+  "status": "Finite constructions only; infinite positive survival unresolved",
+  "schedules_checked": 4095,
+  "individual_odd_steps_checked": 86019,
+  "exact_mass_levels_checked": 12,
+  "examples": [
+    {
+      "schedule": "AB",
+      "start": 27,
+      "endpoint": 71,
+      "odd_steps": 4,
+      "halvings": 5,
+      "modulus": 64,
+      "odd_path": [
+        27,
+        41,
+        31,
+        47,
+        71
+      ]
+    },
+    {
+      "schedule": "ABB",
+      "start": 91,
+      "endpoint": 395,
+      "odd_steps": 7,
+      "halvings": 9,
+      "modulus": 1024,
+      "odd_path": [
+        91,
+        137,
+        103,
+        155,
+        233,
+        175,
+        263,
+        395
+      ]
+    },
+    {
+      "schedule": "ABAB",
+      "start": 667,
+      "endpoint": 4283,
+      "odd_steps": 8,
+      "halvings": 10,
+      "modulus": 2048,
+      "odd_path": [
+        667,
+        1001,
+        751,
+        1127,
+        1691,
+        2537,
+        1903,
+        2855,
+        4283
+      ]
+    },
+    {
+      "schedule": "ABABAB",
+      "start": 33435,
+      "endpoint": 542285,
+      "odd_steps": 12,
+      "halvings": 15,
+      "modulus": 65536,
+      "odd_path": [
+        33435,
+        50153,
+        37615,
+        56423,
+        84635,
+        126953,
+        95215,
+        142823,
+        214235,
+        321353,
+        241015,
+        361523,
+        542285
+      ]
+    },
+    {
+      "schedule": "AABBAB",
+      "start": 60135,
+      "endpoint": 975311,
+      "odd_steps": 12,
+      "halvings": 15,
+      "modulus": 65536,
+      "odd_path": [
+        60135,
+        90203,
+        135305,
+        101479,
+        152219,
+        228329,
+        171247,
+        256871,
+        385307,
+        577961,
+        433471,
+        650207,
+        975311
+      ]
+    }
+  ]
+}

@@ -1,0 +1,137 @@
+{
+  "status": "float64 attained test ratios, no rigorous numerical operator norm claim",
+  "blocks": [
+    {
+      "start": 3,
+      "steps": 1,
+      "end": 4,
+      "largest_test_ratio": 0.9999942779595586,
+      "best_context": 1,
+      "best_phase": 1.0471975511965976,
+      "actual_syracuse_ratio": 0.8491242299064894,
+      "exact_arithmetic_series_tail_bound": 5.421010862427522e-20
+    },
+    {
+      "start": 3,
+      "steps": 2,
+      "end": 5,
+      "largest_test_ratio": 0.9921351953459613,
+      "best_context": 4,
+      "best_phase": 1.5707963267948966,
+      "actual_syracuse_ratio": 0.7338502555761802,
+      "exact_arithmetic_series_tail_bound": 1.0842021724855044e-19
+    },
+    {
+      "start": 3,
+      "steps": 3,
+      "end": 6,
+      "largest_test_ratio": 0.9580675228283335,
+      "best_context": 4,
+      "best_phase": 1.3089969389957472,
+      "actual_syracuse_ratio": 0.649706046066379,
+      "exact_arithmetic_series_tail_bound": 1.6263032587282567e-19
+    },
+    {
+      "start": 4,
+      "steps": 1,
+      "end": 5,
+      "largest_test_ratio": 1.0,
+      "best_context": 1,
+      "best_phase": 0.7853981633974483,
+      "actual_syracuse_ratio": 0.864243687471969,
+      "exact_arithmetic_series_tail_bound": 5.421010862427522e-20
+    },
+    {
+      "start": 4,
+      "steps": 2,
+      "end": 6,
+      "largest_test_ratio": 0.999477739422436,
+      "best_context": 25,
+      "best_phase": 2.0943951023931953,
+      "actual_syracuse_ratio": 0.7651484001792397,
+      "exact_arithmetic_series_tail_bound": 1.0842021724855044e-19
+    },
+    {
+      "start": 4,
+      "steps": 3,
+      "end": 7,
+      "largest_test_ratio": 0.9855567255426878,
+      "best_context": 26,
+      "best_phase": 1.0471975511965976,
+      "actual_syracuse_ratio": 0.6838640974882528,
+      "exact_arithmetic_series_tail_bound": 1.6263032587282567e-19
+    },
+    {
+      "start": 5,
+      "steps": 1,
+      "end": 6,
+      "largest_test_ratio": 1.0,
+      "best_context": 1,
+      "best_phase": 0.7853981633974483,
+      "actual_syracuse_ratio": 0.8853387201674603,
+      "exact_arithmetic_series_tail_bound": 5.421010862427522e-20
+    },
+    {
+      "start": 5,
+      "steps": 2,
+      "end": 7,
+      "largest_test_ratio": 0.9999840545404193,
+      "best_context": 5,
+      "best_phase": 0.0,
+      "actual_syracuse_ratio": 0.7912861932363651,
+      "exact_arithmetic_series_tail_bound": 1.0842021724855044e-19
+    },
+    {
+      "start": 5,
+      "steps": 3,
+      "end": 8,
+      "largest_test_ratio": 0.9984351745072084,
+      "best_context": 80,
+      "best_phase": 1.0471975511965976,
+      "actual_syracuse_ratio": 0.7163193618047017,
+      "exact_arithmetic_series_tail_bound": 1.6263032587282567e-19
+    },
+    {
+      "start": 6,
+      "steps": 1,
+      "end": 7,
+      "largest_test_ratio": 1.0,
+      "best_context": 1,
+      "best_phase": 0.7853981633974483,
+      "actual_syracuse_ratio": 0.8937666174666952,
+      "exact_arithmetic_series_tail_bound": 5.421010862427522e-20
+    },
+    {
+      "start": 6,
+      "steps": 2,
+      "end": 8,
+      "largest_test_ratio": 0.999999691758434,
+      "best_context": 4,
+      "best_phase": 0.0,
+      "actual_syracuse_ratio": 0.8090907417549863,
+      "exact_arithmetic_series_tail_bound": 1.0842021724855044e-19
+    },
+    {
+      "start": 6,
+      "steps": 3,
+      "end": 9,
+      "largest_test_ratio": 0.9998103140915257,
+      "best_context": 1,
+      "best_phase": 0.0,
+      "actual_syracuse_ratio": 0.7378783243469248,
+      "exact_arithmetic_series_tail_bound": 1.6263032587282567e-19
+    }
+  ],
+  "actual_dyadic_blocks": [
+    {
+      "N": 2,
+      "actual_block_ratio": 0.5549087203164805,
+      "log_contraction": 0.5889516466602637
+    },
+    {
+      "N": 4,
+      "actual_block_ratio": 0.5806855751404087,
+      "log_contraction": 0.5435458473803586
+    }
+  ]
+}

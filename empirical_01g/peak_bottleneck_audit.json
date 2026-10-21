@@ -1,0 +1,70 @@
+{
+  "status": "passed",
+  "capped_basins": [
+    {
+      "H": 16,
+      "before": 4,
+      "after": 10,
+      "added": 6,
+      "least_added": 3,
+      "fraction_of_after": 0.6
+    },
+    {
+      "H": 52,
+      "before": 17,
+      "after": 29,
+      "added": 12,
+      "least_added": 7,
+      "fraction_of_after": 0.41379310344827586
+    },
+    {
+      "H": 160,
+      "before": 64,
+      "after": 77,
+      "added": 13,
+      "least_added": 15,
+      "fraction_of_after": 0.16883116883116883
+    },
+    {
+      "H": 9232,
+      "before": 2367,
+      "after": 3946,
+      "added": 1579,
+      "least_added": 27,
+      "fraction_of_after": 0.4001520527116067
+    },
+    {
+      "H": 13120,
+      "before": 5403,
+      "after": 5478,
+      "added": 75,
+      "least_added": 255,
+      "fraction_of_after": 0.013691128148959474
+    },
+    {
+      "H": 250504,
+      "before": 98286,
+      "after": 100045,
+      "added": 1759,
+      "least_added": 703,
+      "fraction_of_after": 0.01758208806037283
+    }
+  ],
+  "gate": {
+    "exponents": [
+      4,
+      2,
+      2,
+      4,
+      3
+    ],
+    "C": 5953,
+    "S": 15,
+    "residue": 3077,
+    "modulus": 65536,
+    "input": "3077+65536k",
+    "output": "23+486k",
+    "tested_k": 1000
+  },
+  "convention": "Standard Collatz; inverse branches 2x and (x-1)/3 when x=4 mod 6; positive vertices only."
+}

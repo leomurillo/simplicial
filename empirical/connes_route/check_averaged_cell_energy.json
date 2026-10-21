@@ -1,0 +1,32 @@
+[
+  {
+    "X": 100,
+    "L": 10,
+    "energy": 9487,
+    "diagonal": 13979,
+    "positive_off_diagonal": 36404,
+    "negative_off_diagonal": -40896,
+    "net_off_diagonal": -4492,
+    "exact_identity": true
+  },
+  {
+    "X": 300,
+    "L": 17,
+    "energy": 127728,
+    "diagonal": 165324,
+    "positive_off_diagonal": 1132776,
+    "negative_off_diagonal": -1170372,
+    "net_off_diagonal": -37596,
+    "exact_identity": true
+  },
+  {
+    "X": 1000,
+    "L": 31,
+    "energy": 1857588,
+    "diagonal": 2333650,
+    "positive_off_diagonal": 43893894,
+    "negative_off_diagonal": -44369956,
+    "net_off_diagonal": -476062,
+    "exact_identity": true
+  }
+]

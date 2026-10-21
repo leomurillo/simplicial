@@ -63,3 +63,6 @@ ztrack_out.txt
 *TEMPhk.txt
 # Large regenerable reports
 f4_u2_ext_orbits.json
+
+# Private correspondence and notes (never published)
+/.ignore/

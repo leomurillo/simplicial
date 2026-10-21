@@ -1,0 +1,15 @@
+{
+  "status": "All exact certificates passed",
+  "windows": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+  ],
+  "weighted_transition_checks": 349,
+  "scope": "No strictly decreasing additive binary-window rank with nonnegative interior weights and arbitrary boundary weights, for each listed window."
+}

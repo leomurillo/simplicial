@@ -119,6 +119,7 @@ In a continuum these are one metric. On a network they need not be. We test whic
 - area laws on lattices (Srednicki 1993; Eisert–Cramer–Plenio 2010);
 - the Bisognano–Wichmann theorem (1975) and its lattice tests;
 - Regge calculus (1961), dynamical triangulations, and causal sets (Sorkin);
+- random planar maps, i.e. random gases of degree (disclination) defects, and their Liouville quantum gravity limits.  Spanning-tree-weighted and critical Fortuin–Kasteleyn maps converge to Liouville quantum spheres, and random walk converges to Liouville Brownian motion.  For FK–Ising maps there is also eigenvalue and heat-trace convergence, using stated Brownian/LQG inputs (OpenAI 2026, `github.com/openai/math`, family 211; model-generated; tier [A]).  These results average over random defect configurations.  They do not bear on the single-disclination ratio $0.76$ above, whose continuum limit stays open.
 - point particles in $2+1$ gravity as conical deficits (Staruszkiewicz 1963; Deser–Jackiw–'t Hooft 1984);
 - the Kirchhoff matrix-tree and Foster theorems.
 

@@ -1,0 +1,97 @@
+{
+ "criteria_written": "2026-10-09",
+ "status": "author verification, not independent review",
+ "python": "3.12.13",
+ "numpy": "2.4.4",
+ "scipy": "1.17.1",
+ "mpmath": "1.3.0",
+ "results": [
+  {
+   "check": "G1 overdamped arbitrary friction",
+   "pass": true,
+   "detail": "closed (C~,B~) 0.0797623783; correlated Riccati 0.0797623783; brute n=200/400/800 0.079755265/0.079760600/0.079761934, Richardson 0.0797623783"
+  },
+  {
+   "check": "G2 inertial block-diagonal friction",
+   "pass": true,
+   "detail": "formula 0.206652117; brute 0.20590100/0.20627638/0.20646420; Richardson 0.206652029; Gamma_BI=[[0.0, 0.0], [0.0, 0.0]]"
+  },
+  {
+   "check": "G3 inertial cross friction",
+   "pass": true,
+   "detail": "formula 0.270999897; brute 0.26998693/0.27049307/0.27074640; Richardson 0.270999730; Gamma_BI=[[0.021, -0.012], [0.166, 0.075]]"
+  },
+  {
+   "check": "G4 degenerate boundary damping (Bryson-Johansen)",
+   "pass": true,
+   "detail": "BJ 0.701945404; 45-digit brute 0.65394156/0.67738310/0.68952594, two-step Richardson 0.701950176; exact-direction 1-D/J 2.41e-04/3.06e-05/3.86e-06"
+  },
+  {
+   "check": "G5 private-bath principle",
+   "pass": true,
+   "detail": "common bath lambda [0.387035, 0.809547, 0.975857, 0.997518]; private baths [0.258914, 0.343542, 0.343599, 0.343599]; dark undamped [0.2332021144, 0.2332021144]; visible undamped [0.643153, 0.876486]"
+  },
+  {
+   "check": "G6 approach rate to unit visibility",
+   "pass": true,
+   "detail": "Gamma_II=0: predicted 2.17125, extrapolated 2.17120; Gamma_II!=0: predicted 56.58537, extrapolated 56.57454"
+  },
+  {
+   "check": "G7 scalar inertial closed form and overdamped limit",
+   "pass": true,
+   "detail": "max ARE mismatch 6.7e-16; Pi_yy over gamma [0.90938, 0.663631, 0.517268, 0.389521, 0.364606, 0.361941] -> tan^2(theta/2)=0.361914"
+  },
+  {
+   "check": "G8 noncommuting inertial gauge",
+   "pass": true,
+   "detail": "noncommuting |OO^T-I|=6.7e-16, angle -0.9331 deg; commuting |OO^T-I|=0.0e+00, angle 0.0e+00 deg"
+  },
+  {
+   "check": "C1 canonical correlations = visibilities (overdamped)",
+   "pass": true,
+   "detail": "eig Pi [0.0689573, 0.0054442] vs extrapolated [0.0689577, 0.0054443]; eig Pi [0.5100671, 0.2442667] vs extrapolated [0.5100671, 0.2442669]"
+  },
+  {
+   "check": "C2 canonical correlations (inertial) = sv(Pi^1/2 eps Pi^1/2)",
+   "pass": true,
+   "detail": "sv [0.387512, 0.285352, 0.080835, 0.051507] vs extrapolated [0.387488, 0.285291, 0.080834, 0.051503]; lambda_max(Pi)=0.492638"
+  },
+  {
+   "check": "C3 Hamiltonian eigenvalues = zeros of det[Z_B(s)+Z_B(-s)^T]",
+   "pass": true,
+   "detail": "8 eigenvalues, max normalized |det| 1.4e-14; closed-loop poles [(-0.70628-1.87184j), (-0.70628+1.87184j), (-0.55429-1.36466j), (-0.55429+1.36466j)]"
+  },
+  {
+   "check": "C4 boundary tracking bound (detailed balance)",
+   "pass": true,
+   "detail": "inertial 5.0e-16; overdamped witness 5.6e-17"
+  },
+  {
+   "check": "C5 information budget (Section 8.7 witness)",
+   "pass": true,
+   "detail": "stored 0.0384546305 nats; past-future 0.0023980461 nats; crypticity 0.0360565844 nats; visibilities [0.06895730927033988, 0.005444239033876197]"
+  },
+  {
+   "check": "R1 visibility truncation is hereditary and physical",
+   "pass": true,
+   "detail": "max retained-visibility deviation 1.2e-13; K_r > 0 in all; Schur-complement deviation 1.3e-14"
+  },
+  {
+   "check": "R2 truncation error law (numerical)",
+   "pass": true,
+   "detail": "500 truncations: max err/bound 1.00000, median 0.9797; visibility beats modal in 96.6%"
+  },
+  {
+   "check": "R3 pinned-chain visibility spectrum is geometric",
+   "pass": true,
+   "detail": "n=30 top: ['3.7963e-02', '1.3923e-03', '5.1055e-05', '1.8722e-06', '6.8657e-08', '2.5177e-09']; ratios [0.03667, 0.03667, 0.03667, 0.03667, 0.03667, 0.03667]"
+  },
+  {
+   "check": "Q1 effective quantum oscillator",
+   "pass": true,
+   "detail": "X_B=0.5583333333 (67/120), P_B=0.9833333333 (59/60), coth=1.4819281734, w_eff=1.1822856582, m_eff=1.1224866406, k_eff=1.5690111277; T=100: m_eff=1.000007, k_eff=1.600000"
+  }
+ ],
+ "passed": 17,
+ "total": 17
+}

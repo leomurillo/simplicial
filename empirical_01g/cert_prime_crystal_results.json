@@ -1,0 +1,86 @@
+{
+  "rows": [
+    {
+      "name": "G1 window faithful, walls = divisibility",
+      "pass": true,
+      "detail": "failures 0 over N<=300; control 162 (frame 3) on odd side: True"
+    },
+    {
+      "name": "G2 step identities",
+      "pass": true,
+      "detail": "mismatches 0 for n<1e5"
+    },
+    {
+      "name": "G3 alignment",
+      "pass": true,
+      "detail": "walk parallel pairs N=3..11: 0; ray-equation solutions N<=2000: [(3, 2, 4), (3, 3, 2), (3, 5, 1)]; own-frame classes {3: [[1, 15]], 4: [], 5: []}"
+    },
+    {
+      "name": "G4 obtuse turns",
+      "pass": true,
+      "detail": "all turns obtuse for n<1e7; closest 92.545 deg at n=4109374; analytic regime N>(log2 p_N+1)^2 for 100<=N<=1e5: True"
+    },
+    {
+      "name": "G5 turn law",
+      "pass": true,
+      "detail": "E[AC]=1.50000, E[Q]=6.4781, C1/C0=-0.61577 vs -1/2-E[AC]/(2E[Q])=-0.61577, mean cos=-0.62110"
+    },
+    {
+      "name": "G6 birth identities",
+      "pass": true,
+      "detail": "symbolic residual 0; antipode + layering N<40: True"
+    },
+    {
+      "name": "G7 Stormer census + native steps",
+      "pass": true,
+      "detail": "counts [1, 4, 10, 23, 40, 68, 108, 167, 241]; last bonds [1, 8, 80, 4374, 9800, 123200, 336140, 11859210, 11859210]; native rule exact for n<1e6: True"
+    },
+    {
+      "name": "G8 records at powers of 2",
+      "pass": true,
+      "detail": "30 records: [1, 2, 3, 7, 8, 15, 31, 32, 63, 127, 128, 255, 511, 512, 1023, 1024, 2047, 4095, 8191, 8192, 16383, 32767, 32768, 65535, 131071, 131072, 262143, 524287, 524288, 1048575]"
+    },
+    {
+      "name": "G9 bulb: farthest node and diameter",
+      "pass": true,
+      "detail": "exceptions [25, 26] (expected [25, 26]: 5^2 ties 3^2)"
+    },
+    {
+      "name": "G10 chirality",
+      "pass": true,
+      "detail": "prime/co-prime kappa3 exact: True; nonpositive window points: {2: [(2, 0), (3, 0), (4, 0)], 3: [(6, -1)], 4: [(6, 0), (10, 0)]}"
+    },
+    {
+      "name": "G11 self-avoidance",
+      "pass": true,
+      "detail": "contacts N=2: [(1, 3, 'overlap')]; N=3: [(1, 5, (0, 1/2)), (2, 5, (1/2, 3/4)), (3, 5, (1/3, 5/6))]; N=4..8 empty: True; Bonse 4<=N<=2000: True"
+    },
+    {
+      "name": "G12 correlation kernel c(j)",
+      "pass": true,
+      "detail": "max |mean - c(j)| over j<=12: 1.14e-05"
+    },
+    {
+      "name": "G13 centroid limit",
+      "pass": true,
+      "detail": "|centroid(1e6)| = 1.172556; limit (p<2e6) = 1.172632"
+    },
+    {
+      "name": "G14 bond stretching at births",
+      "pass": true,
+      "detail": "update mismatches 0; first stretching bond 59->60; stretching fraction near 1e6: 0.2139"
+    },
+    {
+      "name": "G15 adjacent steps meet only at their node",
+      "pass": true,
+      "detail": "N=2: ['collinear', 'collinear']; N=3..8 all only at shared node: True"
+    }
+  ],
+  "details": {
+    "G4": {
+      "closest_deg": 92.54530640998371,
+      "at": 4109374
+    }
+  },
+  "elapsed_s": 1508.088609600003
+}

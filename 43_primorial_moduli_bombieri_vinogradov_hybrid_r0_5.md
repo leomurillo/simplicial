@@ -1,6 +1,7 @@
 # Primorial-Moduli Bombieri–Vinogradov via Hybrid Iterated Completion at $r_0 = 5$
 
-**Leonardo Murillo Montero**  
+**Leonardo Murillo Montero**
+*ITCR, UNA, UCR*
 *May 19, 2026*
 
 **arXiv-style preprint (draft v0.1 — iterated completion identity proved, error accumulation quantified, $r_0 = 5$ derived analytically, main theorem stated with explicit $\theta_0 > 1/2$ saving for primorial divisors)**
@@ -86,6 +87,8 @@ $$\psi(y, \chi) := \sum_{n \leq y} \Lambda(n) \chi(n),$$
 where $\Lambda$ is the von Mangoldt function. The Siegel–Walfisz theorem gives, for $\chi$ primitive and non-principal modulo $d$ with $d \leq (\log y)^A$,
 $$\psi(y, \chi) \ll y \exp(-c \sqrt{\log y})$$
 uniformly. For larger $d$, the bound holds conditionally on GRH (Generalized Riemann Hypothesis) or on average over moduli (BV).
+
+**Remark 2.2a (quasi-GRH half-plane, tier [A]; $\theta_0$ unchanged).**  OpenAI 2026 (*The Quasi-Riemann Hypothesis*, `github.com/openai/math`, family 003; model-generated; OpenAI reports a Lean formalization) proves that every Dirichlet $L$-function is zero-free in $\operatorname{Re}s>7/8$.  With the truncated explicit formula this gives $\psi(y,\chi)\ll y^{7/8}\log^2(dy)$ for every non-principal $\chi\bmod d$, unconditionally on 003 and with effective constants (Paper 22, Prop. 8.1c$'$).  It beats the trivial bound only for $d\le y^{1/8-\varepsilon}$.  It leaves the level $\theta_0$ of Theorem 9.1 **unchanged**, for two reasons.  (i) Theorem 9.1 is uniform in $n$.  For $p_n\ge X^\theta$, the family $\{d\mid P_n,\ d\le X^\theta\}$ consists of all squarefree $d\le X^\theta$.  Summing the pointwise bound over about $X^\theta$ moduli gives $E\ll X^{\theta+7/8+\varepsilon}$, which is $\ll X(\log X)^{-A}$ only for $\theta<1/8$, far below $\tfrac12$.  (ii) In the sparse regime $2^n\le X^{1/8-\varepsilon}$, the sum over at most $2^n$ moduli gives $E\ll2^nX^{7/8}\log^2X$, which is the log-power saving at every level.  But the program's consumers need near-square-root savings.  These are the cross-prime error bound of ocho $\le\mathrm{pure}_V(P_n)$ and the diez T1 variance $V\le BX\log X$, and $X^{7/8}$ does not supply either.  In ocho's normalization, 003 corresponds to an effective level of about $1/8$.
 
 We are interested in the discrepancy
 $$\Delta(y; d, a) := \psi(y; d, a) - \frac{y}{\varphi(d)}$$

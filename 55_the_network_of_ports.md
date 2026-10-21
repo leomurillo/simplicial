@@ -96,6 +96,7 @@ A **network of ports** joins many nodes by passive ports under Kirchhoff's laws.
 - compositional passive networks (Baez–Fong 2018);
 - lattice dispersion (Brillouin 1946) and Lieb–Robinson bounds (1972);
 - thermal and harmonic area laws (Wolf–Verstraete–Hastings–Cirac 2008; Cramer–Eisert 2006; Hastings 2007; Eisert–Cramer–Plenio 2010);
+- the ground-state entanglement area law for two-dimensional gapped finite-range Hamiltonians, with polynomial-bond-dimension PEPS approximation (OpenAI 2026, `github.com/openai/math`, family 265; model-generated; cited at tier [A]).  This paper's area laws are the thermal (Gibbs) and harmonic cases.  The gapped ground-state theorem has a different hypothesis.  It is cited and not used.
 - max-flow/min-cut and network coding (Ford–Fulkerson 1956; Elias–Feinstein–Shannon 1956; Ahlswede–Cai–Li–Yeung 2000);
 - information-flow bounds (Bekenstein 1981; Pendry 1983);
 - Schnakenberg's cycle theory (1976) and Kolmogorov's criterion (1936);

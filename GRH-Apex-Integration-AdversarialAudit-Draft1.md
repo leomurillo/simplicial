@@ -228,3 +228,16 @@ The integration document was the compression layer that papered over these gaps.
 ---
 
 *Adversarial audit of `GRH-Apex-Integration-Draft1.md`: eight findings, two decisive (F4 Paper 32 §7 guardrail violation, F7 (GBP) omission), three major (F1 Pass-5 attribution, F2 diez [A2'] reach, F3 [A3'] outline status), one major-pending-subaudit (F5 T22.x discharge), two medium (F6 PNT inconsistency, F8 non-squarefree lift error). The integration document overstates what is closed. The honest re-statement (§4) preserves the structural reduction without claiming the proof.*
+
+---
+
+## §8. Disposition (2026-10-08)
+
+Recommended action 1 was carried out on 2026-10-08, 4.5 months late. Each finding was re-checked against the current sources. F1 ACCEPT: Pass-5 Thm 16.2 is RH for zeta only. F2 ACCEPT: diez Thm 2.7 is the zeta cubic correlator. F4 ACCEPT: Paper 32 v0.2 Rem. 7.2 and G5 keep the guardrail. F7 ACCEPT: Paper III states (GBP) is equivalent to RH. F8 ACCEPT. F3 and F5 stand as open items. F6 ACCEPT and fixed.
+
+New finding F9 (decisive): T22.3 starts its induction from AL(2), and under the chain's own R1, AL(2) contains RH for zeta, since conductor 1 divides 6. The base case is supported only by combinatorial counts. So the induction cannot deliver more than it assumes.
+
+Also checked: T15 states it does not prove RH or GRH, so it cannot discharge the Archimedean Noether Limit (Paper 22 Conj. 5.2).
+
+The integration overview now states Target 2.0 (open) and a calibrated Theorem 2.1, with a per-arrow status table (its section 3.2) and Remark 2.4 (F9). T22.3's Theorems 7.1 and 7.2 are now Targets, and its corollaries are marked conditional. The closure claims in T22.1 and T22.2 carry withdrawal notes.
+

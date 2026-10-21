@@ -1,0 +1,44 @@
+{
+  "status": "Exact checks, not a proof of Collatz",
+  "expanding_words": 44,
+  "switch_checks": 20504,
+  "explicit_family_checks": 100,
+  "examples": [
+    {
+      "K": 1,
+      "L": 5,
+      "start": 27,
+      "endpoint": 71
+    },
+    {
+      "K": 2,
+      "L": 1,
+      "start": 91,
+      "endpoint": 395
+    },
+    {
+      "K": 3,
+      "L": 9,
+      "start": 13403,
+      "endpoint": 96623
+    },
+    {
+      "K": 4,
+      "L": 15,
+      "start": 357467,
+      "endpoint": 4348151
+    },
+    {
+      "K": 5,
+      "L": 3,
+      "start": 1143899,
+      "endpoint": 23480027
+    },
+    {
+      "K": 6,
+      "L": 5,
+      "start": 30504027,
+      "endpoint": 1056601331
+    }
+  ]
+}

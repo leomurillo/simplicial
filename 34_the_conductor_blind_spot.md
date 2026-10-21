@@ -348,6 +348,8 @@ matched to the cross-packet cubic content Lemma 3.3 enumerates; if L or
 joint-on-disjoint, the polarity bit has different content and Thomson
 §6.5's structural reading needs revision.
 
+**Geometric instance ([Paper 01e](01e.simplicial_two_gauges_and_simplex_lattices.md), Thm. 12.5).** The same sign loss already occurs for a single tetrahedron. Under the Janus inversion $X\mapsto-X$ every quadrance is even ($Q(sX)=s^2Q(X)$) and the oriented volume is odd ($V(sX)=s^3V(X)$). The Cayley–Menger data therefore determine $V^2$ but never $\operatorname{sgn}V$: no function of quadrances recovers the absolute Janus bit. Relative bits are recoverable once five or more points are present, because a product $V(A)V(B)$ of two oriented volumes is a Cayley–Menger bideterminant, polynomial in the quadrances. The dictionary to this remark is exact. Quadrance plays the role of spread scoring. The products $V(A)V(B)$ correspond to the unsigned cubic mass $|T_{p_*}|^2$, both invariant under the global flip. $\operatorname{sgn}V$ corresponds to the signed cross-packet orientation, and fixing it is the job of the $\mathbb Z_2$ polarity flag. A second-order instrument reads products of two odd invariants, which are even, but never a single odd invariant. This also settles Thomson's relational-formulation question (*Geometric Janus Inversion* v10.7, open question 6) negatively for the absolute bit and positively for relative bits.
+
 ### 3.3 What the certificate is and is not
 
 The certificate is a statement about the *representational capacity of a

@@ -103,6 +103,8 @@ where $\tau(G)$ is the number of spanning trees (Kirchhoff's matrix-tree theorem
 
 *What this does not show.* The geometric degrees of freedom are not given an entropy of their own here, and the energy cost of a defect is not modelled. The test fixes $N$ and $E$; in a growing network both change (Section 2). Combining the two mechanisms, growth with defect formation, is the next computation.
 
+*Remark 3.1 (summing over the geometry; external) [A]/[C].*  This section fixes the graph.  Suppose instead the geometry is summed over planar maps with weight $\tau(G)^{-c/2}$.  That is the partition function of $c$ copies of the harmonic field, since at unit stiffness $(\det{}'K)^{-1/2}\propto\tau(G)^{-1/2}$ per copy.  The continuum limits are then partly rigorous.  OpenAI 2026 (`github.com/openai/math`, family 211; model-generated; tier [A]) proves that spanning-tree-weighted maps (weight $\tau^{+1}$, $c=-2$) converge to the $\sqrt2$-Liouville quantum sphere, with random walk converging to Liouville Brownian motion.  It also proves that critical FK maps converge to Liouville quantum gravity spheres for $0<q\le4$ and to the Brownian continuum random tree for $q>4$.  So the weight that favours the smooth, most-spanning-tree networks of this section gives a *random round* sphere in the limit, not a flat one.  The harmonic field's own thermal weight $\tau^{-1/2}$ ($c=1$) corresponds, by the standard central-charge dictionary, to the critical $\gamma=2$ sphere that 211 constructs at $q=4$.  That identification of universality classes is [C]: 211 proves the FK($q=4$) representative only.  None of this changes the fixed-graph statements above.
+
 ---
 
 ## 4. The two mechanisms together [A]

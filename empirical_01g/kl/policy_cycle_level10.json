@@ -1,0 +1,12 @@
+{
+  "k": 10,
+  "gamma": 1.0,
+  "rho_estimate": 0.9542051668205142,
+  "edge_count": 52488,
+  "max_cycle_odd_frequency_estimate": 0.46153846153846156,
+  "odd_frequency_upper_exact": "230769231/500000000",
+  "log_spectral_derivative_upper_display": -0.1860953545137659,
+  "exact_edge_checks_pass": true,
+  "integer_half_cycle_certificate": true,
+  "limitation": "Graph selected numerically; exact check certifies this graph, not its optimality or stability in gamma."
+}

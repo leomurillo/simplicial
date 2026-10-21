@@ -1,0 +1,73 @@
+{
+  "source_sha256": "99cc540f308b13613d6d81f3774d00232284cdfff9292ecd0127e1a30b58dd63",
+  "model_sha256": "dac49db6b5f7343317cc788ea0d1ed0f4bcc47a85b23dfc2ad76e84e2996dc4f",
+  "scope": "Constant controls; equilibrium reference; current scalar memory",
+  "tolerances": {
+    "inequality": 2e-09,
+    "ode_absolute": 2e-07,
+    "precision_derivative": 0.0002
+  },
+  "witnesses": {
+    "baseline_peak": {
+      "time": 1.9567041514331798,
+      "omega": 0.0,
+      "memory_visibility": 0.007787252930516106,
+      "record_visibility": 0.2499999992551769,
+      "ancillary_fraction": 0.896186396849897,
+      "private_variance": 1.2135975970881498,
+      "visibility_upper_bound": 0.025953400710202985,
+      "mse_deficit": 0.2422127463246608,
+      "mse_deficit_lower_bound": 0.2240465985449739,
+      "log_loss_deficit": 0.13993216976961184,
+      "log_loss_lower_bound": 0.13069296909398773,
+      "ode_error": 9.743317264110374e-13
+    },
+    "passive_peak": {
+      "time": 1.7224937087339054,
+      "omega": 0.0,
+      "memory_visibility": 0.009250087738064525,
+      "record_visibility": 0.2499999922515264,
+      "ancillary_fraction": 0.8878004669257632,
+      "private_variance": 0.757666491905069,
+      "visibility_upper_bound": 0.02804988239918408,
+      "mse_deficit": 0.24074990451346187,
+      "mse_deficit_lower_bound": 0.22195010985234231,
+      "log_loss_deficit": 0.13919446332583366,
+      "log_loss_lower_bound": 0.129615633470589,
+      "ode_error": 2.502442697505103e-12
+    },
+    "active_peak_E1": {
+      "time": 1.1281969373382619,
+      "omega": -0.858076000871971,
+      "memory_visibility": 0.018428126261418522,
+      "record_visibility": 0.24999704733223235,
+      "ancillary_fraction": 0.8556584135867479,
+      "private_variance": 0.658488900290372,
+      "visibility_upper_bound": 0.0360849704105633,
+      "mse_deficit": 0.23156892107081384,
+      "mse_deficit_lower_bound": 0.21391207692166905,
+      "log_loss_deficit": 0.13453904804383326,
+      "log_loss_lower_bound": 0.1254630018666431,
+      "ode_error": 1.8274270985330077e-12
+    },
+    "active_peak_E10": {
+      "time": 0.5793468395097395,
+      "omega": -3.944579305428668,
+      "memory_visibility": 0.048225449816711376,
+      "record_visibility": 0.2492856309104702,
+      "ancillary_fraction": 0.7405778218174142,
+      "private_variance": 0.3911925696377086,
+      "visibility_upper_bound": 0.06467022136041432,
+      "mse_deficit": 0.20106018109375884,
+      "mse_deficit_lower_bound": 0.18461540955005587,
+      "log_loss_deficit": 0.11865147219723562,
+      "log_loss_lower_bound": 0.10993696310675748,
+      "ode_error": 1.0275114092905824e-12
+    }
+  },
+  "status": "PASS",
+  "random_cases": 100,
+  "max_ode_error": 1.498789981013715e-11,
+  "max_inequality_violation": 0.0,
+  "max_slope_error": 2.949636261462274e-05
+}

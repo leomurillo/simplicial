@@ -1,0 +1,49 @@
+{
+  "status": "All exact checks passed",
+  "expanding_words": 44,
+  "word_start_checks": 44000,
+  "reset_family_checks": 100,
+  "return_map_checks": 10000,
+  "odd_core_checks": 12000,
+  "bridge_checks": 100000,
+  "one_return_solutions": [
+    [
+      2,
+      1,
+      1
+    ]
+  ],
+  "reset_examples": [
+    {
+      "M": 3,
+      "start": 9,
+      "after_halving_block": 7,
+      "after_expanding_run": 17
+    },
+    {
+      "M": 5,
+      "start": 41,
+      "after_halving_block": 31,
+      "after_expanding_run": 161
+    },
+    {
+      "M": 7,
+      "start": 169,
+      "after_halving_block": 127,
+      "after_expanding_run": 1457
+    },
+    {
+      "M": 9,
+      "start": 681,
+      "after_halving_block": 511,
+      "after_expanding_run": 13121
+    },
+    {
+      "M": 11,
+      "start": 2729,
+      "after_halving_block": 2047,
+      "after_expanding_run": 118097
+    }
+  ],
+  "scope": "Finite identity checks supporting the written proofs; not a proof of Collatz."
+}

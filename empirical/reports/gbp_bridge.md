@@ -122,3 +122,18 @@ bridge (GBP)=GRH_N, with substantial UNCONDITIONAL scaffolding (arch positivity,
 U1-U6) assembled around it. There is no solo shortcut to close it. The genuine next moves are the
 Polymath (B-1) constant and the (GBP) five-error audit -- real work, not a closure. Conservation holds.
 ```
+
+## Addendum (2026-10-07): re-scope after the quasi-GRH half-plane (OpenAI 2026)
+
+Input, tier [A]: OpenAI, *The Quasi-Riemann Hypothesis* (30 Sep 2026, github.com/openai/math, family 003,
+Thm 1.1).  Every Dirichlet L(s,chi) is zero-free in Re s > 7/8, uniformly in the modulus.  It is
+model-generated, and OpenAI reports Lean formalization.  The functional equation then gives
+1/8 <= beta <= 7/8 for every nontrivial zero, with no exceptional (Siegel) zero for any q.
+
+**This report.**  The identification "Paper 22 Lemma 8.1c = uniform character PNT mod P_n = no Siegel
+zero / GRH-family" is CORRECTED.  8.1c needs only a fixed half-plane theta < 1, not GRH.  It is now [A] on
+OpenAI 2026 (Paper 22 Proposition 8.1c': |psi(X,chi) - delta X| << X^(7/8) log^2(P_n X)).  So 8.1c no
+longer converges onto the GRH_N bridge.  The other routes listed (Direction B arch dominance, (GBP)
+|Sigma|^2 = u_B, u_B >= 0) concern zeros ON the critical line and are untouched.  The bridge = GRH_N = RH
+residual stands for them.  Also, "conservation confirmed" is withdrawn as a summary: one of the routes
+collapsed onto a strip statement, which is a strictly easier target.

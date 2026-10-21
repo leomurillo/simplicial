@@ -1,0 +1,70 @@
+{
+  "status": "passed",
+  "one_step_ratios": [
+    {
+      "m": 5,
+      "incoming_weight_ratio": "3/11",
+      "decimal": 0.2727272727272727
+    },
+    {
+      "m": 10,
+      "incoming_weight_ratio": "66/7",
+      "decimal": 9.428571428571429
+    },
+    {
+      "m": 16,
+      "incoming_weight_ratio": "3077/330",
+      "decimal": 9.324242424242424
+    },
+    {
+      "m": 100,
+      "incoming_weight_ratio": "695587/75174",
+      "decimal": 9.253026312288823
+    },
+    {
+      "m": 1000000,
+      "incoming_weight_ratio": "685186222222537037/74074185185074074",
+      "decimal": 9.250000125017937
+    }
+  ],
+  "expanding_inverse_path_checks": 90,
+  "finite_weight_intervals": [
+    {
+      "H": 9231,
+      "basin_size": 2367,
+      "lower_numerator": 12164584306547228640547539607,
+      "upper_numerator": 12164584306547228640547546472,
+      "denominator": 1267650600228229401496703205376,
+      "display_lower": 0.00959616498770016,
+      "display_upper": 0.00959616498770016
+    },
+    {
+      "H": 9232,
+      "basin_size": 3946,
+      "lower_numerator": 646370459389697806525923262,
+      "upper_numerator": 646370459389697806525928549,
+      "denominator": 1267650600228229401496703205376,
+      "display_lower": 0.0005098963857022783,
+      "display_upper": 0.0005098963857022783
+    },
+    {
+      "H": 250504,
+      "basin_size": 100045,
+      "lower_numerator": 39088744936080808326614958,
+      "upper_numerator": 39088744936080808326765418,
+      "denominator": 1267650600228229401496703205376,
+      "display_lower": 3.083558271422995e-05,
+      "display_upper": 3.083558271422995e-05
+    },
+    {
+      "H": 1000000,
+      "basin_size": 397068,
+      "lower_numerator": 14779389632539772843602129,
+      "upper_numerator": 14779389632539772844205062,
+      "denominator": 1267650600228229401496703205376,
+      "display_lower": 1.1658882684139362e-05,
+      "display_upper": 1.1658882684139362e-05
+    }
+  ],
+  "conclusion": "The weight is not pointwise contracting. Finite W_H values do not prove zero limit."
+}

@@ -98,3 +98,20 @@ closable by sym^5 functoriality.  Its conclusion (no Siegel zero => effective PN
 class numbers, effective Linnik) is STRICTLY WEAKER than GRH but is genuinely attackable.  That is
 the honest 'lowered difficulty': not GRH, but its strongest effectively-attackable consequence.
 ```
+
+## Addendum (2026-10-07): re-scope after the quasi-GRH half-plane (OpenAI 2026)
+
+Input, tier [A]: OpenAI, *The Quasi-Riemann Hypothesis* (30 Sep 2026, github.com/openai/math, family 003,
+Thm 1.1).  Every Dirichlet L(s,chi) is zero-free in Re s > 7/8, uniformly in the modulus.  It is
+model-generated, and OpenAI reports Lean formalization.  The functional equation then gives
+1/8 <= beta <= 7/8 for every nontrivial zero, with no exceptional (Siegel) zero for any q.
+
+**This report.**  Front 4's conclusion, no-Siegel-zero, is now [A] on OpenAI 2026, which holds for every
+real character at once.  Its consequences (effective PNT in APs, effective L(1,chi) >> 1/log log q,
+effective class numbers) move from "open" to [A].  See the addendum in rh_selberg_siegel.md.  Selberg's
+lambda_1 >= 1/4 itself is NOT touched: the Kim-Sarnak gap 49/4096 is unchanged.  So the reading
+"lambda_1 >= 1/4 <=> no Siegel zero" is an analogy, not an equivalence; see the peer-review flag in
+rh_selberg_siegel.md.  Fronts 1-3 (each exactly RH) are untouched.  003's strip gives only de
+Bruijn-Newman Lambda <= 9/32 = 0.281 (|Im z| <= 3/4 in Polymath's normalization), which is worse than
+Polymath's 0.22.  "Conservation of difficulty confirmed" is withdrawn as a summary: front 4's
+no-Siegel-zero target was reached without reaching RH.

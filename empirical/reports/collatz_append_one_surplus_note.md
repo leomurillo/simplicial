@@ -1,5 +1,7 @@
 # Collatz Append-One Surplus Note
 
+> **Correction, 2026-10-19:** the surplus identity is valid, but universal nonnegative surplus is false. The contracting anchor at representative 231 described in [the counterexample audit](../../Collatz-First-Contraction-Boundary-Attack-2026-10-19.md) has q=38 and alpha=78; appending one exponent 1 has forced lift b=0 and surplus 2*38-78=-2. The empirical window below did not reach this length-17 example.
+
 ## Setup
 
 For a contracting anchor word `w`, append a block `1^k` and assume the child `w1^k` is also contracting.  Use the append-one block notation:

@@ -1,0 +1,29 @@
+{
+  "status": "passed",
+  "starts": 4999,
+  "exact_prefix_checks": 17247,
+  "sufficient_packing_certificates": 4998,
+  "example_27": {
+    "n": 27,
+    "odd_steps": 37,
+    "halvings": 59,
+    "endpoint": 23,
+    "log_surplus": 0.24702897231670562,
+    "actual_log_correction": 0.08668632224153533,
+    "packing_log_budget": 0.19040708235310266,
+    "old_linear_log_budget": 0.4567901234567901,
+    "packing_certificate": true
+  },
+  "descent_without_packing_certificate": [
+    {
+      "n": 63,
+      "odd_steps": 34,
+      "halvings": 54,
+      "endpoint": 61
+    }
+  ],
+  "mersenne_family_r_range": [
+    2,
+    100
+  ]
+}

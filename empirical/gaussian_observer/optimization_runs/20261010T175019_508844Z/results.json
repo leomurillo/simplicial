@@ -1,0 +1,572 @@
+{
+  "settings": {
+    "case": "all",
+    "seeds": [
+      7,
+      23
+    ],
+    "maxiter": 250,
+    "popsize": 12
+  },
+  "python": "3.12.13 (main, Mar 10 2026, 18:15:39) [MSC v.1944 64 bit (AMD64)]",
+  "numpy": "2.4.4",
+  "scipy": "1.17.1",
+  "source_sha256": {
+    "model.py": "dac49db6b5f7343317cc788ea0d1ed0f4bcc47a85b23dfc2ad76e84e2996dc4f",
+    "optimize.py": "445d07fa185d288965291d7754093a80a2ac88b2d80312f46e9ef3215427b6e9",
+    "verify.py": "d67ae4fca71f27fe8d4d071e4411dae1163bfabed27c0e51b4cfc4cd580d4505"
+  },
+  "qualification": "Heuristic global search plus local polish; no global certificate",
+  "cases": {
+    "passive_peak": [
+      {
+        "seed": 7,
+        "parameters": [
+          1.5137546999263936,
+          0.8991843124354799,
+          1.7225387340501852
+        ],
+        "K": [
+          [
+            3.0,
+            4.0,
+            0.0
+          ],
+          [
+            4.0,
+            6.486245300073606,
+            0.9966590627454969
+          ],
+          [
+            0.0,
+            0.9966590627454969,
+            1.5137546999263936
+          ]
+        ],
+        "protocol": {
+          "t": 1.7225387340501852
+        },
+        "visibility": 0.009250087734037371,
+        "work_over_T": 0.0,
+        "budget": 0.0,
+        "feasible": true,
+        "de_success": true,
+        "de_message": "Optimization terminated successfully.",
+        "polish_success": true,
+        "polish_message": "Optimization terminated successfully"
+      },
+      {
+        "seed": 23,
+        "parameters": [
+          1.5137207197153781,
+          0.8991850855394893,
+          1.7225426746341097
+        ],
+        "K": [
+          [
+            3.0,
+            4.0,
+            0.0
+          ],
+          [
+            4.0,
+            6.486279280284622,
+            0.9966674275208458
+          ],
+          [
+            0.0,
+            0.9966674275208458,
+            1.5137207197153781
+          ]
+        ],
+        "protocol": {
+          "t": 1.7225426746341097
+        },
+        "visibility": 0.009250087728400788,
+        "work_over_T": 0.0,
+        "budget": 0.0,
+        "feasible": true,
+        "de_success": true,
+        "de_message": "Optimization terminated successfully.",
+        "polish_success": true,
+        "polish_message": "Optimization terminated successfully"
+      }
+    ],
+    "constant_deadline": [
+      {
+        "seed": 7,
+        "parameters": [
+          1.6616301662473165,
+          1.0,
+          -0.32925477723857655
+        ],
+        "K": [
+          [
+            3.0,
+            4.0,
+            0.0
+          ],
+          [
+            4.0,
+            6.338369833752683,
+            1.0611955277876268
+          ],
+          [
+            0.0,
+            1.0611955277876268,
+            1.6616301662473165
+          ]
+        ],
+        "protocol": {
+          "t": 10.0,
+          "mobility": 0.4685384351787544
+        },
+        "visibility": 0.001977906521503237,
+        "work_over_T": 0.0,
+        "budget": 0.0,
+        "feasible": true,
+        "de_success": true,
+        "de_message": "Optimization terminated successfully.",
+        "polish_success": true,
+        "polish_message": "Optimization terminated successfully"
+      },
+      {
+        "seed": 23,
+        "parameters": [
+          1.6615932004959317,
+          1.0,
+          -0.32921742760549355
+        ],
+        "K": [
+          [
+            3.0,
+            4.0,
+            0.0
+          ],
+          [
+            4.0,
+            6.338406799504068,
+            1.0612101660874296
+          ],
+          [
+            0.0,
+            1.0612101660874296,
+            1.6615932004959317
+          ]
+        ],
+        "protocol": {
+          "t": 10.0,
+          "mobility": 0.46857873154880963
+        },
+        "visibility": 0.0019779065203808046,
+        "work_over_T": 0.0,
+        "budget": 0.0,
+        "feasible": true,
+        "de_success": true,
+        "de_message": "Optimization terminated successfully.",
+        "polish_success": true,
+        "polish_message": "Optimization terminated successfully"
+      }
+    ],
+    "passive_gated": [
+      {
+        "seed": 7,
+        "parameters": [
+          1.4866572627973171,
+          0.9148290638009907,
+          1.7553410727070697,
+          -2.0
+        ],
+        "K": [
+          [
+            3.0,
+            4.0,
+            0.0
+          ],
+          [
+            4.0,
+            6.513342737202683,
+            1.0197720076678887
+          ],
+          [
+            0.0,
+            1.0197720076678887,
+            1.4866572627973171
+          ]
+        ],
+        "protocol": {
+          "t": 1.7553410727070697,
+          "gate_deadline": 10.0,
+          "gate_mobility": 0.01
+        },
+        "visibility": 0.00861339958094425,
+        "work_over_T": 0.0,
+        "budget": 0.0,
+        "feasible": true,
+        "de_success": true,
+        "de_message": "Optimization terminated successfully.",
+        "polish_success": true,
+        "polish_message": "Optimization terminated successfully"
+      },
+      {
+        "seed": 23,
+        "parameters": [
+          1.4866279114833116,
+          0.9148336054600222,
+          1.755422352449558,
+          -2.0
+        ],
+        "K": [
+          [
+            3.0,
+            4.0,
+            0.0
+          ],
+          [
+            4.0,
+            6.513372088516689,
+            1.0197829782783965
+          ],
+          [
+            0.0,
+            1.0197829782783965,
+            1.4866279114833116
+          ]
+        ],
+        "protocol": {
+          "t": 1.755422352449558,
+          "gate_deadline": 10.0,
+          "gate_mobility": 0.01
+        },
+        "visibility": 0.008613399579917866,
+        "work_over_T": 0.0,
+        "budget": 0.0,
+        "feasible": true,
+        "de_success": true,
+        "de_message": "Optimization terminated successfully.",
+        "polish_success": true,
+        "polish_message": "Optimization terminated successfully"
+      }
+    ],
+    "active_peak_E1": [
+      {
+        "seed": 7,
+        "parameters": [
+          1.4206816945507823,
+          0.6132485738464746,
+          -0.8580759869199455,
+          1.1281969473337266
+        ],
+        "K": [
+          [
+            3.0,
+            4.0,
+            0.0
+          ],
+          [
+            4.0,
+            6.579318305449218,
+            0.6912585650937575
+          ],
+          [
+            0.0,
+            0.6912585650937575,
+            1.4206816945507823
+          ]
+        ],
+        "protocol": {
+          "omega": -0.8580759869199455,
+          "t": 1.1281969473337266
+        },
+        "visibility": 0.0184281262614185,
+        "work_over_T": 0.9999999999999969,
+        "budget": 1.0,
+        "feasible": true,
+        "de_success": true,
+        "de_message": "Optimization terminated successfully.",
+        "polish_success": true,
+        "polish_message": "Optimization terminated successfully"
+      },
+      {
+        "seed": 23,
+        "parameters": [
+          1.4206816827674078,
+          0.6132485747012358,
+          -0.8580759718154305,
+          1.1281969955262776
+        ],
+        "K": [
+          [
+            3.0,
+            4.0,
+            0.0
+          ],
+          [
+            4.0,
+            6.579318317232592,
+            0.6912585672066963
+          ],
+          [
+            0.0,
+            0.6912585672066963,
+            1.4206816827674078
+          ]
+        ],
+        "protocol": {
+          "omega": -0.8580759718154305,
+          "t": 1.1281969955262776
+        },
+        "visibility": 0.018428126261418598,
+        "work_over_T": 1.0000000000000153,
+        "budget": 1.0,
+        "feasible": true,
+        "de_success": true,
+        "de_message": "Optimization terminated successfully.",
+        "polish_success": true,
+        "polish_message": "Optimization terminated successfully"
+      }
+    ],
+    "active_peak_E10": [
+      {
+        "seed": 7,
+        "parameters": [
+          0.8742096653562086,
+          0.2088793383465476,
+          -3.9445792240233737,
+          0.5793468587171119
+        ],
+        "K": [
+          [
+            3.0,
+            4.0,
+            0.0
+          ],
+          [
+            4.0,
+            7.125790334643791,
+            0.22573790062147225
+          ],
+          [
+            0.0,
+            0.22573790062147225,
+            0.8742096653562086
+          ]
+        ],
+        "protocol": {
+          "omega": -3.9445792240233737,
+          "t": 0.5793468587171119
+        },
+        "visibility": 0.048225449816711084,
+        "work_over_T": 10.000000000000448,
+        "budget": 10.0,
+        "feasible": true,
+        "de_success": true,
+        "de_message": "Optimization terminated successfully.",
+        "polish_success": true,
+        "polish_message": "Optimization terminated successfully"
+      },
+      {
+        "seed": 23,
+        "parameters": [
+          0.8742097935471157,
+          0.20887958028748127,
+          -3.944579111322932,
+          0.5793468976214766
+        ],
+        "K": [
+          [
+            3.0,
+            4.0,
+            0.0
+          ],
+          [
+            4.0,
+            7.125790206452884,
+            0.22573817118662148
+          ],
+          [
+            0.0,
+            0.22573817118662148,
+            0.8742097935471157
+          ]
+        ],
+        "protocol": {
+          "omega": -3.944579111322932,
+          "t": 0.5793468976214766
+        },
+        "visibility": 0.04822544981671114,
+        "work_over_T": 10.00000000000018,
+        "budget": 10.0,
+        "feasible": true,
+        "de_success": true,
+        "de_message": "Optimization terminated successfully.",
+        "polish_success": true,
+        "polish_message": "Optimization terminated successfully"
+      }
+    ],
+    "active_gated_E1": [
+      {
+        "seed": 7,
+        "parameters": [
+          1.3691619788635663,
+          0.6673436345424435,
+          -0.8296359831162051,
+          1.1765370591894229
+        ],
+        "K": [
+          [
+            3.0,
+            4.0,
+            0.0
+          ],
+          [
+            4.0,
+            6.630838021136434,
+            0.756903703789086
+          ],
+          [
+            0.0,
+            0.756903703789086,
+            1.3691619788635663
+          ]
+        ],
+        "protocol": {
+          "omega": -0.8296359831162051,
+          "t": 1.1765370591894229,
+          "gate_deadline": 10.0,
+          "gate_mobility": 0.01
+        },
+        "visibility": 0.01656870865455987,
+        "work_over_T": 0.9999999999991914,
+        "budget": 1.0,
+        "feasible": true,
+        "de_success": true,
+        "de_message": "Optimization terminated successfully.",
+        "polish_success": true,
+        "polish_message": "Optimization terminated successfully"
+      },
+      {
+        "seed": 23,
+        "parameters": [
+          1.3691618943966448,
+          0.6673434523910066,
+          -0.8296361089372286,
+          1.1765368033141208
+        ],
+        "K": [
+          [
+            3.0,
+            4.0,
+            0.0
+          ],
+          [
+            4.0,
+            6.630838105603355,
+            0.7569035035428586
+          ],
+          [
+            0.0,
+            0.7569035035428586,
+            1.3691618943966448
+          ]
+        ],
+        "protocol": {
+          "omega": -0.8296361089372286,
+          "t": 1.1765368033141208,
+          "gate_deadline": 10.0,
+          "gate_mobility": 0.01
+        },
+        "visibility": 0.016568708654563967,
+        "work_over_T": 0.9999999999999905,
+        "budget": 1.0,
+        "feasible": true,
+        "de_success": true,
+        "de_message": "Optimization terminated successfully.",
+        "polish_success": true,
+        "polish_message": "Optimization terminated successfully"
+      }
+    ],
+    "active_gated_E10": [
+      {
+        "seed": 7,
+        "parameters": [
+          0.8431303120796554,
+          0.306862050778371,
+          -3.8111398587465257,
+          0.6087762620853276
+        ],
+        "K": [
+          [
+            3.0,
+            4.0,
+            0.0
+          ],
+          [
+            4.0,
+            7.156869687920345,
+            0.32823403772578247
+          ],
+          [
+            0.0,
+            0.32823403772578247,
+            0.8431303120796554
+          ]
+        ],
+        "protocol": {
+          "omega": -3.8111398587465257,
+          "t": 0.6087762620853276,
+          "gate_deadline": 10.0,
+          "gate_mobility": 0.01
+        },
+        "visibility": 0.0409089478208555,
+        "work_over_T": 9.999999999985308,
+        "budget": 10.0,
+        "feasible": true,
+        "de_success": true,
+        "de_message": "Optimization terminated successfully.",
+        "polish_success": true,
+        "polish_message": "Optimization terminated successfully"
+      },
+      {
+        "seed": 23,
+        "parameters": [
+          0.8431603570221823,
+          0.3068672262101908,
+          -3.811172803316573,
+          0.6087691951771227
+        ],
+        "K": [
+          [
+            3.0,
+            4.0,
+            0.0
+          ],
+          [
+            4.0,
+            7.156839642977817,
+            0.32824300616522384
+          ],
+          [
+            0.0,
+            0.32824300616522384,
+            0.8431603570221823
+          ]
+        ],
+        "protocol": {
+          "omega": -3.811172803316573,
+          "t": 0.6087691951771227,
+          "gate_deadline": 10.0,
+          "gate_mobility": 0.01
+        },
+        "visibility": 0.04090894779752184,
+        "work_over_T": 9.999999999999421,
+        "budget": 10.0,
+        "feasible": true,
+        "de_success": true,
+        "de_message": "Optimization terminated successfully.",
+        "polish_success": true,
+        "polish_message": "Optimization terminated successfully"
+      }
+    ]
+  }
+}

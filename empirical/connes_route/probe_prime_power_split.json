@@ -1,0 +1,70 @@
+{
+  "status": "Numerical checks only; comparison measure is not primes",
+  "prime_power_samples": [
+    {
+      "X": 100,
+      "primes": 9.523729473396019,
+      "squares": 0.2952045110835198,
+      "higher_powers": 0.36248466853274364,
+      "all_power_discrepancy": 0.08329448126941941,
+      "prime_discrepancy_with_half_correction": -0.07439469834684509,
+      "higher_times_X_to_one_sixth": 0.7809495444916517
+    },
+    {
+      "X": 1000,
+      "primes": 31.43738902168439,
+      "squares": 0.41807786235812633,
+      "higher_powers": 0.14807813494960964,
+      "all_power_discrepancy": 0.070472541083344,
+      "prime_discrepancy_with_half_correction": 0.004316543775612303,
+      "higher_times_X_to_one_sixth": 0.46826417811054905
+    },
+    {
+      "X": 10000,
+      "primes": 100.40652033332154,
+      "squares": 0.47888913956985163,
+      "higher_powers": 0.09427985220277929,
+      "all_power_discrepancy": -0.0015523923344744617,
+      "prime_discrepancy_with_half_correction": -0.07472138410710727,
+      "higher_times_X_to_one_sixth": 0.43760830921908345
+    },
+    {
+      "X": 100000,
+      "primes": 318.731218876632,
+      "squares": 0.4674457817994785,
+      "higher_powers": 0.08268686650603013,
+      "all_power_discrepancy": -0.049373254150282264,
+      "prime_discrepancy_with_half_correction": -0.09950590245580315,
+      "higher_times_X_to_one_sixth": 0.563339063658127
+    },
+    {
+      "X": 1000000,
+      "primes": 1009.1857307638707,
+      "squares": 0.49480566956184224,
+      "higher_powers": 0.04806650226238222,
+      "all_power_discrepancy": -0.08381423859145798,
+      "prime_discrepancy_with_half_correction": -0.12668641041568662,
+      "higher_times_X_to_one_sixth": 0.4806650226238221
+    }
+  ],
+  "comparison_density_lower_bound": 0.75,
+  "comparison_density_upper_bound": 1.25,
+  "comparison_discrepancy_exponent": "0.25",
+  "comparison_checks": [
+    {
+      "X": 10,
+      "comparison_discrepancy": "-0.014740887712334963688047842005",
+      "quadrature_error": 0.0
+    },
+    {
+      "X": 1000,
+      "comparison_discrepancy": "-0.0398089982136139379815770648946",
+      "quadrature_error": 4.861730685829017e-63
+    },
+    {
+      "X": 1000000,
+      "comparison_discrepancy": "0.349191187743724235707782768425",
+      "quadrature_error": 0.0
+    }
+  ]
+}

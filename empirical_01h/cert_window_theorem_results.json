@@ -1,0 +1,42 @@
+{
+ "W1": {
+  "pass": true,
+  "info": "560 exact Hirota-Miwa checks over Q, 0 failures"
+ },
+ "W2": {
+  "pass": true,
+  "info": "19476 Hirota-Miwa checks over F_p (N=2,3), 0 failures"
+ },
+ "W3": {
+  "pass": true,
+  "info": "36 solids (p,N,seed,|Z|,#gens,eq) e.g. [(2, 1, 0, 42, 11, True), (2, 1, 1, 36, 10, True), (2, 1, 2, 30, 12, True)] ... all equal: True"
+ },
+ "W4": {
+  "pass": true,
+  "info": "depth formula: 4886 single-cover zeros agree, 0 disagree"
+ },
+ "W5": {
+  "pass": true,
+  "info": "planted (d,s,S,|W|,count,W<=Z,slices): [((3, 3), 5, (0, 1), 36, 36, True, True), ((2, 4), 3, (0, 1), 16, 16, True, True), ((3, 3, 3), 4, (0, 1, 2), 42, 42, True, True), ((2, 3, 4), 3, (0, 1, 2), 23, 23, True, True), ((2, 2, 0), 3, (0, 1), 30, 30, True, True), ((2, 0, 3), 4, (0, 2), 55, 55, True, True), ((2, 2, 2, 2), 2, (0, 1, 2, 3), 15, 15, True, True), ((2, 0, 2, 2), 2, (0, 2, 3), 16, 16, True, True)]"
+ },
+ "W6": {
+  "pass": true,
+  "info": "N=1: 2940 unit squares checked, 0 meet two generators; depth formula at all 1033 zeros, 0 failures"
+ },
+ "W10": {
+  "pass": true,
+  "info": "three-family solid = signed number wall (64 pts, 0 fail); Hirota fails 0; cross rule fails 0"
+ },
+ "W7": {
+  "pass": true,
+  "info": "1014 unit cubes with kernels; rank N+1 found in 0; N=2 cubes attaining rank 2: 536"
+ },
+ "W8": {
+  "pass": true,
+  "info": "(a) touching pyramid example True; (b) corank M(1,1,1)=2 overlap True; (c) king directions realized 26/26"
+ },
+ "W9": {
+  "pass": true,
+  "info": "lower facet layers geometric (ok,bad): N=1 (8, 0); N=2 [(2, 34), (0, 18)] (observation)"
+ }
+}

@@ -1,0 +1,2533 @@
+[
+  {
+    "window": 1,
+    "features": 2,
+    "transitions": 4608,
+    "status": 2,
+    "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+    "exact_certificate": [
+      {
+        "start": 19,
+        "end": 29,
+        "block": "A",
+        "numerator": 6,
+        "denominator": 7
+      },
+      {
+        "start": 2731,
+        "end": 4097,
+        "block": "A",
+        "numerator": 1,
+        "denominator": 7
+      }
+    ],
+    "certificate_support": 2,
+    "exact_certificate_verified": true
+  },
+  {
+    "window": 2,
+    "features": 4,
+    "transitions": 4608,
+    "status": 2,
+    "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+    "exact_certificate": [
+      {
+        "start": 1427,
+        "end": 2141,
+        "block": "A",
+        "numerator": 1,
+        "denominator": 1
+      }
+    ],
+    "certificate_support": 1,
+    "exact_certificate_verified": true
+  },
+  {
+    "window": 3,
+    "features": 12,
+    "transitions": 4608,
+    "status": 2,
+    "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+    "exact_certificate": [
+      {
+        "start": 3017,
+        "end": 5093,
+        "block": "B",
+        "numerator": 1,
+        "denominator": 1
+      }
+    ],
+    "certificate_support": 1,
+    "exact_certificate_verified": true
+  },
+  {
+    "window": 4,
+    "features": 29,
+    "transitions": 4608,
+    "status": 2,
+    "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+    "exact_certificate": [
+      {
+        "start": 135,
+        "end": 203,
+        "block": "A",
+        "numerator": 3,
+        "denominator": 389
+      },
+      {
+        "start": 535,
+        "end": 803,
+        "block": "A",
+        "numerator": 10,
+        "denominator": 1167
+      },
+      {
+        "start": 5335,
+        "end": 8003,
+        "block": "A",
+        "numerator": 175,
+        "denominator": 1167
+      },
+      {
+        "start": 5775,
+        "end": 8663,
+        "block": "A",
+        "numerator": 19,
+        "denominator": 1167
+      },
+      {
+        "start": 9483,
+        "end": 14225,
+        "block": "A",
+        "numerator": 170,
+        "denominator": 1167
+      },
+      {
+        "start": 10475,
+        "end": 15713,
+        "block": "A",
+        "numerator": 1,
+        "denominator": 1167
+      },
+      {
+        "start": 12047,
+        "end": 18071,
+        "block": "A",
+        "numerator": 188,
+        "denominator": 1167
+      },
+      {
+        "start": 14043,
+        "end": 21065,
+        "block": "A",
+        "numerator": 41,
+        "denominator": 1167
+      },
+      {
+        "start": 8681,
+        "end": 14651,
+        "block": "B",
+        "numerator": 6,
+        "denominator": 389
+      },
+      {
+        "start": 12553,
+        "end": 21185,
+        "block": "B",
+        "numerator": 114,
+        "denominator": 389
+      },
+      {
+        "start": 14761,
+        "end": 24911,
+        "block": "B",
+        "numerator": 194,
+        "denominator": 1167
+      }
+    ],
+    "certificate_support": 11,
+    "exact_certificate_verified": true
+  },
+  {
+    "window": 5,
+    "features": 64,
+    "transitions": 4608,
+    "status": 2,
+    "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+    "exact_certificate": [
+      {
+        "start": 1883,
+        "end": 2825,
+        "block": "A",
+        "numerator": 144059,
+        "denominator": 8374993
+      },
+      {
+        "start": 4895,
+        "end": 7343,
+        "block": "A",
+        "numerator": 97800,
+        "denominator": 8374993
+      },
+      {
+        "start": 5167,
+        "end": 7751,
+        "block": "A",
+        "numerator": 611434,
+        "denominator": 8374993
+      },
+      {
+        "start": 7247,
+        "end": 10871,
+        "block": "A",
+        "numerator": 291935,
+        "denominator": 8374993
+      },
+      {
+        "start": 7263,
+        "end": 10895,
+        "block": "A",
+        "numerator": 489806,
+        "denominator": 8374993
+      },
+      {
+        "start": 7471,
+        "end": 11207,
+        "block": "A",
+        "numerator": 7798,
+        "denominator": 8374993
+      },
+      {
+        "start": 8539,
+        "end": 12809,
+        "block": "A",
+        "numerator": 174055,
+        "denominator": 8374993
+      },
+      {
+        "start": 8999,
+        "end": 13499,
+        "block": "A",
+        "numerator": 647857,
+        "denominator": 8374993
+      },
+      {
+        "start": 9615,
+        "end": 14423,
+        "block": "A",
+        "numerator": 742310,
+        "denominator": 8374993
+      },
+      {
+        "start": 9915,
+        "end": 14873,
+        "block": "A",
+        "numerator": 94496,
+        "denominator": 8374993
+      },
+      {
+        "start": 10299,
+        "end": 15449,
+        "block": "A",
+        "numerator": 672855,
+        "denominator": 8374993
+      },
+      {
+        "start": 11943,
+        "end": 17915,
+        "block": "A",
+        "numerator": 30130,
+        "denominator": 761363
+      },
+      {
+        "start": 12187,
+        "end": 18281,
+        "block": "A",
+        "numerator": 490482,
+        "denominator": 8374993
+      },
+      {
+        "start": 12647,
+        "end": 18971,
+        "block": "A",
+        "numerator": 74446,
+        "denominator": 8374993
+      },
+      {
+        "start": 13595,
+        "end": 20393,
+        "block": "A",
+        "numerator": 208149,
+        "denominator": 8374993
+      },
+      {
+        "start": 14279,
+        "end": 21419,
+        "block": "A",
+        "numerator": 394133,
+        "denominator": 8374993
+      },
+      {
+        "start": 15407,
+        "end": 23111,
+        "block": "A",
+        "numerator": 129611,
+        "denominator": 8374993
+      },
+      {
+        "start": 15527,
+        "end": 23291,
+        "block": "A",
+        "numerator": 336230,
+        "denominator": 8374993
+      },
+      {
+        "start": 5769,
+        "end": 9737,
+        "block": "B",
+        "numerator": 652011,
+        "denominator": 8374993
+      },
+      {
+        "start": 6569,
+        "end": 11087,
+        "block": "B",
+        "numerator": 9147,
+        "denominator": 761363
+      },
+      {
+        "start": 13737,
+        "end": 23183,
+        "block": "B",
+        "numerator": 864023,
+        "denominator": 8374993
+      },
+      {
+        "start": 15145,
+        "end": 25559,
+        "block": "B",
+        "numerator": 1008,
+        "denominator": 8374993
+      },
+      {
+        "start": 16041,
+        "end": 27071,
+        "block": "B",
+        "numerator": 818448,
+        "denominator": 8374993
+      }
+    ],
+    "certificate_support": 23,
+    "exact_certificate_verified": true
+  },
+  {
+    "window": 6,
+    "features": 134,
+    "transitions": 4608,
+    "status": 2,
+    "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+    "exact_certificate": [
+      {
+        "start": 2279,
+        "end": 3419,
+        "block": "A",
+        "numerator": 7526169719,
+        "denominator": 204147736065
+      },
+      {
+        "start": 2335,
+        "end": 3503,
+        "block": "A",
+        "numerator": 424860658,
+        "denominator": 29163962295
+      },
+      {
+        "start": 3007,
+        "end": 4511,
+        "block": "A",
+        "numerator": 15703993693,
+        "denominator": 408295472130
+      },
+      {
+        "start": 3903,
+        "end": 5855,
+        "block": "A",
+        "numerator": 320893939,
+        "denominator": 15703672005
+      },
+      {
+        "start": 4135,
+        "end": 6203,
+        "block": "A",
+        "numerator": 338160776,
+        "denominator": 68049245355
+      },
+      {
+        "start": 4527,
+        "end": 6791,
+        "block": "A",
+        "numerator": 6916610882,
+        "denominator": 204147736065
+      },
+      {
+        "start": 5055,
+        "end": 7583,
+        "block": "A",
+        "numerator": 11331590129,
+        "denominator": 408295472130
+      },
+      {
+        "start": 6887,
+        "end": 10331,
+        "block": "A",
+        "numerator": 1297258273,
+        "denominator": 68049245355
+      },
+      {
+        "start": 6943,
+        "end": 10415,
+        "block": "A",
+        "numerator": 6156912511,
+        "denominator": 204147736065
+      },
+      {
+        "start": 8283,
+        "end": 12425,
+        "block": "A",
+        "numerator": 10853119661,
+        "denominator": 204147736065
+      },
+      {
+        "start": 8807,
+        "end": 13211,
+        "block": "A",
+        "numerator": 2549752286,
+        "denominator": 68049245355
+      },
+      {
+        "start": 9263,
+        "end": 13895,
+        "block": "A",
+        "numerator": 89137253,
+        "denominator": 4486763430
+      },
+      {
+        "start": 9691,
+        "end": 14537,
+        "block": "A",
+        "numerator": 612993867,
+        "denominator": 45366163570
+      },
+      {
+        "start": 10343,
+        "end": 15515,
+        "block": "A",
+        "numerator": 124972514,
+        "denominator": 5832792459
+      },
+      {
+        "start": 10395,
+        "end": 15593,
+        "block": "A",
+        "numerator": 12356679971,
+        "denominator": 408295472130
+      },
+      {
+        "start": 10799,
+        "end": 16199,
+        "block": "A",
+        "numerator": 710403853,
+        "denominator": 45366163570
+      },
+      {
+        "start": 11035,
+        "end": 16553,
+        "block": "A",
+        "numerator": 297009746,
+        "denominator": 40829547213
+      },
+      {
+        "start": 11227,
+        "end": 16841,
+        "block": "A",
+        "numerator": 63156593,
+        "denominator": 9721320765
+      },
+      {
+        "start": 11359,
+        "end": 17039,
+        "block": "A",
+        "numerator": 647745577,
+        "denominator": 204147736065
+      },
+      {
+        "start": 11419,
+        "end": 17129,
+        "block": "A",
+        "numerator": 21197296663,
+        "denominator": 408295472130
+      },
+      {
+        "start": 11551,
+        "end": 17327,
+        "block": "A",
+        "numerator": 740908013,
+        "denominator": 408295472130
+      },
+      {
+        "start": 11623,
+        "end": 17435,
+        "block": "A",
+        "numerator": 937667327,
+        "denominator": 40829547213
+      },
+      {
+        "start": 12315,
+        "end": 18473,
+        "block": "A",
+        "numerator": 3627968297,
+        "denominator": 408295472130
+      },
+      {
+        "start": 12571,
+        "end": 18857,
+        "block": "A",
+        "numerator": 250703099,
+        "denominator": 6281468802
+      },
+      {
+        "start": 12763,
+        "end": 19145,
+        "block": "A",
+        "numerator": 107307194,
+        "denominator": 9721320765
+      },
+      {
+        "start": 12967,
+        "end": 19451,
+        "block": "A",
+        "numerator": 435263131,
+        "denominator": 40829547213
+      },
+      {
+        "start": 13343,
+        "end": 20015,
+        "block": "A",
+        "numerator": 67424882,
+        "denominator": 1944264153
+      },
+      {
+        "start": 13671,
+        "end": 20507,
+        "block": "A",
+        "numerator": 789871261,
+        "denominator": 81659094426
+      },
+      {
+        "start": 13851,
+        "end": 20777,
+        "block": "A",
+        "numerator": 78353332,
+        "denominator": 68049245355
+      },
+      {
+        "start": 13983,
+        "end": 20975,
+        "block": "A",
+        "numerator": 4457688437,
+        "denominator": 408295472130
+      },
+      {
+        "start": 14399,
+        "end": 21599,
+        "block": "A",
+        "numerator": 201910021,
+        "denominator": 45366163570
+      },
+      {
+        "start": 14703,
+        "end": 22055,
+        "block": "A",
+        "numerator": 1164277321,
+        "denominator": 68049245355
+      },
+      {
+        "start": 15399,
+        "end": 23099,
+        "block": "A",
+        "numerator": 1424249789,
+        "denominator": 68049245355
+      },
+      {
+        "start": 15919,
+        "end": 23879,
+        "block": "A",
+        "numerator": 1660000708,
+        "denominator": 68049245355
+      },
+      {
+        "start": 16231,
+        "end": 24347,
+        "block": "A",
+        "numerator": 710531944,
+        "denominator": 68049245355
+      },
+      {
+        "start": 1193,
+        "end": 2015,
+        "block": "B",
+        "numerator": 1089449623,
+        "denominator": 27219698142
+      },
+      {
+        "start": 4137,
+        "end": 6983,
+        "block": "B",
+        "numerator": 4662891997,
+        "denominator": 408295472130
+      },
+      {
+        "start": 5161,
+        "end": 8711,
+        "block": "B",
+        "numerator": 16353192893,
+        "denominator": 408295472130
+      },
+      {
+        "start": 6313,
+        "end": 10655,
+        "block": "B",
+        "numerator": 94260105,
+        "denominator": 4536616357
+      },
+      {
+        "start": 8681,
+        "end": 14651,
+        "block": "B",
+        "numerator": 78235936,
+        "denominator": 9721320765
+      },
+      {
+        "start": 9897,
+        "end": 16703,
+        "block": "B",
+        "numerator": 2827635091,
+        "denominator": 408295472130
+      },
+      {
+        "start": 10921,
+        "end": 18431,
+        "block": "B",
+        "numerator": 65481311,
+        "denominator": 9721320765
+      },
+      {
+        "start": 11241,
+        "end": 18971,
+        "block": "B",
+        "numerator": 792780577,
+        "denominator": 45366163570
+      },
+      {
+        "start": 12841,
+        "end": 21671,
+        "block": "B",
+        "numerator": 1871242169,
+        "denominator": 58327924590
+      },
+      {
+        "start": 13449,
+        "end": 22697,
+        "block": "B",
+        "numerator": 7860813976,
+        "denominator": 204147736065
+      },
+      {
+        "start": 14313,
+        "end": 24155,
+        "block": "B",
+        "numerator": 1480797781,
+        "denominator": 408295472130
+      },
+      {
+        "start": 14985,
+        "end": 25289,
+        "block": "B",
+        "numerator": 4589388676,
+        "denominator": 204147736065
+      },
+      {
+        "start": 15273,
+        "end": 25775,
+        "block": "B",
+        "numerator": 717604259,
+        "denominator": 136098490710
+      },
+      {
+        "start": 15785,
+        "end": 26639,
+        "block": "B",
+        "numerator": 46329833,
+        "denominator": 4486763430
+      },
+      {
+        "start": 16041,
+        "end": 27071,
+        "block": "B",
+        "numerator": 283739437,
+        "denominator": 13609849071
+      }
+    ],
+    "certificate_support": 50,
+    "exact_certificate_verified": true
+  },
+  {
+    "window": 7,
+    "features": 274,
+    "transitions": 4608,
+    "status": 2,
+    "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+    "exact_certificate": [
+      {
+        "start": 1371,
+        "end": 2057,
+        "block": "A",
+        "numerator": 5217826793036939,
+        "denominator": 480641277803594373
+      },
+      {
+        "start": 2239,
+        "end": 3359,
+        "block": "A",
+        "numerator": 66763554053993996,
+        "denominator": 3364488944625160611
+      },
+      {
+        "start": 2543,
+        "end": 3815,
+        "block": "A",
+        "numerator": 10879605511935079,
+        "denominator": 3364488944625160611
+      },
+      {
+        "start": 3231,
+        "end": 4847,
+        "block": "A",
+        "numerator": 82355971889975114,
+        "denominator": 3364488944625160611
+      },
+      {
+        "start": 3487,
+        "end": 5231,
+        "block": "A",
+        "numerator": 2895659896677316,
+        "denominator": 480641277803594373
+      },
+      {
+        "start": 3611,
+        "end": 5417,
+        "block": "A",
+        "numerator": 60458116063249477,
+        "denominator": 3364488944625160611
+      },
+      {
+        "start": 4251,
+        "end": 6377,
+        "block": "A",
+        "numerator": 3385203497135895,
+        "denominator": 373832104958351179
+      },
+      {
+        "start": 4591,
+        "end": 6887,
+        "block": "A",
+        "numerator": 23685417367971089,
+        "denominator": 3364488944625160611
+      },
+      {
+        "start": 4767,
+        "end": 7151,
+        "block": "A",
+        "numerator": 8912633079742738,
+        "denominator": 373832104958351179
+      },
+      {
+        "start": 4799,
+        "end": 7199,
+        "block": "A",
+        "numerator": 9606503121491729,
+        "denominator": 1121496314875053537
+      },
+      {
+        "start": 5151,
+        "end": 7727,
+        "block": "A",
+        "numerator": 2838799358210960,
+        "denominator": 3364488944625160611
+      },
+      {
+        "start": 5275,
+        "end": 7913,
+        "block": "A",
+        "numerator": 40695858350909738,
+        "denominator": 3364488944625160611
+      },
+      {
+        "start": 5351,
+        "end": 8027,
+        "block": "A",
+        "numerator": 22601680759216808,
+        "denominator": 1121496314875053537
+      },
+      {
+        "start": 5479,
+        "end": 8219,
+        "block": "A",
+        "numerator": 15728967441327407,
+        "denominator": 3364488944625160611
+      },
+      {
+        "start": 6127,
+        "end": 9191,
+        "block": "A",
+        "numerator": 260162410526780,
+        "denominator": 78243928944771177
+      },
+      {
+        "start": 6363,
+        "end": 9545,
+        "block": "A",
+        "numerator": 51153683790741808,
+        "denominator": 3364488944625160611
+      },
+      {
+        "start": 7067,
+        "end": 10601,
+        "block": "A",
+        "numerator": 29582240595997724,
+        "denominator": 3364488944625160611
+      },
+      {
+        "start": 7515,
+        "end": 11273,
+        "block": "A",
+        "numerator": 20259827609615585,
+        "denominator": 3364488944625160611
+      },
+      {
+        "start": 7783,
+        "end": 11675,
+        "block": "A",
+        "numerator": 3727029257777263,
+        "denominator": 480641277803594373
+      },
+      {
+        "start": 8223,
+        "end": 12335,
+        "block": "A",
+        "numerator": 839524581457651,
+        "denominator": 1121496314875053537
+      },
+      {
+        "start": 8283,
+        "end": 12425,
+        "block": "A",
+        "numerator": 36216944923234966,
+        "denominator": 3364488944625160611
+      },
+      {
+        "start": 8423,
+        "end": 12635,
+        "block": "A",
+        "numerator": 748587067238366,
+        "denominator": 3364488944625160611
+      },
+      {
+        "start": 8479,
+        "end": 12719,
+        "block": "A",
+        "numerator": 6257346447764780,
+        "denominator": 480641277803594373
+      },
+      {
+        "start": 8551,
+        "end": 12827,
+        "block": "A",
+        "numerator": 3456606328195931,
+        "denominator": 160213759267864791
+      },
+      {
+        "start": 8603,
+        "end": 12905,
+        "block": "A",
+        "numerator": 2468378241951997,
+        "denominator": 373832104958351179
+      },
+      {
+        "start": 8679,
+        "end": 13019,
+        "block": "A",
+        "numerator": 3177483303967309,
+        "denominator": 3364488944625160611
+      },
+      {
+        "start": 8991,
+        "end": 13487,
+        "block": "A",
+        "numerator": 13196025423652045,
+        "denominator": 1121496314875053537
+      },
+      {
+        "start": 9243,
+        "end": 13865,
+        "block": "A",
+        "numerator": 8953592494453298,
+        "denominator": 1121496314875053537
+      },
+      {
+        "start": 9407,
+        "end": 14111,
+        "block": "A",
+        "numerator": 42594432660172,
+        "denominator": 480641277803594373
+      },
+      {
+        "start": 9503,
+        "end": 14255,
+        "block": "A",
+        "numerator": 10015582092198721,
+        "denominator": 3364488944625160611
+      },
+      {
+        "start": 9691,
+        "end": 14537,
+        "block": "A",
+        "numerator": 29839780336483450,
+        "denominator": 3364488944625160611
+      },
+      {
+        "start": 9703,
+        "end": 14555,
+        "block": "A",
+        "numerator": 48981370394566975,
+        "denominator": 3364488944625160611
+      },
+      {
+        "start": 9887,
+        "end": 14831,
+        "block": "A",
+        "numerator": 53344134401070535,
+        "denominator": 3364488944625160611
+      },
+      {
+        "start": 10015,
+        "end": 15023,
+        "block": "A",
+        "numerator": 15948511436724211,
+        "denominator": 3364488944625160611
+      },
+      {
+        "start": 10111,
+        "end": 15167,
+        "block": "A",
+        "numerator": 11790462857529107,
+        "denominator": 1121496314875053537
+      },
+      {
+        "start": 10267,
+        "end": 15401,
+        "block": "A",
+        "numerator": 36296637678966599,
+        "denominator": 3364488944625160611
+      },
+      {
+        "start": 10587,
+        "end": 15881,
+        "block": "A",
+        "numerator": 16500475139763940,
+        "denominator": 3364488944625160611
+      },
+      {
+        "start": 10779,
+        "end": 16169,
+        "block": "A",
+        "numerator": 30165563304863486,
+        "denominator": 3364488944625160611
+      },
+      {
+        "start": 10863,
+        "end": 16295,
+        "block": "A",
+        "numerator": 25221341798076146,
+        "denominator": 3364488944625160611
+      },
+      {
+        "start": 11375,
+        "end": 17063,
+        "block": "A",
+        "numerator": 19138875220247372,
+        "denominator": 373832104958351179
+      },
+      {
+        "start": 11623,
+        "end": 17435,
+        "block": "A",
+        "numerator": 767052947044207,
+        "denominator": 78243928944771177
+      },
+      {
+        "start": 11739,
+        "end": 17609,
+        "block": "A",
+        "numerator": 4608782556331060,
+        "denominator": 3364488944625160611
+      },
+      {
+        "start": 11879,
+        "end": 17819,
+        "block": "A",
+        "numerator": 137468723127134453,
+        "denominator": 3364488944625160611
+      },
+      {
+        "start": 12015,
+        "end": 18023,
+        "block": "A",
+        "numerator": 5787389998475076,
+        "denominator": 373832104958351179
+      },
+      {
+        "start": 12379,
+        "end": 18569,
+        "block": "A",
+        "numerator": 64713682503662873,
+        "denominator": 3364488944625160611
+      },
+      {
+        "start": 12447,
+        "end": 18671,
+        "block": "A",
+        "numerator": 1584774229170478,
+        "denominator": 480641277803594373
+      },
+      {
+        "start": 12527,
+        "end": 18791,
+        "block": "A",
+        "numerator": 275009733126061,
+        "denominator": 1121496314875053537
+      },
+      {
+        "start": 12571,
+        "end": 18857,
+        "block": "A",
+        "numerator": 61604039281525502,
+        "denominator": 3364488944625160611
+      },
+      {
+        "start": 12775,
+        "end": 19163,
+        "block": "A",
+        "numerator": 5009911401794461,
+        "denominator": 1121496314875053537
+      },
+      {
+        "start": 12903,
+        "end": 19355,
+        "block": "A",
+        "numerator": 4963811202338545,
+        "denominator": 3364488944625160611
+      },
+      {
+        "start": 13031,
+        "end": 19547,
+        "block": "A",
+        "numerator": 22965752008923062,
+        "denominator": 3364488944625160611
+      },
+      {
+        "start": 13083,
+        "end": 19625,
+        "block": "A",
+        "numerator": 6796054172994130,
+        "denominator": 3364488944625160611
+      },
+      {
+        "start": 13275,
+        "end": 19913,
+        "block": "A",
+        "numerator": 285025984523621,
+        "denominator": 1121496314875053537
+      },
+      {
+        "start": 13551,
+        "end": 20327,
+        "block": "A",
+        "numerator": 34154930466048271,
+        "denominator": 3364488944625160611
+      },
+      {
+        "start": 13595,
+        "end": 20393,
+        "block": "A",
+        "numerator": 5496502715831602,
+        "denominator": 1121496314875053537
+      },
+      {
+        "start": 13807,
+        "end": 20711,
+        "block": "A",
+        "numerator": 7195909220476283,
+        "denominator": 3364488944625160611
+      },
+      {
+        "start": 13855,
+        "end": 20783,
+        "block": "A",
+        "numerator": 137017735380559,
+        "denominator": 3364488944625160611
+      },
+      {
+        "start": 14015,
+        "end": 21023,
+        "block": "A",
+        "numerator": 1157402621126849,
+        "denominator": 480641277803594373
+      },
+      {
+        "start": 14183,
+        "end": 21275,
+        "block": "A",
+        "numerator": 14513729436420743,
+        "denominator": 1121496314875053537
+      },
+      {
+        "start": 14567,
+        "end": 21851,
+        "block": "A",
+        "numerator": 6740363433182305,
+        "denominator": 480641277803594373
+      },
+      {
+        "start": 14703,
+        "end": 22055,
+        "block": "A",
+        "numerator": 7223319608956177,
+        "denominator": 3364488944625160611
+      },
+      {
+        "start": 14811,
+        "end": 22217,
+        "block": "A",
+        "numerator": 8224202152487875,
+        "denominator": 3364488944625160611
+      },
+      {
+        "start": 14875,
+        "end": 22313,
+        "block": "A",
+        "numerator": 15274585493041915,
+        "denominator": 3364488944625160611
+      },
+      {
+        "start": 14939,
+        "end": 22409,
+        "block": "A",
+        "numerator": 13644631562484158,
+        "denominator": 3364488944625160611
+      },
+      {
+        "start": 15335,
+        "end": 23003,
+        "block": "A",
+        "numerator": 3771897706326168,
+        "denominator": 373832104958351179
+      },
+      {
+        "start": 15387,
+        "end": 23081,
+        "block": "A",
+        "numerator": 1643264924970160,
+        "denominator": 480641277803594373
+      },
+      {
+        "start": 15719,
+        "end": 23579,
+        "block": "A",
+        "numerator": 1153147375196474,
+        "denominator": 160213759267864791
+      },
+      {
+        "start": 15855,
+        "end": 23783,
+        "block": "A",
+        "numerator": 121449241179943195,
+        "denominator": 3364488944625160611
+      },
+      {
+        "start": 16027,
+        "end": 24041,
+        "block": "A",
+        "numerator": 38459247260640973,
+        "denominator": 3364488944625160611
+      },
+      {
+        "start": 16155,
+        "end": 24233,
+        "block": "A",
+        "numerator": 4405158213515727,
+        "denominator": 373832104958351179
+      },
+      {
+        "start": 16231,
+        "end": 24347,
+        "block": "A",
+        "numerator": 15740481181298089,
+        "denominator": 3364488944625160611
+      },
+      {
+        "start": 137,
+        "end": 233,
+        "block": "B",
+        "numerator": 129777275345429465,
+        "denominator": 3364488944625160611
+      },
+      {
+        "start": 1001,
+        "end": 1691,
+        "block": "B",
+        "numerator": 15282090052257797,
+        "denominator": 1121496314875053537
+      },
+      {
+        "start": 1161,
+        "end": 1961,
+        "block": "B",
+        "numerator": 111077232076778806,
+        "denominator": 3364488944625160611
+      },
+      {
+        "start": 3049,
+        "end": 5147,
+        "block": "B",
+        "numerator": 1572044657030312,
+        "denominator": 160213759267864791
+      },
+      {
+        "start": 6057,
+        "end": 10223,
+        "block": "B",
+        "numerator": 11555066907703534,
+        "denominator": 3364488944625160611
+      },
+      {
+        "start": 6313,
+        "end": 10655,
+        "block": "B",
+        "numerator": 43776128515176206,
+        "denominator": 3364488944625160611
+      },
+      {
+        "start": 7337,
+        "end": 12383,
+        "block": "B",
+        "numerator": 37896612639626483,
+        "denominator": 3364488944625160611
+      },
+      {
+        "start": 7817,
+        "end": 13193,
+        "block": "B",
+        "numerator": 3039534413469658,
+        "denominator": 3364488944625160611
+      },
+      {
+        "start": 7849,
+        "end": 13247,
+        "block": "B",
+        "numerator": 3068219955149737,
+        "denominator": 3364488944625160611
+      },
+      {
+        "start": 8329,
+        "end": 14057,
+        "block": "B",
+        "numerator": 1647677876649820,
+        "denominator": 3364488944625160611
+      },
+      {
+        "start": 8361,
+        "end": 14111,
+        "block": "B",
+        "numerator": 75442340726179993,
+        "denominator": 3364488944625160611
+      },
+      {
+        "start": 9897,
+        "end": 16703,
+        "block": "B",
+        "numerator": 64320369345090118,
+        "denominator": 3364488944625160611
+      },
+      {
+        "start": 10377,
+        "end": 17513,
+        "block": "B",
+        "numerator": 7160015664352349,
+        "denominator": 1121496314875053537
+      },
+      {
+        "start": 11241,
+        "end": 18971,
+        "block": "B",
+        "numerator": 44366738816970125,
+        "denominator": 3364488944625160611
+      },
+      {
+        "start": 11817,
+        "end": 19943,
+        "block": "B",
+        "numerator": 87047619610672598,
+        "denominator": 3364488944625160611
+      },
+      {
+        "start": 13449,
+        "end": 22697,
+        "block": "B",
+        "numerator": 18559643787720013,
+        "denominator": 3364488944625160611
+      },
+      {
+        "start": 13481,
+        "end": 22751,
+        "block": "B",
+        "numerator": 33161108742651746,
+        "denominator": 1121496314875053537
+      },
+      {
+        "start": 14249,
+        "end": 24047,
+        "block": "B",
+        "numerator": 92478269404372613,
+        "denominator": 3364488944625160611
+      },
+      {
+        "start": 14313,
+        "end": 24155,
+        "block": "B",
+        "numerator": 368083255051994,
+        "denominator": 3364488944625160611
+      },
+      {
+        "start": 14889,
+        "end": 25127,
+        "block": "B",
+        "numerator": 59952288622273543,
+        "denominator": 3364488944625160611
+      },
+      {
+        "start": 15017,
+        "end": 25343,
+        "block": "B",
+        "numerator": 580864341186325,
+        "denominator": 53404586422621597
+      },
+      {
+        "start": 15337,
+        "end": 25883,
+        "block": "B",
+        "numerator": 1757702103940984,
+        "denominator": 480641277803594373
+      },
+      {
+        "start": 15529,
+        "end": 26207,
+        "block": "B",
+        "numerator": 1543377757945598,
+        "denominator": 3364488944625160611
+      }
+    ],
+    "certificate_support": 94,
+    "exact_certificate_verified": true
+  },
+  {
+    "window": 8,
+    "features": 552,
+    "transitions": 4608,
+    "status": 2,
+    "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+    "exact_certificate": [
+      {
+        "start": 639,
+        "end": 959,
+        "block": "A",
+        "numerator": 10643640021966645,
+        "denominator": 2310138599817240373
+      },
+      {
+        "start": 1895,
+        "end": 2843,
+        "block": "A",
+        "numerator": 60035122885132479,
+        "denominator": 9240554399268961492
+      },
+      {
+        "start": 2943,
+        "end": 4415,
+        "block": "A",
+        "numerator": 314754912127331067,
+        "denominator": 147848870388303383872
+      },
+      {
+        "start": 3007,
+        "end": 4511,
+        "block": "A",
+        "numerator": 23438080109496901,
+        "denominator": 73924435194151691936
+      },
+      {
+        "start": 3327,
+        "end": 4991,
+        "block": "A",
+        "numerator": 3621233890621767289,
+        "denominator": 147848870388303383872
+      },
+      {
+        "start": 3567,
+        "end": 5351,
+        "block": "A",
+        "numerator": 613576977283823745,
+        "denominator": 73924435194151691936
+      },
+      {
+        "start": 3739,
+        "end": 5609,
+        "block": "A",
+        "numerator": 119032898579477167,
+        "denominator": 36962217597075845968
+      },
+      {
+        "start": 3931,
+        "end": 5897,
+        "block": "A",
+        "numerator": 5643001245272525,
+        "denominator": 73924435194151691936
+      },
+      {
+        "start": 4079,
+        "end": 6119,
+        "block": "A",
+        "numerator": 294329004059571839,
+        "denominator": 147848870388303383872
+      },
+      {
+        "start": 4123,
+        "end": 6185,
+        "block": "A",
+        "numerator": 496074591623580417,
+        "denominator": 147848870388303383872
+      },
+      {
+        "start": 4255,
+        "end": 6383,
+        "block": "A",
+        "numerator": 750247477805674309,
+        "denominator": 147848870388303383872
+      },
+      {
+        "start": 4351,
+        "end": 6527,
+        "block": "A",
+        "numerator": 4826988043931127,
+        "denominator": 9240554399268961492
+      },
+      {
+        "start": 4379,
+        "end": 6569,
+        "block": "A",
+        "numerator": 216309361734181107,
+        "denominator": 36962217597075845968
+      },
+      {
+        "start": 4455,
+        "end": 6683,
+        "block": "A",
+        "numerator": 502173674977030951,
+        "denominator": 147848870388303383872
+      },
+      {
+        "start": 4591,
+        "end": 6887,
+        "block": "A",
+        "numerator": 249177215605099763,
+        "denominator": 147848870388303383872
+      },
+      {
+        "start": 4635,
+        "end": 6953,
+        "block": "A",
+        "numerator": 526077134717995023,
+        "denominator": 73924435194151691936
+      },
+      {
+        "start": 4711,
+        "end": 7067,
+        "block": "A",
+        "numerator": 44315028062019583,
+        "denominator": 147848870388303383872
+      },
+      {
+        "start": 4763,
+        "end": 7145,
+        "block": "A",
+        "numerator": 2839337602491090411,
+        "denominator": 147848870388303383872
+      },
+      {
+        "start": 4847,
+        "end": 7271,
+        "block": "A",
+        "numerator": 1419159195630308673,
+        "denominator": 73924435194151691936
+      },
+      {
+        "start": 4967,
+        "end": 7451,
+        "block": "A",
+        "numerator": 666874778533021817,
+        "denominator": 147848870388303383872
+      },
+      {
+        "start": 5147,
+        "end": 7721,
+        "block": "A",
+        "numerator": 25629648997886729,
+        "denominator": 36962217597075845968
+      },
+      {
+        "start": 5351,
+        "end": 8027,
+        "block": "A",
+        "numerator": 258198671429902285,
+        "denominator": 147848870388303383872
+      },
+      {
+        "start": 5403,
+        "end": 8105,
+        "block": "A",
+        "numerator": 1752637413565078337,
+        "denominator": 147848870388303383872
+      },
+      {
+        "start": 5479,
+        "end": 8219,
+        "block": "A",
+        "numerator": 749863809221333515,
+        "denominator": 73924435194151691936
+      },
+      {
+        "start": 5567,
+        "end": 8351,
+        "block": "A",
+        "numerator": 698093323265579593,
+        "denominator": 147848870388303383872
+      },
+      {
+        "start": 5787,
+        "end": 8681,
+        "block": "A",
+        "numerator": 25629648997886729,
+        "denominator": 36962217597075845968
+      },
+      {
+        "start": 6043,
+        "end": 9065,
+        "block": "A",
+        "numerator": 467128331537414661,
+        "denominator": 147848870388303383872
+      },
+      {
+        "start": 6047,
+        "end": 9071,
+        "block": "A",
+        "numerator": 31621266238700043,
+        "denominator": 36962217597075845968
+      },
+      {
+        "start": 6427,
+        "end": 9641,
+        "block": "A",
+        "numerator": 60900706227985213,
+        "denominator": 18481108798537922984
+      },
+      {
+        "start": 6639,
+        "end": 9959,
+        "block": "A",
+        "numerator": 73046174373538815,
+        "denominator": 147848870388303383872
+      },
+      {
+        "start": 7015,
+        "end": 10523,
+        "block": "A",
+        "numerator": 902989093512723417,
+        "denominator": 147848870388303383872
+      },
+      {
+        "start": 7271,
+        "end": 10907,
+        "block": "A",
+        "numerator": 98053762102165523,
+        "denominator": 9240554399268961492
+      },
+      {
+        "start": 7407,
+        "end": 11111,
+        "block": "A",
+        "numerator": 193485498504491013,
+        "denominator": 36962217597075845968
+      },
+      {
+        "start": 7451,
+        "end": 11177,
+        "block": "A",
+        "numerator": 97195240500710013,
+        "denominator": 18481108798537922984
+      },
+      {
+        "start": 7527,
+        "end": 11291,
+        "block": "A",
+        "numerator": 2100699335912401681,
+        "denominator": 147848870388303383872
+      },
+      {
+        "start": 7615,
+        "end": 11423,
+        "block": "A",
+        "numerator": 80994767109032847,
+        "denominator": 73924435194151691936
+      },
+      {
+        "start": 7771,
+        "end": 11657,
+        "block": "A",
+        "numerator": 219715286301863451,
+        "denominator": 73924435194151691936
+      },
+      {
+        "start": 7783,
+        "end": 11675,
+        "block": "A",
+        "numerator": 369100130153855899,
+        "denominator": 73924435194151691936
+      },
+      {
+        "start": 7839,
+        "end": 11759,
+        "block": "A",
+        "numerator": 181554862101105655,
+        "denominator": 36962217597075845968
+      },
+      {
+        "start": 7963,
+        "end": 11945,
+        "block": "A",
+        "numerator": 71187790026446087,
+        "denominator": 18481108798537922984
+      },
+      {
+        "start": 8219,
+        "end": 12329,
+        "block": "A",
+        "numerator": 749863809221333515,
+        "denominator": 73924435194151691936
+      },
+      {
+        "start": 8283,
+        "end": 12425,
+        "block": "A",
+        "numerator": 749863809221333515,
+        "denominator": 73924435194151691936
+      },
+      {
+        "start": 8351,
+        "end": 12527,
+        "block": "A",
+        "numerator": 23343763317027147,
+        "denominator": 2310138599817240373
+      },
+      {
+        "start": 8431,
+        "end": 12647,
+        "block": "A",
+        "numerator": 984074174271422845,
+        "denominator": 147848870388303383872
+      },
+      {
+        "start": 8539,
+        "end": 12809,
+        "block": "A",
+        "numerator": 805894689120265807,
+        "denominator": 147848870388303383872
+      },
+      {
+        "start": 8603,
+        "end": 12905,
+        "block": "A",
+        "numerator": 94935943208248595,
+        "denominator": 73924435194151691936
+      },
+      {
+        "start": 8607,
+        "end": 12911,
+        "block": "A",
+        "numerator": 1053693318061054505,
+        "denominator": 147848870388303383872
+      },
+      {
+        "start": 8639,
+        "end": 12959,
+        "block": "A",
+        "numerator": 172116331794010605,
+        "denominator": 73924435194151691936
+      },
+      {
+        "start": 8679,
+        "end": 13019,
+        "block": "A",
+        "numerator": 256255437934660791,
+        "denominator": 147848870388303383872
+      },
+      {
+        "start": 8687,
+        "end": 13031,
+        "block": "A",
+        "numerator": 137696444033219655,
+        "denominator": 18481108798537922984
+      },
+      {
+        "start": 8795,
+        "end": 13193,
+        "block": "A",
+        "numerator": 737414228219122753,
+        "denominator": 147848870388303383872
+      },
+      {
+        "start": 8895,
+        "end": 13343,
+        "block": "A",
+        "numerator": 545553617232297127,
+        "denominator": 147848870388303383872
+      },
+      {
+        "start": 8935,
+        "end": 13403,
+        "block": "A",
+        "numerator": 382979722546580131,
+        "denominator": 147848870388303383872
+      },
+      {
+        "start": 9063,
+        "end": 13595,
+        "block": "A",
+        "numerator": 1886036712216668965,
+        "denominator": 147848870388303383872
+      },
+      {
+        "start": 9115,
+        "end": 13673,
+        "block": "A",
+        "numerator": 263285255541526035,
+        "denominator": 147848870388303383872
+      },
+      {
+        "start": 9119,
+        "end": 13679,
+        "block": "A",
+        "numerator": 930287917627557,
+        "denominator": 499489426987511432
+      },
+      {
+        "start": 9199,
+        "end": 13799,
+        "block": "A",
+        "numerator": 88625468262897515,
+        "denominator": 73924435194151691936
+      },
+      {
+        "start": 9243,
+        "end": 13865,
+        "block": "A",
+        "numerator": 674092157443796863,
+        "denominator": 147848870388303383872
+      },
+      {
+        "start": 9307,
+        "end": 13961,
+        "block": "A",
+        "numerator": 115345684616532583,
+        "denominator": 147848870388303383872
+      },
+      {
+        "start": 9319,
+        "end": 13979,
+        "block": "A",
+        "numerator": 262872647053183581,
+        "denominator": 73924435194151691936
+      },
+      {
+        "start": 9343,
+        "end": 14015,
+        "block": "A",
+        "numerator": 22912863335959671,
+        "denominator": 18481108798537922984
+      },
+      {
+        "start": 9371,
+        "end": 14057,
+        "block": "A",
+        "numerator": 411644458922408087,
+        "denominator": 147848870388303383872
+      },
+      {
+        "start": 9499,
+        "end": 14249,
+        "block": "A",
+        "numerator": 1638082349557337455,
+        "denominator": 147848870388303383872
+      },
+      {
+        "start": 9599,
+        "end": 14399,
+        "block": "A",
+        "numerator": 198966632720724369,
+        "denominator": 147848870388303383872
+      },
+      {
+        "start": 9703,
+        "end": 14555,
+        "block": "A",
+        "numerator": 629265736647088173,
+        "denominator": 147848870388303383872
+      },
+      {
+        "start": 9887,
+        "end": 14831,
+        "block": "A",
+        "numerator": 193485498504491013,
+        "denominator": 36962217597075845968
+      },
+      {
+        "start": 9959,
+        "end": 14939,
+        "block": "A",
+        "numerator": 1284000929719159785,
+        "denominator": 147848870388303383872
+      },
+      {
+        "start": 9967,
+        "end": 14951,
+        "block": "A",
+        "numerator": 136626422566818859,
+        "denominator": 147848870388303383872
+      },
+      {
+        "start": 10011,
+        "end": 15017,
+        "block": "A",
+        "numerator": 2493689881075106765,
+        "denominator": 147848870388303383872
+      },
+      {
+        "start": 10075,
+        "end": 15113,
+        "block": "A",
+        "numerator": 1333255881717081825,
+        "denominator": 147848870388303383872
+      },
+      {
+        "start": 10111,
+        "end": 15167,
+        "block": "A",
+        "numerator": 37300834261676031,
+        "denominator": 18481108798537922984
+      },
+      {
+        "start": 10175,
+        "end": 15263,
+        "block": "A",
+        "numerator": 60911094239166649,
+        "denominator": 9240554399268961492
+      },
+      {
+        "start": 10331,
+        "end": 15497,
+        "block": "A",
+        "numerator": 642925300959762241,
+        "denominator": 147848870388303383872
+      },
+      {
+        "start": 10367,
+        "end": 15551,
+        "block": "A",
+        "numerator": 794729203410486791,
+        "denominator": 147848870388303383872
+      },
+      {
+        "start": 10431,
+        "end": 15647,
+        "block": "A",
+        "numerator": 272427956002524395,
+        "denominator": 73924435194151691936
+      },
+      {
+        "start": 10471,
+        "end": 15707,
+        "block": "A",
+        "numerator": 169897881487373027,
+        "denominator": 147848870388303383872
+      },
+      {
+        "start": 10479,
+        "end": 15719,
+        "block": "A",
+        "numerator": 2280478603197658617,
+        "denominator": 147848870388303383872
+      },
+      {
+        "start": 10599,
+        "end": 15899,
+        "block": "A",
+        "numerator": 160972508378114397,
+        "denominator": 36962217597075845968
+      },
+      {
+        "start": 10687,
+        "end": 16031,
+        "block": "A",
+        "numerator": 3601603738770190551,
+        "denominator": 147848870388303383872
+      },
+      {
+        "start": 10843,
+        "end": 16265,
+        "block": "A",
+        "numerator": 294329004059571839,
+        "denominator": 147848870388303383872
+      },
+      {
+        "start": 10983,
+        "end": 16475,
+        "block": "A",
+        "numerator": 431591646241985809,
+        "denominator": 147848870388303383872
+      },
+      {
+        "start": 11099,
+        "end": 16649,
+        "block": "A",
+        "numerator": 75848670752384459,
+        "denominator": 147848870388303383872
+      },
+      {
+        "start": 11199,
+        "end": 16799,
+        "block": "A",
+        "numerator": 126494316896881919,
+        "denominator": 73924435194151691936
+      },
+      {
+        "start": 11239,
+        "end": 16859,
+        "block": "A",
+        "numerator": 80994767109032847,
+        "denominator": 73924435194151691936
+      },
+      {
+        "start": 11247,
+        "end": 16871,
+        "block": "A",
+        "numerator": 286331325591352217,
+        "denominator": 147848870388303383872
+      },
+      {
+        "start": 11291,
+        "end": 16937,
+        "block": "A",
+        "numerator": 1663131340572073401,
+        "denominator": 147848870388303383872
+      },
+      {
+        "start": 11367,
+        "end": 17051,
+        "block": "A",
+        "numerator": 91173271520596173,
+        "denominator": 147848870388303383872
+      },
+      {
+        "start": 11391,
+        "end": 17087,
+        "block": "A",
+        "numerator": 247072767843940879,
+        "denominator": 147848870388303383872
+      },
+      {
+        "start": 11503,
+        "end": 17255,
+        "block": "A",
+        "numerator": 19732013993090149,
+        "denominator": 998978853975022864
+      },
+      {
+        "start": 11711,
+        "end": 17567,
+        "block": "A",
+        "numerator": 411644458922408087,
+        "denominator": 147848870388303383872
+      },
+      {
+        "start": 11759,
+        "end": 17639,
+        "block": "A",
+        "numerator": 332302515712761897,
+        "denominator": 36962217597075845968
+      },
+      {
+        "start": 12059,
+        "end": 18089,
+        "block": "A",
+        "numerator": 622773577752730165,
+        "denominator": 73924435194151691936
+      },
+      {
+        "start": 12135,
+        "end": 18203,
+        "block": "A",
+        "numerator": 354274180323327967,
+        "denominator": 73924435194151691936
+      },
+      {
+        "start": 12315,
+        "end": 18473,
+        "block": "A",
+        "numerator": 201579816713693195,
+        "denominator": 73924435194151691936
+      },
+      {
+        "start": 12379,
+        "end": 18569,
+        "block": "A",
+        "numerator": 254752145874596819,
+        "denominator": 36962217597075845968
+      },
+      {
+        "start": 12391,
+        "end": 18587,
+        "block": "A",
+        "numerator": 573633993140473781,
+        "denominator": 147848870388303383872
+      },
+      {
+        "start": 12447,
+        "end": 18671,
+        "block": "A",
+        "numerator": 382557781347996077,
+        "denominator": 36962217597075845968
+      },
+      {
+        "start": 12543,
+        "end": 18815,
+        "block": "A",
+        "numerator": 411644458922408087,
+        "denominator": 147848870388303383872
+      },
+      {
+        "start": 12571,
+        "end": 18857,
+        "block": "A",
+        "numerator": 44315028062019583,
+        "denominator": 147848870388303383872
+      },
+      {
+        "start": 12699,
+        "end": 19049,
+        "block": "A",
+        "numerator": 699415792217999445,
+        "denominator": 147848870388303383872
+      },
+      {
+        "start": 12783,
+        "end": 19175,
+        "block": "A",
+        "numerator": 3176980349229679,
+        "denominator": 9240554399268961492
+      },
+      {
+        "start": 12903,
+        "end": 19355,
+        "block": "A",
+        "numerator": 781127121886967899,
+        "denominator": 73924435194151691936
+      },
+      {
+        "start": 12959,
+        "end": 19439,
+        "block": "A",
+        "numerator": 1256134700091822323,
+        "denominator": 147848870388303383872
+      },
+      {
+        "start": 13031,
+        "end": 19547,
+        "block": "A",
+        "numerator": 782105281912130819,
+        "denominator": 73924435194151691936
+      },
+      {
+        "start": 13159,
+        "end": 19739,
+        "block": "A",
+        "numerator": 1130201470888927747,
+        "denominator": 147848870388303383872
+      },
+      {
+        "start": 13215,
+        "end": 19823,
+        "block": "A",
+        "numerator": 95477915220407193,
+        "denominator": 147848870388303383872
+      },
+      {
+        "start": 13339,
+        "end": 20009,
+        "block": "A",
+        "numerator": 523863646104664039,
+        "denominator": 73924435194151691936
+      },
+      {
+        "start": 13439,
+        "end": 20159,
+        "block": "A",
+        "numerator": 382979722546580131,
+        "denominator": 147848870388303383872
+      },
+      {
+        "start": 13543,
+        "end": 20315,
+        "block": "A",
+        "numerator": 20191068515158509,
+        "denominator": 1997957707950045728
+      },
+      {
+        "start": 13551,
+        "end": 20327,
+        "block": "A",
+        "numerator": 1123363606765903987,
+        "denominator": 147848870388303383872
+      },
+      {
+        "start": 13727,
+        "end": 20591,
+        "block": "A",
+        "numerator": 426428152130894793,
+        "denominator": 147848870388303383872
+      },
+      {
+        "start": 13851,
+        "end": 20777,
+        "block": "A",
+        "numerator": 1726246426879786909,
+        "denominator": 147848870388303383872
+      },
+      {
+        "start": 13979,
+        "end": 20969,
+        "block": "A",
+        "numerator": 1268985969810293525,
+        "denominator": 147848870388303383872
+      },
+      {
+        "start": 14107,
+        "end": 21161,
+        "block": "A",
+        "numerator": 119755068337630337,
+        "denominator": 147848870388303383872
+      },
+      {
+        "start": 14183,
+        "end": 21275,
+        "block": "A",
+        "numerator": 118188623759477293,
+        "denominator": 73924435194151691936
+      },
+      {
+        "start": 14319,
+        "end": 21479,
+        "block": "A",
+        "numerator": 145338200795413603,
+        "denominator": 18481108798537922984
+      },
+      {
+        "start": 14427,
+        "end": 21641,
+        "block": "A",
+        "numerator": 327588018001501319,
+        "denominator": 73924435194151691936
+      },
+      {
+        "start": 14495,
+        "end": 21743,
+        "block": "A",
+        "numerator": 695895190810823769,
+        "denominator": 73924435194151691936
+      },
+      {
+        "start": 14591,
+        "end": 21887,
+        "block": "A",
+        "numerator": 312059597290844507,
+        "denominator": 147848870388303383872
+      },
+      {
+        "start": 14975,
+        "end": 22463,
+        "block": "A",
+        "numerator": 31029997365611643,
+        "denominator": 4620277199634480746
+      },
+      {
+        "start": 15079,
+        "end": 22619,
+        "block": "A",
+        "numerator": 98247636290676271,
+        "denominator": 36962217597075845968
+      },
+      {
+        "start": 15131,
+        "end": 22697,
+        "block": "A",
+        "numerator": 509111055430304715,
+        "denominator": 147848870388303383872
+      },
+      {
+        "start": 15295,
+        "end": 22943,
+        "block": "A",
+        "numerator": 151087418326784837,
+        "denominator": 147848870388303383872
+      },
+      {
+        "start": 15487,
+        "end": 23231,
+        "block": "A",
+        "numerator": 25629648997886729,
+        "denominator": 36962217597075845968
+      },
+      {
+        "start": 15551,
+        "end": 23327,
+        "block": "A",
+        "numerator": 75879576292462711,
+        "denominator": 73924435194151691936
+      },
+      {
+        "start": 15719,
+        "end": 23579,
+        "block": "A",
+        "numerator": 180776216966389953,
+        "denominator": 147848870388303383872
+      },
+      {
+        "start": 15963,
+        "end": 23945,
+        "block": "A",
+        "numerator": 18596928325222223,
+        "denominator": 36962217597075845968
+      },
+      {
+        "start": 16111,
+        "end": 24167,
+        "block": "A",
+        "numerator": 823490089499881547,
+        "denominator": 147848870388303383872
+      },
+      {
+        "start": 16155,
+        "end": 24233,
+        "block": "A",
+        "numerator": 48970747717481799,
+        "denominator": 9240554399268961492
+      },
+      {
+        "start": 16231,
+        "end": 24347,
+        "block": "A",
+        "numerator": 414815246119248053,
+        "denominator": 147848870388303383872
+      },
+      {
+        "start": 16255,
+        "end": 24383,
+        "block": "A",
+        "numerator": 209726742691516157,
+        "denominator": 147848870388303383872
+      },
+      {
+        "start": 137,
+        "end": 233,
+        "block": "B",
+        "numerator": 452957758744939561,
+        "denominator": 147848870388303383872
+      },
+      {
+        "start": 1001,
+        "end": 1691,
+        "block": "B",
+        "numerator": 1898406839032731771,
+        "denominator": 73924435194151691936
+      },
+      {
+        "start": 1161,
+        "end": 1961,
+        "block": "B",
+        "numerator": 975393023167867733,
+        "denominator": 147848870388303383872
+      },
+      {
+        "start": 1577,
+        "end": 2663,
+        "block": "B",
+        "numerator": 77097850109386371,
+        "denominator": 9240554399268961492
+      },
+      {
+        "start": 1961,
+        "end": 3311,
+        "block": "B",
+        "numerator": 1824270212187106525,
+        "denominator": 147848870388303383872
+      },
+      {
+        "start": 3049,
+        "end": 5147,
+        "block": "B",
+        "numerator": 435234701780473943,
+        "denominator": 147848870388303383872
+      },
+      {
+        "start": 3721,
+        "end": 6281,
+        "block": "B",
+        "numerator": 146903227770389337,
+        "denominator": 73924435194151691936
+      },
+      {
+        "start": 4233,
+        "end": 7145,
+        "block": "B",
+        "numerator": 575692727694273287,
+        "denominator": 36962217597075845968
+      },
+      {
+        "start": 4265,
+        "end": 7199,
+        "block": "B",
+        "numerator": 456209403282278269,
+        "denominator": 147848870388303383872
+      },
+      {
+        "start": 4777,
+        "end": 8063,
+        "block": "B",
+        "numerator": 760501357365252253,
+        "denominator": 147848870388303383872
+      },
+      {
+        "start": 5257,
+        "end": 8873,
+        "block": "B",
+        "numerator": 1430707014755908209,
+        "denominator": 147848870388303383872
+      },
+      {
+        "start": 5673,
+        "end": 9575,
+        "block": "B",
+        "numerator": 785324130977187645,
+        "denominator": 36962217597075845968
+      },
+      {
+        "start": 6057,
+        "end": 10223,
+        "block": "B",
+        "numerator": 1352012893393599091,
+        "denominator": 147848870388303383872
+      },
+      {
+        "start": 6121,
+        "end": 10331,
+        "block": "B",
+        "numerator": 169627561612606803,
+        "denominator": 36962217597075845968
+      },
+      {
+        "start": 6825,
+        "end": 11519,
+        "block": "B",
+        "numerator": 2769250652650557215,
+        "denominator": 147848870388303383872
+      },
+      {
+        "start": 7145,
+        "end": 12059,
+        "block": "B",
+        "numerator": 2292699753058339857,
+        "denominator": 147848870388303383872
+      },
+      {
+        "start": 7849,
+        "end": 13247,
+        "block": "B",
+        "numerator": 1228073539809484019,
+        "denominator": 147848870388303383872
+      },
+      {
+        "start": 8105,
+        "end": 13679,
+        "block": "B",
+        "numerator": 9312525980394739,
+        "denominator": 3995915415900091456
+      },
+      {
+        "start": 8329,
+        "end": 14057,
+        "block": "B",
+        "numerator": 467968359495015871,
+        "denominator": 73924435194151691936
+      },
+      {
+        "start": 8361,
+        "end": 14111,
+        "block": "B",
+        "numerator": 77954321948641335,
+        "denominator": 36962217597075845968
+      },
+      {
+        "start": 9193,
+        "end": 15515,
+        "block": "B",
+        "numerator": 156699505078318409,
+        "denominator": 147848870388303383872
+      },
+      {
+        "start": 9769,
+        "end": 16487,
+        "block": "B",
+        "numerator": 782105281912130819,
+        "denominator": 73924435194151691936
+      },
+      {
+        "start": 9897,
+        "end": 16703,
+        "block": "B",
+        "numerator": 1125288772862305767,
+        "denominator": 73924435194151691936
+      },
+      {
+        "start": 10153,
+        "end": 17135,
+        "block": "B",
+        "numerator": 289218137631087635,
+        "denominator": 18481108798537922984
+      },
+      {
+        "start": 10921,
+        "end": 18431,
+        "block": "B",
+        "numerator": 413229775721840175,
+        "denominator": 147848870388303383872
+      },
+      {
+        "start": 11241,
+        "end": 18971,
+        "block": "B",
+        "numerator": 1545343940419979599,
+        "denominator": 147848870388303383872
+      },
+      {
+        "start": 11401,
+        "end": 19241,
+        "block": "B",
+        "numerator": 80994767109032847,
+        "denominator": 73924435194151691936
+      },
+      {
+        "start": 11817,
+        "end": 19943,
+        "block": "B",
+        "numerator": 192062219456935003,
+        "denominator": 147848870388303383872
+      },
+      {
+        "start": 11913,
+        "end": 20105,
+        "block": "B",
+        "numerator": 2694645422129688629,
+        "denominator": 147848870388303383872
+      },
+      {
+        "start": 12457,
+        "end": 21023,
+        "block": "B",
+        "numerator": 1051852886418012043,
+        "denominator": 147848870388303383872
+      },
+      {
+        "start": 12969,
+        "end": 21887,
+        "block": "B",
+        "numerator": 12530520256243247,
+        "denominator": 3995915415900091456
+      },
+      {
+        "start": 13449,
+        "end": 22697,
+        "block": "B",
+        "numerator": 1179311001177829889,
+        "denominator": 147848870388303383872
+      },
+      {
+        "start": 14249,
+        "end": 24047,
+        "block": "B",
+        "numerator": 2097631548836224843,
+        "denominator": 147848870388303383872
+      },
+      {
+        "start": 14505,
+        "end": 24479,
+        "block": "B",
+        "numerator": 97436977680282553,
+        "denominator": 73924435194151691936
+      },
+      {
+        "start": 15337,
+        "end": 25883,
+        "block": "B",
+        "numerator": 1504683050905746827,
+        "denominator": 147848870388303383872
+      },
+      {
+        "start": 15497,
+        "end": 26153,
+        "block": "B",
+        "numerator": 264964023952203319,
+        "denominator": 147848870388303383872
+      }
+    ],
+    "certificate_support": 167,
+    "exact_certificate_verified": true
+  }
+]

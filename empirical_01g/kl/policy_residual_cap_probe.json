@@ -1,0 +1,46 @@
+{
+  "results": [
+    {
+      "k": 7,
+      "mode": "combined",
+      "cap": 100.0,
+      "spectral_upper": 0.9351346823279642,
+      "rho_estimate": 0.9351346822279354,
+      "endpoint_only": false,
+      "variables": 24,
+      "epsilon": 0.2073531816790728,
+      "epsilon_lp": 0.20735317276829715,
+      "max_h_over_mu": 100.0,
+      "baseline": 0.6231702614671203,
+      "spectral_gap_estimate": 0.06486531777206461
+    },
+    {
+      "k": 7,
+      "mode": "ladder_combined",
+      "cap": 100.0,
+      "spectral_upper": 0.9351346823279642,
+      "rho_estimate": 0.9351346822279354,
+      "endpoint_only": false,
+      "variables": 28,
+      "epsilon": 0.14534134897837955,
+      "epsilon_lp": 0.14534134780745217,
+      "max_h_over_mu": 17.37966995856487,
+      "baseline": 0.6231702614671203,
+      "spectral_gap_estimate": 0.06486531777206461
+    },
+    {
+      "k": 7,
+      "mode": "full",
+      "cap": 100.0,
+      "spectral_upper": 0.9351346823279642,
+      "rho_estimate": 0.9351346822279354,
+      "endpoint_only": false,
+      "variables": 1458,
+      "epsilon": 0.06569717629601253,
+      "epsilon_lp": 0.06569717628773827,
+      "max_h_over_mu": 100.0,
+      "baseline": 0.6231702614671203,
+      "spectral_gap_estimate": 0.06486531777206461
+    }
+  ]
+}

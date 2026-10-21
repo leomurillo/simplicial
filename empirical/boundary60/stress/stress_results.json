@@ -1,0 +1,312 @@
+{
+  "status": "prospective, no measured hardware calibration",
+  "checks": [
+    {
+      "name": "thermal augmented FDT residual",
+      "passed": true,
+      "detail": 5.10702591327572e-15
+    },
+    {
+      "name": "dense covariance versus adjoint",
+      "passed": true,
+      "detail": 6.767452666164898e-16
+    },
+    {
+      "name": "hidden noise adds PSD record covariance",
+      "passed": true,
+      "detail": 0.0
+    },
+    {
+      "name": "exact scalar budget minimality",
+      "passed": true,
+      "detail": {
+        "ratio": 1.640533121385417,
+        "N": 71,
+        "power": 0.902495325880343,
+        "previous_power": 0.8991039854616827
+      }
+    },
+    {
+      "name": "tight variance envelope covers stress points",
+      "passed": true,
+      "detail": 0.1
+    },
+    {
+      "name": "loose variance envelope covers stress points",
+      "passed": true,
+      "detail": 0.37
+    },
+    {
+      "name": "full-state exact-transition Monte Carlo",
+      "passed": true,
+      "detail": {
+        "trials": 12000,
+        "expected": [
+          0.9999999999999997,
+          1.547954411944483
+        ],
+        "observed": [
+          1.0101039399172174,
+          1.5456921545084275
+        ],
+        "standard_errors": [
+          0.7826152096040295,
+          0.11319868633394228
+        ]
+      }
+    }
+  ],
+  "record": {
+    "loops": 13,
+    "dt_s": 0.0005,
+    "duration_s": 0.2,
+    "filter_reset": true
+  },
+  "hypotheses": "H0 hidden bath noise absent after record start; H1 full thermal baths; common initial thermal state",
+  "nominal": {
+    "ratio": 1.640533121385417,
+    "N": 71,
+    "size": 0.05,
+    "power": 0.902495325880343,
+    "whole_record_KL_thermal_vs_omitted": 0.3020403880847739,
+    "covariance_eigenvalue_range": [
+      1.0000000000000002,
+      1.640533121385417
+    ]
+  },
+  "bandwidth": [
+    {
+      "fc_Hz": 1.0,
+      "variance_ratio": 1.6382375327085907,
+      "N": 71,
+      "Dprep_thermal_d2": 0.005974442354792919,
+      "Dprep_omitted_d2": 0.007368288961841478
+    },
+    {
+      "fc_Hz": 3.0,
+      "variance_ratio": 1.6395882767914647,
+      "N": 71,
+      "Dprep_thermal_d2": 0.006589185812946248,
+      "Dprep_omitted_d2": 0.008134957099389483
+    },
+    {
+      "fc_Hz": 10.0,
+      "variance_ratio": 1.640173075218608,
+      "N": 71,
+      "Dprep_thermal_d2": 0.006849937714219645,
+      "Dprep_omitted_d2": 0.00844734322299515
+    },
+    {
+      "fc_Hz": 30.0,
+      "variance_ratio": 1.6404235620008634,
+      "N": 71,
+      "Dprep_thermal_d2": 0.006905960593165486,
+      "Dprep_omitted_d2": 0.008513677834516491
+    },
+    {
+      "fc_Hz": 100.0,
+      "variance_ratio": 1.6405331213854168,
+      "N": 71,
+      "Dprep_thermal_d2": 0.006917848980229146,
+      "Dprep_omitted_d2": 0.008527930209462515
+    },
+    {
+      "fc_Hz": 300.0,
+      "variance_ratio": 1.6404756320954177,
+      "N": 71,
+      "Dprep_thermal_d2": 0.006915613283209215,
+      "Dprep_omitted_d2": 0.008524857666666122
+    }
+  ],
+  "detector_noise": [
+    {
+      "detector_sd_multiplier": 1.0,
+      "variance_ratio": 1.6405331213854168,
+      "N": 71
+    },
+    {
+      "detector_sd_multiplier": 3.0,
+      "variance_ratio": 1.6292847401547044,
+      "N": 73
+    },
+    {
+      "detector_sd_multiplier": 10.0,
+      "variance_ratio": 1.5261024869867137,
+      "N": 96
+    },
+    {
+      "detector_sd_multiplier": 30.0,
+      "variance_ratio": 1.216471635537853,
+      "N": 445
+    }
+  ],
+  "variance_envelopes": [
+    {
+      "relative_variance_bound": 0.0,
+      "least_favorable_ratio": 1.640533121385417,
+      "N": 71
+    },
+    {
+      "relative_variance_bound": 0.02,
+      "least_favorable_ratio": 1.576198489174224,
+      "N": 83
+    },
+    {
+      "relative_variance_bound": 0.05,
+      "least_favorable_ratio": 1.484291871729663,
+      "N": 110
+    },
+    {
+      "relative_variance_bound": 0.1,
+      "least_favorable_ratio": 1.3422543720426139,
+      "N": 198
+    },
+    {
+      "relative_variance_bound": 0.15,
+      "least_favorable_ratio": 1.2125679592848737,
+      "N": 460
+    },
+    {
+      "relative_variance_bound": 0.2,
+      "least_favorable_ratio": 1.0936887475902781,
+      "N": 2130
+    },
+    {
+      "relative_variance_bound": 0.25,
+      "least_favorable_ratio": 0.9843198728312503,
+      "N": null
+    }
+  ],
+  "raw_mismatch": {
+    "draws": 64,
+    "component_tolerance": 0.05,
+    "v0_range": [
+      0.8686628587830718,
+      1.1453207687954252
+    ],
+    "v1_range": [
+      1.4399795612836346,
+      1.8471221597525547
+    ],
+    "actual_size_range": [
+      0.0049960884830482916,
+      0.21489516769821032
+    ],
+    "power_range": [
+      0.7148152562702774,
+      0.9733549815338076
+    ]
+  },
+  "calibration": [
+    {
+      "label": "tight",
+      "component_uncertainty": 0.01,
+      "fc_uncertainty": 0.02,
+      "gain_uncertainty": 0.01,
+      "temperature_uncertainty": 0.005,
+      "noise_uncertainty": 0.1,
+      "parameterization": "symmetric log box +/- log(1+u)",
+      "samples": 69,
+      "v0max": 1.0717209609137044,
+      "v1min": 1.5299343255858011,
+      "first_order_log_variance_box": [
+        0.06930945265976525,
+        0.06973548651453913
+      ],
+      "rounded_variance_envelope": 0.1,
+      "conditional_robust_N": 198,
+      "direct_stress_ratio": 1.4275491302152412,
+      "direct_stress_N": 135
+    },
+    {
+      "label": "loose",
+      "component_uncertainty": 0.05,
+      "fc_uncertainty": 0.1,
+      "gain_uncertainty": 0.03,
+      "temperature_uncertainty": 0.02,
+      "noise_uncertainty": 0.2,
+      "parameterization": "symmetric log box +/- log(1+u)",
+      "samples": 69,
+      "v0max": 1.3429946880378871,
+      "v1min": 1.2154271478794578,
+      "first_order_log_variance_box": [
+        0.2960933534458984,
+        0.29843126494026834
+      ],
+      "rounded_variance_envelope": 0.37,
+      "conditional_robust_N": null,
+      "direct_stress_ratio": 0.9050126249234796,
+      "direct_stress_N": null
+    }
+  ],
+  "tight_99pct_envelope_allocation": {
+    "envelope": 0.1,
+    "conditional_alpha": 0.04,
+    "conditional_power_target": 0.9090909090909092,
+    "N": 219,
+    "unconditional_size_bound": 0.05,
+    "unconditional_power_bound": 0.9
+  },
+  "largest_log_sensitivities": [
+    {
+      "parameter": "gain",
+      "H0": 1.9997553448751795,
+      "H1": 1.9998508685231675
+    },
+    {
+      "parameter": "Cp0",
+      "H0": -1.7520645274474107,
+      "H1": -1.7519501400570237
+    },
+    {
+      "parameter": "Cc0",
+      "H0": 1.2384540855874366,
+      "H1": 1.2395036407802928
+    },
+    {
+      "parameter": "T",
+      "H0": 0.9977090815597431,
+      "H1": 0.9986035524586767
+    },
+    {
+      "parameter": "R0",
+      "H0": 0.9668305105622134,
+      "H1": 0.5788121194932883
+    },
+    {
+      "parameter": "R1",
+      "H0": -0.023100550547062906,
+      "H1": 0.20300449699917067
+    },
+    {
+      "parameter": "Cp1",
+      "H0": 0.09245512052676495,
+      "H1": 0.18882755291715903
+    },
+    {
+      "parameter": "Cc1",
+      "H0": 0.18061089517376863,
+      "H1": -0.11534327075041206
+    },
+    {
+      "parameter": "Cp2",
+      "H0": 0.034014243656896974,
+      "H1": 0.10647198388696877
+    },
+    {
+      "parameter": "Cc2",
+      "H0": 0.07225186172667071,
+      "H1": 0.027285191197268244
+    },
+    {
+      "parameter": "R2",
+      "H0": -0.01019002852079514,
+      "H1": 0.06727786825033721
+    },
+    {
+      "parameter": "Cp3",
+      "H0": 0.013026460133250733,
+      "H1": 0.05284334744309893
+    }
+  ]
+}

@@ -10,12 +10,12 @@ Three facts from 2511.22755, in the order that matters:
 
 - **[PROVEN — Thm 5.10(iii)]** For each fixed $(\lambda,N)$, the finite approximant $\widehat{\xi}^{\,\lambda,N}(z)$ is **entire with all zeros real**, coinciding with the spectrum of the self-adjoint $D_{\log}^{\lambda,N}$. The reality is proven via the **Carathéodory–Fejér** theorem (Lemmas 5.2, 5.4) and self-adjointness (Thm 5.10(i)). *So the approximants are already Hermite–Biehler / Laguerre–Pólya — the positivity of the finite objects is not in question.*
 - **[CONJECTURAL — §7]** $\widehat\xi^{\,\lambda}(z)$, suitably normalized ($\times\,e^{a+ibz}$), **converges uniformly on closed substrips of $\{\Im(z)<\tfrac12\}$ to the Riemann $\Xi$-function** as $\lambda\to\infty$. "Establishing this convergence rigorously would amount to a proof of the Riemann Hypothesis."
-- **[THE OBSTACLE — Lemma 7.2]** the eigenfunction estimate $\max_x|h_{n,\lambda}(x)-h_n(x)|\le c\,\lambda^{-2}$ ($n=0,4$) for the prolate wave operator $PW_\lambda$ (from "Satz 9 of [9]"). *"Justifying rigorously this step is the main remaining obstacle to our approach to RH."*
+- **[THE OBSTACLE — the proximity $k_\lambda\approx\xi_\lambda$; corrected 2026-10-10]** In the source (mc2arXiv.tex, the paragraph defining the educated guess $k_\lambda=\mathcal E(h_\lambda)$), the sentence *"Justifying rigorously this step is the main remaining obstacle to our approach to RH"* refers to $k_\lambda$ approximating a multiple of the ground state $\xi_\lambda$, the second missing step of their §8. It does **not** refer to Lemma 7.2 (`meixnerlem`), the eigenfunction estimate $\max_x|h_{n,\lambda}(x)-h_n(x)|\le c\,\lambda^{-2}$ ($n=0,4$). That estimate is classical (Meixner–Schäfke, Satz 9) and feeds Lemma 7.3 (`hermfact1`, $\widehat k_\lambda\to\Xi$ on closed substrips). The earlier version of this file misread the obstacle as Lemma 7.2. The sharpest current form of the step is N7, Section 5: convergence on one real interval suffices, and so does proximity at a logarithmic rate.
 
 **The cleanest equivalent form — Cor 3.8.** $\mu_\lambda$ (the smallest eigenvalue of the perturbation operator $A_\lambda$) is a **decreasing** function of $\lambda$, and
 $$\lim_{\lambda\to\infty}\mu_\lambda=0\ \Longrightarrow\ \mathrm{RH}.$$
 
-**Net.** The Hurwitz route is *fully assembled*: finite approximants have all-real zeros (proven), they converge to $\Xi$ on substrips of $\{\Im z<\tfrac12\}$, and uniform-on-compacts convergence + all-real-zeros $\Rightarrow$ (Hurwitz/Laguerre–Pólya is closed under locally uniform limits) $\Xi$ all-real-zeros $=$ RH. **The entire RH-content is concentrated in a single $O(\lambda^{-2})$ eigenfunction-approximation estimate (Lemma 7.2), equivalently in one scalar limit $\mu_\lambda\downarrow0$ (Cor 3.8).**
+**Net.** The Hurwitz route is *fully assembled*: finite approximants have all-real zeros (proven), they converge to $\Xi$ on substrips of $\{\Im z<\tfrac12\}$, and uniform-on-compacts convergence + all-real-zeros $\Rightarrow$ (Hurwitz/Laguerre–Pólya is closed under locally uniform limits) $\Xi$ all-real-zeros $=$ RH. **The RH-content is concentrated in the proximity $k_\lambda\approx\xi_\lambda$ (not in Lemma 7.2, a classical prolate estimate; corrected 2026-10-10), equivalently in one scalar limit $\mu_\lambda\downarrow0$ (Cor 3.8).**
 
 ## 2. Correction to the program record
 
@@ -35,18 +35,18 @@ Independently of CCM, this session showed **both** routes to RH terminate at exa
 - **Direction A (operator-algebra/modular, §8).** Every modular handle (Borchers/+hsm, nuclearity) reduces to $e^{-sP}$ bounded $=$ positive energy, and the **Faltings–Hriljac guillotine** (an unconditional structure cannot supply RH-content) blocks closure — leaving exactly $\mu_\lambda\downarrow0$.
 - **Direction B (Kloosterman/level, Pascadi+MR).** The primorial-BV tail needs the bilinear saving $\eta(n)\to\tfrac12$ *growing with $n$*; savings don't compound; unconditional tools cap at bounded $n$ — same guillotine, same residual.
 
-So the localization is no longer "we tried and failed" but "**no unconditional lever from either direction can close it, and both walls are the single object $\mu_\lambda\downarrow0$ / Lemma 7.2.**"
+So the localization is no longer "we tried and failed" but "**no unconditional lever from either direction can close it, and both routes end at the single object $\mu_\lambda\downarrow0$ / the proximity $k_\lambda\approx\xi_\lambda$.**"
 
 ## 5. Honest verdict
 
-This session **does not crack Lemma 7.2.** That estimate is a prolate-spheroidal eigenfunction asymptotic — the "prolate-perturbation" angle the 2026 convergence-assault already ruled out as a route. The contribution here is:
+This session **does not crack the proximity step.** (It was misattributed here to Lemma 7.2, which is a classical prolate eigenfunction asymptotic. The 2026 convergence assault ruled out the operator-norm prolate perturbation; the trial-vector form is live and needs only a logarithmic margin: N7, Corollary 5.5. Corrected 2026-10-10.) The contribution here is:
 - the **correction** (convergence conjectural; approximant-positivity proven; gap is the mode);
 - the **sharpest form** (RH $\iff\mu_\lambda\downarrow0$, one decreasing scalar $\iff$ one $O(\lambda^{-2})$ estimate);
 - the **CF$=$Pick unification** (CCM ↔ Pinf-A, Kreĭn–Langer index in the limit);
 - the **monotone reframe** (CCM's $\mu_\lambda$ is the de Bruijn–Newman-type monotone, limit-value open);
 - the **two-directional structural confirmation**.
 
-**The RH-content is now pinned to a single inequality: $\mu_\lambda=O(\lambda^{-2})$ (Lemma 7.2).** Everything else (positivity of approximants, Hurwitz transfer, the equivalence to arch-domination / positive-energy / level-tail) is settled or structural. That is the cleanest the open step has been stated — and the honest place to stop, absent a genuinely new analytic idea for the prolate eigenfunction rate.
+**The RH-content is pinned to the proximity step $k_\lambda\approx\xi_\lambda$ (with simple-even ground states), not to Lemma 7.2, which is a classical prolate input; its sharpest form is N7, Section 5 (corrected 2026-10-10).** Everything else (positivity of approximants, Hurwitz transfer, the equivalence to arch-domination / positive-energy / level-tail) is settled or structural. That is the cleanest the open step has been stated — and the honest place to stop, absent a genuinely new analytic idea for the prolate eigenfunction rate.
 
 ---
 

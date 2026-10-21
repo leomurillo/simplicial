@@ -1,0 +1,173 @@
+{
+  "status": "Finite identity checks; asymptotic assertions require the written proofs",
+  "exact_decomposition_and_parity_checks": 1200,
+  "records": [
+    {
+      "X": 1000,
+      "loglogX": 1.9326447339160655,
+      "stretch_fraction": 0.17,
+      "mean_turn_degrees": 131.0437794690606,
+      "windows": [
+        {
+          "m": 2,
+          "mean_centered_operator_error": 1.6933675337721061,
+          "mean_parity_rayleigh": 2.6933675337721064
+        },
+        {
+          "m": 4,
+          "mean_centered_operator_error": 4.168281813918317,
+          "mean_parity_rayleigh": 3.4900361569985963
+        },
+        {
+          "m": 8,
+          "mean_centered_operator_error": 8.766005294908707,
+          "mean_parity_rayleigh": 5.427384974160935
+        },
+        {
+          "m": 16,
+          "mean_centered_operator_error": 15.379762964979951,
+          "mean_parity_rayleigh": 8.98105614322848
+        },
+        {
+          "m": 32,
+          "mean_centered_operator_error": 31.30316077419597,
+          "mean_parity_rayleigh": 16.9999543812975
+        }
+      ]
+    },
+    {
+      "X": 10000,
+      "loglogX": 2.2203268063678463,
+      "stretch_fraction": 0.193,
+      "mean_turn_degrees": 130.37276807436703,
+      "windows": [
+        {
+          "m": 2,
+          "mean_centered_operator_error": 1.6399018500881677,
+          "mean_parity_rayleigh": 2.6125689655526902
+        },
+        {
+          "m": 4,
+          "mean_centered_operator_error": 3.31010278464395,
+          "mean_parity_rayleigh": 2.971090701207984
+        },
+        {
+          "m": 8,
+          "mean_centered_operator_error": 6.915364774562137,
+          "mean_parity_rayleigh": 4.60666812026362
+        },
+        {
+          "m": 16,
+          "mean_centered_operator_error": 15.52549753233264,
+          "mean_parity_rayleigh": 8.280631806777565
+        },
+        {
+          "m": 32,
+          "mean_centered_operator_error": 29.091341005954458,
+          "mean_parity_rayleigh": 15.183941978053301
+        }
+      ]
+    },
+    {
+      "X": 100000,
+      "loglogX": 2.443470357682056,
+      "stretch_fraction": 0.20467,
+      "mean_turn_degrees": 129.88945098054603,
+      "windows": [
+        {
+          "m": 2,
+          "mean_centered_operator_error": 1.649498486785591,
+          "mean_parity_rayleigh": 2.612431192587594
+        },
+        {
+          "m": 4,
+          "mean_centered_operator_error": 4.017059698567817,
+          "mean_parity_rayleigh": 3.25018912254375
+        },
+        {
+          "m": 8,
+          "mean_centered_operator_error": 7.402443204135874,
+          "mean_parity_rayleigh": 4.5487825783783356
+        },
+        {
+          "m": 16,
+          "mean_centered_operator_error": 12.632147276033464,
+          "mean_parity_rayleigh": 7.269870633053651
+        },
+        {
+          "m": 32,
+          "mean_centered_operator_error": 24.796164490818978,
+          "mean_parity_rayleigh": 13.626343721679783
+        }
+      ]
+    },
+    {
+      "X": 1000000,
+      "loglogX": 2.625791914476011,
+      "stretch_fraction": 0.213885,
+      "mean_turn_degrees": 129.52023348535715,
+      "windows": [
+        {
+          "m": 2,
+          "mean_centered_operator_error": 1.3406597535494233,
+          "mean_parity_rayleigh": 2.3199407494703204
+        },
+        {
+          "m": 4,
+          "mean_centered_operator_error": 3.255885289464781,
+          "mean_parity_rayleigh": 2.8689763489943654
+        },
+        {
+          "m": 8,
+          "mean_centered_operator_error": 6.59472206835235,
+          "mean_parity_rayleigh": 4.246343140581571
+        },
+        {
+          "m": 16,
+          "mean_centered_operator_error": 11.463886906852313,
+          "mean_parity_rayleigh": 6.7697903008510645
+        },
+        {
+          "m": 32,
+          "mean_centered_operator_error": 24.597635970621372,
+          "mean_parity_rayleigh": 12.980220614340466
+        }
+      ]
+    }
+  ],
+  "fixed_prime_covariance_check": {
+    "window_start": 1000000,
+    "window_length": 65536,
+    "primes": [
+      2,
+      3,
+      5,
+      7,
+      11,
+      13,
+      17,
+      19
+    ],
+    "variances": [
+      2.0015716531779617,
+      0.7507629392202944,
+      0.31270599155686796,
+      0.19445461686700583,
+      0.10987792909145355,
+      0.09012264548800886,
+      0.06636238074861467,
+      0.058696228777989745
+    ],
+    "target_variances": [
+      2.0,
+      0.75,
+      0.3125,
+      0.19444444444444445,
+      0.11,
+      0.09027777777777778,
+      0.06640625,
+      0.05864197530864197
+    ],
+    "maximum_entry_error": 0.0015716531779617071
+  }
+}

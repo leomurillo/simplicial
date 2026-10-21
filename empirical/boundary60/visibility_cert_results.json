@@ -1,0 +1,108 @@
+{
+  "date": "2026-10-09",
+  "status": "author verification, not independent review",
+  "python": "3.12.13",
+  "numpy": "2.4.4",
+  "scipy": "1.17.1",
+  "sympy": "1.14.0",
+  "passed": 11,
+  "total": 11,
+  "elapsed_seconds": 0.9486088000121526,
+  "checks": [
+    {
+      "name": "E1 scalar exact",
+      "pass": true,
+      "detail": "finite visibility 4/21; infinite visibility 1/4"
+    },
+    {
+      "name": "E2 exact dark preparation",
+      "pass": true,
+      "detail": "J=(1-log(3/4))/2 > 0; path KL exactly zero"
+    },
+    {
+      "name": "N1 independent path-information calculations",
+      "pass": true,
+      "detail": "max error=5.56e-14; commutator norm=2.82843"
+    },
+    {
+      "name": "N2 infinite horizon",
+      "pass": true,
+      "detail": "ARE residual=7.11e-15; long-time error=2.72e-14"
+    },
+    {
+      "name": "N3 full-network sampled paths",
+      "pass": true,
+      "detail": "max dense-grid error=4.61e-07; A and 2A have same continuous limit"
+    },
+    {
+      "name": "N4 direct multitime KL",
+      "pass": true,
+      "detail": "direct=0.0106776946175; sufficient statistic=0.0106776946176"
+    },
+    {
+      "name": "N5 exact posterior slack",
+      "pass": true,
+      "detail": "J=1.45861228867; visible=0.0119519830612; posterior=1.44666030561"
+    },
+    {
+      "name": "N6 sharp visibility coefficient",
+      "pass": true,
+      "detail": "lambda_max=0.0689144415; mean ratio=0.0689144415; covariance expansion error=9.98e-06"
+    },
+    {
+      "name": "N7 observability versus visibility",
+      "pass": true,
+      "detail": "observable min eig=0.000726334; dark J=0.643841036, KL=0"
+    },
+    {
+      "name": "N8 original witness upgraded",
+      "pass": true,
+      "detail": "two-time=0.00268453396965; full[0,.8]=0.0119519830612; full[0,infinity)=0.011954085736; J=1.45861228867"
+    },
+    {
+      "name": "N9 affine conditional formula",
+      "pass": true,
+      "detail": "formula=0.0138459403203; joint Gaussian=0.0138459403203; J=1.31750117756"
+    }
+  ],
+  "details": {
+    "sample_information_errors": {
+      "8": 0.011428531866972985,
+      "32": 0.0007587175846739125,
+      "128": 4.7604031691100834e-05,
+      "512": 2.9759741399792983e-06,
+      "2048": 1.8600115855860189e-07
+    },
+    "original_witness": {
+      "two_time_kl": 0.0026845339696452974,
+      "path_to_0_8_kl": 0.011951983061193973,
+      "infinite_path_kl": 0.011954085735963292,
+      "preparation_kl": 1.4586122886681094,
+      "infinite_visible_fraction": 0.008195519692816264,
+      "infinite_visibility_eigenvalues": [
+        0.005444239033876258,
+        0.06895730927034005
+      ],
+      "finite_visibility_matrix": [
+        [
+          0.028315915342170594,
+          0.030473071198295856
+        ],
+        [
+          0.030473071198295856,
+          0.0460414911982846
+        ]
+      ],
+      "infinite_visibility_matrix": [
+        [
+          0.02833825879075147,
+          0.030494808479234827
+        ],
+        [
+          0.030494808479234827,
+          0.04606328951346483
+        ]
+      ]
+    }
+  }
+}

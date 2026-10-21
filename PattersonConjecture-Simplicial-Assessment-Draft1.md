@@ -10,6 +10,11 @@
 
 ---
 
+> **Update and corrections (2026-10-07).**
+> 1. **The target is now proved externally, tier [A].**  OpenAI, *An unconditional first moment for cubic Gauss sums* (25 Sep 2026, `github.com/openai/math`, family 023; model-generated; OpenAI reports a Lean formalization).  It proves the all-primary-prime first moment unconditionally, with sharp-cutoff main term $(6/5)\,c_*\,X^{5/6}/\log X$, where $c_*=(2\pi)^{2/3}/(3\Gamma(2/3))$.  It also gives cancellation in every fixed nonzero angular Fourier mode of the prime argument.  Dunn–Radziwiłł's 2021 asymptotic needed GRH; this one does not.  The method shares the Kubota–Patterson cubic-theta machinery of the same group's quasi-GRH paper (family 003).  The recommendation in (f) ("defer") is therefore moot: the problem is closed outside the program.
+> 2. **Normalization slip in (a).**  Over *primes*, the first moment carries $1/\log X$: $P(X)\sim c\,X^{5/6}/\log X$.  The bare $X^{5/6}$ belongs to the sum over all squarefree moduli.  The constant written in (a) is not in 023's normalization.
+> 3. **The numerical probe in (c.4) is invalid; its reading is withdrawn.**  For every prime $\pi$ and the nontrivial cubic character, $|g(\pi)|=\sqrt{N(\pi)}$ *exactly*, so $\sum_{\pi:\,N(\pi)=p}|g(\pi)|^2=2p$ for split $p$ (not $\le 3p$, and not $2.86$ at $p=7$).  The table's values contradict this classical identity.  The probe's additive character $e(\mathrm{Tr}(a)/q)$ is not a character of $\mathbb Z[\zeta_3]/\pi$, so the sums computed are not Gauss sums, and the partial-sum table inherits the error.  Patterson's phenomenon is a bias in the *arguments* of $g(\pi)/\sqrt{N(\pi)}$, not a deficit in their moduli.  The sentence "cubic Gauss sums on primary primes are systematically smaller than their Weil bound predicts" is false.
+
 ## (a) Problem statement
 
 Let $\mathbb{Z}[\zeta_3]$ be the Eisenstein integers, $\zeta_3 = e^{2\pi i / 3}$. For $\pi \in \mathbb{Z}[\zeta_3]$ a **primary prime** (i.e., $\pi \equiv -1 \pmod{3}$ in $\mathbb{Z}[\zeta_3]$; this fixes a unique associate in each class of primes not dividing $3$), with norm $N(\pi) = q$, the **cubic residue symbol** $(\cdot/\pi)_3 : (\mathbb{Z}[\zeta_3]/\pi)^\times \to \{1, \zeta_3, \zeta_3^2\}$ is defined by

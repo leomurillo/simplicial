@@ -1,0 +1,330 @@
+{
+  "rows": [
+    {
+      "name": "S1 probability vectors; c_5",
+      "pass": true,
+      "detail": "c_5 = 4.445840e-04"
+    },
+    {
+      "name": "S2 largest atom at -1, growing like 3/2",
+      "pass": true,
+      "detail": "ratios [np.float64(1.5055), np.float64(1.5035), np.float64(1.5025), np.float64(1.502), np.float64(1.5011), np.float64(1.5009), np.float64(1.5007), np.float64(1.5004)]"
+    },
+    {
+      "name": "S3 collision grows linearly",
+      "pass": true,
+      "detail": "increments [np.float64(0.3108), np.float64(0.3103), np.float64(0.3106), np.float64(0.3111), np.float64(0.3116), np.float64(0.3121), np.float64(0.3126), np.float64(0.3131)]"
+    },
+    {
+      "name": "S4 full Shannon dimension",
+      "pass": true,
+      "detail": "H-n = -1.0020, -1.0166"
+    },
+    {
+      "name": "S5 smallest atom",
+      "pass": true,
+      "detail": "[np.float64(0.05), np.float64(0.0444), np.float64(0.0406), np.float64(0.0363), np.float64(0.0353), np.float64(0.0334)]"
+    },
+    {
+      "name": "S6 Proposition 12.25 (averaged Perron vector)",
+      "pass": true,
+      "detail": "max errors ['0.0e+00', '2.2e-16', '2.2e-16', '2.2e-16', '3.3e-16', '3.3e-16', '4.4e-16', '4.4e-16', '4.4e-16', '4.4e-16']"
+    },
+    {
+      "name": "S7 Syracuse lift loss ~ 1/n",
+      "pass": true,
+      "detail": "n*l = [2.035, 2.08, 2.114, 2.137, 2.152, 2.157]; n*TV_top = [0.891, 0.902, 0.908, 0.909]"
+    },
+    {
+      "name": "S8 entropy deficit increments",
+      "pass": true,
+      "detail": "n^1.6 d_n = [np.float64(0.869), np.float64(0.882), np.float64(0.888), np.float64(0.889), np.float64(0.884)]"
+    },
+    {
+      "name": "S9 smallest atom near -2",
+      "pass": true,
+      "detail": "argmin mod 81 = [79, 79, 79, 79, 79, 79, 79, 79, 79]"
+    },
+    {
+      "name": "S10 Proposition 12.28 (twisted top-digit recursion)",
+      "pass": true,
+      "detail": "max relative error 1.0e-15"
+    },
+    {
+      "name": "S11 alignment defect",
+      "pass": true,
+      "detail": "n*kappa_n = [0.457, 0.604, 0.679, 0.688, 0.744, 0.758, 0.792, 0.834, 0.886, 0.934, 0.987]"
+    },
+    {
+      "name": "S12 Proposition 12.30 (cap 1/sqrt7)",
+      "pass": true,
+      "detail": "max|z_n| = [0.377964, 0.347593, 0.339849, 0.335491, 0.332856, 0.331251, 0.33046, 0.329973, 0.329362, 0.329163, 0.32903, 0.328905]"
+    },
+    {
+      "name": "S13 Proposition 12.31 (chi-square energy identity)",
+      "pass": true,
+      "detail": "n*r_n = [0.827, 0.989, 1.115, 1.159, 1.237, 1.28, 1.349, 1.404, 1.481, 1.551, 1.626]"
+    },
+    {
+      "name": "S14 Theorem 12.32 (sibling identity, float64)",
+      "pass": true,
+      "detail": "max relative error 8.7e-16; 2F_13 = 0.3131"
+    },
+    {
+      "name": "S15 Theorem 12.32 and Proposition 12.30, exact rationals (metric trick)",
+      "pass": true,
+      "detail": "n <= 7; f_1 = 10/9, f_2 = 10/7; cap equality at n = 2: True"
+    },
+    {
+      "name": "S16 direct Monte Carlo of colliding pairs (twins and siblings)",
+      "pass": true,
+      "detail": "d=0: share 0.9056 (exact 0.9055), coherence +0.0520; d=1: 0 pairs; d=2: share 0.0725 (exact 0.0727), coherence +0.0011; d=3: 0 pairs; d=4: share 0.0122 (exact 0.0121), coherence +0.0003; d=5: 0 pairs; d=6: share 0.0079 (exact 0.0079), coherence -0.0015"
+    },
+    {
+      "name": "S17 sibling factors converge, c_m(1) creeps, n W_n -> 1/2 from below",
+      "pass": true,
+      "detail": "c_13(2..4) = [0.31552, 0.82469, 0.57338]; c_13(1) = 0.48461; m dc_m(1) = [0.0116, 0.0109, 0.0112, 0.011, 0.0111, 0.011]; n W_n = [0.286, 0.323, 0.356, 0.379, 0.396, 0.407, 0.417, 0.426, 0.433, 0.439, 0.444, 0.449]"
+    },
+    {
+      "name": "S18 Proposition 12.30, hexagon form (exact)",
+      "pass": true,
+      "detail": "conditional laws at n = 2: [('8/21', '11/21', '2/21'), ('8/21', '2/21', '11/21')]"
+    },
+    {
+      "name": "S19 Proposition 12.39 (biased twin/sibling identity, L2 transition)",
+      "pass": true,
+      "detail": "q=0.35: theta=1.4444, ratio_9=1.4821, err=3.3e-16; q=0.6: theta=0.7500, ratio_9=1.0092, err=3.1e-16; q=0.7: theta=0.5294, ratio_9=1.0002, err=3.6e-16"
+    },
+    {
+      "name": "S20 Theorem 12.38(d), multiplier 5 (collision growth, concentration)",
+      "pass": true,
+      "detail": "ratios [1.8889, 1.7238, 1.6962, 1.6814, 1.6758, 1.6724, 1.6702, 1.6688]; 90%-mass unit fractions [0.362, 0.258, 0.1902]"
+    },
+    {
+      "name": "S21 Proposition 12.42 and the comparison ratio",
+      "pass": true,
+      "detail": "identity error 4.1e-13; ratio at gamma=1: [0.666, 0.53, 0.474, 0.461, 0.458, 0.458, 0.437, 0.435]; at gamma=0.5: [0.502, 0.305, 0.23, 0.199, 0.173, 0.152, 0.138, 0.127]"
+    },
+    {
+      "name": "S22 lockstep of 1 - gamma_k with the Syracuse lift loss",
+      "pass": true,
+      "detail": "(1-gamma_k)/ell(mu_k) = [0.712, 0.704, 0.724, 0.748, 0.768, 0.774, 0.793]"
+    },
+    {
+      "name": "S23 Proposition 12.46 (level recursion at fixed gamma)",
+      "pass": true,
+      "detail": "nu_k for gamma=0.8 then 1, k=3..7: [np.float64(0.315), np.float64(0.231), np.float64(0.166), np.float64(0.149), np.float64(0.158), np.float64(0.276), np.float64(0.19), np.float64(0.136), np.float64(0.114), np.float64(0.143)]"
+    },
+    {
+      "name": "S24 Proposition 12.48 (minimality alone is not enough: 2x2 counterexample)",
+      "pass": true,
+      "detail": "min rho = 1.000000000000, tangent = 1.353553390593"
+    },
+    {
+      "name": "S25 per-level decay of the KL lift loss vs the Syracuse law",
+      "pass": true,
+      "detail": "gamma=0.5: v ratios [0.464, 0.611, 0.72, 0.756, 0.78, 0.814, 0.835]; gamma=0.8: v ratios [0.554, 0.685, 0.769, 0.834, 0.851, 0.842, 0.885]; gamma=0.9: v ratios [0.581, 0.705, 0.79, 0.851, 0.87, 0.849, 0.896]"
+    },
+    {
+      "name": "S26 Proposition 12.50 (misalignment bound and alignment persistence)",
+      "pass": true,
+      "detail": "g=0.9,k=5: B2/G=0.109, aligned W=2,3,4,6: 0.802,0.358,0.185,0.025; g=0.9,k=6: B2/G=0.145, aligned W=2,3,4,6: 0.757,0.284,0.144,0.012; g=0.9,k=7: B2/G=0.144, aligned W=2,3,4,6: 0.783,0.342,0.184,0.034; g=1.0,k=5: B2/G=0.104, aligned W=2,3,4,6: 0.815,0.370,0.160,0.000; g=1.0,k=6: B2/G=0.141, aligned W=2,3,4,6: 0.757,0.284,0.144,0.012; g=1.0,k=7: B2/G=0.142, aligned W=2,3,4,6: 0.783,0.343,0.185,0.034"
+    },
+    {
+      "name": "S27 Proposition 12.52 (adversary-free marginal hierarchy)",
+      "pass": true,
+      "detail": "max relative error 1.4e-13 over 3 policies x 2 exponents x 5 levels"
+    },
+    {
+      "name": "S28 Proposition 12.54 (dead targets; live rows carry all W=2 misalignment)",
+      "pass": true,
+      "detail": "g=0.9,k=5: p=0.407, W=3 on x0=8: 0.259; g=0.9,k=6: p=0.272, W=3 on x0=8: 0.309; g=0.9,k=7: p=0.350, W=3 on x0=8: 0.325; g=1.0,k=5: p=0.444, W=3 on x0=8: 0.222; g=1.0,k=6: p=0.272, W=3 on x0=8: 0.309; g=1.0,k=7: p=0.350, W=3 on x0=8: 0.329"
+    },
+    {
+      "name": "S29 Proposition 12.55 (doubling lock and opposite orientations on live rows)",
+      "pass": true,
+      "detail": "identities hold on k=5,6,7, gamma in {0.9,1}"
+    },
+    {
+      "name": "S30 Proposition 12.56 (the gain is a pairing with the coarse occupation)",
+      "pass": true,
+      "detail": "g=0.9,k=5: h<0 on 0.105, neg/pos 0.127, U on h<0 0.080; g=0.9,k=6: h<0 on 0.086, neg/pos 0.090, U on h<0 0.122; g=0.9,k=7: h<0 on 0.093, neg/pos 0.070, U on h<0 0.123; g=1.0,k=5: h<0 on 0.099, neg/pos 0.114, U on h<0 0.068; g=1.0,k=6: h<0 on 0.086, neg/pos 0.081, U on h<0 0.120; g=1.0,k=7: h<0 on 0.093, neg/pos 0.062, U on h<0 0.121"
+    },
+    {
+      "name": "S31 Proposition 12.57 (low digits occupied for free; the doubling cone has zero-gain vectors)",
+      "pass": true,
+      "detail": "g=0.9,k=5: U(mod 9) in [0.114,0.190], bound 0.0251; g=0.9,k=6: U(mod 9) in [0.129,0.184], bound 0.0243; g=0.9,k=7: U(mod 9) in [0.132,0.183], bound 0.0235; g=1.0,k=5: U(mod 9) in [0.108,0.194], bound 0.0216; g=1.0,k=6: U(mod 9) in [0.124,0.189], bound 0.0208; g=1.0,k=7: U(mod 9) in [0.128,0.190], bound 0.0200"
+    }
+  ],
+  "stats": {
+    "1": {
+      "total": 1.0,
+      "argmax_is_minus1": true,
+      "max": 0.6666666666666666,
+      "min": 0.3333333333333333,
+      "coll_units": 1.1111111111111112,
+      "H_minus_n": -0.42061983571430506,
+      "min_units": 0.6666666666666666,
+      "eig_err": NaN,
+      "lift_loss": NaN,
+      "tv_top": NaN,
+      "argmin_mod81": -1
+    },
+    "2": {
+      "total": 0.9999999999999999,
+      "argmax_is_minus1": true,
+      "max": 0.3492063492063492,
+      "min": 0.031746031746031744,
+      "coll_units": 1.4285714285714284,
+      "H_minus_n": -0.5738244350263788,
+      "min_units": 0.19047619047619047,
+      "eig_err": 0.0,
+      "lift_loss": 0.7142857142857143,
+      "tv_top": 0.2380952380952381,
+      "argmin_mod81": -1
+    },
+    "3": {
+      "total": 1.0,
+      "argmax_is_minus1": true,
+      "max": 0.1776511293454336,
+      "min": 0.006095909484517992,
+      "coll_units": 1.7362878821319445,
+      "H_minus_n": -0.6757676388293596,
+      "min_units": 0.10972637072132385,
+      "eig_err": 2.220446049250313e-16,
+      "lift_loss": 0.5457822638788752,
+      "tv_top": 0.20287018917155902,
+      "argmin_mod81": -1
+    },
+    "4": {
+      "total": 0.9999999999999999,
+      "argmax_is_minus1": true,
+      "max": 0.08973504552057088,
+      "min": 0.0017890878302058155,
+      "coll_units": 2.045764154410843,
+      "H_minus_n": -0.7500163669335729,
+      "min_units": 0.09661074283111404,
+      "eig_err": 2.220446049250313e-16,
+      "lift_loss": 0.44133553299218453,
+      "tv_top": 0.17125640520367677,
+      "argmin_mod81": 34
+    },
+    "5": {
+      "total": 1.0,
+      "argmax_is_minus1": true,
+      "max": 0.0451760388200073,
+      "min": 0.00044458403334372355,
+      "coll_units": 2.3561074342451995,
+      "H_minus_n": -0.8063456311203101,
+      "min_units": 0.07202261340168321,
+      "eig_err": 2.220446049250313e-16,
+      "lift_loss": 0.36791758328601687,
+      "tv_top": 0.1486071727702883,
+      "argmin_mod81": 79
+    },
+    "6": {
+      "total": 1.0,
+      "argmax_is_minus1": true,
+      "max": 0.02267075848242943,
+      "min": 0.00012399522675566024,
+      "coll_units": 2.666886608246164,
+      "H_minus_n": -0.8511200781695116,
+      "min_units": 0.06026168020325087,
+      "eig_err": 3.3306690738754696e-16,
+      "lift_loss": 0.31989240567947846,
+      "tv_top": 0.13133891048255592,
+      "argmin_mod81": 79
+    },
+    "7": {
+      "total": 1.0,
+      "argmax_is_minus1": true,
+      "max": 0.01136195671259791,
+      "min": 3.525432571920982e-05,
+      "coll_units": 2.977214228137026,
+      "H_minus_n": -0.8876554183121259,
+      "min_units": 0.05140080689860792,
+      "eig_err": 3.3306690738754696e-16,
+      "lift_loss": 0.28302681088457216,
+      "tv_top": 0.11742593068140832,
+      "argmin_mod81": 79
+    },
+    "8": {
+      "total": 0.9999999999999999,
+      "argmax_is_minus1": true,
+      "max": 0.005690413007178583,
+      "min": 1.1441364055572724e-05,
+      "coll_units": 3.2878283083366133,
+      "H_minus_n": -0.9181646653139346,
+      "min_units": 0.0500445263790751,
+      "eig_err": 4.440892098500626e-16,
+      "lift_loss": 0.254359680291628,
+      "tv_top": 0.10636678455983979,
+      "argmin_mod81": 79
+    },
+    "9": {
+      "total": 1.0,
+      "argmax_is_minus1": true,
+      "max": 0.0028489606195737094,
+      "min": 3.3868911688511096e-06,
+      "coll_units": 3.598934405942954,
+      "H_minus_n": -0.9440076293747932,
+      "min_units": 0.04444278591766426,
+      "eig_err": 4.440892098500626e-16,
+      "lift_loss": 0.2310710606172729,
+      "tv_top": 0.09712479870915137,
+      "argmin_mod81": 79
+    },
+    "10": {
+      "total": 0.9999999999999999,
+      "argmax_is_minus1": true,
+      "max": 0.001425543824067316,
+      "min": 1.0309487348705562e-06,
+      "coll_units": 3.910526017665475,
+      "H_minus_n": -0.966174749094268,
+      "min_units": 0.04058432789691432,
+      "eig_err": 4.440892098500626e-16,
+      "lift_loss": 0.2113634674115695,
+      "tv_top": 0.08912562829996946,
+      "argmin_mod81": 79
+    },
+    "11": {
+      "total": 1.0,
+      "argmax_is_minus1": true,
+      "max": 0.0007131898842321007,
+      "min": 3.074057932534067e-07,
+      "coll_units": 4.222638440117972,
+      "H_minus_n": -0.9853351296419515,
+      "min_units": 0.03630400937164083,
+      "eig_err": 4.440892098500626e-16,
+      "lift_loss": 0.1942722490069304,
+      "tv_top": 0.08202321175853175,
+      "argmin_mod81": 79
+    },
+    "12": {
+      "total": 1.0,
+      "argmax_is_minus1": true,
+      "max": 0.0003567537466651664,
+      "min": 9.9568980767271e-08,
+      "coll_units": 4.53526602704279,
+      "H_minus_n": -1.002009966443893,
+      "min_units": 0.03527669247195951,
+      "eig_err": 5.551115123125783e-16,
+      "lift_loss": 0.1793234466062933,
+      "tv_top": 0.07567068942507349,
+      "argmin_mod81": 79
+    },
+    "13": {
+      "total": 1.0,
+      "argmax_is_minus1": true,
+      "max": 0.00017842307366793895,
+      "min": 3.14237095927604e-08,
+      "coll_units": 4.848342636365337,
+      "H_minus_n": -1.0165962046975974,
+      "min_units": 0.03339969529937236,
+      "eig_err": 6.661338147750939e-16,
+      "lift_loss": 0.16594792007228354,
+      "tv_top": 0.0699536992959125,
+      "argmin_mod81": 79
+    }
+  }
+}

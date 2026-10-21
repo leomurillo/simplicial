@@ -1,0 +1,10 @@
+{
+  "status": "passed",
+  "arithmetic": "integers and Fraction only",
+  "words": 5460,
+  "cylinder_samples": 16380,
+  "pruning_checks": 698880,
+  "positive_cycle_words": 6,
+  "expanding_family_checks": 5050,
+  "group_identities": 6
+}

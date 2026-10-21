@@ -1,0 +1,35 @@
+{
+  "rows": [
+    {
+      "name": "R1 Farey edges are +1 steps",
+      "pass": true,
+      "detail": "13565 Farey edges (b,d<=150), mismatches 0"
+    },
+    {
+      "name": "R2 continued-fraction journeys",
+      "pass": true,
+      "detail": "{\"phi\": {\"max_height\": 514229, \"primes_seen\": 44, \"no_new_prime_steps\": [4, 10]}, \"sqrt2\": {\"max_height\": 1746860020068409, \"primes_seen\": 100}, \"e\": {\"max_height\": 2111421691000680031, \"primes_seen\": 124}, \"pi\": {\"max_height\": 842468587426513207, \"primes_seen\": 165}, \"cbrt2\": {\"max_height\": 4545322591609587581, \"primes_seen\": 122}}"
+    },
+    {
+      "name": "R3 Stormer floor of +1 resolution",
+      "pass": true,
+      "detail": "[1, 8, 80, 4374, 9800, 123200, 336140]"
+    },
+    {
+      "name": "R4 Weyl law and equidistribution",
+      "pass": true,
+      "detail": "{\"2\": {\"count\": 65, \"ratio\": 1.0156, \"half\": 0.5077}, \"3\": {\"count\": 3697, \"ratio\": 0.9952, \"half\": 0.5001}, \"4\": {\"count\": 9409, \"ratio\": 1.0007, \"half\": 0.5001}}"
+    },
+    {
+      "name": "R5 commas",
+      "pass": true,
+      "detail": "N=2,R=32: 531441/524288; N=3,R=24: 32805/32768; N=4,R=12: 250047/250000; N=4,R=10: 4375/4374"
+    },
+    {
+      "name": "R6 continuum limit (tent law)",
+      "pass": true,
+      "detail": "245104 lattice points; Kolmogorov distance 0.0131"
+    }
+  ],
+  "elapsed_s": 210.44251510000322
+}

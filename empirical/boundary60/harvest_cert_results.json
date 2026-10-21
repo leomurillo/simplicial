@@ -1,0 +1,109 @@
+{
+  "rows": [
+    {
+      "name": "H1 scalar exact",
+      "pass": true,
+      "detail": "Riccati residual 0, closed loop 0, fraction-pi 0; P={p11: 2, p12: 3/2, p22: 9/8}"
+    },
+    {
+      "name": "H2 matrix identities + independent LQ",
+      "pass": true,
+      "detail": "worst over 201: Riccati 5.29e-14, closed loop 4.93e-15, P vs closed form 1.04e-13, harvest vs Pi_inf 3.17e-12; witness harvest-vs-Pi 8.15e-15"
+    },
+    {
+      "name": "H3 Sekimoto work approaches W*",
+      "pass": true,
+      "detail": "energy balance 3.2e-13; W(tau_r)=['0.351550761', '0.362667351', '0.368243306', '0.371035699', '0.372432999']; Richardson 0.373830299 vs W*=0.373831035 (closed form 0.373831035)"
+    },
+    {
+      "name": "H4 full-network Monte Carlo, nonthermal covariance",
+      "pass": true,
+      "detail": "MC 0.36299 +/- 0.00329; exact pc mean prediction 0.36230; continuous W(50) 0.36267; z-score 0.21"
+    },
+    {
+      "name": "H5 no admissible protocol exceeds W*",
+      "pass": true,
+      "detail": "best random 0.362963498 <= W* 0.373831035; optimal pc 0.362303076; f=0 gives 0.0e+00"
+    },
+    {
+      "name": "H6 equality for mean shifts, strict for covariance preparations",
+      "pass": true,
+      "detail": "mean shift W/(T D)=1.000000000000; witness: harvest 0.017108500, T*D_inf 0.017931129, T*J 2.187918433; harvest/(T D_inf)=0.954123, harvest/(T J)=0.007820"
+    },
+    {
+      "name": "H7 ignorance penalty and record information",
+      "pass": true,
+      "detail": "averaging identity 9.2e-16; W_ign Richardson 0.223684497 vs 0.223685031; penalty 0.050049 = (T/2)tr(Pi Cov a) 0.050049 > T*I(theta;record) 0.040301 (I=0.201504 nats, Gaussian bound 0.202895)"
+    },
+    {
+      "name": "C1 controls",
+      "pass": true,
+      "detail": "wrong-gain harvest 0.372503812 < W* 0.373831035; full-actuation minimal dissipation norm 0.0e+00"
+    }
+  ],
+  "details": {
+    "H2": {
+      "worst": [
+        5.285146396396138e-14,
+        4.929411779758483e-15,
+        1.0360583644154588e-13,
+        3.17095010412841e-12
+      ]
+    },
+    "strong": {
+      "E0": 3.6086363636363634,
+      "Vmin": 3.234805328752476,
+      "Wstar": 0.37383103488388736,
+      "Wpred": 0.3738310348838879,
+      "Pi_eigs": [
+        0.05378436973347772,
+        0.24263284601694668
+      ]
+    },
+    "H3": {
+      "taus": [
+        25,
+        50,
+        100,
+        200,
+        400
+      ],
+      "W": [
+        0.3515507612063028,
+        0.3626673508019548,
+        0.36824330603212185,
+        0.3710356987552925,
+        0.3724329988938956
+      ],
+      "richardson": 0.37383029903249865
+    },
+    "H4": {
+      "mc": 0.36298513176056624,
+      "se": 0.0032932663061676377,
+      "Wpc": 0.36230307602989537,
+      "N": 20000,
+      "dt": 0.01
+    },
+    "H5": {
+      "best": 0.3629634983611442,
+      "Wstar": 0.37383103488388736
+    },
+    "H6": {
+      "witness_harvest": 0.017108499909144148,
+      "witness_TD": 0.01793112860394509,
+      "witness_TJ": 2.1879184330021637
+    },
+    "H7": {
+      "penalty": 0.050048667811880804,
+      "T_I": 0.04030071688344979,
+      "I": 0.20150358441724894
+    }
+  },
+  "elapsed_s": 51.836022399991634,
+  "versions": {
+    "python": "3.12.13",
+    "numpy": "2.4.4",
+    "scipy": "1.17.1",
+    "sympy": "1.14.0"
+  }
+}

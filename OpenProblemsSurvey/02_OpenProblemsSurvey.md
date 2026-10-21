@@ -38,8 +38,23 @@ GRH-at-P_n) is assembled at [C] (GRH-Apex-Integration).
 **Our levers:** A11 (cubic teeth, χ₃ anchor), A12 (BV schedule), A13, the induction
 machinery T22.1/T22.3; height-bounded GRH at fixed primorial modulus
 (HeightBoundedGRH-PrimorialN210) is *finitely checkable* with exact certificates (E2).
-**Verdict: PARTIAL** (height-bounded, fixed-modulus statements are certifiable now;
-full GRH_N is item-1-hard).
+**Verdict: OPEN** (revised 2026-10-08 from PARTIAL; the height-bounded certificate was
+withdrawn, see the correction below; full GRH_N is item-1-hard).
+**Update (2026-10-07).**  OpenAI 2026 (`github.com/openai/math`, family 003; [A],
+model-generated, Lean formalization reported) gives the quasi-GRH strip
+1/8 ≤ β ≤ 7/8 for every Dirichlet L-function at all heights.  That discharges the
+natural-scale character uniformity of Paper 22 Lemma 8.1c (Proposition 8.1c′) and every
+"exceptional/Siegel zero" caveat in the primorial chain.  It does not touch GRH_N
+on the line.
+**Correction (2026-10-08).**  The HeightBoundedGRH "certificate" is withdrawn as a
+theorem.  Its Hankel matrices are built from the LMFDB zero list, which contains
+on-line zeros only, so they are PSD by construction and can reject no off-line zero.
+Certifiable height-bounded GRH at f | 210 comes from classical rigorous verification
+(Platt 2016), not from this route.  The chain "Apex Lemma_HJ ⟺ GRH-at-P_n" is also not
+a proved equivalence (Pass-5 Thm 16.2 is for ζ only), and the GRH-Apex-Integration
+claims of a proof are withdrawn (its §2 and table §3.2).  The
+program holds a map of the chain and its Lemma 8.1c input, not a partial result on
+GRH_N.
 
 ### 3. CCM Lemma 7.2 — prolate eigenfunction perturbation rate (Connes–Consani–Moscovici, arXiv 2511.22755)
 **Status:** Stated by CCM as "the main remaining obstacle" of the live zeta-spectral-
@@ -307,7 +322,7 @@ falsifiable near-term items are the SM pure-number predictions).
 | 5 | Li operator realization | PARTIAL | A10 |
 | 6 | dBN no-go publication | PARTIAL | A14 |
 | 8 | HL k-tuples reformulation | PARTIAL | A9, A8 |
-| 2 | Height-bounded GRH_N | PARTIAL | A11, A12, E2 |
+| 2 | Height-bounded GRH_N | OPEN (was PARTIAL; revised 2026-10-08) | A11, A12 |
 | 16 | Quantum-to-classical | PARTIAL | B9, B7 |
 | 21 | Second-order optimizer limits | PARTIAL/CLOSABLE | C1, B3 |
 | 22 | Transformer constants | PARTIAL | C8 |

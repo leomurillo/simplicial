@@ -1,0 +1,176 @@
+{
+  "status": "Exact finite verification, not a proof of universal descent",
+  "packet_membership_checks": 10000,
+  "canonical_starts_below_200000": 66666,
+  "expanding_first_packet_moves": 18011,
+  "unresolved": [],
+  "exact_expanding_packet_runs": 320,
+  "longest_observed_descent": {
+    "start": 35655,
+    "steps": 32,
+    "path": [
+      35655,
+      60169,
+      45127,
+      76153,
+      57115,
+      64255,
+      823405,
+      205851,
+      231583,
+      879295,
+      5007865,
+      3755899,
+      4225387,
+      4753561,
+      3565171,
+      1336939,
+      1504057,
+      1128043,
+      1269049,
+      951787,
+      1070761,
+      803071,
+      643183,
+      1628059,
+      1831567,
+      1159039,
+      3300547,
+      928279,
+      130539,
+      146857,
+      110143,
+      52275,
+      19603
+    ]
+  },
+  "examples": [
+    {
+      "start": 3,
+      "ordinary_odd_steps_to_descent": 2,
+      "packet_descent": {
+        "steps": 1,
+        "path": [
+          3,
+          1
+        ],
+        "replayed_odd_steps": 2,
+        "expansions": 0
+      }
+    },
+    {
+      "start": 7,
+      "ordinary_odd_steps_to_descent": 4,
+      "packet_descent": {
+        "steps": 2,
+        "path": [
+          7,
+          13,
+          3
+        ],
+        "replayed_odd_steps": 4,
+        "expansions": 1
+      }
+    },
+    {
+      "start": 27,
+      "ordinary_odd_steps_to_descent": 37,
+      "packet_descent": {
+        "steps": 15,
+        "path": [
+          27,
+          31,
+          121,
+          91,
+          103,
+          175,
+          445,
+          111,
+          283,
+          319,
+          607,
+          577,
+          433,
+          325,
+          61,
+          15
+        ],
+        "replayed_odd_steps": 39,
+        "expansions": 8
+      }
+    },
+    {
+      "start": 31,
+      "ordinary_odd_steps_to_descent": 35,
+      "packet_descent": {
+        "steps": 14,
+        "path": [
+          31,
+          121,
+          91,
+          103,
+          175,
+          445,
+          111,
+          283,
+          319,
+          607,
+          577,
+          433,
+          325,
+          61,
+          15
+        ],
+        "replayed_odd_steps": 37,
+        "expansions": 7
+      }
+    },
+    {
+      "start": 703,
+      "ordinary_odd_steps_to_descent": 51,
+      "packet_descent": {
+        "steps": 18,
+        "path": [
+          703,
+          4009,
+          3007,
+          17131,
+          19273,
+          14455,
+          8131,
+          2287,
+          5791,
+          21991,
+          37111,
+          20875,
+          23485,
+          5871,
+          14863,
+          3135,
+          4465,
+          3349,
+          157
+        ],
+        "replayed_odd_steps": 55,
+        "expansions": 9
+      }
+    },
+    {
+      "start": 100003,
+      "ordinary_odd_steps_to_descent": 2,
+      "packet_descent": {
+        "steps": 1,
+        "path": [
+          100003,
+          9375
+        ],
+        "replayed_odd_steps": 2,
+        "expansions": 0
+      }
+    }
+  ],
+  "linear_rank_obstruction": [
+    "7 -> 13: 8 -> 14 requires w7 < 2*w2",
+    "27 -> 31: 28 -> 32 requires w7 > 3*w2"
+  ]
+}

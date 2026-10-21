@@ -1,0 +1,17 @@
+{
+  "range": [
+    2,
+    80
+  ],
+  "exact_prime_valuation_checks": 50887,
+  "first_negative_valuation": {
+    "x": 18,
+    "K": 5,
+    "prime": 3,
+    "valuation": -1
+  },
+  "counterexample": "4862/3",
+  "grouped_tail_identity": "passed",
+  "minimal_repair_identity": "passed",
+  "full_complexity_identity": "passed"
+}

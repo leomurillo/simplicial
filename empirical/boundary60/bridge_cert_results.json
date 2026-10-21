@@ -1,0 +1,83 @@
+{
+  "criteria_written": "2026-10-09",
+  "status": "author verification, not independent review",
+  "python": "3.12.13",
+  "sympy": "1.14.0",
+  "numpy": "2.4.4",
+  "scipy": "1.17.1",
+  "elapsed_seconds": 3.477320200006943,
+  "passed": 14,
+  "total": 14,
+  "checks": [
+    {
+      "name": "E1 static bridge",
+      "pass": true,
+      "detail": "square completion, determinants, covariance, compliance"
+    },
+    {
+      "name": "E2 general Gaussian KL chain",
+      "pass": true,
+      "detail": "conditional cost = 9.34979115"
+    },
+    {
+      "name": "E3 recovery and displacement",
+      "pass": true,
+      "detail": "thermal recovery zero; conditional cost equals recovery KL"
+    },
+    {
+      "name": "E4 successive static elimination",
+      "pass": true,
+      "detail": "both orders: Schur, recovery mean/covariance, KL budget"
+    },
+    {
+      "name": "E5 rational dynamic composition",
+      "pass": true,
+      "detail": "response and full source-transfer identity for arbitrary s"
+    },
+    {
+      "name": "E6 induced noise and FDT",
+      "pass": true,
+      "detail": "3 exact frequencies, correlated bath, both elimination orders"
+    },
+    {
+      "name": "E7 memory and preparation noise",
+      "pass": true,
+      "detail": "exact t>=u>=0 covariance including nonthermal transient"
+    },
+    {
+      "name": "E8 positive-real witnesses",
+      "pass": true,
+      "detail": "3 rational right-half-plane points"
+    },
+    {
+      "name": "E9 cascade defect/noise",
+      "pass": true,
+      "detail": "noncommuting rational contractions"
+    },
+    {
+      "name": "C1 omitted hidden noise detected",
+      "pass": true,
+      "detail": "at omega=1 true PSD=3T, retained white source alone=2T"
+    },
+    {
+      "name": "C2 discarded noise correlations detected",
+      "pass": true,
+      "detail": "final PSD error = -405/169"
+    },
+    {
+      "name": "C3 naive quantum Kron rejected",
+      "pass": true,
+      "detail": "P_B-K_eff X_B = 9/100"
+    },
+    {
+      "name": "N1 integrated FDT and Lyapunov",
+      "pass": true,
+      "detail": "covariance error 1.28e-15; spectrum error 0; quadrature estimate 2.91e-13"
+    },
+    {
+      "name": "N2 preparation predicts future boundary",
+      "pass": true,
+      "detail": "present KL=0; two-time KL=0.00268453397; conditional cost=1.45861229"
+    }
+  ]
+}

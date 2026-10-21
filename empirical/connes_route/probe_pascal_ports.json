@@ -1,0 +1,48 @@
+{
+  "status": "Exact finite identities and comparisons, not an RH certificate",
+  "checks": {
+    "pascal_group": true,
+    "pascal_inverse": true,
+    "binomial_filter": true,
+    "negative_direction_preserved": true,
+    "port_negative_diagonal": true,
+    "transported_negative_witness": true
+  },
+  "planted_port_negative_entry": "-1129756486528/65755237275",
+  "two_by_two_example": "Matrix([[1, t], [t, t**2 - 1]])",
+  "divisor_weight_comparison": [
+    {
+      "D": 4,
+      "optimized": {
+        "main_quadratic": "2/5",
+        "floor_error_bound": "144/25"
+      },
+      "pascal": {
+        "main_quadratic": "21/4",
+        "floor_error_bound": "64"
+      }
+    },
+    {
+      "D": 8,
+      "optimized": {
+        "main_quadratic": "12/41",
+        "floor_error_bound": "31684/1681"
+      },
+      "pascal": {
+        "main_quadratic": "5285/8",
+        "floor_error_bound": "16384"
+      }
+    },
+    {
+      "D": 12,
+      "optimized": {
+        "main_quadratic": "30/113",
+        "floor_error_bound": "379456/12769"
+      },
+      "pascal": {
+        "main_quadratic": "322861/3",
+        "floor_error_bound": "4194304"
+      }
+    }
+  ]
+}

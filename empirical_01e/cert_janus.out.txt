@@ -1,0 +1,71 @@
+J1  the arenas are the gauge line
+  [OK ] N=3: c = x + (sum c/N) 1 with x in H; J = -1 on both summands
+  [OK ] N=3: c + t1 crosses H exactly once, at t = -cbar (its zero-sum representative)
+  [OK ] N=3: the two constant sign corners (arenas) both map to the origin mod 1
+  [OK ] N=3: the 6 mixed corners map to distinct classes of range 1 (vertices of the tropical ball)
+  [OK ] N=3: J acts on corners by complement, -1_S = 1_(S^c) mod 1
+  [OK ] N=4: c = x + (sum c/N) 1 with x in H; J = -1 on both summands
+  [OK ] N=4: c + t1 crosses H exactly once, at t = -cbar (its zero-sum representative)
+  [OK ] N=4: the two constant sign corners (arenas) both map to the origin mod 1
+  [OK ] N=4: the 14 mixed corners map to distinct classes of range 1 (vertices of the tropical ball)
+  [OK ] N=4: J acts on corners by complement, -1_S = 1_(S^c) mod 1
+  [OK ] N=5: c = x + (sum c/N) 1 with x in H; J = -1 on both summands
+  [OK ] N=5: c + t1 crosses H exactly once, at t = -cbar (its zero-sum representative)
+  [OK ] N=5: the two constant sign corners (arenas) both map to the origin mod 1
+  [OK ] N=5: the 30 mixed corners map to distinct classes of range 1 (vertices of the tropical ball)
+  [OK ] N=5: J acts on corners by complement, -1_S = 1_(S^c) mod 1
+  [OK ] standard form of J[c] is max c - c (min-plus <-> max-plus), 500 cases
+  [OK ] range norm is J-invariant (tropical ball centrally symmetric), 500 cases
+  [OK ] J sends the min region C_i of c to the max region of c (argmin(-c) = argmax c)
+J2  Janus is temperature reversal
+  [OK ] p_tau(-c) = p_(-tau)(c)
+  [OK ] F_tau(-c) = -F_(-tau)(c)
+  [OK ] p_tau(s c) = p_(tau/s)(c): scaling a form through 0 is beta = s/tau through 0
+  [OK ] beta = 0 is the barycentre (the zero-sum gauge w = 1/N)
+  [OK ] dp/dbeta at 0 = -(c - cbar)/N: the shape carried through the boundary is the zero-sum representative
+  [OK ] beta > 0 arena passive (W = 0): 2000/2000; Janus image beta < 0 active (W > 0): 2000/2000
+  [OK ] the barycentre is the unique J-fixed Gibbs state (p_beta(-c) = p_beta(c) for non-constant c iff beta = 0)
+J3  Janus on weights is charge conjugation
+  [OK ] N=3: N-ality of -lambda is -(N-ality of lambda) mod N
+  [OK ] N=3: J-fixed N-ality classes = [0] (0, and N/2 for even N)
+  [OK ] N=3: frame vertex e_i (fundamental, N-ality 1) -> facet centre 1 - e_i (N-ality N-1, the dual)
+  [OK ] N=4: N-ality of -lambda is -(N-ality of lambda) mod N
+  [OK ] N=4: J-fixed N-ality classes = [0, 2] (0, and N/2 for even N)
+  [OK ] N=4: frame vertex e_i (fundamental, N-ality 1) -> facet centre 1 - e_i (N-ality N-1, the dual)
+  [OK ] N=5: N-ality of -lambda is -(N-ality of lambda) mod N
+  [OK ] N=5: J-fixed N-ality classes = [0] (0, and N/2 for even N)
+  [OK ] N=5: frame vertex e_i (fundamental, N-ality 1) -> facet centre 1 - e_i (N-ality N-1, the dual)
+  [OK ] N=6: N-ality of -lambda is -(N-ality of lambda) mod N
+  [OK ] N=6: J-fixed N-ality classes = [0, 3] (0, and N/2 for even N)
+  [OK ] N=6: frame vertex e_i (fundamental, N-ality 1) -> facet centre 1 - e_i (N-ality N-1, the dual)
+  [OK ] N=4: Q = A_3 is FCC (12 nearest neighbours at d^2 = 2.6667)
+  [OK ] N=4: class 1 = tetrahedral holes (4 FCC sites at 3/8 d^2)
+  [OK ] N=4: class 3 = the other tetrahedral holes (4 at 3/8 d^2)
+  [OK ] N=4: class 2 = octahedral holes (6 FCC sites at 1/2 d^2)
+  [OK ] N=4: J swaps classes 1 <-> 3 and fixes 0, 2
+  [OK ] diamond: J(D_4) = D_4 - e_1, i.e. -v in D_4 - e_1 iff v in D_4 (J maps the diamond to a translate)
+  [OK ] diamond: inversion through the bond midpoint e_1/2 (x -> e_1 - x) preserves D_4 and swaps A (class 0) <-> B (class 1)
+  [OK ] graphene: f(-theta) = conj f(theta), and theta -> -theta swaps the Dirac characters a = 1 <-> a = 2
+J4  exterior and Clifford algebra
+  [OK ] -I_4 acts on Lambda^k R^4 as (-1)^k (vertices, faces flip; edges fixed)
+  [OK ] det(-I_4) = +1 = det(-I_H) * det(-1 on R1) = (-1)(-1): the gauge line supplies the extra reflection
+  [OK ] Clifford relations g_i g_j + g_j g_i = 2 delta_ij
+  [OK ] pseudoscalar omega = g1 g2 g3 g4: omega^2 = +1, omega g_i omega^-1 = -g_i (J = Ad omega is inner)
+  [OK ] odd relabelling (swap e1, e2) sends omega -> -omega: the Janus bit eps_1234 is the sign of omega
+  [OK ] Hodge * on Lambda^2 R^4 pairs opposite edges of K_4, *^2 = +1, eigenvalues +1 (x3), -1 (x3)
+  [OK ] J commutes with * (J is not the para-complex structure)
+  [OK ] an orientation flip anticommutes with * (eps_1234 swaps the self-dual halves)
+  [OK ] * on Lambda^1 is the complement map: e_i -> +- e_([4] minus i) (vertex -> opposite facet)
+J5  what quadrances can see
+  [OK ] Q(sX) = s^2 Q(X) (even), V(sX) = s^3 V(X) (odd): 300/300
+  [OK ] Cayley-Menger determinant = 288 V^2 (sees |V| only): 300/300
+  [OK ] X and -X: identical quadrances, opposite oriented volume (absolute bit invisible): 300/300
+  [OK ] V(A) V(B) for two 4-subsets (not sharing a base point) is a polynomial in quadrances: 300/300
+J6  Galois limit on prime polygons
+  [OK ] p= 5: v0v1 || v(p-1)v2, ratio = 1 + 2cos(2pi/p), degree 2 = (p-1)/2 (2-power)
+  [OK ] p= 7: v0v1 || v(p-1)v2, ratio = 1 + 2cos(2pi/p), degree 3 = (p-1)/2 (NOT a 2-power: no affinely regular p-gon over a multiquadratic field)
+  [OK ] p=11: v0v1 || v(p-1)v2, ratio = 1 + 2cos(2pi/p), degree 5 = (p-1)/2 (NOT a 2-power: no affinely regular p-gon over a multiquadratic field)
+  [OK ] p=13: v0v1 || v(p-1)v2, ratio = 1 + 2cos(2pi/p), degree 6 = (p-1)/2 (NOT a 2-power: no affinely regular p-gon over a multiquadratic field)
+  [OK ] p=17: v0v1 || v(p-1)v2, ratio = 1 + 2cos(2pi/p), degree 8 = (p-1)/2 (2-power)
+
+TOTAL 63/63

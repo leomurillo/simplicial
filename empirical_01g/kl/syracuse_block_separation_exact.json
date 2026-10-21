@@ -1,0 +1,85 @@
+{
+  "method": "exact Fraction arithmetic and modular inverses; applies at the recorded starting level and every higher one",
+  "witnesses": [
+    {
+      "steps": 1,
+      "max_branch_exponent": 6,
+      "words": 6,
+      "distinct_affine_maps": 6,
+      "seed_context": 1,
+      "start_level": 2,
+      "end_level": 3,
+      "max_difference_v3": 1,
+      "all_retained_outputs_distinct_mod_context": true,
+      "retained_mass": [
+        63,
+        64
+      ],
+      "rigorous_block_norm_lower_bound": [
+        31,
+        32
+      ],
+      "lower_bound_decimal": 0.96875
+    },
+    {
+      "steps": 2,
+      "max_branch_exponent": 6,
+      "words": 36,
+      "distinct_affine_maps": 36,
+      "seed_context": 2,
+      "start_level": 5,
+      "end_level": 7,
+      "max_difference_v3": 5,
+      "all_retained_outputs_distinct_mod_context": true,
+      "retained_mass": [
+        3969,
+        4096
+      ],
+      "rigorous_block_norm_lower_bound": [
+        1921,
+        2048
+      ],
+      "lower_bound_decimal": 0.93798828125
+    },
+    {
+      "steps": 3,
+      "max_branch_exponent": 6,
+      "words": 216,
+      "distinct_affine_maps": 216,
+      "seed_context": 2,
+      "start_level": 7,
+      "end_level": 10,
+      "max_difference_v3": 8,
+      "all_retained_outputs_distinct_mod_context": true,
+      "retained_mass": [
+        250047,
+        262144
+      ],
+      "rigorous_block_norm_lower_bound": [
+        118975,
+        131072
+      ],
+      "lower_bound_decimal": 0.9077072143554688
+    },
+    {
+      "steps": 4,
+      "max_branch_exponent": 4,
+      "words": 256,
+      "distinct_affine_maps": 256,
+      "seed_context": 2,
+      "start_level": 5,
+      "end_level": 9,
+      "max_difference_v3": 7,
+      "all_retained_outputs_distinct_mod_context": true,
+      "retained_mass": [
+        50625,
+        65536
+      ],
+      "rigorous_block_norm_lower_bound": [
+        17857,
+        32768
+      ],
+      "lower_bound_decimal": 0.544952392578125
+    }
+  ]
+}

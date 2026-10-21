@@ -1,0 +1,14 @@
+{
+  "status": "Exact linear algebra and finite point count, not an RH proof",
+  "checks": {
+    "block_congruence": true,
+    "basis_change_determinant_one": true,
+    "control_primitive_indefinite": true,
+    "control_all_entries_nonnegative": true,
+    "elliptic_point_count_105": true
+  },
+  "control_primitive_matrix": "Matrix([[-2, 6], [6, -8]])",
+  "control_primitive_determinant": "-20",
+  "control_full_inertia": "(2 positive, 2 negative), by the congruence",
+  "elliptic_point_count": 105
+}

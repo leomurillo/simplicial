@@ -1,0 +1,78 @@
+{
+  "status": "Exact rational verification of finite certificates",
+  "total_row_inequalities": 4368,
+  "levels": [
+    {
+      "k": 2,
+      "rows_verified": 12,
+      "epsilon": "14865829/62500000",
+      "epsilon_decimal": 0.237853264,
+      "spectral_lower_exact": "4417116838514933/5795625210483720",
+      "spectral_upper_exact": "6864807515370263/9007199254740992",
+      "spectral_lower_decimal": 0.7621467362183462,
+      "spectral_upper_decimal": 0.7621467363183879,
+      "cost_baseline_decimal": 0.6818181818181818,
+      "all_exact_checks_pass": true
+    },
+    {
+      "k": 3,
+      "rows_verified": 36,
+      "epsilon": "72256151/500000000",
+      "epsilon_decimal": 0.144512302,
+      "spectral_lower_exact": "3019339656549658/3529378225180363",
+      "spectral_upper_exact": "3852774082618295/4503599627370496",
+      "spectral_lower_decimal": 0.8554876989403309,
+      "spectral_upper_decimal": 0.8554876990403792,
+      "cost_baseline_decimal": 0.6452866652351299,
+      "all_exact_checks_pass": true
+    },
+    {
+      "k": 4,
+      "rows_verified": 108,
+      "epsilon": "52941911/500000000",
+      "epsilon_decimal": 0.105883822,
+      "spectral_lower_exact": "6389561937978572/7136185145850757",
+      "spectral_upper_exact": "8064821239367159/9007199254740992",
+      "spectral_lower_decimal": 0.8953750228430803,
+      "spectral_upper_decimal": 0.8953750229431411,
+      "cost_baseline_decimal": 0.6349704799525939,
+      "all_exact_checks_pass": true
+    },
+    {
+      "k": 5,
+      "rows_verified": 324,
+      "epsilon": "46357167/500000000",
+      "epsilon_decimal": 0.092714334,
+      "spectral_lower_exact": "5943279261702957/6493422383929204",
+      "spectral_upper_exact": "8244081068108107/9007199254740992",
+      "spectral_lower_decimal": 0.9152768617689471,
+      "spectral_upper_decimal": 0.9152768618689974,
+      "cost_baseline_decimal": 0.6281268670141074,
+      "all_exact_checks_pass": true
+    },
+    {
+      "k": 6,
+      "rows_verified": 972,
+      "epsilon": "19081141/250000000",
+      "epsilon_decimal": 0.076324564,
+      "spectral_lower_exact": "6391780336390955/6896456493140339",
+      "spectral_upper_exact": "4174030471002761/4503599627370496",
+      "spectral_lower_decimal": 0.9268209467787744,
+      "spectral_upper_decimal": 0.9268209468788504,
+      "cost_baseline_decimal": 0.6256040677224222,
+      "all_exact_checks_pass": true
+    },
+    {
+      "k": 7,
+      "rows_verified": 2916,
+      "epsilon": "66738173/1000000000",
+      "epsilon_decimal": 0.066738173,
+      "spectral_lower_exact": "4873016227809938/5211031437953139",
+      "spectral_upper_exact": "8422944413746893/9007199254740992",
+      "spectral_lower_decimal": 0.9351346822279063,
+      "spectral_upper_decimal": 0.9351346823279642,
+      "cost_baseline_decimal": 0.6231702614671204,
+      "all_exact_checks_pass": true
+    }
+  ]
+}

@@ -99,7 +99,7 @@ so **(W)** is exactly a bound on the **joint** discrepancy increment $\Phi(c)-\P
 
 * the shift map $b\mapsto b-a\lfloor c/a\rfloor$ preserves divisibility by $a$ but produces cross‑generator collisions;
 * the bipartite matching $B\cap W\hookrightarrow 2\times(B\cap[1,n])$ has Hall condition *equivalent* to (W) for sub‑families (circular);
-* the Jacobsthal max‑gap bound $\operatorname{minrough}\ge\lfloor n/g\rfloor$ is too weak ($g\gg$ average gap under heavy overlap);
+* the Jacobsthal max‑gap bound $\operatorname{minrough}\ge\lfloor n/g\rfloor$ is too weak ($g\gg$ average gap under heavy overlap);  (OpenAI 2026, family 021, tier [A], now gives the quadratic bound $g\le C\,\omega^2$ without Iwaniec's $\log^2$ loss.  It is still a max-gap bound, far above the average gap, so this route stays closed.)
 * the second moment loses a $\sqrt L$ factor; the marginal bound via $\max|\Phi|\le f(M)$ is too lossy because $\Phi_{\max},\Phi_{\min}$ are not realised a distance $n$ apart.
 
 The required estimate — that the interval discrepancy of $B$ beats the trivial $2^{\omega}$ bound in the rough‑majority range — sits squarely in **Ford–Tenenbaum** theory of $H(x,y,z)$ (integers with a divisor in an interval; arXiv:math/0607460) and the **Erdős–Hooley $\Delta$‑function** (divisor clustering). No off‑the‑shelf result delivers it. This is the one genuinely open input.

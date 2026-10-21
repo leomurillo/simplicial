@@ -1,0 +1,120 @@
+{
+  "status": "Finite numerical diagnostics only",
+  "samples": [
+    {
+      "X": 100,
+      "R": -5.954688770642605,
+      "S_over_X": -1.6533256990060943,
+      "centered_S_over_X": -0.07611003410456141,
+      "factors": {
+        "0.5": {
+          "positive_operator_factor": 3.6689635044591546,
+          "asymptotic_factor": 4.3429448190325175,
+          "ratio": 0.8448100672106844
+        },
+        "0.75": {
+          "positive_operator_factor": 1.7129737286600841,
+          "asymptotic_factor": 2.7467194761141074,
+          "ratio": 0.6236434931038155
+        },
+        "0.875": {
+          "positive_operator_factor": 1.2051031895529376,
+          "asymptotic_factor": 3.089187740248297,
+          "ratio": 0.3901035776660424
+        }
+      }
+    },
+    {
+      "X": 1000,
+      "R": -3.3190877528245437,
+      "S_over_X": -1.5753964350408105,
+      "centered_S_over_X": 0.00181922986072236,
+      "factors": {
+        "0.5": {
+          "positive_operator_factor": 8.759394915444627,
+          "asymptotic_factor": 9.155731587047025,
+          "ratio": 0.9567116327259843
+        },
+        "0.75": {
+          "positive_operator_factor": 2.5849851056428803,
+          "asymptotic_factor": 3.2562897930177432,
+          "ratio": 0.7938436901978752
+        },
+        "0.875": {
+          "positive_operator_factor": 1.5005371097289788,
+          "asymptotic_factor": 2.7463320397315276,
+          "ratio": 0.5463786199266956
+        }
+      }
+    },
+    {
+      "X": 10000,
+      "R": 13.396693263108318,
+      "S_over_X": -1.5803152026797833,
+      "centered_S_over_X": -0.0030995377782504496,
+      "factors": {
+        "0.5": {
+          "positive_operator_factor": 21.439604261899497,
+          "asymptotic_factor": 21.71472409516259,
+          "ratio": 0.9873302634628278
+        },
+        "0.75": {
+          "positive_operator_factor": 3.8421602585639367,
+          "asymptotic_factor": 4.3429448190325175,
+          "ratio": 0.8846900936263471
+        },
+        "0.875": {
+          "positive_operator_factor": 1.8133446194206606,
+          "asymptotic_factor": 2.7467194761141074,
+          "ratio": 0.6601855905525783
+        }
+      }
+    },
+    {
+      "X": 100000,
+      "R": 51.56402565800818,
+      "S_over_X": -1.5771126458639129,
+      "centered_S_over_X": 0.0001030190376200002,
+      "factors": {
+        "0.5": {
+          "positive_operator_factor": 54.71601079014294,
+          "asymptotic_factor": 54.93438952228215,
+          "ratio": 0.9960247354337006
+        },
+        "0.75": {
+          "positive_operator_factor": 5.777275388591593,
+          "asymptotic_factor": 6.1783754804965945,
+          "ratio": 0.9350800071683629
+        },
+        "0.875": {
+          "positive_operator_factor": 2.1833324862838253,
+          "asymptotic_factor": 2.9302474316308635,
+          "ratio": 0.7451017489907553
+        }
+      }
+    },
+    {
+      "X": 1000000,
+      "R": -413.402504368918,
+      "S_over_X": -1.5780616582686149,
+      "centered_S_over_X": -0.0008459933670820208,
+      "factors": {
+        "0.5": {
+          "positive_operator_factor": 144.54093465730125,
+          "asymptotic_factor": 144.76482730108395,
+          "ratio": 0.9984534044079848
+        },
+        "0.75": {
+          "positive_operator_factor": 8.819849524498027,
+          "asymptotic_factor": 9.155731587047025,
+          "ratio": 0.9633145577329741
+        },
+        "0.875": {
+          "positive_operator_factor": 2.6335284447957514,
+          "asymptotic_factor": 3.2562897930177432,
+          "ratio": 0.8087512513298603
+        }
+      }
+    }
+  ]
+}

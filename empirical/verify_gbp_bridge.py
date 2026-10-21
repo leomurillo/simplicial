@@ -172,10 +172,14 @@ def main():
         "```text",
     ]
     rep.parent.mkdir(parents=True, exist_ok=True)
-    rep.write_text("\n".join(header + out + ["```", ""]), encoding="utf-8")
+    rep.write_text("\n".join(header + out + ["```", ""]) + ADDENDUM_2026_10_07, encoding="utf-8")
     print("\n[report -> %s]" % rep)
     return 0
 
+
+
+# Re-scope after OpenAI 2026 (family 003); appended to the report on every run.
+ADDENDUM_2026_10_07 = '\n## Addendum (2026-10-07): re-scope after the quasi-GRH half-plane (OpenAI 2026)\n\nInput, tier [A]: OpenAI, *The Quasi-Riemann Hypothesis* (30 Sep 2026, github.com/openai/math, family 003,\nThm 1.1).  Every Dirichlet L(s,chi) is zero-free in Re s > 7/8, uniformly in the modulus.  It is\nmodel-generated, and OpenAI reports Lean formalization.  The functional equation then gives\n1/8 <= beta <= 7/8 for every nontrivial zero, with no exceptional (Siegel) zero for any q.\n\n**This report.**  The identification "Paper 22 Lemma 8.1c = uniform character PNT mod P_n = no Siegel\nzero / GRH-family" is CORRECTED.  8.1c needs only a fixed half-plane theta < 1, not GRH.  It is now [A] on\nOpenAI 2026 (Paper 22 Proposition 8.1c\': |psi(X,chi) - delta X| << X^(7/8) log^2(P_n X)).  So 8.1c no\nlonger converges onto the GRH_N bridge.  The other routes listed (Direction B arch dominance, (GBP)\n|Sigma|^2 = u_B, u_B >= 0) concern zeros ON the critical line and are untouched.  The bridge = GRH_N = RH\nresidual stands for them.  Also, "conservation confirmed" is withdrawn as a summary: one of the routes\ncollapsed onto a strip statement, which is a strictly easier target.\n'
 
 if __name__ == "__main__":
     raise SystemExit(main())

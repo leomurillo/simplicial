@@ -1,0 +1,96 @@
+{
+  "limit": 1000000,
+  "old_sampling": "all n<=2000; thereafter multiples of 101 only",
+  "old_plot_count": 11880,
+  "full_plot_count": 999999,
+  "cohort_9232": {
+    "count": 1579,
+    "min": 27,
+    "max": 9232,
+    "odd_count": 408,
+    "max_odd": 3077,
+    "old_plot_count": 683
+  },
+  "common_peaks": [
+    {
+      "peak": 1276936,
+      "count": 3483,
+      "min_seed": 1819
+    },
+    {
+      "peak": 6810136,
+      "count": 2290,
+      "min_seed": 4255
+    },
+    {
+      "peak": 250504,
+      "count": 1759,
+      "min_seed": 703
+    },
+    {
+      "peak": 8153620,
+      "count": 1597,
+      "min_seed": 4591
+    },
+    {
+      "peak": 9232,
+      "count": 1579,
+      "min_seed": 27
+    },
+    {
+      "peak": 9635920,
+      "count": 1194,
+      "min_seed": 13551
+    },
+    {
+      "peak": 2480056,
+      "count": 1067,
+      "min_seed": 11931
+    },
+    {
+      "peak": 975400,
+      "count": 848,
+      "min_seed": 6171
+    },
+    {
+      "peak": 897856,
+      "count": 739,
+      "min_seed": 2559
+    },
+    {
+      "peak": 5399296,
+      "count": 697,
+      "min_seed": 19483
+    },
+    {
+      "peak": 2316760,
+      "count": 685,
+      "min_seed": 7935
+    },
+    {
+      "peak": 345544,
+      "count": 684,
+      "min_seed": 2215
+    }
+  ],
+  "band_counts": [
+    {
+      "lo": 1000,
+      "hi": 2000,
+      "full": 1001,
+      "old": 1001
+    },
+    {
+      "lo": 2001,
+      "hi": 10000,
+      "full": 8000,
+      "old": 80
+    },
+    {
+      "lo": 10001,
+      "hi": 100000,
+      "full": 90000,
+      "old": 891
+    }
+  ]
+}

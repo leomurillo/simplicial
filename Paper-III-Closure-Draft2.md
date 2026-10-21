@@ -1710,6 +1710,13 @@ The pointwise maximum at polynomial scale would require excluding
 Landau–Siegel exceptional zeros — a problem comparable to Polymath 8.
 The averaged shadow is *exactly* what BDH 1965–66 controls, and the
 positive-current transport theorem of §8 needs no stronger input.
+*(Update 2026-10-07, [A].)*  The pointwise maximum is now available
+externally.  The quasi-GRH half-plane $\operatorname{Re}s>7/8$ (OpenAI 2026,
+`github.com/openai/math`, family 003; model-generated; OpenAI reports a Lean
+formalization) excludes Landau–Siegel zeros.  It gives
+$\max_{\chi}|\psi(X,\chi)|\ll X^{7/8}\log^2(P_nX)=o(X)$ at $X=P_n^A$ (Paper 22,
+Proposition 8.1c$'$).  The averaged-shadow design stays the route that does not
+depend on 003.
 
 ### 7.1 The compressed CRT shadow
 
